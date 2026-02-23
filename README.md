@@ -5,6 +5,7 @@ This demo ingests unstructured deposition `.txt` files for a case, maps each one
 ## Ollama Setup (Download Local LLMs)
 
 Use these steps before running the app if you want local models through Ollama.
+This project is tuned for legal-focused models; prefer legal models over general-purpose models.
 
 1. Install Ollama:
 ```bash
@@ -16,10 +17,11 @@ brew install --cask ollama
 ollama serve
 ```
 
-3. Pull one or more local models:
+3. Pull legal-focused local models (recommended):
 ```bash
-ollama pull llama3.3:latest
-ollama pull gpt-oss:20b
+ollama pull initium/law_model:latest
+# if :latest is unavailable in your Ollama registry, use:
+ollama pull initium/law_model:Q2_K
 ```
 
 4. Verify downloaded models:
@@ -35,8 +37,8 @@ OLLAMA_URL=http://localhost:11434
 # If running API in Docker Compose:
 OLLAMA_URL=http://host.docker.internal:11434
 
-OLLAMA_DEFAULT_MODEL=llama3.3:latest
-OLLAMA_MODELS=llama3.3:latest,gpt-oss:20b
+OLLAMA_DEFAULT_MODEL=initium/law_model:latest
+OLLAMA_MODELS=initium/law_model:latest,initium/law_model:Q2_K
 DEFAULT_LLM_PROVIDER=ollama
 ```
 
@@ -184,10 +186,10 @@ DEFAULT_LLM_PROVIDER=openai
 OLLAMA_URL=http://localhost:11434
 
 # fallback Ollama model when tags cannot be fetched
-OLLAMA_DEFAULT_MODEL=llama3.3
+OLLAMA_DEFAULT_MODEL=initium/law_model:latest
 
-# extra fallback local models (comma-separated)
-OLLAMA_MODELS=llama3.3,mistral
+# extra fallback local legal models (comma-separated)
+OLLAMA_MODELS=initium/law_model:latest,initium/law_model:Q2_K
 
 # keep Ollama model loaded in memory between requests
 OLLAMA_KEEP_ALIVE=10m
@@ -206,13 +208,15 @@ LLM_OPTIONS_PROBE_WORKERS=3
 ### Using local models with Ollama
 
 1. Start Ollama locally.
-2. Ensure your model is downloaded, for example `llama3.3`.
+2. Ensure a legal-focused model is downloaded, for example `initium/law_model:latest`.
 3. Open the app and click `Refresh Models` to reload local tags.
 4. Select the desired `Ollama - <model>` entry in the dropdown.
 
-## Performance Tuning (Especially for llama3.3)
+Recommended: use `initium/law_model:*` variants for legal deposition analysis quality and consistency.
 
-`llama3.3` is slower than smaller models because:
+## Performance Tuning (Especially for law_model variants)
+
+`initium/law_model` variants can be slower than smaller quantized variants because:
 
 1. It is a larger local model, so token generation is slower on CPU or limited GPU.
 2. Ingest includes map + contradiction assessment work for each deposition.
@@ -225,7 +229,7 @@ Ways to reduce latency:
 3. Increase/decrease validation probe frequency with `LLM_READINESS_TTL_SECONDS`:
    - Higher value: fewer readiness probes, faster requests.
    - `0`: strict probe every request (slowest, strictest).
-4. Prefer smaller local models (for example `gpt-oss:20b`) when speed is more important than depth.
+4. Prefer a smaller legal variant (for example `initium/law_model:Q2_K`) when speed is more important than depth.
 
 ## Ingestion Folder Mapping
 
