@@ -1,0 +1,10 @@
+Re-analyze only this contradiction item:
+{contradiction_json}
+
+Case context:
+{context_json}
+
+Instructions:
+- Keep analysis tightly scoped to this contradiction item.
+- Use testimony facts from context; do not invent new facts.
+- Prioritize concrete, useful detail over generic language.

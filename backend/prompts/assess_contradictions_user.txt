@@ -1,0 +1,8 @@
+Target deposition (newly mapped):
+{target_json}
+
+Peer depositions in the same case:
+{others_json}
+
+Now produce a strict structured contradiction assessment for the target deposition.
+Focus on explicit contradictions only.

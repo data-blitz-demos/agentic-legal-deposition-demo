@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposition Contradiction Demo</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <main class="layout">
+      <section class="panel control-panel">
+        <div class="brand-strip">
+          <img src="/static/assets/data-blitz-logo.png" alt="Data-Blitz Demo logo" class="brand-logo" />
+        </div>
+        <h1 class="control-title">Deposition Radar Demo</h1>
+
+        <div class="form-grid">
+          <label>
+            Case ID
+            <input id="caseId" type="text" value="CASE-001" />
+          </label>
+          <label>
+            Deposition Folder
+            <input id="directory" type="text" value="/data/depositions" />
+          </label>
+          <label>
+            LLM
+            <select id="llmSelect" aria-label="LLM selection">
+              <option value="openai::gpt-5.2">ChatGPT - gpt-5.2</option>
+            </select>
+          </label>
+          <label class="toggle-label">
+            <input id="skipReassess" type="checkbox" />
+            Fast ingest mode (skip full case reassess)
+          </label>
+        </div>
+
+        <div class="actions-row">
+          <button id="ingestBtn">Ingest .txt Depositions</button>
+          <button id="refreshBtn" class="secondary">Refresh Case</button>
+          <button id="refreshModelsBtn" class="secondary" type="button">Refresh Models</button>
+        </div>
+
+        <div class="status-row">
+          <span id="statusIndicator" class="activity-indicator hidden" aria-hidden="true"></span>
+          <span id="statusClock" class="activity-clock hidden">0.0s</span>
+          <div id="status" class="status">Ready.</div>
+        </div>
+      </section>
+
+      <section class="panel risk-panel">
+        <div class="timeline-head">
+          <h2>Deposition Timeline</h2>
+          <div class="timeline-controls">
+            <button id="timelineBack" class="secondary" type="button">Back</button>
+            <button id="timelineForward" class="secondary" type="button">Forward</button>
+          </div>
+        </div>
+        <div id="timeline" class="timeline-strip"></div>
+
+        <h2 class="scores-title">Risk Scores</h2>
+        <div id="depositionList" class="deposition-list"></div>
+      </section>
+
+      <section class="panel detail-panel">
+        <h2>Conflict Detail</h2>
+        <div id="detailEmpty" class="muted">Select a deposition to inspect contradictions.</div>
+        <div id="detailBody" class="hidden">
+          <h3 id="detailWitness"></h3>
+          <p id="detailSummary"></p>
+          <h4>Overall Short Answer</h4>
+          <p id="detailExplanation" class="explanation"></p>
+          <h4>Detail Items (click any item to re-analyze)</h4>
+          <ul id="detailContradictions" class="contradiction-list"></ul>
+          <div id="focusedReasoning" class="focused-reasoning hidden">
+            <h4>Focused Re-Analysis</h4>
+            <div id="reasoningProgress" class="reasoning-progress hidden">
+              <span class="activity-indicator small" aria-hidden="true"></span>
+              <span>Attorney is processing this item...</span>
+              <span id="reasoningClock" class="activity-clock">0.0s</span>
+            </div>
+            <p id="focusedReasoningBody" class="explanation"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel chat-panel">
+        <h2>Attorney Chat</h2>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div id="chatProgress" class="chat-progress hidden">
+          <span class="activity-indicator small" aria-hidden="true"></span>
+          <span>Attorney is reasoning...</span>
+          <span id="chatClock" class="activity-clock">0.0s</span>
+        </div>
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text" placeholder="Ask what action to take next..." />
+          <button id="chatSendBtn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="legal-footer">
+      <span>© 2026 Data-Blitz Inc. All rights reserved.</span>
+      <span>Author: Payl Harvener.</span>
+    </footer>
+
+    <script src="/static/app.js" type="module"></script>
+  </body>
+</html>

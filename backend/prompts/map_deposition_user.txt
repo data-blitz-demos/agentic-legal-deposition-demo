@@ -1,0 +1,5 @@
+Case ID: {case_id}
+File Name: {file_name}
+Return structured deposition data from this raw text:
+
+{raw_text}

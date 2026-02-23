@@ -1,0 +1,2 @@
+Case context and contradictions:
+{context_json}
