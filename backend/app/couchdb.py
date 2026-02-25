@@ -81,6 +81,30 @@ class CouchDBClient:
         response.raise_for_status()
         return response.json()
 
+    def delete_doc(self, doc_id: str, rev: str | None = None) -> None:
+        """Delete a document by id/rev (fetch rev when omitted)."""
+
+        if not doc_id:
+            raise ValueError("Document id is required for delete")
+
+        resolved_rev = rev
+        if not resolved_rev:
+            response = self._client.get(f"{self.base_db_url}/{doc_id}")
+            if response.status_code == 404:
+                return
+            response.raise_for_status()
+            resolved_rev = response.json().get("_rev")
+            if not resolved_rev:
+                raise ValueError(f"Document {doc_id} is missing _rev and cannot be deleted")
+
+        response = self._client.delete(
+            f"{self.base_db_url}/{doc_id}",
+            params={"rev": resolved_rev},
+        )
+        if response.status_code == 404:
+            return
+        response.raise_for_status()
+
     def find(self, selector: dict[str, Any], limit: int = 200) -> list[dict[str, Any]]:
         """Execute a Mango ``_find`` query and return matched docs."""
 

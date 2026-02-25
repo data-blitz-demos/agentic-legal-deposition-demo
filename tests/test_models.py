@@ -4,17 +4,26 @@ import pytest
 from pydantic import ValidationError
 
 from backend.app.models import (
+    CaseListResponse,
+    CaseVersionListResponse,
+    CaseVersionSummary,
+    RenameCaseRequest,
+    RenameCaseResponse,
+    CaseSummary,
     ChatRequest,
     Claim,
     ContradictionAssessment,
     ContradictionFinding,
     ContradictionReasonRequest,
     DepositionDocument,
+    DeleteCaseResponse,
     DepositionSchema,
     IngestCaseRequest,
     IngestCaseResponse,
     LLMOption,
     LLMOptionsResponse,
+    SaveCaseRequest,
+    SaveCaseVersionRequest,
 )
 
 
@@ -156,3 +165,53 @@ def test_llm_options_response_defaults():
     )
 
     assert payload.options[0].provider == "openai"
+
+
+def test_case_models_defaults_and_bounds():
+    summary = CaseSummary(case_id="CASE-001")
+    assert summary.deposition_count == 0
+    assert summary.memory_entries == 0
+
+    payload = CaseListResponse(cases=[summary])
+    assert payload.cases[0].case_id == "CASE-001"
+
+    deleted = DeleteCaseResponse(case_id="CASE-001", deleted_docs=3)
+    assert deleted.deleted_docs == 3
+
+    saved = SaveCaseRequest(case_id="CASE-002", directory="/data/depositions/default")
+    assert saved.case_id == "CASE-002"
+
+    rename_request = RenameCaseRequest(new_case_id="CASE-003")
+    assert rename_request.new_case_id == "CASE-003"
+
+    rename_response = RenameCaseResponse(
+        old_case_id="CASE-001",
+        new_case_id="CASE-003",
+        moved_docs=5,
+    )
+    assert rename_response.moved_docs == 5
+
+    save_version = SaveCaseVersionRequest(
+        case_id="CASE-001",
+        source_case_id="CASE-BASE",
+        directory="/data/depositions/default",
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+        snapshot={"status": "ready"},
+    )
+    assert save_version.snapshot["status"] == "ready"
+    assert save_version.source_case_id == "CASE-BASE"
+
+    version_summary = CaseVersionSummary(
+        case_id="CASE-001",
+        version=1,
+        created_at="2026-02-25T00:00:00+00:00",
+        directory="/data/depositions/default",
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+        snapshot={"status": "ready"},
+    )
+    assert version_summary.version == 1
+
+    version_list = CaseVersionListResponse(case_id="CASE-001", versions=[version_summary])
+    assert version_list.versions[0].case_id == "CASE-001"

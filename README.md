@@ -67,26 +67,31 @@ docker compose up --build -d
 
 ## UML Diagrams
 
-### 1. Component Architecture UML
+The UML set is sequence-diagram only.
 
-![Component Architecture UML](docs/uml/architecture-uml.png)
+### 1. Startup Readiness Sequence
 
-This diagram shows:
-- UI/frontend components and user interactions
-- FastAPI service modules (`main.py`, workflow, chat, LLM gateway, prompts, CouchDB client)
-- External systems (OpenAI, Ollama, CouchDB, deposition files)
-- Startup guard dependency that blocks app boot when default LLM is not operational
+![Startup Readiness Sequence UML](docs/uml/sequence-startup-readiness-uml.png)
 
-### 2. Processing Model UML (Activity + Sequence)
+Shows boot-time default model validation and fail-fast behavior.
 
-![Processing Model UML](docs/uml/processing-model-uml.png)
+### 2. Ingest Case Sequence
 
-This diagram shows:
-- Startup readiness check and fail-fast path
-- `Refresh Models` readiness annotation flow
-- Ingest request processing (validation -> workflow -> persistence -> response)
-- Chat and focused contradiction reasoning paths with strict LLM validation
-- Response rendering path back to UI
+![Ingest Case Sequence UML](docs/uml/sequence-ingest-case-uml.png)
+
+Shows ingest flow from folder selection through mapping, contradiction assessment, and persistence.
+
+### 3. Attorney Chat Sequence
+
+![Attorney Chat Sequence UML](docs/uml/sequence-chat-uml.png)
+
+Shows chat request validation, context loading, LLM call, and UI response rendering.
+
+### 4. Focused Contradiction Re-Analysis Sequence
+
+![Focused Contradiction Sequence UML](docs/uml/sequence-reason-contradiction-uml.png)
+
+Shows single-contradiction deep re-analysis from click to returned explanation.
 
 To regenerate UML PNGs:
 
@@ -103,6 +108,9 @@ python scripts/generate_uml_diagrams.py
 - Overall short-answer conflict summary plus clickable detail bullets for focused re-analysis.
 - Attorney chatbot to explain conflicts and discuss possible actions.
 - Runtime LLM switcher in the UI (ChatGPT or local Ollama models) for ingest, contradiction reasoning, and chat.
+- Persistent case index in CouchDB with a vertical case browser in the UI.
+- LangGraph execution memory snapshots and chat/reason events persisted per case.
+- Case lifecycle APIs and UI actions to create, rename, browse, and remove cases.
 - Hard startup guard: API will not start unless the default configured LLM is operational.
 - Optional fast-ingest mode to skip full-case reassessment and return results sooner.
 
@@ -122,6 +130,7 @@ python scripts/generate_uml_diagrams.py
 cp .env.example .env
 # required: set OPENAI_API_KEY
 # optional: set DEPOSITION_DIR to a host folder with .txt files
+# optional: set DEPOSITION_EXTRA_DIRS (comma-separated extra roots)
 # optional: change API_PORT / COUCHDB_PORT if 8000 or 5984 are in use
 ```
 
@@ -138,23 +147,37 @@ docker compose up --build -d
 
 ## UI
 
-1. Top-left panel: case controls (`Case ID`, deposition folder, ingest, refresh, status).
-   - Includes an `LLM` dropdown, `Refresh Models` button, and a `Fast ingest mode` checkbox.
-2. Top-right panel: chronological deposition timeline with `Back` / `Forward` horizontal scrolling, plus a risk score list showing each deposition’s numeric contradiction score.
-3. Bottom-left panel: `Overall Short Answer` for the selected deposition and clickable bullet detail items (clicking one triggers focused re-analysis for that single item).
-4. Bottom-right panel: attorney chat that responds in short-answer + bullet-detail format.
+1. Far-left panel: `Case Index`.
+   - Vertical scroll list of all saved cases.
+   - `Refresh Cases` action.
+   - Click any case row to load that case into the dashboard.
+2. Top-middle panel: case controls (`Case ID`, deposition folder, ingest, refresh, status).
+   - Includes a single `Deposition Folder` text input with suggestions (type any path or pick discovered folders), an `LLM` dropdown, `Save Case`, `Refresh Models`, and a `Fast ingest mode` checkbox.
+   - `Refresh Case` clears all currently saved deposition documents for the selected `Case ID` (so you can start that case clean before re-ingest).
+3. Top-right panel: chronological deposition timeline with `Back` / `Forward` horizontal scrolling, plus a risk score list showing each deposition’s numeric contradiction score.
+4. Bottom-middle panel: `Overall Short Answer` for the selected deposition and clickable bullet detail items (clicking one triggers focused re-analysis for that single item).
+5. Bottom-right panel: attorney chat that responds in short-answer + bullet-detail format.
 
 ## Using the Demo
 
 1. Set a `Case ID`.
 2. In `Deposition Folder`, use:
-   - Docker Compose: `/data/depositions`
-   - Local API process (non-Docker): `./sample_depositions` or an absolute host path
+   - Type any path directly (absolute or relative), or pick a suggested folder from the browser autocomplete list.
+   - Suggestions are sourced from configured deposition roots:
+   - Primary root: `DEPOSITION_DIR`
+   - Optional extra roots: `DEPOSITION_EXTRA_DIRS` (comma-separated)
+   - Docker Compose: keep `DEPOSITION_DIR=./depositions` so the dropdown includes sibling sets like `default` and `oj_simpson`.
+   - Local API process (non-Docker): added paths can point anywhere accessible on disk.
+   - Docker Compose: added host paths must be mounted into the `api` container before they are accessible.
 3. Click **Ingest .txt Depositions**.
+   - Ingest synchronizes the selected case to that folder: stale depositions from prior folders are removed for the same `Case ID`.
+   - Ingest persists LangGraph memory snapshots and updates the saved case record in CouchDB.
 4. Review contradiction scores and flagged depositions.
 5. Use the timeline Back/Forward controls to move through depositions chronologically.
 6. Select a deposition and click a contradiction detail bullet to re-analyze just that item.
 7. Use the attorney chat panel to ask next-step questions.
+8. Use `Save Case` in the middle control panel to persist/update the current case entry (case ID + selected folder/model metadata).
+9. Use the `Delete` button next to a case row to remove that case and related records.
 
 ## LLM Selection (ChatGPT + Ollama)
 
@@ -238,12 +261,32 @@ The API container mounts your host deposition directory to `/data/depositions`:
 - Host path comes from `.env` key `DEPOSITION_DIR`.
 - Container path is always `/data/depositions`.
 
-Example:
+Supported setup:
 
-- `DEPOSITION_DIR=./sample_depositions` (default)
+- `DEPOSITION_DIR=./depositions` (default)
 - `DEPOSITION_DIR=/absolute/path/to/your/depositions`
+- `DEPOSITION_EXTRA_DIRS=/absolute/path/one,/absolute/path/two` (optional)
 
 If you run the API directly on host (without Docker), the ingest endpoint accepts local paths and also maps `/data/depositions` to your configured `DEPOSITION_DIR` when possible.
+For Docker Compose, extra roots must also be mounted into the API container to be usable.
+
+## Example Deposition Sets
+
+This repository includes two ready-to-use example sets:
+
+- `depositions/default`: generic warehouse incident demo set.
+- `depositions/oj_simpson`: expanded O.J. Simpson early-1990s case-inspired simulated set (11 witness files).
+
+Notes for `depositions/oj_simpson`:
+- Files are simulation inputs based on publicly reported witness testimony themes from the 1994-1995 proceedings.
+- They are not official transcripts and are formatted for ingestion/testing in this app.
+
+For Docker Compose, keep one shared base:
+
+```bash
+DEPOSITION_DIR=./depositions
+DEPOSITION_EXTRA_DIRS=
+```
 
 ## API
 
@@ -253,10 +296,17 @@ If you run the API directly on host (without Docker), the ingest endpoint accept
 - `POST /api/chat`
 - `POST /api/reason-contradiction`
 - `GET /api/llm-options`
+- `GET /api/deposition-directories`
+- `GET /api/cases`
+- `POST /api/cases`
+- `PUT /api/cases/{case_id}/rename`
+- `DELETE /api/cases/{case_id}`
+- `DELETE /api/cases/{case_id}/depositions`
 
 `POST /api/ingest-case` accepts:
 
 - `skip_reassess` (optional boolean, default `false`): when `true`, skips full-case reassessment for faster ingest.
+
 
 ## Prompt Files
 
@@ -272,6 +322,18 @@ System and user prompts are versioned separately from runtime code in:
 - `backend/prompts/reason_contradiction_user.txt`
 
 Prompt loading/rendering logic lives in `backend/app/prompts.py`.
+
+## Schema Files
+
+The deposition extraction schema is versioned outside code in:
+
+- `backend/schemas/deposition_schema.json`
+
+Runtime schema loading utilities:
+
+- `backend/app/schemas.py`
+
+The mapping workflow sends this JSON schema directly to the selected LLM and then validates output with the runtime `DepositionSchema` validator.
 
 ## Testing
 

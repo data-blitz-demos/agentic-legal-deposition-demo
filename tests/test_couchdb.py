@@ -137,6 +137,67 @@ def test_get_doc_returns_payload(client):
     assert couch.get_doc("dep:1") == {"_id": "dep:1"}
 
 
+def test_delete_doc_uses_given_rev(client):
+    couch, http_client = client
+    http_client.delete.return_value = StubResponse(200, {"ok": True})
+
+    couch.delete_doc("dep:1", rev="2-abc")
+
+    http_client.delete.assert_called_once_with(
+        "http://host:5984/db/dep:1",
+        params={"rev": "2-abc"},
+    )
+
+
+def test_delete_doc_fetches_rev_when_missing(client):
+    couch, http_client = client
+    http_client.get.return_value = StubResponse(200, {"_rev": "3-def"})
+    http_client.delete.return_value = StubResponse(200, {"ok": True})
+
+    couch.delete_doc("dep:1")
+
+    http_client.get.assert_called_once_with("http://host:5984/db/dep:1")
+    http_client.delete.assert_called_once_with(
+        "http://host:5984/db/dep:1",
+        params={"rev": "3-def"},
+    )
+
+
+def test_delete_doc_returns_when_doc_missing(client):
+    couch, http_client = client
+    http_client.get.return_value = StubResponse(404, {})
+
+    couch.delete_doc("dep:missing")
+
+    http_client.delete.assert_not_called()
+
+
+def test_delete_doc_raises_when_lookup_missing_rev(client):
+    couch, http_client = client
+    http_client.get.return_value = StubResponse(200, {})
+
+    with pytest.raises(ValueError, match="missing _rev"):
+        couch.delete_doc("dep:1")
+
+
+def test_delete_doc_returns_when_delete_reports_not_found(client):
+    couch, http_client = client
+    http_client.delete.return_value = StubResponse(404, {})
+
+    couch.delete_doc("dep:1", rev="2-abc")
+
+    http_client.delete.assert_called_once_with(
+        "http://host:5984/db/dep:1",
+        params={"rev": "2-abc"},
+    )
+
+
+def test_delete_doc_requires_id(client):
+    couch, _ = client
+    with pytest.raises(ValueError, match="required for delete"):
+        couch.delete_doc("")
+
+
 def test_find_uses_selector(client):
     couch, http_client = client
     http_client.post.return_value = StubResponse(200, {"docs": [{"_id": "dep:1"}]})

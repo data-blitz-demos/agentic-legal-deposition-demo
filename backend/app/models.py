@@ -62,7 +62,11 @@ class Claim(BaseModel):
 
 
 class DepositionSchema(BaseModel):
-    """Structured deposition schema produced from raw text."""
+    """Runtime validator for deposition extraction payloads.
+
+    The extraction contract itself is versioned in
+    ``backend/schemas/deposition_schema.json`` and passed directly to the LLM.
+    """
 
     case_id: str
     file_name: str
@@ -191,3 +195,118 @@ class LLMOptionsResponse(BaseModel):
     selected_provider: Literal["openai", "ollama"]
     selected_model: str
     options: list[LLMOption] = Field(default_factory=list)
+
+
+class DepositionDirectoryOption(BaseModel):
+    """One ingestable directory option exposed to the UI."""
+
+    path: str
+    label: str
+    file_count: int = Field(ge=0)
+    source: Literal["mounted", "configured", "repo"]
+
+
+class DepositionDirectoriesResponse(BaseModel):
+    """Response payload for directory-navigation options."""
+
+    base_directory: str | None = None
+    suggested: str | None = None
+    options: list[DepositionDirectoryOption] = Field(default_factory=list)
+
+
+class DepositionRootRequest(BaseModel):
+    """Request payload for caching an additional deposition root path."""
+
+    path: str
+
+
+class DepositionRootResponse(BaseModel):
+    """Response payload for one cached deposition root path."""
+
+    path: str
+
+
+class CaseSummary(BaseModel):
+    """Case index item shown in the UI case browser."""
+
+    case_id: str
+    deposition_count: int = Field(ge=0, default=0)
+    memory_entries: int = Field(ge=0, default=0)
+    updated_at: str | None = None
+    last_action: str | None = None
+    last_directory: str | None = None
+    last_llm_provider: Literal["openai", "ollama"] | None = None
+    last_llm_model: str | None = None
+
+
+class CaseListResponse(BaseModel):
+    """Response payload listing all known cases."""
+
+    cases: list[CaseSummary] = Field(default_factory=list)
+
+
+class DeleteCaseResponse(BaseModel):
+    """Response payload after deleting a case and related docs."""
+
+    case_id: str
+    deleted_docs: int = Field(ge=0)
+
+
+class ClearCaseDepositionsResponse(BaseModel):
+    """Response payload after clearing all deposition docs for a case."""
+
+    case_id: str
+    deleted_depositions: int = Field(ge=0)
+
+
+class SaveCaseRequest(BaseModel):
+    """Request payload for creating/updating a saved case entry."""
+
+    case_id: str
+    directory: str | None = None
+    llm_provider: Literal["openai", "ollama"] | None = None
+    llm_model: str | None = None
+
+
+class SaveCaseVersionRequest(BaseModel):
+    """Request payload for saving a versioned case snapshot."""
+
+    case_id: str
+    source_case_id: str | None = None
+    directory: str
+    llm_provider: Literal["openai", "ollama"]
+    llm_model: str
+    snapshot: dict = Field(default_factory=dict)
+
+
+class CaseVersionSummary(BaseModel):
+    """One saved version entry for a case."""
+
+    case_id: str
+    version: int = Field(ge=1)
+    created_at: str
+    directory: str
+    llm_provider: Literal["openai", "ollama"]
+    llm_model: str
+    snapshot: dict = Field(default_factory=dict)
+
+
+class CaseVersionListResponse(BaseModel):
+    """Response payload listing all saved versions for a case."""
+
+    case_id: str
+    versions: list[CaseVersionSummary] = Field(default_factory=list)
+
+
+class RenameCaseRequest(BaseModel):
+    """Request payload for renaming a case id across saved records."""
+
+    new_case_id: str
+
+
+class RenameCaseResponse(BaseModel):
+    """Response payload after renaming a case id."""
+
+    old_case_id: str
+    new_case_id: str
+    moved_docs: int = Field(ge=0)

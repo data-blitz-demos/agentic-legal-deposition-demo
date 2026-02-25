@@ -170,7 +170,7 @@ def test_read_file_raises_when_all_decodes_fail(monkeypatch):
         workflow._read_file({"file_path": "/tmp/bad.txt"})
 
 
-def test_map_deposition_success_sets_case_and_file():
+def test_map_deposition_success_sets_case_and_file(monkeypatch):
     workflow = make_workflow()
     parser = Mock()
     parser.invoke.return_value = DepositionSchema(
@@ -183,6 +183,7 @@ def test_map_deposition_success_sets_case_and_file():
         claims=[],
     )
     workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
 
     result = workflow._map_deposition(
         {"case_id": "case-1", "file_path": "/tmp/witness.txt", "raw_text": "raw"}
@@ -213,6 +214,7 @@ def test_map_deposition_uses_prompt_templates(monkeypatch):
         return f"PROMPT::{name}"
 
     monkeypatch.setattr(graph_module, "render_prompt", fake_render)
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
 
     workflow._map_deposition(
         {"case_id": "case-1", "file_path": "/tmp/witness.txt", "raw_text": "raw"}
@@ -230,6 +232,7 @@ def test_map_deposition_raises_with_fix_on_exception(monkeypatch):
     parser.invoke.side_effect = RuntimeError("quota")
     workflow.llm.with_structured_output.return_value = parser
     monkeypatch.setattr(graph_module, "llm_failure_message", lambda *_args: "Possible fix: test")
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
 
     with pytest.raises(RuntimeError, match="Possible fix: test"):
         workflow._map_deposition(
@@ -253,6 +256,7 @@ def test_map_deposition_uses_selected_llm_override(monkeypatch):
     selected_llm.with_structured_output.return_value = parser
     build = Mock(return_value=selected_llm)
     monkeypatch.setattr(graph_module, "build_chat_model", build)
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
 
     workflow._map_deposition(
         {
@@ -281,6 +285,7 @@ def test_map_deposition_backfills_claims_when_llm_returns_empty(monkeypatch):
         claims=[],
     )
     workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
     fallback_claim = Claim(
         topic="Timeline",
         statement="I arrived at 8:45 a.m.",
@@ -304,6 +309,28 @@ def test_map_deposition_backfills_claims_when_llm_returns_empty(monkeypatch):
 
     assert result["deposition"].claims == [fallback_claim]
     workflow._fallback_map_deposition.assert_called_once()
+
+
+def test_map_deposition_validates_dict_payload_from_json_schema(monkeypatch):
+    workflow = make_workflow()
+    parser = Mock()
+    parser.invoke.return_value = {
+        "case_id": "x",
+        "file_name": "x",
+        "witness_name": "Jane",
+        "witness_role": "Manager",
+        "deposition_date": "2025-01-01",
+        "summary": "Summary",
+        "claims": [],
+    }
+    workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
+
+    result = workflow._map_deposition(
+        {"case_id": "case-1", "file_path": "/tmp/witness.txt", "raw_text": "raw"}
+    )
+
+    assert isinstance(result["deposition"], DepositionSchema)
 
 
 def test_fallback_map_deposition_extracts_metadata_and_claims():

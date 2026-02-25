@@ -10,8 +10,14 @@
 const els = {
   caseId: document.getElementById('caseId'),
   directory: document.getElementById('directory'),
+  directoryOptions: document.getElementById('directoryOptions'),
+  caseList: document.getElementById('caseList'),
   llmSelect: document.getElementById('llmSelect'),
   skipReassess: document.getElementById('skipReassess'),
+  newCaseBtn: document.getElementById('newCaseBtn'),
+  saveCaseBtn: document.getElementById('saveCaseBtn'),
+  stopInferenceBtn: document.getElementById('stopInferenceBtn'),
+  refreshCasesBtn: document.getElementById('refreshCasesBtn'),
   refreshModelsBtn: document.getElementById('refreshModelsBtn'),
   ingestBtn: document.getElementById('ingestBtn'),
   refreshBtn: document.getElementById('refreshBtn'),
@@ -41,32 +47,70 @@ const els = {
 };
 
 let depositions = [];
+let cases = [];
 let selectedDepositionId = null;
 let chatHistory = [];
+let loadedCaseId = '';
 let uiOpsInFlight = 0;
 let llmOpsInFlight = 0;
+const inferencingControllers = new Set();
 const timerHandles = {
   llm: null,
   reasoning: null,
   chat: null,
 };
 
+function escapeHtml(value) {
+  /** Escape dynamic text before inserting into innerHTML snippets. */
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
+}
+
 async function api(path, options = {}) {
   /** Perform JSON API calls and normalize non-2xx errors. */
-  const response = await fetch(path, {
-    headers: { 'Content-Type': 'application/json' },
-    ...options,
-  });
-  if (!response.ok) {
-    const payload = await response.json().catch(() => ({ detail: 'Request failed' }));
-    throw new Error(payload.detail || 'Request failed');
+  try {
+    const response = await fetch(path, {
+      headers: { 'Content-Type': 'application/json' },
+      ...options,
+    });
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({ detail: 'Request failed' }));
+      throw new Error(payload.detail || 'Request failed');
+    }
+    return response.json();
+  } catch (err) {
+    if (err instanceof DOMException && err.name === 'AbortError') {
+      throw new Error('Inference stopped by user.');
+    }
+    const message = err instanceof Error ? err.message : String(err || '');
+    if (message.toLowerCase().includes('abort')) {
+      throw new Error('Inference stopped by user.');
+    }
+    if (message.toLowerCase().includes('failed to fetch')) {
+      throw new Error(
+        'API is unreachable. Start/restart the stack with `docker compose up -d` and refresh the page.'
+      );
+    }
+    throw err instanceof Error ? err : new Error('Request failed');
   }
-  return response.json();
 }
 
 function setStatus(message) {
   /** Render a short status message in the control panel. */
   els.status.textContent = message;
+}
+
+function syncCaseActionState() {
+  /** Keep case-index actions aligned with current case id/name values. */
+  const hasCaseId = !!els.caseId.value.trim();
+  const selectedModel = els.llmSelect.selectedOptions[0];
+  const selectedModelAvailable = !!selectedModel && !selectedModel.disabled;
+  els.saveCaseBtn.disabled = uiOpsInFlight > 0 || !hasCaseId || !selectedModelAvailable;
+  els.stopInferenceBtn.disabled = inferencingControllers.size === 0;
 }
 
 function formatSeconds(startMs) {
@@ -101,11 +145,57 @@ async function nextPaint() {
 
 function setControlsDisabled(disabled) {
   /** Toggle top-level controls while UI operations are in-flight. */
+  els.newCaseBtn.disabled = disabled;
   els.ingestBtn.disabled = disabled;
   els.refreshBtn.disabled = disabled;
+  els.saveCaseBtn.disabled = disabled || !els.caseId.value.trim();
+  els.refreshCasesBtn.disabled = disabled;
+  els.directory.disabled = disabled;
   els.refreshModelsBtn.disabled = disabled;
   els.llmSelect.disabled = disabled;
   els.skipReassess.disabled = disabled;
+  els.stopInferenceBtn.disabled = inferencingControllers.size === 0;
+}
+
+function beginInferencingRequest() {
+  /** Register one cancellable inferencing request and return its abort controller. */
+  const controller = new AbortController();
+  inferencingControllers.add(controller);
+  syncCaseActionState();
+  return controller;
+}
+
+function endInferencingRequest(controller) {
+  /** Unregister one inferencing request controller. */
+  inferencingControllers.delete(controller);
+  syncCaseActionState();
+}
+
+async function inferencingApi(path, options = {}) {
+  /** Execute API call with cancellation support for inferencing operations. */
+  const controller = beginInferencingRequest();
+  try {
+    return await api(path, { ...options, signal: controller.signal });
+  } finally {
+    endInferencingRequest(controller);
+  }
+}
+
+function stopInferencing() {
+  /** Abort all active inferencing requests (ingest + analysis). */
+  if (inferencingControllers.size === 0) {
+    setStatus('No active inferencing request to stop.');
+    return;
+  }
+  for (const controller of Array.from(inferencingControllers)) {
+    controller.abort();
+  }
+  setReasoningProcessing(false);
+  setChatProcessing(false);
+  while (llmOpsInFlight > 0) {
+    endLlmProcessing();
+  }
+  setStatus('Stop requested. Active inferencing calls were cancelled.');
 }
 
 function startUiProcessing(message) {
@@ -173,6 +263,20 @@ function setChatProcessing(active) {
   stopClock('chat');
 }
 
+function clearCurrentCaseView() {
+  /** Clear loaded deposition/chat/detail state for starting a new blank case. */
+  depositions = [];
+  selectedDepositionId = null;
+  chatHistory = [];
+  loadedCaseId = '';
+  els.chatMessages.innerHTML = '';
+  els.focusedReasoningBody.textContent = '';
+  els.chatInput.value = '';
+  renderTimeline();
+  renderDepositions();
+  renderDetail(null);
+}
+
 function depositionSortByScore(a, b) {
   /** Sort helper for contradiction risk score (descending). */
   return (b.contradiction_score || 0) - (a.contradiction_score || 0);
@@ -192,6 +296,58 @@ function timelineSort(a, b) {
     return 1;
   }
   return (a.file_name || '').localeCompare(b.file_name || '');
+}
+
+function timelineVisibleSlots(itemCount) {
+  /** Return timeline cards visible at once (desktop=5, mobile=2). */
+  const maxVisible = window.matchMedia('(max-width: 760px)').matches ? 2 : 5;
+  return Math.max(1, Math.min(maxVisible, itemCount));
+}
+
+function updateTimelineSlots() {
+  /** Apply visible-slot count CSS variable for the current timeline item count. */
+  if (!depositions.length) {
+    els.timeline.style.removeProperty('--timeline-node-slots');
+    return;
+  }
+  els.timeline.style.setProperty('--timeline-node-slots', String(timelineVisibleSlots(depositions.length)));
+}
+
+function timelineStepPixels() {
+  /** Return one page-step width for timeline nav buttons. */
+  const firstItem = els.timeline.querySelector('.timeline-item');
+  if (!firstItem) {
+    return 0;
+  }
+  const itemWidth = firstItem.getBoundingClientRect().width;
+  const timelineStyle = window.getComputedStyle(els.timeline);
+  const gap = Number.parseFloat(timelineStyle.columnGap || timelineStyle.gap || '0') || 0;
+  const slots = timelineVisibleSlots(depositions.length);
+  return Math.max(itemWidth + gap, (itemWidth + gap) * slots);
+}
+
+function syncTimelineNavButtons() {
+  /** Disable timeline nav buttons at edges and when no overflow exists. */
+  const maxScrollLeft = Math.max(0, els.timeline.scrollWidth - els.timeline.clientWidth);
+  if (maxScrollLeft <= 1) {
+    els.timelineBack.disabled = true;
+    els.timelineForward.disabled = true;
+    return;
+  }
+  els.timelineBack.disabled = els.timeline.scrollLeft <= 1;
+  els.timelineForward.disabled = els.timeline.scrollLeft >= maxScrollLeft - 1;
+}
+
+function scrollTimeline(direction) {
+  /** Scroll timeline by one visible page in requested direction (-1 or +1). */
+  const step = timelineStepPixels();
+  if (step <= 0) {
+    return;
+  }
+  const maxScrollLeft = Math.max(0, els.timeline.scrollWidth - els.timeline.clientWidth);
+  const delta = direction < 0 ? -step : step;
+  const target = Math.min(maxScrollLeft, Math.max(0, els.timeline.scrollLeft + delta));
+  els.timeline.scrollTo({ left: target, behavior: 'smooth' });
 }
 
 function parseDepositionDate(value) {
@@ -302,6 +458,7 @@ async function loadLlmOptions({ silent = false, forceProbe = false } = {}) {
     if (!silent) {
       setStatus(`LLM options loaded. Current: ${getSelectedLlmLabel()}.`);
     }
+    syncCaseActionState();
   } finally {
     if (!silent) {
       endUiProcessing();
@@ -319,6 +476,173 @@ function ensureLlmFallbackOption() {
   fallback.textContent = 'ChatGPT - gpt-5.2';
   els.llmSelect.appendChild(fallback);
   els.llmSelect.value = fallback.value;
+  syncCaseActionState();
+}
+
+function renderDirectoryDropdown(payload) {
+  /** Render server-discovered ingestion folder suggestions for free-text input. */
+  const options = payload.options || [];
+  const current = els.directory.value.trim();
+  els.directoryOptions.innerHTML = '';
+
+  const availablePaths = new Set();
+  for (const item of options) {
+    const option = document.createElement('option');
+    option.value = item.path;
+    option.label = item.label || `${item.path} (${item.file_count || 0} files)`;
+    els.directoryOptions.appendChild(option);
+    availablePaths.add(item.path);
+  }
+
+  if (!current) {
+    const fallback = availablePaths.has(payload.suggested)
+      ? payload.suggested
+      : options[0]?.path || '';
+    els.directory.value = fallback;
+  }
+  syncCaseActionState();
+  return options.length > 0;
+}
+
+async function loadDirectoryOptions({ silent = false } = {}) {
+  /** Fetch valid ingestion folders and populate the directory dropdown. */
+  if (!silent) {
+    startUiProcessing('Loading deposition folders...');
+  }
+  try {
+    const payload = await api('/api/deposition-directories');
+    const hasOptions = renderDirectoryDropdown(payload);
+    const base = (payload.base_directory || '').trim();
+    if (!silent) {
+      if (hasOptions) {
+        setStatus(
+          base
+            ? `Deposition base: ${base}. Selected: ${els.directory.value.trim()}.`
+            : `Deposition folders loaded. Selected: ${els.directory.value.trim()}.`
+        );
+      } else {
+        setStatus(
+          base
+            ? `No .txt folders found under base: ${base}.`
+            : 'No ingestion folders available yet. Add .txt files and reload.'
+        );
+      }
+    }
+  } finally {
+    if (!silent) {
+      endUiProcessing();
+    }
+  }
+}
+
+function getCaseUpdatedLabel(item) {
+  /** Convert a case summary updated timestamp into a short UI label. */
+  if (!item.updated_at) {
+    return 'No updates';
+  }
+  const parsed = Date.parse(item.updated_at);
+  if (Number.isNaN(parsed)) {
+    return item.updated_at;
+  }
+  return new Date(parsed).toLocaleString();
+}
+
+function normalizeCaseDirectory(caseSummary) {
+  /** Return saved folder path for a case summary, or empty string when unavailable. */
+  return String(caseSummary?.last_directory || '').trim();
+}
+
+function applyCaseSelection(caseSummary) {
+  /** Apply selected case id and saved folder path into form controls. */
+  if (!caseSummary) {
+    els.caseId.value = '';
+    els.directory.value = '';
+    syncCaseActionState();
+    return;
+  }
+  els.caseId.value = caseSummary.case_id || '';
+  els.directory.value = normalizeCaseDirectory(caseSummary);
+  syncCaseActionState();
+}
+
+function renderCaseIndex() {
+  /** Render vertical case index list and highlight the active case id. */
+  const activeCaseId = els.caseId.value.trim();
+  els.caseList.innerHTML = '';
+  syncCaseActionState();
+
+  if (!cases.length) {
+    els.caseList.innerHTML = '<div class="muted">No saved cases yet.</div>';
+    return;
+  }
+
+  for (const item of cases) {
+    const row = document.createElement('div');
+    row.className = 'case-item-row';
+
+    const loadButton = document.createElement('button');
+    loadButton.type = 'button';
+    loadButton.className = `case-item ${item.case_id === activeCaseId ? 'active' : ''}`;
+    loadButton.innerHTML = `
+      <strong>${escapeHtml(item.case_id || '')}</strong>
+      <small>Depositions: ${item.deposition_count || 0}</small>
+      <small>LangGraph memory: ${item.memory_entries || 0}</small>
+      <small>Updated: ${escapeHtml(getCaseUpdatedLabel(item))}</small>
+    `;
+    loadButton.addEventListener('click', () => {
+      applyCaseSelection(item);
+      renderCaseIndex();
+      loadDepositions().catch((err) => setStatus(err.message));
+    });
+
+    const deleteButton = document.createElement('button');
+    deleteButton.type = 'button';
+    deleteButton.className = 'secondary danger case-item-delete';
+    deleteButton.textContent = 'Delete';
+    deleteButton.title = `Delete case ${item.case_id}`;
+    deleteButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      deleteCaseById(item.case_id).catch((err) => setStatus(err.message));
+    });
+
+    row.appendChild(loadButton);
+    row.appendChild(deleteButton);
+    els.caseList.appendChild(row);
+  }
+}
+
+async function loadCases({ silent = false } = {}) {
+  /** Load all cases from CouchDB-backed API and refresh the vertical index. */
+  if (!silent) {
+    startUiProcessing('Loading saved cases...');
+  }
+  try {
+    const payload = await api('/api/cases');
+    // Case Index should only show persisted/saved cases, not folder placeholders.
+    cases = payload.cases || [];
+
+    const previousCaseId = els.caseId.value.trim();
+    const activeCaseId = previousCaseId;
+    let nextCaseSummary = cases.find((item) => item.case_id === activeCaseId) || null;
+    if (!nextCaseSummary && cases.length) {
+      nextCaseSummary = cases[0];
+    }
+
+    if (!nextCaseSummary) {
+      applyCaseSelection(null);
+    } else if (nextCaseSummary.case_id !== previousCaseId) {
+      applyCaseSelection(nextCaseSummary);
+    }
+    renderCaseIndex();
+    if (!silent) {
+      setStatus(`Loaded ${cases.length} saved cases.`);
+    }
+  } finally {
+    if (!silent) {
+      endUiProcessing();
+    }
+  }
 }
 
 function selectedLlmIsOperational() {
@@ -331,11 +655,14 @@ function renderTimeline() {
   /** Render chronological timeline strip for all loaded depositions. */
   els.timeline.innerHTML = '';
   if (!depositions.length) {
+    updateTimelineSlots();
+    syncTimelineNavButtons();
     els.timeline.innerHTML = '<div class="muted">Timeline will appear after loading depositions.</div>';
     return;
   }
 
   const ordered = [...depositions].sort(timelineSort);
+  updateTimelineSlots();
   for (const dep of ordered) {
     const item = document.createElement('button');
     item.type = 'button';
@@ -348,6 +675,7 @@ function renderTimeline() {
     item.addEventListener('click', () => selectDeposition(dep._id));
     els.timeline.appendChild(item);
   }
+  syncTimelineNavButtons();
 }
 
 function renderDepositions() {
@@ -446,12 +774,12 @@ async function reasonAboutContradiction({ caseId, depositionId, contradiction })
   }
   const llm = getSelectedLlm();
   els.focusedReasoning.classList.remove('hidden');
-  startLlmProcessing('Attorney is processing the selected contradiction...');
+  startLlmProcessing('Persona:Attorney is processing the selected contradiction...');
   setReasoningProcessing(true, 'Re-analyzing this detail item...');
   await nextPaint();
 
   try {
-    const payload = await api('/api/reason-contradiction', {
+    const payload = await inferencingApi('/api/reason-contradiction', {
       method: 'POST',
       body: JSON.stringify({
         case_id: caseId,
@@ -463,6 +791,7 @@ async function reasonAboutContradiction({ caseId, depositionId, contradiction })
     });
 
     els.focusedReasoningBody.textContent = payload.response;
+    await loadCases({ silent: true });
   } finally {
     setReasoningProcessing(false);
     endLlmProcessing();
@@ -481,6 +810,8 @@ function addMessage(role, content) {
 async function loadDepositions() {
   /** Load and render all depositions for the active case id. */
   const caseId = els.caseId.value.trim();
+  renderCaseIndex();
+  syncCaseActionState();
   if (!caseId) {
     setStatus('Enter a case ID first.');
     return;
@@ -489,6 +820,7 @@ async function loadDepositions() {
   startUiProcessing(`Loading case ${caseId}...`);
   try {
     depositions = await api(`/api/depositions/${encodeURIComponent(caseId)}`);
+    loadedCaseId = caseId;
 
     if (selectedDepositionId) {
       const stillExists = depositions.some((item) => item._id === selectedDepositionId);
@@ -508,6 +840,115 @@ async function loadDepositions() {
     }
 
     setStatus(`Loaded ${depositions.length} depositions.`);
+  } finally {
+    endUiProcessing();
+  }
+}
+
+async function refreshCase() {
+  /** Clear all current deposition docs for the active case id. */
+  const caseId = els.caseId.value.trim();
+  if (!caseId) {
+    setStatus('Enter a case ID first.');
+    return;
+  }
+
+  startUiProcessing(`Refreshing case ${caseId} (clearing prior depositions)...`);
+  try {
+    const payload = await api(`/api/cases/${encodeURIComponent(caseId)}/depositions`, {
+      method: 'DELETE',
+    });
+    clearCurrentCaseView();
+
+    await loadCases({ silent: true });
+
+    setStatus(`Refresh complete. Removed ${payload.deleted_depositions} depositions from ${caseId}.`);
+  } finally {
+    endUiProcessing();
+  }
+}
+
+function createBlankCase() {
+  /** Reset form + panes so user can create a brand-new empty case. */
+  els.caseId.value = '';
+  els.directory.value = '';
+  els.skipReassess.checked = false;
+  clearCurrentCaseView();
+  renderCaseIndex();
+  syncCaseActionState();
+  setStatus('Blank case ready. Enter Case ID and select a deposition folder.');
+}
+
+async function saveCase() {
+  /** Persist case metadata so it appears in the Case Index list. */
+  const caseId = els.caseId.value.trim();
+  const directory = els.directory.value.trim();
+  const llm = getSelectedLlm();
+  if (!caseId) {
+    setStatus('Enter a Case ID before saving.');
+    return;
+  }
+  if (!directory) {
+    setStatus('Select a deposition folder before saving.');
+    return;
+  }
+  if (!selectedLlmIsOperational()) {
+    setStatus('Selected model is unavailable. Choose an operational model before saving.');
+    return;
+  }
+
+  startUiProcessing(`Saving case ${caseId}...`);
+  try {
+    await api('/api/cases', {
+      method: 'POST',
+      body: JSON.stringify({
+        case_id: caseId,
+        directory,
+        llm_provider: llm.provider,
+        llm_model: llm.model,
+      }),
+    });
+    loadedCaseId = caseId;
+    syncCaseActionState();
+    await loadCases({ silent: true });
+    renderCaseIndex();
+    setStatus(`Saved case '${caseId}'.`);
+  } finally {
+    endUiProcessing();
+  }
+}
+
+async function deleteCaseById(caseId) {
+  /** Delete one case id and refresh dependent UI state and data. */
+  const targetCaseId = String(caseId || '').trim();
+  if (!targetCaseId) {
+    setStatus('Select a case ID to delete.');
+    return;
+  }
+  if (!window.confirm(`Delete case '${targetCaseId}' and all related records?`)) {
+    return;
+  }
+
+  startUiProcessing(`Deleting case ${targetCaseId}...`);
+  try {
+    const payload = await api(`/api/cases/${encodeURIComponent(targetCaseId)}`, { method: 'DELETE' });
+    depositions = [];
+    selectedDepositionId = null;
+    chatHistory = [];
+    els.chatMessages.innerHTML = '';
+    renderTimeline();
+    renderDepositions();
+    renderDetail(null);
+
+    await loadCases({ silent: true });
+    const fallbackSummary = cases[0] || null;
+    const fallbackCase = fallbackSummary?.case_id || '';
+    applyCaseSelection(fallbackSummary);
+    renderCaseIndex();
+    if (fallbackCase) {
+      await loadDepositions();
+    }
+    setStatus(`Deleted ${payload.deleted_docs} documents for case ${targetCaseId}.`);
   } finally {
     endUiProcessing();
   }
@@ -555,10 +996,10 @@ async function ingestCase() {
       ? 'Running fast ingest (skip full case reassess)...'
       : 'Running LangGraph workflow over all .txt depositions...'
   );
-  startLlmProcessing('Legal Clerk is processing depositions...');
+  startLlmProcessing('Persona:Legal Clerk is processing depositions...');
   await nextPaint();
   try {
-    await api('/api/ingest-case', {
+    await inferencingApi('/api/ingest-case', {
       method: 'POST',
       body: JSON.stringify({
         case_id: caseId,
@@ -574,6 +1015,7 @@ async function ingestCase() {
   }
 
   await loadDepositions();
+  await loadCases({ silent: true });
 }
 
 async function sendChat(event) {
@@ -601,11 +1043,11 @@ async function sendChat(event) {
 
   const caseId = els.caseId.value.trim();
   const llm = getSelectedLlm();
-  startLlmProcessing('Attorney is processing your question...');
+  startLlmProcessing('Persona:Attorney is processing your question...');
   setChatProcessing(true);
   await nextPaint();
   try {
-    const payload = await api('/api/chat', {
+    const payload = await inferencingApi('/api/chat', {
       method: 'POST',
       body: JSON.stringify({
         case_id: caseId,
@@ -619,37 +1061,70 @@ async function sendChat(event) {
 
     addMessage('assistant', payload.response);
     chatHistory.push({ role: 'assistant', content: payload.response });
+    await loadCases({ silent: true });
   } finally {
     setChatProcessing(false);
     endLlmProcessing();
   }
 }
 
+els.newCaseBtn.addEventListener('click', () => createBlankCase());
 els.ingestBtn.addEventListener('click', () => ingestCase().catch((err) => setStatus(err.message)));
-els.refreshBtn.addEventListener('click', () => loadDepositions().catch((err) => setStatus(err.message)));
+els.refreshBtn.addEventListener('click', () => refreshCase().catch((err) => setStatus(err.message)));
+els.saveCaseBtn.addEventListener('click', () => saveCase().catch((err) => setStatus(err.message)));
+els.refreshCasesBtn.addEventListener('click', () => loadCases().catch((err) => setStatus(err.message)));
 els.refreshModelsBtn.addEventListener('click', () =>
   loadLlmOptions({ forceProbe: true }).catch((err) => setStatus(err.message))
 );
+els.stopInferenceBtn.addEventListener('click', () => stopInferencing());
+els.caseId.addEventListener('change', () => {
+  syncCaseActionState();
+  renderCaseIndex();
+});
+els.directory.addEventListener('change', () => {
+  const selected = els.directory.value.trim();
+  if (!selected) {
+    setStatus('Select a deposition folder.');
+    return;
+  }
+  setStatus(`Deposition folder selected: ${selected}`);
+});
 els.llmSelect.addEventListener('change', () => {
   const selected = els.llmSelect.selectedOptions[0];
   if (selected && selected.disabled) {
     setStatus('Selected model is unavailable. Choose an operational model or click Refresh Models.');
     return;
   }
+  syncCaseActionState();
   setStatus(`LLM selected: ${getSelectedLlmLabel()}.`);
 });
-els.timelineBack.addEventListener('click', () => {
-  els.timeline.scrollBy({ left: -320, behavior: 'smooth' });
-});
-els.timelineForward.addEventListener('click', () => {
-  els.timeline.scrollBy({ left: 320, behavior: 'smooth' });
-});
+els.timelineBack.addEventListener('click', () => scrollTimeline(-1));
+els.timelineForward.addEventListener('click', () => scrollTimeline(1));
+els.timeline.addEventListener('scroll', () => syncTimelineNavButtons());
 els.chatForm.addEventListener('submit', (event) => sendChat(event).catch((err) => setStatus(err.message)));
+window.addEventListener('resize', () => {
+  updateTimelineSlots();
+  syncTimelineNavButtons();
+});
 
 renderDetail(null);
 renderTimeline();
 renderDepositions();
+loadedCaseId = els.caseId.value.trim();
+syncCaseActionState();
 loadLlmOptions({ silent: true }).catch((err) => {
   ensureLlmFallbackOption();
   setStatus(`Failed to load LLM options: ${err.message}`);
 });
+loadDirectoryOptions({ silent: true })
+  .then(async () => {
+    await loadCases({ silent: true });
+  })
+  .catch((err) => {
+    const message = err instanceof Error ? err.message : String(err || 'Unknown error');
+    if (message.toLowerCase().includes('folder')) {
+      setStatus(`Failed to load deposition folders: ${message}`);
+      return;
+    }
+    setStatus(`Failed to load case index: ${message}`);
+  });

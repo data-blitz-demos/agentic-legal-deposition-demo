@@ -9,6 +9,17 @@
   <body>
     <div class="background-glow"></div>
     <main class="layout">
+      <section class="panel case-panel">
+        <div class="case-index-head">
+          <h2>Case Index</h2>
+          <span class="muted">Saved cases</span>
+        </div>
+        <div class="actions-row case-actions">
+          <button id="refreshCasesBtn" class="secondary" type="button">Refresh Cases</button>
+        </div>
+        <div id="caseList" class="case-index-list"></div>
+      </section>
+
       <section class="panel control-panel">
         <div class="brand-strip">
           <img src="/static/assets/data-blitz-logo.png" alt="Data-Blitz Demo logo" class="brand-logo" />
@@ -18,11 +29,18 @@
         <div class="form-grid">
           <label>
             Case ID
-            <input id="caseId" type="text" value="CASE-001" />
+            <input id="caseId" type="text" placeholder="Select or enter a case id" />
           </label>
           <label>
             Deposition Folder
-            <input id="directory" type="text" value="/data/depositions" />
+            <input
+              id="directory"
+              type="text"
+              list="directoryOptions"
+              placeholder="Type or select a deposition folder path"
+              aria-label="Deposition folder selection"
+            />
+            <datalist id="directoryOptions"></datalist>
           </label>
           <label>
             LLM
@@ -37,7 +55,10 @@
         </div>
 
         <div class="actions-row">
+          <button id="newCaseBtn" class="secondary" type="button">New Blank Case</button>
           <button id="ingestBtn">Ingest .txt Depositions</button>
+          <button id="stopInferenceBtn" class="secondary danger" type="button" disabled>Stop Inferencing</button>
+          <button id="saveCaseBtn" class="secondary" type="button">Save Case</button>
           <button id="refreshBtn" class="secondary">Refresh Case</button>
           <button id="refreshModelsBtn" class="secondary" type="button">Refresh Models</button>
         </div>
@@ -77,7 +98,7 @@
             <h4>Focused Re-Analysis</h4>
             <div id="reasoningProgress" class="reasoning-progress hidden">
               <span class="activity-indicator small" aria-hidden="true"></span>
-              <span>Attorney is processing this item...</span>
+              <span>Persona:Attorney is processing this item...</span>
               <span id="reasoningClock" class="activity-clock">0.0s</span>
             </div>
             <p id="focusedReasoningBody" class="explanation"></p>
@@ -86,11 +107,11 @@
       </section>
 
       <section class="panel chat-panel">
-        <h2>Attorney Chat</h2>
+        <h2>Persona:Attorney Chat</h2>
         <div id="chatMessages" class="chat-messages"></div>
         <div id="chatProgress" class="chat-progress hidden">
           <span class="activity-indicator small" aria-hidden="true"></span>
-          <span>Attorney is reasoning...</span>
+          <span>Persona:Attorney is reasoning...</span>
           <span id="chatClock" class="activity-clock">0.0s</span>
         </div>
         <form id="chatForm" class="chat-form">

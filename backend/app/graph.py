@@ -16,6 +16,7 @@ from .couchdb import CouchDBClient
 from .llm import build_chat_model, llm_failure_message
 from .models import Claim, ContradictionAssessment, ContradictionFinding, DepositionSchema
 from .prompts import render_prompt
+from .schemas import load_schema
 
 
 class GraphState(TypedDict, total=False):
@@ -134,19 +135,22 @@ class DepositionWorkflow:
 
         file_name = Path(state["file_path"]).name
         system_prompt = render_prompt("map_deposition_system")
+        schema_json = json.dumps(load_schema("deposition_schema"), indent=2)
         human_prompt = render_prompt(
             "map_deposition_user",
             case_id=state["case_id"],
             file_name=file_name,
+            schema_json=schema_json,
             raw_text=state["raw_text"],
         )
 
         try:
             llm = self._get_llm(state.get("llm_provider"), state.get("llm_model"), temperature=0)
-            parser_llm = llm.with_structured_output(DepositionSchema)
-            deposition = parser_llm.invoke(
+            parser_llm = llm.with_structured_output(load_schema("deposition_schema"))
+            parsed = parser_llm.invoke(
                 [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
             )
+            deposition = parsed if isinstance(parsed, DepositionSchema) else DepositionSchema.model_validate(parsed)
         except Exception as exc:
             raise RuntimeError(
                 llm_failure_message(

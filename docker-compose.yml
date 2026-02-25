@@ -10,17 +10,23 @@ services:
       OPENAI_MODELS: ${OPENAI_MODELS:-gpt-5.2}
       DEFAULT_LLM_PROVIDER: ${DEFAULT_LLM_PROVIDER:-openai}
       OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
-      OLLAMA_DEFAULT_MODEL: ${OLLAMA_DEFAULT_MODEL:-llama3.3:latest}
-      OLLAMA_MODELS: ${OLLAMA_MODELS:-llama3.3:latest}
+      OLLAMA_DEFAULT_MODEL: ${OLLAMA_DEFAULT_MODEL:-initium/law_model:latest}
+      OLLAMA_MODELS: ${OLLAMA_MODELS:-initium/law_model:latest,initium/law_model:Q2_K}
+      OLLAMA_KEEP_ALIVE: ${OLLAMA_KEEP_ALIVE:-10m}
+      LLM_READINESS_TTL_SECONDS: ${LLM_READINESS_TTL_SECONDS:-120}
+      LLM_PROBE_TIMEOUT_SECONDS: ${LLM_PROBE_TIMEOUT_SECONDS:-12}
+      LLM_OPTIONS_PROBE_WORKERS: ${LLM_OPTIONS_PROBE_WORKERS:-3}
       COUCHDB_URL: http://admin:password@couchdb:5984
       COUCHDB_DB: ${COUCHDB_DB:-depositions}
       MAX_CONTEXT_DEPOSITIONS: ${MAX_CONTEXT_DEPOSITIONS:-20}
+      DEPOSITION_DIR: /data/depositions
+      DEPOSITION_EXTRA_DIRS: ${DEPOSITION_EXTRA_DIRS:-}
     ports:
       - "${API_PORT:-8000}:8000"
     depends_on:
       - couchdb
     volumes:
-      - ${DEPOSITION_DIR:-./sample_depositions}:/data/depositions:ro
+      - ${DEPOSITION_DIR:-./depositions}:/data/depositions:ro
 
   couchdb:
     image: couchdb:3

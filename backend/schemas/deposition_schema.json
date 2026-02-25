@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DepositionSchema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "file_name",
+    "witness_name",
+    "witness_role",
+    "summary",
+    "claims"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Case identifier for this deposition."
+    },
+    "file_name": {
+      "type": "string",
+      "description": "Original deposition file name."
+    },
+    "witness_name": {
+      "type": "string",
+      "description": "Witness full name."
+    },
+    "witness_role": {
+      "type": "string",
+      "description": "Witness role/title."
+    },
+    "deposition_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Date from deposition text when available."
+    },
+    "summary": {
+      "type": "string",
+      "description": "Concise factual summary of testimony."
+    },
+    "claims": {
+      "type": "array",
+      "description": "Structured factual claims extracted from testimony.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "topic",
+          "statement",
+          "confidence",
+          "source_quote"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string",
+            "description": "Short topic label for a factual claim."
+          },
+          "statement": {
+            "type": "string",
+            "description": "Detailed claim statement."
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Model confidence in decimal range 0..1."
+          },
+          "source_quote": {
+            "type": "string",
+            "description": "Direct quote supporting the claim."
+          }
+        }
+      }
+    }
+  }
+}

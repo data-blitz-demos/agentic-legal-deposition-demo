@@ -38,6 +38,7 @@ def test_render_prompt_success_substitutes_variables():
         "map_deposition_user",
         case_id="case-1",
         file_name="a.txt",
+        schema_json='{"title":"DepositionSchema"}',
         raw_text="hello",
     )
 

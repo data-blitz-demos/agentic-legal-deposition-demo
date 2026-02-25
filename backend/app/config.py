@@ -33,7 +33,8 @@ class Settings(BaseSettings):
     couchdb_url: str = Field(default="http://admin:password@localhost:5984", alias="COUCHDB_URL")
     couchdb_db: str = Field(default="depositions", alias="COUCHDB_DB")
     max_context_depositions: int = Field(default=20, alias="MAX_CONTEXT_DEPOSITIONS")
-    deposition_dir: str = Field(default="./sample_depositions", alias="DEPOSITION_DIR")
+    deposition_dir: str = Field(default="./depositions", alias="DEPOSITION_DIR")
+    deposition_extra_dirs: str = Field(default="", alias="DEPOSITION_EXTRA_DIRS")
 
 
 @lru_cache(maxsize=1)
