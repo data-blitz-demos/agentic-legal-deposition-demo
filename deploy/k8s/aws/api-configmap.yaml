@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+
+data:
+  MODEL_NAME: "gpt-5.2"
+  OPENAI_MODELS: "gpt-5.2"
+  DEFAULT_LLM_PROVIDER: "ollama"
+  OLLAMA_URL: "http://ollama:11434"
+  OLLAMA_DEFAULT_MODEL: "initium/law_model:latest"
+  OLLAMA_MODELS: "initium/law_model:latest,initium/law_model:Q2_K"
+  OLLAMA_KEEP_ALIVE: "10m"
+  LLM_READINESS_TTL_SECONDS: "120"
+  LLM_PROBE_TIMEOUT_SECONDS: "12"
+  LLM_OPTIONS_PROBE_WORKERS: "3"
+  COUCHDB_DB: "depositions"
+  THOUGHT_STREAM_DB: "thought_stream"
+  MAX_CONTEXT_DEPOSITIONS: "20"
+  DEPOSITION_DIR: "/data/depositions"
+  DEPOSITION_EXTRA_DIRS: ""

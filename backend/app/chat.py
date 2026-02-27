@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+from time import perf_counter
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
@@ -37,18 +38,38 @@ class AttorneyChatService:
     ) -> str:
         """Generate a general attorney response for the selected deposition."""
 
+        response, _trace = self.respond_with_trace(
+            deposition=deposition,
+            peers=peers,
+            user_message=user_message,
+            history=history,
+            llm_provider=llm_provider,
+            llm_model=llm_model,
+        )
+        return response
+
+    def respond_with_trace(
+        self,
+        deposition: dict,
+        peers: list[dict],
+        user_message: str,
+        history: list[dict],
+        llm_provider: str | None = None,
+        llm_model: str | None = None,
+    ) -> tuple[str, list[dict]]:
+        """Generate attorney chat response plus visible process trace."""
+
         system_prompt = render_prompt("chat_system")
 
         context_payload = self._build_context_payload(deposition, peers)
+        context_prompt = render_prompt(
+            "chat_user_context",
+            context_json=json.dumps(context_payload, indent=2),
+        )
 
         messages = [
             SystemMessage(content=system_prompt),
-            HumanMessage(
-                content=render_prompt(
-                    "chat_user_context",
-                    context_json=json.dumps(context_payload, indent=2),
-                )
-            ),
+            HumanMessage(content=context_prompt),
         ]
 
         for item in history[-8:]:
@@ -64,10 +85,38 @@ class AttorneyChatService:
         messages.append(HumanMessage(content=user_message))
 
         llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+        start = perf_counter()
 
         try:
             result = llm.invoke(messages)
-            return str(result.content)
+            response_text = str(result.content or "")
+            normalized_response = self._normalize_chat_output(response_text, deposition, user_message)
+            trace = [
+                {
+                    "persona": "Persona:Attorney",
+                    "phase": "chat_response",
+                    "file_name": str(deposition.get("file_name") or ""),
+                    "llm_provider": self._normalize_provider(llm_provider),
+                    "llm_model": self._trace_model_name(llm_model),
+                    "input_preview": self._preview_text(
+                        json.dumps(
+                            {
+                                "deposition_id": deposition.get("_id"),
+                                "peer_count": len(peers),
+                                "history_items": len(history),
+                                "user_message": user_message,
+                            },
+                            indent=2,
+                        ),
+                        1800,
+                    ),
+                    "system_prompt": self._preview_text(system_prompt, 2500),
+                    "user_prompt": self._preview_text(context_prompt, 5000),
+                    "output_preview": self._preview_text(normalized_response, 5000),
+                    "notes": f"Chat response generated in {int((perf_counter() - start) * 1000)}ms.",
+                }
+            ]
+            return normalized_response, trace
         except Exception as exc:
             raise RuntimeError(
                 llm_failure_message(self.settings, llm_provider, llm_model, exc)
@@ -118,6 +167,125 @@ class AttorneyChatService:
             llm_model,
             temperature=temperature,
         )
+
+    def _trace_model_name(self, requested_model: str | None) -> str:
+        """Resolve effective model name for trace metadata."""
+
+        return (requested_model or self.settings.model_name or "").strip()
+
+    def _normalize_provider(self, provider: str | None):
+        """Normalize provider string for trace payload typing."""
+
+        normalized = (provider or self.settings.default_llm_provider or "openai").strip().lower()
+        return normalized if normalized in {"openai", "ollama"} else "openai"
+
+    def _preview_text(self, value: str, limit: int) -> str:
+        """Trim large text blocks for UI trace display."""
+
+        text = str(value or "").strip()
+        if len(text) <= limit:
+            return text
+        return f"{text[:limit]}...(truncated)"
+
+    def _normalize_chat_output(self, raw: str, deposition: dict, user_message: str) -> str:
+        """Normalize attorney chat output into plain-language short answer + details."""
+
+        defaults = self._default_chat_sections(deposition, user_message)
+        parsed = self._parse_json_payload(raw)
+        if parsed is not None:
+            return self._render_chat_sections(self._merge_json_chat(parsed, defaults))
+
+        short_answer = self._extract_short_answer(raw) or defaults["short_answer"]
+        if self._contains_placeholder(short_answer):
+            short_answer = defaults["short_answer"]
+        details = self._extract_bullets(raw)
+        if not details:
+            details = list(defaults["details"])
+        elif len(details) == 1 and len(defaults["details"]) > 1:
+            details = [details[0], defaults["details"][1]]
+
+        normalized = dict(defaults)
+        normalized["short_answer"] = short_answer
+        normalized["details"] = details[:4]
+        return self._render_chat_sections(normalized)
+
+    def _default_chat_sections(self, deposition: dict, user_message: str) -> dict:
+        """Build deterministic fallback chat sections used when output formatting drifts."""
+
+        witness_name = str(deposition.get("witness_name") or "this witness")
+        score = int(deposition.get("contradiction_score") or 0)
+        contradictions = deposition.get("contradictions") or []
+
+        if contradictions:
+            top = contradictions[0]
+            topic = str(top.get("topic") or "key facts")
+            other_witness = str(top.get("other_witness_name") or "another witness")
+            rationale = str(top.get("rationale") or "stored contradictions")
+            short_answer = f"{witness_name}'s testimony currently shows contradiction risk at {score}/100."
+            details = [
+                f"Primary conflict is on {topic} versus {other_witness}: {rationale}",
+                "Next step: compare source quotes and timeline evidence for that disputed event.",
+            ]
+        else:
+            short_answer = f"{witness_name}'s testimony is currently low-risk with a contradiction score of {score}/100."
+            details = [
+                "No direct contradictions are stored for this deposition yet.",
+                "Next step: corroborate key facts with documents and additional witness statements.",
+            ]
+
+        message = str(user_message or "").strip()
+        if message:
+            details[1] = f"Requested focus: {message[:150]}"
+
+        return {
+            "short_answer": short_answer,
+            "details": details,
+        }
+
+    def _merge_json_chat(self, payload: dict, defaults: dict) -> dict:
+        """Merge JSON-style chat output into the normalized short-answer format."""
+
+        merged = dict(defaults)
+
+        short_answer = str(
+            payload.get("short_answer")
+            or payload.get("answer")
+            or payload.get("summary")
+            or payload.get("response")
+            or ""
+        ).strip()
+        if short_answer:
+            merged["short_answer"] = short_answer
+
+        details = (
+            payload.get("details")
+            or payload.get("bullets")
+            or payload.get("insights")
+            or payload.get("analysis")
+            or payload.get("next_steps")
+            or []
+        )
+        if isinstance(details, str):
+            details = [details]
+        if isinstance(details, list):
+            cleaned = [
+                str(item).strip()
+                for item in details
+                if str(item).strip() and not self._contains_placeholder(str(item))
+            ]
+            if cleaned:
+                merged["details"] = cleaned[:4]
+
+        return merged
+
+    def _render_chat_sections(self, sections: dict) -> str:
+        """Render normalized attorney chat sections into one stable plain-text block."""
+
+        details = sections.get("details") or []
+        if not details:
+            details = ["No additional details are available yet."]
+        bullets = "\n".join(f"- {item}" for item in details[:4])
+        return f"Short answer: {sections['short_answer']}\nDetails:\n{bullets}"
 
     def _fallback_chat_response(self, deposition: dict, user_message: str) -> str:
         """Legacy deterministic chat fallback (kept for test and utility use)."""

@@ -111,6 +111,7 @@ python scripts/generate_uml_diagrams.py
 - Persistent case index in CouchDB with a vertical case browser in the UI.
 - LangGraph execution memory snapshots and chat/reason events persisted per case.
 - Case lifecycle APIs and UI actions to create, rename, browse, and remove cases.
+- Graph RAG foundation with Neo4j: load legal ontology `.owl` files and browse graph structure.
 - Hard startup guard: API will not start unless the default configured LLM is operational.
 - Optional fast-ingest mode to skip full-case reassessment and return results sooner.
 
@@ -119,6 +120,7 @@ python scripts/generate_uml_diagrams.py
 - FastAPI backend
 - LangGraph + LangChain OpenAI
 - CouchDB storage
+- Neo4j graph store (Graph RAG ontology layer)
 - Vanilla JS/CSS frontend
 - Docker Compose for full local stack
 
@@ -144,6 +146,21 @@ docker compose up --build -d
 
 - UI: `http://localhost:8000` (or your configured `API_PORT`)
 - CouchDB: `http://localhost:5984/_utils` (or your configured `COUCHDB_PORT`)
+- Neo4j Browser: `http://localhost:7474/browser/` (or your configured `NEO4J_HTTP_PORT`)
+
+## AWS EKS (Kubernetes + GPU Ollama)
+
+For production-style deployment on AWS with Kubernetes and GPU-backed Ollama:
+
+- EKS cluster template: `deploy/eks/cluster.eksctl.yaml`
+- Kubernetes manifests: `deploy/k8s/aws`
+- End-to-end runbook: `deploy/k8s/aws/README.md`
+
+Helper scripts:
+
+- `scripts/aws/create_eks_cluster.sh`
+- `scripts/aws/build_and_push.sh`
+- `scripts/aws/deploy_k8s.sh`
 
 ## UI
 
@@ -152,11 +169,70 @@ docker compose up --build -d
    - `Refresh Cases` action.
    - Click any case row to load that case into the dashboard.
 2. Top-middle panel: case controls (`Case ID`, deposition folder, ingest, refresh, status).
-   - Includes a single `Deposition Folder` text input with suggestions (type any path or pick discovered folders), an `LLM` dropdown, `Save Case`, `Refresh Models`, and a `Fast ingest mode` checkbox.
+   - Includes a single `Deposition Folder` text input with suggestions (type any path or pick discovered folders), an `LLM` dropdown, `Save Case`, `Refresh Models`, `Fast ingest mode`, and `Thought Stream (live)` toggle.
    - `Refresh Case` clears all currently saved deposition documents for the selected `Case ID` (so you can start that case clean before re-ingest).
 3. Top-right panel: chronological deposition timeline with `Back` / `Forward` horizontal scrolling, plus a risk score list showing each deposition’s numeric contradiction score.
-4. Bottom-middle panel: `Overall Short Answer` for the selected deposition and clickable bullet detail items (clicking one triggers focused re-analysis for that single item).
+4. Bottom-middle panel:
+   - With `Thought Stream` OFF (default): `Conflict Detail` appears as normal.
+   - With `Thought Stream` ON: `Thought Stream` appears above `Conflict Detail`.
+   - Thought Stream viewer is a sliding window (`Older` / `Newer`) over thought-stream events.
 5. Bottom-right panel: attorney chat that responds in short-answer + bullet-detail format.
+6. Thought stream (live stream):
+   - Running ingest or chat starts a live thought-stream session and streams updates into `Thought Stream` in near real time.
+   - Thought Stream includes prompts, input previews, output previews, and notes for `Persona:Legal Clerk` and `Persona:Attorney`.
+   - Thought Stream is read-only in the UI.
+   - Thought Stream is a visible process log from app instrumentation; it is not hidden model chain-of-thought.
+7. Graph RAG controls (middle panel under status):
+   - `Graph Ontology (*.owl)` path selector (dropdown suggestions + manual path entry)
+   - `Browse` opens a file-browser style picker for ontology folders/files under `ONTOLOGY_DIR`
+   - `Load Ontology` to import ontology triples into Neo4j
+   - `Graph RAG Question` + `Ask Graph RAG` runs retrieval from Neo4j ontology and answers with the selected LLM
+   - `RAG Processing (Neo4j retrieval)` toggle turns retrieval on/off per Graph RAG query
+   - `RAG Stream` toggle turns rag-stream persistence on/off per query (captures RAG input, prompts, and output when enabled)
+   - `Graph Retrieval Monitor` shows per-cycle retrieval terms, retrieved resource rows (nodes/relations/literals), context sent to LLM, and prompt payload used for inference
+   - `Open Graph Browser` opens Neo4j Browser with a starter node/relationship query preloaded
+   - Every Graph RAG cycle is persisted to CouchDB database `rag-stream` (`type=rag_stream`)
+
+## Graph RAG (Neo4j + OWL)
+
+Environment variables:
+
+```bash
+# If API runs in Docker Compose:
+NEO4J_URI=bolt://neo4j:7687
+
+# If API runs directly on host:
+# NEO4J_URI=bolt://localhost:7687
+
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=password
+NEO4J_DATABASE=neo4j
+NEO4J_BROWSER_URL=http://localhost:7474/browser/
+ONTOLOGY_DIR=./ontology
+```
+
+Docker Compose mounts `ONTOLOGY_DIR` into the API container as `/data/ontology`.
+
+API endpoints:
+
+- `GET /api/graph-rag/health`
+- `GET /api/graph-rag/browser`
+- `GET /api/graph-rag/owl-options`
+- `GET /api/graph-rag/owl-browser`
+- `POST /api/graph-rag/load-owl`
+- `POST /api/graph-rag/query`
+
+## Internal Code Documentation
+
+Generate the internal artifact and function reference document:
+
+```bash
+python scripts/generate_internal_docs.py
+```
+
+Generated file:
+
+- `docs/internal/code_function_reference.md`
 
 ## Using the Demo
 
@@ -169,7 +245,7 @@ docker compose up --build -d
    - Docker Compose: keep `DEPOSITION_DIR=./depositions` so the dropdown includes sibling sets like `default` and `oj_simpson`.
    - Local API process (non-Docker): added paths can point anywhere accessible on disk.
    - Docker Compose: added host paths must be mounted into the `api` container before they are accessible.
-3. Click **Ingest .txt Depositions**.
+3. Click **Load.Depositions**.
    - Ingest synchronizes the selected case to that folder: stale depositions from prior folders are removed for the same `Case ID`.
    - Ingest persists LangGraph memory snapshots and updates the saved case record in CouchDB.
 4. Review contradiction scores and flagged depositions.
@@ -205,8 +281,11 @@ OPENAI_MODELS=gpt-5.2,gpt-5.1-mini
 # default provider on app load: openai or ollama
 DEFAULT_LLM_PROVIDER=openai
 
-# local Ollama server
-OLLAMA_URL=http://localhost:11434
+# local Ollama server (if API runs in Docker Compose)
+OLLAMA_URL=http://host.docker.internal:11434
+
+# local Ollama server (if API runs directly on host)
+# OLLAMA_URL=http://localhost:11434
 
 # fallback Ollama model when tags cannot be fetched
 OLLAMA_DEFAULT_MODEL=initium/law_model:latest
@@ -226,6 +305,11 @@ LLM_PROBE_TIMEOUT_SECONDS=12
 
 # parallel workers for Refresh Models probing
 LLM_OPTIONS_PROBE_WORKERS=3
+
+# dedicated CouchDB database for case memory + trace streams
+MEMORY_DB=memory
+THOUGHT_STREAM_DB=thought_stream
+RAG_STREAM_DB=rag-stream
 ```
 
 ### Using local models with Ollama
@@ -297,6 +381,11 @@ DEPOSITION_EXTRA_DIRS=
 - `POST /api/reason-contradiction`
 - `GET /api/llm-options`
 - `GET /api/deposition-directories`
+- `GET /api/thought-streams/health`
+- `GET /api/rag-streams/health`
+- `GET /api/thought-streams/{thought_stream_id}`
+- `POST /api/thought-streams/{thought_stream_id}/save`
+- `DELETE /api/thought-streams/{thought_stream_id}`
 - `GET /api/cases`
 - `POST /api/cases`
 - `PUT /api/cases/{case_id}/rename`
@@ -306,7 +395,6 @@ DEPOSITION_EXTRA_DIRS=
 `POST /api/ingest-case` accepts:
 
 - `skip_reassess` (optional boolean, default `false`): when `true`, skips full-case reassessment for faster ingest.
-
 
 ## Prompt Files
 
@@ -375,7 +463,7 @@ docker compose exec api ./scripts/run_tests.sh
 
 ## MCP CouchDB Access
 
-This repo includes a local MCP server that exposes CouchDB deposition tools.
+This repo includes local MCP servers for both deposition records and thought streams.
 
 1. Start the stack:
 
@@ -383,21 +471,36 @@ This repo includes a local MCP server that exposes CouchDB deposition tools.
 docker compose up --build -d
 ```
 
-2. Use the MCP server through the included demo client (inside Docker API container):
+2. Use the deposition MCP server through the included demo client (inside Docker API container):
 
 ```bash
 docker compose exec api python scripts/use_couchdb_mcp.py
 ```
 
-3. Optional: run server directly on host (stdio transport):
+3. Use the thought-stream MCP server through its demo client:
+
+```bash
+docker compose exec api python scripts/use_thought_stream_mcp.py
+```
+
+4. Optional: run servers directly on host (stdio transport):
 
 ```bash
 python mcp_servers/couchdb_server.py
+python mcp_servers/thought_stream_server.py
 ```
 
-Available MCP tools:
+Available deposition MCP tools:
 
 - `list_case_depositions`
 - `get_deposition`
 - `list_flagged_depositions`
 - `search_claims`
+
+Available thought-stream MCP tools:
+
+- `thought_stream_health`
+- `append_thought_stream_events`
+- `get_thought_stream`
+- `list_thought_streams`
+- `delete_thought_stream`

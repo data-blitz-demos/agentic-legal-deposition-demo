@@ -72,7 +72,8 @@ body {
   grid-template-columns: 320px 1.05fr 1fr;
   grid-template-areas:
     'case control risk'
-    'case detail chat';
+    'case detail chat'
+    'case metrics metrics';
 }
 
 .panel {
@@ -103,7 +104,7 @@ body {
 .case-panel {
   grid-area: case;
   grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 3;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -129,6 +130,46 @@ body {
 
 .chat-panel {
   grid-area: chat;
+}
+
+.metrics-panel {
+  grid-area: metrics;
+}
+
+.metrics-toggle-text {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.metrics-toggle-text:hover {
+  color: var(--text);
+}
+
+.metrics-body {
+  margin-top: 10px;
+}
+
+.metrics-subhead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 14px 0 8px;
+}
+
+.metrics-subhead h3 {
+  margin: 0;
+  color: #fde68a;
+  font-size: 0.98rem;
 }
 
 h1,
@@ -232,6 +273,196 @@ button:disabled {
 
 .status {
   margin-top: 0;
+  color: var(--muted);
+}
+
+.graph-rag-controls {
+  margin-top: 0;
+  padding: 10px 12px 12px;
+  border-top: 1px solid rgba(136, 168, 196, 0.22);
+}
+
+.graph-rag-dropdown {
+  margin-top: 14px;
+  border: 1px solid rgba(136, 168, 196, 0.28);
+  border-radius: 10px;
+  background: rgba(8, 16, 28, 0.58);
+  overflow: hidden;
+}
+
+.graph-rag-dropdown > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  color: #dbeafe;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  user-select: none;
+}
+
+.graph-rag-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.graph-rag-dropdown > summary::after {
+  content: '▾';
+  float: right;
+  transition: transform 0.18s ease;
+}
+
+.graph-rag-dropdown:not([open]) > summary::after {
+  transform: rotate(-90deg);
+}
+
+.graph-actions {
+  margin-top: 10px;
+}
+
+.graph-rag-query {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(136, 168, 196, 0.22);
+}
+
+.graph-rag-answer {
+  margin-top: 8px;
+  border: 1px solid rgba(149, 168, 187, 0.24);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: rgba(8, 18, 30, 0.82);
+  white-space: pre-wrap;
+  line-height: 1.45;
+  min-height: 72px;
+}
+
+.graph-rag-monitor-wrap {
+  margin-top: 10px;
+}
+
+.graph-rag-monitor-wrap h4 {
+  margin: 0 0 8px;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  color: #dbeafe;
+}
+
+.graph-rag-monitor {
+  border: 1px solid rgba(136, 168, 196, 0.24);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: rgba(4, 10, 18, 0.95);
+  color: #d9e8f6;
+  white-space: pre-wrap;
+  line-height: 1.42;
+  font-size: 0.79rem;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  max-height: 260px;
+  overflow: auto;
+}
+
+.path-picker-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.overlay-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 8, 16, 0.72);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 30;
+}
+
+.overlay-surface {
+  width: min(860px, 100%);
+  max-height: min(76vh, 760px);
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(136, 168, 196, 0.34);
+  background: rgba(6, 14, 24, 0.96);
+  box-shadow: 0 20px 44px rgba(4, 11, 20, 0.46);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+.ontology-browser-surface {
+  width: min(920px, 100%);
+}
+
+.overlay-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 10px;
+  border-bottom: 1px solid rgba(136, 168, 196, 0.24);
+}
+
+.overlay-head h3 {
+  margin: 0;
+}
+
+.overlay-meta {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(136, 168, 196, 0.2);
+  display: grid;
+  gap: 8px;
+}
+
+.overlay-actions {
+  margin-top: 0;
+}
+
+.browser-list {
+  overflow: auto;
+  padding: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.browser-section-title {
+  margin: 8px 0 2px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #c6d7ea;
+}
+
+.browser-item {
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgba(149, 168, 187, 0.26);
+  background: rgba(8, 18, 30, 0.9);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: grid;
+  gap: 3px;
+}
+
+.browser-item small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.browser-item.directory {
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.browser-item.file {
+  border-color: rgba(250, 204, 21, 0.45);
+}
+
+.browser-empty {
+  border: 1px dashed rgba(149, 168, 187, 0.35);
+  border-radius: 10px;
+  padding: 10px 12px;
   color: var(--muted);
 }
 
@@ -536,6 +767,170 @@ button:disabled {
   gap: 8px;
 }
 
+.trace-live {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(136, 168, 196, 0.3);
+  background: rgba(6, 14, 24, 0.86);
+}
+
+.trace-live-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.trace-live-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.trace-window-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.trace-live-box {
+  width: 100%;
+  min-height: 220px;
+  max-height: 340px;
+  resize: vertical;
+  border-radius: 10px;
+  border: 1px solid rgba(151, 174, 198, 0.26);
+  background: rgba(4, 10, 18, 0.95);
+  color: #d9e8f6;
+  padding: 10px;
+  overflow: auto;
+  white-space: pre-wrap;
+  line-height: 1.45;
+  font-size: 0.86rem;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+.metrics-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.metrics-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.metrics-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.metric-card {
+  border: 1px solid rgba(149, 168, 187, 0.26);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(8, 18, 30, 0.85);
+  display: grid;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(4, 11, 20, 0.28);
+}
+
+.metric-card:focus-visible {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+}
+
+.metric-card.selected {
+  border-color: rgba(250, 204, 21, 0.85);
+  box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.35);
+}
+
+.metric-card.good {
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.metric-card.warn {
+  border-color: rgba(250, 204, 21, 0.6);
+}
+
+.metric-card.bad {
+  border-color: rgba(239, 68, 68, 0.6);
+}
+
+.metric-card.info {
+  border-color: rgba(136, 168, 196, 0.35);
+}
+
+.metric-label {
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.metric-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fef3c7;
+}
+
+.metric-target {
+  font-size: 0.75rem;
+  color: #dbeafe;
+}
+
+.metric-desc {
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.metric-formula {
+  font-size: 0.75rem;
+  color: #dbeafe;
+  line-height: 1.35;
+}
+
+.metric-detail {
+  margin-top: 14px;
+  border: 1px solid rgba(136, 168, 196, 0.3);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(6, 14, 24, 0.8);
+}
+
+.metric-detail h4 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: #fde68a;
+}
+
+.metric-detail-body {
+  margin: 0;
+  color: #dbeafe;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.conflict-detail-block.trace-on {
+  margin-top: 12px;
+}
+
 @media (max-width: 760px) {
   .panel {
     padding: 16px;
@@ -548,7 +943,8 @@ button:disabled {
       'control'
       'risk'
       'detail'
-      'chat';
+      'chat'
+      'metrics';
   }
 
   .case-index-list {

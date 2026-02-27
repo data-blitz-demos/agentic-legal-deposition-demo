@@ -71,6 +71,114 @@ def test_respond_uses_llm_when_available():
     service.llm.invoke.assert_called_once()
 
 
+def test_respond_with_trace_returns_attorney_event():
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(content="Short answer: ok\nDetails:\n- a\n- b")
+
+    response, trace = service.respond_with_trace(
+        deposition={"_id": "dep:1", "file_name": "witness.txt", "witness_name": "Jane", "contradictions": []},
+        peers=[{"_id": "dep:2"}],
+        user_message="Summarize",
+        history=[{"role": "user", "content": "prior question"}],
+    )
+
+    assert response.startswith("Short answer:")
+    assert len(trace) == 1
+    assert trace[0]["persona"] == "Persona:Attorney"
+    assert trace[0]["phase"] == "chat_response"
+    assert "System Prompt" not in trace[0]["notes"]
+
+
+def test_respond_normalizes_json_chat_output_to_descriptive_text():
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(
+        content=json.dumps(
+            {
+                "short_answer": "The key issue is a timeline contradiction with moderate litigation risk.",
+                "details": [
+                    "Witness timing conflicts with the peer account by roughly 30 minutes.",
+                    "Corroboration should focus on timestamped exhibits before deposition follow-up.",
+                ],
+            }
+        )
+    )
+
+    response, trace = service.respond_with_trace(
+        deposition={
+            "_id": "dep:1",
+            "file_name": "witness.txt",
+            "witness_name": "Jane",
+            "contradiction_score": 48,
+            "contradictions": [],
+        },
+        peers=[],
+        user_message="Summarize risk",
+        history=[],
+    )
+
+    assert response.startswith("Short answer:")
+    assert "Details:" in response
+    assert "- Witness timing conflicts" in response
+    assert not response.strip().startswith("{")
+    assert trace[0]["output_preview"].startswith("Short answer:")
+
+
+def test_normalize_chat_output_falls_back_when_raw_text_has_no_bullets():
+    service = build_service_with_mock_llm()
+
+    normalized = service._normalize_chat_output(
+        "This is an unstructured answer without any bullet formatting.",
+        deposition={"witness_name": "Jane", "contradiction_score": 22, "contradictions": []},
+        user_message="focus on credibility",
+    )
+
+    assert normalized.startswith("Short answer:")
+    assert "Details:" in normalized
+    assert "- Requested focus: focus on credibility" in normalized
+
+
+def test_normalize_chat_output_replaces_placeholder_and_expands_single_bullet():
+    service = build_service_with_mock_llm()
+
+    normalized = service._normalize_chat_output(
+        "Short answer: <1 sentence>\n- First concrete point.",
+        deposition={"witness_name": "Jane", "contradiction_score": 22, "contradictions": []},
+        user_message="focus on credibility",
+    )
+
+    assert normalized.startswith("Short answer: Jane's testimony is currently low-risk")
+    assert "- First concrete point." in normalized
+    assert "- Requested focus: focus on credibility" in normalized
+
+
+def test_default_chat_sections_with_contradictions_uses_conflict_detail():
+    service = build_service_with_mock_llm()
+
+    sections = service._default_chat_sections(
+        deposition={
+            "witness_name": "Jane",
+            "contradiction_score": 66,
+            "contradictions": [
+                {
+                    "topic": "Timeline",
+                    "other_witness_name": "Alan",
+                    "rationale": "Mismatch",
+                }
+            ],
+        },
+        user_message="",
+    )
+
+    assert "risk at 66/100" in sections["short_answer"]
+    assert sections["details"][0].startswith("Primary conflict is on Timeline versus Alan: Mismatch")
+
+
+def test_render_chat_sections_fills_missing_details():
+    service = build_service_with_mock_llm()
+    rendered = service._render_chat_sections({"short_answer": "Answer", "details": []})
+    assert rendered == "Short answer: Answer\nDetails:\n- No additional details are available yet."
+
+
 def test_respond_raises_with_fix_on_llm_error():
     service = build_service_with_mock_llm()
     service.llm.invoke.side_effect = RuntimeError("quota")
@@ -444,6 +552,25 @@ def test_fallback_chat_response_with_contradictions_and_user_focus():
     assert "Requested focus: check timeline conflict" in result
 
 
+def test_merge_json_chat_accepts_string_detail_and_preserves_defaults():
+    service = build_service_with_mock_llm()
+    defaults = service._default_chat_sections(
+        deposition={"witness_name": "Jane", "contradiction_score": 0, "contradictions": []},
+        user_message="",
+    )
+
+    merged = service._merge_json_chat(
+        {
+            "response": "Concise answer",
+            "analysis": "One concrete detail.",
+        },
+        defaults,
+    )
+
+    assert merged["short_answer"] == "Concise answer"
+    assert merged["details"] == ["One concrete detail."]
+
+
 def test_fallback_contradiction_reasoning_strong_threshold():
     service = build_service_with_mock_llm()
     result = service._fallback_contradiction_reasoning(
@@ -471,3 +598,9 @@ def test_fallback_contradiction_reasoning_weak_threshold():
     result = service._fallback_contradiction_reasoning({"topic": "Timeline", "severity": 10})
 
     assert "appears weak" in result
+
+
+def test_preview_text_truncates_when_limit_exceeded():
+    service = build_service_with_mock_llm()
+    preview = service._preview_text("x" * 32, 10)
+    assert preview == ("x" * 10) + "...(truncated)"

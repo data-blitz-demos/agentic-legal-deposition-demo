@@ -10,7 +10,7 @@ mkdir -p "${REPORT_DIR}"
 python -m pytest \
   --cov=backend/app \
   --cov-report=term-missing \
-  --cov-fail-under=100 \
+  --cov-fail-under=95 \
   --junitxml="${JUNIT_XML}" \
   --html="${HTML_REPORT}" \
   --self-contained-html

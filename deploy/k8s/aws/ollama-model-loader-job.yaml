@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ollama-model-loader
+spec:
+  backoffLimit: 4
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: model-loader
+          image: curlimages/curl:8.10.1
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: OLLAMA_BOOTSTRAP_MODEL
+              value: initium/law_model:latest
+          command:
+            - /bin/sh
+            - -lc
+            - |
+              set -euo pipefail
+              until curl -fsS http://ollama:11434/api/tags >/dev/null; do
+                echo "Waiting for Ollama to become ready..."
+                sleep 5
+              done
+
+              echo "Pulling model: ${OLLAMA_BOOTSTRAP_MODEL}"
+              curl -fsS -X POST http://ollama:11434/api/pull \
+                -H 'Content-Type: application/json' \
+                -d "{\"name\":\"${OLLAMA_BOOTSTRAP_MODEL}\"}"
+
+              echo "Model pull request completed"

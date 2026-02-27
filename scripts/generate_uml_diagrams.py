@@ -22,12 +22,16 @@ except OSError:
 
 
 def draw_title(draw: ImageDraw.ImageDraw, title: str, subtitle: str = "") -> None:
+    """Draw top heading and optional subtitle text for one diagram canvas."""
+
     draw.text((56, 28), title, font=FONT_TITLE, fill="#0B3A53")
     if subtitle:
         draw.text((56, 76), subtitle, font=FONT, fill="#334155")
 
 
 def participant_centers(width: int, participants: list[str], margin: int = 90) -> list[int]:
+    """Compute evenly spaced X positions for sequence-diagram participants."""
+
     if len(participants) == 1:
         return [width // 2]
     span = width - (margin * 2)
@@ -43,6 +47,8 @@ def draw_participants(
     lane_top: int,
     lane_bottom: int,
 ) -> None:
+    """Render participant swimlane headers and dashed vertical lifelines."""
+
     for name, x in zip(participants, xs):
         head = (x - 120, head_y, x + 120, head_y + 60)
         draw.rounded_rectangle(head, radius=12, fill="#E2E8F0", outline="#334155", width=2)
@@ -59,6 +65,8 @@ def arrow_head(
     direction: int,
     color: str,
 ) -> None:
+    """Render triangular arrow head at the message endpoint."""
+
     ex, ey = end
     if direction > 0:
         points = [(ex, ey), (ex - 14, ey - 7), (ex - 14, ey + 7)]
@@ -76,6 +84,8 @@ def draw_message(
     dashed: bool = False,
     color: str = "#0F172A",
 ) -> None:
+    """Draw one message line (solid or dashed) plus labeled annotation box."""
+
     if dashed:
         start = min(x1, x2)
         end = max(x1, x2)
@@ -105,6 +115,8 @@ def sequence_diagram(
     width: int = 2200,
     height: int = 1400,
 ) -> None:
+    """Render and write one complete sequence diagram image file."""
+
     img = Image.new("RGB", (width, height), "#F8FAFC")
     d = ImageDraw.Draw(img)
 
@@ -130,6 +142,8 @@ def sequence_diagram(
 
 
 def startup_sequence() -> None:
+    """Generate startup-readiness sequence diagram PNG."""
+
     sequence_diagram(
         filename="sequence-startup-readiness-uml.png",
         title="UML Sequence - Startup Readiness",
@@ -149,6 +163,8 @@ def startup_sequence() -> None:
 
 
 def ingest_sequence() -> None:
+    """Generate ingestion workflow sequence diagram PNG."""
+
     sequence_diagram(
         filename="sequence-ingest-case-uml.png",
         title="UML Sequence - Ingest Case",
@@ -172,6 +188,8 @@ def ingest_sequence() -> None:
 
 
 def chat_sequence() -> None:
+    """Generate attorney-chat sequence diagram PNG."""
+
     sequence_diagram(
         filename="sequence-chat-uml.png",
         title="UML Sequence - Attorney Chat",
@@ -194,6 +212,8 @@ def chat_sequence() -> None:
 
 
 def reason_sequence() -> None:
+    """Generate focused contradiction reasoning sequence diagram PNG."""
+
     sequence_diagram(
         filename="sequence-reason-contradiction-uml.png",
         title="UML Sequence - Focused Contradiction Re-Analysis",
@@ -216,6 +236,8 @@ def reason_sequence() -> None:
 
 
 def main() -> None:
+    """Regenerate all UML sequence diagram assets under docs/uml."""
+
     for png in OUT_DIR.glob("*.png"):
         png.unlink(missing_ok=True)
 

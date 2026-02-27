@@ -52,11 +52,15 @@
             <input id="skipReassess" type="checkbox" />
             Fast ingest mode (skip full case reassess)
           </label>
+          <label class="toggle-label">
+            <input id="traceStreamToggle" type="checkbox" />
+            Thought Stream (live)
+          </label>
         </div>
 
         <div class="actions-row">
           <button id="newCaseBtn" class="secondary" type="button">New Blank Case</button>
-          <button id="ingestBtn">Ingest .txt Depositions</button>
+          <button id="ingestBtn">Load.Depositions</button>
           <button id="stopInferenceBtn" class="secondary danger" type="button" disabled>Stop Inferencing</button>
           <button id="saveCaseBtn" class="secondary" type="button">Save Case</button>
           <button id="refreshBtn" class="secondary">Refresh Case</button>
@@ -68,6 +72,63 @@
           <span id="statusClock" class="activity-clock hidden">0.0s</span>
           <div id="status" class="status">Ready.</div>
         </div>
+        <details class="graph-rag-dropdown">
+          <summary>Ontology &amp; Graph RAG</summary>
+          <section class="graph-rag-controls">
+            <label>
+              Graph Ontology (*.owl)
+              <div class="path-picker-row">
+                <input
+                  id="ontologyPath"
+                  type="text"
+                  list="ontologyOptions"
+                  value="/data/ontology/*.owl"
+                  placeholder="Type or select an OWL file path"
+                  aria-label="Ontology file path selection"
+                />
+                <button id="ontologyBrowseBtn" class="secondary" type="button">Browse</button>
+              </div>
+              <datalist id="ontologyOptions"></datalist>
+            </label>
+            <div class="actions-row graph-actions">
+              <button id="loadOntologyBtn" class="secondary" type="button">Load Ontology</button>
+              <button id="openGraphBrowserBtn" class="secondary" type="button">Open Graph Browser</button>
+            </div>
+            <section class="graph-rag-query">
+              <label>
+                Graph RAG Question
+                <input
+                  id="graphRagQuestion"
+                  type="text"
+                  placeholder="Ask a legal ontology question..."
+                  aria-label="Graph RAG question"
+                />
+              </label>
+              <label class="toggle-label">
+                <input id="graphRagToggle" type="checkbox" checked />
+                RAG Processing (Neo4j retrieval)
+              </label>
+              <label class="toggle-label">
+                <input id="graphRagStreamToggle" type="checkbox" checked />
+                RAG Stream (log RAG input + LLM prompt + output)
+              </label>
+              <div class="actions-row graph-actions">
+                <button id="graphRagAskBtn" class="secondary" type="button">Ask Graph RAG</button>
+                <button id="graphRagClearBtn" class="secondary" type="button">Clear Graph RAG</button>
+              </div>
+              <div id="graphRagAnswer" class="graph-rag-answer muted">
+                Ask a question to run retrieval from Neo4j ontology and generate an answer.
+              </div>
+              <div class="graph-rag-monitor-wrap">
+                <h4>Graph Retrieval Monitor</h4>
+                <div id="graphRagMonitor" class="graph-rag-monitor muted">
+                  No graph inference cycles captured yet.
+                </div>
+              </div>
+            </section>
+          </section>
+        </details>
+
       </section>
 
       <section class="panel risk-panel">
@@ -85,6 +146,25 @@
       </section>
 
       <section class="panel detail-panel">
+        <section id="traceStreamPanel" class="trace-live hidden">
+          <div class="trace-live-head">
+            <h3>Thought Stream</h3>
+            <span id="traceMeta" class="muted">No active thought-stream session.</span>
+          </div>
+          <div class="trace-window-controls">
+            <button id="traceOlderBtn" class="secondary" type="button" disabled>Older</button>
+            <button id="traceNewerBtn" class="secondary" type="button" disabled>Newer</button>
+            <span id="traceWindowMeta" class="muted">Window: 0-0</span>
+          </div>
+          <textarea
+            id="traceLive"
+            class="trace-live-box"
+            readonly
+            aria-label="Sliding window thought-stream viewer"
+          >Thought stream is off. Enable Thought Stream to view live events.</textarea>
+        </section>
+
+        <section id="conflictDetailPanel" class="conflict-detail-block">
         <h2>Conflict Detail</h2>
         <div id="detailEmpty" class="muted">Select a deposition to inspect contradictions.</div>
         <div id="detailBody" class="hidden">
@@ -104,6 +184,7 @@
             <p id="focusedReasoningBody" class="explanation"></p>
           </div>
         </div>
+        </section>
       </section>
 
       <section class="panel chat-panel">
@@ -119,7 +200,63 @@
           <button id="chatSendBtn" type="submit">Send</button>
         </form>
       </section>
+
+      <section class="panel metrics-panel">
+        <button
+          id="metricsTextToggle"
+          class="metrics-toggle-text"
+          type="button"
+          aria-expanded="false"
+          aria-controls="metricsBody"
+        >
+          Agent Observables
+        </button>
+        <div id="metricsBody" class="metrics-body hidden">
+          <div class="metrics-head">
+            <button id="refreshMetricsBtn" class="secondary" type="button">Refresh Metrics</button>
+          </div>
+          <div class="metrics-meta">
+            <span id="metricsSampleMeta" class="muted">Sample: 0 runs</span>
+            <span id="metricsStorageMeta" class="muted">Thought Stream DB: unknown</span>
+          </div>
+          <div id="metricsGrid" class="metrics-grid"></div>
+          <div class="metrics-subhead">
+            <h3>Correctness & Drift Observables</h3>
+            <span class="muted">Concrete formulas and thresholds</span>
+          </div>
+          <div id="correctnessGrid" class="metrics-grid"></div>
+          <section id="metricDetailPanel" class="metric-detail hidden" aria-live="polite">
+            <h4 id="metricDetailTitle">Metric Detail</h4>
+            <p id="metricDetailBody" class="metric-detail-body"></p>
+          </section>
+        </div>
+      </section>
     </main>
+    <section
+      id="ontologyBrowserModal"
+      class="overlay-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="ontologyBrowserTitle"
+    >
+      <div class="overlay-surface ontology-browser-surface">
+        <div class="overlay-head">
+          <h3 id="ontologyBrowserTitle">Ontology File Browser</h3>
+          <button id="ontologyBrowserCloseBtn" class="secondary" type="button" aria-label="Close ontology browser">
+            Close
+          </button>
+        </div>
+        <div class="overlay-meta">
+          <span id="ontologyBrowserPath" class="muted">Current folder:</span>
+          <div class="actions-row overlay-actions">
+            <button id="ontologyBrowserUpBtn" class="secondary" type="button">Up</button>
+            <button id="ontologyBrowserUseFolderBtn" class="secondary" type="button">Use Folder (*.owl)</button>
+            <button id="ontologyBrowserRefreshBtn" class="secondary" type="button">Refresh</button>
+          </div>
+        </div>
+        <div id="ontologyBrowserList" class="browser-list"></div>
+      </div>
+    </section>
     <footer class="legal-footer">
       <span>© 2026 Data-Blitz Inc. All rights reserved.</span>
       <span>Author: Payl Harvener.</span>

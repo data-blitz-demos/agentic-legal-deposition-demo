@@ -17,6 +17,15 @@ def test_get_settings_reads_environment(monkeypatch):
     monkeypatch.setenv("LLM_OPTIONS_PROBE_WORKERS", "4")
     monkeypatch.setenv("COUCHDB_URL", "http://example.test:5984")
     monkeypatch.setenv("COUCHDB_DB", "db-test")
+    monkeypatch.setenv("MEMORY_DB", "memory-test")
+    monkeypatch.setenv("THOUGHT_STREAM_DB", "thought-stream-test")
+    monkeypatch.setenv("RAG_STREAM_DB", "rag-stream-test")
+    monkeypatch.setenv("NEO4J_URI", "bolt://localhost:7687")
+    monkeypatch.setenv("NEO4J_USER", "neo4j")
+    monkeypatch.setenv("NEO4J_PASSWORD", "pw")
+    monkeypatch.setenv("NEO4J_DATABASE", "neo4j")
+    monkeypatch.setenv("NEO4J_BROWSER_URL", "http://localhost:7474/browser/")
+    monkeypatch.setenv("ONTOLOGY_DIR", "/tmp/ontology")
     monkeypatch.setenv("MAX_CONTEXT_DEPOSITIONS", "9")
     monkeypatch.setenv("DEPOSITION_DIR", "/tmp/deps")
 
@@ -35,6 +44,15 @@ def test_get_settings_reads_environment(monkeypatch):
     assert settings.llm_options_probe_workers == 4
     assert settings.couchdb_url == "http://example.test:5984"
     assert settings.couchdb_db == "db-test"
+    assert settings.memory_db == "memory-test"
+    assert settings.thought_stream_db == "thought-stream-test"
+    assert settings.rag_stream_db == "rag-stream-test"
+    assert settings.neo4j_uri == "bolt://localhost:7687"
+    assert settings.neo4j_user == "neo4j"
+    assert settings.neo4j_password == "pw"
+    assert settings.neo4j_database == "neo4j"
+    assert settings.neo4j_browser_url == "http://localhost:7474/browser/"
+    assert settings.ontology_dir == "/tmp/ontology"
     assert settings.max_context_depositions == 9
     assert settings.deposition_dir == "/tmp/deps"
 

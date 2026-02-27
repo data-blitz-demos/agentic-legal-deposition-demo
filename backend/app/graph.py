@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from time import perf_counter
 from typing import TypedDict
 
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -31,6 +32,8 @@ class GraphState(TypedDict, total=False):
     deposition_doc: dict
     other_depositions: list[dict]
     assessment: ContradictionAssessment
+    legal_clerk_trace: list[dict]
+    attorney_trace: list[dict]
 
 
 class DepositionWorkflow:
@@ -143,6 +146,9 @@ class DepositionWorkflow:
             schema_json=schema_json,
             raw_text=state["raw_text"],
         )
+        start = perf_counter()
+        fallback_used = False
+        parse_recovery_used = False
 
         try:
             llm = self._get_llm(state.get("llm_provider"), state.get("llm_model"), temperature=0)
@@ -152,24 +158,75 @@ class DepositionWorkflow:
             )
             deposition = parsed if isinstance(parsed, DepositionSchema) else DepositionSchema.model_validate(parsed)
         except Exception as exc:
-            raise RuntimeError(
-                llm_failure_message(
-                    self.settings,
-                    state.get("llm_provider"),
-                    state.get("llm_model"),
-                    exc,
-                )
-            ) from exc
+            if self._is_structured_parse_failure(exc):
+                deposition = self._fallback_map_deposition(state, file_name)
+                fallback_used = True
+                parse_recovery_used = True
+            else:
+                raise RuntimeError(
+                    llm_failure_message(
+                        self.settings,
+                        state.get("llm_provider"),
+                        state.get("llm_model"),
+                        exc,
+                    )
+                ) from exc
+
+        if parse_recovery_used:
+            deposition.case_id = state["case_id"]
+            deposition.file_name = file_name
+            legal_clerk_trace = [
+                {
+                    "persona": "Persona:Legal Clerk",
+                    "phase": "map_deposition",
+                    "file_name": file_name,
+                    "llm_provider": self._normalize_provider(state.get("llm_provider")),
+                    "llm_model": self._trace_model_name(state.get("llm_model")),
+                    "input_preview": self._preview_text(state["raw_text"], 1200),
+                    "system_prompt": self._preview_text(system_prompt, 2500),
+                    "user_prompt": self._preview_text(human_prompt, 6000),
+                    "output_preview": self._preview_text(
+                        json.dumps(deposition.model_dump(), indent=2),
+                        5000,
+                    ),
+                    "notes": (
+                        f"Structured mapping recovered via fallback in {int((perf_counter() - start) * 1000)}ms "
+                        "after parse failure."
+                    ),
+                }
+            ]
+            return {"deposition": deposition, "legal_clerk_trace": legal_clerk_trace}
 
         # Some local models under-produce structured claims; backfill with deterministic parsing
         # so downstream contradiction assessment has usable evidence.
         if not deposition.claims:
             fallback = self._fallback_map_deposition(state, file_name)
             deposition.claims = fallback.claims
+            fallback_used = True
 
         deposition.case_id = state["case_id"]
         deposition.file_name = file_name
-        return {"deposition": deposition}
+        legal_clerk_trace = [
+            {
+                "persona": "Persona:Legal Clerk",
+                "phase": "map_deposition",
+                "file_name": file_name,
+                "llm_provider": self._normalize_provider(state.get("llm_provider")),
+                "llm_model": self._trace_model_name(state.get("llm_model")),
+                "input_preview": self._preview_text(state["raw_text"], 1200),
+                "system_prompt": self._preview_text(system_prompt, 2500),
+                "user_prompt": self._preview_text(human_prompt, 6000),
+                "output_preview": self._preview_text(
+                    json.dumps(deposition.model_dump(), indent=2),
+                    5000,
+                ),
+                "notes": (
+                    f"Structured mapping completed in {int((perf_counter() - start) * 1000)}ms."
+                    + (" Fallback claim extraction was used." if fallback_used else "")
+                ),
+            }
+        ]
+        return {"deposition": deposition, "legal_clerk_trace": legal_clerk_trace}
 
     def _fallback_map_deposition(self, state: GraphState, file_name: str) -> DepositionSchema:
         """Heuristic non-LLM mapping helper retained for testability/backstop."""
@@ -294,13 +351,15 @@ class DepositionWorkflow:
     def _evaluate_contradictions(self, state: GraphState) -> GraphState:
         """Evaluate target deposition against peers and attach assessment."""
 
+        attorney_trace: list[dict] = []
         assessment = self._assess_deposition_against_peers(
             state["deposition_doc"],
             state.get("other_depositions", []),
             llm_provider=state.get("llm_provider"),
             llm_model=state.get("llm_model"),
+            trace_events=attorney_trace,
         )
-        return {"assessment": assessment}
+        return {"assessment": assessment, "attorney_trace": attorney_trace}
 
     def _assess_deposition_against_peers(
         self,
@@ -308,10 +367,35 @@ class DepositionWorkflow:
         other_depositions: list[dict],
         llm_provider: str | None = None,
         llm_model: str | None = None,
+        trace_events: list[dict] | None = None,
     ) -> ContradictionAssessment:
         """Run contradiction assessment using structured-output LLM calls."""
 
+        start = perf_counter()
         if not other_depositions:
+            if trace_events is not None:
+                trace_events.append(
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "assess_contradictions",
+                        "file_name": str(target_doc.get("file_name") or ""),
+                        "llm_provider": self._normalize_provider(llm_provider),
+                        "llm_model": self._trace_model_name(llm_model),
+                        "input_preview": self._preview_text(
+                            json.dumps(
+                                {
+                                    "target_id": target_doc.get("_id"),
+                                    "target_witness": target_doc.get("witness_name"),
+                                    "peer_count": 0,
+                                },
+                                indent=2,
+                            ),
+                            1200,
+                        ),
+                        "output_preview": "No contradiction assessment was needed because there were no peer depositions.",
+                        "notes": f"Skipped in {int((perf_counter() - start) * 1000)}ms.",
+                    }
+                )
             return ContradictionAssessment(
                 contradiction_score=0,
                 flagged=False,
@@ -344,6 +428,7 @@ class DepositionWorkflow:
             others_json=json.dumps(others, indent=2),
         )
 
+        result_source = "llm"
         try:
             llm = self._get_llm(llm_provider, llm_model, temperature=0)
             assessor_llm = llm.with_structured_output(ContradictionAssessment)
@@ -351,14 +436,62 @@ class DepositionWorkflow:
                 [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
             )
             if assessment.contradiction_score > 0 and assessment.contradictions:
+                self._append_assessment_trace(
+                    trace_events,
+                    target_doc=target_doc,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    system_prompt=system_prompt,
+                    user_prompt=human_prompt,
+                    assessment=assessment,
+                    elapsed_ms=int((perf_counter() - start) * 1000),
+                    result_source=result_source,
+                )
                 return assessment
 
             # If model output is overly conservative, use deterministic cross-claim checks.
             fallback = self._fallback_assess_deposition(target_doc, other_depositions)
             if fallback.contradiction_score > assessment.contradiction_score and fallback.contradictions:
+                result_source = "fallback"
+                self._append_assessment_trace(
+                    trace_events,
+                    target_doc=target_doc,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    system_prompt=system_prompt,
+                    user_prompt=human_prompt,
+                    assessment=fallback,
+                    elapsed_ms=int((perf_counter() - start) * 1000),
+                    result_source=result_source,
+                )
                 return fallback
+            self._append_assessment_trace(
+                trace_events,
+                target_doc=target_doc,
+                llm_provider=llm_provider,
+                llm_model=llm_model,
+                system_prompt=system_prompt,
+                user_prompt=human_prompt,
+                assessment=assessment,
+                elapsed_ms=int((perf_counter() - start) * 1000),
+                result_source=result_source,
+            )
             return assessment
         except Exception as exc:
+            if self._is_structured_parse_failure(exc):
+                fallback = self._fallback_assess_deposition(target_doc, other_depositions)
+                self._append_assessment_trace(
+                    trace_events,
+                    target_doc=target_doc,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    system_prompt=system_prompt,
+                    user_prompt=human_prompt,
+                    assessment=fallback,
+                    elapsed_ms=int((perf_counter() - start) * 1000),
+                    result_source="fallback_parse_recovery",
+                )
+                return fallback
             raise RuntimeError(
                 llm_failure_message(
                     self.settings,
@@ -367,6 +500,87 @@ class DepositionWorkflow:
                     exc,
                 )
             ) from exc
+
+    def _is_structured_parse_failure(self, exc: Exception) -> bool:
+        """Return ``True`` when an exception indicates structured-output parsing failure."""
+
+        cursor: Exception | None = exc
+        while cursor is not None:
+            text = str(cursor).lower()
+            if (
+                "failed to parse" in text
+                or "output_parsing_failure" in text
+                or "validation error" in text
+                or "jsondecodeerror" in text
+            ):
+                return True
+            cursor = cursor.__cause__ if isinstance(cursor.__cause__, Exception) else None
+        return False
+
+    def _append_assessment_trace(
+        self,
+        trace_events: list[dict] | None,
+        *,
+        target_doc: dict,
+        llm_provider: str | None,
+        llm_model: str | None,
+        system_prompt: str,
+        user_prompt: str,
+        assessment: ContradictionAssessment,
+        elapsed_ms: int,
+        result_source: str,
+    ) -> None:
+        """Append one attorney assessment trace event."""
+
+        if trace_events is None:
+            return
+        trace_events.append(
+            {
+                "persona": "Persona:Attorney",
+                "phase": "assess_contradictions",
+                "file_name": str(target_doc.get("file_name") or ""),
+                "llm_provider": self._normalize_provider(llm_provider),
+                "llm_model": self._trace_model_name(llm_model),
+                "input_preview": self._preview_text(
+                    json.dumps(
+                        {
+                            "target_id": target_doc.get("_id"),
+                            "target_witness": target_doc.get("witness_name"),
+                            "target_claims": len(target_doc.get("claims", [])),
+                            "result_source": result_source,
+                        },
+                        indent=2,
+                    ),
+                    1400,
+                ),
+                "system_prompt": self._preview_text(system_prompt, 2500),
+                "user_prompt": self._preview_text(user_prompt, 6000),
+                "output_preview": self._preview_text(
+                    json.dumps(assessment.model_dump(), indent=2),
+                    5000,
+                ),
+                "notes": f"Assessment completed in {elapsed_ms}ms via {result_source}.",
+            }
+        )
+
+    def _trace_model_name(self, requested_model: str | None) -> str:
+        """Resolve effective model name for trace metadata."""
+
+        return (requested_model or self.settings.model_name or "").strip()
+
+    def _normalize_provider(self, provider: str | None):
+        """Normalize provider string for trace payload typing."""
+
+        normalized = (provider or self.settings.default_llm_provider or "openai").strip().lower()
+        return normalized if normalized in {"openai", "ollama"} else "openai"
+
+    def _preview_text(self, value: str, limit: int) -> str:
+        """Trim large text blocks for UI trace display."""
+
+        text = str(value or "").strip()
+        if len(text) <= limit:
+            return text
+        return f"{text[:limit]}...(truncated)"
 
     def _get_llm(self, llm_provider: str | None, llm_model: str | None, *, temperature: float):
         """Return default workflow model or provider/model override."""

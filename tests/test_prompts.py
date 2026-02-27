@@ -55,6 +55,20 @@ def test_render_prompt_missing_variable_raises_value_error():
         prompts_module.render_prompt("map_deposition_user", case_id="c")
 
 
+def test_render_graph_rag_prompt_templates():
+    prompts_module.load_prompt.cache_clear()
+
+    system_prompt = prompts_module.load_prompt("graph_rag_system")
+    user_prompt = prompts_module.render_prompt(
+        "graph_rag_user",
+        question="What is contract?",
+        context_text="Resource: Contract",
+    )
+
+    assert "retrieval-augmented mode" in system_prompt
+    assert "Question:" in user_prompt
+    assert "Resource: Contract" in user_prompt
+
 
 def test_prompt_dir_points_to_backend_prompts_folder():
     prompt_dir = prompts_module._prompt_dir()

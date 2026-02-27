@@ -16,6 +16,8 @@ PROMPT_FILES: dict[str, str] = {
     "assess_contradictions_user": "assess_contradictions_user.txt",
     "chat_system": "chat_system.txt",
     "chat_user_context": "chat_user_context.txt",
+    "graph_rag_system": "graph_rag_system.txt",
+    "graph_rag_user": "graph_rag_user.txt",
     "reason_contradiction_system": "reason_contradiction_system.txt",
     "reason_contradiction_user": "reason_contradiction_user.txt",
 }

@@ -192,6 +192,7 @@ def test_map_deposition_success_sets_case_and_file(monkeypatch):
     deposition = result["deposition"]
     assert deposition.case_id == "case-1"
     assert deposition.file_name == "witness.txt"
+    assert result["legal_clerk_trace"][0]["persona"] == "Persona:Legal Clerk"
 
 
 def test_map_deposition_uses_prompt_templates(monkeypatch):
@@ -238,6 +239,44 @@ def test_map_deposition_raises_with_fix_on_exception(monkeypatch):
         workflow._map_deposition(
             {"case_id": "case-1", "file_path": "/tmp/fallback.txt", "raw_text": "raw"}
         )
+
+
+def test_map_deposition_recovers_from_parse_failure_with_fallback(monkeypatch):
+    workflow = make_workflow()
+    parser = Mock()
+    parser.invoke.side_effect = RuntimeError(
+        "Failed to parse DepositionSchema from completion "
+        '{"witness_name":"Lisa","claims":[{"topic":"Timeline"}'
+    )
+    workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
+    fallback_claim = Claim(
+        topic="Timeline",
+        statement="I arrived at 8:45 a.m.",
+        confidence=0.55,
+        source_quote="I arrived at 8:45 a.m.",
+    )
+    workflow._fallback_map_deposition = Mock(
+        return_value=DepositionSchema(
+            case_id="unused",
+            file_name="unused.txt",
+            witness_name="Lisa Birnbach",
+            witness_role="Witness",
+            summary="Fallback summary",
+            claims=[fallback_claim],
+        )
+    )
+
+    result = workflow._map_deposition(
+        {"case_id": "case-trump-carol", "file_path": "/tmp/witness_lisa_birnbach.txt", "raw_text": "raw"}
+    )
+
+    deposition = result["deposition"]
+    assert deposition.case_id == "case-trump-carol"
+    assert deposition.file_name == "witness_lisa_birnbach.txt"
+    assert deposition.claims == [fallback_claim]
+    assert "recovered via fallback" in result["legal_clerk_trace"][0]["notes"].lower()
+    workflow._fallback_map_deposition.assert_called_once()
 
 
 def test_map_deposition_uses_selected_llm_override(monkeypatch):
@@ -428,11 +467,14 @@ def test_evaluate_contradictions_uses_assessor():
 
 def test_assess_deposition_returns_zero_when_no_peers():
     workflow = make_workflow()
+    trace_events: list[dict] = []
 
-    result = workflow._assess_deposition_against_peers({"_id": "dep:1"}, [])
+    result = workflow._assess_deposition_against_peers({"_id": "dep:1"}, [], trace_events=trace_events)
 
     assert result.contradiction_score == 0
     assert result.flagged is False
+    assert trace_events[0]["persona"] == "Persona:Attorney"
+    assert "no peer depositions" in trace_events[0]["output_preview"].lower()
 
 
 def test_assess_deposition_uses_llm_when_available():
@@ -613,6 +655,44 @@ def test_assess_deposition_raises_with_fix_when_llm_errors(monkeypatch):
         )
 
 
+def test_assess_deposition_recovers_from_parse_failure_with_fallback():
+    workflow = make_workflow()
+    assessor = Mock()
+    assessor.invoke.side_effect = RuntimeError(
+        "Failed to parse ContradictionAssessment from completion "
+        '{"contradiction_score": 35, "flagged": true'
+    )
+    workflow.llm.with_structured_output.return_value = assessor
+    fallback = sample_assessment(61)
+    workflow._fallback_assess_deposition = Mock(return_value=fallback)
+    trace_events: list[dict] = []
+
+    result = workflow._assess_deposition_against_peers(
+        {
+            "_id": "dep:1",
+            "file_name": "witness_lisa_birnbach.txt",
+            "witness_name": "Lisa",
+            "witness_role": "Witness",
+            "summary": "Summary",
+            "claims": [{"topic": "Timeline", "statement": "I arrived at 8:45 a.m."}],
+        },
+        [
+            {
+                "_id": "dep:2",
+                "witness_name": "Alan",
+                "summary": "Peer",
+                "claims": [{"topic": "Timeline", "statement": "She arrived at 9:15 a.m."}],
+            }
+        ],
+        trace_events=trace_events,
+    )
+
+    assert result == fallback
+    workflow._fallback_assess_deposition.assert_called_once()
+    assert trace_events
+    assert "fallback_parse_recovery" in trace_events[0]["notes"]
+
+
 def test_assess_deposition_uses_selected_llm_override(monkeypatch):
     workflow = make_workflow()
     selected_llm = Mock()
@@ -750,3 +830,25 @@ def test_persist_assessment_updates_doc_and_saves():
 
     assert result["deposition_doc"]["_rev"] == "2-b"
     workflow.couchdb.update_doc.assert_called_once()
+
+
+def test_append_assessment_trace_and_preview_truncation():
+    workflow = make_workflow()
+    trace_events: list[dict] = []
+    workflow._append_assessment_trace(
+        trace_events,
+        target_doc={"_id": "dep:1", "file_name": "witness.txt", "witness_name": "Jane", "claims": []},
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+        system_prompt="S" * 3000,
+        user_prompt="U" * 7000,
+        assessment=sample_assessment(52),
+        elapsed_ms=12,
+        result_source="llm",
+    )
+
+    assert len(trace_events) == 1
+    assert trace_events[0]["phase"] == "assess_contradictions"
+    assert trace_events[0]["system_prompt"].endswith("...(truncated)")
+    assert trace_events[0]["user_prompt"].endswith("...(truncated)")
+    assert workflow._preview_text("y" * 15, 5) == "yyyyy...(truncated)"

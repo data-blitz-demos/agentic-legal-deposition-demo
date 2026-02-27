@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import Mock
@@ -14,9 +15,12 @@ from backend.app.models import (
     ContradictionFinding,
     ContradictionReasonRequest,
     DepositionRootRequest,
+    GraphOntologyLoadRequest,
+    GraphRagQueryRequest,
     IngestCaseRequest,
     RenameCaseRequest,
     SaveCaseRequest,
+    SaveTraceRequest,
     SaveCaseVersionRequest,
 )
 
@@ -24,6 +28,9 @@ from backend.app.models import (
 @pytest.fixture(autouse=True)
 def stub_llm_readiness(monkeypatch):
     monkeypatch.setattr(main, "ensure_llm_operational", lambda *_args, **_kwargs: None)
+    memory_db = Mock()
+    memory_db.find.return_value = []
+    monkeypatch.setattr(main, "memory_couchdb", memory_db)
 
 
 def test_path_has_glob_detection():
@@ -50,6 +57,27 @@ def test_collect_txt_files_from_directory_file_and_glob(tmp_path):
     assert single_file == [a]
     assert glob_files == [a]
     assert non_txt_file == []
+
+
+def test_collect_owl_files_from_directory_file_and_glob(tmp_path):
+    ontology_dir = tmp_path / "ontology"
+    ontology_dir.mkdir()
+    a = ontology_dir / "legal.owl"
+    b = ontology_dir / "other.OWL"
+    c = ontology_dir / "notes.txt"
+    a.write_text("a", encoding="utf-8")
+    b.write_text("b", encoding="utf-8")
+    c.write_text("c", encoding="utf-8")
+
+    directory_files = main._collect_owl_files(ontology_dir)
+    single_file = main._collect_owl_files(a)
+    glob_files = main._collect_owl_files(ontology_dir / "*.owl")
+    non_owl_file = main._collect_owl_files(c)
+
+    assert directory_files == [a, b]
+    assert single_file == [a]
+    assert glob_files == [a]
+    assert non_owl_file == []
 
 
 def test_build_ingest_candidates_handles_container_mapping(monkeypatch):
@@ -136,8 +164,14 @@ def test_build_ingest_candidates_non_container_path(monkeypatch):
 
 def test_lifespan_ensures_and_closes_couchdb(monkeypatch):
     couchdb = Mock()
+    memory_couchdb = Mock()
+    trace_couchdb = Mock()
+    rag_couchdb = Mock()
     startup = Mock()
     monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+    monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
+    monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
     monkeypatch.setattr(main, "_ensure_startup_llm_connectivity", startup)
 
     async def run_lifespan() -> None:
@@ -149,11 +183,23 @@ def test_lifespan_ensures_and_closes_couchdb(monkeypatch):
     startup.assert_called_once_with()
     couchdb.ensure_db.assert_called_once_with()
     couchdb.close.assert_called_once_with()
+    memory_couchdb.ensure_db.assert_called_once_with()
+    memory_couchdb.close.assert_called_once_with()
+    trace_couchdb.ensure_db.assert_called_once_with()
+    trace_couchdb.close.assert_called_once_with()
+    rag_couchdb.ensure_db.assert_called_once_with()
+    rag_couchdb.close.assert_called_once_with()
 
 
 def test_lifespan_stops_when_startup_llm_check_fails(monkeypatch):
     couchdb = Mock()
+    memory_couchdb = Mock()
+    trace_couchdb = Mock()
+    rag_couchdb = Mock()
     monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+    monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
+    monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
     monkeypatch.setattr(
         main,
         "_ensure_startup_llm_connectivity",
@@ -169,6 +215,12 @@ def test_lifespan_stops_when_startup_llm_check_fails(monkeypatch):
 
     couchdb.ensure_db.assert_not_called()
     couchdb.close.assert_not_called()
+    memory_couchdb.ensure_db.assert_not_called()
+    memory_couchdb.close.assert_not_called()
+    trace_couchdb.ensure_db.assert_not_called()
+    trace_couchdb.close.assert_not_called()
+    rag_couchdb.ensure_db.assert_not_called()
+    rag_couchdb.close.assert_not_called()
 
 
 def test_resolve_ingest_txt_files_deduplicates(monkeypatch, tmp_path):
@@ -193,6 +245,198 @@ def test_resolve_ingest_txt_files_raises_when_no_matches(monkeypatch):
 
     assert exc.value.status_code == 400
     assert "No .txt deposition files found" in exc.value.detail
+
+
+def test_resolve_ontology_owl_files_from_relative_path(monkeypatch, tmp_path):
+    app_root = tmp_path / "app"
+    app_root.mkdir()
+    ontology_root = tmp_path / "ontology"
+    ontology_root.mkdir()
+    owl = ontology_root / "legal.owl"
+    owl.write_text("x", encoding="utf-8")
+
+    monkeypatch.setattr(main, "app_root", app_root)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+
+    files = main._resolve_ontology_owl_files("legal.owl")
+
+    assert files == [owl]
+
+
+def test_resolve_ontology_owl_files_raises_when_no_matches(monkeypatch, tmp_path):
+    monkeypatch.setattr(main, "app_root", tmp_path)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(tmp_path / "ontology")))
+
+    with pytest.raises(HTTPException) as exc:
+        main._resolve_ontology_owl_files("/missing/*.owl")
+
+    assert exc.value.status_code == 400
+    assert "No .owl ontology files found" in exc.value.detail
+
+
+def test_resolve_ontology_owl_files_deduplicates_candidates_and_files(monkeypatch, tmp_path):
+    shared_root = tmp_path / "shared"
+    shared_root.mkdir()
+    owl = shared_root / "legal.owl"
+    owl.write_text("x", encoding="utf-8")
+
+    monkeypatch.setattr(main, "app_root", shared_root)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(shared_root)))
+    monkeypatch.setattr(main, "_collect_owl_files", lambda _candidate: [owl])
+
+    files = main._resolve_ontology_owl_files("legal.owl")
+
+    assert files == [owl]
+
+
+def test_configured_ontology_root_resolves_relative_path(monkeypatch, tmp_path):
+    app_root = tmp_path / "app"
+    app_root.mkdir()
+    monkeypatch.setattr(main, "app_root", app_root)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir="ontology"))
+
+    resolved = main._configured_ontology_root()
+
+    assert resolved == app_root / "ontology"
+
+
+def test_list_ontology_owl_options_includes_wildcard_and_nested_files(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    nested = ontology_root / "sasl"
+    nested.mkdir(parents=True)
+    primary = ontology_root / "legal.owl"
+    nested_file = nested / "contracts.OWL"
+    (ontology_root / "notes.txt").write_text("ignore", encoding="utf-8")
+    primary.write_text("p", encoding="utf-8")
+    nested_file.write_text("n", encoding="utf-8")
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    base, options, suggested = main._list_ontology_owl_options()
+
+    assert base == ontology_root
+    assert suggested == str(ontology_root / "*.owl")
+    option_paths = [item.path for item in options]
+    assert option_paths[0] == str(ontology_root / "*.owl")
+    assert str(primary) in option_paths
+    assert str(nested_file) in option_paths
+
+
+def test_resolve_ontology_browser_directory_resolves_relative_and_file_paths(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    nested = ontology_root / "sub"
+    nested.mkdir(parents=True)
+    owl = nested / "legal.owl"
+    owl.write_text("x", encoding="utf-8")
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    base, current = main._resolve_ontology_browser_directory("sub")
+    assert base == ontology_root.resolve()
+    assert current == nested.resolve()
+
+    _, current_from_file = main._resolve_ontology_browser_directory(str(owl))
+    assert current_from_file == nested.resolve()
+
+
+def test_resolve_ontology_browser_directory_defaults_to_base_when_path_missing(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    ontology_root.mkdir()
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    base, current = main._resolve_ontology_browser_directory(None)
+
+    assert base == ontology_root.resolve()
+    assert current == ontology_root.resolve()
+
+
+def test_resolve_ontology_browser_directory_rejects_missing_path(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    ontology_root.mkdir()
+    missing = ontology_root / "missing"
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    with pytest.raises(HTTPException) as exc:
+        main._resolve_ontology_browser_directory(str(missing))
+
+    assert exc.value.status_code == 400
+    assert "does not exist" in exc.value.detail
+
+
+def test_resolve_ontology_browser_directory_rejects_outside_base(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    ontology_root.mkdir()
+    outside = tmp_path / "outside"
+    outside.mkdir()
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    with pytest.raises(HTTPException) as exc:
+        main._resolve_ontology_browser_directory(str(outside))
+
+    assert exc.value.status_code == 400
+    assert "must remain under base directory" in exc.value.detail
+
+
+def test_resolve_ontology_browser_directory_rejects_non_owl_file(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    ontology_root.mkdir()
+    not_owl = ontology_root / "notes.txt"
+    not_owl.write_text("x", encoding="utf-8")
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    with pytest.raises(HTTPException) as exc:
+        main._resolve_ontology_browser_directory(str(not_owl))
+
+    assert exc.value.status_code == 400
+    assert "directory or .owl file" in exc.value.detail
+
+
+def test_resolve_ontology_browser_directory_rejects_non_directory_target(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    ontology_root.mkdir()
+    fifo_path = ontology_root / "stream.fifo"
+    import os
+    os.mkfifo(fifo_path)
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    with pytest.raises(HTTPException) as exc:
+        main._resolve_ontology_browser_directory(str(fifo_path))
+
+    assert exc.value.status_code == 400
+    assert "must be a directory" in exc.value.detail
+
+
+def test_list_ontology_browser_entries_lists_directories_and_owl_files_only(tmp_path):
+    root = tmp_path / "ontology"
+    child = root / "child"
+    root.mkdir()
+    child.mkdir()
+    (root / "legal.owl").write_text("owl", encoding="utf-8")
+    (root / "notes.txt").write_text("ignore", encoding="utf-8")
+
+    directories, files = main._list_ontology_browser_entries(root)
+
+    assert [item.kind for item in directories] == ["directory"]
+    assert directories[0].path == str(child)
+    assert [item.kind for item in files] == ["file"]
+    assert files[0].path == str(root / "legal.owl")
+
+
+def test_list_ontology_browser_entries_returns_empty_for_missing_path(tmp_path):
+    directories, files = main._list_ontology_browser_entries(tmp_path / "missing")
+    assert directories == []
+    assert files == []
 
 
 def test_root_returns_index_file_response():
@@ -453,6 +697,21 @@ def test_list_deposition_directories_includes_extra_roots(monkeypatch, tmp_path)
     assert str(extra_child) in option_paths
 
 
+def test_list_deposition_directories_skips_duplicate_extra_root(monkeypatch, tmp_path):
+    root = tmp_path / "deps"
+    root.mkdir()
+    (root / "a.txt").write_text("a", encoding="utf-8")
+    (root / "child").mkdir()
+    (root / "child" / "b.txt").write_text("b", encoding="utf-8")
+
+    monkeypatch.setattr(main, "_resolve_directory_base", lambda: ("configured", root))
+    monkeypatch.setattr(main, "_configured_extra_deposition_roots", lambda: [root])
+
+    base, options = main._list_deposition_directories()
+    assert base == root
+    assert len([item for item in options if item.path == str(root)]) == 1
+
+
 def test_cached_extra_deposition_roots_loaded_from_couch(monkeypatch):
     couchdb = Mock()
     couchdb.find.return_value = [
@@ -466,6 +725,37 @@ def test_cached_extra_deposition_roots_loaded_from_couch(monkeypatch):
 
     assert Path("/opt/depositions_a") in roots
     assert Path.cwd() / "relative_deps" in roots
+
+
+def test_cached_extra_deposition_roots_handles_find_errors(monkeypatch):
+    couchdb = Mock()
+    couchdb.find.side_effect = RuntimeError("db down")
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    assert main._cached_extra_deposition_roots() == []
+
+
+def test_deposition_root_doc_id_is_stable():
+    value = main._deposition_root_doc_id("/tmp/depositions")
+    assert value.startswith("deposition_root:")
+    assert value == main._deposition_root_doc_id("/tmp/depositions")
+
+
+def test_build_ingest_candidates_includes_alias_for_extra_root(monkeypatch):
+    monkeypatch.setattr(main, "app_root", Path("/workspace/app"))
+    monkeypatch.setattr(
+        main,
+        "settings",
+        SimpleNamespace(
+            deposition_dir="/host/deps",
+            deposition_extra_dirs="/extra/deps",
+        ),
+    )
+
+    candidates = main._build_ingest_candidates("/data/depositions/oj_simpson")
+
+    assert Path("/extra/deps/oj_simpson") in candidates
+    assert Path("/extra/deps/oj_simposon") in candidates
 
 
 def test_add_deposition_root_endpoint_success(monkeypatch, tmp_path):
@@ -501,6 +791,1290 @@ def test_add_deposition_root_endpoint_validation_errors(monkeypatch):
         main.add_deposition_root(DepositionRootRequest(path=str(missing_dir)))
     assert missing_exc.value.status_code == 400
     assert "does not exist in API runtime" in missing_exc.value.detail
+
+
+def test_add_deposition_root_endpoint_normalize_permission_and_cache_failures(monkeypatch, tmp_path):
+    monkeypatch.setattr(main, "_normalize_deposition_root_path", Mock(side_effect=ValueError("bad path")))
+    with pytest.raises(HTTPException) as normalize_exc:
+        main.add_deposition_root(DepositionRootRequest(path="/tmp/invalid"))
+    assert normalize_exc.value.status_code == 400
+    assert "Invalid deposition root path" in normalize_exc.value.detail
+
+    class UnreadableDir:
+        def __str__(self):
+            return "/tmp/unreadable"
+
+        def exists(self):
+            return True
+
+        def is_dir(self):
+            return True
+
+        def iterdir(self):
+            raise PermissionError("denied")
+
+    monkeypatch.setattr(main, "_normalize_deposition_root_path", lambda _value: UnreadableDir())
+    with pytest.raises(HTTPException) as permission_exc:
+        main.add_deposition_root(DepositionRootRequest(path="/tmp/unreadable"))
+    assert permission_exc.value.status_code == 400
+    assert "not readable" in permission_exc.value.detail
+
+    readable = tmp_path / "readable"
+    readable.mkdir()
+    monkeypatch.setattr(main, "_normalize_deposition_root_path", lambda _value: readable)
+    monkeypatch.setattr(main, "_cache_deposition_root", Mock(side_effect=RuntimeError("save failed")))
+    with pytest.raises(HTTPException) as cache_exc:
+        main.add_deposition_root(DepositionRootRequest(path=str(readable)))
+    assert cache_exc.value.status_code == 502
+    assert "Failed to cache deposition root" in cache_exc.value.detail
+
+
+def test_normalize_deposition_root_path_resolves_absolute_and_relative(tmp_path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    relative = main._normalize_deposition_root_path("relative/path")
+    absolute = main._normalize_deposition_root_path(str(tmp_path))
+
+    assert relative == (tmp_path / "relative/path").resolve()
+    assert absolute == tmp_path.resolve()
+
+
+def test_cache_deposition_root_creates_and_updates_existing(monkeypatch):
+    couchdb = Mock()
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-02-26T00:00:00+00:00")
+
+    couchdb.get_doc.side_effect = RuntimeError("missing")
+    main._cache_deposition_root("/tmp/deps")
+    created_doc = couchdb.update_doc.call_args.args[0]
+    assert created_doc["path"] == "/tmp/deps"
+    assert "_rev" not in created_doc
+
+    couchdb.reset_mock()
+    couchdb.get_doc.side_effect = None
+    couchdb.get_doc.return_value = {"_rev": "2-a", "created_at": "2026-01-01T00:00:00+00:00"}
+    main._cache_deposition_root("/tmp/deps")
+    updated_doc = couchdb.update_doc.call_args.args[0]
+    assert updated_doc["_rev"] == "2-a"
+    assert updated_doc["created_at"] == "2026-01-01T00:00:00+00:00"
+
+
+def test_trace_session_endpoints_save_and_delete(monkeypatch):
+    main._trace_sessions.clear()
+    trace_db = Mock()
+    trace_db.update_doc.side_effect = lambda doc: {**doc, "_rev": "1-a"}
+    trace_db.get_doc.side_effect = RuntimeError("missing")
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+    main._append_trace_events(
+        "trace-1",
+        status="running",
+        legal_clerk=[
+            {
+                "persona": "Persona:Legal Clerk",
+                "phase": "ingest_start",
+                "notes": "start",
+            }
+        ],
+    )
+
+    snapshot = main.get_trace_session("trace-1")
+    assert snapshot.thought_stream_id == "trace-1"
+    assert snapshot.status == "running"
+    assert len(snapshot.thought_stream.legal_clerk) == 1
+
+    save_memory = Mock()
+    upsert = Mock()
+    monkeypatch.setattr(main, "_save_case_memory", save_memory)
+    monkeypatch.setattr(main, "_upsert_case_doc", upsert)
+    monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [])
+
+    save_response = main.save_trace_session(
+        "trace-1",
+        SaveTraceRequest(case_id="CASE-1", channel="ingest"),
+    )
+    assert save_response.saved is True
+    assert save_response.thought_stream_id == "trace-1"
+    save_memory.assert_called_once()
+    upsert.assert_called_once()
+
+    trace_db.get_doc.side_effect = None
+    trace_db.get_doc.return_value = {"_id": main._trace_doc_id("trace-1"), "_rev": "1-a"}
+    delete_response = main.delete_trace_session("trace-1")
+    assert delete_response.deleted is True
+    assert delete_response.thought_stream_id == "trace-1"
+
+    trace_db.get_doc.side_effect = RuntimeError("missing")
+    with pytest.raises(HTTPException) as missing_trace:
+        main.get_trace_session("trace-1")
+    assert missing_trace.value.status_code == 404
+
+
+def test_public_trace_session_and_trace_sequence_helpers():
+    payload = main._public_trace_session(
+        {
+            "trace_id": "trace-1",
+            "status": "invalid",
+            "trace": {"legal_clerk": [], "attorney": []},
+            "updated_at": "2026-02-26T00:00:00+00:00",
+        }
+    )
+    assert payload["status"] == "running"
+
+    seq = main._max_trace_sequence(
+        {
+            "legal_clerk": [{"sequence": "bad"}],
+            "attorney": [{"sequence": "5"}],
+        }
+    )
+    assert seq == 5
+
+
+def test_load_and_ensure_trace_session_branches(monkeypatch):
+    trace_db = Mock()
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+    main._trace_sessions.clear()
+
+    trace_db.get_doc.return_value = "not-dict"
+    assert main._load_trace_session("trace-1") is None
+
+    trace_db.get_doc.return_value = {
+        "_id": "doc-1",
+        "_rev": "1-a",
+        "trace_id": "trace-1",
+        "status": "completed",
+        "trace": "not-dict",
+    }
+    loaded = main._load_trace_session("trace-1")
+    assert loaded is not None
+    assert loaded["trace"]["legal_clerk"] == []
+    assert loaded["trace"]["attorney"] == []
+
+    main._trace_sessions["trace-memory"] = {"trace_id": "trace-memory"}
+    assert main._ensure_trace_session("trace-memory") == {"trace_id": "trace-memory"}
+
+    monkeypatch.setattr(main, "_load_trace_session", lambda _trace_id: {"trace_id": "trace-loaded"})
+    ensured = main._ensure_trace_session("trace-loaded")
+    assert ensured == {"trace_id": "trace-loaded"}
+    main._trace_sessions.clear()
+
+
+def test_flush_trace_session_and_snapshot_branches(monkeypatch):
+    main._trace_sessions.clear()
+    trace_db = Mock()
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+
+    # Missing session early return.
+    main._flush_trace_session("missing")
+
+    # dirty_count <= 0 early return.
+    main._trace_sessions["trace-early"] = {
+        "_dirty_count": 0,
+        "_last_flush_monotonic": 0.0,
+    }
+    main._flush_trace_session("trace-early", force=False)
+
+    # dirty_count < 6 and elapsed < 1.0 early return.
+    monkeypatch.setattr(main, "monotonic", lambda: 10.5)
+    main._trace_sessions["trace-small"] = {
+        "_dirty_count": 1,
+        "_last_flush_monotonic": 10.0,
+    }
+    main._flush_trace_session("trace-small", force=False)
+
+    # _rev branch and session removed after write (line 608 race-safe return).
+    monkeypatch.setattr(main, "monotonic", lambda: 20.0)
+    main._trace_sessions["trace-race"] = {
+        "_doc_id": "thought_stream:abc",
+        "_rev": "3-c",
+        "trace_id": "trace-race",
+        "status": "running",
+        "updated_at": "2026-02-26T00:00:00+00:00",
+        "created_at": "2026-02-26T00:00:00+00:00",
+        "trace": {"legal_clerk": [], "attorney": []},
+        "_dirty_count": 6,
+        "_last_flush_monotonic": 0.0,
+    }
+
+    def update_doc_side_effect(doc):
+        assert doc["_rev"] == "3-c"
+        main._trace_sessions.pop("trace-race", None)
+        return {"_rev": "4-d"}
+
+    trace_db.update_doc.side_effect = update_doc_side_effect
+    main._flush_trace_session("trace-race", force=False)
+
+    # Snapshot loads from storage and caches it.
+    monkeypatch.setattr(
+        main,
+        "_load_trace_session",
+        lambda _trace_id: {
+            "trace_id": "trace-snap",
+            "status": "completed",
+            "updated_at": "2026-02-26T00:00:00+00:00",
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+    )
+    snapshot = main._trace_session_snapshot("trace-snap")
+    assert snapshot is not None
+    assert "trace-snap" in main._trace_sessions
+    main._trace_sessions.clear()
+
+
+def test_append_and_delete_trace_event_branches(monkeypatch):
+    main._trace_sessions.clear()
+    monkeypatch.setattr(main, "_flush_trace_session", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-02-26T00:00:00+00:00")
+
+    main._append_trace_events(
+        "trace-2",
+        attorney=[
+            {
+                "persona": "Persona:Attorney",
+                "phase": "chat_response",
+                "notes": "ok",
+            }
+        ],
+    )
+    assert len(main._trace_sessions["trace-2"]["trace"]["attorney"]) == 1
+
+    assert main._delete_trace_session(" ") is False
+
+    trace_db = Mock()
+    trace_db.get_doc.side_effect = RuntimeError("db down")
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+    assert main._delete_trace_session("trace-unknown") is False
+    main._trace_sessions.clear()
+
+
+def test_rag_stream_doc_id_prefix_and_uniqueness():
+    first = main._rag_stream_doc_id()
+    second = main._rag_stream_doc_id()
+    assert first.startswith("rag_stream:")
+    assert second.startswith("rag_stream:")
+    assert first != second
+
+
+def test_append_rag_stream_event_persists_doc(monkeypatch):
+    rag_db = Mock()
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+    monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-02-26T00:00:00+00:00")
+    monkeypatch.setattr(main, "_rag_stream_doc_id", lambda: "rag_stream:test")
+
+    main._append_rag_stream_event(
+        trace_id="trace-1",
+        question="What is breach?",
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+        use_rag=True,
+        top_k=8,
+        status="completed",
+        phase="answer",
+        retrieval_terms=["breach"],
+        context_rows=2,
+        sources=[{"iri": "http://example.org/Contract", "label": "Contract"}],
+        context_preview="context",
+        llm_system_prompt="system",
+        llm_user_prompt="user",
+        answer_preview="Short answer",
+    )
+
+    saved = rag_db.update_doc.call_args.args[0]
+    assert saved["_id"] == "rag_stream:test"
+    assert saved["type"] == "rag_stream"
+    assert saved["trace_id"] == "trace-1"
+    assert saved["use_rag"] is True
+    assert saved["context_rows"] == 2
+    assert saved["sources"][0]["label"] == "Contract"
+
+
+def test_append_rag_stream_event_ignores_storage_failures(monkeypatch):
+    rag_db = Mock()
+    rag_db.update_doc.side_effect = RuntimeError("db down")
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+
+    main._append_rag_stream_event(
+        trace_id=None,
+        question="q",
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+        use_rag=False,
+        top_k=4,
+        status="failed",
+        phase="llm",
+        error="boom",
+    )
+
+
+def test_thought_stream_health_success(monkeypatch):
+    trace_db = Mock()
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(thought_stream_db="thought_stream"))
+
+    payload = main.thought_stream_health()
+
+    assert payload == {"connected": True, "database": "thought_stream"}
+    trace_db.ensure_db.assert_called_once_with(retries=1, delay_seconds=0)
+
+
+def test_thought_stream_health_failure(monkeypatch):
+    trace_db = Mock()
+    trace_db.ensure_db.side_effect = RuntimeError("connection refused")
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(thought_stream_db="thought_stream"))
+
+    with pytest.raises(HTTPException) as exc:
+        main.thought_stream_health()
+
+    assert exc.value.status_code == 503
+    assert "Thought Stream storage is unavailable" in exc.value.detail
+
+
+def test_rag_stream_health_success(monkeypatch):
+    rag_db = Mock()
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(rag_stream_db="rag-stream"))
+
+    payload = main.rag_stream_health()
+
+    assert payload == {"connected": True, "database": "rag-stream"}
+    rag_db.ensure_db.assert_called_once_with(retries=1, delay_seconds=0)
+
+
+def test_rag_stream_health_failure(monkeypatch):
+    rag_db = Mock()
+    rag_db.ensure_db.side_effect = RuntimeError("connection refused")
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+    monkeypatch.setattr(main, "settings", SimpleNamespace(rag_stream_db="rag-stream"))
+
+    with pytest.raises(HTTPException) as exc:
+        main.rag_stream_health()
+
+    assert exc.value.status_code == 503
+    assert "RAG stream storage is unavailable" in exc.value.detail
+
+
+def test_thought_stream_health_route_registered_before_dynamic_trace_route():
+    api_paths = [getattr(route, "path", "") for route in main.app.routes]
+    health_index = api_paths.index("/api/thought-streams/health")
+    dynamic_index = api_paths.index("/api/thought-streams/{thought_stream_id}")
+    assert health_index < dynamic_index
+
+
+def test_graph_browser_info_returns_settings(monkeypatch):
+    graph_client = SimpleNamespace(
+        browser_url="http://localhost:7474/browser/",
+        uri="bolt://localhost:7687",
+        database="neo4j",
+    )
+    monkeypatch.setattr(main, "neo4j_graph", graph_client)
+
+    payload = main.graph_browser_info()
+
+    assert payload.browser_url == "http://localhost:7474/browser/"
+    assert payload.bolt_url == "bolt://localhost:7687"
+    assert payload.database == "neo4j"
+    assert payload.launch_url.startswith("http://localhost:7474/browser/?")
+    assert "cmd=edit" in payload.launch_url
+    assert (
+        "MATCH+%28n%29+OPTIONAL+MATCH+%28n%29-%5Br%5D-%3E%28m%29+RETURN+n%2C+r%2C+m+LIMIT+75%3B"
+        in payload.launch_url
+    )
+    assert "connectURL=bolt%3A%2F%2Flocalhost%3A7687" in payload.launch_url
+    assert "db=neo4j" in payload.launch_url
+
+
+def test_graph_browser_launch_url_overrides_existing_query_params():
+    launch_url = main._graph_browser_launch_url(
+        "http://localhost:7474/browser/?cmd=play&arg=old",
+        "bolt://neo4j:7687",
+        "neo4j",
+    )
+
+    assert launch_url.startswith("http://localhost:7474/browser/?")
+    assert "cmd=edit" in launch_url
+    assert "cmd=play" not in launch_url
+    assert "arg=old" not in launch_url
+    assert "connectURL=bolt%3A%2F%2Flocalhost%3A7687" in launch_url
+    assert "db=neo4j" in launch_url
+
+
+def test_browser_reachable_bolt_url_maps_container_alias_to_browser_host():
+    mapped = main._browser_reachable_bolt_url(
+        "https://graph.example.com/browser/",
+        "bolt://neo4j:7687",
+    )
+    assert mapped == "bolt://graph.example.com:7687"
+
+
+def test_browser_reachable_bolt_url_keeps_public_host_unchanged():
+    mapped = main._browser_reachable_bolt_url(
+        "https://graph.example.com/browser/",
+        "bolt://graph-bolt.example.com:7687",
+    )
+    assert mapped == "bolt://graph-bolt.example.com:7687"
+
+
+def test_browser_reachable_bolt_url_non_bolt_scheme_and_missing_host():
+    direct = main._browser_reachable_bolt_url(
+        "https://graph.example.com/browser/",
+        "http://graph.example.com:7687",
+    )
+    assert direct == "http://graph.example.com:7687"
+
+    missing_host = main._browser_reachable_bolt_url(
+        "https://graph.example.com/browser/",
+        "bolt:///just-a-path",
+    )
+    assert missing_host == "bolt:///just-a-path"
+
+
+def test_browser_reachable_bolt_url_single_label_and_userinfo_branches():
+    single_label = main._browser_reachable_bolt_url(
+        "https://graph.example.com/browser/",
+        "bolt://cache:7687",
+    )
+    assert single_label == "bolt://graph.example.com:7687"
+
+    with_userinfo = main._browser_reachable_bolt_url(
+        "https://graph.example.com/browser/",
+        "bolt://neo4j:secret@neo4j:7687",
+    )
+    assert with_userinfo == "bolt://neo4j:secret@graph.example.com:7687"
+
+
+def test_graph_rag_health_uses_client_payload(monkeypatch):
+    graph_client = SimpleNamespace(
+        health=lambda: {
+            "configured": True,
+            "connected": True,
+            "bolt_url": "bolt://localhost:7687",
+            "database": "neo4j",
+            "browser_url": "http://localhost:7474/browser/",
+            "error": None,
+        }
+    )
+    monkeypatch.setattr(main, "neo4j_graph", graph_client)
+
+    payload = main.graph_rag_health()
+
+    assert payload.connected is True
+    assert payload.database == "neo4j"
+
+
+def test_graph_rag_owl_options_returns_dropdown_payload(monkeypatch):
+    base = Path("/data/ontology")
+    options = [
+        main.GraphOntologyOption(path="/data/ontology/*.owl", label="All OWL files"),
+        main.GraphOntologyOption(path="/data/ontology/legal.owl", label="legal.owl"),
+    ]
+    monkeypatch.setattr(main, "_list_ontology_owl_options", lambda: (base, options, options[0].path))
+
+    payload = main.graph_rag_owl_options()
+
+    assert payload.base_directory == "/data/ontology"
+    assert payload.suggested == "/data/ontology/*.owl"
+    assert [item.path for item in payload.options] == ["/data/ontology/*.owl", "/data/ontology/legal.owl"]
+
+
+def test_graph_rag_owl_browser_returns_file_browser_payload(monkeypatch):
+    base = Path("/data/ontology")
+    current = Path("/data/ontology/contracts")
+    directories = [
+        main.GraphOntologyBrowserEntry(
+            path="/data/ontology/contracts/sub",
+            name="sub",
+            kind="directory",
+        )
+    ]
+    files = [
+        main.GraphOntologyBrowserEntry(
+            path="/data/ontology/contracts/legal.owl",
+            name="legal.owl",
+            kind="file",
+        )
+    ]
+    monkeypatch.setattr(main, "_resolve_ontology_browser_directory", lambda _path: (base, current))
+    monkeypatch.setattr(main, "_list_ontology_browser_entries", lambda _dir: (directories, files))
+
+    payload = main.graph_rag_owl_browser("/data/ontology/contracts")
+
+    assert payload.base_directory == "/data/ontology"
+    assert payload.current_directory == "/data/ontology/contracts"
+    assert payload.parent_directory == "/data/ontology"
+    assert payload.wildcard_path == "/data/ontology/contracts/*.owl"
+    assert [item.path for item in payload.directories] == ["/data/ontology/contracts/sub"]
+    assert [item.path for item in payload.files] == ["/data/ontology/contracts/legal.owl"]
+
+
+def test_load_graph_rag_ontology_success(monkeypatch, tmp_path):
+    owl = tmp_path / "legal.owl"
+    owl.write_text("x", encoding="utf-8")
+    monkeypatch.setattr(main, "_resolve_ontology_owl_files", lambda _path: [owl])
+
+    graph_client = SimpleNamespace(
+        load_owl_files=lambda files, clear_existing, batch_size: {
+            "matched_files": [str(path) for path in files],
+            "loaded_files": len(files),
+            "triples": 12,
+            "resource_relationships": 7,
+            "literal_relationships": 5,
+            "cleared": clear_existing,
+            "database": "neo4j",
+            "browser_url": "http://localhost:7474/browser/",
+        }
+    )
+    monkeypatch.setattr(main, "neo4j_graph", graph_client)
+
+    payload = main.load_graph_rag_ontology(
+        GraphOntologyLoadRequest(path="/data/ontology/*.owl", clear_existing=True, batch_size=700)
+    )
+
+    assert payload.path == "/data/ontology/*.owl"
+    assert payload.loaded_files == 1
+    assert payload.triples == 12
+    assert payload.cleared is True
+
+
+def test_load_graph_rag_ontology_validation_and_error_paths(monkeypatch):
+    with pytest.raises(HTTPException) as empty_exc:
+        main.load_graph_rag_ontology(GraphOntologyLoadRequest(path="   "))
+    assert empty_exc.value.status_code == 400
+
+    monkeypatch.setattr(main, "_resolve_ontology_owl_files", lambda _path: [Path("/tmp/legal.owl")])
+
+    runtime_graph = SimpleNamespace(
+        load_owl_files=lambda *_args, **_kwargs: (_ for _ in ()).throw(RuntimeError("Neo4j unavailable"))
+    )
+    monkeypatch.setattr(main, "neo4j_graph", runtime_graph)
+    with pytest.raises(HTTPException) as runtime_exc:
+        main.load_graph_rag_ontology(GraphOntologyLoadRequest(path="/data/ontology/*.owl"))
+    assert runtime_exc.value.status_code == 503
+
+    generic_graph = SimpleNamespace(
+        load_owl_files=lambda *_args, **_kwargs: (_ for _ in ()).throw(ValueError("parse failed"))
+    )
+    monkeypatch.setattr(main, "neo4j_graph", generic_graph)
+    with pytest.raises(HTTPException) as generic_exc:
+        main.load_graph_rag_ontology(GraphOntologyLoadRequest(path="/data/ontology/*.owl"))
+    assert generic_exc.value.status_code == 502
+    assert "Failed to import ontology files into Neo4j" in generic_exc.value.detail
+
+
+def test_query_graph_rag_success(monkeypatch):
+    trace_events: list[dict] = []
+    rag_events: list[dict] = []
+    retrieval = Mock(
+        return_value={
+            "resource_count": 2,
+            "resources": [
+                {
+                    "iri": "http://example.org/Contract",
+                    "label": "Contract",
+                    "relations": [
+                        {
+                            "predicate": "relatedTo",
+                            "object_label": "Offer",
+                            "object_iri": "http://example.org/Offer",
+                        }
+                    ],
+                    "literals": [
+                        {
+                            "predicate": "definition",
+                            "value": "Contract is agreement",
+                            "datatype": "",
+                            "lang": "en",
+                        }
+                    ],
+                },
+                {"iri": "http://example.org/Breach", "label": "Breach", "relations": [], "literals": []},
+            ],
+            "terms": ["breach", "contract"],
+            "context_text": "Resource: Contract",
+        }
+    )
+    monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(retrieve_context=retrieval))
+    monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(
+        main,
+        "_append_trace_events",
+        lambda trace_id, **kwargs: trace_events.append({"trace_id": trace_id, **kwargs}),
+    )
+    monkeypatch.setattr(main, "_append_rag_stream_event", lambda **kwargs: rag_events.append(kwargs))
+    monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+    monkeypatch.setattr(
+        main,
+        "build_chat_model",
+        lambda *_args, **_kwargs: SimpleNamespace(
+            invoke=lambda _messages: SimpleNamespace(content="Short answer: Ontology response")
+        ),
+    )
+
+    payload = main.query_graph_rag(
+        GraphRagQueryRequest(
+            question="What is breach of contract?",
+            top_k=6,
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+            thought_stream_id="trace-graph-1",
+        )
+    )
+
+    retrieval.assert_called_once_with("What is breach of contract?", node_limit=6)
+    assert payload.context_rows == 2
+    assert payload.llm_provider == "openai"
+    assert payload.llm_model == "gpt-5.2"
+    assert payload.sources[0].iri == "http://example.org/Contract"
+    assert payload.answer.startswith("Short answer:")
+    assert payload.monitor is not None
+    assert payload.monitor.rag_enabled is True
+    assert payload.monitor.rag_stream_enabled is True
+    assert payload.monitor.retrieval_terms == ["breach", "contract"]
+    assert len(payload.monitor.retrieved_resources) == 2
+    assert payload.monitor.retrieved_resources[0].iri == "http://example.org/Contract"
+    assert payload.monitor.retrieved_resources[0].relations[0].predicate == "relatedTo"
+    assert payload.monitor.context_preview == "Resource: Contract"
+    assert "question" in payload.monitor.llm_user_prompt
+    assert payload.monitor.llm_system_prompt == "{}"
+
+    assert [item["trace_id"] for item in trace_events] == ["trace-graph-1", "trace-graph-1", "trace-graph-1"]
+    assert trace_events[0]["status"] == "running"
+    assert trace_events[2]["status"] == "completed"
+    assert trace_events[0]["legal_clerk"][0]["phase"] == "graph_rag_retrieval_start"
+    assert trace_events[1]["legal_clerk"][0]["phase"] == "graph_rag_context_ready"
+    assert trace_events[2]["attorney"][0]["phase"] == "graph_rag_answer"
+    assert rag_events[-1]["status"] == "completed"
+    assert rag_events[-1]["use_rag"] is True
+    assert rag_events[-1]["context_rows"] == 2
+
+
+def test_query_graph_rag_with_rag_disabled(monkeypatch):
+    trace_events: list[dict] = []
+    rag_events: list[dict] = []
+    retrieval = Mock()
+    monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(retrieve_context=retrieval))
+    monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(
+        main,
+        "_append_trace_events",
+        lambda trace_id, **kwargs: trace_events.append({"trace_id": trace_id, **kwargs}),
+    )
+    monkeypatch.setattr(main, "_append_rag_stream_event", lambda **kwargs: rag_events.append(kwargs))
+    monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+    monkeypatch.setattr(
+        main,
+        "build_chat_model",
+        lambda *_args, **_kwargs: SimpleNamespace(
+            invoke=lambda _messages: SimpleNamespace(content="Short answer: No retrieval.")
+        ),
+    )
+
+    payload = main.query_graph_rag(
+        GraphRagQueryRequest(
+            question="What is breach of contract?",
+            top_k=6,
+            use_rag=False,
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+        )
+    )
+
+    retrieval.assert_not_called()
+    assert payload.context_rows == 0
+    assert payload.monitor is not None
+    assert payload.monitor.rag_enabled is False
+    assert payload.monitor.rag_stream_enabled is True
+    assert payload.monitor.retrieved_resources == []
+    assert "RAG processing was disabled" in payload.monitor.context_preview
+    assert rag_events[-1]["status"] == "completed"
+    assert rag_events[-1]["use_rag"] is False
+    assert trace_events[1]["legal_clerk"][0]["phase"] == "graph_rag_disabled"
+
+
+def test_query_graph_rag_with_stream_logging_disabled(monkeypatch):
+    trace_events: list[dict] = []
+    rag_events: list[dict] = []
+    retrieval = Mock(
+        return_value={
+            "resource_count": 1,
+            "resources": [{"iri": "http://example.org/Contract", "label": "Contract"}],
+            "terms": ["contract"],
+            "context_text": "Resource: Contract",
+        }
+    )
+    monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(retrieve_context=retrieval))
+    monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(
+        main,
+        "_append_trace_events",
+        lambda trace_id, **kwargs: trace_events.append({"trace_id": trace_id, **kwargs}),
+    )
+    monkeypatch.setattr(main, "_append_rag_stream_event", lambda **kwargs: rag_events.append(kwargs))
+    monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+    monkeypatch.setattr(
+        main,
+        "build_chat_model",
+        lambda *_args, **_kwargs: SimpleNamespace(
+            invoke=lambda _messages: SimpleNamespace(content="Short answer: No stream logging.")
+        ),
+    )
+
+    payload = main.query_graph_rag(
+        GraphRagQueryRequest(
+            question="What is contract breach?",
+            top_k=6,
+            use_rag=True,
+            stream_rag=False,
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+        )
+    )
+
+    assert payload.monitor is not None
+    assert payload.monitor.rag_enabled is True
+    assert payload.monitor.rag_stream_enabled is False
+    assert len(rag_events) == 0
+    assert trace_events[2]["status"] == "completed"
+
+
+def test_query_graph_rag_toggle_influences_answer(monkeypatch):
+    retrieval = Mock(
+        return_value={
+            "resource_count": 1,
+            "resources": [
+                {
+                    "iri": "http://example.org/MaterialBreach",
+                    "label": "Material Breach",
+                    "relations": [],
+                    "literals": [],
+                }
+            ],
+            "terms": ["material", "breach"],
+            "context_text": "Fact: A material breach is an uncured failure of a core contract obligation.",
+        }
+    )
+    monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(retrieve_context=retrieval))
+    monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(main, "_append_trace_events", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main, "_append_rag_stream_event", lambda **_kwargs: None)
+    monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+
+    class _ContextAwareModel:
+        def invoke(self, messages):
+            prompt = str(messages[-1].content)
+            if "RAG processing was disabled for this request." in prompt:
+                return SimpleNamespace(content="Short answer: Graph context was disabled; answer confidence is low.")
+            if "material breach is an uncured failure" in prompt:
+                return SimpleNamespace(content="Short answer: A material breach is an uncured failure of a core obligation.")
+            return SimpleNamespace(content="Short answer: No context.")
+
+    monkeypatch.setattr(main, "build_chat_model", lambda *_args, **_kwargs: _ContextAwareModel())
+
+    rag_on = main.query_graph_rag(
+        GraphRagQueryRequest(
+            question="What is a material breach?",
+            top_k=5,
+            use_rag=True,
+            stream_rag=False,
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+        )
+    )
+    rag_off = main.query_graph_rag(
+        GraphRagQueryRequest(
+            question="What is a material breach?",
+            top_k=5,
+            use_rag=False,
+            stream_rag=False,
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+        )
+    )
+
+    assert retrieval.call_count == 1
+    assert rag_on.answer != rag_off.answer
+    assert "uncured failure" in rag_on.answer
+    assert "disabled" in rag_off.answer.lower()
+    assert rag_on.context_rows == 1
+    assert rag_off.context_rows == 0
+    assert rag_on.monitor is not None
+    assert rag_off.monitor is not None
+    assert "material breach is an uncured failure" in rag_on.monitor.context_preview.lower()
+    assert "RAG processing was disabled" in rag_off.monitor.context_preview
+
+
+def test_query_graph_rag_validation_and_error_paths(monkeypatch):
+    with pytest.raises(HTTPException) as empty_exc:
+        main.query_graph_rag(GraphRagQueryRequest(question="  "))
+    assert empty_exc.value.status_code == 400
+
+    monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(main, "_append_rag_stream_event", lambda **_kwargs: None)
+    monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+
+    bad_request_graph = SimpleNamespace(
+        retrieve_context=lambda *_args, **_kwargs: (_ for _ in ()).throw(ValueError("bad query"))
+    )
+    monkeypatch.setattr(main, "neo4j_graph", bad_request_graph)
+    with pytest.raises(HTTPException) as bad_request_exc:
+        main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
+    assert bad_request_exc.value.status_code == 400
+    assert "bad query" in bad_request_exc.value.detail
+
+    runtime_graph = SimpleNamespace(
+        retrieve_context=lambda *_args, **_kwargs: (_ for _ in ()).throw(RuntimeError("Neo4j unavailable"))
+    )
+    monkeypatch.setattr(main, "neo4j_graph", runtime_graph)
+    with pytest.raises(HTTPException) as runtime_exc:
+        main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
+    assert runtime_exc.value.status_code == 503
+
+    generic_graph = SimpleNamespace(
+        retrieve_context=lambda *_args, **_kwargs: (_ for _ in ()).throw(KeyError("boom"))
+    )
+    monkeypatch.setattr(main, "neo4j_graph", generic_graph)
+    with pytest.raises(HTTPException) as generic_exc:
+        main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
+    assert generic_exc.value.status_code == 502
+
+    monkeypatch.setattr(
+        main,
+        "neo4j_graph",
+        SimpleNamespace(
+            retrieve_context=lambda *_args, **_kwargs: {
+                "resource_count": 0,
+                "resources": [],
+                "context_text": "No matching ontology context found.",
+            }
+        ),
+    )
+    monkeypatch.setattr(
+        main,
+        "build_chat_model",
+        lambda *_args, **_kwargs: SimpleNamespace(
+            invoke=lambda _messages: (_ for _ in ()).throw(RuntimeError("llm down"))
+        ),
+    )
+    monkeypatch.setattr(main, "llm_failure_message", lambda *_args, **_kwargs: "LLM failed")
+    with pytest.raises(HTTPException) as llm_exc:
+        main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
+    assert llm_exc.value.status_code == 502
+    assert llm_exc.value.detail == "LLM failed"
+
+
+def test_query_graph_rag_fallback_when_llm_content_is_empty(monkeypatch):
+    monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(main, "_append_rag_stream_event", lambda **_kwargs: None)
+    monkeypatch.setattr(
+        main,
+        "neo4j_graph",
+        SimpleNamespace(
+            retrieve_context=lambda *_args, **_kwargs: {
+                "resource_count": 0,
+                "resources": [],
+                "context_text": "No matching ontology context found.",
+            }
+        ),
+    )
+    monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+    monkeypatch.setattr(
+        main,
+        "build_chat_model",
+        lambda *_args, **_kwargs: SimpleNamespace(invoke=lambda _messages: SimpleNamespace(content="  ")),
+    )
+
+    payload = main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
+
+    assert payload.answer == "Short answer: No answer could be generated from current ontology context."
+    assert payload.context_rows == 0
+
+
+def test_save_and_delete_trace_session_endpoint_validation_and_not_found(monkeypatch):
+    with pytest.raises(HTTPException) as trace_exc:
+        main.save_trace_session(" ", SaveTraceRequest(case_id="CASE-1", channel="ingest"))
+    assert trace_exc.value.status_code == 400
+    assert "Thought stream ID is required" in trace_exc.value.detail
+
+    with pytest.raises(HTTPException) as case_exc:
+        main.save_trace_session("trace-1", SaveTraceRequest(case_id=" ", channel="ingest"))
+    assert case_exc.value.status_code == 400
+    assert "Case ID is required" in case_exc.value.detail
+
+    monkeypatch.setattr(main, "_flush_trace_session", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main, "_trace_session_snapshot", lambda _trace_id: None)
+    with pytest.raises(HTTPException) as missing_exc:
+        main.save_trace_session("trace-1", SaveTraceRequest(case_id="CASE-1", channel="ingest"))
+    assert missing_exc.value.status_code == 404
+
+    monkeypatch.setattr(main, "_delete_trace_session", lambda _trace_id: False)
+    with pytest.raises(HTTPException) as delete_exc:
+        main.delete_trace_session("trace-1")
+    assert delete_exc.value.status_code == 404
+
+
+def test_collect_runtime_trace_sessions_prefers_memory_and_handles_db_failure(monkeypatch):
+    main._trace_sessions.clear()
+    trace_db = Mock()
+    trace_db.find.side_effect = RuntimeError("db unavailable")
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+
+    main._trace_sessions["trace-live"] = {
+        "trace_id": "trace-live",
+        "status": "running",
+        "created_at": "2026-02-26T00:00:00+00:00",
+        "updated_at": "2026-02-26T00:00:03+00:00",
+        "trace": {"legal_clerk": [], "attorney": []},
+    }
+
+    sessions, storage_connected = main._collect_runtime_trace_sessions()
+
+    assert storage_connected is False
+    assert len(sessions) == 1
+    assert sessions[0]["trace_id"] == "trace-live"
+    main._trace_sessions.clear()
+
+
+def test_metrics_helper_primitives_cover_edge_paths():
+    assert main._normalize_trace_status(" completed ") == "completed"
+    assert main._normalize_trace_status("unknown") == "running"
+
+    assert main._parse_iso_datetime("") is None
+    assert main._parse_iso_datetime("not-a-date") is None
+    naive = main._parse_iso_datetime("2026-02-26T10:00:00")
+    assert naive is not None
+    assert naive.tzinfo is not None
+
+    flattened = main._flatten_trace_events(
+        {
+            "legal_clerk": [{"phase": "a", "sequence": "bad-seq", "at": "2026-02-26T00:00:02+00:00"}],
+            "attorney": [{"phase": "b", "sequence": 1, "at": "2026-02-26T00:00:01+00:00"}],
+        }
+    )
+    assert [item["phase"] for item in flattened] == ["a", "b"]
+
+    assert main._percentile([], 95) is None
+    assert main._percentile([3.5], 95) == 3.5
+    assert main._status_low_is_bad(92, warn_below=95, bad_below=90) == "warn"
+    assert main._status_low_is_bad(96, warn_below=95, bad_below=90) == "good"
+    assert main._status_band(25, warn_low=4, warn_high=18, bad_low=2, bad_high=24) == "bad"
+    assert main._status_band(3, warn_low=4, warn_high=18, bad_low=2, bad_high=24) == "warn"
+    assert main._status_band(10, warn_low=4, warn_high=18, bad_low=2, bad_high=24) == "good"
+
+
+def test_normalize_metrics_session_defaults_and_missing_trace_id():
+    assert main._normalize_metrics_session({"trace_id": " "}) is None
+
+    payload = main._normalize_metrics_session({"trace_id": "trace-1", "trace": "invalid"})
+    assert payload is not None
+    assert payload["trace_id"] == "trace-1"
+    assert payload["trace"]["legal_clerk"] == []
+    assert payload["trace"]["attorney"] == []
+
+
+def test_collect_runtime_trace_sessions_merges_persisted_with_memory(monkeypatch):
+    main._trace_sessions.clear()
+    trace_db = Mock()
+    trace_db.find.return_value = [
+        "skip",
+        {
+            "trace_id": "trace-1",
+            "status": "completed",
+            "created_at": "2026-02-26T00:00:00+00:00",
+            "updated_at": "2026-02-26T00:00:03+00:00",
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+        {"trace_id": " ", "trace": {"legal_clerk": [], "attorney": []}},
+    ]
+    monkeypatch.setattr(main, "trace_couchdb", trace_db)
+
+    main._trace_sessions["trace-1"] = {
+        "trace_id": "trace-1",
+        "status": "running",
+        "created_at": "2026-02-26T00:00:00+00:00",
+        "updated_at": "2026-02-26T00:00:04+00:00",
+        "trace": {"legal_clerk": [], "attorney": []},
+    }
+    main._trace_sessions["bad-session"] = {"trace_id": " "}
+    main._trace_sessions["nondict"] = 42
+
+    sessions, storage_connected = main._collect_runtime_trace_sessions()
+
+    assert storage_connected is True
+    by_id = {item["trace_id"]: item for item in sessions}
+    assert by_id["trace-1"]["status"] == "running"
+    main._trace_sessions.clear()
+
+
+def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
+    now = datetime.now(timezone.utc)
+    created = now - timedelta(minutes=10)
+    created_iso = created.isoformat()
+    updated_complete_iso = (created + timedelta(seconds=10)).isoformat()
+    updated_failed_iso = (created + timedelta(seconds=90)).isoformat()
+    first_event_iso = (created + timedelta(seconds=2)).isoformat()
+    repeated_event_iso = (created + timedelta(seconds=5)).isoformat()
+    sessions = [
+        {
+            "trace_id": "trace-complete",
+            "status": "completed",
+            "created_at": created_iso,
+            "updated_at": updated_complete_iso,
+            "trace": {
+                "legal_clerk": [
+                    {
+                        "persona": "Persona:Legal Clerk",
+                        "phase": "start",
+                        "sequence": 1,
+                        "at": first_event_iso,
+                    }
+                ],
+                "attorney": [],
+            },
+        },
+        {
+            "trace_id": "trace-failed",
+            "status": "failed",
+            "created_at": created_iso,
+            "updated_at": updated_failed_iso,
+            "trace": {
+                "legal_clerk": [],
+                "attorney": [
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "step",
+                        "sequence": idx + 1,
+                        "at": repeated_event_iso,
+                    }
+                    for idx in range(22)
+                ],
+            },
+        },
+        {
+            "trace_id": "trace-running",
+            "status": "running",
+            "created_at": created_iso,
+            "updated_at": repeated_event_iso,
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+    ]
+
+    payload = main._compute_agent_runtime_metrics(
+        sessions,
+        lookback_hours=24,
+        storage_connected=True,
+        rag_events=[],
+        rag_storage_connected=True,
+    )
+
+    assert payload.sampled_runs == 3
+    assert payload.finished_runs == 2
+    assert payload.running_runs == 1
+
+    by_key = {item.key: item for item in payload.metrics}
+    assert by_key["task_success_rate_pct"].display == "50.0%"
+    assert by_key["task_success_rate_pct"].status == "bad"
+    assert by_key["run_failure_rate_pct"].display == "50.0%"
+    assert by_key["run_failure_rate_pct"].status == "bad"
+    assert by_key["loop_risk_rate_pct"].status == "bad"
+    assert by_key["in_flight_runs"].display == "1"
+    assert by_key["rag_toggle_comparison_pairs"].display == "0"
+    assert payload.rag_sampled_queries == 0
+    assert payload.rag_paired_comparisons == 0
+    assert payload.rag_storage_connected is True
+
+
+def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
+    now = datetime.now(timezone.utc)
+    old = now - timedelta(days=7)
+    recent = now - timedelta(minutes=20)
+    sessions = [
+        "skip",
+        {
+            "trace_id": "trace-old",
+            "status": "completed",
+            "created_at": old.isoformat(),
+            "updated_at": (old + timedelta(seconds=1)).isoformat(),
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+        {
+            "trace_id": "trace-running",
+            "status": "running",
+            "created_at": recent.isoformat(),
+            "updated_at": None,
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+    ]
+
+    payload = main._compute_agent_runtime_metrics(
+        sessions,
+        lookback_hours=1,
+        storage_connected=False,
+        rag_events=[],
+        rag_storage_connected=False,
+    )
+
+    assert payload.storage_connected is False
+    assert payload.rag_storage_connected is False
+    assert payload.finished_runs == 0
+    assert payload.running_runs == 1
+    by_key = {item.key: item for item in payload.metrics}
+    assert by_key["task_success_rate_pct"].status == "info"
+    assert by_key["run_failure_rate_pct"].status == "info"
+    assert by_key["p95_end_to_end_latency_sec"].status == "info"
+    assert by_key["p95_time_to_first_event_sec"].status == "info"
+    assert by_key["avg_steps_per_finished_run"].status == "info"
+    assert by_key["loop_risk_rate_pct"].status == "info"
+
+
+def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypatch):
+    now = datetime.now(timezone.utc)
+    old = now - timedelta(hours=30)
+    rag_db = Mock()
+    rag_db.find.return_value = [
+        "skip",
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": now.isoformat(),
+            "question": "What is material breach?",
+            "answer_preview": "A material breach is uncured failure.",
+            "use_rag": True,
+            "context_rows": 3,
+        },
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": now.isoformat(),
+            "question": "What is material breach?",
+            "answer_preview": "Unable to ground answer with graph context disabled.",
+            "use_rag": False,
+            "context_rows": 0,
+        },
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": old.isoformat(),
+            "question": "Old event",
+            "answer_preview": "stale",
+            "use_rag": True,
+            "context_rows": 1,
+        },
+    ]
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+
+    events, connected = main._collect_recent_rag_stream_events(24)
+
+    assert connected is True
+    assert len(events) == 2
+    metrics, paired = main._compute_rag_influence_metrics(events)
+    assert paired == 1
+    by_key = {item.key: item for item in metrics}
+    assert by_key["rag_toggle_comparison_pairs"].display == "1"
+    assert by_key["rag_answer_change_rate_pct"].display == "100.0%"
+    assert by_key["rag_context_hit_rate_pct"].display == "100.0%"
+    assert by_key["rag_avg_context_rows_on"].display == "3.00"
+    assert by_key["rag_completed_queries_split"].display == "1/1"
+
+
+def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch):
+    now = datetime.now(timezone.utc)
+    rag_db = Mock()
+    rag_db.find.return_value = [
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": now.isoformat(),
+            "question": "   ",
+            "answer_preview": "blank question should be ignored for pairing",
+            "use_rag": True,
+            "context_rows": "not-an-int",
+        },
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": None,
+            "question": "Define estoppel",
+            "answer_preview": "ON older answer",
+            "use_rag": True,
+            "context_rows": 1,
+        },
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": now.isoformat(),
+            "question": "Define estoppel",
+            "answer_preview": "ON newer answer",
+            "use_rag": True,
+            "context_rows": 2,
+        },
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": now.isoformat(),
+            "question": "Define estoppel",
+            "answer_preview": "OFF baseline answer",
+            "use_rag": False,
+            "context_rows": 0,
+        },
+        {
+            "type": "rag_stream",
+            "phase": "answer",
+            "status": "completed",
+            "created_at": now.isoformat(),
+            "question": "Only ON question",
+            "answer_preview": "no OFF pair exists",
+            "use_rag": True,
+            "context_rows": 1,
+        },
+    ]
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+
+    events, connected = main._collect_recent_rag_stream_events(24)
+
+    assert connected is True
+    assert events[0]["context_rows"] == 0
+    metrics, paired = main._compute_rag_influence_metrics(events)
+    assert paired == 1
+    by_key = {item.key: item for item in metrics}
+    assert by_key["rag_toggle_comparison_pairs"].display == "1"
+    assert by_key["rag_answer_change_rate_pct"].display == "100.0%"
+
+
+def test_collect_recent_rag_stream_events_handles_db_failure(monkeypatch):
+    rag_db = Mock()
+    rag_db.find.side_effect = RuntimeError("db unavailable")
+    monkeypatch.setattr(main, "rag_couchdb", rag_db)
+
+    events, connected = main._collect_recent_rag_stream_events(24)
+
+    assert connected is False
+    assert events == []
+
+
+def test_get_agent_metrics_endpoint_validates_lookback(monkeypatch):
+    monkeypatch.setattr(main, "_collect_runtime_trace_sessions", lambda: ([], True))
+    monkeypatch.setattr(main, "_collect_recent_rag_stream_events", lambda _hours: ([], True))
+
+    payload = main.get_agent_metrics(lookback_hours=24)
+    assert payload.lookback_hours == 24
+    assert payload.sampled_runs == 0
+    assert payload.rag_sampled_queries == 0
+
+    with pytest.raises(HTTPException) as exc:
+        main.get_agent_metrics(lookback_hours=0)
+    assert exc.value.status_code == 400
+    assert "lookback_hours must be between 1 and 168" in exc.value.detail
 
 
 def test_suggest_directory_option_empty_and_fallback(monkeypatch):
@@ -552,12 +2126,14 @@ def test_case_doc_id_and_load_case_doc(monkeypatch):
 
 def test_save_case_memory_and_upsert_case_doc(monkeypatch):
     couchdb = Mock()
+    memory_couchdb = Mock()
     monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
     monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-01-01T00:00:00+00:00")
 
     main._save_case_memory("case-1", "langgraph", {"x": 1})
 
-    saved = couchdb.save_doc.call_args.args[0]
+    saved = memory_couchdb.save_doc.call_args.args[0]
     assert saved["type"] == "case_memory"
     assert saved["case_id"] == "case-1"
     assert saved["channel"] == "langgraph"
@@ -591,9 +2167,9 @@ def test_save_case_memory_and_upsert_case_doc(monkeypatch):
 
 
 def test_save_case_memory_and_upsert_case_doc_wrap_errors(monkeypatch):
-    couchdb = Mock()
-    couchdb.save_doc.side_effect = RuntimeError("save failed")
-    monkeypatch.setattr(main, "couchdb", couchdb)
+    memory_couchdb = Mock()
+    memory_couchdb.save_doc.side_effect = RuntimeError("save failed")
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
 
     with pytest.raises(HTTPException) as memory_exc:
         main._save_case_memory("case-1", "chat", {"message": "x"})
@@ -693,6 +2269,39 @@ def test_case_endpoints_wrap_errors(monkeypatch):
     assert delete_exc.value.status_code == 502
 
 
+def test_delete_case_docs_includes_memory_database(monkeypatch):
+    couchdb = Mock()
+    memory_couchdb = Mock()
+    couchdb.find.return_value = [{"_id": "dep:1", "_rev": "1-a", "case_id": "CASE-001"}]
+    memory_couchdb.find.return_value = [{"_id": "mem:1", "_rev": "1-b", "case_id": "CASE-001"}]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    deleted = main._delete_case_docs("CASE-001")
+
+    assert deleted == 2
+    couchdb.delete_doc.assert_called_once_with("dep:1", rev="1-a")
+    memory_couchdb.delete_doc.assert_called_once_with("mem:1", rev="1-b")
+
+
+def test_delete_case_docs_skips_duplicate_or_blank_memory_ids(monkeypatch):
+    couchdb = Mock()
+    memory_couchdb = Mock()
+    couchdb.find.return_value = [{"_id": "dep:1", "_rev": "1-a", "case_id": "CASE-001"}]
+    memory_couchdb.find.return_value = [
+        {"_id": "dep:1", "_rev": "2-a", "case_id": "CASE-001"},
+        {"_id": "", "_rev": "2-b", "case_id": "CASE-001"},
+    ]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    deleted = main._delete_case_docs("CASE-001")
+
+    assert deleted == 1
+    couchdb.delete_doc.assert_called_once_with("dep:1", rev="1-a")
+    memory_couchdb.delete_doc.assert_not_called()
+
+
 def test_delete_case_deposition_docs_and_clear_case_depositions_endpoint(monkeypatch):
     couchdb = Mock()
     couchdb.find.return_value = [
@@ -731,6 +2340,16 @@ def test_clear_case_depositions_endpoint_errors(monkeypatch):
         main.clear_case_depositions("CASE-001")
     assert refresh_exc.value.status_code == 502
     assert "Failed to refresh case 'CASE-001'" in refresh_exc.value.detail
+
+    monkeypatch.setattr(
+        main,
+        "_delete_case_deposition_docs",
+        Mock(side_effect=HTTPException(status_code=503, detail="upstream")),
+    )
+    monkeypatch.setattr(main, "_upsert_case_doc", Mock())
+    with pytest.raises(HTTPException) as passthrough_exc:
+        main.clear_case_depositions("CASE-001")
+    assert passthrough_exc.value.status_code == 503
 
 
 def test_save_case_endpoint_and_rename_case_docs(monkeypatch):
@@ -793,6 +2412,39 @@ def test_save_case_endpoint_and_rename_case_docs(monkeypatch):
     assert renamed_case["case_id"] == "CASE-NEW"
     assert renamed_case["last_action"] == "rename"
     assert renamed_case["updated_at"] == "2026-01-03T00:00:00+00:00"
+
+
+def test_rename_case_docs_includes_memory_database(monkeypatch):
+    couchdb = Mock()
+    memory_couchdb = Mock()
+    couchdb.find.return_value = [{"_id": "dep:1", "_rev": "1-a", "case_id": "CASE-OLD", "type": "deposition"}]
+    memory_couchdb.find.return_value = [{"_id": "mem:1", "_rev": "1-b", "case_id": "CASE-OLD", "type": "case_memory"}]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    moved = main._rename_case_docs("CASE-OLD", "CASE-NEW")
+
+    assert moved == 2
+    assert couchdb.update_doc.call_args.args[0]["case_id"] == "CASE-NEW"
+    assert memory_couchdb.update_doc.call_args.args[0]["case_id"] == "CASE-NEW"
+
+
+def test_rename_case_docs_skips_duplicate_or_blank_memory_ids(monkeypatch):
+    couchdb = Mock()
+    memory_couchdb = Mock()
+    couchdb.find.return_value = [{"_id": "dep:1", "_rev": "1-a", "case_id": "CASE-OLD", "type": "deposition"}]
+    memory_couchdb.find.return_value = [
+        {"_id": "dep:1", "_rev": "2-a", "case_id": "CASE-OLD", "type": "case_memory"},
+        {"_id": "", "_rev": "2-b", "case_id": "CASE-OLD", "type": "case_memory"},
+    ]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    moved = main._rename_case_docs("CASE-OLD", "CASE-NEW")
+
+    assert moved == 1
+    assert couchdb.update_doc.call_count == 1
+    memory_couchdb.update_doc.assert_not_called()
 
 
 def test_rename_case_endpoint_branches(monkeypatch):
@@ -912,27 +2564,47 @@ def test_list_case_versions_and_save_case_version(monkeypatch):
 
 def test_case_has_docs_and_clone_case_contents(monkeypatch):
     couchdb = Mock()
+    memory_couchdb = Mock()
     couchdb.find.side_effect = [
         [{"_id": "dep:1", "case_id": "CASE-001"}],
         RuntimeError("find failed"),
         [
             {"_id": "dep:1", "_rev": "1-a", "case_id": "CASE-001", "type": "deposition", "file_name": "a.txt"},
-            {"_id": "mem:1", "_rev": "1-b", "case_id": "CASE-001", "type": "case_memory", "payload": {"x": 1}},
             {"_id": "case:1", "_rev": "1-c", "case_id": "CASE-001", "type": "case"},
         ],
     ]
+    memory_couchdb.find.side_effect = [
+        RuntimeError("find failed"),
+        [{"_id": "mem:1", "_rev": "1-b", "case_id": "CASE-001", "type": "case_memory", "payload": {"x": 1}}],
+    ]
     monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
 
     assert main._case_has_docs("CASE-001") is True
     assert main._case_has_docs("CASE-ERR") is False
 
     cloned = main._clone_case_contents("CASE-001", "CASE-NEW")
     assert cloned == 2
-    assert couchdb.save_doc.call_count == 2
+    assert couchdb.save_doc.call_count == 1
+    assert memory_couchdb.save_doc.call_count == 1
     first_saved = couchdb.save_doc.call_args_list[0].args[0]
     assert first_saved["case_id"] == "CASE-NEW"
     assert "_id" not in first_saved
     assert "_rev" not in first_saved
+    memory_saved = memory_couchdb.save_doc.call_args_list[0].args[0]
+    assert memory_saved["case_id"] == "CASE-NEW"
+    assert memory_saved["type"] == "case_memory"
+
+
+def test_case_has_docs_uses_memory_database_fallback(monkeypatch):
+    couchdb = Mock()
+    memory_couchdb = Mock()
+    couchdb.find.side_effect = RuntimeError("primary down")
+    memory_couchdb.find.return_value = [{"_id": "mem:1", "case_id": "CASE-001"}]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    assert main._case_has_docs("CASE-001") is True
 
 
 def test_save_case_version_clones_when_case_id_changes(monkeypatch):
@@ -1239,6 +2911,7 @@ def test_ingest_case_success(monkeypatch):
 
     assert response.case_id == "case-1"
     assert len(response.ingested) == 2
+    assert response.thought_stream is not None
     assert workflow.run.call_count == 2
     workflow.run.assert_any_call(
         case_id="case-1",
@@ -1425,6 +3098,16 @@ def test_purge_noncanonical_case_depositions_wraps_delete_errors(monkeypatch):
     assert "Failed to remove duplicate deposition" in exc.value.detail
 
 
+def test_purge_noncanonical_case_depositions_skips_docs_without_id(monkeypatch):
+    couchdb = Mock()
+    couchdb.list_depositions.return_value = [{"_id": "", "file_name": "oj_witness.txt"}]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    main._purge_noncanonical_case_depositions("case-1", [Path("/tmp/oj_witness.txt")])
+
+    couchdb.delete_doc.assert_not_called()
+
+
 def test_list_depositions_sorts_descending(monkeypatch):
     couchdb = Mock()
     couchdb.list_depositions.return_value = [
@@ -1487,9 +3170,40 @@ def test_chat_success(monkeypatch):
     )
 
     assert response.response.startswith("Short answer:")
+    assert response.thought_stream is not None
+    assert response.thought_stream.attorney == []
     chat_service.respond.assert_called_once()
     assert chat_service.respond.call_args.kwargs["llm_provider"] == "ollama"
     assert chat_service.respond.call_args.kwargs["llm_model"] == "llama3.3"
+
+
+def test_chat_success_with_trace_provider(monkeypatch):
+    class TraceChatService:
+        def respond_with_trace(self, *_args, **_kwargs):
+            return (
+                "Short answer: traced\nDetails:\n- a\n- b",
+                [
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "chat_response",
+                        "llm_provider": "openai",
+                        "llm_model": "gpt-5.2",
+                        "notes": "trace note",
+                    }
+                ],
+            )
+
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {"_id": "dep:1", "case_id": "case-1"}
+    couchdb.list_depositions.return_value = [{"_id": "dep:1"}, {"_id": "dep:2"}]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "chat_service", TraceChatService())
+
+    response = main.chat(ChatRequest(case_id="case-1", deposition_id="dep:1", message="hello"))
+    assert response.response.startswith("Short answer:")
+    assert response.thought_stream is not None
+    assert len(response.thought_stream.attorney) == 1
+    assert response.thought_stream.attorney[0].phase == "chat_response"
 
 
 def test_chat_wraps_service_errors(monkeypatch):

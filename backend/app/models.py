@@ -126,6 +126,8 @@ class IngestCaseRequest(BaseModel):
     llm_provider: Literal["openai", "ollama"] | None = None
     llm_model: str | None = None
     skip_reassess: bool = False
+    thought_stream_id: str | None = None
+    trace_id: str | None = None
 
 
 class IngestedDepositionResult(BaseModel):
@@ -138,11 +140,36 @@ class IngestedDepositionResult(BaseModel):
     flagged: bool
 
 
+class AgentTraceEvent(BaseModel):
+    """One trace event describing visible agent processing steps."""
+
+    persona: Literal["Persona:Legal Clerk", "Persona:Attorney"]
+    phase: str
+    sequence: int | None = None
+    at: str | None = None
+    file_name: str | None = None
+    llm_provider: Literal["openai", "ollama"] | None = None
+    llm_model: str | None = None
+    input_preview: str | None = None
+    system_prompt: str | None = None
+    user_prompt: str | None = None
+    output_preview: str | None = None
+    notes: str | None = None
+
+
+class AgentTracePayload(BaseModel):
+    """Grouped agent trace payload returned to UI."""
+
+    legal_clerk: list[AgentTraceEvent] = Field(default_factory=list)
+    attorney: list[AgentTraceEvent] = Field(default_factory=list)
+
+
 class IngestCaseResponse(BaseModel):
     """Response payload for the ingest endpoint."""
 
     case_id: str
     ingested: list[IngestedDepositionResult] = Field(default_factory=list)
+    thought_stream: AgentTracePayload | None = None
 
 
 class ChatRequest(BaseModel):
@@ -154,12 +181,15 @@ class ChatRequest(BaseModel):
     history: list[dict[str, str]] = Field(default_factory=list)
     llm_provider: Literal["openai", "ollama"] | None = None
     llm_model: str | None = None
+    thought_stream_id: str | None = None
+    trace_id: str | None = None
 
 
 class ChatResponse(BaseModel):
     """Response payload for attorney chat endpoint."""
 
     response: str
+    thought_stream: AgentTracePayload | None = None
 
 
 class ContradictionReasonRequest(BaseModel):
@@ -224,6 +254,212 @@ class DepositionRootResponse(BaseModel):
     """Response payload for one cached deposition root path."""
 
     path: str
+
+
+class GraphOntologyOption(BaseModel):
+    """One selectable OWL ontology path for Graph RAG loading."""
+
+    path: str
+    label: str
+
+
+class GraphOntologyOptionsResponse(BaseModel):
+    """Response payload for ontology path dropdown options."""
+
+    base_directory: str | None = None
+    suggested: str | None = None
+    options: list[GraphOntologyOption] = Field(default_factory=list)
+
+
+class GraphOntologyBrowserEntry(BaseModel):
+    """One directory or file row returned by ontology browser API."""
+
+    path: str
+    name: str
+    kind: Literal["directory", "file"]
+
+
+class GraphOntologyBrowserResponse(BaseModel):
+    """Response payload for server-side ontology file browser."""
+
+    base_directory: str
+    current_directory: str
+    parent_directory: str | None = None
+    wildcard_path: str
+    directories: list[GraphOntologyBrowserEntry] = Field(default_factory=list)
+    files: list[GraphOntologyBrowserEntry] = Field(default_factory=list)
+
+
+class GraphOntologyLoadRequest(BaseModel):
+    """Request payload for loading OWL ontology files into Neo4j."""
+
+    path: str
+    clear_existing: bool = False
+    batch_size: int = Field(default=500, ge=100, le=5000)
+
+
+class GraphOntologyLoadResponse(BaseModel):
+    """Response payload after loading ontology triples into Neo4j."""
+
+    path: str
+    matched_files: list[str] = Field(default_factory=list)
+    loaded_files: int = Field(ge=0, default=0)
+    triples: int = Field(ge=0, default=0)
+    resource_relationships: int = Field(ge=0, default=0)
+    literal_relationships: int = Field(ge=0, default=0)
+    cleared: bool = False
+    database: str
+    browser_url: str
+
+
+class GraphBrowserResponse(BaseModel):
+    """Response payload exposing graph browser connection details."""
+
+    browser_url: str
+    bolt_url: str
+    database: str
+    launch_url: str = ""
+
+
+class GraphHealthResponse(BaseModel):
+    """Response payload reporting Neo4j graph availability."""
+
+    configured: bool
+    connected: bool
+    bolt_url: str
+    database: str
+    browser_url: str
+    error: str | None = None
+
+
+class GraphRagQueryRequest(BaseModel):
+    """Request payload for asking Graph RAG questions over Neo4j ontology data."""
+
+    question: str
+    top_k: int = Field(default=8, ge=1, le=50)
+    use_rag: bool = True
+    stream_rag: bool = True
+    llm_provider: Literal["openai", "ollama"] | None = None
+    llm_model: str | None = None
+    thought_stream_id: str | None = None
+    trace_id: str | None = None
+
+
+class GraphRagSource(BaseModel):
+    """One source resource node included in Graph RAG answer context."""
+
+    iri: str
+    label: str
+
+
+class GraphRagRelation(BaseModel):
+    """One graph relationship attached to a retrieved resource node."""
+
+    predicate: str
+    object_label: str
+    object_iri: str
+
+
+class GraphRagLiteral(BaseModel):
+    """One literal attribute attached to a retrieved resource node."""
+
+    predicate: str
+    value: str
+    datatype: str = ""
+    lang: str = ""
+
+
+class GraphRagRetrievedResource(BaseModel):
+    """Detailed retrieved resource row used as LLM grounding context."""
+
+    iri: str
+    label: str
+    relations: list[GraphRagRelation] = Field(default_factory=list)
+    literals: list[GraphRagLiteral] = Field(default_factory=list)
+
+
+class GraphRagMonitor(BaseModel):
+    """Telemetry payload showing retrieval-to-LLM handoff per inference cycle."""
+
+    rag_enabled: bool = True
+    rag_stream_enabled: bool = True
+    retrieval_terms: list[str] = Field(default_factory=list)
+    retrieved_resources: list[GraphRagRetrievedResource] = Field(default_factory=list)
+    context_preview: str
+    llm_system_prompt: str
+    llm_user_prompt: str
+
+
+class GraphRagQueryResponse(BaseModel):
+    """Response payload for Graph RAG ontology question answering."""
+
+    question: str
+    answer: str
+    context_rows: int = Field(ge=0, default=0)
+    sources: list[GraphRagSource] = Field(default_factory=list)
+    llm_provider: Literal["openai", "ollama"]
+    llm_model: str
+    monitor: GraphRagMonitor | None = None
+
+
+class SaveTraceRequest(BaseModel):
+    """Request payload for persisting one in-memory trace session."""
+
+    case_id: str
+    channel: Literal["ingest", "chat"] = "ingest"
+
+
+class SaveTraceResponse(BaseModel):
+    """Response payload after saving a thought-stream session."""
+
+    thought_stream_id: str
+    case_id: str
+    channel: Literal["ingest", "chat"]
+    saved: bool = True
+
+
+class DeleteTraceResponse(BaseModel):
+    """Response payload after discarding a thought-stream session."""
+
+    thought_stream_id: str
+    deleted: bool = True
+
+
+class TraceSessionResponse(BaseModel):
+    """Response payload for one live thought-stream session."""
+
+    thought_stream_id: str
+    status: Literal["running", "completed", "failed"]
+    updated_at: str
+    thought_stream: AgentTracePayload
+
+
+class AgentRuntimeMetric(BaseModel):
+    """One computed runtime KPI row for dashboard rendering."""
+
+    key: str
+    label: str
+    value: float
+    display: str
+    unit: str | None = None
+    status: Literal["good", "warn", "bad", "info"] = "info"
+    target: str
+    description: str
+
+
+class AgentRuntimeMetricsResponse(BaseModel):
+    """Response payload for the runtime metrics dashboard."""
+
+    generated_at: str
+    lookback_hours: int = Field(ge=1, le=168)
+    sampled_runs: int = Field(ge=0, default=0)
+    running_runs: int = Field(ge=0, default=0)
+    finished_runs: int = Field(ge=0, default=0)
+    storage_connected: bool = True
+    rag_storage_connected: bool = True
+    rag_sampled_queries: int = Field(ge=0, default=0)
+    rag_paired_comparisons: int = Field(ge=0, default=0)
+    metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
 
 
 class CaseSummary(BaseModel):

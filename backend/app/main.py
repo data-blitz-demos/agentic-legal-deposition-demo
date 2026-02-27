@@ -11,18 +11,23 @@ This module wires together:
 
 from contextlib import asynccontextmanager
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from glob import glob
 import hashlib
 from pathlib import Path
 import re
+from threading import Lock
+from time import monotonic
 from typing import Literal
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
+from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
 from fastapi.encoders import jsonable_encoder
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from langchain_core.messages import HumanMessage, SystemMessage
 
 from .chat import AttorneyChatService
 from .config import get_settings
@@ -30,12 +35,18 @@ from .couchdb import CouchDBClient
 from .graph import DepositionWorkflow
 from .llm import (
     LLMOperationalError,
+    build_chat_model,
     ensure_llm_operational,
     get_llm_option_status,
+    llm_failure_message,
     list_llm_options,
     resolve_llm_selection,
 )
 from .models import (
+    AgentRuntimeMetric,
+    AgentRuntimeMetricsResponse,
+    AgentTraceEvent,
+    AgentTracePayload,
     ChatRequest,
     ChatResponse,
     CaseListResponse,
@@ -55,18 +66,51 @@ from .models import (
     IngestedDepositionResult,
     LLMOption,
     LLMOptionsResponse,
+    DeleteTraceResponse,
+    GraphBrowserResponse,
+    GraphOntologyBrowserEntry,
+    GraphOntologyBrowserResponse,
+    GraphHealthResponse,
+    GraphOntologyOption,
+    GraphOntologyLoadRequest,
+    GraphOntologyLoadResponse,
+    GraphOntologyOptionsResponse,
+    GraphRagQueryRequest,
+    GraphRagQueryResponse,
+    GraphRagRetrievedResource,
+    GraphRagRelation,
+    GraphRagLiteral,
+    GraphRagMonitor,
+    GraphRagSource,
     RenameCaseRequest,
     RenameCaseResponse,
+    SaveTraceRequest,
+    SaveTraceResponse,
     SaveCaseRequest,
     SaveCaseVersionRequest,
+    TraceSessionResponse,
 )
+from .neo4j_graph import Neo4jOntologyGraph
+from .prompts import render_prompt
 
 settings = get_settings()
 couchdb = CouchDBClient(settings.couchdb_url, settings.couchdb_db)
+memory_couchdb = CouchDBClient(settings.couchdb_url, settings.memory_db)
+trace_couchdb = CouchDBClient(settings.couchdb_url, settings.thought_stream_db)
+rag_couchdb = CouchDBClient(settings.couchdb_url, settings.rag_stream_db)
 workflow = DepositionWorkflow(settings, couchdb)
 chat_service = AttorneyChatService(settings)
+neo4j_graph = Neo4jOntologyGraph(
+    uri=settings.neo4j_uri,
+    user=settings.neo4j_user,
+    password=settings.neo4j_password,
+    database=settings.neo4j_database,
+    browser_url=settings.neo4j_browser_url,
+)
 app_root = Path(__file__).resolve().parents[2]
 container_deposition_root = Path("/data/depositions")
+_trace_lock = Lock()
+_trace_sessions: dict[str, dict] = {}
 
 
 @asynccontextmanager
@@ -82,8 +126,15 @@ async def lifespan(_: FastAPI):
 
     _ensure_startup_llm_connectivity()
     couchdb.ensure_db()
+    memory_couchdb.ensure_db()
+    trace_couchdb.ensure_db()
+    rag_couchdb.ensure_db()
     yield
     couchdb.close()
+    memory_couchdb.close()
+    trace_couchdb.close()
+    rag_couchdb.close()
+    neo4j_graph.close()
 
 
 app = FastAPI(title="Legal Deposition Analysis Demo", lifespan=lifespan)
@@ -393,6 +444,29 @@ def _collect_txt_files(candidate: Path) -> list[Path]:
     return []
 
 
+def _collect_owl_files(candidate: Path) -> list[Path]:
+    """Collect ``.owl`` files from a file, directory, or glob candidate path."""
+
+    if candidate.exists():
+        if candidate.is_dir():
+            return sorted(
+                [
+                    path
+                    for path in candidate.iterdir()
+                    if path.is_file() and path.suffix.lower() == ".owl"
+                ]
+            )
+        if candidate.is_file() and candidate.suffix.lower() == ".owl":
+            return [candidate]
+        return []
+
+    if _path_has_glob(candidate):
+        matched = [Path(item) for item in glob(str(candidate), recursive=False)]
+        return sorted([path for path in matched if path.is_file() and path.suffix.lower() == ".owl"])
+
+    return []
+
+
 def _resolve_ingest_txt_files(requested_path: str) -> list[Path]:
     """Resolve requested input into unique, sorted deposition text files."""
 
@@ -419,6 +493,287 @@ def _resolve_ingest_txt_files(requested_path: str) -> list[Path]:
             f"Tried: {attempted}"
         ),
     )
+
+
+def _resolve_ontology_owl_files(requested_path: str) -> list[Path]:
+    """Resolve one requested ontology path into unique, sorted ``.owl`` files."""
+
+    requested = Path(requested_path).expanduser()
+    candidates: list[Path] = []
+    seen_candidates: set[str] = set()
+
+    def add_candidate(path: Path) -> None:
+        key = str(path)
+        if key in seen_candidates:
+            return
+        seen_candidates.add(key)
+        candidates.append(path)
+
+    add_candidate(requested)
+    configured_root = Path(settings.ontology_dir).expanduser()
+    if not requested.is_absolute():
+        add_candidate(app_root / requested)
+        if configured_root:
+            add_candidate(configured_root / requested)
+
+    all_matches: list[Path] = []
+    seen_files: set[str] = set()
+    for candidate in candidates:
+        for file_path in _collect_owl_files(candidate):
+            key = str(file_path.resolve()) if file_path.exists() else str(file_path)
+            if key in seen_files:
+                continue
+            seen_files.add(key)
+            all_matches.append(file_path)
+
+    if all_matches:
+        return sorted(all_matches)
+
+    attempted = ", ".join(str(item) for item in candidates)
+    raise HTTPException(
+        status_code=400,
+        detail=(
+            f"No .owl ontology files found for input: {requested_path}. "
+            f"Tried: {attempted}"
+        ),
+    )
+
+
+def _configured_ontology_root() -> Path:
+    """Resolve configured ontology directory to an absolute host path."""
+
+    configured = Path(settings.ontology_dir).expanduser()
+    if configured.is_absolute():
+        return configured
+    return app_root / configured
+
+
+def _list_ontology_owl_options() -> tuple[Path, list[GraphOntologyOption], str]:
+    """Discover OWL path options for the ontology dropdown."""
+
+    base = _configured_ontology_root()
+    wildcard = str(base / "*.owl")
+    options: list[GraphOntologyOption] = [
+        GraphOntologyOption(path=wildcard, label=f"All OWL files in {base}")
+    ]
+
+    if base.exists() and base.is_dir():
+        for file_path in sorted(
+            [path for path in base.rglob("*") if path.is_file() and path.suffix.lower() == ".owl"]
+        ):
+            options.append(
+                GraphOntologyOption(path=str(file_path), label=str(file_path.relative_to(base)))
+            )
+
+    return base, options, options[0].path
+
+
+def _resolve_ontology_browser_directory(requested_path: str | None) -> tuple[Path, Path]:
+    """Resolve and validate ontology browser directory under configured base root."""
+
+    base = _configured_ontology_root().resolve()
+    raw = str(requested_path or "").strip()
+    if not raw:
+        return base, base
+
+    candidate = Path(raw).expanduser()
+    if not candidate.is_absolute():
+        candidate = (base / candidate).resolve()
+    else:
+        candidate = candidate.resolve()
+
+    try:
+        candidate.relative_to(base)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Ontology browser path must remain under base directory: {base}",
+        ) from exc
+
+    if not candidate.exists():
+        raise HTTPException(
+            status_code=400,
+            detail=f"Ontology browser path does not exist: {candidate}",
+        )
+
+    if candidate.is_file():
+        if candidate.suffix.lower() != ".owl":
+            raise HTTPException(
+                status_code=400,
+                detail=f"Ontology browser path must reference a directory or .owl file: {candidate}",
+            )
+        candidate = candidate.parent
+
+    if not candidate.is_dir():
+        raise HTTPException(
+            status_code=400,
+            detail=f"Ontology browser path must be a directory: {candidate}",
+        )
+
+    return base, candidate
+
+
+def _list_ontology_browser_entries(directory: Path) -> tuple[list[GraphOntologyBrowserEntry], list[GraphOntologyBrowserEntry]]:
+    """List immediate subdirectories and OWL files for one ontology browse directory."""
+
+    directories: list[GraphOntologyBrowserEntry] = []
+    files: list[GraphOntologyBrowserEntry] = []
+
+    if not directory.exists() or not directory.is_dir():
+        return directories, files
+
+    children = sorted(directory.iterdir(), key=lambda item: item.name.lower())
+    for child in children:
+        if child.is_dir():
+            directories.append(
+                GraphOntologyBrowserEntry(path=str(child), name=child.name, kind="directory")
+            )
+            continue
+        if child.is_file() and child.suffix.lower() == ".owl":
+            files.append(
+                GraphOntologyBrowserEntry(path=str(child), name=child.name, kind="file")
+            )
+
+    return directories, files
+
+
+def _graph_browser_launch_url(browser_url: str, bolt_url: str, database: str) -> str:
+    """Build a Neo4j Browser URL that opens with a node/relationship graph starter query."""
+
+    parsed = urlparse(browser_url.strip() or "http://localhost:7474/browser/")
+    params = parse_qs(parsed.query, keep_blank_values=True)
+    params["cmd"] = ["edit"]
+    params["arg"] = ["MATCH (n) OPTIONAL MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 75;"]
+    normalized_bolt = _browser_reachable_bolt_url(browser_url, bolt_url)
+    if normalized_bolt:
+        params["connectURL"] = [normalized_bolt]
+    normalized_db = database.strip()
+    if normalized_db:
+        params["db"] = [normalized_db]
+    return urlunparse(parsed._replace(query=urlencode(params, doseq=True)))
+
+
+def _browser_reachable_bolt_url(browser_url: str, bolt_url: str) -> str:
+    """Prefer a Browser-reachable Bolt URL when backend uses container-internal hosts."""
+
+    parsed_bolt = urlparse(str(bolt_url or "").strip())
+    if parsed_bolt.scheme not in {"bolt", "neo4j", "bolt+s", "neo4j+s", "bolt+ssc", "neo4j+ssc"}:
+        return str(bolt_url or "").strip()
+
+    bolt_host = str(parsed_bolt.hostname or "").strip()
+    browser_host = str(urlparse(str(browser_url or "").strip()).hostname or "").strip()
+    if not bolt_host:
+        return str(bolt_url or "").strip()
+
+    container_aliases = {"neo4j", "db", "api", "couchdb", "localhost", "127.0.0.1", "::1"}
+    should_remap = False
+    if browser_host and bolt_host.lower() in container_aliases:
+        should_remap = True
+    elif browser_host and "." not in bolt_host and bolt_host.lower() != browser_host.lower():
+        should_remap = True
+
+    target_host = browser_host if should_remap and browser_host else bolt_host
+    userinfo = ""
+    if parsed_bolt.username:
+        userinfo = parsed_bolt.username
+        if parsed_bolt.password:
+            userinfo = f"{userinfo}:{parsed_bolt.password}"
+        userinfo = f"{userinfo}@"
+
+    host_literal = f"[{target_host}]" if ":" in target_host and not target_host.startswith("[") else target_host
+    netloc = f"{userinfo}{host_literal}"
+    if parsed_bolt.port is not None:
+        netloc = f"{netloc}:{parsed_bolt.port}"
+    return urlunparse(parsed_bolt._replace(netloc=netloc))
+
+
+def _rag_stream_doc_id() -> str:
+    """Build one unique document id for a RAG stream event."""
+
+    return f"rag_stream:{uuid4().hex}"
+
+
+def _append_rag_stream_event(
+    *,
+    trace_id: str | None,
+    question: str,
+    llm_provider: str,
+    llm_model: str,
+    use_rag: bool,
+    top_k: int,
+    status: str,
+    phase: str,
+    retrieval_terms: list[str] | None = None,
+    context_rows: int = 0,
+    sources: list[dict] | None = None,
+    context_preview: str | None = None,
+    llm_system_prompt: str | None = None,
+    llm_user_prompt: str | None = None,
+    answer_preview: str | None = None,
+    error: str | None = None,
+    retrieved_resources: list[dict] | None = None,
+) -> None:
+    """Persist one Graph RAG processing event to the dedicated rag-stream DB."""
+
+    doc = {
+        "_id": _rag_stream_doc_id(),
+        "type": "rag_stream",
+        "created_at": _utc_now_iso(),
+        "trace_id": str(trace_id or ""),
+        "question": question,
+        "llm_provider": llm_provider,
+        "llm_model": llm_model,
+        "use_rag": bool(use_rag),
+        "top_k": int(top_k),
+        "status": status,
+        "phase": phase,
+        "retrieval_terms": [str(item) for item in (retrieval_terms or [])],
+        "context_rows": int(context_rows or 0),
+        "sources": [
+            {
+                "iri": str(item.get("iri") or ""),
+                "label": str(item.get("label") or ""),
+            }
+            for item in (sources or [])
+            if str(item.get("iri") or "").strip()
+        ],
+        "context_preview": str(context_preview or "")[:9000],
+        "llm_system_prompt": str(llm_system_prompt or "")[:9000],
+        "llm_user_prompt": str(llm_user_prompt or "")[:9000],
+        "answer_preview": str(answer_preview or "")[:3000],
+        "error": str(error or "")[:3000],
+        "retrieved_resources": [
+            {
+                "iri": str(item.get("iri") or ""),
+                "label": str(item.get("label") or ""),
+                "relations": [
+                    {
+                        "predicate": str(rel.get("predicate") or ""),
+                        "object_label": str(rel.get("object_label") or ""),
+                        "object_iri": str(rel.get("object_iri") or ""),
+                    }
+                    for rel in (item.get("relations") or [])
+                    if isinstance(rel, dict)
+                ],
+                "literals": [
+                    {
+                        "predicate": str(literal.get("predicate") or ""),
+                        "value": str(literal.get("value") or ""),
+                        "datatype": str(literal.get("datatype") or ""),
+                        "lang": str(literal.get("lang") or ""),
+                    }
+                    for literal in (item.get("literals") or [])
+                    if isinstance(literal, dict)
+                ],
+            }
+            for item in (retrieved_resources or [])
+            if isinstance(item, dict) and str(item.get("iri") or "").strip()
+        ],
+    }
+    try:
+        rag_couchdb.update_doc(doc)
+    except Exception:
+        return
 
 
 def _normalize_deposition_root_path(path_text: str) -> Path:
@@ -454,6 +809,739 @@ def _cache_deposition_root(path: str) -> None:
         if isinstance(created_at, str) and created_at:
             doc["created_at"] = created_at
     couchdb.update_doc(doc)
+
+
+def _trace_doc_id(trace_id: str) -> str:
+    """Build stable document id for one trace session."""
+
+    digest = hashlib.sha1(trace_id.encode("utf-8")).hexdigest()[:24]
+    return f"thought_stream:{digest}"
+
+
+def _public_trace_session(session: dict) -> dict:
+    """Project internal trace session structure into API payload shape."""
+
+    status = str(session.get("status") or "running")
+    if status not in {"running", "completed", "failed"}:
+        status = "running"
+    return {
+        "thought_stream_id": str(session.get("trace_id") or ""),
+        "status": status,
+        "updated_at": str(session.get("updated_at") or _utc_now_iso()),
+        "thought_stream": {
+            "legal_clerk": list((session.get("trace") or {}).get("legal_clerk", [])),
+            "attorney": list((session.get("trace") or {}).get("attorney", [])),
+        },
+    }
+
+
+def _max_trace_sequence(trace_payload: dict) -> int:
+    """Return current max event sequence in a trace payload."""
+
+    seq = 0
+    for stream_name in ("legal_clerk", "attorney"):
+        for item in trace_payload.get(stream_name, []):
+            try:
+                seq = max(seq, int(item.get("sequence") or 0))
+            except Exception:
+                continue
+    return seq
+
+
+def _load_trace_session(trace_id: str) -> dict | None:
+    """Load persisted trace session from thought-stream database."""
+
+    doc_id = _trace_doc_id(trace_id)
+    try:
+        doc = trace_couchdb.get_doc(doc_id)
+    except Exception:
+        return None
+    if not isinstance(doc, dict):
+        return None
+
+    trace_payload = doc.get("trace", {})
+    if not isinstance(trace_payload, dict):
+        trace_payload = {"legal_clerk": [], "attorney": []}
+    trace_payload.setdefault("legal_clerk", [])
+    trace_payload.setdefault("attorney", [])
+
+    return {
+        "trace_id": str(doc.get("trace_id") or trace_id),
+        "status": str(doc.get("status") or "completed"),
+        "updated_at": str(doc.get("updated_at") or _utc_now_iso()),
+        "trace": trace_payload,
+        "created_at": str(doc.get("created_at") or _utc_now_iso()),
+        "_doc_id": str(doc.get("_id") or doc_id),
+        "_rev": doc.get("_rev"),
+        "_dirty_count": 0,
+        "_last_flush_monotonic": monotonic(),
+        "_next_sequence": _max_trace_sequence(trace_payload) + 1,
+    }
+
+
+def _ensure_trace_session(trace_id: str) -> dict:
+    """Create or fetch one trace session with internal bookkeeping metadata."""
+
+    with _trace_lock:
+        session = _trace_sessions.get(trace_id)
+        if session is not None:
+            return session
+
+        loaded = _load_trace_session(trace_id)
+        if loaded is not None:
+            _trace_sessions[trace_id] = loaded
+            return loaded
+
+        now = _utc_now_iso()
+        session = {
+            "trace_id": trace_id,
+            "status": "running",
+            "updated_at": now,
+            "trace": {
+                "legal_clerk": [],
+                "attorney": [],
+            },
+            "created_at": now,
+            "_doc_id": _trace_doc_id(trace_id),
+            "_rev": None,
+            "_dirty_count": 0,
+            "_last_flush_monotonic": monotonic(),
+            "_next_sequence": 1,
+        }
+        _trace_sessions[trace_id] = session
+        return session
+
+
+def _flush_trace_session(trace_id: str, *, force: bool = False) -> None:
+    """Persist trace session to thought-stream DB with batched/coalesced writes."""
+
+    with _trace_lock:
+        session = _trace_sessions.get(trace_id)
+        if session is None:
+            return
+        dirty_count = int(session.get("_dirty_count") or 0)
+        last_flush = float(session.get("_last_flush_monotonic") or 0.0)
+        elapsed = monotonic() - last_flush
+        if not force:
+            if dirty_count <= 0:
+                return
+            if dirty_count < 6 and elapsed < 1.0:
+                return
+
+        doc = {
+            "_id": session["_doc_id"],
+            "type": "thought_stream",
+            "trace_id": session["trace_id"],
+            "status": session["status"],
+            "updated_at": session["updated_at"],
+            "created_at": session.get("created_at", _utc_now_iso()),
+            "trace": session["trace"],
+        }
+        if session.get("_rev"):
+            doc["_rev"] = session.get("_rev")
+
+    saved = trace_couchdb.update_doc(doc)
+
+    with _trace_lock:
+        session = _trace_sessions.get(trace_id)
+        if session is None:
+            return
+        session["_rev"] = saved.get("_rev")
+        session["created_at"] = doc["created_at"]
+        session["_dirty_count"] = 0
+        session["_last_flush_monotonic"] = monotonic()
+
+
+def _trace_session_snapshot(trace_id: str) -> dict | None:
+    """Return one trace snapshot from memory or persisted thought-stream DB."""
+
+    with _trace_lock:
+        session = _trace_sessions.get(trace_id)
+        if session is not None:
+            return jsonable_encoder(_public_trace_session(session))
+
+    loaded = _load_trace_session(trace_id)
+    if loaded is None:
+        return None
+    with _trace_lock:
+        _trace_sessions[trace_id] = loaded
+    return jsonable_encoder(_public_trace_session(loaded))
+
+
+def _append_trace_events(
+    trace_id: str | None,
+    *,
+    legal_clerk: list[dict] | None = None,
+    attorney: list[dict] | None = None,
+    status: Literal["running", "completed", "failed"] | None = None,
+) -> None:
+    """Append events to one trace session and optionally update status."""
+
+    normalized_trace_id = str(trace_id or "").strip()
+    if not normalized_trace_id:
+        return
+
+    session = _ensure_trace_session(normalized_trace_id)
+    legal_items = [AgentTraceEvent.model_validate(item).model_dump() for item in (legal_clerk or [])]
+    attorney_items = [AgentTraceEvent.model_validate(item).model_dump() for item in (attorney or [])]
+
+    with _trace_lock:
+        now = _utc_now_iso()
+        for item in legal_items:
+            item["sequence"] = int(session.get("_next_sequence") or 1)
+            session["_next_sequence"] = int(session.get("_next_sequence") or 1) + 1
+            item.setdefault("at", now)
+            session["trace"]["legal_clerk"].append(item)
+        for item in attorney_items:
+            item["sequence"] = int(session.get("_next_sequence") or 1)
+            session["_next_sequence"] = int(session.get("_next_sequence") or 1) + 1
+            item.setdefault("at", now)
+            session["trace"]["attorney"].append(item)
+
+        if status is not None:
+            session["status"] = status
+        session["updated_at"] = now
+        session["_dirty_count"] = int(session.get("_dirty_count") or 0) + len(legal_items) + len(attorney_items)
+
+    _flush_trace_session(
+        normalized_trace_id,
+        force=status in {"completed", "failed"},
+    )
+
+
+def _delete_trace_session(trace_id: str) -> bool:
+    """Delete one trace session from in-memory cache."""
+
+    normalized_trace_id = trace_id.strip()
+    if not normalized_trace_id:
+        return False
+    deleted_memory = False
+    with _trace_lock:
+        deleted_memory = _trace_sessions.pop(normalized_trace_id, None) is not None
+
+    deleted_db = False
+    doc_id = _trace_doc_id(normalized_trace_id)
+    try:
+        existing = trace_couchdb.get_doc(doc_id)
+        deleted_db = isinstance(existing, dict)
+        trace_couchdb.delete_doc(doc_id, rev=existing.get("_rev") if isinstance(existing, dict) else None)
+    except Exception:
+        pass
+
+    return deleted_memory or deleted_db
+
+
+def _normalize_trace_status(value: str | None) -> Literal["running", "completed", "failed"]:
+    """Normalize trace-session status values to known enum members."""
+
+    normalized = str(value or "running").strip().lower()
+    if normalized in {"running", "completed", "failed"}:
+        return normalized
+    return "running"
+
+
+def _parse_iso_datetime(value: str | None) -> datetime | None:
+    """Parse an ISO timestamp string and normalize into UTC."""
+
+    text = str(value or "").strip()
+    if not text:
+        return None
+    normalized = text.replace("Z", "+00:00")
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def _flatten_trace_events(trace_payload: dict | None) -> list[dict]:
+    """Merge legal-clerk and attorney events into one ordered event list."""
+
+    payload = trace_payload if isinstance(trace_payload, dict) else {}
+    legal_items = payload.get("legal_clerk") if isinstance(payload.get("legal_clerk"), list) else []
+    attorney_items = payload.get("attorney") if isinstance(payload.get("attorney"), list) else []
+    items: list[dict] = []
+    for raw in [*legal_items, *attorney_items]:
+        if isinstance(raw, dict):
+            items.append(raw)
+
+    def _sort_key(item: dict) -> tuple[int, str]:
+        try:
+            seq = int(item.get("sequence") or 0)
+        except Exception:
+            seq = 0
+        return (seq, str(item.get("at") or ""))
+
+    return sorted(items, key=_sort_key)
+
+
+def _percentile(values: list[float], pct: float) -> float | None:
+    """Return percentile value using linear interpolation over sorted values."""
+
+    if not values:
+        return None
+    ordered = sorted(values)
+    if len(ordered) == 1:
+        return ordered[0]
+    rank = (len(ordered) - 1) * max(0.0, min(100.0, pct)) / 100.0
+    lower = int(rank)
+    upper = min(lower + 1, len(ordered) - 1)
+    fraction = rank - lower
+    return ordered[lower] + (ordered[upper] - ordered[lower]) * fraction
+
+
+def _status_high_is_bad(value: float, *, warn_at: float, bad_at: float) -> Literal["good", "warn", "bad"]:
+    """Assign health status where larger values indicate worse performance."""
+
+    if value >= bad_at:
+        return "bad"
+    if value >= warn_at:
+        return "warn"
+    return "good"
+
+
+def _status_low_is_bad(value: float, *, warn_below: float, bad_below: float) -> Literal["good", "warn", "bad"]:
+    """Assign health status where smaller values indicate worse performance."""
+
+    if value < bad_below:
+        return "bad"
+    if value < warn_below:
+        return "warn"
+    return "good"
+
+
+def _status_band(
+    value: float,
+    *,
+    warn_low: float,
+    warn_high: float,
+    bad_low: float,
+    bad_high: float,
+) -> Literal["good", "warn", "bad"]:
+    """Assign health status for values expected to stay within a healthy band."""
+
+    if value < bad_low or value > bad_high:
+        return "bad"
+    if value < warn_low or value > warn_high:
+        return "warn"
+    return "good"
+
+
+def _normalize_metrics_session(raw: dict) -> dict | None:
+    """Normalize raw trace session data into one metrics-friendly shape."""
+
+    trace_id = str(raw.get("trace_id") or "").strip()
+    if not trace_id:
+        return None
+    trace_payload = raw.get("trace") if isinstance(raw.get("trace"), dict) else {}
+    trace_payload.setdefault("legal_clerk", [])
+    trace_payload.setdefault("attorney", [])
+    return {
+        "trace_id": trace_id,
+        "status": _normalize_trace_status(str(raw.get("status") or "running")),
+        "created_at": str(raw.get("created_at") or ""),
+        "updated_at": str(raw.get("updated_at") or ""),
+        "trace": trace_payload,
+    }
+
+
+def _collect_runtime_trace_sessions() -> tuple[list[dict], bool]:
+    """Collect deduplicated trace sessions from DB and in-memory runtime cache."""
+
+    storage_connected = True
+    sessions_by_id: dict[str, dict] = {}
+
+    try:
+        persisted = trace_couchdb.find({"type": "thought_stream"}, limit=2000)
+    except Exception:
+        persisted = []
+        storage_connected = False
+
+    for doc in persisted:
+        if not isinstance(doc, dict):
+            continue
+        normalized = _normalize_metrics_session(doc)
+        if normalized is not None:
+            sessions_by_id[normalized["trace_id"]] = normalized
+
+    with _trace_lock:
+        for session in _trace_sessions.values():
+            if not isinstance(session, dict):
+                continue
+            normalized = _normalize_metrics_session(session)
+            if normalized is None:
+                continue
+            # Runtime in-memory state is newer than persisted snapshots.
+            sessions_by_id[normalized["trace_id"]] = normalized
+
+    return list(sessions_by_id.values()), storage_connected
+
+
+def _collect_recent_rag_stream_events(lookback_hours: int) -> tuple[list[dict], bool]:
+    """Collect recent Graph RAG stream events used for A/B influence metrics."""
+
+    storage_connected = True
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
+    try:
+        docs = rag_couchdb.find({"type": "rag_stream", "phase": "answer"}, limit=5000)
+    except Exception:
+        return [], False
+
+    events: list[dict] = []
+    for doc in docs:
+        if not isinstance(doc, dict):
+            continue
+        created_at = _parse_iso_datetime(doc.get("created_at"))
+        if created_at is not None and created_at < cutoff:
+            continue
+        try:
+            context_rows = int(doc.get("context_rows") or 0)
+        except Exception:
+            context_rows = 0
+        events.append(
+            {
+                "created_at": created_at,
+                "status": str(doc.get("status") or "").strip().lower(),
+                "question": str(doc.get("question") or "").strip(),
+                "answer_preview": str(doc.get("answer_preview") or "").strip(),
+                "use_rag": bool(doc.get("use_rag")),
+                "context_rows": max(0, context_rows),
+            }
+        )
+    return events, storage_connected
+
+
+def _normalize_question_key(value: str) -> str:
+    """Normalize a question string for stable A/B grouping."""
+
+    return " ".join(str(value or "").strip().lower().split())
+
+
+def _normalize_answer_key(value: str) -> str:
+    """Normalize an answer preview string for influence comparison."""
+
+    return " ".join(str(value or "").strip().lower().split())
+
+
+def _word_count(value: str) -> int:
+    """Count rough word tokens for relative answer-size comparisons."""
+
+    return len(re.findall(r"[A-Za-z0-9_]+", str(value or "")))
+
+
+def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRuntimeMetric], int]:
+    """Compute Graph RAG on/off influence KPIs from rag-stream answer events."""
+
+    answer_events = [
+        item
+        for item in rag_events
+        if isinstance(item, dict) and str(item.get("status") or "") == "completed"
+    ]
+    rag_on_events = [item for item in answer_events if bool(item.get("use_rag"))]
+    rag_off_events = [item for item in answer_events if not bool(item.get("use_rag"))]
+    rag_on_count = len(rag_on_events)
+    rag_off_count = len(rag_off_events)
+
+    context_hit_count = sum(1 for item in rag_on_events if int(item.get("context_rows") or 0) > 0)
+    context_hit_rate = (context_hit_count / rag_on_count * 100.0) if rag_on_count else 0.0
+    avg_context_rows = (
+        sum(float(int(item.get("context_rows") or 0)) for item in rag_on_events) / float(rag_on_count)
+        if rag_on_count
+        else 0.0
+    )
+
+    by_question: dict[str, dict[str, dict]] = {}
+    for item in answer_events:
+        question_key = _normalize_question_key(str(item.get("question") or ""))
+        if not question_key:
+            continue
+        side = "on" if bool(item.get("use_rag")) else "off"
+        bucket = by_question.setdefault(question_key, {})
+        existing = bucket.get(side)
+        item_created = item.get("created_at")
+        existing_created = existing.get("created_at") if isinstance(existing, dict) else None
+        if existing is None:
+            bucket[side] = item
+            continue
+        if isinstance(item_created, datetime):
+            if not isinstance(existing_created, datetime) or item_created >= existing_created:
+                bucket[side] = item
+
+    paired_count = 0
+    changed_count = 0
+    answer_word_deltas: list[float] = []
+    for bucket in by_question.values():
+        on_item = bucket.get("on")
+        off_item = bucket.get("off")
+        if not isinstance(on_item, dict) or not isinstance(off_item, dict):
+            continue
+        paired_count += 1
+        on_answer = str(on_item.get("answer_preview") or "")
+        off_answer = str(off_item.get("answer_preview") or "")
+        if _normalize_answer_key(on_answer) != _normalize_answer_key(off_answer):
+            changed_count += 1
+        answer_word_deltas.append(float(_word_count(on_answer) - _word_count(off_answer)))
+
+    influence_rate = (changed_count / paired_count * 100.0) if paired_count else 0.0
+    avg_answer_delta_words = (
+        sum(answer_word_deltas) / len(answer_word_deltas)
+        if answer_word_deltas
+        else 0.0
+    )
+
+    metrics = [
+        AgentRuntimeMetric(
+            key="rag_toggle_comparison_pairs",
+            label="RAG Toggle Comparison Pairs",
+            value=float(paired_count),
+            display=str(paired_count),
+            status="info",
+            target="Track trend",
+            description="Count of unique questions with both RAG ON and RAG OFF completed answers in lookback.",
+        ),
+        AgentRuntimeMetric(
+            key="rag_answer_change_rate_pct",
+            label="RAG Answer Change Rate",
+            value=round(influence_rate, 3),
+            display=f"{influence_rate:.1f}%",
+            unit="%",
+            status="info" if paired_count else "info",
+            target="Track trend",
+            description="Share of paired ON/OFF comparisons where answer text changed.",
+        ),
+        AgentRuntimeMetric(
+            key="rag_context_hit_rate_pct",
+            label="RAG Context Hit Rate",
+            value=round(context_hit_rate, 3),
+            display=f"{context_hit_rate:.1f}%" if rag_on_count else "N/A",
+            unit="%",
+            status=_status_low_is_bad(context_hit_rate, warn_below=70.0, bad_below=40.0)
+            if rag_on_count
+            else "info",
+            target=">= 70%",
+            description="For RAG ON completed queries, share with at least one retrieved context row.",
+        ),
+        AgentRuntimeMetric(
+            key="rag_avg_context_rows_on",
+            label="Avg Context Rows (RAG ON)",
+            value=round(avg_context_rows, 3),
+            display=f"{avg_context_rows:.2f}" if rag_on_count else "N/A",
+            status=_status_low_is_bad(avg_context_rows, warn_below=1.0, bad_below=0.25)
+            if rag_on_count
+            else "info",
+            target=">= 1.0",
+            description="Average retrieved graph rows per completed query when RAG is enabled.",
+        ),
+        AgentRuntimeMetric(
+            key="rag_avg_answer_word_delta_on_minus_off",
+            label="Avg Answer Word Delta (ON-OFF)",
+            value=round(avg_answer_delta_words, 3),
+            display=f"{avg_answer_delta_words:+.1f} words" if paired_count else "N/A",
+            status="info",
+            target="Track trend",
+            description="Average answer length difference between paired RAG ON and RAG OFF responses.",
+        ),
+        AgentRuntimeMetric(
+            key="rag_completed_queries_split",
+            label="Completed Graph Queries (ON/OFF)",
+            value=float(rag_on_count + rag_off_count),
+            display=f"{rag_on_count}/{rag_off_count}",
+            status="info",
+            target="Track mix",
+            description="Completed Graph RAG query count split as ON/OFF in lookback.",
+        ),
+    ]
+    return metrics, paired_count
+
+
+def _compute_agent_runtime_metrics(
+    sessions: list[dict],
+    *,
+    lookback_hours: int,
+    storage_connected: bool,
+    rag_events: list[dict],
+    rag_storage_connected: bool,
+) -> AgentRuntimeMetricsResponse:
+    """Compute dashboard KPIs for runtime health and Graph RAG influence."""
+
+    now_utc = datetime.now(timezone.utc)
+    cutoff = now_utc - timedelta(hours=lookback_hours)
+    sampled: list[dict] = []
+    for session in sessions:
+        if not isinstance(session, dict):
+            continue
+        updated_at = _parse_iso_datetime(session.get("updated_at"))
+        if updated_at is not None and updated_at < cutoff:
+            continue
+        sampled.append(session)
+
+    completed_runs = 0
+    failed_runs = 0
+    running_runs = 0
+    durations: list[float] = []
+    ttft_values: list[float] = []
+    finished_step_counts: list[float] = []
+    loop_risk_runs = 0
+
+    for session in sampled:
+        status = _normalize_trace_status(str(session.get("status") or "running"))
+        if status == "completed":
+            completed_runs += 1
+        elif status == "failed":
+            failed_runs += 1
+        else:
+            running_runs += 1
+
+        events = _flatten_trace_events(session.get("trace"))
+        created_at = _parse_iso_datetime(session.get("created_at"))
+        updated_at = _parse_iso_datetime(session.get("updated_at"))
+        if created_at is not None and updated_at is not None and updated_at >= created_at:
+            durations.append((updated_at - created_at).total_seconds())
+
+        if created_at is not None and events:
+            event_times = [
+                parsed
+                for parsed in (_parse_iso_datetime(str(item.get("at") or "")) for item in events)
+                if parsed is not None and parsed >= created_at
+            ]
+            if event_times:
+                ttft_values.append((min(event_times) - created_at).total_seconds())
+
+        if status in {"completed", "failed"}:
+            step_count = float(len(events))
+            finished_step_counts.append(step_count)
+            if step_count >= 20:
+                loop_risk_runs += 1
+
+    finished_runs = completed_runs + failed_runs
+    sampled_runs = len(sampled)
+    success_rate = (completed_runs / finished_runs * 100.0) if finished_runs else 0.0
+    failure_rate = (failed_runs / finished_runs * 100.0) if finished_runs else 0.0
+    p95_latency = _percentile(durations, 95.0)
+    p95_ttft = _percentile(ttft_values, 95.0)
+    avg_steps = (
+        sum(finished_step_counts) / len(finished_step_counts)
+        if finished_step_counts
+        else 0.0
+    )
+    loop_risk_rate = (loop_risk_runs / len(finished_step_counts) * 100.0) if finished_step_counts else 0.0
+    finished_runs_per_hour = finished_runs / float(lookback_hours)
+
+    metrics = [
+        AgentRuntimeMetric(
+            key="task_success_rate_pct",
+            label="Task Success Rate",
+            value=round(success_rate, 3),
+            display=f"{success_rate:.1f}%",
+            unit="%",
+            status=_status_low_is_bad(success_rate, warn_below=95.0, bad_below=90.0)
+            if finished_runs
+            else "info",
+            target=">= 95%",
+            description="Completed runs divided by all finished runs.",
+        ),
+        AgentRuntimeMetric(
+            key="run_failure_rate_pct",
+            label="Run Failure Rate",
+            value=round(failure_rate, 3),
+            display=f"{failure_rate:.1f}%",
+            unit="%",
+            status=_status_high_is_bad(failure_rate, warn_at=2.0, bad_at=5.0)
+            if finished_runs
+            else "info",
+            target="<= 2%",
+            description="Failed runs divided by all finished runs.",
+        ),
+        AgentRuntimeMetric(
+            key="p95_end_to_end_latency_sec",
+            label="P95 End-to-End Latency",
+            value=round(float(p95_latency or 0.0), 3),
+            display=f"{p95_latency:.1f}s" if p95_latency is not None else "N/A",
+            unit="s",
+            status=_status_high_is_bad(float(p95_latency), warn_at=45.0, bad_at=75.0)
+            if p95_latency is not None
+            else "info",
+            target="<= 45s",
+            description="95th percentile of total run duration.",
+        ),
+        AgentRuntimeMetric(
+            key="p95_time_to_first_event_sec",
+            label="P95 Time To First Event",
+            value=round(float(p95_ttft or 0.0), 3),
+            display=f"{p95_ttft:.1f}s" if p95_ttft is not None else "N/A",
+            unit="s",
+            status=_status_high_is_bad(float(p95_ttft), warn_at=3.0, bad_at=8.0)
+            if p95_ttft is not None
+            else "info",
+            target="<= 3s",
+            description="95th percentile delay from run start to first trace event.",
+        ),
+        AgentRuntimeMetric(
+            key="avg_steps_per_finished_run",
+            label="Avg Steps / Finished Run",
+            value=round(avg_steps, 3),
+            display=f"{avg_steps:.1f}",
+            status=_status_band(
+                avg_steps,
+                warn_low=4.0,
+                warn_high=18.0,
+                bad_low=2.0,
+                bad_high=24.0,
+            )
+            if finished_step_counts
+            else "info",
+            target="4-18",
+            description="Average number of trace events for completed/failed runs.",
+        ),
+        AgentRuntimeMetric(
+            key="loop_risk_rate_pct",
+            label="Loop Risk Rate",
+            value=round(loop_risk_rate, 3),
+            display=f"{loop_risk_rate:.1f}%",
+            unit="%",
+            status=_status_high_is_bad(loop_risk_rate, warn_at=5.0, bad_at=12.0)
+            if finished_step_counts
+            else "info",
+            target="<= 5%",
+            description="Share of finished runs with 20+ trace events.",
+        ),
+        AgentRuntimeMetric(
+            key="in_flight_runs",
+            label="In-Flight Runs",
+            value=float(running_runs),
+            display=str(running_runs),
+            status=_status_high_is_bad(float(running_runs), warn_at=4.0, bad_at=8.0),
+            target="< 4",
+            description="Runs currently marked running within the lookback window.",
+        ),
+        AgentRuntimeMetric(
+            key="finished_runs_per_hour",
+            label="Finished Runs / Hour",
+            value=round(finished_runs_per_hour, 3),
+            display=f"{finished_runs_per_hour:.2f}/h",
+            status="info",
+            target="Track trend",
+            description="Throughput of completed + failed runs over lookback horizon.",
+        ),
+    ]
+
+    rag_metrics, rag_paired_comparisons = _compute_rag_influence_metrics(rag_events)
+    metrics.extend(rag_metrics)
+
+    return AgentRuntimeMetricsResponse(
+        generated_at=now_utc.isoformat(),
+        lookback_hours=lookback_hours,
+        sampled_runs=sampled_runs,
+        running_runs=running_runs,
+        finished_runs=finished_runs,
+        storage_connected=storage_connected,
+        rag_storage_connected=rag_storage_connected,
+        rag_sampled_queries=len(rag_events),
+        rag_paired_comparisons=rag_paired_comparisons,
+        metrics=metrics,
+    )
 
 
 def _safe_case_depositions(case_id: str) -> list[dict]:
@@ -583,7 +1671,7 @@ def _save_case_memory(case_id: str, channel: str, payload: dict) -> None:
     """Persist one case memory/event record in CouchDB."""
 
     try:
-        couchdb.save_doc(
+        memory_couchdb.save_doc(
             {
                 "type": "case_memory",
                 "case_id": case_id,
@@ -702,6 +1790,13 @@ def _delete_case_docs(case_id: str) -> int:
         seen.add(doc_id)
         couchdb.delete_doc(doc_id, rev=doc.get("_rev"))
         deleted += 1
+    for doc in memory_couchdb.find({"case_id": case_id}, limit=10000):
+        doc_id = str(doc.get("_id") or "").strip()
+        if not doc_id or doc_id in seen:
+            continue
+        seen.add(doc_id)
+        memory_couchdb.delete_doc(doc_id, rev=doc.get("_rev"))
+        deleted += 1
     return deleted
 
 
@@ -736,6 +1831,14 @@ def _rename_case_docs(old_case_id: str, new_case_id: str) -> int:
             doc["last_action"] = "rename"
         couchdb.update_doc(doc)
         moved += 1
+    for doc in memory_couchdb.find({"case_id": old_case_id}, limit=10000):
+        doc_id = str(doc.get("_id") or "").strip()
+        if not doc_id or doc_id in seen:
+            continue
+        seen.add(doc_id)
+        doc["case_id"] = new_case_id
+        memory_couchdb.update_doc(doc)
+        moved += 1
     return moved
 
 
@@ -743,7 +1846,12 @@ def _case_has_docs(case_id: str) -> bool:
     """Return True when any docs exist for a case id."""
 
     try:
-        return len(couchdb.find({"case_id": case_id}, limit=1)) > 0
+        if len(couchdb.find({"case_id": case_id}, limit=1)) > 0:
+            return True
+    except Exception:
+        pass
+    try:
+        return len(memory_couchdb.find({"case_id": case_id}, limit=1)) > 0
     except Exception:
         return False
 
@@ -753,11 +1861,16 @@ def _clone_case_contents(source_case_id: str, target_case_id: str) -> int:
 
     cloned = 0
     for doc in couchdb.find({"case_id": source_case_id}, limit=10000):
-        if doc.get("type") not in ("deposition", "case_memory"):
+        if doc.get("type") != "deposition":
             continue
         copy_doc = {key: value for key, value in doc.items() if key not in ("_id", "_rev")}
         copy_doc["case_id"] = target_case_id
         couchdb.save_doc(copy_doc)
+        cloned += 1
+    for doc in memory_couchdb.find({"type": "case_memory", "case_id": source_case_id}, limit=10000):
+        copy_doc = {key: value for key, value in doc.items() if key not in ("_id", "_rev")}
+        copy_doc["case_id"] = target_case_id
+        memory_couchdb.save_doc(copy_doc)
         cloned += 1
     return cloned
 
@@ -997,6 +2110,501 @@ def add_deposition_root(request: DepositionRootRequest) -> DepositionRootRespons
     return DepositionRootResponse(path=path_text)
 
 
+@app.get("/api/graph-rag/browser", response_model=GraphBrowserResponse)
+def graph_browser_info() -> GraphBrowserResponse:
+    """Return Neo4j Browser URL and Bolt endpoint details for graph exploration."""
+
+    browser_url = neo4j_graph.browser_url
+    bolt_url = neo4j_graph.uri
+    database = neo4j_graph.database
+    return GraphBrowserResponse(
+        browser_url=browser_url,
+        bolt_url=bolt_url,
+        database=database,
+        launch_url=_graph_browser_launch_url(browser_url, bolt_url, database),
+    )
+
+
+@app.get("/api/graph-rag/health", response_model=GraphHealthResponse)
+def graph_rag_health() -> GraphHealthResponse:
+    """Return Neo4j configuration/connectivity status for Graph RAG readiness checks."""
+
+    return GraphHealthResponse.model_validate(neo4j_graph.health())
+
+
+@app.get("/api/graph-rag/owl-options", response_model=GraphOntologyOptionsResponse)
+def graph_rag_owl_options() -> GraphOntologyOptionsResponse:
+    """Return selectable OWL file path options for Graph RAG ontology loading."""
+
+    base, options, suggested = _list_ontology_owl_options()
+    return GraphOntologyOptionsResponse(
+        base_directory=str(base),
+        suggested=suggested,
+        options=options,
+    )
+
+
+@app.get("/api/graph-rag/owl-browser", response_model=GraphOntologyBrowserResponse)
+def graph_rag_owl_browser(path: str | None = None) -> GraphOntologyBrowserResponse:
+    """Return one level of ontology directory/file rows for file-browser style UI."""
+
+    base, directory = _resolve_ontology_browser_directory(path)
+    directories, files = _list_ontology_browser_entries(directory)
+    parent_directory = str(directory.parent) if directory != base else None
+    return GraphOntologyBrowserResponse(
+        base_directory=str(base),
+        current_directory=str(directory),
+        parent_directory=parent_directory,
+        wildcard_path=str(directory / "*.owl"),
+        directories=directories,
+        files=files,
+    )
+
+
+@app.post("/api/graph-rag/load-owl", response_model=GraphOntologyLoadResponse)
+def load_graph_rag_ontology(request: GraphOntologyLoadRequest) -> GraphOntologyLoadResponse:
+    """Load one or more OWL ontology files into Neo4j for Graph RAG indexing."""
+
+    path = request.path.strip()
+    if not path:
+        raise HTTPException(status_code=400, detail="Ontology path is required")
+
+    files = _resolve_ontology_owl_files(path)
+    try:
+        stats = neo4j_graph.load_owl_files(
+            files,
+            clear_existing=request.clear_existing,
+            batch_size=request.batch_size,
+        )
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(
+            status_code=502,
+            detail=f"Failed to import ontology files into Neo4j: {exc}",
+        ) from exc
+
+    return GraphOntologyLoadResponse(path=path, **stats)
+
+
+@app.post("/api/graph-rag/query", response_model=GraphRagQueryResponse)
+def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
+    """Answer one question using Neo4j ontology retrieval as the RAG context source."""
+
+    question = request.question.strip()
+    if not question:
+        raise HTTPException(status_code=400, detail="Graph RAG question is required")
+
+    trace_id = str(request.thought_stream_id or request.trace_id or "").strip() or None
+    use_rag = bool(request.use_rag)
+    stream_rag = bool(request.stream_rag)
+    llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
+    _ensure_request_llm_operational(llm_provider, llm_model)
+    _append_trace_events(
+        trace_id,
+        status="running",
+        legal_clerk=[
+            {
+                "persona": "Persona:Legal Clerk",
+                "phase": "graph_rag_retrieval_start",
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "input_preview": question,
+                "notes": (
+                    f"Starting Graph RAG cycle with top_k={request.top_k}. "
+                    f"use_rag={use_rag}."
+                ),
+            }
+        ],
+    )
+
+    if use_rag:
+        try:
+            retrieval = neo4j_graph.retrieve_context(question, node_limit=request.top_k)
+        except ValueError as exc:
+            _append_trace_events(
+                trace_id,
+                status="failed",
+                attorney=[
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "graph_rag_retrieval_error",
+                        "llm_provider": llm_provider,
+                        "llm_model": llm_model,
+                        "notes": str(exc),
+                    }
+                ],
+            )
+            if stream_rag:
+                _append_rag_stream_event(
+                    trace_id=trace_id,
+                    question=question,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    use_rag=use_rag,
+                    top_k=request.top_k,
+                    status="failed",
+                    phase="retrieval",
+                    error=str(exc),
+                )
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
+        except RuntimeError as exc:
+            _append_trace_events(
+                trace_id,
+                status="failed",
+                attorney=[
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "graph_rag_retrieval_error",
+                        "llm_provider": llm_provider,
+                        "llm_model": llm_model,
+                        "notes": str(exc),
+                    }
+                ],
+            )
+            if stream_rag:
+                _append_rag_stream_event(
+                    trace_id=trace_id,
+                    question=question,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    use_rag=use_rag,
+                    top_k=request.top_k,
+                    status="failed",
+                    phase="retrieval",
+                    error=str(exc),
+                )
+            raise HTTPException(status_code=503, detail=str(exc)) from exc
+        except Exception as exc:
+            _append_trace_events(
+                trace_id,
+                status="failed",
+                attorney=[
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "graph_rag_retrieval_error",
+                        "llm_provider": llm_provider,
+                        "llm_model": llm_model,
+                        "notes": str(exc),
+                    }
+                ],
+            )
+            if stream_rag:
+                _append_rag_stream_event(
+                    trace_id=trace_id,
+                    question=question,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    use_rag=use_rag,
+                    top_k=request.top_k,
+                    status="failed",
+                    phase="retrieval",
+                    error=str(exc),
+                )
+            raise HTTPException(
+                status_code=502,
+                detail=f"Failed to retrieve graph context from Neo4j: {exc}",
+            ) from exc
+    else:
+        retrieval = {
+            "resource_count": 0,
+            "resources": [],
+            "terms": [],
+            "context_text": "RAG processing was disabled for this request.",
+        }
+        _append_trace_events(
+            trace_id,
+            legal_clerk=[
+                {
+                    "persona": "Persona:Legal Clerk",
+                    "phase": "graph_rag_disabled",
+                    "llm_provider": llm_provider,
+                    "llm_model": llm_model,
+                    "notes": "RAG retrieval skipped because use_rag=false.",
+                }
+            ],
+        )
+
+    system_prompt = render_prompt("graph_rag_system")
+    user_prompt = render_prompt(
+        "graph_rag_user",
+        question=question,
+        context_text=retrieval.get("context_text", ""),
+    )
+    _append_trace_events(
+        trace_id,
+        legal_clerk=[
+            {
+                "persona": "Persona:Legal Clerk",
+                "phase": "graph_rag_context_ready",
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "input_preview": (
+                    f"retrieval_terms={retrieval.get('terms', [])}\n"
+                    f"context_rows={retrieval.get('resource_count', 0)}"
+                ),
+                "system_prompt": system_prompt,
+                "user_prompt": user_prompt,
+                "notes": "Prepared graph context and prompts for LLM inference.",
+            }
+        ],
+    )
+
+    llm = build_chat_model(settings, llm_provider, llm_model, temperature=0.1)
+    try:
+        result = llm.invoke(
+            [
+                SystemMessage(content=system_prompt),
+                HumanMessage(content=user_prompt),
+            ]
+        )
+    except Exception as exc:
+        _append_trace_events(
+            trace_id,
+            status="failed",
+            attorney=[
+                {
+                    "persona": "Persona:Attorney",
+                    "phase": "graph_rag_llm_error",
+                    "llm_provider": llm_provider,
+                    "llm_model": llm_model,
+                    "notes": str(exc),
+                }
+            ],
+        )
+        if stream_rag:
+            _append_rag_stream_event(
+                trace_id=trace_id,
+                question=question,
+                llm_provider=llm_provider,
+                llm_model=llm_model,
+                use_rag=use_rag,
+                top_k=request.top_k,
+                status="failed",
+                phase="llm",
+                retrieval_terms=[str(item) for item in retrieval.get("terms", [])],
+                context_rows=int(retrieval.get("resource_count") or 0),
+                sources=[item for item in retrieval.get("resources", []) if isinstance(item, dict)],
+                context_preview=str(retrieval.get("context_text", ""))[:9000],
+                llm_system_prompt=system_prompt,
+                llm_user_prompt=user_prompt,
+                error=str(exc),
+                retrieved_resources=[item for item in retrieval.get("resources", []) if isinstance(item, dict)],
+            )
+        raise HTTPException(
+            status_code=502,
+            detail=llm_failure_message(settings, llm_provider, llm_model, exc),
+        ) from exc
+
+    answer = str(getattr(result, "content", "") or "").strip()
+    if not answer:
+        answer = "Short answer: No answer could be generated from current ontology context."
+
+    sources = [
+        GraphRagSource(iri=str(item.get("iri") or ""), label=str(item.get("label") or ""))
+        for item in retrieval.get("resources", [])
+        if str(item.get("iri") or "").strip()
+    ]
+    retrieved_resources = [
+        GraphRagRetrievedResource(
+            iri=str(item.get("iri") or ""),
+            label=str(item.get("label") or item.get("iri") or ""),
+            relations=[
+                GraphRagRelation(
+                    predicate=str(rel.get("predicate") or ""),
+                    object_label=str(rel.get("object_label") or rel.get("object_iri") or ""),
+                    object_iri=str(rel.get("object_iri") or ""),
+                )
+                for rel in (item.get("relations") or [])
+                if isinstance(rel, dict) and str(rel.get("object_iri") or "").strip()
+            ],
+            literals=[
+                GraphRagLiteral(
+                    predicate=str(literal.get("predicate") or ""),
+                    value=str(literal.get("value") or ""),
+                    datatype=str(literal.get("datatype") or ""),
+                    lang=str(literal.get("lang") or ""),
+                )
+                for literal in (item.get("literals") or [])
+                if isinstance(literal, dict) and str(literal.get("value") or "").strip()
+            ],
+        )
+        for item in retrieval.get("resources", [])
+        if isinstance(item, dict) and str(item.get("iri") or "").strip()
+    ]
+    monitor = GraphRagMonitor(
+        rag_enabled=use_rag,
+        rag_stream_enabled=stream_rag,
+        retrieval_terms=[str(item) for item in retrieval.get("terms", [])],
+        retrieved_resources=retrieved_resources,
+        context_preview=str(retrieval.get("context_text", ""))[:9000],
+        llm_system_prompt=system_prompt,
+        llm_user_prompt=user_prompt,
+    )
+    _append_trace_events(
+        trace_id,
+        status="completed",
+        attorney=[
+            {
+                "persona": "Persona:Attorney",
+                "phase": "graph_rag_answer",
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "output_preview": answer,
+                "notes": f"Graph RAG completed with {len(sources)} source node(s).",
+            }
+        ],
+    )
+    if stream_rag:
+        _append_rag_stream_event(
+            trace_id=trace_id,
+            question=question,
+            llm_provider=llm_provider,
+            llm_model=llm_model,
+            use_rag=use_rag,
+            top_k=request.top_k,
+            status="completed",
+            phase="answer",
+            retrieval_terms=monitor.retrieval_terms,
+            context_rows=int(retrieval.get("resource_count") or 0),
+            sources=[{"iri": item.iri, "label": item.label} for item in sources],
+            context_preview=monitor.context_preview,
+            llm_system_prompt=monitor.llm_system_prompt,
+            llm_user_prompt=monitor.llm_user_prompt,
+            answer_preview=answer,
+            retrieved_resources=[item.model_dump() for item in monitor.retrieved_resources],
+        )
+    return GraphRagQueryResponse(
+        question=question,
+        answer=answer,
+        context_rows=int(retrieval.get("resource_count") or 0),
+        sources=sources,
+        llm_provider=llm_provider,
+        llm_model=llm_model,
+        monitor=monitor,
+    )
+
+
+@app.get("/api/thought-streams/health")
+def thought_stream_health() -> dict[str, str | bool]:
+    """Validate thought-stream CouchDB connectivity for UI toggle plumbing checks."""
+
+    try:
+        trace_couchdb.ensure_db(retries=1, delay_seconds=0)
+    except Exception as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                f"Thought Stream storage is unavailable for database "
+                f"'{settings.thought_stream_db}': {exc}"
+            ),
+        ) from exc
+
+    return {
+        "connected": True,
+        "database": settings.thought_stream_db,
+    }
+
+
+@app.get("/api/rag-streams/health")
+def rag_stream_health() -> dict[str, str | bool]:
+    """Validate rag-stream CouchDB connectivity for Graph RAG logging."""
+
+    try:
+        rag_couchdb.ensure_db(retries=1, delay_seconds=0)
+    except Exception as exc:
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                f"RAG stream storage is unavailable for database "
+                f"'{settings.rag_stream_db}': {exc}"
+            ),
+        ) from exc
+
+    return {
+        "connected": True,
+        "database": settings.rag_stream_db,
+    }
+
+
+@app.get("/api/agent-metrics", response_model=AgentRuntimeMetricsResponse)
+def get_agent_metrics(lookback_hours: int = 24) -> AgentRuntimeMetricsResponse:
+    """Return runtime KPI metrics for monitoring running agent/LLM behavior."""
+
+    if lookback_hours < 1 or lookback_hours > 168:
+        raise HTTPException(status_code=400, detail="lookback_hours must be between 1 and 168")
+    sessions, storage_connected = _collect_runtime_trace_sessions()
+    rag_events, rag_storage_connected = _collect_recent_rag_stream_events(lookback_hours)
+    return _compute_agent_runtime_metrics(
+        sessions,
+        lookback_hours=lookback_hours,
+        storage_connected=storage_connected,
+        rag_events=rag_events,
+        rag_storage_connected=rag_storage_connected,
+    )
+
+
+@app.get("/api/thought-streams/{thought_stream_id}", response_model=TraceSessionResponse)
+def get_trace_session(thought_stream_id: str) -> TraceSessionResponse:
+    """Return current thought-stream events for one active/past stream id."""
+
+    snapshot = _trace_session_snapshot(thought_stream_id.strip())
+    if snapshot is None:
+        raise HTTPException(status_code=404, detail=f"Thought stream '{thought_stream_id}' was not found")
+    return TraceSessionResponse.model_validate(snapshot)
+
+
+@app.post("/api/thought-streams/{thought_stream_id}/save", response_model=SaveTraceResponse)
+def save_trace_session(thought_stream_id: str, request: SaveTraceRequest) -> SaveTraceResponse:
+    """Persist thought-stream payload into case memory for later audit/review."""
+
+    normalized_trace_id = thought_stream_id.strip()
+    case_id = request.case_id.strip()
+    if not normalized_trace_id:
+        raise HTTPException(status_code=400, detail="Thought stream ID is required")
+    if not case_id:
+        raise HTTPException(status_code=400, detail="Case ID is required")
+
+    _flush_trace_session(normalized_trace_id, force=True)
+    snapshot = _trace_session_snapshot(normalized_trace_id)
+    if snapshot is None:
+        raise HTTPException(status_code=404, detail=f"Thought stream '{normalized_trace_id}' was not found")
+
+    _save_case_memory(
+        case_id,
+        "thought_stream",
+        {
+            "thought_stream_id": normalized_trace_id,
+            "channel": request.channel,
+            "thought_stream": snapshot.get("thought_stream", {}),
+            "status": snapshot.get("status"),
+            "updated_at": snapshot.get("updated_at"),
+        },
+    )
+    _upsert_case_doc(
+        case_id,
+        deposition_count=len(_safe_case_depositions(case_id)),
+        memory_increment=1,
+        last_action="thought_stream_save",
+    )
+    return SaveTraceResponse(
+        thought_stream_id=normalized_trace_id,
+        case_id=case_id,
+        channel=request.channel,
+        saved=True,
+    )
+
+
+@app.delete("/api/thought-streams/{thought_stream_id}", response_model=DeleteTraceResponse)
+def delete_trace_session(thought_stream_id: str) -> DeleteTraceResponse:
+    """Discard one in-memory thought-stream session."""
+
+    deleted = _delete_trace_session(thought_stream_id)
+    if not deleted:
+        raise HTTPException(status_code=404, detail=f"Thought stream '{thought_stream_id}' was not found")
+    return DeleteTraceResponse(thought_stream_id=thought_stream_id, deleted=True)
+
+
 @app.get("/api/cases", response_model=CaseListResponse)
 def list_cases() -> CaseListResponse:
     """List all known cases for the vertical case index."""
@@ -1145,11 +2753,45 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
     txt_files = _resolve_ingest_txt_files(request.directory)
     _purge_stale_case_depositions(request.case_id, txt_files)
     _purge_noncanonical_case_depositions(request.case_id, txt_files)
+    trace_id = str(request.thought_stream_id or request.trace_id or "").strip() or None
+    _append_trace_events(
+        trace_id,
+        status="running",
+        legal_clerk=[
+            {
+                "persona": "Persona:Legal Clerk",
+                "phase": "ingest_start",
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "notes": f"Starting ingest for {len(txt_files)} file(s).",
+                "input_preview": (
+                    f"case_id={request.case_id}\n"
+                    f"directory={request.directory}\n"
+                    f"skip_reassess={request.skip_reassess}"
+                ),
+            }
+        ],
+    )
 
     results: list[IngestedDepositionResult] = []
     ingested_ids: list[str] = []
     memory_count = 0
+    legal_clerk_trace: list[AgentTraceEvent] = []
+    attorney_trace: list[AgentTraceEvent] = []
     for file_path in txt_files:
+        _append_trace_events(
+            trace_id,
+            legal_clerk=[
+                {
+                    "persona": "Persona:Legal Clerk",
+                    "phase": "ingest_file_start",
+                    "file_name": file_path.name,
+                    "llm_provider": llm_provider,
+                    "llm_model": llm_model,
+                    "notes": f"Reading and mapping {file_path.name}.",
+                }
+            ],
+        )
         try:
             state = workflow.run(
                 case_id=request.case_id,
@@ -1158,12 +2800,37 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
                 llm_model=llm_model,
             )
         except Exception as exc:
+            _append_trace_events(
+                trace_id,
+                status="failed",
+                attorney=[
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "ingest_error",
+                        "file_name": file_path.name,
+                        "llm_provider": llm_provider,
+                        "llm_model": llm_model,
+                        "notes": str(exc),
+                    }
+                ],
+            )
             raise HTTPException(
                 status_code=502,
                 detail=f"Failed to process deposition file '{file_path.name}': {exc}",
             ) from exc
         doc = state["deposition_doc"]
         ingested_ids.append(doc["_id"])
+        legal_clerk_trace.extend(
+            [AgentTraceEvent.model_validate(item) for item in state.get("legal_clerk_trace", [])]
+        )
+        attorney_trace.extend(
+            [AgentTraceEvent.model_validate(item) for item in state.get("attorney_trace", [])]
+        )
+        _append_trace_events(
+            trace_id,
+            legal_clerk=state.get("legal_clerk_trace", []),
+            attorney=state.get("attorney_trace", []),
+        )
         _save_case_memory(
             request.case_id,
             "langgraph",
@@ -1207,8 +2874,31 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
         llm_provider=llm_provider,
         llm_model=llm_model,
     )
+    _append_trace_events(
+        trace_id,
+        status="completed",
+        attorney=[
+            {
+                "persona": "Persona:Attorney",
+                "phase": "ingest_complete",
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "notes": (
+                    f"Completed ingest for {len(results)} file(s). "
+                    f"skip_reassess={request.skip_reassess}."
+                ),
+            }
+        ],
+    )
 
-    return IngestCaseResponse(case_id=request.case_id, ingested=results)
+    return IngestCaseResponse(
+        case_id=request.case_id,
+        ingested=results,
+        thought_stream=AgentTracePayload(
+            legal_clerk=legal_clerk_trace,
+            attorney=attorney_trace,
+        ),
+    )
 
 
 @app.get("/api/depositions/{case_id}")
@@ -1236,6 +2926,7 @@ def chat(request: ChatRequest) -> ChatResponse:
 
     llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
     _ensure_request_llm_operational(llm_provider, llm_model)
+    trace_id = str(request.thought_stream_id or request.trace_id or "").strip() or None
     try:
         deposition = couchdb.get_doc(request.deposition_id)
     except Exception as exc:
@@ -1248,17 +2939,62 @@ def chat(request: ChatRequest) -> ChatResponse:
         for doc in couchdb.list_depositions(request.case_id)
         if doc.get("_id") != request.deposition_id
     ]
+    _append_trace_events(
+        trace_id,
+        status="running",
+        attorney=[
+            {
+                "persona": "Persona:Attorney",
+                "phase": "chat_start",
+                "file_name": str(deposition.get("file_name") or ""),
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "notes": "Attorney chat started.",
+                "input_preview": (
+                    f"message={request.message}\n"
+                    f"history_items={len(request.history)}\n"
+                    f"peer_count={len(peers)}"
+                ),
+            }
+        ],
+    )
     try:
-        response = chat_service.respond(
-            deposition,
-            peers,
-            request.message,
-            request.history,
-            llm_provider=llm_provider,
-            llm_model=llm_model,
-        )
+        if hasattr(type(chat_service), "respond_with_trace"):
+            response, trace_items = chat_service.respond_with_trace(
+                deposition,
+                peers,
+                request.message,
+                request.history,
+                llm_provider=llm_provider,
+                llm_model=llm_model,
+            )
+        else:
+            response = chat_service.respond(
+                deposition,
+                peers,
+                request.message,
+                request.history,
+                llm_provider=llm_provider,
+                llm_model=llm_model,
+            )
+            trace_items = []
     except Exception as exc:
+        _append_trace_events(
+            trace_id,
+            status="failed",
+            attorney=[
+                {
+                    "persona": "Persona:Attorney",
+                    "phase": "chat_error",
+                    "file_name": str(deposition.get("file_name") or ""),
+                    "llm_provider": llm_provider,
+                    "llm_model": llm_model,
+                    "notes": str(exc),
+                }
+            ],
+        )
         raise HTTPException(status_code=502, detail=str(exc)) from exc
+    _append_trace_events(trace_id, attorney=trace_items, status="completed")
     _save_case_memory(
         request.case_id,
         "chat",
@@ -1268,6 +3004,7 @@ def chat(request: ChatRequest) -> ChatResponse:
             "response": response,
             "llm_provider": llm_provider,
             "llm_model": llm_model,
+            "thought_stream": trace_items,
         },
     )
     _upsert_case_doc(
@@ -1278,7 +3015,10 @@ def chat(request: ChatRequest) -> ChatResponse:
         llm_provider=llm_provider,
         llm_model=llm_model,
     )
-    return ChatResponse(response=response)
+    return ChatResponse(
+        response=response,
+        thought_stream=AgentTracePayload(attorney=[AgentTraceEvent.model_validate(item) for item in trace_items]),
+    )
 
 
 @app.post("/api/reason-contradiction", response_model=ContradictionReasonResponse)
