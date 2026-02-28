@@ -156,6 +156,49 @@ class AttorneyChatService:
                 llm_failure_message(self.settings, llm_provider, llm_model, exc)
             ) from exc
 
+    def summarize_focused_reasoning(
+        self,
+        reasoning_text: str,
+        llm_provider: str | None = None,
+        llm_model: str | None = None,
+    ) -> str:
+        """Condense focused contradiction analysis into a shorter attorney-facing summary."""
+
+        normalized_source = str(reasoning_text or "").strip()
+        if not normalized_source:
+            raise RuntimeError("Focused reasoning text is required to summarize.")
+
+        system_prompt = (
+            "You are Persona:Attorney. Summarize focused contradiction analysis into concise, plain-language "
+            "litigation guidance. Keep key witness names, conflicts, and next action. Respond with descriptive "
+            "text using this structure:\n"
+            "Short answer: <1 sentence>\n"
+            "Key points:\n"
+            "- <bullet>\n"
+            "- <bullet>\n"
+            "Recommended action:\n"
+            "- <bullet>"
+        )
+        user_prompt = (
+            "Summarize this focused contradiction analysis without adding new facts.\n\n"
+            f"Focused analysis:\n{normalized_source}"
+        )
+
+        llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+
+        try:
+            result = llm.invoke(
+                [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
+            )
+            return self._normalize_focused_summary_output(
+                str(result.content or ""),
+                normalized_source,
+            )
+        except Exception as exc:
+            raise RuntimeError(
+                llm_failure_message(self.settings, llm_provider, llm_model, exc)
+            ) from exc
+
     def _get_llm(self, llm_provider: str | None, llm_model: str | None, *, temperature: float):
         """Return default model or provider-specific override model."""
 
@@ -186,6 +229,58 @@ class AttorneyChatService:
         if len(text) <= limit:
             return text
         return f"{text[:limit]}...(truncated)"
+
+    def _normalize_focused_summary_output(self, raw: str, source_text: str) -> str:
+        """Normalize focused-summary output into stable short-answer text plus bullets."""
+
+        cleaned = str(raw or "").strip()
+        fallback_short_answer = self._fallback_focused_summary(source_text)
+
+        if self._contains_placeholder(cleaned):
+            cleaned = ""
+
+        short_answer = self._extract_short_answer(cleaned) or fallback_short_answer
+        short_answer = re.sub(r"^\s*Short answer:\s*", "", short_answer, flags=re.IGNORECASE).strip()
+        if not short_answer:
+            short_answer = fallback_short_answer
+
+        bullets = self._extract_bullets(cleaned)
+        if not bullets:
+            bullets = [
+                "Preserve the core conflict, witness names, and chronology from the full focused re-analysis.",
+                "Use the full focused re-analysis before making final examination or impeachment decisions.",
+            ]
+
+        bullets = [item for item in bullets if not self._contains_placeholder(item)]
+        if not bullets:
+            bullets = [
+                "Preserve the core conflict, witness names, and chronology from the full focused re-analysis.",
+                "Use the full focused re-analysis before making final examination or impeachment decisions.",
+            ]
+
+        return "\n".join(
+            [
+                f"Short answer: {short_answer}",
+                "Key points:",
+                f"- {bullets[0]}",
+                f"- {bullets[1] if len(bullets) > 1 else bullets[0]}",
+                "Recommended action:",
+                f"- {bullets[2] if len(bullets) > 2 else 'Compare this condensed summary back to the full focused re-analysis before acting.'}",
+            ]
+        )
+
+    def _fallback_focused_summary(self, source_text: str) -> str:
+        """Build deterministic fallback sentence when summary output is empty or malformed."""
+
+        collapsed = " ".join(str(source_text or "").split())
+        if not collapsed:
+            return "The focused re-analysis is available, but it still needs a concise summary."
+        first_sentence = re.split(r"(?<=[.!?])\s+", collapsed, maxsplit=1)[0].strip()
+        if first_sentence:
+            trimmed = re.sub(r"^\s*Short answer:\s*", "", first_sentence, flags=re.IGNORECASE).strip()
+            if trimmed:
+                return trimmed[:220]
+        return collapsed[:220]
 
     def _normalize_chat_output(self, raw: str, deposition: dict, user_message: str) -> str:
         """Normalize attorney chat output into plain-language short answer + details."""

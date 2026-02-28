@@ -208,6 +208,40 @@ class ContradictionReasonResponse(BaseModel):
     response: str
 
 
+class FocusedReasoningSummaryRequest(BaseModel):
+    """Request payload for summarizing focused contradiction reasoning text."""
+
+    case_id: str
+    deposition_id: str
+    reasoning_text: str = Field(min_length=1)
+    llm_provider: Literal["openai", "ollama"] | None = None
+    llm_model: str | None = None
+
+
+class FocusedReasoningSummaryResponse(BaseModel):
+    """Response payload for focused contradiction reasoning summary endpoint."""
+
+    summary: str
+
+
+class DepositionSentimentRequest(BaseModel):
+    """Request payload for computing sentiment across one deposition's full text."""
+
+    case_id: str
+    deposition_id: str
+
+
+class DepositionSentimentResponse(BaseModel):
+    """Response payload for deposition-wide sentiment analysis."""
+
+    score: float = Field(ge=-1.0, le=1.0)
+    label: Literal["positive", "neutral", "negative"]
+    summary: str
+    positive_matches: int = Field(ge=0)
+    negative_matches: int = Field(ge=0)
+    word_count: int = Field(ge=0)
+
+
 class LLMOption(BaseModel):
     """Selectable LLM option with runtime readiness metadata."""
 
@@ -445,6 +479,9 @@ class AgentRuntimeMetric(BaseModel):
     status: Literal["good", "warn", "bad", "info"] = "info"
     target: str
     description: str
+    formula: str | None = None
+    detail: str | None = None
+    tracking: str | None = None
 
 
 class AgentRuntimeMetricsResponse(BaseModel):
@@ -460,6 +497,7 @@ class AgentRuntimeMetricsResponse(BaseModel):
     rag_sampled_queries: int = Field(ge=0, default=0)
     rag_paired_comparisons: int = Field(ge=0, default=0)
     metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
+    correctness_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
 
 
 class CaseSummary(BaseModel):
@@ -473,6 +511,12 @@ class CaseSummary(BaseModel):
     last_directory: str | None = None
     last_llm_provider: Literal["openai", "ollama"] | None = None
     last_llm_model: str | None = None
+
+
+class CaseDetailResponse(CaseSummary):
+    """One saved case record including persisted snapshot state."""
+
+    snapshot: dict = Field(default_factory=dict)
 
 
 class CaseListResponse(BaseModel):
@@ -502,6 +546,7 @@ class SaveCaseRequest(BaseModel):
     directory: str | None = None
     llm_provider: Literal["openai", "ollama"] | None = None
     llm_model: str | None = None
+    snapshot: dict = Field(default_factory=dict)
 
 
 class SaveCaseVersionRequest(BaseModel):
@@ -546,3 +591,38 @@ class RenameCaseResponse(BaseModel):
     old_case_id: str
     new_case_id: str
     moved_docs: int = Field(ge=0)
+
+
+class AdminUserRequest(BaseModel):
+    """Request payload for adding one lightweight admin user record."""
+
+    name: str = Field(min_length=1)
+
+
+class AdminUserResponse(BaseModel):
+    """One saved admin user record."""
+
+    user_id: str
+    name: str
+    created_at: str
+
+
+class AdminUserListResponse(BaseModel):
+    """Response payload listing lightweight admin user records."""
+
+    users: list[AdminUserResponse] = Field(default_factory=list)
+
+
+class AdminTestLogResponse(BaseModel):
+    """Response payload for summarized test-log output shown in Admin/Test."""
+
+    summary: str
+    log_output: str
+
+
+class DepositionUploadResponse(BaseModel):
+    """Response payload after uploading deposition text files into one folder."""
+
+    directory: str
+    saved_files: list[str] = Field(default_factory=list)
+    file_count: int = Field(ge=0)

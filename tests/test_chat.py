@@ -416,6 +416,86 @@ def test_normalize_reasoning_output_uses_default_insights_when_no_bullets():
     assert "- The conflict goes to witness credibility" in result
 
 
+def test_summarize_focused_reasoning_normalizes_output():
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(
+        content="Short answer: The timeline conflict remains material.\n- The witness timing still conflicts with the peer.\n- The issue is usable for impeachment.\n- Compare against the full notes before deposition."
+    )
+
+    result = service.summarize_focused_reasoning(
+        "Short answer: The timeline conflict is material. Why this matters:\n- The witness timing conflicts."
+    )
+
+    assert result.startswith("Short answer: The timeline conflict remains material.")
+    assert "Key points:" in result
+    assert "Recommended action:" in result
+
+
+def test_summarize_focused_reasoning_uses_fallback_when_output_is_placeholder():
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(
+        content="Short answer: <1 sentence>\n- <bullet>"
+    )
+
+    result = service.summarize_focused_reasoning(
+        "Short answer: The focused timeline conflict remains material. Why this matters:\n- It affects credibility."
+    )
+
+    assert "<1 sentence>" not in result
+    assert "<bullet>" not in result
+    assert result.startswith("Short answer: The focused timeline conflict remains material.")
+
+
+def test_summarize_focused_reasoning_rejects_empty_source():
+    service = build_service_with_mock_llm()
+
+    with pytest.raises(RuntimeError, match="Focused reasoning text is required"):
+        service.summarize_focused_reasoning("   ")
+
+
+def test_summarize_focused_reasoning_wraps_llm_errors():
+    service = build_service_with_mock_llm()
+    service.llm.invoke.side_effect = RuntimeError("summary broke")
+
+    with pytest.raises(RuntimeError, match="summary broke"):
+        service.summarize_focused_reasoning("Short answer: Full focused reasoning.")
+
+
+def test_normalize_focused_summary_output_falls_back_when_short_answer_is_blank():
+    service = build_service_with_mock_llm()
+
+    result = service._normalize_focused_summary_output(
+        "Short answer:\n",
+        "Short answer: Full focused reasoning remains material.",
+    )
+
+    assert result.startswith("Short answer: Full focused reasoning remains material.")
+    assert "Preserve the core conflict, witness names, and chronology" in result
+
+
+def test_normalize_focused_summary_output_rebuilds_bullets_when_all_placeholders_removed():
+    service = build_service_with_mock_llm()
+    service._extract_bullets = Mock(return_value=["<bullet>"])
+
+    result = service._normalize_focused_summary_output(
+        "Short answer: Clean answer.\n- Placeholder survives patched extractor.",
+        "Short answer: Full focused reasoning remains material.",
+    )
+
+    assert result.startswith("Short answer: Clean answer.")
+    assert "Preserve the core conflict, witness names, and chronology" in result
+
+
+def test_fallback_focused_summary_handles_empty_and_blank_short_answer_prefix():
+    service = build_service_with_mock_llm()
+
+    assert (
+        service._fallback_focused_summary("")
+        == "The focused re-analysis is available, but it still needs a concise summary."
+    )
+    assert service._fallback_focused_summary("Short answer:   ").startswith("Short answer:")
+
+
 def test_parse_json_payload_supports_fenced_and_empty():
     service = build_service_with_mock_llm()
 

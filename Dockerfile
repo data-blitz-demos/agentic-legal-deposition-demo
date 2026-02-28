@@ -13,6 +13,7 @@ COPY frontend ./frontend
 COPY mcp_servers ./mcp_servers
 COPY scripts ./scripts
 COPY tests ./tests
+COPY reports ./reports
 COPY pytest.ini ./
 COPY requirements-dev.txt ./
 

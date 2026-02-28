@@ -4,11 +4,16 @@ import pytest
 from pydantic import ValidationError
 
 from backend.app.models import (
+    AdminTestLogResponse,
+    AdminUserListResponse,
+    AdminUserRequest,
+    AdminUserResponse,
     AgentRuntimeMetric,
     AgentRuntimeMetricsResponse,
     AgentTraceEvent,
     AgentTracePayload,
     CaseListResponse,
+    CaseDetailResponse,
     CaseVersionListResponse,
     CaseVersionSummary,
     RenameCaseRequest,
@@ -19,8 +24,13 @@ from backend.app.models import (
     ContradictionAssessment,
     ContradictionFinding,
     ContradictionReasonRequest,
+    FocusedReasoningSummaryRequest,
+    FocusedReasoningSummaryResponse,
     DepositionDocument,
     DeleteCaseResponse,
+    DepositionSentimentRequest,
+    DepositionSentimentResponse,
+    DepositionUploadResponse,
     DepositionSchema,
     GraphBrowserResponse,
     GraphHealthResponse,
@@ -176,6 +186,25 @@ def test_request_models_roundtrip():
         llm_model="gpt-5.2",
         contradiction=contradiction,
     )
+    focused_summary = FocusedReasoningSummaryRequest(
+        case_id="case",
+        deposition_id="dep:1",
+        reasoning_text="Short answer: Full focused analysis.",
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+    )
+    focused_summary_response = FocusedReasoningSummaryResponse(
+        summary="Short answer: Condensed focused analysis."
+    )
+    sentiment_request = DepositionSentimentRequest(case_id="case", deposition_id="dep:1")
+    sentiment_response = DepositionSentimentResponse(
+        score=-0.5,
+        label="negative",
+        summary="Overall deposition sentiment is negative.",
+        positive_matches=1,
+        negative_matches=3,
+        word_count=120,
+    )
 
     assert chat.history == []
     assert chat.llm_provider == "ollama"
@@ -189,6 +218,10 @@ def test_request_models_roundtrip():
     assert ingest.trace_id is None
     assert reason.contradiction.topic == "Timeline"
     assert reason.llm_model == "gpt-5.2"
+    assert focused_summary.reasoning_text == "Short answer: Full focused analysis."
+    assert focused_summary_response.summary.startswith("Short answer:")
+    assert sentiment_request.deposition_id == "dep:1"
+    assert sentiment_response.label == "negative"
 
 
 def test_llm_options_response_defaults():
@@ -209,11 +242,19 @@ def test_case_models_defaults_and_bounds():
     payload = CaseListResponse(cases=[summary])
     assert payload.cases[0].case_id == "CASE-001"
 
+    detail = CaseDetailResponse(case_id="CASE-001", snapshot={"chat": {"message_count": 2}})
+    assert detail.snapshot["chat"]["message_count"] == 2
+
     deleted = DeleteCaseResponse(case_id="CASE-001", deleted_docs=3)
     assert deleted.deleted_docs == 3
 
-    saved = SaveCaseRequest(case_id="CASE-002", directory="/data/depositions/default")
+    saved = SaveCaseRequest(
+        case_id="CASE-002",
+        directory="/data/depositions/default",
+        snapshot={"selected_deposition_id": "dep:1"},
+    )
     assert saved.case_id == "CASE-002"
+    assert saved.snapshot["selected_deposition_id"] == "dep:1"
 
     rename_request = RenameCaseRequest(new_case_id="CASE-003")
     assert rename_request.new_case_id == "CASE-003"
@@ -250,6 +291,32 @@ def test_case_models_defaults_and_bounds():
     version_list = CaseVersionListResponse(case_id="CASE-001", versions=[version_summary])
     assert version_list.versions[0].case_id == "CASE-001"
 
+    admin_user_request = AdminUserRequest(name="Paul Harvener")
+    assert admin_user_request.name == "Paul Harvener"
+
+    admin_user = AdminUserResponse(
+        user_id="admin-user-1",
+        name="Paul Harvener",
+        created_at="2026-02-28T00:00:00+00:00",
+    )
+    assert admin_user.user_id == "admin-user-1"
+
+    admin_users = AdminUserListResponse(users=[admin_user])
+    assert admin_users.users[0].name == "Paul Harvener"
+
+    admin_test_log = AdminTestLogResponse(
+        summary="Parsed 1 recorded test runs from tests.html.",
+        log_output="No explicit per-test log output was captured.",
+    )
+    assert "Parsed 1 recorded test runs" in admin_test_log.summary
+
+    upload_response = DepositionUploadResponse(
+        directory="/data/depositions/default",
+        saved_files=["/data/depositions/default/new_dep.txt"],
+        file_count=1,
+    )
+    assert upload_response.file_count == 1
+
 
 def test_agent_runtime_metrics_models():
     metric = AgentRuntimeMetric(
@@ -273,9 +340,11 @@ def test_agent_runtime_metrics_models():
         rag_sampled_queries=6,
         rag_paired_comparisons=2,
         metrics=[metric],
+        correctness_metrics=[metric],
     )
     assert payload.lookback_hours == 24
     assert payload.metrics[0].status == "good"
+    assert payload.correctness_metrics[0].key == "task_success_rate_pct"
     assert payload.rag_sampled_queries == 6
     assert payload.rag_paired_comparisons == 2
 

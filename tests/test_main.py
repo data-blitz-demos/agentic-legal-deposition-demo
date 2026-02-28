@@ -8,13 +8,16 @@ from unittest.mock import Mock
 
 import pytest
 from fastapi import HTTPException
+from fastapi import UploadFile
 
 from backend.app import main
 from backend.app.models import (
     ChatRequest,
     ContradictionFinding,
     ContradictionReasonRequest,
+    DepositionSentimentRequest,
     DepositionRootRequest,
+    FocusedReasoningSummaryRequest,
     GraphOntologyLoadRequest,
     GraphRagQueryRequest,
     IngestCaseRequest,
@@ -78,6 +81,179 @@ def test_collect_owl_files_from_directory_file_and_glob(tmp_path):
     assert single_file == [a]
     assert glob_files == [a]
     assert non_owl_file == []
+
+
+def test_resolve_upload_directory_and_sanitize_filename(tmp_path, monkeypatch):
+    target = tmp_path / "deps"
+    target.mkdir()
+    monkeypatch.setattr(main, "_build_ingest_candidates", lambda _path: [Path("/tmp/*.txt"), target])
+
+    resolved = main._resolve_upload_directory("/data/depositions/default")
+
+    assert resolved == target
+    assert main._sanitize_uploaded_deposition_filename("witness lisa!.TXT", 1) == "witness_lisa.txt"
+    assert main._sanitize_uploaded_deposition_filename("", 2) == "uploaded_deposition_2.txt"
+    assert main._sanitize_uploaded_deposition_filename("***.txt", 3) == "uploaded_deposition_3.txt"
+
+
+def test_resolve_upload_directory_rejects_missing_target(monkeypatch):
+    monkeypatch.setattr(main, "_build_ingest_candidates", lambda _path: [Path("/missing/deps")])
+
+    with pytest.raises(HTTPException) as excinfo:
+        main._resolve_upload_directory("/missing/deps")
+
+    assert excinfo.value.status_code == 400
+    assert "existing directory" in excinfo.value.detail
+
+    with pytest.raises(HTTPException) as empty_exc:
+        main._resolve_upload_directory("")
+
+    assert empty_exc.value.status_code == 400
+    assert "Deposition folder is required" in empty_exc.value.detail
+
+
+def test_upload_depositions_rejects_empty_list_and_non_txt(tmp_path, monkeypatch):
+    target = tmp_path / "deps"
+    target.mkdir()
+    monkeypatch.setattr(main, "_resolve_upload_directory", lambda _path: target)
+
+    with pytest.raises(HTTPException) as empty_exc:
+        main.upload_depositions(directory=str(target), files=[])
+
+    assert empty_exc.value.status_code == 400
+
+    bad_upload = UploadFile(filename="evidence.pdf", file=SimpleNamespace(read=lambda: b"pdf", close=lambda: None))
+    with pytest.raises(HTTPException) as bad_exc:
+        main.upload_depositions(directory=str(target), files=[bad_upload])
+
+    assert bad_exc.value.status_code == 400
+    assert ".txt file" in bad_exc.value.detail
+
+
+def test_upload_depositions_wraps_write_error_and_ignores_close_error(tmp_path, monkeypatch):
+    target = tmp_path / "deps"
+    target.mkdir()
+    monkeypatch.setattr(main, "_resolve_upload_directory", lambda _path: target)
+
+    class _BrokenFile:
+        def read(self):
+            raise OSError("disk full")
+
+        def close(self):
+            raise OSError("close failed")
+
+    broken_upload = SimpleNamespace(filename="broken.txt", file=_BrokenFile())
+
+    with pytest.raises(HTTPException) as excinfo:
+        main.upload_depositions(directory=str(target), files=[broken_upload])
+
+    assert excinfo.value.status_code == 502
+    assert "Failed to save uploaded deposition 'broken.txt'" in excinfo.value.detail
+
+
+def test_render_themed_admin_test_report_returns_input_when_already_themed():
+    html = '<html><head><style id="admin-report-theme"></style></head><body>ready</body></html>'
+
+    themed = main._render_themed_admin_test_report(html)
+
+    assert themed == html
+
+
+def test_render_themed_admin_test_report_prefixes_style_without_head():
+    html = "<div>report body only</div>"
+
+    themed = main._render_themed_admin_test_report(html)
+
+    assert themed.startswith(main._ADMIN_REPORT_THEME_CSS)
+    assert themed.endswith(html)
+
+
+def test_extract_test_report_log_output_handles_missing_file(monkeypatch, tmp_path):
+    monkeypatch.setattr(main, "tests_report_file", tmp_path / "missing-tests.html")
+
+    payload = main._extract_test_report_log_output()
+
+    assert payload.summary == "tests.html is not available."
+    assert "Run the test suite" in payload.log_output
+
+
+def test_extract_test_report_log_output_handles_missing_data_blob(monkeypatch, tmp_path):
+    report_file = tmp_path / "tests.html"
+    report_file.write_text("<html><body><h1>No blob</h1></body></html>", encoding="utf-8")
+    monkeypatch.setattr(main, "tests_report_file", report_file)
+
+    payload = main._extract_test_report_log_output()
+
+    assert payload.summary == "No structured test metadata was found in tests.html."
+    assert "data-jsonblob" in payload.log_output
+
+
+def test_extract_test_report_log_output_handles_bad_payload_and_no_explicit_logs(monkeypatch, tmp_path):
+    bad_file = tmp_path / "bad-tests.html"
+    bad_file.write_text('<div data-jsonblob="{not-json}"></div>', encoding="utf-8")
+    monkeypatch.setattr(main, "tests_report_file", bad_file)
+
+    bad_payload = main._extract_test_report_log_output()
+
+    assert bad_payload.summary == "The embedded test metadata could not be parsed."
+    assert "could not decode" in bad_payload.log_output
+
+    quiet_file = tmp_path / "quiet-tests.html"
+    quiet_file.write_text(
+        (
+            '<div id="data-container" data-jsonblob="{&#34;tests&#34;:{&#34;tests/test_quiet.py::test_only&#34;:'
+            '[{&#34;result&#34;:&#34;Passed&#34;,&#34;log&#34;:&#34;No log output captured.&#34;}]}}"></div>'
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(main, "tests_report_file", quiet_file)
+
+    quiet_payload = main._extract_test_report_log_output()
+
+    assert "Parsed 1 recorded test runs" in quiet_payload.summary
+    assert "No explicit per-test log output was captured" in quiet_payload.log_output
+
+
+def test_extract_test_report_log_output_skips_non_list_and_non_dict_runs(monkeypatch, tmp_path):
+    report_file = tmp_path / "tests.html"
+    report_file.write_text(
+        (
+            '<div id="data-container" data-jsonblob="{&#34;tests&#34;:{'
+            '&#34;tests/test_skip.py::test_non_list&#34;:&#34;bad&#34;,'
+            '&#34;tests/test_skip.py::test_non_dict&#34;:[&#34;bad-run&#34;]}}"></div>'
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(main, "tests_report_file", report_file)
+
+    payload = main._extract_test_report_log_output()
+
+    assert payload.summary == "Parsed 0 recorded test runs from tests.html."
+    assert "No explicit per-test log output was captured" in payload.log_output
+
+
+def test_list_admin_users_skips_invalid_docs_and_save_admin_user_validates(monkeypatch):
+    class _BrokenDoc:
+        def get(self, _key, _default=None):
+            raise RuntimeError("bad doc")
+
+    couchdb = Mock()
+    couchdb.find.return_value = [
+        {"_id": "", "name": "Missing Id", "created_at": "2026-02-28T00:00:00+00:00"},
+        _BrokenDoc(),
+        {"_id": "admin:1", "name": "Paul Harvener", "created_at": "2026-02-28T00:00:00+00:00"},
+    ]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    users = main._list_admin_users()
+
+    assert len(users) == 1
+    assert users[0].name == "Paul Harvener"
+
+    with pytest.raises(HTTPException) as excinfo:
+        main._save_admin_user("   ")
+
+    assert excinfo.value.status_code == 400
 
 
 def test_build_ingest_candidates_handles_container_mapping(monkeypatch):
@@ -353,19 +529,46 @@ def test_resolve_ontology_browser_directory_defaults_to_base_when_path_missing(m
     assert current == ontology_root.resolve()
 
 
-def test_resolve_ontology_browser_directory_rejects_missing_path(monkeypatch, tmp_path):
+def test_resolve_ontology_browser_directory_falls_back_to_nearest_existing_parent(monkeypatch, tmp_path):
     ontology_root = tmp_path / "ontology"
-    ontology_root.mkdir()
-    missing = ontology_root / "missing"
+    nested = ontology_root / "contracts"
+    nested.mkdir(parents=True)
+    missing = nested / "missing" / "deeper"
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    base, current = main._resolve_ontology_browser_directory(str(missing))
+    assert base == ontology_root.resolve()
+    assert current == nested.resolve()
+
+
+def test_resolve_ontology_browser_directory_handles_wildcard_and_missing_owl_file(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology"
+    nested = ontology_root / "contracts"
+    nested.mkdir(parents=True)
+
+    monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    _, wildcard_current = main._resolve_ontology_browser_directory(str(nested / "*.owl"))
+    assert wildcard_current == nested.resolve()
+
+    _, missing_file_current = main._resolve_ontology_browser_directory(str(nested / "future.owl"))
+    assert missing_file_current == nested.resolve()
+
+
+def test_resolve_ontology_browser_directory_falls_back_to_base_when_root_missing(monkeypatch, tmp_path):
+    ontology_root = tmp_path / "ontology-missing"
 
     monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
     monkeypatch.setattr(main, "app_root", tmp_path)
 
     with pytest.raises(HTTPException) as exc:
-        main._resolve_ontology_browser_directory(str(missing))
+        main._resolve_ontology_browser_directory(str(ontology_root / "contracts" / "future.owl"))
 
     assert exc.value.status_code == 400
-    assert "does not exist" in exc.value.detail
+    assert "must be a directory" in exc.value.detail
 
 
 def test_resolve_ontology_browser_directory_rejects_outside_base(monkeypatch, tmp_path):
@@ -1875,6 +2078,7 @@ def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
     assert payload.running_runs == 1
 
     by_key = {item.key: item for item in payload.metrics}
+    correctness_by_key = {item.key: item for item in payload.correctness_metrics}
     assert by_key["task_success_rate_pct"].display == "50.0%"
     assert by_key["task_success_rate_pct"].status == "bad"
     assert by_key["run_failure_rate_pct"].display == "50.0%"
@@ -1882,6 +2086,9 @@ def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
     assert by_key["loop_risk_rate_pct"].status == "bad"
     assert by_key["in_flight_runs"].display == "1"
     assert by_key["rag_toggle_comparison_pairs"].display == "0"
+    assert correctness_by_key["golden_set_accuracy"].display == "50.0%"
+    assert correctness_by_key["schema_adherence_rate"].display == "50.0%"
+    assert correctness_by_key["repeat_prompt_inconsistency"].display == "0.0%"
     assert payload.rag_sampled_queries == 0
     assert payload.rag_paired_comparisons == 0
     assert payload.rag_storage_connected is True
@@ -1922,12 +2129,16 @@ def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
     assert payload.finished_runs == 0
     assert payload.running_runs == 1
     by_key = {item.key: item for item in payload.metrics}
+    correctness_by_key = {item.key: item for item in payload.correctness_metrics}
     assert by_key["task_success_rate_pct"].status == "info"
     assert by_key["run_failure_rate_pct"].status == "info"
     assert by_key["p95_end_to_end_latency_sec"].status == "info"
     assert by_key["p95_time_to_first_event_sec"].status == "info"
     assert by_key["avg_steps_per_finished_run"].status == "info"
     assert by_key["loop_risk_rate_pct"].status == "info"
+    assert correctness_by_key["golden_set_accuracy"].display == "N/A"
+    assert correctness_by_key["schema_adherence_rate"].display == "N/A"
+    assert correctness_by_key["unsupported_claim_rate"].display == "N/A"
 
 
 def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypatch):
@@ -1945,6 +2156,7 @@ def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypa
             "answer_preview": "A material breach is uncured failure.",
             "use_rag": True,
             "context_rows": 3,
+            "context_preview": "abc",
         },
         {
             "type": "rag_stream",
@@ -1955,6 +2167,7 @@ def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypa
             "answer_preview": "Unable to ground answer with graph context disabled.",
             "use_rag": False,
             "context_rows": 0,
+            "context_preview": "",
         },
         {
             "type": "rag_stream",
@@ -1965,6 +2178,7 @@ def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypa
             "answer_preview": "stale",
             "use_rag": True,
             "context_rows": 1,
+            "context_preview": "stale",
         },
     ]
     monkeypatch.setattr(main, "rag_couchdb", rag_db)
@@ -1980,6 +2194,7 @@ def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypa
     assert by_key["rag_answer_change_rate_pct"].display == "100.0%"
     assert by_key["rag_context_hit_rate_pct"].display == "100.0%"
     assert by_key["rag_avg_context_rows_on"].display == "3.00"
+    assert by_key["rag_avg_context_bytes_on"].display == "3 B"
     assert by_key["rag_completed_queries_split"].display == "1/1"
 
 
@@ -1996,6 +2211,7 @@ def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch
             "answer_preview": "blank question should be ignored for pairing",
             "use_rag": True,
             "context_rows": "not-an-int",
+            "context_preview": "size-check",
         },
         {
             "type": "rag_stream",
@@ -2006,6 +2222,7 @@ def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch
             "answer_preview": "ON older answer",
             "use_rag": True,
             "context_rows": 1,
+            "context_preview": "old",
         },
         {
             "type": "rag_stream",
@@ -2016,6 +2233,7 @@ def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch
             "answer_preview": "ON newer answer",
             "use_rag": True,
             "context_rows": 2,
+            "context_preview": "newer context",
         },
         {
             "type": "rag_stream",
@@ -2026,6 +2244,7 @@ def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch
             "answer_preview": "OFF baseline answer",
             "use_rag": False,
             "context_rows": 0,
+            "context_preview": "",
         },
         {
             "type": "rag_stream",
@@ -2036,6 +2255,7 @@ def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch
             "answer_preview": "no OFF pair exists",
             "use_rag": True,
             "context_rows": 1,
+            "context_preview": "solo",
         },
     ]
     monkeypatch.setattr(main, "rag_couchdb", rag_db)
@@ -2044,11 +2264,155 @@ def test_collect_recent_rag_stream_events_and_influence_branch_edges(monkeypatch
 
     assert connected is True
     assert events[0]["context_rows"] == 0
+    assert events[0]["context_bytes"] == len("size-check".encode("utf-8"))
     metrics, paired = main._compute_rag_influence_metrics(events)
     assert paired == 1
     by_key = {item.key: item for item in metrics}
     assert by_key["rag_toggle_comparison_pairs"].display == "1"
     assert by_key["rag_answer_change_rate_pct"].display == "100.0%"
+
+
+def test_compute_correctness_drift_metrics_returns_live_values():
+    now = datetime.now(timezone.utc)
+    sessions = [
+        {
+            "trace_id": "trace-complete",
+            "status": "completed",
+            "created_at": (now - timedelta(minutes=40)).isoformat(),
+            "updated_at": (now - timedelta(minutes=39)).isoformat(),
+            "trace": {
+                "legal_clerk": [
+                    {
+                        "persona": "Persona:Legal Clerk",
+                        "phase": "map_deposition",
+                        "sequence": 1,
+                        "at": (now - timedelta(minutes=39, seconds=30)).isoformat(),
+                        "llm_provider": "openai",
+                        "llm_model": "gpt-5.2",
+                        "output_preview": "mapped",
+                    }
+                ],
+                "attorney": [],
+            },
+        },
+        {
+            "trace_id": "trace-failed",
+            "status": "failed",
+            "created_at": (now - timedelta(minutes=20)).isoformat(),
+            "updated_at": (now - timedelta(minutes=19)).isoformat(),
+            "trace": {
+                "legal_clerk": [],
+                "attorney": [
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "chat_error",
+                        "sequence": 1,
+                        "at": (now - timedelta(minutes=19, seconds=45)).isoformat(),
+                        "llm_provider": "ollama",
+                        "llm_model": "law-model",
+                        "notes": "provider error",
+                    }
+                ],
+            },
+        },
+    ]
+    rag_events = [
+        {
+            "created_at": now - timedelta(minutes=18),
+            "status": "completed",
+            "question": "What is consideration?",
+            "answer_preview": "Consideration requires bargained-for exchange.",
+            "use_rag": True,
+            "llm_provider": "openai",
+            "llm_model": "gpt-5.2",
+            "context_rows": 2,
+            "context_bytes": 64,
+        },
+        {
+            "created_at": now - timedelta(minutes=16),
+            "status": "completed",
+            "question": "What is consideration?",
+            "answer_preview": "Consideration is something of value.",
+            "use_rag": True,
+            "llm_provider": "openai",
+            "llm_model": "gpt-5.2",
+            "context_rows": 0,
+            "context_bytes": 0,
+        },
+        {
+            "created_at": now - timedelta(minutes=14),
+            "status": "completed",
+            "question": "What is consideration?",
+            "answer_preview": "Graph context disabled; answer confidence is low.",
+            "use_rag": False,
+            "llm_provider": "ollama",
+            "llm_model": "law-model",
+            "context_rows": 0,
+            "context_bytes": 0,
+        },
+    ]
+
+    metrics = main._compute_correctness_drift_metrics(sessions, rag_events)
+    by_key = {item.key: item for item in metrics}
+
+    assert by_key["golden_set_accuracy"].display == "50.0%"
+    assert by_key["schema_adherence_rate"].display == "50.0%"
+    assert by_key["unsupported_claim_rate"].display == "50.0%"
+    assert by_key["repeat_prompt_inconsistency"].display == "100.0%"
+    assert by_key["model_mix_drift_jsd"].display != "N/A"
+    assert by_key["judge_human_disagreement"].display == "100.0%"
+    assert "proxy" in by_key["golden_set_accuracy"].description.lower()
+    assert "grouping repeated normalized questions" in by_key["repeat_prompt_inconsistency"].tracking.lower()
+
+
+def test_correctness_helper_branches_and_edge_cases():
+    assert main._normalize_model_key(None, None) == "unknown"
+    assert main._normalize_model_key(None, "gpt-5.2") == "gpt-5.2"
+    assert main._normalize_model_key("openai", None) == "openai"
+
+    session_time = datetime.now(timezone.utc).isoformat()
+    unknown_session = {
+        "created_at": session_time,
+        "updated_at": "",
+        "trace": {
+            "legal_clerk": ["skip", {"persona": "Persona:Legal Clerk", "phase": "map_deposition"}],
+            "attorney": [],
+        },
+    }
+    stamp, model_key = main._session_model_observation(unknown_session)
+    assert stamp is not None
+    assert model_key == "unknown"
+
+    rate, repeated_groups = main._repeat_prompt_inconsistency_rate(
+        [
+            "skip",
+            {"status": "running", "question": "Q", "answer_preview": "A"},
+            {"status": "completed", "question": " ", "answer_preview": "A"},
+            {"status": "completed", "question": "Q", "answer_preview": ""},
+        ]
+    )
+    assert rate == 0.0
+    assert repeated_groups == 0
+
+    assert main._distribution_from_labels([]) == {}
+    assert main._jensen_shannon_divergence({}, {}) == 0.0
+    assert main._jensen_shannon_divergence({"a": 1.0}, {"a": 1.0}) == 0.0
+    assert main._jensen_shannon_divergence({"a": 1.0}, {"b": 1.0}) > 0.0
+
+    assert main._model_mix_drift_jsd(["skip"], ["skip"]) == 0.0
+    assert (
+        main._model_mix_drift_jsd(
+            [
+                {
+                    "created_at": "",
+                    "updated_at": "",
+                    "trace": {"legal_clerk": [], "attorney": []},
+                }
+            ],
+            [{"created_at": "bad-stamp", "llm_provider": "openai", "llm_model": "gpt-5.2"}],
+        )
+        == 0.0
+    )
 
 
 def test_collect_recent_rag_stream_events_handles_db_failure(monkeypatch):
@@ -2075,6 +2439,167 @@ def test_get_agent_metrics_endpoint_validates_lookback(monkeypatch):
         main.get_agent_metrics(lookback_hours=0)
     assert exc.value.status_code == 400
     assert "lookback_hours must be between 1 and 168" in exc.value.detail
+
+
+def test_compute_agent_metric_history_builds_runtime_and_rag_series():
+    now = datetime.now(timezone.utc)
+    older_created = now - timedelta(hours=3, minutes=1)
+    older_updated = now - timedelta(hours=3)
+    recent_created = now - timedelta(hours=1, minutes=1)
+    recent_updated = now - timedelta(hours=1)
+    older_event = (older_created + timedelta(seconds=20)).isoformat()
+    recent_event = (recent_created + timedelta(seconds=20)).isoformat()
+    sessions = [
+        {
+            "trace_id": "trace-complete",
+            "status": "completed",
+            "created_at": older_created.isoformat(),
+            "updated_at": older_updated.isoformat(),
+            "trace": {
+                "legal_clerk": [
+                    {
+                        "persona": "Persona:Legal Clerk",
+                        "phase": "start",
+                        "sequence": 1,
+                        "at": older_event,
+                    }
+                ],
+                "attorney": [],
+            },
+        },
+        {
+            "trace_id": "trace-failed",
+            "status": "failed",
+            "created_at": recent_created.isoformat(),
+            "updated_at": recent_updated.isoformat(),
+            "trace": {
+                "legal_clerk": [],
+                "attorney": [
+                    {
+                        "persona": "Persona:Attorney",
+                        "phase": "step",
+                        "sequence": 1,
+                        "at": recent_event,
+                    }
+                ],
+            },
+        },
+        {
+            "trace_id": "trace-fallback-created",
+            "status": "running",
+            "created_at": (now - timedelta(minutes=25)).isoformat(),
+            "updated_at": "",
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+    ]
+    rag_events = [
+        {
+            "created_at": older_updated,
+            "status": "completed",
+            "question": "What is breach?",
+            "answer_preview": "Grounded answer",
+            "use_rag": True,
+            "context_rows": 2,
+            "context_bytes": 24,
+        },
+        {
+            "created_at": recent_updated,
+            "status": "completed",
+            "question": "What is breach?",
+            "answer_preview": "Ungrounded answer",
+            "use_rag": False,
+            "context_rows": 0,
+            "context_bytes": 0,
+        },
+    ]
+
+    runtime_history = main._compute_agent_metric_history(
+        sessions,
+        lookback_hours=4,
+        bucket_hours=2,
+        metric_key="task_success_rate_pct",
+        storage_connected=True,
+        rag_events=rag_events,
+        rag_storage_connected=True,
+    )
+    assert runtime_history["label"] == "Task Success Rate"
+    assert len(runtime_history["points"]) == 2
+    assert runtime_history["points"][0]["display"] == "100.0%"
+    assert runtime_history["points"][1]["display"] == "0.0%"
+    assert runtime_history["points"][1]["sample_size"] == 2
+
+    rag_history = main._compute_agent_metric_history(
+        sessions,
+        lookback_hours=4,
+        bucket_hours=2,
+        metric_key="rag_completed_queries_split",
+        storage_connected=True,
+        rag_events=rag_events,
+        rag_storage_connected=True,
+    )
+    assert rag_history["label"] == "Completed Graph Queries (ON/OFF)"
+    assert rag_history["points"][0]["display"] == "1/0"
+    assert rag_history["points"][1]["display"] == "0/1"
+    assert rag_history["points"][0]["sample_size"] == 1
+
+    correctness_history = main._compute_agent_metric_history(
+        sessions,
+        lookback_hours=4,
+        bucket_hours=2,
+        metric_key="golden_set_accuracy",
+        storage_connected=True,
+        rag_events=rag_events,
+        rag_storage_connected=True,
+    )
+    assert correctness_history["label"] == "Golden Set Accuracy"
+    assert correctness_history["points"][0]["display"] == "100.0%"
+    assert correctness_history["points"][1]["display"] == "0.0%"
+
+
+def test_get_agent_metric_history_endpoint_validates_and_handles_missing_metric(monkeypatch):
+    monkeypatch.setattr(main, "_collect_runtime_trace_sessions", lambda: ([], True))
+    monkeypatch.setattr(main, "_collect_recent_rag_stream_events", lambda _hours: ([], True))
+
+    payload = main.get_agent_metric_history(
+        metric_key=" task_success_rate_pct ",
+        lookback_hours=24,
+        bucket_hours=2,
+    )
+    assert payload["key"] == "task_success_rate_pct"
+    assert len(payload["points"]) == 12
+
+    correctness_payload = main.get_agent_metric_history(
+        metric_key="golden_set_accuracy",
+        lookback_hours=24,
+        bucket_hours=2,
+    )
+    assert correctness_payload["key"] == "golden_set_accuracy"
+    assert len(correctness_payload["points"]) == 12
+
+    with pytest.raises(HTTPException) as blank_exc:
+        main.get_agent_metric_history(metric_key=" ", lookback_hours=24, bucket_hours=2)
+    assert blank_exc.value.status_code == 400
+    assert "metric_key is required" in blank_exc.value.detail
+
+    with pytest.raises(HTTPException) as bucket_exc:
+        main.get_agent_metric_history(metric_key="task_success_rate_pct", lookback_hours=2, bucket_hours=3)
+    assert bucket_exc.value.status_code == 400
+    assert "bucket_hours cannot exceed lookback_hours" in bucket_exc.value.detail
+
+    with pytest.raises(HTTPException) as lookback_exc:
+        main.get_agent_metric_history(metric_key="task_success_rate_pct", lookback_hours=0, bucket_hours=1)
+    assert lookback_exc.value.status_code == 400
+    assert "lookback_hours must be between 1 and 168" in lookback_exc.value.detail
+
+    with pytest.raises(HTTPException) as bucket_range_exc:
+        main.get_agent_metric_history(metric_key="task_success_rate_pct", lookback_hours=24, bucket_hours=0)
+    assert bucket_range_exc.value.status_code == 400
+    assert "bucket_hours must be between 1 and 24" in bucket_range_exc.value.detail
+
+    with pytest.raises(HTTPException) as missing_exc:
+        main.get_agent_metric_history(metric_key="not_real_metric", lookback_hours=24, bucket_hours=2)
+    assert missing_exc.value.status_code == 404
+    assert "not available for trend history" in missing_exc.value.detail
 
 
 def test_suggest_directory_option_empty_and_fallback(monkeypatch):
@@ -2155,6 +2680,18 @@ def test_save_case_memory_and_upsert_case_doc(monkeypatch):
         last_directory="/data/depositions/oj_simpson",
         llm_provider="ollama",
         llm_model="llama3.3",
+        snapshot={
+            "selected_deposition_id": "dep:1",
+            "chat": {
+                "history": [{"role": "user", "content": "What happened next?"}],
+                "visible_messages": [
+                    {"role": "user", "content": "What happened next?"},
+                    {"role": "assistant", "content": "The witness placed the call immediately."},
+                ],
+                "message_count": 2,
+                "draft_input": "Ask about the next contradiction",
+            },
+        },
     )
 
     updated = couchdb.update_doc.call_args.args[0]
@@ -2164,6 +2701,10 @@ def test_save_case_memory_and_upsert_case_doc(monkeypatch):
     assert updated["last_directory"] == "/data/depositions/oj_simpson"
     assert updated["last_llm_provider"] == "ollama"
     assert updated["last_llm_model"] == "llama3.3"
+    assert updated["snapshot"]["selected_deposition_id"] == "dep:1"
+    assert updated["snapshot"]["chat"]["message_count"] == 2
+    assert updated["snapshot"]["chat"]["draft_input"] == "Ask about the next contradiction"
+    assert updated["snapshot"]["chat"]["visible_messages"][1]["content"] == "The witness placed the call immediately."
 
 
 def test_save_case_memory_and_upsert_case_doc_wrap_errors(monkeypatch):
@@ -2240,6 +2781,54 @@ def test_list_case_summaries_and_case_endpoints(monkeypatch):
     ]
     payload = main.list_cases()
     assert len(payload.cases) == 2
+
+    monkeypatch.setattr(
+        main,
+        "_load_case_doc",
+        lambda _case_id: {
+            "_id": "case:case-1",
+            "case_id": "CASE-001",
+            "memory_entries": 3,
+            "updated_at": "2026-01-02T00:00:00+00:00",
+            "last_action": "save",
+            "last_directory": "/data/depositions/oj_simpson",
+            "last_llm_provider": "openai",
+            "last_llm_model": "gpt-5.2",
+            "snapshot": {"chat": {"message_count": 2}},
+        },
+    )
+    monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [{"_id": "dep:1"}])
+    detail = main._case_detail("CASE-001")
+    assert detail is not None
+    assert detail.snapshot["chat"]["message_count"] == 2
+    assert detail.deposition_count == 1
+
+    fetched = main.get_case(" CASE-001 ")
+    assert fetched.case_id == "CASE-001"
+    assert fetched.snapshot["chat"]["message_count"] == 2
+
+    monkeypatch.setattr(main, "_load_case_doc", lambda _case_id: None)
+    monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [])
+    assert main._case_detail(" ") is None
+    assert main._case_detail("CASE-404") is None
+    with pytest.raises(HTTPException) as missing_case_exc:
+        main.get_case("CASE-404")
+    assert missing_case_exc.value.status_code == 404
+
+    monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [{"_id": "dep:1"}, {"_id": "dep:2"}])
+    fallback_detail = main._case_detail("CASE-FALLBACK")
+    assert fallback_detail is not None
+    assert fallback_detail.deposition_count == 2
+    assert fallback_detail.snapshot == {}
+
+    with pytest.raises(HTTPException) as blank_case_exc:
+        main.get_case(" ")
+    assert blank_case_exc.value.status_code == 400
+
+    monkeypatch.setattr(main, "_case_detail", Mock(side_effect=RuntimeError("detail failed")))
+    with pytest.raises(HTTPException) as detail_fail_exc:
+        main.get_case("CASE-ERR")
+    assert detail_fail_exc.value.status_code == 502
 
     couchdb = Mock()
     couchdb.find.return_value = [
@@ -2364,6 +2953,18 @@ def test_save_case_endpoint_and_rename_case_docs(monkeypatch):
             directory="/data/depositions/default",
             llm_provider="openai",
             llm_model="gpt-5.2",
+            snapshot={
+                "dropdowns": {"llm_selected": "openai::gpt-5.2"},
+                "chat": {
+                    "history": [{"role": "user", "content": "Summarize the timeline."}],
+                    "visible_messages": [
+                        {"role": "user", "content": "Summarize the timeline."},
+                        {"role": "assistant", "content": "The witness says the meeting happened after lunch."},
+                    ],
+                    "message_count": 2,
+                    "draft_input": "Ask what contradicts this",
+                },
+            },
         )
     )
     assert payload.case_id == "CASE-NEW"
@@ -2375,6 +2976,18 @@ def test_save_case_endpoint_and_rename_case_docs(monkeypatch):
         last_directory="/data/depositions/default",
         llm_provider="openai",
         llm_model="gpt-5.2",
+        snapshot={
+            "dropdowns": {"llm_selected": "openai::gpt-5.2"},
+            "chat": {
+                "history": [{"role": "user", "content": "Summarize the timeline."}],
+                "visible_messages": [
+                    {"role": "user", "content": "Summarize the timeline."},
+                    {"role": "assistant", "content": "The witness says the meeting happened after lunch."},
+                ],
+                "message_count": 2,
+                "draft_input": "Ask what contradicts this",
+            },
+        },
     )
 
     with pytest.raises(HTTPException) as save_exc:
@@ -2382,7 +2995,9 @@ def test_save_case_endpoint_and_rename_case_docs(monkeypatch):
     assert save_exc.value.status_code == 400
 
     monkeypatch.setattr(main, "_list_case_summaries", lambda: [])
-    fallback_payload = main.save_case(SaveCaseRequest(case_id="CASE-FALLBACK"))
+    fallback_payload = main.save_case(
+        SaveCaseRequest(case_id="CASE-FALLBACK", snapshot={"ui": {"active_tab": "intelligence"}})
+    )
     assert fallback_payload.case_id == "CASE-FALLBACK"
     assert fallback_payload.deposition_count == 2
 
@@ -3325,4 +3940,144 @@ def test_reason_contradiction_errors(monkeypatch):
     couchdb.get_doc.return_value = {"_id": "dep:1", "case_id": "other-case"}
     with pytest.raises(HTTPException) as mismatch:
         main.reason_contradiction(request)
+    assert mismatch.value.status_code == 400
+
+
+def test_summarize_focused_reasoning_success(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {"_id": "dep:1", "case_id": "case-1"}
+    chat_service = Mock()
+    chat_service.summarize_focused_reasoning.return_value = "Short answer: Condensed conflict summary."
+    save_memory = Mock()
+    upsert_case = Mock()
+
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "chat_service", chat_service)
+    monkeypatch.setattr(main, "_save_case_memory", save_memory)
+    monkeypatch.setattr(main, "_upsert_case_doc", upsert_case)
+    monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [{"_id": "dep:1"}])
+
+    response = main.summarize_focused_reasoning(
+        FocusedReasoningSummaryRequest(
+            case_id="case-1",
+            deposition_id="dep:1",
+            reasoning_text="Short answer: Full focused reasoning.",
+            llm_provider="ollama",
+            llm_model="llama3.3",
+        )
+    )
+
+    assert response.summary == "Short answer: Condensed conflict summary."
+    chat_service.summarize_focused_reasoning.assert_called_once()
+    assert chat_service.summarize_focused_reasoning.call_args.kwargs["llm_provider"] == "ollama"
+    assert chat_service.summarize_focused_reasoning.call_args.kwargs["llm_model"] == "llama3.3"
+    save_memory.assert_called_once()
+    upsert_case.assert_called_once()
+
+
+def test_summarize_focused_reasoning_wraps_service_errors(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {"_id": "dep:1", "case_id": "case-1"}
+    chat_service = Mock()
+    chat_service.summarize_focused_reasoning.side_effect = RuntimeError("summary failed")
+
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "chat_service", chat_service)
+
+    with pytest.raises(HTTPException) as exc:
+        main.summarize_focused_reasoning(
+            FocusedReasoningSummaryRequest(
+                case_id="case-1",
+                deposition_id="dep:1",
+                reasoning_text="Short answer: Full focused reasoning.",
+            )
+        )
+
+    assert exc.value.status_code == 502
+    assert "summary failed" in exc.value.detail
+
+
+def test_summarize_focused_reasoning_errors(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = RuntimeError("missing")
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as missing:
+        main.summarize_focused_reasoning(
+            FocusedReasoningSummaryRequest(
+                case_id="case-1",
+                deposition_id="dep:1",
+                reasoning_text="Short answer: Full focused reasoning.",
+            )
+        )
+    assert missing.value.status_code == 404
+
+    couchdb.get_doc.side_effect = None
+    couchdb.get_doc.return_value = {"_id": "dep:1", "case_id": "other-case"}
+    with pytest.raises(HTTPException) as mismatch:
+        main.summarize_focused_reasoning(
+            FocusedReasoningSummaryRequest(
+                case_id="case-1",
+                deposition_id="dep:1",
+                reasoning_text="Short answer: Full focused reasoning.",
+            )
+        )
+    assert mismatch.value.status_code == 400
+
+
+def test_compute_deposition_sentiment_labels_negative_and_neutral():
+    negative = main._compute_deposition_sentiment(
+        "The witness described fear, retaliation, conflict, and a violent forced encounter."
+    )
+    neutral = main._compute_deposition_sentiment("This deposition states dates, names, and routine observations.")
+
+    assert negative.label == "negative"
+    assert negative.negative_matches >= 4
+    assert negative.score < 0
+    assert neutral.label == "neutral"
+    assert neutral.score == 0
+
+
+def test_deposition_sentiment_success(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {
+        "_id": "dep:1",
+        "case_id": "case-1",
+        "raw_text": "The witness remained calm and consistent, but described one conflict.",
+    }
+    save_memory = Mock()
+    upsert_case = Mock()
+
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "_save_case_memory", save_memory)
+    monkeypatch.setattr(main, "_upsert_case_doc", upsert_case)
+    monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [{"_id": "dep:1"}])
+
+    response = main.deposition_sentiment(
+        DepositionSentimentRequest(case_id="case-1", deposition_id="dep:1")
+    )
+
+    assert response.label in {"positive", "neutral", "negative"}
+    assert response.word_count > 0
+    save_memory.assert_called_once()
+    upsert_case.assert_called_once()
+
+
+def test_deposition_sentiment_errors(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = RuntimeError("missing")
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as missing:
+        main.deposition_sentiment(
+            DepositionSentimentRequest(case_id="case-1", deposition_id="dep:1")
+        )
+    assert missing.value.status_code == 404
+
+    couchdb.get_doc.side_effect = None
+    couchdb.get_doc.return_value = {"_id": "dep:1", "case_id": "other-case", "raw_text": "text"}
+    with pytest.raises(HTTPException) as mismatch:
+        main.deposition_sentiment(
+            DepositionSentimentRequest(case_id="case-1", deposition_id="dep:1")
+        )
     assert mismatch.value.status_code == 400

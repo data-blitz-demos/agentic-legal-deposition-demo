@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Quick development helper:
+# 1. restart the local Docker Compose stack
+# 2. open a fresh Chrome instance with a temporary profile and cache minimized
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+COMPOSE_FILE="${COMPOSE_FILE:-docker-compose.yml}"
+COMPOSE_STOP_TIMEOUT="${COMPOSE_STOP_TIMEOUT:-15}"
+APP_URL="${1:-${DEV_BROWSER_URL:-http://localhost:8000}}"
+
+require_command() {
+  local name="$1"
+  if ! command -v "${name}" >/dev/null 2>&1; then
+    echo "Required command not found: ${name}" >&2
+    exit 1
+  fi
+}
+
+close_existing_chrome() {
+  local closed_any=1
+
+  if [[ "${OSTYPE:-}" == darwin* ]]; then
+    if command -v osascript >/dev/null 2>&1; then
+      if osascript -e 'tell application "Google Chrome" to quit' >/dev/null 2>&1; then
+        closed_any=0
+      fi
+    fi
+    pkill -x "Google Chrome" >/dev/null 2>&1 && closed_any=0 || true
+  fi
+
+  local browser_cmd
+  for browser_cmd in google-chrome google-chrome-stable chromium chromium-browser; do
+    pkill -x "${browser_cmd}" >/dev/null 2>&1 && closed_any=0 || true
+  done
+
+  return "${closed_any}"
+}
+
+open_chrome_dev() {
+  local profile_dir="$1"
+  shift
+  local chrome_args=(
+    "--user-data-dir=${profile_dir}"
+    "--disable-application-cache"
+    "--disk-cache-size=1"
+    "--media-cache-size=1"
+    "--disable-background-networking"
+    "--disable-sync"
+    "--incognito"
+    "$@"
+  )
+
+  if [[ "${OSTYPE:-}" == darwin* ]]; then
+    if [[ -d "/Applications/Google Chrome.app" || -d "${HOME}/Applications/Google Chrome.app" ]]; then
+      open -na "Google Chrome" --args "${chrome_args[@]}"
+      return 0
+    fi
+  fi
+
+  local browser_cmd
+  for browser_cmd in google-chrome google-chrome-stable chromium chromium-browser; do
+    if command -v "${browser_cmd}" >/dev/null 2>&1; then
+      nohup "${browser_cmd}" "${chrome_args[@]}" >/dev/null 2>&1 &
+      disown || true
+      return 0
+    fi
+  done
+
+  return 1
+}
+
+compose() {
+  docker compose --ansi never -f "${COMPOSE_FILE}" "$@"
+}
+
+require_command docker
+
+cd "${REPO_ROOT}"
+
+echo "Restarting Docker Compose from ${REPO_ROOT}"
+echo "Step 1/3: stopping existing containers (timeout: ${COMPOSE_STOP_TIMEOUT}s)"
+compose down --remove-orphans --timeout "${COMPOSE_STOP_TIMEOUT}"
+
+echo "Step 2/3: rebuilding and starting containers"
+compose up -d --build
+
+echo "Step 3/3: current service status"
+compose ps
+
+echo "Closing previously open Chrome/Chromium browsers"
+if close_existing_chrome; then
+  echo "Closed existing Chrome/Chromium instances"
+else
+  echo "No existing Chrome/Chromium instances were running"
+fi
+
+TMP_BASE="${TMPDIR:-/tmp}"
+CHROME_PROFILE_DIR="$(mktemp -d "${TMP_BASE%/}/deposition-dev-chrome.XXXXXX")"
+
+if open_chrome_dev "${CHROME_PROFILE_DIR}" "${APP_URL}"; then
+  echo "Opened Chrome for ${APP_URL}"
+  echo "Temporary Chrome profile: ${CHROME_PROFILE_DIR}"
+else
+  echo "Docker Compose restarted, but no Chrome/Chromium executable was found." >&2
+  echo "Temporary Chrome profile (unused): ${CHROME_PROFILE_DIR}" >&2
+  exit 1
+fi

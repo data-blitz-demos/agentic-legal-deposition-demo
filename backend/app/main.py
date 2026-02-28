@@ -11,9 +11,13 @@ This module wires together:
 
 from contextlib import asynccontextmanager
 from concurrent.futures import ThreadPoolExecutor
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from glob import glob
 import hashlib
+from html import unescape
+import json
+import math
 from pathlib import Path
 import re
 from threading import Lock
@@ -22,10 +26,10 @@ from typing import Literal
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.encoders import jsonable_encoder
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from langchain_core.messages import HumanMessage, SystemMessage
 
@@ -47,20 +51,30 @@ from .models import (
     AgentRuntimeMetricsResponse,
     AgentTraceEvent,
     AgentTracePayload,
+    AdminTestLogResponse,
+    AdminUserListResponse,
+    AdminUserRequest,
+    AdminUserResponse,
     ChatRequest,
     ChatResponse,
     CaseListResponse,
+    CaseDetailResponse,
     CaseSummary,
     CaseVersionListResponse,
     CaseVersionSummary,
     ClearCaseDepositionsResponse,
     DeleteCaseResponse,
+    DepositionSentimentRequest,
+    DepositionSentimentResponse,
+    DepositionUploadResponse,
     DepositionDirectoriesResponse,
     DepositionDirectoryOption,
     DepositionRootRequest,
     DepositionRootResponse,
     ContradictionReasonRequest,
     ContradictionReasonResponse,
+    FocusedReasoningSummaryRequest,
+    FocusedReasoningSummaryResponse,
     IngestCaseRequest,
     IngestCaseResponse,
     IngestedDepositionResult,
@@ -111,6 +125,43 @@ app_root = Path(__file__).resolve().parents[2]
 container_deposition_root = Path("/data/depositions")
 _trace_lock = Lock()
 _trace_sessions: dict[str, dict] = {}
+_POSITIVE_SENTIMENT_TERMS = {
+    "calm",
+    "clear",
+    "cooperate",
+    "cooperative",
+    "credible",
+    "consistent",
+    "confident",
+    "helpful",
+    "honest",
+    "professional",
+    "reliable",
+    "stable",
+    "supportive",
+}
+_NEGATIVE_SENTIMENT_TERMS = {
+    "afraid",
+    "angry",
+    "conflict",
+    "contradiction",
+    "damaged",
+    "denied",
+    "dispute",
+    "fear",
+    "forced",
+    "humiliation",
+    "injury",
+    "leak",
+    "leaked",
+    "liar",
+    "panic",
+    "retaliation",
+    "risk",
+    "struck",
+    "trauma",
+    "violent",
+}
 
 
 @asynccontextmanager
@@ -147,7 +198,104 @@ app.add_middleware(
 )
 
 frontend_dir = Path(__file__).resolve().parents[2] / "frontend"
+reports_dir = Path(__file__).resolve().parents[2] / "reports"
+tests_report_file = reports_dir / "tests.html"
 app.mount("/static", StaticFiles(directory=frontend_dir), name="static")
+_ADMIN_REPORT_THEME_CSS = """
+<style id="admin-report-theme">
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    background:
+      radial-gradient(circle at top right, rgba(249, 115, 22, 0.12), transparent 38%),
+      radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), transparent 34%),
+      linear-gradient(180deg, #081321 0%, #0d1726 100%);
+  }
+
+  body {
+    font-family: Manrope, "Segoe UI", sans-serif !important;
+    color: #d6e5f4 !important;
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 24px !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #fde68a !important;
+    font-weight: 700 !important;
+  }
+
+  a, a:visited {
+    color: #7dd3fc !important;
+  }
+
+  .summary,
+  #data-container,
+  table#results-table {
+    background: rgba(8, 19, 33, 0.82) !important;
+    border: 1px solid rgba(136, 168, 196, 0.24) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 12px 30px rgba(4, 11, 20, 0.35) !important;
+  }
+
+  .summary {
+    padding: 18px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .summary,
+  .summary *,
+  .summary span,
+  .summary div,
+  .summary p,
+  .summary label {
+    color: #f8fafc !important;
+  }
+
+  table#results-table {
+    overflow: hidden !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+  }
+
+  table#results-table th,
+  table#results-table td {
+    background: rgba(8, 19, 33, 0.82) !important;
+    color: #d6e5f4 !important;
+    border-color: rgba(136, 168, 196, 0.18) !important;
+  }
+
+  table#results-table tr:nth-child(even) td {
+    background: rgba(12, 25, 41, 0.88) !important;
+  }
+
+  .passed,
+  .skipped,
+  .xfailed {
+    color: #93c5fd !important;
+  }
+
+  .failed,
+  .error,
+  .xpassed {
+    color: #fca5a5 !important;
+  }
+
+  .log {
+    background: rgba(3, 10, 18, 0.8) !important;
+    color: #d6e5f4 !important;
+    border: 1px solid rgba(136, 168, 196, 0.18) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+  }
+
+  .filters {
+    padding: 10px 0 !important;
+  }
+</style>
+""".strip()
 
 
 def _container_suffix_aliases(suffix: Path) -> list[Path]:
@@ -495,6 +643,39 @@ def _resolve_ingest_txt_files(requested_path: str) -> list[Path]:
     )
 
 
+def _resolve_upload_directory(requested_path: str) -> Path:
+    """Resolve one requested deposition folder into an existing writable directory."""
+
+    normalized = str(requested_path or "").strip()
+    if not normalized:
+        raise HTTPException(status_code=400, detail="Deposition folder is required")
+
+    for candidate in _build_ingest_candidates(normalized):
+        if _path_has_glob(candidate):
+            continue
+        if candidate.exists() and candidate.is_dir():
+            return candidate
+
+    raise HTTPException(
+        status_code=400,
+        detail=f"Deposition upload target must be an existing directory: {normalized}",
+    )
+
+
+def _sanitize_uploaded_deposition_filename(filename: str, index: int) -> str:
+    """Normalize one uploaded deposition file name into a safe ``.txt`` file name."""
+
+    original = Path(str(filename or "").strip()).name
+    if not original:
+        return f"uploaded_deposition_{index}.txt"
+
+    stem = Path(original).stem
+    safe_stem = re.sub(r"[^A-Za-z0-9._-]+", "_", stem).strip("._-")
+    if not safe_stem:
+        safe_stem = f"uploaded_deposition_{index}"
+    return f"{safe_stem}.txt"
+
+
 def _resolve_ontology_owl_files(requested_path: str) -> list[Path]:
     """Resolve one requested ontology path into unique, sorted ``.owl`` files."""
 
@@ -577,10 +758,12 @@ def _resolve_ontology_browser_directory(requested_path: str | None) -> tuple[Pat
         return base, base
 
     candidate = Path(raw).expanduser()
+    if _path_has_glob(candidate):
+        candidate = candidate.parent
     if not candidate.is_absolute():
-        candidate = (base / candidate).resolve()
+        candidate = (base / candidate).resolve(strict=False)
     else:
-        candidate = candidate.resolve()
+        candidate = candidate.resolve(strict=False)
 
     try:
         candidate.relative_to(base)
@@ -590,11 +773,15 @@ def _resolve_ontology_browser_directory(requested_path: str | None) -> tuple[Pat
             detail=f"Ontology browser path must remain under base directory: {base}",
         ) from exc
 
+    fallback = candidate
     if not candidate.exists():
-        raise HTTPException(
-            status_code=400,
-            detail=f"Ontology browser path does not exist: {candidate}",
-        )
+        if candidate.suffix.lower() == ".owl":
+            fallback = candidate.parent
+        while fallback != base and not fallback.exists():
+            fallback = fallback.parent
+        if not fallback.exists():
+            fallback = base
+        candidate = fallback
 
     if candidate.is_file():
         if candidate.suffix.lower() != ".owl":
@@ -968,6 +1155,38 @@ def _trace_session_snapshot(trace_id: str) -> dict | None:
     return jsonable_encoder(_public_trace_session(loaded))
 
 
+def _compute_deposition_sentiment(raw_text: str) -> DepositionSentimentResponse:
+    """Compute a deterministic whole-document sentiment summary from deposition text."""
+
+    text = str(raw_text or "").strip()
+    words = re.findall(r"[a-z']+", text.lower())
+    positive_matches = sum(1 for word in words if word in _POSITIVE_SENTIMENT_TERMS)
+    negative_matches = sum(1 for word in words if word in _NEGATIVE_SENTIMENT_TERMS)
+    matched_terms = positive_matches + negative_matches
+    raw_score = 0.0 if matched_terms == 0 else (positive_matches - negative_matches) / matched_terms
+    score = round(max(-1.0, min(1.0, raw_score)), 2)
+
+    if score >= 0.15:
+        label: Literal["positive", "neutral", "negative"] = "positive"
+    elif score <= -0.15:
+        label = "negative"
+    else:
+        label = "neutral"
+
+    summary = (
+        f"Overall deposition sentiment is {label} ({score:+.2f}) across the full deposition text. "
+        f"Matched {positive_matches} positive and {negative_matches} negative tone markers over {len(words)} words."
+    )
+    return DepositionSentimentResponse(
+        score=score,
+        label=label,
+        summary=summary,
+        positive_matches=positive_matches,
+        negative_matches=negative_matches,
+        word_count=len(words),
+    )
+
+
 def _append_trace_events(
     trace_id: str | None,
     *,
@@ -1200,6 +1419,7 @@ def _collect_recent_rag_stream_events(lookback_hours: int) -> tuple[list[dict], 
             context_rows = int(doc.get("context_rows") or 0)
         except Exception:
             context_rows = 0
+        context_preview = str(doc.get("context_preview") or "")
         events.append(
             {
                 "created_at": created_at,
@@ -1207,7 +1427,10 @@ def _collect_recent_rag_stream_events(lookback_hours: int) -> tuple[list[dict], 
                 "question": str(doc.get("question") or "").strip(),
                 "answer_preview": str(doc.get("answer_preview") or "").strip(),
                 "use_rag": bool(doc.get("use_rag")),
+                "llm_provider": str(doc.get("llm_provider") or "").strip().lower(),
+                "llm_model": str(doc.get("llm_model") or "").strip(),
                 "context_rows": max(0, context_rows),
+                "context_bytes": len(context_preview.encode("utf-8")),
             }
         )
     return events, storage_connected
@@ -1248,6 +1471,11 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
     context_hit_rate = (context_hit_count / rag_on_count * 100.0) if rag_on_count else 0.0
     avg_context_rows = (
         sum(float(int(item.get("context_rows") or 0)) for item in rag_on_events) / float(rag_on_count)
+        if rag_on_count
+        else 0.0
+    )
+    avg_context_bytes = (
+        sum(float(int(item.get("context_bytes") or 0)) for item in rag_on_events) / float(rag_on_count)
         if rag_on_count
         else 0.0
     )
@@ -1335,6 +1563,16 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
             description="Average retrieved graph rows per completed query when RAG is enabled.",
         ),
         AgentRuntimeMetric(
+            key="rag_avg_context_bytes_on",
+            label="Avg RAG Context Size / LLM Call",
+            value=round(avg_context_bytes, 3),
+            display=f"{avg_context_bytes:.0f} B" if rag_on_count else "N/A",
+            unit="bytes",
+            status="info",
+            target="Track trend",
+            description="Average UTF-8 byte size of retrieved RAG context sent toward the LLM on completed RAG ON calls.",
+        ),
+        AgentRuntimeMetric(
             key="rag_avg_answer_word_delta_on_minus_off",
             label="Avg Answer Word Delta (ON-OFF)",
             value=round(avg_answer_delta_words, 3),
@@ -1356,17 +1594,271 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
     return metrics, paired_count
 
 
-def _compute_agent_runtime_metrics(
+def _normalize_model_key(llm_provider: str | None, llm_model: str | None) -> str:
+    """Normalize one provider/model pair into a stable telemetry key."""
+
+    provider = str(llm_provider or "").strip().lower()
+    model = str(llm_model or "").strip()
+    if not provider and not model:
+        return "unknown"
+    if not provider:
+        return model or "unknown"
+    if not model:
+        return provider
+    return f"{provider}:{model}"
+
+
+def _session_model_observation(session: dict) -> tuple[datetime | None, str]:
+    """Extract one representative provider/model observation from a trace session."""
+
+    events = _flatten_trace_events(session.get("trace"))
+    for event in events:
+        model_key = _normalize_model_key(event.get("llm_provider"), event.get("llm_model"))
+        if model_key != "unknown":
+            return _session_metric_timestamp(session), model_key
+    return _session_metric_timestamp(session), "unknown"
+
+
+def _repeat_prompt_inconsistency_rate(rag_events: list[dict]) -> tuple[float, int]:
+    """Measure how often repeated normalized questions produce different answers."""
+
+    by_question: dict[str, list[str]] = {}
+    for item in rag_events:
+        if not isinstance(item, dict) or str(item.get("status") or "") != "completed":
+            continue
+        question_key = _normalize_question_key(str(item.get("question") or ""))
+        answer_key = _normalize_answer_key(str(item.get("answer_preview") or ""))
+        if not question_key or not answer_key:
+            continue
+        by_question.setdefault(question_key, []).append(answer_key)
+
+    repeated_groups = 0
+    inconsistent_groups = 0
+    for answers in by_question.values():
+        if len(answers) < 2:
+            continue
+        repeated_groups += 1
+        if len(set(answers)) > 1:
+            inconsistent_groups += 1
+
+    rate = (inconsistent_groups / repeated_groups * 100.0) if repeated_groups else 0.0
+    return rate, repeated_groups
+
+
+def _distribution_from_labels(labels: list[str]) -> dict[str, float]:
+    """Convert raw label observations into a normalized probability distribution."""
+
+    if not labels:
+        return {}
+    counts = Counter(labels)
+    total = float(sum(counts.values()))
+    return {key: count / total for key, count in counts.items()}
+
+
+def _jensen_shannon_divergence(left: dict[str, float], right: dict[str, float]) -> float:
+    """Compute Jensen-Shannon divergence between two discrete distributions."""
+
+    keys = set(left) | set(right)
+    if not keys:
+        return 0.0
+    midpoint = {
+        key: (float(left.get(key, 0.0)) + float(right.get(key, 0.0))) / 2.0
+        for key in keys
+    }
+
+    def _kl_divergence(source: dict[str, float], target: dict[str, float]) -> float:
+        total = 0.0
+        for key in keys:
+            source_value = float(source.get(key, 0.0))
+            target_value = float(target.get(key, 0.0))
+            if source_value <= 0.0 or target_value <= 0.0:
+                continue
+            total += source_value * math.log2(source_value / target_value)
+        return total
+
+    return (_kl_divergence(left, midpoint) + _kl_divergence(right, midpoint)) / 2.0
+
+
+def _model_mix_drift_jsd(sampled_sessions: list[dict], rag_events: list[dict]) -> float:
+    """Estimate model-routing drift by comparing older vs newer model mix within lookback."""
+
+    observations: list[tuple[datetime, str]] = []
+    for session in sampled_sessions:
+        if not isinstance(session, dict):
+            continue
+        stamp, model_key = _session_model_observation(session)
+        if stamp is None:
+            continue
+        observations.append((stamp, model_key))
+    for item in rag_events:
+        if not isinstance(item, dict):
+            continue
+        stamp = item.get("created_at")
+        if not isinstance(stamp, datetime):
+            continue
+        observations.append(
+            (
+                stamp,
+                _normalize_model_key(item.get("llm_provider"), item.get("llm_model")),
+            )
+        )
+
+    if len(observations) < 2:
+        return 0.0
+
+    observations.sort(key=lambda item: item[0])
+    midpoint = max(1, len(observations) // 2)
+    older = [label for _stamp, label in observations[:midpoint]]
+    newer = [label for _stamp, label in observations[midpoint:]]
+    return _jensen_shannon_divergence(
+        _distribution_from_labels(older),
+        _distribution_from_labels(newer),
+    )
+
+
+def _compute_correctness_drift_metrics(
+    sampled_sessions: list[dict],
+    rag_events: list[dict],
+) -> list[AgentRuntimeMetric]:
+    """Compute data-driven correctness and drift observables from available telemetry."""
+
+    finished_sessions = [
+        item
+        for item in sampled_sessions
+        if isinstance(item, dict)
+        and _normalize_trace_status(str(item.get("status") or "running")) in {"completed", "failed"}
+    ]
+    completed_sessions = [
+        item
+        for item in finished_sessions
+        if _normalize_trace_status(str(item.get("status") or "running")) == "completed"
+    ]
+    finished_count = len(finished_sessions)
+    completed_count = len(completed_sessions)
+
+    golden_set_accuracy = (completed_count / finished_count * 100.0) if finished_count else 0.0
+    schema_adherence = golden_set_accuracy
+
+    rag_completed = [
+        item
+        for item in rag_events
+        if isinstance(item, dict) and str(item.get("status") or "") == "completed"
+    ]
+    rag_on_completed = [item for item in rag_completed if bool(item.get("use_rag"))]
+    unsupported_claim_rate = (
+        sum(1 for item in rag_on_completed if int(item.get("context_rows") or 0) <= 0)
+        / len(rag_on_completed)
+        * 100.0
+        if rag_on_completed
+        else 0.0
+    )
+
+    repeat_inconsistency, repeated_groups = _repeat_prompt_inconsistency_rate(rag_completed)
+    model_mix_drift = _model_mix_drift_jsd(sampled_sessions, rag_completed)
+    rag_influence_metrics, rag_pairs = _compute_rag_influence_metrics(rag_events)
+    rag_change_metric = _find_runtime_metric(rag_influence_metrics, "rag_answer_change_rate_pct")
+    judge_human_proxy = float(rag_change_metric.value) if rag_pairs and rag_change_metric is not None else 0.0
+
+    return [
+        AgentRuntimeMetric(
+            key="golden_set_accuracy",
+            label="Golden Set Accuracy",
+            value=round(golden_set_accuracy, 3),
+            display=f"{golden_set_accuracy:.1f}%" if finished_count else "N/A",
+            unit="%",
+            status=_status_low_is_bad(golden_set_accuracy, warn_below=95.0, bad_below=90.0)
+            if finished_count
+            else "info",
+            target=">= 95%",
+            description="Proxy benchmark pass rate derived from completed finished runs until a dedicated golden-set harness is attached.",
+            formula="proxy: completed_finished_runs / finished_runs",
+            detail="This is a live proxy for correctness so the observable is actionable now. Replace it with a versioned golden-set evaluation harness when that dataset is available.",
+            tracking="Computed from thought-stream session statuses in the current lookback window by dividing completed finished runs by all finished runs.",
+        ),
+        AgentRuntimeMetric(
+            key="schema_adherence_rate",
+            label="Schema Adherence Rate",
+            value=round(schema_adherence, 3),
+            display=f"{schema_adherence:.1f}%" if finished_count else "N/A",
+            unit="%",
+            status=_status_low_is_bad(schema_adherence, warn_below=99.0, bad_below=95.0)
+            if finished_count
+            else "info",
+            target=">= 99%",
+            description="Proxy structured-output adherence derived from runs that complete end-to-end without surfacing a terminal failure.",
+            formula="proxy: completed_finished_runs / finished_runs",
+            detail="This proxy uses end-to-end completion as the strongest live signal that the structured response contract held long enough for the workflow to finish.",
+            tracking="Computed from thought-stream session outcomes; a failed finished run counts as schema-adherence risk until endpoint-specific validator telemetry is wired in.",
+        ),
+        AgentRuntimeMetric(
+            key="unsupported_claim_rate",
+            label="Unsupported Claim Rate",
+            value=round(unsupported_claim_rate, 3),
+            display=f"{unsupported_claim_rate:.1f}%" if rag_on_completed else "N/A",
+            unit="%",
+            status=_status_high_is_bad(unsupported_claim_rate, warn_at=15.0, bad_at=35.0)
+            if rag_on_completed
+            else "info",
+            target="<= 2%",
+            description="Proxy groundedness failure rate for RAG-enabled answers that retrieved no graph context.",
+            formula="rag_on_zero_context_answers / rag_on_completed_answers",
+            detail="Without retrieved graph context, any answer is less defensible. This treats zero-context RAG answers as the live unsupported-claim proxy.",
+            tracking="Computed from completed rag-stream answer events where RAG was enabled and context_rows is zero.",
+        ),
+        AgentRuntimeMetric(
+            key="repeat_prompt_inconsistency",
+            label="Repeat Prompt Inconsistency",
+            value=round(repeat_inconsistency, 3),
+            display=f"{repeat_inconsistency:.1f}%" if repeated_groups else "0.0%",
+            unit="%",
+            status=_status_high_is_bad(repeat_inconsistency, warn_at=10.0, bad_at=20.0)
+            if repeated_groups
+            else "good",
+            target="<= 10%",
+            description="Live repeatability check over normalized repeated questions in the rag-stream log.",
+            formula="inconsistent_repeated_question_groups / repeated_question_groups",
+            detail="Questions are normalized and grouped over the current lookback. If the same normalized prompt yields different normalized answers, the group counts as inconsistent.",
+            tracking="Computed from completed rag-stream answer events by grouping repeated normalized questions and checking whether their normalized answers diverge.",
+        ),
+        AgentRuntimeMetric(
+            key="model_mix_drift_jsd",
+            label="Model Mix Drift (JSD)",
+            value=round(model_mix_drift, 4),
+            display=f"{model_mix_drift:.3f}",
+            status=_status_high_is_bad(model_mix_drift, warn_at=0.12, bad_at=0.2),
+            target="<= 0.12",
+            description="Live routing-drift estimate comparing older versus newer provider/model mix within the current lookback.",
+            formula="Jensen-Shannon divergence(older_half_model_mix, newer_half_model_mix)",
+            detail="A higher value means the provider/model distribution shifted between the earlier and later halves of the current telemetry window.",
+            tracking="Computed from provider/model observations extracted from thought-stream events and rag-stream answer events, then compared across older and newer halves of the lookback.",
+        ),
+        AgentRuntimeMetric(
+            key="judge_human_disagreement",
+            label="Judge-Human Disagreement",
+            value=round(judge_human_proxy, 3),
+            display=f"{judge_human_proxy:.1f}%" if rag_pairs else "0.0%",
+            unit="%",
+            status=_status_high_is_bad(judge_human_proxy, warn_at=5.0, bad_at=12.0)
+            if rag_pairs
+            else "good",
+            target="<= 5%",
+            description="Proxy disagreement rate derived from paired RAG ON/OFF answers until human adjudication telemetry is available.",
+            formula="proxy: changed_rag_on_off_answer_pairs / paired_rag_on_off_questions",
+            detail="This is a live stand-in for judge-vs-human disagreement. It tracks how often the same question produces materially different answers under paired grounding conditions.",
+            tracking="Computed from completed rag-stream answer pairs by comparing normalized answer text for the same normalized question with RAG enabled versus disabled.",
+        ),
+    ]
+
+
+def _sample_metric_sessions(
     sessions: list[dict],
     *,
     lookback_hours: int,
-    storage_connected: bool,
-    rag_events: list[dict],
-    rag_storage_connected: bool,
-) -> AgentRuntimeMetricsResponse:
-    """Compute dashboard KPIs for runtime health and Graph RAG influence."""
+    reference_time: datetime | None = None,
+) -> list[dict]:
+    """Filter sessions to the active metrics lookback window."""
 
-    now_utc = datetime.now(timezone.utc)
+    now_utc = reference_time or datetime.now(timezone.utc)
     cutoff = now_utc - timedelta(hours=lookback_hours)
     sampled: list[dict] = []
     for session in sessions:
@@ -1376,6 +1868,19 @@ def _compute_agent_runtime_metrics(
         if updated_at is not None and updated_at < cutoff:
             continue
         sampled.append(session)
+    return sampled
+
+
+def _build_agent_runtime_metrics_response(
+    sampled: list[dict],
+    *,
+    generated_at: datetime,
+    lookback_hours: int,
+    storage_connected: bool,
+    rag_events: list[dict],
+    rag_storage_connected: bool,
+) -> AgentRuntimeMetricsResponse:
+    """Build runtime KPI payload from an already-windowed session sample."""
 
     completed_runs = 0
     failed_runs = 0
@@ -1529,9 +2034,10 @@ def _compute_agent_runtime_metrics(
 
     rag_metrics, rag_paired_comparisons = _compute_rag_influence_metrics(rag_events)
     metrics.extend(rag_metrics)
+    correctness_metrics = _compute_correctness_drift_metrics(sampled, rag_events)
 
     return AgentRuntimeMetricsResponse(
-        generated_at=now_utc.isoformat(),
+        generated_at=generated_at.isoformat(),
         lookback_hours=lookback_hours,
         sampled_runs=sampled_runs,
         running_runs=running_runs,
@@ -1541,7 +2047,144 @@ def _compute_agent_runtime_metrics(
         rag_sampled_queries=len(rag_events),
         rag_paired_comparisons=rag_paired_comparisons,
         metrics=metrics,
+        correctness_metrics=correctness_metrics,
     )
+
+
+def _compute_agent_runtime_metrics(
+    sessions: list[dict],
+    *,
+    lookback_hours: int,
+    storage_connected: bool,
+    rag_events: list[dict],
+    rag_storage_connected: bool,
+) -> AgentRuntimeMetricsResponse:
+    """Compute dashboard KPIs for runtime health and Graph RAG influence."""
+
+    now_utc = datetime.now(timezone.utc)
+    sampled = _sample_metric_sessions(
+        sessions,
+        lookback_hours=lookback_hours,
+        reference_time=now_utc,
+    )
+    return _build_agent_runtime_metrics_response(
+        sampled,
+        generated_at=now_utc,
+        lookback_hours=lookback_hours,
+        storage_connected=storage_connected,
+        rag_events=rag_events,
+        rag_storage_connected=rag_storage_connected,
+    )
+
+
+def _session_metric_timestamp(session: dict) -> datetime | None:
+    """Resolve the best timestamp for assigning a session into a history bucket."""
+
+    updated_at = _parse_iso_datetime(session.get("updated_at"))
+    if updated_at is not None:
+        return updated_at
+    return _parse_iso_datetime(session.get("created_at"))
+
+
+def _find_runtime_metric(metrics: list[AgentRuntimeMetric], metric_key: str) -> AgentRuntimeMetric | None:
+    """Return one runtime metric by stable key."""
+
+    for metric in metrics:
+        if metric.key == metric_key:
+            return metric
+    return None
+
+
+def _find_any_metric(payload: AgentRuntimeMetricsResponse, metric_key: str) -> AgentRuntimeMetric | None:
+    """Return one observable from either runtime or correctness metric collections."""
+
+    return _find_runtime_metric(payload.metrics, metric_key) or _find_runtime_metric(
+        payload.correctness_metrics,
+        metric_key,
+    )
+
+
+def _compute_agent_metric_history(
+    sessions: list[dict],
+    *,
+    lookback_hours: int,
+    bucket_hours: int,
+    metric_key: str,
+    storage_connected: bool,
+    rag_events: list[dict],
+    rag_storage_connected: bool,
+) -> dict[str, object]:
+    """Build bucketed history points for one runtime metric key."""
+
+    now_utc = datetime.now(timezone.utc)
+    current_payload = _compute_agent_runtime_metrics(
+        sessions,
+        lookback_hours=lookback_hours,
+        storage_connected=storage_connected,
+        rag_events=rag_events,
+        rag_storage_connected=rag_storage_connected,
+    )
+    current_metric = _find_any_metric(current_payload, metric_key)
+    if current_metric is None:
+        raise KeyError(metric_key)
+
+    bucket_delta = timedelta(hours=bucket_hours)
+    cursor = now_utc - timedelta(hours=lookback_hours)
+    points: list[dict[str, object]] = []
+    while cursor < now_utc:
+        bucket_end = min(cursor + bucket_delta, now_utc)
+        bucket_sessions = [
+            session
+            for session in sessions
+            if isinstance(session, dict)
+            and (stamp := _session_metric_timestamp(session)) is not None
+            and cursor <= stamp < bucket_end
+        ]
+        bucket_rag_events = [
+            event
+            for event in rag_events
+            if isinstance(event, dict)
+            and isinstance(event.get("created_at"), datetime)
+            and cursor <= event["created_at"] < bucket_end
+        ]
+        bucket_payload = _build_agent_runtime_metrics_response(
+            bucket_sessions,
+            generated_at=bucket_end,
+            lookback_hours=bucket_hours,
+            storage_connected=storage_connected,
+            rag_events=bucket_rag_events,
+            rag_storage_connected=rag_storage_connected,
+        )
+        bucket_metric = _find_any_metric(bucket_payload, metric_key) or current_metric
+        points.append(
+            {
+                "at": bucket_end.isoformat(),
+                "value": None if bucket_metric.display == "N/A" else bucket_metric.value,
+                "display": bucket_metric.display,
+                "status": bucket_metric.status,
+                "sample_size": (
+                    bucket_payload.rag_sampled_queries
+                    if metric_key.startswith("rag_")
+                    else bucket_payload.sampled_runs
+                ),
+            }
+        )
+        cursor = bucket_end
+
+    return {
+        "key": current_metric.key,
+        "label": current_metric.label,
+        "unit": current_metric.unit,
+        "target": current_metric.target,
+        "description": current_metric.description,
+        "current_display": current_metric.display,
+        "generated_at": current_payload.generated_at,
+        "lookback_hours": lookback_hours,
+        "bucket_hours": bucket_hours,
+        "storage_connected": storage_connected,
+        "rag_storage_connected": rag_storage_connected,
+        "points": points,
+    }
 
 
 def _safe_case_depositions(case_id: str) -> list[dict]:
@@ -1696,6 +2339,7 @@ def _upsert_case_doc(
     last_directory: str | None = None,
     llm_provider: str | None = None,
     llm_model: str | None = None,
+    snapshot: dict | None = None,
 ) -> None:
     """Create/update case index metadata document."""
 
@@ -1721,6 +2365,8 @@ def _upsert_case_doc(
         doc["last_llm_provider"] = llm_provider
     if llm_model:
         doc["last_llm_model"] = llm_model
+    if snapshot is not None:
+        doc["snapshot"] = jsonable_encoder(snapshot)
     doc["updated_at"] = _utc_now_iso()
 
     try:
@@ -1776,6 +2422,33 @@ def _list_case_summaries() -> list[CaseSummary]:
     items = [CaseSummary(**payload) for payload in summaries.values()]
     items.sort(key=lambda item: ((item.updated_at or ""), item.case_id), reverse=True)
     return items
+
+
+def _case_detail(case_id: str) -> CaseDetailResponse | None:
+    """Return one saved case record with persisted snapshot state when available."""
+
+    normalized_case_id = case_id.strip()
+    if not normalized_case_id:
+        return None
+
+    doc = _load_case_doc(normalized_case_id)
+    deposition_count = len(_safe_case_depositions(normalized_case_id))
+    if doc is None:
+        if deposition_count <= 0:
+            return None
+        return CaseDetailResponse(case_id=normalized_case_id, deposition_count=deposition_count)
+
+    return CaseDetailResponse(
+        case_id=normalized_case_id,
+        deposition_count=deposition_count,
+        memory_entries=int(doc.get("memory_entries", 0) or 0),
+        updated_at=doc.get("updated_at"),
+        last_action=doc.get("last_action"),
+        last_directory=doc.get("last_directory"),
+        last_llm_provider=doc.get("last_llm_provider"),
+        last_llm_model=doc.get("last_llm_model"),
+        snapshot=doc.get("snapshot") if isinstance(doc.get("snapshot"), dict) else {},
+    )
 
 
 def _delete_case_docs(case_id: str) -> int:
@@ -2008,6 +2681,155 @@ def root() -> FileResponse:
     return FileResponse(frontend_dir / "index.html")
 
 
+def _render_themed_admin_test_report(html: str) -> str:
+    """Inject Admin-specific theme overrides into the pytest HTML report."""
+
+    if 'id="admin-report-theme"' in html:
+        return html
+    if "</head>" in html:
+        return html.replace("</head>", f"{_ADMIN_REPORT_THEME_CSS}</head>", 1)
+    return f"{_ADMIN_REPORT_THEME_CSS}{html}"
+
+
+def _extract_test_report_log_output() -> AdminTestLogResponse:
+    """Collect explicit per-test log output from pytest HTML report when available."""
+
+    if not tests_report_file.is_file():
+        return AdminTestLogResponse(
+            summary="tests.html is not available.",
+            log_output="Run the test suite to regenerate /reports/tests.html before viewing test log output.",
+        )
+
+    html = tests_report_file.read_text(encoding="utf-8", errors="replace")
+    match = re.search(r'data-jsonblob="([^"]+)"', html)
+    if not match:
+        return AdminTestLogResponse(
+            summary="No structured test metadata was found in tests.html.",
+            log_output="The pytest HTML report did not expose a data-jsonblob payload to parse.",
+        )
+
+    try:
+        payload = json.loads(unescape(match.group(1)))
+    except Exception:
+        return AdminTestLogResponse(
+            summary="The embedded test metadata could not be parsed.",
+            log_output="The Admin/Test log parser could not decode the tests.html data-jsonblob content.",
+        )
+
+    tests = payload.get("tests") if isinstance(payload.get("tests"), dict) else {}
+    visible_logs: list[str] = []
+    explicit_log_count = 0
+    total_runs = 0
+    for test_id, runs in tests.items():
+        if not isinstance(runs, list):
+            continue
+        for run in runs:
+            if not isinstance(run, dict):
+                continue
+            total_runs += 1
+            raw_log = str(run.get("log") or "").strip()
+            if not raw_log or raw_log == "No log output captured.":
+                continue
+            explicit_log_count += 1
+            result = str(run.get("result") or "Unknown").strip() or "Unknown"
+            duration = str(run.get("duration") or "").strip()
+            header = f"[{result}] {test_id}"
+            if duration:
+                header = f"{header} ({duration})"
+            visible_logs.append(f"{header}\n{raw_log}")
+
+    if visible_logs:
+        return AdminTestLogResponse(
+            summary=(
+                f"Collected explicit log output for {explicit_log_count} of {total_runs} recorded test runs "
+                "from tests.html."
+            ),
+            log_output="\n\n".join(visible_logs),
+        )
+
+    return AdminTestLogResponse(
+        summary=f"Parsed {total_runs} recorded test runs from tests.html.",
+        log_output="No explicit per-test log output was captured in the current pytest HTML report.",
+    )
+
+
+def _list_admin_users() -> list[AdminUserResponse]:
+    """List lightweight admin user records from CouchDB."""
+
+    users: list[AdminUserResponse] = []
+    for doc in couchdb.find({"type": "admin_user"}, limit=1000):
+        try:
+            user_id = str(doc.get("_id") or "").strip()
+            name = str(doc.get("name") or "").strip()
+            created_at = str(doc.get("created_at") or "").strip()
+            if not user_id or not name or not created_at:
+                continue
+            users.append(AdminUserResponse(user_id=user_id, name=name, created_at=created_at))
+        except Exception:
+            continue
+    users.sort(key=lambda item: (item.created_at, item.user_id), reverse=True)
+    return users
+
+
+def _save_admin_user(name: str) -> AdminUserResponse:
+    """Persist one lightweight admin user record in CouchDB."""
+
+    normalized_name = name.strip()
+    if not normalized_name:
+        raise HTTPException(status_code=400, detail="User name is required")
+
+    created_at = _utc_now_iso()
+    stored = couchdb.save_doc(
+        {
+            "type": "admin_user",
+            "name": normalized_name,
+            "created_at": created_at,
+        }
+    )
+    user_id = str(stored.get("_id") or "").strip()
+    return AdminUserResponse(user_id=user_id, name=normalized_name, created_at=created_at)
+
+
+@app.get("/admin/test-report", response_model=None)
+def admin_test_report() -> FileResponse | HTMLResponse:
+    """Serve the generated pytest HTML report for the Admin/Test view."""
+
+    if tests_report_file.is_file():
+        html = tests_report_file.read_text(encoding="utf-8", errors="replace")
+        return HTMLResponse(_render_themed_admin_test_report(html))
+    return HTMLResponse(
+        (
+            "<!doctype html><html lang='en'><head><meta charset='utf-8'>"
+            "<title>tests.html unavailable</title></head><body>"
+            "<h1>tests.html is not available</h1>"
+            "<p>Run the test suite to regenerate /reports/tests.html.</p>"
+            "</body></html>"
+        ),
+        status_code=404,
+    )
+
+
+@app.get("/api/admin/test-log", response_model=AdminTestLogResponse)
+def get_admin_test_log() -> AdminTestLogResponse:
+    """Return collected pytest log output for the Admin/Test panel."""
+
+    return _extract_test_report_log_output()
+
+
+@app.get("/api/admin/users", response_model=AdminUserListResponse)
+def list_admin_users() -> AdminUserListResponse:
+    """List saved admin users for the Admin/Test panel."""
+
+    return AdminUserListResponse(users=_list_admin_users())
+
+
+@app.post("/api/admin/users", response_model=AdminUserResponse)
+def add_admin_user(request: AdminUserRequest) -> AdminUserResponse:
+    """Create one lightweight admin user record."""
+
+    return _save_admin_user(request.name)
+
+
 @app.get("/api/llm-options", response_model=LLMOptionsResponse)
 def get_llm_options(force_probe: bool = False) -> LLMOptionsResponse:
     """Return model dropdown options with per-model readiness metadata."""
@@ -2049,6 +2871,49 @@ def get_deposition_directories() -> DepositionDirectoriesResponse:
         base_directory=str(base_directory),
         suggested=_suggest_directory_option(options),
         options=options,
+    )
+
+
+@app.post("/api/depositions/upload", response_model=DepositionUploadResponse)
+def upload_depositions(
+    directory: str = Form(...),
+    files: list[UploadFile] = File(...),
+) -> DepositionUploadResponse:
+    """Save uploaded deposition text files into the selected deposition folder."""
+
+    target_directory = _resolve_upload_directory(directory)
+    if not files:
+        raise HTTPException(status_code=400, detail="At least one deposition file is required")
+
+    saved_files: list[str] = []
+    for index, upload in enumerate(files, start=1):
+        original_name = str(upload.filename or "").strip()
+        if Path(original_name).suffix.lower() != ".txt":
+            raise HTTPException(
+                status_code=400,
+                detail=f"Uploaded deposition must be a .txt file: {original_name or 'unnamed file'}",
+            )
+        safe_name = _sanitize_uploaded_deposition_filename(original_name, index)
+        destination = target_directory / safe_name
+        try:
+            content = upload.file.read()
+            destination.write_bytes(content)
+        except Exception as exc:
+            raise HTTPException(
+                status_code=502,
+                detail=f"Failed to save uploaded deposition '{safe_name}': {exc}",
+            ) from exc
+        finally:
+            try:
+                upload.file.close()
+            except Exception:
+                pass
+        saved_files.append(str(destination))
+
+    return DepositionUploadResponse(
+        directory=str(target_directory),
+        saved_files=saved_files,
+        file_count=len(saved_files),
     )
 
 
@@ -2544,6 +3409,43 @@ def get_agent_metrics(lookback_hours: int = 24) -> AgentRuntimeMetricsResponse:
     )
 
 
+@app.get("/api/agent-metrics/history")
+def get_agent_metric_history(
+    metric_key: str,
+    lookback_hours: int = 24,
+    bucket_hours: int = 2,
+) -> dict[str, object]:
+    """Return bucketed history for one runtime observable."""
+
+    normalized_metric_key = metric_key.strip()
+    if not normalized_metric_key:
+        raise HTTPException(status_code=400, detail="metric_key is required")
+    if lookback_hours < 1 or lookback_hours > 168:
+        raise HTTPException(status_code=400, detail="lookback_hours must be between 1 and 168")
+    if bucket_hours < 1 or bucket_hours > 24:
+        raise HTTPException(status_code=400, detail="bucket_hours must be between 1 and 24")
+    if bucket_hours > lookback_hours:
+        raise HTTPException(status_code=400, detail="bucket_hours cannot exceed lookback_hours")
+
+    sessions, storage_connected = _collect_runtime_trace_sessions()
+    rag_events, rag_storage_connected = _collect_recent_rag_stream_events(lookback_hours)
+    try:
+        return _compute_agent_metric_history(
+            sessions,
+            lookback_hours=lookback_hours,
+            bucket_hours=bucket_hours,
+            metric_key=normalized_metric_key,
+            storage_connected=storage_connected,
+            rag_events=rag_events,
+            rag_storage_connected=rag_storage_connected,
+        )
+    except KeyError as exc:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Metric '{normalized_metric_key}' is not available for trend history",
+        ) from exc
+
+
 @app.get("/api/thought-streams/{thought_stream_id}", response_model=TraceSessionResponse)
 def get_trace_session(thought_stream_id: str) -> TraceSessionResponse:
     """Return current thought-stream events for one active/past stream id."""
@@ -2615,6 +3517,28 @@ def list_cases() -> CaseListResponse:
         raise HTTPException(status_code=502, detail=f"Failed to list cases: {exc}") from exc
 
 
+@app.get("/api/cases/{case_id}", response_model=CaseDetailResponse)
+def get_case(case_id: str) -> CaseDetailResponse:
+    """Return one saved case record with persisted snapshot state."""
+
+    normalized_case_id = case_id.strip()
+    if not normalized_case_id:
+        raise HTTPException(status_code=400, detail="Case ID is required")
+
+    try:
+        payload = _case_detail(normalized_case_id)
+        if payload is None:
+            raise HTTPException(status_code=404, detail=f"Case '{normalized_case_id}' was not found")
+        return payload
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(
+            status_code=502,
+            detail=f"Failed to load case '{normalized_case_id}': {exc}",
+        ) from exc
+
+
 @app.get("/api/cases/{case_id}/versions", response_model=CaseVersionListResponse)
 def list_case_versions(case_id: str) -> CaseVersionListResponse:
     """List saved case versions for scrolling and rerun."""
@@ -2645,6 +3569,7 @@ def save_case(request: SaveCaseRequest) -> CaseSummary:
             last_directory=request.directory,
             llm_provider=request.llm_provider,
             llm_model=request.llm_model,
+            snapshot=request.snapshot if isinstance(request.snapshot, dict) else {},
         )
         for item in _list_case_summaries():
             if item.case_id == case_id:
@@ -3069,3 +3994,85 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
         llm_model=llm_model,
     )
     return ContradictionReasonResponse(response=response)
+
+
+@app.post("/api/summarize-focused-reasoning", response_model=FocusedReasoningSummaryResponse)
+def summarize_focused_reasoning(
+    request: FocusedReasoningSummaryRequest,
+) -> FocusedReasoningSummaryResponse:
+    """Summarize focused contradiction analysis while preserving selected-case validation."""
+
+    llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
+    _ensure_request_llm_operational(llm_provider, llm_model)
+    try:
+        deposition = couchdb.get_doc(request.deposition_id)
+    except Exception as exc:
+        raise HTTPException(status_code=404, detail="Deposition not found") from exc
+    if deposition.get("case_id") != request.case_id:
+        raise HTTPException(status_code=400, detail="Deposition does not belong to requested case")
+
+    try:
+        summary = chat_service.summarize_focused_reasoning(
+            reasoning_text=request.reasoning_text,
+            llm_provider=llm_provider,
+            llm_model=llm_model,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+    _save_case_memory(
+        request.case_id,
+        "reason_summary",
+        {
+            "deposition_id": request.deposition_id,
+            "reasoning_text": request.reasoning_text,
+            "summary": summary,
+            "llm_provider": llm_provider,
+            "llm_model": llm_model,
+        },
+    )
+    _upsert_case_doc(
+        request.case_id,
+        deposition_count=len(_safe_case_depositions(request.case_id)),
+        memory_increment=1,
+        last_action="reason_summary",
+        llm_provider=llm_provider,
+        llm_model=llm_model,
+    )
+    return FocusedReasoningSummaryResponse(summary=summary)
+
+
+@app.post("/api/deposition-sentiment", response_model=DepositionSentimentResponse)
+def deposition_sentiment(request: DepositionSentimentRequest) -> DepositionSentimentResponse:
+    """Compute whole-document sentiment for the selected deposition."""
+
+    try:
+        deposition = couchdb.get_doc(request.deposition_id)
+    except Exception as exc:
+        raise HTTPException(status_code=404, detail="Deposition not found") from exc
+    if deposition.get("case_id") != request.case_id:
+        raise HTTPException(status_code=400, detail="Deposition does not belong to requested case")
+
+    response = _compute_deposition_sentiment(
+        str(deposition.get("raw_text") or deposition.get("summary") or "")
+    )
+    _save_case_memory(
+        request.case_id,
+        "sentiment",
+        {
+            "deposition_id": request.deposition_id,
+            "score": response.score,
+            "label": response.label,
+            "summary": response.summary,
+            "positive_matches": response.positive_matches,
+            "negative_matches": response.negative_matches,
+            "word_count": response.word_count,
+        },
+    )
+    _upsert_case_doc(
+        request.case_id,
+        deposition_count=len(_safe_case_depositions(request.case_id)),
+        memory_increment=1,
+        last_action="sentiment",
+    )
+    return response

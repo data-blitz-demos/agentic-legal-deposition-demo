@@ -195,7 +195,15 @@ Helper scripts:
 
 ## Graph RAG (Neo4j + OWL)
 
-Environment variables:
+This app includes a Graph RAG path that:
+
+1. Loads legal ontology `.owl` files into Neo4j.
+2. Retrieves graph context for each question.
+3. Sends that context to the selected LLM.
+4. Returns a grounded answer plus retrieval telemetry.
+5. Optionally logs each cycle into CouchDB `rag-stream`.
+
+### Graph RAG Environment
 
 ```bash
 # If API runs in Docker Compose:
@@ -209,18 +217,164 @@ NEO4J_PASSWORD=password
 NEO4J_DATABASE=neo4j
 NEO4J_BROWSER_URL=http://localhost:7474/browser/
 ONTOLOGY_DIR=./ontology
+RAG_STREAM_DB=rag-stream
 ```
 
-Docker Compose mounts `ONTOLOGY_DIR` into the API container as `/data/ontology`.
+Notes:
 
-API endpoints:
+- Docker Compose mounts `ONTOLOGY_DIR` into the API container as `/data/ontology`.
+- `ONTOLOGY_DIR` can contain one `.owl`, many `.owl`, or nested ontology folders.
+- Local sample ontology content is included under `ontology/`.
+
+### Ontology Inputs Supported
+
+`Load Ontology` accepts any of the following:
+
+- Single file path: `/data/ontology/LMSS-main/LMSS.owl`
+- Folder path: `/data/ontology/LMSS-main`
+- Glob path: `/data/ontology/**/*.owl` (or `/data/ontology/*.owl`)
+
+The loader resolves and imports all matching `.owl` files.
+
+### UI Workflow (End to End)
+
+1. Confirm Neo4j is reachable (`/api/graph-rag/health` or UI status).
+2. In `Graph Ontology (*.owl)`, choose a path:
+   - type directly, or
+   - click `Browse` to pick a folder/file with the ontology browser.
+3. Click `Load Ontology`.
+4. Optionally click `Open Graph Browser` to inspect graph nodes/relationships.
+5. Enter a question in `Graph RAG Question`.
+6. Set toggles:
+   - `RAG Processing` ON: retrieve Neo4j context for inference.
+   - `RAG Processing` OFF: no retrieval; LLM answers without graph grounding.
+   - `RAG Stream` ON: persist per-cycle retrieval/prompt/answer telemetry to `rag-stream`.
+7. Click `Ask Graph RAG`.
+8. Review:
+   - final answer,
+   - retrieval monitor (terms, resources, context preview, prompts),
+   - optional persisted stream events in CouchDB.
+
+### RAG Toggle Behavior
+
+- `RAG Processing = ON`
+  - App retrieves graph resources and builds context.
+  - `context_rows` reflects retrieved rows.
+  - monitor payload includes retrieved resources/relations/literals.
+- `RAG Processing = OFF`
+  - Retrieval is skipped.
+  - `context_rows` is `0`.
+  - monitor context explicitly states RAG was disabled.
+- `RAG Stream = ON`
+  - Completed/failed cycles are saved to `RAG_STREAM_DB` as `type=rag_stream`.
+- `RAG Stream = OFF`
+  - Query still works; persistence is skipped.
+
+### Observability and Persistence
+
+Graph RAG writes:
+
+- Thought-stream events (when a trace id is provided) to thought-stream storage.
+- Optional rag-stream events to CouchDB:
+  - `type=rag_stream`
+  - includes: `question`, `use_rag`, `top_k`, retrieval terms, retrieved resources, prompts, answer preview, status.
+
+Agent observables include Graph RAG influence metrics computed from `rag-stream`, such as:
+
+- RAG toggle comparison pairs
+- answer change rate (ON vs OFF)
+- context hit rate
+- average retrieved context rows
+- ON/OFF query split
+
+### Graph RAG API Endpoints
 
 - `GET /api/graph-rag/health`
+  - Neo4j config/connectivity status.
 - `GET /api/graph-rag/browser`
+  - Browser URL + launch URL with starter graph query.
 - `GET /api/graph-rag/owl-options`
+  - Ontology path suggestions under configured ontology root.
 - `GET /api/graph-rag/owl-browser`
+  - File-browser style directory listing for ontology selection.
 - `POST /api/graph-rag/load-owl`
+  - Imports one file/folder/glob of `.owl` into Neo4j.
 - `POST /api/graph-rag/query`
+  - Runs question answering with optional retrieval and optional rag-stream logging.
+
+### Example API Calls
+
+Load ontology:
+
+```bash
+curl -X POST http://localhost:8000/api/graph-rag/load-owl \
+  -H "Content-Type: application/json" \
+  -d '{
+    "path": "/data/ontology/LMSS-main/LMSS.owl",
+    "clear_existing": false,
+    "batch_size": 500
+  }'
+```
+
+Query with retrieval enabled:
+
+```bash
+curl -X POST http://localhost:8000/api/graph-rag/query \
+  -H "Content-Type: application/json" \
+  -d '{
+    "question": "What is a material breach?",
+    "top_k": 6,
+    "use_rag": true,
+    "stream_rag": true,
+    "llm_provider": "openai",
+    "llm_model": "gpt-5.2"
+  }'
+```
+
+Query with retrieval disabled (A/B comparison mode):
+
+```bash
+curl -X POST http://localhost:8000/api/graph-rag/query \
+  -H "Content-Type: application/json" \
+  -d '{
+    "question": "What is a material breach?",
+    "top_k": 6,
+    "use_rag": false,
+    "stream_rag": true
+  }'
+```
+
+### Troubleshooting Graph RAG
+
+`Failed to import ontology files into Neo4j: Couldn't connect to localhost:7687 ... connection refused`
+
+- Cause: API cannot reach Neo4j on configured `NEO4J_URI`.
+- Fix:
+  - Docker Compose API: use `NEO4J_URI=bolt://neo4j:7687`.
+  - Host API process: use `NEO4J_URI=bolt://localhost:7687`.
+  - Verify Neo4j is up (`docker compose ps`, Browser at `http://localhost:7474/browser/`).
+  - Verify credentials (`NEO4J_USER`, `NEO4J_PASSWORD`).
+
+`No .owl ontology files found for input ...`
+
+- Cause: selected path did not resolve to `.owl`.
+- Fix:
+  - choose a real `.owl` file, folder containing `.owl`, or valid glob.
+  - use the ontology browser UI to avoid path mistakes.
+
+`Ask Graph RAG` returns no retrieval context:
+
+- Confirm `RAG Processing` is ON.
+- Confirm ontology was loaded successfully.
+- Ask with ontology terms closer to loaded labels/classes.
+
+### Included Ontology Assets
+
+- `ontology/LMSS-main/LMSS.owl`
+- `ontology/smoke_legal.owl`
+- `ontology/README.md`
+
+You can use either a single `.owl` file or a folder/glob containing multiple files.
 
 ## Internal Code Documentation
 
@@ -381,6 +535,12 @@ DEPOSITION_EXTRA_DIRS=
 - `POST /api/reason-contradiction`
 - `GET /api/llm-options`
 - `GET /api/deposition-directories`
+- `GET /api/graph-rag/health`
+- `GET /api/graph-rag/browser`
+- `GET /api/graph-rag/owl-options`
+- `GET /api/graph-rag/owl-browser`
+- `POST /api/graph-rag/load-owl`
+- `POST /api/graph-rag/query`
 - `GET /api/thought-streams/health`
 - `GET /api/rag-streams/health`
 - `GET /api/thought-streams/{thought_stream_id}`

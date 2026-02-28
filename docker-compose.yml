@@ -36,8 +36,9 @@ services:
       - couchdb
       - neo4j
     volumes:
-      - ${DEPOSITION_DIR:-./depositions}:/data/depositions:ro
+      - ${DEPOSITION_DIR:-./depositions}:/data/depositions
       - ${ONTOLOGY_DIR:-./ontology}:/data/ontology:ro
+      - ${REPORTS_DIR:-./reports}:/app/reports:ro
 
   couchdb:
     image: couchdb:3
