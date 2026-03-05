@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 set -euo pipefail
 
 : "${AWS_ACCOUNT_ID:?Set AWS_ACCOUNT_ID}"

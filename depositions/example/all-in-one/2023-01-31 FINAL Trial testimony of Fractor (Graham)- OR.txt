@@ -1,0 +1,1333 @@
+0716
+ 1        IN THE CIRCUIT COURT OF THE STATE OF OREGON
+                  FOR THE COUNTY OF MULTNOMAH
+ 2   
+ 3   
+ 4   
+     ELAINE CHATFIELD, as
+ 5   Personal Representative
+     of the ESTATE OF
+ 6   ELSIE LOUISE GRAHAM,
+ 7             Plaintiff,
+ 8   vs.                                CASE NO. 21CV40522
+ 9   AVON PRODUCTS, INC.,
+     et al.
+10   
+               Defendants.
+11   _____________________________________________________
+12   
+13   
+14   
+15   
+16   
+                        VERBATIM TRANSCRIPT OF PROCEEDINGS
+17   
+                                          TRIAL - VOLUME 7
+18   
+19                                                 HELD ON
+                                 TUESDAY, JANUARY 31, 2023
+20                                               9:11 A.M.
+21   
+                                                    BEFORE
+22                           THE HONORABLE SHELLEY RUSSELL
+                                       CIRCUIT COURT JUDGE
+23   
+24                             1200 SOUTHWEST FIRST AVENUE
+                                    PORTLAND, OREGON 97204
+25   
+0717
+ 1                           APPEARANCES
+ 2   
+ 3   For the Plaintiff:
+ 4   Jordan Blumenfeld-James, Esquire
+ 5   Jessica Dean, Esquire
+ 6   DEAN OMAR BRANHAM SHIRLEY, LLP
+ 7   302 North Market Street, Suite 300
+ 8   Dallas, TX  75202
+ 9   (214) 722-5990
+10   (214) 722-5991 (Fax)
+11   jbj@dobslegal.com
+12   jdean@dobslegal.com
+13   
+14   For the Defendant, Whittaker, Clark & Daniels, Inc.:
+15   Allen Eraut, Esquire
+16   Kevin Bergstrom, Esquire
+17   RIZZO BOSWORTH ERAUT PC
+18   1300 SW Sixth Avenue, Suite 330
+19   Portland, OR  97201
+20   (503) 229-1819
+21   (503) 229-0630 (Fax)
+22   aeraut@rizzopc.com
+23   kbergstrom@rizzopc.com
+24   -and-
+25   
+0718
+ 1                       APPEARANCES CONTINUED
+ 2   
+ 3   Eric Cook, Esquire
+ 4   WILLCOX SAVAGE
+ 5   440 Monticello Ave, Suite 2200
+ 6   Norfolk, VA 23510
+ 7   (757) 628-5500
+ 8   Ecook@wilsav.com
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0719
+ 1                  INDEX OF EXAMINATION
+ 2                                                    Page
+ 3   PLAINTIFF'S WITNESSES
+ 4   MARK RIGLER, Ph.D.
+ 5   Continued Direct Examination By Ms. Dean         721
+ 6   Cross-Examination by Mr. Cook                    778
+ 7   Redirect Examination By Ms. Dean                 872
+ 8   
+ 9   DAVID T. FRACTOR, Ph.D.
+10   Direct Examination by Mr. Blumenfeld-James       918
+11   Cross Examination by Mr. Bosworth                944
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0720
+ 1                           EXHIBITS
+ 2   DEFENDANT'S EXHIBITS: RETAINED BY COUNSEL
+ 3      No.    Description                        Admitted
+ 4      D1     Approved Vendors                       813
+ 5      D2     Ingredient Specs/Avon                  814
+ 6    8006     Ingredient Specs/Avon                  816
+ 7    8008     Ingredient Specs/Avon                  806
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0721
+ 1            VERBATIM TRANSCRIPT OF PROCEEDINGS
+ 2                     TRIAL - VOLUME 7
+ 3                         HELD ON
+ 4                 TUESDAY, JANUARY 31, 2023
+ 5                         9:11 A.M.
+ 6                          BEFORE
+ 7               THE HONORABLE SHELLEY RUSSELL
+ 8                   CIRCUIT COURT JUDGE
+ 9   
+10             (Jury enters.)
+11             THE COURT:  Back on the record.  This is
+12   Day 7 in Graham versus Whittaker, Clark & Daniels.
+
+
+
+
+
+
+
+
+25             THE COURT:  Okay.  Are we ready for your
+0918
+ 1   next witness?
+ 2             MS. DEAN:  Yes, Your Honor.
+ 3             Dr. Fractor is our next witness, and he's
+ 4   remote.  Is he --
+ 5             THE COURT:  He's on the line.  Just a
+ 6   reminder, we will stop at 4:45 again today.
+ 7             THE CLERK:  Mr. Fractor, can you hear us?
+ 8             THE WITNESS:  I can.
+ 9   DAVID T. FRACTOR, Ph.D., having been first duly
+10   sworn, testified under oath as follows:
+11             THE CLERK:  For the record, please state
+12   your name and spell your last name.
+13             THE WITNESS:  David Todd Fractor, F-R-A-C-
+14   T-O-R.
+15             THE CLERK:  Thank you.
+16   DIRECT EXAMINATION
+17   BY MR. BLUMENFELD-JAMES:
+18        Q    Good afternoon, Doctor.
+19        A    Good afternoon.
+20        Q    We've had a couple of different doctors
+21   in.  Just to orient ourselves, you are not a medical
+22   doctor, correct?
+23        A    I'm a Ph.D. kind of doctor, that's
+24   correct.
+25        Q    And we have a -- I have a presentation.
+0919
+ 1   Are you able to see it on the screen with you as we
+ 2   go along?
+ 3        A    Yes, sir.
+ 4        Q    Okay.  Very good.  So being a Ph.D. kind
+ 5   of doctor, can you take us through a little bit --
+ 6   first, what is your Ph.D. in?  What kind of doctor
+ 7   are you?
+ 8        A    I've a Ph.D. in economics.
+ 9        Q    Okay.  And can you take us a little bit
+10   through your background and your education that
+11   caused you to -- that may be why you went into
+12   economics?
+13        A    Okay.  I have an undergraduate degree in
+14   economics from UCLA.  I was actually a government
+15   intern in Sacramento, working for the one member of
+16   the Assembly who was an economics professor by
+17   trade.
+18             And after that experience, that motivated
+19   me to go on to grad school.  I attended the
+20   University of Oregon for grad school, receiving my
+21   Master's degree, as you see on the screen, in 1981
+22   and my Doctorate's in 1982.
+23        Q    So you've had both your Master's and Ph.D.
+24   at the University of Oregon?
+25        A    Yes, sir.
+0920
+ 1        Q    And for how long did you live in Oregon?
+ 2        A    Not long enough.  But I was actually there
+ 3   from '77 to '79, and then I joined a think tank in
+ 4   Bozeman, Montana but came back for several summers
+ 5   to complete my dissertation.
+ 6        Q    And after getting your Ph.D. -- sorry.
+ 7   I'm just looking up at this.  I think we can read
+ 8   most of this, but why don't you take us through some
+ 9   of your professional experience and what you've done
+10   through the years in economics.
+11        A    Sure.  Overlapping -- overlapping my
+12   graduate study and even for a year after I completed
+13   my Ph.D., I was affiliated with an environmental
+14   economics think tank housed at Montana State
+15   University at the time, now it's still in Bozeman,
+16   but off campus.  And I also taught in the Department
+17   of Agricultural Economics and Economics.
+18             And then I got a job as an assistant
+19   professor at one of the State University of New York
+20   colleges in Upstate New York.  And then in 1985, I
+21   came back to Los Angeles, where my family lived.  I
+22   was employed at Cal State Northridge full time for
+23   three years.  And then in 1988, I got involved in
+24   economic consulting, which I've been doing for 34
+25   years.
+0921
+ 1             But during most the period that I've been
+ 2   consulting I also taught economics, including nine
+ 3   years at UCLA, four years at Cal State Channel
+ 4   Islands, the newest campus was of the Cal State
+ 5   system, and back at Cal State Northridge.  I think
+ 6   overall I taught there about 26 years in economics
+ 7   and finance.  And I finally retired from teaching
+ 8   after the spring semester of 2022.
+ 9        Q    Now, as far as your career, there's sort
+10   of a teaching aspect to it and a consulting aspect
+11   to it; is that correct?
+12        A    That is correct.
+13        Q    Now, separating the two out, because I
+14   think we -- we understand where you've taught,
+15   Oregon, Channel Islands, UCLA, Cal State Northridge,
+16   but the consulting aspect of it, that began, you
+17   said, in the late '80s; is that correct?
+18        A    1988, yes.
+19        Q    And that's something you still do today;
+20   is that correct?
+21        A    Yes.  I co-own an economics and statistics
+22   consulting firm located in Pasadena, California,
+23   which is where I am housed right now.
+24        Q    I'm not going to try to out-math you, but
+25   '88 to 2023, 34, 35 years, something like that; is
+0922
+ 1   that right?
+ 2        A    The day after Labor Day was 34 years in
+ 3   September, to be exact.  So it's almost 34 and a
+ 4   half years at this point.
+ 5        Q    I already said I was going to out-math
+ 6   you, but I appreciate the precision.
+ 7             As far as the consulting work, can you
+ 8   give us an understanding as to what type of
+ 9   consulting work you've done in economics in the last
+10   three decades, three-plus decades?
+11        A    Yes, sir.  Most of what I do I would
+12   characterize as labor economics, meaning I'm looking
+13   at a loss that an individual or small group of
+14   individuals may have incurred.  I do a lot of work
+15   in toxic torts throughout the United States, such as
+16   the case we are here today for.
+17             I also do a lot of work in employment
+18   matters, medical malpractice, personal injury,
+19   wrongful death, and some business disputes from time
+20   to time.
+21        Q    So is most of your consultant work in
+22   litigation?
+23        A    Yes, sir.
+24        Q    Are you able to divide over the last
+25   three-plus decades how much you're hired by one side
+0923
+ 1   versus the other?
+ 2        A    My best -- yes, I can.  My best estimate
+ 3   of that is about 80 percent of the time I work on
+ 4   behalf of the plaintiff and 20 percent on behalf of
+ 5   the defendant.
+ 6        Q    And has that been essentially consistent
+ 7   throughout the years?
+ 8        A    It increased more so over the last 10 or
+ 9   15 years particularly for the toxic tort practice.
+10   But since that time it's been pretty consistent.
+11        Q    Now, to be very clear, as a consultant you
+12   are paid for your time; is that correct?
+13        A    Yes, sir.
+14        Q    And you are charging for your time in this
+15   case as you would any case, no matter who hired you;
+16   is that correct?
+17        A    That's standard rates, that's correct.
+18        Q    And how much do you charge for your time?
+19        A    It's $500 an hour for anything and
+20   everything that I do.  I simply have one rate.
+21   There's no other fancy other prices.  One rate for
+22   everything.
+23        Q    And although I'm sure the rate has changed
+24   over time, fair to say that you've been charging for
+25   your time for the 34-plus years you've been
+0924
+ 1   consulting?
+ 2        A    Sure.
+ 3        Q    Going a little bit back to your
+ 4   background, I apologize, in addition to the teaching
+ 5   and in addition to consulting, you've also done some
+ 6   publications; is that correct?
+ 7        A    Yes, sir.
+ 8        Q    Now, I just pulled a sampling here.  I
+ 9   know that this isn't your complete publication, but
+10   can you give us an idea of the kinds of topics
+11   you've done publications on through the years?
+12        A    Sure.  Let me work backwards, because what
+13   you have on the screen now reflects some of the
+14   practitioner books that my firm has published.  And
+15   by practitioner books, basically we've made it
+16   easier for other consulting economists to perform
+17   certain kinds of tasks.
+18             So one of the key ones on this sheet, on
+19   this page that I was involved in, were the age-based
+20   cumulative probability of survival.  That's a --
+21   that's a longwinded title.  But what it means is if
+22   you take someone, let's say, that's 50 years old
+23   now, what is the probability they're going to live
+24   to every year in the future.  To 80, to 85, to 90,
+25   et cetera.  And we use that in some of the analyses
+0925
+ 1   that we performed.
+ 2             Also, in addition to what you have on the
+ 3   screen there, my publications really fall into two
+ 4   categories.  One would be natural resources and
+ 5   environmental economics.  I wrote my dissertation on
+ 6   ground water privatization.  So that would be sort
+ 7   of the first half in my professional career of the
+ 8   research that I performed.
+ 9             But I have also published or coauthored a
+10   number of articles related to the work I do in
+11   court.  So actually, I have coauthored several items
+12   relating to what we call forensic economics.
+13        Q    And forensic economics, I think we all
+14   probably have a sense of that, if nothing else from
+15   TV, CSI, that sort of thing.  But maybe can you just
+16   help us understand really what that means so we're
+17   not just basing it on Dick Wolf and his writing
+18   staff?
+19        A    No, it's not just dead bodies.  It's
+20   basically applying economic concepts to legal
+21   matters.
+22        Q    And in this case, I know we asked you to
+23   do that.  Before I go into it, going forward, will
+24   you agree that every opinion that you're going to
+25   render, based on the questions I ask, you'll give to
+0926
+ 1   a reasonable degree of scientific certainty?
+ 2        A    Yes.
+ 3        Q    Now, just for some context before we get
+ 4   started, going into what you've done in this case,
+ 5   if we prove our case liability-wise, the jury will
+ 6   be asked to find damages.
+ 7             You're not here to explain all the
+ 8   different kinds of damages; there are certain ones.
+ 9   We've actually reached a stipulation, which we'll
+10   discuss with the jury at another time, regarding
+11   medical expenses and the costs of funeral expenses.
+12   So I know you're not here to do that.
+13             What are you -- what kind of damages are
+14   you assessing in this case?
+15        A    Well, I'm assessing losses.  Because I'm
+16   not here to testify about liability.  So whether
+17   there is a verdict on behalf or the plaintiff or
+18   not, the losses still happened.  And the losses here
+19   relate to the net support from Social Security that
+20   Ms. Graham was receiving at the time she passed away
+21   and then projecting it into the future, as well as a
+22   benchmark calculation on the household services that
+23   older women perform in the household.  So I'm
+24   valuing those two things.
+25        Q    Now, as far as evaluating those two
+0927
+ 1   things, are these things that you have -- this kind
+ 2   of evaluation and calculation, is this the kind of
+ 3   thing you've been doing in your consulting work for
+ 4   years?
+ 5        A    Yes.  Probably thousands, if not many,
+ 6   many, many hundreds of times at this point.
+ 7        Q    And is this the kind of thing that you've
+ 8   written about to help other experts learn how to do
+ 9   this sort of calculation?
+10        A    Yes.
+11        Q    Now, as far as economics and your
+12   calculation, I know that you're bringing a couple of
+13   things together.  There's some information that we
+14   provided to you, whether it's through some records
+15   or deposition testimony, there's some information
+16   that you either had or obtained, and then there's
+17   some calculations that you went through.
+18             I want to sort of, if we can, take us
+19   through those three things.  What did you obtain
+20   from us, what did you already have or obtain
+21   yourself, and then what were the calculations that
+22   you did to do your loss analysis?
+23        A    Well, the information I have I was
+24   provided, for example, would be what Ms. Graham's
+25   Social Security benefit would have been if she had
+0928
+ 1   not passed away prior to the onset of 2023.  So we
+ 2   know the Social Security benefit that she would have
+ 3   had going forward.
+ 4             There was deposition testimony that would
+ 5   give us information on when Ms. Graham was diagnosed
+ 6   with mesothelioma, some testimony relating to some
+ 7   of the things she did for the household, testimony
+ 8   about her living situation, living with four other
+ 9   adults in the household.
+10             I also received the death certificate, so
+11   that provided me, obviously, confirmation on the
+12   date of birth as well as the date that she passed
+13   away.  Also, the deposition testimony identified
+14   where she lived, which is relevant for calculating
+15   the value of household services.  So those would be
+16   the kind of things that were provided to me.
+17             The information that I had to research
+18   would be things such as how much longer would
+19   someone of Ms. Graham's age, once she passed away,
+20   just shy of 90, how many more years they would be
+21   expected to live and also how many more years of
+22   full functioning life expectancy did they have,
+23   which is relevant when I make the calculation on
+24   household services.  Because I don't assume somebody
+25   can help around the house until the last day of
+0929
+ 1   their life.  So I had information on that.
+ 2             I also researched information with regards
+ 3   to inflation projections over the next several years
+ 4   because Social Security benefits go up with
+ 5   inflation.  And I also researched survey data from
+ 6   an economic tomography firm in the Midwest that
+ 7   gives us baseline information on how much time
+ 8   people, based on gender, age, marital status, et
+ 9   cetera, spend in the way of performing household
+10   services and what the national value of those
+11   household services are.
+12             I researched data from a database that my
+13   firm subscribes to that enables me to take the
+14   national values and adjust them down to Willamina,
+15   right near Sheridan in Oregon.  I also researched
+16   information from the Congressional Budget Office on
+17   projected wage growth so we can kind of track how
+18   much the replacement value on household services
+19   will change over the next few years.
+20             And then I also researched information
+21   from the Federal Reserve to come up with interest
+22   rates.  Because any losses after February 1 are
+23   viewed as being future losses that have to be
+24   discounted to present value.  So I think I've given
+25   you a pretty complete list of everything that I
+0930
+ 1   received and everything I did.
+ 2        Q    You know, and with that, I appreciate
+ 3   that.  Very thorough.  One thing I realize we're
+ 4   defining terms, which we're doing a lot in this
+ 5   case.  Social Security, I think we all understand
+ 6   what that is, a benefit you receive from the
+ 7   government based on something you paid into in the
+ 8   past and your earnings in the past.  So I won't ask
+ 9   you about that.
+10             But there's a term I've used and you've
+11   used called household services.  And, again, I think
+12   those are two English words the jury can put
+13   together and get a sense of what it means, but I
+14   also understand that it is a term of art in your
+15   field.
+16             So before we go into the numbers and the
+17   calculations, could you help explain to understand
+18   what household services is in this context?
+19        A    Certainly.  Our economics value goes well
+20   beyond our ability to earn a paycheck or receive
+21   some sort of income in retirement.  So one of the
+22   things that people do that has value are the tasks
+23   that they perform to enable their households to
+24   function, even if it's a household of one to
+25   function.
+0931
+ 1             So we're talking about things like
+ 2   cooking, cleaning, shopping, gardening, repairing,
+ 3   running errands, doing the laundry, et cetera.  All
+ 4   of those things take time, all of those things have
+ 5   value.  In fact, the 20 or so times I've taught
+ 6   labor economics, talking about household services
+ 7   was an important component of that as an alternative
+ 8   to people spending time in the labor market.
+ 9             So what we have is we actually have
+10   surveys conducted by the U.S. Department of Labor
+11   that gave people a diary and for 24 hours they had
+12   to list every single thing they did.  And I mean
+13   every single thing they did, legal or otherwise,
+14   attending to their personal needs, whatever it might
+15   be.
+16             From that survey data, researchers have
+17   extracted out the information to enable us to come
+18   up with a benchmark value on how many hours per week
+19   various types of services are performed by
+20   individuals and then also pricing it.  So that's
+21   what household services are all about.
+22        Q    The other concept that I want to preview
+23   before we turn directly to your numbers is the
+24   concept of past versus future.  You calculated both
+25   past --
+0932
+ 1        A    Yes.
+ 2        Q    -- Social Security and past household
+ 3   services and future Social Security and future
+ 4   household services.
+ 5             So again, in this context, because we all
+ 6   know what past and future is, but in this context
+ 7   what does it mean for your calculations?
+ 8        A    Well, anything that happened through
+ 9   today, January 31st of 2023, would be considered a
+10   past loss.  So for example, on the Social Security
+11   benefit, the only past loss is the benefit this
+12   month that Ms. Graham would have received if still
+13   alive this month but did not.
+14             With respect to household services, since
+15   she was diagnosed, as I understand it, in August of
+16   2021, August becomes the first period that household
+17   service losses were presumably incurred.  And I
+18   value that all the way on a sliding scale, as I
+19   will, all of the way through January of this year.
+20   And that would be the past losses for the services.
+21        Q    Okay.  I think we've explained enough
+22   terms that we can sort of go into your calculations.
+23   If something comes up, I'll -- I might flag it.  But
+24   turning here, this is the end calculation you
+25   provided to me.
+0933
+ 1             Can you take us through this and how you
+ 2   calculated it, what the numbers mean, and what it
+ 3   represents?
+ 4        A    Absolutely.  And let me preface all of
+ 5   this by stating that because Ms. Graham has already
+ 6   passed away, we need to apply some sort of factor to
+ 7   take into account an estimate of the personal
+ 8   consumption by Ms. Graham of these items, meaning
+ 9   some of her Social Security benefit would have gone
+10   simply for her own spending, would not have been
+11   available to the rest of the household.
+12             Some of the household services she
+13   performed would be for her benefit only, like if she
+14   got up before anyone else in the house did and made
+15   herself breakfast.  She's the only one who reaped
+16   the benefit from that.  But what I'm here is to try
+17   and measure the benefit to the other members of the
+18   household.
+19             So if I could just start with Social
+20   Security, her benefit as of 2023 was approximately
+21   $1,740 a month.  But looking at studies that are
+22   periodically updated by professors actually in the
+23   state of Washington, we are able to estimate given
+24   the family structure how much of that benefit would
+25   have been consumed by Ms. Graham herself on average,
+0934
+ 1   and that comes in at just under 30 percent.
+ 2             So that's why the benefit is about 1,740
+ 3   but the actual loss in January is only $1,222.  The
+ 4   30 percent figure is applied all the way through,
+ 5   including the future losses.
+ 6             Now, the future losses would be for the
+ 7   remainder of Ms. Graham's life expectancy, which is
+ 8   to April of 2027.  Okay?  So she would have had, at
+ 9   the time she passed away, about 4.3 years.  So a
+10   little less than four years and four months on
+11   average left to live.  That would be the average
+12   life expectancy from the most recent tables
+13   published by the Centers for Disease Control.
+14             Now, year by year, Social Security
+15   benefits are going to go up with inflation.  The
+16   increase this year was 8.7 percent because inflation
+17   was so high last year.  I have estimated that for
+18   the next four years that the benefit will go up 2.7
+19   percent per year.
+20             So we have the current benefit.  She gets
+21   -- she would have gotten it every month.  It's going
+22   to increase 2.7 percent per year.  We take 30
+23   percent out for her personal consumption, and then
+24   we discount back to present value using the treasury
+25   bond yields over like the next 40 years.  That's
+0935
+ 1   about 3.27 percent.  It's not a big number, but it's
+ 2   the right thing to do.  And that's how we get the
+ 3   future loss of 60,435.  We add it to the past Social
+ 4   Security loss through January and get a total loss
+ 5   of $61,657.
+ 6        Q    Now, a couple of things.  One I just want
+ 7   to confirm again, because it's an important concept,
+ 8   and the other is, again, a new concept that we
+ 9   mentioned but didn't really explain.
+10             The first is personal consumption.  I know
+11   personal consumption and whether or not it's taking
+12   into account can be an issue.  But in this case,
+13   first, you took personal consumption into account
+14   during your calculations; is that correct?
+15        A    Yes, sir.
+16        Q    And you said it, but I just want to put a
+17   pin in it, just to make sure we understand.
+18   Personal consumption is discounting the value for
+19   whatever she consumed just for her own benefit
+20   rather than for the benefit of the household in
+21   which she lived; is that essentially correct?
+22        A    That's correct.  And indeed, it dovetails
+23   with the deposition testimony where Ms. Graham, I
+24   believe, said she provides the household about
+25   $1,000 a month.  Well, the amount left after her
+0936
+ 1   consumption is $1,222 right now.
+ 2             So the 30 percent seems to be in line with
+ 3   what we would have expected based on the testimony,
+ 4   but more importantly, it's in line with the data
+ 5   from the U.S. Department of Labor and I believe the
+ 6   Census Bureau as to how much people of various
+ 7   family sizes spend based on their income, spend on
+ 8   themselves.
+ 9        Q    And just to clarify, because some people
+10   are taking very meticulous notes, you received all
+11   of Mrs. Graham's testimony.  We played portions of
+12   it.  So you have seen some portions of the
+13   deposition that they may not have heard, and I just
+14   want to make that clear, because I don't believe
+15   that particular portion was played.
+16             That being said, the other thing that I
+17   wanted to just touch on to understand the other
+18   concept, present value of the dollar.  That's
+19   something else, first, I just want to confirm, you
+20   took that into account in your calculations,
+21   correct?
+22        A    Yes, sir.
+23        Q    And just again so that we understand what
+24   that is both for the last calculation and for the
+25   next calculation, what is that?  What is present
+0937
+ 1   value?
+ 2        A    Present value is basically the concept
+ 3   that when we're looking at losses here that go out
+ 4   to 2027, if there's an award, it's going to be in
+ 5   2023.  So if nothing else, you could take some of
+ 6   the money now, invest it, and be able to earn some
+ 7   interest on it that will then replace the loss for
+ 8   2024, '25, '26, and so on.
+ 9             So using current treasury bond yields, the
+10   interest rate for what is a relatively short period
+11   of time now, about four years out, is 3.7 percent
+12   annually.  And that is the rate at which I
+13   discounted the losses.  If I did not apply a
+14   discount rate, my loss on Social Security would have
+15   been about $5,000 higher, just to give you an
+16   example.
+17        Q    So just taking the two concepts and making
+18   sure we understand how they affect the number, both
+19   personal consumption and present value calculations
+20   decrease your total number; is that correct?
+21        A    Yes, sir.
+22        Q    Okay.  I just wanted to make sure for
+23   however level of understanding we have for
+24   economics, we understand both what they are and the
+25   events.
+0938
+ 1             Household services, we've explained what
+ 2   that is.  We've explained the past and the future.
+ 3             Can you take us through the calculations
+ 4   of what you did to get the figure you arrived at for
+ 5   past, future, and total loss of household services?
+ 6        A    Yes.  I'll get to the number that I used
+ 7   in just a second.  But conceptually, what I assume
+ 8   typically is the month before someone is diagnosed
+ 9   they can do everything.  The month before someone
+10   passes away, they can do nothing in the way of
+11   household services.  And in between there's a
+12   decline.
+13             So as the disease progresses, your ability
+14   to perform things around the household is going to
+15   be diminished.  That's exactly what I've done here.
+16   So for example, the actual loss of household
+17   services, for instance, for 2021 is not even 20
+18   percent to the value of the household services, but
+19   it gets much bigger in 2022, and obviously at this
+20   point it would be 100 percent.
+21             So what we have is we have these surveys
+22   that are conducted by the U.S. Department of Labor
+23   and analyzed by a firm located in Kansas that
+24   actually does the economic tomography heavy lifting
+25   here.  And what we find a retired female living who
+0939
+ 1   is single, over the age of 75, which is the oldest
+ 2   category that exists for the study, not living
+ 3   alone, performs just under 24 hours of household
+ 4   services a week.
+ 5             So what we're saying is that the average
+ 6   is something over three, between three and maybe
+ 7   three and a half hours a day, okay, of the kinds of
+ 8   things, cooking, cleaning, shopping, gardening,
+ 9   shopping that I talked about earlier.
+10             Now, my calculation on household services
+11   here is based on this benchmark of just over three
+12   hours a day.  I did not live with Ms. Graham.  I
+13   don't know how many hours she testifies.  But ladies
+14   and gentlemen of the jury, I would -- I would assume
+15   the testimony, that they believe three hours or so
+16   is correct, then my number would be I think an
+17   accurate representation of the loss.
+18             If you think Ms. Graham really didn't do
+19   much and she did only half of that, an hour and a
+20   half a day or so, then divide it by two.  It's very
+21   -- it's very easy to modify it based on the
+22   specifics as it relates to Ms. Graham.  So the
+23   survey data that comes in at 23.73 hours a week, we
+24   have an hourly value that's assigned to that.
+25             I adjust it to the town closest to
+0940
+ 1   Sheridan, Oregon, Willamina, that I could find.
+ 2   Wages there are a little bit above the national
+ 3   average, so replacing these household services would
+ 4   be a little more costly than the national average.
+ 5             By the way, I don't assume 43.7 hours a
+ 6   week each and every week.  I take it for fifty weeks
+ 7   a year and that's it, recognizing people do take
+ 8   time off at various times, go away or take a holiday
+ 9   or something like that.  So it's fifty weeks a year.
+10             We have the figures as to what they are
+11   worth as of 2023.  From my calculations, it's $20.93
+12   an hour.  Going forward, I used the projections from
+13   the Congressional Budget Office on how much wages
+14   are projected to grow in '24, '25, and '26, to
+15   estimate the value of the household services in the
+16   future.  We know that prices and wages are rising.
+17   I've accounted for that in my analysis.
+18             We do not take this out 4.3 years as we
+19   did for the Social Security benefit.  We actually
+20   take it out for 4.03 years.  So basically about four
+21   years almost to the button, because that is the
+22   remaining full functioning life expectancy for a
+23   Caucasian female approximately 90 years of age.  So
+24   they can do things up until a few months before
+25   their passing.
+0941
+ 1             And just as I did with regards to Social
+ 2   Security, I took into account personal consumption.
+ 3   The estimated personal consumption which is
+ 4   available in this study I used on benchmark data is
+ 5   just over 25 percent.  So about one-fourth of
+ 6   anything that Ms. Graham would have done I assume
+ 7   she did for herself only, not included in my
+ 8   analysis.  And once again, any future loss is
+ 9   counted back to present value of 3.7 percent.
+10             The final thing I want to point out is you
+11   can see the past household services loss is far
+12   bigger than the past Social Security loss.  Because
+13   Social Security losses didn't happen until Ms.
+14   Graham passed away.  Household service losses, I'm
+15   assuming, started in August of 2021 and carried all
+16   the way to January of 2023, about a year and a half
+17   or so.  And that's why that figure is so much
+18   larger.
+19             And when we take the past and the future
+20   into account, I estimate that the benchmark loss of
+21   household services is $92,077.  And if you add
+22   everything up, you can see 153,734 is both the past
+23   and the present value of the future loss that I have
+24   estimated in my analysis.
+25        Q    So just summarizing, Social Security, past
+0942
+ 1   and future, 61,000 and some change, household
+ 2   services 92,000 and some change, total $153,000 and
+ 3   some change. $153,734, to be precise, for your loss
+ 4   summary, correct?
+ 5        A    Yes, sir.
+ 6        Q    Now, the last thing I just want to touch
+ 7   on -- and you really have been addressing this
+ 8   throughout, so I don't think it's going to take too
+ 9   long, but you had to make certain assumptions when
+10   doing these calculations, correct?
+11        A    Of course.
+12        Q    To be very fair, you never met Mrs.
+13   Graham, correct?
+14        A    I did not.
+15        Q    You didn't get a chance to observe her
+16   before her diagnosis or after her diagnosis to write
+17   down and actually diary or catalog how she was
+18   effective objectively, correct?
+19        A    Right.  I saw a few minutes of her video
+20   -- of the video presentation before I went on the
+21   stand, but that was my only contact, even in any
+22   which way with Ms. Graham.
+23        Q    And so as far as your numbers -- and I
+24   think you -- you said this.  You did your best to be
+25   -- to take all of the circumstances into account,
+0943
+ 1   that is, geographically where she lives, personal
+ 2   consumption, that sort of thing, but really, you are
+ 3   telling the ladies and gentlemen of the jury that if
+ 4   they disagree with anything, whether they think she
+ 5   was more active or less active, more helpful to the
+ 6   house or less helpful to the house, they could use
+ 7   your numbers and adjust however they see
+ 8   appropriate; is that fair?
+ 9        A    With respect to household services,
+10   there's no adjustment on Social Security loss unless
+11   you believe she would have passed away a lot sooner,
+12   but if she would have lived to a statistically
+13   normal life expectancy, that number is what it is.
+14             But the household services, I'm not
+15   telling anybody that she actually performed over
+16   three hours a day of services.  I'm just saying
+17   women with similar characteristics perform that much
+18   in the way of household services.
+19        Q    Fair enough.  And I didn't mean to imply
+20   Social Security would be different.  I apologize for
+21   the unartful question.
+22             MR. BLUMENFELD-JAMES:  With that, that's
+23   all of the questions I have.  And I pass the
+24   witness.
+25             THE COURT:  Cross-exam?
+0944
+ 1             MR. BOSWORTH:  Thank you.
+ 2   CROSS-EXAMINATION
+ 3   BY MR. BOSWORTH:
+ 4        Q    Hi, Doctor.  My name is Claude Bosworth.
+ 5   Can you hear me okay?  Doctor, it's Claude Bosworth.
+ 6   Can you hear me okay?
+ 7        A    Oh, yes.  I can hear you just fine.  Thank
+ 8   you.
+ 9        Q    Okay.  All right.  So your reliance
+10   materials included the depo transcript of the
+11   plaintiff, correct?
+12        A    Eight volumes.
+13        Q    Eight volumes.  And did you read all eight
+14   volumes?
+15        A    I didn't read any of those volumes.  I
+16   actually have one of my senior research associates
+17   who -- who goes through the depositions on my
+18   behalf.  And then I will go to specific passages if
+19   I think I feel I need clarification.
+20        Q    Okay.  And they took the appropriate notes
+21   that you've told them in the past are important,
+22   that they know you need to formulate your opinions
+23   in this case?
+24        A    I'm sorry.  You're not very loud.
+25        Q    That's okay.
+0945
+ 1        A    Let me -- let me up my volume a little
+ 2   bit.  Maybe that will help.
+ 3             (Discussion off the record.)
+ 4             MR. BLUMENFELD-JAMES:  We're going to get
+ 5   a lapel mic.  Just little technical stuff.
+ 6             MR. BOSWORTH:  Yeah, I think I talk loud.
+ 7   It must be the Zoom.  All right.  Here we go.
+ 8        Q    (BY MR. BOSWORTH)  Okay.  I assume the
+ 9   assistant who -- can you hear me okay, Doctor?
+10        A    Yes, much better.  Thank you.
+11        Q    Perfect.  I assume the assistant, you give
+12   them the information they need to glean from the
+13   deposition transcripts and they take all the notes,
+14   correct?
+15        A    Well, they're an associate, not an
+16   assistant.  He's quite skilled, actually.
+17        Q    Okay.
+18        A    And very well educated and trained, my
+19   associate who does that, but we basically forward
+20   Interrogatories, the Complaint, the relevant
+21   depositions and the like, and then he goes on and
+22   does his thing.
+23        Q    Okay.  And when they're reading the
+24   deposition, they're looking for information you need
+25   to calculate the losses that you have made for us.
+0946
+ 1   And if there are any questions, do you follow up
+ 2   with plaintiff counsel with regards to any issues
+ 3   that were not clear in the deposition?
+ 4        A    Well, if I need to, but oftentimes either
+ 5   he will follow up directly or our office manager
+ 6   will follow up directly.  And I've worked on --
+ 7   we've together worked on enough of these that we
+ 8   pretty well know what kind of information we need,
+ 9   so we go ahead and request it if we don't have it.
+10        Q    Okay.  The --
+11        A    Such as, for example, the Social Security
+12   benefit, to get specific value as opposed to maybe
+13   an estimate that may be testified to in depo.
+14        Q    Okay.  Was there any indication in this
+15   case that follow-up questions were made to plaintiff
+16   counsel by your associate?
+17        A    I don't know.  I mean, I have the Social
+18   Security benefit number.  Whether the information --
+19   whether that predated receiving the depos or they
+20   were sent at the same time, I just don't know.  But
+21   we have the info, and that's what I needed.
+22        Q    Okay.  For instance, if the depositions
+23   did not state clearly what Ms. Graham did in the
+24   household with reference to household services or if
+25   there was some question as to what that was, whether
+0947
+ 1   she was able to do certain things after her
+ 2   diagnosis but before she got really sick, things of
+ 3   that -- in that -- like that, is there any
+ 4   indication that there was insufficient evidence in
+ 5   the deposition transcripts regarding that that
+ 6   needed to be followed up on?
+ 7        A    No.  And the way that I described how I
+ 8   assume you could do everything before diagnosis and
+ 9   nothing just before passing, and a sliding scale
+10   downward, that is pretty well the normal approach
+11   that I take, unless there is distinct testimony that
+12   an individual had no impact from the disease for
+13   quite a while or maybe were almost fully
+14   incapacitated by the disease upon diagnosis.
+15             I will point out to you that Ms. Graham
+16   stated in Volume 8 of her depo as of March of 2022
+17   she could do maybe 10 percent of what she did
+18   before.  I actually assumed in my calculations she
+19   could have done something more than that.  So I
+20   didn't try to tweak it to the dollar because we
+21   really don't know the rate of the progression other
+22   than that it obviously got worse as her illness
+23   progressed.
+24        Q    Was the deposition testimony clear on what
+25   she was able to do before the diagnosis, the year
+0948
+ 1   before the diagnosis, versus right after the
+ 2   diagnosis?
+ 3        A    I usually use that more as an existence
+ 4   proof than anything else.  So I recognize from all
+ 5   the years that I've been doing this that most people
+ 6   are not good historians about what they do that
+ 7   constitutes household services because they may not
+ 8   even realize that certain things they do fall into
+ 9   the heading of household services.
+10             So I'm aware of the gardening, I'm aware
+11   of the cooking, but I don't just lump those out and
+12   say these are the only things she did.  I'm just
+13   saying she obviously was engaged in household
+14   services.  Once in a while you'll get someone who
+15   truly is a couch potato, but not here, and then
+16   leave it up to the ladies and gentlemen of the jury
+17   to determine whether the benchmark I'm using they
+18   think is accurate, too high, or too low.
+19        Q    So regardless of what's in the
+20   transcripts, you never find it necessary to follow
+21   up to fill in any blanks that might be there with
+22   regards to what somebody was capable of doing or
+23   doing before or after a diagnosis?
+24        A    Once in a while, but most of the time it's
+25   not necessary to do so.
+0949
+ 1        Q    Okay.  So it's fair to say in this case
+ 2   you read those eight transcripts.  Regardless of
+ 3   what was said in there, you used the same benchmarks
+ 4   that you described earlier, ran your calculations,
+ 5   and never followed up with plaintiff counsel to
+ 6   request additional information?
+ 7        A    That's correct.
+ 8        Q    Okay.  And do you ever ask to go to the
+ 9   house and interview the family members to determine
+10   what the plaintiff was -- or the decedent was able
+11   to do?
+12        A    Almost never.  Because family members are
+13   very emotionally attached to the case.  I'm here to
+14   do the best objective job that I know how.  So I
+15   rarely speak with the plaintiff.  I rarely speak
+16   with their family members.
+17             As I've already told the ladies and
+18   gentlemen of the jury today, what they hear will
+19   hopefully guide them as to whether they believe my
+20   benchmark number of just over three hours a day,
+21   fifty weeks a day, if they think that is a
+22   reasonable number or it should be modified by
+23   decreasing or increasing the benchmark that I have
+24   presented.
+25        Q    But as a forensic economist, if somebody
+0950
+ 1   was asking you to detail in a specific case based on
+ 2   the facts of that case what the loss was, not just
+ 3   using benchmarks, then in that case you would find
+ 4   it necessary and important to get that type of
+ 5   information from the family; that is, interviews
+ 6   with the family and better information from the
+ 7   decedent herself when she was deposed?
+ 8        A    Well, you're talking about -- one case in
+ 9   like the last five years where -- where the widow
+10   said her husband did one thing and one thing only
+11   and was adamant about that.  And we made the
+12   calculation based on that one thing.  But that's --
+13   like I said, that's one time out of hundreds of
+14   analyses.
+15        Q    Okay.  Did you see the --
+16        A    But most of the time, like I said, I'm
+17   presenting this is what the survey independent data
+18   shows and I'm leaving it up to the members of the
+19   jury to decide whether they believe what they hear
+20   that the -- with respect to what the decedent did
+21   for the household, whether that seems to fit the
+22   bill for the averages or not and adjust accordingly.
+23        Q    Right.  And you would have to admit that
+24   if, as in this case, Ms. Graham testified that she
+25   may have cooked her own meals every once in a while,
+0951
+ 1   and I want you to assume a fact that these -- her
+ 2   daughter-in-law testified she may have cooked a meal
+ 3   three times a year and then did gardening for
+ 4   herself as a hobby, that would be much lower as far
+ 5   as household services than just three hours a day,
+ 6   correct?
+ 7        A    Well, first of all, you make a pleasure
+ 8   out of gardening, but gardening has a tangible
+ 9   impact on the functioning of the household so you're
+10   not living amongst a bunch of weeds.  Secondly,
+11   again, as I've stated multiple times now, if the
+12   jury believes that Ms. Graham didn't really do that
+13   much, I would be the first one to say take my number
+14   and shave it down.  Again --
+15        Q    Okay.
+16        A    -- I have a lot of experience in this.
+17   And when someone testifies about things they did,
+18   they don't realize other things they did.  Maybe
+19   they helped with cleanup.  Maybe they did the
+20   laundry now and then.  Maybe they helped in other
+21   ways in the household but it simply doesn't come up
+22   when they're -- when they're asked on the spot what
+23   kind of services they performed.
+24        Q    Right.  And you saw the testimony where
+25   Ms. Graham testified that she did her own laundry
+0952
+ 1   and nobody else's laundry, correct?  You saw that
+ 2   testimony?
+ 3        A    Are you asking me a question?
+ 4        Q    Yes.  Did you see the testimony in Mrs.
+ 5   Graham's transcripts where she said she did her own
+ 6   laundry and nobody else's laundry?
+ 7        A    No.
+ 8        Q    Okay.  It's in there.  Assume that,
+ 9   please.  Let's move on to the Social Security
+10   information.  So your report states that the total
+11   loss is $61,657, correct?
+12        A    Yes, sir.
+13        Q    And that's based on a total monthly
+14   benefit before deductions of $1,739 a month?
+15        A    $1,739.90 a month, yes.
+16        Q    Okay.  And one of the deductions they take
+17   out is for Medicare, medical insurance of $164.90,
+18   correct, in the benefit amount sheet that you used
+19   to make your calculation?
+20        A    Yes.  I'm aware of that.
+21        Q    Okay.  It looks like, though, you didn't
+22   use the deducted amount of $1,575 to make your
+23   calculation for loss of Social Security benefits,
+24   correct?
+25        A    I did not.
+0953
+ 1        Q    Okay.  And obviously, if you had reduced
+ 2   the 164.90, you would times that out per month and
+ 3   then per year and it would reduce the amount of the
+ 4   loss, correct?
+ 5        A    I would never do that because you're
+ 6   double counting.  We're already taking into account
+ 7   personal consumption, which is Column 9 on the
+ 8   screen at 29.7 percent.  Part of the personal
+ 9   consumption is going to be the amount of dollars
+10   which you're paying for your Medicare insurance.
+11        Q    Okay.  And we're going to --
+12        A    So I wouldn't take it out twice.
+13        Q    Okay.  We're going to get to that, though.
+14   Because you realize that Ms. Graham lived in an
+15   apartment with her husband before he passed away,
+16   correct?  Did you see that in the deposition
+17   transcript or the notes that your associate took?
+18        A    Well, I believe I'm aware of that,
+19   although it obviously did not factor into this
+20   analysis since it began in 2021.
+21        Q    Okay.  And the reason why the testimony
+22   was -- I don't know if you saw this or not -- was
+23   the reason she moved out of the apartment was
+24   because she couldn't afford the rent, so she moved
+25   in with her son and his family, correct?
+0954
+ 1        A    Yes, that's my understanding.
+ 2        Q    And then she began paying them $1,000 a
+ 3   month out of her Social Security to live there,
+ 4   correct?
+ 5        A    Okay.
+ 6        Q    All right?  It's yes or no.  Just go with
+ 7   me.  She started paying them $1,000 a month,
+ 8   correct, her son?
+ 9        A    Yes.
+10        Q    Okay.  Now, if she had stayed in her
+11   apartment with a Social Security benefit of 1,739 a
+12   month, you would have to admit that her living
+13   expenses would have been at least that amount if not
+14   more, correct?
+15        A    Well, I don't know what her rent would be,
+16   but obviously if she was in a single household her
+17   personal consumption would have been higher, no
+18   doubt about it.
+19        Q    And she would have exhausted the whole
+20   $1,700 a month in Social Security had she been
+21   living alone, correct?
+22        A    I'm speculating.  I don't know what her
+23   rent would have been.
+24             THE COURT:  Mr. Bosworth, we are at 4:45.
+25             MR. BOSWORTH:  Oh, okay.
+0955
+ 1             THE COURT:  Do you have an estimate?
+ 2             MR. BOSWORTH:  Probably maybe 15, 20
+ 3   minutes.
+ 4             THE COURT:  Okay.  Then we're going to
+ 5   continue tomorrow, if the witness is available.  Are
+ 6   you available tomorrow morning, sir?
+ 7             THE WITNESS:  I'm available tomorrow
+ 8   morning.  The background is not going to look as
+ 9   pretty.  It's going to be green screen --
+10             THE COURT:  That's okay.
+11             THE WITNESS:  -- because I'm going to be
+12   doing it from another location, but I'm available,
+13   Your Honor.
+14             THE COURT:  All right.  We're going to
+15   begin at 9:00 Pacific time tomorrow morning.  We
+16   will finish cross-examination of Dr. Fractor and
+17   continue from there.  So thank you, Doctor.  We're
+18   going to adjourn for the day.
+19             (Witness excused.)
+20             THE COURT:  Members of the jury, please
+21   remember do not do any research, do not discuss the
+22   case with anyone while you are out today.  Please be
+23   back at 8:45 tomorrow so that we can begin promptly
+24   at 9:00.
+25             (Jury exits.)
+0956
+ 1             THE COURT:  Anything we need to talk about
+ 2   before we adjourn?
+ 3             MS. DEAN:  Yes, Your Honor.  There's just
+ 4   two things that I wanted -- two things I want to
+ 5   alert the Court to.  We have only one more
+ 6   deposition transcript that needs attention.  It's
+ 7   for a deponent named Julie Pier.  There are -- Julie
+ 8   Pier, P-I-E-R.
+ 9             She was deposed in a case where Whittaker,
+10   Clark & Daniel was present.  We've designated it.
+11   They don't have any counters or objections other
+12   than a global objection.  And so I think we need
+13   your guidance just on whether their global objection
+14   has merit so that if you agree with us we can
+15   prepare that video.
+16             THE COURT:  What is it and who is she?
+17             MS. DEAN:  She, like Whittaker, Clark &
+18   Daniels, was a supplier of talc, including the exact
+19   same talc sources that are at issue.  She was
+20   deposed as the corporate representative for that
+21   supplier and discussed things direct relevance and
+22   bearing in this case, like the limitations of
+23   certain testing methods and affirmative findings of
+24   asbestos in relevant talc mines.  And it was a
+25   deposition where WCD was present.  They didn't just
+0957
+ 1   have an opportunity to be there, they were present
+ 2   and had a motive to do questions.
+ 3             And so there were two transcripts of hers
+ 4   that we had designated.  One they were not present,
+ 5   and it was Cashmere Bouquet, was resolved.  We're
+ 6   not seeking to use the transcript where they were
+ 7   not present.  But we do have the remaining
+ 8   transcript where they -- we have a response to their
+ 9   objection, I guess, in two regards.  It's former
+10   testimony that's committed.
+11             She is unavailable by order of a
+12   bankruptcy court.  She was there as a company
+13   representative, and we're not allowed to implicate
+14   discovery because of that company and we know that
+15   they had an opportunity and motive.
+16             Your Honor, it's also not hearsay under
+17   the admissions against interest.  Admissions that
+18   you're selling something that contains asbestos or
+19   using testing methods that you acknowledge, you
+20   know, were inadequate to evaluate asbestos are clear
+21   admissions.  In this interest, it was in a case that
+22   they were being sued.  And so we don't think a
+23   global objection is appropriate.  If they would have
+24   made specific objections, I could envision needing
+25   to maybe look more closely, but that's just one
+0958
+ 1   thing.
+ 2             THE COURT:  Is she testifying about
+ 3   similar source mines?
+ 4             MS. DEAN:  Yes.  The designations only
+ 5   implicate those mines where we've already laid a
+ 6   foundation of a connection from WCD to Avon.  And so
+ 7   I just -- we can decide that tomorrow.  I just want
+ 8   to get it on everyone's radar.
+ 9             Because I was telling counsel for WCD, we
+10   had intended to have a live witness on Thursday.
+11   His wife is in the hospital.  She's okay.  It's
+12   diverticulitis.  She has to have surgery.  Her sons
+13   came in to be with her, but he is -- instead of
+14   being here on Thursday, meaning because of this two-
+15   day delay to come on Monday, I'm just trying to do
+16   everything I can not to have a hole on Thursday.
+17   And I'm worried.
+18             And so I hadn't thought this was going to
+19   be an issue until next week.  I think we will need
+20   direction from the Court by tomorrow so that if we
+21   have a hole on Thursday we can have this witness.
+22             MR. COOK:  Yeah, if we could wait until
+23   tomorrow, Your Honor, I think, counsel that was
+24   going to argue -- I wasn't aware this was going to
+25   be raised this afternoon.  So the counsel that was
+0959
+ 1   going to argue that is not here, and I would
+ 2   actually like to take a look at the motions as well.
+ 3             MR. BLUMENFELD-JAMES:  They have been
+ 4   filed.  And I have copies for the Court to provide,
+ 5   along with the -- and I'll show you.  I have the
+ 6   objection, the global objection, and the response
+ 7   and the transcripts here.
+ 8             MS. DEAN:  This is just to flag the issue.
+ 9   And the second issue is timing.  I'm not entirely
+10   sure how long tomorrow will go with the corporate
+11   representative.  We have two depositions that you've
+12   ruled on, and obviously Dr. Fractor.  I feel fairly
+13   confident that that's going to fill Wednesday.  I
+14   just don't know how much of Thursday.
+15             I've already kind of ahead of time let
+16   counsel know that Mr. Bailey, our geologist, will be
+17   here Friday.  We have one of the two family members
+18   at minimum that we would like to have come if
+19   available also on Thursday and Friday, but I had at
+20   least raised with them that regardless of what
+21   happens on Thursday, I feel confident that we'll be
+22   done with our case-in-chief on Tuesday.
+23             Usually Mr. Bailey doesn't take a whole
+24   day.  So we were planning on having the family end
+25   on Friday and maybe use one of those videos.  I'm
+0960
+ 1   afraid that if we put all of that on Thursday, we're
+ 2   only going to go half a day on Thursday and two-
+ 3   thirds of the day on Friday.  And I'm trying to -- I
+ 4   heard the Court loud and clear about not having dead
+ 5   time.  This emergency with one of our experts and
+ 6   being kind of towards the end of our case has just
+ 7   left me scrambling.
+ 8             THE COURT:  Well, just the efficiency of
+ 9   getting -- we are down to just the two parties now.
+10   I would really like to have this to the jury sooner
+11   than we told them we would have it to them.
+12             MS. DEAN:  And I can say that even if we
+13   can't fill the time, it doesn't change my estimate
+14   of being done on Tuesday.  I've asked WCD if they
+15   have a turn that they could look at and we're trying
+16   to make sure anything and everything else that we
+17   might want to get to we're getting prepared, which
+18   is why I'm flagging this here.
+19             THE COURT:  If WCD wants to do someone out
+20   of turn, I will allow that under the circumstances
+21   if you need to fill time.  But you obviously don't
+22   have to.  You can choose how you present your case,
+23   so...
+24             MR. COOK:  We need to go back.  This was
+25   raised with us this afternoon.  I don't know.
+0961
+ 1             THE COURT:  Yeah, we'll discuss it and
+ 2   decide.  I'm not asking you for a decision right
+ 3   now.
+ 4             MS. DEAN:  I just really wanted to let --
+ 5   I didn't want Thursday to be the first time that I
+ 6   say well -- so I --
+ 7             THE COURT:  Yeah, there is legend of judge
+ 8   -- I can't remember which judge it was who said if
+ 9   you run out of witnesses, you rest.  You're done. So
+10   -- for a day.  And that was not if you run out of
+11   witnesses at the end of your case.  It was if you
+12   run out of witnesses on Thursday, you're done.
+13             MR. COOK:  Been there.
+14             THE COURT:  I am not quite that rigid. I
+15   do want us to keep the case moving, though, as
+16   efficiently as possible.
+17             MS. DEAN:  Yes, Your Honor.
+18             THE COURT:  Okay.  Anything else we need
+19   to talk about?  See you tomorrow.
+20             MR. COOK:  Thank you, Your Honor.
+21             (Proceedings recessed at 4:53 p.m.)
+22   
+23   
+24   
+25   
+0962
+ 1                            CERTIFICATE
+ 2   
+ 3        I, Margaret R. Golden, do hereby certify that I
+ 4   reported all proceedings adduced in the foregoing matter
+ 5   and that the foregoing transcript pages constitutes a
+ 6   full, true and accurate record of said proceedings to the
+ 7   best of my ability.
+ 8   
+ 9        I further certify that I am neither related to
+10   counsel or any party to the proceedings nor have any
+11   interest in the outcome of the proceedings.
+12   
+13        IN WITNESS HEREOF, I have hereunto set my hand this
+14   20th day of February, 2023.
+15   
+16   
+17   
+18   
+19        /S/  Margaret R. Golden
+20   
+21   
+22   
+23   
+24   
+25   

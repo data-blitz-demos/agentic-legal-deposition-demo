@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 """LangGraph workflow for deposition mapping and contradiction analysis."""
@@ -17,7 +21,7 @@ from .couchdb import CouchDBClient
 from .llm import build_chat_model, llm_failure_message
 from .models import Claim, ContradictionAssessment, ContradictionFinding, DepositionSchema
 from .prompts import render_prompt
-from .schemas import load_schema
+from .schemas import load_schema, schema_mode
 
 
 class GraphState(TypedDict, total=False):
@@ -27,9 +31,14 @@ class GraphState(TypedDict, total=False):
     file_path: str
     llm_provider: str
     llm_model: str
+    schema_name: str
+    selected_schema: dict | None
+    selected_schema_mode: str
     raw_text: str
     deposition: DepositionSchema
     deposition_doc: dict
+    ingest_schema_mode: str
+    ingest_schema_payload: dict | None
     other_depositions: list[dict]
     assessment: ContradictionAssessment
     legal_clerk_trace: list[dict]
@@ -77,6 +86,9 @@ class DepositionWorkflow:
         file_path: str,
         llm_provider: str | None = None,
         llm_model: str | None = None,
+        schema_name: str | None = None,
+        selected_schema: dict | None = None,
+        selected_schema_mode: str | None = None,
     ) -> dict:
         """Run the workflow for a single deposition file."""
 
@@ -86,6 +98,9 @@ class DepositionWorkflow:
                 "file_path": file_path,
                 "llm_provider": llm_provider or "",
                 "llm_model": llm_model or "",
+                "schema_name": schema_name or "deposition_schema",
+                "selected_schema": selected_schema,
+                "selected_schema_mode": selected_schema_mode or "",
             }
         )
 
@@ -137,8 +152,15 @@ class DepositionWorkflow:
         """Map raw deposition text into a structured ``DepositionSchema``."""
 
         file_name = Path(state["file_path"]).name
+        selected_schema_name = str(state.get("schema_name") or "deposition_schema").strip() or "deposition_schema"
+        selected_schema = state.get("selected_schema")
+        if not isinstance(selected_schema, dict):
+            selected_schema = load_schema(selected_schema_name)
+        selected_schema_mode = (
+            str(state.get("selected_schema_mode") or "").strip() or schema_mode(selected_schema_name)
+        )
         system_prompt = render_prompt("map_deposition_system")
-        schema_json = json.dumps(load_schema("deposition_schema"), indent=2)
+        schema_json = json.dumps(selected_schema, indent=2)
         human_prompt = render_prompt(
             "map_deposition_user",
             case_id=state["case_id"],
@@ -149,14 +171,23 @@ class DepositionWorkflow:
         start = perf_counter()
         fallback_used = False
         parse_recovery_used = False
+        ingest_schema_payload: dict | None = None
 
         try:
             llm = self._get_llm(state.get("llm_provider"), state.get("llm_model"), temperature=0)
-            parser_llm = llm.with_structured_output(load_schema("deposition_schema"))
+            parser_llm = llm.with_structured_output(selected_schema)
             parsed = parser_llm.invoke(
                 [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
             )
-            deposition = parsed if isinstance(parsed, DepositionSchema) else DepositionSchema.model_validate(parsed)
+            ingest_schema_payload = self._coerce_schema_payload(parsed)
+            deposition = self._normalize_ingest_deposition(
+                selected_schema_name,
+                ingest_schema_payload,
+                state,
+                file_name,
+            )
+            if selected_schema_mode != "native":
+                fallback_used = True
         except Exception as exc:
             if self._is_structured_parse_failure(exc):
                 deposition = self._fallback_map_deposition(state, file_name)
@@ -182,6 +213,7 @@ class DepositionWorkflow:
                     "file_name": file_name,
                     "llm_provider": self._normalize_provider(state.get("llm_provider")),
                     "llm_model": self._trace_model_name(state.get("llm_model")),
+                    "schema_name": selected_schema_name,
                     "input_preview": self._preview_text(state["raw_text"], 1200),
                     "system_prompt": self._preview_text(system_prompt, 2500),
                     "user_prompt": self._preview_text(human_prompt, 6000),
@@ -191,11 +223,16 @@ class DepositionWorkflow:
                     ),
                     "notes": (
                         f"Structured mapping recovered via fallback in {int((perf_counter() - start) * 1000)}ms "
-                        "after parse failure."
+                        f"after parse failure using schema '{selected_schema_name}'."
                     ),
                 }
             ]
-            return {"deposition": deposition, "legal_clerk_trace": legal_clerk_trace}
+            return {
+                "deposition": deposition,
+                "legal_clerk_trace": legal_clerk_trace,
+                "ingest_schema_mode": selected_schema_mode,
+                "ingest_schema_payload": ingest_schema_payload,
+            }
 
         # Some local models under-produce structured claims; backfill with deterministic parsing
         # so downstream contradiction assessment has usable evidence.
@@ -213,6 +250,7 @@ class DepositionWorkflow:
                 "file_name": file_name,
                 "llm_provider": self._normalize_provider(state.get("llm_provider")),
                 "llm_model": self._trace_model_name(state.get("llm_model")),
+                "schema_name": selected_schema_name,
                 "input_preview": self._preview_text(state["raw_text"], 1200),
                 "system_prompt": self._preview_text(system_prompt, 2500),
                 "user_prompt": self._preview_text(human_prompt, 6000),
@@ -222,11 +260,44 @@ class DepositionWorkflow:
                 ),
                 "notes": (
                     f"Structured mapping completed in {int((perf_counter() - start) * 1000)}ms."
+                    + f" Schema={selected_schema_name}."
                     + (" Fallback claim extraction was used." if fallback_used else "")
                 ),
             }
         ]
-        return {"deposition": deposition, "legal_clerk_trace": legal_clerk_trace}
+        return {
+            "deposition": deposition,
+            "legal_clerk_trace": legal_clerk_trace,
+            "ingest_schema_mode": selected_schema_mode,
+            "ingest_schema_payload": ingest_schema_payload,
+        }
+
+    def _coerce_schema_payload(self, parsed: object) -> dict | None:
+        """Normalize a structured LLM response into a plain ``dict`` when possible."""
+
+        if isinstance(parsed, DepositionSchema):
+            return parsed.model_dump()
+        if isinstance(parsed, dict):
+            return parsed
+        model_dump = getattr(parsed, "model_dump", None)
+        if callable(model_dump):
+            payload = model_dump()
+            if isinstance(payload, dict):
+                return payload
+        return None
+
+    def _normalize_ingest_deposition(
+        self,
+        selected_schema_name: str,
+        payload: dict | None,
+        state: GraphState,
+        file_name: str,
+    ) -> DepositionSchema:
+        """Convert arbitrary schema output into the app's runtime deposition model."""
+
+        if selected_schema_name == "deposition_schema" and payload is not None:
+            return DepositionSchema.model_validate(payload)
+        return self._fallback_map_deposition(state, file_name)
 
     def _fallback_map_deposition(self, state: GraphState, file_name: str) -> DepositionSchema:
         """Heuristic non-LLM mapping helper retained for testability/backstop."""
@@ -331,6 +402,9 @@ class DepositionWorkflow:
             "deposition_date": deposition.deposition_date,
             "summary": deposition.summary,
             "claims": [claim.model_dump() for claim in deposition.claims],
+            "ingest_schema_name": str(state.get("schema_name") or "deposition_schema"),
+            "ingest_schema_mode": str(state.get("ingest_schema_mode") or "native"),
+            "ingest_schema_payload": state.get("ingest_schema_payload"),
             "raw_text": state["raw_text"],
             "contradiction_score": 0,
             "flagged": False,

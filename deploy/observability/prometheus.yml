@@ -1,0 +1,14 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "deposition-api"
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+          - api:8000

@@ -1,0 +1,3523 @@
+0001
+ 1      IN THE DISTRICT COURT IN AND FOR OKLAHOMA COUNTY 
+                        STATE OF OKLAHOMA
+ 2   
+ 3                    Case No. CJ-2018-4739
+ 4   ____________________________________________________
+ 5   VERNON EGGERS, Individually and as 
+     the Personal Representative of the 
+ 6   Estate of Barbara Eggers, Deceased,
+ 7             Plaintiff,
+ 8        vs.                      
+ 9   COLGATE-PALMOLIVE COMPANY, et al.,
+10             Defendants.
+     ____________________________________________________
+11   
+12   
+13   
+14   
+15                    REMOTE DEPOSITION OF 
+                       MARK W. RIGLER, PhD
+16   
+17                      Monroe, Georgia 
+18                 Thursday, February 11, 2021
+19   
+20   
+21   
+22   
+23   
+24   
+25         Court Reporter:  Michelle M. Boudreaux, RPR
+0002
+ 1   
+ 2   
+ 3   
+ 4   
+ 5   
+ 6                       February 11, 2021
+ 7                       9:33 a.m.
+ 8   
+ 9   
+10             Remote deposition of 
+11        MARK W. RIGLER, PhD, conducted at the 
+12        location of the witness in Monroe, Georgia, 
+13        pursuant to Agreement before Michelle M. 
+14        Boudreaux, a Registered Professional Reporter 
+15        in the State of Georgia.
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0003
+ 1                         APPEARANCES
+ 2                    (Via Videoconference)
+ 3   
+ 4   On behalf of the Plaintiff:
+ 5        JESSICA M. DEAN, Esq.
+          Dean Omar Branham Shirley, LLP
+ 6        302 N. Market Street
+          Suite 300
+ 7        Dallas, Texas 75202
+          214.722.5990
+ 8        jdean@dobslegal.com
+ 9   
+     On behalf of Defendants Johnson & Johnson 
+10   and Johnson & Johnson Consumer, Inc., 
+     f/k/a Johnson & Johnson Consumer Companies, Inc.:  
+11   
+          JOHN EWALD, Esq.
+12        King & Spalding LLP
+          1185 Avenue of the Americas, 34th Floor
+13        New York, New York 10036
+          212.556.2100
+14        jewald@kslaw.com
+15   
+     On behalf of Defendant Colgate-Palmolive Company:
+16   
+          EDWARD M. SLAUGHTER, Esq.
+17        Gordon Rees Scully Mansukhani, LLP
+          2200 Ross Avenue
+18        Suite 3700
+          Dallas, Texas 75201
+19        214.231.4660
+          eslaughter@grsm.com
+20   
+21   On behalf of Defendant DCo LLC:
+22        TOM RADCLIFFE, Esq.
+          DeHay & Elliston, LLP
+23        36 South Charles Street
+          Suite 1400
+24        Baltimore, Maryland 21201
+          410.783.7225
+25        tradcliffe@dehay.com
+0004
+ 1                    APPEARANCES (Cont'd)
+ 2                    (Via Videoconference)
+ 3   
+ 4   On behalf of Defendant Morse Tec LLC f/k/a BorgWarner 
+     Morse TEC LLC, as Successor-by-Merger to Borg-Warner 
+ 5   Corporation:
+ 6        RONALD D. HARRISON, Esq.
+          Ledbetter, Cogbill, Arnold & Harrison, LLP
+ 7        622 Parker Avenue 
+          P.O. Box 185
+ 8        Fort Smith, Arkansas 72902
+          479.782.7294
+ 9        rharrison@lcahlaw.com
+10   
+     On behalf of Defendant Honeywell International, Inc.:
+11   
+          KEVIN P. GREENE, Esq.
+12        MICHELE FANNEY DALLMAN, Esq.
+          Willcox & Savage, P.C.
+13        Wells Fargo Center, Suite 2200
+          440 Monticello Avenue
+14        Norfolk, Virginia 23510
+          757.628.5500
+15        kgreene@wilsav.com
+          mdallman@wilsav.com
+16   
+17   On behalf of Defendant Whittaker, Clark & Daniels, 
+     Inc.:
+18   
+          THERESA N. HILL, Esq.
+19        Rhodes Hieronymus 
+          Two West Second Street 
+20        10th Floor
+          Tulsa, Oklahoma 74103
+21        918.582.1173
+          thill@rhodesokla.com
+22   
+23   
+24   ///
+25   ///
+0005
+ 1                    APPEARANCES (Cont'd)
+ 2                    (Via Videoconference)
+ 3   
+ 4   On behalf of Defendant Maybelline LLC:
+ 5        MICHAEL D. CARTER, Esq.
+          Phillips Murrah P.C. 
+ 6        Corporate Tower, Thirteenth Floor
+          101 N. Robinson Avenue 
+ 7        Oklahoma City, Oklahoma 73102
+          405.235.4100 
+ 8        mdcarter@phillipsmurrah.com 
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0006
+ 1                            INDEX
+ 2   
+                         EXAMINATIONS
+ 3   
+        By Mr. Ewald ................................. 8
+ 4                                                     
+        By Mr. Slaughter ............................. 115
+ 5                                                     
+        By Ms. Dean .................................. 128
+ 6      
+                           - - -     
+ 7   
+                         EXHIBITS
+ 8   
+     Exhibit                                           Page
+ 9                                                     
+     Exhibit 1 ....................................... 36
+10      Notice of Deposition and Subpoena Duces Tecum  
+11   Exhibit 2 ....................................... 36
+        Plaintiff's Responses and Objections to the    
+12      Notice of Deposition of Dr. Mark Rigler and    
+        Deposition Subpoena Duces Tecum                
+13                                                     
+     Exhibit 3 ....................................... 36
+14      Rigler Documents List 12-29-20                 
+15   Exhibit 4 ....................................... 38
+        Case Listing for Mark W. Rigler, Ph.D.         
+16      2014-2019                                      
+17   Exhibit 5 ....................................... 57
+        Invoice 
+18      (to be attached as a late-filed exhibit)       
+19   Exhibit 6 ....................................... 87
+        "Stimuli to the Revision Process,              
+20      Modernization of Asbestos Testing in USP       
+        Talc," Open for Commenting as of 16-Sep-2020   
+21                                                     
+     Exhibit 7 ....................................... 98
+22      Vitae of Mark W. Rigler, Ph.D.                 
+23   Exhibit 8 ....................................... 100
+        Updated CV of Mark W. Rigler, Ph.D. 
+24      (to be attached as a late-filed exhibit)       
+25   
+0007
+ 1                       INDEX (Cont'd)
+ 2   
+     Exhibit                                           Page
+ 3                                                     
+     Exhibit 9 ....................................... 101
+ 4      NVLAP TEM Proficiency Test 2008-1,             
+        Individual Laboratory Report                   
+ 5                                                     
+     Exhibit 10 ...................................... 103
+ 6      Exposure Studies, Fibers/cc in Air from Talc   
+ 7   Exhibit 11 ...................................... 113
+        "Asbestos Exposure Assessment During Removal   
+ 8      of Residential Electrical Distribution         
+        Panels," Reported January 21, 2015             
+ 9                                                     
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0008
+ 1                    MARK W. RIGLER, PhD,
+ 2   being first duly sworn, was examined and testified as 
+ 3   follows:
+ 4                         EXAMINATION
+ 5   BY MR. EWALD:  
+ 6        Q    Good morning, Doctor.  
+ 7        A    Good morning.
+ 8        Q    For the record, where are you located today?
+ 9        A    I am located in Monroe, Georgia, in my 
+10   office.  
+11             MS. DEAN:  Do you mind if I just make 
+12        those couple of --
+13             MR. EWALD:  Oh, I'm sorry.  I already 
+14        forgot.  Go ahead.  
+15             MS. DEAN:  I love the "let's get it 
+16        done" attitude. 
+17             This is Jessica Dean on behalf of the 
+18        plaintiff.  I just wanted to make sure 
+19        everybody knew, in addition to the reference 
+20        list that we sent this morning, and yesterday 
+21        we sent five extra things -- I think 
+22        everybody was on the list, but I just want to 
+23        double-check to make sure people know, three 
+24        of them just related to Colgate.  There were 
+25        excerpts of the deposition from Rourke 
+0009
+ 1        [phonetic] and two interrogatories for the 
+ 2        sole purpose of identifying the source mines 
+ 3        at issue.  And then there was an article by 
+ 4        Cook and Steffen that we sent. 
+ 5             I also told folks I would put a 
+ 6        stipulation on the record that Dr. Rigler 
+ 7        intends only to be giving opinions about 
+ 8        testing that he did in relation to cosmetic 
+ 9        talc.  So if you have a defendant that is not 
+10        responsible for a cosmetic talc product, I 
+11        don't anticipate he's going to be giving 
+12        opinions specific to testing that relates to 
+13        you.  
+14             And then finally, in many depositions, I 
+15        understand that he, Dr. Rigler, will read the 
+16        depositions of the plaintiff to identify when 
+17        the different cosmetic talc products were 
+18        used.  In this case, since we have an 
+19        occupational medicine doctor doing that, we 
+20        didn't want to duplicate work, and so here we 
+21        intend for Dr. Rigler to discuss what he 
+22        knows about the different source mines and 
+23        testing that relates to it, but he hasn't 
+24        read the specific product ID depositions in 
+25        this case.  So I thought it might help save 
+0010
+ 1        time if I let everybody know that.  Thanks 
+ 2        for letting me -- 
+ 3             MR. SLAUGHTER:  Hey, Jessica, that is 
+ 4        helpful and -- this is Ed -- I saw the depo 
+ 5        transcript.  It looked like you highlighted 
+ 6        the key parts, which was incredibly helpful 
+ 7        for me.  I want to see if we can get a 
+ 8        stipulation.  You may have almost given it to 
+ 9        me already, but let me give it a try. 
+10             Can you agree and stipulate that 
+11        Mr. Rigler will only rely on the two sets of 
+12        interrogatories and the deposition we 
+13        received today and yesterday for the purpose 
+14        of identifying Colgate source mines and for 
+15        no other purpose?  
+16             MS. DEAN:  Yes.  
+17             MR. SLAUGHTER:  Thanks so much.  
+18             MS. DEAN:  Good to see you.  It's been a 
+19        while.  
+20             MR. SLAUGHTER:  Good to see you too.  
+21             MR. EWALD:  All right.  And, yes, 
+22        thanks, Jessica, that is helpful as we get 
+23        started.  And so I guess we'll get going 
+24        again. 
+25        Q    (By Mr. Ewald)  We left off with where you 
+0011
+ 1   are, and I was going to ask you, Dr. Rigler, is anybody 
+ 2   in the room with you?
+ 3        A    No.  
+ 4        Q    Just so I have a sense of what you have in 
+ 5   front of you and available as we proceed with the 
+ 6   deposition, can you let me know what materials you have 
+ 7   in front of you?
+ 8        A    I have the file in front of me, of which 
+ 9   includes the -- my vitae, qualifications documents, two 
+10   documents -- three documents that you just discussed, 
+11   the notice, and then, of course, I have the documents 
+12   on the computer that were on the reference list.
+13        Q    All right.  You anticipated my next question, 
+14   which is to the extent that we need to talk about 
+15   something that isn't in front of you, you may have 
+16   access to it with your computer?
+17        A    Yes.
+18        Q    All right.  Dr. Rigler, when were you 
+19   retained in this case?
+20        A    I was retained in this case, I believe, back 
+21   in the fourth quarter of 2020.
+22        Q    And how were you retained?  By a phone call 
+23   from Ms. Dean?
+24        A    Yes.
+25        Q    At that point in time of the retention, 
+0012
+ 1   did -- was there discussion about the scope of what 
+ 2   opinions you would be giving in this matter?
+ 3        A    As I recall, at the time, there was a 
+ 4   discussion about the case in terms of timing of the 
+ 5   case.
+ 6        Q    All right.  And have you issued any invoices 
+ 7   to Ms. Dean for your work in this case?
+ 8        A    Yes.  
+ 9        Q    All right.  How many invoices?
+10        A    One, to my knowledge.  
+11        Q    All right.  And when did you issue that 
+12   invoice?
+13        A    That invoice was sent recently because I had 
+14   previously made the invoice, but because of email and 
+15   many things that were going on, COVID and all of that 
+16   kind of thing, I had forgotten to send it, so I sent it 
+17   to her, and I believe it was dated sometime in October 
+18   of last year, when I made it.  
+19             MR. EWALD:  All right.  So first of all, 
+20        Jessica, I may have missed it, but I don't 
+21        think I have that invoice.  Do you know where 
+22        it is?
+23             MS. DEAN:  I don't think you've missed 
+24        it.  I don't think we object to producing it.  
+25        Let me see if I can get it to you before the 
+0013
+ 1        deposition ends.  
+ 2             MR. EWALD:  All right.  Thank you.  
+ 3        Q    (By Mr. Ewald)  So, Doctor, if I heard you 
+ 4   correctly, you created the invoice in October of 2020 
+ 5   or thereabouts, but then sent it to Ms. Dean at some 
+ 6   point within the last week or so; is that fair?
+ 7        A    Let me think if that is the case. 
+ 8             You know, I would have to go back and look at 
+ 9   it, but I think that's what it was.  We've had a couple 
+10   of cases, so I think that's what my recollection is on 
+11   this one.  I would have to look at -- I would have to 
+12   look at the invoice.  
+13        Q    All right.  And so suffice it to say, that 
+14   invoice would have covered anything -- any work you had 
+15   done up until that point around October of 2020; is 
+16   that fair?
+17        A    Yeah, it was a -- it was a retention invoice, 
+18   yes.
+19        Q    What is your retention amount?
+20        A    It's 5,000.
+21        Q    Is that your standard retention amount?
+22        A    Yes.
+23        Q    So since being retained in the case, 
+24   approximately how many hours have you spent working on 
+25   it?
+0014
+ 1        A    I don't -- I don't know what the exact number 
+ 2   is right now off the top of my head.  I was thinking 
+ 3   probably more than 10.  
+ 4        Q    When you say "more than 10," between 10 and 
+ 5   20; is that fair?
+ 6        A    Yeah, I think that's probably -- that's 
+ 7   probably fair, yes.
+ 8        Q    Can you give me a general breakdown of what 
+ 9   tasks you've done on this case that take up that 10 
+10   hours or so?
+11        A    Well, I have spent time reviewing my files 
+12   for the case in terms of the documents that you've seen 
+13   or that have been presented on the reference list.  So 
+14   that is the lion's share of it.  
+15        Q    And what did you do -- did you have any 
+16   conversations with Ms. Dean or other plaintiff's 
+17   counsel in preparation for today's deposition?
+18        A    I have.  I have had a conversation, yes.  
+19        Q    And not getting into the contents, when was 
+20   that conversation?
+21        A    Well, we had a conversation -- we had a 
+22   conversation -- I believe it was last week.  Then we 
+23   had a conversation this week.  
+24        Q    All right.  And before the conversation that 
+25   you had last week, did you have any other, I'd say, 
+0015
+ 1   substantive conversations about this case with 
+ 2   plaintiff's counsel between that and, I guess, your 
+ 3   retention?
+ 4        A    Only, you know, during the initial 
+ 5   conversation that we had last year.
+ 6        Q    All right.  And so at the beginning of this 
+ 7   deposition, Ms. Dean made certain statements regarding 
+ 8   the scope of the opinions that you are going to be 
+ 9   offering in this case, and I will have some follow-up 
+10   questions for you, but why don't we start with:  What 
+11   is your understanding of, generally, the scope of 
+12   opinions you're offering in this matter?
+13             MS. DEAN:  Objection.  Sorry.  Overly 
+14        broad.  And I just want to note that we've 
+15        identified at least what we intend to ask in 
+16        the disclosure and intend to do that 
+17        regardless of his answer.  
+18             THE WITNESS:  Could you be more 
+19        specific?  
+20             MR. EWALD:  Well, I guess that's where 
+21        I've already [audio drop] because the 
+22        disclosure does talk about, Jessica, lots of 
+23        opinions relating to noncosmetic talc 
+24        subjects, right?
+25             MS. DEAN:  So, for instance, what he 
+0016
+ 1        knows about when certain regulatory things 
+ 2        came out could certainly apply to anybody's 
+ 3        product. 
+ 4             What I indicated in that stipulation, in 
+ 5        terms of his testing, he's limiting that to 
+ 6        cosmetic talc, so -- or to the ore sources 
+ 7        that are implicated by cosmetic talc.  
+ 8             He's not going to talk about brake 
+ 9        testing.  He's not going to talk about gasket 
+10        testing.  And so, you know, there are general 
+11        topics that I could -- implicated by others 
+12        that are on the phone about why he would use 
+13        TEM or why he would use -- how he defines 
+14        asbestos that probably have more import to 
+15        the talc people, but certainly wouldn't be 
+16        limited to those folks.  Hopefully, that 
+17        provides some clarity.  
+18             MR. EWALD:  A little bit.  Thanks.  
+19        Q    (By Mr. Ewald)  So, Doctor, I guess we'll 
+20   break it down a little bit more.  So are you offering 
+21   opinions relating to Johnson & Johnson cosmetic talc in 
+22   this case?
+23        A    If asked, I can.  
+24        Q    Okay.  And it's a little bit difficult, 
+25   Doctor, because we don't have a report for you in this 
+0017
+ 1   case.  That's consistent with Oklahoma rules.  And this 
+ 2   is my only chance to ask you about the opinions that 
+ 3   you intend to offer in this matter.  And so I'll follow 
+ 4   up on my prior question with what opinions relating to 
+ 5   Johnson & Johnson do you intend to offer in this case 
+ 6   if asked?
+ 7             MS. DEAN:  Objection.  Overly broad.  
+ 8             THE WITNESS:  I was going to say, that's 
+ 9        very broad.  Can you narrow the question, 
+10        please?  
+11             MR. EWALD:  Well --
+12             MS. DEAN:  I don't know if this helps, 
+13        but we just, for instance, gave Johnson & 
+14        Johnson, in the Cook case in Jersey, a report 
+15        because there are requirements there.  
+16             MR. EWALD:  Right.  
+17             MS. DEAN:  And they involve the exact 
+18        same exposure years.  And so I expect not 
+19        only that to be an incredibly useful guide of 
+20        the opinions he's given, but it's consistent 
+21        with what he's been talking about for years 
+22        now. 
+23             And so I don't -- all we're doing here 
+24        is sometimes he'll go into a deposition and 
+25        calculate based on average use of talc and 
+0018
+ 1        the usage descriptions in a deposition to say 
+ 2        there was 5,000 uses and that would have been 
+ 3        X ounces.  We're not asking him to do that.  
+ 4        But everything is retained.  We're just not 
+ 5        having him do the investigatory part of 
+ 6        reading four or five depositions to identify 
+ 7        exposure.  That's literally the distinction 
+ 8        that --
+ 9             MR. EWALD:  So -- thanks, Jessica, for 
+10        that.  So maybe I'll tackle this a slightly 
+11        different way. 
+12        Q    (By Mr. Ewald)  Understanding that Ms. Dean 
+13   may ask you a couple of questions differently than 
+14   previously asked, you've given trial testimony relating 
+15   to talc in the Moure-Cabrera trial in Florida and in 
+16   the Lewis trial in, I believe it's Indiana, right?  
+17        A    Yes.  
+18        Q    As a general matter, are the opinions that 
+19   you intend to offer in this case related to Johnson & 
+20   Johnson consistent with the opinions that you've 
+21   offered in your testimony at those two trials?
+22             MS. DEAN:  Overly broad.  
+23             THE WITNESS:  I would say as a general 
+24        matter, they would be consistent with those 
+25        opinions.  
+0019
+ 1        Q    (By Mr. Ewald)  As you sit here today, is 
+ 2   there any specific opinion or category of opinions that 
+ 3   you intend to offer in this case relating to Johnson & 
+ 4   Johnson that was not part of your trial testimony in 
+ 5   either the Moure-Cabrera or the Lewis trial?
+ 6             MS. DEAN:  Objection, form, overly 
+ 7        broad.
+ 8             THE WITNESS:  I would have to think 
+ 9        about that.  I'm not quite sure of how 
+10        specific you're being about that.  I mean, 
+11        that's -- that would be my only question.  
+12             MS. DEAN:  And I'm assuming you mean as 
+13        it relates to Johnson & Johnson because -- 
+14             MR. EWALD:  That's what I said, yeah, 
+15        yeah.  
+16             MS. DEAN:  You did, I think, in the 
+17        question prior, and so I think that's a 
+18        reasonable inference, but I also haven't read 
+19        those transcripts to see every question that 
+20        those lawyers asked, and so I object to just 
+21        overly broad.  But I will say our intent is 
+22        to rely on kind of the scope of opinions he's 
+23        given in the past.  
+24             There may have been new things published 
+25        since then on those topics, but if you're 
+0020
+ 1        trying to get guidance on the scope of what 
+ 2        he's talking about and not the exact 
+ 3        questions that another lawyer in another firm 
+ 4        asked, I think those are helpful.  
+ 5             MR. EWALD:  No.  
+ 6             MS. DEAN:  Yeah.  It's a start.  
+ 7             MR. EWALD:  Okay.  
+ 8        Q    (By Mr. Ewald)  Are you intending to offer 
+ 9   any opinions in this case relating to -- opinions 
+10   relating to exposure to Johnson cosmetic talc?
+11        A    I haven't been asked to do that.
+12        Q    Okay.  And I get Ms. Dean's representation 
+13   about exposure specific to this case; but, for example, 
+14   your reliance list includes certain exposure studies 
+15   conducted by MAS, including below the waist, right?
+16        A    Correct, yes.
+17        Q    And so do you intend to offer opinions in 
+18   this case relating generally to exposure to Johnson & 
+19   Johnson talc products?
+20             MS. DEAN:  Objection, form.  
+21             THE WITNESS:  Again, I haven't been 
+22        asked to do that, but if asked, I could do 
+23        that.  
+24             MR. EWALD:  Okay.  
+25             MS. DEAN:  And for our intentions, 
+0021
+ 1        again, asking him what a typical exposure 
+ 2        range would be is something we're very much 
+ 3        going to do.  Applying that to the particular 
+ 4        facts of this case, we're going to ask for 
+ 5        Akhmed [phonetic].  So we heard that a range 
+ 6        is X from Dr. Rigler.  Akhmed, based on 
+ 7        frequency, regularity, and proximity can tell 
+ 8        me specific causation. 
+ 9             So again -- yeah, I'm not trying to -- I 
+10        hope I'm not talking too much.  
+11             MR. EWALD:  No.  I appreciate it.  I 
+12        appreciate it.  
+13        Q    (By Mr. Ewald)  So let's just start with 
+14   that, Doctor.  What is your opinion in this case about 
+15   a typical range of exposure to asbestos from use of 
+16   Johnson & Johnson's cosmetic talc products?
+17        A    Again, that's a very broad question.  I would 
+18   need to know more specifics about the duration of time 
+19   that the person used the product, the conditions, the 
+20   product, of course, that was used, number of 
+21   applications over those periods of time.  Those kinds 
+22   of things would all, you know, weigh into that -- 
+23   answering that question.
+24        Q    So it sounds to me, and probably just because 
+25   I didn't ask a good question, but it sounds to me like 
+0022
+ 1   what you're talking about is trying to come up with a 
+ 2   cumulative exposure or a dose opinion.  Is that fair?
+ 3        A    I think it would be -- it's a possibility to 
+ 4   be able to do that, but to get an idea of the amount of 
+ 5   the product that's been used over time is, you know, 
+ 6   one of my specific objectives, so that's where -- 
+ 7   that's where I would be looking to try to answer that 
+ 8   question.  
+ 9        Q    I'm not sure I totally understood that, so 
+10   I'll ask a couple of follow-ups.  
+11             So I've seen prior testimony from you, I 
+12   believe, where you've testified that for any given 
+13   exposure or use of Johnson & Johnson talcum powder 
+14   products, we expect a range of asbestos exposure from 
+15   .1 to 1 fiber per cc. 
+16             Do you recall giving that kind of testimony 
+17   in the past?  
+18        A    I have given that kind of testimony, yes.
+19        Q    All right.  And would you be offering that 
+20   same opinion in this case?
+21        A    I don't know in terms of if I would offer 
+22   that same opinion in this case.  Again, it very much 
+23   depends on the exposure level, use, all of that kind of 
+24   thing.  So I couldn't answer -- I couldn't answer that, 
+25   you know --
+0023
+ 1        Q    So in your opinion, does it matter, with 
+ 2   respect to the level of exposure to asbestos from use 
+ 3   of a Johnson & Johnson product, whether it came from, 
+ 4   say, Italy or Vermont?
+ 5        A    In terms of exposure, both of those sources 
+ 6   have been shown to have mixed minerals, including 
+ 7   asbestos.  So as far as whether it was Italy or 
+ 8   Vermont, I would have an opinion that was consistent 
+ 9   with what I know about those products in terms of their 
+10   contamination level or asbestos content.  
+11        Q    Okay, and so then I guess we'll break it 
+12   down. 
+13             If we're talking about a use one time of 
+14   Johnson & Johnson talc product sourced from Italy, what 
+15   is your opinion as to the typical range of exposure to 
+16   asbestos, if any, from that single exposure?  
+17             MS. DEAN:  Objection, form.  
+18             THE WITNESS:  The exposure itself -- 
+19        you're saying a single exposure event; is 
+20        that what you're saying?  
+21             MR. EWALD:  Yes, the use of -- yes, yes.  
+22             THE WITNESS:  Well, I mean, if the 
+23        product contained the asbestos that has been 
+24        shown to be there in numerous lots of the 
+25        product that I've seen and tested over the 
+0024
+ 1        years, then yes, I mean, there would be an 
+ 2        exposure.  
+ 3        Q    (By Mr. Ewald)  Right, so are you making -- 
+ 4   by the context, I wasn't sure from your answer.  Do you 
+ 5   have any opinion as to the frequency with which a 
+ 6   cosmetic talc product from Johnson & Johnson sourced 
+ 7   from Italy actually contains asbestos?
+ 8        A    Well, in the testing that was done on 
+ 9   products in the past, there were -- more than half of 
+10   those products that were tested contained some type of 
+11   asbestos. 
+12             As far as the probability, that would have to 
+13   be, I think, determined statistically, and some of that 
+14   kind of testing or analysis has been done by    
+15   Dr. Madigan, and I think he would be the one to ask 
+16   that question.  
+17        Q    Okay.  So is it fair to say, then, that you 
+18   do not intend to offer the opinion in this case that it 
+19   is more likely than not that a single container of 
+20   Johnson & Johnson talc product sourced from Italy 
+21   contains asbestos?
+22             MS. DEAN:  Objection, form.  
+23             THE WITNESS:  Well, I think the term 
+24        "more likely than not" is applicable, that it 
+25        did during those time periods.  So, yeah, you 
+0025
+ 1        could use that term.  
+ 2        Q    (By Mr. Ewald)  I'm not asking whether I 
+ 3   could use the term.  I'm asking whether you intend to 
+ 4   offer that opinion.  
+ 5             MS. DEAN:  Same objection.  
+ 6             THE WITNESS:  Yeah, I could offer 
+ 7        that.  
+ 8        Q    (By Mr. Ewald)  So that is based -- that is 
+ 9   based on what?
+10        A    That's based on testing that has been done on 
+11   Johnson & Johnson baby powder products, including 
+12   Shower to Shower products that were manufactured during 
+13   the time of sourcing from Italy and Vermont.  
+14        Q    And are you referring specifically to testing 
+15   done by MAS in that answer?
+16        A    Yes.  But there was testing done back in the 
+17   '70s, I believe some in the '80s and some in the '90s, 
+18   on products, Johnson & Johnson products, that showed 
+19   the same kind of results, that there was, in fact, 
+20   asbestos associated with those products.  
+21        Q    My earlier question about more likely than 
+22   not was tied to Italy.  Your answer to that question 
+23   also included Vermont.  So I take it that the opinion 
+24   would be the same for Italy as the same -- with -- and 
+25   for Vermont?
+0026
+ 1        A    Yes.
+ 2        Q    Okay, so now we're talking about -- we were 
+ 3   just talking about the presence of asbestos in a given 
+ 4   talc product.  And so I want to shift slightly back to 
+ 5   the exposure question, because so far, at least as I 
+ 6   understand what I've heard from you, it has been tied 
+ 7   to, yes, there would be an exposure, but I've not heard 
+ 8   you quantify any kind of fiber per cc range of exposure 
+ 9   to asbestos that you would expect from a use of 
+10   Johnson & Johnson's baby powder.  
+11             First, am I correct so far in my 
+12   understanding of the testimony you've given today?  
+13        A    Yes.
+14        Q    So do you intend at trial to offer any kind 
+15   of specific fiber per cc range of exposure to asbestos 
+16   from use of Johnson & Johnson's baby powder and 
+17   Shower to Shower?  
+18             MS. DEAN:  Objection, form.  
+19             THE WITNESS:  There have been studies 
+20        done at MAS that show exposure ranges.  There 
+21        are also studies that were done by Johnson & 
+22        Johnson that show exposure ranges also.  And 
+23        I believe there are a couple of other -- a 
+24        couple of other studies that were done that 
+25        also show these exposure ranges.  
+0027
+ 1             Now, some of them -- one of the 
+ 2        studies -- I think it was by Dement -- talked 
+ 3        about particle exposures, but they didn't 
+ 4        identify -- they said there were a lot of 
+ 5        fibers from the product, but they didn't 
+ 6        identify it as fibers.  
+ 7             So the data is out there, and if asked 
+ 8        about it, I can talk about what was -- what 
+ 9        occurred per study.  I would have to go back 
+10        and probably review them again, but the 
+11        information is there.  
+12        Q    (By Mr. Ewald)  All right, so I understand 
+13   that there's information out there and that you can 
+14   talk about the results of those studies. 
+15             Do you have an opinion as you sit here today, 
+16   looking at all the data you just talked about, as to 
+17   the fiber per cc range of exposure that you would 
+18   expect from -- to asbestos, that you expect from use of 
+19   Johnson & Johnson cosmetic talc products?  
+20        A    Again, I would have to look at the specifics, 
+21   you know, to say, you know, what a range would be off 
+22   the top of my head.  Again, I would have to look at the 
+23   specifics of the data.  
+24        Q    And you haven't as you sit here today?
+25        A    I have not.  I have not thought about that as 
+0028
+ 1   I sit here.
+ 2        Q    All right.  Do you have an understanding -- I 
+ 3   guess it would be from plaintiff's counsel -- as to 
+ 4   which Johnson & Johnson talc mines are at issue in this 
+ 5   case?
+ 6        A    My understanding is that the plaintiff used 
+ 7   product over -- from the 1950s, I believe, to the 
+ 8   1980s.  My general understanding is that earlier in 
+ 9   life, the plaintiff used Johnson & Johnson baby powder 
+10   and then later on switched to Cashmere Bouquet and, I 
+11   believe, Coty products. 
+12             And I've read testimony from plaintiffs, 
+13   women that have used the products, they get to a 
+14   certain age and sometimes they'll switch because of the 
+15   odor, they want a different kind of odor or perfume 
+16   smell.  But when they -- when they had children, they 
+17   would go back and they would use the Johnson & Johnson 
+18   product.  
+19             And in this case, I believe I recall some 
+20   discussion of she had children and grandchildren, I 
+21   believe.  She used Johnson's baby powder on them.  
+22        Q    I'm going to get back to the exposure range, 
+23   but you said you saw a discussion of the use of 
+24   Johnson's baby powder on her children.  Where did you 
+25   learn that information?
+0029
+ 1        A    Well, I didn't see that.  I just believe I 
+ 2   recall that in conversation with the attorneys.  
+ 3        Q    All right.  And just to confirm from your 
+ 4   testimony, is Ms. Dean's representation correct that 
+ 5   you have not reviewed any deposition testimony specific 
+ 6   to this case?
+ 7        A    That's correct.
+ 8        Q    All right, so what is your understanding from 
+ 9   plaintiff's counsel as to the time period when the 
+10   plaintiff was exposed to Johnson & Johnson baby powder 
+11   products?  And also include Shower to Shower.  
+12        A    As I say, as I can recall, early in -- early 
+13   in her life and later on when she had children and 
+14   grandchildren.  
+15        Q    You gave, at the beginning of your testimony, 
+16   a time period of the 1950s to 1980s. 
+17             Is that something during that period that 
+18   would encompass the use of Johnson's baby powder and 
+19   Shower to Shower as you understand it in this case?  
+20             MS. DEAN:  Objection, form.  
+21             THE WITNESS:  To my knowledge, it would 
+22        be, yes.  
+23        Q    (By Mr. Ewald)  So if we're talking about the 
+24   time period that includes the 1950s through the 1980s, 
+25   what is your understanding of the Johnson & Johnson 
+0030
+ 1   talc mines that are going to be at issue in this case?
+ 2        A    They would be the Italian mines and the 
+ 3   Vermont mines.  They would be at issue here.  
+ 4        Q    One of the things we got last night from 
+ 5   counsel was the Steffen 2020 article, that you had gone 
+ 6   through it, right?
+ 7        A    Yes.  
+ 8        Q    So what are you relying on in the Steffen 
+ 9   2020 article for your opinions in this case?
+10        A    Can you be a little more specific on that?  
+11        Q    Sure.  We got a copy of the Steffen 2020 
+12   article, and so I want to know what from that article 
+13   are you relying on for your opinions in this case?
+14        A    The study of -- essentially, my portion of 
+15   the work done in that study had to do with the 
+16   delineation of human tissue and asbestos content and 
+17   talc content of those tissues.  So those study 
+18   participants had talc -- they had used the products for 
+19   many, many years in those cases, and so that -- I would 
+20   be relying on that information, plus some additional 
+21   information in that -- in that paper.  
+22        Q    When you say "additional information," what 
+23   are you referring to?
+24        A    There -- I believe there were some 
+25   statistical studies on ovarian cancer and calculations 
+0031
+ 1   and that kind of thing, so there are -- there are also 
+ 2   probabilities, that kind of thing.
+ 3        Q    So when you're talking about those ovarian 
+ 4   cancer statistical calculations, how does that relate 
+ 5   to your opinions in this case?
+ 6        A    Well, I believe the exposure probabilities, 
+ 7   that kind of thing, were part of that analysis and are 
+ 8   also part of that study.
+ 9        Q    When you're talking about exposure 
+10   probabilities, what are you referring to?
+11        A    The -- the calculations that were done that 
+12   delineated probabilities of exposures and the 
+13   probabilities of cancer occurring were a part of that 
+14   and also based in the literature that was also in that 
+15   paper.
+16        Q    When you're talking about probability of 
+17   cancer occurring, that sounds to me like something that 
+18   relates to a causation opinion.  Are you offering 
+19   causation opinions in this case?
+20        A    I'm not offering causation opinions.  I'm not 
+21   a medical doctor.
+22        Q    Understood.  So then how does what you just 
+23   talked about with these probabilities of ovarian cancer 
+24   relate to the opinions you're offering today?
+25        A    Well, you know, based on the data, it was 
+0032
+ 1   more likely than not that the talc that they were 
+ 2   exposed to was related to their cancers, so that -- 
+ 3   that is part of what I know about it.
+ 4        Q    When you say what you know about it, what is 
+ 5   "it"?  
+ 6        A    As far as the ovarian cancer.
+ 7        Q    Right.  Do you have an understanding as to 
+ 8   what disease plaintiff in this case suffered from?
+ 9        A    Not -- I don't believe in this case.
+10        Q    You're saying you don't believe that the 
+11   plaintiff in this case suffered from ovarian cancer?
+12        A    I don't believe that.  I believe that this is 
+13   a mesothelioma case.
+14        Q    Right.  It's my understanding too, and so I 
+15   am, again, wondering -- I don't want to beat this into 
+16   the ground.  I just generally don't understand the 
+17   connection between what you're talking about with 
+18   respect to ovarian cancer probability and the opinions 
+19   you're offering in this case.  
+20        A    Well, you were asking me about that study, 
+21   that paper --
+22        Q    Right.  
+23        A    -- the Steffen paper, so I was just trying to 
+24   respond about that.
+25        Q    Well, I appreciate that, but my question 
+0033
+ 1   wasn't -- sorry if it wasn't clear enough. 
+ 2             What are you relying on in that Steffen 2020 
+ 3   paper sent to us last night for your opinions in this 
+ 4   case?  
+ 5        A    I think I answered the question before.  I 
+ 6   would have to go back and look at my answer, but I 
+ 7   believe I've already answered the question.
+ 8        Q    Okay.  And my confusion stems from -- at 
+ 9   least the way I understood your answer is that within 
+10   the answer to my question about what are you relying on 
+11   in the 2020 Steffen report in this case, you talked 
+12   about the cancer probability section.  
+13             So is it your testimony now that you do not 
+14   intend to rely on that for your opinions in this 
+15   case?  
+16        A    Well, I -- my understanding, again, is that 
+17   these study participants in that case had exposures and 
+18   used the Johnson & Johnson products for a good portion 
+19   of their lives, and the products were -- that they 
+20   used, over the time periods they used, were from the 
+21   time periods when these products were produced and from 
+22   the Italian mine and from the Vermont mine.  And so 
+23   that's what I was thinking of when I was talking about 
+24   that.  
+25             And, you know, the probabilities with the 
+0034
+ 1   ovarian cancers are all there, and I was just trying to 
+ 2   relate to that a bit, but mostly would have to do with 
+ 3   what their uses were.  And so that's where I was going 
+ 4   with that.  
+ 5             MS. DEAN:  I've been trying not to 
+ 6        interrupt, but I did want to let you know 
+ 7        that in chat I have put in the billing that 
+ 8        you asked for.  
+ 9             MR. EWALD:  Oh, thank you.  
+10             MS. DEAN:  So you can get that out.  And 
+11        I think you'll see that the date he 
+12        remembered was a little off.  It's earlier.  
+13        But that is attached, so you have it.  
+14        Sorry.  
+15             MR. EWALD:  Thank you.  No problem.  
+16        Appreciate it. 
+17        Q    (By Mr. Ewald)  We also received from 
+18   plaintiff's counsel a copy of an expert report from 
+19   Dr. Cook.  Is that something that you are relying on 
+20   for your opinions in this case?
+21        A    I'm sorry, you broke up.  Could you repeat 
+22   the question?  
+23        Q    Sure. 
+24             One of the things we also received from 
+25   plaintiff's counsel last night was an expert report 
+0035
+ 1   from a Dr. Cook.  Is that one of the things that you 
+ 2   are relying on for your opinions in this case?  
+ 3        A    Yes.  
+ 4        Q    Okay.  And so what are you relying on 
+ 5   Dr. Cook's report for?
+ 6        A    Dr. Cook is -- has discussed the nature of 
+ 7   mixed minerals in talc mines, and so that's part of 
+ 8   what I'm relying on with his report.  
+ 9        Q    I can pull it up if we need to, but the first 
+10   page contains some handwritten notes.  Are those your 
+11   notes?
+12        A    Yes.  
+13        Q    Right.  What is your understanding of the 
+14   context in which Dr. Cook filed that expert report?
+15        A    Can you ask the question again?  
+16        Q    Sure. 
+17             As I said that, I realized that that report 
+18   was filed in the MDL proceeding in which you also gave 
+19   testimony, correct?  
+20        A    Yes.
+21        Q    And are you aware of an expert report from 
+22   Johnson & Johnson that responded to the opinions of  
+23   Dr. Cook in his report?
+24        A    I don't recall that I have.
+25        Q    All right.  So fair to say that you have not 
+0036
+ 1   reviewed, to your knowledge, any of the expert reports 
+ 2   that were filed in the MDL that responded to Dr. Cook's 
+ 3   report?
+ 4        A    That's correct.
+ 5        Q    All right, so let's -- I'll go ahead and mark 
+ 6   as Exhibit 1 the notice of deposition in this case, 
+ 7   which you said you had in your file, right?
+ 8        A    Yes.  
+ 9        Q    I'll go ahead and mark as Exhibit 2 the 
+10   objections that -- to the notice of deposition and 
+11   document requests that was filed by -- or served by 
+12   plaintiffs, I think, yesterday. 
+13             Let's mark as Exhibit 3 the reliance list.  
+14   And hold on one second, Doctor.  I'm going to attempt 
+15   to pull this up and share the screen.  Are you seeing 
+16   that?
+17        A    Yes.  
+18        Q    All right, so Exhibit 3 we'll mark.  It's 
+19   titled "Rigler Documents List 12-29-20."
+20             Now, Doctor, with the addition of the -- I 
+21   believe it's now five documents that have been provided 
+22   by plaintiff's counsel via email over the last two 
+23   days -- does this Exhibit 3 contain all of the 
+24   materials that you are relying on for your opinions in 
+25   this case?  
+0037
+ 1        A    Yes.  Can you scroll to the bottom of that, 
+ 2   please?  
+ 3        Q    Sure. 
+ 4             This is what was provided to us earlier from 
+ 5   counsel.  It's 120 references.  
+ 6        A    Yes.  
+ 7        Q    Now, this is implicit in your answer, but I 
+ 8   just want to make explicit.  Any Johnson & Johnson 
+ 9   documents that you're relying on for your opinions in 
+10   this case are included within the 120 references in 
+11   Exhibit 3, correct?
+12             MS. DEAN:  Objection, form.  
+13             THE WITNESS:  Can you restate, please, 
+14        the question?  
+15             MR. EWALD:  Right.  
+16        Q    (By Mr. Ewald)  So you're aware -- or you've 
+17   reviewed a number of Johnson & Johnson internal 
+18   documents, correct?
+19        A    Yes.  
+20        Q    And you rely on some of those documents for 
+21   the opinions that you're offering in this case and 
+22   other cases, correct?
+23        A    Yes.  
+24        Q    So what I want to know is:  Am I correct that 
+25   all of the Johnson & Johnson internal documents that 
+0038
+ 1   you are relying on for your opinions in this case are 
+ 2   identified in the 120 references in Exhibit 3?
+ 3        A    To the best of my knowledge, as I sit here, 
+ 4   the answer to that is yes.  
+ 5        Q    And let's talk a little bit more generally, 
+ 6   but you were last deposed, to my knowledge, in a 
+ 7   Johnson & Johnson-related case in the Casaretto/Florida 
+ 8   action in December of last year; is that right?
+ 9        A    I believe so, yes.
+10        Q    And am I correct that you can't recall any 
+11   deposition related to Johnson & Johnson that you've 
+12   given since that Casaretto deposition in December of 
+13   2020?
+14        A    I believe so, yes.  I don't believe I've 
+15   had -- I haven't had one, to my knowledge.  
+16        Q    We'll go ahead and -- we'll go back to the 
+17   reliance list in a second, but while we're talking 
+18   about testimony, I'm going to mark as Exhibit 4 this 
+19   document you received called "Case Listing for Mark W. 
+20   Rigler, Ph.D. 2014-2019."
+21             Is that something that you prepared, Doctor?  
+22        A    What is it, again?  I don't know what --  
+23        Q    You see on the screen -- we received it from 
+24   counsel.  It's called "Case Listing for Mark W. Rigler 
+25   2014-2019."  Do you see that?
+0039
+ 1        A    I see that, yes.
+ 2        Q    Is this something that you prepared?
+ 3        A    Hold on.  The screen is fighting me.  I'm 
+ 4   trying to make it bigger.  It snaps it back. 
+ 5             Okay, let me see.  That's an old case 
+ 6   listing, yes.  
+ 7        Q    And first question:  Is this something that 
+ 8   you had prepared?
+ 9        A    Let's see.  Is it rolled to the top?  Can you 
+10   roll it to the top?
+11        Q    Sure.  All the way to the top.  
+12        A    Yes, I would have prepared that long ago.
+13        Q    Okay.  And so then I was going to ask about 
+14   the completeness because, as you know, the last 
+15   testimony is from early 2019, right?
+16        A    Are you talking about -- yes, yes.  I'm not 
+17   keeping a list of -- I kept a list like that when I was 
+18   at MAS, but I'm not keeping a list like that anymore.
+19        Q    All right.  So you do not have a current 
+20   testimony list that would include any testimony that 
+21   you've given since February 6, 2019?
+22        A    That's correct.
+23        Q    All right.  Let's go back to the Casaretto 
+24   deposition in December of 2020. 
+25             Between December 2020 and that deposition and 
+0040
+ 1   today, have you done any new work that's specific to 
+ 2   Johnson & Johnson?  
+ 3        A    Is that -- are you finished with your 
+ 4   question?  
+ 5        Q    Yes.  
+ 6        A    Oh, I'm sorry.  I -- that's confidential, the 
+ 7   work that I do for other clients.  So I believe my 
+ 8   answer on that is that's confidential.  
+ 9        Q    Well, when you're talking about other 
+10   clients, you're talking about being retained for other 
+11   Johnson & Johnson cases; is that true?  Is that what 
+12   you're talking about?
+13        A    For any cases.
+14        Q    Okay.  So my question was specific to 
+15   Johnson & Johnson.  I'm trying to speed things up here 
+16   and get a sense of -- you know, you gave your testimony 
+17   about sort of state of affairs in December 2020 as it 
+18   relates to your Johnson & Johnson opinions.  And I'm 
+19   trying to get a general sense -- I'm not going to hold 
+20   you to it, but a general sense of whether you've done 
+21   any work specific to Johnson & Johnson that will inform 
+22   the opinions that you are offering in this case since 
+23   that December 2020 deposition.  
+24             MS. DEAN:  Objection, form.  
+25             THE WITNESS:  I don't believe that I 
+0041
+ 1        have as I sit here.  
+ 2             MR. EWALD:  Okay.  
+ 3        Q    (By Mr. Ewald)  Let's go back, then, to this 
+ 4   reliance list.  Now, this reliance list includes a 
+ 5   number of references to testing done by MAS of 
+ 6   Johnson & Johnson cosmetic talc products, right?  
+ 7        A    Yes.  
+ 8        Q    I didn't see, unless -- and it's not there, 
+ 9   but I didn't see any reference to testing done by MAS 
+10   on Johnson & Johnson talc products using what I will 
+11   call the Colorado School of Mines PLM chrysotile test.  
+12   Did I miss that?
+13        A    Yes.
+14        Q    I did miss that?
+15        A    Yes.
+16        Q    Okay.  So can you point me to where in your 
+17   reference list that testing is referred to?
+18        A    It should be at the very end of the list.  If 
+19   you scroll down through there, I can point to those. 
+20             Okay, the 118, 119, and 120 there, I -- used 
+21   that method.  
+22        Q    All right.  And have you personally performed 
+23   an analysis of Johnson & Johnson talc products using 
+24   the Colorado School of Mines method used by MAS?
+25        A    I have personally reviewed the procedure and 
+0042
+ 1   the protocol itself in terms of what the Colorado 
+ 2   School of Mines protocol is, and I think it's -- if you 
+ 3   roll the list up a little bit more, if you wouldn't 
+ 4   mind, it should be 115 and 116, and the methods are a 
+ 5   modification of the heavy liquid separation methods for 
+ 6   separating chrysotile specifically.
+ 7        Q    Okay, so let's -- I want to separate out a 
+ 8   couple of things.  
+ 9             I understand that you have reviewed 
+10   References 115 and 116, and you've reviewed the testing 
+11   results from MAS that are identified here relating to 
+12   the CSM -- when I say "CSM," I'll refer -- meaning 
+13   Colorado School of Mines method, right?  
+14        A    Sure.  Yes.  
+15        Q    But let's return first to my question, which 
+16   is:  Am I correct that you have not personally 
+17   conducted a CSM analysis on any cosmetic talc products?
+18        A    I have not at this -- at this time.  
+19        Q    Have you observed MAS conducting the CSM 
+20   method on any cosmetic talc products?
+21        A    I have observed the testing with that 
+22   methodology at MAS.  
+23        Q    And when was that?
+24        A    It would have been -- it would have been last 
+25   year.
+0043
+ 1        Q    What was your understanding of the identity 
+ 2   of the talcum product that was being analyzed?
+ 3        A    My understanding of the products that were 
+ 4   being analyzed at the time that I did my observations 
+ 5   were that the products were made -- they were an 
+ 6   American product and also a South American product.  So 
+ 7   at the time I was doing my observation, that's what 
+ 8   I -- that's what I saw.  
+ 9        Q    And are you talking about these being 
+10   products relating to Johnson & Johnson?
+11        A    Yes.  
+12        Q    So what parts of -- or part of the CSM 
+13   procedure at MAS did you observe?
+14        A    Well, as far as the CSM procedure, that 
+15   specific procedure --
+16        Q    Yes.
+17        A    -- I had not -- I had not -- I had not 
+18   observed that.  I observed the same kinds of procedure 
+19   that were -- that are used, because it's a heavy liquid 
+20   separation procedure, so it's very similar.  
+21        Q    And I apologize.  I'm a little confused from 
+22   your testimony. 
+23             So are you saying that you did not observe at 
+24   MAS the analysis of a Johnson & Johnson cosmetic talc 
+25   product using the specific CSM method that MAS has 
+0044
+ 1   used?  
+ 2        A    That's correct.
+ 3        Q    And you're referring to observing a heavy 
+ 4   liquid separation preparation process by MAS using a 
+ 5   different type of method than CSM, correct?
+ 6        A    Yes, but, I mean, from a -- from a technical 
+ 7   standpoint, in terms of the methodology that Colorado 
+ 8   School of Mines used, very much -- in terms of the 
+ 9   physics and the protocol, it's much the same, with a 
+10   few different steps in terms of densities, in the way 
+11   the samples handle.  
+12             So, you know, as a scientist, you look at 
+13   these things and you go, well, they're very similar in 
+14   the way that they're done, so, you know, they run 
+15   together in your mind as nearly the same technique.  
+16        Q    When we're talking about this other technique 
+17   that you observed, heavy liquid separation, would it be 
+18   the ISO 22262-2 method?
+19        A    Yes.  
+20        Q    All right.  
+21             MR. EWALD:  We've been going an about 
+22        hour.  I don't know if anybody wants to take 
+23        a break.  I can keep going, but I thought I 
+24        would throw it out there.  
+25             THE WITNESS:  I'm fine to go.  
+0045
+ 1             MR. EWALD:  Let's go, then.  
+ 2             (Discussion off the record.)
+ 3        Q    (By Mr. Ewald)  Have you spoken to any other 
+ 4   experts about the opinions you're going to be offering 
+ 5   in this case?
+ 6             MS. DEAN:  Objection, form.  
+ 7             THE WITNESS:  No.  
+ 8        Q    (By Mr. Ewald)  Are you aware whether or not 
+ 9   there is a Johnson & Johnson talcum product that is 
+10   still in the possession of plaintiffs?
+11        A    I don't know.
+12        Q    We just finished out 2020, and it was a heck 
+13   of a year.  How much money did you invoice the 
+14   plaintiff's counsel for your expert work in 2020?
+15             MS. DEAN:  Objection, form.  Vague as to 
+16        meaning of "plaintiff's counsel."  
+17             THE WITNESS:  Whatever is on the invoice 
+18        that you have.  
+19        Q    (By Mr. Ewald)  So now I'm talking about -- 
+20   there's an objection on vagueness.  I'm talking from 
+21   the year 2020, not just this case, how much money did 
+22   you invoice for your work as an expert in talc 
+23   litigation?
+24        A    Well, that's confidential information, so 
+25   that's my answer.  
+0046
+ 1        Q    And so on what basis is that confidential 
+ 2   information, from your understanding?
+ 3        A    That's confidential from my corporation.  So 
+ 4   that -- it's confidential.  And right off the top of my 
+ 5   head, I can't remember what the exact amount was, but 
+ 6   again, it's confidential.  
+ 7        Q    I'm not talking about how much money Aspex -- 
+ 8   that's your company?
+ 9        A    Yes.
+10        Q    And you are the sole employee of the company 
+11   still?
+12        A    Yes.
+13        Q    All right.  I'm not talking about how much 
+14   Aspex may or may not have made.  I'm asking how much 
+15   money you invoiced to lawyers for your work in 2020 in 
+16   cosmetic talc litigation.
+17        A    I don't know -- I don't know the exact number 
+18   that you're asking.
+19        Q    What is your estimate?
+20        A    Again, that would be confidential, as I was 
+21   saying before.  
+22        Q    Okay.  Is it the same answer if I ask you for 
+23   that amount for 2019?
+24        A    Yes.  
+25        Q    So you're taking the position that -- you're 
+0047
+ 1   refusing to tell me the amount of money that you have 
+ 2   invoiced to lawyers for your work as an expert in 
+ 3   cosmetic talc litigation for 2019 and 2020, correct?
+ 4             MS. DEAN:  Objection, form.  
+ 5             THE WITNESS:  Well, as I was saying, I 
+ 6        don't -- I don't know what the -- whatever 
+ 7        number I would give you would probably be 
+ 8        wrong, so I don't want to do that.  Again, I 
+ 9        don't know what the amount is.  
+10        Q    (By Mr. Ewald)  Okay, so it's a different 
+11   answer, then.  Are you still refusing to tell me the 
+12   amount for 2019 -- let's take a step back.  
+13             You said you weren't sure what the number was 
+14   for 2020.  Do you have a sense of approximately how 
+15   much money you invoiced to lawyers in 2019 for your 
+16   work in cosmetic talc litigation?  
+17        A    Same answer as before.  I don't know.  It 
+18   would be a guess, and I don't want to guess.
+19        Q    Do you have -- so in 2020, what percentage -- 
+20   I'll withdraw that.  
+21             So in 2020, did you have a source of income 
+22   other than your work as an expert witness in talc 
+23   litigation?  
+24        A    Yes.  
+25        Q    Okay.  And so what percentage of your income 
+0048
+ 1   is your work as an expert in the talc litigation?
+ 2        A    Again, I don't know.  I haven't broken it 
+ 3   down into the percentage amounts.  Again, I don't know.  
+ 4   It would be a guess, and I don't want to guess.
+ 5        Q    Do you have a sense as to whether more than 
+ 6   50 percent of your income is attributable to your work 
+ 7   as an expert in the cosmetic talc litigation?
+ 8        A    Probably, yes.
+ 9        Q    Okay.  Same question as to more than 75 
+10   percent of your income is attributable to your work as 
+11   an expert in cosmetic talc litigation?
+12        A    Again, I don't know.  I don't know.  
+13        Q    So I asked that so I can get up to date on 
+14   where things stand more generally with the company. 
+15             When you were deposed in Casaretto, you 
+16   indicated that you had done some analysis of some sort 
+17   of cosmetic talc at home using PLM.  Is that fair?  
+18        A    Yes.  
+19        Q    And I may have missed it, but I don't think 
+20   there was a follow-up question as to the specifics of 
+21   that analysis.  So what can you tell me about that 
+22   analysis?
+23        A    I have the PLM capabilities and scope here to 
+24   be able to do analyses on minerals.  I've also done 
+25   that kind of work on mold and mold spores.  So, you 
+0049
+ 1   know, that's some of what I've done with the 
+ 2   instrumentation that I have.
+ 3        Q    All right, so I just want to focus on, for 
+ 4   purposes of this deposition, your analysis of cosmetic 
+ 5   talc.  So what I think I'm hearing from you is that you 
+ 6   have analyzed cosmetic talc sample with PLM at your 
+ 7   home.  Is that fair?
+ 8        A    Yes.
+ 9        Q    All right, so when did that happen?
+10        A    Oh, gosh, I guess it was -- it was last year, 
+11   sometime in the fourth quarter.  
+12        Q    What was the source of the cosmetic talc 
+13   sample that you analyzed?
+14        A    The source of that talc sample was a -- I got 
+15   a couple of talc samples here that were at this home, 
+16   at this house, when it was purchased, and so I was 
+17   looking at those.  
+18        Q    All right.  So the talc samples that were 
+19   present in the home that you purchased, do you have any 
+20   idea where those talc samples came from?
+21        A    I don't know whether they were here from a 
+22   previous owner or if they were purchased.  So I don't 
+23   really know.  They were in a closet -- or like in a 
+24   cupboard, way back in, and it was being cleaned out and 
+25   they were found, and I said, oh, this is interesting, 
+0050
+ 1   I'm going to take a look at these
+ 2        Q    All right.  So what brand talcum products 
+ 3   were they?
+ 4        A    One of them was a Johnson & Johnson brand, I 
+ 5   believe.  And there were one or two other brands that 
+ 6   were in there.  
+ 7        Q    And have you analyzed, using PLM, all of the 
+ 8   brands of talc that you found in this house?
+ 9        A    I can't recall because I had looked at -- I 
+10   looked at -- I think I looked at two of them.  I don't 
+11   recall because it was quite a while ago.  I was just 
+12   brushing up on PLM at the time.  And so, you know, I 
+13   had purchased refractive index oils that were 
+14   appropriate for the ranges of chrysotile and amphibole 
+15   asbestos and also had purchased some standard asbestos 
+16   slides from MAS and was looking at all of those.  
+17        Q    All right.  Which refractive index oils did 
+18   you purchase?
+19        A    It was a Cargille set.  I'd have to go look 
+20   and see, but they included, I think, oils from one -- 
+21   liquids from 1.555 and, I believe, 1.605, others in the 
+22   range that are appropriate for the different 
+23   amphiboles.
+24        Q    So tell me about your analysis of the 
+25   Johnson & Johnson talc product using PLM.  
+0051
+ 1        A    I'm trying to remember what I saw.  There 
+ 2   were -- I mean, of course, the talc, the platy talc.  
+ 3   There was -- you know, the samples were mainly platy 
+ 4   talc, and there were some fibrous elements within the 
+ 5   product.  So I was just -- I was just looking at all of 
+ 6   those and, again, you know, refreshing myself on PLM 
+ 7   and identifying those minerals.  
+ 8        Q    Did you identify, in your mind, any 
+ 9   amphiboles while analyzing the Johnson & Johnson talc 
+10   product with PLM?
+11        A    I don't recall that.  As I say -- I don't 
+12   recall that because the -- I was mainly, again, working 
+13   with -- refreshing myself on the technique itself and 
+14   making sure that I had done the technique according to 
+15   the protocols that are published.  So that was -- that 
+16   was my main objective at the time.  And so that's what 
+17   I was mainly doing.  
+18        Q    Understood.  But I take it from your answer, 
+19   as you sit here today, you do not recall identifying 
+20   any amphiboles or chrysotile in the Johnson & Johnson 
+21   sample that you analyzed using PLM in your home.  Fair?
+22             MS. DEAN:  Object to form.  
+23             THE WITNESS:  Yeah, I saw fibrous 
+24        structures in the product as I was scanning  
+25        through the slide, as I say, to -- I didn't 
+0052
+ 1        go much further than that at the time.  I was 
+ 2        reacquainting myself with the techniques.  
+ 3        Q    (By Mr. Ewald)  Right, so you did not 
+ 4   identify any of the fibrous particles you may have seen 
+ 5   using PLM as either amphibole or chrysotile particles, 
+ 6   correct?
+ 7        A    At the time, I didn't try to.
+ 8        Q    And have you since?
+ 9        A    I've looked at them -- I've looked at them 
+10   since.  But, again, it was still in reference to 
+11   continuing to brush up on the technique, being able to 
+12   delineate the talc from the other standards that I had.  
+13   And also, you know, I'm interested in the technique for 
+14   looking at mold spores and identifying different kinds 
+15   of mold spores.  So, you know, it's interesting to try 
+16   to do PLM for that.  So, I mean, that's a whole -- 
+17   that's a whole nother project.
+18        Q    You referenced refreshing yourself on PLM.  
+19   Am I correct that your analysis in 2020 at your house 
+20   using PLM of cosmetic talc was the first time that you 
+21   have personally analyzed cosmetic talc using PLM?
+22        A    No, I wouldn't say that's the case.  And I've 
+23   testified to that before.  I've used PLM on a variety 
+24   of minerals when working at MAS.  So, you know, talc 
+25   was one of them.  It may have been part of another 
+0053
+ 1   product, and also at the laboratory.  So, yes, it 
+ 2   wasn't -- it was not the first time, no.
+ 3        Q    Well, as you sit here today, can you identify 
+ 4   a single occasion where you analyzed a sample that you 
+ 5   knew to be cosmetic talc using PLM before this analysis 
+ 6   at your home in 2020?
+ 7             MS. DEAN:  Objection, form.  
+ 8             THE WITNESS:  Yes.  
+ 9             MR. EWALD:  Okay.  
+10        Q    (By Mr. Ewald)  Identify that specific time.  
+11        A    Oh, well, I mean, at MAS, I can't remember 
+12   the exact year, but I've looked at -- I've looked at 
+13   talc in numerous products in the past and also have 
+14   used optical microscopy to look at talc.  I've looked 
+15   at talc in tissue sections on and off over the years.  
+16   So I'm -- I mean, I'm familiar with it and -- so, I 
+17   mean, that's pretty much my answer to that.  
+18        Q    Well -- so I understand that it's your 
+19   opinion that you are familiar with the process.  What 
+20   I'm getting at is the actual experience, and you keep 
+21   referring to talc. 
+22             In your mind, are you making a distinction 
+23   between analysis of industrial talc and cosmetic talc, 
+24   or are they the same thing to you?  
+25        A    Oh, well, I've looked at both of them.  So, 
+0054
+ 1   you know -- I've looked at both.  
+ 2        Q    All right.  I'm still waiting for you to 
+ 3   identify a specific instance that you recall, as you 
+ 4   sit here today, of analyzing a sample that you knew was 
+ 5   a cosmetic talc sample by PLM before this analysis in 
+ 6   2020 at your home.  
+ 7        A    Well, here's how it would go at the 
+ 8   laboratory.  If I was looking at a sample -- and this 
+ 9   is how it works in laboratories, whether it's a medical 
+10   laboratory, a research laboratory -- the managers or 
+11   the doctors that are in charge of the products, they go 
+12   and they say, "I want to do an analysis," or, "I want 
+13   to look at such-and-such to perform this analysis."  So 
+14   they charge the people that are working under them to 
+15   do those analyses.  
+16             So this is the way it would have worked at 
+17   MAS.  I would have said, "Yes, I want to look at this 
+18   product.  Such-and-such analyst, you know, you're 
+19   looking at it or you're going to look at it.  I would 
+20   like to be there with you when you look at it."  
+21             So I would go.  They would have the sample 
+22   set up on the scope, on the PLM scope.  I would sit 
+23   down with them.  They would look at it.  They would 
+24   say, "Here it is."  They have digital cameras on the 
+25   scopes.  I can see what they're looking at that way.  I 
+0055
+ 1   can pull up to the scope.  I would ask them, "Let me 
+ 2   look at it."  So that would be the way that I would 
+ 3   have done it at MAS.  And I did that at MAS many, many, 
+ 4   many times.  
+ 5        Q    Okay.  We'll get back to that in a second. 
+ 6             I'm talking about a situation, a specific 
+ 7   instance, if any, that you can recall, as you sit here 
+ 8   today, where you personally were the analyst 
+ 9   responsible for analyzing a sample that you knew was 
+10   cosmetic talc by PLM.  Can you identify any such 
+11   instance?  
+12             MS. DEAN:  Objection, form.  Asked and 
+13        answered.  
+14             THE WITNESS:  I'm -- I was not employed 
+15        as a PLM analyst at MAS, so -- but I oversaw 
+16        PLM analysts, TEM analysts.  I'm familiar 
+17        with the techniques and the technology.  So 
+18        your question about me specifically analyzing 
+19        it, the way I answered that before is how I 
+20        would describe that to you.  I specifically 
+21        analyzed it.  The analyst was there.  They 
+22        documented what was in that product, and that 
+23        would be the way that I would have analyzed 
+24        it.  So that's the way that I would describe 
+25        it.  
+0056
+ 1        Q    (By Mr. Ewald)  Going back for a second to 
+ 2   the analysis that you did of Johnson & Johnson at your 
+ 3   home, did you take any kind of pictures of that 
+ 4   analysis?
+ 5        A    No.  
+ 6        Q    All right.  Do you still have the sample of 
+ 7   Johnson & Johnson that you analyzed at home using your 
+ 8   PLM?
+ 9        A    Yes.  
+10        Q    So you also talked about you need to refresh 
+11   yourself on the protocols that have been published 
+12   relating to PLM analysis, right?
+13        A    Yes.
+14        Q    So when you were doing this analysis at your 
+15   home of Johnson & Johnson talc, what protocol or 
+16   protocols were you following?
+17        A    I was following the R-93, the EPA protocol, 
+18   and so that was the main protocol that I was following.
+19        Q    And why did you choose that protocol to 
+20   follow?
+21        A    Well, it has a PLM section in it, which 
+22   describes the methodologies for the scope setup and all 
+23   of the techniques used to analyze a specimen that -- 
+24   that specifically would be talc because that's in part 
+25   of the method, and so that was the reason I used it.  
+0057
+ 1             Now, I've looked at other protocols.  I 
+ 2   believe there's a -- let me think.  There's an ID-191 
+ 3   protocol and there is -- there's an ELAP protocol 
+ 4   that's also for PLM.  They're all very similar in terms 
+ 5   of the way that things are set up and analyzed.  
+ 6             MR. EWALD:  All right.  We've been going 
+ 7        about an hour and a half now, and maybe we 
+ 8        want to give the court reporter a break.  
+ 9             (Discussion off the record.)
+10             (Recess taken.)
+11        Q    (By Mr. Ewald)  Doctor, I'm going to mark, 
+12   just for the record, Exhibit 5, which is the invoice 
+13   that counsel for plaintiff provided.  Hold on a second.  
+14   I just need to reshare my screen.  Does this look 
+15   familiar?  
+16        A    Oh, yeah, okay.  That was -- let me see that 
+17   one.  Yes.  Yeah, and I was -- on the date, I was 
+18   thinking of another project.  
+19        Q    No problem.  But we have here the amount of 
+20   $5,000 for retainer fee, correct?
+21        A    Yes.  
+22        Q    I also failed to ask you earlier:  What is 
+23   your current rate?
+24        A    The hourly rate is 500.
+25        Q    And do you have a different rate for 
+0058
+ 1   deposition and trial?
+ 2        A    No.  That rate is the same.
+ 3        Q    The same as $500 an hour?
+ 4        A    Yes.  
+ 5        Q    Okay.  I wanted to return to something that 
+ 6   you said before we broke, which was referring back to  
+ 7   an example of -- you know, using a doctor context, of a 
+ 8   person in charge of projects and how that works.  So 
+ 9   you gave a similar example, if you recall, I believe, 
+10   when you testified in Moure-Cabrera.  Do you recall 
+11   that?
+12        A    Yes.
+13        Q    And so in this example that you gave, who are 
+14   you?
+15        A    I am the person calling for the test.  I'm 
+16   equivalent to a doctor at a hospital or in a clinic who 
+17   is ordering a test.
+18        Q    All right.  And let's just focus -- so 
+19   everything is clear, let's focus on the time period 
+20   when you were at MAS and MAS was doing cosmetic talc 
+21   testing of Johnson & Johnson.  And am I correct that 
+22   we're talking, at that point in time, around 2017 to 
+23   2019?
+24        A    Yes.  Yes.  It might have been a little 
+25   earlier than that.
+0059
+ 1        Q    Sure.  So let's just be clear.  Over 2016 to 
+ 2   2019, MAS is doing cosmetic talc testing on Johnson & 
+ 3   Johnson products and you are still there, right?
+ 4        A    Yes.
+ 5        Q    And so in this doctor example that you gave, 
+ 6   you also talked about the person being in charge of the 
+ 7   project.  That's the phrase that you used today, right?
+ 8        A    Yes.
+ 9             (Discussion off the record.)
+10        Q    (By Mr. Ewald)  So are you testifying that in 
+11   the 2017 to 2019 time period, you were in charge of the 
+12   project of analyzing Johnson & Johnson cosmetic talc at 
+13   MAS?
+14        A    Well, the person in charge of the lab was  
+15   Dr. Longo.  He was overall in charge of the project.
+16        Q    Okay.  And I believe you also testified that 
+17   the person during that time period who was responsible, 
+18   directly responsible, for overseeing the analysis was 
+19   department manager Victoria Penner-Vitiello [phonetic], 
+20   correct?
+21        A    Yes, she would have been in charge of that 
+22   department.
+23        Q    Right.  And so I'm trying to figure out where 
+24   you fit, then, in the hierarchy, I guess you could say, 
+25   with respect to analysis of cosmetic talc at MAS in 
+0060
+ 1   2017 or -- roughly 2016 to 2019.  
+ 2        A    Well, I was collaborating with Bill Longo on 
+ 3   the project setup itself, the design of it, in the 
+ 4   early days when things were getting started, looking at 
+ 5   it with some of the first samples.  And then I was 
+ 6   reviewing data that was coming from the laboratory and 
+ 7   reviewing quality control data that was also coming 
+ 8   from the laboratory. 
+ 9             So also, you know, on a daily basis, I would 
+10   be at the laboratory, I would be going back and 
+11   speaking with the analysts, whether they be preparing 
+12   samples or whether they would be analyzing samples, 
+13   whether they were the PLM analysts or the TEM analysts.  
+14   So that would have been, you know, part of my role 
+15   while I was there.  
+16        Q    So let's talk a little bit about the 
+17   beginning of the project, when you were referring to 
+18   collaboration with Dr. Longo.  Again, we're talking 
+19   here, to the best of your recollection, at some point, 
+20   2016 to early 2017, when the -- MAS started doing 
+21   cosmetic talc testing in earnest?
+22        A    Is that a question?  
+23        Q    Yeah.  
+24        A    Oh.  Well, could you repeat?  I'm sorry.
+25        Q    Sure.  
+0061
+ 1        A    I thought there was some more to it and you 
+ 2   stopped.
+ 3        Q    Yeah, well, I'm going to follow up on the 
+ 4   "more to it."  But just for now, I'm trying to orient 
+ 5   ourselves that during the beginning, essentially, of 
+ 6   when MAS started to test cosmetic talc -- I'll say in 
+ 7   earnest because I don't want to get right now into what 
+ 8   may have happened previously in the early years, but 
+ 9   the analysis of Johnson & Johnson cosmetic talc 
+10   products, that project that you're referring to, is it 
+11   fair to say that started in the 2016 time period at 
+12   MAS?
+13        A    To my knowledge, it was around that time, 
+14   yes.
+15        Q    Okay.  And you talked about a few minutes ago 
+16   being involved, collaborating with Dr. Longo on the 
+17   design of the protocol for this analysis of the 
+18   Johnson & Johnson talc products, right?  
+19        A    Yes.  
+20        Q    So why don't you talk to me about your 
+21   recollection of first getting involved with this 
+22   project.  
+23        A    Let's see, the -- as I recall, Dr. Longo was 
+24   talking with some of his clients, and they wanted to 
+25   test some cosmetic talc products.  And so at the time I 
+0062
+ 1   was there, one of the things that we wanted to do was 
+ 2   also look at off-the-shelf products, off-the-shelf talc 
+ 3   products, and so, you know, whether they would be 
+ 4   controls or used for blanks or whatever, but to look 
+ 5   locally and also purchase cosmetic talc products from 
+ 6   other sources, outside sources, and then -- and then 
+ 7   test those, go look and see, you know, is there -- is 
+ 8   there any -- is there any asbestos associated with 
+ 9   these, because to our knowledge there wasn't any, that 
+10   at the time, as I can recall, you know, from what I 
+11   knew about it, there wasn't anything in terms of any 
+12   asbestos associated with these products.  
+13             And so products came in from clients that MAS 
+14   had.  Then we purchased a variety of off-the-shelf talc 
+15   products from local sources, I think Walmart and 
+16   Walgreens and might have been CVS, some other sources, 
+17   and were going to test those.  So we bought multiple 
+18   lots of those.  You know, we didn't buy just one 
+19   bottle.  We would buy, I don't know, three bottles, 
+20   something like that, of each product as they were 
+21   available.  
+22             And then we bought products that were off 
+23   eBay, and people have these -- they collect these 
+24   things, like they do -- like the cigarette pack 
+25   collectors were back in the '90s.  People all over the 
+0063
+ 1   world collect things.  
+ 2             So, you know, anyway, we started looking at 
+ 3   some of those products.  And, lo and behold, they 
+ 4   contained asbestos, they contained tremolite asbestos, 
+ 5   and it was -- it was an eye-opener at the time.  So, 
+ 6   you know, then things moved on from there, as I 
+ 7   recall.  
+ 8        Q    All right.  Let's take a step back, in a 
+ 9   sense. 
+10             You talked about how, you know, MAS started 
+11   testing the cosmetic talc products of Johnson & 
+12   Johnson, including both samples received from clients 
+13   of Dr. Longo, which would be plaintiffs attorneys, 
+14   right?  
+15        A    Well, I think so.  I can't -- I don't know 
+16   all of the sources because Dr. Longo was working with 
+17   various clients, so I don't know what all the sources 
+18   were.  But, yeah, some of them were plaintiff 
+19   attorneys.  
+20        Q    And so I appreciate that you don't 
+21   necessarily know all the sources.  My question was 
+22   really just to make the record clear.  When you're 
+23   referring to clients of Dr. Longo, you're referring to, 
+24   in this context, plaintiff attorneys, correct?
+25        A    Well, some of them.  I mean, I don't know all 
+0064
+ 1   of them, so -- yeah, I don't know.  Some of them were.
+ 2        Q    Again, I'm not talking about the source of 
+ 3   the bottle.  I'm talking about when you say "clients of 
+ 4   Dr. Longo," clients of Dr. Longo talked to him about 
+ 5   wanting to test cosmetic talc, who are, as a general 
+ 6   matter, those clients?
+ 7        A    Again, he knew who the folks were.  I didn't 
+ 8   know all those -- all the folks involved.
+ 9        Q    When you say "folks involved," are you 
+10   referring exclusively to plaintiffs' attorneys, or are 
+11   you referring to another category of individuals?
+12        A    Any of the clients -- any of the clients that 
+13   MAS had that were providing, you know, those kinds of 
+14   samples, so it would have been any of them.  I wouldn't 
+15   have specifically known who they were.  
+16        Q    Well, as you sit here today, are you aware of 
+17   a client at MAS in the 2017 to 2019 -- or 2016, rather, 
+18   to 2019 time frame providing MAS with a sample of 
+19   cosmetic talc that was not a plaintiff's attorney?
+20        A    The answer to that is yes.  I know there was 
+21   at least one person that sent in -- that sent in a 
+22   sample that was, to my knowledge, not a plaintiff's 
+23   attorney.  
+24        Q    Okay, and --
+25        A    It may have been more than one.  And, again, 
+0065
+ 1   I'm -- you have to ask Dr. Longo about that, but I 
+ 2   know -- I believe there was at least one that I knew 
+ 3   of.  
+ 4        Q    And what's your recollection of who that 
+ 5   person is or was?
+ 6        A    It was a woman -- I'm trying to remember -- 
+ 7   and I think this was -- this was in 2019 -- who had a 
+ 8   bottle of -- had a bottle of Johnson & Johnson talc 
+ 9   that was a fairly recent bottle and they wanted to test 
+10   it.
+11        Q    Let's go back to the 2016 time frame or so, 
+12   the beginning of the project.  You talked about the 
+13   initial testing. 
+14             What do you recall about any discussion that 
+15   was had at MAS regarding how the initial samples of 
+16   talc would be tested?  
+17        A    My recollection is they would have been 
+18   tested in the same manner as other dust products have 
+19   been tested in the past, and that would have been to do 
+20   PLM analysis on them and then also TEM analysis on 
+21   them.  
+22        Q    Okay.  And so do you have a recollection 
+23   of -- you have essentially two different -- well, I 
+24   don't want to say two different buckets, but at least 
+25   two buckets that you've identified.  You have the 
+0066
+ 1   off-the-shelf stuff and you have product samples that 
+ 2   were received from clients of MAS, right?
+ 3        A    Yes.
+ 4        Q    Right. 
+ 5             Do you have a sense or do you have a 
+ 6   recollection of from which bucket MAS started initial 
+ 7   tests?  Essentially, do you start with off-the-shelf 
+ 8   stuff or do you start with the client samples?  
+ 9        A    Well, as I recall -- this is just to the best 
+10   of my recollection -- that both were tested to start 
+11   with, off-the-shelf product and also the other.
+12        Q    Okay.  
+13        A    Because we had -- we had samples from 
+14   clients, MAS clients; then there were samples that were 
+15   from eBay, that were purchased there; and then there 
+16   were local -- local samples.  So maybe you would say 
+17   three buckets.  
+18        Q    Okay.  And so you said that those were tested 
+19   in the beginning using the typical procedures that you 
+20   would have done on -- maybe you said dust-type 
+21   products -- PLM and TEM, right?
+22        A    Yes.  
+23        Q    And do you recall what protocols were used at 
+24   the very beginning when you were analyzing these early 
+25   talc samples with PLM and TEM?
+0067
+ 1        A    They would have been the protocols that were 
+ 2   typically used at the laboratory for analysis of those 
+ 3   kinds of samples.  So they would have been EPA-style 
+ 4   kinds of protocols.  They would have been the protocols 
+ 5   that were called for by the NVLAP, the certifiers for 
+ 6   the laboratory, NIST, who certifies the lab for 
+ 7   asbestos analyses.  So it would have been -- it would 
+ 8   have been according to those protocols and then the 
+ 9   broader -- under the broader umbrella of ISO 17025, 
+10   which is a broad -- it's a broad program for 
+11   documentation of laboratory analyses like this.  So, 
+12   you know, it would have been under those kinds of 
+13   settings.
+14        Q    And so to get a little more, potentially, 
+15   specificity on it, when you're talking about, for 
+16   example, PLM analysis of the early Johnson & Johnson 
+17   cosmetic talc samples, would that have been R-93?
+18        A    I would have to check and see about that.  I 
+19   can't recall -- it may have been under the NIOSH 
+20   protocol.  So it could have been either one of those.  
+21   I can't recall.
+22        Q    Fair enough.  And on the TEM, are we talking 
+23   about the AHERA-type protocol?
+24        A    Yes.  
+25        Q    And so what do you recall about the results 
+0068
+ 1   of that early testing of the Johnson & Johnson cosmetic 
+ 2   talc samples by, you know, the PLM and TEM we just 
+ 3   talked about?
+ 4        A    Well, I don't recall that the -- the analysis 
+ 5   that was done, it was -- it was a straightforward 
+ 6   analysis in terms of the sample preparation and the -- 
+ 7   a number of the products showed the presence of 
+ 8   amphibole asbestos.  So that -- that was what really 
+ 9   stuck out, and, I think, was stunning in terms of the 
+10   results there.  
+11        Q    So when you talk about standard [sic] 
+12   preparation, you're talking about not using heavy 
+13   liquid separation, right?
+14        A    Yes.  
+15        Q    And so then you find on this initial look, 
+16   without using heavy liquid separation, asbestos using 
+17   PLM and TEM, right?
+18        A    Yeah.  In some cases, yes --
+19        Q    Okay, so that at some point in time -- 
+20        A    -- as I recall.  
+21        Q    I'm sorry.  Go ahead. 
+22        A    Okay.
+23        Q    What did you say -- I talked over you, I'm 
+24   sorry -- for the court reporter?
+25        A    Like I said, in some cases, yes.
+0069
+ 1        Q    So I take it from that, in some of these 
+ 2   samples you analyzed, you didn't find any asbestos, in 
+ 3   your mind?
+ 4        A    Well, there were nondetects at whatever the 
+ 5   detection limit was.  And at that time, I believe it 
+ 6   was -- it was pretty high.  It may have been in the 
+ 7   millions of structures per gram.  So the detection 
+ 8   limit was pretty darn high.  So, you know, the answer 
+ 9   to that is yeah.
+10        Q    Okay.  And so then -- I guess you can take me 
+11   forward, then.  So this analysis happened -- by the 
+12   way, do you recall which analysts at MAS were primarily 
+13   doing these samples?
+14        A    I don't know who primarily was doing them.
+15        Q    For example, on TEM, would Anthony Keaton 
+16   [phonetic] have been involved?
+17        A    At that time, I'm not sure.
+18        Q    Okay, and so -- and this is -- we're talking, 
+19   best of your recollection, about the 2016 time frame; 
+20   is that fair?
+21        A    Yeah, I would have to look at the bench 
+22   sheets from the data and the reports, and then they 
+23   could see exactly who it was.
+24        Q    Right, right, and so -- and do you recall 
+25   looking at the -- after this initial analysis is done, 
+0070
+ 1   looking at the bench sheets?
+ 2        A    Are you asking me is that where the data came 
+ 3   from?  
+ 4        Q    No.  I'm asking -- so this analysis happens, 
+ 5   right, and you said that, you know, to your surprise, 
+ 6   there was asbestos found. 
+ 7             Do you have a recollection of, at the time, 
+ 8   reviewing the bench sheet of the analysis?  
+ 9        A    Yes.  
+10        Q    All right.  And some, like, photos and -- 
+11   photographs and things of that nature?
+12        A    Yes.  
+13        Q    Okay, and then -- so take me forward, then.  
+14   So you have these initials findings.  What happens 
+15   then?
+16        A    Do you mean as time progressed or -- I mean, 
+17   I'm not sure where you -- 
+18        Q    Sure.  That's a pretty vague question.  I 
+19   appreciate -- I guess what I'm trying to say is at some 
+20   point in time, MAS starts analyzing the Johnson & 
+21   Johnson cosmetic talc samples using TEM and heavy 
+22   liquid separation, right?
+23        A    Yes.  
+24        Q    Right.  And so can you take me through your 
+25   recollection of, you know, this initial testing without 
+0071
+ 1   it and then sort of how you ended up, in collaborating 
+ 2   with Dr. Longo, with the analysis with heavy liquid 
+ 3   separation?
+ 4        A    Well, the issue was -- I mean, talc itself, 
+ 5   that was the biggest issue.  It essentially overwhelmed 
+ 6   everything in the samples.  And in order to do an 
+ 7   analysis and get to what level may exist, you know, 
+ 8   whether it's asbestos or titanium oxide or other solid 
+ 9   minerals, aluminum silicates that may be there, you've 
+10   got to get -- you've got to move -- you've got to be 
+11   able to separate them, you've got to be able to reduce 
+12   some of the amount of talc that's there.  
+13             And so we were trying to figure out a method, 
+14   what could be done with that.  And the idea was how do 
+15   you separate these, and Blount had done that -- when we 
+16   looked back at some of the -- some of the information 
+17   in the past, we saw that, you know, you can separate 
+18   minerals with these heavy liquids.  McCrone had done 
+19   it -- gosh, they did it way back in the '70s, and they 
+20   used organics -- heavy liquid organic separations to do 
+21   it.  
+22             So -- and then, you know, as we continued to 
+23   look at the literature, we saw that Alice Blount had 
+24   done it specifically for talc.  And so we looked at the 
+25   method and said, "Yeah, this looks like a good way to 
+0072
+ 1   be able to try to do this."  
+ 2             So then the method was implemented in terms 
+ 3   of let's begin to do this, let's try to do this, you 
+ 4   know, what liquids are going to be, you know, used, 
+ 5   what densities are going to be used.  So we followed 
+ 6   the Blount technique to start with, and so that -- and 
+ 7   then it just progressed from there.  
+ 8        Q    And so do you have a recollection of whose 
+ 9   idea it first was to start exploring using heavy liquid 
+10   separation after you had done this initial test at MAS 
+11   of PLM and TEM without such heavy liquid separation?  
+12   Whose idea was it?
+13        A    Oh.  Well, we had gone around about it, and I 
+14   said -- you know, I used the technique in graduate 
+15   school for separating these microvilli vesicles from 
+16   intestinal scrapes.  And it's the same kind of 
+17   principle, you know, density rating separation.  And 
+18   then, of course, you know, you see McCrone did it and 
+19   all of that. 
+20             Now, some of the -- there was also -- there 
+21   was always the issue with the toxicity of all those 
+22   organics, heavy liquids that were being used, so we 
+23   wanted to avoid that.  
+24             And so we, you know, explored the market for 
+25   these heavy liquids that were not so toxic and came up 
+0073
+ 1   with the ones that were being used.  So Bill, you know, 
+ 2   working on the project, said, you know, "Let's use 
+ 3   these, let's use this particular form and adjust the 
+ 4   density, let's get a" -- what do you call it?  It's an 
+ 5   optical device to adjust the densities.  It's a 
+ 6   diffractometer.  So purchased that, and then they 
+ 7   started doing dilutions and figuring out how they could 
+ 8   get to the densities that were going to be necessary to 
+ 9   separate the talc from the heavier elements that were 
+10   in there too.  So it wouldn't be just the talc; it 
+11   would be other heavier elements that would be in there.  
+12             Chrysotile, you know, pretty large challenge 
+13   there simply because the density is very similar to 
+14   talc.  And so we knew that, you know, we may not be 
+15   able to separate chrysotile, but let's try this and see 
+16   how it works, and it worked.  
+17        Q    So I appreciate that background, and I guess 
+18   I'm still wondering -- you talked about your own 
+19   experience with heavy liquid separation, you talked 
+20   about the Blount article.  I'm trying to pinpoint 
+21   essentially who -- who had the idea first within MAS to 
+22   say, you know, "Hey, maybe we should try to use heavy 
+23   liquid separation with cosmetic talc."
+24        A    You know, I don't know because there are 
+25   other folks there.  You know, that was a lot of the fun 
+0074
+ 1   of working there, was bouncing -- it's very much like a 
+ 2   research institute.  You bounce the ideas off of 
+ 3   different folks that were from different backgrounds. 
+ 4   We had geologists there.  We had industrial hygienists.  
+ 5   And the geologists knew about -- they knew about the 
+ 6   density liquid.  
+ 7             Then you've got the PLM analysts, and some of 
+ 8   them have been around a long, long time, and they have 
+ 9   done things the McCrone way forever, and some of them 
+10   knew about it too.  
+11             So whose eventual idea it was, I don't know, 
+12   so -- but it worked out very well.  
+13        Q    And I appreciate that. 
+14             And so do you recall the discussion around -- 
+15   you know, you've already done some initial testing with 
+16   PLM and TEM and you're finding asbestos.  So then what 
+17   is your recollection of the impetus to modify the 
+18   protocol?  
+19        A    Well, like I said before, the -- you've got 
+20   to get -- you've got to move the talc out of the way, 
+21   you've got to be able to separate the two, and so -- 
+22   otherwise, you're very limited as far as your 
+23   technique, your detection limit on this.  You just -- 
+24   you can't -- you can't give a decent number that's not 
+25   in the millions as far as your detection limit.  So, 
+0075
+ 1   you know, it's there and so you want to use the best 
+ 2   techniques and technologies that are available, and 
+ 3   that's what we wanted to do.  
+ 4        Q    Do you recall -- you talked about chrysotile 
+ 5   and difficulty with heavy liquid separation early on -- 
+ 6   do you recall whether the initial testing that was done 
+ 7   without heavy liquid separation of Johnson & Johnson 
+ 8   cosmetic talc, whether MAS identified any chrysotile 
+ 9   during that initial phase?
+10        A    I don't know.  I don't know if that -- if the 
+11   analysts did see chrysotile when they were doing it.  
+12   They may have.  I don't know.  
+13        Q    But as you sit here today, you don't 
+14   recollect one way or the other?
+15        A    I don't know, as I say, one way or the other.
+16        Q    And do you have a sense of that initial 
+17   pre-heavy liquid separation analysis by MAS, about how 
+18   many samples were analyzed?
+19        A    I can't recall the total that were analyzed.  
+20   I mean, it was probably more than five or six.  
+21        Q    Okay, and -- I lost my train of thought 
+22   there.  Oh, if you had to best place the time frame of 
+23   that early analysis of heavy liquid separation -- I 
+24   know we talked about 2016, but in your mind, is it, you 
+25   know, first half of 2016, second half of 2016?  Do you 
+0076
+ 1   have a recollection one way or the other?
+ 2        A    No, I don't.  I can't recall.
+ 3        Q    Okay.  So tell me -- you talked about how 
+ 4   it's, you know, like a research institute kind of 
+ 5   situation, in talking about the best way to analyze 
+ 6   cosmetic talc, and you talked about collaborating with 
+ 7   Dr. Longo.  
+ 8             Who else do you recall that was involved in 
+ 9   the early discussions about, you know, how we're going 
+10   to test this cosmetic talc the best way?  
+11        A    I'm trying to remember.  I can't recall off 
+12   the top of my head.  As I say, the TEM manager, I'm 
+13   sure we spoke to her, if she was the manager at the 
+14   time.  I can't recall.  But in order to run the 
+15   technique, you would have had to have spoken to those 
+16   folks who were preparing the samples, so they would be 
+17   obvious, the obvious folks.
+18        Q    Okay, but you talked about how, you know, the 
+19   PLM -- some of them PLM folks knew about heavy liquid 
+20   separation.  Is there anybody in particular you had in 
+21   mind?
+22        A    No.  I'm just saying that that's just a -- 
+23   that's just an assumption that I have because they have 
+24   been trained in the McCrone courses, and we had a 
+25   number of the McCrone manuals for PLM and particle 
+0077
+ 1   analysis, the particle atlases, and a lot of those 
+ 2   documents had, you know, preparation techniques in 
+ 3   them.  And then, you know, when folks were trained in 
+ 4   that, they had read those documents and they -- you 
+ 5   know, my assumption is that they were aware of those 
+ 6   technologies that were there.  
+ 7             Geologists have used them, you know, for 
+ 8   decades too.  And again, you know, the issue with the 
+ 9   heavy liquids, you know, back then was the toxicity of 
+10   the materials, the liquids that were being used.  So at 
+11   MAS, we were -- safety is always a high concern in 
+12   every situation, and if we didn't have to use those 
+13   kinds of liquids, we would use something else.  And 
+14   there were alternatives.  
+15             So that's what you look at.  You look at the 
+16   technology you're working with, how safe is it, and 
+17   what kind of safety constraints you have to deal with 
+18   in working with them.  
+19        Q    Yeah, so I -- again, for ease of discussion, 
+20   I would like to try to get things in buckets.  And so 
+21   you talked about that process of picking out the best 
+22   way to analyze cosmetic talc, and one of the things you 
+23   talked about -- one bucket is just prior experience, 
+24   right, like personal experience that you had with heavy 
+25   liquid separation.  You talked about the geologists.  
+0078
+ 1   That's one bucket of knowledge, of input into in 
+ 2   process, right?
+ 3        A    Yes.  
+ 4        Q    And then, of course, you have the scientific 
+ 5   method, right, you are -- MAS is testing these products 
+ 6   in the lab, they've tested it without heavy liquid 
+ 7   separation, you start testing it then with heavy liquid 
+ 8   separation, right?  So you actually have results of 
+ 9   what you're doing in the lab, right?
+10        A    To my recollection, yes.
+11        Q    Okay.  And so then you also mentioned, for 
+12   example, the Blount article, right, as something that 
+13   MAS reviewed in determining, you know, how they were 
+14   going to try to analyze cosmetic talc, right?
+15        A    Yeah, I think that it was definitely a topic 
+16   of discussion and a protocol that could be followed 
+17   that was published.
+18        Q    Right.  And do you recall at MAS who first 
+19   started talking about the Blount article?
+20        A    I don't recall.
+21        Q    Pretty sure it was not you that first raised 
+22   it?
+23        A    Again, I don't recall exactly who it was, 
+24   because part of my responsibilities there were to look 
+25   into new methods and methodologies and technologies in 
+0079
+ 1   terms of laboratory equipment and, you know, all that 
+ 2   kind of thing --
+ 3        Q    Right.  
+ 4        A    -- so I don't recall as I sit here.
+ 5        Q    And so I'm wondering if there are any other 
+ 6   outside -- when I say "outside," outside of MAS -- data 
+ 7   points that you and Dr. Longo and others at MAS were 
+ 8   looking at when you're trying to decide, you know, how 
+ 9   to analyze this cosmetic talc.  And as you sit here 
+10   today, do you recall any other, you know, outside MAS 
+11   data points that you were using?
+12        A    I can't recall.  I can't recall as I sit 
+13   here.  
+14        Q    Like, for example, are you familiar with -- I 
+15   believe it's probably on your reliance list, the Gordon 
+16   publication about cosmetic talc?
+17        A    Yes.  Yes.  
+18        Q    And do you have a recollection of any 
+19   discussions at MAS in 2016 about, hey, you know, let's 
+20   look at this Gordon article and the results and how 
+21   that may impact the protocol in which you were working 
+22   on?
+23        A    No.  In fact, I don't -- I don't recall 
+24   seeing that until, I don't know, maybe 2018.  I'm just 
+25   guessing.  I don't recall seeing that.  And then, you 
+0080
+ 1   know, when I saw it, I was like, wow, there -- others 
+ 2   have done quite a bit on this.  I mean, that -- yeah, 
+ 3   that -- I don't recall any of that in the very 
+ 4   beginning, no.
+ 5        Q    And you talked about how you were 
+ 6   responsible, at least in part, for, you know, 
+ 7   researching new methods and other possibilities.  
+ 8             Do you have a recollection of what sorts of 
+ 9   research you did at the time, in 2016, to, you know, 
+10   figure out the best approach in this project?  
+11        A    No.  I mean, initially, as I say, it was 
+12   let's run the standard techniques and see what happens, 
+13   see what's here.  And then after that, it was like, 
+14   wow, you know, look at all this talc in the way here, 
+15   there's got to be a way to, you know, eliminate that.  
+16   It -- you know, has anybody done that, has it been 
+17   done, et cetera, et cetera, and then, you know, 
+18   progressed on to what we talked about earlier.  
+19        Q    Right.  
+20        A    So that was my recollection of it.
+21        Q    Okay.  And do you recall in that 2016 time 
+22   period whether you were aware, whether anybody at MAS 
+23   you talked to was aware of any kind of prior testing of 
+24   Johnson & Johnson talc specifically?
+25        A    I don't -- I don't recall that at all.  As I 
+0081
+ 1   was saying earlier on, to my knowledge, there wasn't 
+ 2   any.  It was asbestos-free.  It was always touted that 
+ 3   way.  And that was my only knowledge of it at the time.
+ 4        Q    Are you familiar at all with the QuanTEM?
+ 5        A    Yes.  
+ 6        Q    And do you know if they've done any testing 
+ 7   historically of Johnson & Johnson talc products?
+ 8        A    I can't recall it as I sit here.  They may 
+ 9   have.  I can't recall.  
+10        Q    Fair enough. 
+11             So the -- I want to switch gears just a 
+12   little bit, but still talk about MAS.  And when you 
+13   were last deposed by a Johnson & Johnson attorney in 
+14   that Casaretto case, you talked about having 
+15   recently -- in the beginning of December, having a 
+16   phone conversation, I believe a phone conversation, 
+17   with Dr. Longo.  Does that sound about right?  
+18        A    I mean, I don't know what I testified, and 
+19   I'd have to see what I said.
+20        Q    All right.  Well, I'll just tell you and see 
+21   if you remember. 
+22             You talked about having a conversation with 
+23   Dr. Longo in early December about Mike Mount and the 
+24   recent USP update.  Does that sound familiar?  
+25        A    Yeah, I think he -- Mr. Bailey had asked me 
+0082
+ 1   about that.
+ 2        Q    Okay.  And so am I correct that it was a 
+ 3   telephone conversation?
+ 4        A    With who?  
+ 5        Q    [Indiscernible.]
+ 6        A    I'm sorry, you broke up.
+ 7        Q    The early December conversation that 
+ 8   Mr. Bailey questioned you about with Dr. Longo about 
+ 9   Mike Mount and the USP update, was that a telephone 
+10   call with Dr. Longo?
+11        A    I think so, yes.
+12        Q    Now, I'm going to get back to that in a 
+13   second, but I'm just trying to get us up to date. 
+14             So early December 2020, have you had any 
+15   communications of any sort with Dr. Longo from that 
+16   point till today?  
+17        A    I think I may have talked to him one time.  
+18        Q    Okay.  Approximately when was that?
+19        A    Gosh, I think it was around the -- maybe a 
+20   little after the start of the new year, something like 
+21   that.  
+22        Q    Was that a telephone conversation?
+23        A    Yes.  
+24        Q    Approximately how long?
+25        A    Oh, gosh, I don't know.  I can't -- I don't 
+0083
+ 1   know.  More than 5 or 10 minutes probably.
+ 2        Q    All right, but less than 30 minutes?
+ 3        A    Sorry?  
+ 4        Q    Less than 30 minutes, though?
+ 5        A    Oh, I don't know.  I don't know.
+ 6        Q    All right.  So if you can't say, that's fine.  
+ 7   I'm trying to get an hour limit.  You said more than 5 
+ 8   or 10 minutes.  And if I said less than an hour, is 
+ 9   that something that you would agree to?
+10        A    I mean, no, it was -- it was a number of 
+11   minutes.  That's all I recall.
+12        Q    Okay.  
+13        A    I didn't look at the -- I didn't look at the 
+14   time.
+15        Q    Sure.  I understand.  
+16             And so what do you recall about what you guys 
+17   talked about?  
+18        A    I'm trying to remember.  Most of the time, we 
+19   talked just shop things, kinds of shop things.  I think 
+20   we -- we talked about COVID and that kind of thing and 
+21   some personal things with that.  So, you know, 
+22   that's -- that was some of the conversation.
+23        Q    I don't want to delve into any personal 
+24   things.  When you say "shop things," what kind of stuff 
+25   are you talking about?
+0084
+ 1        A    I think -- I can't recall, but it may have 
+ 2   been along the lines of the chrysotile testing.  So I 
+ 3   think I might have been -- again, I don't recall the 
+ 4   exact conversation, but that was -- that probably was 
+ 5   some of it.  
+ 6        Q    Okay.  Apart from discussing the -- well, 
+ 7   when you say "the chrysotile thing," are you talking 
+ 8   about the CSM analysis we were discussing earlier?
+ 9        A    Probably, yeah.  
+10        Q    All right.  Do you have any recollection of 
+11   substantively what kind of conversation you had about 
+12   the CSM process?
+13        A    No, not -- nothing that I can recall.  
+14   Nothing I can recall specifically.
+15        Q    Okay.  Anything, other than the CSM process, 
+16   that you recall relating to talc analysis from that 
+17   January 2021 call with Dr. Longo?
+18        A    I don't -- I don't recall.  
+19        Q    Okay.  And then going back to the December 
+20   conversation that you previously talked about with 
+21   Mr. Bailey, first, I guess, let's talk about the -- you 
+22   made reference, then, to -- you said USP update.  Do 
+23   you recall having that conversation with Dr. Longo 
+24   about that?
+25        A    I don't recall, no.
+0085
+ 1        Q    Okay.  Are you aware of the recent USP 
+ 2   stimuli that came out near the back half of last year?
+ 3        A    I know that the committee was working on the 
+ 4   update.  I don't think they've come out with a final on 
+ 5   it, to my knowledge, but I believe that that was 
+ 6   happening.
+ 7        Q    And so do you -- but you don't have any 
+ 8   recollection of talking with Dr. Longo about it in 
+ 9   December?
+10        A    No.  I don't recall that, talking about that.
+11        Q    Okay.  And you -- on your reference list, you 
+12   include the stimuli USP in 2010; is that right?
+13        A    Yes.  
+14        Q    And is the -- you also have USP for talc in 
+15   2011 that's also on your reference list, right?
+16        A    Yeah, and I think -- I think the revision of 
+17   the stimuli, I think that actually is 2014.  That might 
+18   be a typo on that.
+19        Q    Yeah, I was going to say -- 
+20        A    Yeah, it's 2014.  I noticed that the -- 
+21   that's what that should be.  That's a typo.
+22        Q    No problem.  And is the -- why are you 
+23   relying on the USP stimuli from -- I'll say 2014.  
+24        A    Well, the issues there had to do with the 
+25   original USP and their statement that talc should be 
+0086
+ 1   asbestos-free.  And so the USP was relying on test data 
+ 2   from x-ray diffraction, XRD, and infrared, and then 
+ 3   also PLM.  If there was a positive hit, then you would 
+ 4   use PLM.  
+ 5             So there was no mention of TEM, which is the 
+ 6   best method.  And so what they were doing was coming 
+ 7   back and reviewing the methods.  The committee that was 
+ 8   reviewing the process, FDA sort of charged them to do 
+ 9   that, and so they were looking at that.  
+10             And I think they came up with the -- one of 
+11   the conclusions was to eliminate the IR because it's 
+12   relatively useless and also that they should include 
+13   TEM or SEM, which I don't agree with SEM, but should be 
+14   TEM for sure.  
+15             And then XRD is very, very limited, so you 
+16   really shouldn't count on an XRD result.  You should at 
+17   least be doing PLM and then TEM when you're doing the 
+18   testing.  So that -- that's pretty much the overall 
+19   impetus of it.  
+20        Q    And do you find for that 2014 stimuli 
+21   that the USP panel was a reliable source of information 
+22   about talc testing?
+23        A    Well, I think that the panel itself had the 
+24   expertise to understand what the limitations were of 
+25   the existing technique.  So to review it and to improve 
+0087
+ 1   it was a great idea.  So I agreed with that.
+ 2        Q    Okay.  And is there any part -- as you sit 
+ 3   here today, any part of that 2014 stimuli that you 
+ 4   recall disagreeing with?
+ 5        A    Yeah, I mean, I disagreed with the continued 
+ 6   use of XRD, but, you know, I mean, it can be useful in 
+ 7   high concentrations.  I mean, you're not going to -- 
+ 8   you're not going to use it in industrial applications 
+ 9   because this is for cosmetic talc.  So we know what the 
+10   limitations are there.  And so, you know, that would 
+11   probably be, you know, one of the main disagreements I 
+12   could have with it.  
+13        Q    All right, so I'm going to -- give me one 
+14   second -- pull up Exhibit 6.  Let me share my screen. 
+15             And I know, Doctor, you said there's a little 
+16   bit of a delay, so just let me know once you're seeing 
+17   that on your screen.  
+18        A    Yeah, I see it now.  I'm going to go full 
+19   screen on this because that will help.
+20        Q    Sure, yeah.  And while you're doing that, 
+21   Doctor, I'm going to read the name of the document into 
+22   the record.  Exhibit 6 I'm marking the "Stimuli to 
+23   the Revision Process, Modernization of Asbestos Testing 
+24   in USP Talc."  The open for commenting as-of date is 
+25   September 16, 2020.  
+0088
+ 1             MS. DEAN:  I'm sorry to interrupt, but 
+ 2        before we start questioning on that, can you 
+ 3        put that document in chat so that we can 
+ 4        review it outside of where you're pointing us 
+ 5        to.  
+ 6             MR. EWALD:  Sure.  And I'm actually -- 
+ 7        been okay so far with the technology.  I've 
+ 8        not yet shared a document in chat.  I'm 
+ 9        trying to figure it out.  So I'm not sure I'm 
+10        going to actually ask him any questions about 
+11        the document depending on [indiscernible]. 
+12        Q    (By Mr. Ewald)  So let's start with this:  
+13   Doctor, now that you have seen this first page, not the 
+14   whole document, but does this look familiar to you?
+15        A    Yes.
+16             (Discussion off the record.)
+17             MR. EWALD:  Let's go off the record for 
+18        one second.  
+19             (Off the record.)
+20        Q    (By Mr. Ewald)  Doctor, when we left off, we 
+21   had just started discussing what I'm going to mark as 
+22   Exhibit 6, the September 2020 modernization stimuli 
+23   update.  And I believe right before we broke, you said 
+24   that you do recall seeing this.  
+25        A    Yes.  
+0089
+ 1        Q    Good.  And it's not a memory test, but I'm 
+ 2   trying to get a sense of what do you recall about, you 
+ 3   know, your review of this and any reaction you may have 
+ 4   had about it?
+ 5        A    I don't recall as I sit here.  Now, I did 
+ 6   respond to it.  There was a deadline for response to 
+ 7   it, so I did respond to that, but I would have to go 
+ 8   back and review what my response was.
+ 9        Q    Okay.  Do you have a general sense of the 
+10   nature of your response, like the topics that you 
+11   discussed?
+12        A    No.  Again, I can't recall.  I would have to 
+13   go back and look at what my response was.  I had -- one 
+14   thing that sort of stood out in my mind was I made a 
+15   submission and there were a couple of typos in there, 
+16   so I had to resubmit the thing again. 
+17             But they were trying to -- one of the things 
+18   that stood out was they were trying to recommend that 
+19   USP take off the "absence of asbestos" from the title.  
+20   And I didn't agree with that because essentially it's a 
+21   test for asbestos, and I didn't -- I didn't agree with 
+22   the way that they were framing that.  But then I had 
+23   some other things in there.  But, again, I would have 
+24   to go back and look at what I submitted.  
+25        Q    Okay.  Now, having seen this first page and 
+0090
+ 1   recalling that you submitted a response to it, does 
+ 2   this refresh your recollection of talking about this 
+ 3   USP update with Dr. Longo?
+ 4        A    No, because the only thing I recall was that 
+ 5   there was a deadline for a submission, and the only 
+ 6   thing I think that I had mentioned to him was whether 
+ 7   he had made a submission or not.  That was the only 
+ 8   thing that I can remember, if at all, from the 
+ 9   conversation, that he had met the deadline.  
+10        Q    What did he say?
+11        A    I don't know whether he made a submission or 
+12   not.
+13        Q    Okay.  Now, again, I can see it's not in 
+14   front of you, but I -- I'll move off that for now. 
+15             The testimony that you gave in the Casaretto 
+16   deposition said in your conversation with Dr. Longo, 
+17   you also talked about Mike Mount. 
+18             Do you have a recollection of talking with 
+19   Dr. Longo recently about Mike Mount?  
+20        A    The only thing that we talked about Mike 
+21   Mount, as I recall, was that -- because I didn't know 
+22   why Mr. Bailey was asking me those questions about 
+23   that, because I had been to the laboratory last year 
+24   and MAS had hired Mike Mount back.  He was working for, 
+25   I think, Northside Hospital group as a industrial 
+0091
+ 1   hygienist and safety for them.  And MAS had hired him 
+ 2   back to the lab, and then he was working on some of 
+ 3   the -- some of the projects there. 
+ 4             So I saw him -- when I visited the lab in the 
+ 5   summer or the fall -- I can't remember -- I saw him and 
+ 6   said hello because I hadn't seen him for a long time, 
+ 7   and we just had some small talk there about being back 
+ 8   at the lab and how much like old times it was in terms 
+ 9   of being back.  So that's pretty much what I recall.  
+10        Q    Okay.  So in talking with Mr. Mount, do you 
+11   have a sense of circumstances in which he came back to 
+12   work at MAS?
+13        A    No.  I didn't know -- I was -- I mean, I 
+14   think when I found out that he had been hired back, I 
+15   was going, oh, okay, maybe he wants to get back in the 
+16   laboratory.
+17        Q    All right.  But at any point in time, have 
+18   you had a conversation with Dr. Longo or anyone else at 
+19   MAS about why Mr. Mount was hired back in 2020?
+20        A    My only recollection was that it was just to 
+21   help with the projects in the same sort of way that he 
+22   had worked there at MAS before, as an industrial 
+23   hygienist.
+24        Q    Do you have an understanding that since you 
+25   saw him in the lab, "him" being Mike Mount, that he 
+0092
+ 1   subsequently left MAS again?  Do you know that?  
+ 2        A    Yes.  
+ 3        Q    Do you have an understanding of the 
+ 4   circumstances of his departure from MAS?
+ 5        A    No.  I think whatever -- they had finished 
+ 6   the projects or whatever he was working on.  So, I 
+ 7   mean, you have to ask Dr. Longo about that.
+ 8        Q    Okay.  And how did you find out that 
+ 9   Mr. Mount left MAS again?
+10        A    Oh, I don't recall.  I don't remember exactly 
+11   who told me that.  
+12        Q    You may have said this, and I apologize, but 
+13   when we started down this road talking about your 
+14   conversation with Dr. Longo about Mr. Mount, I wasn't 
+15   clear on what the nature of your conversation actually 
+16   was with Dr. Longo on that subject.  
+17        A    Well, Mr. Bailey had asked me about that, 
+18   Mike Mount, and I was -- I didn't know what he was 
+19   talking about.  So what I came to understand was that 
+20   he had -- because Mr. Bailey was asking me about a 
+21   report by Mike Mount on talc analysis and he didn't 
+22   show me the report, so I don't know what it was, but he 
+23   kept on about it.  And so I mentioned it to Dr. Longo, 
+24   I think, in our conversation and he said, "Oh, he was 
+25   talking about a project on a Colgate product" -- it 
+0093
+ 1   might have been Cashmere Bouquet -- and it was done 
+ 2   many years ago, and I think he said that Mike had 
+ 3   signed off on it and that they had located the report 
+ 4   or the file -- I can't remember what it was -- and that 
+ 5   that's what it was about and that they had actually 
+ 6   found asbestos in the product at that time.  
+ 7             So I don't know exactly what the time frame 
+ 8   was, but somehow Mr. Bailey thought I was -- I knew 
+ 9   about that, and I didn't.  So I asked -- because I told 
+10   him I hadn't -- and I've been asked questions about 
+11   that before too.  And so I didn't know -- I didn't know 
+12   anything about it, but then after I talked to 
+13   Dr. Longo, I understood.  
+14        Q    Okay.  You say you came to understand about 
+15   the prior testing. 
+16             Is it fair to say that anything you know 
+17   about the testing done by Mike Mount involving Cashmere 
+18   Bouquet came from that conversation with Dr. Longo?  
+19        A    Yes.  
+20        Q    And since that conversation with Dr. Longo 
+21   about Mike Mount's testing of Cashmere Bouquet, have 
+22   you learned any more information about Mike Mount?
+23        A    No.  
+24        Q    Have you been -- when was the last time that 
+25   you set foot back at MAS?
+0094
+ 1        A    That's a good question.  I can't recall the 
+ 2   last time I was over there.  It would have probably 
+ 3   been, I don't know, in the third or fourth quarter of 
+ 4   2020.  Because the COVID thing, you know, pretty much 
+ 5   wrecked everything.  So, you know, I wasn't going out 
+ 6   aside from, you know, getting groceries at the store 
+ 7   or, you know, just doing central things, and so I -- 
+ 8   that was part of it.  You know, I'm over 65 and I'm 
+ 9   trying to be careful.  So that's probably the last time 
+10   that I can recall.
+11        Q    You don't look a day over 45 to me, so --  
+12        A    Well, thank you.  I appreciate that.  But, 
+13   no, yeah, that COVID, it changed a lot of things.
+14        Q    Absolutely. 
+15             And so how does it -- I did note -- not 
+16   note -- I saw a reference somewhere to you being in MAS 
+17   in the middle of 2020 in connection with tissue 
+18   digestion.  Does that sound at all familiar?  
+19        A    I was there, yes, I believe so, for that and 
+20   also for heavy liquid separation.
+21        Q    Right.  
+22        A    So there were a couple of different projects.
+23        Q    So how does that work with respect to you 
+24   going back to MAS and doing work there?  Do you guys 
+25   have an agreement as to, you know -- I guess I'll just 
+0095
+ 1   ask you, is it -- what's the agreement with respect to 
+ 2   any type compensation or anything like that?
+ 3        A    Well, we don't have an agreement aside from 
+ 4   that I worked there for, you know, around three decades 
+ 5   and just knowing the folks and the protocols and the 
+ 6   procedures.  If I was to do an analysis, I might use 
+ 7   their laboratory, and I've been asked that question 
+ 8   before, but there are a number of labs in Atlanta that 
+ 9   I could use.  And I believe, you know, MAS is one of 
+10   the best asbestos analysis labs in the world.  So if I 
+11   was going to do that, I might use that laboratory.  But 
+12   there are other labs.  You know, MVA is in town.  I 
+13   could use them, or I could send a -- I could send a 
+14   project to others that are experts in the field, too, 
+15   that have labs.  And so that would be one of the 
+16   reasons why, just knowing the folks.
+17        Q    Yeah, sure. 
+18             And the last time you got deposed, I think 
+19   you had said you had not sent out any talc projects to 
+20   any lab at that time.  Is that still the case?  
+21        A    Yes.  
+22        Q    And so when you do work at MAS now, like you 
+23   did in the third or fourth quarter of last year, does 
+24   MAS charge you anything for using their space?
+25        A    Well, they would if I was doing something for 
+0096
+ 1   them -- for myself, if you will.  But in most cases, I 
+ 2   recommend the clients that I may be working with to 
+ 3   send the samples to MAS.
+ 4        Q    Okay.  
+ 5        A    And then they -- they would do that, and I 
+ 6   would go and oversee the project or whatever I was 
+ 7   asked to do.  So that's the way it works most of the 
+ 8   time.
+ 9        Q    I know you said, I believe, previously that 
+10   you reviewed a couple of at least transcripts of 
+11   Dr. Longo's testimony.  Is that fair?
+12        A    Yeah, long ago, and that was to get some 
+13   context of whatever the situation was, but it's been a 
+14   long time.
+15        Q    Okay, and that would be my main question, 
+16   which is have you recently reviewed any of Dr. Longo's 
+17   testimony?
+18        A    No.  
+19        Q    And apart from any conversations you directly 
+20   had with Dr. Longo, how, if at all, do you keep updated 
+21   on the work that he's doing in the cosmetic talc space?
+22        A    It depends.  If I'm working with a client 
+23   that is using MAS, then I would -- I would be checking 
+24   with that lab about the progress of the testing, and 
+25   that would pretty much be the extent of it.  Because 
+0097
+ 1   the work that's being done, my understanding of the 
+ 2   current work that's being done, still uses the same 
+ 3   technologies and techniques, and I think -- and MAS is 
+ 4   certified to do heavy liquid separation of talc 
+ 5   analysis.  So, you know, that's how I would -- that's 
+ 6   how I would keep up with things.
+ 7        Q    Okay.  And, for example, the -- you talked 
+ 8   earlier -- on your reliance list, the last three 
+ 9   entries are some testing done by MAS in September and 
+10   October of last year, right?
+11        A    Yes.  
+12        Q    How did you come to, I guess, find out that 
+13   that testing had occurred?
+14        A    Well, that was being done in conjunction with 
+15   a client project that I was working on, so that's how 
+16   that came about.  
+17        Q    Okay.  
+18             MR. EWALD:  The -- a couple more topics 
+19        for me.  I guess I'll pause for a second.  We 
+20        are now at 12:30.  I have two more topics, 
+21        and I wouldn't hazard a guess at how long it 
+22        will take, but, you know, I don't think it's 
+23        going to be more than an hour.  
+24             (Discussion off the record.)
+25        Q    (By Mr. Ewald)  So, Doctor, you made a brief 
+0098
+ 1   reference in some answer -- I can't remember what the 
+ 2   question was -- to NVLAP earlier.  
+ 3        A    Yes.  
+ 4        Q    You're presumably familiar with NVLAP, right?
+ 5        A    Yes.  
+ 6        Q    And when you were at MAS, did you have any 
+ 7   involvement with any NVLAP certification processes?
+ 8        A    I was involved with -- as the manager, was 
+ 9   involved with reviewing some of the quality control 
+10   data, but the main person that was involved in that was 
+11   the QC officer at MAS.
+12        Q    Okay.  So you say when you were the 
+13   manager -- I can pull out your CV, but what time frame 
+14   are you talking about in that period?
+15        A    Oh, gosh.  I think it was up to 2016.  I'm 
+16   going to look real quick.  
+17        Q    Sure.  
+18        A    Yeah, it says 2017 they had hired a new 
+19   manager for the lab, and then I moved into another role 
+20   after that.
+21        Q    Okay.  
+22             MR. EWALD:  And so let's go ahead and 
+23        mark, just as part of the record, as Exhibit 
+24        7 Dr. Rigler's CV that was provided to 
+25        us.  
+0099
+ 1        Q    (By Mr. Ewald)  Dr. Rigler, do you have a 
+ 2   sense of when this version of your CV was prepared?
+ 3        A    Oh, this one was probably in the last 60 days 
+ 4   or so.
+ 5        Q    Okay.  Let me pull up -- I have a question 
+ 6   relating to this.  That's not it.  Hold on one second. 
+ 7             Okay, let me show my screen.  
+ 8             Okay, Doctor, this is the CV, I believe, that 
+ 9   we were provided by counsel.  And if I scroll down to 
+10   the bottom, there's a Defendant's Exhibit number that 
+11   has a date of December 18, 2019.  
+12        A    Okay.  
+13        Q    Is this -- the copy you have in front of you, 
+14   is that the same exhibit number?
+15        A    No.  
+16        Q    Okay.  Does -- is there anything on this 
+17   first page that would suggest to you that what we're 
+18   looking at here is a different version than what you 
+19   have in front of you?
+20        A    Yes.  
+21        Q    Okay.  What is that?
+22        A    The address for Aspex has changed.  So the 
+23   newer one has that in it.  
+24             THE WITNESS:  I thought I'd sent one to 
+25        you, Jessica.  
+0100
+ 1             MS. DEAN:  You did.  I'm looking at 
+ 2        this, and you had sent, I think, an updated 
+ 3        one in the Cook case, which was just a week 
+ 4        before this.  
+ 5             THE WITNESS:  Right.  
+ 6             MS. DEAN:  That's what y'all were 
+ 7        supposed to be provided, but that's not what 
+ 8        this is.  
+ 9             MR. EWALD:  That's okay.  
+10             THE WITNESS:  Yeah, this is older.  
+11             MS. DEAN:  Let me grab that and put it 
+12        in the -- 
+13             MR. EWALD:  Sure.  Thanks.  Appreciate 
+14        it.  
+15        Q    (By Mr. Ewald)  Okay, so we'll go ahead and 
+16   leave a space for the updated CV as Exhibit 8, but we 
+17   don't need to talk about it any further right now.  
+18             So we've got a time frame from your CV of 
+19   basically 2013 to 2017, is when you would have been the 
+20   laboratory manager --
+21        A    Yes.  
+22        Q    -- fair?
+23        A    Yes.
+24        Q    Now, let me show you something -- before I 
+25   do, I'll go ahead and also upload it so Jessica can 
+0101
+ 1   take a look.  I just have new skills I want to show 
+ 2   off, so hold on. 
+ 3             Okay.  And how many questions I ask you about 
+ 4   this, Doctor, will depend on a couple of things, so 
+ 5   let's just kind of go step by step.  I'll share my 
+ 6   screen. 
+ 7             Okay, first let me know when it shows up on 
+ 8   your screen, Doctor.
+ 9        A    Okay, I see that.
+10        Q    Okay.  Now, this is -- we'll mark this as 
+11   Exhibit 9.  And it is entitled "NVLAP TEM Proficiency 
+12   Test 2008-1, Individual Laboratory Report."  And is 
+13   this something -- I guess, first of all, the type of 
+14   document, is this a type of document you've seen 
+15   before?  
+16        A    No, I can't say that I have.  
+17        Q    Okay.  Do you happen to know whether or not 
+18   that lab code there, 101235, is, in fact, MAS?
+19        A    I don't -- I don't recall.  I'd have to look 
+20   and see what the lab code was for MAS.
+21        Q    Okay.  And so if we're talking about the 2008 
+22   time frame, your CV talks about you being, during that 
+23   period of time, the "Senior Consulting Scientist, 
+24   Technical and Quality Director for Microbiologicals" at 
+25   MAS, right?
+0102
+ 1        A    Correct.  
+ 2        Q    So would you have had any, at that point in 
+ 3   time, responsibility or connection with NVLAP 
+ 4   proficiency tests like this?
+ 5        A    No, I don't think so.
+ 6        Q    Okay.  I understand you haven't seen this.  
+ 7   I'm just going to ask you about one thing on the last 
+ 8   page and see if it refreshes any kind of recollection.  
+ 9   If it does, I'll ask more questions.  If not, then, you 
+10   know, we'll see.  
+11             So if we go to the last page, and there is an 
+12   error description that refers to, "For Filter 3, the 
+13   lab reported five chrysotile structures on a blank 
+14   filter.  The chrysotile structures were verified by 
+15   RTI, and then 1.25 error points were assigned."
+16             Do you have any recollection of MAS having 
+17   found chrysotile structures on a blank filter in 
+18   connection with a NVLAP proficiency test?  
+19        A    No.  
+20        Q    Okay.
+21        A    Can you roll that and show me that it is from 
+22   MAS?  
+23        Q    Well, I'll represent to you that that is the 
+24   lab code for MAS.  I've shown it to Dr. Longo 
+25   personally and he --
+0103
+ 1        A    Okay.  
+ 2        Q    -- confirmed that is their lab code.  
+ 3        A    Okay.  
+ 4        Q    But, you know, I won't ask you any more 
+ 5   questions about it right now --
+ 6        A    Sure.
+ 7        Q    -- if you weren't involved with it.  
+ 8        A    Okay.  
+ 9        Q    I want to talk a little bit about -- let me 
+10   see here.  
+11             Okay, I'm going to share my screen again, and 
+12   we're going to mark this as -- hold on one second -- 
+13   Exhibit 10.  And it's entitled -- it doesn't really 
+14   have a title.  It has a chart and "Fibers/cc in Air 
+15   from Talc."  It's just a one-page document. 
+16             Is this something that you've seen before, 
+17   Dr. Rigler?  
+18        A    Yes. 
+19        Q    Okay.  And what do you recognize this to be?
+20        A    That was a plot of the concentration of 
+21   asbestos structures, fibers per cc, in air versus, I 
+22   believe, grams of talc, I think something like that.  I 
+23   don't know.  I'd have to look at the -- can you roll it 
+24   down a little bit more?  
+25        Q    Sure.  
+0104
+ 1        A    Yeah, fibers per gram, fibers per cc there.  
+ 2   Yes.  
+ 3        Q    Okay.  And so did you play a role in creating 
+ 4   this one-page document and the chart that's in it?
+ 5        A    Yes.  
+ 6        Q    And what was your role?
+ 7        A    Oh, I did the plot of the data.
+ 8        Q    Okay.  And is this something that you worked 
+ 9   on with Dr. Longo?
+10        A    Yes.  
+11        Q    Okay.  And this is a project -- this specific 
+12   one, am I correct, that the work started on this after 
+13   you had already left MAS, right?
+14        A    No.  I believe I was at MAS when this 
+15   started.
+16        Q    All right, so why don't you just tell me what 
+17   your recollection is about, you know, how this started 
+18   and the circumstances, and we'll go from there.  
+19        A    As I recall, the idea was to plot the -- 
+20   based on the exposure studies that were done at MAS, 
+21   the amount of asbestos fibers per cc of air from the 
+22   tests that were done and then plot them, and this is a 
+23   plot on a log-log scale, and extrapolate that, that 
+24   kind of thing.  So this was an attempt to do that.  
+25        Q    All right.  And what do you recall about 
+0105
+ 1   what, if any, direction you received from Dr. Longo 
+ 2   about how to create this chart, this graph?
+ 3        A    Well, the -- I don't recall specific 
+ 4   instructions because I -- I knew that the data could be 
+ 5   plotted in this manner, so generated the plot and then 
+ 6   we looked at it.  
+ 7        Q    Okay.  Did you try any other approaches to 
+ 8   plotting the data than is what -- what is reflected 
+ 9   here in Exhibit 10?
+10        A    I can't recall what was done with that.  I 
+11   think I might have plotted -- not a log-linear plot, 
+12   but maybe another kind of plot, but it -- the data -- 
+13   without this kind of a log plot, you can't get 
+14   all the -- you can't get all the data on the graph.  So 
+15   this is what I -- I was able to do with this, so that's 
+16   the way I plotted it.
+17        Q    Do you recall whether or not any other plot 
+18   that you tried in connection with this project, whether 
+19   you still have -- maintain copies of those plots?
+20        A    No.  
+21        Q    Not the best question because I said "do you 
+22   recall."  So is that no, you don't recall, or no, you 
+23   don't have them still?
+24        A    Both.
+25        Q    Okay.  Both?
+0106
+ 1        A    No, I don't recall and, no, I don't have any.  
+ 2        Q    Okay.  
+ 3        A    I recall this one.
+ 4        Q    Okay.  Do you recall -- I can refresh your 
+ 5   recollection if we need to -- do you recall doing -- 
+ 6   plotting figures for a graph in the Prop 65 reports 
+ 7   that MAS did while you were still there?  Do you recall 
+ 8   doing that?
+ 9        A    Yes.
+10        Q    Okay.  And in your mind, is this -- what 
+11   we're looking at here with Exhibit 10, is this all the 
+12   same type of project, or is this, what we're looking at 
+13   in Exhibit 10, a different project than what you were 
+14   doing with the Prop 65 plots?
+15        A    As I recall, it's the same.
+16        Q    Okay.  And those -- do you recall that those 
+17   initial graphs that were plotted for the Prop 65 
+18   included a power trendline as opposed to this linear 
+19   regression?  Does that sound familiar?
+20        A    It may have.  It may have been.
+21        Q    Okay.  And do you have any personal expertise 
+22   in determining whether or not -- determining what is 
+23   the appropriate approach to graphing these kind of 
+24   figures?
+25             MS. DEAN:  Objection, form.  
+0107
+ 1             THE WITNESS:  This approach is fine.  
+ 2        This is an appropriate approach.  So the -- I 
+ 3        mean, the idea here is to come to a zero -- 
+ 4        zero point.  And so some of the plots don't 
+ 5        do that because -- because of the way that 
+ 6        they can skew the data, if you will.  So in a 
+ 7        classic sense, you want to -- you want to use 
+ 8        a linear plot, in my opinion, and that's why 
+ 9        I chose this.  
+10        Q    (By Mr. Ewald)  When you say "skew the data," 
+11   what do you mean by that in this context?
+12        A    Well, yeah, it will -- it can make the 
+13   data -- I mean, ultimately you come to zero 
+14   fibers per cc air and zero grams of talc or in 
+15   whatever -- you should ultimately come to that in 
+16   reality.  That's what should happen.  
+17             So if you plot it in another way, you may get 
+18   the curve to give you misleading data.  So the way that 
+19   you plot it, you've got to be careful.  And so I chose 
+20   a classic way to plot this on a linear scale, and 
+21   that's -- that's -- that, in my opinion, is the best 
+22   way to do it.  
+23        Q    Okay.  Are you familiar with a Dr. Zach 
+24   Russell?
+25        A    Yes.  
+0108
+ 1        Q    And who is that?
+ 2        A    Dr. Russell is a physicist, I believe, and he 
+ 3   has a company that was developing some technologies in 
+ 4   conjunction with MAS.
+ 5        Q    And have you -- do you have an understanding 
+ 6   as to whether or not Dr. Russell was involved at all 
+ 7   working with MAS on this linear regression analysis 
+ 8   that we're seeing in Exhibit 10?
+ 9        A    I don't know the specifics on any of that.
+10        Q    Fair to say you have not spoken with 
+11   Dr. Russell in connection with the work on this linear 
+12   regression analysis?
+13        A    I have not, that I can recall.
+14        Q    And do you recall Dr. Longo ever talking to 
+15   you about working with Dr. Russell on this project?
+16        A    I remember -- I do remember him mentioning 
+17   that.  But as far as I know, what the specifics were, I 
+18   don't, as I can recall as I sit here.
+19        Q    Sure. 
+20             And do you remember anything that Dr. Longo 
+21   said about what role Dr. Russell was playing?  
+22        A    No.  
+23        Q    Okay.  Now, I believe I talked to Dr. Longo 
+24   about this, and he indicated that you guys had had a 
+25   conversation about certain typos and errors that needed 
+0109
+ 1   to be corrected.  Does that sound familiar to you as 
+ 2   what happened?
+ 3             MS. DEAN:  Form.  
+ 4             THE WITNESS:  No, that's -- I don't know 
+ 5        what that would be about.  
+ 6        Q    (By Mr. Ewald)  Okay, so in your mind, where 
+ 7   does this project stand?  I don't want to say "this 
+ 8   project," but what's reflected in Exhibit 10?
+ 9        A    I don't know.  I have no idea where it stands 
+10   at this point.
+11        Q    Okay.  And so as far as you're aware, is this 
+12   project we're looking at on Exhibit 10 the last time 
+13   that you are aware of anything in connection with this 
+14   project?
+15        A    To my recollection, as I sit here, yes.
+16        Q    Sure. 
+17             And then I just want to -- do you have an 
+18   understanding -- here we have three data points that is 
+19   used.  5.82 is listed, 1.77, and 0.12, right?  
+20        A    Yes.  
+21        Q    Do you have an understanding as to what each 
+22   of those data points refer to?
+23        A    They refer to the fiber concentration per cc, 
+24   and they're plotted, excuse me, against the amount of 
+25   fibers per gram of talc that were found in that product 
+0110
+ 1   that was used in the testing.
+ 2        Q    And am I correct that each of those three 
+ 3   numbers refers to a different MAS exposure study?
+ 4        A    I believe so, yes.  
+ 5        Q    And so do you have a sense of -- that the 
+ 6   highest number there refers to the below-the-waist 
+ 7   test?
+ 8        A    That's possible.  I think -- does it say at 
+ 9   the top, if you roll it up?  
+10        Q    It has the fibers per gram -- oh, here we go.  
+11   Yes.  I was not trying to hide it from you.  I didn't 
+12   see it up there.
+13        A    No, no, I know.  I thought I saw it, but I 
+14   wanted to see it again.
+15        Q    And so up at the top, it says, "Asbestos 
+16   fibers after 3 MAS chamber runs, Below the Waist, Baby 
+17   Study 1, and Baby Study 2," right?
+18        A    Yes.  
+19        Q    And am I correct that you are -- that your 
+20   name appears in connection with the results of Below 
+21   the Waist and Baby Study 1?  Right?
+22        A    Yes.  
+23        Q    Were you involved at all in what's referred 
+24   to as Baby Study 2?
+25        A    I probably was, on some edge of it, but as I 
+0111
+ 1   say, I can't recall much as I sit here.  
+ 2        Q    And I noticed that -- unless I missed it 
+ 3   again, that the Baby Diapering 2 study is not listed on 
+ 4   your reference list.  Is that accurate?
+ 5        A    Yes.  I believe that that is accurate, yes.
+ 6        Q    And do you have -- 
+ 7        A    I'm not sure -- go ahead.
+ 8        Q    Go ahead.  Please go ahead. 
+ 9        A    No, that's all right.
+10        Q    Okay.  I was going to ask, do you have an 
+11   understanding as to -- well, let me ask more simply and 
+12   directly.  Why didn't you include the Baby Diapering 2 
+13   study on your reference list?
+14        A    I don't -- I don't believe it was completed 
+15   in that I had a completed report for that.  So that's 
+16   the main reason.  
+17        Q    And what is your understanding as to what 
+18   remains to be completed, if anything, for the Baby 
+19   Diapering 2 study?
+20        A    I don't know at this time.  You'd have to ask 
+21   Dr. Longo.  
+22        Q    I made reference a little bit earlier to your 
+23   role in the Prop 65 initial report and the supplemental 
+24   report, right?
+25        A    Yes.  
+0112
+ 1        Q    I also didn't see those on your reliance 
+ 2   list.  Am I correct that those aren't on there?  
+ 3        A    Prop 65 -- what was the other one?  
+ 4        Q    The supplemental report for Prop 65.  
+ 5        A    Yeah.
+ 6        Q    Those two reports.  
+ 7        A    Yeah, I don't believe that they're on there.  
+ 8        Q    Okay.  And why did you not include either of 
+ 9   those reports on your reliance list?
+10        A    I don't know.  It's the first time I thought 
+11   about it, that you mentioned it.
+12        Q    Do you have any reason as to why they 
+13   shouldn't be included on your list?
+14        A    I think that at the time -- there was a 
+15   question as far as the client that was involved in that 
+16   project, and it wasn't -- I don't think it was 
+17   finished, and there were some other things, some other 
+18   parameters which I didn't know, you'd have to ask 
+19   Dr. Longo about.  
+20        Q    Were you involved, to your recollection, at 
+21   all in any studies done at MAS relating to potential 
+22   exposure to asbestos from certain General Electric 
+23   products?
+24        A    I don't recall as I sit here.  
+25        Q    Okay.  Let me see if this jogs your memory.  
+0113
+ 1   One second, Doctor.  
+ 2             MR. EWALD:  Okay, I guess we're going to 
+ 3        mark this as Exhibit 11.  
+ 4        Q    (By Mr. Ewald)  I was going to ask you -- 
+ 5   this is the "Asbestos Exposure Assessment During 
+ 6   Removal of Residential Electrical Distribution Panels" 
+ 7   prepared for General Electric Corporation by -- listed 
+ 8   there is Dr. Longo and Mr. Mount, and the report is 
+ 9   dated January 21st, 2015.  
+10             Does this ring any bell as something you were 
+11   involved in?  
+12             MS. DEAN:  And, sorry, can I ask that 
+13        that be put in chat?  And I meant to 
+14        interrupt you a little bit ago to say his 
+15        updated CV --
+16             MR. EWALD:  Okay.  Thank you.  
+17             MS. DEAN:  -- is in there as well.  
+18             MR. EWALD:  Great.  
+19        Q    (By Mr. Ewald)  Doctor, does this seem 
+20   familiar at all?
+21        A    I remember somewhat around the project, you 
+22   know, as far as the project itself, breaker panel 
+23   project, it looks like.
+24        Q    And were you involved at all, to your 
+25   recollection, in the work on the project?
+0114
+ 1        A    I don't -- I don't recall that.  
+ 2        Q    Okay.  
+ 3        A    I do recall the -- I do recall the material, 
+ 4   you know, that was brought in at MAS.  
+ 5        Q    Okay.  
+ 6             MR. EWALD:  I think what I'm going to do 
+ 7        is pass it to Ed, look over my notes while 
+ 8        he's asking questions.  You guys can also 
+ 9        then decide if you want to take a lunch 
+10        break.  I'm not sure how much he has.  So for 
+11        now, at least, Dr. Rigler, I'm going to pass 
+12        the witness and thank you for your time.  
+13             THE WITNESS:  Thank you.  
+14             (Discussion off the record.)
+15             MS. DEAN:  So I took this from the Cook 
+16        report, which is what I had intended to send 
+17        to everyone, Dr. Rigler, but does this look 
+18        like an updated version?  And let me know if 
+19        I can scroll somewhere.  
+20             THE WITNESS:  Yeah, scroll to the last 
+21        page.  
+22             Yes.  
+23             MS. DEAN:  Okay.  
+24        Q    (By Mr. Ewald)  And how do you -- sorry, one 
+25   question would be how do you know, Doctor -- what were 
+0115
+ 1   you looking for on the last page?  
+ 2        A    The editorial board member.
+ 3        Q    For 2020 in The Journal of Scientific 
+ 4   Practice and Integrity?
+ 5        A    Yes.  
+ 6             MR. EWALD:  Thanks for that, Jessica.  
+ 7        Like I said, I'll go ahead and pass it to Ed 
+ 8        and see what you guys want to do.  
+ 9             MR. SLAUGHTER:  Hello, Doctor, my name 
+10        is Ed Slaughter.  We've never met.  Nice to 
+11        meet you virtually.  
+12             THE WITNESS:  You too. 
+13             MR. SLAUGHTER:  If at some point you do 
+14        want to take a break, just raise your hand 
+15        and we'll stop.  I'm going to try to move 
+16        expeditiously.  
+17             THE WITNESS:  Sure. 
+18                         EXAMINATION
+19   BY MR. SLAUGHTER:  
+20        Q    Doctor, I've received your reliance list that 
+21   we've already talked about and marked here today, and 
+22   I've received two sets of Colgate interrogatory 
+23   responses and a deposition of our corporate 
+24   representative.  
+25        A    Yes.
+0116
+ 1        Q    Are there any other documents of any sort 
+ 2   that you rely on for your testimony in this case?
+ 3             MS. DEAN:  Overly broad.  
+ 4             THE WITNESS:  I think that you have 
+ 5        everything.  There was -- let me think if 
+ 6        there was anything else. 
+ 7             No, I think that's what we have.  
+ 8             MR. SLAUGHTER:  Okay.  Thanks.  
+ 9        Q    (By Mr. Slaughter)  So you have not included 
+10   any Cashmere Bouquet MAS studies in your reliance list, 
+11   correct?
+12        A    I believe there are one or two on there.  
+13        Q    So I don't see any MAS Cashmere Bouquet 
+14   studies at all.  Can you get your list and let's look 
+15   at it together?
+16        A    Yeah, I thought I had two.  There should be 
+17   two of them on there.  Hold on.  Let me search this. 
+18             No.  There should be two on here, though.  I 
+19   meant to include those.  
+20        Q    Okay, so those aren't on your reliance list, 
+21   so I'm not prepared to ask you questions about them 
+22   today, but is it your intention to rely on Cashmere 
+23   Bouquet studies done at MAS in this case?
+24        A    Yes.  
+25        Q    Okay, so -- 
+0117
+ 1        A    I apologize.  They should have been on the 
+ 2   list.  I thought they were.
+ 3        Q    I understand.  
+ 4             MR. SLAUGHTER:  So, you know, I guess I 
+ 5        can do some of the deposition today, Jessica, 
+ 6        and we can reconvene to do that, or if you 
+ 7        want to let everybody else go, I can just do 
+ 8        another day.  
+ 9             THE WITNESS:  I know I've been asked 
+10        about them numerous times.  
+11             MR. SLAUGHTER:  Not by me.  
+12             THE WITNESS:  True. 
+13             MS. DEAN:  So, yeah, what I would 
+14        suggest is -- I mean, it's up to you.  I want 
+15        to get done everything that can be done 
+16        today.  And given that these have been 
+17        acquired by your client, through numerous 
+18        lawyers, of this witness and of Longo and 
+19        that there's probably other people that could 
+20        ask questions so that if you want to organize 
+21        your thought, I'm not -- I'm not seeing a 
+22        need to redepose this witness at a later 
+23        time.  I'm not saying we can't discuss that 
+24        more, but we're talking about two discrete 
+25        studies that are well known in this 
+0118
+ 1        litigation that I can, if they're for some 
+ 2        reason not at your fingertips, put in the 
+ 3        chat.  So I would like to do everything we 
+ 4        can to get done today.  
+ 5             MR. SLAUGHTER:  Sure.  Well, let me --
+ 6             THE  WITNESS:  Mr. Molargik [phonetic] 
+ 7        has deposed me extensively on those 
+ 8        reports.  
+ 9             MR. SLAUGHTER:  Yes, sir.  So let me 
+10        suggest this.  I don't know how much other 
+11        people have, but why don't I let everybody 
+12        else do what they want to do today, and I 
+13        will attempt to study up a little bit and see 
+14        if I can be ready on that issue by the time 
+15        my turn comes.  And if I can't, then we can 
+16        talk about what to do then.  Is that fair?  
+17             MS. DEAN:  That's great.  And I think 
+18        you have my cell phone number, but there's 
+19        also -- there's also other ways that we might 
+20        be able to deal with this that don't require 
+21        finding new dates if you feel like you can't 
+22        get this done today, but just -- maybe we can 
+23        correspond about that while other people are 
+24        asking -- 
+25             MR. SLAUGHTER:  Okay.  Sure.  Thanks. 
+0119
+ 1             So I'll pass for now, and y'all do what 
+ 2        y'all need to do and I'll go look for the 
+ 3        studies.  
+ 4             MR. RADCLIFFE:  This is Tom Radcliffe.  
+ 5        I do not -- based on Ms. Dean's statement, I 
+ 6        guess stipulation, at the beginning of the 
+ 7        deposition, I do not have any questions for 
+ 8        this witness.  
+ 9             MR. HARRISON:  Jessica?  
+10             MS. DEAN:  Yes, sir.  
+11             MR. HARRISON:  Hi.  It's Ron Harrison.  
+12             MS. DEAN:  How are you? 
+13             MR. HARRISON:  How are you?  I'm fine.  
+14        Thank you. 
+15             And, Dr. Rigler, we have not met before. 
+16             THE WITNESS:  Yes, sir. 
+17             MR. HARRISON:  It's nice to meet you.  
+18             THE WITNESS:  You too. 
+19             MR. HARRISON:  But I don't have any 
+20        questions, I think I don't for you.  I need 
+21        to ask Jessica to be sure that I'm clear 
+22        about what she said in the beginning.  And I 
+23        think I am, Jessica, and I apologize for even 
+24        having to go back over it.  But as I 
+25        understand it, in having looked at the 
+0120
+ 1        material we received for Dr. Rigler, am I 
+ 2        correct that he is not being offered and will 
+ 3        not testify concerning friction products, 
+ 4        that he is just going to be limited to 
+ 5        talc-related products?  
+ 6             MS. DEAN:  Yes.  And the only 
+ 7        clarification I want to make on that is, for 
+ 8        instance, if we resolve with all the friction 
+ 9        people, I wouldn't call Dr. Rigler at all.  
+10        However, there are some of the things that he 
+11        testifies that have implications for broader 
+12        issues.  The example I would think of for 
+13        friction is the fact that you can see things 
+14        under 5 microns if you use TEM.  That, you 
+15        know, when you look at -- when you look at 
+16        friction literature, the fact that a lot of 
+17        the blowout stuff is under 5 microns, you 
+18        know, I guess tangentially he's going to say 
+19        something that I don't even think is 
+20        disputed, but that matters, not just for talc 
+21        litigation, but he is not going to get into 
+22        any friction studies, whether it be IH, 
+23        epidemiology, animal studies, material 
+24        scientists.  He's not touching that area for 
+25        anything outside of cosmetic talc.  I hope 
+0121
+ 1        that makes sense.  
+ 2             MR. HARRISON:  It does.  And to the 
+ 3        extent that he might, might, testify about 
+ 4        that, it would not be product-specific, 
+ 5        brand-specific, nothing like that, correct?  
+ 6             MS. DEAN:  Correct.  Correct.  It would 
+ 7        be just general concepts of what different 
+ 8        tools, for instance, can do or what asbestos 
+ 9        means and what testing protocols work that 
+10        apply broadly.  But, no, there would be no 
+11        mention of Bendix versus Abex or anybody like 
+12        that.  
+13             MR. HARRISON:  Okay.  All right, and 
+14        if -- well, I can talk to you about this 
+15        later, but I know the doctor has given a 
+16        number of depositions, so we'll obtain one of 
+17        those, and I think I can go over -- just go 
+18        over what you've just described.  
+19             MS. DEAN:  [Indiscernible] and want to 
+20        email or text me in the meantime so that I 
+21        can put further assurances, I'm happy to do 
+22        that.  
+23             MR. HARRISON:  I appreciate it.  That's 
+24        all I need.  
+25             Doctor, nice to meet you, but I'm not 
+0122
+ 1        going to have any questions.  
+ 2             THE WITNESS:  You too, sir.  
+ 3             MR. HARRISON:  Thank you.  
+ 4             MR. GREENE:  Jessica, this is Kevin 
+ 5        Greene.  Just a follow-up on what Ron just 
+ 6        asked about.  There was a reference in the 
+ 7        disclosure to substitutes.  I take it from 
+ 8        what's been said that Dr. Rigler is not going 
+ 9        to offer any testimony about substitutes 
+10        related to brakes.  Is that fair?  
+11             MS. DEAN:  Yes.  
+12             MR. GREENE:  Thanks very much. 
+13             With that, I don't have any questions 
+14        for you either, Dr. Rigler.  Thanks.  
+15             THE WITNESS:  Thank you.  
+16             MS. DEAN:  Rarely get a one-word answer 
+17        from lawyers, so I was very impressed.  
+18             MS. HILL:  Jessica, Theresa Hill.  How 
+19        are you?  
+20             MS. DEAN:  Very good.  Good to -- I saw 
+21        you for half a second in the beginning, 
+22        and -- 
+23             MS. HILL:  I know, and then I turned off 
+24        my camera quickly.  
+25             MS. DEAN:  Yes. 
+0123
+ 1             MS HILL:  Based on what's come out so 
+ 2        far, the reliance list and what you sent 
+ 3        around, I don't have any questions.  
+ 4             MS. DEAN:  Great.  
+ 5             MS. HILL:  But I'll listen if Colgate 
+ 6        comes back on and we'll finish up here.  
+ 7             And thanks, Dr. Rigler.  
+ 8             THE WITNESS:  You're welcome.  Thank you 
+ 9        too.  
+10             MS. DEAN:  And I know that Ed is pulling 
+11        the two MAS studies we were talking about.  
+12        Is it helpful to you, Theresa, or anyone else 
+13        for me to also put those in chat so that 
+14        everybody has that?  
+15             MS. HILL:  We can see what Ed wants to 
+16        do with those.  
+17             MS. DEAN:  Okay.  Okay. 
+18             MR. RADCLIFFE:  I'd like to see them, 
+19        Jessica.  If you wouldn't mind putting them 
+20        in chat, that would be great.  
+21             MR. SLAUGHTER:  So are we down to just 
+22        me left now?  
+23             MS. DEAN:  I'm assuming by the silence, 
+24        it is so, but I'm not sure.  
+25             MR. SLAUGHTER:  That's what I thought.  
+0124
+ 1        So perhaps if you can tell me, describe the 
+ 2        studies with specificity, it will help me to 
+ 3        find them and I'll make sure I have the right 
+ 4        ones.  My suggestion would be let's take an 
+ 5        hour lunch, let me study, come back, and I'll 
+ 6        see if I can be ready.  I think I can do that 
+ 7        in an hour.  Does that work for everybody?  
+ 8             THE WITNESS:  Sure.  
+ 9             MS. DEAN:  I think that's very 
+10        reasonable.  Thank you.  
+11             (Lunch recess taken.)
+12             MS. DEAN:  So Dr. Rigler quite candidly 
+13        admitted that there were two Colgate-specific 
+14        studies that he intended to rely on that he 
+15        believed were on his list but were not.  
+16        Mr. Slaughter asked for some time to study 
+17        those at a later point, in which we were not 
+18        excited about.  
+19             Over the lunch break, we talked and one 
+20        of the biggest concerns on our end is just 
+21        when the deadline for expert discovery is in 
+22        this case and all of the different things 
+23        that have to happen in between, and 
+24        Mr. Slaughter offered to do the follow-up 
+25        deposition at any point in time between now 
+0125
+ 1        and three weeks of trial, which kind of 
+ 2        alleviated our concern and then, as a result, 
+ 3        I think, the time pressure for him to review 
+ 4        those documents. 
+ 5             And so if there is no objection by 
+ 6        anyone else to that agreement, Plaintiff is 
+ 7        fine to allow Colgate to kind of reopen this 
+ 8        deposition to do their examination at some 
+ 9        point in time in the future that we all work 
+10        out.  But I just wanted to make sure that 
+11        that was both on the record and that I 
+12        understood that correctly from Mr. Slaughter 
+13        and if anybody else had any objections to us 
+14        working this out that way.  
+15             MR. SLAUGHTER:  Yeah, so -- this is Ed, 
+16        and I'm in agreement with that.  I've 
+17        received -- I think everybody has received 
+18        now the two MAS studies that Dr. Rigler wants 
+19        to rely on.  I would just ask that he not add 
+20        anything else.  We've got those now, and with 
+21        that agreement, I'm happy to reopen this 
+22        later when we get closer to trial.  
+23             MR. RADCLIFFE:  This is Tom Radcliffe.  
+24        I do not have an objection as long as there 
+25        will be no changes to the subject matter of 
+0126
+ 1        Dr. Rigler's testimony beyond what we've just 
+ 2        stated today, beyond what you've described, 
+ 3        Jessica.  
+ 4             MS. DEAN:  And let me just say if there 
+ 5        were any additions to the reliance list or 
+ 6        changes at all, then clearly everyone's 
+ 7        nonobjection to the solution now might 
+ 8        change.  And so, you know, if something in 
+ 9        five months gets published that's crazy 
+10        important, I might try to say it makes sense 
+11        to reopen discovery.  And I don't like to 
+12        limit things in the abstract, but I want to 
+13        be really clear, if we ever change the scope 
+14        of what he was talking about or added 
+15        anything outside of the documents we 
+16        discussed today, that this would not hold 
+17        back anyone from saying, "I think it's 
+18        untimely and I want to talk to him again." 
+19             The only thing I'm seeking to make sure 
+20        we're okay on today is that if we agree to 
+21        work with Colgate to allow their examination 
+22        to happen later based on what we have already 
+23        identified either in his reference list or 
+24        today, which includes those extra studies, 
+25        that no one has an objection to that.  I hope 
+0127
+ 1        that helps.         
+ 2             MR. HARRISON:  This is Ron.  I don't 
+ 3        object on the same basis as someone else said 
+ 4        earlier on.  
+ 5             MS. HILL:  This is Theresa.  No 
+ 6        objections subject to those said previously 
+ 7        subject to the conditions explained by 
+ 8        defense counsel and you. 
+ 9             MR. EWALD:  And same for Johnson & 
+10        Johnson.  
+11             MS. DALLMAN:  Same for Honeywell.  
+12             MS. DEAN:  If anybody has an objection, 
+13        instead of going through everybody, can you 
+14        let us know now? 
+15             And then I'm not sure if we gave 
+16        everyone a time to ask questions.  I think 
+17        so, because right before Mr. Slaughter was 
+18        about to start asking questions, we both were 
+19        making sure there wasn't anybody else, but 
+20        just -- does anybody else have any questions 
+21        that they wanted to ask today?  
+22             If that's the case, I have one topic 
+23        that I want to follow up based on some 
+24        questions by Johnson & Johnson that I hope 
+25        will be discrete, but I want to make sure I'm 
+0128
+ 1        not jumping in on anybody.  
+ 2                         EXAMINATION
+ 3   BY MS. DEAN:  
+ 4        Q    Okay, Dr. Rigler, can you hear me okay?
+ 5        A    Yes.  Can you hear me?  
+ 6        Q    Yes. 
+ 7             You were asked some questions about whether 
+ 8   you would say it is more likely than not that a 
+ 9   particular bottle of Johnson & Johnson baby powder 
+10   contained asbestos if it was sourced from Vermont or 
+11   Italian earlier this morning by counsel for Johnson & 
+12   Johnson.  Do you broadly remember being asked that?  
+13        A    Yes.
+14        Q    And when you indicated yes and you were asked 
+15   the reasons, do you recall talking about the testing 
+16   done by MAS that you were involved in along with 
+17   earlier testing in the '70s, '80s, and '90s?
+18        A    Yes.
+19        Q    The only thing I want to clarify is, are 
+20   those the only reasons that you hold the opinion within 
+21   a reasonable degree of scientific certainty that talc 
+22   from Italian or Vermont sources contain asbestos, or 
+23   are there other things that you'd consider?
+24        A    Well, there would be other things that I 
+25   would consider based on the data that I have and any 
+0129
+ 1   additional data that I was -- acquired, but that would 
+ 2   be -- that would be possible that there could be other 
+ 3   things, yes.  
+ 4        Q    I just want to ask about some things broadly. 
+ 5             Have you seen and relied on geological 
+ 6   information that indicates Italian and Vermont ore 
+ 7   contain asbestos?  
+ 8        A    Yes.
+ 9        Q    Have you seen information from Johnson & 
+10   Johnson that efforts to remove asbestos from the ore 
+11   failed, that they tried to do things like flotation or 
+12   use boric acid and other things to remove it, but it 
+13   didn't work?
+14        A    Yes.
+15             MR. EWALD:  Objection to form.  
+16        Q    (By Ms. Dean)  Have you seen information that 
+17   there are tests that were done from other labs that 
+18   didn't find asbestos relating to baby powder from 
+19   Vermont and Italian?
+20        A    Well, in, I believe, all of those cases, they 
+21   were labeled as nondetects, so they would have been 
+22   detection-limited.  
+23        Q    That was kind of my next question.  Are you 
+24   familiar with the limitations of the different testing 
+25   that has been done on other samples of Johnson & 
+0130
+ 1   Johnson baby powder from Vermont or Italian sources and 
+ 2   talked about that in the past when you've been deposed?  
+ 3        A    Yes.  Yes, I have.  
+ 4        Q    Are you familiar and have you discussed in 
+ 5   the past tissue digestion studies of individuals who 
+ 6   said that they used cosmetic talc, and then they looked 
+ 7   at what was found in their tissue matching the -- both 
+ 8   the talc and the asbestos coal minerals that are found 
+ 9   in talc in their lungs?
+10        A    Yes, I've seen that and also in ovarian 
+11   tissue and mesenteric tissue too.
+12        Q    I am not meaning to discuss all of these 
+13   issues, but I just -- I ask those examples to say, when 
+14   you reached the conclusion as a scientist about the 
+15   question about whether an individual bottle that came 
+16   from Vermont or Italian sources likely contained 
+17   asbestos, are you considering all of those different 
+18   things that you studied before you came here today to 
+19   talk to us?
+20        A    Yes.  
+21        Q    Okay.  
+22             MS. DEAN:  That's all I have.  Thank 
+23        you.  
+24             THE WITNESS:  You're welcome.  
+25             MR. EWALD:  I don't have anything.  
+0131
+ 1             MS. DEAN:  That might very well mean 
+ 2        some people have some follow-ups. 
+ 3             Okay, then I want to say on the record I 
+ 4        appreciate everyone's willingness to work 
+ 5        with us today -- I know there was a half a 
+ 6        dozen things that you got either during the 
+ 7        deposition or within two days before it -- 
+ 8        and Mr. Slaughter for working with us to 
+ 9        figure out a solution.  I appreciate it a 
+10        lot.  
+11             MR. SLAUGHTER:  Yes, same to you.  
+12        Thanks very much.  Y'all take care.  
+13             (Deposition concluded at 2:31 p.m.)
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0132
+ 1                   C E R T I F I C A T E 
+ 2   
+ 3   STATE OF GEORGIA
+ 4   COUNTY OF COBB
+ 5   
+ 6             I, MICHELLE M. BOUDREAUX, do hereby certify 
+ 7   that MARK W. RIGLER, PhD, the witness whose deposition 
+ 8   is hereinbefore set forth, was duly remotely sworn by 
+ 9   me and that such deposition is a true record of the 
+10   testimony given by such witness. 
+11   
+12             I further certify that I am not related to 
+13   any of the parties to this action by blood or marriage 
+14   and that I am in no way interested in the outcome of 
+15   this matter. 
+16   
+17             IN WITNESS WHEREOF, I have hereunto set my 
+18   hand this 22nd day of February 2021.  
+19   
+20                  _________________________________
+                    MICHELLE M. BOUDREAUX, RPR  
+21   
+22                           
+23   
+24   
+25   
+0133
+ 1             ERRATA SHEET FOR THE TRANSCRIPT OF:
+ 2   Case Name:  Vernon Eggers v. Colgate-Palmolive, et al.
+ 3   Deposition Date:  February 11, 2021
+ 4   Deponent:  Mark W. Rigler, PhD
+ 5   
+ 6   Pg.  Ln.  Now Reads      Should Read    Reason
+ 7   ___  ___  ____________   ____________   ____________
+ 8   ___  ___  ____________   ____________   ____________
+ 9   ___  ___  ____________   ____________   ____________
+10   ___  ___  ____________   ____________   ____________
+11   ___  ___  ____________   ____________   ____________
+12   ___  ___  ____________   ____________   ____________
+13   ___  ___  ____________   ____________   ____________
+14   ___  ___  ____________   ____________   ____________
+15   ___  ___  ____________   ____________   ____________
+16   ___  ___  ____________   ____________   ____________
+17   ___  ___  ____________   ____________   ____________
+18   ___  ___  ____________   ____________   ____________
+19   
+20                            ___________________________
+                              Signature of Deponent
+21   
+22   
+     SUBSCRIBED AND SWORN BEFORE ME
+23   THIS _____ DAY OF ____________ 20___.
+24   __________________________________
+     (SIGNATURE OF NOTARY PUBLIC)
+25   MY COMMISSION EXPIRES:_____________

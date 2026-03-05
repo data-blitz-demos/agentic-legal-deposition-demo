@@ -1,6 +1,63 @@
-# Legal Deposition Analysis Demo
+# Legal Deposition Analysis Demo (AttorneyOS)
 
-This demo ingests unstructured deposition `.txt` files for a case, maps each one into a deposition schema, stores it in CouchDB, evaluates contradictions across depositions, and exposes an interactive UI with risk scoring and attorney chat.
+[![CI/CD](https://github.com/data-blitz-demos/agentic-legal-deposition-demo/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/data-blitz-demos/agentic-legal-deposition-demo/actions/workflows/ci-cd.yml)
+
+This demo ingests unstructured deposition `.txt` files for a case, maps each one into a deposition schema, stores it in CouchDB, evaluates contradictions across depositions, and exposes an interactive UI with case management, observability, MLOps controls, and attorney chat.
+
+## CI/CD
+
+This repo now includes two GitHub Actions workflows:
+
+1. `CI/CD`
+   - File: `.github/workflows/ci-cd.yml`
+   - Runs on pull requests, pushes, and manual dispatch.
+   - Executes:
+     - `node --check frontend/app.js`
+     - `pytest -q`
+     - Docker image build validation
+     - `docker compose config -q`
+   - Publishes:
+     - `reports/tests.html`
+     - `reports/junit.xml`
+   - On `main`, builds and pushes the API image to:
+     - `ghcr.io/<repo-owner>/agentic-legal-deposition-demo-api`
+
+2. `Deploy`
+   - File: `.github/workflows/deploy.yml`
+   - Runs by manual dispatch only.
+   - Deploys a selected GHCR image tag to Kubernetes using:
+     - `kubectl set image`
+     - `kubectl rollout status`
+   - Uses GitHub environment-scoped secrets for cluster access and deployment targeting.
+
+### Deploy Secrets
+
+Configure these GitHub Actions secrets in the target environment (`staging` or `production`):
+
+1. `KUBE_CONFIG_DATA`
+   - Base64-encoded kubeconfig for the target cluster.
+2. `K8S_NAMESPACE`
+   - Kubernetes namespace to deploy into.
+3. `K8S_DEPLOYMENT_NAME`
+   - Deployment resource name to update.
+4. `K8S_CONTAINER_NAME`
+   - Container name inside that deployment to retag.
+
+### Branch Protection
+
+Set branch protection on `main` in GitHub repository settings. The important rules for this repo are:
+
+1. Require a pull request before merging.
+2. Require status checks to pass before merging.
+3. Require these checks:
+   - `Test And Validate`
+   - `Build API Image`
+   - `Validate Compose Configuration`
+4. Dismiss stale approvals when new commits are pushed.
+5. Require branches to be up to date before merging.
+6. Restrict direct pushes to `main`.
+
+Branch protection itself is a GitHub repository setting, not something GitHub Actions can enforce from inside the repo.
 
 ## Ollama Setup (Download Local LLMs)
 
@@ -102,6 +159,8 @@ python scripts/generate_uml_diagrams.py
 ## Features
 
 - Batch ingest all `.txt` files in a directory.
+- Recursively ingest nested `.txt` files from a selected deposition folder tree.
+- Browse for a deposition source (folder or single `.txt`) from the Case tab.
 - Numeric contradiction risk scores per deposition (0-100), sorted highest-first.
 - Scrollable deposition timeline with forward/back controls.
 - Per-deposition contradiction details.
@@ -114,6 +173,10 @@ python scripts/generate_uml_diagrams.py
 - Graph RAG foundation with Neo4j: load legal ontology `.owl` files and browse graph structure.
 - Hard startup guard: API will not start unless the default configured LLM is operational.
 - Optional fast-ingest mode to skip full-case reassessment and return results sooner.
+- Admin user management with create, edit, select, and permanent delete.
+- Admin persona management with saved name, LLM, and prompts.
+- Built-in Admin test runner with `pytest` HTML report access.
+- Native `/metrics` export plus Prometheus and Grafana for runtime telemetry.
 
 ## Tech Stack
 
@@ -121,6 +184,8 @@ python scripts/generate_uml_diagrams.py
 - LangGraph + LangChain OpenAI
 - CouchDB storage
 - Neo4j graph store (Graph RAG ontology layer)
+- Prometheus metrics
+- Grafana dashboards
 - Vanilla JS/CSS frontend
 - Docker Compose for full local stack
 
@@ -147,14 +212,33 @@ docker compose up --build -d
 - UI: `http://localhost:8000` (or your configured `API_PORT`)
 - CouchDB: `http://localhost:5984/_utils` (or your configured `COUCHDB_PORT`)
 - Neo4j Browser: `http://localhost:7474/browser/` (or your configured `NEO4J_HTTP_PORT`)
+- Prometheus: `http://localhost:9090`
+- Grafana: `http://localhost:3000`
+
+Default local Grafana credentials:
+
+- Username: `admin`
+- Password: `password`
 
 ## AWS EKS (Kubernetes + GPU Ollama)
 
 For production-style deployment on AWS with Kubernetes and GPU-backed Ollama:
 
+- Terraform infra scaffold: `terraform/`
+- Terraform guide: `terraform/README.md`
 - EKS cluster template: `deploy/eks/cluster.eksctl.yaml`
 - Kubernetes manifests: `deploy/k8s/aws`
 - End-to-end runbook: `deploy/k8s/aws/README.md`
+
+Terraform workflow:
+
+```bash
+cd terraform
+cp terraform.tfvars.example terraform.tfvars
+terraform init
+terraform plan
+terraform apply
+```
 
 Helper scripts:
 
@@ -164,34 +248,55 @@ Helper scripts:
 
 ## UI
 
-1. Far-left panel: `Case Index`.
-   - Vertical scroll list of all saved cases.
-   - `Refresh Cases` action.
-   - Click any case row to load that case into the dashboard.
-2. Top-middle panel: case controls (`Case ID`, deposition folder, ingest, refresh, status).
-   - Includes a single `Deposition Folder` text input with suggestions (type any path or pick discovered folders), an `LLM` dropdown, `Save Case`, `Refresh Models`, `Fast ingest mode`, and `Thought Stream (live)` toggle.
-   - `Refresh Case` clears all currently saved deposition documents for the selected `Case ID` (so you can start that case clean before re-ingest).
-3. Top-right panel: chronological deposition timeline with `Back` / `Forward` horizontal scrolling, plus a risk score list showing each deposition’s numeric contradiction score.
-4. Bottom-middle panel:
-   - With `Thought Stream` OFF (default): `Conflict Detail` appears as normal.
-   - With `Thought Stream` ON: `Thought Stream` appears above `Conflict Detail`.
-   - Thought Stream viewer is a sliding window (`Older` / `Newer`) over thought-stream events.
-5. Bottom-right panel: attorney chat that responds in short-answer + bullet-detail format.
-6. Thought stream (live stream):
-   - Running ingest or chat starts a live thought-stream session and streams updates into `Thought Stream` in near real time.
-   - Thought Stream includes prompts, input previews, output previews, and notes for `Persona:Legal Clerk` and `Persona:Attorney`.
-   - Thought Stream is read-only in the UI.
-   - Thought Stream is a visible process log from app instrumentation; it is not hidden model chain-of-thought.
-7. Graph RAG controls (middle panel under status):
-   - `Graph Ontology (*.owl)` path selector (dropdown suggestions + manual path entry)
-   - `Browse` opens a file-browser style picker for ontology folders/files under `ONTOLOGY_DIR`
-   - `Load Ontology` to import ontology triples into Neo4j
-   - `Graph RAG Question` + `Ask Graph RAG` runs retrieval from Neo4j ontology and answers with the selected LLM
-   - `RAG Processing (Neo4j retrieval)` toggle turns retrieval on/off per Graph RAG query
-   - `RAG Stream` toggle turns rag-stream persistence on/off per query (captures RAG input, prompts, and output when enabled)
-   - `Graph Retrieval Monitor` shows per-cycle retrieval terms, retrieved resource rows (nodes/relations/literals), context sent to LLM, and prompt payload used for inference
-   - `Open Graph Browser` opens Neo4j Browser with a starter node/relationship query preloaded
-   - Every Graph RAG cycle is persisted to CouchDB database `rag-stream` (`type=rag_stream`)
+1. `Home`
+   - Landing view for AttorneyOS branding and quick entry into the workspace.
+2. `Deposition`
+   - Main deposition workspace.
+   - Shows the deposition timeline, risk scores, conflict detail, focused re-analysis, sentiment, and attorney chat.
+3. `Case`
+   - Case controls and case index.
+   - `Deposition Source` accepts either:
+     - a folder
+     - a single `.txt` file
+   - `Browse` opens a filesystem browser for deposition folders and individual `.txt` files.
+   - Folder ingest is recursive, so nested `.txt` files are included.
+   - `Import Deposition` uploads one or more `.txt` files into the selected directory target.
+   - `Import Folder` uploads every `.txt` inside a chosen local folder.
+4. `Observables`
+   - Left-aligned observability layout with:
+     - Thought Stream
+     - runtime metrics
+     - correctness and drift observables
+   - Includes `Open Grafana` for the local Grafana instance.
+5. `Admin`
+   - `Users`: create, edit, select, list, and permanently remove users.
+   - `Personas`: create and edit saved personas with name, LLM, and prompts.
+   - `Test`: run the full pytest suite, inspect `tests.html`, and review captured test output.
+   - `MLOps`: nested operational controls for:
+     - `LLMOps`
+     - `Fine Tuning`
+     - `Deployment`
+     - `CI/CD`
+
+## Observability
+
+- App logs use Python `logging`.
+- Metrics are exported from:
+  - `GET /metrics`
+- Prometheus scrapes the API metrics endpoint.
+- Grafana is provisioned locally with a prebuilt dashboard.
+- The UI exposes Grafana launch buttons from:
+  - `Observables`
+  - `Admin -> MLOps`
+
+## Additional API Endpoints
+
+- `GET /api/deposition-browser`
+  - Returns a directory listing for the Case-tab deposition browser.
+- `GET /api/observability/grafana`
+  - Returns the configured Grafana URL, login URL, and current runtime credentials.
+- `GET /metrics`
+  - Prometheus scrape endpoint for application metrics.
 
 ## Graph RAG (Neo4j + OWL)
 
@@ -378,20 +483,39 @@ You can use either a single `.owl` file or a folder/glob containing multiple fil
 
 ## Internal Code Documentation
 
-Generate the internal artifact and function reference document:
+This repo now maintains two internal documentation layers:
+
+1. Generated function reference
+   - Best for: function signatures, line anchors, per-module function summaries
+2. Hand-maintained system guide
+   - Best for: architecture, file ownership, UI tabs, overlays/modals, persistence, runtime flows
+
+Generate the function reference document:
 
 ```bash
 python scripts/generate_internal_docs.py
 ```
 
-Generated file:
+Internal documentation files:
 
 - `docs/internal/code_function_reference.md`
+- `docs/internal/system_guide.md`
+
+Documentation discipline:
+
+1. Update source docstrings when function behavior changes.
+2. Regenerate `docs/internal/code_function_reference.md`.
+3. Update `docs/internal/system_guide.md` when the change affects:
+   - tabs, panels, or overlays
+   - persistence shape
+   - route responsibilities
+   - observability plumbing
+   - deployment layout
 
 ## Using the Demo
 
 1. Set a `Case ID`.
-2. In `Deposition Folder`, use:
+2. In `Deposition Source`, use:
    - Type any path directly (absolute or relative), or pick a suggested folder from the browser autocomplete list.
    - Suggestions are sourced from configured deposition roots:
    - Primary root: `DEPOSITION_DIR`

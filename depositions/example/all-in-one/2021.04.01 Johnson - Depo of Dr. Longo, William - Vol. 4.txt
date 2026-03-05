@@ -1,0 +1,1932 @@
+0420
+ 1           SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                 FOR THE COUNTY OF LOS ANGELES
+ 3                    SPRING STREET COURTHOUSE
+ 4   
+ 5   SHAWN JOHNSON, an individual;    )
+     HOLLY JOHNSON, an individual,    )
+ 6                                    )
+               Plaintiffs,            )
+ 7                                    )
+          vs.                         ) Case No.
+ 8                                    ) JCCP 4674/20STCV17335
+                                      )
+ 9                                    )
+                                      )
+10   JOHNSON & JOHNSON; JOHNSON &     )
+     JOHNSON CONSUMER INC., a         )
+11   subsidiary of JOHNSON & JOHNSON; )
+     ALBERTSONS COMPANIED, INC.,      )
+12   individually and as successor    )
+     in interest to SAV-ON DRUG       )
+13   STORES, INC.; COSTCO WHOLESALE   )
+     CORPORATION; RALPHS GROCERY      )
+14   COMPANY; THRIFTY PAYLESS, INC.,  )
+     dba RITE AID PHARMACY; WALMART,  )
+15   INC. and DOES 1 through 400,     )
+     inclusive,                       )
+16                                    )
+               Defendants.            ) (Pages 420 - 491)
+17   _________________________________)
+18   
+19                 DEPOSITION OF EXPERT WITNESS
+20                     WILLIAM LONGO, Ph.D.
+21                           VOLUME IV
+22                   THURSDAY, APRIL 1, 2021
+23   
+24   
+     Reported by:      PAIGE I. HUTCHINSON,  CA CSR No. 13459,
+25                     TX CSR No. 11222, WA CCR No. 3336
+0421
+ 1           SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                 FOR THE COUNTY OF LOS ANGELES
+ 3                    SPRING STREET COURTHOUSE
+ 4   
+ 5   SHAWN JOHNSON, an individual;    )
+     HOLLY JOHNSON, an individual,    )
+ 6                                    )
+               Plaintiffs,            )
+ 7                                    )
+          vs.                         ) Case No.
+ 8                                    ) JCCP 4674/20STCV17335
+                                      )
+ 9                                    )
+                                      )
+10   JOHNSON & JOHNSON; JOHNSON &     )
+     JOHNSON CONSUMER INC., a         )
+11   subsidiary of JOHNSON & JOHNSON; )
+     ALBERTSONS COMPANIED, INC.,      )
+12   individually and as successor    )
+     in interest to SAV-ON DRUG       )
+13   STORES, INC.; COSTCO WHOLESALE   )
+     CORPORATION; RALPHS GROCERY      )
+14   COMPANY; THRIFTY PAYLESS, INC.,  )
+     dba RITE AID PHARMACY; WALMART,  )
+15   INC. and DOES 1 through 400,     )
+     inclusive,                       )
+16                                    )
+               Defendants.            )
+17   _________________________________)
+18   
+19            DEPOSITION OF WILLIAM LONGO, Ph.D., VOLUME IV,
+20   taken on behalf of Defendants, remotely via
+21   videoconference, commencing at 10:28 a.m. (PST),
+22   Thursday, April 1, 2021, before Paige I. Hutchinson,
+23   Certified Shorthand Reporter for the State of
+24   California No. 13459, Texas CSR No. 11222, Washington
+25   CCR No. 3336.
+0422
+ 1   APPEARANCES (Via Videoconference):
+ 2   
+ 3   For Plaintiffs:
+ 4     WEITZ & LUXENBERG PC
+       BY:  MARK D. BRATT, ESQ.
+ 5     1880 Century Park East
+       Suite 700
+ 6     Los Angeles, California  90067
+       (310) 247-0921
+ 7     mbratt@weitzlux.com
+ 8   
+ 9   
+     For Defendants ALBERTSONS COMPANIES, INC. Individually
+10   and as successor-in-interest to SAV-ON DRUG STORES, INC.;
+     RALPHS GROCERY COMPANY; THRIFTY PAYLESS, INC. Dba RITE
+11   AID PHARMACY; and WALMART INC.:
+12     BARNES & THORNBURG LLP
+       BY:  MITCHELL R. CHARCHALIS, ESQ.
+13     2029 Century Park East
+       Suite 300
+14     Los Angeles, California  90067
+       (310) 284-3768
+15     mcharchalis@btlaw.com
+16   
+17   
+     For Defendants JOHNSON & JOHNSON and JOHNSON & JOHNSON
+18   CONSUMER INC.:
+19     KING & SPALDING LLP
+       BY:  KEVIN HYNES, ESQ.
+20     1185 Avenue of the Americas
+       34th Floor
+21     New York, New York  10036
+       (212) 790-5349
+22     khynes@kslaw.com
+23   
+     Also Present:
+24   
+       Addison Green, Videoconference Moderator,
+25     iDepo Reporters
+0423
+ 1                          I N D E X
+ 2   DEPONENT:              EXAMINATION                PAGE:
+ 3   WILLIAM LONGO, Ph.D.
+ 4                          BY MR. HYNES               424
+ 5   
+ 6   
+ 7                       E X H I B I T S
+ 8   MARKED                                            PAGE
+ 9   Exhibit 32 March 25, 2021 word search results     430
+                (3 pages)
+10   
+     Exhibit 33 2021.03.26 - E-mail correspondence     437
+11              (5 pages)
+12   Exhibit 34 Sterile talc chain of custody form     459
+                (1 page)
+13   
+     Exhibit 35 Gold Bond chain of custody and photos  459
+14              (3 pages)
+15   Exhibit 36 9 Off the Shelf JBP Containers         463
+                Talcum Powder Analysis Compiled
+16              Notebook 3-23-2021 (299 pages)
+17   Exhibit 37 M65329 Data (14 pages)                 471
+18   Exhibit 38 CSMRI report (15 pages)                474
+19   Exhibit 39 2021.03.30 Johnson, S - J&J            487
+                Defendants Letter to Plaintiffs
+20              re Longo Report (2 pages)
+21   
+22   
+23   
+24               QUESTIONS INSTRUCTED NOT TO ANSWER
+25                            (None.)
+0424
+ 1                    THURSDAY, APRIL 1, 2021
+ 2                          10:28 A.M.
+ 3                            -o0o-
+ 4   
+ 5                    WILLIAM LONGO, Ph.D.,
+ 6             called as a deponent and previously
+ 7             sworn in by the deposition officer,
+ 8            was examined and testified as follows:
+ 9   
+10            MR. HYNES:  I guess let's get going.
+11            Do we need to remind Dr. Longo that he's under
+12   oath?
+13            THE DEPONENT:  I realize that.
+14   
+15                    EXAMINATION (Resumed)
+16   BY MR. HYNES:
+17       Q.   Okay.  Great.
+18            Dr. Longo, we're back again in the Johnson
+19   matter, pending in California, Volume 4 of your depo;
+20   right?
+21       A.   That's correct.
+22       Q.   Okay.  Do you have a cutoff point today, this
+23   afternoon or this evening?
+24       A.   I have two hours.  Hopefully we can get done
+25   in that time.
+0425
+ 1       Q.   Okay.  And where are you today?
+ 2       A.   I'm in my large conference room at MAS at
+ 3   Suwanee, Georgia.
+ 4       Q.   Okay.
+ 5            MR. HYNES:  All right.  I'll make a brief
+ 6   statement on the record related to a production of a
+ 7   report dated March 23rd, 2021.  Plaintiffs, on
+ 8   March 20, 2021, produced a report of talc of nine new
+ 9   analyses totaling 299 pages.  J&J defendants object to
+10   the late disclosure of the report and reserve the right
+11   to exclude testimony and opinion on that report in its
+12   entirety.
+13            Today's deposition and the prior continuation
+14   was pursuant to a court order and limited strictly to
+15   the searches conducted by Dr. Longo concerning pre-2017
+16   testing.  It wasn't an invitation or an opportunity to
+17   introduce new reports and new analyses that have not
+18   been discussed in the prior depositions, Volumes 1
+19   and 2 of the Dr. Longo's depositions in this case.
+20            Moreover, our experts, Johnson & Johnson's
+21   experts, haven't had an opportunity to analyze, you
+22   know, the report and all of the samples contained in
+23   there.  If plaintiffs intend for Dr. Longo to rely on
+24   and testify regarding this new March 23, 2021, report,
+25   we would then request aliquots of four of the
+0426
+ 1   containers in that report.  They're samples M67420-
+ 2   001, 002, 004, and 005.
+ 3            We would request aliquots.  Our expert would
+ 4   then test, issue a report on those aliquots, and sit
+ 5   for a limited deposition related to his opinions on
+ 6   this brand-new report, which we reserve the right to
+ 7   have additional time for the completion of this new
+ 8   discovery introduced at this late hour on March 29th,
+ 9   2021, by the issuance of this new report.
+10            MR. CHARCHALIS:  And I join in that.
+11            MR. BRATT:  Just brief -- okay.  Brief
+12   response.
+13            The court order, as it related to the IDC,
+14   spanned the years 1999 to 2010.  The search that has
+15   been done goes well beyond that timeframe, and the
+16   questions that have been asked by Johnson & Johnson and
+17   the other defendants related to what his opinions are
+18   as of that particular timeframe, so when we last were
+19   within the deposition, questions were asked of
+20   Dr. Longo related to additional reliance that he has
+21   on testing that has occurred for Johnson & Johnson
+22   bottles.  He answered the questions, and we've
+23   subsequently produced the report.
+24            You know, that's the problem when multiple
+25   depositions occur over the course of time, and I've
+0427
+ 1   been in the same position on the other end with
+ 2   Dr. Sanchez.  So my position at this point is we
+ 3   proceed.  You ask the questions you need to ask.  I
+ 4   would focus first on any follow-up questions related to
+ 5   the electronic search that you may have, and then we'll
+ 6   see where we get as far as the time we have today to
+ 7   cover the other issues.
+ 8            MR. HYNES:  Right.  And as mentioned on prior
+ 9   transcripts, we have a disagreement as to what that
+10   order, Exhibit 31, should have read.  All of the
+11   discussion during the IDC, it's my understanding,
+12   related to pre, you know, testing conducted in 2016 and
+13   previous to that, as opposed to this 2010 number, which
+14   seemingly doesn't make sense, based upon the argument
+15   during the course of that IDC.  So we object to
+16   plaintiffs' interpretation of that order.
+17            But we'll move as expeditiously as possible.
+18   I'm going to focus primarily on the searches, and then,
+19   you know, I'm going to have to start questioning on
+20   this 299 page report.  Hopefully I can get a chunk of
+21   that done, but we'll reserve our rights to continue
+22   questioning on that report if plaintiffs are intending
+23   to have Dr. Longo rely upon it and provide testimony on
+24   it in this case.
+25            MR. BRATT:  And I'm happy to meet and confer
+0428
+ 1   with you on any issue that you discuss, despite the
+ 2   fact we have disagreements on the circumstances, but I
+ 3   remain open and willing, so go ahead.
+ 4            MR. HYNES:  All right.  So let's start.
+ 5   BY MR. HYNES:
+ 6       Q.   Dr. Longo, are you ready to go?
+ 7       A.   Yes, sir.
+ 8       Q.   Great.
+ 9            So some quick housekeeping.  Have you
+10   generated any additional invoices since your last
+11   deposition in this case related on this case?
+12       A.   I've generated an invoice for deposition time.
+13   I've generated an invoice for the amount of time it
+14   took to go through all these searches and documents and
+15   find reports.  I think we had one new report or two.  I
+16   think it was, like, eight hours or so.
+17       Q.   Okay.  Anything beyond that?
+18       A.   No.
+19       Q.   Okay.  Have you had any additional
+20   communications with other experts in this case since
+21   your last deposition?
+22       A.   I have not.
+23       Q.   Any other conversations with Dr. Rigler since
+24   the one that you and I discussed at the last
+25   deposition?
+0429
+ 1       A.   Not relating to -- yes.  He said he was --
+ 2   he'd put an errata sheet in to clear up the mistake he
+ 3   made in the deposition about we had done no heavy -- we
+ 4   had analyzed a set of five samples or six samples
+ 5   without heavy liquid, and I asked him for a copy of the
+ 6   errata sheet.
+ 7       Q.   Okay.  Is that the only thing you two
+ 8   discussed, the errata sheet?
+ 9       A.   Only thing concerning those -- 20 pages.  You
+10   know, Dr. Rigler, Dr. Gordon, and the microscopist from
+11   the RJ Lee Group was in my office Monday afternoon and
+12   all day Tuesday.  Dr. Rigler talked about other things,
+13   since he was here.
+14       Q.   Okay.  Nothing else concerning the Johnson
+15   case?
+16       A.   No.
+17       Q.   And --
+18       A.   This had to do with a judge ordering the grids
+19   to be looked at by RJ Lee, and since there was no
+20   agreement on whose lab to use, the judge said to use
+21   this lab.
+22       Q.   And do you have a copy of the errata sheet
+23   that Dr. Rigler provided?  Not yet?
+24       A.   He has not given it to me yet.
+25       Q.   Okay.
+0430
+ 1       A.   So I don't have it.  I can't say that it's
+ 2   actually done or not, but I asked him for a copy of it
+ 3   on Monday afternoon.
+ 4       Q.   Okay.
+ 5            MR. HYNES:  All right.  We're going to mark a
+ 6   couple things as exhibits here.  We'll start with the
+ 7   March 25, 2021, word search -- or three-page PDF
+ 8   document that was provided to us in advance of today's
+ 9   deposition.  That will be Exhibit 32.
+10            (Exhibit 32 marked.)
+11   BY MR. HYNES:
+12       Q.   And then -- so, Dr. Longo, last time we spoke,
+13   you testified that we had Exhibit 30 marked, which was
+14   the prior version of the word search.  You recall that;
+15   correct?
+16       A.   Yes.
+17       Q.   And in the prior version of the word search in
+18   your testimony, you stated that you had searched your
+19   current database at MAS for the period of 1988 to 2015;
+20   is that right?
+21       A.   Correct.
+22            MR. BRATT:  I think it -- belated.  I think
+23   mischaracterizes what the database is by saying
+24   current.
+25            But go ahead.
+0431
+ 1            THE DEPONENT:  It might have been 1990.  We
+ 2   expanded it to 1988, so I don't remember what I said in
+ 3   the last one, but it was either 1990 or 1988.  So we
+ 4   expanded it because you had had questions about when in
+ 5   2016, so we picked halfway through 2016 all the way
+ 6   back to 1988.
+ 7   BY MR. HYNES:
+ 8       Q.   Okay.  And so you subsequently, after our last
+ 9   deposition, you expanded the search to include 1988 as
+10   well as up to and including June 1st, 2016; is that
+11   right?
+12       A.   Correct.  Before that it was up to, like,
+13   January 1, 2016.
+14       Q.   Okay.  And when was that search, the expanded
+15   search conducted?
+16       A.   I think a day after the depo.
+17       Q.   Okay.  So that would be March 25th 2021?
+18       A.   It was either right after -- yeah, we expanded
+19   it right after the depo, and then I went through and
+20   finished up the chart on the 25th, and I thought I had
+21   sent it right away to Mr. Bratt, but it turned out it
+22   didn't go through or something, so I sent it again --
+23       Q.   Okay.
+24       A.   -- when he said he didn't get it.
+25       Q.   Okay.  And then you also had -- at the last
+0432
+ 1   deposition, I think you said you had 270 hits on the
+ 2   powder search term at the time of the March 24th
+ 3   deposition; is that right?
+ 4       A.   That's right.
+ 5       Q.   Okay.  And then you subsequently searched
+ 6   through those powder results and the relevant hits were
+ 7   identified here in the first column or the first row on
+ 8   Exhibit 32; is that right?
+ 9       A.   Yes.  Well, the -- we were able to query two
+10   words together, so if powder had 270-something, if you
+11   put talc powder or talcum powder, you could then get it
+12   down to what was relevant.
+13       Q.   Okay.
+14       A.   Because most of what was in there was XRD
+15   work, material science XRD work, and XRD work on WR
+16   Grace MONOKOTE 3, looking for tremolite.
+17       Q.   Okay.  So I guess the way that you did this
+18   part of the search was you didn't search through all
+19   270 individually, but rather you queried the powder
+20   results, added the word talc or talcum, and then you
+21   wound up with these four entries; is that right?
+22       A.   Right.  And if you go through it, I think you
+23   find -- say, if you just did -- if you did talc powder,
+24   you got three.  If you did talcum powder, one.  And
+25   then they also showed up for when you did talc versus
+0433
+ 1   powder, talc powder, and so on, so it came up with a
+ 2   couple different -- little bit different combinations.
+ 3       Q.   Okay.
+ 4       A.   Because talc powder also showed up in powder.
+ 5   Talcum powder showed up in powder but talc powder had
+ 6   three.  Talcum powder had one.
+ 7       Q.   Okay.  And so I guess I'm a little unclear.
+ 8            So row number 2, those hits are just for the
+ 9   term talc; right, not talc powder; right?
+10       A.   Yeah, I --
+11       Q.   Because that was --
+12       A.   I'd have to look at the first one to see if
+13   there was any additional hits, but there may not be.
+14       Q.   Yeah.  So I guess column -- or rows 2 and 3
+15   are the same as what was in both Exhibit 32 and
+16   Exhibit 30, so those searches were completed at the
+17   time of the last deposition; no change here; right?
+18       A.   Right.  When you put talc powder in or talcum
+19   powder, it just found the exact same ones.
+20       Q.   Right.
+21            And so powder, when you got these four
+22   results, the one that pops up that didn't pop up for
+23   rows 2 and 3 is that 2009 Cashmere Bouquet report;
+24   right?
+25       A.   That is correct.
+0434
+ 1       Q.   Okay.  So how did -- so when you searched the
+ 2   term powder, how did that come up?  Was that a powder,
+ 3   plus a different word, or was that powder, and then you
+ 4   searched the 207 results that showed up to see if this
+ 5   popped up too?
+ 6       A.   You had to put talcum powder in there, or it
+ 7   also showed up under Cashmere.
+ 8       Q.   Right.  So those --
+ 9       A.   So powder --
+10       Q.   Okay.
+11       A.   So I can't -- you know, I just copied down
+12   what it found.
+13       Q.   Okay.
+14       A.   So it also showed up for Cashmere and Bouquet,
+15   the same two, because it had Cashmere Bouquet on
+16   the -- on the project.
+17       Q.   Right.  So you're saying it showed up for
+18   talcum powder in column 1, but it didn't show up if you
+19   only searched talcum, like in column 3?
+20       A.   Yeah, column 3 --
+21       Q.   Or row 3.
+22       A.   -- it did not show up.  But when you put
+23   talcum powder in or Cashmere or Bouquet or Cashmere
+24   Bouquet together, it showed up, the two showed up.
+25       Q.   Okay.  I'm just trying to understand how the
+0435
+ 1   result in row 1 was gathered for this 2009 report.  Was
+ 2   it just based on a hit for powder, or was it a hit on
+ 3   powder plus another word?
+ 4       A.   Powder plus another word.
+ 5       Q.   Okay.
+ 6       A.   If you put powder in, you had 270-something, I
+ 7   think.  Unless I wanted to go through every one of
+ 8   them, when you put either talc powder or talcum powder,
+ 9   those four showed up in the powder.  So it's some
+10   combination of both powder and as well as talcum as
+11   well as talc.  And when you put powder in for any of
+12   these others, Johnson baby powder, J&J baby powder,
+13   Johnson & Johnson baby powder -- it should be a
+14   different -- just J&J powder, none were found, because
+15   there was nothing there that had those words together.
+16       Q.   Right.  I'm asking specifically with that 2009
+17   Cashmere Bouquet report, what were the two words that
+18   were searched to arrive at that hit?  Powder plus what?
+19       A.   Hold on.  I believe it was Cashmere Bouquet
+20   powder is what found that.
+21       Q.   Okay.  And so can you walk me through -- so
+22   this powder search wasn't completed at the time of our
+23   deposition on the 24th; right?
+24       A.   Right.
+25       Q.   So what did you do to complete the powder
+0436
+ 1   search?  Did you search all 270 -- 207 results, or did
+ 2   you search powder, plus the other terms that appear
+ 3   below here?
+ 4       A.   Powder plus the other terms.
+ 5       Q.   Okay.
+ 6       A.   What we did, if you go to the word search
+ 7   setup, we went to what was queried where you could put
+ 8   two words together.  I did not go through the
+ 9   200-and-something; that would have taken me forever, so
+10   we tried to short-circuit it by putting other words in
+11   there that would allow us to see if we could truncate
+12   that down to something, and it truncated down to
+13   finding the same things if we put powder and talc or
+14   powder and talcum, talcum powder; it was --
+15       Q.   Okay.
+16       A.   -- it was able to find those.
+17       Q.   And when was that search conducted?  Was that
+18   on the 24th or the 25th?
+19       A.   It was expanded.  The -- it was worked out
+20   where we could do it on the 25th, and I sat down and
+21   got -- and went through it and got the results and
+22   copied them down.
+23       Q.   Okay.  And the expanded timeframe, too, the
+24   '88 through June 1st, 2016, that was conducted on the
+25   25th as well?
+0437
+ 1       A.   It was -- yeah, it was all -- when we got the
+ 2   query, I also expanded the search somewhat to cover
+ 3   everything, even though, at least what I'm being told
+ 4   on the interpretation of Judge Cunningham, I decided to
+ 5   go ahead and get it all done to save you all the time
+ 6   and effort to go ask another judge to suggest that I do
+ 7   it.
+ 8       Q.   Okay.  Did you have any communications with
+ 9   plaintiffs' counsel on the 24th or 25th regarding the
+10   status of these searches?
+11       A.   Yes.  I discussed with them that I was going
+12   to expand the search.
+13       Q.   Okay.
+14            MR. HYNES:  I'll attach as Exhibit 33,
+15   correspondence with counsel, latest e-mail on here is
+16   from me to Mr. Bratt on Friday, March 26th, 2021.
+17   First e-mail on this is an e-mail from Mr. Bratt to me
+18   on Wednesday, March 24th at 6:32 p.m. Eastern.  I'll
+19   drop that in the chat.
+20            (Exhibit 33 marked.)
+21   BY MR. HYNES:
+22       Q.   All right.  It's in the chat so you're able to
+23   access.
+24       A.   Oh, let me get it.  Is there something on
+25   there I should click?  It looks like I got this -- the
+0438
+ 1   whole system.
+ 2       Q.   The PDF in the chat?
+ 3       A.   Let me try again.
+ 4       Q.   I can share the screen, if you need.  Maybe
+ 5   that's easier.  I just have one question on this, and
+ 6   then we can move on.
+ 7       A.   What I get is -- looks like I'm getting your
+ 8   system 32.  I remember this happening before.  Okay.
+ 9   Here we go.
+10       Q.   You see this?
+11       A.   I do see it.
+12       Q.   Okay.  So you see an e-mail from Mark Bratt
+13   dated Wednesday, March 24th, 2021, at 6:32 p.m.
+14   Eastern?
+15       A.   Yes.
+16       Q.   And one thing I just wanted to ask about here
+17   is at this time, this is about a little over two hours
+18   after our deposition ended on that day; right?
+19       A.   Yes.
+20       Q.   Okay.  And Mr. Bratt represents that the
+21   powder search that you had conducted came up empty at
+22   that time; is that right?
+23       A.   That's what it states.
+24       Q.   Right.
+25            So when did you conduct the search for the
+0439
+ 1   powder results here?  Was this on 24th or 25th?  When
+ 2   did this happen?
+ 3       A.   Well, as I stated earlier, it happened -- we
+ 4   continued to do it after the deposition and then
+ 5   continued in the morning.  I don't quite remember
+ 6   saying it like that, that the -- I remember telling him
+ 7   the powder searches associated with body powder, foot
+ 8   powder, bath powder, baby powder, all those types of
+ 9   powders on down did come up empty.
+10       Q.   Uh-huh.
+11       A.   And so --
+12            MR. BRATT:  To be clear for the record, you
+13   know, I live in Los Angeles.  I've been to Dr. Longo's
+14   lab many times but not since the pandemic.  I certainly
+15   was not remoted in or participating in the search in
+16   any way.  I -- in my off-the-record communications with
+17   counsel to meet and confer in good faith, you know, I'm
+18   trying to provide fair and accurate information, but by
+19   no means was I quoting Dr. Longo in any fashion and
+20   certainly not directly aware of exactly what was being
+21   searched and how it was being searched, and so my
+22   e-mail in no way should be mischaracterized to have
+23   meaning other than what Dr. Longo's testifying actually
+24   happened under oath because he's the one that was
+25   involved in the search.
+0440
+ 1            But go ahead, Dr. Longo.
+ 2            THE DEPONENT:  I mean, the powder just by
+ 3   itself, if I would have gone through all 200-and-some
+ 4   hits would not have been empty.  But powder with
+ 5   something -- and I could have, you know, I -- I could
+ 6   have left that out of powder, but when you hit -- I put
+ 7   it in there because if you put talc powder in, you
+ 8   know, you -- you find -- or just talc, the main -- the
+ 9   main thing of the query was try to not have to go
+10   through all 200-and-something hits, so I just -- when I
+11   was putting it together, I just said, well, if I just
+12   put powder in there, I know it's in there, but I didn't
+13   go through 200-and-some hits to verify that.
+14   BY MR. HYNES:
+15       Q.   Right.
+16            All right.  And then I guess another question
+17   here on row 1, so it seems like if somebody searched
+18   powder and a combination of talc or talcum, they would
+19   have landed all four of these hits; is that correct?
+20       A.   Well, you know -- you know, which category is
+21   it?  Either talcum or talcum powder, but it would
+22   search through all the powders to see if there's any
+23   powders that say talcum versus just talcum.  So you
+24   would have found it in -- but you can't say oh, this is
+25   row 1 now.  I just put it in there, this is what we
+0441
+ 1   found.
+ 2       Q.   Right.  My question --
+ 3       A.   It went through the powders to eliminate all
+ 4   these other powders.
+ 5       Q.   Uh-huh.  My question is would you have --
+ 6   would you have landed these, these four hits, these
+ 7   four MAS project numbers that are listed in row 1 if
+ 8   your -- if you searched either talcum powder or talc
+ 9   powder in your current database?
+10       A.   I think so, but I'd have to check that.  I
+11   think I put them all there because, you know, it's --
+12   it showed up as -- the same ones kept showing up.  You
+13   know, we didn't find anything under talco or talco
+14   powder and everything else, and we didn't find anything
+15   on the other powders.  So I guess that's a good
+16   question.  If I just put talcum powder in there, and it
+17   shows up under talcum because it is one of
+18   the -- how -- how would that look?  I don't know.
+19   That's --
+20       Q.   Okay.
+21       A.   -- that's very intuitive of you.
+22       Q.   So if someone at your laboratory searched your
+23   current database for talcum powder or talc powder at
+24   any point over the past, you know, two years, they
+25   would have landed on these four hits of prior cosmetic
+0442
+ 1   talc analysis; is that fair?
+ 2            MR. BRATT:  I think that assumes facts that
+ 3   the person --
+ 4            THE DEPONENT:  It's not fair.
+ 5            MR. BRATT:  -- doing the search was adequately
+ 6   trained in how to search and the correct queries et
+ 7   cetera, and it's argumentative as phrased.
+ 8            But go ahead, Dr. Longo.
+ 9            And it calls for speculation, and it's an
+10   incomplete hypothetical.
+11            But go ahead.
+12            THE DEPONENT:  As I -- as I've testified in
+13   the past, we did go through this whole exercise,
+14   not -- not to the extent of the 59-word search and only
+15   one thing showed up, and that was the Gold Bond.  When
+16   you asked the question last week -- and I think I even
+17   put it in here -- in my Johnson deposition last week,
+18   in the third -- I guess that's the fourth paragraph,
+19   why they didn't show up in the last search, and I
+20   wasn't sure.
+21            I asked the login person, and she was not
+22   fully familiar with this platform.  We happened to have
+23   a person who works for MAS who is fully familiar, and
+24   she got in touch with him.  He took over the computer
+25   and showed her exactly how to go through the search,
+0443
+ 1   which is not obvious, and put the right boxes in to do
+ 2   this.  So without his help, I'd still be sitting here
+ 3   with just Gold Bond.
+ 4   BY MR. HYNES:
+ 5       Q.   And so when you did any searches prior to this
+ 6   case across your current database, you did not rely
+ 7   upon this -- this person who has some level of
+ 8   expertise in searching this database to assist with
+ 9   that project; is that right?
+10       A.   One, I didn't know he had expertise.  And two,
+11   the login person didn't tell me that, you know, I'm
+12   probably doing this wrong; I don't know what I'm doing.
+13   I just asked her to search it.
+14       Q.   Uh-huh.  Now, who is that login person?
+15       A.   It's on every chain of custody.  Because I'm
+16   horrible at spelling, I'll spell it for you.  This is
+17   not one of your projects, so -- but I'm going to go to
+18   the chain of custody and get her -- where is it?  The
+19   first -- well, it's she ShaQuanna Lytle.  And ShaQuanna
+20   is S-h-a-q, capital, u-a-n-n-a.  Last name, L-y-t-l-e.
+21       Q.   Okay.  And, I guess, what are her
+22   responsibilities with respect to MAS's current
+23   database?
+24       A.   Her responsibilities was to log in samples.
+25       Q.   Okay.
+0444
+ 1       A.   And produce the chain of custodies and put the
+ 2   boxes into the negative flow hood, determine what the
+ 3   project is and who it goes to, send an e-mail out that
+ 4   these are in, and I can -- if I give her an M number
+ 5   and I say can you find me this project, she can.
+ 6            If we don't have M numbers, then it's a
+ 7   problem.  It's much better now that she has become very
+ 8   familiar with how to search this platform, and also now
+ 9   she knows how to query the words together.  So besides
+10   it being such a pain, it improved our efficiency here,
+11   so I hate to thank Johnson & Johnson for forcing us to
+12   do that, but I will.
+13       Q.   You're welcome.
+14            How long has she worked at MAS?
+15       A.   I think about three, four years.
+16       Q.   Okay.  And has ShaQuanna been working with the
+17   current database since she joined MAS?
+18       A.   Yes, I think so.
+19       Q.   And do her job responsibilities involve using
+20   that database on a day-to-day basis at MAS?
+21       A.   Every time samples come in, which is every
+22   day, she's responsible for logging them in, make sure
+23   they arrived with a chain of custody, make sure it is
+24   apparent who the client is and what type of analysis it
+25   is, which would go to what department.  That is her
+0445
+ 1   primary job.
+ 2       Q.   Okay.  And did MAS provide any form of
+ 3   technical training with respect to the use of this
+ 4   database as part of her onboarding or continued
+ 5   education as an employee of MAS?
+ 6       A.   I'm sure we did; however, until -- we've never
+ 7   had a request to go back and search our entire database
+ 8   and to set it up and to look for specific information
+ 9   like this, so there was no need to have any training in
+10   that.
+11       Q.   Okay.
+12       A.   Besides if you have, you know, the simple
+13   stuff.  If you have an M number or you can kind of give
+14   a -- if you know the client and you know the type of
+15   samples the client had sent in, you can search for it,
+16   and that's usually pretty successful.  But to go back
+17   and just say give me every project that we've ever done
+18   and look for talc or talcum powder, it has to -- that
+19   platform has to be set up in a certain way.
+20       Q.   Okay.  And so you had previously asked
+21   ShaQuanna to run these searches across your database,
+22   and she ran searches, but it's your understanding that
+23   she ran them incorrectly when you had asked her to do
+24   this previously?
+25       A.   Well, it wasn't -- it wasn't taking advantage
+0446
+ 1   of the full platform.
+ 2       Q.   Okay.  So what was being searched when she ran
+ 3   the terms prior to the terms being run in this case?
+ 4       A.   I have not written down what she did exactly.
+ 5   I didn't write it down at all.  All's I did is ask her,
+ 6   how come you didn't find these last time.  She said, I
+ 7   wasn't doing it correctly until I was shown exactly the
+ 8   steps needed to be done, which I have outlined here in
+ 9   paragraph 4.
+10       Q.   Okay.  Do you know the steps that she ran when
+11   she did these searches incorrectly?
+12       A.   I did not ask her to write those -- to go
+13   through all those steps.
+14       Q.   Okay.
+15       A.   This was after the depo, and you asked a very
+16   logical question, how come these weren't found before.
+17   I went and asked her, how come you didn't find these
+18   before.  She said, I didn't have it set up right.  I
+19   don't have that -- I don't have that -- I don't have
+20   that much experience before with this platform.
+21       Q.   And, again, you're not going to -- you're not
+22   going to testify about what that platform is; right?
+23   You're taking the position that that is confidential?
+24       A.   It's confidential, and that's my position.
+25       Q.   Okay.  And, you know, if I'm trying to
+0447
+ 1   understand what ShaQuanna had searched before and why
+ 2   that wouldn't have pulled up the results that were
+ 3   found here, you don't have information at this time to
+ 4   tell me exactly what it was that she did or what she's
+ 5   searched previously; is that right?
+ 6            MR. BRATT:  I think it's asked and answered.
+ 7            THE DEPONENT:  I have given you currently --
+ 8   I'm not going to give -- I'm not going to do that and
+ 9   go through that.  I've done enough.  This has, in my
+10   opinion, wasted so many hours of everybody's time.  I'm
+11   done with this.  You have -- if a judge thinks it is
+12   important so that you get additional information like
+13   this, then, you know, if a judge says I should do that,
+14   I'll certainly take that under serious consideration,
+15   but I'm done at this point.
+16            MR. HYNES:  Okay.  I move to strike as
+17   nonresponsive.
+18   BY MR. HYNES:
+19       Q.   This other person who came in with expertise
+20   to assist with the search project, who is that person?
+21       A.   Dr. Tom Shamp, S-h-a-m-p.
+22       Q.   Okay.  And what is his role at MAS?
+23       A.   He is a senior scientist.  He also does quotes
+24   on the material science side and follows up.  He's an
+25   expert in -- in electron microscopy, and we rely on him
+0448
+ 1   to -- a client comes in with any type of material
+ 2   science or anything outside of what I do or what some
+ 3   of the somebody at the lab does here, it goes to him.
+ 4   I was unaware that he had expertise in this platform.
+ 5       Q.   Okay.  And when did he first become employed
+ 6   by MAS?
+ 7       A.   Maybe three years ago.
+ 8       Q.   Okay.  And what are his responsibilities with
+ 9   respect to the current database at MAS?
+10       A.   None.
+11       Q.   And so how is it that he acquired some level
+12   of expertise in the use of this platform at MAS?
+13       A.   I did not --
+14            MR. BRATT:  It calls for speculation to some
+15   extent.
+16            THE DEPONENT:  I did not ask.
+17            MR. BRATT:  Sorry.
+18            THE DEPONENT:  I did not ask him.  I did not
+19   interview him, and I'm not going to.
+20   BY MR. HYNES:
+21       Q.   Okay.  Do you know whether he was provided
+22   with training during the course of his employment at
+23   MAS with respect to this current database?
+24       A.   He was not.
+25       Q.   Okay.  So Dr. Shamp has some level of
+0449
+ 1   expertise in the use of this platform that was obtained
+ 2   somebody outside of MAS?
+ 3            MR. BRATT:  I think it calls for speculation
+ 4   as to how he obtained it, or at least the timing of
+ 5   when he observe contained and the method, and assumes
+ 6   facts, and calls -- well, anyway I'll leave it at that.
+ 7            Go ahead.
+ 8            THE DEPONENT:  I don't have any of that
+ 9   information on what his training is.  Obviously he
+10   knows enough because he was able to walk through the
+11   system by taking over her computer so that he didn't
+12   have to stand over her and showed exactly the steps.
+13   BY MR. HYNES:
+14       Q.   Okay.  So it's your testimony that the MAS
+15   employee whose day-to-day responsibilities involve
+16   working in MAS's current database did not have
+17   sufficient expertise in that database to be able to run
+18   search terms across all the entries in the database,
+19   but Dr. Shamp who had no responsibilities with respect
+20   to the database and received no training with respect
+21   to that database at MAS does have sufficient
+22   understanding of the database to be able to run
+23   searches adequately.  Is that your testimony?
+24            MR. BRATT:  I think it's argumentative.  It's
+25   argumentative.  It mischaracterizes things.
+0450
+ 1            And, you know, I've been giving you, Kevin,
+ 2   latitude since this issue first came up.  We've gone
+ 3   way beyond what the judge ordered.  You can try to
+ 4   recreate history and go back in time and -- but the
+ 5   words written on that order are clear, 1990 to 2010.
+ 6   We've done way more than that.  This is way
+ 7   overburdensome, it's burdensome, and overly broad, and
+ 8   we need to stop.  I mean, this is ridiculous.
+ 9            But go ahead, Dr. Longo.
+10            THE DEPONENT:  So that's not my testimony,
+11   because you make it sound like, you know, this is some
+12   crazy thing.  The admin person who did the first search
+13   did not know she was -- didn't have the full extent of
+14   what she could do with it, so it wasn't -- it wasn't
+15   fully utilized.  Dr. Shamp is -- has a Ph.D.; I think
+16   it's electrical engineering, and he has a lot of IT
+17   experience, just because he has more knowledge -- and
+18   he doesn't really work with our database, but he
+19   understood this type of platform can be used for other
+20   things other than just login and et cetera.  It's a --
+21   you know, it's a fairly strong program, and he happened
+22   to have the expertise, but he was not trained on it
+23   here.
+24            The only training here was done with ShaQuanna
+25   and how to do the basic login procedure.  She did not
+0451
+ 1   know that she wasn't fully using the full strength of
+ 2   the platform, but now we have it.  So I can't tell you
+ 3   any more.
+ 4            Ph-level folks typically tend to work on
+ 5   things in a different way, and if you get a Ph.D. in a
+ 6   hard engineering field and you spend the time, you can
+ 7   usually figure these things out.
+ 8   BY MR. HYNES:
+ 9       Q.   And these searches, were these conducted after
+10   Dr. Shamp was able to share his understanding with
+11   everyone here at MAS, or is that --
+12       A.   With everyone?
+13       Q.   Well, with the group that was performing the
+14   searches.
+15       A.   Well, one person was performing the searches,
+16   and I told you who that was -- well, two people.  I was
+17   there watching exactly what was going on so I could
+18   say -- and I'm the one who, you know, wrote down the
+19   steps and had her go through, and we went through every
+20   one of them, every one of these.
+21       Q.   Okay.
+22            All right.  Sterile talc, have you received
+23   permission from your clients to disclose documents
+24   related to that report?
+25       A.   The only document I have is the login sheet.
+0452
+ 1   There is no analysis in the system and the client
+ 2   doesn't have any reports.  So I will provide -- I
+ 3   can -- at a break here, I can send the login sheet;
+ 4   it's one page.  The only question is do we still have
+ 5   the samples, and I'm going to go look for it, because I
+ 6   have the manufacturer -- it's pharmaceutical talc.  I
+ 7   had to -- in order to share the information, I had to
+ 8   redact the client's name that this involved.
+ 9       Q.   Uh-huh.
+10       A.   So I can't share that with you and, you know,
+11   it's a 20-year-old case.
+12       Q.   Okay.  Well, I guess I'd request production of
+13   any and all documents related to that sterile talc
+14   analysis project M24446.
+15       A.   I thought I provided all that.
+16       Q.   Has not been provided to counsel for Johnson &
+17   Johnson in this case.
+18       A.   Oh, 4446, there is no other document than what
+19   I'm going to send you.  We don't have anything.
+20       Q.   Okay.
+21       A.   And -- but I will send you that login sheet.
+22   It will give you the name of the manufacturer of the
+23   pharmaceutical talc.
+24       Q.   Okay.  Do you know whether MAS ever analyzed
+25   that sample that it took in?
+0453
+ 1       A.   I'm sure -- I'm assuming we did.  That would
+ 2   have been -- the client told me that was Richard
+ 3   Hatfield working on that.  And did they do a report or
+ 4   not or filled out an analysis sheet, we don't know.
+ 5   It's not in the system, but that's a -- that is a
+ 6   really old report.  It's not -- it's not in the system,
+ 7   and I don't think the client had any files to that.
+ 8       Q.   Right.  It's not in the current database;
+ 9   right?
+10       A.   Well, the current database consists also of
+11   the two databases we had before.  The two platforms
+12   were merged; then that was used.  Then both of those
+13   were merged into the current database.  In order to
+14   find something in -- so it's only one database that has
+15   the asbestos in it.  In order to find any of the -- any
+16   of the analysis that would have been scanned, we have
+17   to essentially have the M number from that.
+18       Q.   Uh-huh.
+19       A.   So I had that M number searched, and I had the
+20   Gold Bond searched and the new -- the new Cashmere
+21   Bouquet, which I think was produced, and that's
+22   all -- and I think we produced what we had for Gold
+23   Bond; is that correct?
+24       Q.   Not in this case.  So what do you have for
+25   Gold Bond?  I think you have a physical sample and a
+0454
+ 1   chain of custody sheet.  Anything else?
+ 2       A.   Be yeah.  I have to relook at that, because
+ 3   that was what was searched, and the only thing that
+ 4   came up for the sterile talc was the login sheet.
+ 5       Q.   Okay.  And so you searched, it sounds like --
+ 6   just to confirm, for the sterile talc popped up in the
+ 7   current database, you found the M number, and then you
+ 8   plugged the M number into the prior database as well to
+ 9   see if anything else came up; that is right?
+10       A.   Yeah, it would only be one database, because
+11   that was the only one used for asbestos.  So once we
+12   plugged it in there -- if the project was done and
+13   scanned and there wasn't a problem with the transfer
+14   and the scanning, it would be there.  If it's not in
+15   that, we don't have it.
+16       Q.   Right.  And that's -- the one you're referring
+17   to, that's the prior database where, you know, you
+18   found the PLM analysis for that 2013 Cashmere Bouquet
+19   report; is that right?
+20       A.   Well, once we had the M number, we just used
+21   our regular database and everything came up, and then
+22   we went to that one, and there was nothing else --
+23   well, Bill Egland used the old one.  I thought we had
+24   it all, and he used the old one and he found the PLM
+25   additionally.
+0455
+ 1       Q.   Right.  So I'm just trying to find out if you
+ 2   searched this old M number for, like, sterile talc or
+ 3   Gold Bond or the 2009 Cashmere Bouquet report, did you
+ 4   search that old database that Egland searched for any
+ 5   of these?
+ 6       A.   Yes.
+ 7       Q.   Okay.  And nothing else come up --
+ 8       A.   Yeah, we got all the Cashmere Bouquet
+ 9   information.  We only got the chain of custody, and the
+10   Gold Bond, I think there might have been some more
+11   stuff.  Anyway, I'll look.
+12       Q.   Okay.  I think you'd previously testified that
+13   when you had identified this sterile talc analysis or,
+14   I guess, just entry, you originally didn't have an
+15   M-number associated with or couldn't find the M-number.
+16   So I'm just trying to figure out how did you first come
+17   to identify this sterile talc entry?
+18            MR. BRATT:  I think it misstates testimony to
+19   an extent, and I mean, it's -- whether or not it's been
+20   directly asked and answered, it's been answered
+21   certainly already.
+22            But go ahead, Dr. Longo.
+23            THE DEPONENT:  When we put talc in, it found
+24   the sterile talc with -- and then we got the M-number,
+25   24446, and then I gave the M-number for the old
+0456
+ 1   database, and then they printed out the chain of
+ 2   custody.
+ 3   BY MR. HYNES:
+ 4       Q.   Okay.  So you -- okay.  So the M-number popped
+ 5   up, too, when you searched --
+ 6       A.   Yes.
+ 7       Q.   -- found sterile talc?
+ 8       A.   Yes.  It -- it was in the -- the new platform
+ 9   that had the two old platforms merged into it.  And
+10   once I had the M-number, then I could look to see what
+11   documents we had.
+12       Q.   Okay.  I think it's clear from your testimony,
+13   but just to confirm these terms that we're looking at
+14   in Exhibits 30 and 32, these terms were run across the
+15   current MAS database; right?
+16       A.   Correct.
+17       Q.   Okay.  And then that older database where you
+18   plugged in a few M-numbers for these four projects, you
+19   did not run these specific search terms in that older
+20   database; right?
+21       A.   No.
+22       Q.   Okay.  And the last time around, I had asked
+23   you some questions about what fields are searchable in
+24   the older database, and you knew that the M-number was
+25   searchable, but beyond that, you didn't really want to
+0457
+ 1   speculate.  Have you learned anything new about what
+ 2   fields are searchable in the older database since our
+ 3   last deposition?
+ 4       A.   No.  The M-number -- and that takes enough
+ 5   time to get everything and search those M-numbers, I
+ 6   think took an hour because it's so slow, and it has to
+ 7   go through all the different numbers or 45 minutes to
+ 8   print it out.  So there's no chance that we're going to
+ 9   go through all these different terms in the old
+10   database.  It hasn't shown any reason why we can't
+11   find -- because we found these older M-numbers, because
+12   that database was merged into the new platform, so it
+13   has the speed necessary to search through all this.
+14   But I'm not searching these old -- all these terms
+15   through the old database.
+16       Q.   Okay.
+17            MR. HYNES:  And then Mark, I guess, we had
+18   requested -- you know, I guess I'll just readout what
+19   the request was, and we can, I guess, during a break
+20   search for those materials, but we had requested, with
+21   respect to these identified testing of cosmetic talc
+22   pre-2017.  I think we have everything that you have
+23   been able to find for the 2013 Cashmere Bouquet report.
+24            It sounds like for the sterile talc, all
+25   you've been able to find is the chain of custody.
+0458
+ 1   We'll request production of that -- or the intake form.
+ 2            With respect to the 2000 Gold Bond materials,
+ 3   I think that's similar where, you know, maybe a photo
+ 4   of the container and the intake or chain of custody
+ 5   form.  We'll request production of that here, and then
+ 6   the 2009 Cashmere Bouquet project; we have that
+ 7   compilation, you know, the report with the TEM, PLM,
+ 8   SEM, and then a chain of custody form and a shipping
+ 9   label.
+10   BY MR. HYNES:
+11       Q.   But beyond that, is there any other
+12   documentation that you've been able to find with
+13   respect to any of these three projects here?
+14       A.   No, that's it.
+15            MR. HYNES:  Okay.
+16            All right.  Why don't we take a quick break,
+17   if you want to take a look for the sterile talc sheet
+18   and --
+19            THE DEPONENT:  I'll see if I can find it, and
+20   I'll give it to my assistant to...
+21            DEPOSITION OFFICER:  Off the record?
+22            MR. HYNES:  Yeah, take a five-minute break.
+23            (Whereupon, a recess was held from
+24            11:19 a.m. to 11:41 p.m.)
+25            MR. HYNES:  Back on the record.
+0459
+ 1   BY MR. HYNES:
+ 2       Q.   Okay.  Dr. Longo, so over the break, you
+ 3   collected some materials and had your assistant send
+ 4   them over to Mr. Bratt; is that right?
+ 5       A.   Correct.
+ 6       Q.   Okay.  Could you just identify what you sent
+ 7   along, for the record, please.
+ 8       A.   I sent the MAS chain of custody sheet for
+ 9   M24446, the sterile talc, and I also sent a chain of
+10   custody for the Gold Bond, for M23945, chain of
+11   custody, and two pictures.
+12       Q.   Okay.
+13            MR. HYNES:  So we can attach as Exhibit 34 the
+14   sterile talc chain of custody form.
+15            (Exhibit 34 marked.)
+16            MR. HYNES:  And then as Exhibit 35, the Gold
+17   Bond chain of custody along with the photos.
+18            (Exhibit 35 marked.)
+19            MR. BRATT:  Let me just do this real quick,
+20   because it's in a single document.  I guess I'll
+21   just -- I'll just drop it in how I received it.
+22            MR. HYNES:  That's fine.  And then I'll break
+23   it up after and send it to the reporter.
+24   BY MR. HYNES:
+25       Q.   All right.  Thanks for doing that, Dr. Longo.
+0460
+ 1            I had a couple more questions on these, then I
+ 2   can move to that report that I've objected to.
+ 3            So I guess the -- I think you have it listed
+ 4   here M50705, but I think it's M50750; right, the 2013
+ 5   Cashmere Bouquet report?
+ 6       A.   Yes.
+ 7       Q.   Okay.  The first time that you were made aware
+ 8   of the existence of that report was sometime around
+ 9   like October of 2020; is that right?
+10       A.   That is correct.
+11       Q.   All right.  And when the work was ongoing at
+12   MAS, you were not aware that it was happening; is that
+13   right?
+14       A.   I don't recall at all.
+15       Q.   That January 30th, 2009, login for MAS project
+16   M48558 on Cashmere Bouquet, were you aware of that
+17   project when it was ongoing in 2009?
+18       A.   No.
+19       Q.   Okay.
+20       A.   And I don't recall ever being told about that.
+21       Q.   Okay.  Have you spoken with Mr. Egland about
+22   that report since your last deposition?
+23       A.   Other than we found another one that you
+24   worked on, and he said I don't remember that.
+25       Q.   Okay.
+0461
+ 1       A.   That's it.
+ 2       Q.   Okay.  So you just asked Mr. Egland if he
+ 3   recalled working on that project.  He told you that he
+ 4   did not recall working on it, and that's all you
+ 5   discussed.
+ 6       A.   I -- you know, I may have said there was -- he
+ 7   didn't find anything, and I don't know what else I
+ 8   said.
+ 9       Q.   Okay.  When was that conversation?
+10       A.   Some point after we found it, so it might have
+11   been -- yeah, I'm not sure when it was.  It was after I
+12   found it, which was found during the first search, as I
+13   remember.
+14       Q.   So was it -- was the conversation last week or
+15   this week?
+16       A.   It would have been last week.
+17       Q.   Okay.  How long was that conversation?
+18       A.   A couple minutes.
+19       Q.   Okay.  And have you had any additional
+20   discussions with him about this report since that time?
+21       A.   No.
+22       Q.   Okay.  Have you spoken with Mike Mount
+23   regarding the 2009 report?
+24       A.   No.
+25       Q.   Have you spoken with Anthony Keeton about the
+0462
+ 1   2009 report?
+ 2       A.   No.
+ 3       Q.   Okay.  In those -- the Gold Bond and sterile
+ 4   talc analyses, I take it you were not aware of those
+ 5   projects during the time they were ongoing in 2000 at
+ 6   MAS; is that right?
+ 7       A.   Well, I mean, the only -- how I -- yeah.  When
+ 8   I became aware of it was -- I think it was in my -- in
+ 9   one of my depositions that was showed to me from 2000
+10   or 2002.
+11       Q.   Uh-huh.  Okay.
+12       A.   But I didn't recall -- I didn't recall any of
+13   that when I was asked all those questions about if we
+14   ever analyzed cosmetic talc before.  I probably didn't
+15   know what sterile talc was at that point and when
+16   looking up that company, it's -- it's essentially
+17   pharmaceutical talc Bryan Corporation catalog --
+18   because I looked that up because I was curious about
+19   it.
+20       Q.   Do you know the source mine of that talc?
+21       A.   I have no idea.
+22       Q.   All right.  So let's move to the -- the report
+23   dated March 23rd, 2021, that I was provided on
+24   March 29th.  So at the front, I objected to this late
+25   disclosure.  You know, and in the interest of
+0463
+ 1   efficiency, I'm going to try to ask you some questions
+ 2   about that today, reserving all rights, as I discussed
+ 3   at the outset of today's deposition.
+ 4            So we'll mark this as Exhibit 6, the 3/23/21
+ 5   report.
+ 6   BY MR. HYNES:
+ 7       Q.   Do you have that with you, Dr. Longo?
+ 8            MR. BRATT:  Did you say 6 or 36?
+ 9            MR. HYNES:  36.
+10            (Exhibit 36 marked.)
+11   BY MR. HYNES:
+12       Q.   All right.  So broad overview, you tested nine
+13   containers of likely Chinese-sourced talcum powder
+14   using the Colorado School of Mines, as you call it,
+15   sample preparation technique followed by analysis by
+16   PLM using the protocol lined up in ISO 22262-1; right?
+17       A.   Correct.
+18       Q.   And using that methodology, you identified
+19   what you're identifying as chrysotile at levels from
+20   .0002 to .001 percent by area weight; is that right?
+21       A.   That is correct.
+22       Q.   Okay.  These are all previously nondetect by
+23   transmission electron microscopy; right?
+24       A.   Using heavy -- yes.  But it's using heavy
+25   liquid density just for amphiboles, you would not have
+0464
+ 1   detected this.
+ 2       Q.   Okay.  And you -- you didn't do any sort of
+ 3   PLM analysis without liquid density separation in
+ 4   advance for these nine samples as part of this report;
+ 5   right?
+ 6       A.   That's correct.
+ 7       Q.   Any reason why?
+ 8       A.   We were too busy to go ahead and do that.
+ 9   The -- we routinely do it now, but for this one, this
+10   was an in-house analysis, so it -- and we were not
+11   having the time to -- these nine samples would take,
+12   you know, for the ISO, you know, somewhere between four
+13   and six hours to do this type of analysis, so it was
+14   just a time constraint.
+15       Q.   Uh-huh.
+16       A.   Also, I knew that the heavy liquid density
+17   separation, even though it typically provides lower
+18   weight percents, every sample we've done so far where
+19   we compare the ISO where it's positive to the weight
+20   percent overall to the Colorado School of Mines
+21   preparation method, the weight percents are lower, but
+22   the amount of chrysotile bundles is always higher.  So
+23   if I were to pick to do one, I would use the CSM sample
+24   preparation method.
+25       Q.   And why don't you expand on that a bit more.
+0465
+ 1       A.   I'm sorry?
+ 2       Q.   Why is that?  Why would you -- given the
+ 3   results that you're getting that aren't quite a hundred
+ 4   percent between CSM followed by ISO versus just ISO
+ 5   with no sort of liquid density separation in advance,
+ 6   why would you choose the CSM prep method followed by
+ 7   ISO analysis over just the straight ISO?
+ 8       A.   Because it is giving us more of the smaller
+ 9   bundles versus the ISO which gives larger bundles, and
+10   for whatever reason, it's not sensitive to the larger
+11   bundles, but it's giving us a more -- giving us more of
+12   the smaller ones too, and they're always at a higher
+13   concentration when you're calculating just the bundles
+14   per gram, so it's more sensitive to the smaller size.
+15   I've not figured out why it's -- it's not separating
+16   out the larger bundles, and that's -- as I say, further
+17   work needs to be done on that.
+18       Q.   Right.  So I guess at this point the Colorado
+19   School of Mines preparation technique is isolating, I
+20   guess, smaller, in terms of dimensions, like length by
+21   width, you know, what you're calling chrysotile bundles
+22   than you would typically find on the ISO method, but
+23   you do not currently have an explanation for why there
+24   is that difference in size fraction with one prep
+25   method versus another prep method; is that right?
+0466
+ 1       A.   That is correct.  I have some theories about
+ 2   it, but until I can verify, and, you know, we're
+ 3   continually working on this to figure out how we can
+ 4   get both populations in.
+ 5       Q.   Uh-huh.  What are the differences?  Like,
+ 6   how -- do you have any sort of quantification or, I
+ 7   guess, a qualitative estimate as to the differences in
+ 8   size fractions that you're seeing with one prep method
+ 9   versus the other?
+10       A.   I haven't quantified it.  I haven't gone in
+11   and measured every one.  But when the analyst is -- the
+12   PLM analyst is counting the number of bundles each --
+13   in the fields of view, you always -- you always have
+14   more.  I can't show you a side-by-side comparison for
+15   this particular one.  But if you look at things like
+16   the Lucky's -- not Lucky's -- what's the -- Ralphs
+17   samples where they're side by side, and I'll be issuing
+18   a report from samples bought from Lucky's, two
+19   containers, and if you compare those, it's almost about
+20   a hundred thousand more if you average them up than the
+21   ISO.
+22            It could be that the -- the larger bundles are
+23   absorbing more water which would take -- which would
+24   change the density or there -- so there could be
+25   somewhere in the talc fraction still, and it's
+0467
+ 1   just -- it's going to take some additional research to
+ 2   solve the puzzle.
+ 3       Q.   And do you have an average length by width
+ 4   that you're seeing in terms of the chrysotile
+ 5   population in the Colorado School of Mines prep
+ 6   fraction?
+ 7       A.   I haven't gone through that exercise yet.
+ 8       Q.   Okay.  Do you have sort of a range of values
+ 9   in mind --
+10       A.   No.
+11       Q.   -- what's generally on the low end, generally
+12   on the high end for length to width?
+13       A.   No.  Again, I'd have to measure every one of
+14   them.
+15       Q.   Okay.
+16       A.   And, you know, in each sample we have four or
+17   five representative bundles where we take three or four
+18   photographs of it, but we haven't measured that, just
+19   the analyst telling me that he's seeing smaller bundle
+20   sizes in one versus the other.
+21       Q.   Okay.  Do you know the relative thickness of
+22   the bundles that you're seeing under -- you know, once
+23   you've run the Colorado School of Mines prep technique,
+24   what the average thickness is of the bundles your
+25   analysts are observing?
+0468
+ 1       A.   Again, I haven't measured those or tried to
+ 2   quantify it.
+ 3       Q.   Okay.
+ 4       A.   This is just a very qualitative observation by
+ 5   the PLM analyst that does this work.
+ 6       Q.   Uh-huh.  Do you have any kind of estimate on
+ 7   sort of a low range to high range in terms of the
+ 8   thicknesses that they are observing on the polarized
+ 9   light microscope?
+10       A.   No, sir.  I would have to sit down and make
+11   the measurements for all of the ones we've analyzed so
+12   far for both methods and then go through and get the
+13   average length, the average width, and put it in a
+14   spreadsheet so -- and get the average and just look at
+15   the population, but I don't have that data.
+16       Q.   Right.  And do you record -- does your
+17   laboratory record the thicknesses of the particles
+18   observed under polarized light microscope?
+19       A.   No.  Only that we take the photograph, which
+20   can easily -- you can make those measurements; it just
+21   takes time.
+22       Q.   Okay.  Now, as I'm looking at the backup data
+23   in this report, it looks like you used the -- you
+24   didn't use the brand-new PLM microscope for this
+25   analysis; right?
+0469
+ 1       A.   I don't -- yeah, I don't -- I don't think
+ 2   they -- they were still using the older microscopes.
+ 3   Those are gone now, so they can't use the old ones
+ 4   anymore.
+ 5       Q.   Okay.  Would this be the last report that
+ 6   you're going to issue with PLM from the old microscope?
+ 7       A.   It could be.  People hate change.
+ 8            (Reporter clarification.)
+ 9            THE DEPONENT:  This could be the last one,
+10   last set.
+11   BY MR. HYNES:
+12       Q.   And I guess the identification of chrysotile
+13   here was done in the same way as the other polarized
+14   light microscopy reports that you've issued in this
+15   case and we've attached to your, I think, first day of
+16   deposition; is that fair?
+17       A.   That's fair.  It's the measure of the
+18   refractive indices and determined the -- the
+19   birefringence number to differentiate it from talc.
+20       Q.   Right.
+21            And so here you had an average birefringence
+22   of .013, which you said was at the low end of moderate;
+23   is that right?
+24       A.   Correct.
+25       Q.   Okay.  And for the majority of these samples,
+0470
+ 1   you had not previously done any form of polarized light
+ 2   microscopy analysis before this report; right?
+ 3       A.   That's correct.
+ 4       Q.   One of them you did; right?  The M6 -- what
+ 5   number is it?  Sorry.  M65329-013, had you previously
+ 6   analyzed using polarized light microscopy; right?
+ 7       A.   Oh, yeah, that control.
+ 8       Q.   Right.  So that was MAS's Johnson & Johnson
+ 9   baby powder control sample; right?
+10       A.   That's correct.
+11       Q.   And that was your laboratory control sample
+12   dating back to 2016; is that right?
+13       A.   Correct.
+14       Q.   And so as a control sample, that was used for
+15   a number of different projects at MAS; right?
+16       A.   Yes.
+17       Q.   So it was used for method development
+18   purposes?
+19       A.   That's correct.
+20       Q.   Part of that would be spiking with known
+21   quantities of asbestos for purposes of developing heavy
+22   liquid separation techniques?
+23       A.   That is correct.
+24       Q.   It was also analyzed by scanning electron
+25   microscopy to determine average particle size
+0471
+ 1   distribution; right?
+ 2       A.   Yes.
+ 3       Q.   And then it was also analyzed by PLM, I think,
+ 4   standard ISO method back in 2018 as you were working
+ 5   on, you know, your methods for the -- for the MDL
+ 6   testing project; right?
+ 7       A.   Yes.  We included that in the MDL reports, as
+ 8   I recall.
+ 9       Q.   Right.
+10            So I'll attach as Exhibit 37, the data from
+11   the -- bear with me -- yeah, so what I'll attach as
+12   Exhibit 37 is going to be -- first page is a chain of
+13   custody form for project M65329-013, and then a few
+14   pages into this is a PLM analysis sheet dated
+15   July 23rd, 2018.  So bear with me.  I'll attach that in
+16   a second.
+17            (Exhibit 37 marked.)
+18   BY MR. HYNES:
+19       Q.   I guess while I'm attaching it, Dr. Longo,
+20   when your laboratory previously tested this sample for
+21   presence of asbestos by PLM back in July of 2018, it
+22   did not identify any detectible level of asbestos by
+23   polarized light microscopy; right?
+24       A.   That is correct.
+25       Q.   Okay.  And that analysis, I believe, was
+0472
+ 1   conducted pursuant to ISO -- ISO method at that time,
+ 2   polarized light microscopy method; right?
+ 3       A.   That's correct.
+ 4       Q.   And no chrysotile was identified as part of
+ 5   that analysis; right?
+ 6       A.   That is correct.
+ 7       Q.   And that analysis was performed using that
+ 8   1.605 refractive index oil; that's the oil that was
+ 9   used in 2018?
+10       A.   Yes.  The RI fluid, which is for amphiboles,
+11   so it would be hard to identify chrysotile with a
+12   1.605.
+13       Q.   Okay.
+14            And -- okay.  I guess a few other questions
+15   about this report before I shift gears.
+16            So another thing about this report is you used
+17   a heavy liquid with a specific gravity of 2.72 grams
+18   per cubic centimeter; is that right?
+19       A.   That's right.
+20       Q.   Okay.  And by using that specific gravity of
+21   2.72, the ranges of recovery that you had for these
+22   nine samples were between 15.4 percent to 28.2 percent;
+23   right?
+24       A.   Yes.
+25       Q.   So essentially that means that after
+0473
+ 1   separation, the PLM analyst is working with
+ 2   15.4 percent to 28.2 percent of what the -- of the
+ 3   original starting material; right?
+ 4       A.   That is correct.
+ 5       Q.   Okay.  And would you agree with me that the
+ 6   original starting material that's being subjected to
+ 7   this density separation would be 99 percent or greater
+ 8   talc?
+ 9       A.   I would agree.
+10       Q.   Okay.  And then even that recovered fraction
+11   would still be 99 percent or greater talc?
+12       A.   If it was a hundred percent efficient, that
+13   would be correct.
+14       Q.   Uh-huh.
+15       A.   But it's -- we've never seen one a hundred
+16   percent efficient in removing it.
+17       Q.   Right.
+18       A.   So this is usually the range we find.
+19       Q.   Okay.  But I'm saying that the 15.4 percent to
+20   28.2 percent recovered fraction that you're analyzing,
+21   that remains, you know, in the neighborhood of around
+22   the 99 percent or greater talc still; right?
+23       A.   What the talc is made -- what's that made up
+24   of?  Yes, that's primarily talc.
+25       Q.   Right.  99 percent or greater talc still;
+0474
+ 1   right?
+ 2       A.   Talc and any other, you know, like maybe
+ 3   chloride minerals; you know, you see mica in there.  So
+ 4   I -- I mean, I can't say it's 99.9 percent that's not
+ 5   the only thing you find in there, so -- but it would be
+ 6   a very high percentage of just talc.
+ 7       Q.   And -- all right.  And so we talked about this
+ 8   before but the Colorado School of Mines for its
+ 9   chrysotile polarized light microscopy analysis, when
+10   it's using heavy liquid, it uses a heavy liquid of less
+11   than -- of 2.65 grams per cubic centimeter; right?
+12       A.   Correct.
+13       Q.   And so when it's analyzing for chrysotile,
+14   it's analyzing that fraction that is, you know, less
+15   than the 2.65 grams per cubic centimeter fraction;
+16   right?
+17       A.   Correct.
+18       Q.   Okay.  So I'll attach as Exhibit 38, a
+19   document that you cite in your report.  It's a
+20   December 27th, 1973, Colorado School of Mines report on
+21   some of these experiments involving liquid density
+22   separation.  So I dropped it in the chat.
+23            (Exhibit 38 marked.)
+24   BY MR. HYNES:
+25       Q.   Dr. Longo, do you have that in front of you or
+0475
+ 1   do you have access to it?
+ 2       A.   Why does it do that to me?  All's I get is
+ 3   like -- oh, maybe that's it.
+ 4       Q.   If you want I can share screen again?
+ 5       A.   Yeah, because I don't get the document.  It
+ 6   almost looks like it gives me a systems 32 up in the
+ 7   "save in."
+ 8       Q.   All right.  Don't worry about it.  I'll open
+ 9   it up here.
+10       A.   Okay.
+11       Q.   All right.  Can you see it says CSMRI on the
+12   front?
+13       A.   Yeah.  Yes, I do.
+14       Q.   Okay.  So we're going to flip ahead -- now one
+15   of the things we were talking about was the -- your
+16   laboratory had analyzed M65329-013 in refractive index
+17   oil of 1.605 and did not identify any chrysotile in
+18   that sample; right?
+19       A.   I'd have to see that.  I thought it was --
+20   yeah, in 1 -- in 1.605, we did not.
+21       Q.   Right.
+22            Okay.  And so one of the things I'll just --
+23   I'm on page 12 of the PDF; it says 8 at the top of this
+24   December 27th, 1973, report under the heading
+25   "Chrysotile," the Colorado School of Mines research
+0476
+ 1   institutes authors write:  The heavy liquid separate
+ 2   having a special gravity of less than 2.65 may be
+ 3   examined in two ways.  The sample may be mounted in
+ 4   immersion oil of refractive index 1.600 and examined by
+ 5   transmitted light under a petrographic microscope.
+ 6            Did I read that correctly, Dr. Longo?
+ 7       A.   You did.
+ 8       Q.   Okay.  And 1.600 is fairly close to 1.605, the
+ 9   oil that your laboratory used in July of 2013 on that
+10   M65329-013 sample; right?
+11       A.   Well, it's -- yeah, 1.600 and 1.605 is fairly
+12   close, even though we wouldn't use a 1.600 for
+13   amphiboles, because it does skew the refractive indices
+14   somewhat.
+15            And here's the issue:  If you go to the next
+16   line -- next sentence, you know, it says, chrysotile
+17   has refractive indices well below the refractive index
+18   of the immersion oil -- it's actually fluid, not an
+19   oil -- and therefore should be readily visible if
+20   present.
+21            Well, it's -- I wouldn't -- I wouldn't go to
+22   court or I wouldn't write a report identifying
+23   chrysotile unless they had an oil that was appropriate
+24   for that, which is the 1.550, so that's not a standard
+25   analysis for chrysotile, but I see what it says.
+0477
+ 1       Q.   Right.
+ 2            And so do you disagree with the Colorado
+ 3   School of Mines method here that states that you would
+ 4   analyze the less than 2.65 specific gravity fraction in
+ 5   1.600 refractive index oil and that chrysotile would be
+ 6   readily visible if present given that its refractive
+ 7   indices are well below the value of the oil?
+ 8       A.   I haven't tried that experiment, if we would
+ 9   identify it, but I certainly would not put it in a
+10   report.  I would use the appropriate refractive indices
+11   fluid that is in all the methods, the ISO method, the
+12   R-93 method.  You would have a lot of criticisms of
+13   using that.  It may work perfectly fine for them, but
+14   it's not something that we would do here --
+15       Q.   Okay.
+16       A.   -- because it is outside the range.  Now, as
+17   for using less -- using 2.65 as the heavy liquid, we're
+18   starting another round of looking at the different
+19   efficiencies of the different heavy liquids, and we
+20   started off with 1.65, and we get less asbestos --
+21   less -- in the knowns, we get less amounts found.  So I
+22   don't know if that is a characteristic of the talc in
+23   the Vermont mines versus the talc in the Chinese mine.
+24   We have not done that much Vermont mines for chrysotile
+25   yet.  So, you know, that's still being worked on.
+0478
+ 1            But I don't think it's -- I don't think you
+ 2   have to use the exact heavy liquid.  You have to -- and
+ 3   say for one mine source versus the other for talc.  I
+ 4   think you have to go through the standards of looking
+ 5   at each from, like, starting at 2.65 up to 2.72.  But
+ 6   no, I would not use 1.600.
+ 7            And that next sentence really explains it,
+ 8   well below.  You really want -- you really want a RI
+ 9   fluid that's in the range of what you're looking for,
+10   and 1.550 is the standard refractive indices fluid
+11   that's in all the standardized PLM protocols.  I know
+12   if I were to use 1.600, the criticisms would be
+13   significant from your-all's experts.
+14       Q.   Would you disagree with Colorado School of
+15   Mines that chrysotile would be readily visible if
+16   present in 1.600 refractive index oil?
+17       A.   Well, I don't --
+18            MR. BRATT:  I think that mischaracterizes -- I
+19   apologize.
+20            I think that mischaracterizes the statement in
+21   whole when you take it in context.
+22            But go ahead, Dr. Longo.
+23            THE DEPONENT:  I don't know what they're
+24   talking about, that it's readily visible.  It will
+25   have -- the refractive indices will be off because you
+0479
+ 1   would have to compare it to standards that are not done
+ 2   in 1.600 or you go to the Su charts or you go to
+ 3   McCrone, or you go to -- you know, when a PLM analyst
+ 4   goes to McCrone school, that's not what they're taught.
+ 5   You would have to set up a whole set of standards.  You
+ 6   would have to -- you know, you'd have to look at the
+ 7   Calidria, and then you would have to ask the question
+ 8   why.  Why would you do this when it's not a
+ 9   standardized refractive indices fluid for chrysotile?
+10   BY MR. HYNES:
+11       Q.   Do you disagree with the Colorado School of
+12   Mines Research Institute when it says that a feature of
+13   chrysotile is very low birefringence?
+14            MR. BRATT:  I think it's argumentative as
+15   phrased about disagreement, and it also
+16   mischaracterizes what's being stated in this document
+17   in total.
+18            Go ahead.
+19            THE DEPONENT:  I don't disagree with that.  It
+20   will change -- the refractive indices will be different
+21   than in the 1.550, but you will still have low
+22   birefringence.  And low birefringence is how we tell
+23   the difference in chrysotile in the upper end of medium
+24   to high birefringence for the fibrous talc.  So I don't
+25   disagree with that all, and I don't disagree with the
+0480
+ 1   parallel extension.
+ 2   BY MR. HYNES:
+ 3       Q.   All right.  In terms of the Colorado School of
+ 4   Mines 2.65 density separation method, do you recall how
+ 5   much material they typically started with when
+ 6   performing this separation technique?
+ 7       A.   I think it's on the next page or so.  It's
+ 8   something close to 5 grams.
+ 9       Q.   Yeah, you got it.  So it's 5 grams, if you
+10   look at bottom of page 8 of PDF, it says 4 on the top
+11   right of the document, under the heading Separation
+12   Details, 5-gram samples are added to each of two
+13   125-milliliter separatory funnels.
+14            Did I read that correctly, Dr. Longo?
+15       A.   You did.
+16       Q.   And do you recall how much material is
+17   typically recovered in the less than 2.65 specific
+18   gravity fraction?
+19       A.   I don't recall.
+20       Q.   Okay.  So if we go down a bit further on
+21   page -- top right of the document says 6; it's page 10
+22   of this PDF that's been attached as Exhibit 38, the
+23   very last paragraph of this section related to liquid
+24   separation, the Colorado School of Mines authors write:
+25   The fractions recovered from the heavy liquid
+0481
+ 1   separation generally amount to 20 milligrams or less.
+ 2            Did I read that correctly?
+ 3       A.   You did.
+ 4       Q.   Okay.  So usually starting with around 5 grams
+ 5   and then the recovered fraction less than 2.65 specific
+ 6   gravity that's eventually analyzed is around
+ 7   20 milligrams or less; is that right?
+ 8       A.   That's what it states.
+ 9       Q.   Okay.  And that's around, you know, around
+10   .4 percent recovery?  You can do the math quickly in
+11   your head or on the calculator on your computer.
+12       A.   That's probably about right.
+13       Q.   Okay.  And that's quite different from the
+14   recovery fractions that we looked at from your report
+15   here where you're analyzing, you know, somewhere north
+16   of 15 percent to about 28 percent of the starting
+17   material; right?
+18       A.   Correct.
+19       Q.   Okay.  All right.  So I'll stop sharing this.
+20            Now, one other thing that I saw included in
+21   this new report on pages 20 to 21 is a new section
+22   under the header Exposure to JBP Talcum Powder.
+23            Are you with me?
+24       A.   I am.
+25       Q.   And so in this section, it discusses how
+0482
+ 1   many what you're calling chrysotile bundles per gram
+ 2   would be in each one of the containers that you
+ 3   analyzed, and then separately how many chrysotile
+ 4   bundles per gram would be in 8-gram fractions for each
+ 5   bulk use of one of those containers.  Is that about
+ 6   what you depicted here?
+ 7       A.   Yes.  If it was three of the same sized
+ 8   containers, then I would average it together.  If it
+ 9   was just one container, like the one 9-ounce, then that
+10   was what came out of that container.
+11       Q.   Right.  And so what you're -- what you're
+12   listing here are the total number of, you know, what
+13   you're calling chrysotile structures that would be
+14   liberated out of the container for each use; right?
+15       A.   Correct.
+16       Q.   Okay.  And so this is not measuring how many
+17   of those structures or particles may become airborne
+18   during a given use; right?
+19       A.   No, it does not.  You -- you'd have to take
+20   into account that when you apply talcum powder, over
+21   98, 99 percent of it lands on the person or the floor
+22   or what have you; a very small fraction actually gets
+23   up in the air.
+24       Q.   Right.  So the vast majority of the material
+25   in the container, when it exits the container, doesn't
+0483
+ 1   become airborne from that activity; right?
+ 2       A.   That is correct.
+ 3       Q.   Okay.  And none of the figures that you
+ 4   present here on pages 20 and 21 in the exposure to JBP
+ 5   talcum powder are, you know, estimates of how many of
+ 6   these structures a person may breathe from using
+ 7   Johnson's baby powder; correct?
+ 8       A.   It is not.
+ 9       Q.   Okay.
+10       A.   It doesn't state that.
+11       Q.   Okay.  And your opinion is that, you know,
+12   with estimated chrysotile concentrations, you know,
+13   identified in these bulk containers ranging from, I
+14   think we said, .0002 to .001 percent area weight, your
+15   laboratory likely would not identify detectible levels
+16   of airborne chrysotile if you were to perform a
+17   simulation study following your laboratory standard air
+18   simulation protocol; correct?
+19       A.   I don't believe currently what we're doing
+20   that we would be able to detect it in the air.  You
+21   probably would have to do some sort of -- collect a
+22   large enough sample that you could do the separation on
+23   it and go through a heavy liquid separation and then
+24   analyze that fraction.  I think that's the only way
+25   you're going to be able to detect this.
+0484
+ 1       Q.   Okay.  A few final questions here for today.
+ 2            So my understanding is you still have not
+ 3   conducted transmission electron microscopy analysis
+ 4   without concentration on any Johnson's baby powder
+ 5   containers; correct?
+ 6       A.   No.  We're still trying to work out to get a
+ 7   higher detection limit than .001 but, you know, we --
+ 8   trying to find the time to do the research.
+ 9       Q.   Uh-huh.  And you still have never identified
+10   chrysotile using TEM in a Johnson's baby powder sample?
+11       A.   That is true, since we haven't tried to do
+12   that.
+13       Q.   Uh-huh.  And true that no independent third
+14   party laboratory has reviewed your Johnson's baby
+15   powder PLM results to confirm or verify the chrysotile
+16   identification made in those reports?
+17       A.   Not that I know of.
+18       Q.   Okay.
+19            All right.  So I did this last time, walk
+20   through it again.  So do the reports that you've
+21   produced in this case, along with your testimony in
+22   this case, along with the reference list that you
+23   produced in this case, along with the deposition
+24   exhibits and other reference materials we've discussed
+25   during the course of your deposition include all of the
+0485
+ 1   opinions that you intend to offer at trial in the
+ 2   Johnson matter?
+ 3            MR. BRATT:  I think it's overbroad to some
+ 4   extent.  I think that while many of them overlap and
+ 5   are contained, not every question has been asked by
+ 6   other sides.  There's no report requirement in
+ 7   California.
+ 8            But go ahead, Dr. Longo.  Elaborate.
+ 9            THE DEPONENT:  I mean, I believe so, but I
+10   can't ever -- even after all the experience I've had,
+11   I've never been able to anticipate cross-examination,
+12   so I have to just see what kind of questions I'm going
+13   to be asked, but this -- and it is pretty broad, but as
+14   far as I can tell, I believe I've produced everything.
+15            MR. HYNES:  Okay.
+16            All right.  Bear with me.  I'm going to take
+17   two minutes, look at the materials that you've sent
+18   along to me before we started after this last break.  I
+19   think I may be through for today.  I can attach those
+20   two exhibits that you just sent along to the chat.
+21            But reserve my right to continue questioning
+22   following the IDC on the search issues.  But absent
+23   that, I think I will pass the witness for today if
+24   others have questions.
+25            MR. BRATT:  Mitch, do you have any questions?
+0486
+ 1            MR. CHARCHALIS:  Sorry.  No, I do not at this
+ 2   time, but I reserve my right, similar to counsel for
+ 3   Johnson & Johnson.
+ 4            MR. BRATT:  Okay.  I'm not going to ask any
+ 5   questions at this time.  Reserve any and all follow-up
+ 6   for trial.
+ 7            With that in mind, I guess unless there's
+ 8   anything else, this will conclude the deposition
+ 9   finally.
+10            MR. HYNES:  Yeah, pending the -- anything
+11   further following the IDC on the search information,
+12   but potentially not.  We'll see where that goes.  If
+13   you guys want to stick around, I'm going to just upload
+14   some of these exhibits.
+15            Mark, I don't know if you want to wait until
+16   you have them, but I'm going to modify and load it to
+17   the chat.
+18            MR. BRATT:  I'll wait around.
+19            Unless there's any follow-ups for Dr. Longo,
+20   as far as spellings or clarifications on testimony, I
+21   think he can get back to more important work, and we
+22   can go off the record.
+23            Any follow-ups?
+24            (No audible response from counsel.)
+25            DEPOSITION OFFICER:  Are we off the record?
+0487
+ 1            MR. BRATT:  Let me just state for the record
+ 2   as far as the final bill for time spent, Dr. Longo will
+ 3   either send it to me or directly to your firm, Kevin,
+ 4   in regards to this additional time spent.
+ 5            That's it.
+ 6            MR. HYNES:  Yeah, for the deposition time,
+ 7   send me those invoices, and I will get those processed.
+ 8   Thanks.
+ 9            MR. BRATT:  All right.
+10            DEPOSITION OFFICER:  Off the record?
+11            MR. BRATT:  Yes.
+12            (Discussion held off the record.)
+13            (Exhibit 39 marked.)
+14   
+15                  (Whereupon, at the hour of
+16                  12:30 p.m. the proceedings
+17                       were concluded.)
+18                             -o0o-
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0488
+ 1             DECLARATION UNDER PENALTY OF PERJURY
+ 2   
+ 3   
+ 4            I, WILLIAM LONGO, Ph.D., do hereby certify
+ 5   under penalty of perjury that I have read the foregoing
+ 6   transcript of my deposition taken on April 1, 2021;
+ 7   that I have made such corrections as appear noted
+ 8   herein in ink, initialed by me; that my testimony as
+ 9   contained herein, as corrected, is true and correct.
+10   
+11            DATED this _____ day of ___________, 2021,
+12    at ___________________________, _____________________.
+13   
+14   
+15   
+16   
+17   
+18   
+19                        ___________________________________
+                                    WILLIAM LONGO, Ph.D.
+20   
+21   
+22   
+23   
+24   
+25   
+0489
+ 1   STATE OF CALIFORNIA      )
+                              )
+ 2   COUNTY OF LOS ANGELES    )
+ 3   
+ 4              I, PAIGE I. HUTCHINSON, Certified
+ 5   Court Reporter, Certificate No. 13459, for the State of
+ 6   California, hereby certify:
+ 7               I am the deposition officer who
+ 8   Stenographically recorded the foregoing deposition;
+ 9              Written Notice Pursuant to Code of Civil
+10   Procedure, Section 2025.520, having been sent to the
+11   deponent, the deponent:
+12              ( )  IN PERSON MADE THE CHANGES SET
+                     FORTH IN THE FOREGOING TRANSCRIPT;
+13   
+                ( )  APPROVED THE TRANSCRIPT BY SIGNING IT;
+14   
+                ( )  FAILED OR REFUSED TO SIGN THE
+15                   TRANSCRIPT BY NOT SIGNING IT;
+16              ( )  BY SIGNED LETTER ATTACHED HERETO,
+                     MADE THE CHANGES SET FORTH THEREIN
+17                   AND APPROVED, OR REFUSED TO
+                     APPROVE, THE TRANSCRIPT;
+18   
+                ( )  FAILED TO CONTACT THE DEPOSITION
+19                   OFFICER WITHIN THE ALLOTTED TIME
+                     PERIOD.
+20   
+21   
+     DATED: __________________
+22   
+23   
+                     _______________________________
+24   
+                     (DEPOSITION OFFICER)
+25   
+0490
+ 1   STATE OF CALIFORNIA       )
+                               )
+ 2   COUNTY OF LOS ANGELES     )
+ 3   
+ 4            I, Paige I. Hutchinson, Certified Shorthand
+ 5   Reporter, No. 13459, do hereby certify:
+ 6            That prior to being examined, the witness
+ 7   named in the foregoing deposition was by me duly
+ 8   sworn to testify to the truth, the whole truth, and
+ 9   nothing but the truth;
+10            That said deposition was taken before me
+11   remotely via videoconference; and thereafter reduced to
+12   print by means of computer-aided transcription; and the
+13   same is a true, correct, and complete transcript of
+14   said proceedings taken at that time, to the best of my
+15   ability.
+16            I further certify that I am not interested in
+17   the outcome of the action.
+18            Witness my hand this, Thursday, April 8, 2021.
+19   
+20   
+21   
+22   
+23                   ______________________________________
+                     Paige I. Hutchinson, CA CSR No. 13459,
+24                   TX CSR No. 11222, WA No. 3336
+25   
+0491
+ 1                        CORRECTION LIST
+ 2   
+     Page/Line       From                    To
+ 3   __________      ___________________     _________________
+ 4   __________      ___________________     _________________
+ 5   __________      ___________________     _________________
+ 6   __________      ___________________     _________________
+ 7   __________      ___________________     _________________
+ 8   __________      ___________________     _________________
+ 9   __________      ___________________     _________________
+10   __________      ___________________     _________________
+11   __________      ___________________     _________________
+12   __________      ___________________     _________________
+13   __________      ___________________     _________________
+14   __________      ___________________     _________________
+15   __________      ___________________     _________________
+16   __________      ___________________     _________________
+17   __________      ___________________     _________________
+18   __________      ___________________     _________________
+19   __________      ___________________     _________________
+20   __________      ___________________     _________________
+21   __________      ___________________     _________________
+22   __________      ___________________     _________________
+23   __________      ___________________     _________________
+24   __________      ___________________     _________________
+25   __________      ___________________     _________________

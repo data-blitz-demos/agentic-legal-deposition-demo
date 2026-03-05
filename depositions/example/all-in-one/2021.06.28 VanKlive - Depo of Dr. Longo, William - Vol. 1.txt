@@ -1,0 +1,3480 @@
+0001
+ 1           SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                    FOR THE COUNTY OF ALAMEDA
+ 3   
+ 4   
+ 5   NEDELKA VANKLIVE,                )
+                                      )
+ 6             Plaintiff,             )
+                                      )
+ 7        vs.                         ) Case No.
+                                      ) RG20062734
+ 8                                    )
+     JOHNSON & JOHNSON; JOHNSON &     )
+ 9   JOHNSON CONSUMER INC. (sued      )
+     individually and as              )
+10   successor-in-interest to JOHNSON )
+     & JOHNSON CONSUMER COMPANIES,    )
+11   INC.); JOHNSON & JOHNSON         )
+     INTERNATIONAL; et al.,           )
+12                                    )
+               Defendants.            ) (Pages 1 - 131)
+13   _________________________________)
+14   
+15   
+16   
+17                 DEPOSITION OF EXPERT WITNESS
+18                    WILLIAM E. LONGO, Ph.D.
+19                            VOLUME I
+20                    MONDAY, JUNE 28, 2021
+21   
+22   
+23   
+24   Reported by:      PAIGE I. HUTCHINSON,  CA CSR No. 13459,
+                       TX CSR No. 11222, WA CCR No. 3336
+25   
+0002
+ 1           SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                    FOR THE COUNTY OF ALAMEDA
+ 3   
+ 4   
+ 5   NEDELKA VANKLIVE,                )
+                                      )
+ 6             Plaintiff,             )
+                                      )
+ 7        vs.                         ) Case No.
+                                      ) RG20062734
+ 8                                    )
+     JOHNSON & JOHNSON; JOHNSON &     )
+ 9   JOHNSON CONSUMER INC. (sued      )
+     individually and as              )
+10   successor-in-interest to JOHNSON )
+     & JOHNSON CONSUMER COMPANIES,    )
+11   INC.); JOHNSON & JOHNSON         )
+     INTERNATIONAL; et al.,           )
+12                                    )
+               Defendants.            )
+13   _________________________________)
+14   
+15   
+16   
+17   
+18   
+19            DEPOSITION OF WILLIAM E. LONGO, Ph.D.,
+20   VOLUME I, taken on behalf of Defendants, remotely via
+21   videoconference, from California, commencing at
+22   8:35 a.m. (PDT), Monday, June 28, 2021, before Paige I.
+23   Hutchinson, Certified Shorthand Reporter for the State
+24   of California No. 13459, Texas CSR No. 11222,
+25   Washington CCR No. 3336.
+0003
+ 1   APPEARANCES (Via Videoconference):
+ 2   
+ 3   For the Plaintiff NEDELKA VANKLIVE:
+ 4     KAZAN, McCLAIN, SATTERLEY & GREENWOOD
+       BY:  HENRY STEINBERG, ESQ.
+ 5     Jack London Market
+       55 Harrison Street
+ 6     Suite 400
+       Oakland, California  94607
+ 7     (510) 302-1000
+       hsteinberg@kazanlaw.com
+ 8   
+ 9   
+10   For Defendant WHITTAKER, CLARK & DANIELS, INC.:
+11     BERKES CRANE ROBINSON & SEAL LLP
+       BY:  CARMEN SANTANA, ESQ.
+12     515 South Figueroa Street
+       Suite 1500
+13     Los Angeles, California  90071
+       (213) 955-1150
+14     csantana@bcrslaw.com
+15   
+16   
+     For Defendants SAFEWAY INC. and THE VONS COMPANIES, INC.:
+17   
+       BARNES & THORNBURG LLP
+18     BY:  DAVID FRAZEE, ESQ.
+       1717 Pennsylvania Avenue Northwest
+19     Suite 500
+       Washington, DC 20006-4623
+20     (202) 408-6929
+       david.frazee@btlaw.com
+21   
+22   
+23   
+24   
+25   
+0004
+ 1   APPEARANCES (Via Videoconference) (continued):
+ 2   
+ 3   For Defendant VANDERBILT MINERALS, LLC:
+ 4     DEHAY & ELLISTON LLP
+       BY:  TOM RADCLIFFE, ESQ.
+ 5     36 South Charles Street
+       Suite 1400
+ 6     Baltimore, Maryland  21201
+       (410) 783-7001
+ 7     tradcliffe@dehay.com
+ 8   
+ 9   
+     For Defendants JOHNSON & JOHNSON, JOHNSON & JOHNSON
+10   CONSUMER, INC., and JOHNSON & JOHNSON INTERNATIONAL:
+11     KING & SPALDING LLP
+       BY:  MATTHEW K. ASHBY, ESQ.
+12     633 West Fifth Street
+       Suite 1600
+13     Los  Angeles, California  90071
+       (213) 443-4384
+14     mashby@kslaw.com
+15   -and-
+16     QUATTLEBAUM, GROOMS & TULL PLLC
+       BY:  STEVEN W. QUATTLEBAUM, ESQ.
+17     111 Center Street
+       Suite 1900
+18     Little Rock, Arkansas  72201
+       (501) 379-1707
+19     quattlebaum@qgtlaw.com
+20   
+21   
+22   Also Present:
+23     Syed Hassan, Kevin FitzSimons, and Rafael Silva,
+       IDepo Reporters, Videoconference Moderators
+24   
+25   
+0005
+ 1                          I N D E X
+ 2   DEPONENT:              EXAMINATION                PAGE:
+ 3   WILLIAM E. LONGO, Ph.D.
+ 4                          BY MR. ASHBY                 8
+ 5                   Afternoon Session                  76
+ 6   
+ 7   
+ 8   
+                         E X H I B I T S
+ 9   
+     MARKED                                            PAGE
+10   
+     Exhibit 1  Correspondence from Kazan, McClain,      8
+11              Satterley & Greenwood dated
+                June 23, 2021 and June 25, 2021
+12              enclosing materials  (170 pages)
+13   Exhibit 2A Appendix A, Johnson & Johnson            8
+                Reliance and Reviewed Documents
+14              (10 pages)
+15   Exhibit 2B Revised Appendix A, Johnson & Johnson   11
+                Reliance and Reviewed Documents
+16              (10 pages)
+17   Exhibit 3  Dr. William Longo - Selected             9
+                References and Reliance Materials
+18              (28 pages)
+19   Exhibit 4  Expert Report, June 25, 2021            11
+                (11 pages)
+20   
+     Exhibit 5  Declaration of William Longo, Ph.D.     66
+21              (589 pages)
+22   Exhibit 6  2009 Cashmere Bouquet report            74
+                (15 pages)
+23   
+     Exhibit 7  2018 report from J3 and e-mail          86
+24              correspondence (43 pages)
+25   ///
+0006
+ 1                           I N D E X
+ 2                  E X H I B I T S (continued)
+ 3   MARKED                                            PAGE
+ 4   Exhibit 8  MAS Supplement Analysis Report          94
+                MAS Project #70092
+ 5              Old Spice Talcum Powder (324 pages)
+ 6   Exhibit 9  April 14, 1972, Colorado School of     105
+                Mines Research Institute document
+ 7              CSMRI Project No. 200534 (5 pages)
+ 8   
+     Exhibit 10 March 19, 1971, Windsor Minerals Inc.  110
+ 9              document subject:  Current Plans
+                for Delaminator Elimination Study
+10              (2 pages)
+11   Exhibit 11 April 1, 1971, Johnson & Johnson       114
+                document to Robert Merritt (1 page)
+12   
+     Exhibit 12 Copy of color photograph of sample     117
+13              (1 page)
+14   
+15   
+16   
+                 QUESTIONS INSTRUCTED NOT TO ANSWER
+17   
+                              (None.)
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0007
+ 1                    MONDAY, JUNE 28, 2021
+ 2                          8:35 A.M.
+ 3                            -o0o-
+ 4   
+ 5            DEPOSITION OFFICER:  Okay.  We'll go on the
+ 6   record now.
+ 7            I am not at the same location as the witness.
+ 8   Is there any objection to my administering the oath
+ 9   remotely?
+10            MR. STEINBERG:  No objection.
+11            MR. ASHBY:  Objection.
+12            DEPOSITION OFFICER:  Hearing no objection, I
+13   will now swear in the witness.
+14            Doctor, will you please raise your right hand.
+15            Do you solemnly swear or affirm under penalty
+16   of perjury that the testimony you're about to give in
+17   the matter now pending will be the truth, the whole
+18   truth, and nothing but the truth?
+19            THE DEPONENT:  Yes, I do.
+20            DEPOSITION OFFICER:  Thank you.
+21   
+22                   WILLIAM E. LONGO, Ph.D.,
+23             called as a deponent and sworn in by
+24             the deposition officer, was examined
+25                   and testified as follows:
+0008
+ 1                         EXAMINATION
+ 2   BY MR. ASHBY:
+ 3       Q.   Okay.  Hi, Dr. Longo.  It's Matt Ashby.  Good
+ 4   to see you again.
+ 5       A.   Good to see you.
+ 6            MR. ASHBY:  Just as a preliminary matter, I'm
+ 7   going to mark as Exhibit 1, some correspondence that I
+ 8   received dated June 23rd and June 25th enclosing
+ 9   materials in preparation for your deposition here today
+10   from the Kazan office.
+11            I don't expect to use those with you,
+12   Dr. Longo, or that you would have seen any of those
+13   letters.
+14            (Exhibit 1 marked.)
+15            MR. ASHBY:  As Exhibit Number 2, I'm going to
+16   attach your Johnson & Johnson reliance list that's
+17   dated April 2021 that I received prior to the
+18   deposition from the Kazan law office.
+19            (Exhibit 2A marked.)
+20   BY MR. ASHBY:
+21       Q.   I just have one question on that.
+22            Is there a more current Johnson & Johnson talc
+23   reliance list than the April 2021 list?
+24       A.   I don't believe so.
+25       Q.   Okay.
+0009
+ 1            MR. ASHBY:  And I'll also attach as --
+ 2            THE DEPONENT:  I'll double-check.
+ 3            MR. ASHBY:  Yeah, okay.
+ 4            I'll attach as Exhibit 3, your all cosmetic
+ 5   talc reliance list that has Johnson & Johnson documents
+ 6   on it, the Cashmere Bouquet one, the Coty one, Old
+ 7   Spice, the whole shebang will be attached as Exhibit
+ 8   Number 3.
+ 9            (Exhibit 3 marked.)
+10   BY MR. ASHBY:
+11       Q.   I just don't know the -- there's no date on
+12   the one that I have, and I don't know if I've ever seen
+13   a date on any of them.
+14            Do you know when the last time it was that you
+15   updated that document?  And then that way I could maybe
+16   go back look to see if that -- whatever the update is
+17   on it.
+18       A.   I don't think it's been updated in a while.
+19   But I believe my typical reliance doc has.  And at the
+20   next break, I'll go get that.
+21            I'll text -- I'm going to -- what I'm going to
+22   do is I'm going to text my assistant right now and ask
+23   her when was the last time -- last time our reliance
+24   doc has been updated.
+25       Q.   All right.  I'm just if I can --
+0010
+ 1            Oh, I lost the -- I can't upload documents
+ 2   anymore.  Hold on.
+ 3            Off the record for a second.
+ 4            (Whereupon, a recess was held from
+ 5            8:38 a.m. to 8:52 a.m.)
+ 6            MR. ASHBY:  So let's just go back on the
+ 7   record.
+ 8   BY MR. ASHBY:
+ 9       Q.   Okay.  So, Dr. Longo, we took a break to
+10   figure out some technical things.  I had sent you what
+11   I received as your selected references and reliance
+12   materials.  This is what I've marked as Exhibit 3 now.
+13   And from talking to you in the past, I know that this
+14   is your all cosmetic talc reliance list.
+15            The question I have for you, the one that I
+16   received that I placed in the chat today for this
+17   deposition, is this the most current one?  And if not,
+18   can you provide a more current one?
+19       A.   The all-encompassing one, as far as I know,
+20   that is the most current one.
+21       Q.   Okay.
+22       A.   The other one has been updated, and I text my
+23   assistant to e-mail it to -- to e-mail it to Kazan,
+24   Henry.
+25       Q.   Okay.  So we'll mark as Exhibit 2A, since I've
+0011
+ 1   already marked, as Exhibit 2, the Johnson & Johnson
+ 2   reliance list that I received that was dated April 16,
+ 3   2021.  And I know off the record from talking to you
+ 4   that there's a more current one that you alluded just
+ 5   now.  We'll mark that as Exhibit 2B.
+ 6            (Exhibit 2B marked.)
+ 7   BY MR. ASHBY:
+ 8       Q.   And that one, if I understand, is dated April
+ 9   23rd, 2021; is that right?
+10       A.   That is correct.
+11       Q.   Okay.
+12            MR. ASHBY:  All right.  Then as Exhibit 4, I
+13   want to mark a document I received today just before
+14   the -- or actually after 8 o'clock, 8:00 a.m., my time,
+15   Pacific, and it's entitled Expert Report, Nedelka
+16   Vanklive JBP application and exposure calculations.
+17            (Exhibit 4 marked.)
+18   BY MR. ASHBY:
+19       Q.   Are you familiar with that document?
+20       A.   Yes, I am.
+21       Q.   All right.  Do you have that document there
+22   with you today?
+23       A.   I do.
+24       Q.   What other materials do you have there with
+25   you today for the Vanklive deposition?
+0012
+ 1       A.   I have the notice of deposition.  And I have
+ 2   my file which essentially consists of all the
+ 3   depositions that were taken in this case her five --
+ 4   her four volumes of depositions, her mother's
+ 5   deposition, and the two sisters's depositions.
+ 6       Q.   Okay.  Other than those deposition
+ 7   transcripts, do you have any other case-specific
+ 8   materials, for example, interrogatory responses,
+ 9   complaint, things of that nature, related to the
+10   Vanklive matter?
+11       A.   I do not.
+12       Q.   Did you receive any medical records related to
+13   Ms. Vanklive's medical history?
+14       A.   I did not.
+15       Q.   All right.  So let's take a step back now that
+16   we've done that.
+17            What is your understanding of the case that
+18   you're here today to testify about, the name of the
+19   plaintiff -- yeah, the name of the plaintiff?  How's
+20   that?
+21       A.   Ms. Vanklive.
+22       Q.   Okay.  Are you -- are you testifying at a
+23   trial tomorrow by remote in Alameda?
+24       A.   I'm supposed to.
+25       Q.   Yeah.  And that's the Prudencio matter; right?
+0013
+ 1       A.   Yes, sir.
+ 2       Q.   Okay.  Then we'll try to be quick today.
+ 3            Will your testimony, as it relates to Johnson
+ 4   & Johnson in the Vanklive matter be related to
+ 5   answering three questions, the first being, did
+ 6   Johnson's baby powder contain asbestos?  Will that be
+ 7   one of the questions you expect to answer at trial in
+ 8   Vanklive?
+ 9       A.   Yes.
+10       Q.   Will another question you expect to answer at
+11   the Vanklive matter at trial would be why were there so
+12   many nondetects in the files of Johnson & Johnson?
+13       A.   Yes.
+14       Q.   And then lastly, would you also expect, as a
+15   third question to answer at the Vanklive trial, is,
+16   what were Nedelka Vanklive's exposures to asbestos from
+17   Johnson's baby powder?
+18       A.   Yes.
+19       Q.   Are there any other questions that you expect
+20   to encompass the scope of your testimony at trial in
+21   the Vanklive matter, as you sit here today?
+22            MR. STEINBERG:  Overbroad, calls for
+23   speculation vague, ambiguous.
+24            THE DEPONENT:  Well, my opinions that I have
+25   been giving over time.  I guess I would be asked about
+0014
+ 1   her particular exposure range and what -- what was the
+ 2   source of the talcum powder in the Johnson & Johnson
+ 3   products that she was using; in this case Johnson's
+ 4   baby powder.  Her range would have been from the --
+ 5   from the time she was born until she was 25 years old,
+ 6   so that would be 1971 to 1986 or so.  And this would
+ 7   all be Vermont talc.
+ 8            Also, that she had exposure to talc at her job
+ 9   at Doc Johnson and Topco Sales.  That her exposure
+10   started when her mother diapered her up until the time
+11   she stopped at the age of 25.
+12            I did have a conversation with -- a telephone
+13   conversation with Ms. Vanklive to try to understand
+14   more about the different exposures she had.  She told
+15   me that her mother only helped either bathed her or
+16   helped bathe her until the time she was -- up until the
+17   age of seven, and that from the age of 25.
+18            She did use Johnson's baby powder after
+19   showers and baths but only during the summer months in
+20   both Mexico and California because she'd get hot and
+21   sticky.  So when she took her shower or bath, she would
+22   use it.  And the summer months worked out to be
+23   January -- excuse me -- June, July, and August.
+24            And the other thing that I wanted to verify,
+25   because it was not clear at all, she said she started
+0015
+ 1   using Johnson's baby powder for her menstrual cycle,
+ 2   but in -- the deposition sort of read that the
+ 3   menstrual cycle started at the age of 19, which would
+ 4   be highly unusual for a human female.  And she verified
+ 5   that it started at the age of 13.
+ 6            Also, will testify that when you shake these
+ 7   containers -- and she verified this -- the Johnson's
+ 8   baby powder containers, that if you're shaking it in a
+ 9   downward motion, which would be typical, that you have
+10   to hold the bottle in a way it does not slip out of
+11   your hand, which involves slightly squeezing, and that
+12   increases the amount of talcum powder that is
+13   dispensed.
+14            So the calculations for her on the containers,
+15   it was based on our study of measuring what slight --
+16   what squeezing shaking at the same time for a 9-ounce
+17   container, which fits the best description, between the
+18   mother and her.  I will testify that based on the
+19   conservative calculations that the concentrated number
+20   of Johnson's baby powder 9-ounce containers that was
+21   used comes to -- I just want to make sure I have the
+22   right amount -- 300 and -- I think approximately 359
+23   containers.
+24            Let's see.  And my opinions would be that for
+25   the time range that she used the Johnson & Johnson
+0016
+ 1   containers, 1971 up to approximately 1986, that we have
+ 2   historical Johnson's baby powder containers that we've
+ 3   analyzed that were provided by Johnson & Johnson.
+ 4   There was not only Johnson's baby powder but Shower to
+ 5   Shower, but same mine source for the two.  And that's
+ 6   35 containers that had a concentration positive for
+ 7   amphibole asbestos of 83 percent.
+ 8            And that she would have had a significant
+ 9   exposure over background.  In reality there is no
+10   background of asbestos, unless you have a source of
+11   asbestos so, I used the Agency for Toxic Substances
+12   Disease Register, the ATSDR, background that was
+13   measured in the '80s of 0.00005 fibers per cc, so her
+14   exposures would be typically hundreds to thousands of
+15   times above that.
+16            What else?  Obviously, the utility of using
+17   heavy liquid density separation.  I'm sure in my trial
+18   testimony, as you saw from the PowerPoints from
+19   Prudencio, because that's where those first three
+20   questions came from, there would be documents that I
+21   would talk about, you know, historical documents about
+22   the finding of asbestos in the cosmetic talcs,
+23   especially in the -- in the Vermont timeframe.
+24            That what we have analyzed and seen are
+25   regulated asbestos, that TEM analysis using all the
+0017
+ 1   standard protocols does not require that you ever use
+ 2   scanning electron microscopy to verify that you, quote,
+ 3   have bundles or asbestiform, as defined by Dr. Sanchez
+ 4   and other defense experts.  That the polarized light
+ 5   methodology work that we've done does show chrysotile
+ 6   asbestos.  I think we've only done one sample in the
+ 7   Vermont time range, and that was the Doyle case, and
+ 8   that did have chrysotile in it.
+ 9            By the time the -- I'll -- and it was a very
+10   broad question, but that's what I can think of off the
+11   top of my head.
+12   BY MR. ASHBY:
+13       Q.   Right.  Right.
+14            So it sounded to me like -- so you mentioned
+15   the Prudencio slides; right?  I heard you say -- and I
+16   didn't say it, but you said it.  You said you assumed I
+17   got those questions from the Prudencio slides; right?
+18       A.   The very first slide has those exact same
+19   three questions on it for Prudencio as -- or the very
+20   second slide that you asked.
+21       Q.   Yeah.
+22       A.   I just assumed you got these exact questions
+23   off the Prudencio PowerPoint that Joe Satterley was
+24   required to produce.
+25       Q.   Okay.  The Prudencio slides that you're
+0018
+ 1   referencing, are you talking about -- are they slides
+ 2   that would be used as demonstratives during your
+ 3   testimony in the Prudencio matter?  Is that what it is?
+ 4       A.   I assume so.
+ 5       Q.   Those slides that you referenced, are those
+ 6   slides that you prepared?
+ 7            MR. STEINBERG:  And belated objection.  Calls
+ 8   for speculation as to -- I'm sorry.  Calls for a legal
+ 9   conclusion regarding demonstrative.
+10            THE DEPONENT:  Yeah, I don't -- I don't know
+11   which one -- yeah, you're right, legally, I don't know,
+12   demonstrative or evidence.  I would say the majority of
+13   them come from my data that either I -- that I've
+14   produced.
+15   BY MR. ASHBY:
+16       Q.   Right.
+17            So the question is, did you prepare, yourself,
+18   demonstrative slides to be used during your testimony
+19   at trial in the Prudencio matter?
+20       A.   No, I didn't provide any -- I did not prepare
+21   any PowerPoint slides.  I just provided the majority of
+22   all the data as well as -- that went into the
+23   PowerPoint slides.
+24       Q.   Okay.  So when you talked about the three
+25   questions that are on the PowerPoint slide in the
+0019
+ 1   Prudencio matter that will be used during your
+ 2   testimony, that slide with those three questions was
+ 3   prepared by the lawyers for Ms. Prudencio; right?
+ 4            MR. STEINBERG:  Calls for speculation, outside
+ 5   the scope.
+ 6            THE DEPONENT:  I think it was the slides that
+ 7   have been prepared in the past.  I think, you know, a
+ 8   lot of those slides were used in O'Hagan.
+ 9   BY MR. ASHBY:
+10       Q.   Right.
+11            Okay.  But the question is that you've seen
+12   some slides that will be used during your testimony in
+13   the Prudencio matter; right?
+14       A.   I have.
+15       Q.   Okay.  Did you prepare those slides?
+16       A.   I don't prepare the PowerPoints.
+17       Q.   Okay.
+18       A.   I prepare the things that go -- you know, and
+19   this was, what, a year and a half ago?  And I
+20   participated in the -- in what went on all the.
+21   PowerPoints.  No, I didn't put the PowerPoints
+22   together.
+23       Q.   Okay.  I understand.
+24            So what you're saying is if -- I think I
+25   understand.
+0020
+ 1            The data that's if the PowerPoints is your
+ 2   data, and, for example, if there's any photomicrographs
+ 3   in there, those are your photomicrographs taken at your
+ 4   lab.  But to the extent somebody prepared those and put
+ 5   them on the PowerPoint in a slide for use in the
+ 6   Prudencio matter, you weren't the one that did that;
+ 7   right?
+ 8       A.   Right.
+ 9            MR. STEINBERG:  That's overbroad, incomplete
+10   hypothetical, and vague and ambiguous.
+11            (Reporter clarification.)
+12   BY MR. ASHBY:
+13       Q.   So to the extent somebody selected
+14   photomicrographs of analyses that MAS performed and put
+15   those in a PowerPoint, you weren't the one that picked
+16   the pictures to put in the PowerPoint; right?
+17            MR. STEINBERG:  No.  Counsel, you can't ask
+18   Dr. Longo about photomicrographs that you're not
+19   showing him.
+20            So the objection is incomplete hypothetical,
+21   calls for speculation, argumentative.
+22            MR. ASHBY:  I can do whatever I want.
+23   BY MR. ASHBY:
+24       Q.   So you can answer the question.
+25       A.   Again, it is my data, and I was involved in
+0021
+ 1   picking which ones.  But if you want to show me any
+ 2   particular ones, that's fine.  I mean, I don't know,
+ 3   you know, if it's okay to go talking about these that
+ 4   are going in a -- you know, being used in another case.
+ 5            But I'll just give you a general statement
+ 6   that I'm involved in every aspect of putting the
+ 7   information, what I want, into the PowerPoints.  And
+ 8   the first slide you keep asking about, I think that's
+ 9   been used in trials in the past.
+10       Q.   Right.
+11            Okay.  Look, you bought up slides that were
+12   going to be used in the Prudencio matter, not me;
+13   right?  That's what happened right; correct?
+14            MR. STEINBERG:  Argumentative.
+15            THE DEPONENT:  Well, fair.  You took the exact
+16   same wording off that first slide in the Prudencio
+17   matter so I withdraw that answer then if that's what
+18   you're using to talk about the Prudencio matter.
+19   BY MR. ASHBY:
+20       Q.   So you're -- okay.  That's fine.  We don't
+21   need to talk about that anymore.
+22            All right.  So on what we marked as Exhibit 4
+23   which is the expert report in the Vanklive matter, I
+24   see that it's dated June 25th, 2021.
+25            If you have it there, can you confirm that?
+0022
+ 1       A.   Yes.
+ 2       Q.   So was this report completed done on
+ 3   June 25th, 2021?
+ 4       A.   I think that was yesterday, but actually I
+ 5   completed it this morning.  What's today's date the
+ 6   20- --
+ 7       Q.   8th.
+ 8       A.   -- 8th?  Yeah.  So that's -- I started this on
+ 9   the 25th, but I completed it this morning.
+10       Q.   Okay.  So the date I see there where it says
+11   June 25th, 2021, that's the day you started preparing
+12   this report; is that right?
+13       A.   Yes, sir.
+14       Q.   Okay.  And it looks like you talked to
+15   Ms. Vanklive on the 24th of June and the 26th of June;
+16   right?
+17       A.   Correct.
+18       Q.   And I'm just looking at this for the first
+19   time this morning also, so bear with me.
+20            And you mentioned this before.  What was the
+21   purpose of the interview on June 24th, 2021?
+22       A.   Because I wanted some clarification, even
+23   though I had read over all her depositions, the time
+24   when her mother was helping her -- either bathing her
+25   completely, like starting as an infant up to the point
+0023
+ 1   where she was helping her bathe and apply the -- she,
+ 2   you know -- Ms. Vanklive was saying six or seven; her
+ 3   mother was saying ten.
+ 4            And then the attorney for J&J said would your
+ 5   mother be in the best position to tell, and her mother
+ 6   was giving a range of eight, nine, and ten.  And then
+ 7   she said it was ten years old.  Ten years old, to me --
+ 8   I've been doing this for a while -- seems kind of late
+ 9   that you're still helping your child bathe.
+10            And then I also wanted to clarify when she
+11   started her -- what age she started her menstrual
+12   cycle.  The age of 19 is very late for a human female
+13   to be starting that.  It's typically 12, 13.  And I
+14   wanted to verify that.  She was never really asked.
+15   She would say I started in my menstrual cycle, but it
+16   was unclear, and 19 didn't make sense to me.
+17            And it also was -- I was having a hard time
+18   piece together when she was bathing herself and when
+19   she was -- and when she would use Johnson's baby powder
+20   bathing herself, it was also -- at least to me, very
+21   unclear, so I wanted to clear that up.  So she said 13
+22   is when her menstrual cycle.
+23            And I said now, your mother started -- your
+24   mother quit helping you bathe at the age of ten, and
+25   she immediately jump in and said no.  She kind of
+0024
+ 1   laughed on the phone and said no, the age of seven.
+ 2   And actually it made more sense to me.
+ 3            And then we talked about when she used
+ 4   Johnson's baby powder bathing herself, and she told me
+ 5   up to the age of 25 only in the summer months, and I
+ 6   can -- because both Mexico and California and then that
+ 7   made a little bit more sense, so that's the three
+ 8   primary things I wanted to talk to her about, and
+ 9   that's what she stated.
+10       Q.   Okay.  So did you take any notes, handwritten
+11   notes or electronic notes, regarding your conversation
+12   with Ms. Vanklive on the 24th of June?
+13       A.   Yes.
+14       Q.   Okay.  Do you have those with you there today?
+15       A.   Well, no.  I mean, there were basically three
+16   primary things, and I put them on the first page down
+17   towards the bottom, which says first interview.
+18       Q.   Okay.  But other than the notes that I see
+19   here, did you make handwritten notes regarding your
+20   conversation with her while you were talking to her?
+21       A.   Yes.
+22       Q.   Okay.  So I'm going on -- I want to attach
+23   those as Exhibit Number 5 to the deposition.
+24       A.   I don't have those anymore.  I don't produce
+25   handwritten notes, so there -- they have been disposed
+0025
+ 1   of.
+ 2       Q.   Okay.  So your conversation with her was just,
+ 3   what, four days ago; right, that first conversation?
+ 4       A.   Yes.
+ 5       Q.   And you're saying between the 24th and today,
+ 6   which is the 28th, you threw out or disposed of your
+ 7   handwritten notes; right?
+ 8       A.   Right.  Once they're put down, I don't see any
+ 9   reason to keep them, and so I don't turn over
+10   handwritten notes.
+11       Q.   And they're -- well, I'm not -- we can debate
+12   whether you have to turn them over or not.  First, I
+13   just want to get an idea of if they exist.
+14            So do those handwritten notes, are they in
+15   some location you have access to?
+16       A.   No.
+17            MR. STEINBERG:  Move to strike counsel's
+18   colloquy.
+19   BY MR. ASHBY:
+20       Q.   I'm sorry.  What was the answer?
+21       A.   No.
+22       Q.   No.  And why is that, where -- if you know
+23   where they are?
+24       A.   Well, they went into the trash can, and the
+25   trash can has been emptied.  So where the -- once
+0026
+ 1   they're emptied and picked up and where they go --
+ 2       Q.   Okay.
+ 3       A.   -- you know, would be up to people that
+ 4   dispose garbage.
+ 5       Q.   Okay.  So you're saying between June 24th and
+ 6   today, you took the handwritten notes, you threw them
+ 7   in a trash can, and the trash has been taken out to the
+ 8   curb or wherever it goes there by your house, and the
+ 9   trash people came and got the trash and took it off to
+10   wherever they took the trash; right?  That's your
+11   testimony under oath today; right?
+12            MR. STEINBERG:  Calls for speculation,
+13   misstates testimony.
+14            THE DEPONENT:  They were put into the trash
+15   can, the trash can is emptied, and then it is gone.
+16   It's in the garbage, and then the garbage is picked up.
+17   BY MR. ASHBY:
+18       Q.   Okay.  So my question, though, is this:  The
+19   handwritten notes that you wrote on the 24th, your
+20   understanding is that those have been thrown away and
+21   they've been collected by the trash people and are
+22   gone; right?
+23            MR. STEINBERG:  This is outside the scope.
+24   The schedule of trash in Georgia is well outside the
+25   scope.  This is harassing and argumentative.
+0027
+ 1            MR. ASHBY:  If you want to take it up with the
+ 2   judge, I'm happy to do that.  But if you're not, then I
+ 3   ask him to answer the question.
+ 4            MR. STEINBERG:  My objection stands, for the
+ 5   record.
+ 6            THE DEPONENT:  Since I put everything down,
+ 7   the primary points we talked about are on the
+ 8   interview, there was no reason to keep the notes.
+ 9   BY MR. ASHBY:
+10       Q.   Right.  So do you remember my question?
+11       A.   I've answered the question before three
+12   times --
+13            MR. STEINBERG:  Asked and answered, harassing.
+14   Objection.
+15            THE DEPONENT:  -- I'm not answering it
+16   anymore.
+17   BY MR. ASHBY:
+18       Q.   So I just want to know if the handwritten
+19   notes are still somewhere in your house or in a garbage
+20   bag somewhere on your property.  Can you at least
+21   answer that?  Do you know?
+22       A.   I've already answered that.  The answer would
+23   be no.
+24       Q.   Okay.
+25       A.   It is not on my property.  It's not anywhere
+0028
+ 1   my possession, and it's not anywhere that I could go
+ 2   somehow retrieve the notes that are stated right here
+ 3   on the first interview on page 1 of 11 of the report.
+ 4       Q.   Okay.
+ 5            MR. STEINBERG:  And argumentative, harassing,
+ 6   and asked and answered.
+ 7   BY MR. ASHBY:
+ 8       Q.   Okay.  Then you had a second interview with
+ 9   Ms. Vanklive; right?  On the 26th; correct?
+10       A.   Correct.
+11       Q.   You also took handwritten notes during that
+12   interview on the 26th; right?
+13       A.   No.  I asked her one question.
+14       Q.   Okay.
+15       A.   I wanted to see if she -- the one question
+16   which was answered there, I didn't need -- I didn't
+17   need to take any handwritten notes.
+18       Q.   Okay.  So on the 26th, you had a second
+19   interview with Ms. Vanklive, and the reason or purpose
+20   for that deposition was what?
+21       A.   I wanted to see if when she shook the
+22   container, the Johnson's baby powder in the container
+23   in a downward motion, as she talked about, when she was
+24   putting directly on her body, did she squeeze the
+25   container slightly to keep it in her hand, and she
+0029
+ 1   confirmed that's what happened.
+ 2       Q.   Okay.  And why did you need a second interview
+ 3   to ask that question?  In other words, if you had just
+ 4   talked to her two days earlier, what happened in
+ 5   between those two days where you realized you needed to
+ 6   ask that question?
+ 7       A.   I wanted -- I meant to ask her that question,
+ 8   and I forgot.  And so when I started working through
+ 9   this, it's important to know how they're doing this
+10   because of the amount of talcum powder that can be
+11   dispensed between shaking versus shaking and slightly
+12   squeezing.  And I'm coming to the opinion that when
+13   anybody shakes these containers, they have to slightly
+14   squeeze them in order to keep it in their hands.
+15       Q.   For the handwritten notes for the 24th that
+16   were prepared during her interview, do you remember
+17   what day you threw those away?
+18            MR. STEINBERG:  Outside the scope, harassing,
+19   asked and answered.
+20            THE DEPONENT:  I think Saturday -- either
+21   Friday or Saturday.
+22   BY MR. ASHBY:
+23       Q.   Okay.  So you talked to her on Thursday, and
+24   you either threw away the notes on Friday or Saturday;
+25   right?
+0030
+ 1       A.   That's correct.
+ 2       Q.   You didn't finish preparing the report until
+ 3   today; correct?
+ 4       A.   Correct.
+ 5       Q.   Where did -- in other words, what location was
+ 6   it where you throw away the handwritten notes?
+ 7       A.   I'm not talking to you any more about it.
+ 8   This is wasting time.
+ 9       Q.   Well, I mean, I disagree.
+10            But do you know where you were when you threw
+11   away the notes?
+12            MR. STEINBERG:  Counsel, he's testified that
+13   the notes were transposed into the report.  You have
+14   the report.  You have the notes.  You've spent -- I
+15   don't know how long on this.  It's harassing,
+16   argumentative, outside the scope, asked and answered,
+17   and so we're moving on.
+18   BY MR. ASHBY:
+19       Q.   Okay.  So you're not going to answer that --
+20   that's fine if you guys want to do that.  But I just
+21   want make a record.
+22            So you're not going to answer the question,
+23   Dr. Longo, where you were when you threw away the
+24   notes; right?
+25            MR. STEINBERG:  Okay.  I'm glad you think it's
+0031
+ 1   fine.  So do I.  It's a yes, let's move on.
+ 2            MR. ASHBY:  Okay.
+ 3            THE DEPONENT:  I was in my house, but that's
+ 4   all I'm going to testify about.
+ 5   BY MR. ASHBY:
+ 6       Q.   Okay.
+ 7       A.   In my opinion, you're starting to harass me
+ 8   about this.
+ 9       Q.   Well, I apologize.  I don't mean to harass
+10   you.
+11            So the answer is you were at your house when
+12   you threw away the notes; right?
+13            MR. STEINBERG:  Counsel, it sounds like we're
+14   both in agreement that you're fine and I'm fine with
+15   you moving on, because this is harassing, asked and
+16   answered, and argumentative, so move on.
+17            MR. ASHBY:  You know, you know what?  Let's
+18   get the judge involved.  I mean, if you're going to do
+19   this and waste time with this, then I just don't see --
+20   it's a very -- it's an easy question to answer.
+21            It's just where were you when you threw away
+22   the notes.  If you were at the house, just say it; you
+23   were at the house.
+24            MR. STEINBERG:  Counsel, we've been over
+25   this --
+0032
+ 1            THE DEPONENT:  I just said I was at my house.
+ 2   BY MR. ASHBY:
+ 3       Q.   Okay.  Fine.
+ 4            MR. STEINBERG:  If you need the judge on the
+ 5   line to conduct your deposition, we can call the judge.
+ 6   But move on and ask your questions.  Ironically you
+ 7   said this was going to be short at the beginning, and
+ 8   you've spent 40 minutes over something that you have
+ 9   the typed copy of.
+10            MR. ASHBY:  You know, this bullying thing
+11   you're doing, it doesn't work with me.  You can -- I
+12   know you probably -- it just -- you don't need to
+13   defend the deposition in the way you're doing it; okay?
+14            MR. STEINBERG:  I appreciate your professional
+15   advice.  I think it would be impossible to bully you,
+16   and I'm certainly not trying.
+17            MR. ASHBY:  Okay.
+18   BY MR. ASHBY:
+19       Q.   All right.  So let's see.
+20            So are all of the -- so what we've marked as
+21   Exhibit 4, are all of the Johnson's baby powder
+22   application and exposure calculations that you've
+23   prepared in the Vanklive case contained in Exhibit
+24   Number 4?
+25       A.   Yes, sir.
+0033
+ 1       Q.   All right.  Let me just flip through it real
+ 2   quick.  I wanted to see if I had another question.
+ 3            All right.  So on page 8 of the Exhibit 4,
+ 4   which is the expert report that's dated June 25th, but
+ 5   I guess wasn't prepared or finished being prepared
+ 6   until today --
+ 7            MR. STEINBERG:  Yeah, move to strike the
+ 8   colloquy.  You're right, Counsel.  He testified that he
+ 9   finished it this morning, which is when everybody got
+10   it.
+11            So strike my colloquy.  We'll strike yours.
+12   Ask your question, please.
+13            MR. ASHBY:  Okay.  Okay.
+14   BY MR. ASHBY:
+15       Q.   All right.  So, Dr. Longo, on page 8 of 11 on
+16   the expert report, which we've marked as Exhibit 4, you
+17   said earlier -- so I'll just give you a chance to
+18   correct.  I thought you said that her last exposure to
+19   baby powder was, like, 1986 or something.  Did you mean
+20   to say 1996?
+21       A.   Yes, I did.  What I have on there because I
+22   wasn't looking at the report.  I misspoke.
+23       Q.   Okay.  Okay.  That's fine.  I understand.  So
+24   after -- there's a bit after that that says -- it
+25   starts with the sentence "also."  It says:  Nedelka
+0034
+ 1   Vanklive's JBP exposure was from 1971 to 1996.  The
+ 2   only talc source that J&J was using for the JBP product
+ 3   during that time from, comma, was from the Vermont
+ 4   mines, so I --
+ 5       A.   Oh, yes.  The English is not good.
+ 6       Q.   Okay.
+ 7       A.   During that time -- should be "frame" -- was
+ 8   the Vermont mines.  Frame.
+ 9       Q.   Okay.  That's -- okay.  That's all I wanted to
+10   get at.
+11            So it's your understanding that Ms. Vanklive,
+12   based on her periods of use of Johnson's baby powder,
+13   would not have been exposed to any talc sourced from
+14   China; right?
+15       A.   Correct.
+16       Q.   And based on your analysis of the time periods
+17   that Ms. Vanklive used Johnson's baby powder, she would
+18   not have been exposed to any talc source from Italy;
+19   correct?
+20       A.   Correct.
+21       Q.   The last page of the report we marked as
+22   Exhibit Number 4, there's a section that says --
+23       A.   Number what?
+24       Q.   Yeah, so this is page 11 of 11.
+25            There's a section that says other potential
+0035
+ 1   asbestos exposures.
+ 2            Do you see that?
+ 3       A.   Yes.
+ 4       Q.   So what investigation did you do in order to
+ 5   determine whether or not she had any other potential
+ 6   asbestos exposures?
+ 7       A.   Well, the only investigation I could do was
+ 8   from the very detailed deposition testimony (inaudible)
+ 9   Johnson & Johnson attorneys --
+10            (Reporter clarification.)
+11            THE DEPONENT:  The only investigation I could
+12   do was to look through the very extensive deposition
+13   testimony taken by the Johnson & Johnson attorneys
+14   about the schools, about where she worked, about the
+15   homes she lived in, about the potential for any
+16   remodeling or construction, did she ever see at the
+17   homes.
+18            The only facility that they asked about was
+19   where she lived in Mexico, that there was a cement
+20   plant and everybody testified that the cement plant was
+21   not anywhere near their home.  So that was the -- what
+22   I looked for was evidence.  And there was no evidence
+23   of any other exposure.
+24            DEPOSITION OFFICER:  You're on mute, Counsel.
+25            MR. ASHBY:  Sorry.  That's probably good
+0036
+ 1   because I said a curse word when you told me that.
+ 2   BY MR. ASHBY:
+ 3       Q.   Okay.  So was the investigation that you did
+ 4   with respect to her other potential exposure asbestos
+ 5   exposures, as stated in your report, limited to
+ 6   reviewing her deposition testimony?
+ 7       A.   Well, her deposition testimony, her mother's
+ 8   deposition testimony, and the two sisters' deposition
+ 9   testimony, as well as my knowledge and experience in
+10   background in these issues about where asbestos
+11   products are typically found, the jobs she had,
+12   sans The Doc Johnson and the Topco -- Topco? -- Topco
+13   Sales Company.
+14            There was nothing that I saw that she did
+15   would have involved asbestos-containing products.  She
+16   was never around any construction or remodeling at any
+17   of the schools or the homes.  That's the -- that's the
+18   investigation I did.
+19       Q.   Okay.  When you spoke to her on the phone, did
+20   you discuss any other potential exposures during either
+21   of the two conversations you had with her personally?
+22       A.   No.  She had been asked all those questions in
+23   her deposition.  I was quite clear.  You know, and
+24   whatever knowledge she had about what asbestos would
+25   look like, what the types of areas or products or
+0037
+ 1   things that she was around when she worked I was able
+ 2   to determine --
+ 3       Q.   Okay.
+ 4       A.   -- that I didn't see any evidence.  So there
+ 5   was nothing I could point to and say, yes, this is a
+ 6   potential exposure except for what we've already talked
+ 7   about.
+ 8       Q.   Other than what we've marked as Exhibit 4,
+ 9   which is the expert report with -- well, I'll just
+10   leave it at that, the expert report -- have you
+11   prepared any other notes or reports in the Vanklive
+12   case that you still have custody and control of?
+13       A.   No.
+14            Can we -- it's 12:30.  I mean, can we -- it's
+15   been an hour, and I know we had about ten minutes of
+16   technical problems.  Can we take about five-,
+17   ten-minute break?
+18            MR. ASHBY:  Sure.
+19            MR. STEINBERG:  Go off the record.
+20            (Whereupon, a recess was held from
+21            9:31 a.m. to 9:48 a.m.)
+22            MR. ASHBY:  Okay.  Let's go back on the
+23   record.
+24   BY MR. ASHBY:
+25       Q.   All right.  Dr. Longo, we took a little break.
+0038
+ 1   We're now back.
+ 2            You were -- strike that.  Hold on a second.
+ 3            Was the -- strike all that.
+ 4            You were deposed on May 21st in the Prudencio
+ 5   matter; is that correct?
+ 6       A.   I believe so, that's correct.
+ 7       Q.   Have you done any analyses that have been
+ 8   disclosed with respect to a Johnson & Johnson talc
+ 9   product since May 21st, 2021?
+10            MR. STEINBERG:  Calls for speculation as to
+11   whether any firms have disclosed analyses, overbroad.
+12            MR. ASHBY:  Okay.  That's fine.  I'll strike
+13   it.  I'll ask it a different way.  Okay.
+14   BY MR. ASHBY:
+15       Q.   Since May 21st, 2021, have you performed any
+16   analyses on a Johnson & Johnson talc product that has
+17   been disclosed and that you intend to rely upon for any
+18   opinions in the Vanklive matter?
+19            MR. STEINBERG:  Same objections.
+20            THE DEPONENT:  No.
+21   BY MR. ASHBY:
+22       Q.   Okay.  You're not going to testify about the
+23   cause of Ms. Vanklive's cancer; correct?
+24       A.   I am not.
+25       Q.   You're not here to testify about the health
+0039
+ 1   effects of asbestos; correct?
+ 2       A.   That is correct.
+ 3       Q.   You've never tested a container of Johnson &
+ 4   Johnson talc that Ms. Vanklive or her family members
+ 5   ever used; correct?
+ 6       A.   I've not received any, what I would call,
+ 7   their personal containers that may have been saved
+ 8   since 1996.
+ 9       Q.   You're not going to offer the opinion that
+10   Ms. Vanklive used a bottle of Johnson's baby powder
+11   that you tested and know to have contained asbestos;
+12   correct?
+13       A.   That's correct.  Again, I didn't test any of
+14   their personal containers or her family's personal
+15   containers.
+16       Q.   In the Prudencio matter, there was a court
+17   order regarding disclosure of invoices related to work
+18   that you had done in the litigation testing Johnson &
+19   Johnson talc products; correct?
+20       A.   Correct.
+21       Q.   You reviewed that order; correct?
+22       A.   I did.  And I produced, you know, hundreds
+23   of -- I don't know how much the final was, but it was
+24   quite a --you know, over a hundred, maybe 200 invoices.
+25       Q.   All right.  You provided invoices for work
+0040
+ 1   related to Johnson & Johnson talc testing in litigation
+ 2   for a period of from 2017 to May 2021; right?
+ 3       A.   Correct.
+ 4       Q.   Of the -- do you know -- have you calculated
+ 5   the total of the invoices that were provided pursuant
+ 6   to the court order in Prudencio?
+ 7       A.   I think the number is 2 million and change.  I
+ 8   don't know the exact number, but it's something like
+ 9   that, unless I got it wrong.
+10       Q.   No.  Well, you say -- it just depends on your
+11   definition of change.  I calculated it at over
+12   $2.3 million.  Did you come up with a different number?
+13       A.   No, that sounds correct.  I just didn't know
+14   exactly what it was.
+15       Q.   And that $2.3 million doesn't include any of
+16   the litigation work that MAS has done related to the
+17   testing of cosmetic talc products manufactured by
+18   companies other than Johnson & Johnson; correct?
+19       A.   That is correct.  That was not what the order
+20   stated that we had to do.
+21       Q.   And I'm not --
+22       A.   Yeah.  And I think -- that's the same thing
+23   that Johnson & Johnson -- for RJ Lee.
+24       Q.   I totally understand, and I'm not suggesting
+25   that you should have done that pursuant to that order.
+0041
+ 1       A.   Okay.
+ 2       Q.   But what I'm asking -- what I wanted to get at
+ 3   is this:  MAS has tested talc products from at least
+ 4   ten other manufacturers of cosmetic talc since 2017; is
+ 5   that correct?
+ 6       A.   Is it that many?  I don't know the exact -- I
+ 7   don't know the exact number.  I haven't counted them
+ 8   up.
+ 9       Q.   So you've tested products made by Colgate;
+10   correct?
+11       A.   Cashmere Bouquet, that's correct.
+12       Q.   You've tested products made by Shulton;
+13   correct?
+14       A.   Correct, Old Spice.
+15       Q.   You've tested cosmetic talc products
+16   manufactured by Avon; correct?
+17       A.   That's correct.
+18       Q.   You've tested cosmetic talc products
+19   manufactured by Chanel; correct?
+20       A.   Chanel, correct.
+21       Q.   You've tested cosmetic talc products
+22   manufactured by Jean Nate; correct?
+23       A.   Correct.
+24       Q.   You've tested -- MAS has tested cosmetic talc
+25   products manufactured by Longs; correct?
+0042
+ 1       A.   Correct.
+ 2       Q.   And these other ones, I don't -- so have you
+ 3   tested cosmetic talc products supplied by a company
+ 4   called Perrigo?
+ 5       A.   No, I don't recall that one.
+ 6       Q.   Have you tested --
+ 7            Oh, sorry.
+ 8       A.   No, I don't recall Perrigo.
+ 9            MR. STEINBERG:  And I'll insert a speculation
+10   objection to the extent it's going back in terms of
+11   suppliers or chains.
+12            MR. ASHBY:  Yeah.
+13   BY MR. ASHBY:
+14       Q.   Have you tested cosmetic talc products from
+15   Vi-John, V-i-J-o-n [sic]?
+16            MR. STEINBERG:  Same.
+17            THE DEPONENT:  Vi-John.  Okay.  Those are the
+18   suppliers of Longs, if I remember correctly.
+19   BY MR. ASHBY:
+20       Q.   Okay.  Yeah, I just didn't know the answer to
+21   that.
+22            All right.  So I guess I have six.  I've
+23   listed six:  Colgate, Shulton, Avon, Chanel, Jean Nate,
+24   and Longs.  Are there any other manufacturers of
+25   cosmetic talc that you believe MAS has tested or
+0043
+ 1   analyzed their products for the presence or absence of
+ 2   asbestos since 2017?
+ 3       A.   I do recall that we tested Gold Bond.
+ 4       Q.   Okay.
+ 5       A.   So that would be six, I think.  Longs, Jean
+ 6   Nate, Chanel, Avon, Old Spice/Shulton, Cashmere
+ 7   Bouquet.  So Gold Bond -- and I think there was one
+ 8   more, but I can't think of it.
+ 9       Q.   Okay.  So would that -- if there's one more
+10   would that make it eight other than Johnson & Johnson?
+11       A.   I have seven.  Cashmere Bouquet, Shulton/Old
+12   Spice, Avon, Chanel, Jean Nate, and Gold Bond.  Doesn't
+13   that come to six?
+14       Q.   That's seven.  So Colgate's one right?
+15       A.   Right.
+16       Q.   Shulton's two; right?
+17       A.   Right.
+18       Q.   Avon's three; right?
+19       A.   Correct.
+20       Q.   Chanel's four; right?
+21       A.   Right.  Oh --
+22       Q.   Jean Nate --
+23       A.   -- you're right.
+24       Q.   Okay.
+25       A.   I mislabeled -- okay.  So we agree on seven,
+0044
+ 1   and I think there's one more that I can't think of
+ 2   right now.
+ 3       Q.   Okay.  So of those -- well, strike that.
+ 4            As it relates to those seven and possibly
+ 5   eight other products manufactured by companies other
+ 6   than Johnson & Johnson, do you know the total amount of
+ 7   billings in litigation that MAS has provided or billed
+ 8   related to the testing of those seven or possibly eight
+ 9   products?
+10       A.   No, I don't.
+11       Q.   But we can agree that the $2.3 million related
+12   to the testing of Johnson & Johnson talc products would
+13   not be -- would not include any of those seven or eight
+14   other analyses of other manufacturer's products; right?
+15       A.   I would agree.
+16       Q.   So I saw in the invoices when I looked at
+17   them, the number 7500 or 7,500 comes up quite a bit.
+18   What is that service that's being provided for the
+19   $7,500?
+20       A.   That's usually the amount I charge for writing
+21   an expert report.
+22       Q.   Are there -- is there anything else that you
+23   can think of that's related to a charge of $7,500?
+24       A.   No.
+25       Q.   Okay.  So is there a high likelihood then
+0045
+ 1   everywhere I see $7,500, there's a report that would be
+ 2   associated with that invoice?
+ 3       A.   I believe so.
+ 4       Q.   Does -- strike that.
+ 5            Does MAS charge a retainer for having Dr. Bill
+ 6   Longo testify or be retained in a case as opposed to
+ 7   MAS?
+ 8       A.   Well, MAS charges a retainer for me of $2,500.
+ 9       Q.   Okay.  So I've seen the $2,500 come up quite a
+10   bit in the invoices as well.  Is it safe to assume that
+11   the $2,500 charge is related to a retainer for you to
+12   testify at depo or trial?
+13       A.   Yes and no.  Yes, 2,500, but no, when -- if
+14   there's a cancellation, there's a $2,500 cancellation
+15   fee.  So if you counted them all up, it would not be
+16   indicative of all the cases I've been retained in.
+17       Q.   I see.  Okay.  So if somebody said, look, I
+18   only know about these ten cases that you were retained
+19   in, but I see there's 30 $2,500 charges on here, the
+20   explanation for that might be there was a cancellation,
+21   and you really weren't retained in 30 cases; right?
+22       A.   Correct.
+23       Q.   Okay.  So also in the invoices, when you look
+24   at them, you just basically see a date and it says MAS
+25   and then there's an amount and then just a bunch of
+0046
+ 1   blank in the middle.  Was information removed or
+ 2   redacted, as we like to say in the legal field, with
+ 3   respect to some of the narrative for the services that
+ 4   were provided for MAS in those invoices?
+ 5       A.   Yes.
+ 6       Q.   And why did -- if you know was the information
+ 7   regarding the work performed redacted from the
+ 8   invoices?
+ 9       A.   I was instructed to do that because that's how
+10   the condition of the J&J invoices were produced.  The
+11   only information on those invoices was the date and the
+12   amount.  There was no information on what the amount
+13   was for.
+14       Q.   Okay.  So you were instructed to do that by
+15   someone from the Kazan law firm, and it's your
+16   understanding that the reason that was done was because
+17   Johnson & Johnson provided the RJ Lee invoices in the
+18   same manner; right?
+19       A.   Correct.
+20       Q.   Okay.  The first time that you testified at
+21   deposition or at trial that you found asbestos in a
+22   Cashmere Bouquet cosmetic talc product was in 2018;
+23   correct?
+24       A.   I don't recall when it was, but that sounds
+25   about right.
+0047
+ 1       Q.   And the lawyers for Cashmere Bouquet also
+ 2   asked you if MAS had done any testing of Cashmere
+ 3   Bouquet products prior to 2018; right?
+ 4       A.   That's correct.
+ 5       Q.   And you told the lawyers for Cashmere Bouquet
+ 6   that MAS had never done any testing of a Cashmere
+ 7   Bouquet product prior to 2018; right?
+ 8       A.   Either myself or MAS.  And that's what I
+ 9   thought at that time because I didn't recall ever
+10   analyzing any Cashmere Bouquet before 2018 --
+11       Q.   Right.
+12       A.   -- or 2017, whenever we first started
+13   analyzing Cashmere Bouquet.
+14       Q.   Right.
+15            So when you told the lawyers for Cashmere
+16   Bouquet in 2018 that MAS had never tested a Cashmere
+17   Bouquet cosmetic talc product prior to that time, that
+18   testimony was not true; correct?
+19            MR. STEINBERG:  Argumentative.
+20            THE DEPONENT:  It was true when I stated it
+21   because it was true to me.  It was just incorrect.
+22   BY MR. ASHBY:
+23       Q.   Okay.  So we can agree the testimony was
+24   incorrect; it just wasn't knowingly incorrect.  How's
+25   that?
+0048
+ 1            MR. STEINBERG:  Argumentative.
+ 2            THE DEPONENT:  Well, it was -- it was -- when
+ 3   I stated that testimony, and when I stated the
+ 4   testimony that we had never analyzed cosmetic talc,
+ 5   those statements were incorrect.  Those statements were
+ 6   incorrect because I never recalled us ever testing
+ 7   cosmetic talc before I became involved in late 2016,
+ 8   2017, since I was not involved in any cosmetic talc
+ 9   analysis before that, just that another scientist was
+10   in my facility, Mr. Mike Mount.
+11   BY MR. ASHBY:
+12       Q.   All right.  And also Bill Egeland; right?
+13       A.   Yeah, Bill Egeland was involved.  But -- you
+14   know, he's analyzed tens of thousands of samples, but
+15   I'm talking about the report being issued -- was issued
+16   by Mike Mount, not by me.
+17       Q.   Right.  I thought I had heard you just say a
+18   second ago that the only person that worked on any
+19   Cashmere Bouquet testing at that time was Mike Mount.
+20   But if that's what I heard, I just heard it wrong;
+21   right?
+22       A.   Yeah, if I did say that, then, you know, I
+23   misspoke.  I wasn't talking about the Bill Egeland who
+24   did the PLM or Anthony Keeton who did the TEM.
+25       Q.   Right.  Because Bill Egeland is still at MAS;
+0049
+ 1   right?
+ 2       A.   Yes.
+ 3       Q.   And Anthony Keeton is still at MAS; right?
+ 4       A.   Correct.
+ 5       Q.   But Mike Mount, no longer at MAS; right?
+ 6       A.   Correct.
+ 7       Q.   Okay.  So we can agree that two of the three
+ 8   people that did work prior to 2016 testing cosmetic
+ 9   talc products are still at MAS currently; correct?
+10       A.   As I've testified to, I think I've probably
+11   had now 25 hours of depositions over this, they're
+12   still here at MAS.
+13       Q.   And the first time that you testified there
+14   was asbestos in Johnson & Johnson talc was in 2017;
+15   right?
+16       A.   Correct.
+17       Q.   And we can agree that early on when you
+18   started testifying regarding the asbestos, that MAS was
+19   finding in Johnson & Johnson talc, folks like me,
+20   lawyers for Johnson & Johnson, asked MAS if it had ever
+21   done any testing of cosmetic talc prior to 2017; right?
+22       A.   That is correct.
+23       Q.   And we also asked you, even me, asked you to
+24   go back and look through your records for any of the
+25   reporting or analyses that MAS may have done prior to
+0050
+ 1   2017 on cosmetic talc; right?
+ 2       A.   I think that only happened when we found the
+ 3   sample.  I don't recall you guys asking me to go back
+ 4   and look for things before that.
+ 5       Q.   Okay.  Do you recall in 2018 lawyers for
+ 6   Johnson & Johnson asking you to go back and look for
+ 7   any cosmetic talc testing that MAS might have done
+ 8   prior to 2017?  Can you recall that?
+ 9       A.   No.
+10       Q.   MAS doesn't -- does not have a policy to
+11   destroy reports and analyses that are performed for
+12   purposes of litigation consulting; correct?
+13       A.   That's true.
+14       Q.   We can agree that MAS, to the extent it
+15   performs analyses, it should keep and retain its data,
+16   including the bench sheets and any reports associated
+17   with that cosmetic talc testing?
+18            MR. STEINBERG:  Argumentative, vague, legal
+19   conclusion as to "should."
+20            THE DEPONENT:  It should.  And again, I've
+21   been deposed on these exact same questions, I don't
+22   know how many times now, and certainly if we have done
+23   an analysis, it should be kept.  If the analysis was
+24   not done, it would, of course, not be kept.
+25            But as I've said, I can't state with absolute
+0051
+ 1   certainty that an analysis was done because we've only
+ 2   found two samples of -- one was cosmetic talc and one
+ 3   was -- well, found chains of custody for -- and one was
+ 4   pharmaceutical talc, and those did not have any
+ 5   analysis associated with it.
+ 6            The two Cashmere Bouquet or the three Cashmere
+ 7   Bouquet samples, the two in 2013 and the one in 2009
+ 8   were analyzed and reports sent to the clients that
+ 9   asked that to be done, and we had all that analysis.
+10   BY MR. ASHBY:
+11       Q.   Right.  So I think what you're talking about
+12   is you found a bottle -- or container of Gold Bond at
+13   some point after 2017; right?
+14       A.   That was in 2020.
+15       Q.   Right.  And you also found a sample of
+16   something called sterile talc; right?
+17       A.   Yeah.  Oh, maybe it wasn't 2020.  It was when
+18   I was first being accused of lying about analyzing
+19   cosmetic talc in order to not -- I guess ruin my
+20   positive rate.  That's when I went looking for stuff --
+21       Q.   Yeah.
+22       A.   -- (inaudible) may have been 2019.
+23            (Reporter clarification.)
+24            THE DEPONENT:  Yeah, strike all that.
+25            I think it was in 2019 when we did an initial
+0052
+ 1   searches for samples where we found the Gold Bond and
+ 2   the sterile talc sample -- not sample, but the chain of
+ 3   custodies.
+ 4   BY MR. ASHBY:
+ 5       Q.   All right.  And if you had done any analyses
+ 6   regarding the Gold Bond or the sterile talc and
+ 7   prepared reports, you would have been kept those;
+ 8   correct?
+ 9       A.   I would have kept those, if it was done.
+10   However, going back and looking for it, because all
+11   these IT systems have been merged, I can't -- I can't
+12   say within -- you know, with a reasonable degree of
+13   certainty or that the analyses were done, but somehow
+14   did not make it through the years or make it when the
+15   IT log-in systems were merged.
+16       Q.   Okay.  And if you had count sheets for any
+17   analyses that you've done, you'd keep those forever;
+18   right, to the extent that you hadn't lost them in some
+19   migration at some point regarding I -- the with IT?
+20       A.   Well, it would be our intent to keep them
+21   forever.  We kept the 2019 and the 2013.  But, again, I
+22   cannot say absolutely that they should have been there,
+23   and they didn't -- and did not show up.  They may -- if
+24   they were done -- and I'm not saying they were
+25   analyzed -- they could have been lost in the transfer
+0053
+ 1   of information.
+ 2       Q.   All right.  Just putting those aside, if MAS
+ 3   used a testing grid to analyze what was in cosmetic
+ 4   talc, it was also MAS's policy to keep all of those
+ 5   grids; correct?
+ 6       A.   Correct.
+ 7       Q.   The Gold Bond and the -- the sample that was
+ 8   labeled as sterile talc, can we agree that neither of
+ 9   those are a Johnson's baby powder product?
+10       A.   Gold Bond is not a Johnson's baby powder
+11   product, and the sterile talc is -- was from a
+12   manufacturer of pharmaceutical talc not a manufacturer
+13   but distributor or something.
+14       Q.   Right.
+15            So we at least know that that sterile talc
+16   wasn't from a sample of Johnson's baby powder; correct?
+17       A.   We do -- or I do.
+18       Q.   To this day, do you still not know why MAS had
+19   either of those samples in its possession?  Meaning the
+20   Gold Bond and the sterile talc.
+21       A.   Why we had them?
+22       Q.   Yeah.  I mean, in the past, you had said you
+23   found, at least the Gold Bond, and you didn't even know
+24   why it was there because you couldn't find any
+25   reporting on it.  So let me ask it separately.
+0054
+ 1            With respect to the Gold Bond, do you know how
+ 2   MAS even came in position of that Gold Bond?
+ 3       A.   Yes.  Richard Hatfield purchased it from CVS.
+ 4       Q.   All right.  And then how did you -- how did
+ 5   MAS get possession of the sterile talc sample?
+ 6       A.   It was sent to us by Steve Crick of Humphrey
+ 7   Farrington, McClain.  It's on the COC that I provided.
+ 8       Q.   Okay.
+ 9            All right.  So last year MAS produced a report
+10   of an analysis that it did on Cashmere Bouquet that was
+11   done in 2013; right?
+12       A.   Correct.  In October, I believe, of 2020.
+13       Q.   Right.
+14            So sometime before your -- so we talked a
+15   little bit earlier when we were off the record about
+16   Zimmerman.  And that was a deposition that I started
+17   with you, but I wasn't there the day that the next set
+18   of things are going to come up.  That's just colloquy
+19   for this.
+20            Sometime before your deposition, I think the
+21   second day of the Zimmerman deposition, on
+22   October 13th, 2020, you came across an MAS analysis of
+23   Cashmere Bouquet talc that was done by MAS in 2013;
+24   correct?
+25       A.   Correct.
+0055
+ 1       Q.   Okay.  So we know that at least you came
+ 2   across or found that Cashmere Bouquet analysis in 2013
+ 3   sometime before October 13th, 2020; right?
+ 4       A.   When I -- when I became aware of it, it was
+ 5   sometime in -- I don't know maybe a week before that or
+ 6   something.
+ 7       Q.   Okay.  So the -- do you know -- did you find
+ 8   or come across or be made aware of that 2013 Cashmere
+ 9   Bouquet analysis that MAS performed in September of
+10   2020, if you can recall?
+11       A.   You know, I don't recall now.  But, you know,
+12   I gave the testimony a number -- you know, I've been
+13   asked this a number of times.  So it was sometime
+14   around then when I came in possession of the report,
+15   but I can't tell you for sure now.
+16       Q.   And also right around that time, Mike Mount
+17   comes back to MAS and is rehired for a short
+18   engagement; correct?
+19       A.   It was before that.  But, you know, again, I'm
+20   not going to get into when Mike Mount was hired or when
+21   Mike Mount was -- why he left.  I'm not going to get
+22   into why we hired Mike Mount and why Mike Mount left.
+23            Two judges have now ruled on this information
+24   from subpoenas from Johnson & Johnson, and Judge Hanna
+25   ruled that there was nothing there, and the judge in
+0056
+ 1   Gwinnett County ruled that there was nothing there, and
+ 2   it was harassment by Johnson & Johnson.  So when Mike
+ 3   Mount was hired and why Mike Mount left, I'm not going
+ 4   to talk about.
+ 5       Q.   Right.  Okay.  Right.
+ 6            You did say, though, that it's your
+ 7   recollection that Mike Mount was hired before you
+ 8   became aware of the 2013 MAS analysis of the Cashmere
+ 9   Bouquet; correct?
+10            MR. STEINBERG:  This is outside the scope,
+11   harassing, asked and answered.
+12            THE DEPONENT:  Yes, I did say that.
+13   BY MR. ASHBY:
+14       Q.   Okay.  And that's still your testimony; right?
+15       A.   That's still my testimony, and I think I
+16   stated that before.
+17       Q.   And part of the terms of Mike Mount's
+18   employment was to sign a nondisclosure agreement that
+19   covered the work he did on the Cashmere Bouquet talc in
+20   2019; right?
+21            MR. STEINBERG:  Same objections.
+22            THE DEPONENT:  It was a -- it was a release
+23   agreement that has a confidentiality clause in it.
+24   BY MR. ASHBY:
+25       Q.   Now, with respect to the 2013 MAS report on
+0057
+ 1   the cosmetic talc from Cashmere Bouquet, who had
+ 2   the -- well, I'll strike that.
+ 3            Originally you said that you became aware of
+ 4   the 2013 MAS report on Cashmere Bouquet cosmetic talc
+ 5   because it had been provided by Weitz & Luxenberg to
+ 6   Bill Egeland; is that right?
+ 7       A.   Yes and no.
+ 8       Q.   Okay.  How is it yes and no?
+ 9       A.   No, the report wasn't provided, but yes, Weitz
+10   & Luxenberg had an M number for one of the samples that
+11   came along with the two Cashmere Bouquet containers for
+12   some Honda for the snow mobile brakes.
+13       Q.   Okay.
+14       A.   So he gave the M number to Bill Egeland, and I
+15   believe, as I testified, Bill Egeland went over to
+16   off-site storage, because he looked up the container
+17   number or the box number that had the samples
+18   corresponding to that M number.  And when he opened the
+19   box up, along with the brakes, there was two
+20   containers -- not in the same package -- but two
+21   containers of Cashmere Bouquet.  So got the M number
+22   and then got the report, because once we have an M
+23   number, it's very easy to find the reports, and that's
+24   how it came to light.
+25       Q.   Right.  Okay.
+0058
+ 1            Okay.  So we can agree then that MAS has had,
+ 2   in its possession and custody, the 2013 Cashmere
+ 3   Bouquet report throughout 2013 to all the way to today
+ 4   to 2021; right?
+ 5       A.   Yes, we still have them.
+ 6       Q.   And I know that you've said there was a --
+ 7   okay.  I'll strike that.
+ 8            So when you went back in 2019 or 2018 to look
+ 9   for other cosmetic talc testing, did you search any
+10   e-mails looking for analyses that MAS had performed
+11   related to cosmetic talc?
+12       A.   No.
+13       Q.   Because what I noticed was in the -- the 2013
+14   analysis, there are e-mails from the lawyers who
+15   provided the samples to Bill Egeland.
+16            Did you know that?
+17       A.   Yes.
+18       Q.   And --
+19       A.   But it was -- yes, I knew there was e-mails,
+20   because we provided them.  I didn't know there was
+21   e-mails before it until we got all the info from that
+22   report.
+23       Q.   So if somebody like Bill Egeland wanted to
+24   know, because he couldn't remember doing cosmetic talc
+25   testing prior to 2017, if he had done any, he could
+0059
+ 1   search his own e-mails; right?
+ 2       A.   That, I don't know if he still has them or
+ 3   not, but I'm not asking Bill Egeland to search his
+ 4   e-mails.  We're not searching any e-mails.  As far as
+ 5   I'm concerned, I'm done doing this.  I've spent so many
+ 6   hours with this -- I hate to use a common term by a
+ 7   famous politician -- but to me, it's just turning into
+ 8   a witch hunt.
+ 9       Q.   Does MAS have a policy to delete e-mails from
+10   the lawyers the plaintiffs in cases in which MAS is
+11   consulting in litigation?
+12       A.   Any policy we may or may not have about e-mail
+13   correspondences with attorneys is confidential.
+14       Q.   All right.  So then this year in the Prudencio
+15   matter, you were ordered by the Court in Alameda to
+16   perform some electronic searches across your databases;
+17   correct?
+18       A.   Correct.
+19       Q.   And in March of this year, you had somebody at
+20   MAS run several searches looking for anything and
+21   anything and everything that anybody could come up with
+22   related to cosmetic talc; right?
+23       A.   I had 59 word search combinations of single
+24   words and double words that were provided by a
+25   combination of Mr. Mark Bratt, and then also I think
+0060
+ 1   there was 30 -- 29 from Mark Bratt and 30 from J&J or
+ 2   vice versa.  And also we had an individual that works
+ 3   for MAS that we found out was an expert on doing
+ 4   searches through our database.
+ 5            So the sequence of events that had to be done
+ 6   for this database, I put in that report and that was
+ 7   done, and I sat there with our person and went through
+ 8   all those different combinations from 1988 to June 1st
+ 9   of 2016, and then I was asked to do another database
+10   search by Brendan Tully from June 1st, 2016, to
+11   December 31st, 2016, with the same combination.
+12       Q.   Yeah.  And I misspoke.  I think I said it was
+13   in the Prudencio matter, but it was a different case.
+14   I think it was -- I don't know.  Was it the Johnson
+15   case?  I'm trying to remember.  Do you remember?
+16       A.   The Johnson case for Mark Bratt.  And I think
+17   it -- I'm trying to think of the case for Brendan
+18   Tully.  I think it was a case he has in Cleveland.
+19       Q.   Okay.  And after doing that, that's when you
+20   found the 2009 Cashmere Bouquet analysis that you
+21   talked about earlier; right?
+22       A.   Yeah.  The one container that was sent to us
+23   by Moshe Maimon, I think, or somebody for him, and the
+24   container was sent back in 2009.
+25       Q.   All right.  And you had looked previously and
+0061
+ 1   someone that did the search was unable to find that
+ 2   particular report initially; correct?
+ 3       A.   Correct.
+ 4       Q.   And then you had somebody that had probably a
+ 5   little more technical expertise with the platform in
+ 6   doing the searches, and when that person helped out,
+ 7   then MAS was able to find the 2009 report of Cashmere
+ 8   Bouquet; right?
+ 9       A.   Correct.
+10       Q.   And with respect to the 2009 Cashmere Bouquet
+11   analysis that was done by Mike Mount, no asbestos was
+12   detected in that sample; correct?
+13       A.   In 2009, that is correct.
+14       Q.   Would you agree with me that you signed
+15   declarations in 2019 under penalty of perjury regarding
+16   MAS's Cashmere Bouquet cosmetic talc analysis in which
+17   you stated that all bottles that MAS ever received from
+18   the Levy firm were always positive for asbestos?
+19            MR. STEINBERG:  Forgive the interruption.
+20            Paige, can I have that question read back?
+21            (The record was read.)
+22            MR. STEINBERG:  Okay.  Objection.  Outside the
+23   scope.
+24            Counsel, if you're quizzing Dr. Longo on his
+25   memory of the exact wording of declarations that he
+0062
+ 1   signed, we are A, way outside the scope, and B, you can
+ 2   show him the declaration.  But this is a ridiculous
+ 3   harassing waste of time at this point.
+ 4            MR. ASHBY:  Okay.  So I mean, I don't think
+ 5   impeaching somebody is a waste of time.  So let me --
+ 6            MR. STEINBERG:  Well, it's a deposition, and
+ 7   he either signed it or he didn't.  You're not
+ 8   impeaching him.  You're wasting time, and you're asking
+ 9   him what he remembers from signing something that he
+10   may or may not have signed -- I don't even know if it
+11   exists, what you're talking about, from 2019.
+12            MR. ASHBY:  You know, I can tolerate a lot,
+13   but the coaching and the raising of the voice, it wears
+14   on me after a bit.  I'm not going to move on.  You've
+15   made your record.  You've made your statements.
+16   Dr. Longo's heard them and can react any way he
+17   chooses, but the question is still the question, and
+18   I'll ask politely, again, for him to answer.
+19            MR. STEINBERG:  Counsel, your improper and
+20   unprofessional suggestion that I'm coaching by
+21   explaining the harassing nature of your questions is
+22   not well taken.
+23            MR. ASHBY:  Okay.  Thank you.
+24            MR. STEINBERG:  You're welcome.
+25   ///
+0063
+ 1   BY MR. ASHBY:
+ 2       Q.   So let me -- why don't we start over.  Don't
+ 3   even answer it.  Don't worry about it, Dr. Longo.  I'll
+ 4   take it back.  Okay?
+ 5       A.   All right.  Sure.
+ 6       Q.   In your reliance materials, would you agree
+ 7   with me that there are declarations that you've signed
+ 8   in the past in litigation purpose -- for litigation
+ 9   purposes in which you describe the state of your
+10   analyses of various manufacturer's testing that MAS has
+11   done on those manufacturer's products?  Do you
+12   understand what I'm saying?
+13       A.   Yes.  That would be correct.
+14       Q.   Okay.  So, for example, you have a declaration
+15   related to Johnson & Johnson in which you lay out all
+16   of the analyses, both positive and nondetects, as
+17   related to MAS through -- through whatever date the
+18   declaration was signed, for example; right?
+19       A.   That is correct.
+20       Q.   Okay.  You've also done that for Cashmere
+21   Bouquet and MAS's Cashmere Bouquet analysis; correct?
+22       A.   Correct.
+23       Q.   Okay.  And in your reliance materials there,
+24   you have listed a 2019 declaration -- let's see if I
+25   have the date -- I believe it's May of 2019, there's a
+0064
+ 1   declaration there that lists the testing that MAS has
+ 2   done to date on Cashmere Bouquet cosmetic talc
+ 3   products; right?
+ 4       A.   I mean, it's possible.  I don't recall all the
+ 5   declarations that sign.  I would have to see it to
+ 6   validate it, what you're saying.
+ 7       Q.   Do you have your cosmetic talc binder there?
+ 8       A.   I do not.
+ 9       Q.   Oh, okay.  So I think that's fair, so why
+10   don't I show you what I'm talking about, and maybe
+11   the --
+12       A.   Sure.
+13       Q.   So what's the best way?  Should I screen
+14   share, or should I just drop it down into the chatty
+15   thing?
+16       A.   Whichever way that will work.
+17       Q.   Yeah, I mean, I don't know.  So all right.
+18   Why don't -- why don't I screen share, because I -- I
+19   have a feeling it's going to be easier after what we
+20   went through this morning.
+21            MR. STEINBERG:  Counsel, if you could also
+22   just drag and drop it into the chat so that I can at
+23   least have access to it and then you can screen share
+24   it with the doctor, I would appreciate that.
+25            MR. ASHBY:  Okay.  Yeah, that's fine.  I mean,
+0065
+ 1   that's my preferred way of doing it.  We just had the
+ 2   problem with the --
+ 3            MR. STEINBERG:  I agree.  I think both is
+ 4   easiest.
+ 5            MR. ASHBY:  So I'm putting it in -- oh, God,
+ 6   it's huge.  It's 97 megs.  I'm putting it in the chat
+ 7   right now.  So it's uploading.  And it's working on it,
+ 8   but in the meantime, I'll screen share.  Okay.  I'm
+ 9   trying.  I'm not great at this.  Okay.
+10   BY MR. ASHBY:
+11       Q.   So I think I've screen shared.
+12            Does this look like a screen --
+13            Can you see what I'm -- there's some grids on
+14   there, some tables.  Can you see the screen?  Is there
+15   anything on it?
+16       A.   Yeah, I can.
+17       Q.   Okay.
+18       A.   Yes.
+19       Q.   Okay.  So I'm going to go up to the top of
+20   this thing.  And this is -- I'll just mark this as
+21   whatever -- I think we're on Exhibit Number 5.  All
+22   right.  I had originally marked number 5 as the
+23   handwritten notes, but it doesn't look like that's
+24   going to happen, so let's make Exhibit Number 5 this
+25   declaration that is signed by Dr. Longo on May 2nd,
+0066
+ 1   2019.
+ 2            (Exhibit 5 marked.)
+ 3   BY MR. ASHBY:
+ 4       Q.   Okay.  Does that -- all right.  So I have
+ 5   this -- what we marked as Exhibit 5 up now, and it's a
+ 6   declaration.
+ 7            Does it -- does this look like a declaration
+ 8   that you would have signed in May of 2019?
+ 9       A.   It does.
+10       Q.   Okay.  So -- and I'm looking at paragraph 6 of
+11   this thing, and this is in your -- this is a
+12   declaration that I got from your cosmetic talc binder;
+13   okay?  It says on -- the sixth paragraph says:  To date
+14   we have identified regulated asbestos in 51 of 58
+15   containers of Cashmere Bouquet or 88 percent of the
+16   Cashmere Bouquet talc products tested.
+17            Do you see that?
+18       A.   I do.
+19       Q.   Okay.  That number has probably changed now
+20   since May 2nd.  Is that still correct, 51 of 58?  I
+21   don't think so.
+22       A.   No.  I think it's either 92 or 93 now.
+23       Q.   Right.
+24            Okay.  In any event, but at least at this
+25   point in time, May 2nd, 2019, it was 51 of 58 were
+0067
+ 1   positive for regulated asbestos; right?
+ 2       A.   That's correct.
+ 3       Q.   All right.  And then -- and then you have
+ 4   these exhibits that you attach.
+ 5            All right.  So do you see on paragraph 5, it
+ 6   says:  A true and correct copy of a summary chart of my
+ 7   lab's testing of Colgate-Palmolive Company Cashmere
+ 8   Bouquet talc products to date is attached here as
+ 9   Exhibit C.  I hereby adopt and incorporate that chart
+10   into this declaration as though it was set forth in
+11   full.
+12            Do you see that?
+13       A.   I do.
+14       Q.   Okay.  So let's -- let's just go down to the
+15   chart.  And so we have this chart down here now.  I
+16   just want to scroll up to the top of it.
+17            Okay.  Do you see this chart, MAS chart of
+18   Cashmere Bouquet testing?  Do you see this on the
+19   screen?
+20       A.   I do.  That's one of the Simon Greenstone
+21   containers --
+22       Q.   Correct.
+23       A.   -- I recall this chart.
+24       Q.   You do a similar chart for the Johnson &
+25   Johnson MAS testing as well; right?
+0068
+ 1       A.   Correct.
+ 2       Q.   All right.  So the chart lays out table,
+ 3   T-a-b-e-l 1; right?  It should be -- this is how I know
+ 4   you prepared this chart, Dr. Longo.
+ 5       A.   I have never -- my spelling abilities were
+ 6   less than optimal.
+ 7       Q.   So that indicates to me that you prepared it
+ 8   rather than Leah Kagan right there, so...
+ 9       A.   Okay, wise ass.
+10       Q.   Okay.  So that's just a colloquy that I'll
+11   strike.
+12            Okay.  If we go down -- so Table 1 are the
+13   samples of Cashmere Bouquet talc that MAS tested and
+14   were received from Simon Greenstone; correct?
+15       A.   Correct.
+16       Q.   Okay.  So then Table 2, Table 2 are the
+17   samples received from Levy Konigsberg; correct?
+18       A.   Correct.
+19       Q.   And we're not going to see the 2009 Cashmere
+20   Bouquet talc sample in this table, are we?
+21       A.   Actually, we are.
+22       Q.   Oh, we are.  Okay.  Which one -- which one is
+23   it?
+24       A.   27.
+25       Q.   What number?  I'm sorry.
+0069
+ 1       A.   27.
+ 2       Q.   Okay.
+ 3       A.   That container, unbeknownst to me, was sent
+ 4   back to us in 2017 for analysis when I got these
+ 5   samples for Levy Phillips.  That is the exact same
+ 6   container that we analyzed in 2009 and sent back so
+ 7   Levy Phillips or Levy Phillips Konigsberg at the time.
+ 8   So we have analyzed that sample twice.
+ 9            And only recently when I was looking at the
+10   container, I had a -- I go I've seen that before, and I
+11   went and looked through this, and low and behold, there
+12   it is.  So it was a blind reanalysis by us, but this
+13   time we used heavy liquid density separation on it,
+14   which we did not do in 2009 while it was negative.
+15       Q.   So let me see if I understand.
+16            What's marked as number 27 M65590-002 is the
+17   same container that was originally sent to Mike Mount
+18   around 2009; is that right?
+19       A.   Yes.  It was in 2009, actually, I think.
+20       Q.   Yeah, I don't know the exact date.  I don't
+21   know if it says in the report or not.
+22            But in any event, the -- and Levy has held on
+23   to that container presumably for over ten years; is
+24   that right?
+25       A.   Well, he held on to it, but you see that the
+0070
+ 1   container now has additional sample numbers on it,
+ 2   because it was sent from Levy to MVA for analysis to
+ 3   Dr. Gordon for analysis, and this was used for their
+ 4   paper, and then was sent back to them, and then he sent
+ 5   it to us.
+ 6            Now, of course, when we were analyzing this
+ 7   sample, I had no idea that we originally got it in
+ 8   2009, but looking at the container, the one we got in
+ 9   2009 does not have the Levy and Gordon stickers on it,
+10   but it does have that exhibit -- I think it's Exhibit 2
+11   or 3 on the side, and I don't think it had the red dot
+12   on the side either in 2009.
+13       Q.   Okay.  I see.
+14            So that particular bottle probably became the
+15   source of quite a bit of contention around or after
+16   Gordon and Fitzgerald published their article in 2014;
+17   correct?
+18       A.   I don't know what kind of contention.  I was
+19   not involved in any of that back then.
+20       Q.   Okay.
+21       A.   Other than, of course, I've reviewed the paper
+22   a few times.
+23       Q.   Right.  Okay.
+24            But in any event, it's your understanding that
+25   that's the bottle that's involved in the paper from
+0071
+ 1   2014 that was looked at by MVA; right?
+ 2       A.   Well, I think it was looked at -- it was
+ 3   looked at by MVA, by Gordon, and maybe it's one of the
+ 4   ones that was in that round robin they did to the other
+ 5   labs with the RJ Lee lab, but whatever.
+ 6            It's not my -- well, my understanding it's
+ 7   more than that.  That is the exact container.  I've
+ 8   examined the photographs from 2009 and the photographs
+ 9   I have today, and I can find, besides the exhibit, you
+10   can see the photographs where the writing on that
+11   exhibit, the handwriting is the -- where you can see is
+12   identical, and also there is a paint chip on where the
+13   top portion of the -- the top portion of the container
+14   itself has a paint chip in the exact same place --
+15       Q.   Right.
+16       A.   -- that is the container analyzed in 2009.
+17       Q.   Okay.  In 2009 did MAS put a sticker or
+18   some -- like you typically do or some identifying
+19   marker on that bottle?
+20       A.   Well, typically we don't, but the picture has
+21   the M number right next to it, and it was along with
+22   that report.  You know, we had one good color picture
+23   of it where you can see the paint chip, and then the
+24   pictures we've taken.  And I still have that container,
+25   so I pulled it out and that paint chip was right where
+0072
+ 1   we saw it in 2009, and the exhibit, on the right-hand
+ 2   side of the container, is still there.
+ 3       Q.   Sorry.  I stopped screen sharing because I
+ 4   wanted to pull up -- I was going to try to pull that up
+ 5   so I could take a look.  Because what you're doing now
+ 6   is you're referring to your 2009 -- or MAS's 2009
+ 7   report; right?
+ 8       A.   Correct.
+ 9       Q.   Okay.  So that -- I just can't seem to work it
+10   so I can actually see something you're talking about
+11   while I have screen share up.  It just changes
+12   everything on me.
+13            Okay.  So in the 2009 MAS report, there's a
+14   picture of the bottle that Mike Mount received?
+15       A.   Yeah.  There is a color picture of the front
+16   of the container.
+17       Q.   Okay.  Right.  Okay.  Now I understand.
+18            Let's see if I can actually -- you know what?
+19   I've got it up, so I'll screen share so anybody else
+20   playing along knows what we're talking about.
+21            MR. ASHBY:  Okay.  Can you all see the bottle?
+22   I don't know what I'm sharing at the moment.
+23            MR. STEINBERG:  No.
+24            THE DEPONENT:  No.
+25            MR. ASHBY:  Okay.  I'm going to try that
+0073
+ 1   again.  You just saw the insides of my computer right
+ 2   there?
+ 3            MR. STEINBERG:  No.  We saw a corner, like a
+ 4   very zoomed-in version of your PDF Viewer.
+ 5            That's much better.
+ 6   BY MR. ASHBY:
+ 7       Q.   Okay.  So can we agree -- what I have up now,
+ 8   Dr. Longo, is one of the pictures of the Cashmere
+ 9   Bouquet bottle that was analyzed by Mike Mount in 2009;
+10   right?
+11       A.   Yeah.  It's not a very good picture, but
+12   that's it.  You can see the Plaintiff's Exhibit on the
+13   same place where it was.
+14       Q.   Yeah.
+15       A.   And the picture -- you know, you've got a copy
+16   of a picture, but you can see the chip a little bit.
+17   So you see where the "S" is in Cashmere, if you go
+18   straight up to where the lip is of the top of
+19   the -- right there -- there's a little -- right there
+20   there's a little -- that's actually a paint chip that
+21   was on the container when we got it, and is still on
+22   the container, the exact place, the exact size, the
+23   exact --
+24            And over to the right going from the edge of
+25   the Plaintiff's Exhibit up, it almost looks like little
+0074
+ 1   right -- yeah, right up on the other side.  Move over
+ 2   to the left slightly, little bit more.  Right about
+ 3   there to there, there's, like, a little bit of a crease
+ 4   that you can see better on the -- on the non-copied
+ 5   picture that we still have.  And if you go down to the
+ 6   exhibits --
+ 7       Q.   You want me to go down in this thing?
+ 8       A.   No, no, no.  Exhibit sticker.  I'm sorry.  If
+ 9   you go to the exhibit sticker and right after
+10   "exhibit," you can see some handwriting.  That
+11   handwriting is exactly the same, right there, so --
+12       Q.   Oh, okay.  Right.
+13            Okay.  So what we're seeing here in --
+14            I guess I should mark this; right?
+15            I'll mark what we're looking at, the 2009
+16   Cashmere Bouquet report as Exhibit 6.
+17            (Exhibit 6 marked.)
+18   BY MR. ASHBY:
+19       Q.   Okay.  So what we're looking at in Exhibit 6
+20   is you're telling me the same bottle that I would see
+21   when we go back to Exhibit 5 and look at number 27 in
+22   the table related to the Cashmere Bouquet bottle
+23   provided by Levy for your analysis of Cashmere Bouquet
+24   in 2020, I believe; is that right?
+25       A.   Well, we analyzed it --
+0075
+ 1       Q.   You're right.
+ 2       A.   Yeah, we analyzed this container, I think,
+ 3   back in 2017 or 2018, whenever he went it to us.
+ 4       Q.   Yeah, yeah.  You're right.  It couldn't even
+ 5   be 2020 because this is a declaration from 2019, so
+ 6   that doesn't make any sense.
+ 7            In any event, what you're saying is -- what
+ 8   I'm seeing in Exhibit 5, row 27 of the Levy-supplied
+ 9   Cashmere Bouquet bottles is the same as the bottle in
+10   the 2009 Cashmere Bouquet analysis done by Mike Mount;
+11   right?
+12       A.   That is correct.
+13       Q.   Okay.
+14            MR. STEINBERG:  Matt, when you are at a good
+15   spot, we've been going about an hour, I would love to
+16   take a five-minute break so whenever is good.
+17            THE DEPONENT:  I would also like to take about
+18   a 30-minute lunch.
+19            MR. ASHBY:  Okay.
+20            THE DEPONENT:  So this would be a good time to
+21   stop.
+22            MR. ASHBY:  Okay.  That's fine.  I mean --
+23            MR. STEINBERG:  All right.  Let's go off the
+24   record.
+25            MR. ASHBY:  Yeah.  Off the record.
+0076
+ 1            (Whereupon, a lunch recess was held
+ 2            from 10:48 a.m. to 11:37 a.m.)
+ 3            (Mr. Quattlebaum leaves deposition.)
+ 4   ///
+ 5   ///
+ 6   ///
+ 7   
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0077
+ 1                     MONDAY, JUNE 28, 2021
+ 2                           11:37 A.M.
+ 3                             -o0o-
+ 4   
+ 5            MR. ASHBY:  Let's get back on the record then.
+ 6   
+ 7                    EXAMINATION (Resumed)
+ 8   BY MR. ASHBY:
+ 9       Q.   Okay.  So, Dr. Longo, I have -- we were
+10   talking about the 2009 report.  I have up a picture
+11   from the Cashmere Bouquet 2009 report.  It looks to me
+12   like there was a sticker on that bottle that ends in 58
+13   and just below that, 01.
+14            Do you see that?
+15       A.   Yes.
+16       Q.   Is that an MAS identifying sticker that would
+17   have been placed on the sample bottle at the time of
+18   analysis in 2009?
+19       A.   Let's see.  I have to find that to see if
+20   those are our last numbers.  I don't remember what the
+21   M number was, unless you have that.  I don't have that
+22   report in front of me.
+23       Q.   Yeah, I don't know.  I mean, I do.  I just
+24   don't -- okay.  Here it is.  Oh, this is 2009.
+25       A.   No, that's not 2009 -- there we go.  That
+0078
+ 1   report was not the -- there we go.
+ 2            48558, and I saw the last digits with a 01, so
+ 3   more likely than not, that was our sticker.
+ 4       Q.   Okay.  So there was a sticker that MAS
+ 5   likely -- more likely than not would have placed on
+ 6   that sample, which was, I assume, even for that time
+ 7   2009, a protocol that would have been employed by the
+ 8   folks doing the testing; right?
+ 9       A.   Typically, yes.
+10       Q.   And then if we go back and look at your
+11   declaration -- I got to find it -- it looks like
+12   the -- by the time it gets back to you in 2018 for
+13   testing, that sticker has been removed; correct?
+14       A.   That's correct.
+15       Q.   Okay.
+16       A.   Otherwise, if that would have happened, we
+17   would have known that we had previously tested it.
+18       Q.   Yeah, and that's where I was going.  I'm
+19   sorry.  Go ahead.  I'm sorry.
+20       A.   It was not on there when we got it back.
+21       Q.   Okay.  Right.  Because had that sticker still
+22   been on there when you got it back, you would have seen
+23   the M number and known, maybe, that there was a test
+24   that had been done by MAS previously on this particular
+25   sample; right?
+0079
+ 1       A.   If the sticker with our M number had been on
+ 2   it, and we would have looked it up, because with the M
+ 3   number, you can find stuff very easily, and we would
+ 4   have seen that we had previously tested it, and this
+ 5   would have all come out in 2017.
+ 6       Q.   Do you know or can you tell me if in 2009 when
+ 7   MAS sent the sample bottle back to Levy if the people
+ 8   sending it back at your office would have removed the
+ 9   sticker before sending it back?
+10       A.   You know, I can't answer that question.  I
+11   don't know.  It's possible, but so I -- that's one
+12   scenario that could be possible.
+13       Q.   Now, though, at least in my -- how I remember
+14   things, if you get a sample now of cosmetic talc and
+15   put a sticker on it, you keep that sticker on the
+16   sample even when you return it back to the law firms
+17   that provided it to you; correct?
+18       A.   (Inaudible.)
+19            (Reporter clarification.)
+20            MR. ASHBY:  Oh, yeah it looks like he's
+21   connecting to audio, it says on mine.  We can't hear
+22   you.  Does that mean he doesn't have audio if it says
+23   connecting to audio?
+24            MR. STEINBERG:  Yes his phone line dropped so
+25   we can't hear him right now.
+0080
+ 1            MR. ASHBY:  Okay.  We might as well just go
+ 2   off the record, Paige.
+ 3            (Discussion off the record.)
+ 4            MR. ASHBY:  We can go back on the record.
+ 5   BY MR. ASHBY:
+ 6       Q.   So I'll just reask the question.  We might
+ 7   have gotten an answer, but we couldn't hear it.  We
+ 8   could see you talking, but we couldn't hear you.
+ 9            So let me ask you this:  Currently when MAS
+10   gets a sample of cosmetic talc now in a bottle or a
+11   container and analyzes it and then sends the sample
+12   back to the lawyers that provided it to MAS, does MAS
+13   leave the identifying sticker on the sample that it
+14   placed during the analysis?
+15       A.   We don't put a sticker on the container
+16   anymore.  The sticker is inside -- is in with the
+17   container in the plastic bag that it comes with, and
+18   then there is also a sticker on the outside of the bag.
+19   You'll notice that the photographs of any of the
+20   containers, I don't believe there are any MAS stickers
+21   on the containers.
+22            And I don't recall us ever sending a container
+23   back because typically now, you know, there's going to
+24   be sometimes -- there's usually splits that are done.
+25   And so the only time we've ever sent any containers out
+0081
+ 1   that I know of is when it's gone to Alliance Technology
+ 2   or Technologists -- I think it's Technology -- for them
+ 3   to do the splits, and then we get the containers back.
+ 4       Q.   Got it.  Okay.
+ 5            All right.  I want to move off that now.  So
+ 6   I -- are you aware that there's -- well, actually, you
+ 7   will be aware.  I'll just strike that.
+ 8            I saw recently an affidavit that you provided
+ 9   regarding some dustup about whether or not you were
+10   spiking samples or Poye was spiking samples related to
+11   Old Spice analysis that had been done by both of your
+12   labs.
+13            Do you know what I'm referring to without me
+14   having to pull it up?
+15       A.   Yes, I do.
+16       Q.   Okay.  So let me see if I can understand the
+17   history behind this.  There was a point in time when
+18   you sent samples that MAS had already reviewed to Lee
+19   Poye for him to use XRD at his lab to see what they
+20   could find by XRD; is that right?
+21       A.   That's right.  I think that was in 2018 or
+22   towards -- or 2017.  I'm not sure quite when.
+23       Q.   Yeah.
+24       A.   But we sent a number of what I would call
+25   evidence samples.  These would have been the
+0082
+ 1   original -- original eBay-type samples and one
+ 2   historical sample, the 1978, and then we also spiked
+ 3   a -- our sample, that number 13 sample that we just
+ 4   purchased, just so I could see his detection limit for
+ 5   QC.  Now, Lee Poye knew he had spiked samples, and
+ 6   after the analysis, we told him which ones from spiked
+ 7   samples, and that was it.
+ 8            When you're doing QC -- and I've made this
+ 9   statement -- everybody spikes samples in all aspects of
+10   analytical chemistry to validate, to see what your
+11   detention limits are, you spike the sample.  What we do
+12   not do is ever spike an evidence sample that is
+13   purported to be an original sample from somebody.
+14            Robert Thackston's motion that he filed in
+15   Judge Davidson's is completely false.  Either -- either
+16   Robert Thackston doesn't know what he's doing or can't
+17   understand the English language or he's a liar, one of
+18   the two.
+19            So Lee Poye sent us splits of the Shulton
+20   samples.  One of the containers was empty, so Lee Poye
+21   took our spiked sample and poured it in there.  We
+22   analyzed it, we found anthophyllite and tremolite in
+23   there, which was unusual -- I knew it was something
+24   different because the ages of the sample, the split
+25   sample did not match when Shulton was using
+0083
+ 1   North Carolina talc where your anthophyllite would be.
+ 2   However, we reported it anyway.
+ 3            When I was being cross-examined by the
+ 4   Shulton/ Old Spice attorney, he asked me, did I know
+ 5   that one of the samples were spiked.  My response was,
+ 6   no, which one was it?  And he reminded me that he asked
+ 7   the questions not answered them, and then I said I was
+ 8   just curious.
+ 9            After, you know, the cross-examination didn't
+10   end but at the end of the day, you know, he still had
+11   more cross-examination, and as I was -- as we left the
+12   courtroom I asked Stu Purdy, what was with this spiked
+13   sample?  What's going on?  And he said, oh, well, when
+14   I took Lee Poye's deposition, he stated that he spiked
+15   one of the evidence, because the container was empty,
+16   for QC.
+17            And my response to that was, don't you think
+18   it would have been -- he said, I guess you didn't know.
+19   They were supposed to tell you, and I said, do you
+20   think?
+21            From there Thackston filed a motion that I'm
+22   spiking evidence.  And telling everybody this.  And,
+23   you know, I'm incredibly upset.  He's -- you know,
+24   it's -- it's my reputation.  I worked for this Ph.D.
+25   I've worked hard on my career here, and it's just a
+0084
+ 1   falsehood that I cannot believe that Robert Thackston
+ 2   had the audacity to put in a motion.  It is absolutely
+ 3   untrue that I have ever spiked an evidence sample and
+ 4   then analyzed it and said, here's what we found.
+ 5   That's all BS.
+ 6       Q.   All right.  That was a lot, and I understand
+ 7   you're upset about it.  So I want to ask kind of
+ 8   pointed questions about it, not -- I'm not trying to
+ 9   put you on the spot.  I'm just trying to understand.
+10            So do you know which sample it was that you
+11   provided Poye in 2018 is the one that he took and
+12   blinded you with in a Shulton -- supposedly Shulton
+13   sample?
+14            MR. STEINBERG:  Asked and answered, vague,
+15   incomprehensible.
+16            THE DEPONENT:  I would go back and look
+17   because there was one sample I remember that we put
+18   both tremolite and anthophyllite in, and when you
+19   get -- and I provided the key to the samples because we
+20   changed the M number and supplied the key to him.
+21   Obviously, he knew; otherwise, how would he -- how
+22   would he pick that particular sample to pour in the
+23   empty Shulton container?
+24            MR. ASHBY:  Okay.  So I've put up what I think
+25   we're talking about, so why don't I do this:  I'll mark
+0085
+ 1   this as Exhibit Number 7.  And this is --
+ 2            MR. STEINBERG:  Matt, can you e-mail that to
+ 3   me, please -- or just in the chat?
+ 4            MR. ASHBY:  Yeah, I got to undo the screen
+ 5   share to do that, so hang on.  Now you got to give me a
+ 6   second.
+ 7            MR. STEINBERG:  Thank you.
+ 8            MR. ASHBY:  So if I -- I'll try to put it in
+ 9   the chat and maybe if Dr. Longo -- I don't think he
+10   needs to, but if he wants to I'll pull it down.
+11            THE DEPONENT:  Well, I just saw it.  That's
+12   not -- that's not the set of samples that -- that
+13   the --
+14   BY MR. ASHBY:
+15       Q.   Oh, it's not?  Okay.
+16       A.   But that one doesn't have any tremolite/
+17   anthophyllite on it.
+18       Q.   Okay.  So that's what I was going to get at.
+19            MR. ASHBY:  So do you want me to put -- do you
+20   still -- I guess I'll still give it to you, Henry, in
+21   case it comes up.
+22            If I can just -- again, you got to give me a
+23   second.
+24            That's why I'm asking.  I'm just trying to get
+25   to the bottom of what exactly happened since it
+0086
+ 1   involves Johnson & Johnson stuff.  It should be -- it's
+ 2   uploading now.
+ 3            (Exhibit 7 marked.)
+ 4   BY MR. ASHBY:
+ 5       Q.   Okay.  So what I put in the chat and I marked
+ 6   as Exhibit 7 is a -- it's 2018 report from J3.
+ 7       A.   Yeah, let me -- can I see that.
+ 8       Q.   Oh, yeah, sorry.  Of course.  You want me to
+ 9   screen share?  That the best way?
+10       A.   Please.
+11       Q.   Okay.  So Exhibit 7, you see here we got an
+12   e-mail from William Longo to Lee Poye on January 11,
+13   2018, and you're saying:  Lee, I'm sending you some
+14   samples by FedEx.
+15            Do you recognize this e-mail?
+16       A.   Well, I don't recognize it, but that's
+17   certainly an e-mail from me.
+18       Q.   Yeah.  And then Lee says back to you on
+19   January 10th, 2018, great speaking with you.  I'm
+20   predicting we'll be speaking a lot more in the future,
+21   exclamation point.
+22            Do you see that?
+23       A.   I do.
+24       Q.   He seems to be very excited about his results
+25   or anticipated results; right?
+0087
+ 1            MR. STEINBERG:  Speculation, argumentative.
+ 2            THE DEPONENT:  Or he just was making a point.
+ 3   I don't know.
+ 4   BY MR. ASHBY:
+ 5       Q.   Yeah, I mean -- yeah, okay.
+ 6            So I just need to go to the end of it because
+ 7   that's where this key is here.  So I -- this is the key
+ 8   I think to what you sent J3 in 2018 in relation to the
+ 9   work that he was directed to do with PLM and XRD, a
+10   sample that MAS had already reviewed at that point in
+11   time; is that right?
+12       A.   That's correct.
+13       Q.   Okay.  So do you want me to go back and show
+14   you the report, the title of it?  I probably should
+15   have done that.
+16            So this is the report -- gosh, there's so
+17   many -- okay.  So this is Lee's report from
+18   February 8th to you regarding PLM and XRD analysis of
+19   26 Johnson & Johnson talcum powder samples; right?  I
+20   mean you've testified about this plenty of times;
+21   right?
+22       A.   Yes.
+23       Q.   Okay.  And what we know is that Lee Poye took
+24   those 26 samples and you look -- he analyzed them by
+25   PLM and by XRD; right, as you directed him to do?
+0088
+ 1       A.   Correct.
+ 2       Q.   Okay.  And in some of them he found tremolite;
+ 3   correct?  Like, for example, here's one.
+ 4       A.   Correct.
+ 5       Q.   Okay.  And then after the analysis was over,
+ 6   you sent him a key because you had spiked some samples
+ 7   that you sent him; correct?
+ 8       A.   Correct.
+ 9       Q.   Okay.  And you had -- they were not
+10   evidence -- I just want to -- I don't want to, like,
+11   mess you up here.
+12            So the samples that were spiked were not
+13   evidence samples; right?
+14       A.   No.  They came from that control sample that
+15   we bought, you know, the 2013 Johnson & Johnson baby
+16   powder.  It's the same sample that we have been using
+17   for all our spiked samples even for when we were
+18   spiking samples with Calidria so we could see what it
+19   looked like.  This was not an evidence sample where we
+20   received a sample and analyzed it and spiked it.
+21       Q.   Right.  Right, right, right.
+22            So if I were -- so the two that you spiked, it
+23   looks like, for this analysis of 26 samples in 2018 was
+24   sample -- at least he calls sample number 5 and sample
+25   number 9; correct?
+0089
+ 1       A.   Correct.
+ 2       Q.   And the M number for the bottle that those
+ 3   came from is M65947; right?
+ 4       A.   Correct.
+ 5       Q.   And which bottle is that?  I was having
+ 6   trouble figuring out which bottle that was; although, I
+ 7   probably knew at one time.
+ 8       A.   Well, that was 6947.  I think if you look at
+ 9   the original -- we had given all the numbers a
+10   different number.  So those -- you can see it was,
+11   like, sample 2 and 3.  That's the same number we gave
+12   before.  All the rest of them are evidence samples.
+13   Originally -- I forget the M number, but it's the 013
+14   control.
+15       Q.   Yeah, you know, honestly I forget it myself.
+16   It's been -- feels like that was like a decade ago.
+17   But let's see if I can -- would that -- is it the same
+18   sample that you talk about when you first started doing
+19   this work in -- with Johnson & Johnson testing in 2017?
+20   Is it that sample?
+21       A.   Correct.  And remember my original testimony
+22   was that I didn't think that the -- you know, the
+23   talcum powder being used at that time would have had
+24   any detectible asbestos in it.  And let's see if it's
+25   on that one.  Should be.
+0090
+ 1       Q.   Can you see my -- can you see that I pulled up
+ 2   the March 11, 2018, Johnson & Johnson report?
+ 3            Can you guys see that?  I just don't know what
+ 4   you can see.
+ 5            MR. STEINBERG:  Yes.
+ 6            THE DEPONENT:  Yeah, the Appendix E.
+ 7   BY MR. ASHBY:
+ 8       Q.   Yeah.
+ 9       A.   The M65329-013 J&J control.
+10       Q.   Yeah.
+11       A.   That's the sample.
+12       Q.   That's the sample.  So 65329 and then if I go
+13   back here and look at it, it says 64947 was spiked, and
+14   65329 was a different sample all together.  But that's
+15   043 is 65329?
+16       A.   Correct.  So they're samples 3 and 2.
+17            And if I'm not mistaken, that was the number
+18   we gave all the samples because I didn't want Lee Poye
+19   to know when he was doing the analysis if he had
+20   his -- if he had his report, which samples were which.
+21   After he did the analysis, then he -- then we gave him
+22   the key, but we said that those two were spiked.
+23       Q.   Oh, okay.  I'm understanding now.
+24            So what you did, if I understand, was you took
+25   the J&J control which was 65329-013, took some of it,
+0091
+ 1   spiked it, and gave it a new M number for the spike?
+ 2       A.   We gave -- yes, not only the spike, but all
+ 3   the samples.
+ 4       Q.   Okay.  And then you spiked it -- you've talked
+ 5   about this in the past.  You spiked one sample with
+ 6   .3 percent tremolite and the other sample with
+ 7   .1 percent tremolite; correct?
+ 8       A.   Correct.
+ 9       Q.   Okay.  But these -- are we now saying these
+10   aren't the spiked samples that Lee Poye sent back to
+11   you during the Shulton analysis?  Is it some other
+12   spiked samples?
+13       A.   Yeah.  I think we had three sets of samples
+14   that went to Lee Poye, and I think even -- I think the
+15   ones that we sent back that had that in there, they
+16   weren't -- we even told them they were spiked at the
+17   time.  You have to go to other -- other samples that we
+18   sent back that we had him analyze.
+19       Q.   So there were other samples that you sent to
+20   Lee Poye to analyze, where you included in those
+21   samples as well, spikes or spiked samples, non-evidence
+22   samples that were spiked?
+23       A.   Correct.  Now --
+24       Q.   Okay.
+25       A.   -- to be fair that same -- that control
+0092
+ 1   sample, you know, I was asked a number of times to --
+ 2   and I finally analyzed it.  It didn't have any
+ 3   amphibole in it, and I analyzed it later on for
+ 4   chrysotile.  It became evidence.  But at the time this
+ 5   was not an evidence sample, that sample 20 -- number 13
+ 6   to the -- it still was nondetect for amphiboles.
+ 7       Q.   Yeah, no.  Okay.  That's fine.  I understand
+ 8   what you're saying.  Because otherwise, we --
+ 9            At this point in time in 2018, the J&J control
+10   bottle was a non-evidence sample?
+11       A.   Yeah.  When it says NA, what's the analysis,
+12   we hadn't even analyzed it for amphiboles at that time,
+13   not applicable, not applicable.
+14       Q.   Right.
+15            So I'm just trying to narrow down now when --
+16   which is the report where you sent Lee Poye spiked
+17   samples of a Johnson & Johnson control bottle that had
+18   anthophyllite spike?
+19       A.   I would have to go through my file of what was
+20   sent to him --
+21       Q.   Okay.
+22       A.   -- it's been turned over a number of times --
+23   in order to tell you when that happened.  Obviously it
+24   did because how would he know it was a spiked sample?
+25       Q.   Well, I don't know.  I just assumed it was --
+0093
+ 1   this was the spike, was this one from the 2018 stuff,
+ 2   but you're -- it sounds like --
+ 3       A.   No.
+ 4       Q.   -- you're saying -- okay.
+ 5       A.   No, because we spiked one with both
+ 6   anthophyllite and tremolite.  And when we analyzed the
+ 7   Shulton samples, we found both tremolite,
+ 8   anthophyllite.
+ 9       Q.   Okay.
+10       A.   And when I found out it was a spiked sample in
+11   my testimony, you know, on redirect, I, said well, it
+12   looks like we passed.  And it makes sense to me now
+13   because finding anthophyllite did not correlate with
+14   the year of manufacture that Cashmere Bouquet or, you
+15   know -- not Cashmere Bouquet but Procter & Gamble folks
+16   said were the dates of the Shulton retains.
+17       Q.   Okay.  Did you -- at the time when the Shulton
+18   folks were asking you about this stuff, did you tell
+19   them that one of them looked like kind of like an
+20   oddball in terms of your analysis?
+21       A.   When I was being deposed, I said it was
+22   different than all the rest of his samples.  And then
+23   on redirect, I said now it makes sense why we found
+24   anthophyllite instead of just tremolite because the age
+25   of the container didn't match up.
+0094
+ 1       Q.   Okay.  So now I'll pulling up -- we'll just
+ 2   mark this as Exhibit 8.  This is your report of the Old
+ 3   Spice.  I'll just go up to the top so you can see.
+ 4            (Exhibit 8 marked.)
+ 5   BY MR. ASHBY:
+ 6       Q.   This is Exhibit 8, a report done by MAS?
+ 7       A.   Yes.
+ 8       Q.   Okay.  So this is the Old -- so is this -- is
+ 9   this the -- are those the -- those pictures that are on
+10   the front, are those the samples that Lee Poye sent you
+11   where one of them was your own spiked J&J --
+12       A.   Yes.
+13       Q.   Okay.
+14            All right.  Did he indicate anywhere on here
+15   so you could know that that's what was happening?  I
+16   presume not; right?
+17       A.   No, he did not.
+18       Q.   Is --
+19       A.   And that would be sample 13.  As you can see,
+20   we found tremolite and anthophyllite.
+21       Q.   Right.
+22            Okay.  So I looked at that without knowing
+23   anything, and I thought maybe it's sample 13, and it
+24   turns out -- so if I look at this report that we've
+25   marked as Exhibit 8 and we go to sample 13, which I
+0095
+ 1   think Lee Poye's number was 0S-028B, that is the sample
+ 2   that is of Johnson & Johnson talc from the Chinese mine
+ 3   that has been spiked by MAS with anthophyllite and
+ 4   tremolite; correct?
+ 5       A.   Correct.
+ 6       Q.   Okay.  So do you know how much you spiked it
+ 7   with in terms of the tremolite what percent?
+ 8       A.   I would guess it's about .3 to .1, but I'd
+ 9   have to look at it.
+10       Q.   Okay.
+11       A.   It's somewhere.
+12       Q.   So you didn't find any --
+13            I'm sorry.  Go ahead.
+14       A.   It's somewhere in that range.
+15       Q.   Okay.  And you didn't find any chrysotile in
+16   that sample; correct?
+17       A.   Well, go back up to the top.
+18       Q.   Okay.  Farther or right there?
+19       A.   Yeah.  No, we did not find any chrysotile in
+20   that sample.
+21       Q.   Okay.  I guess I'll go -- I'll try to figure
+22   out where -- do you think -- let me just ask you this,
+23   just to try to jog your memory:  With respect to the
+24   spiked samples that have the anthophyllite and
+25   the -- and tremolite in them, would that have been with
+0096
+ 1   the MDL samples, do you think, that you sent to Lee
+ 2   Poye for testing?
+ 3       A.   I'm just speculating.  We've sent him three
+ 4   sets of samples.  It may have been the MDLs.  I don't
+ 5   know, but I just -- you know, in order to be sure,
+ 6   because this is just a touchy subject right now, I
+ 7   would feel more comfortable looking at our
+ 8   correspondence what we sent him.
+ 9       Q.   And I'll go back and look.  Some other people
+10   are going to ask questions.  I'll try to figure it out
+11   on my end.  I just honestly, thought -- I didn't
+12   realize that there was another key somewhere.  The only
+13   key I ever knew about was the one I just showed you.
+14   That's all.
+15       A.   Yeah.  So it's come to my attention that, you
+16   know, I get deposed by -- back then before it
+17   was -- it's multiple law firms representing J&J, and at
+18   times, I get they don't share that.
+19       Q.   Yeah, okay.  Maybe that --
+20       A.   Yeah.  But the fact that, you know, these M
+21   numbers you were showing me before, so it must have
+22   been more likely than not it was the MDL samples that I
+23   sent him.
+24       Q.   Yeah, okay.  I can't -- so you sent him the
+25   MDL samples, and he looked at those again by PLM and
+0097
+ 1   XRD; right?
+ 2            MR. STEINBERG:  Hold on.  I'm sorry.  I have
+ 3   to object.  The doctor said he would be speculating if
+ 4   he said it was MDL, that he'd rather go back and
+ 5   look --
+ 6            MR. ASHBY:  Yeah.
+ 7            MR. STEINBERG:  -- so misstates testimony and,
+ 8   you know, that's my form objection.
+ 9            THE DEPONENT:  There was three sets of samples
+10   that were sent to him.  I know he did PLM and XRD on
+11   the MDLs, and then there was another set.  So I just
+12   would feel more comfortable looking at -- digging up
+13   the reports.  I know I've been deposed on it a bunch.
+14   BY MR. ASHBY:
+15       Q.   Okay.  I'll go back and look.  That's fine.
+16   I'll go back and look.  All right.  So I'm going to
+17   move on to something else.
+18            If somebody says that the language or the
+19   description of nondetect is not a proper term to use
+20   when a microscopist doesn't find asbestos at their
+21   detection limit in their sample, would you disagree
+22   with that person?
+23            MR. STEINBERG:  Incomplete hypothetical,
+24   vague.
+25            THE DEPONENT:  Can you say that again -- or
+0098
+ 1   read it back?
+ 2   BY MR. ASHBY:
+ 3       Q.   Right.
+ 4            So if somebody looked at a sample and --
+ 5   whether you agree or not with their methodology, their
+ 6   sample preparation, or the microscopes they used, if
+ 7   they say, at least at my analytical sensitivity and my
+ 8   detection limit, no asbestos was detected or nondetect,
+ 9   you don't have any problems with them using "nondetect"
+10   as a term when describing whether or not they found
+11   asbestos; true?
+12            MR. STEINBERG:  Incomplete hypothetical,
+13   speculation.
+14            THE DEPONENT:  I have a problem when they do
+15   not provide their detection limit and especially in TEM
+16   and PLM.  If they say it's nondetect in their PLM at
+17   their detection limit and they provide no detection
+18   limit, then saying nondetect is useless.  Is there PLM
+19   detection limit, you know, .1, .2, .3, .01?  It gives
+20   an idea of, you know, where about their detention limit
+21   is.
+22            If they do TEM analysis and use the detection
+23   limit of one asbestos fiber of whatever asbestos fiber
+24   size they want to use, because it doesn't tell you what
+25   size, the detection limit would be how many asbestos
+0099
+ 1   fibers does it take to see the one fiber in your
+ 2   analysis?  So you should be able to calculate the fiber
+ 3   bundle (inaudible).  So just saying nondetect or not
+ 4   providing --
+ 5            (Reporter clarification.)
+ 6            THE DEPONENT:  You know, if you're going to
+ 7   say -- strike all that.
+ 8            If you're going to say I've done TEM analysis
+ 9   and it's a nondetect, because you didn't find anything,
+10   then the methods show you just -- you know, pick a
+11   fiber size, dimensions, because it's all mathematical
+12   and use that as your detection limit, so then they come
+13   up with detection limits, you know, 10 to the minus 6,
+14   because of the size of the fiber.  But in order to find
+15   one fiber, you have to -- or one bundle, you have to
+16   have a certain number in there of fiber bundles just to
+17   see that one.
+18            PLM analysis is the same thing.  I think we're
+19   one of the few labs out there that actually have run
+20   through and see what our detection limit is by PLM.
+21   For amphiboles using the Blount method, you know, our
+22   detection limit is 0.001 so -- and for the -- for the
+23   chrysotile the detection limit is 0.0001 weight
+24   percent.
+25   ///
+0100
+ 1   BY MR. ASHBY:
+ 2       Q.   Okay.  After looking at -- well, I'll strike
+ 3   that.
+ 4            Should anyone that looks at or analyzes
+ 5   samples for the presence or absence of asbestos ever
+ 6   claim that the sample was asbestos-free?
+ 7       A.   I think the only entity that I've ever seen
+ 8   say that talc samples were asbestos-free was Johnson &
+ 9   Johnson.  I don't think anybody else has ever said
+10   there's no asbestos -- well, that's not true.  The
+11   incentive group, whoever wrote that final piece, when
+12   they put it out for comment, said that here's what we
+13   found when we spiked samples.  Our detection limit
+14   is -- I think it was 0.01 percent -- with chrysotile,
+15   that there was no false negatives because what we found
+16   was below that detection limit, so it was
+17   asbestos-free.
+18       Q.   Would you ever say a sample you looked at was
+19   asbestos-free if you didn't detect any asbestos in it?
+20            MR. STEINBERG:  Incomplete hypothetical.
+21            THE DEPONENT:  I don't -- I've never said that
+22   since I've been doing this type of work.  You know, I
+23   don't recall in the past -- I don't think I have, but
+24   if I have said it, that is not an accurate statement.
+25   ///
+0101
+ 1   BY MR. ASHBY:
+ 2       Q.   It's not a gotcha.  I know you're always
+ 3   worried about me with gotchas.  This isn't a gotcha
+ 4   moment.
+ 5            This is just mostly, like, if somebody comes
+ 6   in the courtroom and says so and so company never said
+ 7   that their stuff was asbestos-free; they said there was
+ 8   just no asbestos detected, and they should have said it
+ 9   was asbestos-free, you'd have a problem with them
+10   saying asbestos-free; right?
+11            MR. STEINBERG:  Incomplete hypothetical.
+12            THE DEPONENT:  For these types of samples for
+13   today, yes, I would, I would absolutely have a problem
+14   with it.  I would say that, you know, you may not have
+15   the background that allows them to understand that in
+16   analytical analysis, you can never say anything is free
+17   from something.  All's you can say is it's below our
+18   detection limit.  You know, that goes for anything,
+19   like lead in water or, you know, a contaminate in the
+20   air, anything like that.  That's just normal analytical
+21   analysis.
+22   BY MR. ASHBY:
+23       Q.   Right.
+24            All right.  So you've mentioned earlier,
+25   you've talked about -- you brought it up, what you used
+0102
+ 1   for background, and I thought you said -- and I want to
+ 2   make sure we're clear.  I thought you said zero point
+ 3   three zeros and a 5 fibers per cc, but I suspect you
+ 4   meant -- or maybe I heard it wrong -- zero point four
+ 5   zeros and a 5.
+ 6       A.   I believe that's what I stated --
+ 7       Q.   Okay.
+ 8       A.   -- four zeros and a 5.
+ 9       Q.   Okay.  That's fine.
+10       A.   That was a -- you know, you can use it as an
+11   artificial yardstick because you're not going -- unless
+12   you have a source of asbestos being generated, you're
+13   not going to find any asbestos in your air samples, at
+14   least down to your, you know -- to whatever -- below
+15   your -- it's going to be below your detection limit of
+16   whatever you're using.
+17       Q.   You have in the past, when comparing the
+18   background level of asbestos to whatever testing you've
+19   been doing, have used a different number than 0.00005
+20   fibers per cc; right?
+21       A.   Yes.  That was for industrial exposures that
+22   we were doing in the ECL, and I was just using it as a
+23   yardstick.  That is completely different than what
+24   has -- what we're doing here.  I think it was three
+25   zeros and a 5, if I'm not mistaken or two zeros and a
+0103
+ 1   5, as an artificial yardstick, and that was all about
+ 2   industrial exposures.
+ 3            So, you know, somebody's at a refinery and
+ 4   you're trying differentiate from their background
+ 5   exposure from others who were working on projects,
+ 6   removing asbestos or applying asbestos, so you're going
+ 7   to have a source of background -- or a shipyard or in a
+ 8   compartment in a ship, and that's why I was using that.
+ 9       Q.   Right.  So if it somebody comes in -- I know
+10   you're not doing this, the health part of this.  But if
+11   somebody comes in and says, I'm the medical expert, and
+12   I'll tell you exposures above background are what
+13   increase risk of mesothelioma, the background that
+14   they're talking about could be different in one place
+15   in the United States than it is in another place in the
+16   United States and depending on the year or the era;
+17   right?
+18       A.   It could be different, yes.  If it's in
+19   an -- if it's in a situation where there is no source
+20   of asbestos, the background is essentially zero.  If
+21   it's in a shipyard, during the time that asbestos was
+22   being used or -- and removed, I would expect some
+23   background.
+24            But what people do is they start using
+25   background taken some time ago -- sometimes their
+0104
+ 1   backgrounds that was measured by polarized -- excuse
+ 2   me -- by phase contrast microscopy, which cannot tell
+ 3   the difference between asbestos and nonasbestos, but
+ 4   the only way you can use a background that has
+ 5   any -- that's legitimate, is that you'd have to take
+ 6   air samples where the person grew up.
+ 7            But when I say background of .0005, I'm just
+ 8   using it as a yardstick as a measurement above
+ 9   background.  Realty is that unless there's a source of
+10   asbestos, you know, you're going to have backgrounds
+11   that are less than 10 to the minus 6 fibers per cc, in
+12   my opinion.
+13       Q.   I understand.
+14            Do you intend to testify at trial that Vermont
+15   talc samples contain needle-like particles, based on
+16   Johnson & Johnson documents?
+17       A.   If Johnson & Johnson documents, the ones they
+18   state, are needle-like particles, yes, I would say
+19   that's -- needle-like particles are, in fact, fibers
+20   or -- and for amphiboles, would have the amphibole
+21   structure that is somewhat different than what you get
+22   for chrysotile, but they'll still be bundled.  But you
+23   can have a bundle that when you're looking at it under
+24   polarized light microscopy that the one end of it may
+25   look like a needle because you have bundles at
+0105
+ 1   different lengths -- I mean fibers at different lengths
+ 2   in the bundle.
+ 3       Q.   Okay.  So let me just share this document with
+ 4   you -- I can't, though.  Oh, here we go -- oh, I should
+ 5   drop it into the chat.
+ 6            MR. STEINBERG:  If you could drop in Exhibit 8
+ 7   also, Matt, that would be great.  Thanks.
+ 8            MR. ASHBY:  8 was what?
+ 9            MR. STEINBERG:  8 as the May 15th supplemental
+10   analysis report of the Old Spice talcum powder.
+11            MR. ASHBY:  Oh, I mean.
+12            MR. STEINBERG:  I didn't want to interrupt you
+13   when you were on a roll there.
+14            MR. ASHBY:  Yeah, I'll do that in a minute.  I
+15   mean --
+16            MR. STEINBERG:  That's fine.  That's fine.
+17            MR. ASHBY:  -- I'm sure everybody has that
+18   somewhere.  This, maybe not, though.
+19            So I'll attach as Exhibit 9, this document
+20   here -- as soon as I can work the equipment.  Okay.
+21   This will be Exhibit 9, but I'll put it up to the
+22   screen now.
+23            (Exhibit 9 marked.)
+24   BY MR. ASHBY:
+25       Q.   Okay.  Do you intend to testify about this
+0106
+ 1   particular document which I marked as Exhibit 9, which
+ 2   is an April 14th, 1971, Colorado School of Mines
+ 3   document regarding sample 15 and 16 Vermont talc?
+ 4            MR. STEINBERG:  Calls for speculation.
+ 5            THE DEPONENT:  Can you blow it up a little so
+ 6   I can read it?
+ 7   BY MR. ASHBY:
+ 8       Q.   Yeah.  Yeah.  I'll try.
+ 9            You see this part?  Yeah.
+10            Is this a document that you intend to talk
+11   about at trial?
+12            MR. STEINBERG:  Calls for speculation.
+13   BY MR. ASHBY:
+14       Q.   You want me to scroll down some?
+15       A.   Yeah, I'm just looking.  Let me see the
+16   results and discussion.
+17       Q.   Should I keep going -- can you pull it up in
+18   the chat?  Or do you want me to scroll?  I'm happy to
+19   do either one.
+20       A.   I tried that.  It hasn't worked.
+21            You know, let me just read the results and
+22   discussion portion, and then I'll tell you to go down.
+23       Q.   Does this appear to be a document you've seen
+24   before?
+25       A.   I've seen this document before, and -- and if
+0107
+ 1   I'm asked to testify about it, I would say needles
+ 2   are -- would be fibrous forms or the bundlous forms of
+ 3   amphiboles for tremolite actinolite.
+ 4       Q.   Right.  Okay.
+ 5            If you were to talk about this document at
+ 6   trial, what would be the testimony you would be giving,
+ 7   using this document as a foundation for it?
+ 8            MR. STEINBERG:  Calls for speculation,
+ 9   incomplete hypothetical.  You're asking the doctor to
+10   guess about what questions he's going to be asked.
+11            MR. ASHBY:  Well...
+12            THE DEPONENT:  I'm looking at this document
+13   right now where it says:  Microscopic analyses of the
+14   as-received samples yielded the following results, all
+15   values are visual estimates, and that there was
+16   tremolite actinolite asbestos in this sample.
+17   BY MR. ASHBY:
+18       Q.   Okay.  Now, the document itself doesn't say
+19   anything about asbestos; right?
+20       A.   I don't see the word asbestos in there.
+21       Q.   Yeah.  I mean, you're just -- and the document
+22   talks about needle-like particles tentatively
+23   identified as tremolite or actinolite; right?
+24       A.   Correct.
+25       Q.   And then it calls -- down here it calls these
+0108
+ 1   things -- this says there's some fibrous particles in
+ 2   it in sample 15 and 16; right?
+ 3       A.   Correct.  That would be the fibrous talc.
+ 4       Q.   And then it talks about here trace levels of
+ 5   tremolite, actinolite, and 1 percent tremolite,
+ 6   actinolite; right?
+ 7       A.   Trace in sample 16, and 1 percent in
+ 8   sample -- I mean, trace in sample 15 and 1 percent in
+ 9   sample 16.
+10       Q.   Yeah.
+11            And from reading this you would know, right,
+12   that this was part of an experiment where Johnson &
+13   Johnson was looking at Vermont talc using something
+14   called a Delaminator and seeing what the Delaminator
+15   did during the talc refining process; right?
+16       A.   That's what it states.
+17       Q.   Right.
+18            So they did one sample where they used the
+19   Delaminator, and then another sample, 16, that was
+20   undelaminated; right?
+21       A.   Correct.
+22       Q.   Do you know what a Delaminator is?
+23       A.   Obviously, no, I don't know exactly what a
+24   Delaminator uses.  But obviously, it grinds up the
+25   sample.
+0109
+ 1       Q.   Do you know whether or not sample 15 and 16
+ 2   were of cosmetic grade ore?
+ 3       A.   Well, I would have to look through the
+ 4   materials and methods section to tell you that if it
+ 5   states what it is.
+ 6       Q.   I mean, do you intend to testify at trial that
+ 7   what we're looking at here as sample 15 and 16 are
+ 8   findings by the Colorado School of Mines of needle-like
+ 9   tremolite and actinolite in cosmetic grade ore?
+10       A.   At this point I don't have an opinion about
+11   that one way or the other.  But if you look at what it
+12   says, has been completed on two Vermont final product
+13   samples, I interpret that as final product is what is
+14   going to go in the container.
+15       Q.   Well, there are other final products for
+16   industrial talc; correct?
+17            MR. STEINBERG:  Incomplete hypothetical,
+18   vague.
+19            THE DEPONENT:  You know, it's -- I only have
+20   this information here.  It says final product samples.
+21            And let's see.  '71, what was that?  What was
+22   Hammondsville talc.  So the industrial talc --
+23       Q.   Sorry.  My computer froze.
+24            (Simultaneous speaking interrupted
+25            by the reporter.)
+0110
+ 1            THE DEPONENT:  What I recall is the
+ 2   Hammondsville talc, they used the same source from the
+ 3   mine for both industrial as well as cosmetic talc, if I
+ 4   recall correctly.
+ 5            MR. ASHBY:  Okay.  So I'm going to put up what
+ 6   I'm marking as Exhibit 10.  This is a March 19, 1971,
+ 7   document about current plans for the Delaminator
+ 8   elimination study, and I got to -- shoot, I got to put
+ 9   it in the chat.  Hold on.  This is, like, a hassle
+10   because I have to close down the sharing in order to do
+11   that.
+12            Okay.  All right.  So I've put in two
+13   documents in the chat.  One's Exhibit 10, and I'll make
+14   the second one Exhibit 11.
+15            So Exhibit 10's going to be this March 19,
+16   1971, document.
+17            (Exhibit 10 marked.)
+18   BY MR. ASHBY:
+19       Q.   I'll scroll through it.  You can have it
+20   there, but it sounds like you didn't download anything,
+21   so you'll have just have to bear with me.
+22            Okay.  So here's Exhibit 10 with the full
+23   layout.  It's a two-page document.
+24       A.   You'll just need to Zoom in --
+25       Q.   Yeah.
+0111
+ 1       A.   -- so I can read it.
+ 2       Q.   Yeah.  Okay.
+ 3       A.   All right.  That's good.
+ 4       Q.   All right.  So what I want to do is just tell
+ 5   me if you've seen this document before and then --
+ 6       A.   I don't recall ever seeing this document.
+ 7       Q.   Okay.
+ 8            Okay.  So in any event, for the document you
+ 9   had seen, that I marked as Exhibit 9, which was one of
+10   the ones used at the Leavitt trial, it was an April 14,
+11   1971, document.  This is a March 19, 1971, document.
+12            Would you agree with me on that so far?
+13       A.   I agree with you so far.
+14       Q.   Okay.  So this is a document that precedes the
+15   analyses that we looked at from Colorado School of
+16   Mines in April of 1971; right?
+17       A.   I believe so.
+18       Q.   And it appears they're talking about how they
+19   want to handle this study of the Delaminator effect and
+20   what they're going to test and some of why they're
+21   doing it.  If you have a chance, can you just tell me
+22   if you agree with that?
+23            MR. STEINBERG:  Object to argumentative
+24   characterization of this is the document that the
+25   witness has just testified he's never seen before and
+0112
+ 1   he doesn't have a copy of.
+ 2            MR. ASHBY:  Yeah, okay.
+ 3   BY MR. ASHBY:
+ 4       Q.   Do you think I characterized it inaccurately,
+ 5   based on what you've seen anyways?
+ 6            MR. STEINBERG:  Argumentative.
+ 7            THE DEPONENT:  It looks like to me, I believe,
+ 8   that they want to see the effect of the Delaminator --
+ 9   I like that name, Delaminator -- on three grades of
+10   talc low, medium, and high.
+11   BY MR. ASHBY:
+12       Q.   All right.  So that's what I was getting at.
+13            So what they did was -- is they took composite
+14   samples -- or actually strike that.
+15            What they intended to do, anyways, at least as
+16   of March of 1971 is sample and forward composite
+17   samples for study; right?  That's what they say here.
+18       A.   That's what they say.
+19       Q.   All right.  And then they talk about what --
+20   the part you pointed out.  And they say:  To evaluate
+21   this, meaning the Delaminator, we are currently
+22   observing operations and will select product samples
+23   which represent the processing of low-grade,
+24   medium-grade, and high-grade ores.
+25            Do you see that?
+0113
+ 1       A.   I do.
+ 2       Q.   All right.  And then if we go back to
+ 3   Exhibit 9, which is the April 14, 1971, document, do
+ 4   you know whether or not samples 16 or sample 15 are
+ 5   low-grade, medium-grade or high-grade ores?
+ 6       A.   The only thing I know is that it says the time
+ 7   product.
+ 8       Q.   Right.
+ 9            And Johnson & Johnson made final products for
+10   industrial talc purposes from low-grade ore; is that
+11   true?
+12       A.   I have -- I would not know.
+13       Q.   All right.  And then if I go -- what I marked
+14   as Exhibit 10 there's another document this is dated
+15   April 1, 1971.
+16            MR. RADCLIFFE:  I'm sorry, Mr. Ashby, but did
+17   you mean this is 10 or 11?
+18            MR. ASHBY:  Oh, I'm sorry.  Is this supposed
+19   to be 11?
+20            MR. RADCLIFFE:  I think we were just talking
+21   about 10.  I have 10 as the March 1971.
+22            MR. ASHBY:  Okay.  Sorry.  Sorry.  I probably
+23   crossed some things off.
+24            All right.  So I'll mark this as Exhibit 11.
+25   Which is the April 1, 1971, document.
+0114
+ 1            That should be in the chat for everyone.
+ 2            (Exhibit 11 marked.)
+ 3   BY MR. ASHBY:
+ 4       Q.   And you agree with me that I have the date
+ 5   right at least, April 1, 1971?
+ 6       A.   I agree with you on that.
+ 7       Q.   Have you seen this document before?  It's a
+ 8   one-page document from Robert Russell to Robert Merritt
+ 9   at the Colorado School of Mines regarding in the sample
+10   A and B from the Delaminator study.
+11       A.   No.
+12       Q.   Okay.  Do you see down here, it talks about
+13   the Raymond mill grind?
+14       A.   Yes.
+15       Q.   Do you know what the Raymond mill is?
+16       A.   I used to, but I just can't recall it at the
+17   moment.  I know what the float distributor feed is.
+18       Q.   Right.
+19       A.   And the cleaner concentrate typically comes
+20   from the float distributor.  And rougher tails, I'm not
+21   quite sure -- I know what tailings of a mine are --
+22       Q.   Yeah.
+23       A.   -- so it's on --
+24       Q.   The tailings --
+25            (Simultaneous speaking interrupted
+0115
+ 1            by the reporter.)
+ 2   BY MR. ASHBY:
+ 3       Q.   The tailings are the stuff that gets kicked
+ 4   out; right, that doesn't get used?  It's basically the
+ 5   garbage; right?
+ 6       A.   Yes.
+ 7       Q.   And we can agree the Raymond mill is not the
+ 8   West Windsor mill; is that right?
+ 9       A.   That's correct.
+10       Q.   All right.  There -- have you testified
+11   recently Dr. Longo that Dr. Sanchez's testing of a
+12   non-talc sample from argonaut may, in your view, have
+13   been a talc sample?
+14       A.   What I testified to is the sample we analyzed
+15   that had all the chrysotile in it.  The only other
+16   minerals we saw in there was mica, platy talc, and
+17   fibrous talc.
+18       Q.   Okay.
+19       A.   I know what he testified to that it was --
+20   came from the rock, piece of rock, and that's all we
+21   see in the sample of their grid.  So, you know, I
+22   wasn't there to see the sample.  I don't have any
+23   information other than what they've said.  I've only
+24   just looked at the RJ Lee grids, and that was the only
+25   materials in there.  And to me, it looked like a talc
+0116
+ 1   sample.
+ 2       Q.   I see.  I understand now.
+ 3            Did you ever go back and look at the report
+ 4   that Dr. Sanchez issued back in -- I think it was
+ 5   2018 -- that related to that particular sample?
+ 6       A.   I did at some point.
+ 7       Q.   Yeah.  So like you do with -- you take
+ 8   pictures of the samples that you analyze before
+ 9   analyzing them, in that report, Dr. Sanchez has a
+10   picture of, you know, the rock that they used to
+11   make --
+12       A.   I know that.
+13       Q.   Okay.  So did you see the report, what it
+14   looked like, in the report?
+15       A.   Yeah.
+16       Q.   Okay.  I guess, so in looking at that rock, do
+17   you disagree that it was a non-talc rock?
+18            MR. STEINBERG:  Counsel, do you want to show
+19   us the rock that you're referring to?
+20            MR. ASHBY:  I mean, I don't know if I have the
+21   picture with me, because it's -- I might.
+22            THE DEPONENT:  You know, whatever the picture
+23   is, that's fine, but if it was just -- you know,
+24   Sanchez milled these up.  I can only go by what we
+25   found.
+0117
+ 1   BY MR. ASHBY:
+ 2       Q.   Right.  Right.  Right.
+ 3            So let me -- so you're looking at -- well, let
+ 4   me see if I can do this.  I can ask --
+ 5            MR. STEINBERG:  Objection.  Vague.  That's why
+ 6   I asked for the picture.  We don't know what you
+ 7   guys -- you know, it's unclear if you guys are even
+ 8   talking about the same picture of a rock right now.
+ 9   You're not showing him anything.
+10            MR. ASHBY:  Yeah, okay.
+11            MR. STEINBERG:  Thank you, Counsel.
+12            MR. ASHBY:  All right.  So I just took a
+13   little snapshot of my screen, so I'm going to share
+14   this with you and then I'll mark it as Exhibit 12,
+15   okay?
+16            (Exhibit 12 marked.)
+17   BY MR. ASHBY:
+18       Q.   And I'll represent to you that this picture
+19   here is figure 1H, and it's from the talc -- the
+20   non-talc sample that Dr. Sanchez took near argonaut --
+21   or actually, it's Dr. -- it's Mickey Gunter, really,
+22   but Dr. Sanchez looked at it.
+23            In any event, does this picture look familiar
+24   to you?  Is this something you've seen before?
+25       A.   I don't know if I've seen that before or not.
+0118
+ 1       Q.   Okay.
+ 2       A.   I don't think so.
+ 3       Q.   Okay.  To be fair to you, I'll represent to
+ 4   you that this is the hand sample that the grid that you
+ 5   looked at were -- where something was milled from it
+ 6   came from, okay?  So that's RJ Lee Number 3149107.
+ 7            Are you with me so far?  If you can just --
+ 8       A.   Yeah.
+ 9       Q.   -- accept it, if you can?
+10       A.   Yeah.
+11            MR. STEINBERG:  Assumes facts, incomplete
+12   hypothetical.
+13   BY MR. ASHBY:
+14       Q.   Yeah.  Well, do you remember this sample
+15   number of the non-talc rock where you found chrysotile
+16   from the argonaut grids that you received from RJ Lee?
+17       A.   I don't remember it.  But, you know, I just
+18   reported on the numbers, and I just reported what we
+19   found.
+20       Q.   All right.
+21       A.   I'm not here -- you know, I can only report
+22   what we found.
+23       Q.   I totally understand.  I just want -- and I'll
+24   I'm talking to do is clear up possibly some confusion
+25   that some other people have.
+0119
+ 1            Would you agree with me that picture there of
+ 2   that sample that -- that Dr. Sanchez is describing as
+ 3   argonaut serpentinite, in the caption, is not a talc
+ 4   rock?
+ 5       A.   I can't say one way or the other.  I think
+ 6   I've been reminded a million times that, you know, I
+ 7   don't have a degree in geology.  You know, I stick by
+ 8   our analysis.  We should have found a lot of other
+ 9   things in our TEM grid.
+10            But, you know, Dr. Sanchez is the one that
+11   prepped -- you know, they milled it.  They prepped it.
+12   They used whatever in the sample.  I didn't have any
+13   control over that, so I can't comment, you know, should
+14   it look like this or not look like that.
+15       Q.   Yeah.  I guess my -- my question really was is
+16   before -- if you saw that before it was milled and
+17   analyzed and somebody told you, hey, that's a non-talc
+18   rock, would you say no, no, no, no, that's clearly a
+19   talc rock?
+20            MR. STEINBERG:  Incomplete hypothetical.
+21            THE DEPONENT:  I'm not sure what to say.  You
+22   know, it's, like, here, identify this rock.
+23   BY MR. ASHBY:
+24       Q.   Okay.
+25       A.   But whatever it is, it's got chrysotile, it's
+0120
+ 1   got talc, it's got fibrous talc, and it's got mica.
+ 2       Q.   Okay.  Yeah, and it's the same sample that
+ 3   Dr. Sanchez found chrysotile in; right?  You guys don't
+ 4   disagree on the chrysotile finding, I don't think.  Am
+ 5   I right?
+ 6            MR. STEINBERG:  Again, incomplete
+ 7   hypothetical.  If you want to show him the report, then
+ 8   you can show him the report but, you know, asking him
+ 9   to characterize the report without showing it to him is
+10   argumentative.
+11            MR. ASHBY:  Okay.
+12            THE DEPONENT:  That's the same sample.
+13   Whatever the sample is, we both found chrysotile.  He
+14   didn't report anything else other than the chrysotile.
+15            (Reporter clarification.)
+16            THE DEPONENT:  As I recall they only reported
+17   in some chrysotile, said it was serpentine in the TEM,
+18   but he didn't report anything else in the TEM.
+19   BY MR. ASHBY:
+20       Q.   Will you be testifying -- I'll say it this
+21   way:  Is it your opinion that there is Johnson &
+22   Johnson internal documents suggesting that somebody
+23   using a cosmetic talc product could have exposures to
+24   the use of that product at the level of 4.5-plus fibers
+25   per cc?
+0121
+ 1            MR. STEINBERG:  Vague, overbroad, incomplete
+ 2   hypothetical.
+ 3            THE DEPONENT:  Is this -- I'm assuming this is
+ 4   a -- just generally?
+ 5   BY MR. ASHBY:
+ 6       Q.   Right.  I mean, are you going to put up, like,
+ 7   some kind of graph that says, here's background, and
+ 8   it's 0.00005 fibers per cc next to something that says,
+ 9   J&J adult estimate, 4.5-plus fibers per cc, next to
+10   something that says Gordon 2014.  1.9 fibers per cc?
+11   Are you intending to compare exposure estimates using
+12   Gordon, an internal J&J document, and background?
+13            MR. STEINBERG:  Same objections.  And calls
+14   for speculation.
+15            THE DEPONENT:  Like any time or in the future
+16   or the past on any -- any use of the any of the
+17   comments -- I think what I've been testifying to for
+18   some time, even before the, quote, Prop 65 stuff, is
+19   that it was my opinion that you would have a range, an
+20   average range, you could -- from .0 1.  Could be up to
+21   as high as 1, but you would also have much lower to
+22   nondetects, and you could have higher.  I don't
+23   think --
+24            (Simultaneous speaking interrupted
+25            by the reporter.)
+0122
+ 1            THE DEPONENT:  I don't believe I've ever come
+ 2   out and testified in the past that somebody could have
+ 3   a 4.5 exposure because of this, this, and this, but I
+ 4   have testified many of times that it would be a
+ 5   significant exposures, and it would be, you know, tens
+ 6   to hundreds to thousands, in the range of thousands of
+ 7   times background.
+ 8            I know I said I stop at 4:00, but I need to
+ 9   take about five minutes, and we can go to 4:05.  Break.
+10            MR. ASHBY:  Okay.
+11            MR. STEINBERG:  All right.  Off the record.
+12            (Whereupon, a recess was held from
+13            12:47 p.m. to 12:55 p.m.)
+14            MR. ASHBY:  Okay.  So let's go back on the
+15   record.
+16   BY MR. ASHBY:
+17       Q.   Okay.  So, Dr. Longo, we took a short break.
+18   I was asking you about exposure estimates and in
+19   particular this idea that if you're going to testify
+20   whether or not there are internal Johnson & Johnson
+21   documents that say that somebody would have 4.5 fibers
+22   per cc or greater exposures to use of cosmetic talc;
+23   okay?  That's where we were.  Do you remember that?
+24       A.   Oh, I thought you were saying that I was
+25   testifying about 4.5 fibers per cc of talc.
+0123
+ 1       Q.   No.  What I'm asking is, are you -- are there
+ 2   any documents that you intend to rely upon in which you
+ 3   will say that this document shows that Johnson &
+ 4   Johnson calculated 4.5 fibers per cc or greater from
+ 5   the use of cosmetic talc?
+ 6       A.   If I'm shown that document at trial, you
+ 7   know -- I think I've seen that before -- then I would
+ 8   rely on it.  But that's up to my client, if they're
+ 9   going to show it to me or not.  I don't think -- it's
+10   been produced here or not.
+11       Q.   Yeah, I don't know.  I sometimes in the past
+12   I've seen slides that compare background to this --
+13   what gets labeled as J&J adult estimate fiber exposure
+14   of 4.5 fibers per cc or greater.
+15            So let me just ask you this:  Are you familiar
+16   with that PowerPoint that talks about the hypothetical
+17   consumer and what types of exposures that they might
+18   have that was done by somebody by the name of McCarthy
+19   at Johnson & Johnson?
+20       A.   I am.  But I have not reviewed it in a while.
+21   I have reviewed it, and I think I've testified about it
+22   before.
+23       Q.   Okay.
+24       A.   But it's been a while since I've looked at
+25   that.
+0124
+ 1       Q.   Yeah, okay.
+ 2            Do you remember enough to remember that the
+ 3   document itself, when it talks about 4.5, it's talking
+ 4   about fibers in the document; nowhere says 4.5 fibers
+ 5   per cc?
+ 6            MR. STEINBERG:  Argumentative, misstates,
+ 7   speculation.
+ 8            THE DEPONENT:  Yeah, it's been so long since
+ 9   I've reviewed that so, you know, I can't say.
+10   BY MR. ASHBY:
+11       Q.   Can we agree that 4.5 fibers is different than
+12   saying 4.5 fibers per cc?  Can we at least agree to
+13   that?
+14            MR. STEINBERG:  Incomplete.
+15            THE DEPONENT:  You know, again, the words are
+16   different.  One has -- one doesn't have cc on it.  I
+17   hear what you're saying.
+18   BY MR. ASHBY:
+19       Q.   Right.  Putting everything else aside, is --
+20   would -- if you were to -- well, I'll strike that.  I
+21   won't even ask.
+22            Let me just get -- one last question I want to
+23   ask as soon as my computer cooperates.
+24       A.   Did I hear you say we had -- never mind we
+25   were off the record -- about the dog treats?  That
+0125
+ 1   sounded interesting.
+ 2       Q.   Yeah, it's a machine called a Furbo, and it
+ 3   has a camera built in, and it alerts you if the dogs's
+ 4   barking, and then if it is, you can shoot -- it spits
+ 5   out a treat.
+ 6            Okay.
+ 7       A.   So does it sit there and bark at it all the
+ 8   time?
+ 9       Q.   Okay.
+10            All right.  Would 4 --
+11            You're familiar with the OSHA PEL; right, the
+12   current one?
+13       A.   I am.
+14       Q.   It currently is 0.1 fibers per cc over an
+15   eight-hour, time-weighted average; correct?
+16       A.   Yes.
+17       Q.   Would 4.5 fibers per cc be higher or lower
+18   than the 0.1 fiber per cc PEL?
+19       A.   Well, over an eight-hour span, and this would
+20   be -- if it's one application, it would be lower.  But
+21   you can't compare home exposures to asbestos in
+22   cosmetic talc to an OSHA PEL of 0.1 fibers per cc,
+23   because that's sort of picking and choosing what you
+24   want to compare to.
+25            If you're going to use OSHA PELs, then you
+0126
+ 1   need to use OSHA's warning labels, OSHA's respirator
+ 2   requirements, and medical monitoring, et cetera.  So
+ 3   it's not appropriate to look at OSHA levels, especially
+ 4   if you're trying to -- OSHA does not have regulations
+ 5   for nonoccupational exposures.
+ 6       Q.   Could 4.5 fibers per cc ever be, let's say,
+ 7   like, a hundred thousand times below the OSHA PEL --
+ 8            MR. STEINBERG:  Incomplete hypothetical.
+ 9   BY MR. ASHBY:
+10       Q.   -- even as a peek.
+11       A.   If you had a peek exposure of 4.5 at an
+12   eight-hour, no, it would not be thousands of times
+13   below the PEL, if you did the math right.
+14       Q.   Okay.
+15            All right.  So we're at 1 o'clock.  I'm
+16   basically wrapped up, Dr. Longo.  I do need to go back
+17   and look at your report that I just got today, so I'll
+18   reserve my right to ask more questions on that.  But
+19   otherwise, I can pass.
+20            MR. STEINBERG:  Well, I think we've only got
+21   five minutes left, so why don't we jump off the record
+22   and the court reporter can get the spelling she needs
+23   in Dr. Longo's last five minutes.
+24            MR. RADCLIFFE:  Sure.  Let's go off the
+25   record.
+0127
+ 1   MR. STEINBERG:  Off the record.
+ 2   
+ 3          (Whereupon, at the hour of
+ 4         1:02 p.m., the proceedings
+ 5               were adjourned.)
+ 6                    -o0o-
+ 7   
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0128
+ 1              DECLARATION UNDER PENALTY OF PERJURY
+ 2   
+ 3   
+ 4            I, WILLIAM E. LONGO, Ph.D., do hereby certify
+ 5   under penalty of perjury that I have read the foregoing
+ 6   transcript of my deposition taken on June 28, 2021;
+ 7   that I have made such corrections as appear noted
+ 8   herein in ink, initialed by me; that my testimony as
+ 9   contained herein, as corrected, is true and correct.
+10   
+11            DATED this _____ day of ___________, 2021,
+12    at __________________________,______________________.
+13   
+14   
+15   
+16   
+17   
+18   
+19                        ___________________________________
+                                    WILLIAM E. LONGO, Ph.D.
+20   
+21   
+22   
+23   
+24   
+25   
+0129
+ 1   STATE OF CALIFORNIA      )
+                              )
+ 2   COUNTY OF LOS ANGELES    )
+ 3   
+ 4              I, PAIGE I. HUTCHINSON, Certified
+ 5   Court Reporter, Certificate No. 13459, for the State of
+ 6   California, hereby certify:
+ 7               I am the deposition officer who
+ 8   Stenographically recorded the foregoing deposition;
+ 9              Written Notice Pursuant to Code of Civil
+10   Procedure, Section 2025.520, having been sent to the
+11   deponent, the deponent:
+12              ( )  IN PERSON MADE THE CHANGES SET
+                     FORTH IN THE FOREGOING TRANSCRIPT;
+13   
+                ( )  APPROVED THE TRANSCRIPT BY SIGNING IT;
+14   
+                ( )  FAILED OR REFUSED TO SIGN THE
+15                   TRANSCRIPT BY NOT SIGNING IT;
+16              ( )  BY SIGNED LETTER ATTACHED HERETO,
+                     MADE THE CHANGES SET FORTH THEREIN
+17                   AND APPROVED, OR REFUSED TO
+                     APPROVE, THE TRANSCRIPT;
+18   
+                ( )  FAILED TO CONTACT THE DEPOSITION
+19                   OFFICER WITHIN THE ALLOTTED TIME
+                     PERIOD.
+20   
+21   
+     DATED: __________________
+22   
+23   
+                     _______________________________
+24   
+                     (DEPOSITION OFFICER)
+25   
+0130
+ 1   STATE OF CALIFORNIA       )
+                               )
+ 2   COUNTY OF LOS ANGELES     )
+ 3   
+ 4            I, Paige I. Hutchinson, Certified Shorthand
+ 5   Reporter, No. 13459, do hereby certify:
+ 6            That prior to being examined, the witness
+ 7   named in the foregoing deposition was by me duly
+ 8   sworn to testify to the truth, the whole truth, and
+ 9   nothing but the truth;
+10            That said deposition was taken before me
+11   remotely via videoconference; and thereafter reduced to
+12   print by means of computer-aided transcription; and the
+13   same is a true, correct, and complete transcript of
+14   said proceedings taken at that time, to the best of my
+15   ability.
+16            I further certify that I am not interested in
+17   the outcome of the action.
+18            Witness my hand this, Tuesday, June 29, 2021.
+19   
+20   
+21   
+22   
+23                   ______________________________________
+                     Paige I. Hutchinson, CA CSR No. 13459,
+24                   TX CSR No. 11222, WA No. 3336
+25   
+0131
+ 1                        CORRECTION LIST
+ 2   
+     Page/Line       From                    To
+ 3   __________      ___________________     _________________
+ 4   __________      ___________________     _________________
+ 5   __________      ___________________     _________________
+ 6   __________      ___________________     _________________
+ 7   __________      ___________________     _________________
+ 8   __________      ___________________     _________________
+ 9   __________      ___________________     _________________
+10   __________      ___________________     _________________
+11   __________      ___________________     _________________
+12   __________      ___________________     _________________
+13   __________      ___________________     _________________
+14   __________      ___________________     _________________
+15   __________      ___________________     _________________
+16   __________      ___________________     _________________
+17   __________      ___________________     _________________
+18   __________      ___________________     _________________
+19   __________      ___________________     _________________
+20   __________      ___________________     _________________
+21   __________      ___________________     _________________
+22   __________      ___________________     _________________
+23   __________      ___________________     _________________
+24   __________      ___________________     _________________
+25   __________      ___________________     _________________

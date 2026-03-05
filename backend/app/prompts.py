@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 """Prompt template loading and rendering helpers.
@@ -53,3 +57,18 @@ def render_prompt(name: str, **kwargs) -> str:
     except KeyError as exc:
         missing = exc.args[0]
         raise ValueError(f"Missing prompt variable '{missing}' for {name}") from exc
+
+
+def list_prompt_templates() -> list[dict[str, str]]:
+    """Return all built-in prompt templates with their stable keys and current file content."""
+
+    templates: list[dict[str, str]] = []
+    for key, file_name in PROMPT_FILES.items():
+        templates.append(
+            {
+                "key": key,
+                "file_name": file_name,
+                "content": load_prompt(key),
+            }
+        )
+    return templates

@@ -1,0 +1,8048 @@
+
+                                                    1
+
+
+
+ 1            IN THE CIRCUIT COURT OF THE 17TH
+                 JUDICIAL CIRCUIT IN AND FOR
+ 2                  BROWARD COUNTY, FLORIDA
+                  CASE NO. 18-027833 CA 27
+ 3
+
+ 4
+
+ 5       JODIE PRITCHARD,
+
+ 6                  Plaintiff,     DEPOSITION UPON ORAL
+                                   EXAMINATION OF:
+ 7                                 WILLIAM LONGO, Ph.D.
+
+ 8             vs.
+
+ 9       CYPRUS AMAX MINERALS COMPANY,
+         et al.,
+10
+
+11                   Defendants.
+
+12       __________________________________
+
+13
+
+14
+
+15                  T R A N S C R I P T  of the
+         above-entitled matter as taken
+16       stenographically by and before SERAFINA R.
+         ZINCKGRAF, CCR, RPR, License No. XI01637, a
+17       Certified Shorthand Reporter, Registered
+         Professional Reporter, taken virtually, on
+18       June 8, 2021, commencing at 10:14 a.m.
+
+19
+
+20
+         PRIORITY-ONE COURT REPORTING SERVICES, INC.
+21               290 West Mt. Pleasant Avenue
+                         Suite 2260
+22               Livingston, New Jersey 07039
+                        (718) 983-1234
+23
+
+24
+         Job No. P1-4629819
+25
+
+                                                    2
+
+
+
+ 1
+         APPEARANCES:
+ 2
+
+ 3
+         PHILLIPS & PAOLICELLI, LLP
+ 4       747 Third Avenue
+         Sixth Floor
+ 5       New York, New York  10017
+         BY: BRENDAN TULLY, ESQ.
+ 6                 AND
+             SHAINA WEISSMAN, ESQ.
+ 7       Attorneys for the Plaintiff
+
+ 8
+         KING & SPALDING, LLP
+ 9       1185 Avenue of the Americas
+         34th Floor
+10       New York, New York 10036
+         BY: JOHN EWALD, ESQ.
+11       Attorneys for the Defendant, Johnson &
+         Johnson
+12
+
+13
+         Barnes & Thornburg LLP
+14       1717 Pennsylvania Avenue NW
+         Suite 500
+15       Washington, DC 20006-4623
+         BY: DAVID FRAZEE, ESQ.
+16       Attorneys for the Defendant,
+         Publix Supermarkets, Inc.
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+                                                    3
+
+
+
+ 1                        I N D E X
+
+ 2   WITNESS:           DIRECT  CROSS  REDIRECT RECROSS
+
+ 3   WITNESS
+     By Mr. Ewald            5              139
+ 4   By Mr. Frazee                120
+     By Mr. Tully                 141
+ 5
+
+ 6
+
+ 7                     E X H I B I T S
+
+ 8
+     NUMBER           DESCRIPTION                  PAGE
+ 9
+     Exhibit 1        Deposition Notice               8
+10
+     Exhibit 2        Plaintiff's Objections          8
+11                    and Responses to
+                      Defendants Johnson &
+12                    Johnson and Johnson &
+                      Johnson Consumer, Inc.'s
+13                    Amended Notice of
+                      Taking Deposition Duces
+14                    Tecum of William E.
+                      Longo, Ph.D.
+15
+     Exhibit 3        Invoice from Materials          8
+16                    Analytical Services,
+                      dated April 27, 2021
+17
+     Exhibit 4        MAS project No. 70859,         10
+18                    Analysis of Nine
+                      Johnson's Baby Powder
+19                    Containers From the
+                      United Kingdom For
+20                    Chrysotile and Amphibole
+                      Asbestos
+21
+     Exhibit 5        Document entitled, Jodie       15
+22                    Pritchard exposure
+                      calculations, dated
+23                    June 7th, 2020
+
+24   Exhibit 6        Photo, Talc-Chrysotile         20
+                      M71222-001 ISO-005.PDF
+25
+
+                                                    4
+
+
+
+ 1                    E X H I B I T S  C O N T' D:
+
+ 2   NUMBER           DESCRIPTION               PAGE
+
+ 3
+
+ 4   Exhibit 6A       Photograph                     23
+
+ 5   Exhibit 6B       Photograph                     23
+
+ 6   Exhibit 6C       Photograph                     23
+
+ 7   Exhibit 6D       Photograph                     23
+
+ 8   Exhibit 6E       Photograph                     23
+
+ 9   Exhibit 6F       Photograph                     23
+
+10   Exhibit 7        Dr. William Longo -            24
+                      Selected References and
+11                    Reliance Materials
+
+12   Exhibit 8        Deposition transcript of       49
+                      Susan Pritchard, Volume
+13                    8
+
+14   Exhibit 9        Document entitled             106
+                      Electron Microscopy and
+15                    X-Ray Applications to
+                      Mine Consulting and
+16                    Occupational Health
+                      Analysis
+17
+     Exhibit 10       Declaration, dated May        128
+18                    11, 2020
+
+19
+
+20          INFORMATION AND/OR DOCUMENTS REQUESTED
+
+21                     PAGE       LINE
+
+22                       41          7
+
+23
+
+24                QUESTIONS MARKED FOR RULINGS
+
+25                          (NONE)
+
+                        Longo - direct              5
+
+
+
+ 1       W I L L I A M   L O N G O, PH.d.,  3945
+
+ 2       Lakefield Court, Suwanee, Georgia, having
+
+ 3       been duly sworn according to law, testifies
+
+ 4       as follows:
+
+ 5
+
+ 6       DIRECT EXAMINATION BY MR. EWALD:
+
+ 7
+
+ 8            Q.    Good morning, Dr. Longo.
+
+ 9            A.    Good morning.
+
+10            Q.    So for the record, where are you
+
+11       today?
+
+12            A.    I'm in the small conference room
+
+13       at MAS.
+
+14            Q.    Is anybody in the room with you?
+
+15            A.    No, sir.
+
+16            Q.    Okay.  What materials have you
+
+17       brought with you today?
+
+18            A.    I brought the June 4th, 2021,
+
+19       report on the analysis of nine Johnson Baby
+
+20       Powder containers from the United Kingdom.
+
+21       I brought the Notice of Deposition.  I
+
+22       brought the May 7th, 2021, cover letter to
+
+23       me from a Kathleen Valenti from the Phillips
+
+24       & Paolicelli law firm, which provided me the
+
+25       complete deposition transcript of Jodie
+
+                        Longo - direct              6
+
+
+
+ 1       Pritchard, the complete deposition
+
+ 2       transcripts of Sue Pritchard Volumes 1
+
+ 3       through 8, the Affidavit of Sue Pritchard,
+
+ 4       the first Amended Complaint, and Plaintiff's
+
+ 5       Responses to Master Interrogatories; the
+
+ 6       last two items I did not review.
+
+ 7                  I brought with me a file called
+
+ 8       Chrysotile/Talc Structures, an April 26th,
+
+ 9       1973 J & J document for Windsor Minerals and
+
+10       Talc, three pages.
+
+11                  I brought the daily publication,
+
+12       which has to do with using refractive
+
+13       indices, PLM to measure film thicknesses.
+
+14                  I brought the McCrone 1974
+
+15       paper.  I brought our analysis of the Long's
+
+16       Baby Powder where we went back and analyzed
+
+17       what I called a pellet or the heavy portion
+
+18       of the heavy density liquid separation prep
+
+19       method, where the heavy section was
+
+20       analyzed.
+
+21                  I brought a color chart,
+
+22       dispersion colors, where the chart I used
+
+23       from time to time where I put in the
+
+24       refractive indices that correspond to the
+
+25       appropriate wavelength of light.
+
+                        Longo - direct              7
+
+
+
+ 1                  I brought our calidria,
+
+ 2       c-a-l-i-d-r-i-a, spike standards.
+
+ 3                  Pages from what are called the
+
+ 4       McCrone Course Book.
+
+ 5                  The Judy Pritchard exposure
+
+ 6       report, June 7th, 2020.
+
+ 7                  Our large Reliance list, and I
+
+ 8       brought talc fiber analysis in refractive
+
+ 9       indices 1.550 from project M70484, which was
+
+10       the Zimmerman J & J container that had
+
+11       Chinese talc source, same sample in
+
+12       refractive indices 1.595, and the same
+
+13       sample for refractive indices fluid of 1.65,
+
+14       and that's it.
+
+15            Q.    I guess we'll start with a
+
+16       little bit of housekeeping.  We'll mark as
+
+17       Exhibit 1 the most current depo notice.
+
+18                  MR. EWALD:  Brendan, we sent out
+
+19            a new one yesterday just to have a new
+
+20            date.
+
+21                  MR. TULLY:  Okay.
+
+22                  MR. EWALD:  We'll mark as
+
+23            Exhibit 2 your most recent objections
+
+24            and call it -- we'll agree that those
+
+25            objections are good as for the most
+
+                        Longo - direct              8
+
+
+
+ 1            recent depo notice, okay?
+
+ 2                  MR. TULLY:  I appreciate that.
+
+ 3            Thank you.
+
+ 4                  (Exhibit 1, Deposition Notice,
+
+ 5            was received and marked for
+
+ 6            identification by the reporter.)
+
+ 7                  (Exhibit 2, Plaintiff's
+
+ 8            Objections and Responses to Defendants
+
+ 9            Johnson & Johnson and Johnson &
+
+10            Johnson Consumer, Inc.'s Amended
+
+11            Notice of Taking Deposition Duces
+
+12            Tecum of William E. Longo, Ph.D., was
+
+13            received and marked for identification
+
+14            by the reporter.)
+
+15            Q.    And then, Dr. Longo, I got from
+
+16       counsel an invoice from MAS to Mr. Tully for
+
+17       $2,500 dated -- the e-mail is dated
+
+18       April 27th, 2021.  We'll mark that as
+
+19       Exhibit 3.
+
+20                  (Exhibit 3, Invoice from
+
+21            Materials Analytical Services, dated
+
+22            April 27, 2021, was received and
+
+23            marked for identification by the
+
+24            reporter.)
+
+25            Q.    Dr. Longo, have you seen the
+
+                        Longo - direct              9
+
+
+
+ 1       invoice for this case for your retainer?
+
+ 2            A.    I haven't seen it, but that
+
+ 3       would be our protocol to send a retainer.
+
+ 4            Q.    Well, let's go ahead and just
+
+ 5       show it to you.  Here we have an e-mail that
+
+ 6       was forwarded -- it's from Brendan Tully to
+
+ 7       Kathleen Valenti.  Scroll down.  It's an
+
+ 8       invoice from MAS for $2,500 for the project
+
+ 9       name Jodie Pritchard.  Right?
+
+10            A.    Correct.
+
+11            Q.    Have you issued any other
+
+12       invoices for your work in this case to
+
+13       Mr. Tully?
+
+14            A.    I'm not sure if we issued any
+
+15       invoices on the analysis yet.  That may be
+
+16       possible, but I have not sent an invoice.
+
+17       If I haven't issued one, then I haven't sent
+
+18       an invoice yet for all of the work on the
+
+19       nine samples of the UK J & J product.
+
+20            Q.    Okay.  I'm not sure I follow
+
+21       that, but I think I know where you're going.
+
+22       Let's split up for the moment the analysis
+
+23       of the nine UK samples, and the work that
+
+24       you specifically did for this case.
+
+25                  So first I want to take, I
+
+                        Longo - direct             10
+
+
+
+ 1       guess, the nine US samples that MAS analyzed
+
+ 2       and is reflected in the June 4th, 2021,
+
+ 3       report.
+
+ 4                  MR. EWALD:  I will go ahead and
+
+ 5            mark that as Exhibit 4.
+
+ 6                  MR. TULLY:  The June 4th report?
+
+ 7                  MR. EWALD:  Yes.
+
+ 8                  MR. TULLY:  Thank you.
+
+ 9                  MR. EWALD:  I think just for the
+
+10            record, it's MAS project No. 70859,
+
+11            Analysis of Nine Johnson's Baby Powder
+
+12            Containers From the United Kingdom For
+
+13            Chrysotile and Amphibole Asbestos.
+
+14                  (Exhibit 4, MAS project No.
+
+15            70859, Analysis of Nine Johnson's Baby
+
+16            Powder Containers From the United
+
+17            Kingdom For Chrysotile and Amphibole
+
+18            Asbestos, was received and marked for
+
+19            identification by the reporter.)
+
+20            Q.    Now, Dr. Longo, do I understand
+
+21       you correctly that at this point you're not
+
+22       sure whether or not an invoice has been
+
+23       issued for the work in MAS project M70859?
+
+24            A.    Correct, because I know that we
+
+25       initially did a TEM in Blount PLM analysis
+
+                        Longo - direct             11
+
+
+
+ 1       back in maybe '20 -- towards the end of 2019
+
+ 2       or early 2020, and then the project wasn't
+
+ 3       worked on again until recently when we
+
+ 4       analyzed the nine samples using the CSM
+
+ 5       sample prep method.
+
+ 6                  So I don't know if the original
+
+ 7       materials were -- original analysis were
+
+ 8       billed or not because it was just done, you
+
+ 9       know, a year and a half ago; if not, we
+
+10       still have to bill that.
+
+11            Q.    And I appreciate that; you don't
+
+12       know whether an invoice has been issued but
+
+13       some of the work.  What would be the pricing
+
+14       that MAS would charge Phillips & Paolicelli
+
+15       for this work?
+
+16                  MR. TULLY:  Form.
+
+17            A.    The TEM's, I think, are 32 or
+
+18       3,500 a piece.  The Blount PLM's, I think,
+
+19       are about a thousand a piece, and the CSM's
+
+20       may be about 1,500 or so a piece.  I just
+
+21       can't quite remember what the current
+
+22       pricing is.  So somewhere in that
+
+23       neighborhood.
+
+24            Q.    We'll get more into it, but am I
+
+25       correct that MAS have also done ISO PLM
+
+                        Longo - direct             12
+
+
+
+ 1       on -- on these samples?
+
+ 2            A.    Yes.  We did ISO PLM -- let me
+
+ 3       just look.  Yeah, we did ISO -- and I should
+
+ 4       have been put in the chart -- we did ISO for
+
+ 5       amphiboles.  I think those are 500, and we
+
+ 6       still have to do the ISO PLM for the
+
+ 7       chrysotile.
+
+ 8            Q.    Okay.  So, again, we'll probably
+
+ 9       talk a little bit more about it, but to the
+
+10       extent that I saw PLM bench sheets for the
+
+11       samples from late 2019, early 2020, that
+
+12       would have been ISO PLM analysis for
+
+13       amphibole only?
+
+14            A.    Yes.
+
+15            Q.    And is there -- well, is it your
+
+16       intent to do an ISO PLM analysis for
+
+17       chrysotile for these nine samples?
+
+18            A.    Yes.
+
+19            Q.    And is that process underway?
+
+20            A.    It's scheduled to be done, but
+
+21       it's not underway yet.
+
+22                  MR. TULLY:  We're not serving
+
+23            any additional testing in this case.
+
+24            Q.    Okay.  Sure.  Just in case... so
+
+25       I know going forward, do you have an
+
+                        Longo - direct             13
+
+
+
+ 1       estimate of when you will -- or MAS will
+
+ 2       complete the ISO PLM analysis for these nine
+
+ 3       samples?
+
+ 4            A.    No, I don't.  No.
+
+ 5            Q.    So then, putting aside for the
+
+ 6       moment the MAS analysis of the nine samples,
+
+ 7       I want to talk about specifically the time
+
+ 8       you spent personally for your work on this
+
+ 9       case.
+
+10                  What is your -- I guess before
+
+11       we go to your estimate, I take it from are
+
+12       your previous answer that you have not
+
+13       issued an invoice to Mr. Tully for the work
+
+14       you've done personal any this case?
+
+15            A.    I have not.
+
+16            Q.    And what is your estimate as you
+
+17       sit here today for the amount of time you've
+
+18       spent on this case?
+
+19            A.    I would estimate approximately
+
+20       20 hours.
+
+21            Q.    Could you break it down to the
+
+22       best, you can as possible, the tasks that
+
+23       encompass those 20 hours?
+
+24            A.    Well, they were sort of
+
+25       simultaneous tasks.  There was a fair amount
+
+                        Longo - direct             14
+
+
+
+ 1       deposition testimony, eight volumes of Susan
+
+ 2       Pritchard; and as I went to all eight
+
+ 3       volumes, I probably read 80 percent of the
+
+ 4       material looking for all of the information
+
+ 5       I could, as well as going along and typing
+
+ 6       up the notes for the -- for the report.
+
+ 7                  So as I went through it and then
+
+ 8       went through it again, picking out the
+
+ 9       information of sort of the facts of the case
+
+10       for the use and exposure of the products,
+
+11       that might have taken five or six hours.
+
+12                  So maybe more than 20 hours; 22,
+
+13       23 hours, maybe.  It took a while to do all
+
+14       this.
+
+15            Q.    So the five, six hours you're
+
+16       estimating for reviewing the deposition
+
+17       testimony for this case?
+
+18            A.    No.  The 1,200 pages of
+
+19       deposition of Susan Pritchard's testimony
+
+20       probably took -- between the two depositions
+
+21       or so, probably took 12 to 15 hours to go
+
+22       through, and to try to then organize it in
+
+23       some fashion as to -- as I typed it in; that
+
+24       would be the second pass through.
+
+25            Q.    All right.  So the five, six
+
+                        Longo - direct             15
+
+
+
+ 1       hours is your general estimate for the
+
+ 2       preparation of the exposure calculations in
+
+ 3       this case?
+
+ 4            A.    Yes.
+
+ 5                  MR. EWALD:  We'll go ahead and
+
+ 6            mark the Jodie Pritchard exposure
+
+ 7            calculations, June 7th, 2020 as
+
+ 8            Exhibit 5.
+
+ 9                  (Exhibit 5, Document entitled,
+
+10            Jodie Pritchard exposure calculations,
+
+11            dated June 7th, 2020, was received and
+
+12            marked for identification by the
+
+13            reporter.)
+
+14            Q.    When did you start preparing the
+
+15       exposure calculation document?
+
+16            A.    Saturday and Sunday.
+
+17            Q.    Okay.  Because time is
+
+18       circled -- sorry.  That would have been
+
+19       June 5th and June 6th, the Saturday and
+
+20       Sunday preceding this deposition?
+
+21            A.    Yes.
+
+22            Q.    All right.  And then when did
+
+23       you complete the exposure calculation?
+
+24            A.    I guess late Sunday evening.
+
+25       Early Monday morning, I think I just
+
+                        Longo - direct             16
+
+
+
+ 1       reviewed it.  So I would say late Sunday
+
+ 2       evening.
+
+ 3            Q.    Now, on what do you rely on for
+
+ 4       the exposure calculation information
+
+ 5       contained in Exhibit 5?
+
+ 6            A.    On the testimony.
+
+ 7            Q.    When you say "the testimony,"
+
+ 8       you're talking about the deposition, the
+
+ 9       eight volumes from Susan Pritchard and
+
+10       the -- the volume testimony from Jodie
+
+11       Pritchard?
+
+12            A.    That, and the Susan Pritchard's
+
+13       Affidavit; I also reviewed that.
+
+14            Q.    And do you rely -- is there
+
+15       anything particular in Susan Pritchard's
+
+16       Affidavit that you rely that isn't covered
+
+17       by deposition testimony?
+
+18            A.    No, it was all consistent, but I
+
+19       did review it to make sure everything was
+
+20       consistent that was in the Affidavit.  I
+
+21       didn't see anything that -- that was
+
+22       different to any degree.
+
+23            Q.    And have you spoken with the
+
+24       plaintiff or anyone from her family?
+
+25            A.    No.
+
+                        Longo - direct             17
+
+
+
+ 1            Q.    So the universe of information,
+
+ 2       as I understand it, that you're relying on
+
+ 3       for the exposure calculations that's been
+
+ 4       marked as Exhibit 5 are the deposition
+
+ 5       testimony of Susan Pritchard, the Affidavit
+
+ 6       of Susan Pritchard, and the deposition
+
+ 7       testimony of Jodie Pritchard.  Correct?
+
+ 8            A.    Yes, and included on that would
+
+ 9       be -- I think you have these; if not, I
+
+10       could get them to you -- are my studies of
+
+11       the amounts of talcum powder that is
+
+12       released due to a shake with a slight
+
+13       squeeze as testified to by Susan Pritchard.
+
+14                  I didn't provide it because I
+
+15       already provided it in the past.
+
+16            Q.    Right.  I appreciate that and so
+
+17       the record is clear, my question previous to
+
+18       this was just focused on the factual
+
+19       information specific to this case, okay?
+
+20                  MR. TULLY:  Objection.
+
+21            A.    Yes.  Only the factual
+
+22       information was used for the report.
+
+23            Q.    Okay.  When you said a little
+
+24       bit earlier that you reviewed -- you
+
+25       estimated, about 80 percent of the
+
+                        Longo - direct             18
+
+
+
+ 1       deposition testimony of Susan Pritchard, how
+
+ 2       did you decide what to review and what not
+
+ 3       to review from that testimony?
+
+ 4                  MR. TULLY:  Form.
+
+ 5            A.    I typically skip over the
+
+ 6       medical issues, the diagnosis, what happened
+
+ 7       after that, what doctors, and I tend to try
+
+ 8       to skip over what looked like repetitive
+
+ 9       information.  So that's what I don't do.
+
+10       That usually ends up to 80 to 85 -- 15,
+
+11       20 percent of a deposition, especially one
+
+12       of this magnitude.
+
+13            Q.    There's one more sort of general
+
+14       housekeeping question before we get into
+
+15       some more details, last night, I got an
+
+16       e-mail from plaintiff's counsel that
+
+17       attached the version of the exposure
+
+18       calculations that have been marked as
+
+19       Exhibit 5, and it also included six sets of
+
+20       PLM photos with different M numbers.  Do you
+
+21       know what I'm referring to?
+
+22            A.    Yes.
+
+23            Q.    What were those generally?
+
+24            A.    Oh, these are examples of where
+
+25       the talc and chrysotile intergross where you
+
+                        Longo - direct             19
+
+
+
+ 1       would have either talc fibers inside
+
+ 2       associated with chrysotile structure, or in
+
+ 3       most of the cases where half the structure
+
+ 4       is talc and half of a structure is
+
+ 5       chrysotile are a small portion of the
+
+ 6       structure is chrysotile and major portion is
+
+ 7       talc, where you can show in both parallel
+
+ 8       and perpendicular dispersion staining the
+
+ 9       difference in the birefringence; meaning,
+
+10       the difference in the brightness of colors
+
+11       between fibrous talc and chrysotile where
+
+12       it's side-by-side.
+
+13                  It's a good tool for the jury to
+
+14       understand when we analyze these samples why
+
+15       it is not fibrous talc that were
+
+16       misidentifying as chrysotile, because the
+
+17       birefringence in colors are just so clear
+
+18       for talc.
+
+19            Q.    And are these photos that you
+
+20       have previously disclosed?
+
+21            A.    No.
+
+22            Q.    So the M numbers, M as in Mary,
+
+23       that are -- are listed on the PLM photos, do
+
+24       you have an understanding of what those
+
+25       relate to?
+
+                        Longo - direct             20
+
+
+
+ 1                  MR. TULLY:  Form.
+
+ 2            A.    No, I would have to look them
+
+ 3       up.
+
+ 4            Q.    Okay.  Well, let's just take one
+
+ 5       more now as an example.  I'll share my
+
+ 6       screen.
+
+ 7                  MR. EWALD:  We'll mark as
+
+ 8            Exhibit 6 one of the photo sets that
+
+ 9            that was provided last night from
+
+10            plaintiff's counsel.  The photo was
+
+11            labeled Talc-Chrysotile M71222-001
+
+12            ISO-005.PDF.  Hold on one second.
+
+13                  (Exhibit 6, Photo,
+
+14            Talc-Chrysotile M71222-001
+
+15            ISO-005.PDF, was received and marked
+
+16            for identification by the reporter.)
+
+17            A.    It should be ISO004.
+
+18            Q.    Okay.  Why is that?
+
+19            A.    That's what it says on it.
+
+20            Q.    Fair enough.  You're referring
+
+21       to the text on the photo itself on Page 1?
+
+22            A.    Yes.
+
+23            Q.    Now, just that M number, could
+
+24       you tell me anything about which project
+
+25       this is?
+
+                        Longo - direct             21
+
+
+
+ 1            A.    No.  I didn't look up which
+
+ 2       samples these are.  We just have been
+
+ 3       accumulating any chrysotile talc structures
+
+ 4       to use as -- or examples on how we tell the
+
+ 5       difference by PLM between chrysotile and
+
+ 6       talc.
+
+ 7            Q.    Do you know whether any of these
+
+ 8       photos are in connection with samples of
+
+ 9       J & J talc products?
+
+10            A.    No, I don't.
+
+11            Q.    I assume that there would be a
+
+12       way that you would be able to match up the M
+
+13       number for a given set of photos with the
+
+14       project.  Correct?
+
+15            A.    Of course.
+
+16            Q.    Is that something that you
+
+17       currently plan to do?
+
+18            A.    No.  It's really not necessary
+
+19       because the refractive indices for fibrous
+
+20       talc and fibrous chrysotile don't really
+
+21       change that much for what we use it for to
+
+22       identify fibrous talc versus chrysotile.
+
+23                  It's -- it's all going to be --
+
+24       it's all going to have the same affect since
+
+25       the birefringence calculations in the
+
+                        Longo - direct             22
+
+
+
+ 1       chrysotile birefringence calculations are so
+
+ 2       different.
+
+ 3            Q.    I know you testified a fair
+
+ 4       amount in previous depositions about how
+
+ 5       it's your opinion that the chrysotile that
+
+ 6       you're finding in Johnson & Johnson talc
+
+ 7       products is more similar to the calidria
+
+ 8       type of chrysotile than the mixed chrysotile
+
+ 9       standard reference; is that right?
+
+10            A.    That's correct.
+
+11            Q.    And is it your opinion that to
+
+12       the extent that you're identifying
+
+13       chrysotile in non-J & J talc products, that
+
+14       chrysotile also is much closer to the
+
+15       characteristics of calidria than NIST
+
+16       chrysotile standard?
+
+17            A.    Yes.
+
+18            Q.    All right.  I'm going to go
+
+19       ahead and while going through each one, if
+
+20       you're not going to be able to identify
+
+21       right now the M number, I will mark as
+
+22       Exhibit 6A, 6B, 6C, 6D, 6E, 6F, the photos
+
+23       that were provided by Plaintiff's counsel
+
+24       last night.
+
+25                  MR. TULLY:  The photos are going
+
+                        Longo - direct             23
+
+
+
+ 1            to be six, and each one is going to be
+
+ 2            A through whatever?
+
+ 3                  MR. EWALD:  Yes.  It should be
+
+ 4            6A through 6F.
+
+ 5                  (Exhibit 6A, Photograph, was
+
+ 6            received and marked for identification
+
+ 7            by the reporter.)
+
+ 8                  (Exhibit 6B, Photograph, was
+
+ 9            received and marked for identification
+
+10            by the reporter.)
+
+11                  (Exhibit 6C, Photograph, was
+
+12            received and marked for identification
+
+13            by the reporter.)
+
+14                  (Exhibit 6D, Photograph, was
+
+15            received and marked for identification
+
+16            by the reporter.)
+
+17                  (Exhibit 6E, Photograph, was
+
+18            received and marked for identification
+
+19            by the reporter.)
+
+20                  (Exhibit 6F, Photograph, was
+
+21            received and marked for identification
+
+22            by the reporter.)
+
+23            Q.    Then I also want to mark as
+
+24       Exhibit 7 the updated Reliance list that I
+
+25       received from plaintiff's counsel last
+
+                        Longo - direct             24
+
+
+
+ 1       night.  We'll mark it as Exhibit 7,
+
+ 2       Dr. William Longo's selected references and
+
+ 3       reliance materials; and if we scroll down to
+
+ 4       the end, Page 29 of the PDF, it finishes
+
+ 5       with the 27 Jodie JBP exposure notes, and a
+
+ 6       catchall under 28.
+
+ 7                  Dr. Longo, does this identify
+
+ 8       the materials upon which you are relying on
+
+ 9       in this case?
+
+10                  (Exhibit 7, Dr. William Longo -
+
+11            Selected References and Reliance
+
+12            Materials, was received and marked for
+
+13            identification by the reporter.)
+
+14            A.    Well, more specifically, you
+
+15       know, the case-specific, as well as -- well,
+
+16       the short answer is yes.
+
+17            Q.    The references here to Est?e
+
+18       Lauder -- well, we'll just kind of take that
+
+19       them -- not one by one, but at least in
+
+20       groups.
+
+21                  On No. 5, it talks about Dr.
+
+22       Compton's analysis of February 20, 2019 of
+
+23       Est?e Lauder talc for asbestos.  Are you
+
+24       relying on that for your opinions in this
+
+25       case?
+
+                        Longo - direct             25
+
+
+
+ 1                  MR. TULLY:  We're not going to
+
+ 2            be offering that or questioning about
+
+ 3            that test in this case.
+
+ 4                  MR. EWALD:  Okay.
+
+ 5            A.    No. And the same with No. 6,
+
+ 6       there's no Italian talc exposure in this
+
+ 7       case.  I'm trying to get a list from whoever
+
+ 8       the manufacturer is of any particular
+
+ 9       cosmetic talc.
+
+10            Q.    All right.  And so you talked
+
+11       about five not being relied on for this
+
+12       case; six.
+
+13                  Now, seven is talking about
+
+14       Chanel Bath Powder, investigation by Dr.
+
+15       Compton.  Is that being relied on?
+
+16                  MR. TULLY:  We're not going to
+
+17            be offering questioning on that in
+
+18            this case.
+
+19                  MR. EWALD:  Maybe I can cut this
+
+20            down.  First, Brendan, before I ask
+
+21            Dr. Longo any questions, more
+
+22            questions, we're talking about eight
+
+23            through --
+
+24            A.    Eight through 26.
+
+25                  MR. TULLY:  Yes, we're not going
+
+                        Longo - direct             26
+
+
+
+ 1            to be offering those or questioning of
+
+ 2            those in this case.
+
+ 3                  MR. EWALD:  Okay.  That makes it
+
+ 4            a little bit easier.  Thank you.
+
+ 5            Q.    I want to go back to the
+
+ 6       exposure calculations.  I'll share my
+
+ 7       screen.  All right.
+
+ 8                  Dr. Longo, I know that in prior
+
+ 9       cases in depositions, you identified some
+
+10       typos in these type of exposure calculations
+
+11       once we got the deposition, have you
+
+12       identified any such corrections you want to
+
+13       make at this point?
+
+14                  MR. TULLY:  Form.
+
+15            A.    Not at this point, but the
+
+16       morning is still young.
+
+17            Q.    And I will say that so far, at
+
+18       least, the only one that I really found is
+
+19       not substantive at all, but I just want to
+
+20       make sure that we are all clear.  I'm on
+
+21       Page 6 of the exposure assessment.
+
+22                  Am I correct that your
+
+23       understanding of the deposition testimony in
+
+24       this case is that the Pritchard Family took
+
+25       two trips to the United States, one in 2001,
+
+                        Longo - direct             27
+
+
+
+ 1       one in 2005; is that right?
+
+ 2            A.    That's correct.
+
+ 3            Q.    So on Page 6 here under "mother
+
+ 4       bathing Jodie," you have "while in Florida,
+
+ 5       2002."  Should that be 2001?
+
+ 6            A.    Well, there's the first typo I
+
+ 7       need to change.
+
+ 8            Q.    And so to be fair, when you have
+
+ 9       the calculation, you do have 2001 identified
+
+10       here, 14 applications in Florida.  Right?
+
+11            A.    Yes.  I tried to find them all
+
+12       before you got ahold of it.
+
+13            Q.    Now, if we go to Page 9, and
+
+14       we're under "Total JBP Containers" and you
+
+15       state in this exposure calculation that
+
+16       "Susan testified that about half of the JBP
+
+17       containers she purchased in the UK were from
+
+18       the United States.  So up through 2003,
+
+19       these JBP containers would have contained
+
+20       talcum powder sourced from Vermont.  After
+
+21       2003, the USA containers would" -- I guess
+
+22       it would be "have contained the talcum
+
+23       powder sourced from China"?  Did I read that
+
+24       correctly with the one modification of the
+
+25       word "have"?
+
+                        Longo - direct             28
+
+
+
+ 1            A.    Yes.
+
+ 2            Q.    Now, first of all you say that
+
+ 3       Susan testified that about half of the JBP
+
+ 4       containers she purchased from the UK were
+
+ 5       from the United States, what do you rely on
+
+ 6       for that?
+
+ 7            A.    Well, I rely on her testimony,
+
+ 8       and I also rely on Chris Powell's testimony
+
+ 9       which he called it, think it was a gray
+
+10       product.  He testified about it and he also
+
+11       told mow that that happens when I was in
+
+12       London picking up those Johnson Baby Powder
+
+13       samples from him.
+
+14                  So if that is correct, then
+
+15       Susan's testimony is correct.  If he is not
+
+16       correct and she is not correct, then it
+
+17       would have been all from UK and China.  I
+
+18       mean, I can't verify that one way or the
+
+19       other than the testimony.
+
+20            Q.    Some let's separate those
+
+21       individual pieces out.  We'll go back to the
+
+22       testimony of Ms. Pritchard.
+
+23                  First, though, you mentioned
+
+24       Chris Powell.  Who is Chris Powell?
+
+25            A.    Chris Powell is the ex-husband
+
+                        Longo - direct             29
+
+
+
+ 1       of -- ex-husband of -- I'm trying to think
+
+ 2       of her name.  She had passed away, and he
+
+ 3       was a sales representative for Johnson's
+
+ 4       Baby Powder in England.  I think he worked
+
+ 5       with them up until sometime in 20- -- it's
+
+ 6       in his deposition; I can't remember the
+
+ 7       exact date, and I met with him because he
+
+ 8       had picked up containers of Johnson Baby
+
+ 9       Powder that he had given his wife.  He
+
+10       stated that they usually -- I'm not
+
+11       answering -- I am answering more than I need
+
+12       to.
+
+13                  Chris Powell is the ex-husband
+
+14       of the deceased woman who had mesothelioma.
+
+15            Q.    And you're referring to the
+
+16       deposition.  Which case was that deposition
+
+17       in?
+
+18            A.    It was in the deposition of his
+
+19       wife's case or now wherever the family
+
+20       members are now based.
+
+21            Q.    Okay.  Was that a case that you
+
+22       were involved in as an expert?
+
+23            A.    Yes.
+
+24            Q.    Which plaintiff's firm retained
+
+25       you in that case?
+
+                        Longo - direct             30
+
+
+
+ 1            A.    Brendan Tully's law firm.
+
+ 2            Q.    All right.  So it was Mr. Tully
+
+ 3       who connected you to Mr. Powell?
+
+ 4                  MR. TULLY:  Form.
+
+ 5                  You can answer.
+
+ 6            A.    Yes.  I was in England on other
+
+ 7       business.  Mr. Tully was there.  He set up
+
+ 8       the meeting.  He introduced me to
+
+ 9       Mr. Powell, and then he left, and then I
+
+10       spent a little time with Mr. Powell with the
+
+11       understanding that he had containers of
+
+12       Johnson Baby Powder from the UK.
+
+13            Q.    Okay.  Is this meeting the one
+
+14       that's referred to in your report analysis
+
+15       of September -- the analysis wasn't -- in
+
+16       your report that we marked as Exhibit 4, you
+
+17       refer to a September 13th, 2019, meeting; is
+
+18       that right?
+
+19            A.    That's right.
+
+20            Q.    And so is that the same meeting
+
+21       you're referring to now?
+
+22            A.    Yes.
+
+23            Q.    Okay.  When you met Mr. Powell
+
+24       on September 13th, 2019, in the United
+
+25       Kingdom, was that the first time that you
+
+                        Longo - direct             31
+
+
+
+ 1       communicated with him directly?
+
+ 2            A.    It was the only time I ever
+
+ 3       communicated with him.
+
+ 4            Q.    And when you -- before you met
+
+ 5       with Mr. Powell on September 13th, 2019 had
+
+ 6       you reviewed his deposition testimony?
+
+ 7            A.    No.  He just recently gave the
+
+ 8       deposition in the last month or so.
+
+ 9                  MR. TULLY:  Yes, it was
+
+10            actually -- he was deposed by Johnson
+
+11            & Johnson on February 19th, 2021.
+
+12            Q.    Okay.
+
+13                  MR. EWALD:  Brendan, just so
+
+14            it's clear, what case was that in?
+
+15                  MR. TULLY:  The executor name is
+
+16            Sinead Daly is the professional
+
+17            executor on behalf of -- she is the
+
+18            professional executor on behalf of
+
+19            Amanda Powell.
+
+20                  MR. EWALD:  Do you know where
+
+21            that one is pending?
+
+22                  MR. TULLY:  It's venued in
+
+23            federal court in New Jersey.  John
+
+24            Garde office took the deposition.
+
+25                  MR. EWALD:  That wasn't filtered
+
+                        Longo - direct             32
+
+
+
+ 1            down its way or sideways to me yet.
+
+ 2                  MR. TULLY:  Okay.
+
+ 3            Q.    Back to the meeting on
+
+ 4       September 13th, 2019, how long did you speak
+
+ 5       with Mr. Powell?
+
+ 6            A.    Between speaking with him and
+
+ 7       having lunch, I think it was about an hour,
+
+ 8       hour and a half.
+
+ 9            Q.    And how much of that period of
+
+10       time consisted of discussions of the UK
+
+11       Johnson & Johnson sales practices?
+
+12            A.    About 30 or 40 minutes I would
+
+13       assume -- estimate.
+
+14            Q.    What was the rest of the time
+
+15       taken up with?
+
+16            A.    Oh, just chitchatting.  You
+
+17       know, there might have been more questions.
+
+18       I was interested -- you know, I wanted to
+
+19       explain a lot -- looked at the pictures of
+
+20       the containers, you know, "free with
+
+21       purchase," "not for retail" it says on every
+
+22       one them, and one of the jobs of Mr. Powell
+
+23       was to go into various drug stores and other
+
+24       venues that sell these types of products and
+
+25       give the pharmacist a taste of these samples
+
+                        Longo - direct             33
+
+
+
+ 1       to in lieu of if they would put up a display
+
+ 2       of Johnson Baby Powder products where they
+
+ 3       would, if you bought, say, Johnson's Baby
+
+ 4       Powder shampoo, you would get one of these
+
+ 5       free containers, and they came in boxes of
+
+ 6       48.
+
+ 7                  So it was a freebie to try to
+
+ 8       entice the pharmacist to put up a display of
+
+ 9       the various Johnson -- the J & J products
+
+10       along with the cosmetic talc.
+
+11                  I just needed an explanation,
+
+12       and also we talked -- he talked about this
+
+13       gray product, that sort of like not supposed
+
+14       to happen, but it does, that they will have
+
+15       products from United States being sold in
+
+16       the UK.
+
+17                  So I didn't think much of it
+
+18       until I was reading Susan Pritchard's
+
+19       deposition where she said in some of the
+
+20       products from the United States that we
+
+21       bought.  So it kind of matched.
+
+22            Q.    That reference to gray product
+
+23       that you heard from Mr. Powell, you made
+
+24       reference to it being sold -- the US product
+
+25       being sold in the UK in some -- I'm not
+
+                        Longo - direct             34
+
+
+
+ 1       trying to do it word-for-word, but you said
+
+ 2       something like it's not supposed to happen
+
+ 3       but it does; is that -- is that fair?
+
+ 4            A.    Well, that's why I asked him
+
+ 5       about that, and he says that's why we called
+
+ 6       it the gray market, that sort of -- it's
+
+ 7       not an official -- it wasn't an official
+
+ 8       J & J -- what's the word I'm looking for?
+
+ 9                  It wasn't an official J & J
+
+10       thing to do, but they would have shortages,
+
+11       and so they would fill those shortages from
+
+12       products from the United States.
+
+13            Q.    When you say "they would fill,"
+
+14       who is the "they"?
+
+15            A.    The group in the UK.
+
+16            Q.    During your conversation with
+
+17       Mr. Powell, did he give you any sense of his
+
+18       understanding of how often this gray product
+
+19       made its way onto UK shelves?
+
+20            A.    I don't recall what he stated
+
+21       there; how often.  So I don't know how
+
+22       often.
+
+23            Q.    I still have more questions on
+
+24       Powell, et al.
+
+25                  MR. EWALD:  Brendan, do you want
+
+                        Longo - direct             35
+
+
+
+ 1            to take a break?
+
+ 2                  MR. TULLY:  Yes, sure.  All
+
+ 3            right.
+
+ 4                  (Recess occurred.)
+
+ 5                  MR. EWALD:  Back on the record.
+
+ 6            Q.    Dr. Longo, let's go back to the
+
+ 7       meeting with Mr. Powell in September of
+
+ 8       2019.  What did he tell you during that
+
+ 9       meeting about the source of the nine bottles
+
+10       that are included in your report that's been
+
+11       marked as Exhibit 4?
+
+12                  MR. TULLY:  Form.
+
+13            A.    He would provide these cases,
+
+14       there was 48 containers to a case that he
+
+15       would have to supply the various drug stores
+
+16       or whatever venue that he wanted to get a
+
+17       J & J display in.  He would give them to his
+
+18       wife, and when he went, after she passed
+
+19       away -- he went to the house probably to
+
+20       collect things.  So I remember correctly, he
+
+21       said that the case, the box was still
+
+22       sitting in her bedroom, and, there were --
+
+23       he said in his deposition, four containers,
+
+24       but he actually gave nine containers and
+
+25       that's where he got them.  He thought that
+
+                        Longo - direct             36
+
+
+
+ 1       they were 1999 or 2000, and there was a
+
+ 2       little sticker on the back of them that I
+
+ 3       interpreted as 2002.
+
+ 4            Q.    And is it your understanding
+
+ 5       from Mr. Powell that all of these -- all of
+
+ 6       the nine samples -- withdrawn.
+
+ 7                  It's your understanding from
+
+ 8       Mr. Powell that all of the nine bottles came
+
+ 9       from one of these many is many boxes of 48?
+
+10            A.    Yes.
+
+11            Q.    Your report states that the nine
+
+12       bottles were sealed; is that accurate?
+
+13            A.    That's what he told me, that
+
+14       they were sealed.  So I put that information
+
+15       in, but they did not have the typical
+
+16       peel-off label on the top of it where we
+
+17       usually see where it was sealed.  That
+
+18       was -- I was using his words as sealed.
+
+19            Q.    Are there any other indication
+
+20       you were aware of from MAS's review of the
+
+21       nine bottles to indicate that any of those
+
+22       bottles were not sealed?
+
+23                  MR. TULLY:  Form.
+
+24            A.    There was no indication that
+
+25       they had ever been used.  They were full.
+
+                        Longo - direct             37
+
+
+
+ 1       There was no debris powder on the tops.  So
+
+ 2       I did use the word sealed, but they weren't
+
+ 3       typically sealed as I see containers, new
+
+ 4       containers, that we bought off the shelf
+
+ 5       that had the plastic wraparound the top.  So
+
+ 6       sealed, and I looked at his deposition, and
+
+ 7       he reiterated that they were sealed.  It's
+
+ 8       unclear exactly how they were sealed.
+
+ 9            Q.    And that was through -- what you
+
+10       described was true of all bottles you
+
+11       received from Mr. Powell?
+
+12            A.    Yes.
+
+13            Q.    Did you learn anything else from
+
+14       Mr. Powell about the origin of the nine
+
+15       bottles that are tested in Exhibit 4?
+
+16                  MR. TULLY:  Form.
+
+17            A.    Other than this was the product
+
+18       samples that that he would use to entice the
+
+19       owners of the stores where they were looking
+
+20       to put up displays, but they could have them
+
+21       for free, and as a giveaway along with
+
+22       the -- whatever J & J product they bought.
+
+23                  That's -- they do say UK on the
+
+24       back of them, manufactured -- I think they
+
+25       say manufactured in the UK.
+
+                        Longo - direct             38
+
+
+
+ 1            Q.    Did Mr. Powell tell you during
+
+ 2       your meeting with him how often he would
+
+ 3       drop off the samples at any given
+
+ 4       drugstore?
+
+ 5            A.    If they put up a display, I
+
+ 6       think it was one case, as I recall.  That
+
+ 7       was part of the deal to get those; they had
+
+ 8       to put up a display in the front of the
+
+ 9       store with the J & J products they were
+
+10       selling.
+
+11            Q.    You said that it's your
+
+12       understanding that the case would be
+
+13       48 bottles?
+
+14            A.    He stayed that was what's in the
+
+15       box; 48 bottles.  I think it had to do with
+
+16       them to carry the J & J line.  I don't think
+
+17       these were places were they were already
+
+18       selling J & J products.
+
+19            Q.    Is it your understanding from
+
+20       Mr. Powell that it with a -- it would
+
+21       typically be a one time -- well, withdrawn.
+
+22       I'll move on to something else.
+
+23                  Can you remember anything about
+
+24       the conversations you had -- conversation
+
+25       you had with Mr. Powell on September 13th,
+
+                        Longo - direct             39
+
+
+
+ 1       2019, that you haven't already testified
+
+ 2       about here today?
+
+ 3                  MR. TULLY:  Form.
+
+ 4            A.    Yes, as I asked him a question
+
+ 5       about the -- the profitability of selling
+
+ 6       cosmetic talcs, because, I heard from time
+
+ 7       to time, that there wasn't -- J & J didn't
+
+ 8       make much money on this product, and I
+
+ 9       remember him saying that this was the second
+
+10       most profitable product that J & J sold in
+
+11       this area.
+
+12                  I asked him what the most
+
+13       profitable was, and he said the Johnson's
+
+14       Baby Shampoo No Tears was the most
+
+15       profitable, and the talcum powder was the
+
+16       second most profitable item that they sold.
+
+17                  Now, that was him telling me.
+
+18       I, obviously, don't have any firsthand
+
+19       knowledge of that.
+
+20            Q.    When you said second most
+
+21       profitable -- I know he said it, but second
+
+22       most profitable product in this area, what
+
+23       are you meaning by or understood "this area"
+
+24       to mean?
+
+25            A.    Well, J & J sells a ton of
+
+                        Longo - direct             40
+
+
+
+ 1       things; medical devices, you know, et
+
+ 2       cetera.  This was the, you know, consumer
+
+ 3       products, like the shampoo and cream and
+
+ 4       anything else that they sold having to do
+
+ 5       with hygiene.
+
+ 6            Q.    Do you know whether Mr.
+
+ 7       Powell -- withdrawn.
+
+ 8                  Do you understand Mr. Powell to
+
+ 9       be referring only to the United Kingdom, or
+
+10       do you understand him to be referring
+
+11       worldwide?
+
+12            A.    You know, he didn't say, but I
+
+13       would assume it would be the United Kingdom.
+
+14            Q.    On that topic of profitability,
+
+15       do you recall anything else that he said to
+
+16       you?
+
+17            A.    No.  I think that was the crux
+
+18       of it.  That just stuck out in my mind.
+
+19            Q.    Okay.  Now, they offered that
+
+20       piece about profitability.  Is there
+
+21       anything else aside from pleasantries that
+
+22       you can recall about the conversation with
+
+23       Mr. Powell on September 13th, 2019 that you
+
+24       have not yet testified about today?
+
+25            A.    Nothing I can think of.
+
+                        Longo - direct             41
+
+
+
+ 1            Q.    Did you take any kind of written
+
+ 2       notes of your conversation?
+
+ 3            A.    Yes.
+
+ 4            Q.    Do you still have those notes?
+
+ 5            A.    I do.
+
+ 6                  MR. EWALD:  We would request
+
+ 7            production, Mr. Tully, of those notes.
+
+ 8                  MR. TULLY:  If you could, please
+
+ 9            put that or anything else that you
+
+10            request in a letter or an e-mail to me
+
+11            so we can track and respond.
+
+12                  MR. EWALD:  Sure.
+
+13                  MR. TULLY:  Thank you.
+
+14            Q.    Just so the record is clear on
+
+15       the nature of these notes, were they
+
+16       handwritten?
+
+17            A.    Well, they were at some point
+
+18       but they're typed up.
+
+19            Q.    Who typed them up?
+
+20            A.    I typed them up.  Let me go over
+
+21       and see if I can get rid of all of the typos
+
+22       before you get ahold of it.
+
+23            Q.    Do you have a recollection of
+
+24       how many pages the notes are?
+
+25            A.    I think it's just one, I think.
+
+                        Longo - direct             42
+
+
+
+ 1            Q.    You said they were written.  So
+
+ 2       these were written notes that you made at
+
+ 3       the time of speaking with Mr. Powell?
+
+ 4            A.    Yes, things like, you know, what
+
+ 5       time I met him, where I met him, you know,
+
+ 6       about the containers, with are he got them
+
+ 7       and so on.  Just so there was a Chain of
+
+ 8       Custody and he presented -- he presented
+
+ 9       them to me in sort of like a big tub --
+
+10       Tupperware type clear plastic container, and
+
+11       I kept them under my chair until I handed
+
+12       them off at MAS.
+
+13            Q.    The notes that you made about
+
+14       the conversation, did you make those while
+
+15       Mr. Powell was talking or at some point
+
+16       after?
+
+17                  MR. TULLY:  Form.
+
+18            A.    While he was talking.
+
+19            Q.    So you got from Mr. Powell the
+
+20       samples in a Tupperware container.  Could
+
+21       you describe it a little bit more?
+
+22            A.    There's pictures of it in the --
+
+23       in the book.
+
+24            Q.    Okay.
+
+25            A.    There should be.
+
+                        Longo - direct             43
+
+
+
+ 1                  MR. TULLY:  There are.
+
+ 2            A.    Let me find out where they are
+
+ 3       in here.  I'm missing some pictures.  You
+
+ 4       could see the Tupperware in there after we
+
+ 5       received them, but I have pictures that I
+
+ 6       thought I put into the book.  Maybe in --
+
+ 7       maybe it's in the Chain of Custody section.
+
+ 8                  If you go to the Chain of
+
+ 9       Custody section, I took pictures of the
+
+10       container he gave me sitting on a chair in
+
+11       the -- in the lobby of the hotel, which
+
+12       shows all nine containers, because one of
+
+13       the pictures shows -- strike that -- a
+
+14       couple of the pictures show the container
+
+15       open, and you can count nine J & J
+
+16       containers in there.
+
+17                  Those are my pictures when I
+
+18       received them in September.  Then we have
+
+19       pictures of them after we logged in, and the
+
+20       containers are individual J & J containers
+
+21       are in plastic bags, plastic Ziploc bags.
+
+22            Q.    Thank you.
+
+23                  MR. EWALD:  Just for the record,
+
+24            these are my PDF.  It's on Pages 35,
+
+25            36 and 37; pictures of the Tupperware
+
+                        Longo - direct             44
+
+
+
+ 1            container.
+
+ 2            Q.    Dr. Longo, you took this
+
+ 3       Tupperware container of nine bottles from
+
+ 4       Mr. Powell while you were in the UK, and how
+
+ 5       did you transport it home?
+
+ 6            A.    Well, when you -- when I got
+
+ 7       back to the hotel, I put them in the hotel
+
+ 8       safe.  When I flew back to the States, I put
+
+ 9       them in my checked luggage.
+
+10            Q.    A suitcase?
+
+11            A.    Yes.  I'm always -- instead of
+
+12       hand carrying them on the plane and
+
+13       explaining to customs what they are, I stuck
+
+14       them in my suitcase and then from my
+
+15       suitcase, I brought them into MAS.
+
+16                  MR. TULLY:  I --
+
+17                  THE WITNESS:  I know you're
+
+18            laughing Brendan, but you know that's
+
+19            true.
+
+20                  MR. TULLY:  I'm just picturing
+
+21            the -- "no, I need nine bottles of the
+
+22            J & J powder.  Let me tell you why."
+
+23                  THE WITNESS:  Yeah. "Oh, what's
+
+24            in these?" "Oh, white powder."
+
+25                  MR. TULLY:  It can really -- it
+
+                        Longo - direct             45
+
+
+
+ 1            can really make you get through the
+
+ 2            security longer.
+
+ 3                  THE WITNESS:  I prefer not to
+
+ 4            have to unseal or open one up for them
+
+ 5            to show what's in there.
+
+ 6                  MR. TULLY:  Oh, it was sealed
+
+ 7            but then I had to get through.
+
+ 8                  THE WITNESS:  So customs -- to
+
+ 9            TSA or customs --
+
+10                  MR. TULLY:  Yeah, fair enough.
+
+11            Q.    You also talked about viewing
+
+12       Mr. Powell's deposition transcript and I
+
+13       believe Mr. Tully hopefully provided as a
+
+14       Daly case in New Jersey.
+
+15                  What, if anything, do you rely
+
+16       on, not deposition transcript, that you can
+
+17       otherwise receive information wise from
+
+18       Mr. Powell in that September 2019
+
+19       conversation?
+
+20            A.    I don't really rely on anything
+
+21       there other than that he supports the fact
+
+22       that he did give me those containers of J &
+
+23       J containers, but he said he only gave me
+
+24       four; I guess he forgot that it was nine,
+
+25       and it does support Susan Pritchard's
+
+                        Longo - direct             46
+
+
+
+ 1       testimony about purchasing Johnson Baby
+
+ 2       Powder products that were manufactured in
+
+ 3       the United States.
+
+ 4            Q.    Do you recall any aspect of
+
+ 5       Mr. Powell's deposition testimony that would
+
+ 6       bear on how often US-manufactured bottles
+
+ 7       would be put on the shelves in the United
+
+ 8       Kingdom?
+
+ 9                  MR. TULLY:  Form.
+
+10            A.    You know, I didn't read the
+
+11       deposition to the degree that I was getting
+
+12       ready to testify.  I guess now the Daly case
+
+13       so if that's in there or not, I don't know.
+
+14       I mainly wanted to see what he said about
+
+15       giving me the samples.  I did see where he
+
+16       called it the gray product, but I don't
+
+17       recall if he was asked or not how often they
+
+18       did that.
+
+19            Q.    All right.
+
+20            A.    If he did, it's in the
+
+21       deposition.
+
+22            Q.    Okay.  As you sit here today,
+
+23       you don't recall one way or another?
+
+24            A.    I do not.
+
+25            Q.    And you're not -- withdrawn.
+
+                        Longo - direct             47
+
+
+
+ 1       Okay.  So now let's talk about Susan
+
+ 2       Pritchard's deposition testimony on this
+
+ 3       subjecting go back to your exposure
+
+ 4       calculation document.  I referenced a little
+
+ 5       bit earlier that on Page 9, you write "Susan
+
+ 6       testified about half of the JBP containers
+
+ 7       she purchased from the UK were from the
+
+ 8       United States."
+
+ 9                  Is there particular testimony
+
+10       from Susan Pritchard that you are relying on
+
+11       for that particular proposition?
+
+12            A.    Somewhere in the 1,200 pages,
+
+13       there's that testimony.
+
+14            Q.    Okay.  Well, let me show you
+
+15       what I think you may be referring to.  You
+
+16       can let me know if it rings any bells, okay?
+
+17            A.    Sure.
+
+18            Q.    All right.  So I'm going to pull
+
+19       up the April 16th, 2021 deposition of Susan
+
+20       Pritchard in this case, and it's identified
+
+21       as Volume 8, and Mr. Tully was there.  So he
+
+22       can tell us if we get anything wrong?
+
+23                  MR. TULLY:  I will.  It was a
+
+24            lot of depositions; a lot of days.
+
+25            Q.    Okay.  So I am on Page 79 of the
+
+                        Longo - direct             48
+
+
+
+ 1       PDF.  It's Page 1171 of the deposition, and
+
+ 2       at the bottom of that page, Mr. Sloan who
+
+ 3       was questioning on behalf of J & J is
+
+ 4       indicating that he's going to pass the
+
+ 5       witness to Publix's counsel, and you can see
+
+ 6       on the bottom on Line 25, that Ms. Pritchard
+
+ 7       says "can I just make a point, as well?"  Do
+
+ 8       you see that?
+
+ 9            A.    I do.
+
+10                  MR. TULLY:  Are you going to
+
+11            mark this?  I'm sorry, Counsel, I
+
+12            apologize.  Have we marked this one
+
+13            and/or you just want to show it to the
+
+14            witness?
+
+15                  MR. EWALD:  We can.  We'll mark
+
+16            it as -- I don't think we need to mark
+
+17            the whole depo transcript, but mark it
+
+18            as Exhibit 8, the pages I'm showing
+
+19            him.  I'll identify in a second which
+
+20            specific pages, and Brendan, if you
+
+21            want, we can mark the whole thing.
+
+22            I'm happy to do that.
+
+23                  MR. TULLY:  Yeah, it's probably
+
+24            good to do the whole thing in the
+
+25            sense of completeness.  I think that's
+
+                        Longo - direct             49
+
+
+
+ 1            a good idea.
+
+ 2                  MR. EWALD:  Sure.  We will mark
+
+ 3            as Exhibit 8 the entirety of Volume 8
+
+ 4            of Susan Pritchard's deposition
+
+ 5            transcript in this case.
+
+ 6                  (Exhibit 8, Deposition
+
+ 7            transcript of Susan Pritchard, Volume
+
+ 8            8, was received and marked for
+
+ 9            identification by the reporter.)
+
+10            Q.    Ms. Pritchard says she wants to
+
+11       make a point, as well.  We then get to --
+
+12       this is my highlighting.  Let me move my
+
+13       Zoom picture.  The witness testifies on
+
+14       Page 1172 "when you're trying to quiz me
+
+15       over the usage of talc in UK and America,
+
+16       the fact that when I bought talc in the UK,
+
+17       it often says that it was made in the US
+
+18       makes the overall US usage probably as high
+
+19       as the ones that they make in the UK."
+
+20                  Is that testimony that you're
+
+21       relying on, Dr. Longo, for the proposition
+
+22       that Susan testified that about half of the
+
+23       JBP containers she purchased in the UK were
+
+24       from the United States?
+
+25                  MR. TULLY:  I'm going to object
+
+                        Longo - direct             50
+
+
+
+ 1            to form.  He already says it's in
+
+ 2            that.  If it rings a bell, I'm not
+
+ 3            going to preclude him from answering,
+
+ 4            but I will object to form, and the
+
+ 5            fact that this is an eight-volume
+
+ 6            deposition with a lot of information,
+
+ 7            and there may or may not other
+
+ 8            information in there to rely on, but
+
+ 9            he can answer to the extent that he's
+
+10            able to.
+
+11            A.    Yeah, I don't -- I know I read
+
+12       over this.  There may have also been some
+
+13       other information, but that's certainly
+
+14       consistent with what I gleamed from the --
+
+15       from her testimony.  It's as high as the UK
+
+16       usage then I made the assumption that it was
+
+17       a 50/50.
+
+18            Q.    And I appreciate it's eight
+
+19       deposition volumes.  I think you can
+
+20       hopefully appreciate in reverse that I'm
+
+21       trying to determine within those eight
+
+22       volumes of deposition testimony what you're
+
+23       relying on for the various statements in
+
+24       your exposure calculations and your opinions
+
+25       in this case.
+
+                        Longo - direct             51
+
+
+
+ 1                  So as you sit here today, can
+
+ 2       you identify any other portion of Susan
+
+ 3       Pritchard's deposition testimony or from the
+
+ 4       Affidavit that you're relying on support the
+
+ 5       proposition that half of the JBP containers
+
+ 6       Susan purchased in the UK were from the
+
+ 7       United States?
+
+ 8                  MR. TULLY:  Objection.
+
+ 9                  You can answer.
+
+10            A.    Well, this does support it, and
+
+11       I believe there was other instances where
+
+12       she stated that, but I couldn't -- I
+
+13       couldn't tell you wherein the volumes it is.
+
+14            Q.    So then do you also recall, and
+
+15       I'm scrolling down a little bit, and I want
+
+16       to show you one other exchange.  This is
+
+17       Page 1173, and counsel for Johnson &
+
+18       Johnson, Mr. Sloan, asked Ms. Pritchard,
+
+19       starting on Line 20, "and then what you're
+
+20       saying is, in addition to that, some of the
+
+21       Johnson's Baby Powder that you purchased in
+
+22       England said that it was made in America" --
+
+23                  "ANSWER:  Yes.
+
+24                  "You were purchasing it in
+
+25            England.  Right?
+
+                        Longo - direct             52
+
+
+
+ 1                  "Yes.  Correct.
+
+ 2                  "And also using that in England.
+
+ 3            Right?
+
+ 4                  "ANSWER:  Yes."
+
+ 5                  Did I read that correctly?
+
+ 6            A.    Yes.
+
+ 7            Q.    And so here, the little section
+
+ 8       I just read into the record, Ms. Pritchard
+
+ 9       is agreeing that some of the Johnson's Baby
+
+10       Powder that she purchased in England was
+
+11       made in America.  Right?
+
+12            A.    Yes.  That's what it states.
+
+13            Q.    Going back to Page 1172, you are
+
+14       assuming for your exposure calculation that
+
+15       half of all the JBP containers that Ms.
+
+16       Pritchard purchased in the UK through 2003
+
+17       were actually manufactured in the US.
+
+18       Right?
+
+19                  MR. TULLY:  Form.
+
+20            A.    According to her testimony, yes.
+
+21            Q.    And I want to go to the last
+
+22       page of your exposure calculation.  Let me
+
+23       know when you're there.
+
+24            A.    I'm there.
+
+25                  MR. TULLY:  I'm not.  Hold on.
+
+                        Longo - direct             53
+
+
+
+ 1            Okay, now I'm here.
+
+ 2            Q.    So First, I want to talk about
+
+ 3       the very last section identified on Page 11,
+
+ 4       other potential exposure to asbestos where
+
+ 5       you write "there is no evidence presented in
+
+ 6       the depositions that Jodie was ever exposed
+
+ 7       to any other source of asbestos besides
+
+ 8       J & J talcum powder that was used in their
+
+ 9       Johnson's Baby Powder."  Did I read that
+
+10       correctly?
+
+11            A.    You did.
+
+12            Q.    And is that an accurate
+
+13       statement of your opinion in this case?
+
+14            A.    Yes, I didn't see any testimony
+
+15       that could point to any disturbance of
+
+16       asbestos-containing products, asbestos added
+
+17       products that can account for any exposure.
+
+18            Q.    And apart -- am I correct that
+
+19       apart from your review of the deposition
+
+20       testimony of Jodie Pritchard, the deposition
+
+21       testimony of Susan Pritchard and the
+
+22       Affidavit of Susan Pritchard, you do not
+
+23       conduct any other investigation into
+
+24       potential exposures to asbestos that
+
+25       Jodie -- Jodie Pritchard may have had?
+
+                        Longo - direct             54
+
+
+
+ 1            A.    That's correct.
+
+ 2            Q.    Now let's talk about the section
+
+ 3       above that.  "Jodie's exposure to asbestos
+
+ 4       from J & J's Johnson's Baby Powder."  That
+
+ 5       first sentence starts there, "Based on all
+
+ 6       the information provide" -- it should be
+
+ 7       provided -- "in the nine depositions that I
+
+ 8       have reviewed, all of the testing of JBP
+
+ 9       containers containing both Vermont and
+
+10       Chinese-sourced talcum powder that Jodie
+
+11       Pritchard would have had a significant
+
+12       exposure amphibole asbestos and/or
+
+13       chrysotile."  Right?
+
+14            A.    Correct.
+
+15            Q.    And there's some words missing
+
+16       there.  That wasn't the reason that I -- I
+
+17       want to ask you a couple of substantive
+
+18       things.  So first, the opinion that Jodie
+
+19       Pritchard would have had a significant
+
+20       exposure to amphibole asbestos and/or
+
+21       chrysotile that applies, in your mind, to
+
+22       both the Vermont and Chinese-sourced talcum
+
+23       powder?
+
+24                  MR. TULLY:  Form.
+
+25            A.    Yes.
+
+                        Longo - direct             55
+
+
+
+ 1            Q.    And let's break it down a the
+
+ 2       little bit further because it's an "and/or."
+
+ 3       I want to -- first let's take Vermont.  It
+
+ 4       is your opinion, am I correct, that Ms.
+
+ 5       Pritchard would have had a significant
+
+ 6       exposure to amphibole asbestos from Vermont.
+
+ 7       Right?
+
+ 8            A.    Correct.
+
+ 9            Q.    Sorry, from Vermont-sourced
+
+10       talcum powder.  Right?
+
+11            A.    Correct.
+
+12            Q.    And it is your opinion in this
+
+13       case that Ms. Pritchard would have had
+
+14       significant exposure to chrysotile asbestos
+
+15       from the Vermont-sourced talcum powder.
+
+16       Right?
+
+17            A.    Well, that's primarily from the
+
+18       Chinese-sourced talcum powder.  We have not
+
+19       gone through and analyzed any significant
+
+20       amount of Vermont-sourced talcum powder for
+
+21       chrysotile yet.  One or two containers, but,
+
+22       you know, certainly Vermont from other
+
+23       documentation has chrysotile present
+
+24       primarily from Johnson & Johnson's work and
+
+25       it would be in my opinion if we went through
+
+                        Longo - direct             56
+
+
+
+ 1       and did the CSM heavy liquid density sample
+
+ 2       preparation of the Vermont samples that we
+
+ 3       would -- we would find chrysotile present as
+
+ 4       we have in Chinese.
+
+ 5            Q.    And you say that it would be
+
+ 6       your opinion, but you haven't done that
+
+ 7       testing; am I correct?
+
+ 8            A.    That is correct.
+
+ 9            Q.    So for your opinion in this
+
+10       case, are you going to be offering the
+
+11       opinion that Jodie Pritchard would have had
+
+12       a significant exposure to chrysotile from
+
+13       Vermont-sourced talcum powder?
+
+14                  MR. TULLY:  Form.
+
+15            A.    Well, since I'm a scientist, and
+
+16       to be fair, no, I'm not going to say that
+
+17       all of the samples -- all the containers
+
+18       that contained Vermont talc that they would
+
+19       have had all had chrysotile in them as we
+
+20       see in the Chinese sourced.
+
+21                  Hopefully, you know, we can get
+
+22       to it one of these days.
+
+23            Q.    Now, moving to China, is it your
+
+24       opinion in this case, that Jodie Pritchard
+
+25       would have had a significant exposure to
+
+                        Longo - direct             57
+
+
+
+ 1       chrysotile asbestos from the Chinese-sourced
+
+ 2       talcum powder?
+
+ 3            A.    Yes.
+
+ 4            Q.    Is it your opinion in this case
+
+ 5       that Jodie Pritchard would have had a
+
+ 6       significant exposure to amphibole asbestos
+
+ 7       from the Chinese-sourced talcum powder?
+
+ 8            A.    I could not say that the Chinese
+
+ 9       would have been a significant exposure for
+
+10       amphibole on a more likely than -- because
+
+11       if we looked at all of the possible
+
+12       amphibole Chinese samples, it's probably
+
+13       around ten percent of -- or so of all of the
+
+14       containers that we analyzed.
+
+15                  It's been my opinion that the
+
+16       Chinese talcum powder does not have a large
+
+17       source of amphiboles present, even the ones
+
+18       that where they are positive, we only found
+
+19       two bundles at most.  It's a lot less than
+
+20       what we see in the Vermont talcs.
+
+21                  So I can't say that she would
+
+22       have had a significant exposure to
+
+23       amphiboles from the Chinese just because we
+
+24       have a -- such a low positive rate in the
+
+25       Chinese.
+
+                        Longo - direct             58
+
+
+
+ 1                  Not one of these samples, nine
+
+ 2       of them, had any amphiboles detected.
+
+ 3            Q.    Now, if we go to the next two
+
+ 4       sentence in that same section on Page 11,
+
+ 5       I'll read them and then ask you a couple of
+
+ 6       questions.  You state "the average range of
+
+ 7       exposure would be 0.01 to 1.0 fiber per CC,
+
+ 8       also would be expected at times that Jodie
+
+ 9       would have exposures less than 0.1 fibers
+
+10       per CC, and other times exposures higher
+
+11       than 1.0 fiber per CC."  Right?
+
+12            A.    Correct.
+
+13            Q.    Again, I want to break this down
+
+14       a little bit.  I personally have asked you
+
+15       questions, I know other people have, as
+
+16       well, about the basis for that 0.01 to 1.0
+
+17       fiber per CC range as it relates to Vermont
+
+18       talc.  You've been asked questions about
+
+19       that.  Right?
+
+20            A.    Probably, what, 30, 40 hours
+
+21       worth.
+
+22            Q.    I think --
+
+23                  MR. TULLY:  Just a little
+
+24            "only."
+
+25            A.    Maybe not --
+
+                        Longo - direct             59
+
+
+
+ 1            Q.    Regardless, we agree that you've
+
+ 2       been asked about it previously.  At least I
+
+ 3       haven't asked you about it.
+
+ 4                  So is it your opinion that the
+
+ 5       average range of exposure to chrysotile
+
+ 6       asbestos from Chinese-sourced talcum powder
+
+ 7       would be within the range of 0.01 to 1.0
+
+ 8       fiber per CC?
+
+ 9            A.    I believe it would be in that
+
+10       range.  That's my opinion.  I don't have
+
+11       data yet to support that, but that's my
+
+12       opinion.
+
+13                  Once we get the method worked
+
+14       out where we could actually do a study with
+
+15       one of these containers that because of just
+
+16       the sheer amount of large bundles that are
+
+17       in there, especially now that we're looking
+
+18       at the pellets, I think we're on the road to
+
+19       finally getting the -- we'll get the TEM
+
+20       validation, and then we're on a study with
+
+21       one of these, because all we're seeing in
+
+22       the PLM are the very largest bundles,
+
+23       because you can't detect single fibers in
+
+24       PLM.
+
+25                  So I believe the concentrations
+
+                        Longo - direct             60
+
+
+
+ 1       by TEM are going to be very high.  That's my
+
+ 2       opinion.
+
+ 3            Q.    And when you say it's all
+
+ 4       relative, you say you expect that the TM
+
+ 5       concentrations would be high.  What kind of
+
+ 6       general range do you have in mind?
+
+ 7            A.    Range?  Well, if we're finding
+
+ 8       -- if you go back to our report, and the
+
+ 9       amount of bundles we're seeing in -- what
+
+10       was analyzed as pellets.  So on page --
+
+11       where is it?  On Page 28 of the report, we
+
+12       have a range of bundles from, you know,
+
+13       490,000 up to a million chrysotile bundles.
+
+14                  I would expect that to be about
+
+15       tenfold higher once we take TEM air samples
+
+16       and able to determine the amount present by
+
+17       air samples in conjunction with using the
+
+18       heavy liquid density separation so that we
+
+19       can get concentrations in the air versus
+
+20       concentrations in the bulk sample with TEM,
+
+21       and we may have to do air sampling in
+
+22       conjunction with heavy liquid density to be
+
+23       able to get to the detection limit that's
+
+24       going to be required to see the
+
+25       concentrations of that level, and to
+
+                        Longo - direct             61
+
+
+
+ 1       separate out the talc so that we can get to
+
+ 2       the detection limits.
+
+ 3            Q.    Do you have in mind what that
+
+ 4       detection limit has to be?
+
+ 5            A.    We need to get to a detection
+
+ 6       limit of about .01 fibers per CC in the air.
+
+ 7       In order to do that, we're going to have to
+
+ 8       collect a significant amount of sample that
+
+ 9       we can separate out the chrysotile from in
+
+10       the air sample.  So that's not overloaded
+
+11       with talc because of the thin size of the
+
+12       fibers of chrysotile, but that's in the
+
+13       future.
+
+14            Q.    Approximately how far in the
+
+15       future?
+
+16            A.    That's always the million dollar
+
+17       question.
+
+18            Q.    Just so I understand, I think I
+
+19       do from your prior testimony, when you are
+
+20       testifying about seeing large bundles only
+
+21       of chrysotile in PLM, you are -- when you're
+
+22       indicating that you -- that once you look at
+
+23       them under TEM, that you will have a --
+
+24       that wasn't a question as much as me
+
+25       rambling.  So --
+
+                        Longo - direct             62
+
+
+
+ 1                  MR. TULLY:  Form.
+
+ 2            Q.    Let me rephrase it.  If and when
+
+ 3       you do TEM testing for chrysotile to see --
+
+ 4       I think you said maybe ten times as many
+
+ 5       bundles as what's reported in your PLM
+
+ 6       analysis Exhibit 4; is that fair?
+
+ 7            A.    It's fair, because we're going
+
+ 8       to be seeing different population fibers,
+
+ 9       chrysotile fibers.  You typically do not see
+
+10       some of these large bundles in TEM that you
+
+11       do in PLM.
+
+12                  So when you start counting up
+
+13       single fibers and you would be adding the
+
+14       two together, but we don't have that data
+
+15       yet.  That's what I would expect after all
+
+16       of these years of doing this work.
+
+17            Q.    So circling back to the range of
+
+18       0.01 to one fiber per CC and focusing in on
+
+19       potential exposure to chrysotile asbestos
+
+20       from Chinese-sourced talc, you indicated
+
+21       that you don't have any testing data at this
+
+22       point in time to support it.  Right?
+
+23                  MR. TULLY:  Form;
+
+24            mischaracterizes testimony.
+
+25                  You can answer.
+
+                        Longo - direct             63
+
+
+
+ 1            A.    We haven't done the testing.
+
+ 2       It's my opinion that you would see in this
+
+ 3       range, and also you would expect seeing
+
+ 4       lower and potentially higher, depending on
+
+ 5       the concentration of the asbestos in any
+
+ 6       particular container.
+
+ 7            Q.    Given that opinion, are you
+
+ 8       relying at all on your MAS' hygiene exposure
+
+ 9       studies relating to amphiboles in cosmetic
+
+10       talc?
+
+11            A.    Of course.
+
+12            Q.    All right.  You said "of
+
+13       course," but I'm trying to get a sense of in
+
+14       your mind looking at those results for the
+
+15       hygiene exposure studies for amphibole, how
+
+16       does that inform what you predict you're
+
+17       going to see with respect to a chrysotile
+
+18       exposure study?
+
+19            A.    Because the -- the density and
+
+20       width of the chrysotile versus the
+
+21       amphiboles, especially the single chrysotile
+
+22       fibers, you know, gram for gram, you know,
+
+23       you have one gram of tremolite or
+
+24       anthophyllite and one gram of chrysotile,
+
+25       the amount of chrysotile fibers will be
+
+                        Longo - direct             64
+
+
+
+ 1       would be -- let's see, .04 versus .02.
+
+ 2                  .02 to 0.3, you know, you're
+
+ 3       going to have a tenfold increase in just a
+
+ 4       sheer number of chrysotile fibers.
+
+ 5                  So for every one amphibole,
+
+ 6       you're going to have ten chrysotile fibers.
+
+ 7       So the weight percents will give you much
+
+ 8       different numbers of chrysotile.
+
+ 9                  If you look at the AMA, you
+
+10       know, they came up with the weight percent
+
+11       of about four or five zeros, but you
+
+12       actually count the -- and use their
+
+13       detection limit -- they have something on
+
+14       the order of five to six million fibers per
+
+15       gram.  That's such a low weight percent
+
+16       because of the density.
+
+17                  So you always will have more
+
+18       chrysotile structures per pound or per gram
+
+19       than you do with amphiboles.  The density of
+
+20       lower and the width of the chrysotile fibers
+
+21       are at least an order of magnitude smaller.
+
+22                  So one gram or one --  one cubic
+
+23       gram of chrysotile will have anywhere from
+
+24       ten to 100 times more fibers than one cubic
+
+25       gram of tremolite or anthophyllite, amosite,
+
+                        Longo - direct             65
+
+
+
+ 1       crocidolite.
+
+ 2            Q.    So understanding your point
+
+ 3       there about the weight percentage between
+
+ 4       chrysotile and amphiboles, do you have an
+
+ 5       opinion as to what difference, if any, are
+
+ 6       you seeing weight percentage wise of the
+
+ 7       chrysotile in Johnson & Johnson cosmetic
+
+ 8       talc as compared to amphibole in Johnson &
+
+ 9       Johnson cosmetic talc?
+
+10                  MR. TULLY:  Form.
+
+11                  Answer if you understand.
+
+12            A.    The weight percents are in order
+
+13       of or two magnitude lower on average than
+
+14       what we see for amphiboles.  I haven't gone
+
+15       through to make that comparison.  If we were
+
+16       to go through the Vermont, it would be
+
+17       something in that order.
+
+18            Q.    It's been a little less than an
+
+19       hour, but I'm going to need to stop, as I
+
+20       said, 12:58.  Let's just take maybe just
+
+21       five minutes, take a quick break and then --
+
+22                  MR. TULLY:  I was going to
+
+23            suggest that we go to 12:30, and then
+
+24            stop early so you can carry on.
+
+25                  MR. EWALD:  Let's do that.
+
+                        Longo - direct             66
+
+
+
+ 1            That's also fine.
+
+ 2            Q.    I'm just making sure I
+
+ 3       understand what you said there at the end,
+
+ 4       Dr. Longo before we discussed lunch.
+
+ 5                  Were you saying that your sense
+
+ 6       of the data that you're seeing is that the
+
+ 7       chrysotile is at a lower weight percentage
+
+ 8       level in Johnson & Johnson cosmetic talc
+
+ 9       than what you're finding for the amphiboles;
+
+10       is that accurate?
+
+11            A.    Yes.  If you go through the MDL
+
+12       report and look at the average concentration
+
+13       of the amphiboles we found about PLM and
+
+14       looked at the average concentration -- and
+
+15       the ones that match up with the TEM's and
+
+16       look at the average amount now that we're
+
+17       finding in the Chinese talc, if you were to
+
+18       average it all out, it's probably 500 to
+
+19       600,000 bundles per gram; and if you average
+
+20       out all of the amphiboles found in the MDL
+
+21       samples, I think it comes in around 30,000
+
+22       or so per gram, and then you match that up
+
+23       with the weights where we had positive
+
+24       Blounts or positive PLM's, the weights are
+
+25       at least, estimated weights are at least in
+
+                        Longo - direct             67
+
+
+
+ 1       order of magnitude higher, I think they
+
+ 2       range in 0.001 to 0.01 where the -- all the
+
+ 3       weights are all averaged up for the -- for
+
+ 4       the chrysotile, I believe is at least one
+
+ 5       order of magnitude lower than what we're
+
+ 6       seeing for the PLM's and the MDL samples.
+
+ 7                  And that's just going from
+
+ 8       memory.  I haven't averaged it out, but
+
+ 9       that's typically what we would see.  At the
+
+10       highest one was 15 million.  I think the
+
+11       weight on that was 0.013 weight percent, and
+
+12       the highest we got with the chrysotile is
+
+13       about -- I think there's one close to two
+
+14       million, and I think the weight on that is
+
+15       0.01 at 2 million.
+
+16                  So if we got up to 15 million,
+
+17       or 001, excuse me, that would be the highest
+
+18       one or 0.01 -- I think it was 0.01, and it's
+
+19       an order of magnitude on that particular
+
+20       one, but if you took the whole average, the
+
+21       weight percents of the chrysotile are less
+
+22       than the weight percents of the overall for
+
+23       all the MDLs, even though we have much
+
+24       higher average.
+
+25            Q.    When you say "much higher
+
+                        Longo - direct             68
+
+
+
+ 1       average," what are you referring to?
+
+ 2            A.    Well, counting the fibers --
+
+ 3       they're not fibers, but counting the bundles
+
+ 4       and determining the number of bundles of
+
+ 5       chrysotile structures per gram in the
+
+ 6       Chinese, you know, and I'm just going off
+
+ 7       the top of my head, I believe the average
+
+ 8       would be around 500 to 600,000 for all the
+
+ 9       samples.  The average for TEM for the
+
+10       amphiboles is around three -- 30,000 for all
+
+11       of them, and that correlates with the weight
+
+12       percents.
+
+13                  All of the weight percents for a
+
+14       lower average are higher than what we're
+
+15       seeing for the chrysotile.
+
+16            Q.    I think I know what your answer
+
+17       is, but do you have -- do you have an
+
+18       explanation as you sit here today for that
+
+19       difference between amphiboles and
+
+20       chrysotile?
+
+21            A.    Yes.  Chrysotile is thinner, has
+
+22       a lower density.  So, you know, you could
+
+23       take ten chrysotile fibers and line them up
+
+24       side by side, you know, they would be
+
+25       zero -- they would be 0.2 microns in
+
+                        Longo - direct             69
+
+
+
+ 1       diameter.
+
+ 2                  If you took ten tremolite fibers
+
+ 3       and lined them up, they would be 2.0 microns
+
+ 4       in diameter.  So they're much thinner.  So
+
+ 5       it takes more chrysotile fibers to weigh the
+
+ 6       same as the -- it takes more weight of
+
+ 7       chrysotile fibers -- strike all that.
+
+ 8                  If you took the gram of
+
+ 9       chrysotile fibers, you're going to have a
+
+10       minimum of ten times more individual
+
+11       structures/fibers/bundles, than you would if
+
+12       you had one gram of tremolite.
+
+13            Q.    All right.  On the last couple
+
+14       of minutes before the lunch break, let's
+
+15       turn to Page 23 of your report --
+
+16                  MR. TULLY:  I'm sorry, Page 23
+
+17            -- of the report that was marked as
+
+18            Exhibit 4.
+
+19                  MR. EWALD:  Page 23 of the
+
+20            report that was marked as Exhibit 4.
+
+21                  MR. TULLY:  Thank you.
+
+22            A.    Okay.
+
+23                  MR. EWALD:  Are you there,
+
+24            Brendan?
+
+25                  MR. TULLY:  Yep.  Thank you very
+
+                        Longo - direct             70
+
+
+
+ 1            much.
+
+ 2            Q.    I wanted to start, I guess, of
+
+ 3       asking you some questions up on that last
+
+ 4       section on Page 23 that carries over on 24,
+
+ 5       the JBP UK chrysotile container
+
+ 6       concentrations.
+
+ 7                  I want to get a sense from you,
+
+ 8       Doctor, how the calculations that you do
+
+ 9       there on -- in that section on Pages 23 and
+
+10       24 inform, if at all, your opinion on the
+
+11       range of 0.01 fiber per CC to one fiber per
+
+12       CC of chrysotile exposure using
+
+13       Chinese-sourced talc?
+
+14            A.    Well, this provides an overall
+
+15       calculation for supporting the -- in this
+
+16       particular report is not done specifically
+
+17       to give a range of chrysotile exposures.  It
+
+18       was done more of what -- using these
+
+19       containers would it be significantly over
+
+20       background.
+
+21                  So it went through the
+
+22       calculation of the average chrysotile
+
+23       bundles, and then looking at under 200, 300,
+
+24       500-gram containers, and how many would be
+
+25       in that container, and the potential for
+
+                        Longo - direct             71
+
+
+
+ 1       exposure.
+
+ 2            Q.    So when we go to the top of
+
+ 3       Page 24, you make a calculation of what you
+
+ 4       say is "a typical adult application of JBP
+
+ 5       UK of ten grams of talcum powder that would
+
+ 6       have the potential to cause approximately 7
+
+ 7       million chrysotile bundles to be dispensed
+
+ 8       on their body and in their breathing
+
+ 9       environment each time this is done."  Did I
+
+10       read that correctly?
+
+11            A.    You did.
+
+12            Q.    Now, I think what you're saying
+
+13       is you're not thinking in that sense that I
+
+14       just read giving any opinion as to how many
+
+15       chrysotile bundles you would expect to get
+
+16       airborne in using ten grams of JBP UK talcum
+
+17       powder.  Right?
+
+18                  MR. TULLY:  Form;
+
+19            mischaracterizes his testimony.
+
+20                  Answer as you can.
+
+21            A.    I will.  It certainly supports
+
+22       the testimony, I believe, in my report, but,
+
+23       no, I don't write these analysis of the
+
+24       products to ever say "this is the range."  I
+
+25       typically state in here that this would
+
+                        Longo - direct             72
+
+
+
+ 1       cause a significant exposure over
+
+ 2       background.  It's all this report does.
+
+ 3                  It's a report for these
+
+ 4       particular samples that are all Chinese and
+
+ 5       here's what we found; and using the average
+
+ 6       out of the nine containers, this is what
+
+ 7       would be found based on that data in each
+
+ 8       container.
+
+ 9            Q.    Can you walk me through briefly
+
+10       the -- in that second to last paragraph on
+
+11       Page 24, when you're reaching the conclusion
+
+12       that it's clearly a significant exposure
+
+13       over so-called background levels and you're
+
+14       talking about no measurable background
+
+15       levels of either chrysotile or amphibole,
+
+16       and you give certain numbers there.
+
+17                  Could you just walk me through
+
+18       your thinking and the conclusion,
+
+19       ultimately, that it's clearly a significant
+
+20       exposure over those background levels?
+
+21                  MR. TULLY:  Form.
+
+22                  You can answer.
+
+23            A.    I say that unless there is a
+
+24       source of this asbestos.
+
+25            Q.    Right.
+
+                        Longo - direct             73
+
+
+
+ 1            A.    You're not going to have
+
+ 2       background -- measurable background levels
+
+ 3       of any asbestos unless it's being disturbed
+
+ 4       in somewhere.  So there has to be a source.
+
+ 5       Otherwise, asbestos can stay airborne for --
+
+ 6       for some period of time, but it cannot stay
+
+ 7       airborne being ambiguous in the environment.
+
+ 8                  The density; hence, the weight
+
+ 9       of chrysotile is heavier than air.  Air has
+
+10       a density of 1.2 three.  It has to -- by the
+
+11       loss of gravity at some point.  It does not
+
+12       stay up in the air unless you have a source.
+
+13            Q.    And so -- let me see if I can
+
+14       get this right.  I know we talked previously
+
+15       about in the context of amphiboles like
+
+16       tremolite and anthophyllite that any --
+
+17       absent a known source of asbestos, it's your
+
+18       view that any exposure to those amphiboles
+
+19       would be -- is it your -- I understood your
+
+20       prior testimony -- let's take tremolite for
+
+21       an example, that absent a known source of
+
+22       asbestos, if there's any exposure from
+
+23       Johnson's Baby Powder to tremolite asbestos,
+
+24       that would be a significant exposure.
+
+25       Right?
+
+                        Longo - direct             74
+
+
+
+ 1                  MR. TULLY:  Form;
+
+ 2            mischaracterizes testimony.  Please
+
+ 3            answer as you can.
+
+ 4            A.    It's not just a source of it,
+
+ 5       the asbestos.  It has to be a source of
+
+ 6       asbestos that's being disturbed and becomes
+
+ 7       airborne.  So our findings of one tremolite,
+
+ 8       one anthophyllite fiber is significantly
+
+ 9       over background, because there is no
+
+10       ultimate source, and we run controls and
+
+11       blanks so that if you find tremolite or you
+
+12       find anthophyllite or if you find -- it's
+
+13       going to be significantly over background,
+
+14       and background would be, you know, less than
+
+15       the detection limit of I think the highest
+
+16       background's detection limits I've seen is
+
+17       trending minus six, and you won't find any
+
+18       tremolite or anthophyllite or chrysotile in
+
+19       that sample unless you have a source of
+
+20       asbestos that's being disturbed.  So the
+
+21       finding of one in my opinion is
+
+22       significantly over background.
+
+23            Q.    And that's ultimately what I
+
+24       was -- you kind of stole my thunder a little
+
+25       bit, but, ultimately, what I was going to
+
+                        Longo - direct             75
+
+
+
+ 1       try to tie up is you hold the same opinion
+
+ 2       for chrysotile as you do for anthophyllite
+
+ 3       or tremolite, correct, that any exposure to
+
+ 4       chrysotile from Johnson's Baby Powder would
+
+ 5       be a significant exposure over background.
+
+ 6       Right?
+
+ 7            A.    Correct.
+
+ 8            Q.    Okay.  So with that, it's 12:30.
+
+ 9       Let's go ahead and get some lunch.  I will
+
+10       say -- let's come back immediately at one.
+
+11       30.  I hesitate to give people, you know,
+
+12       too much time.
+
+13                  (Recess occurred.)
+
+14                  MR. EWALD:  Back on the record.
+
+15            Q.    Dr. Longo, I want to mainly
+
+16       focus the next little bit on the report that
+
+17       we've marked as Exhibit 4, and to cut short
+
+18       some of the questioning, I'm going to see if
+
+19       I can frame the issue like -- frame the
+
+20       issue in an understandable way.
+
+21                  So am I correct that since you
+
+22       first disclosed a report last year with the
+
+23       CSM method for PLM, that you have made
+
+24       certain modifications to the method?
+
+25                  MR. TULLY:  Form; please answer.
+
+                        Longo - direct             76
+
+
+
+ 1            A.    The sample correct portion of
+
+ 2       it, yes.
+
+ 3            Q.    Does that relate primarily to
+
+ 4       the Iodine staining?
+
+ 5            A.    Well, the Iodine staining, we
+
+ 6       started but stopped, because it wasn't
+
+ 7       providing anything useful in these size
+
+ 8       bundles; and also instead of a 2.65, heavy
+
+ 9       liquid density, we used a 2.72 heavy liquid
+
+10       density, but that might all change now, now
+
+11       we're going with an organic-based heavy
+
+12       liquid density verses the water-based, and
+
+13       re-run the standards to see if that solves
+
+14       the standards of the bigger chrysotile
+
+15       bundles going through the heavy portion of
+
+16       the spin down versus the staining of the top
+
+17       where it belongs.
+
+18            Q.    All right.  So you made the
+
+19       reference to the change from 2.65 to 27 --
+
+20       2.72.  Approximately when did you make that
+
+21       change?
+
+22            A.    We did that early on, because
+
+23       looking at the preps, it was just about the
+
+24       right amount of talc, and we were all seeing
+
+25       chrysotile bundles, and I think early on we
+
+                        Longo - direct             77
+
+
+
+ 1       did a 2.65, and there was literally nothing
+
+ 2       there except some talc plates and a few
+
+ 3       small chrysotile bundles.  And now that --
+
+ 4       so that didn't look like the most optimum
+
+ 5       heavy liquid to use but now that's all in
+
+ 6       question, because at that 2.65, more of the
+
+ 7       chrysotile would go to the heavy portion
+
+ 8       with the capillary action and sucking up
+
+ 9       water.
+
+10            Q.    So I guess I'll go there now.  I
+
+11       saw your testimony -- I believe it was the
+
+12       second day of deposition in the Prudencio
+
+13       case where you were talking about capillary
+
+14       action and changing -- planning to change to
+
+15       the organic-based separation.  Right?
+
+16            A.    Correct.
+
+17            Q.    And has there been any
+
+18       development in -- on that issue since you
+
+19       testified, I guess, a couple of weeks at
+
+20       Prudencio?
+
+21                  MR. TULLY:  Form.
+
+22            A.    What we have determined, if I
+
+23       was smart enough, I would have just walked
+
+24       down -- that neither MCE filters or
+
+25       polycarbonate filters can stand up to the
+
+                        Longo - direct             78
+
+
+
+ 1       the bromoform heavy-liquid density and
+
+ 2       literally melts -- starts dissolving the
+
+ 3       filters.  We're just waiting on getting in
+
+ 4       our Teflon filters so that we can continue
+
+ 5       with that.
+
+ 6                  They may be in now, but we
+
+ 7       haven't had an opportunity to -- because we
+
+ 8       kind of want to go back to the same samples
+
+ 9       first where we found the -- the high weight
+
+10       percent in the heavy fraction and see if
+
+11       that changes it.
+
+12            Q.    Now, suffice it to say, you
+
+13       haven't done that yet.  Right?
+
+14            A.    No, we haven't.
+
+15            Q.    So for the report dated
+
+16       June 4th, 2021, marked as Exhibit 4, did
+
+17       MAS' CSM analysis by PLM for chrysotile
+
+18       deviate in any notable aspect in its
+
+19       approach from prior reports?
+
+20                  MR. TULLY:  Form.
+
+21            A.    Other than -- nothing deviated
+
+22       except the samples that have already been
+
+23       prepped some time ago, I think.  It's that
+
+24       instead of analyzing two separate samples,
+
+25       we just went directly to the pellet or the
+
+                        Longo - direct             79
+
+
+
+ 1       heavy fraction knowing that the
+
+ 2       concentrations were going to be higher than
+
+ 3       if we had just analyzed the light fraction,
+
+ 4       which gives a percentage that is so small
+
+ 5       compared to what we're finding in the
+
+ 6       pellet, it really doesn't change anything.
+
+ 7       And because they had already been prepped.
+
+ 8                  So the -- that's what the ISO
+
+ 9       PLM for chrysotile is to compare the two, to
+
+10       see if it's following along that the amount
+
+11       in the pellet is two to two and a half times
+
+12       higher than what's found in the ISO; and
+
+13       probably when we get the Teflon, they'll
+
+14       re-run the samples -- probably run these
+
+15       samples and the other ones, or maybe the
+
+16       other ones, just to see if the light
+
+17       fraction and the heavy fraction has now been
+
+18       switched; that everything that is up in the
+
+19       light fraction versus what's in the heavy
+
+20       fraction.
+
+21                  That makes sense because the
+
+22       organic fluid should not be incorporated
+
+23       into the nanotubes of the chrysotile, if my
+
+24       hypothesis continues to be correct.
+
+25            Q.    Apart from the differentials you
+
+                        Longo - direct             80
+
+
+
+ 1       identified with respect to the already-
+
+ 2       prepped samples, are there any other
+
+ 3       deviations that you -- that MAS made in its
+
+ 4       CSM PLM chrysotile analysis for this report
+
+ 5       marked as Exhibit 4 as different from prior
+
+ 6       work by MAS -- CSM?
+
+ 7                  MR. TULLY:  Form.
+
+ 8            A.    It's all the same for these,
+
+ 9       except the heavy fraction was analyzed
+
+10       versus the light fraction.
+
+11            Q.    Now, a little bit earlier, you
+
+12       were talking about some PLM photos that you
+
+13       thought would be a good samples to the jury
+
+14       on this issue of chrysotile intergrowth with
+
+15       talc or vice versa.  Right?
+
+16            A.    Correct.
+
+17            Q.    While we're on that subject, how
+
+18       were those photos selected?
+
+19                  MR. TULLY:  We're talking 6A
+
+20            through 6F?
+
+21                  MR. EWALD:  Yes, thank you for
+
+22            clarifying the record.
+
+23            Q.    6A through 6F that we selected
+
+24       earlier.
+
+25            A.    They were selected because the
+
+                        Longo - direct             81
+
+
+
+ 1       chrysotile portion and the talc portion were
+
+ 2       on the same plane; meaning, that in
+
+ 3       perpendicular and parallel, you can compare
+
+ 4       directly what the dispersion staining looked
+
+ 5       like for the talc portion versus the
+
+ 6       chrysotile portion.  So it has a contrast of
+
+ 7       what the structure looks like.
+
+ 8            Q.    And who actually selected those
+
+ 9       photos?
+
+10            A.    Well, the -- the PLM person,
+
+11       Paul Hess [ph], has instructions for me that
+
+12       whenever he runs across one that has that
+
+13       the chrysotile portion in the -- and the
+
+14       talc portion are on the same plane to same a
+
+15       copy.
+
+16            Q.    So what we marked as 6A through
+
+17       6F are PLM photos that were selected for you
+
+18       by Mr. Hess?
+
+19                  MR. TULLY:  Form.
+
+20            A.    Well, not so much he selected
+
+21       them.  It was anyones that have this
+
+22       particular morphology where they're both on
+
+23       the same plane.  We have over ones where
+
+24       it's bent where the talc is, but then you
+
+25       have to hold them both to kind of look at it
+
+                        Longo - direct             82
+
+
+
+ 1       when you put them in parallel versus
+
+ 2       perpendicular, we're now saving anything
+
+ 3       that's on the same plane.
+
+ 4            Q.    How long did it take to you
+
+ 5       prepare the report that we've marked as
+
+ 6       Exhibit 4?
+
+ 7                  MR. TULLY:  Form.
+
+ 8            A.    The June 7th report?
+
+ 9            Q.    June 4th?
+
+10            A.    Oh.
+
+11                  MR. TULLY:  The nine samples.
+
+12                  THE WITNESS:  Oh.
+
+13            A.    To write it all up and review
+
+14       the data?  Maybe five, six hours.
+
+15            Q.    I thought about this when I
+
+16       looked at the "prepared by" cover, and I
+
+17       know this isn't the first one that you've
+
+18       done without Dr. Rigler, but is there
+
+19       anybody that has taken Dr. Rigler's place at
+
+20       MAS in proving the reports and checking the
+
+21       data since he's left?
+
+22                  MR. TULLY:  Form.
+
+23            A.    Yes.
+
+24            Q.    Who is that?
+
+25            A.    Me.
+
+                        Longo - direct             83
+
+
+
+ 1            Q.    Okay.  Well, in going through
+
+ 2       the data for this report of the nine
+
+ 3       bottles, was there any data, and by that
+
+ 4       I'll include pictures, that you saw that you
+
+ 5       thought "oh, this will be a good example I
+
+ 6       want to show the jury of X or Y in
+
+ 7       connection with your CSM analysis"?
+
+ 8                  MR. TULLY:  Form.
+
+ 9            A.    I think so. I mean they're all
+
+10       --  I think they're all good pictures
+
+11       showing chrysotile, but specifically finding
+
+12       the nonergot chrysotiles in talc, I'm not
+
+13       sure -- you know, I don't think we have any
+
+14       of those like that, and, usually, if it's a
+
+15       talc -- if it's a chrysotile on a talc plate
+
+16       or it looks like it's a talc plate on edge
+
+17       or where you can't really distinguish it, we
+
+18       don't use that as part of the counting
+
+19       procedure for just pure chrysotile.
+
+20                  These are ones that in the
+
+21       normal course of analyzing, that the PLM
+
+22       analyst runs across it.
+
+23            Q.    Okay.  Has MAS done any cosmetic
+
+24       talc testing at the direction of the
+
+25       Phillips & Paolicelli before this before?
+
+                        Longo - direct             84
+
+
+
+ 1                  MR. TULLY:  Form.
+
+ 2            A.    Yes.
+
+ 3            Q.    I'll limit it to just disclosed
+
+ 4       testing, but what other testing has MAS done
+
+ 5       for the Phillips firm?
+
+ 6                  MR. TULLY:  Form; relevance, may
+
+ 7            call for confidential information in
+
+ 8            other cases.  I will allow him answer.
+
+ 9            Depending where it goes, I may if the
+
+10            questioning calls for confidential
+
+11            information from other cases, I
+
+12            instruct him not to answer, but I will
+
+13            allow him to answer at this point.
+
+14                  MR. EWALD:  I appreciate that,
+
+15            Brendan, just to be clear, like I
+
+16            said, with my question, I'm only
+
+17            asking about reports that have --
+
+18            testing that's been disclosed by --
+
+19                  MR. TULLY:  Okay.
+
+20                  MR. EWALD:  -- MAS and limiting
+
+21            it to cosmetic talc testing.
+
+22                  MR. TULLY:  Same instructions.
+
+23                  You may answer.
+
+24            A.    What has been disclosed in
+
+25       depositions as well as testified in court
+
+                        Longo - direct             85
+
+
+
+ 1       would be, I guess the other big project
+
+ 2       which is bigger than this would be the Old
+
+ 3       Spice retains of the Shelton Old Spice
+
+ 4       samples that were -- I call them retains
+
+ 5       that were in the custody of Old Spice and I
+
+ 6       think that's it.  They call them the Shelton
+
+ 7       samples, as well as some Jean Nate` work.
+
+ 8            Q.    Doctor, do you have your
+
+ 9       June 4th report in front of you?
+
+10            A.    Pardon me?
+
+11            Q.    Do you have your June 4th report
+
+12       in front of you?
+
+13            A.    I do.
+
+14            Q.    If you can turn to the first
+
+15       page of Section 2?
+
+16                  MR. TULLY:  Let me get there.
+
+17            Do you have a page number?
+
+18                  MR. EWALD:  I don't because --
+
+19                  MR. TULLY:  Sorry.  Let me get
+
+20            there.
+
+21                  MR. EWALD:  Is that -- that is
+
+22            Dr. Longo's fault, not mine.
+
+23                  MR. TULLY:  I have No-Fault.
+
+24                  MR. EWALD:  I will go ahead and
+
+25            share my screen so we can make sure
+
+                        Longo - direct             86
+
+
+
+ 1            we're on the same page.  I am at
+
+ 2            Page 31 of the PDF, first page after
+
+ 3            Section 2 begins.  Here we have a log
+
+ 4            in day of Chain of Custody as
+
+ 5            September 16th, 2019.  Right.
+
+ 6            A.    Yes.
+
+ 7            Q.    That is a couple of days after
+
+ 8       the meeting with Mr. Powell that we talked
+
+ 9       about a little bit earlier.  Right?
+
+10            A.    Three days, I believe.
+
+11            Q.    And there are logs under the
+
+12       name of -- what's listed there as "14-2398
+
+13       Powell, Amanda, (Johnson & Johnson talc.)
+
+14       Did I read that correctly?
+
+15            A.    You did.
+
+16            Q.    So when these were logged at
+
+17       MAS, they were logged under the Powell case
+
+18       that you were referring to?
+
+19            A.    Correct.
+
+20            Q.    And what was the instructions
+
+21       you received from Mr. Tully and his firm on
+
+22       what testing they wanted you to undertake on
+
+23       these nine bottles at the time in 2019.
+
+24            A.    I didn't receive any
+
+25       instructions that I recall of what testing
+
+                        Longo - direct             87
+
+
+
+ 1       to be done.
+
+ 2            Q.    What did you understand in
+
+ 3       September of 2019 after you took custody of
+
+ 4       the nine samples in England, what did you
+
+ 5       understand Mr. Tully is asking you to do?
+
+ 6            A.    Well, we were going to analyze
+
+ 7       them for asbestos for the same thing as we
+
+ 8       always do.  At the time we got these
+
+ 9       samples, I don't believe we have the heavy
+
+10       liquid density method for chrysotile worked
+
+11       out.  So the usual analysis was done and
+
+12       they just sat in que until this case came
+
+13       up.
+
+14            Q.    So what prompted MAS to conduct
+
+15       the CSM PLM testing on these nine samples?
+
+16            A.    What prompted us is that it's a
+
+17       routine analysis that we do now for any
+
+18       samples that come in the door.
+
+19            Q.    No, I appreciate that.  I guess
+
+20       what I'm saying is this particular case, you
+
+21       said that MAS started doing the testing.
+
+22       Was that at the direction of Mr. Tully or
+
+23       was that something -- let me take a step
+
+24       back.
+
+25                  When MAS started the CSM PLM
+
+                        Longo - direct             88
+
+
+
+ 1       testing for these nine bottles, was that
+
+ 2       done at the request by Mr. Tully?
+
+ 3            A.    I don't think he ever said go
+
+ 4       ahead and test these.  I believe I told him
+
+ 5       that I was going to test these containers
+
+ 6       since they were from the UK for amphibole
+
+ 7       asbestos at that time.
+
+ 8            Q.    Do you mean chrysotile asbestos?
+
+ 9            A.    Well, initially, it was
+
+10       amphibole asbestos, and then when I was
+
+11       looking at the data, I called Mr. Tully and
+
+12       said I would like to go ahead and do
+
+13       chrysotile on here, chrysotile analysis to
+
+14       see if this is consistent with other
+
+15       Chinese-sourced talc and he said okay.
+
+16            Q.    Now, in this report, the
+
+17       June 4th, 2021, report, MAS identified
+
+18       chrysotile in all nine containers.  Right?
+
+19            A.    Correct.
+
+20            Q.    Do you have -- withdrawn.  MAS
+
+21       has issued over the last year or so a number
+
+22       of different reports of MAS testing China
+
+23       sourced cosmetic talc by the CSM PLM method.
+
+24       Right?
+
+25            A.    Correct.  The CSM sample
+
+                        Longo - direct             89
+
+
+
+ 1       prep/ISO PLM method.  That's correct.
+
+ 2            Q.    And do you, as you sit here
+
+ 3       today, have an understanding of the number
+
+ 4       of bottles that -- of Johnson & Johnson
+
+ 5       China-sourced cosmetic talc bottles that MAS
+
+ 6       has tested using the CSM method?
+
+ 7                  MR. TULLY:  Form.  May call for
+
+ 8            confidential information from other
+
+ 9            cases and other attorneys.
+
+10                  I instruct him not to answer
+
+11            anything that may be confidential.
+
+12            Outside of that, please answer.
+
+13                  MR. EWALD:  Just before you
+
+14            answer, I will modify my question two
+
+15            ways; one, to make sure that it's
+
+16            covering only disclosed testing, and I
+
+17            did say the CSM method, but I want to
+
+18            make clear I'm talking about the PLM
+
+19            testing.
+
+20            Q.    So with that --
+
+21            A.    Okay.  I think it's around 40.
+
+22       It's 30 to 40.  Somewhere around there.
+
+23            Q.    And does that include the
+
+24       Chinese or testing that MAS has done or are
+
+25       you separating that out?
+
+                        Longo - direct             90
+
+
+
+ 1            A.    It may -- it may include that,
+
+ 2       too.  You know, I don't have a firm total of
+
+ 3       how many, including these nine.
+
+ 4            Q.    Let's go to Page 22 of this June
+
+ 5       report.  Let me know when you're there.
+
+ 6            A.    Okay.
+
+ 7            Q.    And under the source of talcum
+
+ 8       powder for these JBP UK containers, that
+
+ 9       first paragraph, there is a discussion from
+
+10       you stating that the findings of these nine
+
+11       containers are consistent with our previous
+
+12       CSM sample preparation, ISO 2262-1 PLM
+
+13       analysis for approximately 35 JBP
+
+14       containers, and then you also talk about
+
+15       there -- they were all consistent with the
+
+16       nine J & J talcum powder samples.  Right?
+
+17            A.    That's correct.  I forgot -- I
+
+18       must have counted them up.
+
+19            Q.    And so if you add the nine for
+
+20       this report and the 35 that you identified
+
+21       from prior reports, that would be 44.
+
+22       Right?
+
+23            A.    Correct.
+
+24            Q.    And then let's just say for now
+
+25       we're at the analysis of the nine J & J mill
+
+                        Longo - direct             91
+
+
+
+ 1       talcum powder samples and two core samples
+
+ 2       from the same Chinese mine, you would get
+
+ 3       55.  Is that accurate based on what you have
+
+ 4       here?
+
+ 5            A.    Correct.
+
+ 6            Q.    Now, I'm not going to hold you
+
+ 7       to it, but do you have a general sense of
+
+ 8       how many of those 55 MAS -- how many of
+
+ 9       those 55 samples did MAS identify chrysotile
+
+10       using the CSM method?
+
+11            A.    One hundred percent.
+
+12            Q.    One hundred percent.  Correct?
+
+13            A.    Correct.
+
+14            Q.    Do you have -- in analyzing the
+
+15       prior samples of Johnson & Johnson cosmetic
+
+16       talc and to be fair, I'm not just talking
+
+17       about -- let's put aside Chinese talc.
+
+18       Let's use Johnson & Johnson Vermont talc,
+
+19       okay?
+
+20                  In analyzing previously
+
+21       Johnson & Johnson's Vermont talc for
+
+22       amphiboles using the heavy density liquid
+
+23       separation methods by PLM and TEM, you had
+
+24       what general percentage positive rate of
+
+25       amphiboles?
+
+                        Longo - direct             92
+
+
+
+ 1                  MR. TULLY:  Form.
+
+ 2                  Answer if you can.  Don't guess.
+
+ 3            Answer if you can.
+
+ 4            A.    Somewhere between 70 to
+
+ 5       80 percent positives.
+
+ 6            Q.    Do you have a, we'll call it, a
+
+ 7       working explanation, for why MAS has
+
+ 8       100 percent hit rate on the CSM chrysotile
+
+ 9       analysis as compared to, we'll say, 70 to
+
+10       80 percent hit rate on the amphibole heavy
+
+11       liquid analysis?
+
+12                  MR. TULLY:  Form.
+
+13            A.    Well, you're sort of comparing
+
+14       apples-to-oranges since this is primarily
+
+15       Chinese versus Vermont.  I would have a
+
+16       better understanding once we go through the
+
+17       Vermont samples and on how it compares to
+
+18       each other.  Obviously, for amphiboles in
+
+19       Chinese, it's that the Chinese sourced mines
+
+20       has a propensity for having trace amounts of
+
+21       chrysotile in them that will not be seen by
+
+22       the regular method because of the
+
+23       concentrations; and if you go back to the
+
+24       CSM development where they're looking at
+
+25       what I think is the Frostbite Mine, you
+
+                        Longo - direct             93
+
+
+
+ 1       know, three out of four of the head spaces
+
+ 2       have detectable chrysotile in them.
+
+ 3            Q.    So I guess what I'm
+
+ 4       understanding from your answer is that, and
+
+ 5       from your previous testimony, China is not a
+
+ 6       good comparison of the different heavy
+
+ 7       liquid separation methods for amphibole and
+
+ 8       chrysotile, because based on your testing,
+
+ 9       there are little to know amphiboles that are
+
+10       detected from the China.  Right?
+
+11                  MR. TULLY:  Form;
+
+12            mischaracterizes previous testimony.
+
+13                  Please answer.
+
+14            A.    It has a very low concentration
+
+15       amounts and a very low percentage of where
+
+16       we're finding it.  Each nine were below our
+
+17       detection and when we have detected
+
+18       amphibole asbestos, tremolite type, it's
+
+19       usually only one or two bundles.  So some
+
+20       day when we have the Vermont ones done, we
+
+21       can have a more accurate comparison between
+
+22       the two.
+
+23            Q.    In your report and elsewhere,
+
+24       you've referred -- you used the phrase
+
+25       needle in a haystack.  Right?
+
+                        Longo - direct             94
+
+
+
+ 1            A.    Yes.  The same thing that the
+
+ 2       Colorado School of Mines said.
+
+ 3            Q.    When were you finding what you
+
+ 4       called chrysotile every sing many -- single
+
+ 5       sample that you are testing from China using
+
+ 6       the CSM method, is it in your mind still a
+
+ 7       needle in a haystack?
+
+ 8                  MR. TULLY:  Form.
+
+ 9            A.    Well, it's much more than just a
+
+10       needle in a haystack.  It's also the
+
+11       equipment we were using, and it's the
+
+12       standards and it's calibrating the analyst
+
+13       and spending the time on it.  If you go way
+
+14       back to the '70s when Johns-Manville was
+
+15       testing out the FDA method, the FDA PLM
+
+16       method, and they were proposing that a
+
+17       single analysis by PLM using their method
+
+18       should take a half a day, and now they were
+
+19       also having to count the numbers of fibers
+
+20       and bundles of chrysotile, and
+
+21       Johns-Manville analyzed a number of
+
+22       off-the-shelf containers and one of them was
+
+23       heavily from Montana.
+
+24                  You know, 13 out of 13 samples
+
+25       by PLM had chrysotile, and also verified by
+
+                        Longo - direct             95
+
+
+
+ 1       TEM.  So it's not a matter of a needle in a
+
+ 2       haystack with this, because if you used the
+
+ 3       heavy liquid density, you're not having a
+
+ 4       needle in a haystack; and if you're just
+
+ 5       using ISO PLM, and you're spending four
+
+ 6       hours on a sample would be -- versus the
+
+ 7       ten, 20 minutes that normal PLM people do
+
+ 8       when they're looking at asbestos out of
+
+ 9       products, it is a needle in a haystack, but
+
+10       you're looking at a lot more of the haystack
+
+11       and you're using equipment that has a much
+
+12       higher resolution.
+
+13                  If you look at the -- if you
+
+14       look at these analysis, you know, we're
+
+15       using optical microscopes that contacts
+
+16       about $35,000 appears.  All of the lenses
+
+17       are flat lenses, including the dispersion
+
+18       staining lens, because of a high resolution
+
+19       camera and it's using LED light sources that
+
+20       have high lumens of brightness.
+
+21                  So you've upgraded the equipment
+
+22       that's giving you the ability to see the
+
+23       material now, but you still have to have the
+
+24       analyst be trained to know what to look for,
+
+25       especially ones that have been routinely
+
+                        Longo - direct             96
+
+
+
+ 1       doing chrysotile-added products; they're not
+
+ 2       in the mode of seeing these very small
+
+ 3       bundles.
+
+ 4                  So it's a combination of things
+
+ 5       that allows our lab to precisely look at
+
+ 6       these materials and see.
+
+ 7            Q.    If you can turn to Page 16 of
+
+ 8       your --
+
+ 9                  MR. TULLY:  Give me one second
+
+10            so I can catch up to you.
+
+11                  MR. EWALD:  Okay.
+
+12            Q.    -- of your UK report.
+
+13                  MR. TULLY:  What page was that,
+
+14            John?
+
+15                  MR. EWALD:  Sixteen.
+
+16                  MR. TULLY:  Thank you.
+
+17            Q.    Are you there?
+
+18            A.    I'll be there.  Yes, I'm here.
+
+19       Thank you.
+
+20            Q.    All right.  So, Doctor, you were
+
+21       just talking about Johns-Manville, and on
+
+22       Page 16 of your report at -- at the top, you
+
+23       write "another indication of how confident
+
+24       the Colorado School of Mines were in their
+
+25       double density separation method, they
+
+                        Longo - direct             97
+
+
+
+ 1       informed Johns-Manville of the science that
+
+ 2       bought of this method that they developed
+
+ 3       that they considered a gain of patent on the
+
+ 4       method."  Did I read that correctly?
+
+ 5            A.    Yes.
+
+ 6            Q.    And so what -- I guess walk me
+
+ 7       through your -- your -- how Colorado School
+
+ 8       of Mines indicating to Johns-Manville that
+
+ 9       they were considering gaining a patent on
+
+10       the method supports your understanding of
+
+11       the -- well, supports your understanding of
+
+12       the method?
+
+13                  MR. TULLY:  Form.
+
+14            A.    Well, it's not so much supports
+
+15       the understanding of the method.  I mean, I
+
+16       understand the science behind the method
+
+17       very well.  It goes to the validity of the
+
+18       method itself.  There has been suggestions,
+
+19       and I haven't heard it in a while, that this
+
+20       method was not being used because it was not
+
+21       reproducible; that there was a problem with
+
+22       it, and what was shown to me typically in
+
+23       cross-examination at trial was the document
+
+24       where it says, you know, more testing needs
+
+25       to be done, but they never filled in the
+
+                        Longo - direct             98
+
+
+
+ 1       rest for this one sample where they were
+
+ 2       finding chrysotile.
+
+ 3                  This method, since it is was
+
+ 4       being considered to be patented; and if you
+
+ 5       look at the December 2013 protocol all
+
+ 6       written up, you know, all of the primary
+
+ 7       folks at the Colorado School of Mines signed
+
+ 8       off of it, the director, the chief
+
+ 9       scientist.
+
+10                  So there was nothing about this
+
+11       method that showed that it was not
+
+12       reproducible, and was not a great method for
+
+13       what they were doing with it, but I do
+
+14       understand it's a simple process of
+
+15       understanding on how it works.
+
+16            Q.    So on -- on the question of
+
+17       whether or not it's a reproducible method,
+
+18       ultimately, it's your understanding,
+
+19       correct, that the Colorado School of Mines
+
+20       did not patent the CSM method that you are
+
+21       referencing here.  Right?
+
+22                  MR. TULLY:  Form.
+
+23            A.    That is correct; there was no
+
+24       way J & J was going to let this method out
+
+25       in my opinion.
+
+                        Longo - direct             99
+
+
+
+ 1            Q.    We'll talk about that in a
+
+ 2       second, but on the question of -- you said
+
+ 3       there wasn't any indication that the method
+
+ 4       was not validated; is that fair?
+
+ 5            A.    I'm sorry, could you say that --
+
+ 6            Q.    Sure.  At least what I heard
+
+ 7       from you was that you are not aware of any
+
+ 8       evidence that the CSM was not validated?
+
+ 9                  MR. TULLY:  Form.
+
+10            A.    Was not validated?
+
+11            Q.    I -- it's an awkward question
+
+12       because I feel like that's what I'm hearing
+
+13       from you; I may be wrong; is the proving of
+
+14       the negative.  Right?
+
+15                  So at least what I heard from
+
+16       you was you can't -- you've haven't
+
+17       identified any evidence that the CSM method
+
+18       was not able to be validated.  Right?
+
+19            A.    Well, we validated it.  I don't
+
+20       know how much testing they did other than
+
+21       the documents I've seen, but obviously they
+
+22       did enough testing to realize that it was
+
+23       too sensitive for their needs, and that the
+
+24       statement that -- where they state that this
+
+25       method would not be in the best interest
+
+                        Longo - direct            100
+
+
+
+ 1       of J & J's worldwide talc market.
+
+ 2                  Obviously, J & J believed that
+
+ 3       it was a good method.  We validated it.
+
+ 4       They were thinking of patenting it.  So I
+
+ 5       don't know how many times they used it or
+
+ 6       how many times they ran it.  They tried do
+
+ 7       it on a larger scale with their floatation
+
+ 8       documents where they were experimenting with
+
+ 9       different flocculence for floatation, trying
+
+10       to reduce the amount of chrysotile in the
+
+11       final product.  So I can't prove a negative.
+
+12       We validated it.  You can validate this
+
+13       method.
+
+14            Q.    So is it fair to say that all of
+
+15       your knowledge relating to the Colorado
+
+16       School of Mines' historical work on the
+
+17       heavy density liquid separation process
+
+18       comes from the documents that you reviewed.
+
+19       Right?
+
+20            A.    Yeah, all of my knowledge about
+
+21       what Colorado School of Mines did, what J &
+
+22       J did comes from those documents.
+
+23            Q.    Now, let's go to Page 23 of your
+
+24       report, your June report.
+
+25                  MR. EWALD:  Are you there,
+
+                        Longo - direct            101
+
+
+
+ 1            Brendan?
+
+ 2                  MR. TULLY:  I am.
+
+ 3            Q.    And at the top, you state, "it
+
+ 4       is understandable that the Colorado School
+
+ 5       of Mines wanted to patent this method, and
+
+ 6       it was so unfortunate will that it was
+
+ 7       neither patented, nor ever published in the
+
+ 8       literature or shared with the FDA.
+
+ 9                  The only reason why we know
+
+10       about CSM's HLS work in 1973 is because
+
+11       J & J had to produce their internal testing
+
+12       documents in the ongoing mesothelioma in the
+
+13       varying cancer cosmetic talcum powder
+
+14       litigation."  Did I read that correctly?
+
+15            A.    You did.
+
+16            Q.    And so you go on to say -- this
+
+17       is something you alluded to a little bit
+
+18       earlier -- "so why did J & J decide to keep
+
+19       this advancement in trace mineral separation
+
+20       science a secret for about 45 years until
+
+21       they were forced to reveal their past and
+
+22       present cosmetic talc testing documents in
+
+23       asbestos litigation?  In my opinion, the
+
+24       answer is usually always the same; it's
+
+25       about the money."  Did I read that
+
+                        Longo - direct            102
+
+
+
+ 1       correctly?
+
+ 2            A.    You did.
+
+ 3            Q.    Okay.  And so am I correct in
+
+ 4       reading the two paragraphs that I just
+
+ 5       repeated, that it's your opinion that
+
+ 6       Johnson & Johnson actively hid the CSM heavy
+
+ 7       liquid separation work?
+
+ 8                  MR. TULLY:  Form.
+
+ 9            A.    Well, they decided not to use
+
+10       it.  They decided not to publish it.  They
+
+11       decided not to get a patent on it even
+
+12       though it worked perfectly well, and so the
+
+13       answer would be yes.  In my opinion, they
+
+14       decided not to release this protocol, this
+
+15       method, because it was too sensitive, as
+
+16       they stated, and it was not in their best
+
+17       interest for the J & J's worldwide talc
+
+18       market.  I think it's clear on what [sic]
+
+19       they didn't ever release this -- this
+
+20       protocol.
+
+21            Q.    There you were talking about
+
+22       amongst other things, Johnson & Johnson not
+
+23       patenting the CSM method.  Did I hear you
+
+24       correctly?
+
+25            A.    Correct.
+
+                        Longo - direct            103
+
+
+
+ 1            Q.    Okay.  The only reference I
+
+ 2       believe that you've identified to patent in
+
+ 3       connection with this was from Colorado
+
+ 4       School of Mines.  Right?
+
+ 5            A.    Well, it was a memo from
+
+ 6       Johns-Manville following up on a phone call
+
+ 7       asking about using the technology.
+
+ 8            Q.    Okay.
+
+ 9            A.    That was Colorado School of
+
+10       Mines says they were thinking of patenting
+
+11       it.
+
+12            Q.    And are you aware of any
+
+13       limitation that Johnson & Johnson placed on
+
+14       Colorado School of Mines with respect to the
+
+15       patenting of this heavy liquid separation
+
+16       protocol?
+
+17                  MR. TULLY:  Form.
+
+18            A.    To your point, I don't have a
+
+19       document that Colorado School of -- J & J
+
+20       said do not patent this procedure, but it
+
+21       would be up to Johnson & Johnson on how this
+
+22       works, who funded this research.  It would
+
+23       be up to them if it's patented or not.
+
+24            Q.    And what do you base that on?
+
+25            A.    I base it on my own experience
+
+                        Longo - direct            104
+
+
+
+ 1       at the University of Florida.  The folks
+
+ 2       that spend the money to research and to
+
+ 3       develop something have the ultimate rights
+
+ 4       to it.  So if it was a patent, Colorado
+
+ 5       School of Mines would have been the author,
+
+ 6       but it would have been assigned to Johnson &
+
+ 7       Johnson.
+
+ 8            Q.    And so remind me -- I don't want
+
+ 9       to insult you one way or the other --
+
+10       how -- what years were you in -- at
+
+11       University of Florida?
+
+12            A.    From 1977 to -- oh, wait a
+
+13       minute.  I got my -- I was in graduate
+
+14       school starting in 1977 and graduated in
+
+15       1983, and that's where I got my patents, and
+
+16       it was assigned to the University of
+
+17       Florida, because they paid for all of the
+
+18       research.  If you worked for -- and you
+
+19       know, how many patents does Johnson &
+
+20       Johnson have that were done by the folks
+
+21       that were employed by them?  If you have a
+
+22       consultant that's doing work, that's usually
+
+23       specified in the contract.
+
+24            Q.    So apart from your own personal
+
+25       experience in 1977 and forward time period,
+
+                        Longo - direct            105
+
+
+
+ 1       have you conducted any review of what was
+
+ 2       typical practice in the early 1970s with
+
+ 3       respect to patents and patent holders?
+
+ 4            A.    Absolutely.  When you worked or
+
+ 5       you're consulting for many companies, when
+
+ 6       we do consulting work for companies outside
+
+ 7       of litigation and we sign a contract, in
+
+ 8       those contracts are always that anything
+
+ 9       patentable that we developed on their behalf
+
+10       while they paid us, they have the First
+
+11       Right of Refusal on that patent.  This is
+
+12       absolutely how it's done and that's my
+
+13       opinion.
+
+14                  If you can provide some
+
+15       documents that shows that Colorado Schools
+
+16       decided on their own they didn't want to
+
+17       patent it or whatever, then I'll change my
+
+18       opinion about that; otherwise, no.  That's
+
+19       how it works in industry.
+
+20            Q.    Okay.  I believe that -- let me
+
+21       show you a document, Dr. Longo -- I believe
+
+22       that Kevin Hynes [ph] showed this to you in
+
+23       a prior deposition?
+
+24                  MR. TULLY:  Are we going to mark
+
+25            it?
+
+                        Longo - direct            106
+
+
+
+ 1                  MR. EWALD:  We are going to mark
+
+ 2            it.  Give me a second.
+
+ 3                  MR. TULLY:  I got a whole sheet
+
+ 4            here.  It's a sticky note; it's got to
+
+ 5            be filled.
+
+ 6                  MR. EWALD:  We will mark this as
+
+ 7            Exhibit 9.
+
+ 8                  (Exhibit 9, Document entitled
+
+ 9            Electron Microscopy and X-Ray
+
+10            Applications to Mine Consulting and
+
+11            Occupational Health Analysis, was
+
+12            received and marked for identification
+
+13            by the reporter.)
+
+14            Q.    For the record, there's a cover
+
+15       here for "Electron Microscopy and X-Ray
+
+16       Applications to Mine Consulting and
+
+17       Occupational Health Analysis," and if you
+
+18       go, then, to the next page, it's Chapter 12,
+
+19       "Pitfalls in X-Ray Diffraction Methods of
+
+20       Analysis For Impurities in Talc Powders."
+
+21                  So before we get to any
+
+22       questions about it, Dr. Longo, do you recall
+
+23       being shown this chapter?
+
+24            A.    I don't, but that doesn't mean I
+
+25       wasn't shown it.  I just don't recall it.
+
+                        Longo - direct            107
+
+
+
+ 1                  MR. TULLY:  John, could you get
+
+ 2            me a copy of that?
+
+ 3                  MR. EWALD:  Sure.  How about
+
+ 4            this, we've been going an hour.  I
+
+ 5            will put the article or the chapter
+
+ 6            in -- it's ten pages long in the chat
+
+ 7            and Brendan you'll have a chance to
+
+ 8            look over it.  Dr. Longo, if you can
+
+ 9            refresh your recollection or maybe
+
+10            look at it for the first time.  I'm
+
+11            not going to have a lot of questions
+
+12            on it, but I will have some.  Let's
+
+13            take a break now and I'll put it in
+
+14            the chat.
+
+15                  MR. TULLY:  That works.  Thank
+
+16            you.
+
+17                  (Recess occurred.)
+
+18                  MR. EWALD:  Back on the record.
+
+19            Q.    Dr. Longo, I'm going to share my
+
+20       screen, and put back up what I had marked as
+
+21       Exhibit 9 before the break.
+
+22                  During the break, I e-mailed a
+
+23       copy of this to Mr. Tully.  Did you have a
+
+24       chance to at least look through it over the
+
+25       break?
+
+                        Longo - direct            108
+
+
+
+ 1            A.    I skimmed through it and got to
+
+ 2       the important part, I think you wanted to
+
+ 3       show me; and after reading it, I think this
+
+ 4       paper proves my point.
+
+ 5            Q.    Okay.  We'll get there.  So
+
+ 6       first of all we already talked about the
+
+ 7       cover and Chapter 12, the co-authors are JB
+
+ 8       Krause from Colorado School of Mines
+
+ 9       research institute and Bill Ashton from
+
+10       Johnson & Johnson.  Correct?
+
+11            A.    Correct.  I think J B Krause was
+
+12       one of the signatures on the December 1973
+
+13       sign-offs.  I believe that was him on there.
+
+14            Q.    Okay.  And I can't remember if I
+
+15       read the title and chapter, but Chapter 12
+
+16       is entitled is called "Pitfalls in X-Ray
+
+17       Diffraction Methods of Analysis For
+
+18       Impurities in Talc Powders."  Right?
+
+19            A.    Correct.  If you scroll down
+
+20       just a little bit, I didn't see a date when
+
+21       this was published, but it had to be at
+
+22       least after 1976 due to that last reference.
+
+23            Q.    Right.  And I realized when I
+
+24       was flipping through it, Doctor, that this
+
+25       does not have a date, but similar to you, if
+
+                        Longo - direct            109
+
+
+
+ 1       I scroll all of the way down to Page 9 of 10
+
+ 2       where the references are cited, do you agree
+
+ 3       with me that the latest reference that's
+
+ 4       cited is from 1977?
+
+ 5            A.    Well, I didn't see '77.  So it
+
+ 6       was at least -- probably because it's a
+
+ 7       personal communication.  So it was at least
+
+ 8       1977.
+
+ 9            Q.    All right.  And the -- well,
+
+10       before I get any further, having reviewed
+
+11       it, do you have any recollection of seeing
+
+12       this document before?
+
+13            A.    No, but I went to the important
+
+14       part.  So --
+
+15            Q.    All right.  Well, get there in
+
+16       one second, but if we just generally
+
+17       characterize what is being discussed in this
+
+18       chapter in this book, there's a discussion
+
+19       of interpretation errors in the analysis for
+
+20       impurities in talc powders, and there's a
+
+21       discussion of amphiboles in single-peak
+
+22       identification.  Correct?
+
+23            A.    Correct.
+
+24            Q.    And if we discuss scrolling
+
+25       through, there's a discussion of
+
+                        Longo - direct            110
+
+
+
+ 1       interference errors and describes a couple
+
+ 2       of examples with that.  Right?
+
+ 3            A.    Correct.
+
+ 4            Q.    Then we get to "Methods For
+
+ 5       Elimination of Interference and
+
+ 6       Interpretation Problems."  And the first one
+
+ 7       discussed is handpicking.  Correct?
+
+ 8            A.    It does.
+
+ 9            Q.    And then there is a discussion
+
+10       with the section titled of "Density Gradient
+
+11       Column Heavy Liquid Separation."  Is that
+
+12       correct?
+
+13            A.    That is correct.
+
+14            Q.    And in that section, the
+
+15       authors, Mr. Krause and Mr. Ashton, are
+
+16       discussing the density of the column heavy
+
+17       liquid separation in the context of cosmetic
+
+18       talc analysis.  Right?
+
+19            A.    They do.  They -- the column
+
+20       separation method is not a very sensitive
+
+21       method.  What I find interesting, though,
+
+22       even though this is 1977, there's nothing in
+
+23       here about using centrifugation and specific
+
+24       heavy liquid density to do separations.
+
+25       Here they're layering -- they're using one,
+
+                        Longo - direct            111
+
+
+
+ 1       two, maybe three different heavy liquids and
+
+ 2       a column.  You put the sample in and shake
+
+ 3       it all up and you let it sit for a while,
+
+ 4       but it's not as sensitive because you're
+
+ 5       having to take the sample from whatever
+
+ 6       level is the heavy density by pipette, but
+
+ 7       it's separating them out but not making it
+
+ 8       concentrated enough to get the sensitivity
+
+ 9       for centrifugation and this is absolutely no
+
+10       protocol; this is "hey, we did it."
+
+11                  So you can't look at this at all
+
+12       as a methodology paper.  It's basically in
+
+13       my opinion a opinion why everybody is wrong
+
+14       and they're miss identifying stuff, but the
+
+15       column separation without anything about
+
+16       what density they're using, what size
+
+17       column, is it one, is it two?  It looks like
+
+18       it may be three, and what do they do?  How
+
+19       do they clean it out?  Are they filtering
+
+20       it?  Are they -- you can't just take the
+
+21       heavy liquid itself but if you think about
+
+22       using a centrifuge with one heavy liquid or
+
+23       doing double where you can concentrate
+
+24       what's been now in that and separated out
+
+25       and it's much more efficient than just
+
+                        Longo - direct            112
+
+
+
+ 1       waiting on gravity to do the trick.
+
+ 2                  So I think this absolutely
+
+ 3       verifies what I'm talking about that they're
+
+ 4       double density heavy liquid separation using
+
+ 5       centrifugation, is never even mentioned in
+
+ 6       here, even though it's at least four years
+
+ 7       after the fact that they had worked up the
+
+ 8       protocol.
+
+ 9            Q.    So is it your opinion that Bill
+
+10       Ashton at Johnson & Johnson and Mr. Krause
+
+11       at CSM, Colorado School of Mines, publishing
+
+12       a chapter in a scientific book about
+
+13       interferences in talcum powder analysis and
+
+14       mentioning their work on heavy liquid
+
+15       separation, that those steps are consistent
+
+16       with Johnson & Johnson actively covering up
+
+17       the CSM heavy density liquid separation
+
+18       method?
+
+19                  MR. TULLY:  Form.
+
+20            A.    Well, yes, it's a book chapter.
+
+21       One, it's not a protocol.  This does not
+
+22       tell you how to do this method.  It just
+
+23       tells we're doing a column.  You know,
+
+24       there's nothing in there that allows
+
+25       somebody to reproduce this, and it was all
+
+                        Longo - direct            113
+
+
+
+ 1       designed as a rebuttal to doing X-ray
+
+ 2       diffraction, and it's mainly chloride and
+
+ 3       misidentification.
+
+ 4                  This had nothing to do with
+
+ 5       about any of the positives analysis that
+
+ 6       they found when doing the heavy liquid
+
+ 7       separation, how they were able to isolate
+
+ 8       amphiboles in Vermont talc, amphibole
+
+ 9       asbestos, how they were able to isolate and
+
+10       find chrysotile, how they were using iodine
+
+11       to make the chrysotile more visible.
+
+12       There's nothing in there about what they
+
+13       signed off on.
+
+14                  So it's my opinion that this is
+
+15       not a protocol; and even though it's in a
+
+16       scientific journal, it's just a paper on
+
+17       what they did, not how they did it, and they
+
+18       didn't provide all of the facts of what they
+
+19       had been doing, and especially with
+
+20       centrifugation, it's not concentrating the
+
+21       minerals as efficient into using one density
+
+22       at a time or -- it's way different than what
+
+23       their protocol is.
+
+24                  You would have no idea reading
+
+25       this that they had a method using a
+
+                        Longo - direct            114
+
+
+
+ 1       centrifuge, instead of isolating the talc
+
+ 2       from the chloride, that they could isolate
+
+ 3       chrysotile from the talc, or they could
+
+ 4       isolate amphibole asbestos from the cosmetic
+
+ 5       talc using a centrifuge and using this
+
+ 6       double density method.
+
+ 7            Q.    So -- for now, you gave
+
+ 8       testimony in February of last year about --
+
+ 9       I guess -- am I right, Dr. Longo, that you
+
+10       gave a presentation to the FDA inner-agency
+
+11       working group in February of last year about
+
+12       heavy liquid separation methods?
+
+13            A.    Yes, it was on February 4th of
+
+14       last year.
+
+15            Q.    And included within that
+
+16       presentation was both a discussion of your
+
+17       work on heavy liquid separation with
+
+18       amphiboles, and you also gave details about
+
+19       your work with heavy liquid separation with
+
+20       the CSM method for chrysotile.  Correct?
+
+21            A.    Correct.
+
+22            Q.    Since giving that presentation
+
+23       in February -- on February 4th of 2020, has
+
+24       any governmental agency contacted you to
+
+25       learn more about your methods of heavy
+
+                        Longo - direct            115
+
+
+
+ 1       lifting separation?
+
+ 2            A.    No.
+
+ 3            Q.    Has any, I'll call it generally,
+
+ 4       standards organizations such as ISO
+
+ 5       contacted you since giving the presentation
+
+ 6       on February 4th of 2020 to learn more about
+
+ 7       your heavy liquid separation methods?
+
+ 8            A.    No, I've not heard from Dr.
+
+ 9       Chatfield yet.
+
+10            Q.    Okay.
+
+11            A.    But to be fair to the different
+
+12       governmental agencies, especially the FDA, I
+
+13       think they've been busy.
+
+14            Q.    They have.  Now, just a little
+
+15       bit of a wrap up, when you started today and
+
+16       I asked you to identify the materials you
+
+17       had with you, you identified, after the
+
+18       case-specific materials, a variety of
+
+19       different scientific documents, including
+
+20       McCrone 1974 paper, daily publication.  Do
+
+21       you remember generally discussing what you
+
+22       have in front of you?
+
+23            A.    Yes.
+
+24            Q.    I'm trying to make this easy.
+
+25       Are any of the materials you identified at
+
+                        Longo - direct            116
+
+
+
+ 1       the beginning of the deposition, scientific
+
+ 2       documents, are any of those documents that
+
+ 3       you are relying on identifying the first
+
+ 4       time in let's say the past month or so?
+
+ 5            A.    Only one.
+
+ 6            Q.    Okay.
+
+ 7            A.    And that would be the Delly --
+
+ 8       the Delly, the Scientific Advisor For
+
+ 9       College of Applied Science, and it has to do
+
+10       with --
+
+11            Q.    Sorry, I hate to interrupt you.
+
+12       Just before you go on, could you just spell
+
+13       Delly, and identify specifically what the
+
+14       document title is?
+
+15            A.    It's by John Gustav,
+
+16       G-u-s-t-a-v, Delly, D-e-l-l-y, and it's a
+
+17       2012 paper published in the Hook College of
+
+18       Applied Science and it's entitled, The
+
+19       Michelle`-Levy and it has a hyphen [sic]
+
+20       over the E, so that's probably not how you
+
+21       pronounce it, "Interference Color Chart
+
+22       Microscopy Magical Color Key."
+
+23            Q.    Thank you.  If you could explain
+
+24       specifically what you are relying on that
+
+25       paper for?
+
+                        Longo - direct            117
+
+
+
+ 1            A.    Well, this -- one of th e-- it's
+
+ 2       not so much as relying on, it's a rebuttal
+
+ 3       to Dr. Sanchez when he testified that the
+
+ 4       thickness of the bundles do not interfere
+
+ 5       with their change of the refractive indices
+
+ 6       during dispersion staining, and this paper
+
+ 7       is all about measuring the thickness of
+
+ 8       films on a substrate based on the
+
+ 9       interference and the change in the
+
+10       refractive indices as the thickness
+
+11       increases.
+
+12                  It actually references McCrone,
+
+13       and he was with -- and he published a paper
+
+14       in '73, second edition, about how this is
+
+15       done and how you could use refractive
+
+16       indices to determine what the thickness is
+
+17       of a particular layer.
+
+18                  MR. TULLY:  This is on Page --
+
+19            just for reference -- Page 9 of his
+
+20            Reliance list.
+
+21                  MR. EWALD:  Thank you.
+
+22            Q.    Anything else that you're
+
+23       relying on, Doctor?
+
+24            A.    I think everything else I have
+
+25       probably supplied in the past.  I
+
+                        Longo - direct            118
+
+
+
+ 1       provided -- I think I've talked about it in
+
+ 2       the past, and I'm missing at least one of
+
+ 3       them here where we took different RI
+
+ 4       fluids -- different RI fluids, and looked at
+
+ 5       Chinese fibrous talc to get an idea about
+
+ 6       what changes in the wavelengths of color as
+
+ 7       you change the refractive fluid.
+
+ 8            Q.    I guess at this point in time,
+
+ 9       it was only a couple of weeks ago, Mr. Tully
+
+10       and I and a few others had a discussion
+
+11       about the Lefton, L-e-f-t-o-n, case and as a
+
+12       result of that, there were a couple of
+
+13       things that I believe MAS agreed to do, and
+
+14       I'm not saying that they needed to have it
+
+15       done by now.  I'm just asking --
+
+16                  MR. TULLY:  No.
+
+17                  MR. EWALD:  What?
+
+18                  MR. TULLY:  They're doing it
+
+19            Friday.
+
+20                  MR. EWALD:  Okay.  Okay.
+
+21            Q.    So have you conducted the search
+
+22       yet the remainder of 2016 MAS primary
+
+23       database?
+
+24                  MR. TULLY:  Hold on.  Let me
+
+25            just put an objection.  I'm just going
+
+                        Longo - direct            119
+
+
+
+ 1            to object to form and relevance.  The
+
+ 2            --  this information is due by
+
+ 3            agreement on the 14th which we would
+
+ 4            be providing.  Please answer to the
+
+ 5            extent that you can.
+
+ 6            A.    Yes, it's -- since it's the
+
+ 7       14th -- when is that?  Is that this Friday
+
+ 8       or the following Friday?
+
+ 9                  MR. TULLY:  It's Friday.
+
+10            A.    Okay.  I --
+
+11            Q.    It's Monday.
+
+12                  MR. TULLY:  Monday.  Monday.
+
+13            Excuse me.
+
+14            A.    Monday.  Okay.  Because I've
+
+15       been working on and hopefully I can finish
+
+16       up in a week, but I'll get to this.  I know
+
+17       there's four things, you know; the old
+
+18       database of what's searchable, and the last
+
+19       six months of 2016, and how the archive
+
+20       samples are put together, I think.
+
+21            Q.    Right.  So am I correct that you
+
+22       have not identified any additional
+
+23       information about pre-2017 cosmetic talc
+
+24       testing by MAS since your last deposition in
+
+25       the Prudencio case last month?
+
+                         Longo - cross            120
+
+
+
+ 1            A.    I have no -- not.
+
+ 2            Q.    Okay.  I'll look over my notes.
+
+ 3       I'll pass the witness while do I that and
+
+ 4       thank you, Dr. Longo.
+
+ 5            A.    Thank you, sir.
+
+ 6                  MR. TULLY:  Great.  Dave, do you
+
+ 7            want to jump in or do you want to take
+
+ 8            a break?
+
+ 9                  MR. FRAZEE:  Let's take a break
+
+10            if you and I can finish our
+
+11            discussion.  Maybe a five-minute
+
+12            break --
+
+13                  MR. TULLY:  Sure.
+
+14                  (Recess occurred.)
+
+15
+
+16       CROSS-EXAMINATION BY MR. FRAZEE:
+
+17
+
+18                  MR. FRAZEE:  We're going to
+
+19            enter a quick stipulation on the
+
+20            record.  During the break, counsel for
+
+21            Publix and counsel for the plaintiffs
+
+22            stipulated that Dr. Longo will not be
+
+23            offering any opinions of testimony in
+
+24            this case or trial that any of the
+
+25            containers he tested could be traced
+
+                         Longo - cross            121
+
+
+
+ 1            to a Publix store.
+
+ 2                  MR. TULLY:  So stipulated.
+
+ 3                  MR. FRAZEE:  We agreed that I
+
+ 4            would ask a few follow-up questions to
+
+ 5            streamline things.
+
+ 6            Q.    Dr. Longo, we've spoken a few
+
+ 7       times over Zoom.  My name is David Frazee.
+
+ 8       I represent Publix Supermarket, Inc.  I'm
+
+ 9       just going to call them Publix.  Is that
+
+10       okay with you?
+
+11            A.    That's fine.
+
+12            Q.    A retailer standard of care is
+
+13       not in your expertise.  Correct?
+
+14                  MR. TULLY:  Objection.  We're
+
+15            not offering him as an expert in the
+
+16            -- in the expert standard care of
+
+17            retail, so it's beyond the scope.
+
+18            I'll allow him to answer but we're not
+
+19            offering him for that.
+
+20            A.    It's not an area I testify
+
+21       about.
+
+22            Q.    Okay.  So you won't be offering
+
+23       any opinions in this case regarding a
+
+24       retailer's standard of care or a retailer's
+
+25       conduct.  True?
+
+                         Longo - cross            122
+
+
+
+ 1            A.    That's true.
+
+ 2            Q.    Could you clarify a question
+
+ 3       real quick.  You have not tested a bottle of
+
+ 4       Johnson's Baby Powder that was purchased
+
+ 5       from any Publix store between 1999 and 2008.
+
+ 6       Correct?
+
+ 7            A.    That is correct.
+
+ 8            Q.    And so that would include you
+
+ 9       have not tested a bottle from 2001, one of
+
+10       the years that Mrs. Pritchard and her family
+
+11       visited Florida and purchased bottles from a
+
+12       Publix store in Florida.  Correct?
+
+13            A.    Correct.
+
+14            Q.    The same is true for 2005; you
+
+15       have not tested a bottle of Johnson's baby
+
+16       bottle purchased from Publix in 2005 from
+
+17       when Ms. Pritchard or her family visited
+
+18       Florida and purchased Johnson's Baby Powder
+
+19       from Publix.  True?
+
+20            A.    That is true.
+
+21            Q.    You have not tested a bottle of
+
+22       Johnson's baby powder actually used by or on
+
+23       Mrs. Pritchard.  Correct?
+
+24            A.    That is correct.
+
+25            Q.    None of the bottles you tested
+
+                         Longo - cross            123
+
+
+
+ 1       came from Ms. Pritchard or her family.
+
+ 2       Correct?
+
+ 3            A.    Correct.  I haven't tested any
+
+ 4       bottles that came from their household that
+
+ 5       was purchased from Publix.
+
+ 6            Q.    Thanks for the clarification,
+
+ 7       Dr. Longo.  Quick question about Exhibit 7
+
+ 8       which is your reliance list.
+
+ 9                  This is the complete list of
+
+10       reliance materials you were using to support
+
+11       your opinions against my client, Publix, in
+
+12       this case.  Correct?
+
+13                  MR. TULLY:  Form.
+
+14            A.    Well, it's not against anybody.
+
+15       I mean the only testimony I would state that
+
+16       is Publix sold J & J products and we tested
+
+17       J & J products.  I do have samples purchased
+
+18       from Publix, but I have not analyzed them
+
+19       yet.
+
+20            Q.    Just for clarification, for this
+
+21       case, Exhibit 7 is the complete --
+
+22                  MR. TULLY:  We're not going to
+
+23            rely on any notices -- if he has
+
+24            samples from Publix, we will not be
+
+25            testing them or providing them in this
+
+                         Longo - cross            124
+
+
+
+ 1            case or relying on them in this case.
+
+ 2                  MR. FRAZEE:  I just want to make
+
+ 3            sure this is the complete list of
+
+ 4            reliance materials that Dr. Longo will
+
+ 5            be using for his opinions in this
+
+ 6            case.
+
+ 7            Q.    Real quick, Dr. Longo, is
+
+ 8       Exhibit 7 the complete list of reliance
+
+ 9       materials you plan on using and testifying
+
+10       to support your opinions in this case?
+
+11            A.    I believe so.
+
+12            Q.    You don't maintain a file
+
+13       related to Publix?
+
+14            A.    No, sir, I don't.
+
+15            Q.    I think you talked about this
+
+16       just briefly.  Do you plan on issuing any
+
+17       opinions specific to Publix in this case?
+
+18                  MR. TULLY:  Form.
+
+19            A.    Not specific to Publix.
+
+20       Obviously, I know that Publix sold Johnson's
+
+21       Baby Powder during the time, but that has to
+
+22       do with my analysis of Johnson's Baby
+
+23       Powder, not specifically because it was
+
+24       purchased from Publix or not.
+
+25            Q.    So your opinions in this case
+
+                         Longo - cross            125
+
+
+
+ 1       are not based on the store where the
+
+ 2       plaintiff, Ms. Pritchard, alleges to have
+
+ 3       purchased the talcum powder?
+
+ 4                  MR. TULLY:  Form.
+
+ 5                  Please answer.
+
+ 6            A.    Well, it's not about purchasing
+
+ 7       from Publix.  It would be about in 2001, you
+
+ 8       know, we have analyzed Johnson's Baby Powder
+
+ 9       from the Vermont mine, but it has nothing to
+
+10       do for me that it came from Publix.
+
+11            Q.    So your opinions don't change
+
+12       depending upon where the product was
+
+13       purchased.  Right?
+
+14            A.    That is correct; it does not.
+
+15            Q.    Okay.  If it's purchased from
+
+16       any other store other than Publix, your
+
+17       opinions would stay the same?
+
+18            A.    They would.
+
+19            Q.    Let's talk a little bit about
+
+20       your exposure calculation, which I think are
+
+21       Exhibit 5.
+
+22                  You did not do any
+
+23       Publix-specific exposure calculation in this
+
+24       case.  Correct?
+
+25            A.    No.  It just had to do with the
+
+                         Longo - cross            126
+
+
+
+ 1       amount of containers wherever they came
+
+ 2       from.
+
+ 3            Q.    I'm going to go take a look at
+
+ 4       your exposure report real quick at Page 7.
+
+ 5            A.    Okay.
+
+ 6            Q.    All right.  You have the
+
+ 7       "Florida 2005 Holiday" titled on Page 7.  Do
+
+ 8       you see that?
+
+ 9            A.    Yes, I do.
+
+10            Q.    Just below that, it says "the
+
+11       amount of applications for the Florida 2005
+
+12       holiday will not be calculated separately as
+
+13       the 2001 Florida trip was.  This is because
+
+14       in 2005, the talcum powder used and JBP sold
+
+15       in the United States was from China, which
+
+16       is the same as in the UK since 1999."
+
+17                  Did I read that correctly?
+
+18            A.    You did.
+
+19            Q.    So for the 2005 holiday trip,
+
+20       you did not separate out the purchases Ms.
+
+21       Pritchard's family made from Publix separate
+
+22       from the UK samples that they brought with
+
+23       them; is that fair?
+
+24                  MR. TULLY:  Form.
+
+25            A.    Let me look where I did put it
+
+                         Longo - cross            127
+
+
+
+ 1       on -- if you look at Page 10, I mainly
+
+ 2       looked at just what she purchased at the
+
+ 3       top; "morning powdering UK, 2001, eight JB
+
+ 4       containers that she brought back to the UK,"
+
+ 5       and "2005, the eight Johnson Baby Powder
+
+ 6       15-ounce containers that were sourced from
+
+ 7       China from the Florida trip."
+
+ 8                  So I do have it in there,
+
+ 9       because this is the eight containers that
+
+10       she brought back which would be, you know,
+
+11       eight months of use.
+
+12            Q.    And so these are the only
+
+13       containers from her purchases -- her
+
+14       family's purchases from Publix that you use
+
+15       in your exposure calculation; is that what
+
+16       you're saying?
+
+17            A.    For the number of containers
+
+18       that was used at the -- at the Pritchard
+
+19       household.
+
+20            Q.    And so just to be clear, the
+
+21       eight bottles for 2001 and 2005, those are
+
+22       the bottles that Ms. Pritchard's mother says
+
+23       that she purchased and took back with her to
+
+24       the UK.  Correct?
+
+25            A.    Correct.
+
+                         Longo - cross            128
+
+
+
+ 1            Q.    And the -- and your exposure
+
+ 2       calculations are different between Florida
+
+ 3       and the UK, because of the humidity and the
+
+ 4       in number of times the talcum powder was
+
+ 5       used.  Correct?
+
+ 6                  MR. TULLY:  Form.
+
+ 7            A.    Correct.  I did put it in for
+
+ 8       2001 because that was Vermont, and then I
+
+ 9       didn't do any additional calculations
+
+10       specifically because of the short time
+
+11       frame, and it was Chinese for the 2005.
+
+12            Q.    And you didn't separate out the
+
+13       2005 for Publix versus the other Johnson's
+
+14       Baby Powder from the UK.  True?
+
+15            A.    That's true.
+
+16            Q.    Okay.  I want to pull up for you
+
+17       are the documents from your reliance
+
+18       materials.  So let's go ahead and mark this
+
+19       as Exhibit 10.  We'll mark this as
+
+20       Exhibit 10, which I have as a Declaration
+
+21       from you, Dr. Longo, from May 11, 2020, that
+
+22       was listed in your reliance materials.
+
+23                  (Exhibit 10, Declaration, dated
+
+24            May 11, 2020, was received and marked
+
+25            for identification by the reporter.)
+
+                         Longo - cross            129
+
+
+
+ 1            Q.    I'll scroll through it.  I can
+
+ 2       keep scrolling through it, but Dr. Longo,
+
+ 3       are you familiar with this document;
+
+ 4       Exhibit 10?
+
+ 5            A.    I'm familiar that I see that I
+
+ 6       signed it last year.
+
+ 7            Q.    Okay.  My main question will be
+
+ 8       about this chart, is Exhibit A here.  Are
+
+ 9       you familiar with the chart here that's
+
+10       listed "MAS Chart of J & J Testing"?
+
+11            A.    Yes.
+
+12            Q.    And what I want to do is I want
+
+13       to go through here, you understand that Ms.
+
+14       Pritchard and her family alleges to have
+
+15       purchased bottles from Publix in 2001 and
+
+16       2005.  Correct?
+
+17            A.    That's correct.
+
+18            Q.    And if we scroll through this
+
+19       list, none of the bottles that you have
+
+20       tested or finished product came from 2001.
+
+21       Correct?
+
+22            A.    I believe that's correct.
+
+23            Q.    I'm happy to scroll through it
+
+24       if it would help you, Doctor.  I'll scroll
+
+25       through for you.
+
+                         Longo - cross            130
+
+
+
+ 1            A.    We need to -- keep going.  If
+
+ 2       you go back up, and I'll tell you when to
+
+ 3       stop.  Nope, I don't see any that were
+
+ 4       tested in 2001.
+
+ 5            Q.    There were no finished products
+
+ 6       that you tested for the period of 2001?
+
+ 7                  MR. TULLY:  Objection to form.
+
+ 8            Q.    Let me re-ask that --
+
+ 9                  MR. TULLY:  Manufactured in
+
+10            2001?
+
+11            Q.    Let me withdraw and ask a
+
+12       cleaner -- Dr. Longo.
+
+13                  For your Johnson's Baby Powder
+
+14       analysis, you have not tested a bottle
+
+15       that's listed in your chart to the vintage
+
+16       for the Year 2001.  True?
+
+17                  MR. TULLY:  Form.
+
+18            A.    There was in our MDL report,
+
+19       2001/2002, but I guess I was wrong.
+
+20            Q.    So I'm asking about finished
+
+21       products real quick.  Let's just talk about
+
+22       finished products, ones that are actual
+
+23       containers.  You have not tested a container
+
+24       of Johnson's Baby Powder for the Year 2001
+
+25       correct?
+
+                         Longo - cross            131
+
+
+
+ 1                  MR. TULLY:  Objection to form.
+
+ 2            A.    If it's not in that chart,
+
+ 3       you're probably right.  Hold on.  Okay.
+
+ 4       Keep going.
+
+ 5            Q.    Let me see if I can ask you --
+
+ 6       let's see if we can clarify this.
+
+ 7                  So here on Page 39 --
+
+ 8            A.    Yeah, it looks like we tested a
+
+ 9       2001 from a railroad car, but I don't
+
+10       anything was detected.
+
+11            Q.    Okay.  So, again, this is a
+
+12       railcar sample.  This is -- this is for the
+
+13       record, MAS sample M69715004.  For sample
+
+14       M69751004, that is not a finished product
+
+15       that came in a bottle.  Correct?
+
+16            A.    That's correct.
+
+17            Q.    That is a railcar sample, and
+
+18       that's not the only sample that you've
+
+19       tested specifically from 2001.  Correct?
+
+20            A.    Correct.  I think that is
+
+21       correct.
+
+22            Q.    And it's for that M69751004,
+
+23       sample from 2001, it's listed as "not
+
+24       detected for asbestos."  Correct?
+
+25            A.    Correct.
+
+                         Longo - cross            132
+
+
+
+ 1            Q.    Let me just go up here.  Now,
+
+ 2       there is Line 10 here, which is sample
+
+ 3       M69751001.  That is listed as 2001 or 2002.
+
+ 4       Correct?
+
+ 5            A.    It is.
+
+ 6            Q.    And in that one you've
+
+ 7       identified tremolite?
+
+ 8            A.    Correct.
+
+ 9            Q.    Again, that is not a finished
+
+10       product bottle of Johnson's Baby Powder.
+
+11       Correct?
+
+12            A.    It's correct; it was not out of
+
+13       the bottle.  It is Grade 66, which is the
+
+14       Johnson & Johnson grade, but, as you stated,
+
+15       it's not out of a bottle.
+
+16            Q.    So let's just talk about the
+
+17       finished-product bottles.  I think we got
+
+18       this clear now, but for the finished
+
+19       products, you have not tested a bottle of
+
+20       Johnson's Baby Powder from 2001.  True?
+
+21            A.    I believe that's true.
+
+22            Q.    Now, I'm going to do the same
+
+23       for 2005.  I'll go ahead and scroll through
+
+24       here, but the question is:  You have not
+
+25       tested a finished product bottle of
+
+                         Longo - cross            133
+
+
+
+ 1       Johnson's Baby Powder for the Year 2005?
+
+ 2            A.    Correct.
+
+ 3                  MR. TULLY:  Form.  Manufactured
+
+ 4            in 2005.  Correct?  That's what you're
+
+ 5            asking?
+
+ 6                  MR. FRAZEE:  That's -- that's
+
+ 7            correct.
+
+ 8            A.    No, we haven't.
+
+ 9            Q.    And you haven't -- just to be
+
+10       clear, you haven't tested a bottle that was
+
+11       purchased in 2005, a finished -- let me
+
+12       strike that.
+
+13                  You have not tested a bottle of
+
+14       Johnson's Baby Powder that was purchased in
+
+15       2005.  Correct?
+
+16            A.    I don't believe so, no.
+
+17            Q.    And just to clarify for
+
+18       Mr. Tully, again, you have not tested a
+
+19       bottle of Johnson's Baby Powder that was
+
+20       purchased in 2001.  Correct?
+
+21            A.    I don't believe so.
+
+22            Q.    And the last question on this is
+
+23       for the railcar sample, because we had one
+
+24       2001 sample and one that was 2001 and 2005.
+
+25       The railcar samples, you have not tested a
+
+                         Longo - cross            134
+
+
+
+ 1       sample from the Year 2005.  Correct?
+
+ 2            A.    I believe that is correct.
+
+ 3            Q.    Let me just scroll through to be
+
+ 4       sure about this.  No railcar samples from
+
+ 5       2005.  Correct?
+
+ 6            A.    Correct.
+
+ 7            Q.    Let me pull that up real quick.
+
+ 8       Dr. Longo, you have tested some finished
+
+ 9       containers of Johnson's Baby Powder from the
+
+10       same year, and reached a different result on
+
+11       whether you were able to locate asbestos.
+
+12       Correct?
+
+13                  MR. TULLY:  Form.
+
+14            A.    I'm sorry, would you repeat
+
+15       that?
+
+16            Q.    You have tested -- there are
+
+17       some finished Johnson's Baby Powder
+
+18       containers you have tested that have the
+
+19       same year of vintage, but you reached a
+
+20       different result as to whether or not you
+
+21       were able to locate asbestos for those
+
+22       containers; is that true?
+
+23                  MR. TULLY:  Form.  Foundation.
+
+24            A.    I still don't really understand
+
+25       the question; I apologize.
+
+                         Longo - cross            135
+
+
+
+ 1            Q.    No, no, no problem at all.  I
+
+ 2       think it might be easier if we walked
+
+ 3       through an example.  How about that?
+
+ 4            A.    That would be great.
+
+ 5            Q.    All right.  I'm going to show
+
+ 6       you Exhibit 10 again.  So this is a bottle,
+
+ 7       which is at Page 11, Row 22.  It's sample
+
+ 8       M71046001, and it's listed as year 1996.
+
+ 9       Correct?
+
+10            A.    Correct.
+
+11            Q.    And for that bottle, at least
+
+12       under asbestos TEM, testing, you were not
+
+13       able to detect any asbestos.  True?
+
+14            A.    That's true.
+
+15            Q.    And then for your PLM testing,
+
+16       you located some chrysotile?
+
+17            A.    Correct.
+
+18            Q.    And just to be clear, 1996, that
+
+19       is Vermont talc?
+
+20            A.    That is correct.
+
+21            Q.    And then I'm going to look at
+
+22       Page 30, Row 50.  That's M68503-017.  That
+
+23       is also listed as vintage 1996 on your
+
+24       chart.  Correct?
+
+25            A.    It is.
+
+                         Longo - cross            136
+
+
+
+ 1            Q.    And for that testing, which is
+
+ 2       also Vermont talc, you did not locate any
+
+ 3       asbestos via TEM or PLM.  Correct?
+
+ 4            A.    PLM; however, that was not
+
+ 5       tested for chrysotile.  So you can't really
+
+ 6       compare the two.
+
+ 7            Q.    At this point, you have no
+
+ 8       testimony at least for this 1996 bottle
+
+ 9       having any asbestos in it.  Correct?
+
+10                  MR. TULLY:  Object to form.
+
+11            A.    Correct.  To your original
+
+12       question, you can't compare the two until we
+
+13       top analysis specific for chrysotile to see
+
+14       how it matches up with the other 1996.
+
+15            Q.    When it says "not able to
+
+16       detect," you will not be telling the jury
+
+17       you located -- actually located a fiber or a
+
+18       bundle of asbestos in this sample.  Correct?
+
+19            A.    That's correct; I would not, but
+
+20       I would also explain to the jury that it's
+
+21       missing the same test that was done on the
+
+22       other 1996.
+
+23            Q.    I am -- I want to able to
+
+24       clarify.  When you have not able to
+
+25       detect -- strike that.
+
+                         Longo - cross            137
+
+
+
+ 1                  When your chart says you were
+
+ 2       not able to detect asbestos, you cannot
+
+ 3       testify to the jury that you actually
+
+ 4       located asbestos correct?
+
+ 5                  MR. TULLY:  Form.
+
+ 6            A.    If that's the question was
+
+ 7       phrased, if there was any asbestos present
+
+ 8       for the detection limit, I would say no, but
+
+ 9       I would also explain if you're going to
+
+10       compare the two 1996 containers that one has
+
+11       an additional test.
+
+12            Q.    Not comparing the containers --
+
+13       I'll go ahead and take it down.  So there's
+
+14       no confusion when I'm asking you about
+
+15       comparing the containers, I'm just asking
+
+16       about not able to detect and how that means
+
+17       and how that would be portrayed to the jury.
+
+18       For that clarification, when you list or
+
+19       state that you were not able to detect
+
+20       asbestos, you cannot tell the jury that
+
+21       those samples that you actually located a
+
+22       fiber or a bundle of asbestos.  Correct?
+
+23            A.    For amphibole asbestos, it was
+
+24       below our detection limit for the three
+
+25       methods that were done.
+
+                         Longo - cross            138
+
+
+
+ 1            Q.    And below your detection limit
+
+ 2       means you didn't find an actual fiber or
+
+ 3       bundle.  Correct?
+
+ 4            A.    That's correct.
+
+ 5            Q.    And I -- Dr. Longo I'm going to
+
+ 6       look over my notes, but have we talked about
+
+ 7       all of your opinions you plan on offering on
+
+ 8       Publix in this case because you actually
+
+ 9       don't plan on offering any specific opinions
+
+10       as to Publix in this case?
+
+11                  MR. TULLY:  Form.
+
+12            A.    We talked about all of the
+
+13       specific opinions that I will not be
+
+14       offering in this case.
+
+15            Q.    Nothing as to Publix?
+
+16            A.    I'm sorry?
+
+17            Q.    Nothing specific as to Publix?
+
+18            A.    Correct.
+
+19            Q.    All right.  I'm going to look
+
+20       over my notes.  I'll pass the witness back
+
+21       to --
+
+22                  MR. TULLY:  John, unless you
+
+23            have any additional questions, I'm
+
+24            going to have a couple, but I need a
+
+25            couple of minutes to cross off some
+
+                       Longo - redirect           139
+
+
+
+ 1            things.
+
+ 2                  MR. EWALD:  I have a follow-up
+
+ 3            question that was in my notes and it
+
+ 4            was answered in response to David's
+
+ 5            questions, but I'm not clear as to the
+
+ 6            scope.  I'll ask the question and
+
+ 7            we'll see what happens.
+
+ 8
+
+ 9       REDIRECT EXAMINATION BY MR. EWALD:
+
+10
+
+11            Q.    Dr. Longo, during the
+
+12       questioning by Publix' counsel, I believe he
+
+13       asked you a question something like has MAS
+
+14       tested any talc products used by Jodie
+
+15       Pritchard or her family.  Do you recall that
+
+16       question?
+
+17            A.    I do.
+
+18            Q.    And then I believe your answer
+
+19       was "no, I have not tested any talc products
+
+20       purchased at Publix by Jodie Pritchard's
+
+21       family."
+
+22                  Is that sum and substance of
+
+23       what your answer was?
+
+24            A.    Yes.
+
+25            Q.    All right.  So my question is
+
+                       Longo - redirect           140
+
+
+
+ 1       still a broader one not tied to Publix.  Has
+
+ 2       MAS tested any talc products used by Jodie
+
+ 3       Pritchard or her family?
+
+ 4                  MR. TULLY:  Personally used.
+
+ 5            Right?  That's what you're asking?
+
+ 6                  MR. EWALD:  Yes.
+
+ 7            A.    As far as -- no.  "Personally
+
+ 8       used" would mean getting a container that
+
+ 9       they said here, we have been using this
+
+10       container and sent it to me versus the
+
+11       containers that were not used that were
+
+12       in -- strike that.  That was on the wrong
+
+13       case.
+
+14                  MR. TULLY:  It's Powell.
+
+15                  THE WITNESS:  I'm thinking of
+
+16            Powell.
+
+17            A.    I misspoke, and I apologize for
+
+18       that.  We have not tested any containers
+
+19       that were either in her house and sent to us
+
+20       or she used and sent us.
+
+21            Q.    I was about to have a whole mess
+
+22       of questions if the answer to that was --
+
+23            A.    I could see why.  I misspoke --
+
+24                  MR. TULLY:  I would have cleared
+
+25            that up and would have put the brakes
+
+                         Longo - cross            141
+
+
+
+ 1            on that.  We don't need to go down
+
+ 2            rabbit holes we don't need to.
+
+ 3            A.    I apologize.
+
+ 4            Q.    No problem.
+
+ 5                  MR. EWALD:  With that
+
+ 6            clarification, Brendan, I don't have
+
+ 7            any additional questions at this time.
+
+ 8                  MR. TULLY:  Great.  Let's take a
+
+ 9            five-minute break.  I'll go through my
+
+10            notes.
+
+11                  (Recess occurred.)
+
+12                  MR. TULLY:  Back on the record.
+
+13
+
+14       CROSS-EXAMINATION BY MR. TULLY:
+
+15
+
+16            Q.    Dr. Longo, Brendan Tully from
+
+17       Phillips & Paolicelli.  Thank you for your
+
+18       time today.  I just have a handful of
+
+19       questions.  I'm going to jump around a
+
+20       little bit, if that's -- that's okay with
+
+21       you.
+
+22                  First off, just a few minutes
+
+23       ago, you were being questioned by Publix'
+
+24       attorneys, and you were asked questions
+
+25       about testing bottles of -- Johnson bottles
+
+                         Longo - cross            142
+
+
+
+ 1       that were manufactured in 2001 and 2005.  Do
+
+ 2       you recall that testimony?
+
+ 3            A.    I do.
+
+ 4            Q.    As part of your research and
+
+ 5       analysis and testing of Johnson's and
+
+ 6       Johnson's talcum powder products, have you
+
+ 7       become aware generally of what talc source
+
+ 8       was used in Johnson & Johnson products over
+
+ 9       the years?
+
+10            A.    Yes.
+
+11            Q.    And is that something that you
+
+12       have researched and considered when forming
+
+13       your opinions?
+
+14            A.    Yes.
+
+15            Q.    Based on your understanding and
+
+16       your research, what talc source was Johnson
+
+17       & Johnson using in Johnson Baby Powder
+
+18       manufactured between 1999 and 2001?
+
+19            A.    That would be from the talc
+
+20       mines in Vermont.
+
+21            Q.    Okay.  And have you tested
+
+22       products that the -- Johnson's products that
+
+23       used the same talc source?
+
+24            A.    We have.
+
+25            Q.    What about 2004 and 2005, based
+
+                         Longo - cross            143
+
+
+
+ 1       on your understanding, what talc was
+
+ 2       Johnson's using in Johnson's Baby Powder
+
+ 3       manufactured between 2004 and 2005?
+
+ 4            A.    The talc source was from the
+
+ 5       Chinese talc mine.
+
+ 6            Q.    And have you tested Johnson &
+
+ 7       Johnson talcum powder products that used
+
+ 8       that same talc source?
+
+ 9            A.    Yes.  If the math is correct,
+
+10       tested 47 Johnson's Baby Powder containers
+
+11       specifically that had or were manufactured
+
+12       in that time frame.  Manufactured with
+
+13       Chinese with talcum powder.
+
+14            Q.    Okay.  Now, this morning -- this
+
+15       morning you were asked questions and you
+
+16       said that you -- it is your opinion that
+
+17       someone who used -- there's a range of
+
+18       exposure from chrysotile from someone who
+
+19       used the product with Chinese talcum powder
+
+20       between .01 and one fiber per CC.  Do you
+
+21       recall that testimony?
+
+22            A.    Yes.  On average, but also
+
+23       taking in consideration that you would have
+
+24       more concentration -- you would have
+
+25       potentially lower concentrations of exposure
+
+                         Longo - cross            144
+
+
+
+ 1       and potentially higher concentrations of
+
+ 2       exposure based on the finding of chrysotile
+
+ 3       in the chrysotile asbestos in the Chinese
+
+ 4       talcum powder.
+
+ 5            Q.    Now, based upon your research,
+
+ 6       analysis, testing and expertise, do you have
+
+ 7       a basis for that opinion, that range of
+
+ 8       exposure, of .01 to 1 from Chinese talc to
+
+ 9       chrysotile?
+
+10            A.    Yes.  Looking at the research
+
+11       and analysis that was done on chrysotile
+
+12       asbestos over the last 30 years, there is a
+
+13       specific difference in the amount of
+
+14       chrysotile fibers one would have on a per
+
+15       gram level versus amphibole asbestos; and in
+
+16       these 47 -- you know, assuming that it is 47
+
+17       containers where the PLM analysis shows on
+
+18       average that there's approximately a half a
+
+19       million chrysotile bundles per gram of
+
+20       talcum powder by PLM, in my opinion, that if
+
+21       the air sample, TEM analysis, or air
+
+22       samples, I would expect the morphology
+
+23       differences between the two that we would
+
+24       have a ten fold increase of the amount of
+
+25       fibers, and it could be even more.
+
+                         Longo - cross            145
+
+
+
+ 1                  Based on all of this research
+
+ 2       and all our analysis, it would be my opinion
+
+ 3       if at the point we do take air samples, we
+
+ 4       would see chrysotile in that range of what
+
+ 5       we talked about.
+
+ 6                  Where it is going to be on that
+
+ 7       range as "it's high as" or "as low as,"
+
+ 8       until we he take those air samples, we won't
+
+ 9       know; but based on all of the research work
+
+10       I've done over the years and all the testing
+
+11       and analysis of products showing that --
+
+12       asbestos-added products, you know, all of
+
+13       the way down to eight-tenths of a percent,
+
+14       we still see very significant levels up in
+
+15       the one- to two-fiber per CC range even when
+
+16       it's below one percent.
+
+17                  That has to do with the fact
+
+18       that the morphology of the chrysotile fibers
+
+19       are so different and so thin as compared to
+
+20       amphibole asbestos.
+
+21            Q.    And you had mentioned when you
+
+22       were discussing this range that you didn't
+
+23       have some data yet.  What did you mean by
+
+24       that, and what were you referring to?
+
+25            A.    Well, what we don't have yet
+
+                         Longo - cross            146
+
+
+
+ 1       specifically is a hygiene study with
+
+ 2       chrysotile asbestos.  So my opinion about
+
+ 3       these ranges aren't based on just me
+
+ 4       thinking it up.  It has to do with all of
+
+ 5       the analysis and research done over the
+
+ 6       years and all of the hundreds of -- and all
+
+ 7       of the studies where we've done exposures on
+
+ 8       hygiene -- on using where chrysotile is for
+
+ 9       work practice studies; just the sheer
+
+10       concentrations you see as compared to
+
+11       something like amphibole product.
+
+12            Q.    All right.  Doctor, those are
+
+13       all of the questions I that I have.  Thank
+
+14       you very much.  I don't know if there's any
+
+15       follow-up questions.
+
+16                  MR. EWALD:  Nothing from me.
+
+17                  MR. TULLY:  Great.  That
+
+18            concludes the deposition of Dr. Longo.
+
+19            Thank you all for your time.  Thank
+
+20            your for your efficiency and your
+
+21            patience.
+
+22                  (Deposition concluded at
+
+23            4:02 p.m.)
+
+24
+
+25
+
+                      
+
+
+                                                         147
+ 1
+
+ 2                         J U R A T
+
+ 3
+
+ 4         I, William Longo, M.D., the witness herein,
+
+ 5   do hereby certify the foregoing testimony of the
+
+ 6   pages of this deposition to be a true and correct
+
+ 7   transcript, subject to the corrections, if any, shown
+
+ 8   on the attached page.
+
+ 9
+
+10                           ___________________________
+                               WILLIAM LONGO, M.D.
+11
+
+12
+
+13   Subscribed and sworn to before me
+
+14   This _____ day of ____________ 2021.
+
+15
+
+16
+     _________________________________
+17            NOTARY PUBLIC
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+                            148
+
+
+
+ 1                  C E R T I F I C A T E
+
+ 2               I, SERAFINA R. ZINCKGRAF, a
+
+ 3       Certified Court Reporter, Registered
+
+ 4       Professional Reporter, do hereby certify that
+
+ 5       prior to the commencement of the examination,
+
+ 6       the witness was duly sworn by me to testify
+
+ 7       the truth, the whole truth and nothing but
+
+ 8       the truth.
+
+ 9               I DO FURTHER CERTIFY that the
+
+10       foregoing is a true and accurate transcript
+
+11       of the testimony as taken stenographically by
+
+12       and before me at the time, place and on the
+
+13       date hereinbefore set forth, to the best of
+
+14       my ability.
+
+15               I DO FURTHER CERTIFY that I am
+
+16       neither a relative nor employee nor attorney
+
+17       nor counsel of any of the parties to the
+
+18       action; and that I am neither a relative nor
+
+19       employee of such attorney or counsel; and
+
+20       that I am not financially interested in the
+
+21       action.
+
+22
+                  <%8171,Signature%>
+23
+                  SERAFINA R. ZINCKGRAF, CCR, RPR
+24                      License No. XI01637
+
+25
+
+
+
+ 1                   ERRATA SHEET
+          Priority-One Court Reporting/Veritext
+ 2                   718-983-1234
+     ASSIGNMENT NO. P1-4629819                                         
+ 3   CASE NAME: Pritchard, Jodie v. Asbestos
+     DATE OF DEPOSITION: 6/8/2021
+ 4   WITNESS' NAME: William E. Longo , Ph.D.
+     
+ 5   
+     PAGE/LINE(S)/    CHANGE           REASON
+ 6   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+ 7   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+ 8   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+ 9   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+10   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+11   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+12   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+13   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+14   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+15   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+16   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+17   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+18   ____/_______/_________________/__________
+     ____/_______/_________________/__________
+19   ____/_______/_________________/__________
+
+20               ________________________
+                  William E. Longo , Ph.D. 
+21   (Notary not required in California)
+     SUBSCRIBED AND SWORN TO
+22   BEFORE ME THIS______DAY
+     OF_______________, 2021.
+23   
+     _______________________
+24       NOTARY PUBLIC
+
+25   MY COMMISSION EXPIRES__________________
+
+
+
+
+

@@ -1,0 +1,4012 @@
+
+
+                                                                   4263
+
+
+           1           SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+           2                       COUNTY OF ALAMEDA
+
+           3               BEFORE THE HONORABLE STEPHEN KAUS
+
+           4                         DEPARTMENT 19
+
+           5                      VIA ZOOM CONFERENCE
+
+           6                           ---O0O---
+
+           7    CHRISTINA G. PRUDENCIO,
+
+           8          Plaintiff,
+
+           9    vs.                           No. RG20061303
+
+          10    JOHNSON & JOHNSON, et
+                al.,
+          11
+                      Defendants.
+          12    ________________________/
+
+          13
+                          REPORTER'S TRANSCRIPT OF PROCEEDINGS
+          14
+                        (Trial - Dean W. Felsher, M.D., Ph.D.;
+          15                    William E. Longo, Ph.D.)
+
+          16                    Tuesday, June 29, 2021
+
+          17                          Full Session
+
+          18
+
+          19
+
+          20         Taken before EARLY K. LANGLEY, B.A., RMR, RSA
+                                     CSR No. 3537
+          21
+
+          22
+
+          23
+               VOLUME 28
+          24
+
+          25   PAGES 4263 - 4456
+
+
+                                                                   4264
+
+
+           1   APPEARANCES OF COUNSEL ON THE RECORD VIA ZOOM
+
+           2   CONFERENCE:
+
+           3
+
+           4   For the Plaintiff:
+
+           5           JOSEPH SATTERLEY
+                       IAN RIVAMONTE
+           6           Kazan, McClain, Satterley & Greenwood
+                       55 Harrison Street, Suite 400
+           7           Oakland, California 94607
+                       (510) 302-1000
+           8           Jsatterley@kazanlaw.com
+                       Irivamonte@kazanlaw.com
+           9
+
+          10   For the Defendants Johnson & Johnson, Johnson & Johnson
+               Consumer Companies, Inc., Johnson & Johnson Inc., sii
+          11   Johnson & Johnson Cons Companies:
+
+          12           MORTON D. DUBIN
+                       SHAILA R. DIWAN
+          13           KEVIN HYNES
+                       King & Spalding LLP
+          14           1185 6th Ave Of The Americas
+                       New York, NY 10036
+          15           (212) 556-2100
+                       Sdiwan@kslaw.com
+          16           Mdubin@kslaw.com
+                       Khynes@kslaw.com
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4265
+
+
+           1            INDEX - VOLUME 28 - (Pages 4263 - 4456)
+
+           2                            SESSIONS
+
+           3   DATE                                                PAGE
+
+           4   Tuesday, June 29, 2021
+
+           5   Morning and Afternoon Session Combined              4270
+
+           6
+
+           7
+
+           8
+
+           9
+
+          10
+
+          11
+
+          12
+
+          13
+
+          14
+
+          15
+
+          16
+
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4266
+
+
+           1            INDEX - VOLUME 28 - (Pages 4263 - 4456)
+
+           2                     INDEX OF EXAMINATIONS
+
+           3                         CHRONOLOGICAL
+
+           4
+
+           5   DEAN W. FELSHER, M.D., Ph.D. (for the Plaintiff)
+                      Cross-Examination By Ms. Diwan (Cont'd)      4293
+           6          Redirect Examination By Mr. Satterley        4393
+                      Cross-Examination By Ms. Diwan               4407
+           7
+               WILLIAM E. LONGO, Ph.D. (for the Plaintiff)
+           8          Direct Examination By Mr. Satterley          4416
+
+           9
+
+          10
+
+          11
+
+          12
+
+          13
+
+          14
+
+          15
+
+          16
+
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4267
+
+
+           1            INDEX - VOLUME 28 - (Pages 4263 - 4456)
+
+           2                     INDEX OF EXAMINATIONS
+
+           3                             ALPHA
+
+           4   WITNESSES:                                          PAGE
+
+           5
+               DEAN W. FELSHER, M.D., Ph.D. (for the Plaintiff)
+           6          Cross-Examination By Ms. Diwan (Cont'd)      4293
+                      Redirect Examination By Mr. Satterley        4393
+           7          Cross-Examination By Ms. Diwan               4407
+
+           8   WILLIAM E. LONGO, Ph.D. (for the Plaintiff)
+                      Direct Examination By Mr. Satterley          4416
+           9
+
+          10
+
+          11
+
+          12
+
+          13
+
+          14
+
+          15
+
+          16
+
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4268
+
+
+           1            INDEX - VOLUME 28 - (Pages 4263 - 4456)
+
+           2                       INDEX OF EXHIBITS
+
+           3
+
+           4   PLAINTIFF'S                              ID     EV    WD
+
+           5                (No Exhibits Marked.)
+
+           6
+
+           7
+
+           8
+
+           9
+
+          10
+
+          11
+
+          12
+
+          13
+
+          14
+
+          15
+
+          16
+
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4269
+
+
+           1            INDEX - VOLUME 28 - (Pages 4263 - 4456)
+
+           2                       INDEX OF EXHIBITS
+
+           3   DEFENDANT'S                              ID     EV    WD
+
+           4   DX20254      IASLC: Anaplastic         4348
+                            lymphoma kinase gene
+           5                rearrangement in
+                            children and young
+           6                adults with
+                            mesothelioma by Idrees
+           7                Mian, et al.
+
+           8   DX20223      Translational Oncology:   4374
+                            14 (2021): "STRN-ALK
+           9                rearranged pediatric
+                            malignant peritoneal
+          10                mesothelioma --
+                            Functional testing of
+          11                527 cancer drugs in
+                            patient-derived cancel
+          12                cells" by Astrid
+                            Murum gi
+          13
+               DX21168.     3/12/21 Email, J.         4389
+          14   005          Satterley to D. Felsher
+                            re Prudencio - talc
+          15                asbestiform
+                            cummingtonite in tissue
+          16
+
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4270
+
+
+           1                            --oOo--
+
+           2                    P R O C E E D I N G S
+
+           3                            --oOo--
+
+           4               Tuesday, June 29, 2021 - 8:22 a.m.
+
+           5                (Morning and Afternoon Session)
+
+           6            (The following proceedings were held in the
+
+           7   virtual breakout room with counsel only outside the
+
+           8   presence of the jury:)
+
+           9            THE COURT:  So we're going to go on the record
+
+ 08:22:56 10   outside the presence of the jury in the Prudencio case.
+
+          11            And Ms. Diwan has an issue involving
+
+          12   Dr. Felsher.
+
+          13            MS. DIWAN:  So Your Honor made a ruling
+
+          14   yesterday before we started the examination of
+
+ 08:23:08 15   Dr. Felsher about which sort of medical records could
+
+          16   come in and which ones couldn't, and the ruling was
+
+          17   that Ms. Prudencio's request is out, but communications
+
+          18   that disclose the treatment plan, those come in.
+
+          19            So we emailed with counsel during the
+
+ 08:23:25 20   examination multiple times asking if they had accepted
+
+          21   our redactions to the document.  I held off on that
+
+          22   portion of the cross-examination because we didn't hear
+
+          23   back from them.
+
+          24            At the end of court, we heard back that they
+
+ 08:23:37 25   did not believe that Your Honor had made a ruling as to
+
+
+                                                                   4271
+
+
+           1   the exhibit so there was no need to discuss redactions.
+
+           2            So we emailed again last night.  I emailed, you
+
+           3   know, the page/line where I believe you ruled on it,
+
+           4   haven't heard back since, so we decided to take it up
+
+ 08:23:51  5   first thing with Your Honor today.
+
+           6            I'm happy to show you the redactions and screen
+
+           7   share exactly what I intend to remove so that there's
+
+           8   no evidence that Ms. Prudencio made the request of her
+
+           9   doctor, simply showing that -- the portions that
+
+ 08:24:04 10   Dr. Levine responded to without any sort of mention of
+
+          11   the question.
+
+          12            MR. SATTERLEY:  So our response is, we do
+
+          13   understand Your Honor said for cross-examination,
+
+          14   counsel can utilize this, and we have no objection,
+
+ 08:24:17 15   based upon Your Honor's ruling.
+
+          16            But I think Your Honor did say that you
+
+          17   reserved whether or not the document will be received
+
+          18   into evidence, and that was our point, is -- yes,
+
+          19   you're going to cross-examine with the Levine treatment
+
+ 08:24:31 20   plan, but whether or not it gets received into evidence
+
+          21   today, I think Your Honor reserved on that point.
+
+          22            And so I think that's the dispute, is they
+
+          23   think that Your Honor ruled that it definitely comes
+
+          24   into evidence, and I thought -- the way I heard Your
+
+ 08:24:45 25   Honor's ruling is that for cross-examination, it's
+
+
+                                                                   4272
+
+
+           1   permitted; whether or not it comes into evidence will
+
+           2   be deferred to a later date.
+
+           3            THE COURT:  What are we generally doing with
+
+           4   medical records?  I mean, that was the area that I
+
+ 08:24:56  5   hoped we could reach some agreement, that they could
+
+           6   all be used similarly.
+
+           7            MR. SATTERLEY:  So what I would like to do --
+
+           8   we already moved in many of the medical records.  What
+
+           9   I would propose we do is, counsel cross-examine
+
+ 08:25:12 10   Felsher, and I want to see how that cross-examination
+
+          11   unfolds and -- because I may withdraw certain other
+
+          12   objections to the document, depending on what comes in
+
+          13   and what doesn't come in.
+
+          14            And so what I suggest we do is meet and confer,
+
+ 08:25:30 15   you know, tonight or tomorrow and determine --
+
+          16            MS. DIWAN:  No time to meet and confer.  Right?
+
+          17   I'm in the middle of cross-examination, and I asked you
+
+          18   to meet and confer during the trial day yesterday and
+
+          19   last night.
+
+ 08:25:40 20            MR. SATTERLEY:  So Your Honor's ruling
+
+          21   yesterday was she can cross-examine with that redacted
+
+          22   document.
+
+          23            THE COURT:  Right.
+
+          24            MR. SATTERLEY:  So I expect that's going to
+
+ 08:25:49 25   occur.  And whether or not the document comes in
+
+
+                                                                   4273
+
+
+           1   redacted or unredacted, I think should be a
+
+           2   meet-and-confer process after this witness testifies.
+
+           3            THE COURT:  Well, so Ms. Diwan, do you need to
+
+           4   get it into evidence today?  Can we look at all the
+
+ 08:26:01  5   medical records kind of as a unit and come to
+
+           6   something?
+
+           7            MS. DIWAN:  So I just think that as long as I
+
+           8   can show the redacted version -- and, again, this is
+
+           9   not redacting the "you" or "your" or any of those
+
+ 08:26:12 10   issues that Mr. Satterley raised.  It's simply
+
+          11   redacting what's in Your Honor's ruling.
+
+          12            The portions from Ms. Prudencio are all
+
+          13   redacted, and the single line from Dr. Levine where he
+
+          14   says, "To answer your other questions" has been
+
+ 08:26:23 15   redacted from his message so there's no evidence the
+
+          16   question came from her.  Everything in the body of
+
+          17   Dr. Levine's emails remain otherwise.
+
+          18            THE COURT:  All right.  And Mr. Satterley is
+
+          19   nodding his head, and I think we have agreement on
+
+ 08:26:41 20   that.  And that's -- basically, was my ruling.
+
+          21            MS. DIWAN:  And that's for court demonstrative
+
+          22   on cross, and we are in agreement on that now.
+
+          23            THE COURT:  Right.
+
+          24            MS. DIWAN:  The only -- and that's, frankly,
+
+ 08:26:50 25   Your Honor, why I was asking about the redactions.  It
+
+
+                                                                   4274
+
+
+           1   wasn't even a coming-into-evidence issue.  I just
+
+           2   wanted to make sure we were on the level before I put
+
+           3   something up in front of the jury.
+
+           4            THE COURT:  All right.  There are a lot of
+
+ 08:27:01  5   moving parts here, considering -- I mean, I forgot to
+
+           6   bring my fourth computer this morning, and you're --
+
+           7   and you're examining, and you're sending
+
+           8   meet-and-confer messages during the examination.  I
+
+           9   mean, at some point, it's kind of overload.
+
+ 08:27:15 10            MS. DIWAN:  I don't have that many arms.
+
+          11   Mr. Hynes, however, is an excellent multitasker.  I
+
+          12   think he could do the trial by himself, probably.
+
+          13            So the other issue is, does it come into
+
+          14   evidence?  And I'm happy to defer on that, but I will
+
+ 08:27:30 15   say, you know, several records from Mr. Satterley came
+
+          16   into evidence.  We made an agreement.  We made a horse
+
+          17   trade and said, you know, "If you are going to agree as
+
+          18   to some, we are going to have an agreement as to all."
+
+          19            What I am hearing now is a complete flip-flop
+
+ 08:27:42 20   on that, so then I would say, everything that got
+
+          21   admitted, we need to take it back off the table because
+
+          22   they have gone back on our agreement.
+
+          23            THE COURT:  So I'm going to be an optimist here
+
+          24   and assume that this agreement is still going to go
+
+ 08:27:55 25   through.  It should be -- you know, we can't just take
+
+
+                                                                   4275
+
+
+           1   that one medical record and treat it differently from
+
+           2   every other.
+
+           3            I thought we basically agreed they'd come in
+
+           4   with redactions, and I'm hoping everyone can agree.
+
+ 08:28:09  5   And if not, then I'm going to have to rule.  You know,
+
+           6   they're business records, et cetera, so -- so
+
+           7   they're...
+
+           8            I don't want to get ahead of myself because we
+
+           9   haven't really -- nobody has really presented their
+
+ 08:28:26 10   position that they don't come in, and I want to
+
+          11   consider it.  But they seem like it would be reasonable
+
+          12   for them to come in with redactions under 352, which
+
+          13   you've done.
+
+          14            MR. SATTERLEY:  Can we turn to the two slides
+
+ 08:28:44 15   on Longo so we can get that out of the way?
+
+          16            THE COURT:  Sure.
+
+          17            MR. SATTERLEY:  Your Honor, the two slides that
+
+          18   we're -- now is the map.  There's one -- there's two
+
+          19   slides that's got the map of the United States, and it
+
+ 08:28:58 20   comes directly out of the Campbell paper, which is, the
+
+          21   Bureau of Mines, in 1977, published upon asbestiform
+
+          22   and nonasbestiform minerals.
+
+          23            And I can screen share.
+
+          24            THE COURT:  Okay.  Then I will turn off my
+
+ 08:29:19 25   browser if you are going to screen share.
+
+
+                                                                   4276
+
+
+           1            MR. SATTERLEY:  Yeah.
+
+           2            THE COURT:  Has anybody figured out how to not
+
+           3   have Zoom, every time you reopen it, do the full screen
+
+           4   view so you've got to minimize it in order to get to
+
+ 08:29:31  5   your browser to get to the exhibits?  It's, like, too
+
+           6   many clicks.
+
+           7            All right.
+
+           8            MR. SATTERLEY:  Yeah, it's frustrating.
+
+           9   Clicking back and forth between transcripts and
+
+ 08:29:44 10   documents was -- it's a little clunky.
+
+          11            THE COURT:  Yes.
+
+          12            MR. SATTERLEY:  So this is the first of the two
+
+          13   slides.  There's no objection to a similar slide that
+
+          14   comes next that shows the cover of the publication.
+
+ 08:29:58 15            I understand that counsel objects to the
+
+          16   heading here.  And it's true, and that's his testimony,
+
+          17   and that's what -- in 1977, the Campbell paper cites --
+
+          18   I should put "paper" -- cites to the EPA, which reports
+
+          19   the entire state of Vermont's bedrock contain
+
+ 08:30:17 20   asbestiform minerals.
+
+          21            And if you zoom in into Figure 1 right there,
+
+          22   that's exactly what it says, the EPA -- regions of the
+
+          23   EPA -- shaded area reported by the EP- -- "regions of
+
+          24   the United States, shaded area reported by the EPA to
+
+ 08:30:37 25   contain asbestiform minerals in the bedrock."
+
+
+                                                                   4277
+
+
+           1            And the entire state of Vermont is shaded in
+
+           2   that fashion.
+
+           3            Both these documents are in the -- J&J's
+
+           4   files -- historic files at the time, both in '74 and in
+
+ 08:30:55  5   '77, so they are going to come in for the -- at the
+
+           6   very least, on notice issues.
+
+           7            So I don't think that this is unduly
+
+           8   prejudicial.  It's not argumentative.  It's just
+
+           9   demonstrative of what historically occurred.
+
+ 08:31:13 10            MR. HYNES:  Your Honor, we objected on 352
+
+          11   grounds.  We also believe it's argumentative and
+
+          12   speculative to say that the entire state of Vermont's
+
+          13   bedrock contains asbestiform minerals.
+
+          14            As you can see from the map, it says that these
+
+ 08:31:24 15   are regions where that may happen.  It does not say
+
+          16   that the entire state of Vermont's bedrock is
+
+          17   contaminated with asbestiform minerals, nor does it say
+
+          18   that the entire New England region or the whole West
+
+          19   Coast has bedrock that is entirely contaminated with
+
+ 08:31:40 20   asbestiform minerals.
+
+          21            So we believe that that misstates the document
+
+          22   upon which Dr. Longo is relying for this piece of his
+
+          23   opinion testimony.
+
+          24            And we'd also note that he lacks foundation and
+
+ 08:31:53 25   qualifications to testify as to geological issues.
+
+
+                                                                   4278
+
+
+           1   He's not a geologist.  He's not a mineralogist.  He's a
+
+           2   materials scientist.
+
+           3            And so our objection here, if they remove the
+
+           4   word "entire" from the title here, I believe that
+
+ 08:32:08  5   resolves the issue and eliminates the misleading nature
+
+           6   of the title that's presented that represents the
+
+           7   findings from -- reported in Campbell and in the 1974
+
+           8   EPA document upon which this map was based.
+
+           9            MR. SATTERLEY:  So my response to that is, it
+
+ 08:32:33 10   doesn't say "may contain."  It says, "reported by the
+
+          11   EPA to contain."  And it doesn't say, "only a portion
+
+          12   of the shaded areas.  It says, "the shaded areas."
+
+          13            So I think the point of the entire state or
+
+          14   just part of the state is fine for cross-examination.
+
+ 08:32:51 15   That's an area of cross-examination.
+
+          16            It's not an area that is unduly prejudicial.
+
+          17   It's not argumentative.  It's simply reporting the
+
+          18   facts as J&J knew them, according to the documents in
+
+          19   their files.  And these are both government
+
+ 08:33:07 20   publications, both the EPA in '74 and the Bureau of
+
+          21   Mines in '77.
+
+          22            THE COURT:  So you won't take out the
+
+          23   word "entire"?
+
+          24            MR. SATTERLEY:  If Your Honor orders me to, I
+
+ 08:33:17 25   will, but I don't think it's argumentative.
+
+
+                                                                   4279
+
+
+           1            THE COURT:  What does the report say?  I
+
+           2   mean --
+
+           3            MR. SATTERLEY:  The report --
+
+           4            MR. HYNES:  I can -- I can step in there.
+
+ 08:33:24  5            MR. SATTERLEY:  This is from the report.
+
+           6            MR. HYNES:  The report cites to -- this is a
+
+           7   map from the 1977 Campbell paper, and it states that
+
+           8   these are regions in which the bedrock may contain
+
+           9   asbestiform minerals.
+
+ 08:33:34 10            And it cites to Cite 16, which is a 1974 EPA
+
+          11   publication, and they go state by state, where that EPA
+
+          12   publication reports areas in which asbestiform minerals
+
+          13   have been found in certain states.
+
+          14            And for the state of Vermont, there's a report
+
+ 08:33:55 15   on the counties in which asbestiform minerals have been
+
+          16   identified in the state of Vermont.  And those counties
+
+          17   and regions do not include the specific areas that
+
+          18   Johnson & Johnson mined its cosmetic talcum powder
+
+          19   products.
+
+ 08:34:11 20            So it's not -- the '74 document does not report
+
+          21   the entire state's bedrock is contaminated with
+
+          22   asbestiform minerals.  There were certain areas within
+
+          23   the state of Vermont where they can be found in the
+
+          24   bedrock.
+
+ 08:34:25 25            And so the use of the term "entire" in the
+
+
+                                                                   4280
+
+
+           1   title here is misleading because it misstates both the
+
+           2   Campbell paper and the 1974 document upon which it's
+
+           3   based.
+
+           4            MR. SATTERLEY:  So in response to that,
+
+ 08:34:37  5   Mr. Hynes may not recall the '74 document very well
+
+           6   because it specifically calls out Windsor Minerals as
+
+           7   one of the areas where asbestiform minerals have been
+
+           8   documented.
+
+           9            MR. HYNES:  That's not true.
+
+ 08:34:53 10            THE COURT:  Why don't we take the word "entire"
+
+          11   out.  And I assume Dr. Longo is ready to be
+
+          12   cross-examined on this and have some factual
+
+          13   information?  Because it seems to be a matter of
+
+          14   dispute.  And I don't know what other evidence is
+
+ 08:35:13 15   coming in on this issue.
+
+          16            MR. SATTERLEY:  Yeah, I believe -- I believe
+
+          17   both of -- the report -- the Campbell report -- we are
+
+          18   going to be offering both the Campbell report and
+
+          19   the '74 EPA document into evidence because they were a
+
+ 08:35:26 20   part of J&J's files, and so at some point, we'll be
+
+          21   offering that into evidence.
+
+          22            THE COURT:  I mean, obviously -- the map seems,
+
+          23   obviously, areas where, potentially, you would find
+
+          24   asbestiform minerals, not that they're entirely
+
+ 08:35:45 25   covered.
+
+
+                                                                   4281
+
+
+           1            MR. SATTERLEY:  I've removed the word "entire."
+
+           2            The second slide, the last slide in dispute, is
+
+           3   a slide that says -- let me just find it
+
+           4   here -- "McCrone reports no quantifiable asbestos, but
+
+ 08:36:14  5   Cyprus found the asbestos."
+
+           6            And the very next slide is -- which they don't
+
+           7   object to, is -- and Your Honor's probably recalled
+
+           8   this.  This was done in O'Hagan, very similar, where
+
+           9   there is a letter from McCrone to Cyprus finding the
+
+ 08:36:30 10   asbestos, but they say "nonquantifiable."
+
+          11            So they object to this.
+
+          12            I can change it.  I could change --
+
+          13            THE COURT:  Well, what's the objection?
+
+          14            MR. HYNES:  It's argumentative, Your Honor.
+
+ 08:36:42 15   This is something that you would find in a closing
+
+          16   argument presentation, as opposed to an expert's
+
+          17   testimony.
+
+          18            He can show the document and state what the
+
+          19   document states.  But to have this sort of in from
+
+ 08:36:55 20   Dr. Longo on McCrone choosing to, I guess, purportedly
+
+          21   hide the positive results, whereas Cyprus is not, it's
+
+          22   identifying something that, I guess, purportedly
+
+          23   McCrone hid.
+
+          24            It's more argumentative, prejudicial, and we
+
+ 08:37:12 25   would seek exclusion of this particular slide.  I think
+
+
+                                                                   4282
+
+
+           1   they can make their points about what this document
+
+           2   states without inclusion of Slide 143 here.
+
+           3            MR. SATTERLEY:  And I think it's not
+
+           4   argumentative.  We've already talked very briefly
+
+ 08:37:26  5   with -- nonquantifiable with Dr. Egilman.  This just
+
+           6   makes the point that McCrone reports "no quantifiable."
+
+           7            And this is the section of the direct
+
+           8   examination on the limitations when you have negative
+
+           9   tests or nondetects or nonquantifiable.  This is just
+
+ 08:37:44 10   explaining why there's limitations to those reports.
+
+          11            THE COURT:  All right.  I have to admit
+
+          12   argumentative slides is kind of a new ones for me to
+
+          13   have to rule on.
+
+          14            What if it just said, "Cyprus found asbestos"?
+
+ 08:38:15 15            MR. SATTERLEY:  Okay.
+
+          16            THE COURT:  And then you've just got the facts
+
+          17   up there.  I think that's fair.
+
+          18            MR. SATTERLEY:  Okay.  I will make those
+
+          19   changes.
+
+ 08:38:26 20            THE COURT:  All right.  And then are there
+
+          21   any -- is that all we need to do?
+
+          22            There were some other -- the other ones
+
+          23   Mr. Hynes emailed about are taken care of?
+
+          24            MR. HYNES:  They're related to the Musco
+
+ 08:38:38 25   depositions that have been designated.
+
+
+                                                                   4283
+
+
+           1            MR. SATTERLEY:  So let me just make sure my
+
+           2   language -- I apologize.  I'm making a change to this.
+
+           3            I took out "but."
+
+           4            And then "Cyprus identified asbestos."
+
+ 08:38:53  5            Is that what Your Honor said I should say?
+
+           6            THE COURT:  Right.  Right.
+
+           7            MR. SATTERLEY:  Okay.  I'm sorry, Mr. Hynes.  I
+
+           8   just wanted to make sure I had it correct.
+
+           9            Go ahead.
+
+ 08:39:06 10            THE COURT:  All right.  I think that's fair
+
+          11   given that letter is not the most legible thing I've
+
+          12   ever seen, so...
+
+          13            All right.  So now we're on to Musco?
+
+          14            MR. RIVAMONTE:  Yes, Your Honor.
+
+ 08:39:19 15            So there are two exhibits that J&J objects to.
+
+          16            The first one is the June 17, 1985, letter.
+
+          17            THE COURT:  I printed them out so I have them
+
+          18   here.
+
+          19            MR. RIVAMONTE:  Yeah.  So J&J doesn't want to
+
+ 08:39:35 20   exclude the entire letter.  J&J just wants certain
+
+          21   redactions.
+
+          22            And the first one is the paragraph regarding
+
+          23   Complaint Number 00353, "Ingestion."
+
+          24            The two paragraphs regarding Complaint
+
+ 08:39:49 25   Number -- this is page 2 now -- 40756 and 32098.
+
+
+                                                                   4284
+
+
+           1            And pretty much the entirety of page 3, the
+
+           2   body of page 3, except for the signature line and the
+
+           3   header, and the cc line, and the line above it.
+
+           4            MR. HYNES:  Right.  Our position on this, Your
+
+ 08:40:10  5   Honor, is that in the Musco transcript from Foley,
+
+           6   certain portions of the second case on the first page,
+
+           7   02043, Joly, J-o-l-y, that's discussed in the context
+
+           8   of Ms. Musco's deposition, and this particular claim is
+
+           9   discussed.
+
+ 08:40:30 10            The other complaints that are listed in here
+
+          11   relate to other injuries, ingestion, inhalation by
+
+          12   incidents not related to diseases and points at issue
+
+          13   here.
+
+          14            I believe that they're unduly confusing,
+
+ 08:40:47 15   prejudicial, and those other complaints that weren't
+
+          16   discussed in the course of Ms. Musco's deposition that
+
+          17   has nothing to do with the issues before us here in
+
+          18   this case, should be redacted on 352 grounds, and given
+
+          19   Your Honor's rulings on other injuries in this case.
+
+ 08:41:03 20            THE COURT:  I'm sorry.  I knew this last night,
+
+          21   but which one is the Joly one that you don't object to?
+
+          22            MR. HYNES:  02043.  It's on the second --
+
+          23            THE COURT:  Right.
+
+          24            MR. HYNES:  So that's discussed during the
+
+ 08:41:18 25   course of Ms. Musco's deposition in Foley.  We did not
+
+
+                                                                   4285
+
+
+           1   object to, you know, unredacted portions of that being
+
+           2   displayed, and this particular document going back.
+
+           3   But we would request redaction on the remaining entries
+
+           4   on this document given that they relate to other
+
+ 08:41:34  5   injuries and --
+
+           6            THE COURT:  I mean, they're all about
+
+           7   ingestion, like swallowing talcum powder, which doesn't
+
+           8   seem to have much to do with what we're doing here.  I
+
+           9   mean, it's basically sort of a poisonous analysis.
+
+ 08:41:52 10            MR. RIVAMONTE:  Well, we think it's relevant
+
+          11   because it shows design defect.  It shows that Johnson
+
+          12   & Johnson knew about the hazards of talc.  And we
+
+          13   pretty much laid this out in our opposition to Johnson
+
+          14   & Johnson's MIL.
+
+ 08:42:04 15            I understand your Court's ruling.  I just want
+
+          16   to make sure that, you know, plaintiffs have stated
+
+          17   their opposition to preserve the record.
+
+          18            THE COURT:  Understood.  I think it should be
+
+          19   redacted as requested.  I mean -- and just to put on
+
+ 08:42:15 20   the record, I mean, basically, this is about eating
+
+          21   talcum powder, and the container.  And we're just not
+
+          22   going to -- it's just not what we're litigating here,
+
+          23   so I think it should be redacted.
+
+          24            MR. RIVAMONTE:  Understood, Your Honor.  I will
+
+ 08:42:38 25   make those redactions.
+
+
+                                                                   4286
+
+
+           1            And the other exhibit is 6714F.  Plaintiff's
+
+           2   Exhibit Number 6714F.
+
+           3            There's only one line that is at issue, which
+
+           4   is also shown in the Musco deposition in the video.
+
+ 08:42:56  5   And the line is, "Orally ingested talc can find its way
+
+           6   to the ovary."
+
+           7            That line is relevant on the issue of
+
+           8   translocation, as Dr. Felsher has testified yesterday.
+
+           9   It also shows that J&J knew about it, about the
+
+ 08:43:12 10   possibility or even the science of translocation.  And
+
+          11   this is an email from John Hopkins, who is a Johnson &
+
+          12   Johnson employee.  And it doesn't run afoul of any of
+
+          13   Your Honor's rulings because it's not about ovarian
+
+          14   cancer, even though ovary is mentioned, but it's all
+
+ 08:43:30 15   about translocation.
+
+          16            MR. HYNES:  And, Your Honor, we would object
+
+          17   and request redaction of that portion of this being
+
+          18   displayed during Musco's testimony.
+
+          19            First, it's not -- this particular aspect of
+
+ 08:43:41 20   this document is not discussed during the course of
+
+          21   Ms. Musco's deposition.
+
+          22            As you can see from the portion that I included
+
+          23   in the response there, this is just used as, "Do you
+
+          24   know who Dr. Hopkins is, as of this time frame in
+
+ 08:43:56 25   2001?"  It's not used for any of the content of the
+
+
+                                                                   4287
+
+
+           1   email correspondence at all.
+
+           2            Further, this notion that Dr. Felsher has
+
+           3   discussed translocation from oral ingestion of talc is
+
+           4   not something that he opined upon in this case.  In
+
+ 08:44:13  5   fact, he refused to testify about translocation of oral
+
+           6   ingestion of talc during his testimony here.
+
+           7            And so that -- this is a speculative aspect of
+
+           8   the translocation argument here.
+
+           9            And here is Morton Dubin behind me.
+
+ 08:44:32 10            MR. DUBIN:  Looming.
+
+          11            I just -- I'm curious actually here because, if
+
+          12   it's plaintiff's theory that there can be oral
+
+          13   ingestion of this that translocates to peritoneum, I
+
+          14   guess I'd like to know that because I certainly would
+
+ 08:44:46 15   be interested in presenting some evidence that rice has
+
+          16   talc on it, that there's asbestos in water that could
+
+          17   get to her peritoneum, and all of that kind of stuff.
+
+          18   So that's really great news.
+
+          19            So I wonder if plaintiffs are actually
+
+ 08:45:01 20   advancing the theory that she may have gotten asbestos
+
+          21   in her peritoneum through oral ingestion.
+
+          22            Are plaintiffs asserting that happens?
+
+          23            MR. SATTERLEY:  Your Honor, Mr. Dubin doesn't
+
+          24   understand his own evidence.  This goes to notice of
+
+ 08:45:18 25   product defect.  It's not a medical causation issue.
+
+
+                                                                   4288
+
+
+           1            And so I don't know if Dubin -- Mr. Dubin is
+
+           2   smiling, and thinks he's going to introduce this into
+
+           3   evidence.
+
+           4            But there's two different concepts in the law.
+
+ 08:45:32  5   One is notice and knowledge of a potential danger, as
+
+           6   opposed to causation.
+
+           7            THE COURT:  So let me try to understand,
+
+           8   though, because it looks to me like -- well, so what
+
+           9   he's talking about in this letter, getting past all the
+
+ 08:45:49 10   issues about -- it's not actually discussed, I don't
+
+          11   believe, in his deposition -- is that doing a new oral
+
+          12   study might show that orally ingested talc can find its
+
+          13   way to the ovary.
+
+          14            It doesn't seem to me he's talking about any
+
+ 08:46:09 15   previous study, actual study that shows that.  It's
+
+          16   simply a study to see if that can happen.
+
+          17            So I'm not -- I'm having trouble with it being
+
+          18   evidence that that would occur and, therefore, what the
+
+          19   relevance would be.
+
+ 08:46:29 20            I mean, if anything, I guess you could say,
+
+          21   "Well, they didn't do a study that might have shown
+
+          22   something."
+
+          23            MR. RIVAMONTE:  It shows that Johnson & Johnson
+
+          24   was aware of the hazards, or even the potential hazards
+
+ 08:46:42 25   of its products -- which is a design defect issue -- so
+
+
+                                                                   4289
+
+
+           1   it's relevant as to that.
+
+           2            And it's not 352 because it doesn't reference
+
+           3   anything about ovarian cancer or how the potential of
+
+           4   talc finding its way to the ovary causes ovarian cancer
+
+ 08:46:57  5   or any other disease.
+
+           6            No particular disease here is mentioned, so we
+
+           7   believe that it is relevant, at least on that aspect of
+
+           8   design defect.
+
+           9            MR. HYNES:  Your Honor, you can see that this
+
+ 08:47:10 10   raises 352 concerns because it's confusing.  It's a
+
+          11   speculative, you know --
+
+          12            THE COURT:  I think it's too vague without any
+
+          13   testimony explaining what it's about, and without it
+
+          14   being really used for that purpose in any of the
+
+ 08:47:29 15   deposition excerpts we're using.
+
+          16            So I think that should be redacted.
+
+          17            MR. RIVAMONTE:  We will comply with the Court's
+
+          18   ruling.  We will revise the video accordingly.
+
+          19            MR. HYNES:  Then I think that's it on exhibits.
+
+ 08:47:50 20            Should we discuss the two jurors who missed
+
+          21   time, Jurors 10 and 12?
+
+          22            THE COURT:  Right.  So are we ready to go on
+
+          23   10?
+
+          24            And then 12, I didn't find out until later in
+
+ 08:48:04 25   the day yesterday.  And I had meant to email you,
+
+
+                                                                   4290
+
+
+           1   although it was kind of late in the day.
+
+           2            Apparently her screen froze, and she described
+
+           3   it as being just momentary.  But if we did these two
+
+           4   minutes, according to Mr. Green, it would clearly
+
+ 08:48:20  5   encompass any time that her screen was frozen.
+
+           6            MR. HYNES:  I guess I would suggest that we do
+
+           7   it all at once.  We've got the first day of testimony
+
+           8   that Juror 10 missed.  We've met and conferred and
+
+           9   we've agreed upon that.
+
+ 08:48:33 10            Yesterday's it was a bit unclear as to exactly
+
+          11   what was missed.  We still need to meet and confer
+
+          12   after looking at the final transcript.
+
+          13            And then Juror 12 we learned about earlier
+
+          14   today as well.  We'll take a look and meet and confer.
+
+ 08:48:48 15   And perhaps we can revisit this maybe tomorrow.
+
+          16            THE COURT:  All right.  Try to do it first
+
+          17   thing tomorrow morning.
+
+          18            All right.  So I wrote down 11:22 to 11:23 on
+
+          19   the second -- Juror 10, the next day.
+
+ 08:49:03 20            The first day was 11:13 to 11:16.  The next day
+
+          21   was 11:22 to 11:23.
+
+          22            MR. HYNES:  All right.  We'll take a look and
+
+          23   meet and confer with counsel.
+
+          24            THE COURT:  All right.  We're going to -- now,
+
+ 08:49:18 25   when we have live jurors, we're going to have meters on
+
+
+                                                                   4291
+
+
+           1   them so we can tell when they space out, and then we'll
+
+           2   be...
+
+           3            I'm not happy, obviously, that this is
+
+           4   occurring.  But on the other hand, I'm not convinced
+
+ 08:49:34  5   it's all that different from how much attention is paid
+
+           6   during this kind of heavy going in an in-person trial.
+
+           7            MR. SATTERLEY:  Do we have meters on the
+
+           8   lawyers so we can figure out when one is spacing out?
+
+           9            THE COURT:  I thought you told me defense
+
+ 08:49:49 10   attorneys have meters, but not plaintiff's attorneys.
+
+          11            MR. SATTERLEY:  That's for a different purpose.
+
+          12            THE COURT:  Oh, I see.
+
+          13            All right.
+
+          14            MR. SATTERLEY:  So we have ten minutes before.
+
+ 08:50:04 15   So we're just going to go straight to the evidence and
+
+          16   then --
+
+          17            THE COURT:  Yeah.  So I'll tell them what we're
+
+          18   going to do as far as the read-back is concerned, and
+
+          19   then we can go right into it.
+
+ 08:50:15 20            Is Dr. Felsher available?
+
+          21            MR. SATTERLEY:  I think, hopefully, he's in the
+
+          22   waiting room or nearby getting into the waiting room.
+
+          23            THE COURT:  All right.  And Ms. Diwan, you're
+
+          24   ready?
+
+ 08:50:27 25            MS. DIWAN:  Yes, Your Honor.
+
+
+                                                                   4292
+
+
+           1            THE COURT:  All right.
+
+           2            Why don't we come back at 9:00.  Everybody can
+
+           3   freshen up.
+
+           4            MR. SATTERLEY:  Can we just stay in this room
+
+ 08:50:39  5   and just mute?
+
+           6            THE COURT:  Let's do that.  Let's do that, and
+
+           7   then we can get brought in when the jurors are all
+
+           8   ready.  Let's come back at 9:00.
+
+           9                 (Off the record.)
+
+ 08:55:12 10            (The following proceedings were held in the
+
+          11   virtual main room in the presence of the jury:)
+
+          12            THE COURT:  Good morning, everybody.
+
+          13            We have two jurors, Ms. Wang and Ms. Zhou, who
+
+          14   we have some testimony to read back to, but we're not
+
+ 09:08:00 15   going to do it this morning.  We're going to do it --
+
+          16   we're going to get it all together and do it first
+
+          17   thing tomorrow morning, if we can, working with the
+
+          18   court reporter.
+
+          19            So we're going to jump right into it here.
+
+ 09:08:12 20            Dr. Felsher was the witness, and he was being
+
+          21   cross-examined by Ms. Diwan.
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4412
+
+
+ 12:18:41 20            THE COURT:  All right.  Next witness.
+
+          21            MR. SATTERLEY:  So it's Dr. William Longo.
+
+          22            THE COURT:  All right.  And I think he's in the
+
+          23   waiting room.  And this may take a moment to get him
+
+          24   here and set up with his camera and everything.
+
+ 12:19:21 25            THE CLERK:  Your Honor, I have let in
+
+
+                                                                   4413
+
+
+           1   Mr. Williams, which I believe is going to be --
+
+           2            THE COURT:  Okay.
+
+           3            (Technician Mr. Williams enters the main room.)
+
+           4            TECHNICIAN WILLIAMS:  So the witness, Longo, he
+
+ 12:19:41  5   should be in here shortly.  He's stepped out for a
+
+           6   second.
+
+           7            Let me just go get him.  One second.
+
+           8            THE COURT:  Yeah.  Would you, please?  Thank
+
+           9   you.
+
+ 12:20:05 10            TECHNICIAN WILLIAMS:  Yes.
+
+          11            THE COURT:  This is the cyber equivalent of,
+
+          12   "The witness is just out in the hall.  He was there a
+
+          13   second ago.  Where is he?"  And then we look all over
+
+          14   the courthouse to find him.
+
+ 12:20:15 15            TECHNICIAN WILLIAMS:  Yes.  He's coming.
+
+          16            THE COURT:  Thank you.
+
+          17            TECHNICIAN WILLIAMS:  No problem.
+
+          18            THE CLERK:  Your Honor, I just got a message
+
+          19   from Juror Number 12 she was disconnected and is
+
+ 12:20:34 20   logging back in again.
+
+          21            THE COURT:  All right.  So we'll wait for that.
+
+          22            Mr. Green, did you get a time on that, or we
+
+          23   should ask her?
+
+          24            THE CLERK:  Ms. Zhou is now in, Your Honor.
+
+ 12:21:07 25            THE COURT:  Okay.  Let me find you.
+
+
+                                                                   4414
+
+
+           1            There are you are.
+
+           2            Do you know how much you missed, Ms. Zhou?  Did
+
+           3   you miss any of the examination, or had the witness
+
+           4   been excused?
+
+ 12:21:19  5            JUROR NO. 12:  Your Honor, I did not miss
+
+           6   anything.  It's just the video -- well, you're frozen
+
+           7   now again.
+
+           8            TECHNICIAN WILLIAMS:  Here is Mr. Longo.
+
+           9            THE COURT:  All right.  So, first of all,
+
+ 12:21:37 10   Ms. Zhou, can you see now or is it frozen?
+
+          11            JUROR NO. 12:  It's frozen.  It's only after,
+
+          12   you know, the -- when the new witness's video session
+
+          13   joined, that everything is frozen.  Now it's frozen
+
+          14   again.
+
+ 12:21:49 15            THE COURT:  All right.  We can see you fine.
+
+          16            JUROR NO. 12:  You're not moving.  And none of
+
+          17   the video is moving, so I don't know if that's
+
+          18   acceptable or not.
+
+          19            THE COURT:  Well, you need to be able to see
+
+ 12:22:06 20   the witness, I think.
+
+          21            Can you see Dr. Longo now?  Do you see him?
+
+          22            JUROR NO. 12:  I see him, but he's frozen.
+
+          23            THE COURT:  Oh, dear.
+
+          24            THE WITNESS:  Can you hear me?
+
+ 12:22:19 25            JUROR NO. 12:  I can hear you all right, but
+
+
+                                                                   4415
+
+
+           1   like I said, now I can only see Your Honor frozen on
+
+           2   the screen.
+
+           3            THE COURT:  So are you using the hotspot, or
+
+           4   are you using your WiFi?
+
+ 12:22:30  5            JUROR NO. 12:  I'm using my WiFi, but you
+
+           6   reminded me -- let me see if the hotspot will be
+
+           7   better.  Just give me a minute.
+
+           8            THE COURT:  Okay.  Just to advise the witness,
+
+           9   we're getting set up here.
+
+ 12:22:49 10            THE WITNESS:  No problem, Your Honor.
+
+          11            MR. SATTERLEY:  Dr. Longo, you might want to
+
+          12   mute yourself until we get started, if you know how to
+
+          13   do that.
+
+          14            THE COURT:  There you are.
+
+ 12:25:36 15            JUROR NO. 12:  I can see.  No problem.
+
+          16            THE COURT:  All right.  So Mr. Satterley, if
+
+          17   you would call your next witness.
+
+          18            MR. SATTERLEY:  Yes.  Plaintiff at this time
+
+          19   would call Dr. William Longo as the next witness.
+
+ 12:25:45 20            THE COURT:  All right.  Mr. Longo, Ms. Mendola
+
+          21   will give you an oath to tell the truth.
+
+          22            THE WITNESS:  Yes, Your Honor.
+
+          23   /
+
+          24   /
+
+          25   /
+
+
+                                                                   4416
+
+
+           1                    WILLIAM E. LONGO, Ph.D.
+
+           2                      (For the Plaintiff)
+
+           3                      sworn as a witness,
+
+           4                     testified as follows:
+
+ 12:26:03  5            THE WITNESS:  Yes, I do.
+
+           6            THE CLERK:  Thank you.
+
+           7            If you could please state your full name for
+
+           8   the record and spell it out.
+
+           9            THE WITNESS:  William Edward Longo,
+
+ 12:26:12 10   W-i-l-l-i-a-m, Edward, Longo, L-o-n-g-o.
+
+          11            THE CLERK:  Thank you.
+
+          12            THE COURT:  Mr. Satterley.
+
+          13            MR. SATTERLEY:  Thank you, Your Honor.
+
+          14   DIRECT EXAMINATION BY MR. SATTERLEY:
+
+ 12:26:23 15        Q.  Dr. Longo, introduce yourself to the folks on
+
+          16   the jury.
+
+          17        A.  Sure.  My name is Bill Longo, and I live in
+
+          18   Alpharetta, Georgia, one of the many suburbs that ring
+
+          19   Atlanta.
+
+ 12:26:37 20        Q.  Are you a materials scientist?
+
+          21        A.  Yes, sir, I am.
+
+          22        Q.  And we're going to talk about your education
+
+          23   and qualifications in a little bit.
+
+          24            Are you in your office, in your laboratory
+
+ 12:26:45 25   there outside of Atlanta?
+
+
+                                                                   4417
+
+
+           1        A.  Almost.  I'm in our conference room at MAS
+
+           2   outside of Atlanta.
+
+           3        Q.  Okay.  But the laboratory where the microscopes
+
+           4   is in the same building, in other rooms in that
+
+ 12:26:59  5   building there?
+
+           6        A.  Yes, sir, they are.
+
+           7        Q.  And I see behind you, you got a microscope
+
+           8   there.
+
+           9            Is that a functional microscope?
+
+ 12:27:08 10        A.  No.  We wouldn't want -- you wouldn't want to
+
+          11   turn that microscope on.  It's a 1950 RCA electron
+
+          12   microscope.  It's just for show.
+
+          13        Q.  Okay.  And you have that there in the
+
+          14   conference room.  We'll talk about that in a little bit
+
+ 12:27:21 15   when we talk about electron microscopes.
+
+          16            We've got a PowerPoint presentation I've shared
+
+          17   with you.
+
+          18            MR. DUBIN:  Sorry, Mr. Satterley.  Just letting
+
+          19   you know, it looks like Juror 12, the video is blank
+
+ 12:27:36 20   again.  So I didn't want you to miss that.
+
+          21            MR. SATTERLEY:  She's got two --
+
+          22            JUROR NO. 12:  I joined back.  The other one,
+
+          23   really, I think it's Chromebook issue.  It's not the
+
+          24   connection issue.
+
+ 12:27:48 25            MR. DUBIN:  There you are.  Okay.  Sorry.  I
+
+
+                                                                   4418
+
+
+           1   just didn't want you to miss the testimony.
+
+           2            JUROR NO. 12:  I'm back.  I'm back.
+
+           3            THE COURT:  All right.  We lost -- and
+
+           4   Ms. Mendola was trying to call me.
+
+ 12:27:58  5            JUROR NO. 12:  I'm back.
+
+           6            THE COURT:  Let's just make sure we have all
+
+           7   the jurors here.  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+
+           8   12, 13, 14.  Let's see.
+
+           9            Is Ms. Zhou here?  You are here.  Now you're on
+
+ 12:28:22 10   your phone.  Okay.  All right.  So I think everyone is
+
+          11   here.  Let's go.
+
+          12            Mr. Satterley.
+
+          13   BY MR. SATTERLEY:
+
+          14        Q.  I was saying, we've shared a PowerPoint
+
+ 12:28:34 15   presentation with defense counsel, and you --
+
+          16   Dr. Longo, have you reviewed it and participated in the
+
+          17   PowerPoint presentation?
+
+          18        A.  Yes, I did.
+
+          19        Q.  So we're going to screen share, and we're going
+
+ 12:28:46 20   to talk about some things.  First, we're going to start
+
+          21   with your qualifications.
+
+          22            What is a materials scientist?
+
+          23        A.  A -- materials science, it's a degree.  It's
+
+          24   materials science and engineering.  And a materials
+
+ 12:29:01 25   scientist works on or studies or develops what I would
+
+
+                                                                   4419
+
+
+           1   say is five different types of materials.  These would
+
+           2   be your everyday materials, such as minerals, plastics
+
+           3   or polymers, minerals like asbestos, metals or
+
+           4   metallurgy.
+
+ 12:29:21  5            But then you can have composites of materials
+
+           6   where you may have a polymeric or a polymer that has
+
+           7   small piece -- small particles of metal in them that
+
+           8   gives it additional properties.
+
+           9            And an area that I spent a lot of time in
+
+ 12:29:39 10   getting my graduate degree, my Ph.D., in biomaterials.
+
+          11   These would be materials that are implanted into the
+
+          12   body, such as a hip prosthesis, if you get a bad hip at
+
+          13   some point; or an intraocular lens, if you have
+
+          14   cataracts, and they want to replace the lens with an
+
+ 12:29:59 15   artificial lens; or a type of polymeric mesh, if you
+
+          16   have a hernia surgery where they want to put additional
+
+          17   support in there when they go and close that hole.
+
+          18            Those are all materials that are studied to
+
+          19   see, one, can they hold up to what happens to the body,
+
+ 12:30:18 20   and two, does the materials give off anything that
+
+          21   could be detrimental to the body.
+
+          22            So that's one part of being a materials
+
+          23   scientist.
+
+          24            The second part of being a materials scientist
+
+ 12:30:29 25   is developing new materials.  A lot of advances over
+
+
+                                                                   4420
+
+
+           1   time where we go from one type of material to -- as
+
+           2   common as the soda can.  Soda cans used to be made out
+
+           3   of steel, and there were three components.  If you're
+
+           4   as old as me, you can remember that they had a little
+
+ 12:30:49  5   seam down the side and a little bit heavy.
+
+           6            And it was a materials scientist that developed
+
+           7   an aluminum can.  It's actually an aluminum copper
+
+           8   alloy.  That's when you mix two materials -- two
+
+           9   different types of metals together.  And it gave it the
+
+ 12:31:06 10   ability to have a two-component can, and it could be
+
+          11   processed faster and cheaper because of the aluminum.
+
+          12            The heat shields on any spacecraft that has to
+
+          13   come back through the atmosphere, those were developed
+
+          14   by materials scientists.
+
+ 12:31:23 15            The ceramic heat shield on the Space Shuttle
+
+          16   was a new type of ceramic material developed by
+
+          17   materials scientists.
+
+          18            And all your semiconductor advances where the
+
+          19   chips have to get smaller and smaller and they're using
+
+ 12:31:37 20   more exotic type of materials was developed by a
+
+          21   materials scientist or scientists.
+
+          22            The last part of a materials scientist is what
+
+          23   I do a lot, is sort of a forensic engineering.  If
+
+          24   something breaks, say a piece of steel breaks, and not
+
+ 12:31:55 25   supposed to, because it may have been overstretched or
+
+
+                                                                   4421
+
+
+           1   the wrong material, materials scientists usually get
+
+           2   involved in that.
+
+           3            A catheter that's being manufactured has some
+
+           4   speckles on it that aren't supposed to be there, a
+
+ 12:32:12  5   materials scientist can go in there and tell you what
+
+           6   is that contaminant, and then they can go through the
+
+           7   manufacturing line to find out where that contaminant
+
+           8   is.
+
+           9            And also, a materials scientist can do what I
+
+ 12:32:25 10   would call a lot of reverse engineering, which we do,
+
+          11   is to take a product -- say, for example, an asbestos
+
+          12   product where the product is, say, thermal insulation
+
+          13   or a gasket or what have you, and then we can tell you
+
+          14   what's in that gasket or what's in that thermal
+
+ 12:32:44 15   insulation and why the asbestos is put in there.
+
+          16            And I spend a lot of time analyzing and testing
+
+          17   asbestos-containing products.
+
+          18        Q.  So we'll talk more about your qualifications
+
+          19   when we get to your resum  in a little bit.
+
+ 12:32:56 20            The second item we have is electron microscopy.
+
+          21            What is that?
+
+          22        A.  Microscopy is a general term for any type of
+
+          23   instrument where you're going to magnify something to
+
+          24   make it bigger so you can study it.
+
+ 12:33:12 25            And a microscope typically uses two types of
+
+
+                                                                   4422
+
+
+           1   sources of -- for how you look at the sample.  An
+
+           2   optical microscope uses light, visible light or white
+
+           3   light.  And an electron microscope uses electrons.
+
+           4            Now, the difference between the two is that the
+
+ 12:33:34  5   electron microscope, because they use electrons, you
+
+           6   can magnify it to very high magnifications to see
+
+           7   really small stuff because electrons are so small.
+
+           8            An optical microscope is limited by the length
+
+           9   or wavelength of light.
+
+ 12:33:48 10            Now, I'm going to overexaggerate here, but say
+
+          11   a typical wavelength of light is the size of the
+
+          12   distance between my hands, the one wave of that, or the
+
+          13   wavelength, and that dictates how small of something
+
+          14   you'd want to look at.
+
+ 12:34:06 15            So a bacteria is larger than this wavelength of
+
+          16   light, so the bacteria is this big, so I can see it.
+
+          17            An asbestos fiber that you look at in an
+
+          18   optical microscope may be this big, and the wavelength
+
+          19   of light is this big, you can still see it.
+
+ 12:34:24 20            But you can get down to sizes of asbestos
+
+          21   fibers that are smaller than the wavelength of light,
+
+          22   and it would be completely invisible, so we would use
+
+          23   an electron microscope to be able to detect and analyze
+
+          24   those.
+
+ 12:34:37 25            Light moves very easily through air.  So an
+
+
+                                                                   4423
+
+
+           1   optical microscope doesn't need anything fancy other
+
+           2   than a good optical microscope.
+
+           3            Electron microscopes -- electrons cannot move
+
+           4   through air, so they have to be generated in a vacuum.
+
+ 12:34:53  5   And optical microscopes are focused with lenses, glass
+
+           6   lenses.  Electrons can't go through a glass lens, so
+
+           7   you have electromagnetic lenses that focus the beam
+
+           8   down to a very small point.
+
+           9            So it's a very important tool.
+
+ 12:35:11 10            We used to have electron microscopes that could
+
+          11   magnify something 3 to 6 million times.  Even your best
+
+          12   optical microscope, digital enhanced, you can get to
+
+          13   2,000 times.  So it's much bigger and more powerful.
+
+          14        Q.  The third item is asbestos analysis.
+
+ 12:35:32 15            Have you, over your career, done asbestos
+
+          16   analysis?
+
+          17        A.  Yes, sir, I have.
+
+          18        Q.  And we're going to talk quite a bit about that
+
+          19   this afternoon, maybe some tomorrow.
+
+ 12:35:43 20            Have you, over the last 35, 40 years, done
+
+          21   various types of asbestos analysis on a wide variety of
+
+          22   products?
+
+          23        A.  Yes, we have.  For 33 years for this company, I
+
+          24   estimate now we're probably a little bit over 400,000
+
+ 12:36:03 25   individual asbestos sample analyses.  And this would be
+
+
+                                                                   4424
+
+
+           1   everything from thermal insulation to gaskets to brakes
+
+           2   to talc products to paint to joint compound.  And the
+
+           3   list goes on and on.
+
+           4        Q.  In addition to the analysis of products for the
+
+ 12:36:24  5   presence of asbestos, have you done evaluations of
+
+           6   exposures to asbestos that people had based upon your
+
+           7   review of the scientific literature?
+
+           8        A.  Yes, sir.  Both the scientific literature as
+
+           9   well as what we call either work practice -- what we
+
+ 12:36:42 10   call work practice simulations.
+
+          11        Q.  So I want to talk about the three questions
+
+          12   that we're going to focus the jury on in this case.
+
+          13            And "Did Johnson's Baby Powder contain
+
+          14   asbestos," are you prepared to talk with us about that
+
+ 12:37:01 15   and tell us about that?
+
+          16        A.  Yes, I am.
+
+          17        Q.  And then the second question, "Why are there so
+
+          18   many 'nondetects' in the files -- documents that say
+
+          19   'nondetects' or 'nonquantifiable' in the files of
+
+ 12:37:15 20   Johnson & Johnson," are you able to help us out with
+
+          21   that and explain what that's all about?
+
+          22        A.  Yes, sir, I am.
+
+          23        Q.  And then "What were Christina Prudencio's
+
+          24   exposures to asbestos from Johnson's Baby Powder," are
+
+ 12:37:26 25   you able to explain that?
+
+
+                                                                   4425
+
+
+           1        A.  Yes, I can.
+
+           2        Q.  So before we get to that, let's go over you and
+
+           3   your background.  Tell us about your educational
+
+           4   background, beginning with college and bring us forward
+
+ 12:37:41  5   with your formal education.
+
+           6        A.  Well, in 1997, I received a bachelor's of
+
+           7   microbiology with a minor in chemistry --
+
+           8        Q.  You said -- you said '97 or '77?
+
+           9        A.  Hopefully, I said 1977.  If I said '97 -- I'm
+
+ 12:38:03 10   much older than that would take me to.
+
+          11        Q.  Okay.  1977, okay?
+
+          12        A.  1977.  I apologize.  I must have misspoke.
+
+          13            In 1980, I received my master's in science --
+
+          14   in materials science and engineering, and in 1983, I
+
+ 12:38:22 15   graduated in December with a Ph.D., or doctorate, in
+
+          16   materials science and engineering, all from the
+
+          17   University of Florida.
+
+          18        Q.  When you were studying in -- as an
+
+          19   undergraduate, did you want to be a materials scientist
+
+ 12:38:37 20   originally?
+
+          21        A.  Well, I didn't study -- yeah, as an
+
+          22   undergraduate, no, I never had any plans to be a
+
+          23   materials scientist.
+
+          24        Q.  What were -- what were your plans?  What was
+
+ 12:38:46 25   your hopeful occupation going to be?
+
+
+                                                                   4426
+
+
+           1        A.  Since I was 6 years old, I wanted to be a
+
+           2   veterinarian.  It never occurred to me that I wasn't
+
+           3   going to get in.
+
+           4        Q.  What do you mean, you weren't going to get in?
+
+ 12:38:59  5        A.  I applied to veterinary school, and there was
+
+           6   20 other applications -- applicants that liked -- they
+
+           7   liked more.  University of Florida just opened its
+
+           8   veterinary school, and they had 2,000 applications for
+
+           9   20 positions, and I wasn't one of them.
+
+ 12:39:17 10            So I had to go -- I didn't have a Plan B, so I
+
+          11   went and got a job as a lab tech in the materials
+
+          12   science department under Dr. -- and Dr. Goldberg in
+
+          13   biomaterials.
+
+          14            And about three months -- two months later, he
+
+ 12:39:34 15   came to me and said, you know, "We'd really like you
+
+          16   to -- have you ever thought about graduate school in
+
+          17   materials science and engineering."
+
+          18            I said, "No, I can't do that."
+
+          19            He goes, "Why?"
+
+ 12:39:47 20            I said, "My goal has always been to get in
+
+          21   veterinary school, and next year, I'm going to apply
+
+          22   again, and they will see that I really want to be
+
+          23   here."
+
+          24            And he said, "Well, if I was sitting on the
+
+ 12:39:59 25   committee that was looking at people, I might think
+
+
+                                                                   4427
+
+
+           1   that you'd be better qualified if you were in a
+
+           2   graduate program in engineering."
+
+           3            So I thought that was a good idea, and I never
+
+           4   looked back.  I really -- I liked it so much.
+
+ 12:40:14  5        Q.  And you said you got your Ph.D. in materials
+
+           6   science from the University of Florida.  And that's why
+
+           7   you're referred to as Dr. William Longo, your Ph.D.;
+
+           8   correct?
+
+           9        A.  That is correct.
+
+ 12:40:25 10        Q.  Now, before we get to the peer review program,
+
+          11   let me just -- why don't you talk us through your
+
+          12   career after you got your Ph.D.  What have you done?
+
+          13        A.  Well, I started a little company called Micro
+
+          14   Analytical Laboratories in Gainesville, Florida under
+
+ 12:40:45 15   the premise -- and that was in 19- -- let's see.  I
+
+          16   think that was in 19- -- I started it the same time --
+
+          17   my last year of graduate school.
+
+          18            And I had an -- and I thought -- I read a
+
+          19   Scientific American article by Walter McCrone talking
+
+ 12:41:06 20   about the analysis of asbestos.  And being a materials
+
+          21   scientist and one who used electron microscopes --
+
+          22   transmission electron microscopes, scanning electron
+
+          23   microscopes -- all through my Ph.D., I thought that TEM
+
+          24   would be a better tool -- that's what we call them,
+
+ 12:41:26 25   tools -- to analyze asbestos because of the size.
+
+
+                                                                   4428
+
+
+           1            So I started Micro Analytical Labs with a TEM
+
+           2   and then started trying to convince people that they
+
+           3   really needed to use a TEM to analyze their air samples
+
+           4   to see if asbestos was present and not phase contrast
+
+ 12:41:45  5   microscopy because of the low resolution, low
+
+           6   magnification problems; you can only see a certain
+
+           7   size, a pretty big size fiber bundle of chrysotile, not
+
+           8   the thin ones, no matter how long it was, or any short
+
+           9   ones.
+
+ 12:41:58 10            It took a little while but started convincing
+
+          11   people, and so MAS was one of the first labs in the
+
+          12   country -- MAL -- excuse me -- dedicated to the
+
+          13   analysis of asbestos air samples by transmission
+
+          14   electron microscopy.
+
+ 12:42:16 15        Q.  And so what happened next with your career?
+
+          16        A.  From there, I went to Atlanta and started
+
+          17   another company in conjunction with a partnership with
+
+          18   a big engineering firm called Materials Analytical
+
+          19   Services.  We opened the doors in March, I believe it
+
+ 12:42:37 20   was, of 1988 with one employee.
+
+          21            And I was the president of that company until
+
+          22   just last year, when I promoted a person here to be
+
+          23   president.  And now I'm the CEO, and I've been with --
+
+          24   and we call it MAS.  That's not its legal name.  It's
+
+ 12:42:59 25   Materials Analytical Services -- ever since.
+
+
+                                                                   4429
+
+
+           1        Q.  And we've got a -- is that your emblem of your
+
+           2   company right here at the bottom of the presentation?
+
+           3        A.  Yes, sir.  It's the little squares on the
+
+           4   left-hand side.  That's to, essentially, mimic TEM grid
+
+ 12:43:24  5   openings.
+
+           6        Q.  You mentioned TEM.  What is -- what's that
+
+           7   stand for?
+
+           8        A.  Oh, I'm sorry.  Transmission electron
+
+           9   microscopy.
+
+ 12:43:30 10        Q.  And we'll see some examples later when we talk
+
+          11   about the testing of grid and grid openings.
+
+          12            Over here on this, we have some other acronyms.
+
+          13   What are all these, and what do they represent with
+
+          14   regards to you?
+
+ 12:43:44 15        A.  Well, the top one is the Environmental
+
+          16   Protection Agency logo, and it pertains to us that
+
+          17   we've done a lot of Environmental Protection Agency
+
+          18   work over the years, contracts with them.
+
+          19            Also, I consulted for them back in the late
+
+ 12:44:02 20   1980s, early 1990s.  There was myself and three other
+
+          21   scientists that were invited to Cincinnati every six
+
+          22   months to advise the Environmental Protection Agency
+
+          23   areas of research on asbestos they needed to get into.
+
+          24   The -- and I did that for a few years, until that
+
+ 12:44:24 25   program was cut.
+
+
+                                                                   4430
+
+
+           1            The next one is the American Industrial Hygiene
+
+           2   Association.  I'm a member.  Our laboratory is
+
+           3   certified by the American Industrial Hygiene
+
+           4   Association to do various types of testing.
+
+ 12:44:39  5            Center for Disease Control is mainly there that
+
+           6   we have done some work for them in the past, starting
+
+           7   with the first Ebola outbreak a good 20 years ago,
+
+           8   where we had a scanning electron microscope that was,
+
+           9   essentially, more state of the art that what the Center
+
+ 12:45:03 10   of Disease Control had.  And they brought that virus
+
+          11   over so they could image it, as well as imaging other
+
+          12   things for them, other types of viruses.
+
+          13            The National Institutes of Health was a client
+
+          14   of ours, where we were looking at microvilli in the
+
+ 12:45:18 15   small intestines that volunteers would allow to be
+
+          16   taken, which I wasn't one of those volunteers.
+
+          17            And they were looking at a way to develop a --
+
+          18   sort of a supplement drink that could penetrate through
+
+          19   the microvilli, because that's where all your nutrition
+
+ 12:45:38 20   comes from when the food is broken down by your
+
+          21   digestive system, so that people who are in
+
+          22   chemotherapy or have some of type of illness where
+
+          23   they've lost their appetite -- so that the same -- so
+
+          24   it would increase the amount of calories that they
+
+ 12:45:57 25   could get from drinking these supplements because their
+
+
+                                                                   4431
+
+
+           1   appetite -- and try to stop losing weight.
+
+           2            The International Standards Organization is a
+
+           3   worldwide standards program that -- that we're not
+
+           4   only -- that we are certified for for various types of
+
+ 12:46:18  5   our analysis, including -- I think we're the only lab
+
+           6   in the country that has been certified to do
+
+           7   asbestos -- the analysis of cosmetic talc for asbestos
+
+           8   by heavy liquid density separation, by both polarized
+
+           9   light microscopy and transmission electron microscopy.
+
+ 12:46:41 10            ASTM is now the International, but it's the --
+
+          11   ASTM is the American Society for Testing Materials.
+
+          12   It's now the International Society for Testing
+
+          13   Materials.
+
+          14            They have approximately 40,000 members, and
+
+ 12:46:59 15   for -- ASTM always -- does nothing but develop
+
+          16   methodology and testing programs, sort of like a
+
+          17   recipe.
+
+          18        Q.  So you --
+
+          19        A.  I'm sorry.
+
+ 12:47:11 20        Q.  Go ahead.  No.  Go ahead.
+
+          21        A.  So when you're doing -- when you are making a
+
+          22   type of cake -- let's just use a chocolate cake, for
+
+          23   example -- and there's a specific recipe that everybody
+
+          24   uses and knows how to make chocolate cakes and knows
+
+ 12:47:26 25   how to bake and follow the recipe, the theory of it is
+
+
+                                                                   4432
+
+
+           1   that we'll all come to the same cake.
+
+           2            In testing, when you have an ASTM standard and
+
+           3   you test to that standard, we all know what that means.
+
+           4   And they make standards -- anything -- everything from
+
+ 12:47:45  5   how many times a hinge on a cabinet door should open
+
+           6   and close before it fails, medical devices and
+
+           7   contamination.
+
+           8            They have methods for testing which -- of a
+
+           9   mask, the mask that we've all been using through the
+
+ 12:48:01 10   pandemic.  It can go through an ASTM testing to see
+
+          11   what size particles can go through it; you know, blood,
+
+          12   can it make it through it?  And there's all kinds of
+
+          13   standards to certify that.
+
+          14            And, also, they have standards for testing of
+
+ 12:48:17 15   asbestos.
+
+          16        Q.  So you've got -- or we got on here that you --
+
+          17   "EPA peer review group, asbestos engineering program."
+
+          18            What is that?
+
+          19        A.  The peer review group was what I was talking
+
+ 12:48:32 20   about when I was invited with three other scientists to
+
+          21   go to Cincinnati to the EPA headquarters for their
+
+          22   asbestos group, and to look over their research.
+
+          23            And EPA very rarely does their own testing,
+
+          24   their own research.  They usually hire outside
+
+ 12:48:50 25   laboratory contractors.  And we were the peer reviewers
+
+
+                                                                   4433
+
+
+           1   for that.
+
+           2            We also were making suggestions in the asbestos
+
+           3   field of testing and cleanup and contamination on what
+
+           4   type of research needed to be done.  We would write up
+
+ 12:49:08  5   these proposals, and I would do that every six months.
+
+           6   And I think it lasted for a couple of years.
+
+           7        Q.  And how long ago was that peer review group on
+
+           8   asbestos?
+
+           9        A.  Oh, that was like in the 19- -- late 1980s,
+
+ 12:49:20 10   early 1990s.
+
+          11        Q.  You have consulted for and you have different
+
+          12   entities.  You've talked about a few of them already.
+
+          13            Has your company consulted with a wide variety
+
+          14   of bodies, governmental bodies?
+
+ 12:49:38 15        A.  You know, we have the City and State of New
+
+          16   York.  And the consulting we did for them, we also did
+
+          17   for the entire school system for the City of Chicago,
+
+          18   the entire public buildings in the State of Texas, the
+
+          19   public buildings in the State of Hawaii.
+
+ 12:49:54 20            Also, the school systems of Los Angeles and San
+
+          21   Francisco, the State of Utah.
+
+          22            I think that's it.
+
+          23        Q.  Was that -- were you retained to evaluate
+
+          24   asbestos and asbestos product and do some engineering
+
+ 12:50:16 25   aspects with regards to asbestos by all those
+
+
+                                                                   4434
+
+
+           1   governmental entities?
+
+           2        A.  No.  It was what I call "product ID."  We -- as
+
+           3   a materials scientist, we reverse engineer the
+
+           4   asbestos-containing fireproofing in acoustical plasters
+
+ 12:50:31  5   made by all the different companies in the United
+
+           6   States:  W.R. Grace, U.S. Gypsum, National Gypsum, U.S.
+
+           7   Mineral, Kaiser Gypsum.
+
+           8            And we could take and analyze them by optical
+
+           9   microscopy, by transmission electron microscopy, plus
+
+ 12:50:53 10   chemistry testing.  And I could tell you what
+
+          11   manufacturer the fireproofing was.
+
+          12            For example, if it was a National Gypsum
+
+          13   asbestos-containing fireproofing, I could tell you if
+
+          14   it was Fire Code B, Type D, because it had 10 percent
+
+ 12:51:12 15   chrysotile, 35 percent vermiculite, 55 percent gypsum.
+
+          16   But so does W.R. Grace Monokote 3, the exact same
+
+          17   inorganic formula.
+
+          18            U.S. Gypsum, though, put a 1 percent denatured
+
+          19   starch -- not the starch particles -- but it's not a
+
+ 12:51:31 20   particle, and we developed an enzyme test to determine
+
+          21   if it was there or not.
+
+          22            So every one of these asbestos fireproofing
+
+          23   manufacturers, for their main products, and as well as
+
+          24   acoustical plasters that contain asbestos, all had
+
+ 12:51:44 25   their own fingerprint in the inorganic.  And it was
+
+
+                                                                   4435
+
+
+           1   fairly straightforward for a materials scientist to
+
+           2   re -- to -- to determine all the ingredients and the
+
+           3   amounts.
+
+           4            And, you know, I could tell you -- we could
+
+ 12:52:00  5   tell you if it was Autokote manufactured by U.S.
+
+           6   Gypsum, and was it pre-1956 or post-19- -- excuse me,
+
+           7   1963 or post-1963, because they changed the formula
+
+           8   slightly.
+
+           9            So it was -- for a materials scientist, it was
+
+ 12:52:17 10   fun.
+
+          11        Q.  And with regards to some of these other
+
+          12   consultations -- NASA, Dow, Air Force -- have you also
+
+          13   done work for the Department of Treasury?
+
+          14        A.  Yes.  We were asked to determine -- and this is
+
+ 12:52:33 15   when -- I forget how many years ago it was -- but they
+
+          16   came out with the new $20 bill.  And it had the new
+
+          17   design, the new paper, and the new printing.  And the
+
+          18   U.S. Treasury wanted to know how far the ink penetrated
+
+          19   into the paper.
+
+ 12:52:51 20            So it's -- and so what you had to do with that
+
+          21   is you had to slice it.  Sort of like if you had a loaf
+
+          22   of bread with no slicing on it, and you want to cut out
+
+          23   slices, you just cut very microscopic size slices right
+
+          24   through the paper, and then you could look at it and
+
+ 12:53:09 25   measure exactly how far the ink went.
+
+
+                                                                   4436
+
+
+           1            So when we received the samples I was kind of
+
+           2   surprised because it just came by regular mail in a
+
+           3   pretty big box, but it didn't weigh that much.  I was
+
+           4   just naive.  I thought it would be full of $20 bills
+
+ 12:53:26  5   but it was actually full of shredded $20 bills.  Nobody
+
+           6   tried to put them together.
+
+           7        Q.  So you also have -- your lab has been certified
+
+           8   by various entities.  What are these entities?  You
+
+           9   mentioned the Industrial Hygiene Association.
+
+ 12:53:43 10            What are the others?
+
+          11        A.  The National Voluntary Laboratory Accreditation
+
+          12   Program.  That certifies us for analyzing asbestos air
+
+          13   samples, as well as asbestos bulk samples.
+
+          14            Bulk samples being like it's a solid material
+
+ 12:54:02 15   or a powder.
+
+          16            And an air sample, of course, is a sample that
+
+          17   has been collected where it has a pump pulling air
+
+          18   through the cassette, the air cassette we call it.  And
+
+          19   at the bottom of that plastic cassette is a round
+
+ 12:54:16 20   filter that traps all the microscopic particles -- and
+
+          21   if there's asbestos present that also -- and lets the
+
+          22   air go through.
+
+          23            Sort of like a coffee filter when you put the
+
+          24   coffee -- the ground coffee in and you pour the water
+
+ 12:54:29 25   through, you know, and hopefully you don't get any
+
+
+                                                                   4437
+
+
+           1   grounds in your coffee.  It's the same principle.
+
+           2        Q.  You mentioned earlier ISO, International
+
+           3   Standards Organization, has certified your laboratory
+
+           4   with regards to identification of asbestos in cosmetic
+
+ 12:54:46  5   talc or talc using the heavy liquid separation method.
+
+           6            Are you aware of any other laboratory in the
+
+           7   United States that has been so certified?
+
+           8        A.  I am not.
+
+           9        Q.  And then "FDA compliant," what does that mean?
+
+ 12:55:00 10        A.  That means that we are a registered FDA lab,
+
+          11   and that we can do work for folks who are analyzing
+
+          12   everything, or developing, or want us to verify the
+
+          13   ingredient in pharmaceuticals.
+
+          14            For example, as a QC lab we can -- we are sent,
+
+ 12:55:24 15   say, a Streptomycin antibiotic pill.  And the label
+
+          16   says that there is a hundred milligrams of Streptomycin
+
+          17   in that pill.  Well, to be -- for them to submit that
+
+          18   data to the FDA, they have to use an FDA-compliant lab,
+
+          19   meaning the QC that you do is much more intense than
+
+ 12:55:47 20   anything else we do.
+
+          21            And the logs and the training and all the
+
+          22   paperwork -- and you even have to have an insect log.
+
+          23   When we were audited by the FDA, that's one of the
+
+          24   first things they asked for was where our insect log
+
+ 12:56:07 25   was.  So anytime you have bugs in here, you have to say
+
+
+                                                                   4438
+
+
+           1   what kind of bugs and where, and what did you do to get
+
+           2   rid of it.
+
+           3            I thought it was kind of ridiculous at first,
+
+           4   but then it made sense to me.  Because if you're
+
+ 12:56:19  5   manufacturing pharmaceuticals, or you're doing analysis
+
+           6   that's FDA, you shouldn't have dead bugs and stuff, or
+
+           7   live ones running around in your lab.
+
+           8            So it's very intense quality control, quality
+
+           9   assurance to be -- to pass an FDA audit so that people
+
+ 12:56:35 10   who send you the data, that their data is not in
+
+          11   jeopardy because you're not -- you didn't pass FDA.
+
+          12        Q.  The last thing on this particular slide is the:
+
+          13                 "ASTM settled dust fiber count method
+
+          14            D5755 standards authorship."
+
+ 12:56:55 15            What is that and what was your involvement?
+
+          16        A.  I was on the EPA Blue Ribbon Microscopy Panel.
+
+          17   And they wanted a settled dust protocol, a method, a
+
+          18   recipe, that you could gather settled dust in a
+
+          19   building and determine how many asbestos fibers and
+
+ 12:57:15 20   bundles are there to see if there's contamination in
+
+          21   the building from their asbestos products.
+
+          22            So we met a number of times, and we finally
+
+          23   agreed on the protocol that MAS was using.  And so they
+
+          24   wrote the protocol up, but then they decided -- and
+
+ 12:57:34 25   ASTM got involved, and they decided not to go through
+
+
+                                                                   4439
+
+
+           1   with the final protocol, but let ASTM do that.
+
+           2            So I started that in 1990, and it took five and
+
+           3   a half years to get everybody to agree on the protocol.
+
+           4            The subcommittee had 125 members, and you had
+
+ 12:57:56  5   to meet twice a year.  And you would write it up, and
+
+           6   then you'd come to the meeting, and you'd have -- you
+
+           7   would have very -- you would have debates.  And
+
+           8   sometimes loud debates on some of the simplest things
+
+           9   in arguing over definitions.
+
+ 12:58:22 10            Politics is not something I could ever go into
+
+          11   because I wasn't good at it.
+
+          12            And so we finally got the subcommittee to
+
+          13   agree.  Then it goes to the full committee.  And then
+
+          14   it is published.  And anybody who puts in a negative
+
+ 12:58:36 15   vote can stop it in its tracks.  It's the most
+
+          16   peer-reviewed methodology of any organization I've ever
+
+          17   been associated with.
+
+          18            So in 1996, '95, '96, I was awarded, you know,
+
+          19   the appreciation scientist of the year for slugging
+
+ 12:58:55 20   through that.  And I said after that I would never do
+
+          21   another one.
+
+          22        Q.  So that was a consensus statement back at the
+
+          23   time that you had to -- all the folks on the
+
+          24   subcommittee got together and discussed with regards to
+
+ 12:59:10 25   asbestos and dust; right?
+
+
+                                                                   4440
+
+
+           1        A.  Correct.  Into -- developed, you know, a
+
+           2   step-by-step process to develop the recipe or the
+
+           3   protocol.
+
+           4            And we pretty much agreed on the steps, but it
+
+ 12:59:25  5   came down to the definitions.  And then there was one
+
+           6   fraction that did not want to have the results in
+
+           7   fibers and bundles per area that you sampled.  They
+
+           8   wanted it to be a weight percent.  But it was finally
+
+           9   decided, overwhelmingly by the scientists, that a
+
+ 12:59:46 10   weight percent does not give you any information on
+
+          11   potential exposure.
+
+          12            If you have a surface that -- say, for example,
+
+          13   I have a surface that I've sampled, and I have found
+
+          14   200 million asbestos fibers in one centimeter square,
+
+ 13:00:04 15   which is about this big, versus somebody saying, "Oh,
+
+          16   the weight percent is 0.02," that doesn't really give
+
+          17   meaning to the level of potential exposure.
+
+          18            Now, analyzing something on the surface does
+
+          19   not tell you about how high the exposure is, but at
+
+ 13:00:26 20   least gives you an idea on -- on the magnitude of
+
+          21   what's there.  And if you disturb that surface, it's
+
+          22   going to get back up in the air, and you could have
+
+          23   very high exposure levels.
+
+          24        Q.  So I don't know if my PowerPoint is still
+
+ 13:00:43 25   sharing.  Is it?
+
+
+                                                                   4441
+
+
+           1        A.  No.
+
+           2        Q.  Okay.  Let's see if we could try to get it to
+
+           3   share again.
+
+           4        A.  There we go.
+
+ 13:00:48  5        Q.  Okay.  Now, this is a photograph of you
+
+           6   testifying before Congress; correct?
+
+           7        A.  Yes, sir, it is.
+
+           8        Q.  And tell us about that.  Were you invited to
+
+           9   testify about carcinogens in consumer products?
+
+ 13:01:03 10        A.  Yes.  It was primarily about what is the most
+
+          11   sensitive testing for asbestos in cosmetic talc.  And
+
+          12   so they wanted testimony from me on that specific area.
+
+          13   And it was really about exposures to cosmetic talc.
+
+          14   And people asked me, "Well, how did you get invited?"
+
+ 13:01:24 15   And I said, "Well, I got an email."  So I said I would
+
+          16   do it.
+
+          17        Q.  And were they specifically asking you questions
+
+          18   about methodology and preparation methodologies and how
+
+          19   you could identify asbestos in consumer products?
+
+ 13:01:39 20        A.  Consumer products.  But it really revolved
+
+          21   around cosmetic talc.  And primarily Johnson &
+
+          22   Johnson's cosmetic talc.
+
+          23            So they were also very interested in the
+
+          24   sensitivity that the heavy liquid density gives you
+
+ 13:01:56 25   versus the normal procedure that people were using up
+
+
+                                                                   4442
+
+
+           1   until that point until we -- well, except for in 1990,
+
+           2   a paper was published using heavy density liquid to
+
+           3   analyze talc.
+
+           4            So they were interested in knowing about the
+
+ 13:02:15  5   method and the sensitivity of that method.
+
+           6        Q.  Now, is this a photograph of you at one of your
+
+           7   microscopes?
+
+           8        A.  Yes.  That's our Hitachi scanning electron
+
+           9   microscope.  And we bought that about three years ago,
+
+ 13:02:30 10   or four years ago.  And it was state of the art at that
+
+          11   time, and still is.  It probably is one of the best
+
+          12   resolution type -- it's a field emission scanning
+
+          13   electron microscope, and we keep it pretty busy.
+
+          14        Q.  Is this a photomicrograph that you're looking
+
+ 13:02:51 15   at here on the -- from what's in the microscope?
+
+          16        A.  Correct.  So you have two types of electron
+
+          17   microscopes:  A scanning electron microscope and a
+
+          18   transmission electron microscope.
+
+          19            A scanning microscope gives you better
+
+ 13:03:08 20   features.  So, say, you know, you go to a doctor and
+
+          21   they're examining your hand because it may have
+
+          22   something growing on it.  So they're looking at the
+
+          23   surface, what's going on on the surface of your hand.
+
+          24   The transmission electron microscope is more about
+
+ 13:03:26 25   what's going on -- not your hand, but I'm using it as
+
+
+                                                                   4443
+
+
+           1   an example -- what's going on inside the hand.
+
+           2            So you've got a broken bone in your hand, you
+
+           3   go get an x-ray.  The x-ray is not giving you any
+
+           4   surface features; it's just showing you the bone.  And
+
+ 13:03:41  5   if you have a break there or something, it can see
+
+           6   that.
+
+           7            So a transmission electron microscope does the
+
+           8   same thing.  If you have a fiber, it doesn't give you
+
+           9   surface features, but it tells you a lot about the
+
+ 13:03:54 10   interior of that fiber.  Crystalline or not
+
+          11   crystalline, and what kind of crystal is it, what type
+
+          12   of -- you know, is it talc, is it amphibole asbestos,
+
+          13   or is it a nonasbestos fiber.  And you can get a lot of
+
+          14   detail on its crystalline structure, as well as it does
+
+ 13:04:15 15   microchemistry.
+
+          16            This one does the same thing.  It does
+
+          17   microchemistry, but only on -- but not pinpointing like
+
+          18   the TEM does.
+
+          19            So they're both electron microscopes.  One is
+
+ 13:04:28 20   surface features, very high magnification.  And one is
+
+          21   interior features like the crystalline structure of the
+
+          22   asbestos.
+
+          23            Also the transmission electron microscope used
+
+          24   to be able to see fibers that were too small for the
+
+ 13:04:42 25   scanning electron microscope, but that's not the case
+
+
+                                                                   4444
+
+
+           1   anymore.
+
+           2            These field emission electron microscopes can
+
+           3   see -- a normal transmission electron microscope can
+
+           4   see fibers to the same magnification, just can't tell
+
+ 13:04:56  5   you what the crystalline structure is of that fiber.
+
+           6        Q.  And we'll get into the details of that and see
+
+           7   a lot of photographs a little bit later.
+
+           8            Have you reviewed historical documents
+
+           9   regarding the presence of asbestos in Johnson's Baby
+
+ 13:05:10 10   Powder?
+
+          11        A.  I have.
+
+          12        Q.  And have you tested Johnson's Baby Powder to
+
+          13   confirm whether asbestos is present?
+
+          14        A.  I have.
+
+ 13:05:18 15        Q.  And have you published in peer-reviewed
+
+          16   scientific literature your findings on asbestos in
+
+          17   cosmetic talc?
+
+          18        A.  I have.
+
+          19        Q.  In addition to your publications on asbestos
+
+ 13:05:34 20   in -- asbestos in cosmetic talc, have you published
+
+          21   other papers in peer-reviewed journals and made
+
+          22   presentations regarding asbestos analysis?
+
+          23        A.  Yes, sir, I have.
+
+          24        Q.  Do those publications and presentations involve
+
+ 13:05:51 25   analyzing not only the presence of asbestos in various
+
+
+                                                                   4445
+
+
+           1   products, but also exposures that occur?
+
+           2        A.  Yes, sir, we have.
+
+           3        Q.  And have you done exposure assessments and
+
+           4   published exposure assessments in the scientific
+
+ 13:06:10  5   literature?
+
+           6        A.  Yes, sir, we have.
+
+           7        Q.  And your CV or your resum , which we call a
+
+           8   curriculum vitae, does it outline all the various -- or
+
+           9   at least many of the various publications you've
+
+ 13:06:23 10   published over the years?
+
+          11        A.  Yes, sir.  As well as the presentations.
+
+          12            The last presentation I gave was on
+
+          13   February 4th, 2020, for -- they had a public meeting
+
+          14   that they wanted feedback on their proposal for the
+
+ 13:06:42 15   testing of cosmetic talc, and specifically the
+
+          16   sensitivity that is required in that testing of
+
+          17   cosmetic talc.
+
+          18            So when I signed up for it, they had a -- they
+
+          19   had -- it was electronically.  They had a pull-down
+
+ 13:07:00 20   menu that said, "Would you" -- "would you like to give
+
+          21   a presentation?"  I clicked "Yes."
+
+          22        Q.  So did you present at the FDA on the methods in
+
+          23   which you can identify asbestos in cosmetic talc?
+
+          24        A.  Yes, sir.  February 4th was the last time I was
+
+ 13:07:16 25   on an airplane, in 2020, until just a month ago or so,
+
+
+                                                                   4446
+
+
+           1   because of the pandemic.
+
+           2        Q.  And then you also on your resum  outline
+
+           3   various professional memberships --
+
+           4            MR. DUBIN:  Your Honor, I'm sorry.  Could we go
+
+ 13:07:32  5   to the breakout room for just one second, please.  If
+
+           6   we could pull the slide down and talk for a second in a
+
+           7   breakout room.
+
+           8            THE COURT:  All right.  Let's do that.
+
+           9            MR. DUBIN:  Thank you.
+
+ 13:07:40 10            (The following proceedings were held in the
+
+          11   virtual breakout room with counsel only outside the
+
+          12   presence of the jury:)
+
+          13            THE COURT:  Okay.  We're in the breakout room.
+
+          14            MR. DUBIN:  Yeah.  I just -- you know, this
+
+ 13:08:04 15   slide was just sitting up there for so long.  You know,
+
+          16   the version that we received, and obviously, we
+
+          17   received this version, but we received small thumbnails
+
+          18   of these -- you know, of these slides and must not have
+
+          19   been able to read or see that on Dr. Longo's
+
+ 13:08:22 20   publication list, you know, there's a list where it's
+
+          21   talking about asbestos and serous ovarian cancer, you
+
+          22   know, a case series.  And it was just sitting up there.
+
+          23            Now, I guess shame on us for not being able to
+
+          24   see it at that small magnification, but I would have
+
+ 13:08:41 25   expected that plaintiffs wouldn't put together a slide
+
+
+                                                                   4447
+
+
+           1   with reference to the ovarian cancer article and then
+
+           2   leave it up for the jury for so long.
+
+           3            You know, at some point I had to -- you know,
+
+           4   I --
+
+ 13:08:55  5            MR. SATTERLEY:  I'm sorry.  I didn't even -- I
+
+           6   apologize.  I didn't even catch it.  If you would have
+
+           7   told me about it earlier, I would have moved past it
+
+           8   quickly.
+
+           9            THE COURT:  Let's go -- we obviously have a few
+
+ 13:09:05 10   more minutes.  Let's go to the next slide.
+
+          11            MR. DUBIN:  We can continue.
+
+          12            MR. SATTERLEY:  We'll go to the next slide.
+
+          13   Just give me one second to get to the next slide, make
+
+          14   sure --
+
+ 13:09:16 15            THE COURT:  All right.  I realize that we never
+
+          16   asked the jurors for any questions, so at the end of
+
+          17   the day, maybe I'll indicate they can put them in the
+
+          18   chat.
+
+          19            What should we do about people's equipment
+
+ 13:09:28 20   that's failing?  Should we ask people to email if they
+
+          21   think they need replacement Chromebooks or hotspots?
+
+          22            MR. SATTERLEY:  Yes.  Even beyond that, if we
+
+          23   need to get something more -- better -- better than a
+
+          24   Chromebook, yes.
+
+ 13:09:44 25            THE COURT:  I'll ask everybody to email, then
+
+
+                                                                   4448
+
+
+           1   we can try to sort it out, because Ms. Zhou is coming
+
+           2   in and out.  She's been here, but she's on her phone
+
+           3   some of the time.
+
+           4            MR. SATTERLEY:  Yeah.  I think particularly, I
+
+ 13:09:59  5   noticed that.  So yeah, we should address that at the
+
+           6   end of the day.
+
+           7            THE COURT:  All right.  Should we go back and
+
+           8   go another five minutes?
+
+           9            MR. SATTERLEY:  Yes, Your Honor.
+
+ 13:10:04 10            (The following proceedings were held in the
+
+          11   virtual main room in the presence of the jury:)
+
+          12            THE COURT:  All right.  We're back.
+
+          13            Mr. Satterley.
+
+          14            MR. SATTERLEY:  Yes.
+
+ 13:10:29 15   BY MR. SATTERLEY:
+
+          16        Q.  I was asking -- don't screen share yet.  I'm
+
+          17   going to ask a question.  I was asking Dr. Longo about
+
+          18   the various organizations he belonged to on his resum .
+
+          19            Have you been a member of a number of
+
+ 13:10:44 20   professional organizations?
+
+          21        A.  Yes, sir, I have.
+
+          22        Q.  If you could -- there's a long list.  You don't
+
+          23   have to tell us all of them.  Just give us a few
+
+          24   important ones.
+
+ 13:10:54 25        A.  Well, I'm still a member of the American
+
+
+                                                                   4449
+
+
+           1   Society of Testing Materials.  I'm a member of the
+
+           2   Materials Science -- I think it's the Materials Science
+
+           3   Society.  I'm a member of the American Industrial
+
+           4   Hygiene Association.  I'm a member of -- I think it's
+
+ 13:11:17  5   the Ceramics Journal.  The -- there's a few more.  I
+
+           6   keep forgetting all of them.
+
+           7        Q.  If we can screen share now the presentation.
+
+           8            "Official referee lab," what does that mean?
+
+           9        A.  Oh, because of all the work we did in -- not
+
+ 13:11:47 10   all these -- these are all -- in fact, I forgot.  These
+
+          11   are all the different -- some of the different product
+
+          12   ID for identification of asbestos products.  I forgot
+
+          13   about the City of Boston and the City of -- the City of
+
+          14   Baltimore.
+
+ 13:12:05 15            But in the -- in some of the bankruptcies when
+
+          16   some of these companies -- they have -- they agreed to
+
+          17   pay people who have their asbestos products in their
+
+          18   buildings to help remove it.
+
+          19            And in order for it to say okay, the samples
+
+ 13:12:27 20   had to come through our laboratory so that we would
+
+          21   say, yes, this is W.R. Grace Monokote 3, or this is
+
+          22   W.R. Grace Zonolite, or this is U.S. Gypsum Autokote,
+
+          23   and so on.  So -- or this is Turner & Newall Limpet
+
+          24   fireproofing.
+
+ 13:12:48 25            So we were sort of the referee.  If we said
+
+
+                                                                   4450
+
+
+           1   that it was the product, then they could submit it as a
+
+           2   claim; and if we said it was not the product, and we
+
+           3   did have those, they could not submit it as a claim.
+
+           4        Q.  This demonstrative, what does this demonstrate?
+
+ 13:13:09  5        A.  Well, this is -- as it says, this is a penny,
+
+           6   and that shows three grains of rice on that left-hand
+
+           7   side.  And right above it is almost -- is a small
+
+           8   amount of -- a very small amount of chrysotile
+
+           9   asbestos, and the amount there in that small amount is
+
+ 13:13:35 10   over 20,000 asbestos fibers.
+
+          11            And that's the fundamental problem with
+
+          12   asbestos.
+
+          13        Q.  And you told us earlier that you confirmed the
+
+          14   presence of asbestos in Johnson & Johnson Baby Powder.
+
+ 13:13:50 15   Tomorrow, will you be prepared to go into great detail,
+
+          16   show us photographs of your testing and testing
+
+          17   results?
+
+          18        A.  Yes, sir.
+
+          19        Q.  And tomorrow, will you go through the process
+
+ 13:14:04 20   of identifying asbestos and how it's done by the EPA
+
+          21   regulations and the ISO regulations and the other
+
+          22   scientific bodies?
+
+          23        A.  Yes, sir.  This might be a good time.  There's
+
+          24   two important parts --
+
+ 13:14:19 25            (Reporter clarification.)
+
+
+                                                                   4451
+
+
+           1            THE WITNESS:  There's two important parts of an
+
+           2   analysis of asbestos by transmission electron
+
+           3   microscopy.
+
+           4            One, and the most important, is the sample
+
+ 13:14:42  5   preparation process.  That dictates everything, if
+
+           6   you're going to have an analysis that is sensitive
+
+           7   enough or not to detect the asbestos.
+
+           8            The transmission electron microscope is always
+
+           9   the same.  It's how you prepare the sample that goes
+
+ 13:14:58 10   into the transmission electron microscope is where the
+
+          11   rubber meets the road.  So it's really all about sample
+
+          12   preparation.
+
+          13            And then the microscope -- the analysis has a
+
+          14   very specific peer-reviewed government method for
+
+ 13:15:16 15   identifying asbestos.  So sample prep in identifying
+
+          16   the asbestos if it's present.
+
+          17            THE COURT:  So maybe that's a good place to
+
+          18   stop.
+
+          19            MR. SATTERLEY:  I was going to tell Dr. Longo,
+
+ 13:15:27 20   we got a 1:15 hard stop, so we're going to stop for the
+
+          21   day.
+
+          22            THE WITNESS:  Okay.
+
+          23            MR. SATTERLEY:  Will you be available,
+
+          24   Dr. Longo, tomorrow to come back?
+
+ 13:15:35 25            THE WITNESS:  Yes, I will.
+
+
+                                                                   4452
+
+
+           1            THE COURT:  All right.  Two quick things.
+
+           2            You know, we talked about jurors asking
+
+           3   questions, and I haven't brought it up again.
+
+           4            If you have a question that you think is
+
+ 13:15:47  5   important, feel free to share it in the chat.  The
+
+           6   lawyers need to run the trial, but I also want you to
+
+           7   all be included.
+
+           8            Second of all, we've had some equipment
+
+           9   problems, although by and large, we've been up and
+
+ 13:16:03 10   running.  If you feel that you need replacement
+
+          11   equipment or upgraded equipment, if you could send an
+
+          12   email to Department 19 to Ms. Mendola, we'll look into
+
+          13   it and do our best.
+
+          14            I don't think we can do anything by tomorrow,
+
+ 13:16:20 15   but we need -- we need to do our best to not have
+
+          16   failures as the trial goes on.
+
+          17            So thank you very much, everybody.  We'll see
+
+          18   you tomorrow morning, 8:45 to check in.  9:00, we'll
+
+          19   start with some small pieces of testimony that a couple
+
+ 13:16:37 20   of the jurors have missed, and then we'll proceed with
+
+          21   Dr. Longo.
+
+          22            Please don't do any research.  Don't talk to
+
+          23   anybody about anything having anything to do.  Don't,
+
+          24   you know, scour the newspapers looking for articles,
+
+ 13:16:53 25   although I don't think you'll find any.  And don't make
+
+
+                                                                   4453
+
+
+           1   up your mind about anything until you've heard all the
+
+           2   evidence and the law and the instructions.
+
+           3            So thank you very much.  See you tomorrow
+
+           4   morning.
+
+ 13:17:04  5            Why don't we go in the breakout room.
+
+           6            MR. SATTERLEY:  Can Dr. Longo be excused?
+
+           7            THE COURT:  Dr. Longo, you are excused.  Thank
+
+           8   you.
+
+           9            THE WITNESS:  Thank you, Your Honor.
+
+ 13:17:17 10            (The following proceedings were held in the
+
+          11   virtual breakout room with counsel outside the presence
+
+          12   of the jury:)
+
+          13            THE COURT:  All right.  We are in the breakout
+
+          14   room.
+
+ 13:17:41 15            MR. SATTERLEY:  The good news is, I think since
+
+          16   Dr. Longo is going to be on the witness stand all day
+
+          17   tomorrow and probably some of Thursday, we don't have
+
+          18   any things to go over because we've already covered all
+
+          19   that stuff.
+
+ 13:17:53 20            So I think we can -- unless J&J has some other
+
+          21   things they want to argue, we could probably show up a
+
+          22   little bit later than 8:15 tomorrow, maybe 8:30 or
+
+          23   8:40.
+
+          24            THE COURT:  We can go 8:45 if we've got nothing
+
+ 13:18:10 25   to discuss.  If we have something to discuss, you can
+
+
+                                                                   4454
+
+
+           1   figure that out overnight and email.
+
+           2            It would be nice if these witnesses gave
+
+           3   somewhat tighter answers, I must say, but I don't know
+
+           4   what I can do to effect that.
+
+ 13:18:19  5            MR. SATTERLEY:  We all, when we have our
+
+           6   witnesses on the witness stand, are thinking that at
+
+           7   times.
+
+           8            THE COURT:  I'm just being a juror, and I'm
+
+           9   noticing, particularly this last hour, some of the
+
+ 13:18:31 10   jurors had a lot of trouble sitting still.  And some of
+
+          11   the ones who were still up until today, I just noticed
+
+          12   a couple of them stretching and yawning and having
+
+          13   trouble.
+
+          14            So the more dynamic we make it, the more
+
+ 13:18:47 15   they'll be with us.  It's not an entertainment, but I
+
+          16   think we all want it to be dynamic enough that they pay
+
+          17   attention.
+
+          18            MR. SATTERLEY:  We agree.
+
+          19            MR. DUBIN:  Mr. Satterley, do you have any idea
+
+ 13:19:00 20   about how long your direct is?  Are we even going to
+
+          21   pass him tomorrow?  I'm just trying to figure it out.
+
+          22            MR. SATTERLEY:  It was my hope to go to pass
+
+          23   him so you could do a little bit of cross tomorrow, but
+
+          24   as the Court pointed out, sometimes witnesses talk
+
+ 13:19:14 25   longer than expected.  I'll try to rein him in, but...
+
+
+                                                                   4455
+
+
+           1            THE COURT:  Yeah.  Maybe give him a heads up.
+
+           2            MR. DUBIN:  I'm just curious, like, whether I
+
+           3   should even be staying awake or not.  That's all.
+
+           4            MR. SATTERLEY:  That's funny.
+
+ 13:19:30  5            MR. DUBIN:  All right.
+
+           6            THE COURT:  All right.
+
+           7            MR. SATTERLEY:  8:45 unless we have an issue
+
+           8   that we raise to Your Honor?
+
+           9            THE COURT:  Okay.  Sounds good.
+
+          10
+
+          11                      (Whereupon, the proceedings
+
+          12                      were concluded at 1:19 p.m.)
+
+          13
+
+          14
+
+          15
+
+          16
+
+          17
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22
+
+          23
+
+          24
+
+          25
+
+
+                                                                   4456
+
+
+           1   STATE OF CALIFORNIA    )
+
+           2                          )     ss.
+
+           3   COUNTY OF ALAMEDA      )
+
+           4
+
+           5            I, EARLY K. LANGLEY, do hereby certify:
+
+           6        That foregoing proceedings were held in the
+
+           7   above-entitled action at the time and place therein
+
+           8   specified;
+
+           9        That said proceedings were taken before me at said
+
+          10   time and place, and was taken down in shorthand by me,
+
+          11   a Certified Shorthand Reporter of the State of
+
+          12   California, and was thereafter transcribed into
+
+          13   typewriting, and that the foregoing transcript
+
+          14   constitutes a full, true and correct report of said
+
+          15   proceedings that took place;
+
+          16        IN WITNESS WHEREOF, I have hereunder subscribed my
+
+          17   hand on June 29, 2021.
+
+          18
+
+          19
+
+          20
+
+          21
+
+          22                      ________________________________
+                                  EARLY K. LANGLEY, CSR No. 3537
+          23                      State of California
+
+          24
+
+          25

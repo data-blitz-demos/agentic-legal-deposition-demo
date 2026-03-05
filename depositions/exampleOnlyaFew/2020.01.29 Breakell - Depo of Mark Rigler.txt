@@ -1,0 +1,3382 @@
+0242
+ 1                       SUPERIOR COURT
+          JUDICIAL DISTRICT OF FAIRFIELD AT BRIDGEPORT
+ 2   
+ 3   
+     ADAM M. BREAKELL,          )
+ 4                              )
+                Plaintiff,      )
+ 5                              ) ASB-FBT-CV17-6066689-S
+             vs.                )
+ 6                              )
+     3M CO. (F/K/A MINNESOTA    )
+ 7   MINING & MANUFACTURING     )
+     CO.), ET AL.,              )
+ 8                              )
+                Defendants.     )
+ 9   
+10   
+       *THIS TRANSCRIPT HAS BEEN DESIGNATED AS PROTECTED*
+11    *PURSUANT TO PARAGRAPH 15 OF THE PROTECTIVE ORDER*
+12   
+13         CONTINUED DEPOSITION OF MARK RIGLER, Ph.D.
+14                         Volume II
+15                   (Taken by Defendants)
+16   
+17                      January 29, 2020
+18                         10:26 a.m.
+19   
+20   
+21   
+                           Suite 266
+22                    1350 Scenic Highway
+                      Snellville, Georgia
+23   
+24   
+     Reported by:   F. Renee Finkley, RPR, RMR, CRR, CLR,
+25   CCR-B-2289
+0243
+ 1                   APPEARANCES OF COUNSEL
+ 2   
+ 3   On behalf of the Defendants Briggs and Simplicity:
+ 4        CATHERINE A. MOHAN, Esq.
+          McCarter & English LLP
+ 5        City Place I
+          185 Asylum Street
+ 6        Hartford, Connecticut 06103
+          (860) 275-6713
+ 7        cmohan@mccarter.com
+ 8   
+     On behalf of the Defendants Johnson & Johnson
+ 9   and Johnson & Johnson Consumer Inc.:
+10        ALEX V. CHACHKES, Esq.
+          Orrick, Herrington & Sutcliffe, LLP
+11        51 West 52nd Street
+          New York, New York  10019-6142
+12        (212) 506-3748
+          achachkes@orrick.com
+13   
+14   On behalf of the Plaintiff:
+15        DARRON E. BERQUIST, Esq.
+          The Lanier Law Firm, PLLC
+16        126 East 56th Street, 6th Floor
+          New York, New York  10022
+17        (212) 421-2800
+          darron.berquist@lanierlawfirm.com
+18   
+19   On behalf of the Defendants Kelsey-Hayes Company and
+     Honeywell International Inc. f/k/a AlliedSignal Inc.,
+20   as successor-in-interest to The Bendix Corporation:
+21        MATTHEW J. ZAMALOFF, Esq. (Via Telephone)
+          Cetrulo LLP, 10th Floor
+22        Two Seaport Lane
+          Boston, Massachusetts  02210
+23        (61) 721-7550
+          mzamaloff@cetllp.com
+24   
+25   
+0244
+ 1            APPEARANCES OF COUNSEL (continued)
+ 2   
+ 3   On behalf of the Defendant
+     Goodyear Tire & Rubber Company:
+ 4   
+          ERIC D. EDDY, Esq. (Via Telephone)
+ 5        Wolf Horowitz & Etlinger LLC
+          Suite 606
+ 6        750 Main Street
+          Hartford, Connecticut  06103
+ 7        eeddy@wolfhorowitz.com
+ 8   
+     On behalf of the Defendants
+ 9   Whittaker Clark and Daniels:
+10        AUTUMN KNICELY-QUITO, Esq. (Via Telephone)
+          CHRISTOPHER KOZAK, Esq. (Via Telephone)
+11        Landman Corsi Ballaine & Ford P.C.
+          One Gateway Center, 4th Floor
+12        Newark, New Jersey  07102
+          (973) 623-2700
+13        aknicely@lcbf.com
+14   
+     On behalf of the Defendant Kohler Company:
+15   
+          MARK J. HOOVER, Esq. (Via Telephone)
+16        Pierce Davis & Perritano LLP
+          Suite 1100N
+17        10 Post Office Square
+          Boston, Massachusetts  02109
+18        (617) 350-0950
+          mhoover@piercedavis.com
+19   
+20   On behalf of the Defendant
+     Honeywell International, Inc.:
+21   
+          KEVIN P. GREENE, Esq. (Via Telephone)
+22        Willcox & Savage, P.C.
+          Wells Fargo Center
+23        440 Monticello Avenue, Suite 2200
+          Norfolk, Virginia  23510
+24        (757) 628-5686
+          kgreene@wilsav.com
+25   
+0245
+ 1            APPEARANCES OF COUNSEL (continued)
+ 2   
+ 3   On behalf of the Defendant
+     Honeywell International, Inc.:
+ 4   
+          KEVIN E. HEXSTALL, Esq. (Via Telephone)
+ 5        Marshall Dennehey
+          2000  Market Street, Suite 2300
+ 6        Philadelphia, Pennsylvania  19103
+          (215) 575-2642
+ 7        kehexstall@mdwcg.com
+ 8   
+     On behalf of the Defendant AGCO/Massey Ferguson:
+ 9   
+          KEVIN W. HADFIELD, Esq. (Via Telephone)
+10        MGM The Law Firm
+          One Citizens Plaza, Suite 620
+11        Providence, Rode Island  02903
+          (401) 443-2106
+12        khadfield@mgmlaw.com
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0246
+ 1                          CONTENTS
+ 2   THE WITNESS:  MARK W. RIGLER, Ph.D.
+ 3   EXAMINATION                                      Page
+ 4        By Ms. Mohan                                 247
+ 5        By Mr. Chachkes                              282
+ 6        By Mr. Greene                                337
+ 7        By Mr. Berquist                              357
+ 8   
+ 9                         EXHIBITS
+10   
+     Exhibit        Description                       Page
+11   
+12   Exhibit 42     Protective Order                   281
+13   Exhibit 43     MAS tissue digestion SOPs          308
+14   Exhibit 44     ISO 17025                          327
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0247
+ 1                   MARK W. RIGLER, Ph.D.
+ 2   having been previously duly sworn, was examined and
+ 3   testified as follows:
+ 4                        EXAMINATION
+ 5   BY MS. MOHAN:
+ 6        Q.    Good morning --
+ 7        A.    Good morning.
+ 8        Q.    -- Doctor.  As we just stated, you are
+ 9   still under oath.
+10        A.    Yes.
+11        Q.    This is day two of your deposition in the
+12   Breakell case, correct?
+13        A.    Correct.
+14        Q.    Can you tell us, have you done anything
+15   since the deposition last June?  Done any research?
+16   Updated any reports?  Reviewed any documents?
+17              MR. BERQUIST:  You're talking about
+18        specifically in this case?
+19              MS. MOHAN:  Specifically in this case.
+20              THE WITNESS:  I took a look at my
+21        deposition.  I updated my CV since that time.
+22        So those are the -- those are the main things
+23        I've done at this point.
+24        Q.    (By Ms. Mohan)  Have you reviewed
+25   depositions of any of the experts that have been
+0248
+ 1   taken in this case since your deposition last June?
+ 2        A.    No.
+ 3              MS. MOHAN:  Just a minute.  We're off the
+ 4        record for a minute.
+ 5              (Discussion off the record.)
+ 6        Q.    (By Ms. Mohan)  I'm sorry, I think the
+ 7   last question I asked you -- and I think you gave me
+ 8   an answer about the transcripts.  Did he give me an
+ 9   answer?
+10              (The record was read by the reporter.)
+11        Q.    (By Ms. Mohan)  Have you spoken to anyone
+12   regarding the deposition that you're giving today?
+13        A.    No.
+14        Q.    Have you met with plaintiff's counsel?
+15        A.    Yes.
+16        Q.    Okay.  And when did you meet with him?
+17        A.    This morning.
+18        Q.    And what time did you meet with him?
+19        A.    It was after 9:00.
+20        Q.    And other than meeting him at 9:00 a.m.,
+21   have you had any conversations with him or anybody
+22   from his office since last June?
+23              MR. BERQUIST:  Regarding this case?
+24              MS. MOHAN:  Regarding -- every question
+25        I'm going to ask you is regarding this case.
+0249
+ 1              THE WITNESS:  Understood.  Not that I can
+ 2        recall as I sit here.
+ 3        Q.    (By Ms. Mohan)  What did you do in
+ 4   preparation for coming here today?
+ 5        A.    I reviewed, as I said, my deposition,
+ 6   looked over the reference list in this case, and then
+ 7   I -- trying to remember if there were other things
+ 8   that I did.  That was -- that was mainly it, yes.
+ 9        Q.    Did you take any notes on your deposition
+10   transcript?
+11        A.    No.
+12        Q.    Highlight anything?
+13        A.    I may have highlighted some areas of the
+14   transcript.
+15        Q.    And is there anything in that -- in your
+16   review of the transcript that you thought was
+17   incorrect and that you need to clear up?
+18              MR. BERQUIST:  Objection, form.
+19              THE WITNESS:  Well, there was a -- I'm
+20        trying to think.  There was -- there was one
+21        thing.  My mind is blank about that, but let me
+22        come back to that.
+23        Q.    (By Ms. Mohan)  Sure, yep.  Any time today
+24   you think about it, you can just interrupt once it
+25   comes into your mind there.
+0250
+ 1        A.    Oh, I know what it was.
+ 2        Q.    Okay.
+ 3        A.    There was a question Mr. Chachkes, I
+ 4   believe, asked me about the defraction verifications,
+ 5   if we did them in angstroms or nanometers, and I
+ 6   believe I said that I believe the lab did them in
+ 7   nanometers, but they do them in angstroms.  It
+ 8   wouldn't matter.  You could do them in nanometers,
+ 9   but the lab does them in angstroms.
+10        Q.    Is that the only change that you'd like to
+11   correct on the record?
+12              MR. BERQUIST:  Object to the form.
+13              THE WITNESS:  That I can recall.  And,
+14        again, if I can remember additional things, I'll
+15        bring them up.
+16        Q.    (By Ms. Mohan)  And have you done an
+17   errata sheet in this case to make any changes to the
+18   transcript; do you know?
+19        A.    No.
+20        Q.    You didn't do an errata sheet?
+21        A.    No.
+22        Q.    Okay.
+23        A.    No.  And I didn't -- like I said before, I
+24   didn't get the -- I didn't get my original exhibits
+25   back.
+0251
+ 1        Q.    All right.  We'll try to find out what
+ 2   happened to those.
+ 3        A.    Okay.
+ 4        Q.    Now, the one thing that I did see that's
+ 5   different is your employment is different from last
+ 6   June, correct?
+ 7        A.    Yes.
+ 8        Q.    And where are you employed now?
+ 9        A.    The company that I started, a consulting
+10   company, is called Aspex, LLC, and that -- I have a
+11   registered office location in Atlanta, Georgia.
+12        Q.    So you're no longer with Dr. Longo --
+13   you're no longer with MAS?
+14        A.    Correct.
+15        Q.    Okay.  And what does Aspex stand for?
+16        A.    Oh, it's just a name.  I just liked that.
+17        Q.    Okay.
+18        A.    I put an X on Aspex.
+19        Q.    Okay.
+20        A.    Because I like the name, yeah.  Yes.
+21        Q.    And are you the only partner in Aspex?
+22        A.    Yes.
+23        Q.    Do you have any other employees?
+24        A.    No.
+25        Q.    And your business address, is that a lab?
+0252
+ 1   Does that also have a lab?
+ 2        A.    No.  It's a -- it's an office location
+ 3   where I registered the LLC.
+ 4        Q.    Do you worker out of that office?  Is that
+ 5   where you go every day?
+ 6        A.    No.  I actually work out of my residence.
+ 7   I have an office there.
+ 8        Q.    And this new consulting business, what --
+ 9   what are you going to be consulting about?
+10              MR. BERQUIST:  Objection to form.
+11              THE WITNESS:  The company itself does
+12        product development and research and also
+13        scientific consulting.
+14        Q.    (By Ms. Mohan)  Product development?
+15        A.    Yes.
+16        Q.    Research, and what was the third one?
+17        A.    Scientific consulting.
+18        Q.    Scientific consulting.  And what is
+19   product development?
+20        A.    Well, over the years I've had a number of
+21   ideas about certain kinds of products that I would
+22   like to develop and market.  And so -- and also, some
+23   technologies, and I've been working on some of those
+24   things.
+25        Q.    Any big product idea you'd like to share
+0253
+ 1   with us?
+ 2        A.    Not at this time, no, cause there are
+ 3   other competitors for them.  And one of those things
+ 4   where you may end up having to patent something.
+ 5        Q.    I was about to ask.
+ 6        A.    Yeah.
+ 7        Q.    So you're developing things at some point
+ 8   you'd like to try to patent?
+ 9        A.    Yes, possibly.
+10        Q.    And could you just tell me the ideas about
+11   the products you're developing?  Are they in a
+12   particular area like in the area of scientific lab
+13   equipment?  You know, is it something that --
+14        A.    No.
+15        Q.    -- you've been doing --
+16        A.    Yeah.
+17        Q.    -- or is it something brand-new like
+18   you're going to invent the next best toaster?
+19        A.    Yes.  It's similar to that.  It's just
+20   other things that I've been working on over the
+21   years.  They're more in the consumer products area.
+22        Q.    Oh, so it is more like toasters?
+23        A.    Sort of.
+24        Q.    And what about the research, what is the
+25   research part of your consulting that you're
+0254
+ 1   marketing?
+ 2        A.    There are firms that are interested in
+ 3   doing background research on specific kinds of
+ 4   technologies.  So in areas of my expertise, I'm able
+ 5   to consult in those areas.
+ 6        Q.    And when -- what type of technologies?
+ 7        A.    Oh, well, they would relate to what my
+ 8   background and training is in.  While at MAS, I did
+ 9   quite a bit of materials analysis work.  So I'm
+10   familiar with all different kinds of products and --
+11   so I can bring certain kinds of expertise to
+12   companies that may want to know about certain kinds
+13   of technologies or analytical technologies, if you
+14   will.  Say they wanted to analyze a particular kind
+15   of product or material, I could help guide them in
+16   that.
+17        Q.    And what about your last one you gave me,
+18   which was scientific consulting, what would that
+19   entail?
+20        A.    That would be specifically in areas
+21   where -- I think I've just described a little bit of
+22   that -- where companies may need or groups may need
+23   advice or consulting done to understand certain kinds
+24   of technologies or processes.  So that would be,
+25   quote, scientific consulting, unquote.
+0255
+ 1        Q.    And will your new consulting company still
+ 2   be involved in litigation?
+ 3        A.    It may be, yes.
+ 4        Q.    And would that entail doing what you're
+ 5   doing here today, testifying in cases?
+ 6        A.    It could if the client had that kind of
+ 7   requirement.
+ 8        Q.    Do you see this new consulting company
+ 9   that you have doing the types of work you did for
+10   MAS, like working and being responsible for a lab?
+11        A.    That's -- yes, that's possible, yes.
+12        Q.    And if you did that, what -- since you
+13   don't have a lab, how would you go about doing that
+14   work since you're labless?
+15        A.    Oh, well, one thing about being in the
+16   business for over 30 years, in the testing business,
+17   is I have a lot of contacts in the -- well, in
+18   Georgia, the Atlanta area, numerous laboratories from
+19   materials analysis laboratories to biological to
+20   university.  And so I could do testing using any of
+21   those kinds of facilities.
+22        Q.    So if one of your clients asked you to do
+23   that type of work like you've done before for MAS,
+24   you would be able to go out and borrow a lab of -- a
+25   certified lab or accredited lab?
+0256
+ 1        A.    Yes, sure.  I could use one of those labs,
+ 2   of course.  Yes.
+ 3        Q.    Since you have left MAS, have you become
+ 4   certified or gotten any kind of different credentials
+ 5   since you've left MAS?
+ 6        A.    No.
+ 7        Q.    Are there any things you've had to do to
+ 8   sort of keep up your expertise once you left that
+ 9   lab?
+10        A.    Yes.  I have and continue to extend my
+11   memberships in the scientific societies that I was
+12   associated with while at MAS.  They include the
+13   American Industrial Hygiene Association, the American
+14   Association for the Advancement of Science, the --
+15   let's see.  I'd have to look at my resume or my CV,
+16   but a number of different groups.  Microscopy Society
+17   of America.  And being a member of those groups,
+18   you're able to obtain their current literature
+19   publications and keep abreast of what's going on in
+20   those areas.  Conferences and -- you know, scientific
+21   conferences, that kind of thing.
+22        Q.    Are you presently working in your own
+23   company now for plaintiffs' firms in the asbestos
+24   litigation other than the Lanier firm?
+25        A.    Yes.
+0257
+ 1        Q.    And what other plaintiffs' law firms?
+ 2        A.    I would prefer not to comment on that on
+ 3   the record.
+ 4        Q.    Okay.  Have you testified in any cases
+ 5   since last June at trial?
+ 6        A.    At trial since last June, yes.
+ 7        Q.    And what -- what -- how many cases?
+ 8        A.    At trial, there was one case.
+ 9        Q.    And what was the name of that case?
+10        A.    That was the Melody Lewis case.
+11        Q.    And where was that case?
+12        A.    Indianapolis.
+13        Q.    Other than that one trial case, have you
+14   been deposed since June in any other asbestos cases?
+15        A.    Yes.
+16        Q.    How many?
+17        A.    I knew you were going to ask me that.  I
+18   don't recall how many it is.  Maybe two or three.
+19        Q.    And did the two or three cases that you've
+20   been deposed in, do they emanate out of work that you
+21   did while you were at MAS?
+22        A.    What do you mean by emanate?
+23        Q.    Yeah.  That's a bad word.
+24              Are those cases cases that you worked on
+25   while an employee of MAS?
+0258
+ 1        A.    No.
+ 2        Q.    So the two or three cases in which you
+ 3   were deposed, you were deposed for work you did in
+ 4   your new company, Aspex?
+ 5        A.    Yes, to the best of my recollection.
+ 6        Q.    And do you recall the names of those two
+ 7   or three cases?
+ 8        A.    I apologize, but I don't.
+ 9        Q.    Have you done any tissue digestions since
+10   you've left MAS?
+11        A.    No.
+12        Q.    What is your present hourly rate?
+13        A.    500.
+14        Q.    And is that for everything?  Whether it's
+15   research or deposition testimony or trial testimony,
+16   it's a flat 500?
+17        A.    For the hourly, yes.
+18        Q.    After 30 years, what is the reason why you
+19   left Dr. Longo at MAS?
+20              MR. BERQUIST:  Asked and answered.
+21              MS. MOHAN:  Not in this deposition.
+22              MR. BERQUIST:  In plenty of others.
+23              THE WITNESS:  I'm pretty sure I answered
+24        that earlier when he was asking me questions,
+25        (indicating).
+0259
+ 1              No, I couldn't have because it was June,
+ 2        so it's not possible.
+ 3              MS. MOHAN:  That's what I thought but --
+ 4              THE WITNESS:  Yes, it was mainly for -- to
+ 5        be able to spend more time with my family.
+ 6        Q.    (By Ms. Mohan)  And did you retire, is
+ 7   that --
+ 8        A.    Yes.
+ 9        Q.    And do you receive a pension from
+10   Dr. Longo?
+11        A.    No.
+12        Q.    Do you -- you presently work for any
+13   clients or customers that are not involved in the
+14   asbestos litigation?
+15        A.    Not at this time.
+16        Q.    By any chance, were you shown Dr. Zhang's
+17   deposition transcript in this case?
+18        A.    No.
+19        Q.    I'd like to go back and ask some of these
+20   questions, and I -- I know that some of them were
+21   asked at the deposition, but there is -- there seems
+22   to be a disconnect in what occurred with the tissue
+23   digestion at your lab.
+24              Did Dr. Zhang bring with him the tissue,
+25   Mr. Breakell's tissue either in block or slides?
+0260
+ 1        A.    Yes.
+ 2        Q.    Do you recall, as you sit here today,
+ 3   whether it was slides or a block or blocks?
+ 4        A.    I believe --
+ 5              MR. BERQUIST:  Objection to form.
+ 6              THE WITNESS:  Excuse me.  I believe the
+ 7        blocks were brought, and I believe -- I can't
+ 8        recall.  We had all of the slides there, too.
+ 9        So that was the -- that was the situation.
+10        Q.    (By Ms. Mohan)  And what do you recall
+11   were Dr. Zhang's responsibilities in regard to the
+12   slides or the blocks that day?
+13              MR. BERQUIST:  Objection to form.
+14              THE WITNESS:  Can you be more specific?
+15        Q.    (By Ms. Mohan)  What was he -- what was
+16   your understanding as to what Dr. Zhang was going to
+17   do?
+18              MR. BERQUIST:  Objection to form.
+19              THE WITNESS:  Well, at the laboratory,
+20        Dr. Zhang was going to review the slides.  He
+21        was going to review the tissue types on the
+22        slides, and then he was going to cut the blocks
+23        and prepare -- well, essentially, cut the blocks
+24        for the tissue analysis.
+25        Q.    (By Ms. Mohan)  Was he dressed in a
+0261
+ 1   doctor's lab coat?  Did he have surgical gloves?
+ 2   Did --
+ 3        A.    Oh, well, yeah, gloves were used for the
+ 4   block cuts.
+ 5        Q.    No lab coat?
+ 6        A.    I don't recall whether there was a lab
+ 7   coat involved.  Everything was done inside of a, I
+ 8   believe a class 100 hood.  So there's no lab coat
+ 9   required for that.
+10        Q.    Do you recall whether Dr. Zhang looked at
+11   slides under a microscope?
+12              MR. BERQUIST:  Objection to form.
+13              THE WITNESS:  Yes, yes.  He and I went to
+14        the optical microscopy lab with the slides.  We
+15        sat down at the microscope and went through each
+16        one of the slides.  He reviewed the pathology on
+17        each slide, and then he marked the slides as to
+18        the areas that corresponded to what were going
+19        to be removed on the blocks.
+20        Q.    (By Ms. Mohan)  And so he took a pen or
+21   something and marked the slide?
+22        A.    Yes.
+23        Q.    And after those slides were marked, what
+24   was the next thing that you and he did?
+25        A.    Then we moved on to the TEM prep lab with
+0262
+ 1   the blocks and took the blocks to that laboratory,
+ 2   along with the slides, and then I instructed him on
+ 3   how to make the cuts and remove the tissue from the
+ 4   blocks.
+ 5        Q.    So is it Dr. Zhang that actually cut the
+ 6   block?
+ 7        A.    Yes.
+ 8        Q.    And what did he use to cut the block?
+ 9        A.    He used a straight-back razor, pre-cleaned
+10   razor.
+11        Q.    And that was a razor that was in your lab?
+12        A.    Yes.  We have -- or MAS has those kinds of
+13   tools, yes.
+14        Q.    And after the slides were cut from that
+15   block, what was the next step that you did?
+16              MR. BERQUIST:  You mean the blocks cut?
+17              MS. MOHAN:  I mean, yes, the blocks cut.
+18              THE WITNESS:  Oh, the tissue samples are
+19        placed into containers, screw-top tubes, and
+20        then they are moved on into the process.
+21        Q.    (By Ms. Mohan)  And were you the one that
+22   took the tissue and put it in the test tubes?
+23        A.    Well, I showed him -- I had set the tubes,
+24   all of those up with the markings on them as to which
+25   sample is which, and then he placed them into the
+0263
+ 1   tubes.
+ 2        Q.    His testimony was that you actually did
+ 3   that work.
+ 4        A.    No.  He did that work.  That was the
+ 5   reason why he came to the laboratory was to do that
+ 6   work.
+ 7        Q.    Dr. Zhang testified that he showed you on
+ 8   the slides what was benign tissue and then what was
+ 9   tumor tissue.  Do you recall that?
+10        A.    Yes.
+11        Q.    Do you recall a discussion about what
+12   tissue would be selected to do the digestion with
+13   Dr. Zhang?
+14        A.    We talked about -- we talked about that,
+15   yes.
+16        Q.    And was it you that ultimately made the
+17   decision as to what tissue would be digested?
+18        A.    Well, we both discussed that.  And the
+19   blocks that were available with the tissue that was
+20   available, the tissue was selected from those blocks
+21   and marked as the tissue was described in the
+22   pathology report.
+23        Q.    And is it your understanding that the
+24   tissue that was digested was only tumor tissue?
+25              MR. BERQUIST:  Objection to form.
+0264
+ 1              THE WITNESS:  No.  I believe one of them
+ 2        was tumor, and I believe the other was
+ 3        mesothelial tissue.  I'd have to go back and
+ 4        look at the path report, but I believe that's --
+ 5        that's what -- that's what was used.  Oh,
+ 6        falciform ligament, excuse me.
+ 7        Q.    (By Ms. Mohan)  And so it's your testimony
+ 8   that Dr. Zhang actually cut the tissue and put it in
+ 9   the test tubes?
+10        A.    I was there.
+11        Q.    Do you recall how long Dr. Zhang was
+12   there?
+13        A.    I believe he was there two or three hours,
+14   something like that.
+15        Q.    Now, Dr. Zhang had an associate with him
+16   there, correct?
+17        A.    Yes.
+18        Q.    Do you recall who that was?
+19        A.    I believe it was a Dr. Wu, W-U.
+20        Q.    And do you know who Dr. Wu is?
+21        A.    My only knowledge is that Dr. Wu is his
+22   assistant.
+23        Q.    Well, Dr. Wu is I believe a colleague of
+24   his.  Did you have an understanding that she was a
+25   dentist and a lawyer?
+0265
+ 1        A.    No.  I had no idea of that.
+ 2        Q.    Do you have any understanding as to why
+ 3   she was there?
+ 4        A.    My only understanding was that they work
+ 5   together.
+ 6        Q.    She didn't participate in any way in the
+ 7   digestion?
+ 8        A.    No.
+ 9        Q.    Was she there when any of the work was
+10   being performed?
+11        A.    No.  She was elsewhere in the laboratory.
+12   I think she was in the conference room.
+13        Q.    Dr. Zhang testified that -- that after he
+14   marked the slides that you took them and worked on
+15   them under the hood to put them in the test tubes; is
+16   that accurate?
+17        A.    No.
+18        Q.    Did you or Dr. Zhang take any images of
+19   the work that was being performed?  Was there any
+20   photographs taken of the slides before they were put
+21   in the test tubes, the markings on the slides,
+22   anything like that?
+23        A.    I don't recall if there were photos of the
+24   slides, but there were photos of the blocks prior to
+25   and after the cuts, and they're in the report.
+0266
+ 1        Q.    Was there only one test tube made of the
+ 2   tissue?
+ 3        A.    There was a tube of one sample, which was
+ 4   the tumor, slash, meso sample, and then there was a
+ 5   tube of the falciform ligament tissue.
+ 6        Q.    So two tubes?
+ 7        A.    Two tubes.
+ 8        Q.    Was there any remaining tissue?
+ 9        A.    Yes.
+10        Q.    And what happened to the remaining tissue?
+11        A.    I don't recall what happened to that
+12   tissue, whether Dr. Wu took that tissue or whether it
+13   remained at MAS.
+14        Q.    Why would Dr. Wu have taken the tissue?
+15        A.    Well, he may have been asked to do that.
+16        Q.    You mean Dr. Zhang?
+17        A.    Excuse me.  Dr. Zhang, yes.  Dr. Wu.
+18        Q.    Okay.  You confused me.
+19        A.    I apologize.
+20        Q.    That's all right.
+21        A.    Yeah, Dr. Zhang.
+22        Q.    So there was no remaining tissue at MAS?
+23        A.    I don't know if there are or is at this
+24   present time.
+25        Q.    If there is, certainly somebody would have
+0267
+ 1   a record of that?
+ 2        A.    Yes.
+ 3        Q.    And certainly, if Dr. Zhang took any
+ 4   remaining tissue with him, there would be a record of
+ 5   that?
+ 6        A.    Yes.  There would --
+ 7              MR. BERQUIST:  Objection to form.
+ 8              THE WITNESS:  There would be a custody
+ 9        transfer chain.
+10        Q.    (By Ms. Mohan)  What is the minimum size
+11   of a tissue sample that you use when performing a
+12   digestion?
+13              MR. BERQUIST:  What is the what size?
+14              MS. MOHAN:  Minimum size of a tissue
+15        sample.
+16              THE WITNESS:  I've analyzed tissue samples
+17        as small as, I believe, in the range of five to
+18        10 milligrams and as high as a gram or a hundred
+19        milligrams, excuse me.
+20        Q.    (By Ms. Mohan)  Obvious, the larger the
+21   size of the tissue sample, the more accurate the
+22   information would be?
+23        A.    No.  I mean, it should be accurate
+24   regardless of the size.  It's just with more tissue,
+25   you have more to work with.
+0268
+ 1        Q.    Easier to evaluate a larger tissue sample?
+ 2        A.    No.  It's the same as far as the
+ 3   evaluation goes.  It's just the mass that you have.
+ 4   Some tissue samples have a small amount, some tissue
+ 5   blocks have a very small amount of tissue, and that's
+ 6   what you have to work with in the cases.  Some have a
+ 7   large amount.  Sometimes you'll have ten blocks of
+ 8   the same tissue type.  For instance, lung tissue,
+ 9   which you can have a lot of.  Sometimes you only have
+10   one block.
+11        Q.    Do you have any documentation or data
+12   sheets regarding the positive controls that were used
+13   for the tissue analysis in the Breakell case?
+14              MR. BERQUIST:  Objection to form.
+15              THE WITNESS:  Well, that is the process
+16        blank and the wax blank, yes; and they're in
+17        that report.
+18        Q.    (By Ms. Mohan)  And what do you use for
+19   your positive controls?
+20        A.    Well, the controls that are used are,
+21   again, a wax blank from the tissue block itself, and
+22   then you have what's called a process blank, which is
+23   a blank where all the process fluids were used.
+24        Q.    Do you have negative samples?
+25              MR. BERQUIST:  Objection to form.
+0269
+ 1              THE WITNESS:  Well, again, the controls
+ 2        would be representative of what the material
+ 3        would be.
+ 4        Q.    (By Ms. Mohan)  Do you have data sheets
+ 5   regarding the negative samples?
+ 6              MR. BERQUIST:  Objection to form.
+ 7              THE WITNESS:  All of the controls that we
+ 8        have, the appropriate controls are in the
+ 9        report.
+10        Q.    (By Ms. Mohan)  Did you ever perform any
+11   studies along with Dr. Longo while you were at MAS
+12   involving band brakes?
+13        A.    I don't recall.  Over the years, I had
+14   been, when I was laboratory manager, involved in
+15   brake studies at the laboratory.  So some may have
+16   been band brakes.  I don't recall.
+17        Q.    Do you know what a band brake is?
+18        A.    Yes.
+19        Q.    Okay.  Can you describe it for --
+20        A.    Sure.  It's a -- usually a piece of steel
+21   or stainless steel that is bent in a circle and then
+22   applied -- the friction materials applied to the
+23   interior portion of the circle.
+24        Q.    And have you ever been involved in any
+25   studies involving brake bands in lawnmowers?
+0270
+ 1        A.    Again, I may have been at the laboratory.
+ 2   I mean, as far as the lab goes, but I can't recall.
+ 3        Q.    Do you know what kind of friction material
+ 4   is on a band brake?
+ 5              MR. BERQUIST:  Objection to form.
+ 6              THE WITNESS:  As far as the composition?
+ 7        Q.    (By Ms. Mohan)  Yes.
+ 8              MR. BERQUIST:  Objection to form.
+ 9              THE WITNESS:  I am not intimately familiar
+10        with all of the compositional components of band
+11        brake material.
+12        Q.    (By Ms. Mohan)  So you don't know?
+13              MR. BERQUIST:  Objection to form.
+14              THE WITNESS:  I mean, I'm aware that it is
+15        -- it's a high-temperature matrix.  Could be a
+16        polymer of some kind and then a combination of
+17        mineralogical components.
+18        Q.    (By Ms. Mohan)  You don't -- as you sit
+19   here today, if I asked you is it a disk, is it a pad,
+20   is it a woven piece of material, would you be able to
+21   tell me which of those three you think a band brake
+22   is?
+23              MR. BERQUIST:  Objection to form.  Overly
+24        broad.
+25              THE WITNESS:  Well, it would be similar to
+0271
+ 1        a disk, which is similar to a pad, which is
+ 2        similar to a faced brake, if you will.  It's a
+ 3        solid component that is high temperature and
+ 4        mainly of a mineralogical polymeric composition.
+ 5        Q.    (By Ms. Mohan)  What about, have you --
+ 6   did you participate in any studies performed by
+ 7   Dr. Longo and MAS on small engine gaskets?
+ 8        A.    Same answer as before.
+ 9        Q.    You're not sure?
+10        A.    While -- again, while as manager of the
+11   laboratory, those kinds of studies had been
+12   performed, so I would have been -- I would have been
+13   at the lab.
+14        Q.    And so are you familiar with Dr. Longo's
+15   study of the Tecumseh Small Engines?
+16        A.    Only in a very non-specific way.
+17        Q.    And can you be more specific as to that
+18   non-specific way?
+19        A.    Only -- that only I know that it was a --
+20   it was a study where the gaskets were removed and the
+21   measurements of the release of asbestos, if any, was
+22   performed.
+23        Q.    So you do have a memory that it was a work
+24   practice study that was done on the Tecumseh Small
+25   Engines?
+0272
+ 1        A.    Well, yes.  I mean, most likely, yes.
+ 2        Q.    And I just want to make sure I understand
+ 3   this.  So if Dr. Longo had performed a work practice
+ 4   study on a Tecumseh Small Engine during the period of
+ 5   time you were there, you would have likely been
+ 6   working in the lab and have had some involvement in
+ 7   that study?
+ 8              MR. BERQUIST:  Objection to form.
+ 9              THE WITNESS:  Again, only as the
+10        laboratory manager.
+11        Q.    (By Ms. Mohan)  And in regard to work
+12   practice studies performed by Dr. Longo, as the
+13   laboratory manager, what would your role be?
+14        A.    In that case, it's working with the
+15   department managers to work and understand
+16   their -- what they're doing on a day-to-day basis in
+17   terms of projects, that kind of thing.  So that would
+18   be mainly what you would be doing, and then also be
+19   work with quality control.
+20        Q.    Well, I think my -- I would like my
+21   question -- and maybe I didn't ask it well enough --
+22   to be sort of more specific.
+23              In a work practice study by Dr. Longo,
+24   would your lab be testing the air?  I mean, what
+25   is -- what would you -- what would be the actual work
+0273
+ 1   you would be doing?
+ 2        A.    Sure.  The lab would be testing the bulk
+ 3   material itself to determine the composition and the
+ 4   asbestos content and types, and it also may be doing
+ 5   the releasability study.
+ 6        Q.    And, certainly, in your lab, all of the --
+ 7   the protocol that's used is the same regardless of
+ 8   who the client is, whether it's a defense firm, a
+ 9   company or a plaintiff's counsel, correct?
+10        A.    Correct.
+11        Q.    There's no deviation depending upon who
+12   your client is from the protocols?
+13        A.    Not that I would be aware of.
+14        Q.    Would you agree with me any lab following
+15   your protocols should be able to reproduce your
+16   results?
+17        A.    The answer to that is, yes, they should.
+18   There are variations in material just as there are in
+19   tissue.  So you may get some variation from
+20   laboratory to laboratory.
+21        Q.    I know when we -- when your deposition was
+22   taken last June, you were asked a lot of questions
+23   about the medical and scientific literature.  In all
+24   your review of 30 years being involved in the
+25   asbestos litigation, have you ever seen any medical
+0274
+ 1   or scientific literature in regard to studies on
+ 2   lawnmower repair people?
+ 3        A.    Not that I can recall as I sit here.
+ 4        Q.    Did Dr. Longo ever employ industrial
+ 5   hygienists at MAS?
+ 6              MR. BERQUIST:  Objection to form.
+ 7              THE WITNESS:  Yes.
+ 8        Q.    (By Ms. Mohan)  And is there presently
+ 9   industrial hygienists at MAS?
+10        A.    Let me think.  I don't think so.
+11        Q.    When was the last time you recall that MAS
+12   employed an industrial hygienist?  And when I say
+13   employed, on the staff there.
+14        A.    Oh, I -- they -- MAS contracts with
+15   outside industrial hygienists on projects.
+16        Q.    So they have -- they contract with
+17   industrial hygienists; but in the 30 years you've
+18   worked there, you don't recall one being on staff?
+19        A.    Oh, yes.  There were --
+20        Q.    Oh, there were some on staff?
+21        A.    Yeah, there were multiple ones on staff.
+22   Yes, and I take -- there actually is an industrial
+23   hygienist on staff at MAS, not at the Suwanee
+24   location, but in the west; and his name is John
+25   Templin.
+0275
+ 1        Q.    John?
+ 2        A.    Templin, T-E-M-P-L-E-N, I believe it is --
+ 3   or L-I-N.
+ 4        Q.    How many years has he worked for MAS?
+ 5        A.    Oh, gosh.  Probably at least 20 years, I
+ 6   would -- I'm guessing.
+ 7        Q.    And always at the west location?
+ 8        A.    I believe so, but there are also other
+ 9   industrial hygienists that worked at MAS.
+10        Q.    Any other that you recall while you worked
+11   there?
+12        A.    Yes.  There was -- Michael Mount is an
+13   industrial hygienist there, and George Pineda,
+14   P-I-N-E-D-A.  There was another one -- I don't
+15   know -- another maybe 20, 25 years ago.  I can't
+16   recall his name.
+17        Q.    Is the Breakell case the first peritoneal
+18   mesothelioma tissue digestion you ever did?
+19        A.    I can't recall if it is.  I know I've done
+20   other meso cases similar to that -- to this one.
+21        Q.    And when you say other meso cases, other
+22   peritoneal meso cases?
+23        A.    Yes, I believe so, to the best of my
+24   recollection.
+25        Q.    And as you sit here today, is that -- I
+0276
+ 1   just want to make sure I'm understanding your
+ 2   testimony.  You did do tissue digestions in those
+ 3   cases of the peritoneal?
+ 4        A.    I want to say yes to that.
+ 5        Q.    And how many would those have been?
+ 6        A.    One or two, I believe.
+ 7        Q.    You would agree with me that peritoneal
+ 8   mesothelioma in and of itself is an extremely rare --
+ 9   even in the mesothelioma field?
+10        A.    I think that's a medical question, so I
+11   would have to review the literature to make that
+12   opinion.
+13        Q.    You would agree with me that the medical
+14   and scientific literature indicate that lung tissue
+15   digestion is the gold standard for establishing
+16   whether asbestos is related to a meso, correct?
+17              MR. BERQUIST:  Objection to form.
+18              THE WITNESS:  I believe the standard is --
+19        well, it also involves the analysis of other
+20        kinds of tissue, for instance, lymph node.  If
+21        you look at the Helsinki criteria, they
+22        reference that.  But also, again, if found in
+23        tissue, then there is the knowledge that it
+24        has -- that there has been an exposure.
+25        Q.    (By Ms. Mohan)  And you would agree with
+0277
+ 1   me that in regard to lung tissue digestion, there is
+ 2   control and reference groups in which medical and
+ 3   scientific experts can evaluate the lung tissue,
+ 4   correct?
+ 5              MR. BERQUIST:  Objection to form, and
+ 6        asked and answered.
+ 7              THE WITNESS:  Yes, and I have answered
+ 8        that before in the deposition.
+ 9        Q.    (By Ms. Mohan)  And what I believe you
+10   answered was that there's no control and from -- you
+11   would agree with me there's no control information or
+12   reference information, the general population when it
+13   comes to comparing peritoneal tissue --
+14              MR. BERQUIST:  Objection.
+15        Q.    (By Ms. Mohan)  -- to -- to the general
+16   population?
+17              MR. BERQUIST:  Objection to form.
+18              THE WITNESS:  Well, I believe that there
+19        has been -- I know of at least one study that
+20        has looked at omental tissue, so that's -- has
+21        been done in the population.
+22        Q.    (By Ms. Mohan)  And that's the one study,
+23   but who -- whose study is that?
+24        A.    It's on my reference list.  I want to say
+25   it's a study that Dodson did.
+0278
+ 1        Q.    Dodson did?
+ 2        A.    Yeah, uh-huh.
+ 3        Q.    And --
+ 4        A.    The problem with the -- these, quote,
+ 5   control, unquote, populations, that there is no
+ 6   unexposed population.  So there really is no good
+ 7   control, if you will, in populations due to the
+ 8   population's exposures to asbestos.  So there is no
+ 9   good control.
+10        Q.    Do you know of any medical facilities in
+11   the country that perform tissue digestion on
+12   peritoneal mesotheliomas?
+13        A.    Well, Dodson's group would have been one.
+14   I would say Mt. Sinai, I believe.  So there are at
+15   least one.  Probably more than that.
+16        Q.    Other than Mt. Sinai, do you know?
+17        A.    Not as I sit here.  I would have to
+18   research the literature.
+19        Q.    Mayo Clinic?  Brigham & Williams?  Mass
+20   General?  Sloan Kettering?
+21        A.    Could be, possible.
+22        Q.    Are you aware that none of them will do --
+23   will perform a tissue digestion on peritoneal tissue?
+24              MR. BERQUIST:  Objection to form.
+25              THE WITNESS:  No.  I don't believe that
+0279
+ 1        that is, in fact, the case.  If I went to them
+ 2        with tissue and asked them to do that analysis,
+ 3        I believe that -- that I would be able to have
+ 4        that kind of analysis done.
+ 5        Q.    (By Ms. Mohan)  Really?
+ 6        A.    Uh-huh.
+ 7        Q.    Okay.
+ 8        A.    Yes.
+ 9              MS. MOHAN:  I have no more questions.
+10              MR. CHACHKES:  Do you want to break or
+11        should we go --
+12              THE WITNESS:  Take a quick break.
+13              (A recess was taken.)
+14              MR. BERQUIST:  For the folks on the phone,
+15        because Mr. Chachkes may very well get into
+16        questions about MAS's standard operating
+17        procedures that are subject to protective order,
+18        I'm going to ask that all counsel state their
+19        appearances on the record so that we know that
+20        only those on the phone actually are authorized
+21        to participate in this deposition.  So go ahead,
+22        please.
+23              MR. HADFIELD:  Hi.  This is Kevin Hadfield
+24        for AGCO/Massey Ferguson.
+25              MR. EDDY:  Hi.  This is Eric Eddy for
+0280
+ 1        Goodyear Tire & Rubber Company.
+ 2              MR. HEXSTALL:  This is Kevin Hexstall on
+ 3        behalf of Honeywell International.
+ 4              (Discussion off the record.)
+ 5              MR. BERQUIST:  All right.  Next person.
+ 6              MR. ZAMALOFF:  Matthew Zamaloff on behalf
+ 7        of Honeywell International and on behalf of
+ 8        Kelsey-Hayes Company.
+ 9              MR. HOOVER:  Mark Hoover, H-O-O-V-E-R, on
+10        behalf of Kohler Company.
+11              MR. BERQUIST:  Anyone else?
+12              MS. KNICELY-QUITO:  Autumn Knicely-Quito
+13        on behalf of Whittaker Clark and Daniels.
+14              MR. GREENE:  Kevin Greene on behalf of
+15        Honeywell International, Inc.
+16              MR. BERQUIST:  Anyone else?  All right.
+17        And we're going to mark this for the record, I
+18        think it's the first exhibit, or if we're
+19        continuation -- continuation, the next exhibit
+20        in line.  This is a copy of the protective order
+21        entered by Judge Bellis yesterday.  Let's mark
+22        that as an exhibit.
+23              Then the only person on the phone that I
+24        do not see as having an appearance on file in
+25        the case is Autumn.  Autumn, am I mistaken, or
+0281
+ 1        do you have an appearance on file in the case?
+ 2              MS. KNICELY-QUITO:  Actually, I don't
+ 3        think I do, no.
+ 4              MR. BERQUIST:  So if and when we get into
+ 5        conversations about the standard operating
+ 6        procedures, I'm going to have to disconnect the
+ 7        phone unless you go ahead and immediately file
+ 8        your appearance.
+ 9              MS. KNICELY-QUITO:  I can file it right
+10        now.
+11              MR. BERQUIST:  All right.  So if you just
+12        want to shoot me an e-mail once do you that,
+13        then I think everybody on the phone does have an
+14        active appearance on file in the case, and
+15        people in the room.  So with that, then I won't
+16        need to disconnect the phone.
+17              (Discussion off the record.)
+18              (Exhibit 42 was marked for
+19        identification.)
+20              MR. BERQUIST:  All right.  Go ahead, Alex.
+21              MR. CHACHKES:  Okay.  Great.  Of course,
+22        we have an objection about plaintiff's failure
+23        to produce all SOPs for this deposition.  I
+24        won't belabor the point because there's been
+25        extensive e-mail conversations, but we will be
+0282
+ 1        leaving this deposition open and we'll recall
+ 2        the witness once we move to compel production of
+ 3        those documents.
+ 4                        EXAMINATION
+ 5   BY MR. CHACHKES:
+ 6        Q.    Let's talk about a little about Aspex.
+ 7   It's spelled A-S-P-E-X?
+ 8        A.    Yes, sir.
+ 9        Q.    And, essentially, it's you and your
+10   company that makes you available for hire?
+11        A.    Yes.
+12        Q.    And has Aspex made any money since you
+13   opened it?
+14        A.    Yes.
+15        Q.    Is that all litigation consulting?
+16        A.    Let me think.  I'm not sure.  I would have
+17   to check the record on that because -- most of it
+18   was, yes, but some other portion was not.
+19        Q.    Okay.  So just be clear:  The -- all
+20   the -- all your work post MAS for litigation is
+21   through Aspex?
+22        A.    Yes.
+23        Q.    And that's been a hundred percent for
+24   plaintiffs and for talc litigation?
+25        A.    Again, I would have to check the record on
+0283
+ 1   that.  I don't know.  I would have to check.
+ 2        Q.    Sitting here today, you don't recall any
+ 3   litigation work you've done post MAS that has not
+ 4   been talc litigation related?
+ 5        A.    Not that I can recall.
+ 6        Q.    And you said that it's possible that Aspex
+ 7   and you have earned some money outside of the
+ 8   litigation context.  What is that, if you can
+ 9   remember?
+10        A.    I had done some mold consulting work, mold
+11   testing.
+12        Q.    Anything else?
+13        A.    Not that I can recall.
+14        Q.    In terms of percentage of the money that
+15   you and Aspex have made since your departure from
+16   MAS, would you say the mold consulting work is less
+17   than 5 percent, less than 1 percent?
+18        A.    Yes.
+19        Q.    Less than 1 percent?
+20        A.    Again, I don't know how to put a
+21   percentage on it, but it's a small percent.
+22        Q.    And that was one time mold consulting
+23   work?
+24        A.    Yes, as I can recall, yes.
+25        Q.    And did you use a lab for that mold
+0284
+ 1   consulting work?
+ 2        A.    No.  I did it.  I did the work myself.
+ 3        Q.    And what is mold consulting work that
+ 4   doesn't require a lab?
+ 5        A.    Well, I did the -- I did the analytical
+ 6   work myself because I have -- I have an optical
+ 7   microscope, so I was able to do that myself.
+ 8        Q.    So when you say you have an optical
+ 9   microscope, this is your own personal microscope?
+10        A.    Yes.
+11        Q.    And what resolution is it?
+12        A.    Oh, well, it's the resolution of an
+13   optical microscope.
+14        Q.    So the same kind that --
+15        A.    Same kind --
+16              (Discussion off the record.)
+17        Q.    (By Mr. Chachkes)  So is it the same kind
+18   one would see in, say, a high school?
+19        A.    No.  It's the same kind that you would see
+20   in the kind of testing lab, materials testing lab
+21   that I worked at at MAS.
+22        Q.    When and how did you acquire this
+23   microscope?
+24        A.    It was a microscope that Dr. Longo
+25   essentially gave to me.  So it was an old microscope
+0285
+ 1   that was at MAS.
+ 2        Q.    When did he give it to you?
+ 3        A.    I'm trying to remember.  I think it was
+ 4   after I left.  I mean, I had it -- I had it prior to
+ 5   leaving; but after I left, he agreed that I could
+ 6   have the microscope.
+ 7        Q.    When you say you had it prior to leaving,
+ 8   meaning you had it at home?
+ 9        A.    I had it at my office, yes.
+10        Q.    When you -- so your home office?
+11        A.    Yes.
+12        Q.    When you say your office, you mean you
+13   have a home office?
+14        A.    Yeah, yes.
+15        Q.    Where is that?  Your garage or --
+16        A.    No.  It's in my house, yes.
+17        Q.    What other equipment do you have in your
+18   home office?
+19        A.    Oh, I have just regular business
+20   equipment, printer, computer, that kind of thing.
+21        Q.    What other laboratory --
+22        A.    Oh, laboratory.
+23              MR. BERQUIST:  I would assume that's what
+24        he meant.
+25              THE WITNESS:  I'm sorry.  I have equipment
+0286
+ 1        that I purchased for mold analyses, mold
+ 2        inspections.  So they would be things like a
+ 3        hygrometer, let's see, moisture analyzer, air
+ 4        samplers, that kind of thing.
+ 5        Q.    (By Mr. Chachkes) These are all things
+ 6   you've purchased since leaving MAS?
+ 7        A.    Yes.
+ 8        Q.    Any other lab equipment you've purchased?
+ 9        A.    Not that I can recall as I sit here.
+10        Q.    Do you have any lab equipment suitable for
+11   detecting asbestos and talc?
+12        A.    Only the optical microscope.
+13        Q.    And in your MDL report, I don't recall any
+14   analysis with an optical microscope; am I wrong?
+15        A.    Well, that would have been PLM work, so
+16   that would have been the optical microscope work.
+17        Q.    Okay.
+18        A.    Yes.
+19        Q.    Do you have an optical microscope that is
+20   sufficient to do the kind of PLM work that was done
+21   in the MDL report?
+22        A.    Yes.  There are components -- it's a
+23   polarizing light microscope.  So you can do
+24   non-polarizing work, and you can do polarizing work.
+25        Q.    And it's sufficient resolution?
+0287
+ 1        A.    I believe so, yes.
+ 2        Q.    Do you recall the resolution of your
+ 3   microscope?
+ 4        A.    It's based on the objective apertures that
+ 5   are used.  So right off the top of my head, I would
+ 6   have to look and see.
+ 7        Q.    What would you say your and Aspex's total
+ 8   capital investment has been in laboratory equipment
+ 9   since you've left MAS?
+10        A.    I don't know.  It's not that much.
+11        Q.    Less than $1,000?
+12        A.    Yes.
+13        Q.    Have you bought any equipment that is
+14   specifically for the purpose of looking for asbestos
+15   and talc?
+16        A.    No, only the optical microscope.
+17        Q.    Which you didn't buy?
+18        A.    Correct.
+19        Q.    Other than making yourself available for
+20   research and consulting, you said you're working on a
+21   product, right?
+22        A.    More than one.
+23        Q.    Okay.  Can we have any specificity as to
+24   the area?
+25        A.    No.
+0288
+ 1        Q.    Okay.  Cause you know one cannot run out
+ 2   and get a patent if you tell us, Well, it's in the
+ 3   microwave space.  Hard to run out and get a patent if
+ 4   you tell us with that generality --
+ 5        A.    No, I understand.  It's -- let me see if I
+ 6   can -- how I can put it?  The products relate to the
+ 7   automotive industry.
+ 8        Q.    Are these ideas you've been percolating
+ 9   for years?
+10        A.    Yes.
+11        Q.    Since before the talc litigation?
+12        A.    Yes.
+13        Q.    Like ten years or so?
+14        A.    I don't know.  It's been in my -- I've
+15   thought about them for many years.
+16        Q.    At least five years?
+17        A.    Yes.
+18        Q.    Have you made any capital investments in
+19   trying to develop this idea for products in the
+20   automotive industry?
+21        A.    Mainly, it's been -- it's been
+22   intellectual investment time, that kind of thing.
+23        Q.    So no expenditure on any items other than
+24   pencils and paper?
+25        A.    Right.  At this time, correct.
+0289
+ 1        Q.    Do you have any plans to -- you or Aspex
+ 2   have any plans to buy more laboratory equipment?
+ 3        A.    I don't know.  It would depend on the
+ 4   needs of the client.  So that -- and a lot of work
+ 5   can be done with consulting laboratories, going to
+ 6   those laboratories and using their equipment and
+ 7   paying for time at those labs.
+ 8        Q.    So you have no current plan to -- current
+ 9   concrete plan to purchase any additional equipment?
+10        A.    Not at the present time.
+11        Q.    Do you have any -- you mentioned that you
+12   have certain labs that are available to you, correct?
+13        A.    Yes.
+14        Q.    Have any of those labs already given Aspex
+15   explicit permission to use their equipment?
+16        A.    Not at the present time, no.  Again,
+17   they're available, if you will.
+18        Q.    Okay.  And the -- do you have any clients
+19   right now -- well, just let me ask this:  Does Aspex
+20   have any clients other than mold related?
+21        A.    Yes.
+22        Q.    Who?
+23        A.    Well, that's confidential --
+24        Q.    Was it related --
+25        A.    -- company information.
+0290
+ 1        Q.    What's it related to generally speaking,
+ 2   what technical area?
+ 3        A.    It's related to particle analysis work.
+ 4        Q.    Okay.  Is that the litigation related work
+ 5   we've already discussed?
+ 6        A.    Yes.
+ 7        Q.    Do you -- does Aspex have any clients
+ 8   other than working on plaintiff's side talc
+ 9   litigation, and mold consulting right now?
+10              MR. BERQUIST:  Objection to form.
+11              THE WITNESS:  Aspex is open to working for
+12        clients whether they be in the general consumer
+13        industry, whether they be for defendants,
+14        whether they be for plaintiffs.  So Aspex is
+15        open to those clients, groups.
+16        Q.    (By Mr. Chachkes)  So you understand, my
+17   question is not about who you're open to.
+18        A.    Sure, sure.
+19        Q.    It's right now who has employed you?  Is
+20   it anybody else besides plaintiffs relating to talc
+21   litigation or mold consulting?
+22              MR. BERQUIST:  Objection to form.
+23        Q.    (By Mr. Chachkes)  Right now.
+24        A.    That's correct.
+25        Q.    That's it?
+0291
+ 1        A.    That's it for now.
+ 2        Q.    Do you advertise Aspex?
+ 3        A.    Only by word of mouth.
+ 4        Q.    Do you -- and your registered location, I
+ 5   understand -- is that just a mail drop?
+ 6        A.    Yes.  It's an office.  It's in a building
+ 7   in Tucker, Georgia I believe it is.  They called it
+ 8   Atlanta.  That's the address area.
+ 9        Q.    But it's not an actual physical space that
+10   you can go and work, is it?
+11        A.    No.  It's mainly where the company was
+12   registered.
+13        Q.    Okay.  So it's fair to say it's a mail
+14   drop?
+15        A.    I think you could probably call it that,
+16   yes.
+17        Q.    Have you been there?
+18        A.    Yes.
+19        Q.    What have you been doing to generate
+20   business for Aspex outside of additional work for
+21   plaintiff's lawyers in talc litigation?
+22              MR. BERQUIST:  Objection to form.
+23              THE WITNESS:  Well, you have to understand
+24        that I retired from MAS, retired.  So I generate
+25        work through, again, word of mouth, colleagues
+0292
+ 1        and associates, folks that I know that know what
+ 2        my analytical background is.  So that's the --
+ 3        that's the major way that I'm doing that now.
+ 4        As I say, I -- I would like to be able to have a
+ 5        reasonable work load at the present time.  And
+ 6        so that's the -- that's how I'm handling it
+ 7        right now.
+ 8        Q.    (By Mr. Chachkes)  You said you mainly
+ 9   retired for family reasons, right?
+10        A.    Yes.
+11        Q.    What's the part that's not mainly?
+12        A.    I'm not quite sure.
+13        Q.    So did you exclusively retire for family
+14   reasons?
+15        A.    Pretty much, yes.
+16        Q.    Okay.
+17        A.    Yes.  I have a new granddaughter, and
+18   that's taking up a lot of my life right now.  She's a
+19   lot of fun.
+20        Q.    And I'm sorry, I'm just being a lawyer.
+21        A.    No, no, no, that's fine.
+22        Q.    Cause when you say pretty much, that's --
+23        A.    Yeah.
+24        Q.    You're not holding back something, right?
+25        A.    No.
+0293
+ 1        Q.    All right.
+ 2        A.    No, no.
+ 3        Q.    There wasn't any dispute with Dr. Longo
+ 4   about income or payment, right?
+ 5        A.    Oh, no.
+ 6        Q.    Or a raise or anything like that?
+ 7        A.    No.
+ 8        Q.    Have you declined any offers of work from
+ 9   a plaintiff's lawyer related to talc litigation?
+10              MR. BERQUIST:  Objection to form.
+11              THE WITNESS:  Yes.
+12        Q.    (By Mr. Chachkes)  And why?
+13        A.    I just don't want to get overloaded with
+14   my time, and so I have -- I've turned down a couple
+15   of -- maybe three.
+16        Q.    What -- how many retentions are you at
+17   right now?
+18        A.    I don't know how many I have at the
+19   present time.  I can't remember how many there are.
+20        Q.    Could it be over 40?
+21        A.    No.
+22        Q.    Over 20?
+23        A.    No.
+24        Q.    Over ten?
+25        A.    Maybe in that range.
+0294
+ 1        Q.    Are you allowed to use the MAS lab?
+ 2        A.    Yes.
+ 3        Q.    Do you have any plans to do so?
+ 4              MR. BERQUIST:  Objection to form.
+ 5              THE WITNESS:  As needed, yes.
+ 6        Q.    (By Mr. Chachkes)  Do you have any current
+ 7   plans to do so, like current concrete plans to do so?
+ 8        A.    Yes.
+ 9        Q.    What are they related to?
+10        A.    Well, again, that's confidential.
+11        Q.    It's related to a talc litigation?
+12        A.    Yes and no.
+13        Q.    I'm assuming it's related to tissue
+14   digestion?
+15        A.    Not necessarily.
+16        Q.    But nothing related to this case, right?
+17        A.    No, correct.
+18        Q.    When you worked at MAS, was there a
+19   passkey or a key to get in the door?
+20        A.    Yes.
+21        Q.    Did MAS take that when you left?
+22        A.    I have that, but they take your code
+23   number, so it doesn't matter.  You can't get in with
+24   it.
+25        Q.    Okay.  So they removed your access to the
+0295
+ 1   lab?
+ 2        A.    Yes.  To my knowledge, yes.
+ 3        Q.    And you haven't done any testing of talc
+ 4   since you've left MAS, right?
+ 5        A.    Testing of talc?
+ 6        Q.    Correct.
+ 7        A.    I have.
+ 8        Q.    In what context?
+ 9        A.    Can you be more specific?
+10        Q.    Was it for litigation?
+11        A.    Yes.
+12        Q.    And if you are testing for talc, you
+13   need -- would you do it on your microscope in your
+14   home?
+15        A.    No.
+16        Q.    Did you do it at MAS?
+17        A.    Yes.
+18        Q.    And was that part of an ongoing
+19   litigation?
+20        A.    I don't know all the specifics of that, so
+21   I don't know how to answer that question.
+22        Q.    This testing of talc, was it once, twice?
+23        A.    Let me think.  At least once.
+24        Q.    Was it something Dr. Longo invited you in
+25   to do?
+0296
+ 1        A.    No.
+ 2        Q.    This is something you wanted to do, and
+ 3   you asked Dr. Longo for permission to use one of his
+ 4   instruments?
+ 5        A.    Yes.
+ 6        Q.    Was it the TEM?
+ 7        A.    Well, it would be the laboratory, the
+ 8   components of the laboratory.
+ 9        Q.    Did you use the TEM as part of this?
+10        A.    No.
+11        Q.    What instrument did you use?
+12        A.    I have not used any instruments yet.
+13        Q.    So you'll have to resolve this puzzle
+14   where you said you did testing, but then you also say
+15   you didn't use instruments.  How does one test talc
+16   without using instruments?
+17        A.    Well --
+18        Q.    Other than taste?
+19        A.    Just preparation.
+20        Q.    Prep, you prepped --
+21        A.    Yes.
+22        Q.    -- talc samples?
+23        A.    Yes.
+24        Q.    For use on a TEM?
+25        A.    It could be, yes.
+0297
+ 1        Q.    Do you know whether it was related to
+ 2   specific litigation or just part of the generation of
+ 3   a whole new report to supercede the MDL report?
+ 4              MR. BERQUIST:  Objection to form.
+ 5              THE WITNESS:  That, I don't know.  Again,
+ 6        I don't know.
+ 7        Q.    (By Mr. Chachkes)  Do you have plans in
+ 8   the future to do additional testing of talc?
+ 9        A.    If I have a client that ask me to do that,
+10   I could.
+11        Q.    But do you have any current plans to do
+12   additional testing of talc?
+13        A.    Yes.
+14        Q.    For MAS?
+15        A.    No.
+16        Q.    It's for a client?
+17        A.    Yes.
+18        Q.    Okay.  Not for yourself?
+19        A.    Well, it's for a client.
+20        Q.    For a plaintiff's lawyer?
+21        A.    I believe they are.  I haven't had any
+22   request from any of the defendants yet.
+23        Q.    How often do you talk to Dr. Longo since
+24   you've left the lab?
+25        A.    Oh, maybe couple of times a month,
+0298
+ 1   something like that.
+ 2        Q.    Do you ever talk about the MDL report and
+ 3   the subject matter of the MDL report, talc analysis?
+ 4        A.    Talc analysis, yeah, technical aspects.  I
+ 5   think I've testified to that before.  It's typically
+ 6   shoptalk.
+ 7        Q.    What kind of shoptalk?
+ 8        A.    Oh, protocols, published protocols that
+ 9   may be new, that kind of thing.  So, usually, it's
+10   about technical stuff.
+11        Q.    Do you have full authority to talk about
+12   the MDL report post MAS employment?
+13              MR. BERQUIST:  Objection to form.
+14              THE WITNESS:  I have -- to my knowledge,
+15        I'm able to talk about the report results.
+16        Q.    (By Mr. Chachkes)  Are there aspects of
+17   the MDL report you don't feel you're authorized to
+18   talk about?
+19              MR. BERQUIST:  Objection to form.
+20              THE WITNESS:  I don't think so.
+21        Q.    (By Mr. Chachkes)  In fact, you've
+22   actually gone to court to testify about the MDL
+23   report, correct?
+24        A.    Yes.
+25        Q.    In that context, you didn't inform the
+0299
+ 1   court that you were any way limited in your testimony
+ 2   regarding the MDL report, correct?
+ 3        A.    I had never been questioned along those
+ 4   lines about that, so -- that's the only way I can
+ 5   answer that.
+ 6        Q.    And then you testified in the -- was it
+ 7   the Indiana case?
+ 8        A.    Yes.
+ 9        Q.    What was the name of that?
+10        A.    Melody Lewis.
+11        Q.    Lewis, right.
+12        A.    Yes.
+13        Q.    How'd that go?
+14        A.    I think they settled the case.
+15        Q.    How'd your testimony go?
+16              MR. BERQUIST:  Objection to form.
+17              THE WITNESS:  I don't know what you mean
+18        by how did it go.
+19        Q.    (By Mr. Chachkes)  Did you feel like it
+20   went well?
+21              MR. BERQUIST:  Objection to form.
+22              THE WITNESS:  I testified and -- I guess.
+23        I don't know.  As far as I'm concerned, it
+24        was -- it was fine.
+25        Q.    (By Mr. Chachkes)  Are you permitted to
+0300
+ 1   talk about the SOPs under which the testing in the
+ 2   MDL report was done?
+ 3        A.    I am -- only what's in the actual reports
+ 4   themselves, what the protocols are that are in the
+ 5   reports.
+ 6        Q.    So you're saying there -- if there's
+ 7   something in the -- some procedure you followed in an
+ 8   SOP that isn't expressly written in the report,
+ 9   you're not authorized to talk about it?
+10        A.    Well, the SOPs are laboratory confidential
+11   and -- but they are expressed in the report itself in
+12   the method sections of the report so --
+13        Q.    Is there anything in the SOPs that
+14   dictated the way you did your testing that isn't also
+15   repeated in the MDL report?
+16        A.    I don't know.  I don't know.  I think
+17   everything was expressed in the -- in the method
+18   sections of the reports.
+19        Q.    What's an SOP generally?
+20        A.    It's a standard operating procedure.
+21        Q.    Are they important?
+22              MR. BERQUIST:  Objection to form.
+23              THE WITNESS:  Are they important?
+24              Well, laboratories use SOPs for
+25        reproducibility of testing methods.
+0301
+ 1        Q.    (By Mr. Chachkes)  In that sense, they're
+ 2   important?
+ 3        A.    Yes.
+ 4        Q.    And can a good asbestos detection
+ 5   laboratory operate without an SOP?
+ 6        A.    I would say yes to that, the -- the -- you
+ 7   could essentially do the work without an SOP if
+ 8   you're following the protocol, say, in a published
+ 9   paper, that kind of thing.
+10        Q.    Okay.  So you have no problem with any
+11   laboratory that does asbestos detection work without
+12   an SOP?
+13              MR. BERQUIST:  Objection to form.
+14              THE WITNESS:  I think that is something
+15        that I would have to think about to make an
+16        opinion on that today.  Again, the protocol
+17        that's in published studies and papers can be
+18        used.  The reason for an SOP is typically so
+19        that when you have new workers or analysts in
+20        the laboratory setting, that they are able to
+21        follow the directions for an analysis with a --
+22        an amount of training.  So that's one of the
+23        reasons for that.
+24        Q.    (By Mr. Chachkes)  So if a laboratory --
+25   let's just say a laboratory working with MAS doesn't
+0302
+ 1   have an SOP, but they say, Well, I followed the
+ 2   procedures in these published documents, that would
+ 3   be fine?
+ 4              MR. BERQUIST:  Objection to form.
+ 5              THE WITNESS:  I think that I would --
+ 6        personally, I would always want to see their
+ 7        data, their quality control data, to see what
+ 8        their performance is.  And this is why you have
+ 9        the certifying agencies.  They're trying to get
+10        everybody on a level playing field with their
+11        certifying procedurals, if you will.  So that
+12        lab after lab will be doing the same kind of
+13        thing.
+14        Q.    (By Mr. Chachkes)  But quality control
+15   data is not in an SOP, right?
+16        A.    No, but it's part of the performance
+17   measurement for an analysis.  So, for instance, when
+18   you do -- when you do repeated analyses and then you
+19   run an average in standard deviation, you can look at
+20   those numbers and get an idea of how precise the
+21   analysis is, you know.  So that's important, you
+22   know, from my -- from my standpoint, you know.
+23        Q.    Yeah.  No, I was -- so I was just focusing
+24   on SOPs.  Let's say a laboratory is doing other
+25   things correctly.
+0303
+ 1        A.    Yes.
+ 2        Q.    The fact that they don't have an SOP, but
+ 3   otherwise say, Look, here's the published methodology
+ 4   that I am following, that's sufficient in your mind?
+ 5              MR. BERQUIST:  Objection to form.
+ 6        Q.    (By Mr. Chachkes)  Or not?
+ 7        A.    I don't -- I don't think it's as good as
+ 8   it could be because there may be additional
+ 9   parameters --
+10              (Discussion off the record.)
+11        Q.    (By Mr. Chachkes)  What I was asking about
+12   was strictly about SOPs.  So let's say MAS is working
+13   with a laboratory, and they don't have SOPs, but
+14   otherwise follow good protocol including controls,
+15   those sorts of things.  Are you going to say that
+16   laboratory is not qualified because for lack of an
+17   SOP?
+18              MR. BERQUIST:  Objection to form.
+19              THE WITNESS:  I would say they would --
+20        their results may not be comparable to
+21        laboratories that were following agency required
+22        SOPs.
+23              MR. BERQUIST:  Alex, just a real quick
+24        question for the court reporter.  Off the
+25        record.
+0304
+ 1              (Record read back by the court reporter.)
+ 2        Q.    (By Mr. Chachkes)  On MAS SOPs, does MAS
+ 3   require them to be signed?
+ 4        A.    Yes.
+ 5        Q.    Why?
+ 6        A.    The director of the laboratories in -- ISO
+ 7   17025 labs have -- they sign off on SOPs.
+ 8        Q.    And ISO 10725, right?
+ 9        A.    17025.  17025.
+10        Q.    And how many signatures are required?
+11        A.    Well, it can be just one.
+12        Q.    And who usually signs?
+13        A.    Well, the -- usually the laboratory
+14   director signs.
+15        Q.    And who was that while you were at MAS?
+16        A.    The Longo.
+17        Q.    Were there any that you signed?
+18        A.    May have been many years ago, but then I
+19   think they changed the requirements later, that it
+20   was the laboratory director I believe.  So I can't
+21   remember all the regulatory changes, but that would
+22   have been quite a while ago when I signed one.
+23        Q.    You mean ten-plus years?
+24        A.    Yeah.  I think so.
+25        Q.    And since you've left MAS and you've had
+0305
+ 1   these conversations with Longo, are any of them about
+ 2   SOPs?
+ 3        A.    There may have been.  I don't recall.  Not
+ 4   as I sit here, I can't recall.
+ 5        Q.    Okay.  So no specifics as to, if you had
+ 6   discussed SOPs, what you discussed?
+ 7        A.    The only thing that we may have discussed
+ 8   was that, you know, this case, with the SOPs that you
+ 9   guys wanted in this case.
+10        Q.    Why would you guys discuss that?
+11        A.    He just mentioned it to me about that, and
+12   then you had asked, of course, you know, in the June
+13   deposition for the SOPs.
+14        Q.    So let's talk about the only SOPs that
+15   have been produced to us so far, which are the
+16   preparation and analysis of asbestos and
+17   mineralogical particulates in biological tissue.
+18              MR. BERQUIST:  One second, Alex.
+19              MR. CHACHKES:  Yeah.
+20              MR. BERQUIST:  Autumn, I still don't see
+21        an appearance for you.
+22              MS. KNICELY-QUITO:  Yes.  We're trying to
+23        call.  The E-filing is not letting us do it.
+24        It's in progress.
+25              MR. BERQUIST:  So you either need to hang
+0306
+ 1        up or Alex needs to come back to this once
+ 2        you've filed an appearance.
+ 3              MS. KNICELY-QUITO:  All right.  I will
+ 4        hang up and have Chris call in then.
+ 5              MR. BERQUIST:  Well, Chris can call in,
+ 6        sure.  And then I can try to send you an e-mail
+ 7        once it seems as though Alex is done talking
+ 8        about the SOPs.
+ 9              MS. KNICELY-QUITO:  All right.
+10              MR. BERQUIST:  Sorry about this.  You
+11        know, we've spent a lot of time negotiating
+12        this, so thank you.
+13              MS. KNICELY-QUITO:  Yeah, okay.
+14              (Ms. Knicely-Quito disconnects from the
+15        telephonic conference.)
+16              MR. CHACHKES:  What do you want to do
+17        about ensuring integrity of the document so that
+18        we all know, come tomorrow, this was the
+19        document we talked about?  Like we usually mark
+20        it and put it as an attachment.
+21              MR. BERQUIST:  So if you look at the
+22        protective order, there's a provision for that.
+23        And I believe it says something to the effect
+24        that there is a -- this can all be on the
+25        record.
+0307
+ 1              MS. MOHAN:  This can or cannot?
+ 2              MR. BERQUIST:  Can.
+ 3              MS. MOHAN:  Can.
+ 4              MR. BERQUIST:  On page 11 of the
+ 5        protective order, footnote four:  "To the extent
+ 6        that the SOPs are used at a deposition, they
+ 7        shall not be marked as an exhibit but may be
+ 8        shown to the witness consistent with the terms
+ 9        of the protective order.  For purposes of the
+10        record, a placeholder exhibit shall be marked.
+11        Placeholder exhibit shall be a single page that
+12        includes a general description of the SOP, i.e.,
+13        the name of it."  So I'm fine with that.
+14              MR. CHACHKES:  Okay.  In which
+15        case -- let's see if I have a blank piece of
+16        paper.  Can you just --
+17              MS. MOHAN:  Yeah.  Sure.
+18              MR. CHACHKES:  What number are we on?
+19              MR. BERQUIST:  43.
+20              MR. CHACHKES:  I'm just going to write the
+21        title, which, unfortunately, has like eight
+22        words.  Give me a moment.
+23              MR. BERQUIST:  This is off the record.
+24              (Discussion off the record.)
+25              MR. CHACHKES:  So can we mark that sheet.
+0308
+ 1              (Exhibit 43 was marked for
+ 2        identification.)
+ 3        Q.    (By Mr. Chachkes)  So I'm going to hand
+ 4   you what hasn't been marked as Exhibit 43, and those
+ 5   are the MAS tissue digestion SOPs, correct?
+ 6        A.    Yes.
+ 7        Q.    And that's Dr. Longo's signature at the
+ 8   top?
+ 9        A.    Yes.
+10        Q.    Who drafted these?
+11        A.    I did years ago.
+12        Q.    When you say years ago, how long ago?
+13        A.    Gosh.  Well, the original was probably
+14   when we first started doing tissue analysis work at
+15   MAS.
+16        Q.    Meaning when?
+17        A.    Probably in the 1990s.
+18        Q.    And you're saying this has been updated
+19   periodically?
+20        A.    Yes.
+21        Q.    Has it been updated or replaced?
+22        A.    Well, it's usually replaced.
+23        Q.    So there's going to be multiple SOPs over
+24   time, and this just happens to be the operative one
+25   when the MDL report was researched?
+0309
+ 1              MR. BERQUIST:  You mean the -- are you
+ 2        talking about Breakell's tissue or are you
+ 3        talking about the MDL?
+ 4              MR. CHACHKES:  I'm sorry, you're actually
+ 5        correct.  I'll state that again.  So this is the
+ 6        operative --
+ 7              THE WITNESS:  Yeah, this is --
+ 8              (Discussion off the record.)
+ 9        Q.    (By Mr. Chachkes)  So this is the
+10   operative SOP under which you did the Breakell tissue
+11   analysis, correct?
+12        A.    Correct.
+13        Q.    And there are other tissue digestion SOPs,
+14   historical ones, at MAS that are different from this?
+15        A.    I don't know if there are.  I don't know
+16   if there are.  This is the one though that I worked
+17   from.
+18        Q.    Okay.
+19        A.    Yeah.
+20        Q.    What was the date of that SOP?
+21        A.    I don't know.  It would have been probably
+22   2016 maybe, 2017, something like that.
+23        Q.    And what makes you say that?
+24        A.    Well, that's when I was doing that work.
+25        Q.    And are you aware of any updates or
+0310
+ 1   changes to the tissue digestion SOP that you're
+ 2   looking at since 2016, 2017?
+ 3        A.    None that I can recall.
+ 4        Q.    And was the tissue digestion SOP at MAS
+ 5   different prior to 2016, 2017?
+ 6        A.    I don't -- I don't recall.  Overall, it's
+ 7   the same, same SOP.
+ 8        Q.    And it's not possible that that SOP was
+ 9   created for this case, right?
+10        A.    No.
+11        Q.    Okay.  And you doubt that this was
+12   written -- you would say, no, this was not written
+13   after our requests for SOPs, right?
+14        A.    No.  It's the SOP that was used for the
+15   Breakell work.
+16        Q.    Is there a new tissue digestion SOP since
+17   this one has been used at MAS?
+18        A.    I don't know.  You'd have to ask
+19   Dr. Longo.
+20        Q.    I looked through it, and I didn't see
+21   anything that was particularly sensitive, like
+22   business sensitive.  Can you go through it and tell
+23   me what in there is business sensitive?
+24              MR. BERQUIST:  Objection to form.
+25              THE WITNESS:  Well, I think you would have
+0311
+ 1        to ask Dr. Longo about that, because the SOPs
+ 2        are not -- they're proprietary protocols for
+ 3        laboratories, and they're not -- they're not
+ 4        released.  MAS has a policy not to release them.
+ 5        So you would have to ask him about that.
+ 6        Q.    (By Mr. Chachkes)  Right, but -- so I'm
+ 7   asking a different question --
+ 8        A.    Yeah.
+ 9        Q.    -- which is, obviously, if an SOP, all it
+10   said was follow the procedure in ISO 22262 --
+11        A.    Yeah.
+12        Q.    -- that wouldn't be proprietary, right?
+13        A.    Correct.
+14        Q.    Okay.  So is there anything sitting here
+15   today, looking at the tissue digestion SOP that you
+16   don't know to otherwise be in a published source?
+17              MR. BERQUIST:  Objection to form, and
+18        asked and answered.
+19              THE WITNESS:  Well, I think I -- I have
+20        stated that it's part of the protocol in
+21        the -- in the actual Breakell report.
+22        Q.    (By Mr. Chachkes)  Okay.
+23        A.    Yeah.
+24        Q.    So, basically, anything in there that's
+25   meaningful in terms of how you conduct your research
+0312
+ 1   at MAS is also found in the Breakell report?
+ 2              MR. BERQUIST:  Objection to form.
+ 3              THE WITNESS:  To my knowledge, it would
+ 4        be.
+ 5        Q.    (By Mr. Chachkes)  Okay.  Did you
+ 6   contribute to drafting -- and sorry if I already
+ 7   asked this question.
+ 8        A.    Yes.
+ 9        Q.    Did you contribute to drafting this one?
+10        A.    Yes.  I already said yes.
+11        Q.    Okay.  And was it just you or were there
+12   other people who drafted the tissue digestion SOP?
+13        A.    No.  That would have been -- that would
+14   have been me to draft this portion of it, and then it
+15   goes to quality control.
+16        Q.    Who is quality control?
+17        A.    Kevin Simpson.
+18        Q.    Do you know whether or not he made changes
+19   to the tissue digestion SOP?
+20        A.    I don't know.
+21        Q.    And then it goes to Dr. Longo for
+22   signature?
+23        A.    Yes.
+24        Q.    Did you, when you did your tissue
+25   digestions in Breakell, did you actually refer to the
+0313
+ 1   SOPs to conduct your research or had you already
+ 2   internalized them?
+ 3        A.    Well, you said -- what do you mean by
+ 4   that?
+ 5        Q.    Well, were they memorized or did you
+ 6   actually pull out the SOPs, paper or on computer,
+ 7   whatever it is --
+ 8        A.    Yes.
+ 9        Q.    -- and say, I'm going to follow the
+10   procedure I'm looking at here?
+11        A.    Well, it's a little bit of both.  The SOP
+12   is available to -- to the analysts, and it may be
+13   available electronically.  The SOP itself is referred
+14   to at times when you may have a question about some
+15   concentration or some procedural that
+16   you're -- you're may not remembering.  I kept a
+17   checklist, which I think you guys have, for the
+18   Breakell case, which I have in the tissue cases,
+19   which is essentially sort of an annotated SOP and go
+20   down that to be sure each one of the steps is done,
+21   you know, whether it's dry tissue or whether it's wet
+22   tissue.
+23        Q.    When you -- you physically did the
+24   Breakell tissue digestion, right?
+25        A.    I was overseeing all of that, yes.
+0314
+ 1        Q.    Okay.  Who did the Breakell tissue
+ 2   digestion?
+ 3              MR. BERQUIST:  Asked and answered.
+ 4              THE WITNESS:  I did answer all of this
+ 5        before.  I mean, it was one of the staff at MAS.
+ 6        Q.    (By Mr. Chachkes)  And I'm sorry, could
+ 7   you say that person's name?
+ 8        A.    It's in the -- it's in the -- you'd have
+ 9   to go back and look in the first deposition.  I think
+10   I stated the person's name there.
+11        Q.    You don't remember?
+12        A.    Right off the top of my head, I don't.
+13        Q.    Did that person when doing the Breakell
+14   tissue digestion refer to the MAS SOPs on tissue
+15   digestion?
+16        A.    Yes.  They were supposed to, yes.
+17        Q.    They were supposed to, okay.
+18              To the best of your knowledge, they did?
+19        A.    To the best of my knowledge.
+20        Q.    You didn't see them do it one way or the
+21   other, but you expect they did?
+22        A.    No, I saw them do it.  I was at the
+23   laboratory.  I watched the protocol and the procedure
+24   as it was moving along through the prep stages.
+25   Always did that.
+0315
+ 1        Q.    So I just want to be clear on --
+ 2        A.    Sure.
+ 3        Q.    -- I saw them do it.  You saw them do the
+ 4   tissue digestion generally or you saw them actually
+ 5   refer to the SOPs?
+ 6        A.    Well, both.
+ 7        Q.    Okay.
+ 8        A.    Yes.
+ 9        Q.    MAS has other SOPs, correct?
+10        A.    To my knowledge, they do, yes.
+11        Q.    Right?  One of them for TEM?
+12        A.    I believe so, yes.
+13        Q.    And one of them for PLM?
+14        A.    Yes.
+15        Q.    Let's talk about the PLM one for a moment.
+16   Who drafted the PLM SOPs?
+17        A.    I would have to look at the document to
+18   see.  I don't recall.
+19        Q.    I don't have the document.  It hasn't been
+20   given to me.  But to the best of your knowledge, were
+21   you involved in drafting the PLM SOPs?
+22        A.    I don't believe I was, no.
+23        Q.    Do you know who drafted the PLM SOPs?
+24        A.    No.
+25        Q.    It wasn't Dr. Longo, correct?
+0316
+ 1        A.    Well, I would -- he was involved.  I would
+ 2   say he was involved in doing that.
+ 3        Q.    But he's not really a P -- at least he
+ 4   testified he's not really a PLM person.
+ 5              MR. BERQUIST:  Objection to form.
+ 6              THE WITNESS:  I don't know what he's
+ 7        testified along those lines, so you would have
+ 8        to ask him about all of this.
+ 9        Q.    (By Mr. Chachkes)  Do you feel he's as
+10   able on the PLM as you?
+11        A.    Again, you'd have to ask him about that.
+12        Q.    I'm asking you.  Do you know if he's as
+13   able as you?  Do you know, have any knowledge one way
+14   or the other?
+15        A.    He has knowledge of all the parameters,
+16   the physics, the protocols and procedures, yes.
+17        Q.    What about actually using the PLM to
+18   detect asbestos in a bulk sample?
+19              MR. BERQUIST:  Objection to form.
+20              THE WITNESS:  He could do that.
+21        Q.    (By Mr. Chachkes)  As well as you?
+22              MR. BERQUIST:  Objection to form.
+23              THE WITNESS:  I think so.
+24        Q.    (By Mr. Chachkes)  When was the PLM SOP
+25   drafted, if you know?
+0317
+ 1        A.    I don't know.
+ 2        Q.    Before the work underlying the MDL report
+ 3   got underway?
+ 4        A.    I would say yes to that.
+ 5        Q.    Did you sign the PLMs --
+ 6        A.    No.
+ 7        Q.    -- SOPs?
+ 8        A.    No.
+ 9        Q.    And you're saying the PLM SOPs are
+10   something that PLM scientists doing the work
+11   underlying the MDL report would have had access to
+12   and would have followed?
+13        A.    Yes.
+14        Q.    And to the extent I want to know what
+15   procedures are laid out in the PLM SOPs, I can find
+16   that in the MDL report?
+17        A.    Yes.
+18        Q.    And how many signatories were on the PLM
+19   SOPs?
+20        A.    I don't know.
+21        Q.    When's the last time you talked to
+22   somebody about the PLM SOPs?
+23        A.    I haven't talked to persons about the PLM
+24   SOPs.  I can't remember the last time I talked to
+25   them.
+0318
+ 1        Q.    Do you remember any of the contents of the
+ 2   PLM SOPs?
+ 3              MR. BERQUIST:  Objection to form.
+ 4              THE WITNESS:  No, only in general terms.
+ 5        Q.    (By Mr. Chachkes)  What general terms do
+ 6   you remember?
+ 7        A.    Just what would be as far as the prep for
+ 8   PLM and then, you know, the analytical procedure for
+ 9   the PLM, that would be in the SOP.
+10        Q.    Do you recall at all if the PLM SOPs
+11   direct the researcher to follow certain published
+12   methodologies?
+13        A.    I don't know.  Typically, the SOPs have
+14   reference -- have references at the end of the SOPs.
+15        Q.    As long as we're on the topic of PLM,
+16   what's an RI fluid?
+17        A.    Refractive index fluid.
+18        Q.    And how does one use it in the PLM
+19   process?
+20        A.    The fluid is used for mixing with the
+21   sample in order to do the optical PLM work.
+22        Q.    When you pick the proper RI fluid for a
+23   particular mineral, that mineral essentially
+24   disappears so you can see what else is there?
+25        A.    It can.
+0319
+ 1        Q.    Isn't that how one uses an RI fluid?
+ 2        A.    Well, it can be used that way.  So I
+ 3   believe in this case the RI fluid was 1.605 and --
+ 4   and that I believe is what MAS has used in these
+ 5   cases.
+ 6        Q.    And that was -- you chose 1.605 because
+ 7   that makes talc disappear and you can see the
+ 8   asbestos?
+ 9        A.    It can help to do that.  It depends on --
+10   it depends on the way the microscope is set up and
+11   the way the analyst works it, yeah.
+12        Q.    Well, when you say it can, are you saying
+13   when it doesn't do that, is it failing in its
+14   purpose?
+15        A.    I don't know the answer to that.  As I
+16   say, I understand the physics of the PLM microscopy
+17   work, so I'm -- I'm not going to try to explain that
+18   portion of it.
+19        Q.    Why aren't you going to explain that
+20   portion of it?
+21        A.    Well, cause you're asking me questions
+22   that I don't have knowledge of the way that they were
+23   setting the microscope up to do that as far as the
+24   SOP goes.  So, you know, I would be speculating.
+25        Q.    You were -- you have testified before that
+0320
+ 1   you were intimately involved in the PLM work in the
+ 2   MDL report; no?
+ 3        A.    Yes, in terms of seeing the analysts do
+ 4   the work, that kind of thing.
+ 5        Q.    But you don't understand what they did
+ 6   with the RI fluid?
+ 7        A.    No.  I understand what they chose it for.
+ 8   And as far as how it was used for what they were
+ 9   doing as far as the microscope set up and the way
+10   that they do that, you know, I have -- I don't -- I
+11   don't have an opinion on that right now.
+12        Q.    There's a right way and a wrong way to do
+13   PLM, right?
+14              MR. BERQUIST:  Objection to form.
+15              THE WITNESS:  Well, I think that the
+16        answer to that is it depends.  There's always a
+17        right way.  There's -- there can be a wrong way.
+18        So I mean, the -- I think that's -- that's the
+19        answer I can give you on that.
+20        Q.    (By Mr. Chachkes)  Okay.  I mean, just to
+21   set the standards here:  To pour the RI liquid
+22   somewhere other than where the sample is, that's the
+23   wrong way, right?
+24        A.    Well, I mean, you can -- I would think so.
+25   I mean, you would -- typically, you're going to mix
+0321
+ 1   it with the sample.
+ 2        Q.    And using an RI fluid that makes the talc
+ 3   disappear so you can see contaminants, that's the
+ 4   right way?  That's a right way?
+ 5        A.    It can -- it can be done that way, sure.
+ 6        Q.    Sure.  Give me another way that it can be
+ 7   done.
+ 8        A.    Again, as far as the RI fluid goes?
+ 9        Q.    Correct.
+10        A.    I mean, that's mainly what you would use
+11   it for.  That's one of the uses for it, sure.
+12        Q.    Sitting here today, in the context of the
+13   MDL report and the PLM work done there, can you think
+14   of another way to use the RI fluid other than putting
+15   it in the sample to make the talc disappear so you
+16   can see the contaminants better?
+17        A.    I can't as I sit here.
+18        Q.    Did your PLM researchers try using an
+19   RI fluid that made the contaminants disappear so that
+20   you could see the talc?
+21              MR. BERQUIST:  Objection to form.
+22              THE WITNESS:  I don't know.  I think that
+23        you would need to ask Dr. Longo about that.  He
+24        may have a better answer.
+25        Q.    (By Mr. Chachkes)  When I deposed
+0322
+ 1   Dr. Longo about PLM, he said you were more
+ 2   knowledgeable about PLM than him; is that incorrect?
+ 3              MR. BERQUIST:  Objection to form.
+ 4              THE WITNESS:  I don't know that he said
+ 5        that.
+ 6        Q.    (By Mr. Chachkes)  Okay.  I can pull it up
+ 7   for you, and why don't I do that after the break.
+ 8              But to your knowledge, the best of your
+ 9   knowledge, no researcher said, I'm going to use an
+10   RI fluid that's going to make asbestos disappear
+11   because that has a productive purpose and --
+12              MR. BERQUIST:  Objection to form.
+13              THE WITNESS:  Yeah.  I don't know what you
+14        mean.  I don't know what you mean by that.  I
+15        mean, it's -- the analysis is designed for
+16        examination of the asbestos types, that
+17        RI fluid, so you can see how they perform, you
+18        know, in terms of trying to identify that type
+19        of asbestos under those physical conditions with
+20        that RI fluid.
+21        Q.    (By Mr. Chachkes)  Right.  I'm just trying
+22   to ask sort of like the quality control here --
+23        A.    Yeah, yeah.
+24        Q.    -- researchers aren't using an RI fluid to
+25   make the asbestos disappear because that would be
+0323
+ 1   the -- exactly the opposite of what you want to be
+ 2   doing in this experiment, which is to find any
+ 3   asbestos, right?
+ 4        A.    Well, the objective of that fluid would
+ 5   help to identify asbestos in that material.  So I'm
+ 6   not quite sure how you would be concerned
+ 7   about -- well, I'm not quite sure what you're trying
+ 8   to ask about that.  I kind of understand it, but I'm
+ 9   not -- I'm not really clear.
+10        Q.    Okay.  Let me ask it in this way.
+11        A.    Okay.
+12        Q.    I've got a sample in a PLM microscope, and
+13   I use an RI fluid that makes asbestos disappear.
+14        A.    Uh-huh.
+15        Q.    Is that a productive way of finding out
+16   the concentration of asbestos in that sample?
+17        A.    I don't know.
+18        Q.    Sitting here today, can you think of a
+19   productive reason to do that?
+20        A.    No.
+21        Q.    If I have an RI fluid that matches talc
+22   and makes the talc disappear, is that -- is there a
+23   productive purpose in doing that?
+24              MR. BERQUIST:  Objection to form.
+25              THE WITNESS:  Well, it, of course, could
+0324
+ 1        help to -- it could help the analyst to
+ 2        visualize anything else asides from the talc,
+ 3        yes.
+ 4        Q.    (By Mr. Chachkes)  You have a TEM SOP,
+ 5   right?
+ 6        A.    Well, I believe MAS does, yes.
+ 7        Q.    MAS, sorry.
+ 8        A.    Yes.
+ 9        Q.    Who drafted the TEM SOP?
+10        A.    I don't know.
+11        Q.    Who signed the TEM SOP?
+12        A.    Same answer.  I would think that Dr. Longo
+13   would have signed it for sure.
+14        Q.    Were you -- so you did TEM work for the
+15   MDL report, talc report, right?
+16        A.    Well, I was at the laboratory when that
+17   work was being done overseeing analysts in that
+18   capacity as the lab manager.
+19        Q.    Did the analysts who were doing the work
+20   underlying the TEM work underlying the MDL report
+21   refer to the TEM SOPs in conducting that work?
+22        A.    To my knowledge, yes.
+23        Q.    Has there been an update or change to the
+24   MAS TEM SOPs since the MDL report?
+25        A.    I don't know.
+0325
+ 1        Q.    What -- did the MAS TEM SOPs supercede any
+ 2   prior version?
+ 3        A.    Again, I don't know.
+ 4        Q.    Do you know the date or -- in any
+ 5   generality as to the date when the MAS TEM SOPs were
+ 6   written?  I'm talking about the ones used for the MDL
+ 7   report.
+ 8        A.    No.
+ 9        Q.    Are you aware of there ever having been a
+10   prior version of the MAS TEM SOPs prior to the ones
+11   that were used for the MDL report?
+12        A.    I don't -- I don't know the answer to
+13   that.
+14        Q.    If I wanted to know the important
+15   procedural testing requirements for the TEM at MAS, I
+16   can find -- you'll -- strike that.
+17              It's a poorly phrased question.
+18              If I wanted to know what the MAS TEM SOPs
+19   say about how one conducts one's self in doing
+20   analysis on the TEM, I could find that in the report
+21   itself?
+22        A.    Yes.
+23        Q.    Do you know how many people are required
+24   to sign off on the MAS TEM SOPs?
+25        A.    At least one.
+0326
+ 1        Q.    Do you know whether there's another, a
+ 2   second?
+ 3        A.    As far as a requirement goes, I don't -- I
+ 4   don't know.
+ 5        Q.    Do you know effectively whether there are
+ 6   two -- more than one signatures on that SOP?
+ 7              MR. BERQUIST:  You said effectively?
+ 8              MR. CHACHKES:  Yeah.  You said
+ 9        effectively, right -- I said effectively.
+10              MR. BERQUIST:  Objection to form.
+11        Q.    (By Mr. Chachkes)  I'll say actually.
+12        A.    Oh, yeah, I don't know.
+13        Q.    Have you ever signed off on an SOP?
+14        A.    Yeah.  Many years ago, yes.
+15        Q.    Do you recall what SOP it was?
+16        A.    No.
+17        Q.    When did you last see the MAS TEM SOPs?
+18        A.    Gosh, I can't remember.  I don't recall.
+19        Q.    Around the time of the work underlying the
+20   MDL report or earlier?
+21        A.    I can't recall.
+22        Q.    When's the last time you talked to
+23   Dr. Longo about those?
+24        A.    About the --
+25        Q.    The specific MAS TEM SOPs.
+0327
+ 1        A.    I haven't.
+ 2        Q.    You mentioned ISO --
+ 3        A.    17025?
+ 4        Q.    Yeah.  Let's mark that.  Do you want to
+ 5   take a break, by the way?
+ 6        A.    Yes.
+ 7              (A recess was taken.)
+ 8              (Exhibit 44 was marked for
+ 9        identification.)
+10        Q.    (By Mr. Chachkes)  So we've marked this
+11   as -- what is it -- 44.  You see what we've marked
+12   Exhibit 44 ISO 17025, correct?
+13        A.    Yes.
+14        Q.    You mentioned that earlier today.
+15        A.    Yes.
+16        Q.    What in this relates to requirements for
+17   SOPs?
+18        A.    Well, I haven't read this version of ISO,
+19   so I would have to look through it to see.
+20        Q.    Go ahead.
+21        A.    Okay.  So I don't see a specific statement
+22   about the standard operating procedures here, but --
+23   yeah.  Mainly speaks about methods, procedures,
+24   supporting documentation, that kind of thing.
+25        Q.    I'm sorry, what are you looking at?
+0328
+ 1        A.    Section 7.2.1, 7.2, methods.
+ 2        Q.    I see 7.2.1 talks about laboratory having
+ 3   appropriate methods and procedures, and then 7.2.1.2
+ 4   saying that this should be kept up to date and made
+ 5   readily available to personnel.
+ 6        A.    Right.
+ 7        Q.    That seams to be kind of what SOPs are.
+ 8        A.    Yeah.  I mean, they are talking about,
+ 9   additionally, methods published either in the
+10   international, regional, international standards or
+11   by reputable technical organizations.  That's in
+12   7.2.1.4 at bottom of the page.
+13              Scientific texts or journals specified by
+14   the manufacturer of the equipment are recommended.
+15   Laboratory developed or modified methods can also be
+16   used.
+17              Yeah.  It's written generally, as a lot of
+18   the standards are, and then you can -- you know, you
+19   write your methods in accordance with these kinds of
+20   guidelines.
+21        Q.    We can move on.
+22        A.    Okay.
+23        Q.    There's a step in the process of analyzing
+24   talc samples using a TEM that involves filter paper,
+25   right?
+0329
+ 1        A.    Filtration.  I don't know about filter
+ 2   paper.
+ 3        Q.    Do you ever use filter paper?
+ 4        A.    I can't recall what filter paper would
+ 5   have been used for in any of the steps.  Paper --
+ 6   well, filters --
+ 7              (Discussion off the record.)
+ 8        Q.    (By Mr. Chachkes)  So there's a filtration
+ 9   step, right?
+10        A.    Yes.
+11        Q.    And that's -- can you describe that?
+12        A.    Yes.  Well, as far as the filtration step,
+13   it may be -- cause I don't recall all the steps, but
+14   it's one where you would essentially maybe have a
+15   dilution of a sample that's been made and that's
+16   going to be filtered through a particular filter of
+17   maybe .2 or .4 micron, could be polycarbonate, could
+18   be mixed cellulose ester, some type of filter.
+19        Q.    It's my understanding that the published
+20   methodologies are consistent with using, at that
+21   step, filter paper and then dissolving the filter
+22   paper.  Do you know whether MAS does that?
+23        A.    Well, again, I don't know.  I would have
+24   to look and see what was done with that, because it
+25   would just be -- it would just be guessing at this
+0330
+ 1   moment.
+ 2        Q.    What kind of sample holders do you have on
+ 3   your TEM -- did you have on your TEM at MAS?
+ 4        A.    The -- well, the sample holders are
+ 5   manufactured by the microscope company.  For
+ 6   instance, I believe those are JEOL 1200 EX TEMs and
+ 7   the sample holders are -- they were -- they could
+ 8   hold two grids at one time.
+ 9        Q.    Do you have low background holders at MAS?
+10        A.    When I was there, I can't recall if they
+11   did, but I believe they did have some low background
+12   holders; but, you know, as far as for this, I don't
+13   know.
+14        Q.    And you don't recall whether low
+15   background holders were used in the process of
+16   analyzing the samples underlying the MDL report,
+17   correct?
+18        A.    I don't know.
+19        Q.    I've spoken to you before about
+20   goniometers, right?
+21        A.    Yes.
+22        Q.    Are the goniometers on the -- or is the
+23   goniometer on the MAS TEM single tilt or double tilt?
+24        A.    They have -- I believe they have both
+25   types.  They have a single tilt, and I believe they
+0331
+ 1   have a double tilt.
+ 2        Q.    Were the -- was the goniometer used for
+ 3   the TEM analysis of the samples in the MDL report,
+ 4   did that -- was that a single tilt or double tilt?
+ 5        A.    I don't know.
+ 6        Q.    When the analysts tilted samples using the
+ 7   TEM for the work underlying the MDL report, was it
+ 8   longitudinal or alpha or was it pitch yaw or beta or
+ 9   both?
+10        A.    Are you talking about the tilt angle?
+11        Q.    Yes.
+12        A.    Well, it would be rotation about the
+13   center axis of the holder.
+14        Q.    So that, in my understanding, is beta.
+15   Does that -- do you know?
+16        A.    I don't know that it's designated that way
+17   there.
+18        Q.    Okay.
+19        A.    But you want it -- you centrically place
+20   them in for the tilting so that you're not swinging
+21   the object way up.  It needs to be centered so that
+22   it will tilt about its own axis of the particle that
+23   you're looking at.
+24        Q.    Okay.  So if we had to talk about the tilt
+25   that MAS uses when using the goniometer, you're
+0332
+ 1   talking about, basically, longitudinal tilt like an
+ 2   airplane banking left or banking right?
+ 3        A.    Yes.  I mean, you can rotate the sample,
+ 4   but the -- I don't believe the holder there allows
+ 5   for -- you would have to physically move the sample,
+ 6   take it back out and physically, you know, rotate the
+ 7   grid to get it to another rotational axis.
+ 8        Q.    So in the past we've talked about the need
+ 9   to rotate the sample when analyzing defraction
+10   patterns for anthophyllite.  Do you recall that?
+11        A.    Yes.
+12        Q.    So the tilt there is the same longitudinal
+13   tilt only?
+14        A.    Again, it would be about the axis of the
+15   particle.  So that should be the proper way to do it
+16   in terms of getting defraction patterns in different
+17   zones, yeah.
+18        Q.    And so that's a longitudinal tilt?
+19        A.    Well, I guess -- it's sort of hard to
+20   describe that way, but it would be through the axis
+21   of the particle whether -- you know, whether it was
+22   an XY -- yeah, as far as beta, it could be tilted
+23   along the parallel to the axis of the particle.  For
+24   instance, if it was a fiber, you could tilt it
+25   parallel to that.  It could also be rotated 90
+0333
+ 1   degrees, and it could be rotated -- it could be
+ 2   tilted in that angle, too.
+ 3        Q.    Okay.
+ 4        A.    But, typically, it's good enough for --
+ 5   for instance, trying to differentiate anthophyllite
+ 6   from talc fiber, you should be easily able to do that
+ 7   rotating through the center axis and looking at the
+ 8   spot pattern.  If it continues to be a hexagonal
+ 9   pattern all the way through your tilt angle, it's
+10   most likely talc, a talc fiber.
+11        Q.    You use, basically, for lack of a better
+12   phrase, store-bought asbestos to calibrate?
+13        A.    MAS, yes, the -- well, it's not store
+14   bought.  It's NBS.  It's an approved standard from
+15   the National Bureau of Standards.
+16        Q.    Okay.  So --
+17        A.    Yeah, NIST.
+18        Q.    Go ahead.
+19        A.    Yeah, NIST, N-I-S-T.
+20        Q.    Okay.  So that was my question.
+21        A.    Yes.
+22        Q.    The standards that the MAS lab buys is
+23   from NIST?
+24        A.    Yeah.  It's a requirement.
+25        Q.    And when was the last time, to your
+0334
+ 1   knowledge, MAS bought NIST asbestos standards?
+ 2        A.    I don't know the answer to that.  You
+ 3   probably would have to ask Dr. Longo.
+ 4        Q.    Are the NIST asbestos standards the only
+ 5   asbestos standards that MAS uses?
+ 6        A.    To my knowledge, they are.
+ 7        Q.    What is the methodology MAS uses to
+ 8   calibrate their TEM?
+ 9        A.    For --
+10              MR. BERQUIST:  Objection to form.
+11              THE WITNESS:  -- which kind of
+12        calibration?
+13        Q.    (By Mr. Chachkes)  Let's say defraction
+14   pattern.
+15        A.    I would say for defraction pattern
+16   calibration, I don't remember the entire protocol for
+17   that; but it would be based on using gold rings to
+18   start with for the actual atomic magnification, if
+19   you will, to get your camera constant and then to be
+20   able to figure out lattice spacing.  So that would be
+21   one of the first things you would have to do.
+22        Q.    Any other calibrations?
+23        A.    Well, you do magnification calibrations
+24   where you're looking at a -- you have a -- a
+25   magnification calibration essentially, a micro grid,
+0335
+ 1   if you will.  It's etched with a pattern on it that
+ 2   has known dimensions, and then you calibrate your
+ 3   magnification stages based on looking at that and
+ 4   then figure out what the mag is.
+ 5              For the energy dispersive spectrometer,
+ 6   that's done by looking at the specific electron
+ 7   energies across the spectrum from, I believe it's
+ 8   zero to -- zero to ten, it may be zero to 20 KeV.  So
+ 9   you calibrate in the low end, I think roughly around
+10   two KeV, and then on the high end around eight or
+11   nine, something like that.
+12        Q.    When you do the calibration for the EDS,
+13   what is the -- what's the sample that you're
+14   calibrating on?
+15        A.    It usually is a -- it can be a known metal
+16   standard.  You can also use the manufacturer's grids,
+17   if you will.  Copper lines are typically used for the
+18   calibration.  So it can be whatever their calibration
+19   standard is.
+20        Q.    For the work underlying the MDL report, do
+21   you know whether for EDS calibration MAS used known
+22   metal standards or whether they used the
+23   manufacturer's grids?
+24        A.    I don't know.  I don't know.
+25        Q.    When MAS used known metal standards to
+0336
+ 1   calibrate the EDS, what metal standards?
+ 2        A.    Well, copper would be one for sure.  So
+ 3   that -- I would ask Dr. Longo about that, so -- yeah.
+ 4        Q.    Are you saying you don't know or you --
+ 5        A.    I'm saying generally that you would
+ 6   definitely use copper as one K alpha lines, I think
+ 7   around eight KeV, something like -- I can't remember
+ 8   exactly what the number is.  But -- and then you
+ 9   would use a low energy peak also down around one or
+10   two, something like that.  So you have a range.  I
+11   think that's called for in the method.
+12              So, again, ask Dr. Longo about that.
+13        Q.    When you say the method, what method are
+14   you talking about?
+15        A.    Well, this would be -- this would be the
+16   NVLAP requirement.
+17        Q.    When you do your EDS calculations, do you
+18   take into account the particle thickness?
+19        A.    I -- what you take into account is the
+20   counts in the channel, the energy channels, and they
+21   have to come within a specified EV value.  That's
+22   what you're really looking for.  The -- well, that's
+23   my answer for that.
+24        Q.    So the answer is you don't take into
+25   account particle thickness in adjusting your
+0337
+ 1   calculations?
+ 2        A.    It's not necessary to do that based on --
+ 3   again, to my knowledge, based on the -- the major
+ 4   objective is to be sure that your sensitivity is
+ 5   within a certain specification for the electron
+ 6   energy that you're looking at.  That's one of the
+ 7   major considerations.
+ 8        Q.    When doing your EDS work or when the
+ 9   analysts do the EDS work underlying the MDL report,
+10   do they ever see cobalt contamination?
+11        A.    I don't think so.
+12              MR. CHACHKES:  I have no further questions
+13        other than the ones I hope to ask when we
+14        continue.
+15              MR. BERQUIST:  Anybody on the phone have
+16        any questions?
+17              MR. GREENE:  This is Kevin Greene.  I'll
+18        go next if no one else is ready.
+19              MS. MOHAN:  You're up, Kevin.
+20                        EXAMINATION
+21   BY MR. GREENE:
+22        Q.    Dr. Rigler, please let me know if at any
+23   time you cannot hear me because we're on the phone,
+24   or if at any time I ask a question that you don't
+25   understand.  Is that all right with you?
+0338
+ 1        A.    Sure.
+ 2        Q.    I want to pick up first with an article
+ 3   that you discussed with Ms. Mohan.  That was the
+ 4   article by Ronald Dodson.  Do you recall that?
+ 5        A.    Yes.
+ 6        Q.    And that's an article that I understand is
+ 7   on your reference list?
+ 8        A.    I believe so, yes.
+ 9        Q.    And the Dodson article, which is on
+10   "Asbestos in extrapulmonary sites: the omentum and
+11   mesentery," do you recall that Dr. Dodson and his
+12   coauthors performed their digestion on tissue that
+13   was free from tumor?
+14        A.    I don't recall that.
+15        Q.    You recall that Dr. Dodson and his
+16   coauthors performed their digestion on the
+17   extrapulmonary sites in order to determine whether
+18   the fibers found in those sites would be predictive
+19   of fiber burdens in the lung?
+20        A.    My understanding is that they were for
+21   predictions of fiber burden in the tissues that they
+22   analyzed.
+23        Q.    Can you point us to any study in the
+24   peer-reviewed literature that has correlated the
+25   fibers found in a falciform ligament to the fiber
+0339
+ 1   burden in lung tissue uninvolved with tumor?
+ 2        A.    I can't think of one as I sit here.
+ 3        Q.    Would you be able to point us to any study
+ 4   in the peer-reviewed literature that has correlated
+ 5   fibers found in falciform ligament to fiber burdens
+ 6   in the pleura?
+ 7        A.    Again, same answer.
+ 8        Q.    Similar question:  Can you point us to any
+ 9   study in the peer-reviewed literature that has
+10   correlated the fibers found in mesothelioma tumor
+11   tissue to fiber burdens observed in lung tissue
+12   uninvolved with tumor?
+13        A.    Same answer, but I don't understand -- I
+14   don't understand the comparison that you're making.
+15   Can you be a little more definitive?
+16        Q.    Sure.  Well, my understanding of Ron
+17   Dodson's work is that they were looking to see what
+18   fiber burden they observed in the omentum and
+19   mesentery, for example, and then attempting to see if
+20   they could correlate the findings that they observed
+21   in the omentum and mesentery with the presence of
+22   fibers in the lung tissue.
+23        A.    Okay, and I don't dispute that because
+24   that is one of the considerations is that that may be
+25   the site -- the initial site for how the fibers got
+0340
+ 1   into the body.  So we know that they translocate
+ 2   through the lymphatic system and then can get into
+ 3   the mesentery, that kind of thing, and the omentum.
+ 4   So I think that's maybe what you're -- what you're
+ 5   referring to.
+ 6              So I understand, you know, at this
+ 7   particular point with that, but my consideration is
+ 8   how much is in that tissue when you look at that in
+ 9   a, quote, unexposed, unquote, population.
+10        Q.    I understand.  Would you change your
+11   answers to any of the questions that I've asked thus
+12   far now having had this back and forth?
+13              MR. BERQUIST:  Objection.  Objection to
+14        form.
+15              THE WITNESS:  I think I would -- after
+16        understanding what you're saying, I would
+17        probably substitute that as an answer.
+18        Q.    (By Mr. Greene)  Well, can you point us to
+19   any study in the peer-reviewed literature that has
+20   correlated the fibers found in mesothelioma tumor
+21   tissue to the fiber burden observed in lung tissue
+22   uninvolved with tumor?
+23        A.    Again, I can't think of any as I sit here,
+24   but I don't think that's -- I mean, as far as the
+25   connection between the two, we would be concerned
+0341
+ 1   about -- that's the concern is how the -- or possibly
+ 2   how they got there.  They didn't just spontaneously
+ 3   occur in the tissue.  They wouldn't be there.  My
+ 4   opinion is there wouldn't be any there at all had
+ 5   they not had some kind of exposure.
+ 6              So the finding in the tissue as it relates
+ 7   to what's in the lung, as far as trying to do a
+ 8   direct comparison, I don't think that's -- I can't
+ 9   recall -- I can't recall a study that's -- that has
+10   done that.  I can't recall.  There may have been.  I
+11   would have to research that.
+12        Q.    I understand.  And so I understand you
+13   can't point us to any such study, and there is no
+14   such study on your reference list in this case,
+15   correct?
+16        A.    That's correct.
+17        Q.    And, likewise, you cannot point us to any
+18   study and there is no study on your reference list
+19   that has reported on a correlation of fibers found in
+20   mesothelioma tumor tissue with fiber burden in the
+21   pleura; true?
+22        A.    That's correct.  I'm not aware of one
+23   without doing research on that.  I'm glad you sort of
+24   brought that up cause I'm going to start to look
+25   about that.
+0342
+ 1        Q.    Well, and if you have any supplemental
+ 2   references, I'm sure you'll let counsel know so that
+ 3   we can be made aware and have an opportunity to
+ 4   further depose you.
+ 5        A.    Yes, sure.
+ 6        Q.    Dr. Rigler, in your first deposition,
+ 7   there was reference to the Helsinki consensus report.
+ 8   You're familiar with that document; true?
+ 9        A.    Yes, I am familiar with the -- with the --
+10   with a number of the consenses in there.
+11        Q.    There is a statement on page 313 of the
+12   consensus report from 1997 that reads, quote, "There
+13   is evidence that peritoneal mesotheliomas are
+14   associated with higher levels of asbestos exposure
+15   than pleural mesotheliomas are," close quote.  You
+16   recall that statement?
+17        A.    No, but I don't dispute it.
+18        Q.    You don't dispute that?
+19              MR. BERQUIST:  Objection to form.
+20        Q.    (By Mr. Greene)  Thank you, Doctor.  With
+21   respect to your reference list, can you tell us how
+22   you decide what to include or exclude from your
+23   reference list that you used for this case?
+24        A.    I looked at references that were pertinent
+25   or applicable for these kinds of studies in terms of
+0343
+ 1   the -- what tissue preparation, the tissue analysis,
+ 2   and then also the surrounding body of knowledge in
+ 3   reference to toxicity of asbestos and also physiology
+ 4   as it relates to the translocation of asbestos and
+ 5   fibers in the body.
+ 6        Q.    One of the references that were marked as
+ 7   an exhibit to the first day of your deposition was a
+ 8   publication from 2008 entitled "Asbestos fiber
+ 9   concentrations in the lungs of brake workers:
+10   another look."  That's a 2008 publication by Murray
+11   Finkelstein.  Do you have that publication in mind?
+12        A.    I know which one you're talking about.
+13        Q.    Yes, sir.  Have you reviewed Dr. Victor
+14   Roggli's replies or his letters to the editor related
+15   to Dr. Finkelstein's publications?
+16        A.    No, but I know Roggli was one of the
+17   authors on the Helsinki criteria in 2014.  So I would
+18   have to look at those documents and then see what
+19   Dr. Roggli said.  So I can't -- I can't make a
+20   comment on it right now.
+21        Q.    You didn't review those letters to the
+22   editor from Dr. Roggli in forming your opinions for
+23   the Breakell case, correct?
+24              MR. BERQUIST:  Objection to form.
+25              THE WITNESS:  I have not seen those.
+0344
+ 1        Q.    (By Mr. Greene)  Subsequent to
+ 2   Dr. Finkelstein's publication, which was a
+ 3   commentary, or his analysis on some of Dr. Roggli's
+ 4   prior work, Dr. Roggli has published further on the
+ 5   asbestos fiber concentrations in the lungs of brake
+ 6   repair workers.
+ 7              One of those articles was published, and
+ 8   the lead author is Gary Marsh published in Inhalation
+ 9   Toxicology in 2011.  Is that an article that you
+10   reviewed and informed your opinion in the Breakell
+11   matter?
+12        A.    I can't recall that one.
+13        Q.    Subsequently, in 2018, Dr. Roggli and
+14   colleagues published again on the asbestos fiber
+15   concentrations in the lungs of brake repair workers.
+16   This was in the Journal of Occupational and
+17   Environmental Medicine, and the lead author is
+18   Dr. Liu, L-I-U.  Is that an article that you reviewed
+19   in forming your opinions in the Breakell case?
+20        A.    Again, I don't -- I don't recall that one.
+21   I don't -- I don't recall.  I probably have seen
+22   that, but I don't recall that.
+23        Q.    I take it that did not inform your
+24   opinions in the Breakell matter, correct?
+25        A.    Not that I can recall.
+0345
+ 1        Q.    With respect to the mesothelioma tumor
+ 2   tissue that you digested -- do you have that in mind?
+ 3        A.    Yes.
+ 4        Q.    You were asked at your first deposition
+ 5   whether you understood that tumor tissue represented
+ 6   new tissue growth.  And you, I believe, testified
+ 7   that, typically, tumor tissue is new tissue growth
+ 8   and that the finding of anything in that type of
+ 9   tissue whether it's any kind of particulate is very,
+10   very rare.  Do you recall that?
+11        A.    Yeah.  It's -- it can definitely be rare,
+12   yeah, unless that's -- unless there is a pocket of,
+13   you know, fibers or something that is in association
+14   with that tissue.  It may actually have been, you
+15   know, the thing that promulgated the tumor.  So --
+16   but, typically, you know, you may not find anything.
+17        Q.    Are you able to tell us when
+18   Mr. Breakell's mesothelioma tumor began to grow?
+19        A.    No, that's -- that would be a medical
+20   opinion.
+21        Q.    And you would be speculating to offer that
+22   kind of opinion, right?
+23        A.    Yes.
+24        Q.    And, likewise, you're unable to tell us
+25   when any pocket or zone in Mr. Breakell's tumor
+0346
+ 1   tissue formed, correct?
+ 2              MR. BERQUIST:  Objection to form.
+ 3              THE WITNESS:  I wouldn't -- I wouldn't be
+ 4        aware of that.
+ 5        Q.    (By Mr. Greene)  You would be speculating
+ 6   as to when any such pocket or zone appeared in
+ 7   Mr. Breakell's tumor, correct?
+ 8              MR. BERQUIST:  Objection to form.
+ 9              THE WITNESS:  Again, that would be most
+10        likely a medical opinion.
+11        Q.    (By Mr. Greene)  Based on those answers,
+12   you would agree with me that you're not able to opine
+13   to a reasonable degree of scientific certainty as to
+14   when any of the minerals that were observed in
+15   Mr. Breakell's mesothelioma tumor tissue were
+16   actually inhaled by Mr. Breakell, correct?
+17              MR. BERQUIST:  Objection to form.
+18              THE WITNESS:  Are you asking for a time
+19        period?
+20        Q.    (By Mr. Greene)  Yes, sir.
+21              MR. BERQUIST:  Objection to form.
+22              THE WITNESS:  To -- I don't have an answer
+23        for that -- opinion on that.  Again, I think
+24        that's a medical opinion.
+25        Q.    (By Mr. Greene)  You observed actinolite
+0347
+ 1   asbestos in Mr. Breakell's mesothelioma tumor tissue,
+ 2   correct?
+ 3        A.    Yes.
+ 4        Q.    And you would agree that you cannot tell
+ 5   us without speculating when that actinolite was
+ 6   breathed or inhaled by Mr. Breakell, correct?
+ 7        A.    Yes.
+ 8              MR. BERQUIST:  Objection to form.
+ 9              THE WITNESS:  I don't know when he
+10        breathed or got that into his system.
+11        Q.    (By Mr. Greene)  And, likewise, you would
+12   not be able to tell us without speculating when any
+13   chrysotile found in Mr. Breakell's lung -- or
+14   mesothelioma tissue was breathed or inhaled by
+15   Mr. Breakell, correct?
+16              MR. BERQUIST:  Objection to form.
+17              THE WITNESS:  You know, that he had an
+18        exposure to it is probably about all you could
+19        say, or all I can say.
+20        Q.    (By Mr. Greene)  Right, you can't tell --
+21   I'm sorry, I'm sorry, I didn't mean to cut --
+22        A.    That's okay.  Or all I can say, opine on.
+23        Q.    You would not be able to offer any opinion
+24   as to when he inhaled any chrysotile that you
+25   observed in the mesothelioma tissue, correct?
+0348
+ 1              MR. BERQUIST:  Objection to form.
+ 2              THE WITNESS:  Yeah.  Only that he had had
+ 3        an exposure.
+ 4        Q.    (By Mr. Greene)  And along those lines,
+ 5   you would also not be able to point us to any
+ 6   particular source of asbestos fibers, including
+ 7   chrysotile or actinolite, that Mr. Breakell breathed
+ 8   and that you observed in his mesothelioma tumor
+ 9   tissue; true?
+10              MR. BERQUIST:  Objection to form.
+11              THE WITNESS:  Well, I think that based on
+12        his history of product exposure, you could get a
+13        general idea, yes.
+14        Q.    (By Mr. Greene)  You would be speculating,
+15   would you not, Dr. Rigler, as to what source
+16   Mr. Breakell breathed that included actinolite?
+17              MR. BERQUIST:  Objection to form.
+18              THE WITNESS:  Again, it would be -- that
+19        would be based on a product that may have
+20        contained that type of asbestos, that would --
+21        it would have to be based on that.
+22        Q.    (By Mr. Greene)  And you can't point us to
+23   any particular product that Mr. Breakell was around
+24   that contained actinolite; true?
+25        A.    I can't.  Maybe one of the other experts
+0349
+ 1   could but -- as I sit here doing the laboratory work.
+ 2        Q.    Also, you're not going to be the one to
+ 3   tell the jury where any chrysotile that was found in
+ 4   Mr. Breakell's mesothelioma tumor actually came from,
+ 5   right?
+ 6              MR. BERQUIST:  Objection to form.  Asked
+ 7        and answered.
+ 8              THE WITNESS:  Yeah.  I think I've already
+ 9        answered that.
+10        Q.    (By Mr. Greene)  And the answer is
+11   correct, yes?
+12              MR. BERQUIST:  Objection to form.  Asked
+13        and answered.
+14              THE WITNESS:  Answered.
+15        Q.    (By Mr. Greene)  You agree, correct?
+16              MR. BERQUIST:  Same objection.
+17              THE WITNESS:  Again, it would be -- you'd
+18        have to look at the products that they had used,
+19        that he had used or -- or was around or was
+20        exposed to.
+21        Q.    (By Mr. Greene)  Are you aware of any air
+22   sampling that has been done related to brake repair
+23   work where actinolite was observed?
+24              MR. BERQUIST:  Objection to form,
+25        foundation.
+0350
+ 1              THE WITNESS:  Are you -- do you mean in
+ 2        the literature or do you mean at MAS or --
+ 3        Q.    (By Mr. Greene)  Sure.  I'll ask a more
+ 4   precise question.
+ 5              Have you observed any report in the
+ 6   peer-reviewed literature of air monitoring of brake
+ 7   repair work where actinolite was observed?
+ 8              MR. BERQUIST:  Objection to form,
+ 9        foundation.
+10              THE WITNESS:  I, as I sit here, can't
+11        recall.  I may have over the years, but as I --
+12        I would have to go and research that.
+13        Q.    (By Mr. Greene)  Are you able to point us
+14   to any study in the peer-reviewed literature that
+15   reported on air sampling done related to brake repair
+16   work where tremolite was observed and reported?
+17              MR. BERQUIST:  Objection to form,
+18        foundation, assumes facts.
+19              THE WITNESS:  Same -- same answer on that.
+20        Q.    (By Mr. Greene)  That is, you're not able
+21   to point us to any such study, correct?
+22              MR. BERQUIST:  Same objection.
+23              THE WITNESS:  Well, I can't -- I can't
+24        recall that as I sit here.  I believe there are,
+25        but I have to research that.  Tremolite, you're
+0351
+ 1        saying tremolite?
+ 2        Q.    (By Mr. Greene)  Yes, sir.
+ 3        A.    Okay.
+ 4        Q.    With respect to your findings related to
+ 5   the falciform ligament, would you agree with me that
+ 6   there were no findings of countable fibers that were
+ 7   evidence of potential exposure to automotive friction
+ 8   products?
+ 9              MR. BERQUIST:  Objection to form.
+10              THE WITNESS:  Well, we did find tremolite,
+11        which was not of a five-to-one ratio in the
+12        tissue; and it is an accessory mineral of
+13        friction material used in automotive brake
+14        products, such as chrysotile.
+15        Q.    (By Mr. Greene)  Your opinion I believe
+16   from your first day of deposition that the fibers
+17   that you observed on your digestion were all the
+18   result of environmental exposures that Mr. Breakell
+19   inhaled; true?
+20              MR. BERQUIST:  Objection to form,
+21        foundation.  He never said environmental
+22        exposures.
+23              THE WITNESS:  Yeah.  I don't know that I
+24        said it that way.  We'd have to look at the
+25        testimony.
+0352
+ 1        Q.    (By Mr. Greene)  I'll rephrase.  That
+ 2   wasn't the keyword in the question.
+ 3              What I'm getting at, Dr. Rigler, is you
+ 4   believe that Mr. Breakell inhaled the fibers that you
+ 5   observed in your digestion; true?
+ 6        A.    That's a likely pathway.
+ 7        Q.    What other pathways would you opine are
+ 8   relevant to this situation?
+ 9        A.    I would think that would be the major
+10   pathway.
+11        Q.    And so with respect to brake repair work,
+12   if tremolite fibers are not released as a result of
+13   that work and into the breathing zone, then
+14   Mr. Breakell's tremolite fibers or structures could
+15   not have been inhaled from friction products,
+16   correct?
+17              MR. BERQUIST:  Objection to form.
+18              THE WITNESS:  Again, not necessarily,
+19        because tremolite is a known accessory mineral
+20        of friction material, such as chrysotile, which
+21        has been used extensively in brake material.
+22        Q.    (By Mr. Greene)  But you would agree with
+23   me that if tremolite is not released as a result of
+24   manipulation of brakes, then Mr. Breakell could not
+25   have inhaled tremolite from fibers released from
+0353
+ 1   brakes, true?
+ 2        A.    If there was no release, that's possible.
+ 3        Q.    It's not possible.  It's more likely than
+ 4   not, isn't it?
+ 5        A.    Well, I would say it's possible.
+ 6        Q.    You were asked a question or two during
+ 7   your first deposition about idiopathic mesothelioma,
+ 8   and I don't want to rehash your answers there.  But
+ 9   my question today is whether you agree that there is
+10   literature in the peer-reviewed medical and
+11   scientific literature that reports on the percentage
+12   of cases of peritoneal mesothelioma that are not
+13   associated with asbestos exposure?
+14              MR. BERQUIST:  Objection to form.
+15              THE WITNESS:  That is, I believe, true,
+16        yes.
+17        Q.    (By Mr. Greene)  Have you undertaken a
+18   review of the literature on that topic?
+19              MR. BERQUIST:  Objection to form.
+20              THE WITNESS:  I have read quite a bit of
+21        the literature on that topic.  One of the issues
+22        with the literature is -- and we've run into it
+23        in this case, where the history of the patients
+24        is not established for exposures to materials
+25        such as talc or welding fumes or whatever they
+0354
+ 1        may be.  They may have focused specifically on
+ 2        whether that person was working around
+ 3        asbestos-bearing products.  So the
+ 4        history -- the completeness of the medical
+ 5        history is a question in many of those studies.
+ 6        Q.    (By Mr. Greene)  Along those lines, you
+ 7   agree that people can have exposures to asbestos that
+ 8   they do not recognize or do not know about, correct?
+ 9        A.    Yes.
+10        Q.    In fact, Mr. Breakell may have had
+11   exposures to asbestos that he does -- did not
+12   recognize or did not know about to report, correct?
+13              MR. BERQUIST:  Objection to form.
+14              THE WITNESS:  Well, if he didn't -- didn't
+15        recognize it or understand it, that's possible.
+16        Q.    (By Mr. Greene)  You agree Mr. Breakell
+17   may have had exposures to asbestos that he did not
+18   recognize or understand; true?
+19              MR. BERQUIST:  Objection to form.
+20              THE WITNESS:  Are you -- are you asking me
+21        if he was aware of his exposures to possible
+22        products?
+23        Q.    (By Mr. Greene)  You would agree with me
+24   that Mr. Breakell may have had exposures to asbestos
+25   that he did not recognize or understand; true?
+0355
+ 1              MR. BERQUIST:  Objection to form.
+ 2              THE WITNESS:  I already answered that.  So
+ 3        we're -- yeah, I already answered that.
+ 4        Q.    (By Mr. Greene)  And your answer was that
+ 5   that's true, correct?
+ 6              MR. BERQUIST:  Objection to form.
+ 7              THE WITNESS:  That, again, he may not have
+ 8        known.
+ 9        Q.    (By Mr. Greene)  Dr. Rigler, have you ever
+10   performed any digestion studies on animals exposed to
+11   asbestos fibers in a controlled exposure experiment?
+12              MR. BERQUIST:  Objection to form, and
+13        asked and answered.
+14              THE WITNESS:  I have not performed animal
+15        exposures.  There are plenty of them in the
+16        literature.
+17        Q.    (By Mr. Greene)  Yes, sir.  Have you ever
+18   reviewed any digestion studies on animals in
+19   controlled exposure experiments related to brake dust
+20   exposures?
+21        A.    I'm sure I have, yes.
+22        Q.    Do you recall any as you sit there today
+23   that you could identify with any specificity?
+24        A.    Well, they would have been -- they would
+25   have been studies that use brake -- for instance,
+0356
+ 1   they would have been studies that used, for instance,
+ 2   chrysotile exposures, which is a brake dust
+ 3   component.  And so that's -- that's the way the study
+ 4   would have been done that I recall in the literature.
+ 5        Q.    Do you recall any such studies where
+ 6   animal lung tissue was digested following exposure to
+ 7   brake dust?  And by that I mean specifically dust
+ 8   that was generated by the grinding of brakes that
+ 9   were manufactured using chrysotile as an ingredient?
+10        A.    I can't recall one as I sit here, but I
+11   believe there -- there may be.  I would need to
+12   research that.
+13        Q.    Dr. Rigler, I want to ask you about one
+14   other article.  This is an article by James Rasmuson,
+15   Dr. Roggli, and others that was published in
+16   Inhalation Toxicology in 2014.  It was titled
+17   "Cumulative Retrospective Exposure Assessment as a
+18   Predictor of Amphibole Asbestos Lung Burden:
+19   Validation Procedures and Results for Industrial
+20   Hygiene and Pathology Estimates."
+21              Is that an article that you have reviewed
+22   in the past?
+23        A.    I can't recall that it is.  I would have
+24   to look at it again if it is one that I've looked at,
+25   and it's possible.  I've seen thousands of articles.
+0357
+ 1        Q.    And I apologize I'm not there with you,
+ 2   but is that an article that's on your reference list
+ 3   for this case?
+ 4        A.    It may be.
+ 5              MR. GREENE:  Doctor, I believe those are
+ 6        all the questions that I have.  Thanks very much
+ 7        for answering them.
+ 8              THE WITNESS:  You're welcome.
+ 9              MR. BERQUIST:  Anybody else on the phone
+10        have any questions?
+11              DEFENSE COUNSEL:  No.
+12              MR. BERQUIST:  All right.  Doctor, I have
+13        a few questions for you.
+14              THE WITNESS:  Okay.
+15                        EXAMINATION
+16   BY MR. BERQUIST:
+17        Q.    I actually want to take you back all the
+18   way to June 28th on your --
+19        A.    All right.
+20        Q.    -- first day of your deposition in this
+21   case.  And I -- unfortunately, I don't have the hard
+22   copy of the exhibits that were from that deposition,
+23   so I'll show you on my computer.
+24        A.    All right.
+25        Q.    On page 93 of day one of your deposition,
+0358
+ 1   you stated that -- to the effect of tremolite and
+ 2   anthophyllite are not in products.  And I can show
+ 3   you the testimony if you want to see it.
+ 4        A.    Okay.
+ 5        Q.    One second.  I'm reading from page 93,
+ 6   line 5 of your answer:  "But we did find, as I
+ 7   recall, I think we found tremolite and maybe
+ 8   anthophyllite in one, too.  We did find chrysotile,
+ 9   as I recall, but tremolite and anthophyllite are
+10   just -- they're just not floating around in the air.
+11   They're not in products," end quote.
+12              Now, you were referring to a previous
+13   cohort that MAS used.  Do you recall that testimony
+14   now?
+15              MR. CHACHKES:  Objection, leading.
+16              THE WITNESS:  Yes, I do.  I remember
+17        Mr. -- you were asking me about it.
+18        Q.    (By Mr. Berquist)  And can you clarify
+19   what you meant by tremolite and anthophyllite are not
+20   in products?
+21        A.    Well, they are -- they're not -- they're
+22   not specifically part of asbestos-bearing products.
+23   Typically, they would be accessory minerals.
+24        Q.    And, for example, MAS has identified
+25   tremolite in containers of Johnson's baby power,
+0359
+ 1   correct?
+ 2        A.    Yes.
+ 3        Q.    Same thing for anthophyllite?
+ 4        A.    Yes.
+ 5        Q.    Doctor, do you require a control
+ 6   population for your opinions regarding Adam
+ 7   Breakell's tissue in this case?
+ 8              MR. CHACHKES:  Objection, leading.
+ 9              THE WITNESS:  No.
+10        Q.    (By Mr. Berquist)  Still back on day one
+11   of your deposition, Mr. Chachkes was asking you some
+12   questions at page 122 about Exhibit -- Exhibit 7, and
+13   specifically page 18 of Exhibit 7, and I'm going to
+14   show you Exhibit 7.  This is the MAS TEM fiber versus
+15   bundles quality study; is that correct?
+16        A.    Yes.
+17        Q.    And on day one of your deposition
+18   Mr. Chachkes was asking you questions -- questions
+19   about page 18 of that exhibit.  Do you recall those
+20   questions generally?
+21        A.    Yes.
+22        Q.    Okay.
+23        A.    Yes.  We were talking about the study.
+24        Q.    All right.  And what I'm showing you at
+25   the moment is page 18 of Exhibit 7, correct?
+0360
+ 1        A.    Yes.
+ 2        Q.    And that is a TEM image or --
+ 3        A.    Yes, TEM.
+ 4        Q.    And that is a TEM image associated with
+ 5   the MAS fiber versus bundles study?
+ 6        A.    Yes.
+ 7        Q.    And if -- if you had indicated on day one
+ 8   that that was from Mr. Breakell's tissue, was that an
+ 9   oversight?
+10              MR. CHACHKES:  Objection, leading.
+11              THE WITNESS:  If -- yes.  This is not from
+12        Mr. Breakell's tissue.
+13              MR. BERQUIST:  Okay.
+14              THE WITNESS:  This is from that particular
+15        study.  I may have misunderstood.
+16        Q.    (By Mr. Berquist)  I just wanted to make
+17   sure that it was clear whether or not MAS used any of
+18   the Mr. Breakell's tissue in connection with the
+19   fiber versus bundles study.
+20        A.    No, no, no.  I -- I must have
+21   misunderstood.
+22        Q.    Okay.  And Doctor, for purposes of the
+23   work performed by you and others at MAS in connection
+24   with the tissue analysis in this specific case, did
+25   you or any of the others -- any other MAS analyst
+0361
+ 1   obtain, create or rely upon any MAS SOPs other than
+ 2   the tissue digestion SOP?
+ 3        A.    No.
+ 4              MR. CHACHKES:  Objection.
+ 5              THE WITNESS:  I did not, no.
+ 6        Q.    (By Mr. Berquist)  Back on day one you
+ 7   were also asked some more questions about the fiber
+ 8   versus bundles study that you did.  Do you recall
+ 9   those questions generally?
+10        A.    Generally.
+11        Q.    If one analyst identifies an asbestiform
+12   particle as a fiber and another analyst identifies it
+13   as a bundle, is it still asbestiform?
+14              MR. CHACHKES:  Objection, form.
+15              THE WITNESS:  Yes, if it meets the
+16        regulatory requirements.  I think I stated that
+17        before.
+18        Q.    (By Mr. Berquist)  You were involved in
+19   splitting -- the process of splitting the tissue
+20   blocks of Adam -- from Adam Breakell's surgeries,
+21   correct?
+22        A.    Yes.
+23              MS. MOHAN:  Objection.
+24        Q.    (By Mr. Berquist)  Do you understand that
+25   the purpose of splitting the blocks was so that the
+0362
+ 1   defense lawyers could give their own experts portions
+ 2   to perform their own analysis?
+ 3        A.    I thought that's what was happening.
+ 4        Q.    Have the defense lawyers shown you any
+ 5   reports or anything else regarding their own experts'
+ 6   analyses of Mr. Breakell's tissue?
+ 7        A.    I don't have anything.  I haven't seen
+ 8   anything.
+ 9        Q.    Did the defense lawyers inform you at any
+10   point in the two days you've been deposed that they
+11   elected not to perform their own analyses of the
+12   tissue?
+13        A.    I hadn't heard anything like that.  I
+14   don't know whether they did.
+15        Q.    Would you agree with me, Doctor, that one
+16   of the best ways for the defendant corporations to
+17   corroborate or challenge your findings would be to
+18   hire qualified experts to do analyses like you did on
+19   the portions of Adam Breakell's tissue that were
+20   provided to the defense lawyers?
+21              MS. MOHAN:  Objection.
+22              MR. CHACHKES:  Objection.
+23              DEFENSE COUNSEL:  Objection to form.
+24        Lacks foundation.
+25              THE WITNESS:  My understanding is that's
+0363
+ 1        what was going to happen.  That's why they --
+ 2        the blocks were split, so that -- that was my
+ 3        understanding.
+ 4        Q.    (By Mr. Berquist)  And would one of the
+ 5   ways an expert witness for one of the defense
+ 6   defendant corporations could verify your findings
+ 7   would to do -- would be to do their own analysis of
+ 8   the tissue they were provided; is that fair to say?
+ 9              MR. CHACHKES:  Objection, leading.
+10              DEFENSE COUNSEL:  Objection to form.
+11              THE WITNESS:  Yes, yes.  They could do
+12        that.  They could do their own analysis, yes.
+13              MR. BERQUIST:  Doctor, those are all the
+14        questions I have for you.
+15              I'm going to make a lawyer statement for
+16        the record.  I'm not sure if there's going to be
+17        any follow-up.
+18              But for the record, pursuant to paragraph
+19        15 of the protective order, plaintiff designates
+20        the entirety of this transcript as protected for
+21        now; and we'll supplement with specific pages
+22        once the final transcript is received.
+23              Anything else from you all on the phone?
+24              MR. CHACHKES:  I'm not sure what the
+25        procedure is for designating the particular
+0364
+ 1        portions that are confidential, whether it's
+ 2        faster than that, slower than that, so my
+ 3        silence will not be consent here.
+ 4              MR. BERQUIST:  You don't need to consent.
+ 5        Any party can designate, so I appreciate that.
+ 6        Anything?
+ 7              MS. MOHAN:  No.
+ 8              MR. BERQUIST:  All right.  Anybody on the
+ 9        phone?
+10              All right.  Thank you, Dr. Rigler.  You're
+11        done.
+12              (Deposition concluded at 1:32 p.m.)
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0365
+ 1                   E R R A T A  S H E E T
+ 2              Pursuant to Rule 30(e) of the Federal
+ 3   Rules of Civil Procedure and/or Official Code of
+ 4   Georgia Annotated 9-11-30(e), any changes in form or
+ 5   substance which you desire to make to your deposition
+ 6   testimony shall be entered upon the deposition with a
+ 7   statement of the reasons given for making them.
+ 8              To assist you in making any such
+ 9   corrections, please use the form below.  If
+10   supplemental or additional pages are necessary,
+11   please furnish same and attach them to this errata
+12   sheet.
+13                          *  *  *
+14              I, the undersigned, MARK RIGLER, Ph.D., do
+15   hereby certify that I have read the foregoing
+16   deposition, and that to the best of my knowledge,
+17   said deposition is true and accurate (with the
+18   exception of the following corrections listed below).
+19   Page____Line____should read:_______________________
+20   Reason for change:_________________________________
+21   Page____Line____should read:_______________________
+22   Reason for change:_________________________________
+23   Page____Line____should read:_______________________
+24   Reason for change:_________________________________
+25   
+0366
+ 1   Page____Line____should read:_______________________
+ 2   Reason for change:_________________________________
+ 3   Page____Line____should read:_______________________
+ 4   Reason for change:_________________________________
+ 5   Page____Line____should read:_______________________
+ 6   Reason for change:_________________________________
+ 7   Page____Line____should read:_______________________
+ 8   Reason for change:_________________________________
+ 9   Page____Line____should read:_______________________
+10   Reason for change:_________________________________
+11   Page____Line____should read:_______________________
+12   Reason for change:_________________________________
+13   Page____Line____should read:_______________________
+14   Reason for change:_________________________________
+15   
+16   
+                                ________________________
+17                                     Signature
+18   
+19   
+     ______________________________, Notary Public.
+20   This, the________day of________________, 2020.
+     My Commission Expires:_______________________.
+21   
+22   
+23   
+24   
+25   
+0367
+ 1                    D I S C L O S U R E
+ 2   
+     STATE OF GEORGIA    )      DEPOSITION OF
+ 3   
+     HENRY COUNTY        )      MARK RIGLER, Ph.D.
+ 4   
+ 5   
+          Pursuant to Article 10.B of the Rules and
+ 6   Regulations of the Board of Court Reporting of the
+     Judicial Council of Georgia, I make the following
+ 7   disclosure:
+ 8        I am a Georgia Certified Court Reporter.  I am
+     here as a representative of Eppley Court Reporting.
+ 9   
+          Eppley Court Reporting was contacted by the
+10   offices of Orrick, Herrington & Sutcliffe to provide
+     court reporting services for this deposition.  Eppley
+11   Court Reporting will not be taking this deposition
+     under any contract that is prohibited by O.C.G.A.
+12   9-11-28 (c).
+13        Eppley Court Reporting has no contract or
+     agreement to provide court reporting services with
+14   any party to the case, or any reporter or reporting
+     agency from whom a referral might have been made to
+15   cover the deposition.
+16        Eppley Court Reporting will charge its usual and
+     customary rates to all parties in the case, and a
+17   financial discount will not be given to any party in
+     this litigation.
+18   
+19   
+20   
+21   
+                     F. Renee Finkley, RPR, RMR, CRR, CLR
+22                   Georgia CCR-B-2289
+23   
+24   
+25   
+0368
+ 1                   C E R T I F I C A T E
+ 2   STATE OF GEORGIA:
+     COUNTY OF HENRY:
+ 3   
+ 4             I, F. Renee Finkley, a Certified Court
+     Reporter in and for the State of Georgia, do hereby
+ 5   Certify:
+ 6              That prior to being examined, the witness
+     named in the foregoing deposition was by me duly
+ 7   sworn to testify to the truth, the whole truth, and
+     nothing but the truth.
+ 8              That said deposition was taken before me
+     at the time and place set forth and was taken down by
+ 9   me in shorthand and thereafter reduced to
+     computerized transcription under my direction and
+10   supervision, and I hereby certify the foregoing
+     deposition is a full, true and correct transcript of
+11   my shorthand notes so taken.
+                I further certify that I am not of kin or
+12   counsel to the parties in the case, and I am not in
+     the regular employ of counsel for any of the said
+13   parties, nor am I in any way financially interested
+     in the result of said case.
+14              IN WITNESS WHEREOF, I have hereunto
+     subscribed my name this 29th day of January, 2020.
+15   
+16   
+17   
+18   
+19                  ____________________________    ____
+                    F. Renee Finkley, RPR, RMR, CRR, CLR
+20                  Georgia CCR-B-2289
+21   
+22   
+23   
+24   
+25   

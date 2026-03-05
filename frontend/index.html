@@ -1,4 +1,8 @@
 <!doctype html>
+<!-- Copyright (c) 2026 Data-Blitz Inc. All rights reserved. -->
+<!-- License: Proprietary. See NOTICE.md. -->
+<!-- Author: Paul Harvener. -->
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -72,20 +76,19 @@
 
       <section id="tabPageLanding" class="tab-page">
         <section id="intelligenceLanding" class="panel intelligence-landing">
+          <h1 class="intelligence-landing-title">AttorneyOS</h1>
           <div class="intelligence-landing-art">
-            <img
-              src="/static/assets/alien-attorney-talkhead.svg"
-              alt="Alien attorney talkhead"
-              class="intelligence-landing-image"
-            />
-          </div>
-          <div class="intelligence-landing-copy">
-            <p class="intelligence-landing-kicker">Counsel Is Standing By</p>
-            <h1>Load a case and start the deposition workspace.</h1>
-            <p class="subhead">
-              Use the tabs above to move through the app. Start in <strong>Case</strong> to choose a case,
-              select a deposition folder, and run <code>Load.Depositions</code>.
-            </p>
+            <div class="landing-logo-burst" aria-label="Animated DataBlitz logo">
+              <img
+                class="landing-logo-core"
+                src="/static/assets/data-blitz-logo.png"
+                alt="DataBlitz"
+              />
+              <span class="landing-logo-shard landing-logo-shard-1" aria-hidden="true"></span>
+              <span class="landing-logo-shard landing-logo-shard-2" aria-hidden="true"></span>
+              <span class="landing-logo-shard landing-logo-shard-3" aria-hidden="true"></span>
+              <span class="landing-logo-shard landing-logo-shard-4" aria-hidden="true"></span>
+            </div>
           </div>
         </section>
       </section>
@@ -105,6 +108,7 @@
               <button id="duplicateCaseBtn" class="secondary" type="button">Duplicate to New Case</button>
             </div>
             <div id="timeline" class="timeline-strip"></div>
+            <div id="timelineScale" class="timeline-scale" aria-hidden="true"></div>
           </section>
 
           <section class="panel risk-panel">
@@ -190,20 +194,29 @@
                 <input id="caseId" type="text" placeholder="Select or enter a case id" />
               </label>
               <label>
-                Deposition Folder
-                <input
-                  id="directory"
-                  type="text"
-                  list="directoryOptions"
-                  placeholder="Type or select a deposition folder path"
-                  aria-label="Deposition folder selection"
-                />
+                Deposition Source
+                <div class="inline-input-actions">
+                  <input
+                    id="directory"
+                    type="text"
+                    list="directoryOptions"
+                    placeholder="Type or select a deposition folder or .txt path"
+                    aria-label="Deposition source selection"
+                  />
+                  <button id="browseDepositionBtn" class="secondary" type="button">Browse</button>
+                </div>
                 <datalist id="directoryOptions"></datalist>
               </label>
               <label>
                 LLM
                 <select id="llmSelect" aria-label="LLM selection">
                   <option value="openai::gpt-5.2">ChatGPT - gpt-5.2</option>
+                </select>
+              </label>
+              <label>
+                Ingest Schema
+                <select id="ingestSchemaSelect" aria-label="Ingest schema selection">
+                  <option value="deposition_schema">DepositionSchema</option>
                 </select>
               </label>
               <label class="toggle-label">
@@ -216,9 +229,35 @@
               </label>
             </div>
 
+            <details class="ingest-schema-manager">
+              <summary>Manage Ingest Schemas</summary>
+              <div class="form-grid schema-manager-grid">
+                <label>
+                  Schema Path
+                  <input id="ingestSchemaKey" type="text" placeholder="custom/schema/path" />
+                </label>
+                <label class="schema-json-label">
+                  Schema JSON
+                  <textarea
+                    id="ingestSchemaJson"
+                    rows="10"
+                    spellcheck="false"
+                    placeholder='{"title":"Custom Schema","type":"object"}'
+                  ></textarea>
+                </label>
+              </div>
+              <div class="actions-row">
+                <button id="newIngestSchemaBtn" class="secondary" type="button">New Schema</button>
+                <button id="saveIngestSchemaBtn" class="secondary" type="button">Save Schema</button>
+                <button id="removeIngestSchemaBtn" class="secondary danger" type="button">Remove Schema</button>
+              </div>
+              <div id="ingestSchemaStatus" class="status muted">Choose a schema to inspect or create a new custom schema.</div>
+            </details>
+
             <div class="actions-row">
               <button id="newCaseBtn" class="secondary" type="button">New Blank Case</button>
               <button id="importDepositionBtn" class="secondary" type="button">Import Deposition</button>
+              <button id="importDepositionFolderBtn" class="secondary" type="button">Import Folder</button>
               <input
                 id="importDepositionInput"
                 type="file"
@@ -226,6 +265,15 @@
                 multiple
                 class="hidden"
                 aria-label="Import deposition files"
+              />
+              <input
+                id="importDepositionFolderInput"
+                type="file"
+                multiple
+                webkitdirectory
+                directory
+                class="hidden"
+                aria-label="Import deposition folder"
               />
               <button id="ingestBtn">Load.Depositions</button>
               <button id="stopInferenceBtn" class="secondary danger" type="button" disabled>Stop Inferencing</button>
@@ -261,6 +309,77 @@
                   <button id="loadOntologyBtn" class="secondary" type="button">Load Ontology</button>
                   <button id="openGraphBrowserBtn" class="secondary" type="button">Open Graph Browser</button>
                 </div>
+                <section class="graph-rag-embeddings">
+                  <h4>Embedding Configuration</h4>
+                  <label class="toggle-label">
+                    <input id="graphRagEmbeddingEnabled" type="checkbox" />
+                    Enable vector retrieval (Neo4j vector index)
+                  </label>
+                  <label>
+                    Embedding Provider
+                    <select id="graphRagEmbeddingProvider" aria-label="Graph RAG embedding provider">
+                      <option value="openai">OpenAI</option>
+                      <option value="ollama">Ollama</option>
+                    </select>
+                  </label>
+                  <label>
+                    Embedding Model
+                    <input
+                      id="graphRagEmbeddingModel"
+                      type="text"
+                      value="text-embedding-3-small"
+                      placeholder="text-embedding-3-small"
+                      aria-label="Graph RAG embedding model"
+                    />
+                  </label>
+                  <div class="graph-rag-embedding-grid">
+                    <label>
+                      Dimensions
+                      <input
+                        id="graphRagEmbeddingDimensions"
+                        type="number"
+                        min="1"
+                        max="8192"
+                        step="1"
+                        value="1536"
+                        aria-label="Graph RAG embedding dimensions"
+                      />
+                    </label>
+                    <label>
+                      Vector Index
+                      <input
+                        id="graphRagEmbeddingIndex"
+                        type="text"
+                        value="resource_embeddings"
+                        aria-label="Graph RAG vector index name"
+                      />
+                    </label>
+                  </div>
+                  <div class="graph-rag-embedding-grid">
+                    <label>
+                      Node Label
+                      <input
+                        id="graphRagEmbeddingNodeLabel"
+                        type="text"
+                        value="Resource"
+                        aria-label="Graph RAG embedding node label"
+                      />
+                    </label>
+                    <label>
+                      Property Name
+                      <input
+                        id="graphRagEmbeddingProperty"
+                        type="text"
+                        value="embedding"
+                        aria-label="Graph RAG embedding property name"
+                      />
+                    </label>
+                  </div>
+                  <div class="actions-row graph-actions">
+                    <button id="saveGraphRagEmbeddingBtn" class="secondary" type="button">Save Embeddings</button>
+                    <button id="reloadGraphRagEmbeddingBtn" class="secondary" type="button">Reload Embeddings</button>
+                  </div>
+                </section>
                 <section class="graph-rag-query">
                   <label>
                     Graph RAG Question
@@ -333,6 +452,15 @@
             <div id="metricsBody" class="metrics-body hidden">
               <div class="metrics-head">
                 <button id="refreshMetricsBtn" class="secondary" type="button">Refresh Metrics</button>
+                <button id="openGrafanaObservablesBtn" class="secondary button-with-icon" type="button">
+                  <img
+                    src="/static/assets/grafana_icon.svg"
+                    alt=""
+                    class="button-icon"
+                    aria-hidden="true"
+                  />
+                  <span>Open Grafana</span>
+                </button>
               </div>
               <div class="metrics-meta">
                 <span id="metricsSampleMeta" class="muted">Sample: 0 runs</span>
@@ -383,43 +511,429 @@
           <section class="panel admin-panel">
             <div class="admin-head">
               <h2>Admin</h2>
-              <span class="muted">Operational diagnostics and generated reports</span>
             </div>
             <div class="subtab-nav" role="tablist" aria-label="Admin Sections">
               <button
-                id="adminTabTestBtn"
+                id="adminTabUsersBtn"
                 class="subtab-btn active"
                 type="button"
                 role="tab"
                 aria-selected="true"
+                aria-controls="adminTabPageUsers"
+              >
+                Users
+              </button>
+              <button
+                id="adminTabPersonasBtn"
+                class="subtab-btn"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="adminTabPagePersonas"
+              >
+                Personas
+              </button>
+              <button
+                id="adminTabTestBtn"
+                class="subtab-btn"
+                type="button"
+                role="tab"
+                aria-selected="false"
                 aria-controls="adminTabPageTest"
               >
                 Test
               </button>
+              <button
+                id="adminTabMlopsBtn"
+                class="subtab-btn"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="adminTabPageMlops"
+              >
+                MLOps
+              </button>
             </div>
-            <section id="adminTabPageTest" class="subtab-page">
+            <section id="adminTabPageUsers" class="subtab-page">
               <div class="admin-tools-grid">
                 <section class="admin-tool-card">
                   <div class="admin-report-head">
                     <h3>Add User</h3>
-                    <span class="muted">Lightweight admin list</span>
                   </div>
-                  <div class="admin-user-form">
-                    <input
-                      id="adminUserName"
-                      type="text"
-                      placeholder="Enter a user name"
-                      aria-label="Admin user name"
-                    />
+                  <p class="muted">
+                    Authorization order: <strong>Open</strong>, <strong>Admin</strong>,
+                    <strong>Expert User</strong>, <strong>User</strong>, <strong>Read Only</strong>.
+                  </p>
+                  <div class="admin-user-create-actions">
                     <button id="adminAddUserBtn" class="secondary" type="button">Add User</button>
                   </div>
+                  <div id="adminUserCreatePanel" class="admin-user-create-panel hidden">
+                    <div class="admin-user-form-grid">
+                      <input
+                        id="adminUserFirstName"
+                        type="text"
+                        placeholder="First Name"
+                        aria-label="User first name"
+                      />
+                      <input
+                        id="adminUserLastName"
+                        type="text"
+                        placeholder="Last Name"
+                        aria-label="User last name"
+                      />
+                      <select id="adminUserAuthorization" aria-label="User authorization level">
+                        <option value="user" selected>User</option>
+                        <option value="open">Open</option>
+                        <option value="admin">Admin</option>
+                        <option value="expert_user">Expert User</option>
+                        <option value="read_only">Read Only</option>
+                      </select>
+                    </div>
+                    <div class="admin-user-form-actions">
+                      <button id="adminSaveUserBtn" class="secondary" type="button">Save User</button>
+                      <button id="adminCancelUserBtn" class="secondary" type="button">Cancel</button>
+                    </div>
+                  </div>
+                  <div id="adminUserFeedback" class="admin-user-feedback muted">
+                    Click Add User to enter a first name, last name, and authorization level.
+                  </div>
+                </section>
+                <section class="admin-tool-card">
+                  <div class="admin-report-head">
+                    <h3>Saved Users</h3>
+                    <div class="admin-user-list-actions">
+                      <button id="adminGetUsersBtn" class="secondary" type="button">Get Users</button>
+                      <button id="adminRemoveUserBtn" class="secondary" type="button">Remove User</button>
+                      <button id="adminRefreshUsersBtn" class="secondary" type="button">Refresh Users</button>
+                    </div>
+                  </div>
+                  <label class="admin-user-select-shell">
+                    <span class="muted">Select User</span>
+                    <select id="adminUserSelect" aria-label="Select current user">
+                      <option value="">No users available</option>
+                    </select>
+                  </label>
+                  <div id="adminUserSelectedMeta" class="muted">No user selected.</div>
                   <div id="adminUserList" class="admin-user-list muted">No users added yet.</div>
                 </section>
-
+              </div>
+            </section>
+            <section id="adminTabPagePersonas" class="subtab-page hidden">
+              <div class="admin-tools-grid">
+                <section class="admin-tool-card">
+                  <div class="admin-report-head">
+                    <h3>Persona</h3>
+                  </div>
+                  <p class="muted">
+                    Define a reusable persona with a name, bound LLM, prompt instructions, and an ordered RAG chain.
+                  </p>
+                  <div class="admin-user-create-actions">
+                    <button id="adminAddPersonaBtn" class="secondary" type="button">Add Persona</button>
+                  </div>
+                  <div id="adminPersonaCreatePanel" class="admin-user-create-panel hidden">
+                    <div class="admin-user-form-grid">
+                      <input
+                        id="adminPersonaName"
+                        type="text"
+                        placeholder="Persona Name"
+                        aria-label="Persona name"
+                      />
+                      <select id="adminPersonaLlm" aria-label="Persona LLM">
+                        <option value="openai::gpt-5.2">ChatGPT (gpt-5.2)</option>
+                      </select>
+                    </div>
+                    <div class="admin-persona-editor-layout">
+                      <div class="admin-persona-editor-left">
+                        <div class="admin-user-list-actions">
+                          <button id="adminPersonaOpenPromptModalBtn" class="secondary" type="button">
+                            Prompt
+                          </button>
+                          <button id="adminPersonaToggleRagBtn" class="secondary" type="button">
+                            RAG
+                          </button>
+                          <button id="adminPersonaTogglePromptObservablesBtn" class="secondary" type="button">
+                            All Prompts Observables
+                          </button>
+                          <button id="adminPersonaToggleToolsBtn" class="secondary" type="button">
+                            Tools
+                          </button>
+                        </div>
+                        <div id="adminPersonaPromptPanel" class="admin-persona-prompt-grid hidden">
+                          <details class="admin-persona-prompt-field admin-persona-window admin-persona-prompt-window" open>
+                            <summary class="admin-persona-prompt-summary">System Prompt</summary>
+                            <div class="admin-persona-prompt-head">
+                              <div class="admin-persona-prompt-actions">
+                                <button
+                                  id="adminPersonaSystemChoosePromptBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Choose Prompt
+                                </button>
+                                <button
+                                  id="adminPersonaSystemObservableBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Observable
+                                </button>
+                                <button
+                                  id="adminPersonaSystemSavePromptBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Save Prompt
+                                </button>
+                                <select
+                                  id="adminPersonaSystemPromptTemplateSelect"
+                                  class="prompt-template-select hidden"
+                                  aria-label="System prompt template dropdown"
+                                  disabled
+                                >
+                                  <option value="">Choose Prompt</option>
+                                </select>
+                              </div>
+                            </div>
+                            <textarea
+                              id="adminPersonaSystemPrompt"
+                              class="admin-persona-prompts"
+                              placeholder="System prompt instructions"
+                              aria-label="Persona system prompt"
+                              disabled
+                            ></textarea>
+                          </details>
+                          <details class="admin-persona-prompt-field admin-persona-window admin-persona-prompt-window" open>
+                            <summary class="admin-persona-prompt-summary">Assistant Prompt</summary>
+                            <div class="admin-persona-prompt-head">
+                              <div class="admin-persona-prompt-actions">
+                                <button
+                                  id="adminPersonaAssistantChoosePromptBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Choose Prompt
+                                </button>
+                                <button
+                                  id="adminPersonaAssistantObservableBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Observable
+                                </button>
+                                <button
+                                  id="adminPersonaAssistantSavePromptBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Save Prompt
+                                </button>
+                                <select
+                                  id="adminPersonaAssistantPromptTemplateSelect"
+                                  class="prompt-template-select hidden"
+                                  aria-label="Assistant prompt template dropdown"
+                                  disabled
+                                >
+                                  <option value="">Choose Prompt</option>
+                                </select>
+                              </div>
+                            </div>
+                            <textarea
+                              id="adminPersonaAssistantPrompt"
+                              class="admin-persona-prompts"
+                              placeholder="Assistant response style and constraints"
+                              aria-label="Persona assistant prompt"
+                              disabled
+                            ></textarea>
+                          </details>
+                          <details class="admin-persona-prompt-field admin-persona-window admin-persona-prompt-window" open>
+                            <summary class="admin-persona-prompt-summary">Context Prompt</summary>
+                            <div class="admin-persona-prompt-head">
+                              <div class="admin-persona-prompt-actions">
+                                <button
+                                  id="adminPersonaContextChoosePromptBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Choose Prompt
+                                </button>
+                                <button
+                                  id="adminPersonaContextObservableBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Observable
+                                </button>
+                                <button
+                                  id="adminPersonaContextSavePromptBtn"
+                                  class="secondary prompt-mini-btn"
+                                  type="button"
+                                  disabled
+                                >
+                                  Save Prompt
+                                </button>
+                                <select
+                                  id="adminPersonaContextPromptTemplateSelect"
+                                  class="prompt-template-select hidden"
+                                  aria-label="Context prompt template dropdown"
+                                  disabled
+                                >
+                                  <option value="">Choose Prompt</option>
+                                </select>
+                              </div>
+                            </div>
+                            <textarea
+                              id="adminPersonaContextPrompt"
+                              class="admin-persona-prompts"
+                              placeholder="Context packing instructions"
+                              aria-label="Persona context prompt"
+                              disabled
+                            ></textarea>
+                          </details>
+                        </div>
+                        <details id="adminPersonaRagPanel" class="admin-persona-rag-shell admin-persona-window hidden" open>
+                          <summary class="admin-persona-prompt-summary">Persona RAG Chain</summary>
+                          <div class="admin-report-head">
+                            <div class="admin-user-list-actions">
+                              <select id="adminPersonaRagSelect" aria-label="Available persona RAGs" disabled>
+                                <option value="">No RAG steps available</option>
+                              </select>
+                              <button id="adminPersonaLoadRagsBtn" class="secondary prompt-mini-btn" type="button" disabled>
+                                Load RAGs
+                              </button>
+                              <button id="adminPersonaRagAddBtn" class="secondary prompt-mini-btn" type="button" disabled>
+                                Add RAG
+                              </button>
+                            </div>
+                          </div>
+                          <div class="muted">Current RAGs execute in the order shown below.</div>
+                          <div id="adminPersonaRagList" class="admin-persona-rag-list muted">
+                            No RAG steps selected.
+                          </div>
+                          <hr />
+                          <div class="admin-report-head">
+                            <h3>Ask Graph Questionnaire</h3>
+                          </div>
+                          <p class="muted">
+                            Run graph-only questions using the active persona's configured LLM and enabled Graph RAG step.
+                          </p>
+                          <div id="adminPersonaGraphMeta" class="muted">No active persona graph configuration.</div>
+                          <div id="adminPersonaGraphProgress" class="admin-persona-graph-progress hidden">
+                            <span class="activity-indicator small" aria-hidden="true"></span>
+                            <span>Persona graph chain is processing...</span>
+                            <span id="adminPersonaGraphClock" class="activity-clock">0.0s</span>
+                          </div>
+                          <input
+                            id="adminPersonaGraphQuestion"
+                            type="text"
+                            placeholder="Ask a graph question"
+                            aria-label="Ask a graph question from the Personas tab"
+                            disabled
+                          />
+                          <div class="admin-user-list-actions">
+                            <button id="adminPersonaGraphAskBtn" class="secondary" type="button" disabled>Ask Graph</button>
+                            <button id="adminPersonaGraphClearBtn" class="secondary" type="button" disabled>Clear</button>
+                          </div>
+                          <textarea
+                            id="adminPersonaGraphAnswer"
+                            class="admin-test-log"
+                            readonly
+                            aria-label="Persona graph answer"
+                          >Ask a graph question to test the active persona's Graph RAG configuration.</textarea>
+                        </details>
+                        <details id="adminPersonaPromptObservablesPanel" class="admin-persona-rag-shell admin-persona-window hidden" open>
+                          <summary class="admin-persona-prompt-summary">All Prompts Observables</summary>
+                          <div class="admin-report-head">
+                            <div class="admin-user-list-actions">
+                              <button id="adminPersonaRefreshPromptObservablesBtn" class="secondary prompt-mini-btn" type="button" disabled>
+                                Refresh Metrics
+                              </button>
+                            </div>
+                          </div>
+                          <p class="muted">
+                            Prompt quality metrics computed from all prompt sections or the selected prompt section.
+                          </p>
+                          <div id="adminPersonaPromptObservablesList" class="admin-persona-rag-list muted">
+                            Open All Prompts Observables to compute prompt metrics.
+                          </div>
+                          <div id="adminPersonaPromptObservablesDetail" class="muted">
+                            Select a metric to view what it means.
+                          </div>
+                        </details>
+                        <details id="adminPersonaToolsPanel" class="admin-persona-rag-shell admin-persona-window hidden" open>
+                          <summary class="admin-persona-prompt-summary">Persona MCP Tools</summary>
+                          <div class="admin-report-head">
+                            <div class="admin-user-list-actions">
+                              <select id="adminPersonaToolSelect" aria-label="Available persona MCP tools" disabled>
+                                <option value="">No MCP tools available</option>
+                              </select>
+                              <button id="adminPersonaLoadToolsBtn" class="secondary prompt-mini-btn" type="button" disabled>
+                                Load Tools
+                              </button>
+                              <button id="adminPersonaToolAddBtn" class="secondary prompt-mini-btn" type="button" disabled>
+                                Add Tool
+                              </button>
+                            </div>
+                          </div>
+                          <div class="muted">Current MCP tools execute in the order shown below.</div>
+                          <div id="adminPersonaToolList" class="admin-persona-rag-list muted">
+                            No MCP tools selected.
+                          </div>
+                        </details>
+                      </div>
+                    </div>
+                    <div class="admin-user-form-actions">
+                      <button id="adminSavePersonaBtn" class="secondary" type="button">Save Persona</button>
+                      <button id="adminPersonaFormPromptSentimentBtn" class="secondary" type="button">
+                        Compute Prompt Sentiment
+                      </button>
+                      <button id="adminCancelPersonaBtn" class="secondary" type="button">Cancel</button>
+                      <button id="adminPersonaSmokeTestBtn" class="secondary" type="button">Smoke Test</button>
+                    </div>
+                    <div
+                      id="adminPersonaFormPromptSentiment"
+                      class="detail-sentiment hidden"
+                      aria-label="Persona prompt sentiment detail"
+                    ></div>
+                  </div>
+                  <div id="adminPersonaFeedback" class="admin-user-feedback muted">
+                    Click Add Persona to enter a name, choose an LLM, and define prompts.
+                  </div>
+                </section>
+                <section class="admin-tool-card">
+                  <div class="admin-report-head">
+                    <h3>Saved Personas</h3>
+                  </div>
+                  <label class="admin-user-select-shell">
+                    <span class="muted">Select Persona</span>
+                    <select id="adminPersonaSelect" aria-label="Select current persona">
+                      <option value="">No personas available</option>
+                    </select>
+                  </label>
+                  <div id="adminPersonaSelectedMeta" class="muted">No persona selected.</div>
+                  <div id="adminPersonaList" class="admin-user-list muted">No personas added yet.</div>
+                </section>
+              </div>
+            </section>
+            <section id="adminTabPageTest" class="subtab-page hidden">
+              <div class="admin-tools-grid">
                 <section class="admin-tool-card">
                   <div class="admin-report-head">
                     <h3>Collected Test Log Output</h3>
-                    <button id="adminRefreshTestLogBtn" class="secondary" type="button">Refresh Logs</button>
+                    <div class="admin-user-list-actions">
+                      <button id="adminRunTestsBtn" class="secondary" type="button">Run All Tests</button>
+                      <button id="adminRefreshTestLogBtn" class="secondary" type="button">Refresh Logs</button>
+                    </div>
+                  </div>
+                  <div id="adminTestRunClock" class="admin-test-clock muted" aria-live="polite">
+                    Test runtime: 00:00.00
                   </div>
                   <p id="adminTestLogSummary" class="muted">
                     Test log output will appear here after the current test report is parsed.
@@ -456,6 +970,204 @@
                 ></iframe>
               </div>
             </section>
+            <section id="adminTabPageMlops" class="subtab-page hidden">
+              <div class="subtab-nav admin-mlops-subtabs" role="tablist" aria-label="MLOps tools">
+                <button
+                  id="adminMlopsTabLlmoopsBtn"
+                  class="subtab-btn active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="adminMlopsTabPageLlmoops"
+                >
+                  LLMOps
+                </button>
+                <button
+                  id="adminMlopsTabFineTuningBtn"
+                  class="subtab-btn"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="adminMlopsTabPageFineTuning"
+                >
+                  Fine Tuning
+                </button>
+                <button
+                  id="adminMlopsTabDeploymentBtn"
+                  class="subtab-btn"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="adminMlopsTabPageDeployment"
+                >
+                  Deployment
+                </button>
+                <button
+                  id="adminMlopsTabCicdBtn"
+                  class="subtab-btn"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="adminMlopsTabPageCicd"
+                >
+                  CI/CD
+                </button>
+              </div>
+              <section id="adminMlopsTabPageLlmoops" class="subtab-page">
+                <div class="admin-tools-grid">
+                  <section class="admin-tool-card">
+                    <div class="admin-report-head">
+                      <h3>LLMOps Monitoring</h3>
+                    </div>
+                    <p class="muted">
+                      Run live operational checks against observability and storage without leaving Admin.
+                    </p>
+                    <div class="admin-user-list-actions">
+                      <button id="adminMlopsRefreshMetricsBtn" class="secondary" type="button">
+                        Refresh Observables
+                      </button>
+                      <button id="adminMlopsRefreshModelsBtn" class="secondary" type="button">
+                        Refresh Models
+                      </button>
+                      <button id="adminMlopsOpenGrafanaBtn" class="secondary button-with-icon" type="button">
+                        <img
+                          src="/static/assets/grafana_icon.svg"
+                          alt=""
+                          class="button-icon"
+                          aria-hidden="true"
+                        />
+                        <span>Open Grafana</span>
+                      </button>
+                      <button id="adminMlopsThoughtHealthBtn" class="secondary" type="button">
+                        Check Thought Stream DB
+                      </button>
+                      <button id="adminMlopsRagHealthBtn" class="secondary" type="button">
+                        Check RAG Stream DB
+                      </button>
+                    </div>
+                  </section>
+                  <section class="admin-tool-card">
+                    <div class="admin-report-head">
+                      <h3>LLMOps</h3>
+                    </div>
+                    <p class="muted">
+                      LLMOps in this application covers the operational behavior of the live LLM system:
+                    </p>
+                    <div class="admin-user-list-actions">
+                      <button id="adminMlopsPromptVersionsBtn" class="secondary" type="button">
+                        Prompt Versions
+                      </button>
+                      <button id="adminMlopsModelRoutingBtn" class="secondary" type="button">
+                        Model Selection / Routing
+                      </button>
+                      <button id="adminMlopsRagBehaviorBtn" class="secondary" type="button">
+                        RAGs
+                      </button>
+                      <button id="adminMlopsTokenContextBtn" class="secondary" type="button">
+                        Token / Context Size
+                      </button>
+                      <button id="adminMlopsCorrectnessBtn" class="secondary" type="button">
+                        Correctness / Drift
+                      </button>
+                      <button id="adminMlopsTraceQualityBtn" class="secondary" type="button">
+                        Thought Stream / Trace Quality
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              </section>
+              <section id="adminMlopsTabPageFineTuning" class="subtab-page hidden">
+                <div class="admin-tools-grid">
+                  <section class="admin-tool-card">
+                    <div class="admin-report-head">
+                      <h3>Fine Tuning</h3>
+                    </div>
+                    <p class="muted">
+                      Keep dataset preparation and model-tuning entry points under MLOps instead of a top-level tab.
+                    </p>
+                    <div class="admin-user-list-actions">
+                      <button id="adminMlopsOpenFineTuningBtn" class="secondary" type="button">
+                        Focus Fine Tuning
+                      </button>
+                      <button id="adminMlopsFineTuningRefreshModelsBtn" class="secondary" type="button">
+                        Refresh Models
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              </section>
+              <section id="adminMlopsTabPageDeployment" class="subtab-page hidden">
+                <div class="admin-tools-grid">
+                  <section class="admin-tool-card">
+                    <div class="admin-report-head">
+                      <h3>Deployment Checks</h3>
+                    </div>
+                    <p class="muted">
+                      Verify the databases and runtime telemetry endpoints that the deployed app depends on.
+                    </p>
+                    <div class="admin-user-list-actions">
+                      <button id="adminMlopsDeploymentThoughtBtn" class="secondary" type="button">
+                        Verify Thought Stream
+                      </button>
+                      <button id="adminMlopsDeploymentRagBtn" class="secondary" type="button">
+                        Verify RAG Stream
+                      </button>
+                      <button id="adminMlopsDeploymentObservablesBtn" class="secondary" type="button">
+                        Pull Observables Snapshot
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              </section>
+              <section id="adminMlopsTabPageCicd" class="subtab-page hidden">
+                <div class="admin-tools-grid">
+                  <section class="admin-tool-card">
+                    <div class="admin-report-head">
+                      <h3>CI/CD Controls</h3>
+                    </div>
+                    <p class="muted">
+                      Trigger the current validation pipeline and open the latest generated report artifacts.
+                    </p>
+                    <div class="admin-user-list-actions">
+                      <button id="adminMlopsOpenGithubActionsBtn" class="secondary" type="button">
+                        Open Actions
+                      </button>
+                      <button id="adminMlopsOpenCiWorkflowBtn" class="secondary" type="button">
+                        Open CI/CD Workflow
+                      </button>
+                      <button id="adminMlopsOpenDeployWorkflowBtn" class="secondary" type="button">
+                        Open Deploy Workflow
+                      </button>
+                    </div>
+                    <div class="admin-user-list-actions">
+                      <button id="adminMlopsRunTestsBtn" class="secondary" type="button">Run All Tests</button>
+                      <button id="adminMlopsOpenAdminTestBtn" class="secondary" type="button">
+                        Open Test Subtab
+                      </button>
+                      <a
+                        class="secondary admin-report-link"
+                        href="/admin/test-report"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open Test Report
+                      </a>
+                    </div>
+                  </section>
+                </div>
+              </section>
+              <section class="admin-tool-card admin-mlops-status-card">
+                <div class="admin-report-head">
+                  <h3>MLOps Status</h3>
+                </div>
+                <textarea
+                  id="adminMlopsStatus"
+                  class="admin-test-log admin-mlops-status"
+                  readonly
+                  aria-label="MLOps operation status"
+                >MLOps operations are ready.</textarea>
+              </section>
+            </section>
           </section>
         </div>
       </section>
@@ -477,6 +1189,31 @@
         <div class="metric-detail-copy">
           <p id="metricDetailBody" class="metric-detail-body"></p>
         </div>
+      </div>
+    </section>
+    <section
+      id="depositionBrowserModal"
+      class="overlay-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="depositionBrowserTitle"
+    >
+      <div class="overlay-surface ontology-browser-surface">
+        <div class="overlay-head">
+          <h3 id="depositionBrowserTitle">Deposition Browser</h3>
+          <button id="depositionBrowserCloseBtn" class="secondary" type="button" aria-label="Close deposition browser">
+            Close
+          </button>
+        </div>
+        <div class="overlay-meta">
+          <span id="depositionBrowserPath" class="muted">Current folder:</span>
+          <div class="actions-row overlay-actions">
+            <button id="depositionBrowserUpBtn" class="secondary" type="button">Up</button>
+            <button id="depositionBrowserUseFolderBtn" class="secondary" type="button">Use Current Folder</button>
+            <button id="depositionBrowserRefreshBtn" class="secondary" type="button">Refresh</button>
+          </div>
+        </div>
+        <div id="depositionBrowserList" class="browser-list"></div>
       </div>
     </section>
     <section
@@ -502,6 +1239,120 @@
           </div>
         </div>
         <div id="ontologyBrowserList" class="browser-list"></div>
+      </div>
+    </section>
+    <section
+      id="adminUserDetailPanel"
+      class="overlay-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="adminUserDetailTitle"
+    >
+      <div class="overlay-surface admin-user-detail-surface">
+        <div class="overlay-head">
+          <h3 id="adminUserDetailTitle">Current Users</h3>
+          <button id="adminUserDetailCloseBtn" class="secondary" type="button" aria-label="Close user list detail">
+            Close
+          </button>
+        </div>
+        <div class="overlay-meta">
+          <span id="adminUserDetailMeta" class="muted">Selected user:</span>
+        </div>
+        <div class="admin-user-detail-copy">
+          <textarea
+            id="adminUserDetailBody"
+            class="admin-user-detail-textbox"
+            readonly
+            aria-label="Current users detail"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+    <section
+      id="adminPersonaPromptModal"
+      class="overlay-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="adminPersonaPromptModalTitle"
+    >
+      <div class="overlay-surface admin-persona-prompt-surface">
+        <div class="overlay-head">
+          <h3 id="adminPersonaPromptModalTitle">Persona Prompt</h3>
+          <button
+            id="adminPersonaPromptModalCloseBtn"
+            class="secondary"
+            type="button"
+            aria-label="Close persona prompt editor"
+          >
+            Close
+          </button>
+        </div>
+        <div class="overlay-meta">
+          <span id="adminPersonaPromptModalMeta" class="muted">No prompt selected.</span>
+          <span id="adminPersonaPromptSentimentMeta" class="muted">Prompt sentiment has not been scored.</span>
+          <div class="actions-row overlay-actions">
+            <button id="adminPersonaPromptSentimentBtn" class="secondary" type="button">Score Sentiment</button>
+            <button id="adminPersonaPromptApplyBtn" class="secondary" type="button">Apply to Form</button>
+            <button id="adminPersonaPromptResaveBtn" class="secondary" type="button">Resave Persona</button>
+          </div>
+        </div>
+        <div class="admin-user-detail-copy">
+          <div class="admin-persona-prompt-grid">
+            <label class="admin-persona-prompt-field">
+              <span class="muted">System Prompt</span>
+              <textarea
+                id="adminPersonaPromptModalSystem"
+                class="admin-user-detail-textbox admin-persona-prompt-textbox"
+                aria-label="Persona prompt modal system prompt"
+              ></textarea>
+            </label>
+            <label class="admin-persona-prompt-field">
+              <span class="muted">Assistant Prompt</span>
+              <textarea
+                id="adminPersonaPromptModalAssistant"
+                class="admin-user-detail-textbox admin-persona-prompt-textbox"
+                aria-label="Persona prompt modal assistant prompt"
+              ></textarea>
+            </label>
+            <label class="admin-persona-prompt-field">
+              <span class="muted">Context Prompt</span>
+              <textarea
+                id="adminPersonaPromptModalContext"
+                class="admin-user-detail-textbox admin-persona-prompt-textbox"
+                aria-label="Persona prompt modal context prompt"
+              ></textarea>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="adminPersonaPromptObservableModal"
+      class="overlay-modal metric-detail-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="adminPersonaPromptObservableModalTitle"
+    >
+      <div class="overlay-surface metric-detail-surface admin-persona-observable-surface">
+        <div class="overlay-head">
+          <h3 id="adminPersonaPromptObservableModalTitle">Prompt Observables</h3>
+          <button
+            id="adminPersonaPromptObservableModalCloseBtn"
+            class="secondary"
+            type="button"
+            aria-label="Close prompt observables detail"
+          >
+            Close
+          </button>
+        </div>
+        <div class="overlay-meta">
+          <span id="adminPersonaPromptObservableModalMeta" class="muted">No prompt scope selected.</span>
+        </div>
+        <div class="metric-detail-copy">
+          <div id="adminPersonaPromptObservableModalBody" class="admin-persona-observable-list muted">
+            Click a prompt-level Observable button to inspect section-specific observables.
+          </div>
+        </div>
       </div>
     </section>
     <footer class="legal-footer">

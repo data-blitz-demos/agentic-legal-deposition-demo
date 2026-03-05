@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 """Pydantic domain and API contract models.
@@ -12,6 +16,8 @@ These models define:
 from typing import Literal
 
 from pydantic import BaseModel, Field, field_validator
+
+AuthorizationLevel = Literal["open", "admin", "expert_user", "user", "read_only"]
 
 
 class Claim(BaseModel):
@@ -114,6 +120,9 @@ class DepositionDocument(BaseModel):
     flagged: bool
     contradiction_explanation: str = ""
     contradictions: list[ContradictionFinding] = Field(default_factory=list)
+    ingest_schema_name: str = "deposition_schema"
+    ingest_schema_mode: str = "native"
+    ingest_schema_payload: dict | None = None
 
     model_config = {"populate_by_name": True}
 
@@ -125,6 +134,7 @@ class IngestCaseRequest(BaseModel):
     directory: str
     llm_provider: Literal["openai", "ollama"] | None = None
     llm_model: str | None = None
+    schema_name: str | None = None
     skip_reassess: bool = False
     thought_stream_id: str | None = None
     trace_id: str | None = None
@@ -138,6 +148,35 @@ class IngestedDepositionResult(BaseModel):
     witness_name: str
     contradiction_score: int
     flagged: bool
+
+
+class IngestSchemaOption(BaseModel):
+    """One selectable ingest schema exposed to the UI."""
+
+    key: str
+    file_name: str
+    mode: str
+    builtin: bool = True
+    removable: bool = False
+    schema_payload: dict | None = Field(default=None, alias="schema")
+
+    model_config = {"populate_by_name": True}
+
+
+class IngestSchemaSaveRequest(BaseModel):
+    """Request payload for creating or updating a custom ingest schema."""
+
+    key: str
+    schema_payload: dict = Field(alias="schema")
+
+    model_config = {"populate_by_name": True}
+
+
+class IngestSchemaDeleteResponse(BaseModel):
+    """Response payload for deleting a persisted custom ingest schema."""
+
+    deleted: bool
+    key: str
 
 
 class AgentTraceEvent(BaseModel):
@@ -229,6 +268,12 @@ class DepositionSentimentRequest(BaseModel):
 
     case_id: str
     deposition_id: str
+
+
+class TextSentimentRequest(BaseModel):
+    """Request payload for scoring sentiment for arbitrary freeform text."""
+
+    text: str = Field(min_length=1)
 
 
 class DepositionSentimentResponse(BaseModel):
@@ -324,6 +369,25 @@ class GraphOntologyBrowserResponse(BaseModel):
     files: list[GraphOntologyBrowserEntry] = Field(default_factory=list)
 
 
+class DepositionBrowserEntry(BaseModel):
+    """One directory or deposition text file row returned by deposition browser API."""
+
+    path: str
+    name: str
+    kind: Literal["directory", "file"]
+
+
+class DepositionBrowserResponse(BaseModel):
+    """Response payload for the server-side deposition file browser."""
+
+    base_directory: str
+    current_directory: str
+    parent_directory: str | None = None
+    wildcard_path: str
+    directories: list[DepositionBrowserEntry] = Field(default_factory=list)
+    files: list[DepositionBrowserEntry] = Field(default_factory=list)
+
+
 class GraphOntologyLoadRequest(BaseModel):
     """Request payload for loading OWL ontology files into Neo4j."""
 
@@ -355,6 +419,16 @@ class GraphBrowserResponse(BaseModel):
     launch_url: str = ""
 
 
+class GrafanaAccessResponse(BaseModel):
+    """Response payload exposing Grafana access details for the local UI."""
+
+    url: str
+    login_url: str
+    dashboard_url: str
+    username: str
+    password: str
+
+
 class GraphHealthResponse(BaseModel):
     """Response payload reporting Neo4j graph availability."""
 
@@ -366,6 +440,26 @@ class GraphHealthResponse(BaseModel):
     error: str | None = None
 
 
+class GraphRagEmbeddingConfigRequest(BaseModel):
+    """Request payload for configuring Graph RAG embedding-backed retrieval."""
+
+    enabled: bool = False
+    provider: Literal["openai", "ollama"] = "openai"
+    model: str = "text-embedding-3-small"
+    dimensions: int | None = Field(default=1536, ge=1, le=8192)
+    index_name: str = "resource_embeddings"
+    node_label: str = "Resource"
+    property_name: str = "embedding"
+
+
+class GraphRagEmbeddingConfigResponse(GraphRagEmbeddingConfigRequest):
+    """Response payload describing the active Graph RAG embedding configuration."""
+
+    source: Literal["defaults", "saved"] = "defaults"
+    configured: bool = False
+    last_saved_at: str | None = None
+
+
 class GraphRagQueryRequest(BaseModel):
     """Request payload for asking Graph RAG questions over Neo4j ontology data."""
 
@@ -373,6 +467,7 @@ class GraphRagQueryRequest(BaseModel):
     top_k: int = Field(default=8, ge=1, le=50)
     use_rag: bool = True
     stream_rag: bool = True
+    embedding_config: GraphRagEmbeddingConfigRequest | None = None
     llm_provider: Literal["openai", "ollama"] | None = None
     llm_model: str | None = None
     thought_stream_id: str | None = None
@@ -417,7 +512,14 @@ class GraphRagMonitor(BaseModel):
 
     rag_enabled: bool = True
     rag_stream_enabled: bool = True
+    retrieval_mode: Literal["keyword", "vector", "keyword_fallback"] = "keyword"
     retrieval_terms: list[str] = Field(default_factory=list)
+    query_embedding_used: bool = False
+    embedding_enabled: bool = False
+    embedding_provider: Literal["openai", "ollama"] | None = None
+    embedding_model: str | None = None
+    embedding_index_name: str | None = None
+    embedding_error: str | None = None
     retrieved_resources: list[GraphRagRetrievedResource] = Field(default_factory=list)
     context_preview: str
     llm_system_prompt: str
@@ -594,16 +696,23 @@ class RenameCaseResponse(BaseModel):
 
 
 class AdminUserRequest(BaseModel):
-    """Request payload for adding one lightweight admin user record."""
+    """Request payload for adding one user record with an authorization level."""
 
-    name: str = Field(min_length=1)
+    user_id: str | None = None
+    first_name: str | None = None
+    last_name: str | None = None
+    name: str | None = None
+    authorization_level: AuthorizationLevel = "user"
 
 
 class AdminUserResponse(BaseModel):
-    """One saved admin user record."""
+    """One saved user record."""
 
     user_id: str
     name: str
+    first_name: str
+    last_name: str
+    authorization_level: AuthorizationLevel
     created_at: str
 
 
@@ -613,6 +722,124 @@ class AdminUserListResponse(BaseModel):
     users: list[AdminUserResponse] = Field(default_factory=list)
 
 
+class AdminUserDeleteResponse(BaseModel):
+    """Response payload after permanently deleting one user record."""
+
+    user_id: str
+    deleted: bool = True
+
+
+class AdminPersonaRagBinding(BaseModel):
+    """One ordered RAG step attached to a persona, with explicit enabled state."""
+
+    key: str
+    enabled: bool = True
+
+
+class AdminPersonaToolBinding(BaseModel):
+    """One ordered MCP tool step attached to a persona, with explicit enabled state."""
+
+    key: str
+    enabled: bool = True
+
+
+class AdminPersonaPromptSections(BaseModel):
+    """Structured persona prompts grouped by their runtime role."""
+
+    system: str = ""
+    assistant: str = ""
+    context: str = ""
+
+
+class AdminPersonaRequest(BaseModel):
+    """Request payload for creating or updating one persona definition."""
+
+    persona_id: str | None = None
+    name: str
+    llm_provider: Literal["openai", "ollama"]
+    llm_model: str
+    prompt_template_key: str | None = None
+    prompts: str | None = None
+    prompt_sections: AdminPersonaPromptSections | None = None
+    rag_sequence: list[str | AdminPersonaRagBinding] = Field(default_factory=list)
+    tool_sequence: list[str | AdminPersonaToolBinding] = Field(default_factory=list)
+
+
+class AdminPersonaResponse(BaseModel):
+    """One saved persona definition."""
+
+    persona_id: str
+    name: str
+    llm_provider: Literal["openai", "ollama"]
+    llm_model: str
+    prompt_template_key: str | None = None
+    prompts: str
+    prompt_sections: AdminPersonaPromptSections = Field(default_factory=AdminPersonaPromptSections)
+    rag_sequence: list[AdminPersonaRagBinding] = Field(default_factory=list)
+    tool_sequence: list[AdminPersonaToolBinding] = Field(default_factory=list)
+    last_graph_question: str = ""
+    last_graph_answer: str = ""
+    last_graph_asked_at: str | None = None
+    created_at: str
+
+
+class AdminPersonaGraphSessionRequest(BaseModel):
+    """Request payload for persisting the last graph-only question/answer for one persona."""
+
+    question: str
+    answer: str
+
+
+class AdminPersonaListResponse(BaseModel):
+    """Response payload listing saved persona definitions."""
+
+    personas: list[AdminPersonaResponse] = Field(default_factory=list)
+
+
+class AdminPersonaRagOption(BaseModel):
+    """One selectable RAG chain step that can be attached to a persona."""
+
+    key: str
+    label: str
+    description: str
+    available: bool = True
+
+
+class AdminPersonaRagOptionsResponse(BaseModel):
+    """Response payload listing current RAG chain steps available to personas."""
+
+    rags: list[AdminPersonaRagOption] = Field(default_factory=list)
+
+
+class AdminPersonaToolOption(BaseModel):
+    """One selectable MCP tool step that can be attached to a persona."""
+
+    key: str
+    label: str
+    description: str
+    available: bool = True
+
+
+class AdminPersonaToolOptionsResponse(BaseModel):
+    """Response payload listing current MCP tool steps available to personas."""
+
+    tools: list[AdminPersonaToolOption] = Field(default_factory=list)
+
+
+class AdminPersonaPromptTemplate(BaseModel):
+    """One built-in runtime prompt template that can seed a persona definition."""
+
+    key: str
+    file_name: str
+    content: str
+
+
+class AdminPersonaPromptTemplatesResponse(BaseModel):
+    """Response payload listing the current built-in runtime prompt templates."""
+
+    prompts: list[AdminPersonaPromptTemplate] = Field(default_factory=list)
+
+
 class AdminTestLogResponse(BaseModel):
     """Response payload for summarized test-log output shown in Admin/Test."""
 
@@ -620,9 +847,21 @@ class AdminTestLogResponse(BaseModel):
     log_output: str
 
 
+class AdminTestRunResponse(BaseModel):
+    """Response payload after invoking the full pytest suite from the Admin/Test tab."""
+
+    summary: str
+    succeeded: bool
+    exit_code: int
+    output: str
+    duration_seconds: float = Field(ge=0)
+
+
 class DepositionUploadResponse(BaseModel):
     """Response payload after uploading deposition text files into one folder."""
 
     directory: str
     saved_files: list[str] = Field(default_factory=list)
+    root_directory: str | None = None
+    copied_to_root_files: list[str] = Field(default_factory=list)
     file_count: int = Field(ge=0)

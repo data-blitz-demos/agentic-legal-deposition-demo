@@ -1,0 +1,3137 @@
+0001
+ 1          SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                      COUNTY OF ALAMEDA
+ 3   In Re ROSALINO REYES III     )
+     and GEMMA REYES v. JOHNSON   )  Case No. RG20052391
+ 4   & JOHNSON, et al.            )
+     _________________________    )
+ 5                                )
+                                  )
+ 6   GEMMA REYES, individually    )   (Pages 1 - 118)
+     and as successor-in-interest )
+ 7   to ROSALINO REYES III;       )
+     ALTHEA REYES; and MIABELLE   )
+ 8   REYES, a minor, by her       )
+     Guardian Ad Litem ROY        )
+ 9   CHRISTOPHER DELIMA REYES,    )
+                                  )
+10               Plaintiffs,      )
+                                  )
+11          V.                    )
+                                  )
+12   JOHNSON & JOHNSON; JOHNSON   )
+     & JOHNSON CONSUMER INC.,     )
+13   individually and as          )
+     successor-in-interest to     )
+14   JOHNSON & JOHNSON CONSUMER   )
+     COMPANIES, INC., JOHNSON &   )
+15   JOHNSON INTERNATIONAL, et al.)
+                                  )
+16               Defendants.      )
+17   
+18   *******************************************************
+            REMOTE VIDEOCONFERENCE ORAL DEPOSITION OF
+19                    WILLIAM E. LONGO, PhD
+                      MONDAY, JULY 26, 2021
+20                        Volume 1 of 1
+                       (REPORTED REMOTELY)
+21   *******************************************************
+22   
+23   Reported By:  PENNY L. PABITZKY, CSR, RPR
+                   CA CSR NO. 13235
+24                 TX CSR NO. 5040
+25   Job No.:  302223
+0002
+ 1          SUPERIOR COURT OF THE STATE OF CALIFORNIA
+                        COUNTY OF ALAMEDA
+ 2   
+     In Re ROSALINO REYES III     )
+ 3   and GEMMA REYES v. JOHNSON   )  Case No. RG20052391
+     & JOHNSON, et al.            )
+ 4   _________________________    )
+                                  )
+ 5   GEMMA REYES, individually    )   (Pages 1 - 118)
+     and as successor-in-interest )
+ 6   to ROSALINO REYES III;       )
+     ALTHEA REYES; and MIABELLE   )
+ 7   REYES, a minor, by her       )
+     Guardian Ad Litem ROY        )
+ 8   CHRISTOPHER DELIMA REYES,    )
+                                  )
+ 9               Plaintiffs,      )
+                                  )
+10          V.                    )
+                                  )
+11   JOHNSON & JOHNSON; JOHNSON   )
+     & JOHNSON CONSUMER INC.,     )
+12   individually and as          )
+     successor-in-interest to     )
+13   JOHNSON & JOHNSON CONSUMER   )
+     COMPANIES, INC., JOHNSON &   )
+14   JOHNSON INTERNATIONAL, et al.)
+                                  )
+15               Defendants.      )
+16   
+17      REMOTE VIDEOCONFERENCE ORAL DEPOSITION OF WILLIAM E.
+18   LONGO, PhD, taken on behalf of the DEFENDANTS
+19   commencing at 12:21 P.M., Eastern Standard time,
+20   MONDAY, JULY 26, 2021, before PENNY L. PABITZKY,
+21   Shorthand Reporter for the state of California,
+22   No. 13235, CSR, RPR, reported remotely by computerized
+23   machine shorthand with all participants appearing
+24   remotely from separate locations pursuant to the current
+25   emergency orders related to the COVID-19 pandemic.
+0003
+ 1                         APPEARANCES
+ 2        **********************************************
+ 3                     ALL PARTIES APPEARED
+                   REMOTELY VIA VIDEOCONFERENCE
+ 4   
+          **********************************************
+ 5   
+ 6   COUNSEL FOR THE PLAINTIFFS:
+ 7    LEVY KONIGSBERG LLP
+ 8    JEROME BLOCK, ESQ.
+ 9    605 Third Avenue, 33rd Floor
+10    New York, NY 10158
+11    212-605-6200
+12    jblock@levylaw.com
+13   
+14   
+15   COUNSEL FOR DEFENDANTS JOHNSON & JOHNSON, JOHNSON &
+16   JOHNSON CONSUMER INC., and JOHNSON & JOHNSON
+17   INTERNATIONAL:
+18    KING & SPALDING LLP
+19    MATTHEW K. ASHBY, ESQ.
+20    633 West Fifth Street, Suite 1600
+21    Los Angeles, California 90071
+22    213-443-4355
+23    mashby@kslaw.com
+24   
+25   
+0004
+ 1                  APPEARANCES (continued)
+ 2   
+ 3   VIDEOCONFERENCE TECHNICIAN/VIDEOGRAPHER:
+ 4        Mr. Kevin FitzSimons
+ 5   
+ 6   CERTIFIED STENOGRAPHER:
+ 7        Ms. Penny L. Pabitzky, CSR (TX) (CA), RPR
+ 8        California CSR 13235 - Expires 07/31/21
+ 9        Texas CSR 5040 - Expires 07/31/22
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0005
+ 1                            INDEX
+ 2          REMOTE VIDEOCONFERENCE ORAL DEPOSITION OF
+                      WILLIAM E. LONGO, PhD
+ 3   
+ 4   EXAMINATION                                        PAGE
+ 5   Examination by Mr. Ashby .......................     10
+ 6   Signature and Changes ..........................    116
+     Stenographer's Certificate .....................    118
+ 7   
+ 8   STENOGRAPHER'S NOTE 1:  Quotation marks are used for
+     clarity and do not necessarily reflect a direct quote.
+ 9   
+10   STENOGRAPHER'S NOTE 2: Please note that due to the
+     quality of Zoom videoconference and the transmission of
+11   data and overspeaking, audio distortion may occur which
+     may disrupt the process of preparing a videoconference
+12   transcript.
+13   
+                      REQUESTED INFORMATION
+14   
+     PAGE/LINE NUMBER         DESCRIPTION
+15   
+           (No additional information was requested.)
+16   
+17              QUESTIONS INSTRUCTED NOT TO ANSWER
+18     (No questions were instructed to not be answered.)
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0006
+ 1                        EXHIBIT INDEX
+             REMOTE VIDEOCONFERENCE ORAL DEPOSITION OF
+ 2                    WILLIAM E. LONGO, PhD
+ 3                        JULY 26, 2021
+                            NOS. 1 - 3
+ 4   
+     NO.                  DESCRIPTION                   PAGE
+ 5   
+     Exhibit   1     W. Longo's additional reliance       11
+ 6                   materials including photographs
+                     from MAS review of Abraham SEM
+ 7                   Stub from tissue digestion
+ 8   Exhibit   2     Letter to defense counsel including  21
+                     link containing Dr. W. Longo's
+ 9                   curriculum vitae, communications,
+                     and M69925-002 and M70850-001
+10                   images
+11   Exhibit   3     W. Longo's additional reliance       21
+                     materials including photographs
+12                   from MAS review of Abraham SEM
+                     Stub from tissue digestion
+13   
+     Exhibit   4     Scope of Accreditation to            29
+14                   ISO/IEC 17025:2017, MAS, LLC,
+                     valid to 12-31-21, K. Simpson
+15   
+     Exhibit   5     Reyes, JA21-005, SEM/EDS results,    56
+16                   65 pages
+17   Exhibit   6     Bulk Sampling Chain of Custody      115
+                     for four SEM stubs, Project
+18                   No. JA21-005, 31 pages
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0007
+ 1                         PROCEEDINGS
+ 2                      REPORTED REMOTELY
+                      MONDAY, JULY 26, 2021
+ 3              12:21 P.M., EASTERN STANDARD TIME
+ 4                            -oOo-
+ 5                    WILLIAM E. LONGO, PhD
+          called as a deponent and remotely sworn in by
+ 6            the deposition officer, was examined
+                    and testified as follows:
+ 7   
+                              -oOo-
+ 8   
+ 9               THE CERTIFIED STENOGRAPHER:  Good morning.
+10   We are on the record.  Today is July 26th.  The time is
+11   9:20 a.m. Pacific Time.  This is the remote
+12   videoconference oral deposition of Dr. William Longo in
+13   the Reyes Versus Johnson & Johnson matter, and it is
+14   being conducted remotely in accordance with the current
+15   emergency order regarding the COVID-19 pandemic.
+16               I am your certified stenographer, Penny
+17   Pabitzky, Texas CSR No. 5040, representing IDepo.  I
+18   will be administering the oath and reporting the
+19   deposition remotely by stenographic means from my home
+20   office.
+21               Would counsel please state their
+22   appearance, location, and the full name of the party
+23   you are representing for the record.
+24               MR. BLOCK:  Good morning.  This is Jerome
+25   Block from the law firm of Levy Konigsberg representing
+0008
+ 1   the plaintiffs.
+ 2               MR. ASHBY:  Good morning.  Matthew Ashby
+ 3   for Johnson & Johnson, King & Spalding in Los Angeles.
+ 4               THE CERTIFIED STENOGRAPHER:  Before I swear
+ 5   in the witness, I will ask counsel to stipulate on the
+ 6   record that due to the current emergency order
+ 7   regarding the COVID-19 worldwide pandemic that I may
+ 8   swear in the deponent even though I am not in the
+ 9   physical presence of the deponent and that there is no
+10   objection to this at this time nor will there be an
+11   objection to it at a future date.
+12               MR. BLOCK:  We agree.
+13               MR. ASHBY:  No objection.
+14                       (Witness sworn.)
+15               MR. BLOCK:  Good morning.  Before we begin,
+16   this is Jerome Block representing the plaintiffs, and I
+17   just want to note for the record that Dr. Longo has --
+18   had his deposition taken by Johnson & Johnson
+19   previously in this case over multiple days in September
+20   and October of 2020, and -- and it's our position that
+21   we -- that there should not be redundant questioning or
+22   questioning on subjects that were already questioned
+23   about.  And we understand that counsel for Johnson &
+24   Johnson, for the purpose of this deposition, is to
+25   question about topics that may have -- topics that may
+0009
+ 1   not have been questioned about before or potentially
+ 2   new issues or new items that Dr. Longo has reviewed or
+ 3   is prepared to testify about.  Thank you.
+ 4               MR. ASHBY:  So, Mr. Block, are you saying
+ 5   there's been an agreement between Johnson & Johnson and
+ 6   some of the folks at Kazan?  If there has been, that's
+ 7   fine.  I just haven't heard about it.
+ 8               MR. BLOCK:  You know what, I'm not -- I'm
+ 9   not sure about the nature of any agreement.  It was
+10   more along the lines of just that the parties always
+11   make a good-faith effort to not, you know, tread over
+12   ground that's been, you know, extensively questioned
+13   upon in the past, nothing more than that.
+14               MR. ASHBY:  Okay.  That's -- okay.  I don't
+15   intend to do that.  What I did understand was that
+16   there were new materials that he had reviewed and had
+17   been provided over the weekend in terms of imaging, and
+18   I was going to cover that.  And I didn't expect to do
+19   much more than that, but I do like what you're
+20   thinking, and I assume that whatever we said about not
+21   retreading ground at this deposition also applies to
+22   Johnson & Johnson's experts to the extent Mr. Satterley
+23   or Kazan or yourself are deposing folks on my side of
+24   the table.
+25               MR. BLOCK:  Yes.  I think both sides are
+0010
+ 1   going to exercise good faith in not questioning --
+ 2   asking the same questions that have been asked before.
+ 3   And I appreciate your intentions for the deposition
+ 4   today in covering, you know, discrete topics that are
+ 5   new.
+ 6               MR. ASHBY:  Yeah.  Okay.
+ 7               MR. BLOCK:  Thank you.
+ 8               MR. ASHBY:  All right.
+ 9                         EXAMINATION
+10   BY MR. ASHBY:
+11          Q.   Hi, Dr. Longo.  Matt Ashby.  Good morning.
+12          A.   Good morning, sir.
+13          Q.   As I understand it, the last time that you
+14   were deposed in the Reyes case was in October --
+15   precisely October 23rd of 2020.
+16          Is that your recollection?
+17          A.   That's what the date is on Volume 5, yes.
+18          Q.   Okay.  Since that time, have you been
+19   provided any new materials in the Reyes case by the
+20   plaintiffs?
+21          A.   Yes.
+22          Q.   And what were the materials that you were
+23   provided since your last deposition in October?
+24          A.   The four SEM sample stubs that was sent to
+25   us by Dr. Abrams.
+0011
+ 1          Q.   Did you say "four stubs"?
+ 2          A.   Yes.  His No. JA21-005-A1A, A1B, B1A, and
+ 3   B1B.
+ 4          Q.   Okay.  What is it you're looking at there?
+ 5          A.   Our chain of custody.
+ 6          Q.   Oh.  So, give me -- give me one second.  I
+ 7   don't think I got that chain of custody, but let me
+ 8   make 100 percent sure.
+ 9          All right.  So what I received, Dr. Longo, over
+10   the weekend was --
+11               MR. ASHBY:  And I'll mark this as -- I'll
+12   mark this as Exhibit 1, understanding that the last
+13   exhibit in Volume 5 of your deposition was Exhibit 59,
+14   but I'll start -- since this is a new case caption,
+15   I'll start this as Exhibit 1.
+16               So I'll mark as Exhibit 1 the July 24th,
+17   2021, letter that I received from the Kazan office,
+18   which included several images that purported to be from
+19   your office looking at SEM stubs from tissue digestions
+20   done by Dr. Abraham [sic].
+21               (Marked Exhibit No. 1.)
+22   BY MR. ASHBY:
+23          Q.   Do you -- so let me ask, first, do you have
+24   that letter and how it's constituted with the pictures?
+25          A.   No.
+0012
+ 1          Q.   Okay.  So that's going to -- all right.  So
+ 2   we probably have two different documents, then.  The
+ 3   letter that I have does not have a chain of custody
+ 4   attached to it.  All I have are photomicrographs,
+ 5   that's it, and some EDS spectra.
+ 6          A.   That's because when I sent these to them
+ 7   late Friday, I neglected to include the chain of
+ 8   custody.  So that's on me.
+ 9          Q.   Oh, I see.  Okay.
+10               THE WITNESS:  But, Mr. Block, they were
+11   supposed to have been sent to you this morning or a
+12   little while ago.  If you check your e-mail, you can...
+13               MR. BLOCK:  Okay.
+14   BY MR. ASHBY:
+15          Q.   Okay.  So what materials have been generated
+16   by MAS since your last deposition?  It sounds like
+17   there's a chain of custody.  And what else?
+18          A.   Well, we took photographs of platy talc,
+19   fibrous talc.  We found tremolite -- tremolite --
+20               THE CERTIFIED STENOGRAPHER:  Excuse me.
+21   Dr. Longo, you'll need to speak into your microphone.
+22   It's breaking up.
+23               THE WITNESS:  I'm sorry.
+24               We took SEM images of platy talc, fibrous
+25   talc.  We found tremolite asbestos.  We found one or
+0013
+ 1   two of the depleted-magnesium chrysotile, and we have
+ 2   one or two structures that we've labeled "fibrous
+ 3   chrysotile-anthophyllite."  And the anthophyllite on
+ 4   one of them pretty much has an amphibole structure, and
+ 5   that's it.  We just took representative images of some
+ 6   of the structures we found that correlates with what
+ 7   Dr. Abrams said he found on the SEM stubs.
+ 8   BY MR. ASHBY:
+ 9          Q.   Okay.  All right.
+10          A.   So the specific work on this case, this
+11   would be the only additional work done specific for
+12   this case.
+13          Q.   Okay.  So to the extent new materials have
+14   been generated -- and by "materials," I mean
+15   photomicrographs or chain of custody or a written
+16   report -- it's limited to that chain of custody and the
+17   imaging that was produced over the weekend by you to
+18   the lawyers for the Reyes family, correct?
+19          A.   Correct.  Imaging in EDS, EDXA, for the
+20   various structures.  That's it.
+21          Q.   All right.  I left out the EDXA.
+22          Okay.  So I received over the weekend in what
+23   I've marked as Exhibit 1, I believe it was -- let me
+24   see -- it was 14 photomicrographs with corresponding
+25   EDAX.
+0014
+ 1          Is that what you have?
+ 2          A.   I'm just counting them now.  Fourteen?
+ 3          Q.   Yeah, I counted 14.
+ 4          A.   Well, according to my count, I have 27.
+ 5          Q.   Okay.  I don't have all those.
+ 6               MR. ASHBY:  What do you want to do, Jerry,
+ 7   because that's going to impact -- I mean, I guess we
+ 8   can go for as much as we can, but I would like to see
+ 9   the other 13.
+10               THE WITNESS:  Why don't we go through what
+11   you have and make sure I don't have any doubles in
+12   here.
+13   BY MR. ASHBY:
+14          Q.   So I put in the chat -- I dropped in the
+15   file -- or the actual letter I received from the Kazan
+16   office.  If you want to -- if that helps for you to
+17   look at that or anyone at the deposition wants to look
+18   at that.
+19          A.   Sure.  Because if they didn't get it -- I
+20   was in charge of sending it.  That's never a good
+21   thing.
+22               MR. BLOCK:  Hey, Matt, it sounds to me like
+23   you have a number of pictures that have identification,
+24   probably codes on them and different words, and it
+25   sounds to me like there's plenty for you to go through,
+0015
+ 1   and then we can get to a break and figure out, you
+ 2   know, if there's anything you don't have, and then we
+ 3   can get e-mailed over to you anything you don't have.
+ 4               But it sounds like you have -- from what
+ 5   you have, we certainly can make some headway, and then
+ 6   maybe determine, you know, what, if anything, is
+ 7   missing.
+ 8               MR. ASHBY:  Yeah.  Okay.  So I put in the
+ 9   chat there --
+10               THE WITNESS:  So I can see the file that we
+11   want, but I can't -- it goes over to -- I guess I need
+12   to save it on my computer.
+13               Would you like to save in WLongo folder
+14   instead?  Sure.  Now, where is the WLongo folder.
+15               THE CERTIFIED STENOGRAPHER:  Would y'all
+16   like to go off the record for this?
+17               MR. ASHBY:  Sure.
+18               MR. BLOCK:  Yeah.
+19               MR. ASHBY:  That's a good idea.
+20               THE CERTIFIED STENOGRAPHER:  We are off the
+21   record.
+22               (Recess taken from 9:33 to 9:36.)
+23               THE CERTIFIED STENOGRAPHER:  We are back on
+24   the record at 9:36 a.m.
+25   BY MR. ASHBY:
+0016
+ 1          Q.   Okay.  So I think -- we went off the record
+ 2   for a bit, and I think we cleared up the confusion, at
+ 3   least maybe the confusion I had on my end, that the
+ 4   work that MAS has generated in relation to the Reyes
+ 5   case when looking at Dr. Abraham's stubs were 14
+ 6   photomicrographs, correct?
+ 7          A.   Correct.
+ 8          Q.   Okay.  And with those 14 photomicrographs
+ 9   are corresponding EDAX spectra, right?
+10          A.   Yes.
+11          Q.   Okay.  All right.  Other than the spectra,
+12   the photomicrographs, the chain of custody, all in
+13   relation to Dr. Abraham's stubs, are there any other
+14   documents or images that have been generated by MAS in
+15   relation to the Reyes case since your last deposition
+16   in October of 2020?
+17          A.   No.
+18          Q.   Okay.
+19               MR. BLOCK:  And, Mr. Ashby, just to clarify
+20   for the record, Dr. Longo has done other work in
+21   general with regard to testing of Johnson's baby
+22   powder.  He recently testified in the Prudencio case,
+23   for example, as to some off-the-shelf Johnson's baby
+24   powder containers, including one, I think, that was
+25   purchased in December of 2020 that I read in the
+0017
+ 1   Prudencio transcript.
+ 2               So I understand your question to be about
+ 3   materials generated by MAS specifically for Reyes, that
+ 4   are plaintiff-specific in the Reyes case, as opposed to
+ 5   testing that Dr. Longo's lab has done on Johnson's baby
+ 6   powder that postdates October of 2020.
+ 7               MR. ASHBY:  Right.  I was only asking about
+ 8   materials related to, specifically, the Reyes case
+ 9   only.
+10   BY MR. ASHBY:
+11          Q.   So for the Reyes case only since October
+12   2020, have you done any other work at MAS other than
+13   looking at the stubs from Ms. Reyes' tissue?  So, in
+14   other words, any bottles from Ms. Reyes, any other
+15   deposition transcripts from Ms. Reyes, anything like
+16   that?
+17          A.   No.  That's how I interpreted the question
+18   before.
+19          Q.   Okay.  But understanding that since October
+20   of 2020 you have done some other testing in other cases
+21   or maybe just generally in your Johnson and Johnson
+22   talc testing that may relate to some of the opinions
+23   you would have in the Reyes case.  Is that fair?
+24          A.   That's fair.
+25          Q.   Okay.  And I can't remember -- you know, I
+0018
+ 1   deposed you not that long ago, and I don't even
+ 2   remember the date.  When was that?  That was -- was
+ 3   that --
+ 4          A.   I think it was just before I testified in
+ 5   Prudencio.  I think the week before that.
+ 6          Q.   That's right.
+ 7          A.   Something like that.
+ 8          Q.   Yeah.  So I deposed you earlier in July.
+ 9   And at the time when I asked you at that deposition
+10   what -- if you -- have you done anything since June
+11   related to Johnson & Johnson talc testing, I believe
+12   the answer was no.  So, in other words, you haven't
+13   tested any new bottles or anything like that.  So why
+14   don't I just get an update to that.  That was just the
+15   preface.  Now I'll ask the question --
+16               (Overlapping speakers.)
+17          A.   Yeah.  I can't say that we don't have any
+18   test in progress, but I don't have any additional,
+19   like, new reports that I've issued, that I can recall.
+20   BY MR. ASHBY:
+21          Q.   That's what I was going to ask.
+22          So in the month of July, other than something
+23   that would have been issued in the Prudencio case, are
+24   there any other talc testing reports related solely to
+25   Johnson & Johnson that were issued and disclosed during
+0019
+ 1   the month of July, if you --
+ 2          A.   No.
+ 3          Q.   Okay.  In -- earlier in your deposition --
+ 4   so I think it was the last deposition, Volume 5 -- you
+ 5   and Mr. Hines discussed a document related to
+ 6   refractive indices that's from Dr. Su, and it's a 2003
+ 7   document that's called:  "Rapidly and Accurately
+ 8   Determining Refractive Indices of Asbestos Fibers by
+ 9   Using Dispersion Staining Method."
+10          Do you know what document I'm talking about?
+11          A.   Yes.  That's the one I think was missing
+12   page 5.
+13          Q.   Right.
+14          A.   And I have produced that now a couple of
+15   times.
+16          Q.   Okay.
+17          A.   And I think I've produced now a better copy
+18   than the crummy copy that I produced before that had
+19   been copied too many times.
+20          Q.   All right.
+21               MR. ASHBY:  So, why don't I do this.  I've
+22   already marked as Exhibit 1 a July 24th letter from the
+23   Kazan office.
+24               I'll mark as Exhibit 2 the July 21st letter
+25   from the Kazan office related to the Reyes case.  And
+0020
+ 1   then as Exhibit 3, I'd like to mark whatever your best
+ 2   and cleanest copy of the Dr. Su 2003 article is with
+ 3   none of the pages missing.
+ 4               Can that be done?
+ 5               THE WITNESS:  You know, it's interesting
+ 6   because those color charts leave the documents pretty
+ 7   early on when you get them because people make, you
+ 8   know, take them out and make copies.  But, you know,
+ 9   it's the same document that's in the 2008, and I think
+10   the same one in the 2010.
+11               But I did provide that page; so I can send
+12   it to you -- to Jerry Block since I've already produced
+13   it once.
+14   BY MR. ASHBY:
+15          Q.   Okay.  Well, I just want it to be in this
+16   record because right now the record has an Exhibit 30
+17   that's missing the page.  So somebody's going to get
+18   these transcripts all together, and I would like for
+19   them to have --
+20          A.   Sure.  That's fine.
+21               MR. ASHBY:  Okay.  All right.  So we'll
+22   mark as Exhibit 3 -- what will you give us, just that
+23   particular page or the entire...
+24               THE WITNESS:  Well, it depends on what you
+25   want.  You want the entire thing or just the page?
+0021
+ 1               MR. ASHBY:  I would prefer the entire thing
+ 2   with that page.
+ 3               THE WITNESS:  With the page 5?
+ 4               MR. ASHBY:  Yeah.
+ 5               THE WITNESS:  I can't guarantee it comes
+ 6   from that particular document because they're all the
+ 7   same.
+ 8               MR. ASHBY:  I see what you're saying.  And
+ 9   I think it's page 4.
+10               THE WITNESS:  Page 4, right.  You're right.
+11               MR. ASHBY:  So what --
+12               THE WITNESS:  2008 has the exact same page.
+13   The 2010, I think it is, has the exact same page.
+14               MR. ASHBY:  All right.
+15               (Marked Exhibit Nos. 2 and 3.)
+16               THE WITNESS:  So to sit here and say that's
+17   the exact one out of the 2003 one, you know, I can't.
+18   BY MR. ASHBY:
+19          Q.   Okay.  What's the one that's used by MAS to
+20   compare colors to when looking at dispersion staining
+21   from Johnson & Johnson talc?
+22          A.   Well, the ones we use now are on the
+23   computer because I have that program.  And, you know,
+24   it's whatever -- I mean, they're all the same, but I'll
+25   get -- you know, I'll get what we have.  I just can't
+0022
+ 1   tell you it's exactly out of that 2003.
+ 2          Q.   Right.  Okay.  So I think I understand.
+ 3          The 2003 copy that you've been able to locate of
+ 4   the Dr. Su publication at MAS is missing that page 4 it
+ 5   sounds like.
+ 6          A.   It is.
+ 7          Q.   Okay.
+ 8          A.   Totally.
+ 9          Q.   Okay.  So the page that you've provided in
+10   the past, even as recently as not long before your
+11   trial testimony in the Prudencio case, was actually a
+12   page with the dispersion colors from a different Dr. Su
+13   article about refractive indices; is that correct?
+14          A.   I don't know that because they're all the
+15   same.  I -- that particular one, I just happened to put
+16   in the refractive indices that matched the particular
+17   wavelength.  It doesn't come that way.
+18          Q.   Yeah.  But what -- okay.  So -- but I want
+19   to ask you this:  The one that you provided in the past
+20   and as recently as the Prudencio case of the sort of
+21   rainbow color chart of the refractive indices from
+22   Dr. Su, where did you get that?
+23          A.   I just happened to be going through the PLM
+24   lab in one of the drawers and I pulled it out.
+25          Q.   Okay.
+0023
+ 1          A.   Because I wasn't looking at it to use it as
+ 2   here's what I'm going to use to determine the
+ 3   refractive indices.  Instead of having a color chart
+ 4   where then you have to thumb over to, say, the Su
+ 5   tables to pick out the refractive indices, I just
+ 6   filled it in.  But the interesting thing about it is it
+ 7   was just missing the colors of -- that go below 400
+ 8   nanometers and above 800 nanometers, but you never use
+ 9   those colors, anyway, for chrysotile.
+10          Q.   Okay.
+11          A.   If you look at the Su tables, there's
+12   nothing lower than 400 nanometers, and there's nothing
+13   higher than 800.  So it was a lot of discussion over
+14   not much, I guess.
+15          Q.   Yeah.  I mean, it probably has something to
+16   do with just not understanding since it, you know, came
+17   up for the first time recently.
+18          Okay.  So the -- what's that table -- what's
+19   that thing called, anyways, that table?  I'm trying to
+20   remember.
+21          A.   I don't know the exact.
+22          Q.   Yeah.
+23          Anyway, it's one of the figures in the Dr. Su
+24   article.  Are you -- the copy that you found of that
+25   figure that has the coloring for the various refractive
+0024
+ 1   indices, if I understand right, you found that
+ 2   particular copy that's been provided previously in a
+ 3   drawer in the PLM lab, right?
+ 4          A.   Correct.
+ 5          Q.   Do you know whether or not the PLM analysts
+ 6   used that figure that has been provided as a way of
+ 7   identifying refractive indices for asbestos particles?
+ 8          A.   For that particular one, maybe a long time
+ 9   ago.  I'm sure that, you know, it's a pretty standard
+10   chart.  At some point, I'm sure they did, but how
+11   recently they would have used that particular chart is
+12   very hard for me to say.
+13          Q.   Yeah.  And now what they use is a chart
+14   that's on a computer; is that right?
+15          A.   Yeah.  Well, it's coupled with the
+16   microscope -- the PLM -- so that the chart has a slide
+17   bar on it, and you can be looking at the colors of the
+18   dispersion staining through the microscope and slide it
+19   to the appropriate wavelengths.  That's probably the
+20   most accurate way to do that other than maybe at some
+21   point they'll come up with a sensor to read the
+22   wavelengths off the computer.  Our next project.
+23          Q.   Right.  And then -- which, I guess, would
+24   almost take the subjectivity out of it, out of the
+25   analysis itself?
+0025
+ 1               MR. BLOCK:  Objection to form.
+ 2               THE WITNESS:  It would make it where -- it
+ 3   might tighten up the error rate.  The error rate right
+ 4   now is plus or minus 0.005 of a refractive indices.
+ 5   That would probably get less.
+ 6               Subjectivity is no more than five
+ 7   thousandths of a refractive indices point.
+ 8   BY MR. ASHBY:
+ 9          Q.   Okay.  At the -- the last time you and I
+10   talked, you -- we discussed the invoicing that MAS has
+11   done for work related to analysis of Johnson & Johnson
+12   talc and the -- the amount billed that you and I
+13   discussed at the time was somewhere around the range of
+14   about $2.3 million.
+15          Do you recall that?
+16          A.   Yeah.  I was wrong by about 600,000.
+17          Q.   Okay.
+18          A.   2.9 and, you know, we dug up some more that
+19   I've got to get.  So it's probably going to end up
+20   around 3.1 or so.
+21          Q.   Okay.  That's what I wanted to do was update
+22   that.  Okay.  So right now, as of July 26, 2021, your
+23   best estimate that you can give for the amount of money
+24   billed by MAS related to work in cosmetic talc
+25   litigation of the analysis of Johnson & Johnson talc,
+0026
+ 1   specifically, is around 3.1 million?
+ 2          A.   That's my estimate at this moment.
+ 3          Q.   All right.  Okay.  So the last time you and
+ 4   I talked, we talked about the Old Spice work that you
+ 5   had done, and I had asked you about, you know, what
+ 6   Poye did with it and how he blinded it.
+ 7          In any event, I think I've determined now some
+ 8   of what happened there.
+ 9          In July of 2018, J3 did a report regarding their
+10   analysis of splits of what were called historic samples
+11   of Johnson & Johnson talc.
+12          Do you recall that?
+13          A.   I do.
+14          Q.   Okay.  And that was MAS had received some
+15   samples or its own splits of historic samples of
+16   Johnson & Johnson talc, and MAS took some of those
+17   splits and sent them over to J3 for testing as well,
+18   right?
+19          A.   That is correct.
+20          Q.   Okay.  And in doing that, MAS also
+21   provided -- I have four samples that were spiked with
+22   either anthophyllite or tremolite or both; is that
+23   right?
+24          A.   I thought it was three, but it's three or
+25   four.
+0027
+ 1          Q.   Okay.  Let -- why don't I do this -- let me
+ 2   just show you a screen.  I don't think it's terribly
+ 3   important, but I think it helps just -- us talk
+ 4   intelligently if you look at it.  I need to just grab
+ 5   it here.
+ 6          Okay.  I'm going to share my screen now.
+ 7          A.   Okay.
+ 8          Q.   And tell me if you can see this because I'm
+ 9   doing my screen in a new way.
+10          Can you see that entire -- the results page?
+11          A.   Yeah.
+12          Q.   Okay.  So my understanding was that those --
+13          A.   Oh, you're right.  I misspoke.
+14          Q.   Okay.
+15          A.   There is four because we did a .1, a .5 of
+16   anthophyllite, and a .1 and a .5 of tremolite.  Then we
+17   should have one year combined, yeah.
+18          Q.   Yeah.  Okay.  So what we're looking at is
+19   the July 18, 2018 -- I'll -- I'll scroll up to the
+20   top -- July 2018 -- or July 18, 2018, J3 analysis of
+21   historic talc samples, and their code is JH-189337.
+22          And if we look at the results page, you'd agree
+23   with me that it looks like MAS when it sent over splits
+24   spiked four of the samples, correct?
+25          A.   Well, yeah, there were four spiked samples
+0028
+ 1   that came from the container we bought off the shelf.
+ 2   None of the other samples were -- the evidence samples
+ 3   were not spiked.
+ 4          Q.   Oh, okay.  Yeah.  I'm not doing the
+ 5   Thackston thing with you, if that's what you're --
+ 6   okay.  So, I understand, but the four samples that MAS
+ 7   spiked from the off-the-shelf Johnson & Johnson baby
+ 8   powder are M68708-76 through M68708-79, right?
+ 9          A.   Correct.
+10          Q.   Okay.  And none of the other 75 were spiked,
+11   right?
+12          A.   No.
+13          Q.   Okay.  All right.  And one of the samples,
+14   it looks like -- so this is M68708-77 -- was spiked by
+15   MAS with both tremolite and anthophyllite, correct?
+16          A.   Correct.
+17          Q.   Okay.  Now, is that the sample, meaning
+18   M6708-77, the one that has the spiking of both the
+19   tremolite and the anthophyllite -- is that the sample
+20   that Poye sent to you blinded during your Old Spice
+21   analysis that you did in 2020?
+22          A.   Yes, that's my understanding.
+23          Q.   Okay.  All right.  So we nailed that down
+24   today.
+25          Let's just do a catchup.  So through July 26,
+0029
+ 1   2021, has MAS tested Johnson & Johnson talc for
+ 2   chrysotile using TEM in a report that's been disclosed?
+ 3          A.   No.
+ 4          Q.   Has MAS, in a report that's been disclosed
+ 5   through July 26, 2021, tested Johnson & Johnson talc by
+ 6   TEM without heavy liquid separation as a preparation
+ 7   method?
+ 8          A.   No.
+ 9          Q.   MAS has tested other brands of cosmetic talc
+10   by TEM without concentration for both chrysotile and
+11   amphibole asbestos in reports that have been disclosed,
+12   correct?
+13          A.   Only two that I'm aware of 2009 and 2013.
+14          Q.   All right.  Thank you.  The next thing is --
+15   I'm going to pull this up, and I'm going to show it to
+16   you.  I have here an accreditation, and I'm going to
+17   show it to you now.
+18          So, you know what, I can just mark because it'll
+19   be easier.
+20               MR. ASHBY:  I'll mark this as Exhibit 4.
+21               (Marked Exhibit No. 4.)
+22   BY MR. ASHBY:
+23          Q.   Do you see the accreditation I have up on
+24   the screen?
+25          A.   I do.
+0030
+ 1          Q.   Okay.  Does this look -- do you see the
+ 2   first page or do you see both pages?
+ 3          A.   I see both pages.
+ 4          Q.   Oh, you do.  Okay.  Interesting.  I didn't
+ 5   know that would work.  This is the first time I've
+ 6   tried turning my screen into a portrait rather than
+ 7   landscape.
+ 8               MR. BLOCK:  Yeah, the writing is a little
+ 9   small.
+10               MR. ASHBY:  Is it?  Okay.
+11               MR. BLOCK:  Yeah.
+12   BY MR. ASHBY:
+13          Q.   So let me zoom in.  Does that make a
+14   difference for you if I do that?
+15          A.   Yeah.  I can read it.
+16               MR. BLOCK:  Yeah.  That makes the font
+17   better.  It's a little narrow by the way also.  I don't
+18   know if that matters to you.
+19               MR. ASHBY:  It must be because I have the
+20   screen turned on its side.  I don't know if I can make
+21   it bigger without -- how is that?  Does that help?
+22               MR. BLOCK:  The font is better, but you
+23   don't see the entire document.  The left margin and the
+24   right margin are both cut off now.
+25               MR. ASHBY:  All right.  I'll just go back
+0031
+ 1   to this.  Okay.
+ 2   BY MR. ASHBY:
+ 3          Q.   In any event -- okay.  So this is an MAS
+ 4   accreditation, what I've marked as Exhibit 4, for
+ 5   various testing methods and the accreditations from
+ 6   A2LA, right?
+ 7          A.   Correct.
+ 8          Q.   And you see down at the -- the final
+ 9   accreditations are for asbestos in cosmetic talc
+10   products by PLM and asbestos in cosmetic talc products
+11   by TEM.
+12          Do you see that?
+13          A.   I do.
+14          Q.   And then the test method for the asbestos in
+15   cosmetic talc products by PLM says Blount prep method
+16   using heavy liquid separation ISO-22261, ISO-22262.
+17          Do you see that?
+18          A.   I do.
+19          Q.   All right.  This -- so can you explain to me
+20   how MAS went about applying for and getting this
+21   accreditation in asbestos in cosmetic talc products by
+22   PLM?
+23          A.   Well, this is all amphiboles, no chrysotile.
+24   And we provided them the protocol.  We provided them
+25   the validation, the analysis, and the same for the TEM.
+0032
+ 1          Q.   Okay.
+ 2          A.   And just the documents they require.  And
+ 3   once you do that and they're satisfied with it, you can
+ 4   provide the -- you can determine what you want to show
+ 5   that you're accredited or that you have done what is
+ 6   required from the international standard organization
+ 7   to get an accreditation.
+ 8          This is the avenue that most labs go to when you
+ 9   want a specific analysis that's not covered by the
+10   usual suspect, such as the National Voluntary
+11   Laboratory Accreditation Program or the American
+12   Industrial Hygiene Association program or what have
+13   you.
+14          So you can see all the rest of the ones we have
+15   for our -- you know, for the -- for accreditations for
+16   CPSC stuff or EPA stuff or the water method for metals.
+17   And these are not -- you know, EPA doesn't have a
+18   program for the type of accreditation.  Usually we'll
+19   go for specific things like this.
+20          So we provided all the information and what we
+21   were doing and the references, and the references of
+22   the methods, and they provided the accreditation.
+23          Q.   Okay.  Had A2LA, to your knowledge, ever
+24   accredited another lab for the test asbestos in
+25   cosmetic talc products by PLM?
+0033
+ 1          A.   Not that I know of.
+ 2          Q.   And same question for the TEM.  To your
+ 3   knowledge, had A2LA ever accredited another lab for
+ 4   asbestos in cosmetic talc products by TEM?
+ 5          A.   Not to my knowledge.
+ 6          Q.   And then you mentioned this, but it was
+ 7   something that I wanted to cover, so I'll ask:  These
+ 8   two accreditations for asbestos in cosmetic talc
+ 9   products do not apply to testing of cosmetic talc for
+10   chrysotile asbestos, correct?
+11          A.   It does not.  Only amphibole asbestos.
+12          Q.   Had, to your knowledge, A2LA ever accredited
+13   any lab on the Blount prep method using heavy liquid
+14   separation prior to this accreditation for MAS?
+15          A.   If they have, I'm not aware of it.
+16          Q.   This accreditation for asbestos in cosmetic
+17   talc products by PLM is not required by any U.S.
+18   government agency for the testing of talc -- or
+19   cosmetic talc, correct?
+20          A.   Has not been finalized by any, no.
+21          Q.   And the same thing for the TEM.  The test
+22   method that I see in this accreditation for asbestos in
+23   cosmetic products by TEM is not an accreditation that
+24   is required by any government agency in the
+25   United States for the testing of cosmetic talc,
+0034
+ 1   correct?
+ 2          A.   No.  I'm not aware of any government agency
+ 3   specifically having a test that says:  "This is what
+ 4   you're going to do for cosmetic talc."
+ 5          So it would be hard to have any -- since they
+ 6   don't have that test yet or it's required by anybody,
+ 7   and so people just use either the R-93 or the ISO.
+ 8          Q.   When it says:  "Test method, Blount prep
+ 9   method using heavy liquid separation" -- well, I'll
+10   strike that.
+11          MAS's Blount preparation method is not the same
+12   as the preparation method that's in the Blount articles
+13   from 1991 and 1992; is that correct?
+14          A.   When we do the Blount method for PLM, it's
+15   identical.
+16          Q.   Oh, I see.  Okay.  But when you do the
+17   Blount prep method for TEM, it's a modified Blount prep
+18   method, correct?
+19          A.   Well, for TEM, it's more the ISO, which is
+20   2.85.  The ISO-22262-2, Chapter 16, Paragraph 2, I
+21   think it is, tells you what heavy liquid to use, and
+22   then they give you the option of PLM, TE -- SEM, TEM.
+23          Q.   Okay.  So, I understand now.
+24          So this is saying for the test method of
+25   ISO-2262-2 in relation to Section 16 of that protocol,
+0035
+ 1   MAS has an accreditation to test asbestos in cosmetic
+ 2   talc by TEM for that particular method; is that right?
+ 3          A.   Yes.  Well, it's really both methods because
+ 4   they have information that's pertinent in both the 1
+ 5   and 2 for TEM.
+ 6          Q.   All right.  Do you know -- is there any
+ 7   other lab in the country that's been accredited by A2LA
+ 8   for asbestos in cosmetic talc products by PLM using the
+ 9   Blount prep method using heavy liquid separation?
+10          A.   Again, I'm not aware of any.
+11          Q.   Okay.  Is there any other lab in the country
+12   that's been accredited for the testing of asbestos in
+13   cosmetic talc products by TEM using ISO-22262-1 and
+14   ISO-22262-2?
+15          A.   Again, I'm not aware of any others.
+16          Q.   When I see here that it says:  "Test
+17   asbestos in cosmetic talc products by PLM," is that the
+18   name that MAS gave the test?
+19          A.   Yes.
+20          Q.   Okay.  And again, for the test method, where
+21   it says "Blount prep method using heavy liquid
+22   separation," is that the name that MAS gave the test
+23   method?
+24          A.   Well, that's what we put down since that's
+25   what we're doing.  You know, we gave the name
+0036
+ 1   California Department of Public Health Standard Method
+ 2   right above it or the BIFMA M7.1 VOC analysis.  So it's
+ 3   whatever method we're using.
+ 4          Q.   Right.  But when you go to a company like
+ 5   A2LA for an accreditation, they don't already have a
+ 6   test method called asbestos in cosmetic talc products
+ 7   by PLM that they can have you apply for an
+ 8   accreditation on, correct?
+ 9               MR. BLOCK:  Objection to form.
+10               THE WITNESS:  They don't have a specific
+11   test method that they're putting out on any of these.
+12   What they have is that -- the qualifications to be able
+13   to get this method and be able to put this on here is a
+14   lot more rigorous than, say -- in my opinion, than the
+15   National Voluntary Laboratory Accreditation Program.
+16               See, for the R-93 that M. Blount does,
+17   because -- they don't require any validation because
+18   they're just geared for asbestos-added products.
+19               So if you go to folks who testify and ask
+20   them what their detection limit is in TEM, they usually
+21   don't know for bulk samples where you have trace
+22   minerals.  Or what is their detection limit for PLM?
+23   Have they run standards?
+24               Now, these others do.  The phthalates, you
+25   know, they'll have -- the CPSC will have their own
+0037
+ 1   method.  And if you go to an EPA method, they will have
+ 2   in there exactly what you need to do for -- since
+ 3   you're -- you know, you're looking at a specific
+ 4   analyte.  But the one thing that's missing in the
+ 5   asbestos arena, especially in trace metals, is no labs
+ 6   have ever run a validation.  When they say it's a
+ 7   non-detect, they have no clue what their detection
+ 8   limit is.  Until, I guess, MAS came along and started
+ 9   looking at their protocols and said:  "Well, let's just
+10   calculate to see what their detection limit is."
+11               So when you say it's a non-detect and you
+12   don't know what your detection limit is, it's pretty
+13   much useless information, in my opinion.
+14   BY MR. ASHBY:
+15          Q.   Okay.  So in order to get this
+16   accreditation, for example, for asbestos in cosmetic
+17   talc products, you provide A2LA, MAS's operating
+18   protocol for its analyses that it does with respect to
+19   asbestos in cosmetic talc by PLM, right?
+20          A.   That is correct.
+21          Q.   You also provide them validation reports; is
+22   that right?
+23          A.   Well, you do a -- you tell them what your
+24   detection limit is, which is a validation.  You have to
+25   prove that the method does detect and, if it does
+0038
+ 1   detect, to what concentration or what analytical
+ 2   sensitivity does it detect to.
+ 3          Q.   So they first confirm that you have a
+ 4   written procedure to do this test, correct?
+ 5          A.   Correct.
+ 6          Q.   And then they determine whether or not you
+ 7   are following your own procedure, right?
+ 8          A.   Well, you give them a procedure.  You give
+ 9   them your QC manual.  You give them -- there's a number
+10   of items that they ask for.
+11          Q.   Uh-huh.  They are not making any judgment
+12   through their accreditation whether the method that
+13   you've provided to them actually works or not, correct?
+14               MR. BLOCK:  Objection to form.
+15               THE WITNESS:  You mean that if it -- that
+16   they go in the lab and test it?
+17   BY MR. ASHBY:
+18          Q.   Yeah.  They don't do that, right?
+19          A.   I don't think so.  They look at the data.
+20          Q.   Right.  The data that you provide to them,
+21   correct?
+22          A.   And the protocols we provide to them.  I'm
+23   not aware if any of these organizations actually take
+24   your methods and test them to see if, what, you're
+25   lying or not on your results of an analysis or
+0039
+ 1   validation.
+ 2          Q.   Well, MV Lab gives proficiency tests to labs
+ 3   that want to be accredited for asbestos analysis by the
+ 4   Government, right?
+ 5          A.   They do.  They send out what you would
+ 6   expect to run into for asbestos added in materials.
+ 7          Q.   And MAS has been involved in proficiency
+ 8   tests for asbestos identification by PLM and by TEM,
+ 9   correct?
+10          A.   We are.  Same with this.
+11          Now, are they going to send a proficiency test
+12   back for something that is in a cosmetic talc and send,
+13   what, spike samples out at .001 percent?  Maybe.  I
+14   don't know.  I don't know what they -- what -- because
+15   they do send out proficiency testing for different
+16   types of tests that we are accredited with them.
+17          Q.   Right.  And MAS is accredited for asbestos
+18   identification by R-93, right?
+19          A.   Up until this month.  We no longer carry the
+20   NVLAP accreditation.
+21          Q.   Why is that?
+22          A.   Because we moved it over to ISO for the same
+23   accreditation, and they do have PAT rounds.
+24          Q.   They do have what?  What did you say?  They
+25   do have what?
+0040
+ 1          A.   Well, we moved it over to A2LA, and they do
+ 2   have PAT rounds.  And it's the exact same thing we've
+ 3   been accredited by the National Voluntary Laboratory
+ 4   Accreditation Program.  It's for AHERA.
+ 5          Q.   Right.  I just didn't understand the word
+ 6   you said.  You said "PAT grounds" or "PAT" --
+ 7          A.   We call them "PAT rounds," proficiency
+ 8   analytical testing rounds.
+ 9          Q.   Oh, I see.  Okay.
+10          Okay.  So you said as of -- as of July --
+11          A.   It may be on there as -- maybe as of
+12   July 1st or August 1st, we had -- we are no longer
+13   accredited by the National Voluntary -- I think it's
+14   August 1st.  Yeah, August 1st we're going to be no
+15   longer accredited by the National Voluntary Laboratory
+16   Accreditation Program.
+17          Q.   And, instead, you will be now accredited
+18   through A2LA for ISO test methods related to the
+19   identification of asbestos in --
+20          A.   No.
+21          Q.   No?  Oh, I'm sorry.
+22          A.   We're accredited for the EPA R-93-600 and
+23   the AHERA TEM analysis.  That's what it says on the
+24   program.  I mean, we're already accredited by them
+25   because we provided all the information to them that we
+0041
+ 1   normally would provide to the National Voluntary
+ 2   Laboratory Accreditation Program to renew the
+ 3   accreditation.
+ 4          Q.   So when -- you were saying "them," and then
+ 5   I got confused.  When you said you're accredited by
+ 6   them for EPA or 600 and the AHERA TEM, you're talking
+ 7   about A2LA?  Is that the "them"?
+ 8          A.   Correct.  We are ISO accredited for the
+ 9   exact same thing.  We were accredited by the National
+10   Voluntary Laboratory Accreditation Program.
+11          Q.   So in the past, MAS has been hired by local
+12   and state governments to test for asbestos in
+13   buildings, such as schools, correct?
+14          A.   In the past, we have.
+15          Q.   Can you no longer do that now that you will
+16   lose your MV Lab accreditation?
+17          A.   It just depends on the consultant.  We do
+18   very little -- we don't see school samples anymore.
+19   You know, that's been going on since 1988.  The time
+20   would get -- when we get PLM samples, every day PLM
+21   samples, it doesn't have to be accredited because it's
+22   not a school.  It's usually buildings.
+23          Q.   Uh-huh.  So -- and then going back to the
+24   proficiency testing, are you saying AT -- sorry.  I'll
+25   start over.
+0042
+ 1          Does A2LA do its own proficiency testing related
+ 2   to EPA R-600 and the AHERA TEM test methods?
+ 3          A.   I believe so, but I would have to check on
+ 4   that.
+ 5          Q.   Okay.  But as of now, you have not gone
+ 6   through any proficiency testing for asbestos
+ 7   identification other than what has been done with MV
+ 8   Lab over the years; is that right?
+ 9          A.   That's right.
+10          Q.   Okay.  Why -- why did MAS choose to no
+11   longer keep or re-up its MV Lab certification?
+12          A.   We want to consolidate all our
+13   certifications so that when -- you know, we have all
+14   these different auditors coming in.  It just made more
+15   sense to have as many as possible under one roof.
+16          But MAS no longer does any AHERA TEM samples
+17   specifically for air clearance in schools.
+18          Q.   Uh-huh.  I see.
+19          A.   And the last auditors were even questioning
+20   us why you're even keeping these recertifications since
+21   it's been some years since we've actually done NVLAP
+22   samples, air samples, et cetera.
+23          Q.   All right.  Okay.
+24          You still do -- or MAS still does PLM analysis,
+25   though -- for example, private buildings, maybe
+0043
+ 1   somebody's home that's having a building inspection for
+ 2   the asbestos products within that home that they want
+ 3   analyzed -- correct?
+ 4          A.   It's private business, meaning, you know, a
+ 5   consultant has a contract and he wants, you know, PLM
+ 6   done.  And many of those consultants, if it's not a
+ 7   school, you do not need to have NVLAP.  You can -- ISO
+ 8   is completely acceptable.
+ 9          Q.   Okay.  I understand.
+10          All right.  When the proficiency testing has
+11   been done in the past for PLM analysis, which of your
+12   analysts are the ones or the one that is responsible
+13   for analyzing the samples and then reporting on the
+14   findings for the proficiency testing?
+15          A.   I guess whoever's available at the time, not
+16   working on something else.
+17          Q.   So Paul Hess might be one of those people,
+18   right?
+19          A.   He might, yes.
+20          Q.   Chris DuBour would have been somebody, also,
+21   right?
+22          A.   That's true.
+23          Q.   Bill Egeland would have been somebody as
+24   well?
+25          A.   Yes, up until maybe ten years ago or so.
+0044
+ 1          Q.   Was Bill Longo ever one of the PLM analysts
+ 2   that submitted to proficiencies testing by PLM for MV
+ 3   Lab?
+ 4          A.   No.
+ 5          Q.   Did you say "no"?
+ 6          A.   No.
+ 7          Q.   If I went through all of MAS's litigation
+ 8   reports -- so, in other words, bulk analysis done in
+ 9   litigation for asbestos where PLM was done -- would I
+10   find any reports where Bill Longo was the analyst by
+11   PLM?
+12          A.   I think myself and Dr. Sanchez have the
+13   exact same number, zero.
+14          Q.   Okay.  If I went through every
+15   non-litigation PLM bulk analysis for asbestos done by
+16   MAS in the last ten years, would I find one there where
+17   Bill Longo was the PLM analyst?
+18          A.   Only ones where I was looking at something
+19   that was not involved in a project.  I would not be a
+20   day-to-day PLM analyst, especially on commercial,
+21   because the typical time and experience a PLM analyst
+22   spends on a -- commercial asbestos-added products may
+23   be 15, 20 minutes total.
+24          Q.   Who is --
+25          A.   And it would be very ineffective for me to
+0045
+ 1   sit and do commercial samples since my time element
+ 2   would be a lot longer than that.
+ 3          Q.   Uh-huh.  Who would you consider to be the
+ 4   top PLM analyst at MAS currently?
+ 5          A.   It depends on what we're doing.
+ 6          For product identification in forensic analysis
+ 7   on asbestos-added products on who made it, that would
+ 8   be Bill Egeland.  Right now for the cosmetic talcs,
+ 9   it's Paul Hess.  And then we have people in -- all of
+10   them can do everyday samples, but for the -- for
+11   something specific where it's out of the ordinary and
+12   you have the patience to spend the time necessary would
+13   be Bill Egeland and Paul Hess.
+14          Q.   When you talk in terms of a significant
+15   exposure, do you have a quantitative measure for what
+16   you mean by "significant"?
+17          A.   I've always used the 10 to 20 times over
+18   background or 10 times over background.  So it's just
+19   significant that you can measure it.  Not anything to
+20   do with the dangers or how much is a problem.  And
+21   my -- my background has evolved over the last 15, 20
+22   years, and I'm now starting to think the best
+23   background to use is the one we took outside the
+24   building, which is in the 10 to the minus 6 range and
+25   no detection of any asbestos.
+0046
+ 1          So the backgrounds need to be lower than -- in
+ 2   the 10 to the minus 6 on range.
+ 3          Q.   And in the past, you've testified to a
+ 4   significant exposure being something 10 to 20 times
+ 5   over background with background being 0.0005 fibers
+ 6   per cc.
+ 7               MR. BLOCK:  Objection to form.
+ 8   BY MR. ASHBY:
+ 9          Q.   Right?
+10               MR. BLOCK:  Objection to form.
+11               THE WITNESS:  Is that a question?
+12   BY MR. ASHBY:
+13          Q.   Yeah.  Do you want me to repeat it?  That's
+14   fine.
+15          A.   No.
+16               MR. BLOCK:  Objection to form.
+17               THE WITNESS:  It depends on what we're
+18   trying to determine background.  Most of the exposure
+19   studies I have done in the past have always had to do
+20   with some sort of use of commercially added asbestos
+21   products where you're going to be in an environment
+22   where others are using asbestos products.
+23               So it's going to generate some kind of
+24   background from that.  So you have to account for that.
+25   So that's where the 0.005 came from.
+0047
+ 1               If you're talking about somebody's home or
+ 2   you're talking about where there is no -- there is no
+ 3   situation where an asbestos -- other asbestos products
+ 4   are being disturbed -- because you can't have
+ 5   background without the disturbance of an asbestos
+ 6   product -- then you have to go to what's -- what I
+ 7   would call at least the -- at a minimum, the ATSDR, I
+ 8   think, is five -- four zeros and a five, and four zeros
+ 9   and a one, which gives you 10 to the minus 5.  But in
+10   reality, there is no background.  So you have got to
+11   pick something as a measuring stick.  You know, you
+12   can't say background is zero, and it's 10 to 20 times
+13   over zero.
+14   BY MR. ASHBY:
+15          Q.   Yeah.  Okay.  But that number you're giving
+16   me, the 0.0000 and a 5, is there any technique, that
+17   you're aware of, that has a detection limit that -- for
+18   air monitoring that can get down to that?
+19          A.   Sure.  Just depends on how much air you're
+20   willing to take.  For us to get down to 9.0 times 10 to
+21   the minus 6 outside our lab, you know, we had to run it
+22   for enough time to collect -- I think it was 28,000
+23   liters of air, and we had to analyze either 100 or 200
+24   grid openings.
+25          Q.   Right.
+0048
+ 1          A.   So it's how much do you want to do.
+ 2          Q.   Right.  But you couldn't do that -- okay.
+ 3   Fine.  I'll strike that.
+ 4          You can do that for ambient air where you're
+ 5   just running your filters for hours and hours and hours
+ 6   outside, right?
+ 7          A.   Correct.
+ 8          Q.   You can't do that, though, when it comes to
+ 9   simulations related to product use because nobody's
+10   using products for hours and hours and hours and hours
+11   like that, right?
+12               MR. BLOCK:  Objection to form.
+13               THE WITNESS:  No.  You know, back in the
+14   day when they're using products, they're using a big
+15   filter, 37-millimeter filter, and they're taking
+16   multiple samples, say, for a worker going -- okay.
+17   Well, he's using -- he's cutting thermal insulation in
+18   the morning, but in the afternoon he's just putting on
+19   fiberglass.
+20   BY MR. ASHBY:
+21          Q.   Okay.
+22          A.   So we're going to measure his morning, and
+23   then if he's going to do any other asbestos work for
+24   the rest of the day, no, you can't take a sample that
+25   long.  When the -- OSHA dropped it to .1, that's
+0049
+ 1   because then you have to look at -- you have to have a
+ 2   detection limit at least lower than .1 in order to make
+ 3   an evaluation.
+ 4          Now we're dealing with products in this cosmetic
+ 5   talc, one, tremolite series, anthophyllite series, up
+ 6   to cummingtonite, you're dealing with -- you're dealing
+ 7   with trace, and you have to come into an agreement what
+ 8   the background is.  And, also, you have to come to an
+ 9   agreement that putting, you know, talcum powder on an
+10   infant or a child or yourself in a house has nothing to
+11   do with OSHA.  And what detection limit are you going
+12   to use for products that have been rarely used as an --
+13   well, tremolite has never been used, that I'm aware of,
+14   as an asbestos-added product, and anthophyllite has
+15   some history back in the day where they made -- used to
+16   make filters out of it.  And the only other product
+17   that I know that makes it -- made it is the JM pipe
+18   product that was using anthophyllite for very caustic
+19   acids.
+20          So there is no background of anthophyllite and
+21   tremolite unless you're -- you know, you're taking air
+22   samples while the Libby mine was going on or you're
+23   taking air samples in -- there was an anthophyllite
+24   mine in New York for a while.  Johnson started it --
+25   not Johnson, but -- yeah, Johnson.
+0050
+ 1          Johns -- Johns Manville, the Johns part of the
+ 2   Manville started it, but that went away a long time
+ 3   ago.  So just taking -- just saying, well, this is
+ 4   background from different studies that -- be at
+ 5   somebody's house that's breathing it 7 days a week --
+ 6   24 hours a day, 7 days a week is just bogus data.
+ 7   Unless you took air samples at that person's house
+ 8   during the time he lived in it over the years, you
+ 9   can't make that comparison.
+10          Q.   Uh-huh.  Okay.  MAS has done well over a
+11   hundred work practice simulations over the years in
+12   litigation, correct?
+13          A.   Correct.
+14          Q.   Anytime that a non-detect was reported, at
+15   whatever the detection limit might have been for any of
+16   those studies, you are unable to say that that
+17   particular activity that came in below the detection
+18   limit was a significant exposure.
+19          Can we agree on that?
+20               MR. BLOCK:  Objection to form.
+21               THE WITNESS:  All we can say is it's
+22   non-detect, and we would never put any non-detects in
+23   there as significant exposure.  If you're looking at
+24   trying to do an average where you have non-detects,
+25   then you have to look at your detection limit, and
+0051
+ 1   typically people will take half of that.
+ 2   BY MR. ASHBY:
+ 3          Q.   All right.  So, for example -- okay.
+ 4          If a work practice simulation gives you a
+ 5   non-detect on your air monitoring, we can agree that
+ 6   you don't have the ability based on that data to opine
+ 7   that an exposure was significant, even though there
+ 8   could have been an exposure.  You just don't have the
+ 9   data to show it's significant, right?
+10          A.   Well, it's -- I wouldn't just point out that
+11   one sample and say it's significant, but if you're
+12   doing -- if you're trying to get an average -- say
+13   three of them you detect and one you don't or two of
+14   them you detect and one you don't.  You would take the
+15   detection limit and say half of that and then average
+16   it out.  Then the whole thing becomes significant.
+17          But you wouldn't take one sample and say -- you
+18   know, you have to have multiple samples.  So, you know,
+19   it's hard to -- I don't think I would say it was
+20   significant other than it was a non-detect, if we only
+21   had one sample or all four samples were non-detect.
+22   But if you take four samples, three -- four samples and
+23   two of them are non-detect and the other two are
+24   detects but they're all in the same area, you know,
+25   then you have to look at combining them and averaging
+0052
+ 1   them out and using either zero or one half the
+ 2   detection limit.
+ 3          Q.   Right.  Okay.  So that was my fault in the
+ 4   way I asked the question.
+ 5          If you have an MAS work practice simulation
+ 6   where all of the samples came up as non-detect, based
+ 7   on that data alone, you would be unable to say that
+ 8   that work practice activity resulted in a significant
+ 9   exposure.  Is that fair?
+10          A.   That's fair.
+11          Q.   Okay.  So, for example, there was -- there
+12   have been some studies that you've done on caulking and
+13   electrical component products where the sampling during
+14   the activity that's being done comes in at below your
+15   detection limit, right?
+16          A.   Yes, we've had studies like that.
+17          Q.   Okay.  And in those studies, your detection
+18   limit was 0.024 fibers per cc, right?
+19          A.   Sure.  I'm assuming you're looking at it.
+20          Q.   Yeah.  So, for example, the GE study was --
+21   0.024 fibers per cc was the detection limit.
+22          Does that sound about right?
+23          A.   Yes, for the PCMEs.
+24          Q.   Right.  For the PCMEs, right.  I agree.
+25          A.   Yeah, I think so.  I mean, I haven't looked
+0053
+ 1   at them in a while, so --
+ 2          Q.   Okay.
+ 3          A.   -- I'm assuming you've looked at it and so
+ 4   you're giving me that information.
+ 5          Q.   And if you have a detection limit of 0.024
+ 6   fibers per cc -- that would be too hard.  I'll just
+ 7   skip that.  Never mind.
+ 8               THE WITNESS:  Do you mind if we take a
+ 9   short break?
+10               MR. ASHBY:  Yeah, we can.
+11               THE CERTIFIED STENOGRAPHER:  We're off the
+12   record at 10:34 a.m.
+13               (Recess taken from 10:34 to 10:45.)
+14               THE CERTIFIED STENOGRAPHER:  We are back on
+15   the record at 10:45 a.m.
+16   BY MR. ASHBY:
+17          Q.   Okay.  So I wanted to talk now about the
+18   review --
+19               MR. ASHBY:  Oh, were you-all able to send
+20   me the chain of custody?  Did I get that?  No.  Okay.
+21               Jerry, do you have that?  Did you figure
+22   out if you have that?
+23               MR. BLOCK:  I don't believe I do.
+24               THE WITNESS:  If you want, I can make a
+25   quick call because that was the last instructions I
+0054
+ 1   left, but it had to go through a second party to get to
+ 2   the third party.
+ 3               MR. ASHBY:  Yeah.  Sure.  Let's just go off
+ 4   the record.
+ 5               THE CERTIFIED STENOGRAPHER:  We are off the
+ 6   record at 10:46.
+ 7               (Recess taken from 10:46 to 11:00.)
+ 8               THE CERTIFIED STENOGRAPHER:  We are back on
+ 9   the record at 11:00 a.m.
+10   BY MR. ASHBY:
+11          Q.   Okay.  We're back on the record.
+12          Dr. Longo, were you provided any of
+13   Dr. Abraham's reports in the Reyes case?
+14          A.   I have his Supplement No. 2 --
+15               THE CERTIFIED STENOGRAPHER:  I'm sorry.  It
+16   broke up.  Please repeat.
+17               THE WITNESS:  I have Dr. Abrams' Supplement
+18   Report No. 2, dated July 6, 2021.
+19   BY MR. ASHBY:
+20          Q.   Okay.  So in that report, Dr. Abraham
+21   identifies 26 different particles.  Did you count them
+22   at all to verify that?
+23          A.   No.  That's not what we intended to do.  We
+24   just wanted to get some representative photographs of
+25   the types of particles that were there.
+0055
+ 1          Q.   Okay.  So that was going to be my next
+ 2   question.  Was this analysis that MAS did a
+ 3   verification analysis?
+ 4          A.   Well, yes and no.
+ 5          Q.   Okay.
+ 6          A.   We wanted to see if we were finding the same
+ 7   types of structures as him, but it wasn't designed to
+ 8   do a quantitative count of each of the four stubs to
+ 9   verify that we could find everything that he found.
+10          Q.   Do you know whether or not any of the
+11   particles that MAS found are the same exact particles
+12   identified by Dr. Abraham in his analysis?
+13          A.   It would be hard for us to do that unless we
+14   went -- you know, we could measure some of them, but we
+15   did not try to do that.
+16          Q.   Okay.
+17          A.   And he said he found tremolite actinolite.
+18   We found tremolite actinolite and so on.
+19          Q.   Okay.  I was just -- okay.  That's fine.
+20          So, if I understand, you actually didn't look on
+21   the stubs for the same exact particle that he might
+22   have identified in any of his analysis, correct?
+23          A.   Well, it's hard -- I mean, we may have.  you
+24   know, for the tremolite actinolite, we may have some of
+25   the same ones.
+0056
+ 1          Q.   Right.  I understand.
+ 2          A.   But we did not try to match them up.
+ 3          Q.   Okay.  Did you have -- in addition to his
+ 4   report, the narrative report, did you have his -- what
+ 5   was labeled and what I received, the backup data?
+ 6               THE CERTIFIED STENOGRAPHER:  I'm sorry.
+ 7   Please repeat.  It broke up.
+ 8               THE WITNESS:  Yes.  I have his pictures,
+ 9   and I have EDS of some of the fibers.
+10   BY MR. ASHBY:
+11          Q.   I'm sharing what I received as the backup
+12   data.  I'll just attach this because it will make it
+13   easier.
+14               MR. ASHBY:  So I'm going to attach as
+15   Exhibit 5 what I received as -- and I don't know who
+16   called it the backup data, but in any event, it's a
+17   65-page document.  The first page of it says Reyes,
+18   JA21-005 SEM/EDS results.
+19               (Marked Exhibit No. 5.)
+20   BY MR. ASHBY:
+21          Q.   Does this at least first page look like
+22   something you received?
+23          A.   Yes, I have that.
+24          Q.   Okay.  And is yours about 65 pages?  I'll
+25   show you the last page of it.  It's this page.  It
+0057
+ 1   says:  Field times 4 fiber.
+ 2          A.   Yes.
+ 3          Q.   All right.  Okay.  So do you know whether or
+ 4   not any of the particles identified in this 65-page
+ 5   backup data were the same exact particles that MAS
+ 6   analyzed?
+ 7          A.   Without going through each of the partic --
+ 8   each of the particles we saw, you know, it's hard to
+ 9   say.  The solution on ours is a touch better than these
+10   ones we have.
+11               MR. ASHBY:  Do you have this, Jerry?  Do
+12   you want me to drop it in the chat?
+13               MR. BLOCK:  Yeah.  If you could please do
+14   that.  I mean, I prefer that we mark documents as
+15   exhibits to the extent we can.
+16               MR. ASHBY:  Yeah.  No, this is marked as
+17   Exhibit 5.
+18               MR. BLOCK:  Okay.
+19               MR. ASHBY:  I lost the chat.
+20   BY MR. ASHBY:
+21          Q.   Dr. Longo, are you still looking -- I didn't
+22   expect you to look.  Really what I wanted to know --
+23          A.   Yeah, I don't know.  All I can say is I
+24   don't know.  It wasn't our intent to spend the time to
+25   go through each of these four stubs and find the exact
+0058
+ 1   structures.
+ 2          Q.   All right.  In your analysis that was done
+ 3   by MAS, did you find anything that looked to be silica
+ 4   fibers?
+ 5          A.   If they were present, we did not take
+ 6   pictures of them.  I was primarily looking at what I
+ 7   thought were the main components that was of interest.
+ 8          Q.   Yeah.  So why don't I ask you, what exactly
+ 9   did y'all do when you looked at the samples under the
+10   microscope?  What were you reporting and what were you
+11   looking for?
+12          A.   We wanted to verify platy talc, see if
+13   there's fibrous talc, if we ran across mica or not.  We
+14   looked for these magnesium-depleted chrysotile
+15   structures that Dr. Abrams described and -- as well as
+16   there should -- you know, there should be tremolite
+17   actinolite present.  I think we called them tremolite
+18   because of the low iron.
+19          And that was -- just take some -- you know, we
+20   were just trying to take representative structures.
+21          Now, if we had run across any tremolite -- and
+22   he found a fairly significant amount -- we would have
+23   spent more time, but they were -- it was -- they were
+24   easily found.
+25          Q.   Okay.  Did you look for particles other than
+0059
+ 1   talc, mica, and asbestos?
+ 2          A.   That's all we saw.  I mean, we didn't look
+ 3   through the whole -- you know, all four SEM stubs and
+ 4   look at every area.  These were readily found.
+ 5          Q.   Okay.  So what I'm asking is, if there were,
+ 6   for example, glass fibers or silica fibers in the
+ 7   tissue, was that something you were looking for?
+ 8          A.   If it was fibrous, we would have documented
+ 9   it.  So we didn't run across any.  However, we did not
+10   do full quantitative, look at every area on the -- on
+11   the stubs.
+12          Q.   Okay.  So I note you didn't include any
+13   aluminum silicates.  Is that --
+14          A.   We found one of them.  There was -- there
+15   was significant -- there was lots of mica.  We didn't
+16   try to speciate the mica.
+17          Q.   Okay.
+18          A.   And we have those.
+19          Q.   All right.  Okay.  So, for example, I mean,
+20   there's lots of different types of mica, right?
+21          A.   I think there's four.
+22          Q.   Sure.  But vermiculite --
+23          A.   Four or five.
+24          Q.   Vermiculite is a type of mica, right?
+25          A.   Correct.  But there's no vermiculite in
+0060
+ 1   here.  You can easily tell the difference between those
+ 2   two.
+ 3          Q.   Right.  Okay.
+ 4          Is it your opinion that Ms. Reyes was exposed to
+ 5   dust from the friction materials of brakes, clutches,
+ 6   and gaskets?
+ 7          A.   You know, it seems like her only
+ 8   possibility, as I recall, is there might have been some
+ 9   exposure, but this wasn't what I would call a
+10   significant brake exposure case.
+11               MR. BLOCK:  Just note that the question
+12   said "Ms. Reyes" rather than "Mr. Reyes" and that it
+13   transferred over to the answer, so I just -- I don't --
+14   I think the question was confusing.
+15               MR. ASHBY:  Right.
+16               THE WITNESS:  Well, Mr. Reyes had some
+17   exposure.  Ms. Reyes, I would not call this a brake
+18   exposure case.  I mean, it would have had to have been
+19   from the clothes, or she may have swept up.  If she had
+20   any exposure at all, it wouldn't be -- de minimis as --
+21   as compared to the talcum powder.
+22   BY MR. ASHBY:
+23          Q.   Okay.  MAS has found chrysotile in brakes
+24   that it's examined, right?
+25          A.   I don't recall us ever finding talc in the
+0061
+ 1   brakes.
+ 2          Q.   I said chrysotile.
+ 3          A.   Oh, chrysotile.  Okay.  Yes.  Brakes have
+ 4   chrysotile in them if they're asbestos-containing
+ 5   brakes.
+ 6          Q.   You were going to really -- I was going to
+ 7   have to send this transcript out really fast to the
+ 8   world.
+ 9          Okay.  So, and MAS has found chrysotile in
+10   clutches and gaskets used on -- as automotive parts,
+11   right?
+12          A.   Yes.
+13          Q.   MAS has found tremolite in automotive
+14   brakes, automotive clutches, and automotive gaskets,
+15   right?
+16          A.   I mean, I don't know about if we've done
+17   that much gasket work, but certainly in the brakes and
+18   clutches.
+19          Q.   Uh-huh.  But you've certainly found
+20   tremolite in gaskets that may or may not have been
+21   used --
+22          A.   Oh, you're talking about industrial gaskets,
+23   not engine gaskets.
+24          Q.   Okay.
+25          A.   Yeah.  Industrial gaskets on steam lines,
+0062
+ 1   absolutely.
+ 2          Q.   MAS has found anthophyllite fibers in brakes
+ 3   that it's examined, correct?
+ 4          A.   I know we found it one time in gaskets.  I
+ 5   can't say for sure we have found it in brakes.
+ 6          Q.   When you say you found it in gaskets, are
+ 7   you talking about industrial gaskets or automotive
+ 8   gaskets?
+ 9          A.   Industrial gaskets are found in one Garland
+10   gasket.
+11          Q.   Yeah.  All right.  Are you saying you just
+12   can't remember if MAS has found anthophyllite in
+13   automotive brakes in the past?
+14          A.   Yeah.  I don't remember that.
+15          Q.   Okay.
+16          A.   I'm not saying it didn't happen.  I just
+17   don't recall us finding anthophyllite.
+18          Q.   Okay.  Okay.  MAS has found talc fibers in
+19   brakes that it's analyzed, right?
+20          A.   That, I don't ever recall finding.
+21          Q.   Is it your opinion that all Canadian
+22   chrysotile used in products in the United States would
+23   have contained some contaminate of tremolite asbestos
+24   in them?
+25          A.   I can't say every source.  I'm not sure
+0063
+ 1   we've analyzed every source, but certainly the Black
+ 2   Lake region, JM's mine.  And I think also in the
+ 3   Vermont chrysotile mine we have found tremolite.
+ 4          Q.   The tremolite that you have found in
+ 5   products using Canadian chrysotile was asbestiform
+ 6   tremolite, correct?
+ 7          A.   It may -- it met all the definitions of
+ 8   regulated asbestos.  I would call it asbestiform.
+ 9          Q.   Right, and you have.  In your Best Wall
+10   report, you call it a finding of an asbestiform
+11   tremolite in a Best Wall product using Canadian
+12   chrysotile, right?
+13          A.   I haven't looked at that report in 20 years.
+14   If that's what I stated, then that would be my opinion
+15   at the time when I was making that -- giving that
+16   opinion or writing that report.
+17          Q.   If somebody says that the tremolite that
+18   contaminates Canadian chrysotile is not asbestiform,
+19   would you disagree with that person?
+20          A.   Well, it was formed in a fibrous habit; so
+21   I'm sure I would.
+22          Q.   I want -- let's see if I can do this right.
+23   So I've already marked this as Exhibit No. 1, and I'll
+24   probably have to --
+25               MR. BLOCK:  I'm sorry.  Is Exhibit No. 1
+0064
+ 1   the -- the photographs and --
+ 2               MR. ASHBY:  Yes.
+ 3               MR. BLOCK:  -- EDX associated with
+ 4   Mr. Reyes' lung tissue analysis by Dr. Abraham?
+ 5               MR. ASHBY:  Right.
+ 6               MR. BLOCK:  Okay.  Thank you.
+ 7   BY MR. ASHBY:
+ 8          Q.   Okay.  So I'm going to -- let's see if I
+ 9   can -- maybe I should just share.  So I'm going to
+10   share Exhibit 1.  I don't think it's necessary because
+11   you have it, but I'll just do it nonetheless.
+12          All right.  So I have up Exhibit 1, which is the
+13   July 24th, 2021, letter that I received.  And it says:
+14   "Enclosed you will find additional reliance materials
+15   for Dr. Longo in this case.  These are photos from MAS
+16   review of Abraham SEM stub from the tissue digestion,
+17   signed Joseph Satterley."
+18          I know you don't have the cover letter,
+19   Dr. Longo, but you do have the MAS images and the EDS
+20   that go along with them.  What I don't know is if you
+21   have them in the same order I do.  So we might have --
+22          A.   I do.
+23          Q.   All right.  Great.  So this first
+24   particle -- so now I'm on page 2 of Exhibit 1, and
+25   there's a particle there that appears to be platy talc.
+0065
+ 1          Is that platy talc?
+ 2          A.   It is.
+ 3          Q.   And it has a -- looks like an M71374-002
+ 4   designation as Structure 1 platy talc.
+ 5          Did I read that right?
+ 6          A.   You did.
+ 7          Q.   So I take it this is -- the MAS job number
+ 8   on this is M71374, right?
+ 9          A.   Yes.
+10          Q.   And I'm used to the dash 00 number to align
+11   with particle.
+12          Is that what's happening here or is the dash 00
+13   number something else?
+14          A.   That would be this -- the second stub, SEM
+15   stub.  We received four of them.
+16          Q.   I see.
+17          A.   And that's our 002 number.  Here we have --
+18   and we do the same thing when -- on the other stuff.
+19   We then give the structure number after the -- what
+20   sample it is.
+21          Q.   I see.  So -- okay.  When I go down, I'll
+22   see after the M number, a dash.  For example, this one
+23   is 003.
+24          And that's the third stub that you received.
+25   Right?
+0066
+ 1          A.   Correct.
+ 2          Q.   Okay.  And I can scan this real quick.
+ 3          Were structures found in all four stubs?
+ 4          A.   Let me look real quick.  We have two, two,
+ 5   three or is that Structure 3?
+ 6               THE CERTIFIED STENOGRAPHER:  Please repeat.
+ 7               THE WITNESS:  Structure 3.
+ 8   BY MR. ASHBY:
+ 9          Q.   I'm just scanning it.  And you can tell me
+10   if I'm wrong, but I only see Stubs 2 and 3 represented
+11   in these images.
+12          A.   Those are the only two that we have
+13   structures from.  I don't know if it was that -- I'd
+14   have to find out if we looked -- if the other two stubs
+15   were looked at or was it a time constraint to get it
+16   done.
+17          Q.   Okay.  So we don't know -- one, we can say,
+18   first, we don't know if Stub 1 or 4 was even reviewed
+19   by MAS, right?
+20          A.   We don't.  At least I don't at this moment.
+21          Q.   All right.  So we also don't know whether or
+22   not somebody looked at Stub 1 and didn't find anything
+23   in it because we just simply don't know if anybody
+24   looked at Stub 1, right?
+25          A.   At this very moment, we don't know.
+0067
+ 1          Q.   Okay.  All right.  And the same could be
+ 2   said for Stub 4, I guess, right?
+ 3          A.   Correct.
+ 4          Q.   Oh, do I have the chain of custody now?  I
+ 5   have to stop sharing my screen.
+ 6               MR. ASHBY:  Did you drop it in the chat,
+ 7   Jerry?
+ 8               MR. BLOCK:  Mr. Ashby, if you'll just check
+ 9   your e-mail, it should be there, or it will be there in
+10   a minute.
+11               MR. ASHBY:  Okay.
+12   BY MR. ASHBY:
+13          Q.   All right.  Well, let me ask you this:
+14   Dr. Longo, I thought maybe the chain of custody would
+15   have this answer but maybe not.
+16          Do you know what designation Dr. Abraham gives
+17   stub -- what you're calling Stub 1 so I can determine
+18   which is the stubs that we don't know if --
+19          A.   Well, the information he had on there was
+20   for 1 and 2 -- our numbers 1 and 2.  It was
+21   JA21-005-A1a.  Sample 2 was A1b.  Our Sample 3 was
+22   JA21-005-B1a.  And the second one was B1b.
+23          So we looked at A1b and B1a.
+24          Q.   Okay.  And I'll be able -- were you looking
+25   at the chain of custody to determine that?
+0068
+ 1          A.   I'm looking at our chain of custody.
+ 2          Q.   Yeah.  Okay.  It's still coming through, but
+ 3   I just wanted to make sure that I had whatever you were
+ 4   looking at.  So that's fine.  I can figure it out.
+ 5          A.   Okay.
+ 6          Q.   Okay.  So back to page 2 of Exhibit 1, would
+ 7   you agree with me that when we look at this platy talc
+ 8   in the image, there's no way to tell whether or not
+ 9   that talc is from an industrial grade of talc or from a
+10   cosmetic grade of talc?
+11          A.   The only thing I can tell you about that is
+12   all the talc plates we were seeing would have passed
+13   through a minus 200 mesh grid, which would have been
+14   the cosmetic talc size.  So it is consistent with
+15   Johnson & Johnson's product.  I don't think industrial
+16   talcs are milled to that level.
+17          So I don't -- can't say it's consistent with any
+18   other industrial talc, only that it's consistent with
+19   the size range expected on the lower side on -- you
+20   know, on the cosmetic talc.
+21          Q.   Well, industrial talcs will include platy
+22   talc that could make it through a 200 mesh grid, right?
+23          A.   Do they have particles in there that are
+24   going through a 74 micron size?  That's possible.
+25          Q.   So, right.  I guess my question is, is
+0069
+ 1   cosmetic mesh -- cosmetic mesh -- sorry.  Start over.
+ 2          Cosmetic talc uses a mesh grid that is smaller
+ 3   than whatever refinement process that's used for
+ 4   industrial talc, right?
+ 5          A.   You know, it's been a while that I've looked
+ 6   at what their various grades are.  So, you know, I
+ 7   can't -- I can't comment on that.  That -- but looking
+ 8   at the size of the platy talc and then looking at the
+ 9   work history of Ms. Reyes does not suggest that she was
+10   exposed to industrial talc.
+11          Q.   Unless she was exposed to dust from
+12   automotive products, right?
+13               MR. BLOCK:  Mr. Ashby, you keep saying
+14   "Ms." -- "she."  This is Mr. Reyes' lung tissue, and
+15   your questions keep saying "she" and "Ms. Reyes."
+16               MR. ASHBY:  I'm sorry.
+17               MR. BLOCK:  It's causing some confusion in
+18   the deposition.  Thank you.
+19               THE WITNESS:  I'm not aware of industrial
+20   talc being used in automotive products for Mr. Reyes to
+21   have this much talc in his lungs.  I know it's -- I've
+22   never heard of it being in brakes, and I'm not sure why
+23   you would have it in anything else on a car on
+24   Mr. Reyes.
+25   BY MR. ASHBY:
+0070
+ 1          Q.   Okay.
+ 2          A.   Yeah, Mr. Ashby, it's your fault.  You've
+ 3   got me saying "Ms. Reyes," too.
+ 4          Q.   Sorry.  It's just -- it's habit, right.
+ 5          So -- okay.  Are you saying -- when you say that
+ 6   you're not aware -- well, I'll strike that.
+ 7          Let's assume that MAS has found talc in brakes,
+ 8   okay, that it's reviewed, all right?  Can you assume
+ 9   that with me right now?
+10          A.   Okay.  I'm assuming it.
+11               MR. BLOCK:  Objection to form.
+12   BY MR. ASHBY:
+13          Q.   Okay.  Can you tell me -- assuming there's
+14   talc in brakes and that it has been found by MAS to be
+15   in brakes, can you tell me whether or not that this
+16   platy talc image that we see in Exhibit 1, page 2, is
+17   definitely not from a brake product?
+18               MR. BLOCK:  Objection to form.
+19               THE WITNESS:  Assuming that it does have
+20   platy talc in the brakes, if I was asked that question
+21   based on this analysis and said that we have -- only
+22   evidence we have is from the brakes of this level, I
+23   would have to give the opinion I gave back in 2000 in a
+24   tissue case in which it was a secondary exposure case
+25   for thermal insulation.
+0071
+ 1               But in this woman's lungs was tremolite
+ 2   anthophyllite and a ton of platy talc.  When asked
+ 3   about where that came from, I had to say I have no idea
+ 4   because I was assuming she had worked in a talc mine
+ 5   because there was no evidence -- nobody asked her.
+ 6               So I would not be able to say the level --
+ 7   and, again, I'm just doing a -- doing a types of
+ 8   structures present, but there was platy talc
+ 9   everywhere.
+10               To answer that question, the only way I
+11   would be able to do that is go, he has a very limited
+12   exposure to brakes.  He's not doing grinding.  He's not
+13   a full-time mechanic.  And I would want to do a more
+14   comprehensive analysis, say TEM, and count up all the
+15   platy talc that's in the lungs as well as -- his lungs
+16   as well as the fibrous talc, and then try to make a
+17   decision on that, if your hypothetical is actually
+18   true.
+19   BY MR. ASHBY:
+20          Q.   Okay.  All right.  So this -- now I'm
+21   showing page 6 of what we marked as Exhibit 1.  It
+22   appears to me that this was at -- this particle that
+23   was identified on page 7 as anthophyllite/fibrous talc.
+24          Am I reading that correctly?
+25          A.   Well, that's what the analyst put down.  It
+0072
+ 1   has more of the amphibole structure than it does what
+ 2   you typically see for the fibrous talc.  So if somebody
+ 3   were to ask my opinion on it, I would say more likely
+ 4   than not that's anthophyllite.  However, without any
+ 5   selected area electron diffraction, you would not be
+ 6   able to make that call without doing some additional
+ 7   work on it.
+ 8          Q.   Okay.  So I guess I didn't understand that.
+ 9   Are you able to say without the SAED work that this is
+10   more likely than not an anthophyllite structure?
+11          A.   Just looking on how you have the plates
+12   lining up and the ends, which are different than what
+13   you're seeing on the --
+14               THE CERTIFIED STENOGRAPHER:  Excuse me.  It
+15   broke up.  Excuse me.  Repeat.
+16               THE WITNESS:  The next one, you get more of
+17   the plate, more of the talc -- fibrous talc look.  So I
+18   wouldn't say the next one was more likely than not
+19   anthophyllite.  But I'm only going on the -- you
+20   look -- the EDS is about right for anthophyllite, and
+21   the structure is about right, but I would never say,
+22   within a reasonable degree of scientific certainty,
+23   that's anthophyllite, not without getting some
+24   kind of -- you know, not without select area electron
+25   diffraction without TEM.
+0073
+ 1               Now, you can say that for the tremolite
+ 2   actinolite.  And then looking at the fibrous talc,
+ 3   the -- the EDS on that, and you're getting a little bit
+ 4   different structure, it's close.  You know, it's a
+ 5   metamorphic transformation from anthophyllite or
+ 6   tremolite to fibrous talc.
+ 7   BY MR. ASHBY:
+ 8          Q.   Okay.  So for this particular image that's
+ 9   on page 6, I just want to know what you're going to say
+10   at trial.
+11          Are you going to at trial say, more likely than
+12   not, without the SAED work, that this is an
+13   anthophyllite structure as opposed to a talc structure?
+14          A.   That's what I'm going to say.
+15          Q.   Okay.  And you're saying that based upon the
+16   morphology of the image -- of the particle in the
+17   image, right?
+18          A.   Correct.
+19          Q.   And then is there anything about the EDS or
+20   the EDAX that suggests that this particular particle
+21   that's on page 6 and 7 is more likely to be an
+22   anthophyllite structure than a talc structure?
+23          A.   No.  I'm looking at it, but you're not
+24   seeing any iron, I think.  Or are we?  Yeah.  This one
+25   does have a little bit of iron in it where the next one
+0074
+ 1   does not, and this structure is a little bit different.
+ 2          You know, it's a close call, but without
+ 3   selected area electron diffraction, you can't say
+ 4   it's -- that it absolutely is.
+ 5               MR. BLOCK:  Mr. Ashby, I don't know how
+ 6   much longer you're going to be questioning about the
+ 7   analysis of Mr. Reyes' lung tissue, but -- or what else
+ 8   you have, but I'm going to need a break pretty soon
+ 9   if -- I mean, I don't know how much more you have.
+10               MR. ASHBY:  I was just going to go through
+11   these images, not all of them, but the ones that
+12   were -- so, in any event, I just have this -- to go
+13   through these images.
+14               MR. BLOCK:  Okay.  So it sounds like we're
+15   getting close.  So go ahead.  Thank you.
+16               MR. ASHBY:  It might take a while, but
+17   we'll see.
+18               MR. BLOCK:  Okay.  Let's see how we go.
+19   We've been going for a while.
+20               THE CERTIFIED STENOGRAPHER:  The reporter
+21   needs a break as well.
+22               MR. ASHBY:  Right now?
+23               THE CERTIFIED STENOGRAPHER:  Well, when we
+24   can.
+25               MR. ASHBY:  Okay.  Well, just let me know
+0075
+ 1   and we'll take a break.  I'm not trying to not have
+ 2   breaks.
+ 3   BY MR. ASHBY:
+ 4          Q.   Okay.  So this image -- so we're on page 7
+ 5   now of Exhibit 1.
+ 6          Are you saying that you see an iron peak in
+ 7   the spectra?
+ 8          A.   Yeah.  It looks like we have a little bump
+ 9   there around 1800 or so.  That's about where I would
+10   expect it.
+11          Q.   For the picture on page 6, is that a fiber
+12   or a bundle or can you tell?
+13          A.   Oh, that would be a bundle.
+14          Q.   Can you tell how many fibers or fibrils are
+15   in the bundle?
+16          A.   Well, it's an amphibole-type structure, and
+17   I'm just counting up one, two, three, four, five,
+18   six -- one, two, three, four, five -- I would say six.
+19          Q.   The -- on page 7 of the spectra for this
+20   particle, what's that first peak?
+21          A.   Over to the side?
+22          Q.   Yeah, to the left.
+23          A.   That's either oxygen or carbon, one of the
+24   two.
+25          Q.   And what's the peak at about 700 between the
+0076
+ 1   magnesium and the silica?
+ 2          A.   That may be a small amount of aluminum.
+ 3   Probably -- probably a potential small amount of
+ 4   aluminum.
+ 5          Q.   And then between 1100 and 1200, there looks
+ 6   like there's another small peak?
+ 7          A.   Yeah, it could be.
+ 8          Q.   What could be?  Aluminum?  Between the
+ 9   magnesium and the silica?
+10          A.   Well, between the magnesium and the silica,
+11   that's -- that's potentially a small aluminum peak or a
+12   small sodium peak, one of the two.
+13          Q.   Oh, I see.  And so is that a peak between
+14   1100 and 1200?
+15          A.   It's kind of low to -- but that would be
+16   typically, I think, about where calcium would come up.
+17   But, again, you're looking at a tissue sample so you
+18   can have some of these types of materials.
+19          No, that's not calcium.  Maybe some potassium.
+20   It's hard to say.
+21          Q.   Correct.  Okay.  For the anthophyllite that
+22   you find in Johnson & Johnson cosmetic talc from
+23   Vermont, you typically have an iron peak in that
+24   anthophyllite; is that true?
+25          A.   That's true.
+0077
+ 1          Q.   And the -- and, typically, the iron peak's
+ 2   much greater than the one that we see here on page 7 of
+ 3   Exhibit 1, right?
+ 4          A.   So that's not an iron peak.  There is no
+ 5   iron peak here.
+ 6          Q.   Oh, I thought you said that might be an iron
+ 7   peak.
+ 8          A.   No.  It's too -- it's not in the right
+ 9   place.
+10          Q.   Okay.  So let's just get that clear.  We're
+11   on page 7 of Exhibit 1, and this is Stub 2,
+12   Structure 3.
+13          And you're saying that that peak that is around
+14   1900 is not an iron peak; is that right?
+15          A.   It is not.
+16          Q.   Okay.
+17          A.   I'm not sure what that is because it's so
+18   low.
+19          Q.   Okay.  So then back to my question.  For the
+20   anthophyllite that you're finding in the Johnson &
+21   Johnson talc products, you're seeing in that
+22   anthophyllite iron peaks, right?
+23          A.   The same with the fibrous talc, and neither
+24   of those are here for that.  And I don't know what
+25   happens with the iron peak.  And they're small.  What
+0078
+ 1   happens to that when it's been in the body for a while?
+ 2          Q.   Okay.  We can agree, though, that looking at
+ 3   this particle on page 7 that if we were to overlay
+ 4   spectra from the anthophyllite that you're finding in
+ 5   Johnson & Johnson cosmetic talc, they would not be a
+ 6   match for the iron, correct?
+ 7          A.   From what's in the container, I would expect
+ 8   to see some iron.
+ 9          Q.   Right.  And you do not see iron here, right?
+10          A.   I do not.
+11          Q.   Okay.  Let's move to picture --
+12               THE CERTIFIED STENOGRAPHER:  May we take a
+13   break?
+14               MR. ASHBY:  Yeah.  Of course, yeah.  And I
+15   was going to -- and we're off the record, but I was
+16   going to go to page 8.
+17               THE CERTIFIED STENOGRAPHER:  We're off the
+18   record.
+19               (Recess taken from 11:40 to 11:52.)
+20               THE CERTIFIED STENOGRAPHER:  We are back on
+21   the record at 11:52.
+22   BY MR. ASHBY:
+23          Q.   I'm on page 8 now of Exhibit 1.  And there's
+24   a structure there that the analyst called fibrous talc.
+25               MR. BLOCK:  Do you want to share your
+0079
+ 1   screen, Mr. Ashby?
+ 2               MR. ASHBY:  Oh, I forgot I wasn't.
+ 3               THE WITNESS:  I mean, I have it.
+ 4               MR. BLOCK:  Yeah.  I'd like to see it.  I'd
+ 5   like to see it.  Thank you.
+ 6   BY MR. ASHBY:
+ 7          Q.   Okay.  So back to my question.  I've put up
+ 8   now on the screen -- this is page 8 of Exhibit 1.  And
+ 9   there's an image there that it looks like someone at
+10   MAS has called fibrous talc; is that right?
+11          A.   That's right.
+12          Q.   So do you know why this was determined to be
+13   fibrous talc and not, like the last structure we looked
+14   at, anthophyllite or possibly fibrous talc?
+15          A.   This one -- the chemistry matches more, but
+16   you have some of this irregular structure at the end.
+17   So, you know, it's a toss-up.  But just to be
+18   conservative, I'm going to call it fibrous talc.
+19          Q.   Okay.  So let me understand.  In the --
+20   something about the morphology suggests to you that
+21   this is more likely to be fibrous talc than
+22   anthophyllite; is that right?
+23          A.   You're getting somewhat wider plates, and
+24   you've got -- you have some of these jagged edges on
+25   the side.  So I would have to call that -- I would call
+0080
+ 1   that more fibrous talc than anthophyllite, but this one
+ 2   is very close.
+ 3          Q.   Is there anything about the EDS on page 9
+ 4   that indicates that this is more likely to be fibrous
+ 5   talc or more likely to be anthophyllite?
+ 6          A.   You know, without running standards in here,
+ 7   it's about right.
+ 8          Q.   It's about right for talc?
+ 9          A.   For both.
+10          Q.   Well, okay.  That's what I thought you
+11   meant.  In the image on page 8 of Exhibit 1, is that a
+12   bundle or a single particle or can you tell?
+13          A.   That would be a bundle.
+14          Q.   Can you tell whether or not the image on
+15   page 8 is asbestiform talc?
+16          A.   My real opinion that if it meets -- that it
+17   would be asbestiform.  It's fibrous.  It's, you know,
+18   metamorphic from either amphibole or tremolite
+19   asbestos.  I would call it asbestiform.
+20          Q.   Can you tell by looking at that structure on
+21   page 8 whether or not that structure derived originally
+22   from an asbestiform talc habit in the earth?
+23               MR. BLOCK:  Objection; form.
+24               THE WITNESS:  Well, there's no such thing
+25   as an asbestiform talc habit.
+0081
+ 1               Talc -- fibrous talc is a metamorphic over
+ 2   time from either anthophyllite, tremolite slash -- or
+ 3   in the case where you have chrysotile -- from
+ 4   chrysotile.  So it all starts out as platy talc, and it
+ 5   stays platy talc.  So you don't have tech -- what you
+ 6   would call an asbestiform habit talc.
+ 7   BY MR. ASHBY:
+ 8          Q.   Uh-huh.  So is it your opinion that talc
+ 9   cannot grow or crystalize in an asbestiform habit?
+10               MR. BLOCK:  Objection to form.
+11               THE WITNESS:  Not talc.  I'm saying fibrous
+12   talc.  Everything I've read, it's a metamorphic, and
+13   that's why you'll find half chrysotile and half fibrous
+14   talc.  I've shown a number of those examples in the
+15   Prudencio case.
+16   BY MR. ASHBY:
+17          Q.   Okay.  All right.  Let's go to -- oh, on
+18   page 9 of Exhibit 1, which is the EDS for the
+19   structure, what's that big first peak, if you can tell?
+20          A.   That should be carbon.
+21          Q.   And then what is that second large peak?
+22          A.   I believe that's oxygen.
+23          Q.   All right.  Was there any copper in any of
+24   these structures?  I didn't see it, but maybe you know
+25   by having looked at these.
+0082
+ 1          A.   No copper because it's on a carbon stub.  So
+ 2   you're not getting the copper peaks like you would with
+ 3   TEM.
+ 4          Q.   Okay.  All right.  So this is -- I've moved
+ 5   now to page 10 of Exhibit 1, and this looks to be a
+ 6   structure that was identified as fibrous talc/depleted
+ 7   Mg chrysotile.
+ 8          Am I correlating the title with the right
+ 9   picture?
+10          A.   I would only call that -- it's not fibrous
+11   talc because you don't get any flexibility like that
+12   with fibrous talc that I've ever seen, and that's what
+13   Dr. Abrams calls magnesium-depleted chrysotile.
+14          Q.   So -- all right.  So on page 11 of
+15   Exhibit 1, there's EDS that's labeled "fibrous
+16   talc/depleted magnesium chrysotile"; is that right?
+17          A.   That's what the analyst put on there.
+18          Q.   Okay.  I'm just trying to understand.  And
+19   that's -- the analyst at MAS put that on there in
+20   relation to the image at page 10 of Exhibit 1, right?
+21          A.   Correct.
+22          Q.   Okay.  So I just wanted to understand if
+23   that was an -- it' an MAS designation or a -- a
+24   Dr. Abraham designation.  And it --
+25          A.   Well, Dr. Abraham, I've seen a number of his
+0083
+ 1   reports where he will -- and he has testified to very
+ 2   strongly that the chrysotile will be depleted of
+ 3   magnesium over time.
+ 4          Q.   Yeah.
+ 5          A.   And he called it in his report, and he's
+ 6   looked at a lot more of these than I have by just SEM.
+ 7   If you look at the morphology of this, you do not see
+ 8   these types of flexibility at all with either fibrous
+ 9   talc or anthophyllite, but you do have that, and this
+10   is one, two, three structures here that are close to
+11   being about the right -- you know, about the right
+12   size.  You know, you've got three across, which
+13   is about half a -- three --
+14               THE CERTIFIED STENOGRAPHER:  Excuse me.
+15   You're breaking up, Doctor.
+16               THE WITNESS:  About three or four.  So --
+17   and if you look at the chemistry, this is a thin
+18   window -- I mean, a detector that where if it was
+19   magnesium -- if it was just plain chrysotile, the
+20   magnesium would be higher.  It's not fibrous talc.  And
+21   Dr. Abrams calls those kind of structures magnesium-
+22   depleted chrysotile.  I have no reason to dispute that.
+23   BY MR. ASHBY:
+24          Q.   Okay.  The analyst at MAS was unable to
+25   determine whether or not it was fibrous talc or
+0084
+ 1   depleted-magnesium chrysotile; is that correct?
+ 2          A.   Actually, the analyst put both in there.
+ 3   When I looked at it when talking to her, I said -- I
+ 4   told her it was magnesium-depleted talc, but she put
+ 5   both on there, anyway.  So if I was running the SEM, I
+ 6   would not have done that.
+ 7          Q.   Who was the analyst that looked at these
+ 8   stubs in the SEM?
+ 9          A.   That is Ms. Stempski.
+10   BY MR. ASHBY:
+11          Q.   That's --
+12          A.   I'll spell that for you later.
+13          Q.   That's a new name for me.  What was it?
+14          A.   Her name is Elyse Stempski.
+15          Q.   Stempski, okay.  Might as well spell it now.
+16   Is it S-t-e-m-p-s-k-e?
+17          A.   I.
+18          Q.   I.  All right.
+19          A.   And E-l-y-s-e, first name.
+20          Q.   And she's the one that looked at all of
+21   these images that we see here in Exhibit 1?
+22          A.   Yes.  She's our field emission SEM
+23   specialist.
+24          Q.   Okay.  So this was using an FESM, correct?
+25          A.   FESEM.
+0085
+ 1          Q.   Yeah.
+ 2               MR. BLOCK:  I'm sorry.  Mr. Ashby, I just
+ 3   want to make sure we have a clear record.  I couldn't
+ 4   hear through the Zoom.  Dr. Longo said he told
+ 5   Ms. Stempski that it was magnesium-depleted, and I did
+ 6   not hear whether he said "talc" or "chrysotile."  I
+ 7   just wanted to make sure what -- what he said because I
+ 8   could not hear.
+ 9               THE WITNESS:  I told her that that was
+10   non-fibrous talc.  That was magnesium-depleted
+11   chrysotile, as described by Dr. Abrams.  She did not
+12   make the change on her EDS.
+13   BY MR. ASHBY:
+14          Q.   Okay.  Did she disagree with you, if you
+15   know?
+16          A.   No.  She didn't disagree.  She's a good SEM
+17   analyst and has similar chemistry as what you would
+18   expect for talc, but she's not as familiar with the
+19   morphology aspect of that, what you would expect --
+20          Q.   Okay.
+21          A.   -- versus fibrous talc.
+22          Q.   Okay.  So let's see if I can parse that out.
+23          With respect to the EDS on page 11, is there
+24   anything about that spectra that indicates to you that
+25   this structure is more likely to be fibrous talc or
+0086
+ 1   more likely to be depleted-magnesium chrysotile based
+ 2   on the spectra alone?
+ 3          A.   If you're basing it on the spectra alone and
+ 4   you don't have any information that this came out of
+ 5   the human body, I would call -- in a single particle
+ 6   like that laying on a filter carbon coated, I would
+ 7   have said that's more like fibrous talc, but I would
+ 8   have a problem with that morphology.
+ 9          Q.   I understand.  And then the -- if we look at
+10   the -- if we bring the morphology into it, then that's
+11   when you start feeling more comfortable that what
+12   you're looking at is a chrysotile with a spectra that's
+13   showing some depletion of the magnesium because they're
+14   not in the ratio between the magnesium and the silica
+15   that you would expect for chrysotile; is that right?
+16          A.   Correct.
+17          Q.   And you're used to seeing for -- at least
+18   your standards, the magnesium to silica ratio for
+19   chrysotile is usually about 1 to 1; is that right?
+20          A.   For these type of detectors, that's correct.
+21          Q.   Is it different in the TEM than it would be
+22   for the SEM?
+23          A.   Yes and no.
+24          Q.   Okay.  Is that --
+25          A.   Yes, it would be different if you're using
+0087
+ 1   the -- the silicon drift detectors that's not as
+ 2   sensitive for the magnesium -- if you look at the
+ 3   structure of chrysotile, it has more magnesium than
+ 4   silicon -- but if you've got a thin window or beryllium
+ 5   window on the EDS detector, then there usually will --
+ 6               THE CERTIFIED STENOGRAPHER:  Excuse me.
+ 7   The end of your answer, please.
+ 8               THE WITNESS:  You're using a thin window or
+ 9   a beryllium window or the ratio to silicon to magnesium
+10   is usually 1 to 1.
+11   BY MR. ASHBY:
+12          Q.   And then you lost me.  Is that in the TEM or
+13   the SEM?
+14          A.   Both.
+15          Q.   Okay.
+16          A.   Depends on the detector.
+17          Q.   I understand.  Okay.  And so looking at the
+18   morphology of this particle on page 10 of Exhibit 1,
+19   are you able to say that that is not a talc ribbon?
+20          A.   That is not a talc ribbon.
+21          Q.   So -- and why is that?
+22          A.   Talc ribbons are usually --
+23               THE CERTIFIED STENOGRAPHER:  Excuse me.
+24   It's breaking up.
+25               THE WITNESS:  -- does not have that
+0088
+ 1   structure.
+ 2               THE CERTIFIED STENOGRAPHER:  It is still
+ 3   breaking up.
+ 4               THE WITNESS:  Nothing I can do at this
+ 5   moment.  I can maybe log back in.
+ 6               MR. BLOCK:  No.  Dr. Longo, just pause and
+ 7   just start your answer again.
+ 8               THE WITNESS:  That is not a talc ribbon.
+ 9   It doesn't have the right structure.  Talc ribbon is
+10   usually -- does not have multiple easily distinguished
+11   individual structures.
+12   BY MR. ASHBY:
+13          Q.   How many individual structures do you see in
+14   the image on page 10?
+15          A.   A minimum of three.
+16          Q.   And you have not seen, in your reporting of
+17   cosmetic talc litigation, a talc ribbon with three
+18   structures?
+19          A.   We very rarely ever see a talc ribbon.
+20   Occasionally.
+21          Q.   And when you do, how many structures will it
+22   have?
+23          A.   Just one.  Just like a ribbon.
+24          Q.   So would you agree with me that there are
+25   other particles beyond talc and magnesium-depleted
+0089
+ 1   chrysotile that could have a similar EDS spectra as to
+ 2   what we see on page 11?
+ 3          A.   I can't think of one.
+ 4          Q.   Okay.  What -- what would a silica fiber
+ 5   have for EDS spectra differently than what I see on
+ 6   page 11?
+ 7          A.   No magnesium.
+ 8          Q.   The same for glass?  Would glass have
+ 9   magnesium?
+10          A.   No.
+11          Q.   For any of the chrysotile that you found in
+12   any Johnson & Johnson cosmetic talc products, do you
+13   have EDAX spectra for those particles?
+14          A.   Since we only have PLM for what we have
+15   done, the answer would be no.  AMA has EDS spectra.  I
+16   don't remember what kind of detector he had because he
+17   did TEM, and there has been some others.
+18          Q.   Okay.  So can we agree that for all of the
+19   chrysotile that MAS has reported in Johnson & Johnson
+20   talc products, MAS has no chemistry analysis through
+21   EDS for those particles?
+22          A.   It's all -- that's correct.
+23          Q.   And can we agree that there's no chemistry
+24   analysis data at MAS regarding chrysotile found in
+25   Johnson & Johnson talc products that we can match to
+0090
+ 1   the magnesium-depleted chrysotile that we see on
+ 2   page 11?
+ 3          A.   You wouldn't have a match.  You can only
+ 4   match with what's coming out of the body that's been in
+ 5   there for a while.  And magnesium is typically the
+ 6   first to go or the easiest to go because of the bio
+ 7   persistence.
+ 8          Q.   Right.  But, for example, there's some
+ 9   chrysotile that contains iron, right?
+10          A.   Small -- it depends on the mine.
+11          Q.   Okay.
+12          A.   I've seen it in the Canadian mines.  And
+13   sometimes you see it, sometimes you don't.  Just
+14   depends on the chemistry of any particular mine and
+15   where the chrysotile is taken out of that mine.
+16          Q.   Uh-huh.  When MAS has looked at NSB-1866
+17   chrysotile standards, MAS has found iron peaks in the
+18   chrysotile, true?
+19          A.   Maybe.  I don't recall.
+20          Q.   Okay.  But we can agree that there are some
+21   chrysotile-referenced standards that would include
+22   small iron peaks, right?
+23          A.   Again, it's been a while since I've looked
+24   at a TEM and tried to figure out on chrysotile and, you
+25   know, the 1866-B how much has iron and how much
+0091
+ 1   doesn't.
+ 2          Q.   Okay.  I'm going to move to page 12 of
+ 3   Exhibit 1, and this is a particle that was identified
+ 4   by Ms. Stempski as fibrous talc, correct?
+ 5          A.   Correct.
+ 6          Q.   Do you agree or disagree with the
+ 7   designation of this particle on page 12 as fibrous
+ 8   talc?
+ 9          A.   This would be another toss-up because of the
+10   structure, but I don't have a problem with that.  If it
+11   was just one piece, you could almost call that somewhat
+12   of a ribbon, but it usually will be twisted.  So I
+13   would just leave it as fibrous talc.
+14          Q.   Okay.  But you favor calling this talc over
+15   anthophyllite; is that true?
+16          A.   I would say it was 50/50.
+17          Q.   Is that a bundle that I see on page 12 of
+18   Exhibit 1 or is that a single crystal?
+19          A.   No, there's at least two structures there.
+20          Q.   Would you call it a bundle?
+21          A.   If you use the ISO counting rules, that
+22   would be a bundle.  If you use the EPA counting rules,
+23   that would be two fibers.
+24          Q.   Well, in the images, there's, like, these --
+25   it's squares or maybe rectangles where there's
+0092
+ 1   different shading.  I assume that has something to do
+ 2   with where the -- the SEM is being focused, but I just
+ 3   don't know, and I thought I would ask.
+ 4          Do you see what I'm talking about where the --
+ 5   there might -- there would be a rectangle that's a
+ 6   little darker?  So, for example, on this one, it's at
+ 7   the end of the particle.
+ 8               MR. BLOCK:  Objection to form.
+ 9   BY MR. ASHBY:
+10          Q.   Is that right?
+11               MR. BLOCK:  Objection to form.
+12               THE WITNESS:  A rectangle?
+13   BY MR. ASHBY:
+14          Q.   Yeah.  So, here, let me see if I can zoom
+15   in.
+16          A.   No.  That's just some contrast differences.
+17   It's unclear what that is.
+18          Q.   Yeah.  Okay.  So do you see what I'm talking
+19   about at the end of this particle on page 12?  I've
+20   tried to zoom it in, and I'm putting the cursor around
+21   it.
+22          Do you see what I'm indicating in the screen?
+23          A.   Yes.  So we don't know if that's just
+24   another small piece of talc, and you just can't see it
+25   as much because there's no contrast there.  So it's
+0093
+ 1   hard to say.
+ 2          Q.   No, no.  What I'm asking is:  What is the
+ 3   rectangle?  What the --
+ 4          A.   Oh, that rectangle?
+ 5          Q.   Yeah.
+ 6          A.   That's where the SEM operator did a scan for
+ 7   the EDXA on just that area, and it caused some beam
+ 8   damage.
+ 9          Q.   Oh, I see.  Okay.  So -- okay.
+10          So everywhere I see one of those darker
+11   rectangles is where the beam was directed for the EDXA?
+12          A.   Correct.  It was scanned over that surface
+13   in a rectangle area just to get that area versus the
+14   TEM where you would take it down through a small --
+15          Q.   Right.  I understand.
+16               THE CERTIFIED STENOGRAPHER:  I'm sorry.
+17   Please repeat.  Where you would take it down?
+18               THE WITNESS:  To a small spot size.
+19   BY MR. ASHBY:
+20          Q.   Right.  So if I zoom in on the other end of
+21   the particle -- which I'll try to do here and hopefully
+22   you can see this -- there's another -- do you see
+23   another black box?
+24          A.   Yes.
+25          Q.   So does that mean there were two scans taken
+0094
+ 1   for chemistry of this particle on -- at different
+ 2   points on the particle?
+ 3          A.   No, not necessarily.  Also, when you
+ 4   increase the magnification, if you're looking at a
+ 5   higher mag it will do the same thing.
+ 6          Q.   I -- so -- what do you mean?  I guess I'm
+ 7   not understanding that.
+ 8          So if I see -- let's see if I can see it on
+ 9   another one.
+10          So, like, this one.  So now I'm back up on
+11   page 2 of Exhibit 1, and I see a black box sort of in
+12   the top right of the talc plate, and then it's pulling
+13   up this other smaller particle.
+14          Does that black box indicate where the scanning
+15   was done for the chemistry?
+16          A.   It's either that but, more likely it also
+17   was going up on a higher magnification.  And then how
+18   it goes up on a higher magnification, it looks like a
+19   smaller and smaller area.
+20          Q.   Okay.  So I see what you're saying.
+21          So now I'm on page 5 of Exhibit 1.  You can very
+22   clearly see the -- maybe I need to zoom in -- very
+23   clearly see the residue of the scan.
+24          So you're saying the scanning electron
+25   microscope can be zoomed out in such a way that it's
+0095
+ 1   only scanning this tail end of this particle on page 6?
+ 2          A.   Yes.  The -- an SEM analyst would do that on
+ 3   a couple of reasons.  One, you focus at a higher
+ 4   magnification; so you go to lower magnifications and
+ 5   focus.  Two, in the EDS at times, you'll be at 10 kV
+ 6   versus these were all taken at 1 kV to get more surface
+ 7   features.
+ 8          So there's a number of reasons why that can
+ 9   happen.
+10          Q.   This one I still don't understand, though,
+11   on page 12.  It looks to me like there's two different
+12   scans being done.
+13          Are you saying there is only one scan that was
+14   done on the image or the particle on page 12?
+15          A.   No.  That other area may have been examined
+16   at a higher magnification.  May have been scanned at
+17   10,000 volts instead of one, which would cause those
+18   marks to be left to focus it before going down to 1 kV.
+19   So there's a number of ways that can happen.
+20          Q.   Would -- if there were two scans done at
+21   different kV, would there be two different spectra for
+22   that particular particle?
+23          A.   No.  You would only take one spectra unless
+24   you for some reason thought something was different.
+25          I'll have to remind her to not put any more scan
+0096
+ 1   marks in there so that we can eliminate these
+ 2   questions.
+ 3          Q.   Well, just when I see something that looks
+ 4   like two scans and then I only get one spectra, I get
+ 5   curious.
+ 6          A.   I understand.
+ 7          Q.   All right.  I'm going to move to page 8 --
+ 8   skip ahead to page 18.
+ 9          And this looks like a structure that
+10   Ms. Stempski identified as tremolite on page 19 of
+11   Exhibit 1; is that right?
+12          A.   Yes.
+13          Q.   Looking at page 18 of Exhibit 1, can you
+14   tell whether or not that particle is a bundle?
+15          A.   I would call that a bundle.
+16          Q.   And what do you see -- and let me zoom in --
+17   what do you see in that particle that tells you that
+18   it's a bundle?
+19          A.   Multiple structures in the particle.  I see
+20   at least three at the surface.  One on the right-hand
+21   side running diagonally.  And then you can see some
+22   lines along where the other ones are.
+23          Q.   Can you tell how many structures are in that
+24   bundle?
+25          A.   Not without guessing.
+0097
+ 1          Q.   I'm on page 19 now of Exhibit 1.
+ 2          There's -- what is that first peak in the
+ 3   spectra?
+ 4          A.   Again, I believe that's the carbon peak.
+ 5   The next little one, probably oxygen.  And then
+ 6   Ms. Stempski is saying there's a little bit of sodium.
+ 7   And then we have the magnesium peak, which would be
+ 8   consistent with tremolite.  You have some aluminum.  I
+ 9   don't know if that's from the body.  But tremolite can
+10   have some aluminum in it.
+11          And then, of course, the silicon and calcium and
+12   iron.  And the magnesium and calcium are at the right
+13   ratios.  So I don't have any problem with that being
+14   tremolite -- I would say only tremolite.  The iron is
+15   too low for it to be actinolite, in my opinion.
+16          Q.   Okay.  Do you see that there's a small peak
+17   at about the 1100 to 1200 channel?
+18          A.   Yeah, that's possible.
+19          Q.   What would that be?
+20          A.   Well, you have a little particle next to it
+21   that could be potassium.  It would account for the
+22   aluminum.  So you may have a small piece of mica right
+23   there that got in the way of the EDSA or -- I don't
+24   know.
+25          Q.   Okay.  Okay.  So it's possible that that's
+0098
+ 1   interference of some kind?
+ 2          A.   Could be.
+ 3          Q.   And then there's another small peak after
+ 4   the calcium.
+ 5          Do you know what chemical that would be -- or
+ 6   element that would be?  Sorry?
+ 7          A.   If that's a real peak.  I don't know.
+ 8          Q.   Okay.  Have you determined whether or not
+ 9   these peaks in the spectra are a match for tremolite
+10   that you're finding in Johnson & Johnson cosmetic talc
+11   products?
+12          A.   Except the aluminum and the potential
+13   potassium because of the mica, everything else matches.
+14          Q.   Are you seeing whether it's -- well, I'll
+15   strike that.
+16          Are the peaks in the tremolite chemistry any
+17   different based on the region in which the talc was
+18   mined, at least for the tremolite you're finding in any
+19   of the cosmetic talc products from Johnson & Johnson?
+20          A.   No, they're fairly consistent with what we
+21   see in all three mines.
+22          Q.   Okay.  When you say "all three," which --
+23   what are the three, at least in your head you're
+24   thinking of?  Is it Vermont, Italy, and -- what's the
+25   third?
+0099
+ 1          A.   And Chinese.
+ 2          Q.   Okay.  What about the Korean talc?
+ 3          A.   The Korean talc is the same.
+ 4          Q.   What's that?
+ 5          A.   I said let me just thumb through real quick
+ 6   and see if there's anything different about it.
+ 7          They all look the same.  They all have the same
+ 8   ratios.
+ 9          Q.   Okay.  Are these ratios also the same as
+10   tremolite that MAS finds in brake products?
+11          A.   Yes.
+12          Q.   Okay.  Is there anything about that
+13   particular particle, just by looking at the morphology
+14   and the spectra, that tells you this particle came from
+15   cosmetic talc versus a brake product?
+16          A.   If all you had was just the particle and EDS
+17   and you had no information a -- if you were just
+18   looking at the particle -- if you're looking at this
+19   bundle in EDS and you had -- nobody was telling you
+20   where it came from or what other evidence you had
+21   associated with this particle and the evidence on what
+22   this individual did, you would have to say this is the
+23   same chemistry you would expect in -- from the Italian
+24   mine, from the Vermont mine, from the Chinese mine, as
+25   well as from the -- as well as the tremolite you find
+0100
+ 1   in chrysotile mines.  But then if you look at the other
+ 2   materials that were -- the other materials that were
+ 3   found in the -- Mr. Reyes' lungs, I don't think you can
+ 4   conclude anything but this tremolite came from the
+ 5   cosmetic talc.
+ 6          Q.   Is it your opinion that Mr. Reyes was
+ 7   exposed to tremolite asbestos from exposure to brake
+ 8   products?
+ 9          A.   He had the potential, but because it was
+10   such a little amount of brake work, it's hard to say if
+11   what he was exposed to included any significant amount
+12   of tremolite.  But considering both the Korean talc
+13   that he was exposed to that has, essentially, come from
+14   a tremolytic talc mine and then, of course, the
+15   Vermont, which you would expect mostly anthophyllite
+16   from the analysis.
+17          The Chinese, you're going to have some
+18   amphibole, but it's not what I would call an amphibole
+19   mine like you would -- an amphibole asbestos mine like
+20   Vermont and Italy.
+21          Q.   Okay.  So it sounded like you said to me
+22   that you can't, based on this particle alone, say that
+23   it was sourced or came from any cosmetic talc product,
+24   just based on looking at the particle alone; is that
+25   true?
+0101
+ 1          A.   Well, that's not exactly -- to me, you can't
+ 2   say that it didn't come from a cosmetic talc source if
+ 3   that's all you have is looking at that particle.  What
+ 4   you could say is if you're looking at the -- either the
+ 5   magnesium, which is what you see in the Korean mine,
+ 6   the ratios are a little different, the magnesium is
+ 7   higher.  But, you know, that's what would happen in the
+ 8   body.
+ 9          So, you know, but we're not making that judgment
+10   blind.  This is not -- I don't have just a single
+11   particle that I'm looking at, and I don't have any
+12   information starting all the way to the evidence
+13   that -- the exposure, and then everything else.
+14          The mica, which is routinely found in these talc
+15   mines, especially the Vermont, the platy talc, the
+16   fibrous talc.  In my opinion, this analysis is a
+17   match -- is what I would expect to see for somebody
+18   who's had a lot of exposure to cosmetic talc.
+19          Q.   Uh-huh.  It would also be a match for
+20   somebody that was exposed to brake products that
+21   contained anthophyllite, tremolite, talc, and
+22   chrysotile, right?
+23               MR. BLOCK:  Objection to form.
+24               THE WITNESS:  If your hypothetical was
+25   correct, I wouldn't expect this kind of loading unless
+0102
+ 1   it was an individual who was a full-time mechanic.
+ 2   And, you know, we don't have to debate that, you know,
+ 3   the brakes shoes that I'm aware -- that I've looked at
+ 4   over the years, I've not seen talc in there because
+ 5   we've done a lot of Addison and Davies on brakes and I
+ 6   don't ever us -- remember seeing any talc still left in
+ 7   there.
+ 8               So your hypothetical is -- is not based on
+ 9   the facts, but it is a hypothetical.  But I wouldn't
+10   expect your hypothetical, even if it was correct, to
+11   have this much material platy talc, fibrous talc, on
+12   the -- on this limited amount of brake work that
+13   Mr. Reyes did.
+14   BY MR. ASHBY:
+15          Q.   Let me see if I can pull up what I've marked
+16   as Exhibit 2, quickly.  I'll have to show it to you.
+17          So Exhibit 2 is a letter that I received from
+18   the Kazan office, and it's dated July 21, 2021.  And it
+19   includes a list of analyses that MAS has performed that
+20   you, Dr. Longo, are purportedly relying upon.
+21          In this list, in addition to cosmetic talc
+22   testing that you've done, there are brake analyses
+23   and -- starting here.  So the first one was in
+24   August 15, 2004, compressed air blowout of
+25   asbestos-containing brake dust.
+0103
+ 1          Do you see that in the letter here?
+ 2          A.   I do.
+ 3          Q.   And there's several others.  There's some --
+ 4   there's one for a June 2005 detection of amphibole
+ 5   asbestos in chrysotile brake linings.
+ 6          Do you see that there?
+ 7          A.   I do.
+ 8          Q.   There's a -- all of your brake reliance
+ 9   materials listed.  Do you see that?
+10          A.   I do.
+11          Q.   Are -- the materials that I see here listed
+12   in this letter from Maegan Wilborn, who is a paralegal
+13   at the Kazan office, are all of these brake-related MAS
+14   studies, studies that you'll be relying upon in the
+15   Reyes case?
+16          A.   Those are the studies that I've picked that
+17   were substantially similar to what Mr. Reyes testified
+18   to what he was -- what he did with the brakes.
+19   Compressed air blowout was toward the end he was
+20   working on, but he did say he sanded the surfaces.
+21          So those are -- and he also -- so those are the
+22   types of materials that would be -- that would be a
+23   fair and accurate representation of what he testified
+24   to that he did.  I'm not here to say that he did not
+25   have asbestos brake exposure.  I'm just saying that if
+0104
+ 1   you compare the 2- to the 3- or 400 bottles that he
+ 2   used over time of Johnson's baby powder versus the
+ 3   brakes, the brakes are minimus at best.
+ 4          Q.   Uh-huh.  Uh-huh.  But you're not saying that
+ 5   he was not exposed to asbestos from --
+ 6          A.   Oh, no.
+ 7          Q.   Okay.
+ 8          A.   I think Volume 4 of my deposition we had
+ 9   about 40 pages of that.
+10          Q.   I understand.  I thought you were -- in
+11   my -- okay.  In any event, some of those folks aren't
+12   around anymore, so I couldn't tell if you were changing
+13   your testimony.  That's fine.
+14          A.   No.  I'm not changing my testimony.  You
+15   guys are too good for that.  And I would --
+16               MR. BLOCK:  Note the laughter for the
+17   record.
+18               MR. ASHBY:  Yeah, everybody was joking.
+19   Whoever reads this shouldn't take any of that serious.
+20   BY MR. ASHBY:
+21          Q.   Is it true that the brake studies from MAS
+22   that I see on this letter from Ms. Wilborn are the ones
+23   that you selected as studies that you would be relying
+24   upon in the Reyes case?
+25          A.   Yes.  I was asked which studies that was
+0105
+ 1   applicable to what Mr. Reyes did, and these are the
+ 2   ones we picked.
+ 3          Q.   I see.
+ 4          A.   So he did some sanding, he used some
+ 5   compressed air.  And I normally just put all my brake
+ 6   reliance materials on, and there's a few in there on
+ 7   compressed air blow out.  Not too many on hand sanding.
+ 8   And I think there is one study, a Selikoff study, where
+ 9   they did measure exposure from using a brush to clean
+10   out the brake drum, and I believe Mr. Reyes did talk
+11   about that.
+12          Q.   Did you put this list together of brake
+13   studies before or after the -- you learned of the
+14   particles that were being found by Abraham's office and
+15   then by your office in Mr. Reyes' lung tissue?
+16          A.   Before.
+17          Q.   Okay.  Did you exclude any brake studies in
+18   which MAS found talc, fibrous talc, and anthophyllite
+19   in brakes that MAS studied?
+20               MR. BLOCK:  Objection to form.
+21               THE WITNESS:  No.
+22   BY MR. ASHBY:
+23          Q.   I'm sorry.  Did you intend to --
+24          A.   I said, no, I didn't exclude anything, but I
+25   just picked the studies that were applicable here.
+0106
+ 1          Q.   So if MAS has a study in which it looked at
+ 2   brakes and found anthophyllite, talc, tremolite, and
+ 3   chrysotile in those brakes, you did not intentionally
+ 4   exclude that study from your list, right?
+ 5          A.   No.  I don't recall us ever finding all
+ 6   those different ingredients in a brake.  And a lot of
+ 7   these studies have been done, you know, 20 -- coming up
+ 8   to 20 years ago.  So I'm not going to say we have never
+ 9   found it.  I just -- sitting here right now, I don't
+10   recall where it had all the ingredients that we're
+11   finding -- all the different minerals or ingredients
+12   that are being found in Mr. Reyes' lungs.
+13          Q.   Okay.  All right.  So did I -- oh.
+14          Sorry.  Give me a second.
+15          Okay.  All right.  So I wanted to go to page 20
+16   now of Exhibit 1.
+17          This looks like -- so the image on page 20 of
+18   Exhibit 1 looks to be something that Ms. Stempski
+19   identified as fibrous talc; is that right?
+20          A.   Yes.
+21          Q.   Do you agree with Ms. Stempski that that is
+22   fibrous talc?
+23          A.   It has the type of structure that I would
+24   expect.  Again, to be conservative, I would call it
+25   fibrous talc and not that it could be either-or.
+0107
+ 1          Q.   Uh-huh.
+ 2          On page 21, do you see there's, like, a little
+ 3   peak right here between 1100 and 1200?  Do you have any
+ 4   idea what that might be?
+ 5          A.   No.  That seems to be showing up on each of
+ 6   these analyses.
+ 7          Q.   Uh-huh.
+ 8          A.   I would have to go back and see what they've
+ 9   coated this SEM stub with to make it conductive, if
+10   that's some of the metal or not.  I don't know.
+11          Q.   Yeah, that's fine.  This -- the particle
+12   that we see or the structure that we see on page 20, do
+13   you have an opinion as to whether or not that's a
+14   bundle?
+15          A.   It has multiple structures.  It's not
+16   like -- you know, certainly not platy talc, and it has
+17   multiple structures there.  So this would -- this would
+18   classify -- classify as a bundle.
+19          Q.   Okay.  Sorry.  Okay.
+20          All right.  There -- do you see on page 20 -- I
+21   tried to zoom in -- we have our black box again, and it
+22   looks like it's picking up the big, larger particle,
+23   and it's also picking up this smaller particle on the
+24   top left corner on page 20.
+25          Do you see what I'm referring to here?
+0108
+ 1          A.   Yes.
+ 2          Q.   So is the spectra that we see on page 21 of
+ 3   this much larger particle or is it of the small
+ 4   particle here?
+ 5          A.   It's -- the spectra would be the very large
+ 6   particle.  That's from -- from imaging and going up at
+ 7   higher magnification to get it in focus, so at low
+ 8   magnification everything is in focus.
+ 9          Q.   Right.  And I see what you're saying.  It
+10   starts off wide, and then when she zooms in to do the
+11   scanning, this box gets much smaller, I think is what
+12   you're saying, right?
+13          A.   (No verbal response.)
+14          Q.   Do you know what this particle is, though,
+15   up in the top left of the -- of the small scanning box?
+16          Can you see it on the screen that I'm -- I'm
+17   trying to --
+18          A.   I would say that's probably fibrous talc.
+19   If it was anything different, you know, we --
+20               THE CERTIFIED STENOGRAPHER:  It's breaking
+21   up.  Please repeat.
+22               THE WITNESS:  If it was anything different
+23   than just fibrous talc, we would have analyzed it and
+24   taken a picture of it by itself.
+25   BY MR. ASHBY:
+0109
+ 1          Q.   Okay.  Next is page 22.  This looks to be a
+ 2   structure that Ms. Stempski identified as tremolite; is
+ 3   that right?
+ 4          A.   Yeah.
+ 5          Q.   This one -- and on the spectra on page 23,
+ 6   it doesn't look like she tagged any sodium; is that
+ 7   right or am I just misinterpreting this?
+ 8          A.   We didn't put sodium down there on the
+ 9   right-hand side -- excuse me -- left-hand side of the
+10   magnesium, but that's probably a sodium peak.  We
+11   probably have a potassium peak between the silicon and
+12   the calcium, I think.
+13          Q.   Okay.  So --
+14          A.   It's about where you would expect it.
+15          Q.   Okay.  So this is -- I --
+16          A.   Or maybe it's in the middle.  I don't know
+17   what those little peaks are.  I'll have to remind her
+18   that she needs to tag them all so I don't have to go
+19   look them up on exactly what's coming up there.
+20          Q.   Right.  Because on page 18, we don't see
+21   this peak here at about 11- -- that's about 1100 to
+22   1200.  I can go back up.
+23          A.   Are we still on page 18?
+24          Q.   Page 18 was tremolite, I believe.  Yeah.
+25   So, here we go.
+0110
+ 1          A.   Yeah, you do.
+ 2          Q.   All right.  Now there's a little baby peak.
+ 3   Yeah.  Okay.
+ 4          Okay.  Anyway, for 22, the image on 22 of the
+ 5   tremolite, do you agree or disagree with Ms. Stempski's
+ 6   call that that's tremolite?
+ 7          A.   No, I agree.
+ 8          Q.   Is that a bundle in --
+ 9          A.   Yes.
+10          Q.   -- on page 22?
+11          A.   Yes.
+12          Q.   Is there any way for you looking at it to
+13   know how many structures are in that bundle?
+14          A.   I would estimate somewhere around -- what I
+15   can see is about seven, but I think there's a lot more
+16   than that.
+17          Q.   Okay.  And then at least on my copy the last
+18   few images are mica, I think.  Is that the same --
+19          A.   Yes.
+20          Q.   Okay.  Do you disagree with any of these
+21   mica calls that Ms. Stempski made?
+22          A.   No, I agree.  It's one of the four or five
+23   micas.
+24          Q.   Is there any way from the chemistry or the
+25   morphology for you to tell the exact species of mica
+0111
+ 1   that is being found in Mr. Reyes' lung tissue?
+ 2          A.   I'd have to get -- you know, with just the
+ 3   chemistry, I'd have to get all the -- four or five
+ 4   different micas and get the -- you know, biotite, et
+ 5   cetera, standards, and try to do quantitative EDXA for
+ 6   the -- for the SEM you might be able to.
+ 7          Q.   Okay.  But it hasn't been done yet, though,
+ 8   at least, right?
+ 9          A.   It has not.
+10          Q.   Mica is not specific as a component of
+11   cosmetic talc; in other words, mica can be found in
+12   many building products, right?
+13          A.   Typically, you see it in joint compounds
+14   mostly, surface texture materials.  That's about it --
+15   it's been a while, but that's about it.  Not
+16   fireproofings.  I've never seen it in acoustical
+17   plaster.  So I would say mostly joint compound type
+18   materials.
+19          Q.   Okay.  I have to go back -- or you did an
+20   article with Roggli at one point where you were
+21   involved in the digestion.  I can't -- was that, like,
+22   the '90s sometime?  Do you know what I'm talking about?
+23   It was a published article.
+24          A.   In the Collegium Ramazzini.
+25          Q.   Yeah.  I'll have to go back and look at
+0112
+ 1   that.  I thought you -- didn't you find some mica in
+ 2   some of the tissue of the folks that you looked at in
+ 3   that?
+ 4          A.   I thought it was bentonite, uralite, some
+ 5   tremolite.  He might have because he -- I was only
+ 6   focused on one set of tissues that we analyzed.  He did
+ 7   about five or six other that he was calling
+ 8   environmental exposure.  So I'd have to look and see
+ 9   what --
+10          Q.   Yeah, that's fair.  I haven't looked at that
+11   in a long time either.  Mica can be found in industrial
+12   grade talc as well, right?
+13          A.   I don't know if it's in the Vanderbilt talc
+14   or not or if it's in the Death Valley talcs, but
+15   we're -- you know, we're routinely seeing it now, and
+16   when we -- when we look for it.
+17          Q.   Have you -- I'm trying to remember.  This
+18   isn't a trick at all.
+19          Have you identified mica in your analyses that
+20   you've done at MAS in a Johnson & Johnson cosmetic talc
+21   product?
+22          A.   Yes.
+23          Q.   And can you just remind me which reports
+24   were the ones where you were actually reporting mica as
+25   opposed to fibrous talc and --
+0113
+ 1          A.   I think some of the later ones.  I'd have to
+ 2   look.  We didn't pay attention to it before until, you
+ 3   know, we were asked to look and see if it was present.
+ 4          So I know we have.  I'd have to go back and look
+ 5   which ones they are where we're actually looking for it
+ 6   or determine if it's present or not, yeah.
+ 7          Q.   I know that MAS has done in the past some
+ 8   fiber-burden digestions of tissue for various people.
+ 9          Are you familiar enough with that to know
+10   whether or not in any of those analyses mica was ever
+11   found?
+12          A.   I don't know.
+13          Q.   So you can't -- so my next question was
+14   going to be:  Do you know whether MAS has ever found
+15   mica in the lung tissue of a person that had no
+16   exposure to cosmetic talc?  And it sounds like you just
+17   don't know; is that right?
+18          A.   Yeah.  I just don't know.
+19               MR. ASHBY:  Okay.  All right.  I think I
+20   might be done.  Just let me look over my stuff.
+21               THE CERTIFIED STENOGRAPHER:  Would you like
+22   to go off the record?
+23               MR. BLOCK:  Let's stay on the record if we
+24   can.  I would like to stay on and see if we could
+25   finish.
+0114
+ 1               MR. ASHBY:  Yeah, I mean, it wasn't going
+ 2   to take me very long.
+ 3               MR. BLOCK:  I mean, certainly look through
+ 4   your notes.  I just wanted to stay on the record if we
+ 5   could.
+ 6   BY MR. ASHBY:
+ 7          Q.   All right.  So what -- for spectra or for
+ 8   EDAX or EDS, what standards do you have for chrysotile
+ 9   at MAS?
+10          A.   For chrysotile, I don't know about EDX on
+11   all of them.  We, obviously, have lots for Calidria.
+12   We have lots for chrysotile.  For the -- chrysotile
+13   from Canada, the chrysotile from Vermont, chrysotile
+14   from California, primarily the Coalinga mine.
+15          We have other -- we have chrysotile from Russia,
+16   but I don't think we've done any EDXA on.  We have some
+17   chrysotiles from a couple other different mines.  I
+18   think we have chrysotile from one of the other big
+19   Canadian mines.
+20          So -- but I think if you want, like, EDXA, it
+21   would all be Johnson -- I mean, all be Johns Manville
+22   area, you know, the Quebec Black Lake area, California.
+23   I don't know if we have any from Arizona or not that we
+24   can say, yes, this came out of Arizona.  I think I
+25   already said Vermont.  That's all I can think of right
+0115
+ 1   now.
+ 2          Q.   Okay.  All right.  So, Dr. Longo, other than
+ 3   the Abraham stubs that you've looked at, is there
+ 4   anything else that you've done since your last
+ 5   deposition in the Reyes case that is a new opinion that
+ 6   wouldn't have been talked about back in October of
+ 7   2020?
+ 8          A.   I believe it's the same opinions I've had
+ 9   other than the tissue analysis.
+10          Q.   Okay.  All right.
+11               MR. ASHBY:  I don't have any other
+12   questions.
+13               MR. BLOCK:  All right.  I have no
+14   questions.  Thank you.
+15               THE CERTIFIED STENOGRAPHER:  The deposition
+16   of Dr. Longo has been concluded at 12:53 p.m.  Thank
+17   you.  We are off the record.
+18               MR. ASHBY:  As Exhibit 6, we'll attach the
+19   chain of custody that I received from Mr. Block.
+20               (Marked Exhibit No. 6 and whereupon, at
+21               the hour of 3:55 p.m., the proceedings
+22               were concluded.)
+23                            -oOo-
+24   
+25   
+0116
+ 1                         ERRATA SHEET
+ 2   Case Name:  ROSALINO REYES III and GEMMA REYES
+                     V. JOHNSON & JOHNSON, et al.
+ 3   
+     Deposition Date:  MONDAY, JULY 26, 2021
+ 4   
+     Deponent:  WILLIAM E. LONGO, PhD
+ 5   
+     Reason Codes:
+ 6   
+     1. To clarify the record.
+ 7   
+     2. To conform to the facts.
+ 8   
+     3. To correct transcription errors.
+ 9   
+     Pg.  Ln.   Now Reads       Should Read          Reason
+10   ______________________________________________________
+11   ______________________________________________________
+12   ______________________________________________________
+13   ______________________________________________________
+14   ______________________________________________________
+15   ______________________________________________________
+16   ______________________________________________________
+17   ______________________________________________________
+18   ______________________________________________________
+19   ______________________________________________________
+20   ______________________________________________________
+21   
+22                                 ________________________
+23                                 WILLIAM E. LONGO, PhD
+24   SUBSCRIBED AND SWORN BEFORE ME
+25   THIS _______ DAY OF ______________, 2021.
+0117
+ 1                   DECLARATION OF DEPONENT
+ 2   
+ 3          I, WILLIAM E. LONGO, PhD, do hereby certify that
+ 4   the foregoing deposition was presented to me as a true
+ 5   and correct transcript of the proceedings in the
+ 6   above-styled and numbered cause, and I now sign the
+ 7   same as true and correct, except for the corrections,
+ 8   if any, noted.
+ 9   
+10   
+11                            _____________________________
+12                            WILLIAM E. LONGO, PhD
+13   
+14   
+15               SUBSCRIBED AND SWORN to before me, this
+16   ________ day of ___________________, 2021.
+17   
+18   
+19                            _____________________________
+20                            Notary Public
+21   
+22   My commission expires: _______________________________
+23   
+24   
+25   
+0118
+ 1           CERTIFIED STENOGRAPHER'S CERTIFICATE
+ 2       I, PENNY L. PABITZKY, Certified Shorthand Reporter,
+ 3   Certificate No. 13235, for the State of California, do
+ 4   hereby certify to the following:
+ 5       The foregoing proceedings were taken before me at
+ 6   the time and place set forth, at which time being duly
+ 7   authorized to administer oaths pursuant to Section
+ 8   2093(b) of the California Code of Civil Procedure, I
+ 9   certify the witness in the foregoing deposition was by
+10   me duly sworn to testify and placed under oath by me;
+11       That said deposition was taken at the time stated
+12   via remote conferencing; that the testimony of said
+13   witness was reported stenographically to the best of my
+14   ability due to the nature of remote communications and
+15   thereafter transcribed by me;
+16       I further certify that I am neither counsel for nor
+17   related to any party to said action, nor in any way
+18   interested in the outcome thereof.
+19       In witness whereof, I have hereunto subscribed my
+20   name this 29TH day of JULY, 2021.
+21   
+22                   _______________________________
+                     PENNY L. PABITZKY, CSR, RPR
+23                   Certified Shorthand Reporter
+                     in and for the State of California
+24                   License No. 13235, Texas CSR No. 5040
+                     iDepo Reporters
+25                   323-393-3768 or 1-888-99-iDEPO

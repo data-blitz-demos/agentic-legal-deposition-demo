@@ -72,6 +72,17 @@ open_chrome_dev() {
   return 1
 }
 
+append_cache_buster() {
+  local url="$1"
+  local stamp
+  stamp="$(date +%s)"
+  if [[ "${url}" == *\?* ]]; then
+    printf '%s&cb=%s\n' "${url}" "${stamp}"
+    return 0
+  fi
+  printf '%s?cb=%s\n' "${url}" "${stamp}"
+}
+
 compose() {
   docker compose --ansi never -f "${COMPOSE_FILE}" "$@"
 }
@@ -99,9 +110,10 @@ fi
 
 TMP_BASE="${TMPDIR:-/tmp}"
 CHROME_PROFILE_DIR="$(mktemp -d "${TMP_BASE%/}/deposition-dev-chrome.XXXXXX")"
+OPEN_URL="$(append_cache_buster "${APP_URL}")"
 
-if open_chrome_dev "${CHROME_PROFILE_DIR}" "${APP_URL}"; then
-  echo "Opened Chrome for ${APP_URL}"
+if open_chrome_dev "${CHROME_PROFILE_DIR}" "${OPEN_URL}"; then
+  echo "Opened Chrome for ${OPEN_URL}"
   echo "Temporary Chrome profile: ${CHROME_PROFILE_DIR}"
 else
   echo "Docker Compose restarted, but no Chrome/Chromium executable was found." >&2

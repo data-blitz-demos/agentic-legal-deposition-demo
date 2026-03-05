@@ -1,0 +1,2919 @@
+
+
+
+
+
+
+
+ 1       IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+ 2               IN AND FOR THE COUNTY OF ALAMEDA
+
+ 3                           ---o0o---
+
+ 4   ROSALINO REYES and GEMMA REYES,
+
+ 5        Plaintiffs,
+
+ 6   vs.                             No. RG20052391
+
+ 7   JOHNSON & JOHNSON, et al.,
+
+ 8        Defendants.
+     ___________________________/
+ 9
+
+10
+
+11
+
+12
+
+13       TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D.
+
+14                          Volume IV
+
+15                      (Pages 346 to 390)
+
+16
+
+17
+
+18           Taken before Catherine M. Meyer, RPR, CSR
+
+19                         CSR No. 11596
+
+20                       October 20, 2020
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+
+
+
+
+
+
+                                                          347
+
+
+
+
+ 1                           I N D E X
+
+ 2                                                 PAGE
+
+ 3   EXAMINATION BY MR. HUGO                       352
+
+ 4
+
+ 5
+
+ 6
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12                        E X H I B I T S
+
+13   DEFENDANTS'                                   PAGE
+
+14   Exhibit 1     List of family vehicles         359
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+
+
+
+
+
+
+                                                          348
+
+
+
+
+ 1       TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D.
+
+ 2
+
+ 3        BE IT REMEMBERED, that pursuant to Notice, and on
+
+ 4   the 20th day of October 2020, commencing at the hour of
+
+ 5   2:05 p.m., telephonically, before me, Catherine M.
+
+ 6   Meyer, a Certified Shorthand Reporter, reappeared
+
+ 7   WILLIAM E. LONGO, Ph.D., produced as a witness in said
+
+ 8   action, and being previously duly sworn, was thereupon
+
+ 9   re-examined as a witness in said cause.
+
+10
+
+11                          ---o0o---
+
+12   APPEARANCES:
+
+13   For the Plaintiffs:
+
+14                 HENRY A. STEINBERG, ESQ.
+                   Kazan, McClain, Satterley & Greenwood
+15                 55 Harrison Street, Suite 400
+                   Oakland, California 94607
+16                 (877) 995-6372
+                   hsteinberg@kazanlaw.com
+17
+     For the Defendants Johnson & Johnson; Johnson & Johnson
+18   Consumer, Inc.; and Johnson & Johnson Philippines, Inc.:
+
+19                 KEVIN HYNES, ESQ.
+                   King & Spalding, LLP
+20                 1185 Avenue of the Americas, 34th Floor
+                   New York, New York 10036
+21                 (212) 556-2100
+                   khynes@kslaw.com
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+
+
+
+
+
+
+                                                          349
+
+
+
+
+ 1   For the Defendant O'Reilly Auto Enterprises, LLC:
+
+ 2                 EDWARD HUGO, ESQ.
+                   Hugo Parker, LLP
+ 3                 240 Stockton Street, 8th Floor
+                   San Francisco, California 94108
+ 4                 (415) 940-4072
+                   ehugo@hugoparker.com
+ 5
+     For the Defendants Longs Drug Stores California, LLC, on
+ 6   behalf of Longs Drug Stores California, Inc.; Safeway,
+     Inc.; and Lucky Stores, Inc.:
+ 7
+                   MEREDITH WHITE, ESQ.
+ 8                 Barnes & Thornberg, LLP
+                   2029 Century Park East, Suite 300
+ 9                 Los Angeles, California 90067
+                   (310) 284-3884
+10                 meredith.white@btlaw.com
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+
+
+
+
+
+
+                                                          350
+
+
+
+
+ 1                   WILLIAM E. LONGO, Ph.D.,
+
+ 2                previously sworn as a witness,
+
+ 3                     testified as follows:
+
+ 4            MR. HYNES:  So this is Kevin Hynes on behalf of
+
+ 5   the Johnson & Johnson defendants.  I'll just note we
+
+ 6   reserve our right to continue questioning Dr. Longo for
+
+ 7   approximately 45 minutes on Friday.  We understand that
+
+ 8   plaintiffs will be offering Dr. Longo for continuation
+
+ 9   this Friday, for additional questioning upon receipt of
+
+10   additional materials that have been produced.  We also
+
+11   understand that there may be a few more materials that
+
+12   will be produced.  I understand that within the last
+
+13   five minutes there was some additional data produced,
+
+14   and so we may have an additional maybe ten to 15 minutes
+
+15   of questioning based upon what we receive between now
+
+16   and the deposition.  We'll endeavor to keep the
+
+17   continuation to less than an hour for Johnson & Johnson
+
+18   questioning on Friday and we think we will be able to do
+
+19   that.  And then finally, we'll reserve our right for any
+
+20   additional limited follow-up questioning based upon
+
+21   opinions expressed during today's deposition.  Thank
+
+22   you.
+
+23            MS. WHITE:  This is Meredith White for the talc
+
+24   retailer defendants, Long's, Lucky's and Safeway.  We
+
+25   likewise have agreed with plaintiff's counsel to I
+
+
+
+
+
+
+
+
+
+
+
+                                                          351
+
+
+
+
+ 1   suppose interrupt the questioning from last session with
+
+ 2   Dr. Longo to permit O'Reilly's to question today.  And
+
+ 3   then I, Meredith White, will pick back up with my
+
+ 4   questioning of Dr. Longo on Friday, October 23rd per the
+
+ 5   agreement of the parties with the time still to be
+
+ 6   determined.
+
+ 7            MR. STEINBERG:  And briefly, plaintiffs will
+
+ 8   point out that the documents that have been produced,
+
+ 9   including the recent document produced earlier today,
+
+10   are all in request -- in direct response to J&J's
+
+11   requests and additional requests for documents.  These
+
+12   are the documents that J&J had requested when it made
+
+13   the estimate of approximately 30 to 45 minutes.  It
+
+14   sounds like that estimate has now turned into 45 to an
+
+15   hour and a reservation for additional time.  So
+
+16   plaintiffs will object to any additional time that
+
+17   should be required or beyond the initial 30- to
+
+18   45-minute reservation.  This deposition has gone on for
+
+19   many days and needs to conclude.  We will obviously
+
+20   continue to meet and confer and I think we all look
+
+21   forward to getting this wrapped up on Friday.
+
+22            THE WITNESS:  Including me.
+
+23            MR. STEINBERG:  Since you're back, I guess we
+
+24   can just start right way without hopping off the record.
+
+25            THE WITNESS:  It hasn't gone through yet.  I
+
+
+
+
+
+
+
+
+
+
+
+                                                          352
+
+
+
+
+ 1   just wanted to let you know I'm still waiting, but it
+
+ 2   should be there now.
+
+ 3            MR. STEINBERG:  Let's go off the record.
+
+ 4            (Break taken from 2:10 p.m. to 2:12 p.m.)
+
+ 5            MR. HUGO:  So Madam Court Reporter, can you
+
+ 6   swear Dr. Longo?
+
+ 7            MR. STEINBERG:  I'll stipulate that he's still
+
+ 8   sworn.
+
+ 9            MR. HUGO:  Okay.  That works.
+
+10   EXAMINATION BY MR. HUGO:
+
+11        Q.  Good afternoon, Dr. Longo.  Edward Hugo here
+
+12   for O'Reilly's.  And I've got some questions for you
+
+13   hopefully that won't go too long.  It's been a long time
+
+14   since we've talked.  Can you remind me --
+
+15        A.  Mr. Hugo, I was trying to remember, and I think
+
+16   the last time was a trial way back when.
+
+17        Q.  Way back when, exactly.
+
+18            Can you remind me when you started testifying
+
+19   for plaintiffs in asbestos or talc-related litigation?
+
+20        A.  I initially started testifying on behalf of
+
+21   plaintiffs in property damage cases starting in around
+
+22   1991 and approximately 1997, 1998 I started testifying
+
+23   in personal injury cases involving asbestos, and my
+
+24   first deposition for cosmetic talcs happened in 2017 I
+
+25   think or maybe early 2018 in the Simon, Greenstone &
+
+
+
+
+
+
+
+
+
+
+
+                                                          353
+
+
+
+
+ 1   Panatier in the Hurtford case.
+
+ 2        Q.  Give me a ballpark estimate as to how much
+
+ 3   money you and your company has made as a result of being
+
+ 4   retained by either asbestos or talc plaintiff attorneys?
+
+ 5        A.  I think starting in -- sometime in 1990 I
+
+ 6   estimated my company billed around $1 million a year on
+
+ 7   behalf of plaintiffs.  Now, what we actually made in
+
+ 8   profit out of that is another different story and I
+
+ 9   never made anything more out of the litigation at MAS as
+
+10   a fixed salary.
+
+11        Q.  In the Reyes case I have your report dated
+
+12   September the 16, 2020, and it lists the materials that
+
+13   you've reviewed including the videotaped depositions and
+
+14   depositions of various people, correct?
+
+15        A.  Yes, sir.
+
+16        Q.  Have you reviewed any discovery responses of
+
+17   Mr. Reyes or any of his family members?
+
+18        A.  No, sir.
+
+19        Q.  Then the first time I see in your report
+
+20   mention of brakes is page 5 of 13; is that correct?
+
+21        A.  Yes.
+
+22        Q.  Did you make any effort to identify any car by
+
+23   year, make or model that is associated with any brake
+
+24   work that Mr. Reyes either performed himself or was a
+
+25   bystander to?
+
+
+
+
+
+
+
+
+
+
+
+                                                          354
+
+
+
+
+ 1        A.  Other than what's written, what the testimony
+
+ 2   was from the plaintiff and the witnesses, which I did
+
+ 3   not record in my report, I did not endeavor on writing
+
+ 4   out all the different automobiles that Mr. Reyes
+
+ 5   discussed in his deposition.
+
+ 6        Q.  Why not?
+
+ 7        A.  I typically don't.  It's not that important to
+
+ 8   me on which model car it is.  It's more important on the
+
+ 9   years that somebody would have worked with brakes and
+
+10   the potential for those brakes to have asbestos in it.
+
+11   So I never have.
+
+12        Q.  So is it your understanding that, for example,
+
+13   Bendix had a nonasbestos containing brake available in
+
+14   the 1950s?
+
+15        A.  I can't recall.  I've been in so many Bendix
+
+16   cases I don't recall there ever being a nonasbestos
+
+17   brake that actually went to the market by Bendix, not
+
+18   until sometime in the -- start seeing them pop up in the
+
+19   mid to late 1990s.  I have an exemplar of a Bendix brake
+
+20   from 1985 that was in a box that still had asbestos in
+
+21   it.  And I typically don't sit down and go through all
+
+22   the documents who was removing according to what OEM and
+
+23   what model, et cetera.  So I'm not seeing that Bendix
+
+24   ever brought to the commercial market in 1955
+
+25   nonasbestos brake for a passenger vehicles.
+
+
+
+
+
+
+
+
+
+
+
+                                                          355
+
+
+
+
+ 1        Q.  When is it your understanding that Bendix
+
+ 2   offered nonasbestos-containing brakes for passenger
+
+ 3   vehicles?
+
+ 4        A.  It's not so much when they offered it like you
+
+ 5   had a choice.  It's when they started slowly phasing out
+
+ 6   asbestos for all the different makes and models
+
+ 7   according to the OEMs as they changed the formula.  You
+
+ 8   could have some models in, say, the mid 1990s.  Could
+
+ 9   have been some in the early '90s.  But it was up to the
+
+10   OEMs to tell Bendix here's what the formula is now.  And
+
+11   it would be a specific make and model and not
+
+12   necessarily every year for that make and model.  I have
+
+13   not gone through that exercise.  Typically it's a
+
+14   document that have been produced.  So generally it's my
+
+15   opinion that more likely than not through the '80s and
+
+16   early '90s more likely than not in my opinion that the
+
+17   Bendix brakes would have been asbestos-containing.
+
+18        Q.  You're familiar with a company called EIS,
+
+19   E-I-S?
+
+20        A.  Yes.
+
+21        Q.  Have you tested EIS brand brakes?
+
+22        A.  I'm not sure we have.  We may have.  I didn't
+
+23   check.  People send samples in.  But I didn't recall
+
+24   that we tested asbestos-containing EIS brakes in the
+
+25   past.
+
+
+
+
+
+
+
+
+
+
+
+                                                          356
+
+
+
+
+ 1        Q.  Would it be fair to say that you can't offer an
+
+ 2   opinion to a reasonable degree of scientific certainty
+
+ 3   that EIS brand brakes contained asbestos in this case?
+
+ 4        A.  No, that's not fair.  I wouldn't say within a
+
+ 5   reasonable degree of scientific certainty.  I use the
+
+ 6   reasonable degree of scientific certainty as above
+
+ 7   90 percent.  I would say more likely than not in the
+
+ 8   '80s same as Bendix because once the OEM changed the
+
+ 9   specs in manufacturing ingredients, they would have been
+
+10   using the exact same thing.  So it would be my opinion
+
+11   more likely than not that EIS would also have
+
+12   asbestos-containing brakes through that time frame.
+
+13        Q.  Is it your opinion that different aftermarket
+
+14   brake manufacturers would have all had the exact same
+
+15   constituent in their brake pursuant to an OEM's
+
+16   requirements?
+
+17        A.  No, they won't have the exact same ingredient.
+
+18   The only thing that is exact and for all these
+
+19   asbestos-containing brakes is the phenolic resin.  That
+
+20   material was universal throughout the
+
+21   asbestos-containing brake manufacturers.  But when an
+
+22   OEM changed the specification, it's just not chrysotile
+
+23   and phenolic resin.  They may have anywhere from seven
+
+24   to eight to nine of what they call their secret
+
+25   ingredients that they also mix in with it and the
+
+
+
+
+
+
+
+
+
+
+
+                                                          357
+
+
+
+
+ 1   asbestos concentration can change for different years,
+
+ 2   different manufacturers, so it's not going to be
+
+ 3   identical.  But it will have two key components when
+
+ 4   they're asbestos-containing, of course, the chrysotile
+
+ 5   asbestos as well as the phenolic resin that makes up
+
+ 6   anywhere from 70 to 90 percent of what's in the brake
+
+ 7   shoe, and then it's the formulations of the nonasbestos
+
+ 8   ingredients that they may put in with the phenolic resin
+
+ 9   and the chrysotile to give it different properties.
+
+10        Q.  Let me understand your term phenolic resin.
+
+11   When you say that, is phenolic resin also
+
+12   asbestos-containing?
+
+13        A.  Not necessarily.  They still use it today.
+
+14   It's just that they have other fibrous material in there
+
+15   like wollastonite or they have some metal brakes, so
+
+16   there was a substitute.  But phenolic resin is still
+
+17   used today for passenger cars, trucks.
+
+18        Q.  So I'm just trying to get a universe here
+
+19   before we get more particular.  But if I say I want you
+
+20   to think of a 1989 Toyota Celica, so we have a year, we
+
+21   have a make, we have a model.  If the aftermarket brake
+
+22   manufacturer wants to supply brake for that car --
+
+23        A.  Okay.  I'm with you.
+
+24        Q.  If an aftermarket brake manufacturer wants to
+
+25   supply replacement brake pads or shoes for that vehicle,
+
+
+
+
+
+
+
+
+
+
+
+                                                          358
+
+
+
+
+ 1   would they all be asbestos-containing or all not
+
+ 2   asbestos-containing or could there be a mix?
+
+ 3        A.  My opinion would be that in 1989 more likely
+
+ 4   than not they would still be asbestos-containing for
+
+ 5   that particular model.  Now, if I had the specifications
+
+ 6   from the OEM on if they changed that particular model or
+
+ 7   not at that time to be that model -- that make and model
+
+ 8   to be nonasbestos and there's documentation of that,
+
+ 9   then I would agree with you.
+
+10        Q.  As to Mr. Reyes's case, do you have any
+
+11   specifications from the OEM as to any of the specific
+
+12   make and model cars that he ever worked on in his life?
+
+13        A.  I'm sorry.  Would you repeat that?
+
+14        Q.  Sure.  As to Mr. Reyes, do you have the OEM
+
+15   specifications for any of the actual year, make and
+
+16   model cars that he ever worked on himself or was around?
+
+17        A.  No, I don't have the specific specifications.
+
+18   The only thing I have in the make and models, and you
+
+19   sent me a sheet and I already had that, you know, list
+
+20   of family vehicles worked on, number of brake jobs,
+
+21   years worked on, asbestos brakes yes or no, the MVMA yes
+
+22   or no.  So that's all the information I have for all
+
+23   these particular makes and models.
+
+24            MR. HUGO:  Okay.  So I'm going to get -- I'm
+
+25   going to use your answer to get back to this list.  So
+
+
+
+
+
+
+
+
+
+
+
+                                                          359
+
+
+
+
+ 1   let's mark as -- Ms. Court reporter, do you have an
+
+ 2   ongoing exhibit numbers in this lengthy deposition?
+
+ 3            (The reporter speaks.)
+
+ 4            MR. HUGO:  Okay.  We'll start with number one
+
+ 5   then.  This'll be marked as Exhibit 1 to Mr. Longo's
+
+ 6   deposition.
+
+ 7            (Defendants' Exhibit 1 marked for
+
+ 8            Identification.)
+
+ 9   BY MR. HUGO:
+
+10        Q.  Do you know who created this list?
+
+11        A.  I'm assuming plaintiffs' attorneys since that's
+
+12   where I got it.
+
+13        Q.  When did you first receive it?
+
+14        A.  It was after my report.  But I don't know when
+
+15   I actually got it.
+
+16        Q.  And then it's got, looking from the right to
+
+17   the left, MVMA.  What does that mean to you?
+
+18        A.  It's motor vehicle -- I forgot what the "M" and
+
+19   the "A" is.  It's typically the specifications that are
+
+20   given out that you can get for each model of each car
+
+21   and it'll tell you different components that are in it.
+
+22   Sometimes it will tell you if it's asbestos brakes or
+
+23   not.  Sometimes it won't.  I haven't looked at them in a
+
+24   while, but I can't think of the motor vehicle materials
+
+25   and I don't know what -- I think "M" is materials.  I
+
+
+
+
+
+
+
+
+
+
+
+                                                          360
+
+
+
+
+ 1   don't know what the "A" stands for.
+
+ 2        Q.  So what does no versus yes mean under MVMA?
+
+ 3        A.  That I don't know.
+
+ 4        Q.  Did you ask anybody what that meant?
+
+ 5        A.  No, sir.  I mean, I looked through the asbestos
+
+ 6   brakes question mark yes, MA possible no and -- but I
+
+ 7   did not ask about what the yeses and nos mean on the
+
+ 8   MVMA.
+
+ 9        Q.  So let's go to the next column then working
+
+10   backwards.  Asbestos brake, there are some yeses some
+
+11   nos and some other entries.  Who made those entries?
+
+12        A.  Again, I did not create this list.  I'm
+
+13   assuming whoever worked on it in the plaintiffs'
+
+14   attorneys office, Kazan's office.
+
+15        Q.  Do you know whether the entries are correct for
+
+16   each vehicle underneath asbestos brake?
+
+17        A.  I make the assumption they are.  But I'm not
+
+18   here for product ID on which of these vehicles are
+
+19   asbestos or not if, in fact, they do contain asbestos.
+
+20   My testimony revolves around if, in fact, they do, these
+
+21   are the types of things that would cause exposure.  If
+
+22   they don't, none of these automobiles have asbestos in
+
+23   them, then, you know, I don't have any testimony to
+
+24   give.
+
+25        Q.  Also though I'm still looking at this
+
+
+
+
+
+
+
+
+
+
+
+                                                          361
+
+
+
+
+ 1   specification issue you were talking about.  So if an
+
+ 2   OEM -- let's just take, what did I say before, the --
+
+ 3   let's just take the one that says yes here, 1992 Acura
+
+ 4   Integra LX.  Do you see that?  It says one brake job.
+
+ 5   Actually that one says possible, but that's okay.
+
+ 6        A.  Yes, I do.
+
+ 7        Q.  Do you see that?
+
+ 8        A.  Yes.
+
+ 9        Q.  Then there's a date range when he did work
+
+10   which is 1992 to 2004, right?
+
+11        A.  Yes.
+
+12        Q.  With that date range of 12 years, how do you
+
+13   know whether or not the brakes that are being used to
+
+14   replace the existing brakes were asbestos-containing or
+
+15   not?
+
+16        A.  I wasn't there to analyze the brakes, one brake
+
+17   job and where in the sequence of '92 to 2004 that he did
+
+18   that.  If, in fact, it did have asbestos brakes on it
+
+19   when he worked on it, then I have an opinion that --
+
+20   about his potential exposure.  If they did not have
+
+21   asbestos in it during that time, then my opinion would
+
+22   be that if these were non-asbestos brakes removed and
+
+23   replaced with asbestos-containing brakes, then he would
+
+24   have had no significant exposure.  He would have had no
+
+25   significant exposure.  If he removed asbestos-containing
+
+
+
+
+
+
+
+
+
+
+
+                                                          362
+
+
+
+
+ 1   brakes and replaced them with nonasbestos containing
+
+ 2   brakes, say, in '92 or '93 or '94, then he still would
+
+ 3   have a significant exposure.  But without testing the
+
+ 4   brakes myself or my lab, I can't give you that as a
+
+ 5   product ID that yes, within a reasonable degree of
+
+ 6   scientific certainty he got exposed to
+
+ 7   asbestos-containing brakes.  It depends on the
+
+ 8   documentation.
+
+ 9        Q.  So it's true that your lab did not test any of
+
+10   the brakes that were ever removed from any of the
+
+11   vehicles that Mr. Reyes either worked on himself or
+
+12   worked around, correct?
+
+13        A.  That is a correct statement.
+
+14        Q.  And your lab did not test any of the brakes
+
+15   that were installed into any of the vehicles that
+
+16   Mr. Reyes either owned, worked on or worked around,
+
+17   correct?
+
+18        A.  That is also correct.
+
+19        Q.  In terms of these vehicles, did you make an
+
+20   effort to determine what type of braking systems they
+
+21   had, in other words, four wheel drum, four wheel disc,
+
+22   or a drum/disc combination?
+
+23        A.  Now, just going back to his deposition, there
+
+24   was some earlier I believe some four wheel drums in the
+
+25   early '80s or late '70s.  But I would say primarily he
+
+
+
+
+
+
+
+
+
+
+
+                                                          363
+
+
+
+
+ 1   was dealing with drums in the back and disc on the front
+
+ 2   especially for the later models.
+
+ 3        Q.  If we go down below -- one below that last
+
+ 4   vehicle, it's a 1994 Toyota Corolla DX four cylinder.
+
+ 5   Do you see that?
+
+ 6        A.  I do.
+
+ 7        Q.  And then there are years worked on which are
+
+ 8   2004 to 2008, right?
+
+ 9        A.  Yes.
+
+10        Q.  So do you know from the OEM specification that
+
+11   existed for Toyota or from Toyota in 1994 whether that
+
+12   vehicle would have had asbestos-containing brakes in the
+
+13   mid 1990s?
+
+14        A.  Well, again as I've already stated, I haven't
+
+15   seen any specifications.  The only information I have is
+
+16   the asbestos brakes with a question mark, and that one
+
+17   says yes.
+
+18        Q.  Then seven brake jobs.  And the brake jobs were
+
+19   worked on between 2004 to 2008, right?
+
+20        A.  Yes.
+
+21        Q.  Does that make sense to you that in 2004 to
+
+22   2008 the replacement brakes would have been
+
+23   asbestos-containing?
+
+24        A.  It's not that it makes sense or not.  It's, you
+
+25   know, have we seen asbestos-containing brakes after that
+
+
+
+
+
+
+
+
+
+
+
+                                                          364
+
+
+
+
+ 1   time frame.  And, you know, we have purchased
+
+ 2   asbestos-containing brakes off of the shelf at an auto
+
+ 3   shop that were 2010 or 2012 Chrysler brakes that were
+
+ 4   still -- they were Chrysler brakes, and you opened the
+
+ 5   boxes and you took out a Chevrolet box and those brakes
+
+ 6   were asbestos-containing.  We have bought aftermarket
+
+ 7   brakes, I forget the name of it, but they had 15 percent
+
+ 8   asbestos in it.  And that was in the 2005, 2004 range
+
+ 9   that had 15 percent asbestos in them.  So it's not a
+
+10   make sense or not.  It's just when did they get all the
+
+11   changeover.
+
+12        Q.  Okay.  Let's use as an example Bendix because
+
+13   you've had a lot of experience with them.  Do you think
+
+14   more likely than not in the 2004 to 2008 time period
+
+15   Bendix was still supplying asbestos-containing
+
+16   aftermarket brakes for a 1994 Toyota Corolla?
+
+17        A.  The testimony I've already given is, you know,
+
+18   the late '70s the brakes are going to be 100 percent
+
+19   asbestos.  I know Bendix for sure sold
+
+20   asbestos-containing brakes up to 1985 and I know they
+
+21   still had asbestos in brakes going into early '90s on
+
+22   different models.  After -- I don't have an opinion one
+
+23   way or the other after the early 1990s if they're
+
+24   asbestos-containing or not.
+
+25        Q.  When you had -- I'll call it mid 1990s, right?
+
+
+
+
+
+
+
+
+
+
+
+                                                          365
+
+
+
+
+ 1   When you had a 1994 car that is going to have
+
+ 2   replacement brakes put on it between 2004 to 2008,
+
+ 3   wouldn't it be more likely than not that those are
+
+ 4   nonasbestos containing brakes?
+
+ 5        A.  It depends if they've gone and redid those for
+
+ 6   the aftermarket brakes in 2004 and 2008.  I don't know
+
+ 7   if they did or not.  I don't know if the market was --
+
+ 8   for 1994s Toyota Corolla DX four cylinder was there
+
+ 9   enough -- to me if there was enough of a market to go
+
+10   ahead and change the specifications or not.  I don't
+
+11   have that information.  So my testimony is up until, you
+
+12   know, the early 1990s more likely than not without some
+
+13   additional information such as the yes under asbestos
+
+14   brakes with a question mark if they indeed had been
+
+15   selling asbestos brakes between 2004 and 2008, then he
+
+16   would have had significant exposure.  If they were not,
+
+17   then he wouldn't.
+
+18        Q.  I'm going to drill down just a little bit more
+
+19   on Bendix for a second because I want to understand your
+
+20   opinion about that company in particular.  For these
+
+21   years 2004 to 2008 based on your knowledge, education,
+
+22   training and experience working in Bendix cases,
+
+23   wouldn't you expect those brakes to be nonasbestos
+
+24   containing?
+
+25        A.  I don't expect it one way or the other without
+
+
+
+
+
+
+
+
+
+
+
+                                                          366
+
+
+
+
+ 1   looking at what Bendix was doing at that particular
+
+ 2   time.  I'm not here to say that it did or it didn't.
+
+ 3   If, in fact, it did, then they would have had an
+
+ 4   exposure.  If they did not, Mr. Reyes would not have had
+
+ 5   an exposure as long as he was removing both nonasbestos
+
+ 6   brakes and replacing them with nonasbestos brakes.
+
+ 7        Q.  Do you have any general opinion about Bendix as
+
+ 8   to when they removed the asbestos from their replacement
+
+ 9   aftermarket brakes for passenger vehicles in the United
+
+10   States?
+
+11        A.  It's hard for me to have a general opinion
+
+12   because you'd have to go through every specification for
+
+13   every different model and make of a car.  I'm not
+
+14   involved in that many foreign automobiles like Honda and
+
+15   Toyota and Acura, so I can't just have a general
+
+16   opinion.  That's why I stated early on and I think I
+
+17   stated in my report that up until the early 1990s I
+
+18   would say it was more likely than not.  After the early
+
+19   1990s I would have to see some kind of documentation to
+
+20   say, you know, for a fact within a reasonable degree of
+
+21   scientific certainty that it does or within a reasonable
+
+22   degree of scientific certainty that it does not.
+
+23        Q.  Do you know whether aftermarket brake
+
+24   manufacturers such as Bendix changed their own
+
+25   specification at some point in time to provide
+
+
+
+
+
+
+
+
+
+
+
+                                                          367
+
+
+
+
+ 1   nonasbestos containing brakes for a car that originally
+
+ 2   had asbestos-containing brakes?
+
+ 3        A.  I don't have any information if they changed it
+
+ 4   themselves.  Typically it's the OEM says here's what the
+
+ 5   new formulas are.  I'm not sure -- I don't know if
+
+ 6   Bendix had the ability to change the specifications
+
+ 7   themselves on an automobile that they don't have the
+
+ 8   information from the OEM.  I would expect that to be a
+
+ 9   potential liability for Bendix if something went wrong
+
+10   with the brakes they were putting on there.
+
+11        Q.  Well, were the OEM specifications on brakes
+
+12   based on performance or based on the ingredients of the
+
+13   brakes?
+
+14        A.  Well, they're always based on performance.  And
+
+15   when they went to nonasbestos, they had to come up with
+
+16   new formulations and, of course, test those brakes so
+
+17   that they replicated what the asbestos-containing brakes
+
+18   had done:  wear, stopping, wear potential, stopping the
+
+19   car in a certain amount of feet at a certain
+
+20   acceleration.  And then once they approved it, they
+
+21   would send out the specifications on what the new
+
+22   formulation is.  It's my understanding.
+
+23        Q.  You mentioned earlier that you had purchased
+
+24   brake shoes from different stores.  Have you ever
+
+25   purchased any products whatsoever from an O'Reilly
+
+
+
+
+
+
+
+
+
+
+
+                                                          368
+
+
+
+
+ 1   store?
+
+ 2        A.  No.
+
+ 3        Q.  Have you ever purchased any products whatsoever
+
+ 4   from a Kragen store?
+
+ 5        A.  No.
+
+ 6        Q.  Have you ever purchased any products whatsoever
+
+ 7   from a Shucks store?
+
+ 8        A.  No.
+
+ 9        Q.  Have you ever purchased any products whatsoever
+
+10   from a Checkers store?
+
+11        A.  No.
+
+12        Q.  Have you ever purchased any products whatsoever
+
+13   from a Grand Auto store?
+
+14        A.  I do not believe so.
+
+15        Q.  Have you ever tested any products that you
+
+16   believe came from a Grand Auto store?
+
+17        A.  Not that I have any knowledge that it actually
+
+18   came from any particular store, no, except the one.
+
+19        Q.  Have you ever tested -- go ahead.
+
+20        A.  Excuse me, except for the ones that were
+
+21   purchased that still had asbestos in them off the shelf.
+
+22        Q.  But that was not from a Grand Auto, correct?
+
+23        A.  No.  I'm not sure we have those in Georgia.
+
+24        Q.  Have you ever tested any product that you
+
+25   believe came from a Checkers store?
+
+
+
+
+
+
+
+
+
+
+
+                                                          369
+
+
+
+
+ 1        A.  I don't believe so.  I don't think we have that
+
+ 2   store here in Georgia.  I don't recall ever seeing one.
+
+ 3        Q.  Have you ever tested any product that you
+
+ 4   believe came from a Shucks store?
+
+ 5        A.  No, sir, not that I know of.
+
+ 6        Q.  Have you ever tested any products that you
+
+ 7   believe came from a Kragen store?
+
+ 8        A.  I don't believe so.  I don't ever recall seeing
+
+ 9   one of those type of auto part stores here in Georgia.
+
+10        Q.  Have you ever tested any products that you
+
+11   believe came from an O'Reilly store?
+
+12        A.  I don't think so.
+
+13        Q.  Did plaintiffs's counsel send you any product,
+
+14   and I'm talking about now automotive products, to test
+
+15   in this case?
+
+16        A.  Not that I recall.  I mean, I'm not ruling it
+
+17   out.  I just don't recall that we got brakes in.  And
+
+18   that would be something I would have to check.  I don't
+
+19   want to say we did not, some came in and they haven't
+
+20   been analyzed or for whatever reason.  I haven't seen
+
+21   the report, but I don't think so.
+
+22        Q.  In order to determine what type of asbestos was
+
+23   in a brake if, in fact, asbestos was in the brake, would
+
+24   you have to test it?
+
+25        A.  To issue a report that would stand up to
+
+
+
+
+
+
+
+
+
+
+
+                                                          370
+
+
+
+
+ 1   scrutiny and be in this kind of environment, yes, we
+
+ 2   would also test it.  Can you look at an
+
+ 3   asbestos-containing brake shoe?  Of course, they all
+
+ 4   have chrysotile.  I've never seen anything but
+
+ 5   chrysotile.  You can look at the surface of the brake
+
+ 6   and you can tell if it's chrysotile, it's going to be an
+
+ 7   asbestos-containing one or not.  But I would never just
+
+ 8   write a report and said I looked at it and it's
+
+ 9   chrysotile.  But I didn't do any analysis.  We always do
+
+10   analysis.  Insofar when brakes have come in and we
+
+11   inspected them, I've never been wrong if whether it's
+
+12   asbestos-containing or not.
+
+13        Q.  If you look at a brake and you believe from a
+
+14   visual inspection that it contains chrysotile, can you
+
+15   tell visually whether it has tremolite contamination?
+
+16        A.  No, you cannot.  You have to do a test because
+
+17   the tremolite is at trace levels or actinolite and you
+
+18   have to go through a process of concentrating the
+
+19   tremolite.  So you use a Madison Davies-type process to
+
+20   remove the chrysotile as much as you can so you can
+
+21   concentrate the tremolite to see it by TEM.
+
+22        Q.  And as to the brakes that Mr. Reyes worked with
+
+23   or around if any were, in fact, asbestos-containing and
+
+24   that asbestos was chrysotile, you cannot say to a
+
+25   reasonable degree of scientific certainty that it also
+
+
+
+
+
+
+
+
+
+
+
+                                                          371
+
+
+
+
+ 1   contained tremolite, true?
+
+ 2        A.  I would say more likely than not.  And you just
+
+ 3   have to depend on the chrysotile source and where
+
+ 4   they're getting it.  You'd have to do Addison-Davies.
+
+ 5   And I don't think we've ever analyzed a manufacturer's
+
+ 6   brake shoe containing chrysotile where we did
+
+ 7   Addison-Davies where we did not find tremolite.
+
+ 8        Q.  So use EIS as an example.  Do you know where
+
+ 9   EIS got their asbestos from, if they, in fact, had
+
+10   asbestos in their brakes?
+
+11        A.  Well, they have been selling brakes for an
+
+12   awful long time.  It's not a question if they ever used
+
+13   asbestos or not.  It's a question of how long they used
+
+14   it or how long they were selling brakes with the
+
+15   asbestos that were being manufactured.  I don't recall
+
+16   where they say they got the chrysotile.  The primary
+
+17   source here would be Ontario Black Lake region up in
+
+18   Canada.  And all that asbestos has chrysotile.  The
+
+19   Johnson mines from Vermont has chrysotile.  I mean has
+
+20   tremolite.  They didn't use Calidria ever in brakes that
+
+21   I can tell.  And unless they were shipping it in from
+
+22   another country if they're manufacturing them here,
+
+23   we've just never seen a brake manufacturer product that
+
+24   had chrysotile where we did Addison-Davies that it
+
+25   wasn't positive for tremolite in brakes as well as
+
+
+
+
+
+
+
+
+
+
+
+                                                          372
+
+
+
+
+ 1   gaskets and a few other things.
+
+ 2        Q.  Do you know whether EIS manufactured brakes in
+
+ 3   the United States?
+
+ 4        A.  I haven't looked up where they were
+
+ 5   manufacturing them.  It is an American company.  It
+
+ 6   wouldn't make sense to manufacture them overseas.  But
+
+ 7   again, I don't have the information, so I don't have an
+
+ 8   opinion about that.
+
+ 9        Q.  Do you know from reading Mr. Reyes' testimony
+
+10   whether -- actually let me start a better question.
+
+11            Do you remember from reading Mr. Reyes'
+
+12   testimony that initially he did not have an air
+
+13   compressor?
+
+14        A.  I did.
+
+15        Q.  And then there was a gap in time where he lived
+
+16   in an apartment that would not allow him to work on
+
+17   cars.  Do you remember that?
+
+18        A.  I do remember that.
+
+19        Q.  And subsequent to that when he started working
+
+20   on cars again, at some point in time he got an air
+
+21   compressor, right?
+
+22        A.  That is correct.
+
+23        Q.  Do you have an opinion as to whether he
+
+24   actually worked with an asbestos-containing brake when
+
+25   he had an air compressor?
+
+
+
+
+
+
+
+
+
+
+
+                                                          373
+
+
+
+
+ 1        A.  Let me just look over my notes when I put in
+
+ 2   the air compressor.  Hold on.  I thought I had it down.
+
+ 3   I can almost see when he stated he was using it.  I left
+
+ 4   that out for some reason.
+
+ 5        Q.  It appears to be relatively speaking at the end
+
+ 6   of his career when the brakes are more likely than not
+
+ 7   nonasbestos, right?
+
+ 8        A.  Yes, I do remember it was -- it was towards the
+
+ 9   end of the time when he was using it.  So, you know, if
+
+10   it's after the mid -- say the mid 1990s to 2004, I can't
+
+11   say it's more likely than not.  It would just depend on
+
+12   the individual cars and makes and models.  So my
+
+13   opinions are, you know, late '70s and rolling into the
+
+14   '80s and early 1990s it's more likely than not.  Anytime
+
+15   after that it would depend on a particular make and
+
+16   model if it had asbestos or not.
+
+17        Q.  When did you first learn that brakes could have
+
+18   asbestos in them?
+
+19        A.  I don't know how long I knew that.  But when we
+
+20   started testing and looking at brakes was sometime in
+
+21   the late 1990s or mid to late 1990s.
+
+22        Q.  At that point in time, mid to late 1990s, were
+
+23   you aware that asbestos could be hazardous?
+
+24        A.  Oh, sure.
+
+25        Q.  Did you drive a car in the mid to late 1990s?
+
+
+
+
+
+
+
+
+
+
+
+                                                          374
+
+
+
+
+ 1        A.  I did.
+
+ 2        Q.  Did you do your own automobile maintenance and
+
+ 3   repair work?
+
+ 4        A.  No.  I -- I used to do it when I was younger
+
+ 5   back in the '70s.  But after that and up until the early
+
+ 6   1980s, I put my wrenches down and never changed another
+
+ 7   brake.
+
+ 8        Q.  You just got me to my next question.  So in the
+
+ 9   1970s to 1980s did you do brake repair work yourself?
+
+10        A.  Yes.
+
+11        Q.  Did you use a mask or respirator when working
+
+12   with or around brakes?
+
+13        A.  No, sir.  I did no -- I'm not sure I knew they
+
+14   even contained asbestos and was not aware of the
+
+15   potential hazard of what I was doing.
+
+16        Q.  By the mid to late 1990s you were aware of the
+
+17   hazards though, right?
+
+18        A.  I'm sure that I was aware asbestos was a hazard
+
+19   in the early 1980s and maybe sometime in graduate school
+
+20   which would have been, you know, '77 through '83 or '76
+
+21   through '83.  The first company I was associated with,
+
+22   we were one of the first labs out there that were doing
+
+23   specific air analysis for asbestos.  So at sometime in
+
+24   the '80s I would think I was aware of the hazards of
+
+25   asbestos.
+
+
+
+
+
+
+
+
+
+
+
+                                                          375
+
+
+
+
+ 1        Q.  Did you do air analysis in any automobile
+
+ 2   mechanics or repair facilities?
+
+ 3        A.  No.  This was clearance samples after
+
+ 4   abatement.
+
+ 5        Q.  So sometime in the mid 1990s you were well
+
+ 6   aware that asbestos could be hazardous and you knew that
+
+ 7   there was asbestos in brakes, right?
+
+ 8        A.  Well, when I started the first company and I
+
+ 9   was analyzing air samples for asbestos, I knew asbestos
+
+10   was hazardous.  I guess -- I mean, I can't really pin a
+
+11   date, but I was working in the field then and starting
+
+12   in 1984 analyzing air samples for asbestos and
+
+13   eventually PLM analysis for asbestos and so on and so
+
+14   forth.  And so where the exact date is when I realized
+
+15   the hazardous nature of asbestos, of course, I don't
+
+16   testify about hazards of asbestos.  I'm just the -- you
+
+17   know, I look at the potential exposure to asbestos from
+
+18   different products.  But when I knew I really can't say
+
+19   for sure.
+
+20        Q.  Well, the point of measuring the exposure or
+
+21   the dose is because the dose defines the hazard, right?
+
+22        A.  I don't talk -- you know, dose to me is not
+
+23   appropriate for asbestos.  And -- because a dose in the
+
+24   sense of what actually gets into your body and stays
+
+25   there, like taken -- you know, taken an antibiotic,
+
+
+
+
+
+
+
+
+
+
+
+                                                          376
+
+
+
+
+ 1   it'll tell you what the active ingredient is and how
+
+ 2   much and how much you swallowed so you know the dose.
+
+ 3   Here you're dealing with air samples.  And I never
+
+ 4   testify about what the exposure is that causes any type
+
+ 5   of asbestos disease.
+
+ 6        Q.  But I'll use the term "quantification."  You
+
+ 7   have measured asbestos release from products such as
+
+ 8   brakes, right?
+
+ 9        A.  I have.
+
+10        Q.  And I think you said that as late as sometime
+
+11   in the 2000s you went into a store and bought a set of
+
+12   aftermarket or maybe even OEM brakes that still had
+
+13   asbestos in them, correct?
+
+14        A.  Correct.
+
+15        Q.  Did you warn anybody when you were driving your
+
+16   car and applying your brakes that your car was giving
+
+17   off asbestos?
+
+18        A.  And when will this be?
+
+19        Q.  Ever in your life.
+
+20        A.  The time that -- I never changed my brakes
+
+21   after early 1980.  There's plenty of literature out
+
+22   there, plenty of industrial hygienists.  It's unclear
+
+23   where I would be running around and warning people.
+
+24        Q.  Well, let's start with we'll go friends, family
+
+25   and then co-workers.  So did you live in a house with a
+
+
+
+
+
+
+
+
+
+
+
+                                                          377
+
+
+
+
+ 1   garage that you could park your car in?
+
+ 2        A.  No.
+
+ 3        Q.  Have you ever had a garage at home?
+
+ 4        A.  Not until I got out of college and got my
+
+ 5   graduate degree and actually had a job that paid me
+
+ 6   enough money to get a mortgage.
+
+ 7        Q.  Making enough money to go in debt.  When was
+
+ 8   that when you had your first garage?
+
+ 9        A.  You know, I'm not going to start testifying
+
+10   about when I had my first garage or not.  I think that's
+
+11   graduate school.  I never changed a set of brakes again.
+
+12   I never --
+
+13        Q.  I understand that.  I'm not ask about changing
+
+14   the brakes.  I'm asking about braking, in other words,
+
+15   applying brakes.
+
+16        A.  I'm sorry?
+
+17            MR. STEINBERG:  Counsel, excuse me, gentlemen,
+
+18   this is Henry Steinberg.  I'm going to object to this
+
+19   line of questioning as beyond the scope and
+
+20   argumentative.
+
+21   BY MR. HUGO:
+
+22        Q.  So when you had a garage that you parked your
+
+23   car in and you used your brakes to stop, is it your
+
+24   understanding as a material scientist that the brakes
+
+25   give off asbestos fibers during the stopping process?
+
+
+
+
+
+
+
+
+
+
+
+                                                          378
+
+
+
+
+ 1        A.  As a person who has studied asbestos brakes now
+
+ 2   and really started doing the study in 1999, 2000, 2001,
+
+ 3   2004 and later, my understanding is what happens as you
+
+ 4   apply the brakes and if you have drum brakes the
+
+ 5   asbestos is kept in there.  If you have pads, you can
+
+ 6   have brake dust being released.  So at the time we
+
+ 7   started doing the studies, et cetera, there was, you
+
+ 8   know, warnings on brake boxes at times, there's
+
+ 9   industrial hygienists, there's EPA.  It's unsure who I
+
+10   would be warning about this potential exposure from my
+
+11   own personal cars.
+
+12        Q.  Well, what about yourself; were you concerned
+
+13   as a material scientist who was driving a car let's say
+
+14   in the 1990s, 1999 period if you're more comfortable
+
+15   with that, where you knew the brakes were more likely
+
+16   than not asbestos and you were using them to stop in
+
+17   your garage where, for example, the disc pads would give
+
+18   off asbestos and then you would get out and walk in your
+
+19   garage?
+
+20            MR. STEINBERG:  Argumentative, beyond the
+
+21   scope, harassing.
+
+22            THE WITNESS:  In 1999 I'm not sure I was aware
+
+23   of how far and all the different specifications or what
+
+24   could be asbestos or nonasbestos especially on disc
+
+25   brakes versus the drums in that time frame.  I'm not
+
+
+
+
+
+
+
+
+
+
+
+                                                          379
+
+
+
+
+ 1   sure I had the knowledge that asbestos brakes were even
+
+ 2   being sold at that time because it wasn't later on in
+
+ 3   the 2000s where I started seeing that there was specific
+
+ 4   specifications for when a company like Bendix would
+
+ 5   switch over to nonasbestos for one make and model but
+
+ 6   not -- but the same make and model earlier or later they
+
+ 7   haven't changed over yet.  I don't think that really
+
+ 8   opened my eyes about how you could have asbestos brakes
+
+ 9   still through the '90s and into the early 2000s until
+
+10   after -- I'm not sure there was any more asbestos brakes
+
+11   out there.  And all my cars went to the dealerships.
+
+12   There was no backyard working on them anymore.  So if
+
+13   various makes and models during that time had asbestos
+
+14   in it, you know, I didn't -- I didn't know at that
+
+15   point.  So I can't say that -- you know, to say that I
+
+16   was driving around and knew that it was giving off
+
+17   asbestos fibers in that time frame is not correct.
+
+18   BY MR. HUGO:
+
+19        Q.  What about if we go to 2004 to 2008; were you
+
+20   concerned about brakes on your cars giving off asbestos
+
+21   fibers during that period of time?
+
+22        A.  I don't remember what kind of thoughts I had in
+
+23   2004 and 2008.  But I'm not sure that I ever looked up
+
+24   what model car I happened to be driving in 2004 and 2008
+
+25   if they still had asbestos brakes or not.  So it's not
+
+
+
+
+
+
+
+
+
+
+
+                                                          380
+
+
+
+
+ 1   something I can opine about that I was concerned or not
+
+ 2   concerned.  I don't remember what I knew about the makes
+
+ 3   and models back in 2004 or 2008.
+
+ 4        Q.  Between 2004 and 2008 did you have a concern
+
+ 5   about whether the brakes on your car were asbestos or
+
+ 6   not?
+
+ 7        A.  I don't recall what I had a concern about for
+
+ 8   this particular topic in 2004 and 2008.
+
+ 9            MR. STEINBERG:  Beyond the scope, harassing,
+
+10   argumentative.
+
+11   BY MR. HUGO:
+
+12        Q.  You mentioned that you took your cars to
+
+13   dealerships.  Did you ever warn the dealership or the
+
+14   mechanics that were working on your car that your car
+
+15   could contain asbestos-containing components including
+
+16   brakes?
+
+17            MR. STEINBERG:  Same objections.
+
+18            THE WITNESS:  I don't recall.  But I would
+
+19   assume that the best position for anybody to warn
+
+20   mechanics and people working at dealerships would be the
+
+21   manufacturers of these brakes they were selling if
+
+22   Bendix and others were not warning the customer they
+
+23   were selling them to, i.e., you know, Ford which Bendix
+
+24   was a primary, you know, regional equipment
+
+25   manufacturer.  So you're asking me if I did something
+
+
+
+
+
+
+
+
+
+
+
+                                                          381
+
+
+
+
+ 1   that the companies themselves weren't doing, I'm
+
+ 2   assuming if they were warning, et cetera.  I don't
+
+ 3   remember ever going in and -- I don't remember one way
+
+ 4   or the other, so I can't say.
+
+ 5   BY MR. HUGO:
+
+ 6        Q.  From your perspective it makes sense that the
+
+ 7   manufacturer of the products would do the warning as
+
+ 8   opposed to some third party, correct?
+
+ 9        A.  I'm not here to pay -- you know, let's get it
+
+10   straight.  I'm not here to say who knew what, when or
+
+11   what, you know, like O'Reilly and Checkers and Grand
+
+12   Auto and Shucks and is it Krager (sic)?  I'm not here to
+
+13   say who knew what, when about the hazards of asbestos or
+
+14   corporate conduct.  That's not my area.  I'm here to say
+
+15   if, in fact, they were asbestos-containing.  And it
+
+16   doesn't matter who sold them.  I'm not putting the blame
+
+17   on them that they should -- they were responsible for
+
+18   corporate conduct or the original manufacturer is
+
+19   responsible for corporate conduct.  My area of what I do
+
+20   is sort of this is what happens if somebody does this
+
+21   like sanding or using a paintbrush or compressed air or
+
+22   files or grinds or uses a grinder on a brake shoe on the
+
+23   friction product portion.  Where they came from is
+
+24   really immaterial to me.
+
+25        Q.  I want to go back to the -- you said you went
+
+
+
+
+
+
+
+
+
+
+
+                                                          382
+
+
+
+
+ 1   to a store and I think it was a Chrysler box but it had
+
+ 2   a Chevy box inside and there were asbestos-containing
+
+ 3   brakes; is that correct?
+
+ 4        A.  That's correct.
+
+ 5        Q.  And when was that that you went into the store?
+
+ 6        A.  At the next break I'll pull the study and I can
+
+ 7   tell you all about it.
+
+ 8        Q.  Other than brakes, did you evaluate any other
+
+ 9   asbestos exposure that Mr. Reyes may have had working
+
+10   with or around cars?
+
+11        A.  I saw that he did a couple of engine jobs.  But
+
+12   I don't really have an opinion on gasket removal off of
+
+13   engines.  I think he did maybe.  But other than the
+
+14   brakes and, of course, the Johnson's baby powder, those
+
+15   are the only two exposures that I could say -- I could
+
+16   say with -- I could testify about.  I didn't see
+
+17   anything else.
+
+18        Q.  Right, I'm not -- I didn't mean to make it a
+
+19   trick question.  I'm only focused on the cars.  I'm not
+
+20   dealing with Johnson & Johnson at all.
+
+21        A.  Oh, okay.
+
+22        Q.  So other than the brakes, you don't have an
+
+23   opinion about exposures from working on the cars,
+
+24   correct?
+
+25        A.  That is correct.
+
+
+
+
+
+
+
+
+
+
+
+                                                          383
+
+
+
+
+ 1        Q.  So I have a question that would be actually a
+
+ 2   decent time to look at your report here because I want
+
+ 3   to understand what you're saying.  So the bottom of page
+
+ 4   12 of 13 there's a paragraph.
+
+ 5        A.  Yes.
+
+ 6        Q.  It starts with "assuming."  Okay.  So assuming
+
+ 7   that all of the 50 brake jobs that Mr. Reyes performed.
+
+ 8   It's the first part of that.  Did you count 50 brake
+
+ 9   jobs yourself?
+
+10        A.  I think I went through and tried to get an
+
+11   estimate of all the different ones.  So, you know, I
+
+12   can't -- I think that was pretty close.  I hope it's
+
+13   correct and I'm not saying which ones are asbestos and
+
+14   not asbestos.  The way I was counting it up I thought I
+
+15   got to 50.  But it may not be that much.  Three, eight,
+
+16   nine, ten, 11, 12, 13, 20, 21, 22, 24, 30, 31, 32, 36.
+
+17   Well, if this is an accurate record of how many brake
+
+18   jobs he did, I was off by about 14.  Or 13.  Excuse me.
+
+19        Q.  So are you referring to our Exhibit No. 1 that
+
+20   says number of brake jobs?
+
+21        A.  I'm sorry.  Yes, sir.
+
+22        Q.  And if you look above, that's why I asked about
+
+23   the 50.  Two paragraphs above it says "According to
+
+24   plaintiffs' counsel, Mr. Crapo stated Mr. Reyes
+
+25   performed in total about 50 brake jobs."
+
+
+
+
+
+
+
+
+
+
+
+                                                          384
+
+
+
+
+ 1        A.  Oh, that's where I got that.  I think I
+
+ 2   actually got his testimony just to check and see what he
+
+ 3   said if I recall correctly.  But I didn't have it right
+
+ 4   at this point.  That's what they told me.  Now I know
+
+ 5   where I got this.  Thank you.
+
+ 6        Q.  I wasn't trying to trick you.  I was just
+
+ 7   trying to figure out where 50 came from.  Okay.  And
+
+ 8   then it says -- it doesn't compare, et cetera.  But take
+
+ 9   me through this last thing so I understand the last
+
+10   sentence.  "In fact, over that 52 years, Mr. Reyes would
+
+11   have either applied himself or was applied to by his
+
+12   mother would equal approximately 264,000 total
+
+13   applications."  So if I understand what you're saying
+
+14   there, that's 52 times two times 365; is that right?
+
+15        A.  Yes.
+
+16        Q.  Something like that anyway.  Okay.  Now, how do
+
+17   you get from 264,000 to just over just a quarter of a
+
+18   billion JVP airborne talcum power fibrous talc and
+
+19   asbestos exposures?
+
+20        A.  Well, you know, 264,000 is a quarter of a
+
+21   billion.  And when I went through, if you go back to --
+
+22   you want to know how I got that number of exposures?
+
+23        Q.  Actually I think I just wanted to have you do
+
+24   that now.  The 264 --
+
+25        A.  Oh, I should have said a quarter of a million.
+
+
+
+
+
+
+
+
+
+
+
+                                                          385
+
+
+
+
+ 1   Dang it.
+
+ 2        Q.  Do I get some kind of bonus for editing your
+
+ 3   report?
+
+ 4        A.  You should because it reduces my cross by a
+
+ 5   little bit.
+
+ 6        Q.  So yeah, it should be an "M," million, right,
+
+ 7   not billion?
+
+ 8        A.  Yeah, I made a typo there when I did that.  I
+
+ 9   didn't catch it.
+
+10        Q.  That's why I was asking because it seemed like
+
+11   you were off by a factor of ten or I was by my math.
+
+12   That's what I was trying to figure out.
+
+13        A.  No, it was my typo.
+
+14            We've been going for about an hour.  Can we
+
+15   take about a five- to seven-minute break.
+
+16        Q.  Why don't we take ten because you've got to
+
+17   find that report.
+
+18        A.  I've got to find that other report.
+
+19            MR. HUGO:  So let's do ten minutes, so 3:20 or
+
+20   so.  Thanks.
+
+21            (Break taken from 3:10 p.m. to 3:25 p.m.)
+
+22   BY MR. HUGO:
+
+23        Q.  Go ahead, Bill.
+
+24        A.  Yeah, it wasn't that we had purchased these
+
+25   brakes ourselves.  I was thinking of the aftermarket one
+
+
+
+
+
+
+
+
+
+
+
+                                                          386
+
+
+
+
+ 1   that we purchased.  This was actually a set of brakes
+
+ 2   sent to us by the Kazan firm.  And they were purchased
+
+ 3   in June 30th, 2006, and they were brake shoes that were
+
+ 4   purchased from -- let me just look at the chain of
+
+ 5   custody because maybe we were doing it on behalf of --
+
+ 6   because they were purchased from the Atlanta Dodge on
+
+ 7   2006.  But I don't recognize -- I'd have to research who
+
+ 8   these initials are from that far back.  And they came
+
+ 9   from Dodge.  And when you opened the box, Atlanta Dodge,
+
+10   retail cash, paid June 28th, 2006, and they were a $184.
+
+11   And when you opened the box, the Mopar box, you opened
+
+12   it, it was actually a Mopar box with Delco 238 brake
+
+13   shoes.  And the brake drum shoes -- the brake drum shoes
+
+14   actually had 35 percent asbestos in it.  And there was a
+
+15   warning on the box, the actual box.
+
+16        Q.  What did the warning say?
+
+17        A.  The warning said "Danger.  Contains asbestos
+
+18   fibers.  Avoid creating dust.  Cancer and lung disease
+
+19   hazard."  That was a sticker on the side of the Mopar
+
+20   box that was inside a Chrysler Corporation box.
+
+21        Q.  Then you indicated that you purchased brakes
+
+22   from some store, right?
+
+23        A.  Yeah, we got some aftermarket brakes that had
+
+24   15 percent asbestos in it.
+
+25        Q.  When did you purchase those brakes?
+
+
+
+
+
+
+
+
+
+
+
+                                                          387
+
+
+
+
+ 1        A.  It's called Wearever Silver GM asbestos brake
+
+ 2   linings.  And let's see when we got those.  Those were
+
+ 3   purchased in Newman, Georgia.  I'm looking for a date on
+
+ 4   the receipt.
+
+ 5        Q.  From what store?
+
+ 6        A.  Advanced Auto Parts.  There's got to be day.
+
+ 7   Well, we logged them in on May 1st, 2000.
+
+ 8        Q.  Did that box have a warning on it?
+
+ 9        A.  Yes, on the side of the box it had a warning.
+
+10        Q.  What did it say?
+
+11        A.  It said "Contains asbestos fibers.  Avoid
+
+12   creating dust.  Breathing asbestos dust may cause
+
+13   serious bodily harm."
+
+14        Q.  Have you seen a Bendix box that had a similar
+
+15   warning regarding asbestos?
+
+16        A.  I don't recall seeing one.
+
+17        Q.  Have you seen other boxes other than these two
+
+18   that had an asbestos warning for asbestos-containing
+
+19   brakes?
+
+20        A.  Yeah, I don't recall right now.  These two just
+
+21   kind of stick in my mind because they were purchased,
+
+22   you know, 2000 and 2006.
+
+23        Q.  With regard to my question about Bendix and
+
+24   warnings, do you have -- let me try and make sure I
+
+25   understand your answer.  Are you saying that you never
+
+
+
+
+
+
+
+
+
+
+
+                                                          388
+
+
+
+
+ 1   saw a Bendix box with a warning or are you just saying
+
+ 2   you don't remember whether you've ever seen a Bendix box
+
+ 3   with a warning?
+
+ 4        A.  I'm saying the latter.
+
+ 5        Q.  And I think I asked you this question, but
+
+ 6   maybe not.  Going back to Exhibit 1, this list of
+
+ 7   vehicles, am I correct that you do not have the OEM
+
+ 8   specifications for the year, make and model of any of
+
+ 9   the cars listed on Exhibit 1?
+
+10        A.  As I testified earlier to, I do not.
+
+11        Q.  Sorry to repeat myself.
+
+12        A.  That's all right.
+
+13        Q.  And I'm done.
+
+14        A.  Oh, okay.  Great.
+
+15        Q.  So I need from you a bill.
+
+16        A.  Yes.
+
+17        Q.  A bill, Bill, an invoice and a W-9.
+
+18        A.  Yeah, we can -- we can give you -- I don't
+
+19   have -- you know, it's not going to go a check to me.
+
+20   What we do is tomorrow I'll have -- we will give you our
+
+21   IRS number for the company and you can send an invoice.
+
+22        Q.  Great.  And we can go off the record.
+
+23        A.  Okay, great.
+
+24            (Whereupon, the deposition as adjourned at 3:32
+
+25            p.m.)
+
+
+
+
+
+
+
+
+
+
+
+                                                          389
+
+
+
+
+ 1                     SIGNATURE OF DEPONENT
+
+ 2
+
+ 3           I, the undersigned, WILLIAM LONGO, Ph.D., do
+
+ 4   hereby certify that I have read the foregoing deposition
+
+ 5   and find it to be a true and accurate transcription of
+
+ 6   my testimony, with the following corrections, if any:
+
+ 7
+
+ 8   PAGE    LINE                    CHANGE
+
+ 9   ____    ____  _________________________________________
+
+10   ____    ____  _________________________________________
+
+11   ____    ____  _________________________________________
+
+12   ____    ____  _________________________________________
+
+13   ____    ____  _________________________________________
+
+14   ____    ____  _________________________________________
+
+15   ____    ____  _________________________________________
+
+16   ____    ____  _________________________________________
+
+17   ____    ____  _________________________________________
+
+18   ____    ____  _________________________________________
+
+19   ____    ____  _________________________________________
+
+20   ____    ____  _________________________________________
+
+21   ____    ____  _________________________________________
+
+22   ____    ____  _________________________________________
+
+23
+
+24                      ____________________________________
+                        WILLIAM LONGO, Ph.D., Date
+25
+
+
+
+
+
+
+
+
+
+
+
+                                                          390
+
+
+
+
+ 1                    REPORTER'S CERTIFICATE
+
+ 2
+
+ 3
+
+ 4           I, CATHERINE M. MEYER, a Shorthand Reporter,
+
+ 5   State of California, do hereby certify:
+
+ 6           That WILLIAM LONGO, Ph.D., in the foregoing
+
+ 7   deposition named, was present telephonically and by me
+
+ 8   sworn as a witness in the above-entitled action at the
+
+ 9   time and place therein specified;
+
+10           That said deposition was taken before me at said
+
+11   time and place, and was taken down in shorthand by me, a
+
+12   Certified Shorthand Reporter of the State of California,
+
+13   and was thereafter transcribed into typewriting, and
+
+14   that the foregoing transcript constitutes a full, true
+
+15   and correct report of said deposition and of the
+
+16   proceedings that took place;
+
+17            IN WITNESS WHEREOF, I have hereunder subscribed
+
+18   my hand this 27th day of October 2020.
+
+19
+
+20
+  
+21                 <%17819,Signature%>
+
+22                 CATHERINE M. MEYER, CSR NO. 11596
+
+23                 State of California
+
+24
+
+25
+
+
+

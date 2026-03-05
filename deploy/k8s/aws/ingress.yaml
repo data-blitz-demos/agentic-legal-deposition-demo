@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

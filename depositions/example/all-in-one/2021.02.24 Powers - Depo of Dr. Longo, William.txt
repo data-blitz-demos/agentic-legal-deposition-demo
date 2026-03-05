@@ -1,0 +1,3683 @@
+0001
+ 1   KAY POWERS                 NO. 2016-0983
+ 2                              DIVISION "I"
+ 3   versus                     15th JUDICIAL
+ 4                              DISTRICT COURT
+ 5   BEACON CMP CORP., et al.   PARISH OF LAFAYETTE
+ 6                              STATE OF LOUISIANA
+ 7   
+ 8   
+ 9   
+10   
+11           VIRTUAL/VIDEOTAPED DEPOSITION OF
+12                 WILLIAM E. LONGO, PhD.,
+13             Taken on behalf of Defendants
+14                  February, 24, 2021
+15                 1:50 p.m. - 5:05 p.m.
+16   
+17   
+18   
+19               VIRTUAL/VIDEOTAPED DEPOSITION of
+20   WILLIAM E. LONGO, Ph.D., produced, sworn and
+21   examined on behalf of the Defendants, the 24th
+22   day of February, 2021, before Debra deHaas,
+23   Notary Public.
+24   
+25   
+0002
+ 1   A P P E A R A N C E S
+ 2   (ALL APPEARANCES VIRTUAL/TELEPHONIC)
+ 3   
+ 4           The Plaintiff was represented by
+     Mr. Mark A. Linder, Esq., of The Lanier Law
+ 5   Firm, P.C., 10940 W. Sam Houston Parkway
+     North, Suite 100, Houston, Texas 77064
+ 6   
+                          and
+ 7   
+            Mr. Darron E. Berquist, Esq., of The
+ 8   Lanier Law Firm, P.C., Tower 56, 126 East 56th
+     Street, 6th Floor, New York, New York 10022
+ 9   
+10   
+            The Defendant, Colgate-Palmolive
+11   Company was represented by Mr. Peter
+     Mularczyk, Esq., of the law firm of Foley &
+12   Mansfield, 300 South Grand Avenue, Suite 2800,
+     Los Angeles, California 90071
+13   
+                           and
+14   
+            Ms. Sabrina Mizraehi, Esq., in-house
+15   counsel for Colgate-Palmolive Company, 909
+     River Road, Piscataway, New Jersey 08854
+16   
+17   
+18          The Defendant, Barry Concrete, was
+     represented by Ms. Charlotte Bordenave, Esq.,
+19   110 French Street, Suite A, New Iberia,
+     Louisiana 70560-3701.
+20   
+21   
+     Also present: Sam Swain,
+22                 Legal Videographer
+23   
+24   
+25   
+0003
+ 1          I N D E X  O F  E X A M I N A T I O N
+ 2   DEPONENT:  WILLIAM E. LONGO, PhD
+ 3      Examination by Mr. Mularczyk.............7
+ 4   
+                    E X H I B I T S
+ 5   
+     NO.                                       PAGE
+ 6   
+     1   Copy of M66934 report dated
+ 7       2/23/21.................................65
+ 8   2   Copy of Mount report for Weitz
+         & Luxenberg on Cashmere Bouquet
+ 9       samples dated 6/5/13....................66
+10   3   Copy of reanalysis of sample 2
+         of TEM grids dated June 2013............66
+11   
+     4   Copy of reanalysis of Sample 1
+12       dated 2013..............................66
+13   5   Copy of three-page e-mail from
+         Chris Romanelli to Bill Egeland.........67
+14   
+     6   Copy of five PLM micrographs............67
+15   
+     7   Copy of cover letter for old Notice of
+16       Deposition, Ex parte, Amended Notice of
+         Deposition, and older Powers report
+17       dated 8/15/08...........................68
+18   8   Copy of amended notice of deposition
+         dated 2/23/21...........................69
+19   
+     9   Copy of curriculum vitae dated
+20       10/5/20.................................69
+21   10  Copy of list of testimony...............69
+22   
+23   
+24   
+25   
+0004
+ 1                  E X H I B I T S
+ 2   NO.                                       PAGE
+ 3   11  Copy of invoices, Re: Powers............70
+ 4   12  Copy of report of Dr. Longo,
+         Re: Powers, dated 11/5/18...............70
+ 5   
+     13  Copy of report of Dr. Longo,
+ 6       dated 11/5/18...........................71
+ 7   14  Copy of report of Dr. Longo,
+         dated 1/12/21 for project No. M69934....71
+ 8   
+     15  Copy of compiled notebook for
+ 9       Project No. M69934 for '50s.............71
+10   16  Copy of compiled notebook for
+         Project No. M69934 for '60s.............71
+11   
+     17  Copy of compiled notebook for
+12       Project No. M69934 for '70s.............72
+13   18  Copy of compiled notebook for
+         Project No. M69934 for '80s and '90s....72
+14   
+     19  Copy of report of Dr. Longo dated
+15       9/25/18 from the Google drive...........72
+16   20  Copy of report of Dr. Longo dated
+         3/24/19 from the Google drive...........72
+17   
+     21  Copy of declaration dated 5/2/19........73
+18   
+     22  Copy of Appendix A, Talcum Powder
+19       Reliance List...........................73
+20   23  Copy of Dr. Longo testing binder
+         Tabs 1-12...............................74
+21   
+22   
+23   
+24   
+25   
+0005
+ 1                  E X H I B I T S
+ 2   NO.                                       PAGE
+ 3   24  Copy of Dr. Longo testing binder
+         Tab 13..................................74
+ 4   
+     25  Copy of MAS chart of J&J testing
+ 5       dated 1/31/21...........................74
+ 6   26  Copy of Plaintiff's objections to
+         Amended Deposition Notice...............75
+ 7   
+     27  Copy of TEM analysis report
+ 8       dated 6/3/17...........................101
+ 9   
+10   Requests for Production:
+11   Page 33, Line 2
+12   Page 55, Line 18
+13   Page 61, Line 6
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0006
+ 1               THE VIDEOGRAPHER:  We're on the
+ 2          record.  Today's date is February 24th,
+ 3          2021.  The time is 1:50 p.m.  This is
+ 4          the videotaped deposition of William E.
+ 5          Longo in the matter of Kay Powers
+ 6          versus Beacon CMP Corp., et al.,
+ 7          No. 2016-0983.
+ 8               This is Sam Swain, and I'm the
+ 9          videographer.  Will counsel please
+10          state their appearances and locations,
+11          after which the court reporter will
+12          swear in the witness?
+13               MR. LINDER:  This is Mark
+14          Linder appearing for the plaintiff.  I
+15          am located at my home in Houston,
+16          Texas.
+17               MR. MULARCZYK:  Hi.  This is Peter
+18          Mularczyk, on behalf of
+19          Colgate-Palmolive Company, and I am
+20          located in my home in West Covina,
+21          California.
+22               MR. BERQUIST:  And this is Darron
+23          Berquist from The Lanier Law Firm for
+24          the plaintiff.  I am at MAS
+25          Laboratories in Georgia.
+0007
+ 1               MS. BORDENAVE:  Hello.  Charlotte
+ 2          Bordenave, appearing on behalf of Barry
+ 3          Concrete.  I am located in my office in
+ 4          New Iberia, Louisiana.
+ 5               THE COURT REPORTER:  Is that it?
+ 6          W I L L I A M  E.  L O N G O, PhD.,
+ 7                   called as a witness,
+ 8                   having been previously
+ 9                   sworn, according to
+10                   law, testifies as follows:
+11   EXAMINATION BY MR. MULARCZYK:
+12      Q.  Are we all set?  Good morning or good
+13   afternoon, Dr. Longo.  How are you?
+14      A.  I'm fine.  Good morning to you.
+15      Q.  It's good to see you again, sir.
+16      A.  And you.
+17      Q.  Thank you.  You understand that we're here
+18   to talk about the Powers case today.  Right?
+19      A.  Yes, sir, I am.
+20      Q.  And could you please state your full name
+21   for the record?
+22      A.  William Edward Longo.
+23      Q.  And where are you currently located, sir?
+24      A.  In one of my conference rooms at MAS
+25   in Suwanee, Georgia.
+0008
+ 1      Q.  Okay.  I think the last couple times that
+ 2   I understand you've been deposed you typically
+ 3   take your deposition from your office.  Right?
+ 4   When you're alone?
+ 5      A.  Yes.
+ 6      Q.  Okay.  And what conference room are you in
+ 7   now?
+ 8      A.  We call it conference room number two.
+ 9      Q.  Okay.  And who is with you right now?
+10      A.  Darron Berquist.
+11      Q.  Okay.  And, so, when I see you look off to
+12   your right, is that where Darron Berquist is
+13   located in the conference room?
+14      A.  Yes.  Six feet away.
+15      Q.  Okay.  Now, are you also represented by
+16   counsel in this matter?
+17      A.  No.
+18      Q.  Meaning have you hired a personal attorney
+19   in this matter?
+20      A.  Not in this matter, on the Kay Powers.
+21   MAS has hired attorneys -- an attorney with
+22   the Johnson & Johnson subpoena on one of our
+23   former employees.  So, I guess it depends on
+24   what kind of questions you're asking if I'm
+25   represented or not.
+0009
+ 1      Q.  Okay.  Understood.  And when you refer to
+ 2   prior employees, are you talking about Michael
+ 3   Mount?
+ 4      A.  Of course.
+ 5      Q.  Okay.  When were you retained in this
+ 6   matter?
+ 7      A.  Well, I'm looking at the date.  So,
+ 8   the date of the report is November 5, 2018.
+ 9   I assume before that.
+10      Q.  Okay.  Do you have any information, any
+11   documentation that speaks to when you were
+12   retained specifically?
+13      A.  No.  Wait.  Wait.  I would say
+14   sometime between -- before August 15th, 2018.
+15   I have a letter here to my assistant
+16   transmitting all the information that I
+17   reviewed in this case.
+18      Q.  And that was August what?  Before August
+19   what date?
+20      A.  It was August 15th, 2018 from The
+21   Lanier Law Firm, and it is from Roberta
+22   Teherivand.
+23      Q.  Okay.  Why don't we do this?  We'll come
+24   back and mark that in just a second.  Because I
+25   want to get a sense of what else you have with
+0010
+ 1   you.  Let's just pause there for one second.
+ 2               MR. MULARCZYK:  I do want to make a
+ 3          record of something before we go
+ 4          any further, sort it, into the substance
+ 5          of the documents.  I was advised by
+ 6          counsel for plaintiff off the record
+ 7          before the deposition began that there was
+ 8          some new documentation, new testing that
+ 9          was going to be provided by MAS
+10          specifically for this case.  And, so, I
+11          just want to make sure that I lodge an
+12          objection to any newly-disclosed
+13          information that wasn't previously
+14          disclosed when the expert reports and
+15          the bases were due in this case.
+16                   I also -- we had served a notice
+17          of deposition in the case.  We did not
+18          receive any responsive documents in
+19          response to that notice of deposition.  We
+20          also know -- I also know that our local
+21          folks over in Louisiana, specifically Mr.
+22          Balhoff, had been in contact with Mr.
+23          Linder about obtaining the reliance
+24          materials in this case.  And we received a
+25          link from Mr. Linder.  But it's -- there
+0011
+ 1          weren't very many materials in that case.
+ 2               And we'll mark exactly what I
+ 3          received.  But I just want to make an
+ 4          objection to any new documents, any new
+ 5          testing, any new reports, and that we have
+ 6          not received anything responsive
+ 7          to our notice of deposition and request
+ 8          for production of documents.  So, we'll
+ 9          move -- we'll move to be excluding any
+10          reference to those, and we'll object to
+11          any new opinions and any new reports.
+12               MR. LINDER:  And Pete, we'll just --
+13          I'm sure, like you said a minute ago,
+14          we'll probably end up attaching and
+15          referring to materials that were produced
+16          back on January -- it was either the 12th
+17          or 13th -- and 13th maybe of this year,
+18          which included Dr. Longo's reports, his
+19          reliance list, his, you know, backup data
+20          count sheets, you know, PLM images,
+21          photomicrographs, all that kind of
+22          stuff, in addition to the materials that
+23          were provided in response to -- as
+24          reliance materials earlier this week.
+25                   We also did serve some objections
+0012
+ 1          to the materials that were requested.  I
+ 2          think that they were first requested per
+ 3          the deposition notice on last Friday,
+ 4          which was when the deposition -- initial
+ 5          deposition notice was received, and, then,
+ 6          later amended yesterday.  I believe we
+ 7          have served objections to both notices and
+ 8          to the documents that were requested
+ 9          therein, which I think were identical.
+10                   At any rate, I just wanted to put
+11          that on the record.  But let's go ahead
+12          and talk about what I suppose was provided
+13          in terms of the reports and all the other
+14          materials, which Dr. Longo is relying on.
+15   BY MR. MULARCZYK:
+16      Q.  So, let's start off here.  Dr. Longo, I
+17   saw you flipping through a folder and some pages.
+18   Did you bring materials with you to this
+19   deposition?
+20      A.  Yes.
+21      Q.  Okay.  Can we just go down the list, and
+22   can you tell us what you have in front of you?
+23      A.  Well, what was sent to me by
+24   plaintiff's counsel was, I have an old notice
+25   of deposition for Friday, September 4th,
+0013
+ 1   2020.  I have -- what is this?  I have a
+ 2   document that says ex parte for leave to file
+ 3   plaintiff's second supplement and amending
+ 4   the petition for damages, which I did not
+ 5   review.
+ 6          I have another notice of deposition
+ 7   for December 11th, 2018.  I have the report
+ 8   that I -- that I authored on November 5th,
+ 9   2018.  I have your amended notice of
+10   videotaped deposition.  I have a -- I have an
+11   eleven-page report that I finished up last
+12   night, February 23rd, 2021 of the rest of the
+13   retains that we analyzed.  And these were
+14   primarily all the retains that were pre-1950.
+15   And I'm just using them as a -- sort of a
+16   reference, because this is my understanding,
+17   Cashmere Bouquet used all Italian.
+18          I have -- let's see.  Where's my other
+19   stuff?  I also brought the now famous June
+20   5th, 2013 analysis of Cashmere Bouquet, two
+21   samples, that Mike Mount did.  I have a
+22   reanalysis of sample 57050-002, from the same
+23   grids.  No.  This was a new analysis.  For
+24   the tremolite.  There was only one detected.
+25   And reanalyzed -- 100 grid openings that now
+0014
+ 1   have three.
+ 2          And we put the results in fibers and
+ 3   bundles.  And the amount of tremolite in this
+ 4   sample is 4,706,000.  And also, I was able to
+ 5   go get --
+ 6      Q.  Can we just pause for one second?  You
+ 7   froze.  It says your bandwidth is low.
+ 8      A.  Yeah.  It shouldn't be.  I don't
+ 9   understand that.  We might have to get
+10   repeaters put in.  I think I may suggest
+11   that.  Because we have very fast Internet
+12   here.
+13          We analyzed the grids, the same grids
+14   that were analyzed initially where ten
+15   openings were analyzed.  And we put the same
+16   grids in and analyzed 100 openings.  So, now
+17   we have four tremolite -- three tremolite
+18   bundles and one tremolite fiber.  I think
+19   there was some discussion about only having
+20   one.
+21          And, then, we also went back and got
+22   the exact same grids for the anthophyllite.
+23   The one anthophyllite structure in there was
+24   still present on the grid.  So, we took two
+25   diffraction patterns on it as suggested in
+0015
+ 1   the ISO 22262-2.  And instead of three, we
+ 2   now have eight anthophyllite structures,
+ 3   including the one, with a concentration at
+ 4   9,411,000.
+ 5          I also provided a -- the PLM analysis
+ 6   in the -- that Bill Egeland did for the two
+ 7   Cashmere Bouquet samples and the snowmobile
+ 8   brake sample that came along with it.  And I
+ 9   think, as I've testified in the past, that I
+10   was fairly confident that the R93 would have
+11   missed any of the asbestos in there.  And
+12   that shows to be true.
+13               And also, just found an e-mail
+14   from Chris Romanelli to Bill Egeland on March
+15   28th, 2013, telling him that he is sending --
+16   "Fed-Exing a box with three sealed packages
+17   for you to test for the presence of asbestos
+18   or asbestiform particles.  Bags marked A1 and
+19   A2 are sealed packages of Cashmere Bouquet
+20   that I bought on Ebay.
+21          The bag marked B is a sealed
+22   snowmobile brake that I purchased off Ebay.
+23   Please maintain the packaging of all samples.
+24   Thanks."
+25          And Nancy Sears who was the log-in
+0016
+ 1   person at the time put a received 3/29/13 on
+ 2   that.  Okay.  I have that.  I have all the
+ 3   initial analysis of the Shulton retains that
+ 4   were provided for the '50s, '60s, '70s, '80s
+ 5   and '90s.  I also have what I call the
+ 6   pre-1950s analysis where only amphibole
+ 7   testing was done.  No chrysotile yet.
+ 8          And in the report that -- the new
+ 9   report I generated I put in the weights to
+10   calculate -- the weights of the PLM samples
+11   to calculate the amount of chrysotile fibers,
+12   bundles that were in each of the samples.  I
+13   think that's it.
+14          I think I got -- I got the depositions
+15   and stuff here that they sent me.
+16      Q.  What depositions?
+17      A.  I have answers to interrogatories
+18   propounded by Tesh drugs.  Answers to
+19   plaintiff's interrogatories, Powers' J&J
+20   response to rfa's.  Powers' J&J response to
+21   rfp's.  Powers' J&J response to rogs.
+22   Response to plaintiff's request for
+23   admission.  Response to request for
+24   production by plaintiff.  Powers' response to
+25   request for production propounded by
+0017
+ 1   pronounced -- Tesh drugs.
+ 2          And I have -- I guess I'll pull it
+ 3   out.  I have the depositions of Caroline
+ 4   Patten.  The pmk for Tesh drugs.  The
+ 5   deposition of Nancy Mainard.  And I have cal
+ 6   -- Kay Powers, volumes one, two, and three.
+ 7          And in this file is also a September
+ 8   11th analysis of Colgate-Palmolive Cashmere
+ 9   Bouquet cosmetics talc products for amphibole
+10   asbestos expert report, September 11th.  And
+11   these for the analysis of 38 samples, I
+12   think.  Was it 38?  Let me see who was
+13   sending these.
+14          These are all the Simon, Greenstone,
+15   Panatier samples with the sealed containers.
+16   This is -- I think the original report.  Then
+17   the samples from Peter Angeles.
+18      Q.  The 38 samples?
+19      A.  Yeah.  September 11th, 2018.  That's
+20   what it says in the report.  I didn't count
+21   them up.
+22      Q.  Okay.
+23      A.  Oh, I also have with me here some
+24   photomicrographs of chrysotile and a 71202,
+25   chrysotile and talc.  And the reason I have
+0018
+ 1   this is it's a chrysotile bundle that is, I'd
+ 2   say, 30 percent chrysotile and the rest talc
+ 3   with the interface.
+ 4          And there's been testimony lately on
+ 5   what are the dispersion colors for talc
+ 6   versus the dispersion colors for chrysotile.
+ 7   And what it comes down to, is it yellow?  Do
+ 8   you get yellow for chrysotile?  Do you get
+ 9   yellow for talc?  And the main issue of
+10   differentiating fibrous talc from fibrous
+11   chrysotile is the brightness of colors or the
+12   birefringence.  This micrograph taken on our
+13   new PLM microscopes shows how the talc
+14   section, pure talc section is a brightest
+15   yellow, and in the interface between the two,
+16   the metamorphic region.  And, then, the
+17   chrysotile is a darker yellow with some reds.
+18   In the parallel direction.
+19          In the perpendicular direction, the
+20   talc has a lighter bright blue where the
+21   chrysotile is a darker blue.  I'll hold one
+22   up here.  You can see it.  Probably not too
+23   good.
+24      Q.  I can't.  You're freezing up.  Your
+25   bandwidth is still low.  So, you're coming in,
+0019
+ 1   and you're freezing.  Okay.  I see a paper now,
+ 2   but it's really --
+ 3      A.  I'll scan them and send them to you.
+ 4   And, also, the resolution on these new
+ 5   polarized light microscopes are, I would
+ 6   estimate, at least four times better than the
+ 7   ones we've been using, even with the infinity
+ 8   or flat lens, the 40 objective lens.  Because
+ 9   now all the lenses on these PLM scopes are
+10   flat or infinity.
+11          And you can detail -- maybe you can
+12   see this one.  If you look at the darker blue
+13   area, that's where the talc is.  And the
+14   lighter area is where the chrysotile is.  And
+15   you can see the resolution now on the fibrils
+16   that are splaying out from the top somewhat.
+17   And I don't know if those are single fibrils
+18   or those are smaller bundles.  And we
+19   couldn't do that before on our other ones, on
+20   our older scopes.
+21          So being a microscopy nerd, we're very
+22   happy to have the newest and latest
+23   technology.
+24      Q.  Okay.  So, I've got some questions on
+25   everything you just said.
+0020
+ 1      A.  Really?
+ 2      Q.  Yeah.
+ 3      A.  I explained it all.
+ 4      Q.  Well, I have to -- just for the record,
+ 5   and, you know, perhaps Mr. Linder can confirm,
+ 6   the vast majority of at least the second half of
+ 7   the documents you just identified were never
+ 8   produced to us in this case.  And I think Mr.
+ 9   Linder can confirm that.
+10               MR. LINDER:  They are -- some of the
+11          items I don't know whether they were
+12          provided before this morning.  The Google
+13          -- or the drive to the -- link to the
+14          Google drive that contained the reliance
+15          materials is being updated with those
+16          materials.
+17               So, to the extent, you know we
+18          don't wrap up, of course, by 5:00 eastern
+19          this afternoon, hopefully, that would
+20          provide adequate time to review those
+21          materials, if you want to examine Dr.
+22          Longo about it when we resume.
+23               But they are being uploaded there.
+24          They're going to be accessible.  You
+25          should have them, some of them, probably
+0021
+ 1          already.  I think there's a large file
+ 2          maybe that's being put on there that
+ 3          should be on there shortly.
+ 4               MR. MULARCZYK:  So, let's go back to
+ 5          -- so, again, we'll just make the same
+ 6          objection we did at the beginning of this
+ 7          deposition to all the same material.
+ 8   BY MR. MULARCZYK:
+ 9      Q.  So, let's go back.  I want to point out a
+10   couple of things.  The report you mentioned on
+11   February 23rd, 2021, you told me it was an
+12   eleven-page report with respect to some retains.
+13   What retains are you talking about?
+14      A.  I think they're known as the Shulton
+15   retains we got from the RJ Lee a couple -- a
+16   year or so ago.  Oh, Shelton.  That's it.
+17      Q.  I'm sorry.  You're saying it's retains for
+18   what product?
+19      A.  Cashmere -- Cashmere Bouquet.
+20      Q.  Okay.  All right.  And these are -- when
+21   you say "retains," what do you mean by that?
+22      A.  It's sort of the name that's been
+23   given for samples that Cashmere Bouquet has
+24   in their custody or Johnson & Johnson --
+25   Johnson & Johnson, we call them historical.
+0022
+ 1   Chanel are retains where they have retained
+ 2   certain samples over time.  So that the
+ 3   person -- so that the entity that is
+ 4   providing the samples, instead of the client
+ 5   or from Ebay, this is coming from
+ 6   Colgate-Palmolive, Cashmere Bouquet.
+ 7          These samples were all residing, I
+ 8   guess, at the RJ Lee Group.  And they sent
+ 9   splits to us.
+10      Q.  Are you talking about part of the same
+11   set of the 63 samples?
+12      A.  I am.
+13      Q.  Okay.  Are these new, additional samples
+14   that you analyzed above and beyond what is
+15   referenced in your January 1st, 2021 report?
+16      A.  Yes.  These samples are all the
+17   pre-1950 samples.  So, 1910 to 1920, 1920 to
+18   '30, '30 to '40.
+19      Q.  Okay.  All right.  Then, you mentioned the
+20   June 5th, 2013 report that we already talked
+21   about.  And, then, you mentioned a reanalysis
+22   that was done of the 2013 -- 2013 TEM testing
+23   that's reported by Michael Mount.  Right?
+24      A.  Right.  We reanalyzed the grids that
+25   we still have from that.  And we analyzed 100
+0023
+ 1   grid openings out of that grid instead of ten
+ 2   I think that Mount did, 10 or 20.  I guess
+ 3   instead of guessing, I can look at the
+ 4   report.
+ 5      Q.  Okay.  So, let's just be clear here.  The
+ 6   February 23rd, 2021 report, the 11-page report
+ 7   with the retains is not a report that was
+ 8   produced before this deposition.  The reanalysis
+ 9   that you just mentioned of sample 57050, 001
+10   and 002, are those two separate reports?
+11      A.  They're not in a report.  They're just
+12   the data.
+13      Q.  Okay.  All right.  Those materials --
+14               MR. LINDER:  I'm sorry, Pete.  I was
+15          just going to jump in, one other thing.  I
+16          think the reason that you're getting all
+17          this stuff is because they were responsive
+18          to the deposition notice.
+19               MR. MULARCZYK:  I just want to be
+20          clear that this was not material that was
+21          produced in advance of this deposition.
+22               MR. LINDER:  Right.  I guess it was
+23          produced -- some of it didn't exist
+24          probably when the report was initially
+25          issued, but is now responsive to that
+0024
+ 1          deposition notice.
+ 2   BY MR. MULARCZYK:
+ 3      Q.  What are -- you say you have just the data
+ 4   for those reanalyses.  What's the date on the
+ 5   bench sheets?
+ 6      A.  One of them is -- one of them is
+ 7   12/7/2020.  And the other one is 12/9/2020.
+ 8      Q.  So, which one is which?  Which one is 002?
+ 9      A.  002 is the -- well, it says 2/9 to
+10   12/11.  That's 002.  And 001 is 12/7 to 12/9.
+11      Q.  Okay.  So, just so I have this clear, the
+12   reanalysis of sample 002 was performed between
+13   12/9 and 12/11.  That's what it says on the bench
+14   sheet?
+15      A.  Yes.
+16      Q.  And, then, for the reanalysis for sample
+17   001 was performed 12/7 through 12/9?
+18      A.  Correct.
+19      Q.  Okay.  Why is there a range?  I've usually
+20   seen just the single date on the bench sheets.
+21      A.  Well, you haven't looked at enough of
+22   our reports.  These analysis take many hours.
+23   So, at the end of the day, they'll stop.
+24   They'll leave the -- and when they have time,
+25   come back and redo it.  So, they start on
+0025
+ 1   another day.  It's common in TEM labs.  In
+ 2   fact, I see it a lot on RJ Lee's TEMs.
+ 3      Q.  So, for most of the -- most of the
+ 4   analysis that your lab has done with respect to
+ 5   Cashmere Bouquet samples, if we see a single
+ 6   date on the bench sheets, does that mean the
+ 7   analysis was started and completed in a single
+ 8   day?
+ 9      A.  Yes.
+10      Q.  Okay.  And if that happens to be the fact
+11   for most of them, is that consistent with how
+12   long or quickly it takes for MAS to perform its
+13   analysis on samples?
+14               MR. LINDER:  Objection.  Form.
+15      A.  Well, it just depends.  I mean, if you
+16   pick up a sample at 3:00 in the afternoon
+17   versus getting it in in the morning, and it
+18   depends on how many fibers are on there.  And
+19   to adequately scan 100 grid openings takes
+20   some hours.  It's not uncommon.
+21   BY MR. MULARCZYK:
+22      Q.  Okay.  The next item that you described
+23   was the PLM analysis -- the 2013 PLM analysis of
+24   the Cashmere Bouquet samples and the snowmobile
+25   brake.  Right?
+0026
+ 1      A.  Yes.
+ 2      Q.  And you said that was together with or
+ 3   separate from the Chris Romanelli letter?
+ 4      A.  Well, it's a Chris Romanelli e-mail.
+ 5      Q.  Do you have those documents together or
+ 6   separate?
+ 7      A.  I have them together.  I have the
+ 8   e-mail on the front.  Bill Egeland's report.
+ 9   And, then, page three is the results.
+10      Q.  All right.
+11               MR. MULARCZYK:  And just for the
+12          record, that was not produced to us by
+13          counsel in this case prior to this
+14          deposition.
+15   BY MR. MULARCZYK:
+16      Q.  All right.  The next item --
+17               MR. LINDER:  Just real quick, just
+18          for record purposes, Pete, I'm pretty sure
+19          that Morgan Tovey has already examined Dr.
+20          Longo on that and had the report and
+21          all that in advance of this case.  Of this
+22          report.
+23               MR. MULARCZYK:  Yeah.  Let's be
+24          clear about that.  The only thing that
+25          was produced in that case when Morgan
+0027
+ 1          Tovey deposed him were the TEM results.
+ 2          And I think Dr. Longo will agree with
+ 3          that.
+ 4               THE WITNESS:  I will agree.
+ 5               MR. BERQUIST:  And, Peter, this is
+ 6          Darron.  Just so you know, what Dr. Longo
+ 7          is referring to now was provided to us
+ 8          this morning.  And it was immediately
+ 9          added to the Google drive.  So you have
+10          access to it.
+11               MR. MULARCZYK:  Okay.
+12   BY MR. MULARCZYK:
+13      Q.  All right.  The next item you described
+14   generally were Shulton retains.  What are you
+15   referring to with respect to that?
+16      A.  Yes.
+17      Q.  What is that that you were describing?
+18   You just said you had Shulton retains.  What is
+19   that referring to?
+20      A.  Maybe it's not, but I understand
+21   that's what those 63 samples are called.
+22      Q.  Okay.  When you say you have the Shulton
+23   retains, are you saying you have with you the
+24   actual samples?  Are you saying you have some
+25   documentation or reports with respect to them?  I
+0028
+ 1   didn't catch what you meant you had with you.
+ 2      A.  It must have broke.  It must have
+ 3   froze.  What I have with me is the pre-1950
+ 4   retains where we have analyzed them for
+ 5   amphibole asbestos.  I think it's like 27
+ 6   samples.
+ 7      Q.  All right.  Is this the same or separate
+ 8   from the February 23rd, 2021, 11-page report we
+ 9   discussed earlier?
+10      A.  Well, they're in that.  So that's why
+11   I updated the report.
+12      Q.  Okay.  The challenge that I'm having is I
+13   don't have any of these materials that you have
+14   in front of you.  So, I'm just trying to figure
+15   out what they are.  That February 23rd, 2021,
+16   11-page report deals with pre-1950s analysis for
+17   amphibole asbestos.  Is that accurate?
+18      A.  Well, that's the new data.  I put all
+19   the previously-supplied, you know, the
+20   samples for the 1950, 1960, 1970, and
+21   combined in 1980 and 1990.  So I have it all
+22   in one report.
+23      Q.  Okay.  All right.  And does that report
+24   also include your new chrysotile analysis, or was
+25   there no chrysotile analysis performed with
+0029
+ 1   respect to that report?
+ 2      A.  Well, the pre-1950 analysis, no
+ 3   chrysotile analysis was done.  The chrysotile
+ 4   analysis for the 1950, '60s, '70s, '80 and
+ 5   '90s, that was produced when that report went
+ 6   out, I think it was January -- January 12th
+ 7   of 2020.
+ 8               MR. MULARCZYK:  Can I have that
+ 9          answer read back, please?
+10               (Last answer read back as
+11   requested.)
+12      A.  If I said that, I misspoke.  It's
+13   2021.
+14   BY MR. MULARCZYK:
+15      Q.  Okay.  So, for the record, there is no
+16   report that you have in your possession with
+17   respect to Cashmere Bouquet that's dated January
+18   12th, 2020?  Just to be clear.
+19      A.  Not that I'm aware of.
+20      Q.  Okay.  All right.  I'm going to skip over
+21   the discovery part and the September 11, 2018
+22   original report.  The micrographs of chrysotile,
+23   I think -- in talc -- I think you said does that
+24   refer to 71202?
+25      A.  Yes.
+0030
+ 1      Q.  Okay.  What is -- is 71202 a reference
+ 2   number, or what is that?
+ 3      A.  That's our M number for laboratory
+ 4   tracking.  So, that would be -005.  So, that
+ 5   would be specifically for a sample of
+ 6   cosmetic talc of some sort.
+ 7      Q.  And how many separate pages of micrographs
+ 8   do you have for that -- for that stack of
+ 9   documents?
+10      A.  Five.
+11      Q.  And the pages are all single sided and not
+12   double sided?
+13      A.  Correct.
+14      Q.  And M71202 is an M project number you
+15   said?
+16      A.  Yes.
+17      Q.  And what project is that?
+18      A.  That, I don't know.  I was just handed
+19   this yesterday.  Not using it as a particular
+20   project.  It's just when we run across these
+21   talc/chrysotile metamorphic bundles, we get a
+22   representative photo of it.
+23      Q.  When you say that M71202 is not a specific
+24   project, what do you mean by that?
+25      A.  I didn't say it was not a specific
+0031
+ 1   project.  I said I'm not using it for a
+ 2   specific project here.  I'm using it as a --
+ 3   as a demonstrative purpose for showing what
+ 4   talc in chrysotile looks like when it's
+ 5   intergrowth for the dispersion staining.
+ 6          It's easier to look at a picture and
+ 7   understand what darker blue, and lighter
+ 8   blue, and how they compare for the refractive
+ 9   indices.
+10      Q.  And you said this was provided to you
+11   when?
+12      A.  Yesterday around 3:00.
+13      Q.  By whom?
+14      A.  Our senior PLM analyst, Paul Hess.
+15      Q.  Okay.  And how did it come that Paul Hess
+16   was providing you with chrysotile micrographs
+17   from this project?
+18      A.  Well, he has a standing request that
+19   whenever he runs across an asbestiform bundle
+20   that is chrysotile that has fibrous talc
+21   associated with it in the same direction, to
+22   please give me the photographs so I can put
+23   them in my file for chrysotile metamorphic
+24   talc asbestiform bundles.
+25      Q.  Okay.  Who did the standing request come
+0032
+ 1   from?
+ 2      A.  Me.
+ 3      Q.  Okay.  Why did you ask him for that?
+ 4      A.  Because at some point, when I ever get
+ 5   back in court, this will be a good teaching
+ 6   tool for the jury to understand what the
+ 7   polarized light microscopist is looking at to
+ 8   verify that talc is not misidentified as
+ 9   chrysotile and visa versa.
+10      Q.  Do you have any idea, as you sit here
+11   today, what product this analysis -- you said
+12   this is a cosmetic talc analysis?
+13      A.  It is.
+14      Q.  What cosmetic talc product?
+15      A.  I do not know.  I did not ask him what
+16   project he was working on.
+17      Q.  Do you recognize 71202 as any particular
+18   project that you've worked on?
+19      A.  No.
+20      Q.  So, when you look at 71202, that doesn't
+21   stand out to you as any cosmetic talc project
+22   that you've been involved in that's been a part
+23   of a litigation?
+24               MR. LINDER:  Objection.  Form.
+25      A.  This would be a cosmetic talc project
+0033
+ 1   that hadn't been produced.
+ 2               MR. MULARCZYK:  So, I'm going to
+ 3          make a demand for this, and request
+ 4          for what this project is and where it
+ 5          comes from, and where these Chrysotile
+ 6          images come from.  I'm just noting
+ 7          that for the record.  That will be a
+ 8          request for the next day.
+ 9   BY MR. MULARCZYK:
+10      Q.  So, just to be clear, this 71202 project
+11   that involves cosmetic talcum powder, do you or
+12   do you not know what product it involves?
+13               MR. LINDER:  Objection.  Form.
+14      A.  I do not know what product it
+15   involves.
+16   BY MR. MULARCZYK:
+17      Q.  And this is not -- this is a project
+18   that's currently underway that has not been
+19   produced in any litigation?
+20               MR. LINDER:  Objection.  Form.
+21      A.  I believe that would be correct.
+22   Because the analyst is currently working on
+23   it.
+24   BY MR. MULARCZYK:
+25      Q.  Okay.  Do you have any sense whatsoever in
+0034
+ 1   terms of the timing in when you expect for this
+ 2   to be produced in some litigation or another?
+ 3               MR. LINDER:  Objection.  Form.
+ 4      A.  No.
+ 5   BY MR. MULARCZYK:
+ 6      Q.  In addition to 71202, how many other
+ 7   micrographs has Paul Hess given you, let's say,
+ 8   in the last -- let's start broadly -- the last
+ 9   six months?
+10               MR. LINDER:  Objection.  Form.
+11      A.  I don't know.
+12   BY MR. MULARCZYK:
+13      Q.  Has he given you any?
+14      A.  Yes.  I receive micrographs all the
+15   time.
+16      Q.  Daily?  Weekly?  How often?
+17               MR. LINDER:  Objection.  Form.
+18      A.  I don't know.  I've never really kept
+19   track.  When he sees something interesting,
+20   he'll come and show me.
+21   BY MR. MULARCZYK:
+22      Q.  How do you make the decision in terms of
+23   what you think is interesting and what isn't
+24   interesting when Paul Hess gives you these
+25   micrographs?
+0035
+ 1               MR. LINDER:  Objection.  Form.
+ 2      A.  Well, he brings in what's interesting.
+ 3   I'll look at them and tell him, "Yeah.
+ 4   That's great."  Sometimes we'll find
+ 5   chrysotile that's interspersed with brucite.
+ 6   That's an interesting one.  Or we'll find
+ 7   that there's a talc plate with chrysotile at
+ 8   the edge.  That's always interesting.  We
+ 9   don't count those because the dispersion
+10   colors kind of bleed into each other.
+11          So, it just depends.  I don't
+12   discourage analysts coming in showing me
+13   something that they saw on the photograph and
+14   letting me look at it.
+15   BY MR. MULARCZYK:
+16      Q.  How did you make the decision that this
+17   one related to 71202 was one that you liked in
+18   particular for this case as opposed to any others
+19   that Paul Hess has given you?
+20      A.  Well, lately, the depositions have
+21   been turning more to the PLM analysis with
+22   dispersion staining, and the colors, and
+23   depending on the wavelength, you go from
+24   starting at the highest wavelengths of almost
+25   dark blue all the way up to white, to the
+0036
+ 1   shortest wavelengths all the way up to the
+ 2   longest wavelengths.  And you get these
+ 3   questions that go, "Well, in a dispersion
+ 4   staining, a talc fiber, can it have yellow?"
+ 5   "Yes."   "Can chrysotile have yellow?"
+ 6   "Yes."  "Well, how do you tell them apart?"
+ 7   "Because the yellows are brighter and it's a
+ 8   higher intensity because more -- a wider
+ 9   range of white wavelengths in the particular
+10   -- at a particular wavelength are let
+11   through."
+12          So, birefringence is the intensity of
+13   what you're looking at.  Well, it's very easy
+14   to say stuff like that.  So, lately, I have
+15   some before, that lately, I've been telling
+16   them any time you run across -- and it's
+17   sometimes hard to get talc fibers that are in
+18   the exact same direction as the chrysotile.
+19          So, if the talc fiber isn't exactly
+20   perpendicular or exactly perpendicular or
+21   parallel, then the colors are off.  So, the
+22   easiest way to do it is have one bundle that
+23   has both in it.  So, I was thinking how
+24   complicated for a jury to understand this.
+25   So, whenever he runs into one now, he takes
+0037
+ 1   pictures.  And this was a particularly good
+ 2   example of that.  And he brought it to me
+ 3   yesterday afternoon.  And I said, "Oh, I'll
+ 4   use this as a teaching tool to the jury."
+ 5      Q.  So, this really speaks to the issue --
+ 6   we'll talk more about this in detail later.  But
+ 7   this speaks to the issue that both talc and
+ 8   chrysotile can be present or appear along the
+ 9   same yellow continuum, and, then, you've got to
+10   evaluate the birefringence?
+11      A.  It's not the same continuum.  The
+12   continuum has various grades of yellow from a
+13   darkish gold to yellow to a brighter yellow.
+14   So, it's not the same continuum, because they
+15   don't really overlap.
+16          And, also, birefringence gives you a
+17   way to do a simple mathematical calculation
+18   to get a number of what the birefringence is.
+19   So, chrysotile has a calculated number of a
+20   birefringence that ranges about 0.005, which
+21   would put it into the low range, up to 0.17
+22   -- 0.017, which puts it into the lower
+23   moderate or medium range.
+24          And, then, anything over 0.5 is in the
+25   high range.  Talc is usually in the 0.47 up
+0038
+ 1   to the 0.06 range.  As shown by Walter
+ 2   McCrone, as shown by the Colorado School of
+ 3   Mines, as shown by the EPA, as shown by
+ 4   Johns-Manville when they were -- back in the
+ 5   early '70s, when they were running the
+ 6   proposed FDA PLM method for finding
+ 7   chrysotile.  They were giving the ranges.
+ 8          Outside of a PLM lab, or at least any
+ 9   PLM analyst with some experience, confusing
+10   chrysotile with fibrous talc is something
+11   that a junior PLM analyst ought to be able to
+12   do in his first few months of working.  It's
+13   kind of interesting that this is what's being
+14   picked on.
+15      Q.  But when you say it's not part of the same
+16   continuum, you're talking about differences
+17   between yellow, pale yellow, and golden yellow.
+18   Right?
+19      A.  That is correct.  When you line the
+20   two together like here, you can see the
+21   obvious difference of what could be called
+22   yellow or dark yellow versus the brighter
+23   yellow.  And, obviously, you can see the
+24   difference in this between the bluish, light,
+25   light blue, versus the darker blue that you
+0039
+ 1   have for chrysotile.
+ 2      Q.  When you say looking at this, were you
+ 3   looking at those images that are in front of you
+ 4   right now?
+ 5      A.  Yes.  I'm looking at this sample, and
+ 6   it is what's known as dispersion staining,
+ 7   and the fiber -- the asbestiform structure of
+ 8   interest is in the perpendicular direction.
+ 9   Where the chrysotile is at the top, it's a
+10   much darker blue, which starts to go lighter.
+11   And when you get to the point where you're
+12   mostly just all talc, it's to very light
+13   blue.
+14          That's the difference in refractive
+15   indices of from .552 for chrysotile in the
+16   darker blue to 1.535 for the lighter blue of
+17   the talc.  It's all blue.  But there's a
+18   darker and lighter.
+19      Q.  The images that you're looking at, are
+20   those central stop dispersion images?
+21      A.  They are.
+22      Q.  Okay.  Now, how does -- let's go back to
+23   Paul Hess for a second.  How does Paul Hess
+24   provide you these images when he gets them?
+25      A.  He takes a digital image, and he
+0040
+ 1   prints it out, and he walks it to my office,
+ 2   or he leaves it when I'm not there.
+ 3      Q.  Do you have all of the images that he's
+ 4   given to you?
+ 5      A.  Oh, God, no.  I only keep a couple of
+ 6   the ones that are interesting.  And when I
+ 7   get a big enough pile, I dispose of them.
+ 8      Q.  So, you don't happen to have any of the
+ 9   ones that you don't find interesting?
+10               MR. LINDER:  Objection.  Form.
+11      A.  I think any of the ones -- all these
+12   are in the notebooks, too.  I mean, these are
+13   images of analysis.  The analysis for the
+14   '40s -- excuse me -- for the '50s, '60s,
+15   '70s, '80s, and '90s for this chrysotile all
+16   have these images.  So, I don't see any
+17   reason to keep them because they're just
+18   average images at times.
+19          The ones I pull out and save are the
+20   ones like this.  I'll put that in a file, for
+21   this exact reason.  You don't see them that
+22   often.  So when one comes around, I want it.
+23   BY MR. MULARCZYK:
+24      Q.  When you say they're all in the notebooks,
+25   are you talking about the Cashmere Bouquet
+0041
+ 1   compiled notebooks you put together for the
+ 2   reports?
+ 3      A.  Yes.
+ 4      Q.  So, the images that Paul Hess has given
+ 5   you are the same images that are already in the
+ 6   compiled notebooks?
+ 7      A.  No.  No.  Let me start over.  Paul
+ 8   Hess brings me images every two or three
+ 9   days.  Something interesting or something we
+10   keep.  But these are all photomicrographs
+11   that are going in a particular project.  So
+12   there's no reason for me to keep them.  You
+13   know, for a while, I was saving images of the
+14   fibrous talc seen in the cosmetic talcs.  And
+15   where we were analyzing them.  But I have so
+16   many of those now, I don't do it anymore.
+17          Now, I want things that are -- have,
+18   you know, I'll have -- I think I have some
+19   where the chrysotile bundle is either in the
+20   top bundle or vice versa or ones laying on
+21   top of each other.  I think that's very
+22   interesting.
+23      Q.  So, for the ones that you don't find
+24   interesting, if I wanted to take a look at them
+25   and just sort of see why or why not they would be
+0042
+ 1   pertinent, or relevant, or interesting, or not,
+ 2   could I look at those?
+ 3               MR. LINDER:  Objection.  Form.
+ 4      A.  No.  They're gone.  I don't keep them.
+ 5   BY MR. MULARCZYK:
+ 6      Q.  Well, how does Paul Hess keep track of
+ 7   what he gives you?
+ 8      A.  He does not.  He'll print something
+ 9   off and say, "Here, look at this."  Or he'll
+10   ask me about it.  You know, chrysotile
+11   bundles -- a lot of times, it's do I agree
+12   with the refractive indices.  Or sometimes
+13   we'll debate which refractive indices it
+14   should be.
+15          Him with 30 years experience, he
+16   usually wins.  Sometimes he'll say, "Do you
+17   want to count this?"  Because there is a talc
+18   plate with a chrysotile under it.  And I'll
+19   take a look at it and say, "Well, we have
+20   enough of the bundles sticking out of the
+21   talc plate, I think that's okay."  Because
+22   you're going to have talc plates laying on
+23   top or underneath the chrysotile bundle.
+24          So, things like that.  But I don't
+25   keep them.
+0043
+ 1      Q.  The micrographs that Paul prints out to
+ 2   hand to you, what type of analyses has he been
+ 3   generally doing that he gets these from?
+ 4               MR. LINDER:  Objection.  Form.
+ 5      A.  Well, Paul Hess is our top PLM
+ 6   analyst.  So, when he goes through and
+ 7   identifies amphibole asbestos or chrysotile
+ 8   asbestos, typically, there's four -- there's
+ 9   five things that you have to do.  You have to
+10   get the -- record the refractive indices and
+11   dispersion staining.  Ours is center stop.
+12   For both the parallel and perpendicular
+13   direction.
+14          You also have to get a -- an
+15   elongation mode.  You know, if you've ever
+16   seen the nice -- what do you call that?
+17   Maroon, purple color?
+18               MR. BERQUIST:  Magenta.
+19      A.  Magenta.  There we go.  That's under
+20   cross polars.  And it has the 530 nanometer
+21   lens in that either adds or subtracts to it,
+22   depending on what direction.  If it's a fast
+23   -- if it's a slow -- what they call a
+24   positive mineral, which gives you the blue in
+25   the northeast, southwest direction.  If you
+0044
+ 1   notice here.  The -- this would be blue where
+ 2   we're seeing, where the chrysotile is.  The
+ 3   talc is slightly lower.  But both of them are
+ 4   slow positive.
+ 5          Now, when you turn it into this
+ 6   direction where you're going from northeast
+ 7   to southwest, if we were to do that again,
+ 8   you would have this yellow.  That's called
+ 9   the -- determining the elongation which
+10   measures the -- which is telling you the
+11   speed of the wavelengths of light going
+12   through the crystal.  It also gives you the
+13   intensity of what you're looking at.
+14          A lot of people used to gauge
+15   birefringence on just looking at the
+16   intensity of it.  Now, which one of those do
+17   you think looks brighter?  That would be the
+18   talc part.  The duller blue color would be
+19   the chrysotile part.  This is how you tell
+20   the difference between the two.
+21          We also do what's known as polarizers
+22   out.  Sometimes you can see some of the
+23   fibrils differently.  But I think this
+24   particular talc sample has some TI02 in it.
+25   We have a lot of particles that are sticking
+0045
+ 1   to the fiber that don't affect any of the
+ 2   other stuff we're doing.  But you can't
+ 3   really see the fibers.
+ 4          Normally, your polarizers out gives
+ 5   you the best resolution, but not with the
+ 6   microscopes and lenses we have today.  You
+ 7   can easily see the fibrous nature of the
+ 8   chrysotile here at the top of the blue where
+ 9   you see -- see the bundles or strands of
+10   chrysotile sticking out.
+11          Then, he'll go through and every test
+12   for chrysotile he'll do the same thing.  He
+13   takes the slide and heat it slightly under a
+14   Bunsen burner to make sure that it doesn't
+15   melt because there's a polyethylene fiber
+16   that has very close refractive indices as
+17   chrysotile.
+18          So, we look at one of our reports --
+19   oh, you get the pleochroism which you do in,
+20   I think both -- I think in crossed polars, it
+21   allows you to see if you change the angle, if
+22   there's much of a color change.
+23          Chrysotile is negative, as you can
+24   imagine.  I think crocidolite is positive
+25   because of the blue.
+0046
+ 1               MR. BERQUIST:  I know that was a
+ 2          long answer and you've got some
+ 3          followup.  But if you want to take a
+ 4          quick break, I can try to improve Dr.
+ 5          Longo's Wifi connection.  And we can
+ 6          take a comfort break.
+ 7               MR. MULARCZYK:  That's okay.  I
+ 8          can see him fine.  The picture's not
+ 9          the issue, but I can see him.  We can
+10          keep going until -- unless Dr. Longo
+11          needs a comfort break, we can keep
+12          going.  It's okay.
+13               THE WITNESS:  We can take one
+14          now.  I want to tell my IT guys to buy
+15          the extenders because I'm getting the
+16          same thing in my office.
+17               MR. BERQUIST:  Yeah.  Why don't
+18          we take one?  That way, I can try to
+19          get these images digitally and send
+20          them to you, Peter?
+21               MR. MULARCZYK:  Okay.  What time
+22          do you guys want to get back?  Five?
+23               THE WITNESS:  Five, ten minutes?
+24               MR. MULARCZYK:  Okay.  All right.
+25          Thanks.
+0047
+ 1               THE VIDEOGRAPHER:  Off the record
+ 2          at 2:46.
+ 3               (Short recess taken from 2:46 p.m.
+ 4   to 3:05 p.m.)
+ 5               THE VIDEOGRAPHER:  We're back on the record
+ 6          at 3:05.
+ 7               MR. LINDER:  Pete, one second just before we
+ 8          resume.  I just wanted to put on the record, over
+ 9          the break, we updated that Google drive with Dr.
+10          Longo's reliance materials, and now includes the
+11          report that Dr. Longo referenced, that is dated
+12          February 23rd, 2021.  It contains the documents
+13          pertaining to the 2013 testing for Weitz &
+14          Luxenberg, and it contains the images, the M71202
+15          images that were being discussed before the
+16          break.
+17               MR. MULARCZYK:  Thanks, Mark.  Just to note
+18          for the record our objection to the new materials
+19          being produced today.  The reports, which reflect
+20          Dr. Longo's opinions and the bases for his
+21          opinions were due to be produced to us in this
+22          case in January of this year.  And this is all
+23          new information that we had not received prior to
+24          today.
+25                   So, I'm not going to get into it with
+0048
+ 1          the new stuff at this deposition.  We can meet
+ 2          and confer later.  But just wanted to note my
+ 3          objection to these new materials at this time.
+ 4                   MR. LINDER:  Sure.  And just to
+ 5          reiterate, I think, you know the images are
+ 6          responsive to the request in the deposition
+ 7          notice about demonstratives and the like, and,
+ 8          certainly, the updated, I guess the February
+ 9          23rd report, which is an update of the January
+10          12th report, also contains information that was
+11          responsive.  That's why it's being produced
+12          now.
+13               And, then, I think the depo notice also
+14          specifically asked for the 2013 testing
+15          documents.
+16                   MR. MULARCZYK:  Okay.
+17   BY MR. MULARCZYK:
+18      Q.  All right.  So, Dr. Longo, I have your
+19   last answer in mind.  Not the whole answer,
+20   because it was a long one.  But I have some of it
+21   in mind.  But I think I asked a little bit of a
+22   simpler question before that, which is:  What
+23   type of analyses has Paul Hess been doing in
+24   which he is extracting these chrysotile images
+25   that he thinks might be interesting, pursuant to
+0049
+ 1   the standing request, to give to you?
+ 2      A.  His PLM analysis.  Polarized light
+ 3   microscopy.
+ 4      Q.  Of what types of products?
+ 5      A.  Typically, he is now solely doing
+ 6   cosmetic talcs.  Every now and then, I had
+ 7   him do some Vanderbilt talc showing some of
+ 8   the metamorphic from anthophyllite to fibrous
+ 9   talc or tremolite to fibrous talc just to
+10   show it.  But that was minor.
+11          But since -- since early 2016, he's
+12   been prime -- I mean, sometime in 2017, he's
+13   been primarily doing cosmetic talc work.
+14      Q.  And although that may be what he is
+15   primarily doing, can you give me a sense of what
+16   other types of analyses he might be doing that he
+17   sort of extracts these potential chrysotile
+18   images from?
+19      A.  The chrysotile images, talc is only --
+20   only comes from the cosmetic talcs because of
+21   the geological conditions, I guess, in the
+22   mines.
+23      Q.  So, he's not -- so, Paul hasn't been
+24   sharing with you at all any images, any
+25   chrysotile images from analysis that he's
+0050
+ 1   performing on chrysotile asbestos products aside
+ 2   from cosmetic talcum powder products?
+ 3               MR. LINDER:  Objection.  Form.
+ 4      A.  No.  He's not.  We have other PLM
+ 5   analysts that are doing the chrysotile-only
+ 6   added products.
+ 7   BY MR. MULARCZYK:
+ 8      Q.  Do those PLM analysts also share images
+ 9   with you of chrysotile to look at?
+10      A.  Yes.
+11      Q.  Who are those analysts?
+12      A.  Oh, no.  The other analysts, no.  Paul
+13   has shared with me just chrysotile.  I mean,
+14   every analysis we have for the 1950s, '60s,
+15   '70s, '80s/'90s, we've detected chrysotile on
+16   all of those.  And all those -- and, then, we
+17   have representative photographs of what he's
+18   seeing.
+19      Q.  So, just to be clear, the PLM analysts who
+20   are performing analysis on chrysotile-added
+21   products, are they sharing chrysotile micrographs
+22   with you to look at?
+23               MR. LINDER:  Objection.
+24      A.  No.
+25   BY MR. MULARCZYK:
+0051
+ 1      Q.  All right.
+ 2      A.  Chrysotile-added products would not
+ 3   have metamorphic structures in there with
+ 4   talc.  Because chrysotile mines have very
+ 5   little, if any, talc.  They're not talc
+ 6   products.
+ 7      Q.  Has Paul Hess -- let's say in the last six
+ 8   months, has Paul Hess performed any PLM analysis
+ 9   on any chrysotile-added products at all?
+10               MR. LINDER:  Objection.  Form.
+11      A.  I can't think of any, but, you know, I
+12   can't say that for sure that he hasn't.  But
+13   it's not primarily what he's doing now.
+14   BY MR. MULARCZYK:
+15      Q.  Can you exclude the possibility that Paul
+16   Hess has shared with you chrysotile images from
+17   potential analysis of chrysotile-added products
+18   performed by him?
+19               MR. LINDER:  Objection.  Form.
+20      A.  I don't ever recall getting just a
+21   regular, everyday chrysotile image.  The only
+22   chrysotile images -- and these are not added
+23   products, but these would be like the missed
+24   1866B chrysotile standard, or just chrysotile
+25   pictures from what we call the Calidria
+0052
+ 1   standard.  But that's it.
+ 2   BY MR. MULARCZYK:
+ 3      Q.  When he provides you the images, is that
+ 4   all he provides you with?  He just prints out
+ 5   some of the images of the chrysotile micrographs
+ 6   and then gives those to you?
+ 7      A.  Yes.
+ 8      Q.  What information is on the micrographs?
+ 9      A.  Same information on the ones that
+10   you've got.  The project number, what sample
+11   it is, what number of chrysotile structure
+12   that he's -- so, if you look at the numbers,
+13   and even the ones -- you know, if you go to
+14   the analysis of the Cashmere Bouquet,
+15   typically, you take four to five
+16   representative structures, photographs that
+17   represent all the structures they see in
+18   there.
+19      Q.  The -- are all of the -- have all of the
+20   micrographs that Paul has provided you of
+21   chrysotile been part of projects that have --
+22   well, let me ask you this:  Are any of the
+23   samples or any of the micrographs of chrysotile
+24   that Paul Hess has provided you, are those
+25   projects that have been produced in litigation,
+0053
+ 1   not produced in litigation?  What's the variety
+ 2   that you get from him?
+ 3      A.  The chrysotile pictures or micrographs
+ 4   of the Canadian chrysotile in this standard,
+ 5   1866B, I have produced the Calidria
+ 6   chrysotile, which has a different structure
+ 7   and different refractive indices than the
+ 8   Canadian chrysotile I have produced.  So,
+ 9   multiple times I've produced them.  So, yes.
+10   I've produced them in litigation.
+11      Q.  So, I don't have anything in our file in
+12   the Powers case of anything having been produced
+13   about a missed 1866 chrysotile, standard B, or
+14   Calidria, or anything.  There's nothing in the
+15   file that's been produced to us in this case for
+16   those items.  So, that's the first that I'm
+17   hearing about that.
+18          But setting that aside for a second, the
+19   projects that Paul is working on from which he
+20   extracts these chrysotile images, are these
+21   projects -- are the results of these projects
+22   ones that have been produced in litigation or
+23   not?
+24               MR. LINDER:  Objection.  Form.
+25      A.  For the litigation, most of everything
+0054
+ 1   he has shown me has been produced in
+ 2   litigation.  They typically are going in a
+ 3   report, and the report goes out to the
+ 4   client, and I get deposed on.  So, in the
+ 5   notebooks from the '50s, '60s, '70s, '80s and
+ 6   '90s, there's probably, you know, a few
+ 7   hundred chrysotile photographs in there.  So,
+ 8   you have them all.
+ 9   BY MR. MULARCZYK:
+10      Q.  When you say chrysotile images and I have
+11   them all, you're talking about what was reported
+12   by your analysts when they did the work.
+13   Correct?
+14      A.  Correct.
+15      Q.  I'm talking about the chrysotile images
+16   that you view as interesting, potentially, or
+17   potentially as useful demonstratives.  That's
+18   kind of what I'm focused on here.  So, let me ask
+19   you this:  Setting aside M project No. 71202, are
+20   there any other project numbers that Paul Hess
+21   has worked on from which he's extracted
+22   chrysotile images and given to you that have
+23   also not been produced in litigation?
+24               MR. LINDER:  Objection.  Form.
+25      A.  I don't think anything that he has
+0055
+ 1   produced to -- produced to me -- he has given
+ 2   me that I thought was interesting and would
+ 3   be a good demonstrative.  I think they have
+ 4   all been produced in litigation.
+ 5   BY MR. MULARCZYK:
+ 6      Q.  If I ask you from today until the next
+ 7   time we meet to save any images that Paul Hess
+ 8   gives you pursuant to a standing request, would
+ 9   you do that for me?
+10               MR. LINDER:  Object to form.
+11      A.  I have -- this is my pat answer, and
+12   it has nothing to do with you.  And I know
+13   this sounds silly, but I don't work for you.
+14   So, any requests like that has to go through
+15   my client.
+16   BY MR. MULARCZYK:
+17      Q.  So, I'm going to make that request.  To
+18   the extent you get any images from Paul Hess
+19   between now and the next time we meet that
+20   reflect chrysotile images that Paul produces to
+21   you as a result of the standing request to him.
+22   And we can talk about that later.
+23               MR. LINDER:  We can meet and confer
+24          about that.  It might be something you
+25          want to put in writing.  But we can take
+0056
+ 1          that up.
+ 2      A.  Requests from him is any fibrous talc
+ 3   chrysotile structure that are all in the same
+ 4   direction.  That's the only thing I've
+ 5   requested from him.  Because the issue has
+ 6   come up that -- this is the -- I think
+ 7   there's one or two defense experts are
+ 8   claiming that we are misidentifying
+ 9   chrysotile.  Misidentifying fibrous talc for
+10   chrysotile.
+11          So, the best teaching tool is one that
+12   is an intergrowth where you have both
+13   pointing in the same direction.  That's what
+14   I've requested from him.  Now, he brings me
+15   photographs that are ongoing projects and
+16   haven't been deposed in, and I look at them.
+17   You know, those I cannot produce.
+18   BY MR. MULARCZYK:
+19      Q.  Okay.  Well, you testified earlier that
+20   you take a look at what Paul Hess gives you, and
+21   you evaluate what might be of interest, what
+22   might not be of interest in terms of this case
+23   here today and your chrysotile analysis related
+24   to Cashmere Bouquet.  So, I've made my request
+25   for those images that he gives you between now
+0057
+ 1   and the next time we meet.
+ 2               MR. BERQUIST:  Peter, that is a
+ 3          missed interpretation of Dr. Longo's
+ 4          testimony.  But you can keep asking
+ 5          questions.
+ 6      A.  Yeah.  I don't think I said it was
+ 7   interesting for Cashmere Bouquet.  I just
+ 8   said it was interesting, I had it sitting
+ 9   here, that it demonstrates what happens if
+10   you have chrysotile in a talc.
+11          If he's bringing me a regular
+12   chrysotile structure, it wouldn't have
+13   anything to do with Cashmere Bouquet.  It
+14   would have something to do with that
+15   particular project.  And that, unless I've
+16   been deposed on it, you know, I can't just
+17   turn that data over.
+18   BY MR. MULARCZYK:
+19      Q.  Well, to be fair, you've already talked to
+20   me about images from a project that is ongoing
+21   and hasn't been produced in litigation and that
+22   you haven't been deposed about.  Right?
+23      A.  This was a special case because it has
+24   a chrysotile and talc line.  Just bringing
+25   everyday chrysotile images to me on a case --
+0058
+ 1   and I don't get that every day.  It's usually
+ 2   something interesting.  You know, I guess I
+ 3   made a mistake.  I'll have to redact the M
+ 4   number in the future.
+ 5      Q.  So, speaking of the M number, this M71202,
+ 6   you said you don't know what this project
+ 7   pertains to?
+ 8      A.  No.
+ 9      Q.  Okay.  You can look it up pretty easily.
+10   Right?
+11               MR. LINDER:  Objection.  Form.
+12      A.  Well, yes.  I can go determine what
+13   project it is.
+14   BY MR. MULARCZYK:
+15      Q.  Right.  You can go on your own computer at
+16   the office, and you can type it in, and it'll
+17   tell you what it relates to.  Right?
+18               MR. LINDER:  Objection.  Form.
+19      A.  I guess theoretically.
+20   BY MR. MULARCZYK:
+21      Q.  Well, is it just theoretically, or you can
+22   actually do that?
+23      A.  I don't typically do that.
+24               MR. LINDER:  Objection.  Form.
+25      A.  A lot of times I don't have any -- I
+0059
+ 1   don't keep track of what cosmetic talcs are
+ 2   being analyzed at any particular time until
+ 3   they're completed.  I'm not really that
+ 4   interested in looking at just partial bits of
+ 5   data until the analysis is completely done.
+ 6   BY MR. MULARCZYK:
+ 7      Q.  I get that.  My question is:  You could go
+ 8   into your office right now -- you're at your
+ 9   office.  Right?
+10      A.  I'm at my office.  I could go find out
+11   fairly easily who the project's for, what
+12   product it is, and who the client is.
+13      Q.  Okay.  Would you do that today over a
+14   break?
+15      A.  No.
+16               MR. LINDER:  Objection.  Form.
+17          You know, he's not going to do that,
+18          Pete, because as he said a moment ago,
+19          he's not representing this particular
+20          image or set of images as
+21          representative of Cashmere Bouquet
+22          or as being Cashmere Bouquet.
+23               He's just using it as an
+24          educational tool to explain to
+25          potential jurors or whoever, what
+0060
+ 1          happens, you know, when you have a
+ 2          talc asbestos intergrowth, and how
+ 3          it's going to appear under cross
+ 4          polars and how you can differentiate
+ 5          them.
+ 6                   I think it's, in other words,
+ 7          sort of a general educational tool.
+ 8          He's not saying that it's a Cashmere
+ 9          Bouquet fiber, or something, you know,
+10          that Ms. Powers was exposed to.
+11               MR. MULARCZYK:  I understand,
+12          Mark, that the images that he has in
+13          front of him are not specific from
+14          any Cashmere Bouquet analysis that MAS
+15          has performed.  But as I understood
+16          Dr. Longo's testimony, these
+17          micrographs were helpful, for one,
+18          because the chrysotile, as I
+19          understand, Dr. Longo, the chrysotile
+20          that's found in talc has a special
+21          sort of geologic way about it that is
+22          different from chrysotile-added
+23          products, which is why Paul Hess had
+24          given him one from a cosmetic talc
+25          analysis that Paul had performed, and
+0061
+ 1          that using those images as
+ 2          demonstratives is helpful in
+ 3          explaining why what he's finding in
+ 4          Cashmere Bouquet is chrysotile.
+ 5               So, on that basis, I'm requesting
+ 6          Dr. Longo and plaintiff's counsel
+ 7          to advise or let us know what that
+ 8          project relates to.  And the product
+ 9          and what analysis that stems from as
+10          it's a helpful -- according to Dr.
+11          Longo -- a helpful demonstrative to
+12          explain the analysis for Cashmere
+13          Bouquet.
+14               MR. BERQUIST:  Peter, this is
+15          Darron.  I would suggest you just put
+16          that request in writing to Mr. Linder,
+17          and, then, we'll respond to it.
+18   BY MR. MULARCZYK:
+19      Q.  Okay.  One of the things you mentioned
+20   earlier on in the deposition is that you
+21   mentioned a point about the resolution in your
+22   light microscopes being much better.  What
+23   timeframes were you comparing when you mentioned
+24   that?
+25      A.  I was comparing it to -- I think it
+0062
+ 1   was in the middle of either late 2017, when
+ 2   we got the 40 objective lens that had better
+ 3   resolution for our old Olympus.  And we put a
+ 4   digital camera on there to a high definition
+ 5   monitor.
+ 6          The microscopes we have now are high
+ 7   intensity LED lights.  So, instead of just
+ 8   your regular tungsten bulb, they do two
+ 9   things.
+10          One, they don't get hot.  And, two,
+11   they provide more intensity to the dispersion
+12   staining.  And the dispersion lens is a flat
+13   lens or an infinity lens, which would be the
+14   same as the 40X objective we have.  So, now,
+15   all the lenses have this high resolution.
+16      Q.  And you said that this new equipment was
+17   installed in 2017?
+18      A.  No.  It just was installed this year.
+19   Like January.  Or December.  December or
+20   January.  And the analysts are just starting
+21   to use them full time now, since they're
+22   training periods are over on how to maximize
+23   what their equipment are different.
+24      Q.  So, this equipment was just put in at the
+25   end of last year, December 2020, or January 2021?
+0063
+ 1      A.  Yeah.  It was either in December or
+ 2   early January.  I think it was sometime in
+ 3   December maybe.
+ 4      Q.  And how does the flat lens allow you to
+ 5   obtain better resolution?  What does it allow you
+ 6   to pick up that you weren't necessarily able to
+ 7   pick up beforehand?
+ 8      A.  They call it aberration corrected,
+ 9   meaning it's different machining.
+10          The lenses itself would focus the
+11   beams if they have any little defects on it
+12   that normally you wouldn't see, give poor
+13   resolution.  These lenses are called
+14   aberration corrected, and they're a little
+15   bit different configured.  I don't know the
+16   physics behind it, but you get much higher
+17   resolution.
+18          And, then, you couple that with an LED
+19   light source that has more luminous, so the
+20   dispersion staining now, you can get better
+21   resolution, plus the colors are more vibrant.
+22   It allows you to be able to determine what is
+23   asbestiform and not asbestiform via the Ann
+24   Wylie definition.
+25          You have -- EPA R93, you have to be
+0064
+ 1   able to see the individual striations or
+ 2   fibers in the bundle.  You don't do the
+ 3   aspect ratio on the whole bundle and the
+ 4   whole width like you do for the TEM.  So, you
+ 5   have to resolve that.  And this helps -- this
+ 6   helps to decrease your false negatives,
+ 7   meaning you can't resolve the individual
+ 8   fibers in the bundle because it's a little
+ 9   bit too small for the resolution of the
+10   microscope, so you would ignore it.
+11          I think the RJ Lee microscopes are
+12   probably defective in that area with all
+13   their false negatives.
+14      Q.  Well, I'll move to strike that as
+15   unresponsive.  But let me ask you this.  The
+16   analysis that you performed pursuant to your
+17   January 21st -- January 12th, 2021 report, that
+18   was all performed before you got these
+19   microscopes.  Right?
+20      A.  That is correct.
+21      Q.  All right.  So, let's do this.  To start
+22   marking up some exhibits here.  So, I think I
+23   have a good sense of what you have in front of
+24   you.  But I just want to mark as Exhibit 1
+25   everything you've got in front of you.  Because
+0065
+ 1   there was a lot of material and a lot of it was
+ 2   brand new to me.  So, let's just mark that as
+ 3   Exhibit 1.  All together.
+ 4      A.  Why don't I make a record what Exhibit
+ 5   1 is, so that we know?  I think this is all
+ 6   Exhibit 1.  All right.  So, Exhibit 1 would
+ 7   start with the February 23rd, 2021 report,
+ 8   project M66934 analysis of
+ 9   Colgate-Palmolive's Historical Cashmere
+10   Bouquet product container samples from the
+11   1910s to the 1990s.
+12      Q.  Dr. Longo, why don't we do this?  If
+13   you're going to go through them one by one, let's
+14   just mark each one as a separate exhibit.
+15      A.  Okay.
+16      Q.  I wasn't prepared for you to go through
+17   them again.  But if you prefer to go through
+18   them, that's fine.  Let's just do them one by
+19   one.
+20          So, Exhibit 1, is the February 23rd, 2021
+21   report.
+22               (Exhibit No. 1 was marked for
+23   identification.)
+24      A.  Exhibit 2 would be the June 5th, 2013
+25   Michael Mount report for the Weitz &
+0066
+ 1   Luxenberg Cashmere Bouquet samples which are
+ 2   just the TEMs, the original TEMs.
+ 3          (Exhibit No. 2 was marked for
+ 4   identification.)
+ 5      A.  Exhibit 3 would be a reanalysis of
+ 6   sample two of the TEM grids that were
+ 7   generated in June of 2013, where now 100
+ 8   grids have been analyzed.  And one, two,
+ 9   three -- four tremolite asbestos structures.
+10          (Exhibit No. 3 was marked for
+11   identification.)
+12      A.  Exhibit 4 is --
+13   BY MR. MULARCZYK:
+14      Q.  Yes.
+15      A.  -- is a reanalysis of sample one from
+16   the 2013 report for the anthophyllite where
+17   100 structures have been looked at, including
+18   the original three, which were further
+19   verified by two -- two separate angle
+20   diffraction patterns of the anthophyllite.
+21          (Exhibit No. 4 was marked for
+22   identification.)
+23               MR. BERQUIST:  Just for the
+24          record, you said 100 structures.
+25               THE WITNESS:  A hundred grid
+0067
+ 1          openings.  I'm sorry.
+ 2      A.  Exhibit 5 is the e-mail that is a
+ 3   three-page document.  It's an e-mail from
+ 4   Chris Romanelli to Bill Egeland about him
+ 5   sending three sealed packages, the two
+ 6   Cashmere Bouquet and the one motorcycle
+ 7   brake.
+ 8               (Exhibit No. 5 was marked for
+ 9   identification.)
+10      A.  Oh, the photographs.  The next exhibit
+11   in line is the PLM photographs of the talc,
+12   chrysotile intergrowth, showing dispersion
+13   staining, elongation, cross-polars, and no
+14   polars.  So five micrographs.
+15               (Exhibit No. 6 was marked for
+16   identification.)
+17   BY MR. MULARCZYK:
+18      Q.  And, Dr. Longo, what's written on the
+19   bottom of that, just to catch what you said
+20   before, is M71202-005, for each of those slides?
+21      A.  Yes.  And the 003 means this is the
+22   third chrysotile structure that he has chosen
+23   to -- and I'm not sure necessarily we would
+24   count this.  I'd have to check with him.  But
+25   to show the intergrowth between the talc and
+0068
+ 1   the chrysotile.
+ 2          And the last exhibit is the August
+ 3   15th, 2008 transmitting the information we
+ 4   went over earlier that was sent to me by
+ 5   plaintiff's attorneys in the Kay Powers case.
+ 6   That's it.
+ 7               (Exhibit No. 7 was marked for
+ 8   identification.)
+ 9   BY MR. MULARCZYK:
+10      Q.  So, Exhibit 7, you're putting together the
+11   old notice of deposition, the ex parte, the
+12   amended notice of deposition, your older Powers
+13   report.  What else is in that?
+14               MR. BERQUIST:  Peter, he's just
+15          referring to the cover letter itself.
+16      A.  Yeah.  Just the cover letter.
+17   BY MR. MULARCZYK:
+18      Q.  Oh, the cover letter.  Okay.
+19      A.  I didn't think there was any reason to
+20   submit all that.  I'm sure that's information
+21   you probably have.
+22      Q.  Okay.  Let's do this then.  So, now, we're
+23   at Exhibit 7.  Let's mark a few more.  As Exhibit
+24   8, let's mark that as the amended notice of
+25   deposition.
+0069
+ 1               MR. BERQUIST:  Are you talking about
+ 2          the most recent one?  I think February
+ 3          19th maybe?
+ 4               MR. MULARCZYK:  Yes.  The amended
+ 5          one that only changed the time.
+ 6               MR. LINDER:  Yes.  That was
+ 7          yesterday, so, that would be dated the
+ 8          23rd.
+ 9               (Exhibit No. 8 was marked for
+10   identification.)
+11               MR. MULARCZYK:  Correct.  The next
+12          one will be a Dr. Longo CV, dated October
+13          5th, 2020.
+14               (Exhibit No. 9 was marked for
+15   identification.)
+16   BY MR. MULARCZYK:
+17      Q.  And, Dr. Longo, is that your most
+18   up-to-date CV?
+19      A.  Yes.
+20      Q.  Okay.  Exhibit 10 we'll mark as Dr.
+21   Longo's list of testimony.
+22               (Exhibit No. 10 was marked for
+23   identification.)
+24   BY MR. MULARCZYK:
+25      Q.  And the last deposition that's listed on
+0070
+ 1   this list of former testimony is in the McNeil
+ 2   case on January 6, 2021.  Do you have depositions
+ 3   to add after that?
+ 4      A.  Yes.  I can get you a new updated
+ 5   list.
+ 6      Q.  Okay.  Exhibit No. 6 -- well, let me ask
+ 7   you this:  Have you generated any invoices for
+ 8   your work in the Kay Powers case or the testing
+ 9   you rely on it for?
+10      A.  Yes.
+11      Q.  Let's attach all those invoices as Exhibit
+12   11.
+13               (Exhibit No. 11 was marked for
+14   identification.)
+15               MR. LINDER:  I'm sorry, Pete.
+16          That's invoices for Longo's work on the
+17          Kay Powers case.
+18               MR. MULARCZYK:  Correct.  Exhibit 12,
+19          let's mark that as Dr. Longo's Powers
+20          report dated November 5th, 2018.
+21               (Exhibit No. 12 was marked for
+22   identification.)
+23               MR. MULARCZYK:  Exhibit 13, let's
+24          mark that as Dr. Longo's Powers report
+25          dated January 12th, 2021.
+0071
+ 1               (Exhibit No. 13 was marked for
+ 2   identification.)
+ 3               MR. MULARCZYK:  Exhibit 14, let's
+ 4          mark that as Dr. Longo's report dated
+ 5          January 12th, 2021 for project number
+ 6          M69934.
+ 7               (Exhibit No. 14 was marked for
+ 8   identification.)
+ 9   BY MR. MULARCZYK:
+10      Q.  And, Dr. Longo, in terms of your backup
+11   data for that report that I just mentioned, that
+12   is all contained within the compiled notebooks
+13   for the '50s, '60s, '70s, '80s and '90s.  Is that
+14   correct?
+15      A.  That's correct.
+16               MR. MULARCZYK:  Okay.  So, let's
+17          mark Dr. Longo's M69934 '50s compiled
+18          notebook as Exhibit 15.
+19               (Exhibit No. 15 was marked for
+20   identification.)
+21               MR. MULARCZYK:  Let's mark Dr.
+22          Longo's M69934 '60s compiled notebook
+23          as Exhibit 16.
+24               (Exhibit No. 16 was marked for
+25   identification.)
+0072
+ 1               MR. MULARCZYK:  Let's mark Dr.
+ 2          Longo's M69934 '70s compiled notebook
+ 3          as 17.
+ 4               (Exhibit No. 17 was marked for
+ 5   identification.)
+ 6               MR. MULARCZYK:  Dr. Longo's
+ 7          M69934 '80s and '90s compiled notebook
+ 8          will be Exhibit 18.
+ 9               (Exhibit No. 18 was marked for
+10   identification.)
+11               MR. MULARCZYK:  Now I'm shifting
+12          over to the materials that were
+13          provided by Mr. Linder on the Google
+14          drive prior to the deposition.  That
+15          includes Dr. Longo's report dated
+16          September 25th, 2018.  That will be
+17          Exhibit 19.
+18               (Exhibit No. 19 was marked for
+19   identification.)
+20               MR. MULARCZYK:  We'll mark Dr.
+21          Longo's report dated March 24th, 2019
+22          as Exhibit 20.
+23               (Exhibit No. 20 was marked for
+24   identification.)
+25               MR. MULARCZYK:  Dr. Longo's
+0073
+ 1          declaration dated May 2nd, 2019 will
+ 2          be Exhibit 21.
+ 3               (Exhibit No. 21 was marked for
+ 4   identification.)
+ 5   BY MR. MULARCZYK:
+ 6      Q.  And, Dr. Longo, I know that as part of
+ 7   your May 2nd, 2019 declaration you have that
+ 8   chart of samples that's identified as Exhibit C
+ 9   in that declaration.  Right?
+10      A.  Correct.
+11      Q.  Okay.  And I understand that we have sort
+12   of new samples and new testing that's been done.
+13   But the information that otherwise has been there
+14   hasn't changed.  Correct?
+15      A.  That's correct.
+16               MR. MULARCZYK:  The next one,
+17          Appendix A, talcum powder reliance
+18          list, let's mark that as 22.
+19               (Exhibit No. 22 was marked for
+20   identification.)
+21               MR. MULARCZYK:  Dr. Longo's
+22          Cashmere Bouquet testing binder, Tabs
+23          1 to 12, let's mark that as Exhibit
+24          23.
+25               (Exhibit No. 23 was marked for
+0074
+ 1   identification.)
+ 2               MR. MULARCZYK:  Dr. Longo's
+ 3          Cashmere Bouquet testing binder, Tab
+ 4          20 -- Tab 13, excuse me -- let's mark
+ 5          that as Exhibit 24.
+ 6               (Exhibit No. 24 was marked for
+ 7   identification.)
+ 8   BY MR. MULARCZYK:
+ 9      Q.  MAS chart of J&J testing dated 1/31/21,
+10   Dr. Longo, is there a reason that was included in
+11   the reliance materials for this case?
+12      A.  I think -- I don't know.
+13      Q.  Okay.  So, we'll mark it.  But that's not
+14   part of your reliance materials then?
+15      A.  No.
+16               MR. MULARCZYK:  That will be
+17          Exhibit 25.
+18               (Exhibit No. 25 was marked for
+19   identification.)
+20   BY MR. MULARCZYK:
+21      Q.  Okay.  Dr. Longo, have I now captured
+22   everything in terms of what's been produced in
+23   this case and what you have in front of you?
+24      A.  I believe so.
+25               MR. LINDER:  Pete, just to round
+0075
+ 1          things out, let's attach plaintiff's
+ 2          objections to the amended deposition
+ 3          notice as Exhibit 26.
+ 4               MR. MULARCZYK:  That's fine.
+ 5               (Exhibit No. 26 was marked for
+ 6   identification.)
+ 7   BY MR. MULARCZYK:
+ 8      Q.  Dr. Longo, did you have a chance to look
+ 9   at the amended notice of deposition and look at
+10   the request for production?
+11      A.  I did.
+12      Q.  Okay.  Did you put anything together in
+13   response to those requests?
+14      A.  Just what I was relying on.
+15      Q.  Okay.  Are there any other requests within
+16   the notice of deposition that you've prepared any
+17   response to or any documents for?
+18      A.  No.
+19      Q.  All right.  Have you performed any other
+20   search of your files, or log books, or computer
+21   system to see whether or not you had documents
+22   responsive to the request for production in that
+23   amended notice of deposition?
+24               MR. LINDER:  Object to form.
+25      A.  No.
+0076
+ 1   BY MR. MULARCZYK:
+ 2      Q.  I have here, as I mentioned before, I have
+ 3   two, I guess I would call case-specific reports
+ 4   for you.  One dated November 5th, 2018, and one
+ 5   dated January 12th, 2021, which is your most up
+ 6   to date.  Is that right?
+ 7      A.  That's correct.
+ 8      Q.  Are all of the opinions that you intend to
+ 9   offer in this case included in that report?
+10               MR. LINDER:  Object to form.
+11      A.  Yes.
+12   BY MR. MULARCZYK:
+13      Q.  Okay.  And the materials that you've cited
+14   to and relied to, or rely upon are included in
+15   that report.  Correct?
+16               MR. LINDER:  Objection.  Form.  Yes.
+17          I do think Dr. Longo's been talking about
+18          some of the other items that we just went
+19          through and attached as exhibits.  Beyond
+20          that, I'm sure he will answer.
+21      A.  Those reports are my opinions, and
+22   then I have additional reports here that
+23   don't change my opinions, but certainly
+24   clarify.
+25   BY MR. MULARCZYK:
+0077
+ 1      Q.  None of the material that you raised this
+ 2   morning in terms of the new analysis was part of
+ 3   the report that you produced on January, I
+ 4   believe, it was 13th, 2021.  Correct?
+ 5      A.  Correct.  I have given instructions to
+ 6   look at those grids, it looks like back in
+ 7   December.  But the first time I saw them was
+ 8   today.  I asked them to be printed out
+ 9   because I saw the request.  And, so, it
+10   verifies what I said when Mr. -- when Morgan
+11   Tovey deposed me, that I was absolutely sure,
+12   within a reasonable degree of scientific
+13   certainty, that the anthophyllite was
+14   adequately identified, as well as the
+15   tremolite.  And that data from the original
+16   grids certainly supports that.
+17          And the pictures are just the teaching
+18   tool.  The only difference really is in the
+19   analysis we did to pre-1950.  But I went
+20   back, and I should have calculated the amount
+21   of chrysotile bundles that are in each of the
+22   samples.  Because we had the data for the
+23   weight of the sample being analyzed, and it's
+24   in the report, the simple little equation
+25   that you can use to go from the area that is
+0078
+ 1   examined by PLM, the weight of the amount
+ 2   that's being examined, and the number of
+ 3   chrysotile structures.
+ 4          And that's in the old report.  How
+ 5   many chrysotile structures did they see in
+ 6   the area that they looked at that they had to
+ 7   verify.
+ 8               MR. MULARCZYK:  All right.  I'll
+ 9          move to strike the unresponsive
+10          portion after Dr. Longo answered
+11          the question.
+12   BY MR. MULARCZYK:
+13      Q.  Let me ask you, you've previously
+14   testified -- and I know you've heard this a lot
+15   -- but you've previously testified that you've
+16   never tested cosmetic talc before 2016.  Right?
+17      A.  That's correct.  I wasn't aware of
+18   any.
+19      Q.  And more broadly speaking, who at MAS has
+20   performed testing of Cashmere Bouquet on the TEM
+21   side?
+22               MR. LINDER:  Objection.  Form.
+23      A.  We have a -- we have three different
+24   TEM analysts.  They rotate on who's analyzing
+25   what.  Anthony Keaton is a mineralogist.  He
+0079
+ 1   does a lot of it.
+ 2   BY MR. MULARCZYK:
+ 3      Q.  And who are the other two?
+ 4      A.  Mehrdad Motamedi.  And -- God, I'm
+ 5   having a blank.  Jeez.  Jamie's going to kill
+ 6   me.  A senior moment.  I have to look.  But
+ 7   Mehrdad Motamedi and Anthony Keaton do most
+ 8   of it.  There's been other analysts in the
+ 9   past who are no longer here.
+10      Q.  Has -- who are some of the other
+11   individuals who are no longer at MAS who have
+12   specifically performed TEM analysis on Cashmere
+13   Bouquet products?
+14               MR. LINDER:  Objection.
+15      A.  I don't believe there's any analysts.
+16   Maybe -- and I'm not going to start giving
+17   names of people who may have analyzed or not
+18   analyzed on Cashmere Bouquet products, who
+19   are no longer here and who may not have even
+20   analyzed them.  So, you can look through your
+21   reports.  The analysts who did it on every
+22   one of them, that's not something that I
+23   should have to do.  If you've got any
+24   questions about any particular analyst that
+25   is on your reports, I'll certainly take that
+0080
+ 1   into consideration.
+ 2   BY MR. MULARCZYK:
+ 3      Q.  Okay.  So, let's break this up in terms of
+ 4   I guess after 2016 and before 2016.  All of the
+ 5   individuals who have analyzed, by TEM, Cashmere
+ 6   Bouquet products, are identified in the reports
+ 7   for such analysis after 2016.  Correct?
+ 8      A.  Any Cashmere Bouquet sample that we
+ 9   have analyzed and a report has been produced
+10   will have the analyst's name on it.
+11      Q.  Okay.  Is there anybody who has tested
+12   Cashmere Bouquet by TEM after 2016 that is not
+13   identified in the reports that have been produced
+14   to Colgate?
+15               MR. LINDER:  Objection.  Form.
+16      A.  If any analyst has analyzed a Colgate
+17   asbestos sample and it's been produced, their
+18   name will be on it.
+19   BY MR. MULARCZYK:
+20      Q.  All right.  What about prior to 2016?  Who
+21   analyzed Cashmere Bouquet products on TEM prior
+22   to 2016?
+23               MR. LINDER:  Objection.  Form.
+24      A.  Well, the only Cashmere Bouquet
+25   products that we're aware of are the two from
+0081
+ 1   the June 2013 report, and that analyst is
+ 2   Anthony Keaton.
+ 3   BY MR. MULARCZYK:
+ 4      Q.  Did Michael Mount ever perform any
+ 5   analysis on Cashmere Bouquet?
+ 6               MR. LINDER:  Objection.  Form.
+ 7      A.  Mike Mount -- I'm only aware of Mike
+ 8   Mount being the project manager of one
+ 9   Cashmere Bouquet product piece.  I'm not
+10   aware of him ever doing TEM on any cosmetic
+11   talcs that I'm aware of.
+12   BY MR. MULARCZYK:
+13      Q.  You said one Cashmere Bouquet product.
+14      A.  Two Cashmere -- yeah.  Two samples.
+15   And that's just because he was -- he was the
+16   project guy on the TEM side.  He wrote the
+17   report.
+18      Q.  Did Michael Mount -- so, let me just
+19   understand.  You said that you can't recall or
+20   you're not aware of any other analysis.  Can you
+21   exclude the possibility that Michael Mount ever
+22   tested any other Cashmere Bouquet product while
+23   he was at MAS?
+24               MR. LINDER:  Objection.  Form.
+25          Speculation.
+0082
+ 1      A.  No.  I'm going to have to -- I'm sorry
+ 2   to do this.  We're starting to step over into
+ 3   talking about any issues with Michael Mount.
+ 4   The attorney that I have hired has advised me
+ 5   not to discuss that until this subpoena issue
+ 6   with Johnson & Johnson has been rectified or
+ 7   -- so, either they have a standing to depose
+ 8   him or they don't.
+ 9          So, I'll talk all about the analysis.
+10   But any activities or anything that Michael
+11   Mount might have done other than he's the one
+12   who signed the report, I'm going to have to
+13   respectively decline to answer.
+14   BY MR. MULARCZYK:
+15      Q.  So, just so I understand, your attorney,
+16   your personal attorney instructed you not to
+17   answer any questions about analysis of Cashmere
+18   Bouquet that Michael Mount may have performed?
+19               MR. LINDER:  Objection.
+20      A.  That's different than what I said.
+21   Number one, he didn't instruct me not to
+22   answer.  He advised me not to answer.  And I
+23   will answer anything about the June 2013
+24   report, anything about the analysis.  I
+25   didn't recall these analyses would be done.
+0083
+ 1   Why would I recall that he's done other
+ 2   analysis in the past?  So, I don't have any
+ 3   information to give you.
+ 4   BY MR. MULARCZYK:
+ 5      Q.  I think we're just back to where we
+ 6   started, which is it's fair -- it's fair that you
+ 7   can't exclude the possibility that Michael Mount
+ 8   tested any other Cashmere Bouquet product,
+ 9   setting aside the 2013 testing, while he's at
+10   MAS.  You just don't know one way or the other.
+11               MR. LINDER:  Objection.
+12      A.  I have a hard time trying to prove a
+13   negative.  So, you know, I don't have an
+14   answer for that question.  You know, I can't
+15   exclude that there's not a big anaconda above
+16   the ceiling because I haven't gone up there
+17   and looked around.  So, I can't exclude that
+18   you'll walk outside and all your tires are
+19   flat on your car.  I can't exclude it.  I
+20   don't know.
+21   BY MR. MULARCZYK:
+22      Q.  To be fair, it's a little bit different
+23   here because we actually do have a report that
+24   Michael Mount signed for Cashmere Bouquet during
+25   the time period which you said you never had
+0084
+ 1   tested cosmetic talcum powders.  That's fair.
+ 2   Right?  I mean, it's a little bit different
+ 3   situation here, don't you think?
+ 4               MR. LINDER:  Objection to form.
+ 5      A.  No.  I don't consider these questions
+ 6   fair at all.  You know, I hate to use a
+ 7   former politician's verbiage here, but it's
+ 8   almost like a witch hunt.
+ 9   by MR. MULARCZYK:
+10      Q.  Let me ask you:  Have you gone back to
+11   look -- so, I know you've testified that you
+12   stopped searching your log books.  I think your
+13   most recent testimony is after 2010.  Since the
+14   last time you've said that, have you gone back to
+15   look to see whether or not Michael Mount or
+16   anyone -- any other analyst at MAS has previously
+17   tested Cashmere Bouquet before 2016?
+18               MR. LINDER:  Objection.  Form.
+19      A.  No.  That takes too long.  Those books
+20   have, you know, 1,000, 12, 1,500 pages per
+21   book.  A lot of them don't even say what the
+22   material is other than a bulk sample.  I
+23   don't have the time to do that.  Not sure I
+24   should -- I'm required to do that.
+25   BY MR. MULARCZYK:
+0085
+ 1      Q.  Who at MAS, historically speaking -- well,
+ 2   let's break it up again.  Who at MAS -- strike
+ 3   that.
+ 4          Are all the analysts who performs PLM
+ 5   analysis on Cashmere Bouquet after 20 -- 2016,
+ 6   are all of those analysts identified in the
+ 7   reports that had been produced to Colgate?
+ 8               MR. LINDER:  Objection.  Form.  I
+ 9          think he said yes a few times.
+10               MR. MULARCZYK:  I'm on PLM now,
+11          Mark.
+12               MR. LINDER:  Okay.
+13      A.  PLM analysis, I think you'll find only
+14   one analyst on there, and that's Paul Hess.
+15   BY MR. MULARCZYK:
+16      Q.  Okay.  After 2016, was there any other PLM
+17   analyst who looked at Cashmere Bouquet other than
+18   Paul Hess?
+19      A.  I don't think so.  No.
+20      Q.  Prior to 2016, what PLM analyst at MAS
+21   analyzed Cashmere Bouquet?
+22               MR. LINDER:  Objection.  Form.
+23          Assumes.
+24      A.  The only analyst I know before that
+25   time who analyzed Cashmere Bouquet would be
+0086
+ 1   Bill Egeland with the PLM report you have.
+ 2   He's the one who was -- was like --  he was a
+ 3   PLM product ID guy.  He was our senior PLM
+ 4   analyst.
+ 5   BY MR. MULARCZYK:
+ 6      Q.  Okay.  Are you aware of any other Cashmere
+ 7   Bouquet testing by PLM before 2016 that Bill
+ 8   Egeland has performed?
+ 9      A.  No.
+10      Q.  Does he still work at MAS?
+11      A.  He still does.
+12      Q.  Have you talked to him about that?
+13      A.  Of course.  He's the one who got the
+14   samples.
+15      Q.  Have you talked to him about whether or
+16   not he's ever tested any other Cashmere Bouquet
+17   before 2016?
+18      A.  Not that he recalls.  He didn't even
+19   recall these.
+20      Q.  So, you specifically asked him, and he
+21   said he doesn't recall?
+22      A.  I've specifically asked him.
+23      Q.  Okay.  Have you asked him to go back and
+24   look to see whether, in fact, he's tested any
+25   other Cashmere Bouquet before 2016 by PLM?
+0087
+ 1               MR. LINDER:  Objection.  Form.
+ 2   BY MR. MULARCZYK:
+ 3      Q.  I'm sorry.  Was that a no?
+ 4      A.  No.  I don't recall ever asking him.
+ 5      Q.  Do you plan to?
+ 6               MR. LINDER:  Objection.  Form.
+ 7      A.  I don't know.  He didn't know about
+ 8   this one.  So why would he know about any
+ 9   others?
+10   BY MR. MULARCZYK:
+11      Q.  What do you mean when you say he didn't
+12   know about this one?
+13      A.  He didn't remember this one.  He only
+14   found these samples because he was asked by
+15   Weitz & Luxenberg to go get those motorcycle
+16   -- no.  By Belluck & Fox.  Because
+17   somebody -- I forget the attorney's name --
+18   gave him the M number.  He went over to get
+19   the motorcycle brakes, and he saw the
+20   Cashmere Bouquet containers.  And with that M
+21   number, he was able to print out the report
+22   that he didn't give to me for about six
+23   weeks, seven weeks.
+24      Q.  And what M number was that?
+25      A.  M -- how can I not remember it right
+0088
+ 1   off the top of my head?  M50 -- what is it?
+ 2   M57050.
+ 3      Q.  And you're saying that when -- you said it
+ 4   was Belluck & Fox that had asked Bill Egeland?
+ 5      A.  It was an attorney working at Belluck
+ 6   & Fox who used to work at Weitz & Luxenberg.
+ 7   He had the M number from somewhere, and he
+ 8   was interested in maybe doing a study on it.
+ 9          So, he gave the M number to Mr.
+10   Egeland, and Mr. Egeland went to our offsite
+11   storage, got the right container, bid
+12   containers that hold samples for -- in
+13   sequence, and he opens it up, there's the
+14   motorcycle brakes, and there's two Cashmere
+15   Bouquet containers that were sent to us in
+16   2013.
+17      Q.  So, the M57050 project number was related
+18   to some motorcycle brakes?
+19      A.  Let me read you again what the e-mail
+20   says.  From Chris Romanelli, March 28, 2013,
+21   2:23 p.m., Bill Egeland.  "Bill, on a
+22   separate matter, I'm going to Fed Ex you a
+23   box with three sealed packages for you to
+24   test for the presence of asbestos or
+25   asbestiform particles.  Bags marked A1 and A2
+0089
+ 1   are sealed packages of Cashmere Bouquet
+ 2   powder that I bought on Ebay.  Bag marked B
+ 3   is sealed snowmobile brake -- is a sealed
+ 4   snowmobile brake that I purchased off of
+ 5   Ebay."
+ 6          Then, if you go to page three, he has
+ 7   three analysis.  A1, Cashmere Bouquet, no
+ 8   asbestos observed.  And this is a report
+ 9   dated -- where's the date?  No date.  Well,
+10   he does have a -- he has a letter sending the
+11   results to him on June 4.  A2, Cashmere
+12   Bouquet powder, sample 2, no asbestos
+13   observed.  Snowmobile brake, chrysotile, 20
+14   percent.
+15      Q.  So, what do the motorcycle brakes have to
+16   do with?
+17      A.  I have no idea.
+18      Q.  Well, you just mentioned a moment ago that
+19   Bill Egeland had to go -- got a project number,
+20   this project number, and then went looking for
+21   motorcycle brakes.  What are the motorcycle
+22   brakes?
+23      A.  I misunderstood.  They were thinking
+24   of doing one of our studies on the motorcycle
+25   brake.  And this, I think it was a
+0090
+ 1   snowmobile, but it was a Honda motorcycle
+ 2   brake.  So, Bill Egeland went to go get the
+ 3   sample.  And they never went forward with it.
+ 4          When he got the sample, there, along
+ 5   with the motorcycle brake, was the two
+ 6   Cashmere Bouquet.  Now, Bill Egeland is not
+ 7   working on cosmetic talcs, but he knows that
+ 8   we are.  And he has heard that the -- my
+ 9   cross examination where I'm being accused of
+10   giving false testimony about ever analyzing
+11   cosmetic talcs in the past, and he got the M
+12   number, because they gave it to him.
+13               And with an M number, that's the
+14   way you can guaranty you can find a report.
+15   So, he printed the report out, and sat it on
+16   his messy desk and buried it.  And sometime
+17   four, five, six weeks later he gave it back
+18   to me.  In early October.
+19      Q.  So, did Belluck -- did the attorney from
+20   Belluck & Fox approach Bill Egeland to do
+21   something, or did Bill Egeland reach out to the
+22   attorney from Belluck & Fox to get the project
+23   number?
+24      A.  No.  He got a call out of the blue,
+25   because I don't do many of the asbestos-added
+0091
+ 1   products.  He's now testifying on it.  He
+ 2   likes to do it.  I'm mostly cosmetic talc,
+ 3   and a few unusual ones.  So they were
+ 4   thinking of him doing a study.  He would have
+ 5   no idea about that sample.
+ 6      Q.  I thought you had mentioned a moment ago
+ 7   that he had asked them about that M number
+ 8   specifically.
+ 9      A.  No.  The attorney at Belluck & Fox had
+10   the M number because he was at Weitz &
+11   Luxenberg at the time that we did this report
+12   for him, and he had the M number about the
+13   motorcycle brakes, which just happened to be
+14   the same M number for the Cashmere Bouquet
+15   containers.
+16      Q.  Okay.  So, let me just go back to, I
+17   guess, the question that started this discussion,
+18   which is:  Are you aware of any other PLM
+19   analysts at MAS, other than Bill Egeland, who has
+20   examined Cashmere Bouquet prior to 2016?
+21      A.  Bill Egeland is about the only analyst
+22   we've had.  We've had two or three ones many,
+23   many years ago.  But, then, the only other
+24   analyst is Paul Hess, who's doing Cashmere
+25   Bouquet.
+0092
+ 1      Q.  Was Paul Hess around in the 2013 time
+ 2   frame?
+ 3      A.  He was.  But he was not doing any
+ 4   types of specialty products like this other
+ 5   than just your standard PLM analysis for
+ 6   asbestos-added products, he was mostly
+ 7   working on.  And sometimes, you know, we
+ 8   needed PLM analysis for a nonasbestos
+ 9   project.  You know, he would do that, or Bill
+10   Egeland would do it.
+11      Q.  Okay.  So, would it be fair to
+12   characterize that during that time frame, meaning
+13   specifically in 2013, Bill was your main number
+14   one go to PLM analyst?
+15      A.  He was the senior PLM analyst here.
+16   He's got a master's in geology.  He's, you
+17   know, certified -- what is it?  PL.  You
+18   know, PT.  Professional geologist.  Taken the
+19   test.  He's a very good geologist.
+20      Q.  And if he needed any help with any project
+21   on the PLM side, Paul Hess would step in to help
+22   out?
+23      A.  That I -- you know, I can't verify
+24   that.  He is such a good PLM analyst, I don't
+25   think he needed any help from anybody.
+0093
+ 1      Q.  I meant mainly workload wise, if there
+ 2   were projects that were on the table, and he
+ 3   needed an extra hand, whether Paul would come in.
+ 4      A.  No.  Everybody had their separate
+ 5   areas that they were working in.
+ 6      Q.  Could Paul Hess ever have helped out Bill
+ 7   Egeland with any cosmetic talc analysis during
+ 8   that time?
+ 9               MR. LINDER:  Objection.  Form.
+10      A.  How am I supposed to know that?
+11   Certainly, he's been doing the cosmetic talcs
+12   from mid 2017 or mid 2018, and he's gotten
+13   very good at it.  He's very tedious.  He's
+14   perfect for this, because you have to spend
+15   now, one of these chrysotile analysis may
+16   take four or five hours.
+17   BY MR. MULARCZYK:
+18      Q.  Okay.  Do you have that letter up that you
+19   were just talking about from Chris Romanelli?
+20      A.  Yes.
+21      Q.  And does the name Chris -- do you know the
+22   name Chris Romanelli, who that is?
+23      A.  I do now.  Because I've been asked
+24   many times about him.  But that never rang
+25   any bell with me until this all came to
+0094
+ 1   light.
+ 2      Q.  Is that an attorney, or who is that?
+ 3      A.  That is an attorney, who works at
+ 4   Weitz & Luxenberg.
+ 5      Q.  Okay.
+ 6      A.  He's the attorney that Bill Egeland
+ 7   called to make sure that it was okay that I
+ 8   could produce this report.
+ 9      Q.  And this is not the individual who has
+10   moved over to Belluck & Fox?  That's someone
+11   else?
+12      A.  Someone else.  And I can't recall his
+13   name.
+14      Q.  Okay.  So, in the letter that you read, it
+15   states -- and why don't we just go ahead and do
+16   this now?  Let's mark this letter and the report
+17   on the PLM analysis from 2013 on Cashmere Bouquet
+18   as -- I think we're at Exhibit 27?
+19      A.  It was already marked once.  After
+20   going through everything that I had, didn't I
+21   put that on?
+22               MR. BERQUIST:  Yes.
+23          Exhibit 5.  It's already been marked
+24          as Exhibit 5.
+25               MR. MULARCZYK:  I'm sorry.
+0095
+ 1          You're right.  Sorry about that.
+ 2          Okay.  So, Exhibit 5.
+ 3               THE WITNESS:  It's hard for me to
+ 4          remember.
+ 5   by MR. MULARCZYK:
+ 6      Q.  That's a good memory.  So, let's see here.
+ 7   The letter says, "Bill, on a separate matter, I'm
+ 8   going to Fed Ex you a box with three sealed
+ 9   packages for you to test for the presence of
+10   asbestos or asbestiform particles."
+11          So, these -- when MAS received these
+12   samples in March of 2013, these were purportedly
+13   sealed samples of cosmetic talcum powder,
+14   Cashmere Bouquet?
+15      A.  I think that meant sealed packages
+16   with them in there.  As I recall, because
+17   I've looked at them, one was sealed, and one
+18   was not.  When I say "sealed," it just had
+19   like how we open the powder puff ones where
+20   you just cut a little triangle in so you get
+21   a sample out.
+22      Q.  Okay.  When you say one was sealed and one
+23   was not, can you just elaborate a little more?
+24   Sorry.  I wasn't following.
+25      A.  Well, when we get these containers of
+0096
+ 1   cosmetic talc that they come with the powder
+ 2   puff to apply, the containers are shipped
+ 3   with a paper type sometimes seal to keep the
+ 4   talcum powder in the bottom of the container
+ 5   and the powder puff on top.
+ 6          When I say they are sealed when we
+ 7   receive them is that there's no way to get to
+ 8   the talcum powder unless you cut a small
+ 9   opening in it, such as the report, the
+10   samples we did for Simon, Greenstone, which
+11   is in our September 11, 2018, a lot of those
+12   powder puff containers were sealed, and we
+13   had to open them to get the samples.
+14          So, this one has that same issue.  The
+15   other one, the -- that seal had been removed.
+16      Q.  Were they both powder puff containers or
+17   how --
+18      A.  Yes.  If you look at the pictures,
+19   they are powder puff containers.  These were
+20   not the shaker/squeeze type containers.
+21      Q.  Okay.  To the best of your recollection,
+22   just so I have this right, one of them was sealed
+23   and one of them was not?  Or both of them were
+24   sealed, as you recall?
+25      A.  One was sealed and one was not.  And I
+0097
+ 1   don't know which one was which at the moment.
+ 2      Q.  Okay.  In terms of the process of
+ 3   unsealing them, is this where you were talking
+ 4   about sort of cutting out this triangle so you
+ 5   could get some of the sample out?
+ 6      A.  You know, I looked at them.  As I
+ 7   remember, one of them had like a small
+ 8   triangle that you cut -- you know, you don't
+ 9   cut the base.  You cut the two angled sides,
+10   and then you can peel it back, and then you
+11   can scoop the material back, and then you
+12   can put it back and tape it.  All the
+13   containers we do now, you'll see that on
+14   there, it's taped, and then, there's a
+15   signature from the person preparing the
+16   sample of when he did it.
+17      Q.  It looks like we've been -- I just want to
+18   be cognizant of our breaks.  It looks like we've
+19   been going for another hour.  Would you like a
+20   comfort break, or you want to keep going?
+21      A.  No.  If I can have one, that would be
+22   great.
+23      Q.  Okay.
+24               THE VIDEOGRAPHER:  Off the record at
+25          4:05.
+0098
+ 1               (Short recess taken from 4:05 p.m.
+ 2   to 4:18 p.m.)
+ 3               THE VIDEOGRAPHER:  We're back on the record
+ 4          at 4:18.
+ 5   BY MR. MULARCZYK:
+ 6      Q.  Okay, Dr. Longo.  We have a little bit
+ 7   longer to go today.  Let's just keep going.
+ 8      A.  Okay.
+ 9      Q.  Before we go back to the topic of the
+10   sample, 2013 samples coming to MAS, just a
+11   question for you about depositions generally.  I
+12   was under the impression that you were only doing
+13   depositions remotely because of the pandemic.
+14   Are you open now to -- are you open to now doing
+15   in-person depositions in light of Mr. Berquist
+16   being in the room with you?
+17      Q.  Well, both Mr. -- I've had COVID.  But if
+18   I'm in with other people, then I'm going to have
+19   to wear a mask.  And I'm not doing that.  So, the
+20   majority of the people have been vaccinated.
+21               MR. BERQUIST:  And you can disclose
+22          I had it, too.
+23      A.  And Darron's had it, too.  That's the
+24   only reason he's being allowed to sit here is
+25   he's had it.
+0099
+ 1   BY MR. MULARCZYK:
+ 2      Q.  All right.  Let's go back to what we were
+ 3   talking about in terms of the sealed samples.
+ 4   Okay.  So, one sample was sealed, one sample was
+ 5   unsealed.  Right?
+ 6      A.  That is correct.
+ 7      Q.  Okay.  Since this information coming to
+ 8   light, have you taken more or new photographs of
+ 9   these samples?
+10               MR. BERQUIST:  Peter, just to
+11          clarify, are you talking about
+12          photomicrographs, or photos of the
+13          containers, or --
+14               MR. MULARCZYK:  Photos of the actual
+15          samples, the containers themselves.
+16      A.  No.  I have not.
+17   BY MR. MULARCZYK:
+18      Q.  Okay.  Do you know who unsealed the
+19   container that was sealed back in 2013?
+20      A.  I do not.
+21      Q.  At that time, would something like that
+22   have been videotaped the way you videotape the
+23   unsealing of samples now?
+24      A.  No.  I don't think so.  I mean, we
+25   weren't doing that until these issues started
+0100
+ 1   coming about, sealed or unsealed.  That was
+ 2   something new we started with the powder puff
+ 3   type containers.
+ 4      Q.  And were all three of the products,
+ 5   meaning the two Cashmere Bouquet samples and the
+ 6   snowmobile brake shoe, were all three of those
+ 7   products logged under the same M number?
+ 8      A.  They were.
+ 9      Q.  And that was M57050?
+10      A.  I think that's right.  But I just want
+11   to check it.  57050.
+12      Q.  And the Cashmere Bouquet samples were
+13   samples 001 and 002?
+14      A.  Correct.
+15      Q.  And the snowmobile brake was 003?
+16      A.  Correct.
+17      Q.  Okay.  Was there a chain of custody for
+18   these -- was a chain of custody for these three
+19   products filled out and signed?
+20      A.  It's on the very front of the -- in
+21   the report, I think.  I thought I had one of
+22   those.  Yeah.  If you go to the back of the
+23   -- you go to the back of the 2013 report, the
+24   chain of custody only shows the two Cashmere
+25   Bouquet.  And since they did the analysis,
+0101
+ 1   the motorcycle brake one would have been
+ 2   redacted on it.  I guess.
+ 3      Q.  Which report are you looking at now?
+ 4   Because the only one I have in front of me is the
+ 5   e-mail with the PLM analysis.  What are you
+ 6   looking at now?
+ 7      A.  I'm looking at the June 5th, 2013
+ 8   report.  The one I gave Tovey.
+ 9      Q.  Okay.  I got you.  All right.  So, let's
+10   mark this one as Exhibit 27.  So, the June 5th,
+11   2013 report that discusses the TEM analysis of
+12   Cashmere Bouquet, let's mark that as 27.
+13          (Exhibit No. 27 was marked for
+14   identification.)
+15   BY MR. MULARCZYK:
+16      Q.  So, the chain of custody -- let me just
+17   understand your testimony.  The chain of custody
+18   that is on page -- is it 19 of 20?
+19      A.  Yes.
+20      Q.  Okay.  The chain of custody that's on page
+21   19 of 20 is the one that was prepared for all
+22   three samples that came in on March 29, 2013?
+23      A.  They may have been split because they
+24   were two different products.  I have no
+25   knowledge of what happened.  But I'm just
+0102
+ 1   guessing since these were Cashmere Bouquet
+ 2   versus motorcycle brake or brakes that they
+ 3   split it into two different projects.
+ 4   Meaning, it's been on here since this was
+ 5   just Cashmere Bouquet, that sample three was
+ 6   redacted.  One of the two.
+ 7      Q.  So, if you look at the top of the chain of
+ 8   custody -- and we're still on page 19 -- it says
+ 9   MAS ID is M57050.  That's the project number.
+10   Right?
+11      A.  Correct.
+12      Q.  And the client is Weitz & Luxenberg.
+13      A.  Correct.
+14      Q.  Correct?  And the project name is Cashmere
+15   Bouquet and snowmobile, referring to brake.
+16   Right?
+17      A.  Correct.
+18      Q.  So, this project involved all three
+19   products.  Right?
+20      A.  It did.
+21      Q.  Okay.  And, so, for some reason or
+22   another, this chain of custody did not log the
+23   snowmobile brake.  Right?
+24      A.  The snowmobile brake was logged in.  I
+25   don't know if that was redacted or not at
+0103
+ 1   some point.
+ 2      Q.  Well, when you produced this report for
+ 3   the first time to Morgan Tovey in the Bell case,
+ 4   it was actually redacted at the top.  Right?  The
+ 5   part that says snowmobile brake under project
+ 6   name, that part was redacted when it was first
+ 7   produced to Morgan Tovey.  Right?
+ 8      A.  No.  I might have done that since it
+ 9   didn't have anything to do with Cashmere
+10   Bouquet.  I just can't remember.  Obviously,
+11   I didn't do a very good job.
+12      Q.  Well, I know it came out later.  But did
+13   you end up -- before you produced it in the Bell
+14   case, did you also redact the portion under
+15   sample information?
+16      A.  That's completely possible.
+17      Q.  Is it redacted right now?
+18      A.  Well, I don't have -- I don't have on
+19   the one I'm looking at the motorcycle brakes.
+20   I've just got A1 and A2.  Unless we're not
+21   talking over each other, I'm not answering
+22   the question.  Because I don't understand it.
+23      Q.  Yeah.  I guess I'm confused a little bit.
+24   I mean, this chain of custody says that the
+25   project involved Cashmere Bouquet and snowmobile
+0104
+ 1   brake.  And I understood from the letter from
+ 2   Chris Romanelli that all three were sent to MAS.
+ 3   And I was under the impression that all three
+ 4   products were logged under the M57050 project
+ 5   number.  For some reason -- but for some reason,
+ 6   it's not coming up here, and it doesn't look
+ 7   redacted.  So, I'm just wondering what happened
+ 8   to that.
+ 9      A.  I can't tell you.  But if you look at
+10   Bill Egeland's PLM analysis on the Romanelli
+11   e-mail --
+12               MR. BERQUIST:  Exhibit 5.
+13      A.  Exhibit 5.  It has the same M number
+14   and it has Cashmere Bouquet A1, 5705-001,
+15   Cashmere Bouquet powder A2 is 57050-002, and
+16   snowmobile brake -- I guess there was one --
+17   was M7050-003.
+18   BY MR. MULARCZYK:
+19      Q.  Okay.  So, going back to the June 5th,
+20   2013 report, Exhibit 27, do you see the letter
+21   from Mike Mount to Chris Romanelli on the first
+22   page?
+23      A.  I do.
+24      Q.  What is the project number M57348?
+25      A.  I produced that once.  I went and
+0105
+ 1   looked it up.  It was another project they
+ 2   were working on, another set of brakes.  And
+ 3   he must have been typing up both projects,
+ 4   and he used this one as a template.  But I've
+ 5   produced that log-in of what that was.  And
+ 6   it has nothing to do with cosmetic talc.  I
+ 7   think it was brakes.
+ 8      Q.  Okay.  Separate and apart from the
+ 9   snowmobile brake that was part of 57050?
+10      A.  Yes.  It has its own -- that was
+11   something Mike Mount was working on with
+12   another CIH person.
+13      Q.  So, I want to go back in time just a
+14   little bit to your Bell deposition before you met
+15   with Morgan Tovey.  What materials related to the
+16   2013 testing of Cashmere Bouquet did you produce
+17   in that case?  Or did you have available to you?
+18      A.  I produced the June 5th, 2013 report.
+19   I had not located the PLM analysis yet.  And
+20   everything you see here is what I produced.
+21      Q.  Okay.  And why was the PLM analysis not
+22   part of it?
+23      A.  Because this was a separate report to
+24   the PLM analysis.  Bill Egeland sent the PLM
+25   analysis.  He was able to locate it.  And --
+0106
+ 1   and I've had it for a while.  I just finally
+ 2   produced it.  So, it's two separate reports.
+ 3   Bill Egeland did the PLM and sent his report,
+ 4   which is dated June 4th, the day before, with
+ 5   his name on it.  And, then, Mike Mount sent
+ 6   the TEM report.  So, both of them were
+ 7   working on different things.
+ 8          Egeland didn't have anything to do
+ 9   with the TEM.  And Mount didn't have anything
+10   to do with the PLM, I guess.
+11      Q.  When you say you had the PLM results for a
+12   while but just produced them now, when did you
+13   first put eyes on it?  Or when did you first
+14   learn about it?
+15      A.  A few weeks ago.  Well, I've produced
+16   it before now.  I've sent it in a couple
+17   other cases.  First Cashmere Bouquet case
+18   I've had since I've had it.  So, I wasn't
+19   producing it ahead of time I guess.
+20      Q.  So, I guess what I'm curious about is why
+21   did it -- when you sat down with Morgan Tovey in
+22   early November, and told Morgan that you thought
+23   that Bill Egeland had produced PLM results, why
+24   weren't the PLM results just produced during that
+25   deposition, too?
+0107
+ 1      A.  Because I didn't have them.
+ 2      Q.  And how did you come to get them?  What
+ 3   were the circumstances to how you discovered the
+ 4   2013 PLM results?
+ 5      A.  Bill went into an old system he still
+ 6   had that he was able to finally get access
+ 7   to.  And he put the M number in, and they
+ 8   came up.  About two or three weeks ago.
+ 9      Q.  What's this old system?
+10      A.  It's one of the old IT systems, Excel
+11   or something, that we used to log in samples
+12   in a long time ago.
+13      Q.  So, was there a time where when you first
+14   learned about the 2013 TEM results, that you went
+15   into your computer data base and you plugged in
+16   that M57050 number yourself to see if you could
+17   find a PLM?
+18      A.  I did not.  I thought -- you know, I
+19   had no idea that these samples would cause
+20   such a raucous.  I was sure the PLM results
+21   were negative.  But here I had positive
+22   results.  I didn't take it that seriously
+23   that, "Hey, look what we found?"  Now, it's
+24   turned into -- turned into something much
+25   more than I ever anticipated.
+0108
+ 1      Q.  I'm just -- I appreciate that.  I'm just
+ 2   interested in terms of, you know, because Morgan
+ 3   Tovey asked you about the PLM analysis, and you
+ 4   told him that you thought Bill Egeland did it.
+ 5   Right?
+ 6      A.  And I was right.
+ 7      Q.  Right.  So, wouldn't it just have been
+ 8   easy for you at that time to just pop on your
+ 9   system and just put in the M number and find
+10   them?
+11               MR. BERQUIST:  Peter, I'm sorry.
+12          What does this have to do with that case?
+13          I'm sorry.  What does this have to do with
+14          this case that we're here for?
+15      A.  On the system we have now, when the --
+16   when we popped in the M number, the only
+17   thing that came up was the TEM analysis.
+18   There was no PLM analysis in it.  So, there
+19   was no way for me to find it.  I finally
+20   asked Bill Egeland if he kept any of his old
+21   stuff, and he went and looked for it, and
+22   found it.
+23   BY MR. MULARCZYK:
+24      Q.  I bet he did.
+25      A.  It would have been easier if it was
+0109
+ 1   found all at the same time.  I guess I
+ 2   wouldn't have to testify about it for hours
+ 3   and hours.
+ 4      Q.  Okay.  I think I understand now.  So, the
+ 5   2013 TEM testing was the only testing for these
+ 6   Cashmere Bouquet samples that was available on
+ 7   your new system?
+ 8               MR. LINDER:  Objection.  Form.
+ 9      A.  This report is what Bill Egeland
+10   handed me.  He put the M number in, and this
+11   is what came up.  But he was sure -- he was
+12   told -- he was sure there was PLM analysis
+13   done.  And he would have done PLM analysis.
+14   In fact, I told Mr. Morgan that.  If anybody
+15   would have done it, it was Bill Egeland, and
+16   I was sure they were negative.
+17   BY MR. MULARCZYK:
+18      Q.  My question is:  The PLM analysis that
+19   you're talking about was not something, according
+20   to you, available on the new system that you
+21   could access.  Correct?
+22      A.  It wasn't there.  Just the TEM
+23   analysis.
+24      Q.  Okay.  And, then, Bill Egeland found it on
+25   an old system?
+0110
+ 1      A.  Yes.  He had some old Excel, and he
+ 2   was able to locate it.  I guess he finally
+ 3   got around to looking for it, and gave it to
+ 4   me.  And I think I've been telling in
+ 5   depositions I think I have them.  You know,
+ 6   we have them.  We're going to get them.
+ 7   Something like that.
+ 8      Q.  So, when you -- when you've been asked all
+ 9   of these questions about going back in time and
+10   searching through your logbooks and systems for
+11   prior cosmetic talc analyses, is that old system
+12   that Bill found this PLM analysis in one of those
+13   systems you've looked at?
+14               MR. LINDER:  Objection.  Form.
+15      A.  We searched for every system we had.
+16   But we didn't have the M number.  That's how
+17   our systems work.  If you're going to search
+18   for something and you don't have an M number,
+19   you're usually out of luck.  It's better now
+20   because we have people putting in more key
+21   words.  But everything ran on the M numbers.
+22   BY MR. MULARCZYK:
+23      Q.  When is the first time that you produced
+24   the 2013 PLM results to a plaintiff's counsel?
+25      A.  About a week or two ago.
+0111
+ 1      Q.  And who was that to?
+ 2      A.  Mark Bratt.
+ 3      Q.  Of Weitz & Luxenberg?
+ 4      A.  Yep.  Yes.  Sorry.
+ 5      Q.  No.  That's okay.  When's the first time
+ 6   that you produced the 2013 testing -- let's start
+ 7   with the TEM -- well, both -- the TEM and the PLM
+ 8   to plaintiff's counsel in this case?
+ 9      A.  In this case?
+10      Q.  Yes.
+11      A.  I think I just gave Darron a copy
+12   today.  I think this is the first time he's
+13   seen it.
+14      Q.  Of the PLM and the TEM?
+15      A.  Well, he was lucky he got them both at
+16   once.
+17      Q.  Okay.  So, it's your testimony that you
+18   did not produce the results of the 2013 testing
+19   prior to today to plaintiff's counsel?
+20               MR. DARRON:  The PLM and the TEM.
+21      A.  I don't know if I gave him the TEM.
+22   But the PLM -- I gave him a copy of it this
+23   morning.  I may have sent it to him in the
+24   past.  I just don't recall.
+25   BY MR. MULARCZYK:
+0112
+ 1      Q.  Okay.  Bill Egeland, he's the PLM analyst.
+ 2   He's your senior PLM analyst.
+ 3      A.  He doesn't do PLM as much as he used
+ 4   to.  He's more involved in the litigation for
+ 5   brakes, and joint compound, and that sort of
+ 6   thing.  He was the key TEM -- PLM analyst
+ 7   during this time frame.  The 2013.
+ 8      Q.  Do you still regard Bill as a highly
+ 9   qualified PLM analyst?  Is he one of your go to
+10   guys at MAS, and has been for a while?
+11               MR. LINDER:  Asked and answered.
+12      A.  I would not have Bill Egeland do a
+13   talc sample.  I don't think he has the
+14   patience for the cosmetic talc.  Just getting
+15   something where we're not doing asbestos, for
+16   polarized light microscopy.  And he also is
+17   very, very good on the whole science behind
+18   polarized light microscopy.
+19   BY MR. MULARCZYK:
+20      Q.  Is there a PLM analyst that you can think
+21   of at MAS who is better qualified or more
+22   qualified than Bill Egeland?
+23      A.  Well, it's hard to say who's more
+24   qualified.  Paul Hess has more experience now
+25   with the cosmetic talcs.  A PLM analyst who's
+0113
+ 1   going to do cosmetic talcs, the first thing
+ 2   he has to do is forget everything he was ever
+ 3   told about asbestos-added products.  And he's
+ 4   got the patience.  I would say Paul Hess is
+ 5   more qualified to do the cosmetic talcs, and
+ 6   Bill Egeland, on the other hand, is the guy I
+ 7   would go to if we have a forensics issue that
+ 8   needs optical microscopy in 4S light.
+ 9      Q.  Who has a better handle on the science of
+10   optical microscopy and the optical properties of
+11   minerals, Paul Hess or Bill Egeland?
+12      A.  I don't know.
+13               MR. LINDER:  Objection.  Form.
+14          This is getting kind of far afield,
+15          Pete.
+16      A.  I haven't given them a test.
+17   BY MR. MULARCZYK:
+18      Q.  Well, who do you trust more that knows the
+19   science of optical microscopy better?
+20               MR. LINDER:  Objection.
+21      A.  I trust them both the same.  Because I
+22   know optical microscopy and 4S light
+23   microscopy.  You know, we may debate some
+24   nuances of particular refractive indices or
+25   in minerals.  But both of them are excellent.
+0114
+ 1   So, I'm lucky to have such qualified people
+ 2   working here.
+ 3   B Y MR. MULARCZYK:
+ 4      Q.  Now, the PLM analysis that was performed
+ 5   in 2013 in which the two Cashmere Bouquet samples
+ 6   and the snowmobile brake were tested, Bill
+ 7   Egeland had found -- had reported no asbestos
+ 8   observed in either of the Cashmere Bouquet
+ 9   samples.  Correct?
+10      A.  Correct.
+11      Q.  And he reported finding 20 percent
+12   chrysotile in the snowmobile brake?
+13      A.  Correct.
+14      Q.  And those -- all three of those were done
+15   by PLM?
+16      A.  Correct.
+17      Q.  And with respect to the chrysotile, his
+18   chrysotile testing and the 20 percent, how many
+19   individual fibers of chrysotile is that,
+20   approximately?
+21               MR. LINDER:  Objection.  Form.
+22      A.  20 percent per gram.  A lot.
+23   BY MR. MULARCZYK:
+24      Q.  What's a lot?
+25               MR. LINDER:  Objection.  Form.
+0115
+ 1      A.  I would say we're going north of a
+ 2   trillion.
+ 3   BY MR. MULARCZYK:
+ 4      Q.  Okay.  Was an exposure study ever done on
+ 5   the snowmobile brake shoe after Bill Egeland's
+ 6   analysis?
+ 7      A.  No.
+ 8      Q.  How do you know that definitively?
+ 9      A.  We had done an actual exposure where
+10   we're using the ECL.  I would know about
+11   that.
+12      Q.  Is PLM work typically done before an
+13   exposure study?
+14      A.  We'd like to know that we're actually
+15   going to use an asbestos-containing product.
+16   So, yes.  We don't do an exposure study for
+17   asbestos-added products unless we've tested
+18   them to make sure it has asbestos in them.
+19      Q.  Right.  Because if there was no asbestos
+20   in the bulk material, there would be no need to
+21   assess the exposure.  Right?
+22               MR. LINDER:  Objection.
+23      A.  Right.  You might have a hard time
+24   getting the clients to pay for it if we did
+25   that.  Unless we told them ahead of time that
+0116
+ 1   this would be an exposure study to prove that
+ 2   if it doesn't have asbestos, you won't get
+ 3   exposed.
+ 4   BY MR. MULARCZYK:
+ 5      Q.  The PLM analysis for these three samples
+ 6   that we've been talking about, where was that
+ 7   analysis performed?
+ 8      A.  In 2013?  Here.  In our PLM lab.
+ 9      Q.  Same location, same address?
+10      A.  Same everything.
+11      Q.  Same laboratory?
+12      A.  Yes.
+13      Q.  Okay.  Do you have any information about
+14   where those Cashmere Bouquet samples came from
+15   other than the fact that the plaintiff's attorney
+16   purchased them on Ebay?
+17      A.  That's all I know.
+18      Q.  And Bill Egeland reported finding 100
+19   percent talc in both those samples.  Correct?
+20               MR. LINDER:  Object.  Form.
+21      A.  He did.
+22   BY MR. MULARCZYK:
+23      Q.  And those results were reported to Weitz &
+24   Luxenberg?
+25      A.  They were.
+0117
+ 1               MR. LINDER:  Objection.
+ 2   BY MR. MULARCZYK:
+ 3      Q.  And the report makes no mention of any
+ 4   testing other than the PLM that was requested or
+ 5   performed.  Right?
+ 6      A.  Bill Egeland's report.  That was sent
+ 7   a day before the TEM results were sent.  As I
+ 8   said, Mike Mount was doing the TEM side.
+ 9   Bill Egeland was doing the PLM side.  Why
+10   they didn't combine them in one report is --
+11   is interesting.  But I was never involved.
+12      Q.  So, let's take a look at Exhibit 5, the
+13   second page of it with the letter from Bill
+14   Egeland to Chris Romanelli.  Let me know when you
+15   have that.
+16      A.  I have it.
+17      Q.  So, it says here in the first paragraph
+18   that, "Dear Mr. Romanelli, enclosed is a summary
+19   and the analysis of the three samples which were
+20   delivered to MAS, LLC on March 29, 2013."  That's
+21   consistent with the e-mail from Chris Romanelli.
+22   Right?
+23      A.  It is.
+24      Q.  "It was requested that we analyze these
+25   samples using polarized light microscopy, PLM, to
+0118
+ 1   determine the percentage of asbestos."  Right?
+ 2      A.  Correct.
+ 3      Q.  Bill Egeland doesn't note anything about
+ 4   MAS being requested to perform TEM analysis.
+ 5   Correct?
+ 6      A.  I don't know if he knows anything
+ 7   about it or not.  You know, you're asking me
+ 8   something that happened seven years ago.  I
+ 9   don't know what he knew or didn't know at the
+10   time.  Because he told me that he was in
+11   charge of the PLM analysis and did the
+12   report.  I'm sure -- I'm sure back then he
+13   knew.  But asking him seven years later and
+14   tens of thousands of samples and projects
+15   later from 2013 to now, let's see.  We're at
+16   5-0, and today we're at 7-2.  So, that's
+17   22,000 additional projects since then.
+18          And that's just the projects, not the
+19   number of samples.  I'd be hard pressed to
+20   remember something like this.
+21      Q.  Well, we don't have to try to remember it.
+22   The letter says -- Bill notes in the letter that
+23   MAS was requested to perform polarized light
+24   microscopy.  Correct?
+25      A.  Correct.  That's not the question you
+0119
+ 1   asked me.  You asked me did Bill Egeland not
+ 2   know anything about the TEM or did he?
+ 3   That's something to go back -- that didn't go
+ 4   -- that's 22,000 projects ago.  So maybe
+ 5   100,000 individual samples.  I'm not sure how
+ 6   somebody would know that.
+ 7          I don't -- just looking at it, and
+ 8   they both work in the same office, I'm sure
+ 9   they both knew about the projects.  I don't
+10   understand why they were split into two
+11   letters like this.  It doesn't make a lot of
+12   sense to me.  But that's me.
+13      Q.  I guess my point is that Bill Egeland does
+14   not note in his letter that MAS was requested to
+15   perform TEM analysis.  Right?
+16               MR. LINDER:  Objection.  Form.
+17      A.  He does not note that.
+18   BY MR. MULARCZYK:
+19      Q.  Now, the last line of this report says
+20   "Materials" -- or letter report, says that
+21   "Materials Analytical Services appreciate this
+22   opportunity to have been of service to you.  We
+23   look forward to working with you on future
+24   projects."  Why is that note included?  Does that
+25   mean that this project was completed?
+0120
+ 1               MR. BERQUIST:  Are you asking him
+ 2          what Chris Romanelli is thinking?
+ 3      A.  No.  This is what Bill Egeland said.
+ 4               MR. BERQUIST:  Your question is
+ 5          about what somebody else said.
+ 6      A.  Yeah.  Well, if I would have wrote
+ 7   that, I would have been hoping they sent us
+ 8   more work.  I don't think that has anything
+ 9   to do with this project.
+10   BY MR. MULARCZYK:
+11      Q.  So, you don't read that to mean that the
+12   project has concluded?
+13               MR. LINDER:  Objection.  Form.
+14      A.  I read that as the project has
+15   concluded, and we look forward to working
+16   with you on future projects.  To me, I would
+17   interpret that as we're looking to get some
+18   more business.
+19   BY MR. MULARCZYK:
+20      Q.  Okay.  Prior to, I guess today, you have
+21   never testified about -- or produced Colgate --
+22   these findings of 100 percent talc in two
+23   containers of Cashmere Bouquet.  Correct?
+24               MR. LINDER:  Objection.
+25      A.  Our analysis, using heavy liquid
+0121
+ 1   density and PLM microscopes that -- no.
+ 2   Typically, we say non detects.  You have --
+ 3   you know, you have two samples that are non
+ 4   detects.  All's we're seeing in there is if
+ 5   you look at the PLM, it's going to tell you
+ 6   that it has talc, a major portion, and other
+ 7   opaque minerals that they can't identify.
+ 8               MR. MULARCZYK:  Move to strike
+ 9          unresponsive.
+10   BY MR. MULARCZYK:
+11      Q.  My question was: Prior to today, you've
+12   never testified about or produced to Colgate
+13   these findings of 100 percent talc in two
+14   Cashmere Bouquet samples.  Correct?
+15      A.  Oh, this document right here?
+16      Q.  Correct.
+17      A.  No.  I didn't have a deposition with
+18   Cashmere Bouquet.  Was I supposed to give it
+19   to you?  When?
+20      Q.  When did Weitz & Luxenberg request the TEM
+21   analysis to be performed on these Cashmere
+22   Bouquet samples?
+23               MR. LINDER:  Objection.  Form.
+24      A.  I don't know.
+25   BY MR. MULARCZYK:
+0122
+ 1      Q.  At this time, what would have been the
+ 2   procedure at MAS to perform a PLM analysis or a
+ 3   TEM analysis?  What's the procedure in terms of
+ 4   the order of those events and how they would have
+ 5   occurred at that time?
+ 6               MR. LINDER:  Objection.  Form.
+ 7      A.  I can't talk about the procedure
+ 8   there, what they did.  I have worked on --
+ 9   well, I've worked on other projects.  I
+10   worked on industrial talc.  Typically through
+11   Vanderbilt.  And what I would have done is
+12   they only asked for PLM, I probably would
+13   have said, "Well, we'll do PLM, and if
+14   they're negative, do you want us to do TEM,"
+15   or something like that.  That would be my
+16   procedure.
+17   BY MR. MULARCZYK:
+18      Q.  What was your position at MAS in 2013?
+19      A.  I have been the president from the day
+20   MAS was incorporated.  So, just last year I
+21   got a promotion to CEO.
+22      Q.  So, around that time, 2013, is it your
+23   testimony that the procedure was to advise every
+24   client that both analyses would be performed at
+25   the same time?
+0123
+ 1      A.  Only if the client asked for that.
+ 2      Q.  Right.  So, here we have Weitz & Luxenberg
+ 3   asking for PLM analysis to be performed.
+ 4   Correct?  We have that e-mail.
+ 5               MR. BERQUIST:  I'm not sure that's
+ 6          what the e-mail says.
+ 7   BY MR. MULARCZYK:
+ 8      Q.  I'm sorry.  The letter from Bill Egeland.
+ 9   We have Bill Egeland noting that Weitz &
+10   Luxenberg requested PLM analysis.  Correct?
+11      A.  That's what Bill Egeland states in the
+12   letter.
+13      Q.  Do you have any document or information
+14   that Weitz & Luxenberg requested TEM analysis to
+15   be performed on these Cashmere Bouquet samples?
+16      A.  Yes.
+17      Q.  What's that?  What's that request?
+18      A.  The report.  We would not do a report
+19   and do a TEM analysis Willy-nilly just
+20   because we wanted to, unless the client said,
+21   "Please do it."  So, I take the report as
+22   that there was a request to do with the PLM
+23   analysis, and I am surmising the fact that
+24   the R93 method did not see any -- did not see
+25   any asbestos in there, which is not
+0124
+ 1   surprising.  That's what I surmise.
+ 2      Q.  So, setting aside the June 5th, 2013
+ 3   report, do you have any record, whether it's an
+ 4   e-mail or a letter from Weitz & Luxenberg
+ 5   specifically requesting MAS to perform the TEM
+ 6   analysis?
+ 7      A.  Not that I'm aware of.
+ 8      Q.  Okay.  And it would have been typical or,
+ 9   in your opinion, because of the fact that the
+10   2013 PLM analysis came up negative, that, then,
+11   the next step would have been to do the TEM
+12   analysis?
+13               MR. LINDER:  Objection.  Form.
+14      A.  If the clients wants it.
+15   BY MR. MULARCZYK:
+16      Q.  At the -- in 2013, what would have been
+17   the procedure at MAS for reporting the results of
+18   bulk sample analyses to clients?
+19               MR. LINDER:  Objection.  Form.
+20      A.  Pretty much what you see on here.
+21   Unless it's one of my legal projects.  My
+22   legal projects mostly were asbestos-added
+23   products.  So the PLM analysis was a little
+24   bit more detailed, such as you see in the
+25   Cashmere Bouquet analysis where we're going
+0125
+ 1   through and doing all the five, six steps to
+ 2   show which asbestos it is.
+ 3   BY MR. MULARCZYK:
+ 4      Q.  You testified a moment ago that -- that in
+ 5   your typical practice, if a PLM analysis, if the
+ 6   results of a PLM analysis turned up negative,
+ 7   that if the client requested it, that a TEM
+ 8   analysis should be performed.  Right?
+ 9               MR. LINDER:  Objection.  Form.
+10      A.  Yeah.  No.  It's -- if you're looking
+11   at asbestos-added products, you never do TEM
+12   unless it's on a floor tile or something like
+13   that, you would do a Chatfield just to make
+14   sure there's no chrysotile there.
+15          If you're working on something that's
+16   unique -- and this would have been unique
+17   back in 2013 -- and there's no asbestos
+18   there, and by PLM, I don't know if Mike Mount
+19   suggested it, or if the client just said,
+20   "Well, do TEM."  I don't know what happened
+21   there.
+22      Q.  Okay.  So you don't have any information
+23   in terms of what transpired between the client
+24   and MAS in terms of what the client's decision
+25   was about the TEM analysis after they found out
+0126
+ 1   about the results of the PLM analysis?
+ 2      A.  I'm sorry.  We have a report with TEM
+ 3   analysis.  We would never do TEM analysis
+ 4   unless the client asked for it.  So, I know
+ 5   that the client asked for the TEM analysis,
+ 6   or okayed it, or asked us, "Is there anything
+ 7   else we can do?"  But that would be standard
+ 8   procedure.
+ 9          And if a client asked for TEM
+10   analysis, we would do it.
+11      Q.  Understood.  I got that.  And that would
+12   -- and typical practice, that would be after they
+13   had found out about the PLM results.  Correct?
+14               MR. LINDER:  Objection.  Form.
+15      A.  You're asking me to basically -- I'm
+16   just guessing and giving you answers that I
+17   have no idea what would have happened.  I was
+18   not involved in this at all.  So, to say this
+19   would have happened, or this would have
+20   happened, you know, seven years ago, I don't
+21   know.
+22          I don't know -- the only thing I know
+23   is I have a PLM analysis and a TEM analysis.
+24   The TEM analysis is positive.  We would not
+25   have done TEM analysis unless we got an okay.
+0127
+ 1      Q.  Were there -- do you know if there were
+ 2   any conversations between Weitz & Luxenberg and
+ 3   MAS about the PLM analysis before the TEM
+ 4   analysis was performed?
+ 5               MR. LINDER:  Objection.  Form.  Asked
+ 6          and answered.
+ 7      A.  I would just be speculating if I gave
+ 8   an answer.
+ 9   BY MR. MULARCZYK:
+10      Q.  Have you talked to Bill Egeland about
+11   whether he remembers or not?
+12               MR. LINDER:  Asked and answered.
+13          Speculation.
+14      A.  Bill Egeland did not remember this
+15   project.  Does he remember all the little
+16   intricacies that happened seven years ago?  I
+17   don't know.
+18   BY MR. MULARCZYK:
+19      Q.  What about Mike Mount?  Does he know?
+20      A.  Sorry.
+21               MR. LINDER:  Objection.  Form.
+22      A.  I'm not going to answer -- under
+23   advice of my counsel, I'm not going to answer
+24   anything about what Mike Mount knew or didn't
+25   know.
+0128
+ 1   BY MR. MULARCZYK:
+ 2      Q.  On what basis?
+ 3               MR. BERQUIST:  Those are
+ 4          inappropriate questions to begin with.  To
+ 5          ask questions about what he knew or
+ 6          didn't.
+ 7      A.  The basis is that I've hired an
+ 8   attorney, and he's given me legal advice.
+ 9   So, I'm going to accept his legal advice.
+10   That's my basis.
+11   BY MR. MULARCZYK:
+12      Q.  Sir, what privilege are you asserting?
+13               MR. LINDER:  He's stated that he's
+14          got a personal attorney in the matter of
+15          the pending subpoena as to Mike Mount.
+16          He's following the advice of counsel in
+17          that regard.  If you want to ask him about
+18          the report, he's able to talk about the
+19          report.  You're talking about what Mike
+20          Mount knew, what Mike Mount did.
+21          Whatever.
+22               Those are things that Dr. Longo is
+23          not going to be able to speak to right
+24          now.
+25               MR. BERQUIST:  And also don't have
+0129
+ 1          anything to do with his opinions in this
+ 2          case.
+ 3               MR. MULARCZYK:  Well, they do because
+ 4          he's reanalyzing these products.
+ 5               MR. LINDER:  But that has nothing to
+ 6          do with Mike Mount.
+ 7               MR. BERQUIST:  I didn't say it wasn't
+ 8          relevant to his opinions.  I said that his
+ 9          speculation about what Mike Mount knew or
+10          didn't know or thought or didn't think
+11          has nothing to do with his opinions in
+12          this case.
+13               MR. MULARCZYK:  Let me respond to
+14          both of you.
+15               THE WITNESS:  I'm not relying on this
+16          reanalysis for my opinions.  What I'm
+17          relying on about is Mr. Morgan said
+18          that that was an anthophyllite.  So I went
+19          in, and we proved him wrong.  That's all
+20          I'm relying on.  Because he made that
+21          statement.
+22               I'm not relying on it for this case.
+23          I don't have anything -- I don't know
+24          anything about these samples other than
+25          they're in a green Cashmere Bouquet
+0130
+ 1          container.  I don't know the year.  I was
+ 2          never going to rely on it as, "Well,
+ 3          here's another sample I'm relying on for
+ 4          my testimony."
+ 5               I think this sample has now become a
+ 6          little bit too controversial to actually
+ 7          rely on for opinions on exposure in a
+ 8          case.  But I just reanalyzed them, because
+ 9          Morgan said, "We didn't identify
+10          anthophyllite.  It's not asbestos."  I
+11          just wanted to prove him wrong.
+12               MR. MULARCZYK:  I appreciate that,
+13          Dr. Longo.  But I need to make a record on
+14          this.  So, I appreciate the fact that
+15          there's basically three lawyers who are
+16          objecting to this line of questioning, I
+17          guess all simultaneously right now.  But
+18          we do deem this matter information to be
+19          relevant and pertinent to this discussion.
+20          And that's fine if Dr. Longo doesn't want
+21          to answer questions.
+22               But as I understand, under Louisiana
+23          law, there must be a privilege
+24          asserted in order to refuse to answer
+25          questions.  And all I want to make a
+0131
+ 1          record of is what that privilege is and
+ 2          what the scope of the questions is that
+ 3          Dr. Longo's refusing to answer so that we
+ 4          can note it and then move on.
+ 5                   Simply saying, "I'm not going to
+ 6          answer questions," and counsel for
+ 7          plaintiffs telling me that his other
+ 8          lawyers tells him not to answer questions
+ 9          is not a legal basis to refuse to answer
+10          questions.
+11                   MR. LINDER:  Well, Peter, an
+12          additional legal basis for refusing to
+13          answer is what Dr. Longo just said a
+14          moment ago, which is that as you
+15          pointed out earlier, this particular
+16          report is not referenced in his
+17          case-specific report.  It was produced in
+18          response to your deposition notice.
+19                   He just said he's not relying on
+20          it, in fact, for his opinions.  It's
+21          entirely beyond the scope.  It's gone on
+22          this entire afternoon, which is sort of a
+23          wasted afternoon.  You haven't even gotten
+24          to any of the analysis that he's actually
+25          performed or relying on.
+0132
+ 1               So, I mean, to the extent that he has
+ 2          a personal attorney on these matters, that
+ 3          attorney's not here.  If that
+ 4          attorney was here, he would assert the
+ 5          privileges you're talking about.  But
+ 6          right now, Dr. Longo is not in a position
+ 7          to talk about that.  He's not relying on
+ 8          this report.  It's beyond the scope.  So I
+ 9          think that's --
+10               MR. BERQUIST:  Peter, I would just
+11          add that it's a matter of ongoing
+12          litigation.
+13               MR. MULARCZYK:  What is the
+14          privilege?  You said he's asserting
+15          a privilege.  What privilege is he
+16          asserting?
+17               MR. LINDER:  He said he's acting on
+18          his advice of counsel.  That counsel is
+19          not here at this deposition because he's
+20          not involved in this particular case.
+21               But you're asking him in this
+22          litigation as to matters that pertain to
+23          another litigation that his speaking would
+24          affect, that his answering on these topics
+25          would affect.  So, he's not going to do
+0133
+ 1          that.
+ 2               And he's been very clear that this is
+ 3          on the advice of his counsel in that other
+ 4          pending litigation.  He just comes
+ 5          back to you're asking him for information
+ 6          that he just said he is not relying on in
+ 7          this case.  So, therefore, is irrelevant.
+ 8               MR. BERQUIST:  And to be clear,
+ 9          Peter, neither Mark Linder nor I are
+10          instructing Dr. Longo not to answer the
+11          question based on privilege.  So, just so
+12          the record is clear on that.  You have Dr.
+13          Longo's answer.
+14               THE WITNESS:  And just to make the
+15          record clear, because it's almost 5, I am
+16          not refusing to answer anything about the
+17          analysis, how it was done, what's the
+18          science behind it, or the reasons I gave
+19          you because I went back and looked at the
+20          grids.  It's just that any of my
+21          conversations with Mike Mount, now there
+22          has been subpoenas issued for Mike Mount
+23          and us in another case, my counsel for MAS
+24          and me just said, "I would advise you,
+25          until this matter is resolved, not to
+0134
+ 1          discuss your interactions with Mike
+ 2          Mount."  You know.  I pay him for legal
+ 3          advice, and I'm going to take it.
+ 4               MR. MULARCZYK:  So, and he advised
+ 5          you on the basis of what privilege?
+ 6               THE WITNESS:  I don't know.  I'm not
+ 7          an attorney.  He just said, "My advice to
+ 8          you is not to answer those questions until
+ 9          it has been resolved."  He's not here to
+10          explain what his privileges are or not.
+11               MR. MULARCZYK:  So, let me just
+12          understand this.  You are refusing to
+13          answer questions about conversations that
+14          you have had with Michael Mount about this
+15          Cashmere Bouquet analysis and the samples,
+16          on the basis of another subpoena issued by
+17          another party in another case in a
+18          different state.  Is that fair?
+19               THE WITNESS:  It's not fair how
+20          you're putting it.  I've already been
+21          deposed, what, when I was talking freely
+22          about Mike Mount, ten, twelve, thirteen
+23          hours.  I'm not relying on the samples.
+24                   If you put something forward on
+25          how my discussions with Mike Mount somehow
+0135
+ 1          gives you information about my opinions in
+ 2          this case on the materials that I'm
+ 3          relying on, I might take that into
+ 4          consideration.  But this feels nothing
+ 5          more -- and excuse me -- it's a fishing
+ 6          trip to something that happened seven
+ 7          years ago and just came to light.
+ 8               I mean, is it your position that this
+ 9          is all made up?  Or are you considering
+10          this is all analytical fraud and we just
+11          wrote it all up?  I mean, just give me
+12          something.  Nobody will tell me why you're
+13          going so deep into this.
+14               MR. MULARCZYK:  Well, I'm not
+15          accusing you of anything.  I can
+16          understand why you're not relying on
+17          the samples.  But I'm sure you can
+18          understand about why we want to inquire
+19          into this area.  You haven't been deposed
+20          on both of these analyses in any Colgate
+21          case previously as far as I'm aware of.
+22          Correct?
+23               THE WITNESS:  Well, how many hours
+24          did Morgan Tovey spend with me?  Five?
+25          Six?  Just on these samples.  J&J, I don't
+0136
+ 1          know.  Fifteen, 20 hours?  I'm just --
+ 2          I'm at a loss on why.
+ 3               MR. MULARCZYK:  So I guess just to
+ 4          wrap this up, you can't identify for me a
+ 5          privilege in which you're refusing to
+ 6          answer these questions regarding these
+ 7          analyses?
+ 8               MR. LINDER:  That misstates what Dr.
+ 9          Longo has said.  He said he's not an
+10          attorney.  He's relying upon the advice of
+11          his attorney.  That attorney is not
+12          present because he doesn't represent him
+13          in this particular matter.
+14               He represents him in ongoing
+15          litigation with respect to Mike
+16          Malaspina.  He's following that attorney's
+17          advice.  Ask him anything you want about
+18          the science, about the data, about his
+19          conclusions.  He's just told you that
+20          for the nth time that he's not relying
+21          upon these things.
+22               So, it's pretty well beyond the scope
+23          of any reasonable examination, you know,
+24          just beyond the scope of relevance with
+25          respect to the Powers case?
+0137
+ 1               MR. MULARCZYK:  Well, we can
+ 2          certainly agree to disagree on its
+ 3          relevance here.  But that's fine.  So, I
+ 4          understand there's no privilege being
+ 5          asserted --
+ 6               MR. BERQUIST:  Real quickly, just to
+ 7          note, when we start up again, if you
+ 8          intend on asking Dr. Longo questions about
+ 9          that are pertinent to the ongoing
+10          litigation with Mike Mount, please let
+11          Mr. Linder know so that he can -- may have
+12          his counsel present at the deposition,
+13          please.
+14               MR. MULARCZYK:  So, I'm not asking
+15          questions about that litigation.  I'm
+16          asking questions about conversations
+17          Dr. Longo has had with Michael Mount about
+18          these two Cashmere Bouquet samples, the
+19          TEM analysis, what Michael Mount was
+20          requested by the client and when.  This
+21          all pertains to these analyses, not about
+22          the litigation.
+23               MR. BERQUIST:  No.  Your questions
+24          -- the foundation of your questions are
+25          what Mike Mount knows and doesn't know.
+0138
+ 1          So, that, if you plan on asking him
+ 2          questions about that and the litigation
+ 3          about the subpoena is ongoing, all I'm
+ 4          saying is let us know, so that we can ask
+ 5          Dr. Longo's or MAS' counsel to be present
+ 6          at the deposition as well, so he can
+ 7          assert the privilege instructions.
+ 8               MR. MULARCZYK:  Okay.  That's all I'm
+ 9          interested in is what the privilege is.
+10          But it seems like I can't get what the
+11          privilege is.
+12               MR. BERQUIST:  MAS' counsel will --
+13          that's why I'm making this record.  If you
+14          want to continue asking questions down
+15          this path, it's only fair to the witness
+16          to have his attorney here.  So, if you
+17          plan on continuing to ask these questions,
+18          let's make sure MAS' lawyer is here the
+19          next time we start up.
+20               MR. MULARCZYK:  Okay.
+21               THE WITNESS:  All right.  I've got
+22          to run, guys.  Thank you.  It's 5.
+23               MR. MULARCZYK:  So the deposition
+24          remains open.  Thank you.
+25               MS. BORDENAVE:  When will we
+0139
+ 1          reconvene?
+ 2               MR. LINDER:  We'll get a new - we'll
+ 3          figure that out, and we will get that out
+ 4          to all counsel and they'll make the
+ 5          arrangements necessary.
+ 6               MS. BORDENAVE:  Great.  Thank you.
+ 7               MR. LINDER:  Thank you.
+ 8               THE VIDEOGRAPHER:  Off the record at
+ 9          5:05.
+10               (Whereupon, at 5:05 p.m., there were
+11   no further questions propounded to this witness.)
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0140
+ 1               REPORTER CERTIFICATE
+ 2          I, DEBRA deHAAS, do hereby certify that
+ 3   there came before me
+ 4               WILLIAM E. LONGO, PhD,
+ 5   who was by me first duly sworn; that the witness
+ 6   was carefully examined, that said examination was
+ 7   reported by myself; translated and proofread
+ 8   using computer-aided transcription, and the above
+ 9   transcript of proceedings is a true and accurate
+10   transcript of my notes as taken at the time of
+11   the examination of this witness.
+12          I further certify that I am neither
+13   attorney nor counsel for, nor related nor
+14   employed by any of the parties to the action in
+15   which this examination is taken; further, that I
+16   am not a relative or employee of any attorney or
+17   counsel employed by the parties hereto or
+18   financially interested in this action.
+19          Dated this 1st day of March, 2021.
+20   
+21                        __________________________
+                          DEBRA deHAAS
+22   
+23   
+24   
+25   

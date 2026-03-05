@@ -1,0 +1,3079 @@
+0001
+ 1       IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                 FOR THE COUNTY OF LOS ANGELES
+ 3   
+ 4   DEPARTMENT SSC 15        HON. DAVID S. CUNNINGHAM, JUDGE
+ 5   Coordinated Proceeding Special Title  JCCP CASE NO. 4674
+     (Rule 3.550)
+ 6   
+     LAOSD ASBESTOS CASES
+ 7   
+ 8   LINDA ZIMMERMAN,                   )
+                                        )
+ 9                PLAINTIFF,            )
+                                        )
+10          VS.                         ) CASE NO.
+                                        ) BC 720153
+11                                      )
+     WHITTAKER CLARK & DANIELS,         )
+12                                      )
+                  DEFENDANTS.           )
+13   ___________________________________)
+14   
+15   
+16   
+17   
+18          REPORTER'S TRIAL TRANSCRIPT OF PROCEEDINGS
+19                   THURSDAY, APRIL 22, 2021
+20   
+21   
+22   
+23   
+24   
+25   
+26   
+27          DIANNE M. McGIVERN, CSR 7576, RMR, RDR, CRR, CLR
+                  OFFICIAL COURT REPORTER PRO TEMPORE
+28   
+0002
+ 1   APPEARANCES OF COUNSEL:
+ 2   
+ 3   FOR THE PLAINTIFF:
+ 4   
+               SIMON GREENSTONE PANATIER
+ 5             BY:  LEAH KAGAN, ESQ.
+                    MICHAEL REID, ESQ.
+ 6             1201 Elm Street, Suite 3400
+               Dallas, Texas 75270
+ 7             214.276.7680
+               lkagan@sgptrial.com
+ 8             mreid@sgptrial.com
+ 9   
+10   FOR THE DEFENDANT WHITTAKER, CLARK & DANIELS:
+11   
+               BERKES CRANE ROBINSON & SEAL
+12             BY:  VIIU SPANGLER KHARE, ESQ.
+                    JASON KORT, ESQ.
+13             515 South Figueroa Street, Suite 1500
+               Los Angeles, California  90071
+14             213.955.1150
+               vspanglerkhare@bcrslaw.com
+15             jkort@bcrslaw.com
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+26   
+27   
+28   
+0003
+ 1                           I N D E X
+ 2                   THURSDAY, APRIL 22, 2021
+ 3   
+ 4                      INDEX OF WITNESSES
+ 5   
+ 6   EVIDENCE CODE SECTION 402 HEARING:
+ 7   WITNESS                                         PAGE
+ 8   WILLIAM LONGO, Ph.D.
+ 9   DIRECT EXAMINATION BY MS. KAGAN                 2120
+     CROSS-EXAMINATION BY MR. KORT                   2137
+10   
+11   
+12   
+13                           EXHIBITS
+14   
+15                                           MARKED  RECEIVED
+     EXHIBIT            DESCRIPTION          FOR I.D. IN EVD.
+16   
+17   Exhibit 1790     William Longo            2119
+                      Curriculum vitae
+18   
+     Exhibit 5012     April 5, 2021, Trial     2124
+19                    transcript from McNeal
+20   Exhibit 5010     Deposition of Dr.        2133
+                      Steven Compton
+21   
+     Exhibit 5013     Deposition of Alan       2136
+22                    Seagrave
+23   Exhibit 5006     January 14, 1983         2148
+                      Deposition of George
+24                    Dippold
+25   Exhibit 5007     April 11, 1984           2176
+                      Deposition of George
+26                    Dippold
+27   
+28   
+2101
+ 1   CASE NUMBER:               BC 720153
+ 2   CASE NAME:                 ZIMMERMAN vs. WHITAKER,
+ 3                              CLARK & DANIELS
+ 4   LOS ANGELES, CALIFORNIA    THURSDAY, APRIL 22, 2021
+ 5   DEPARTMENT SSC 15          HON. DAVID CUNNINGHAM, JUDGE
+ 6   APPEARANCES:               (AS HERETOFORE NOTED)
+ 7   REPORTER:                  DIANNE M. McGIVERN, CSR 7576
+ 8   TIME:                      A.M. SESSION
+ 9   
+10            (Whereupon, the following proceedings
+11            were held in open court outside the
+12            presence of the jury:)
+13   
+14            THE COURT:  Please be seated and good morning
+15   and welcome to Department 15.  The court will call the
+16   Zimmerman matter, case No. BC 720153.
+17            Good morning, ladies and gentlemen.  And we're
+18   starting a little early.  Did you have something that
+19   you wanted to bring to the court's attention?
+20            MS. KAGAN:  Yes, Your Honor.  So as Your Honor
+21   knows, pursuant to our trial plan, counsel is supposed
+22   to disclose witnesses, exhibits, and PowerPoint slides
+23   48 hours in advance.  Then counsel is supposed to meet
+24   and confer if there are any objections.  And then if
+25   those objections -- those objections that are not
+26   resolved are raised with the court before the witness
+27   testifies.
+28            THE COURT:  Perfect, yes.
+2102
+ 1            MS. KAGAN:  So yesterday, if Your Honor
+ 2   recalls, at the end of the day, counsel for Whittaker,
+ 3   Clark & Daniels indicated that they had not completed
+ 4   reviewing the materials we provided timely, 48 hours in
+ 5   advance, for Dr. Longo.  Your Honor indicated that we
+ 6   needed to meet and confer.
+ 7            Outside of the courtroom yesterday after court,
+ 8   I met and conferred with Mr. Kort, who told me that he'd
+ 9   get me the objections to the exhibits and slides, and
+10   the slides on a rolling basis, but the exhibits around
+11   6:00 p.m.  We also worked out a couple of issues in the
+12   hallway.
+13            After 8:00 p.m., I still did not have an e-mail
+14   from Mr. Kort.  I e-mailed Mr. Kort.  And this,
+15   Your Honor, I would like to hand up to you is
+16   Exhibit 5009, it's our e-mail exchange.
+17            THE COURT:  Okay.
+18            MS. KAGAN:  It is now 8:09 p.m. and I e-mailed
+19   Mr. Kort and I say (reading):
+20                "Jason, it is now 8:00 p.m.  What
+21            is your ETA on your objections to the
+22            Longo exhibits and/or slides?  I need
+23            to be able to review the issues you
+24            have and we need to meet and confer
+25            on them before tomorrow.  Please let
+26            me know ASAP.  If you don't get them
+27            to me by 8:30 p.m., we will not have
+28            sufficient time to meet and confer."
+2103
+ 1            Mr. Kort wrote me back at 9:42 p.m. and he
+ 2   wrote me a lengthy e-mail with objections to nearly
+ 3   every slide.  They are general objections.  And
+ 4   certainly, that deprives me of any meaningful time to
+ 5   not only review the slides, but to meet and confer.
+ 6            And so I wrote Mr. Kort back and I said that --
+ 7   I said that (reading):
+ 8                "At this point in time, it's
+ 9            nearly 10:00 p.m. and there's no way
+10            we're going to be able to meet and
+11            confer."
+12            And, Your Honor, at this point in time, with
+13   Dr. Longo here, we have a 402 on a specific, narrow
+14   issue, but there is no way that I can put Dr. Longo on
+15   the stand today.  Certainly, we only have a half day.
+16            When these are all the objections to nearly
+17   every slide and I didn't receive them until after 9:40
+18   p.m. last night, there's no way the court can review
+19   these and rule on these.  I haven't even had an
+20   opportunity to correct them or to attempt to correct
+21   them.
+22            This is the type of sandbagging that Your Honor
+23   explicitly said would not happen in this trial.  And
+24   yet, here we are.
+25            And there's no exhibit objections.  There's
+26   some objection comments about three exhibits, but
+27   there's nothing specific about any of the other
+28   exhibits.  Am I to assume they're waiving all objections
+2104
+ 1   to exhibits?  This is just absolutely not appropriate or
+ 2   sufficient notice to meet and confer to resolve these
+ 3   issues.  And it violates the entire purpose and spirit
+ 4   of our 48-hour disclosure.
+ 5            THE COURT:  Response?
+ 6            MR. KORT:  Good morning, Jason Kort for
+ 7   Whittaker, Clark & Daniels.  I sent that e-mail after
+ 8   9:30 p.m.  The last two days have been full court days.
+ 9   We have been doing a lot of things preparing for the
+10   cross of Dr. Emory, preparing for the cross of
+11   Dr. Longo, preparing for the 402 with Dr. Longo.  This
+12   was not any attempt to sandbag.  It was an honest
+13   attempt to get it to Ms. Kagan the quickest that we
+14   could.
+15            I would say that all of the objections are to
+16   two evidentiary issues, hearsay and 352.  The PowerPoint
+17   publishes hearsay.  It's blatant.  It's deposition
+18   testimony not taken in this case.  It's reports from
+19   experts not deposed in this case, not offered in this
+20   case, that didn't write reports in this case, it's
+21   publications from 2008.  It's not Whittaker documents.
+22            So when Ms. Kagan provided us with her
+23   PowerPoint and she had exhibits, we didn't object to
+24   that as hearsay because they were entered into evidence.
+25   None of the information that is in her PowerPoint is
+26   going to be entered into evidence.
+27            So our argument is that, under the
+28   Evidence Code, that should not be published to the jury.
+2105
+ 1   Certainly, Dr. Longo could get on the stand, talk about
+ 2   his expertise, talk about the materials that he's
+ 3   reviewed, and talk about how his review of those
+ 4   materials formed the basis of his opinions.  What we
+ 5   think is inappropriate is quotations to articles,
+ 6   depositions, websites.  And that's the objection.
+ 7            MS. KAGAN:  But here's the problem, Your Honor.
+ 8   This is the first time I'm hearing this objection
+ 9   because I got an e-mail at 9:42 p.m. with a laundry list
+10   of identifying nearly every slide.  There was no meet
+11   and confer.
+12            And it's absolutely inappropriate for Mr. Kort
+13   to stand here and raise these arguments now when he
+14   never attempted to timely meet and confer with me over
+15   the course of 48 hours.  And I understand he was busy.
+16   We were all busy.  We've all been here.  I managed to
+17   prepare for an opening, the direct examination of
+18   Dr. Emory, and disclose Dr. Longo in a timely fashion.
+19   But Mr. Kort couldn't manage to review Dr. Longo's
+20   materials in 48 hours and not sandbag me at 9:42 p.m. to
+21   raise this issue with Your Honor today?  It's absolutely
+22   not appropriate.
+23            THE COURT:  Well, let's do this.  Number one,
+24   let's address the 402 hearing first.  With respect to
+25   the items, while we're doing the 402 hearing, since we
+26   have two lawyers from each side, perhaps whether it's --
+27   I don't know who wants to do the 402 hearing.  Will you
+28   be doing the 402 hearing?
+2106
+ 1            MS. KAGAN:  Yes, Your Honor.
+ 2            THE COURT:  And will you be doing the 402
+ 3   hearing?
+ 4            MS. SPANGLER KHARE:  Jason is going to do it.
+ 5   Mr. Kort will do that.
+ 6            THE COURT:  You, Attorney Spangler Khare and
+ 7   Attorney Reid, can you meet and confer on the
+ 8   evidentiary hearings while we're engaging in the 402
+ 9   hearing and see if we can't narrow some of these issues?
+10   That would be my first request.
+11            MS. SPANGLER KHARE:  Okay.
+12            THE COURT:  Can you do that?
+13            MS. SPANGLER KHARE:  Yes.
+14            MR. REID:  Yes.
+15            THE COURT:  Can we give them the jury room as
+16   long as they're adequately spaced?  Let's put
+17   Ms. Spangler Khare and let's put Mr. Reid in the jury
+18   room.  I want you guys to go and meet and confer now on
+19   those slides.
+20            Let me just say this.  Obviously, if you're
+21   going to use the slides purely as demonstrative
+22   evidence, I will give the instruction on what
+23   demonstrative evidence is so that the jury understands
+24   that the slides in and of themselves are not evidence.
+25   If there's something in the slides which appear to be
+26   misleading, then I think you need to address that.
+27            Beyond that, obviously you can get at least a
+28   laundry list of things that Dr. Longo has relied upon.
+2107
+ 1   Certainly, as an expert, he is permitted to rely on a
+ 2   host of things.  So I think that should be relatively
+ 3   quick, but let me see if we can reduce the dispute down
+ 4   to something where I can make some rulings so that we
+ 5   can get in an hour and a half of testimony.
+ 6            Alternatively, since we do have Dr. Longo here
+ 7   and we've got a tight schedule, by 10:30 is it possible
+ 8   that we can cover at least some of the introduction and
+ 9   the qualifications of Dr. Longo and at least what his
+10   investigation consisted of?
+11            I'm presuming that will take us about an hour
+12   and a half, so we may not necessarily get into any
+13   substantive dispute as to the underlying documents.  If
+14   you do indeed want to get them admitted, we can address
+15   it in the afternoon today.  So that would be my
+16   proposal.
+17            Ms. Kagan, does that work for your strategy?
+18            MS. KAGAN:  My -- my concern is that if there
+19   are substantial edits to the actual slides, I'm not
+20   going to have time to do it.  And I'm not going to have
+21   time to do it with Dr. Longo.  It's not my work product;
+22   it's what we worked on together.  So I don't feel
+23   comfortable beginning a direct examination of a witness
+24   when I don't know what the slides are that I can use.
+25            THE COURT:  Let's see if we can do that because
+26   we do need to use this time even if it's getting some
+27   basic background information on Dr. Longo and at least
+28   getting some indication of what he reviewed.
+2108
+ 1            Certainly, if the question is having a list of
+ 2   the documents he's reviewed as opposed to the content of
+ 3   the documents, we can probably accomplish that.
+ 4            MS. KAGAN:  Alternatively, Your Honor, we do
+ 5   have transcripts that we can read of corporate witnesses
+ 6   that we need to do anyway.  And so, again, I am
+ 7   uncomfortable starting a direct examination with slides
+ 8   that I don't know that I'm going to be able to use or
+ 9   not.
+10            THE COURT:  Why don't we see what progress
+11   Ms. Spangler Khare and Mr. Reid can make.  Let's see if
+12   we can reduce the dispute to something manageable.  And
+13   I'm open, since this is your case and your tactics, you
+14   know, the only concern I would have is, obviously, if
+15   you're designating testimony, it's already gone through
+16   the page/line review process.
+17            MS. KAGAN:  Yes, Your Honor.
+18            THE COURT:  So that will not slow us down.
+19            MS. KAGAN:  Absolutely.
+20            THE COURT:  The primary concern is, we do have
+21   Dr. Longo here.  If we can use him this morning, let's
+22   do it.  And I'll look at it that way.  So let's see --
+23   let's get Attorney Spangler Khare and Attorney Reid
+24   together and see if we can't reduce this dispute.  In
+25   the interim, let's get Dr. Longo on the stand and deal
+26   with the 402 hearing.
+27            MS. KAGAN:  Yes, Your Honor.
+28            THE COURT:  Do you need some time?  Do you want
+2109
+ 1   to take a couple of minutes and I'll come back out?
+ 2            MS. KAGAN:  No; I'm ready.
+ 3            THE COURT:  You're ready to go now?  Okay.  I
+ 4   just want to note, by the way, in some of the flash
+ 5   drives, which I appreciate getting, but on occasions I'm
+ 6   also getting peoples' personal information on the flash
+ 7   drive.  And it's been nothing embarrassing, but people
+ 8   may want to double-check those flash drives to delete
+ 9   any personal items.  I don't need to know everybody's
+10   travel plans.  I've twice now gotten it.  So maybe some
+11   people may not be aware, but, obviously, if you're
+12   Internet surfing, you may get some things on the flash
+13   drive that you did not anticipate.  So I would just say
+14   be careful.
+15            MS. KAGAN:  Got it.
+16            THE COURT:  I don't need to know everybody's
+17   personal business.  All right.
+18            So if you're ready with Dr. Longo, let's
+19   proceed.
+20            MS. KAGAN:  Yes, Your Honor.
+21            May Dr. Longo take the stand, Your Honor?
+22            THE COURT:  Yes.  And just so that we're clear,
+23   this is on which issue?
+24            MS. KAGAN:  Your Honor, this is the unnumbered
+25   motion in limine that was filed by Defendant Revlon
+26   requesting a 402 hearing.  We had argument on this on
+27   February 22nd, I believe.  February 22nd.
+28   February 22nd.  And I'd like to read Your Honor's ruling
+2110
+ 1   into the record so that we know what the scope is.
+ 2            THE COURT:  Did I sign a written ruling on this
+ 3   one?
+ 4            MS. KAGAN:  No, Your Honor.  We served a notice
+ 5   of ruling with the transcript attached to it.  And I'd
+ 6   like to read that portion of the transcript of your
+ 7   ruling.
+ 8            THE COURT:  All right.  And just so that we're
+ 9   clear, is that Tab E in the rulings notebook, the notice
+10   of ruling that apparently is dated January 28th?
+11            MS. KAGAN:  No, Your Honor.  It's actually
+12   tabbed H, I believe.
+13            THE COURT:  I don't have a Tab H in my book.  I
+14   just go up to G.
+15            MS. KAGAN:  I can hand you my Tab H.
+16            THE COURT:  I just want to remind everyone.  So
+17   we're dark on the 29th and the 30th and you have that on
+18   your calendar?  Were you able to make copies of the
+19   calendar for the jurors?
+20            MS. KAGAN:  I believe your clerk did,
+21   Your Honor.
+22            THE COURT:  Okay.
+23            MS. KAGAN:  Or your J.A.
+24            THE COURT:  So that they know.  Okay.
+25            MS. KAGAN:  I'm just looking for a clip to clip
+26   this.
+27            THE COURT:  Are we in session tomorrow?
+28            MS. KAGAN:  We are, Your Honor.
+2111
+ 1            THE COURT:  Okay.  That's what I thought.  All
+ 2   right.  I have been handed the notice of ruling for
+ 3   defendant's unnumbered motion in limine, dated
+ 4   February the 24th, 2021.
+ 5            MS. KAGAN:  Yes, Your Honor.  And if I can, we
+ 6   attached the transcript from the hearing to support the
+ 7   statements that we made in the notice of ruling.  So the
+ 8   notice of ruling says (reading):
+ 9                "The final ruling on defendant's
+10            unnumbered motion in limine regarding
+11            plaintiff's expert witness,
+12            Dr. William Longo, is as follows."
+13            THE COURT:  What page are you reading?
+14            MS. KAGAN:  Your Honor, this is just the
+15   notice.
+16            THE COURT:  I see the notice.
+17            MS. KAGAN:  Yeah.  So (reading):
+18                "A, the court finds that the
+19            I.S.O. 22262-1 methodology allows for
+20            different preparation techniques,
+21            including concentration techniques
+22            when necessary to avoid interference
+23            in testing.
+24                "B, as a result, the court orders
+25            a limited Section 402 hearing outside
+26            the presence of the jury for
+27            Dr. Longo to confirm via testimony
+28            that he employed, quote, CSM as a
+2112
+ 1            preparation technique for the I.S.O.
+ 2            22262-1 methodology.
+ 3                "C, this Evidence Code Section
+ 4            402 hearing shall occur immediately
+ 5            prior to Dr. Longo's testimony at
+ 6            trial."
+ 7            And then we attached the transcript.  And I'd
+ 8   like to read Your Honor's actual ruling into the record
+ 9   so we know what our scope is.
+10            THE COURT:  All right.  And so that I can read
+11   along, what page?
+12            MS. KAGAN:  Page 62, line 10.
+13            THE COURT:  One second.  All right.
+14            MS. KAGAN:  Your Honor states (reading):
+15                "It does appear to me that this
+16            is similar to panning for gold, to
+17            give you a more primitive approach.
+18            It doesn't sound like this is
+19            technologically advanced or
+20            scientifically difficult, but I do
+21            need to know how the scientific
+22            community sees it, so that's what's
+23            driving the court's decision-making.
+24            But it does appear that it is in
+25            relation to the I.S.O. 22262-1 P.L.M.
+26            And I think you agree with that,
+27            Mr. Ulloa, or at least it's connected
+28            to that.  Wouldn't you agree,
+2113
+ 1            counsel?"
+ 2            Mr. Ulloa says (reading):
+ 3                "I don't agree that this is
+ 4            connected to the use of the I.S.O.
+ 5            method."
+ 6            And Your Honor says (reading):
+ 7                "So that's the other thing we
+ 8            have to establish, because, clearly,
+ 9            Dr. Longo does say in paragraph 29 of
+10            his declaration -- he does say that
+11            in paragraph 29 of his declaration,
+12            so I think that would be one question
+13            we can ask him.  That's how I see it.
+14            So I think a couple of questions, a
+15            little bit of cross-examination, and
+16            I think that issue can be resolved."
+17            If we turn to page 63, line 13, I clarified
+18   with the court specifically what the scope was so I knew
+19   what to prepare for.  And I said (reading):
+20                "Specifically, what our schedule
+21            is for 402, Your Honor needs to hear
+22            what Dr. Longo's position is outside
+23            of just the declaration, but specific
+24            testimony as to how the P.L.M.
+25            preparation techniques were used and
+26            how it relates to I.S.O. 22262-1."
+27            Your Honor said, "Yes."
+28   ///
+2114
+ 1            Then I said (reading):
+ 2                "And then Your Honor asked that,
+ 3            with respect to the issues
+ 4            established by Dr. Longo, that it was
+ 5            just a preparation technique as part
+ 6            of I.S.O. 22262-1, the question
+ 7            Your Honor asked me was does that
+ 8            prefatory technique need to be
+ 9            generally accepted?"
+10            And Your Honor said (reading):
+11                "That would be the court that
+12            makes that determination."
+13            I said, "Okay," and Your Honor said
+14            (reading):
+15                "The question is, is there any
+16            evidence that that preparation
+17            method, meaning the Colorado School
+18            of Mines heavy liquid separation
+19            method hasn't been generally accepted
+20            with peer-reviewed and accepted
+21            within the community, or,
+22            alternatively, Dr. Longo's opinion
+23            and anyone else that you want to
+24            offer, whether or not that's viewed
+25            as a new technique or not."
+26            And I said (reading):
+27                "Because if it's not a new
+28            technique, general acceptance is not
+2115
+ 1            an issue under Kelly-Frye."
+ 2            And Your Honor said (reading):
+ 3                "I do think that's the Kelly-Frye
+ 4            standard.  Attorney Ulloa, what's
+ 5            your view on that?  That's a fair
+ 6            question.  I do think that's sort of
+ 7            looming behind all of this, ergo, the
+ 8            reason why I gave the panning for
+ 9            gold comparison, because unlike
+10            analyzing DNA or voice imprint
+11            technology was new or fingerprint
+12            technology was new, it doesn't appear
+13            to me, unless maybe there's some new
+14            technology that you use to spin it or
+15            how you make forces of gravity work
+16            and the sedimentation flotation
+17            process, if any of that is new.  In
+18            scientific principle, it sounds like
+19            panning for gold for a lack of a
+20            better description."
+21            THE COURT:  Okay.
+22            MR. KORT:  And, Your Honor, just for the
+23   record --
+24            THE COURT:  Yes.
+25            MR. KORT:  -- I'd like to note that we filed an
+26   objection to plaintiff's notice and we cite to the
+27   testimony that Ms. Kagan just read, specifically at
+28   page 63, line 28, to page 64, line 7.  That was already
+2116
+ 1   read in the record.
+ 2            THE COURT:  All right.
+ 3            MR. KORT:  Thank you, Your Honor.
+ 4            THE COURT:  Let's proceed.
+ 5            MS. KAGAN:  Thank you, Your Honor.  So with
+ 6   that in mind, Your Honor, I have some documents and
+ 7   supporting information that I'd like to walk through
+ 8   with Dr. Longo.  They are on Your Honor's flash drive.
+ 9   And Dr. Longo has a binder copy so I can direct him to
+10   it.
+11            THE COURT:  Mr. Kort, do you have a copy?
+12            MS. KAGAN:  These are the documents that are
+13   attached to Dr. Longo's declaration.  They were part of
+14   the opposition to the motion and the deposition
+15   testimony that Mr. Kort should have because it was taken
+16   in this case and the met WAL I case, to which Mr. Kort's
+17   firm represents Whittaker, Clark & Daniels.
+18            THE COURT:  Is there any dispute regarding the
+19   representation?
+20            MR. KORT:  I don't want to delay Ms. Kagan's
+21   exam.  I may need a moment to pull something up because
+22   I have everything on a flash drive, but I'll do my best.
+23            THE COURT:  All right.  So I just wanted to
+24   make sure.  As to the factual representation, do you
+25   dispute any component of that?
+26            MR. KORT:  No, Your Honor.
+27            THE COURT:  Because I was really asking to make
+28   sure you had received the materials.  That was my
+2117
+ 1   primary question.
+ 2            MR. KORT:  I did, just not in a notebook, so
+ 3   it's just going to take me a little bit longer to find
+ 4   it, but I'm ready to go.
+ 5            THE COURT:  If you have something to bring to
+ 6   the court's attention, just let me know, Mr. Kort,
+ 7   Attorney Kort.
+ 8            MR. KORT:  Thank you.
+ 9            THE COURT:  We need to swear Dr. Longo.
+10   Proceed.
+11   
+12                        WILLIAM LONGO,
+13       called as a witness on behalf of the Plaintiff,
+14     having been first duly sworn, testified as follows:
+15   
+16            THE CLERK:  Raise your right hand to be sworn.
+17   You do solemnly state that the testimony you will give
+18   in the cause now pending before this court will be the
+19   truth, the whole truth, and nothing but the truth, so
+20   help you God?
+21            THE WITNESS:  Yes, I do.
+22            THE CLERK:  Thank you.  You may be seated.
+23            THE WITNESS:  Thank you.
+24            THE COURT:  And, Dr. Longo, since we don't have
+25   a jury here, I usually as a courtesy to the jury so they
+26   understand how the process works, I go over direct and
+27   cross-examination.  I'm familiar with your testimony in
+28   history, so please tell me you know how.
+2118
+ 1            THE WITNESS:  Yes, sir, I do.
+ 2            THE COURT:  I will dispense with that
+ 3   admonition, but I will give it in front of the jury.  I
+ 4   think it's important for them to understand how this
+ 5   works.
+ 6            Proceed, Ms. Kagan.
+ 7            MS. KAGAN:  Now, Your Honor, you just noted
+ 8   that you are familiar with Dr. Longo.  He's testified
+ 9   before you?
+10            THE COURT:  Yes.
+11            MS. KAGAN:  Because of our time limit, I'm
+12   going to dispense with the full-blown qualifications and
+13   just get some basic qualifications on the record and
+14   move into the actual evidentiary portion, if that's all
+15   right with Your Honor.
+16            THE COURT:  Well, let's establish some things
+17   for the record.  Number one, Mr. Kort, you've seen
+18   Dr. Longo's curriculum vitae, I presume, in the past?
+19            MR. KORT:  Yes, Your Honor.
+20            THE COURT:  And you're familiar with his
+21   qualifications?
+22            MR. KORT:  Yes, Your Honor.
+23            THE COURT:  Will you agree to dispense with the
+24   recitation of his qualifications for this limited
+25   purpose?
+26            MR. KORT:  Yes, Your Honor.
+27            THE COURT:  And then I would ask, are you
+28   offering Dr. Longo for this limited purpose as an
+2119
+ 1   expert?
+ 2            MS. KAGAN:  Yes, we are offering Dr. Longo as
+ 3   an expert.
+ 4            THE COURT:  In what field?  Because that's
+ 5   important to have a specific field identified.
+ 6            MS. KAGAN:  In microscopy and materials
+ 7   analysis, asbestos exposures, and risk assessment.
+ 8            THE COURT:  Any objection to any of those
+ 9   topics?
+10            MR. KORT:  No, Your Honor.
+11            THE COURT:  All right.  The court will accept
+12   him as an expert on those topics for the limited purpose
+13   of the 402.  You may want to go back through this
+14   exercise when we do it before the jury.
+15            MS. KAGAN:  And most certainly I'll do it in
+16   much more detail for the jury.
+17            THE COURT:  You may proceed.
+18            MS. KAGAN:  Thank you, Your Honor.
+19            For the record, I will note that we have
+20   Dr. Longo's CV marked as Exhibit 1790, for the record in
+21   this hearing.  And then certainly we will deal with that
+22   once the jury is present.
+23   
+24            (Exhibit 1790 marked for
+25            identification.)
+26   
+27            THE COURT:  All right.  Let's proceed.
+28            MS. KAGAN:  Thank you.
+2120
+ 1                      DIRECT EXAMINATION
+ 2                  (EVIDENCE CODE SECTION 402)
+ 3   
+ 4   BY MS. KAGAN:
+ 5       Q    So, Dr. Longo, I'd like to turn your attention
+ 6   to Exhibit G.  And Exhibit G is actually the tab G.  I'm
+ 7   sorry.  It's Exhibit 1792-1.  It is your declaration in
+ 8   this case that was submitted in support of our
+ 9   opposition to the motion to preclude your testing using
+10   the CSM preparation technique.
+11       A    Yes, I have it.
+12       Q    Now, Dr. Longo, I want to focus you
+13   specifically to -- I know you did a lot in this case, so
+14   the focus is specifically the CSM preparation technique
+15   for the analysis you did using that technique; okay?
+16       A    Yes.
+17       Q    So looking at Exhibit 1792-1G, can you tell us
+18   what that exhibit is and what its significance is with
+19   respect to using the CSM prep?
+20       A    This is the declaration that I put together to
+21   lay out exactly what we're doing with the sample
+22   preparation method versus the analysis of the results of
+23   the sample preparation method using the I.S.O. 22262-1
+24   polarized light microscopy method for the determination
+25   of the asbestos, if present, such as chrysotile in the
+26   talc.
+27            So there's two parts to the analysis.  The
+28   sample preparation part, that concentrates potentially
+2121
+ 1   chrysotile there.  And then the actual analysis part
+ 2   using the polarized light microscope, so it's not
+ 3   interchangeable.  You always prepare the method, prepare
+ 4   the sample using a specific method, concentration
+ 5   method.  Then you use a specific tool to analyze the
+ 6   sample.
+ 7       Q    And so if I understood you correctly,
+ 8   Dr. Longo, the CSM portion is what you use to prepare
+ 9   the sample, but it isn't what you used and you can't use
+10   it to actually identify and quantify asbestos in the
+11   sample?
+12       A    That is correct.  Sample preparation method
+13   never analyzes the sample.  It prepares it for analysis
+14   depending on what your criteria is for how to get the
+15   sample in a way that it does not -- other things that
+16   you may not be interested in, does not obstruct what you
+17   are interested in.
+18            So it literally makes it easier, concentrates,
+19   in this case chrysotile asbestos, so our detection limit
+20   is such that when we use the I.S.O. 22262-1 polarized
+21   light microscopy analysis, we have a better resolution
+22   to see if chrysotile is present or not.
+23       Q    Now, if we can turn to Tab G in that exhibit.
+24   It's attached to your declaration.
+25       A    Yes.
+26            THE COURT:  Tab G?
+27            MS. KAGAN:  Tab G.
+28            THE COURT:  Which is the accredited laboratory,
+2122
+ 1   A2LA Accredited.  That's the opening of chemical
+ 2   testing?
+ 3            MS. KAGAN:  Exactly.
+ 4   BY MS. KAGAN:
+ 5       Q    Dr. Longo, what is this accredited laboratory
+ 6   certificate that we're looking at?
+ 7       A    It is for various types of sample preparation
+ 8   and analysis that we do, so that we are audited, that we
+ 9   run samples, we show that we are proficient in the
+10   sample preparation as well as the analysis portion.
+11            And in this case we put in an application, all
+12   the backup information to be accredited for analyzing
+13   asbestos in cosmetic talc products by polarized light
+14   microscopy using the I.S.O. 22261 and the I.S.O. 22262
+15   methods.
+16            As far as I know, we're the only lab in the
+17   country that actually went through the process of being
+18   accredited for this type of analysis using a
+19   concentration method, then doing an analysis
+20   specifically for asbestos in cosmetic talc.
+21            I'm not aware of any other laboratory that went
+22   through this process to be accredited.  And it's not
+23   just putting an application in and paying your money.
+24   It's that you have to be audited, you have to put in all
+25   your quality control, and you have to put in your
+26   verification, how do you know it works, how do you know
+27   you can do it right.  And so we're pretty proud of it.
+28       Q    So this organization, this accreditation
+2123
+ 1   organization, A2LA, specifically vetted your laboratory
+ 2   for the use of the I.S.O. 22262-1 and -2 methods for
+ 3   analyzing asbestos in cosmetic talc methods by both PLM
+ 4   and TEM; is that right?
+ 5       A    That is correct.
+ 6       Q    And that included preparing those samples using
+ 7   a heavy liquid separation or concentration technique?
+ 8       A    Correct.  Every analysis that you do where
+ 9   you're using a tool, be it a gaschromatograph, an
+10   optical microscope, or a transmission electron
+11   microscope, there's also a preparation part of the
+12   sample.  Very rarely can you just take the sample and
+13   put it directly into one of these tools.  Scanning
+14   electron microscope is probably the only one, but you
+15   still have to get it so it's conducted and you have to
+16   code it and there's always something to do.  So you have
+17   to break it down in how did I prepare the sample?  How
+18   did I analyze it?  It's step A and step B.
+19       Q    Let's talk about this step A, the concentration
+20   technique from Colorado School of Mines.
+21   
+22            (Interruption in proceedings.)
+23   
+24            THE COURT:  Let's continue.
+25   BY MS. KAGAN:
+26       Q    Dr. Longo, have you ever testified in court
+27   about the use of the CSM preparation technique under
+28   I.S.O. 22262 with respect to cosmetic talc samples?
+2124
+ 1       A    Yes.
+ 2       Q    When did you testify in court with respect to
+ 3   your use of that preparation technique and methodology?
+ 4       A    Two weeks ago.
+ 5       Q    And what case was that?
+ 6       A    The McNeal case.
+ 7       Q    Was that here in Los Angeles?
+ 8       A    On the other side of this building.
+ 9       Q    With Judge Moloney?
+10       A    Yes.
+11       Q    Against Whittaker, Clark & Daniels?
+12       A    Yes, ma'am.
+13       Q    And for the record, I'd like to point the court
+14   to Exhibit 5012.  This is the trial transcript from the
+15   McNeal matter from April 5th, 2021.
+16            THE COURT:  Okay.
+17   
+18            (Exhibit 5012 marked for
+19            identification.)
+20   
+21            MS. KAGAN:  And I'd like to direct the court to
+22   page 2151.
+23            THE COURT:  5012, is that attached to the
+24   notice of ruling or that's on the drive that you gave
+25   me?
+26            MS. KAGAN:  That's on the drive.
+27            MR. KORT:  Your Honor, I have a hard copy for
+28   you, if you'd like.
+2125
+ 1            THE COURT:  Sure.  I have another copy.  Just
+ 2   takes a moment to open it.  All right.  What page?
+ 3            MS. KAGAN:  Page 2151.
+ 4            THE COURT:  2151?
+ 5            MS. KAGAN:  Yes, Your Honor.  And I'm not going
+ 6   to read all of the testimony into the record because --
+ 7            THE COURT:  All right.  Go ahead.
+ 8            MS. KAGAN:  I'm not going to read all the
+ 9   testimony into the record because that would be time
+10   consuming, and I know we don't have a lot of time here,
+11   but I think it's important for the record that,
+12   beginning at 2151, line 11, and going through 2154, line
+13   10, Dr. Longo testified in detail describing the heavy
+14   liquid separation technique, preparation technique,
+15   specifically, the Colorado School of Mines technique
+16   that he used to analyze those Old Spice samples that was
+17   in front of the jury.  That evidence was permitted by
+18   Judge Moloney.
+19            THE COURT:  Any objection?
+20            MR. KORT:  No, Your Honor.
+21            THE COURT:  I can read it to myself.  And
+22   you're asking me if he is going to adopt that testimony
+23   for purposes of this proceeding?
+24            MS. KAGAN:  Correct, Your Honor.  And I'd like
+25   the court to take judicial notice that a different judge
+26   down the hall has admitted this testimony and there was
+27   no Kelly-Frye issue in that case.
+28            THE COURT:  Any objection, Mr. Kort?
+2126
+ 1            MR. KORT:  Well, I would just say that there
+ 2   was no motion in limine filed in that case on this
+ 3   issue.
+ 4            THE COURT:  All right.  No objection to my
+ 5   reviewing the testimony?
+ 6            MR. KORT:  Of course not.
+ 7            THE COURT:  All right.  Let me read it.  Give
+ 8   me a second.  I think that will make it go quicker.  And
+ 9   it starts with, the question is (reading):
+10                "Q  So, let me ask you about this
+11            concentration method.  You said it's
+12            been around for hundreds of years.
+13            What do you mean by that?"
+14            And who is asking the question?  Is that you?
+15            MS. KAGAN:  This is my law partner, Mr. Purdy,
+16   Stuart Purdy.
+17            THE COURT:  And I'm going to just read it to
+18   myself.  To which page and line?
+19            MS. KAGAN:  To page 2154, line 10.  And he
+20   talks about it much longer than that, but I think this
+21   is the good kind of preview.
+22            THE COURT:  You said 2154 or 53?
+23            MS. KAGAN:  2154, line 10.
+24            THE COURT:  All right.  Thank you, I've read
+25   through it.  Anything further?
+26            MS. KAGAN:  Yes, Your Honor.
+27       Q    Dr. Longo, why is it necessary to employ a
+28   concentration preparation before analyzing a talc sample
+2127
+ 1   for asbestos?
+ 2       A    It allows you to remove a lot of the material
+ 3   that obstructs the analysis, so you can get a much
+ 4   higher analytical sensitivity if you can remove the
+ 5   majority of the talc plates and other materials that
+ 6   interfere or overload the sample.
+ 7            If you did not do a concentration method of any
+ 8   sort, you're dealing with a million talc plates and
+ 9   fibers versus maybe one chrysotile bundle.  So that
+10   means you have to dilute the sample.  And you can dilute
+11   it to the point where just finding one, your detection
+12   limit can't even do that.
+13            And this is a technique that has been used in
+14   microscopy for years and years from removing organics by
+15   putting it in a muffle furnace or removing calcium
+16   carbonate by using an acid solution.
+17            When talc companies use floatation, that's the
+18   last step before they make it a cosmetic talc.  They're
+19   actually concentrating the nice little white platelets
+20   versus all the other material that goes to the bottom
+21   versus the top.  These are all concentration methods
+22   that have been around, as I stated, hundreds of years.
+23   It's taking one type of mineral and separating it from
+24   the other minerals you're not interested in, like
+25   panning for gold.
+26       Q    Now, the Colorado School of Mines concentration
+27   technique, when was that first developed?
+28       A    They developed it between late 1972, but pretty
+2128
+ 1   much all through 1973 when they had finalized it, and
+ 2   told Johns-Manville in late 1973 that they couldn't use
+ 3   it because they were going to patent it.
+ 4       Q    Interesting.  Is there anything new or novel
+ 5   about the concentration technique that the Colorado
+ 6   School of Mines developed in the '70s?
+ 7       A    No.  It's basically the basic science behind
+ 8   the concentration method.  Really, it's absolutely no
+ 9   different than the I.S.O. 22262-1 except you're using a
+10   different heavy liquid density material.  That's it.
+11       Q    Now, does the I.S.O. 22262-1, the method you
+12   use for analysis, does that allow you to use a
+13   concentration preparation?
+14       A    Yes.  There's Section 6 in the Method 1.
+15       Q    Let's take a look at that.  I believe we are
+16   back in Exhibit -- it's 1792-1, that's your declaration.
+17   And I believe it's attached as Tab M to your
+18   declaration.  Let me know when you're there.
+19       A    I'm there.  It's under Section 6, sample
+20   preparation, which would be page 14.  And 6.1 gives the
+21   general definition of why you use it.  And then it goes
+22   into, you know, various methods of doing it.
+23            6.2, it says organic materials by ashing in a
+24   muffle furnace; removal of -- 6.3 is removal of soluble
+25   constituents by acid treatment, like calcium carbonate;
+26   4, you start getting to sedimentation and floatation.
+27       Q    Is that concentration?
+28       A    That is concentration.  The heavy density stuff
+2129
+ 1   will fall out if you let it sit.  The lower density
+ 2   materials will float.  And floatation is what every
+ 3   cosmetic talc manufacturing group who digs it out of the
+ 4   ground uses.  They all use this for as far back as I can
+ 5   see in their documentation.  And they even used it to
+ 6   try removing the asbestos out of the talc before they
+ 7   put it into a container.
+ 8            Then you can do a combination.  So this is
+ 9   something that our laboratory concentration method has
+10   used for 30 years.  It's in every protocol.
+11       Q    And is this protocol, the I.S.O. 22262-1,
+12   generally accepted in the scientific community?
+13       A    Yes, it is.  It's a consensus standard, a
+14   little different than maybe the ASTM in that it's
+15   worldwide.  This is a standard that is done by
+16   scientists not only in this country, in Canada, but
+17   around the world.  So it's a worldwide consensus
+18   standard.
+19            THE COURT:  Anything further, counsel?
+20            MS. KAGAN:  Yes, Your Honor.
+21            Now I'd like to read into the record the
+22   testimony of different experts in this case that agree
+23   with Dr. Longo to support the fact that this is not only
+24   Dr. Longo that is saying this, but the microscopists in
+25   this case, the defense microscopists Alan Seagrave, and
+26   then a defense microscopist for Whittaker in old
+27   science, Mr. Poye, and then Dr. Compton, who is our
+28   microscopist.  So I'll just be brief to identify those
+2130
+ 1   things for the record.
+ 2            THE COURT:  Go ahead.
+ 3            MS. KAGAN:  So if we can --
+ 4            MR. KORT:  Let me just object that it's
+ 5   hearsay.
+ 6            THE COURT:  Pardon?
+ 7            MR. KORT:  I'm just making a hearsay objection.
+ 8            THE COURT:  All right.  Overruled.
+ 9            MS. KAGAN:  Your Honor, if we can just turn to
+10   tab 50 -- it's Exhibit 5011.  This is the March 3rd,
+11   2020, deposition testimony of Lee Poye in this case.
+12   Mr. Poye was retained as an expert by us in this case.
+13   In the McNeal case, which was the case that Dr. Longo
+14   testified to two weeks ago for this method, Mr. Poye
+15   actually testified on behalf of the defendants.
+16            If we can turn to page --
+17            THE COURT:  Which exhibit is this?
+18            MS. KAGAN:  This is Exhibit 5011.
+19            THE COURT:  All right.  And the page number?
+20            MS. KAGAN:  Let's first start with page 115,
+21   line 16.
+22            THE COURT:  Page 115.  All right.  Page 115.
+23   Line?
+24            MS. KAGAN:  16.
+25            THE COURT:  Through what?
+26            MS. KAGAN:  Through 116, line 5.
+27            THE COURT:  All right.  Any objection,
+28   Mr. Kort.
+2131
+ 1            MR. KORT:  He was not retained as a defense
+ 2   expert in the Zimmerman matter, but no objection to
+ 3   reading this.
+ 4            THE COURT:  Proceed.
+ 5            MS. KAGAN:  (Reading):
+ 6                "Q  Do you need to utilize a
+ 7            concentration to find amphibole
+ 8            minerals or asbestos in talc if
+ 9            amphibole minerals or asbestos is
+10            there?
+11                "A  The whole purpose of a
+12            concentration method is to save time
+13            and facilitate the locating and
+14            identifying the analyte; in this
+15            case, asbestos that you're looking
+16            for.  But to turn that around and say
+17            that you have to do a concentration
+18            method to be able to find it, I can't
+19            -- is not necessarily true.  It
+20            definitely, a concentration method by
+21            definition would facilitate the
+22            location and identification of those
+23            particles, but there are still other
+24            ways.  It just would take longer to
+25            find the product without -- or the
+26            analyte without -- without in the
+27            product."
+28            We can then turn to page 41.
+2132
+ 1            THE COURT:  This is still Mr. Poye?
+ 2            MS. KAGAN:  This is still Mr. Poye.
+ 3            THE COURT:  Page 41.  Line?
+ 4            MS. KAGAN:  Page 41, line 5, through line 13.
+ 5            (Reading):
+ 6                "Q  As you sit here today, have
+ 7            you ever utilized any concentration
+ 8            preparation method in the testing of
+ 9            any product whatsoever for the
+10            detection or absence of asbestos
+11            before 2018?
+12                "A  Well, there's all kinds of --
+13            I mean, there's a gradiometric
+14            reduction, shifting, heavy liquid
+15            separation.  There's a whole battery
+16            of what you could define as
+17            concentration methods that we employ
+18            in a variety of different building
+19            materials."
+20            THE COURT:  Anything further?
+21            MS. KAGAN:  Yes, Your Honor.  If we can now
+22   turn to -- and this would be tab -- this is
+23   Exhibit 5010.  I just want to make sure I'm making my
+24   record, Your Honor.  This is Exhibit 5010, this is the
+25   deposition of Dr. Steven Compton.  He's a retained
+26   expert by plaintiffs in this case.  This was taken in
+27   the Metwally matter on March 16th, 2021.  Whittaker is a
+28   defendant in that case.  They were present and
+2133
+ 1   questioned Dr. Compton.  And this relates to the
+ 2   Jean Nate product, the same products at issue here and
+ 3   the same testing at issue here.
+ 4   
+ 5            (Exhibit 5010 marked for
+ 6            identification.)
+ 7   
+ 8            MR. KORT:  I would just make an objection that,
+ 9   unlike the first two depositions, this deposition was
+10   not taken in this case, so it is not automatically
+11   allowed to be read in for any purpose is my objection.
+12            MS. KAGAN:  Your Honor, this is a proof hearing
+13   and I'm happy to get Dr. Compton on the phone and have
+14   Dr. Compton say this to you on the phone right now, but
+15   I think for efficiency's sake, I could read the sworn
+16   testimony into the record for foundation.
+17            THE COURT:  And your objection is what,
+18   Mr. Kort?
+19            MR. KORT:  It's hearsay.
+20            THE COURT:  Well, it's being offered for what
+21   purpose?
+22            MS. KAGAN:  Your Honor, one of the issues that
+23   we had at the 402 argument was that, in the event the
+24   court determined this was a novel method under
+25   Kelly-Frye, which I think we've clearly established it
+26   is not, but in the event the court does believe that,
+27   then one of the factors that we must present is that
+28   Dr. Longo is not the only one that is vouching for this.
+2134
+ 1            THE COURT:  All right.  Cite me to your
+ 2   evidence.  This is the last citation because I want to
+ 3   get going on the testimony.
+ 4            MS. KAGAN:  There's one more after that.  It's
+ 5   the defense expert, so it's this one and then the last
+ 6   one.  But they're both quick.  So this is Exhibit 5010,
+ 7   deposition of Dr. Compton in the Metwally case,
+ 8   March 16th, 2021.
+ 9            THE COURT:  Page?
+10            MS. KAGAN:  And there are two sections,
+11   Your Honor.  First is page 49, line 11, through page 52,
+12   line 2.
+13            THE COURT:  Can I read it to myself, please?
+14            MS. KAGAN:  Yes, you can.  And I think really
+15   the most crucial --
+16            THE COURT:  What line is it?  Page?
+17            MS. KAGAN:  Page 49, line 11, through page 52,
+18   line 2.
+19            THE COURT:  All right.  Let me read that, then.
+20   And what else?
+21            MS. KAGAN:  Then, Your Honor, at page 53, line
+22   19 to 23, when Dr. Compton is asked if he intends to
+23   publish concerning the CSM preparation method, he says
+24   (reading):
+25                "Well, the technique itself has
+26            already been published, so I don't
+27            know that there would be anything new
+28            that I could contribute."
+2135
+ 1            And then if we turn to the last part, and this
+ 2   would be on page 70, line 25, to 71, line 10,
+ 3   Dr. Compton says (reading):
+ 4                "Other than that, we've also
+ 5            talked about methods today and
+ 6            various prep techniques.  The methods
+ 7            that I use are referenced in the
+ 8            analytical reports that I've
+ 9            discussed.  We talked about prep
+10            techniques.  There are a variety of
+11            different prep techniques that any
+12            given method might reference or
+13            suggest.  Like I.S.O. 22262-2 method
+14            has recommendations for heating or
+15            chemical treatment or heavy liquid
+16            separation depending on what's needed
+17            of the specific sample.  The EPA R-93
+18            method also has various prep
+19            techniques that they reference and
+20            allow for."
+21            THE COURT:  All right.  Anything further?
+22            MS. KAGAN:  The last bit is from the defense
+23   expert.  And this is Exhibit 5013.  This is
+24   Mr. Alan Seagrave.  This is Whittaker, Clark & Daniels'
+25   geologist.  And this is his deposition testimony in this
+26   case that was taken March 4th, 2020.
+27   ///
+28   
+2136
+ 1            (Exhibit 5013 marked for
+ 2            identification.)
+ 3   
+ 4            MS. KAGAN:  And if we can go to page 47, line
+ 5   21, through page 48, line 8.  And Mr. Seagrave is asked
+ 6   (reading):
+ 7                "Q  Okay.  Let me ask you this.
+ 8            Are you familiar with I.S.O. 22262-1
+ 9            and -2?
+10                "A  Yes, sir.
+11                "Q  Okay.  When you have done
+12            analysis of talc in asbestos
+13            litigation, have you ever employed
+14            either of those?
+15                "A  We have done the density
+16            separation technique in our
+17            laboratory.  I don't believe we have
+18            done it for a reporting of results.
+19            We may be starting to do that, but we
+20            have run some samples using that
+21            technique."
+22            And so here, Your Honor, we have three
+23   different experts explaining that I.S.O. 22262 is
+24   generally recognized and accepted method, allows for
+25   concentration techniques, that these are normal,
+26   standard, routine techniques.  There is nothing novel or
+27   new about them.  But even if there was, these other
+28   experts vouch for them.
+2137
+ 1            THE COURT:  All right.  Mr. Kort, response?  Do
+ 2   you wish to question Dr. Longo?
+ 3            MR. KORT:  I do, Your Honor.  I also don't want
+ 4   to be rushed, but I know we're waiting on the jury.  Do
+ 5   you want me to proceed?  Do you want to take this up
+ 6   after the jury comes in?
+ 7            THE COURT:  Are we going to reach this topic
+ 8   today?
+ 9            MS. KAGAN:  Your Honor, I don't know where
+10   Mr. Reid and Ms. Spangler Khare are on the meet and
+11   confer.  I don't feel comfortable beginning Dr. Longo's
+12   examination without knowing what my evidence actually is
+13   going to be.
+14            THE COURT:  Let's take five minutes.
+15            MR. KORT:  Thank you, Your Honor.
+16            THE COURT:  Go ahead, Mr. Kort.
+17   
+18                       CROSS-EXAMINATION
+19                  (EVIDENCE CODE SECTION 402)
+20   
+21   BY MR. KORT:
+22       Q    Good morning, Dr. Longo.
+23       A    Good morning.
+24       Q    Good morning.  You don't have any information
+25   or documents demonstrating that Johnson & Johnson ever
+26   shared the Colorado School of Mines heavy liquid
+27   separation method for either chrysotile or amphibole
+28   asbestos with the FDA; is that true?
+2138
+ 1       A    That's true.
+ 2       Q    And you don't have any evidence that either the
+ 3   Colorado School of Mines or Johnson & Johnson ever
+ 4   shared with Whittaker their testing methodology that
+ 5   they were discussing in the 1970s; is that true?
+ 6       A    I haven't seen any documents that have been
+ 7   produced that shows that.
+ 8       Q    And you first started testifying as an expert
+ 9   in cosmetic talc litigation in 2016; is that true?
+10       A    I think I had my first deposition in 2017.
+11       Q    And in 2017, you were not familiar with the
+12   Colorado School of Mines testing for talc; fair?
+13       A    That's fair.  Had not seen that
+14   Johnson & Johnson had worked the heavy liquid density.
+15   Certainly was familiar with heavy liquid density
+16   separation and concentration preparation methods.  We
+17   had just been using a heavy density specifically for
+18   talc.
+19            But no, until I -- until those documents were
+20   being produced, I did not know the Colorado School of
+21   Mines had been working on that technique in this 1973.
+22       Q    And I would just move to strike the
+23   nonresponsive portions.
+24            You became familiar with the Colorado School of
+25   Mines' heavy liquid separation method sometime around
+26   late 2018-2019; is that fair?
+27       A    That's fair.
+28       Q    And in 2019, your lab started the validation
+2139
+ 1   process with respect to the separation method using
+ 2   heavy liquid to separate chrysotile specifically from
+ 3   talc; correct?
+ 4       A    That's correct.  We had to work out the fine
+ 5   tuning of the sample preparation portion of that method.
+ 6       Q    And you first started issuing reports involving
+ 7   analysis using the Colorado School of Mines' testing
+ 8   methodology in 2020; true?
+ 9       A    True.
+10       Q    It took your lab about six to seven months to
+11   get your Colorado School of Mines procedure down to be
+12   reproducible; fair?
+13       A    Not reproducible as much as trying to work out
+14   finer points of it, centrifugation speed, et cetera, so
+15   we were trying to optimize it and finally getting the
+16   right standard of chrysotile to use for the
+17   quantification.  That was the real key.
+18       Q    And as of last August in 2020, you were still
+19   modifying your testing and trying to validate your heavy
+20   liquid separation TEM method using the Colorado School
+21   of Mines related to chrysotile; true?
+22       A    You're talking about TEM or polarized light
+23   microscopy?
+24       Q    Polarized light microscopy.
+25       A    Okay.  We were using the Calidria chrysotile,
+26   we were still getting positive samples for chrysotile.
+27   We just wanted to calibrate the PLM analyst to get the
+28   right range of estimated volume weight percents.
+2140
+ 1       Q    And that method has changed over the year;
+ 2   fair, in your lab?
+ 3       A    How we use it has changed, but heavy liquid
+ 4   density separation has been -- the science behind it,
+ 5   that has never changed.
+ 6       Q    Well, in terms of your protocol for the
+ 7   analysis of talc for asbestos content by ashing the
+ 8   sample to remove organics, that protocol has changed
+ 9   over the last year; fair?
+10       A    Oh, that's fair.
+11       Q    And when one views I.S.O. 22262-1 and -2, its
+12   protocol calls for a sample to be ashed at 400 degrees
+13   Celsius for ten hours; fair?
+14       A    That's fair.
+15            MS. KAGAN:  Your Honor, I'm going to object at
+16   this point in time.  This is outside the scope.
+17            THE COURT:  Where are you going with this?  It
+18   was a narrow issue, so the question is, is it new and
+19   generally accepted?  I think you're going to the actual
+20   preparation and I think that should be reserved for
+21   cross-examination.  Anything further, Mr. Kort?
+22            MR. KORT:  If you're ready to rule, Your Honor,
+23   then nothing further.
+24            THE COURT:  Well, if you want to address some
+25   of the newness or generally accepted, I'll definitely
+26   hear that.  If the question is challenging the
+27   credibility of the method and its functionality, that
+28   should be reserved for cross.  We've got jurors waiting.
+2141
+ 1            MR. KORT:  I can wrap this up in a few minutes.
+ 2       Q    Does your lab, Dr. Longo, have starting
+ 3   operating protocols regarding its preparation methods?
+ 4       A    It does.
+ 5       Q    And you don't produce those standard operating
+ 6   protocols regarding your preparation methods; correct?
+ 7       A    Our standard operating procedures are, we take
+ 8   the same position that even the defense experts take.
+ 9   We spend hours and hours and hours putting those
+10   together.  It's company property so -- because of all
+11   the time and effort.  But to know those protocols, I
+12   certainly have laid out what we do.  Instead of it
+13   making simple for an analyst just to go A, B, C, and D,
+14   all my reports have exactly what we did.
+15       Q    You have not published anything on the Colorado
+16   School of Mines' method in peer-reviewed literature?
+17       A    That is correct.
+18       Q    And no published or peer-reviewed literature on
+19   the Colorado School of Mines analysis either as it
+20   existed in the '70s or as MAS has modified it for
+21   chrysotile?  No published literature on that
+22   preparation; true?
+23       A    On just chrysotile, that's true.  But using
+24   heavy liquid density to look for asbestos in cosmetic
+25   talc has been published in peer-reviewed literature as
+26   early as 1990 and 1991.  The use of heavy liquid to
+27   separate other minerals can go back 50, 60, 70 years, so
+28   the science is there.  The use of it, just this one
+2142
+ 1   specific application for chrysotile, has not been put in
+ 2   the peer-reviewed literature yet.
+ 3       Q    And you would agree that the International
+ 4   Organization of Standardization has not published the
+ 5   heavy density liquid separation of chrysotile; correct?
+ 6       A    Specifically for chrysotile, they say it is --
+ 7   it may not be practical for a particular -- they say you
+ 8   can do it, it's possible, but it may not be practical.
+ 9       Q    Okay.  Just a couple more questions, Dr. Longo.
+10   Thank you.  No one outside of your lab has ever
+11   validated your testing using the Colorado School of
+12   Mines method to date, have they?
+13            MS. KAGAN:  I'm going to again object.  This is
+14   outside the scope of the 402.
+15            MR. KORT:  It goes to general acceptance,
+16   Your Honor.
+17            THE COURT:  Are we talking about the separation
+18   method?
+19            MR. KORT:  We're talking about the Colorado
+20   School of Mines method that separates chrysotile
+21   specifically from talc.
+22            MS. KAGAN:  The question was whether or not
+23   other laboratories have validated Dr. Longo's testing
+24   results.  That has nothing to do with Kelly-Frye,
+25   Your Honor.
+26            THE COURT:  Is that correct, counsel, that's
+27   what you're asking about?
+28            MR. KORT:  I'm asking whether any other lab
+2143
+ 1   performs the preparation that they're using the Colorado
+ 2   school mines to separate chrysotile from talc.
+ 3            THE COURT:  I'll allow the question.
+ 4            MS. KAGAN:  That's a different question, but --
+ 5            THE WITNESS:  Well, I would look at it a little
+ 6   bit differently, because I'm not in the -- it's hard for
+ 7   me to know what other laboratories are doing.
+ 8            But instead of other labs validating my work
+ 9   with what's called the Colorado School of Mines, I
+10   validated the Colorado School of Mines technique,
+11   because they're the ones who put out, yes, this can be
+12   done if you just use this heavy liquid density.  Other
+13   labs out there I can't say, because a lot of labs are
+14   doing research or -- you know, the defendants' experts
+15   are working on it or not.  So I don't know of any other
+16   labs because I don't -- I can't call labs up and say,
+17   hey, are you working on this?
+18            Just looking at Dr. Compton, he's working on
+19   heavy liquid density.  He says he's trying to refine the
+20   technique.
+21            THE COURT:  Any further questions, Mr. Kort?
+22            MR. KORT:  No, Your Honor.  Thank you.
+23            THE COURT:  All right.  Thank you.  I'm going
+24   to deny the motion in limine.  I think that Dr. Longo
+25   has established that the CSM method, his preparation
+26   technique, it is apparently not new.  It appears that
+27   other experts have in the field relied upon it, so that
+28   is supporting the court's decision to deny the motion in
+2144
+ 1   limine.  Would you like to be heard briefly, Mr. Kort?
+ 2            MR. KORT:  No, not right now, Your Honor.
+ 3   Thank you.
+ 4            THE COURT:  All right.  Thank you both sides
+ 5   for that.
+ 6            Can we find out where we are with the
+ 7   objections?
+ 8            MS. KAGAN:  Your Honor, what I would suggest,
+ 9   because we have really an hour of time, since we have to
+10   let juror 10 go for his vaccination and we're dark in
+11   the afternoon, that we use this hour to read the Dippold
+12   P.M.K. testimony.  I have to do that anyway.  I need to
+13   fill that time anyway as part of my evidence.
+14            Dr. Longo can go back to the hotel.  And then
+15   we can find out afterwards where Ms. Spangler Khare and
+16   Mr. Reid are.  And then, hopefully, we can actually
+17   resolve some of those issues as we should have done over
+18   the last 48 hours.
+19            THE COURT:  Mr. Kort, are you in agreement with
+20   that, so we can get the jury in here?
+21            MR. KORT:  100 percent.
+22            THE COURT:  All right.  Now, do we need to
+23   contact Attorney Spangler Khare and Attorney Reid to
+24   determine if they're going to participate in this next
+25   round?
+26            MS. KAGAN:  I can't read Mr. Dippold and the
+27   questioner myself, so I need Mr. Reid.
+28            THE COURT:  All right.  Then let's get Mr. Reid
+2145
+ 1   and Ms. Spangler Khare.  Once they're ready, we're ready
+ 2   to bring the jury in, I'll come back out.
+ 3            MS. KAGAN:  Thank you, Your Honor.
+ 4   
+ 5            (Recess is taken.)
+ 6   
+ 7            (Whereupon, the following proceedings
+ 8            were held in open court in the presence
+ 9            of the jury:)
+10   
+11            THE COURT:  Ms. Torres, are all the jurors
+12   present and accounted for?  Who are we missing?
+13   Juror No. 11 it looks like?
+14            Okay.  We'll anticipate having you gone by noon
+15   today so that we can accommodate some personal business
+16   for some of our jurors.  And then we'll have you back
+17   tomorrow at -- you'll be back at 10:30 tomorrow.
+18            All right.  Please be seated.  Now, are all
+19   jurors present and accounted for?
+20            THE CLERK:  Yes, Your Honor.
+21            THE COURT:  All right.  Let the record reflect
+22   that all 12 jurors and the four alternates are present.
+23   Ms. Kagan, you can resume your presentation.  Please be
+24   seated.  Call your next witness.
+25            MS. KAGAN:  Your Honor, at this time, the
+26   plaintiffs call the corporate representative of
+27   Whittaker, Clark & Daniels, Mr. George Dippold, by
+28   deposition.
+2146
+ 1            THE COURT:  All right.  And ladies and
+ 2   gentlemen, you will be getting a jury instruction that
+ 3   will describe deposition testimony to you.
+ 4            Do you wish for me to read that instruction now
+ 5   or can we simply do it at the time of general
+ 6   instructions?
+ 7            MS. KAGAN:  Your Honor, I think it might make
+ 8   sense to read it now so that the jurors understand what
+ 9   deposition testimony is.
+10            THE COURT:  All right.  Then we'll have it as
+11   part of the package.  Can we get the spelling of the
+12   corporate rep?
+13            MS. KAGAN:  D-I-P-P-O-L-D, Dippold.
+14            THE COURT:  And do you have the CACI number on
+15   that jury instruction, counsel?
+16            MS. KAGAN:  208, Your Honor.
+17            THE COURT:  It's which one?
+18            MS. KAGAN:  208.
+19            THE COURT:  Who's defending on this, is it you,
+20   Mr. Kort, or Ms. Spangler Khare?
+21            MS. KAGAN:  We're just reading the transcript,
+22   Your Honor.  And they've been ruled on, all objections
+23   resolved.
+24            THE COURT:  All right.  Any objection to 208
+25   from defense side?
+26            MR. KORT:  No, Your Honor.
+27            MS. SPANGLER KHARE:  No, Your Honor.
+28            THE COURT:  Ladies and gentlemen of the jury,
+2147
+ 1   this is just a selective reading of an instruction so
+ 2   that you know how it fits in.  And, again, you will get
+ 3   all of the instructions compiled for you and they will
+ 4   be read to you just before closing arguments.
+ 5            (Reading):
+ 6                "CACI jury instruction 208.
+ 7            Deposition as substantive evidence.
+ 8            During the trial, you received
+ 9            deposition testimony that was read
+10            from a deposition transcript.  A
+11            deposition is the testimony of a
+12            person taken before trial.  At a
+13            deposition, the person is sworn to
+14            tell the truth and is questioned by
+15            the attorneys.  You must consider the
+16            deposition testimony that was
+17            presented to you in the same way as
+18            you consider testimony given in
+19            court."
+20            Now, who is going to read the questions and who
+21   is going to read back the testimonial response?
+22            MS. KAGAN:  I will read the questions,
+23   Your Honor.  And Mr. Reid will read the role of
+24   George Dippold, the corporate witness for Whittaker.
+25            THE COURT:  Any objection?
+26            MR. KORT:  No, Your Honor.
+27            THE COURT:  And do I have a copy of this so
+28   that I can read along, so that if there's any issues I
+2148
+ 1   can make sure that we're accurate and don't omit
+ 2   anything?
+ 3            MS. KAGAN:  If I may hand the court a copy.
+ 4            THE COURT:  All right.
+ 5            MS. KAGAN:  And we've marked this for
+ 6   identification as Plaintiff's Exhibit 5006.
+ 7   
+ 8            (Exhibit 5006 marked for
+ 9            identification.)
+10   
+11            THE COURT:  What exhibit is this?
+12            MS. KAGAN:  5006 for identification.
+13            THE COURT:  All right.  Ms. Kagan, are you
+14   commencing?
+15            MS. KAGAN:  We are commencing at page 3,
+16   Your Honor.
+17            THE COURT:  Page 3.
+18            MS. KAGAN:  May Mr. Reid take the stand,
+19   please?
+20            THE COURT:  Sure.  Ladies and gentlemen, now,
+21   recognize that what is being presented is role playing
+22   in that Ms. Kagan is reading from the transcript the
+23   words the questioner gave at the deposition, and
+24   Mr. Reid is to read the testimony precisely as it
+25   appears as the witness giving the answer.  All right?
+26   And the opportunities for objections and the like have
+27   been addressed prior to our getting here.
+28            You may proceed.
+2149
+ 1            MS. KAGAN:  Thank you, Your Honor.  And just
+ 2   for the record, this is the January 14th, 1983,
+ 3   deposition of George Dippold.
+ 4            THE COURT:  And it starts on?
+ 5            MS. KAGAN:  Page 3, line 9.
+ 6            THE COURT:  All right.  Proceed.
+ 7            MS. KAGAN:  (Reading):
+ 8                "Q  You have been deposed before,
+ 9            have you not?
+10                "A  Yes, I have.
+11                "Q  Are you employed,
+12            Mr. Dippold?
+13                "A  Yes.
+14                "Q  By whom?
+15                "A  Whittaker, Clark & Daniels.
+16                "Q  What is your job position
+17            with that company?
+18                "A  Vice-president.
+19                "Q  Where are you headquartered?
+20                "A  South Plainfield, New Jersey.
+21                "Q  Is that a location of
+22            Whittaker, Clark & Daniels?
+23                "A  Yes.
+24                "Q  Can you describe for me the
+25            nature of the business that
+26            Whittaker, Clark & Daniels is engaged
+27            in at the present time?
+28                "A  We distribute and produce in
+2150
+ 1            some cases minerals, pigments, and
+ 2            colors.
+ 3                "Q  You just testified that you
+ 4            were both a distributor and a
+ 5            manufacturer; is that correct?
+ 6                "A  Yes.
+ 7                "Q  Would you describe for me the
+ 8            types of products that your company
+ 9            distributes?
+10                "A  Minerals such as talcs,
+11            calcium carbonates, clays, micas, and
+12            the like.
+13                "Q  Are these products that you
+14            are distributing either mined or
+15            manufactured by other companies?
+16                "A  Yes, they are.
+17                "Q  Are you an exclusive
+18            distributor for any of these miners
+19            or manufacturers?
+20                "A  Exclusive distributors, no.
+21                "Q  Are you a franchise dealer of
+22            any of these manufacturers or miners?
+23                "A  No.
+24                "Q  Do you have an ongoing
+25            commercial relationship with any of
+26            the miners or manufacturers?
+27                "A  Yes.
+28                "Q  Please tell me who these
+2151
+ 1            miners or manufacturers are.
+ 2                "A  For talc, for instance, we
+ 3            have Pfizer.  For calcium carbonate
+ 4            we have Pfizer.  For clay we have
+ 5            J.M. Huber, and it goes on and on.
+ 6                "Q  Now, you have also mentioned
+ 7            that you manufacture products?
+ 8                "A  Manufacture meaning that we
+ 9            grind material for the purpose of
+10            putting it in 50-pound bags and
+11            distribute it such as we do for those
+12            companies that do it themselves,
+13            right.
+14                "Q  What products does your
+15            company engage in manufacturing?
+16                "A  Talc.
+17                "Q  On those products that your
+18            company distributes as opposed to
+19            manufactures, does your company
+20            repackage these products?
+21                "A  Sometimes, yes.
+22                "Q  Does your company utilize a
+23            logo or a name on these packages
+24            referencing your company?
+25                "A  Sometimes, yes.
+26                "Q  Does your company have a
+27            logo?
+28                "A  Yes.
+2152
+ 1                "Q  Tell me what your logo is?
+ 2                "A  It's "Whittaker."
+ 3                "Q  Is it usually printed?
+ 4                "A  It's printed and it's red and
+ 5            white.
+ 6                "Q  Are there any types of
+ 7            insignias or designs?
+ 8                "A  Just the name.
+ 9                "Q  Just the name?
+10                "A  Yes.
+11                "Q  How long has this particular
+12            logo been in use?
+13                "A  As long as I can remember and
+14            that's since 1949, but I'm sure it
+15            goes further back than that.  That's
+16            my memory.
+17                "Q  Is that logo used on your
+18            company's stationery?
+19                "A  Sometimes.
+20                "Q  On those products that your
+21            company repackages, does it also
+22            label them?
+23                "A  As to what the material is?
+24                "Q  Yes, what the material is,
+25            and also does it identify your
+26            company?
+27                "A  In some cases, yes.
+28                "Q  On all of the products that
+2153
+ 1            your company distributes, does it
+ 2            also label them?
+ 3                "A  Yes.
+ 4                "Q  So regardless of whether or
+ 5            not someone else is mining or
+ 6            manufacturing the product, each
+ 7            product that you distribute is
+ 8            re-labeled by your company?
+ 9                "A  By that you mean what the
+10            material is, the lot number and so
+11            forth?  That's the type of labeling
+12            we do, yes.
+13                "Q  On those occasions when you
+14            put the company name on these
+15            repackaged materials or on these
+16            labels of other companies' materials,
+17            does the company name appear on it?
+18                "A  Other companies that we
+19            distribute for?
+20                "Q  No, your company's name.
+21                "A  Our name?
+22                "Q  Yes.
+23                "A  In some cases, yes.  In some
+24            cases it is, yes.
+25                "Q  Is the company name used?
+26                "A  Our company.
+27                "Q  Yes, Whittaker, Clark &
+28            Daniels?
+2154
+ 1                "A  Whittaker, Clark & Daniels,
+ 2            yes.
+ 3                "Q  What color are the letters?
+ 4                "A  When you put it on the
+ 5            package, it's stenciled black.
+ 6                "Q  Has it been the practice of
+ 7            your company since the time that you
+ 8            have been employed with them to
+ 9            re-label products that you
+10            distribute?
+11                "A  Again, by 're-labeling,' you
+12            mean putting the information as to
+13            the material itself and what it
+14            represents?
+15                "Q  Yes.
+16                "A  Oh, yes, that is correct.
+17                "Q  Since the time that you have
+18            been affiliated with your company,
+19            has it always been the practice of
+20            Whittaker, Clark & Daniels to stencil
+21            its company name on some of the
+22            products that it redistributes?
+23                "A  Yes.
+24                "Q  You are presently
+25            vice-president; is that correct?
+26                "A  Yes, sir.
+27                "Q  Are you vice-president in
+28            charge of a particular segment of the
+2155
+ 1            company's operations?
+ 2                "A  I overlook the marketing and
+ 3            the product materials that we use in
+ 4            our everyday work.
+ 5                "Q  Is that part of the sales
+ 6            function of your employer?
+ 7                "A  It's a part of it, yes.
+ 8                "Q  As the vice-president who
+ 9            overlooks marketing and products and
+10            materials, are you generally familiar
+11            with the nature of the products that
+12            your company has manufactured and
+13            distributed since your first
+14            affiliation with the company?
+15                "A  Yes.
+16                "Q  Are you familiar with the
+17            product history of Whittaker, Clark &
+18            Daniels?
+19                "A  Yes.
+20                "Q  Are you familiar with the
+21            products that it is manufacturing?
+22                "A  Yes.
+23                "Q  Are you familiar with the
+24            products that it's distributing?
+25                "A  Yes.
+26                "Q  Are you familiar with the
+27            products or raw materials that are
+28            purchased from other companies?
+2156
+ 1                "A  Yes.
+ 2                "Q  Well, in the course of
+ 3            working for Whittaker, Clark &
+ 4            Daniels over the years, have you
+ 5            become aware generally of the nature
+ 6            and type of business that your
+ 7            company was engaged in before 1949?
+ 8                "A  Yes.
+ 9                "Q  Have you generally become
+10            familiar with the nature and types of
+11            products that they distributed before
+12            1949?
+13                "A  Yes, because they haven't
+14            changed.
+15                "Q  Would it be fair to say that
+16            the best of your present knowledge
+17            concerning company history, that
+18            Whittaker, Clark & Daniels has been
+19            engaged in the same business since it
+20            was founded up until the present
+21            time?
+22                "A  Yes.
+23                "Q  When did Whittaker, Clark &
+24            Daniels begin in business?
+25                "A  1890, I believe.
+26                "Q  At the time of its founding,
+27            was it also engaged in the
+28            manufacture and distribution of
+2157
+ 1            minerals, pigments, and colors?
+ 2                "A  I don't believe there was any
+ 3            manufacturing in those days, no.
+ 4                "Q  But they were engaged in
+ 5            distribution -- in distributing those
+ 6            products?
+ 7                "A  Right.
+ 8                "Q  From the time of its founding
+ 9            up until the present time, has
+10            Whittaker, Clark & Daniels basically
+11            serviced the same type of industry?
+12                "A  Yes.
+13                "Q  Can you describe what that
+14            industry is?
+15                "A  Well, I can give you the list
+16            of industries and they cover just
+17            about every one.  The paint industry,
+18            the rubber industry, the plastic
+19            industry, the cosmetics industry, the
+20            ceramic industry, the paper industry,
+21            and the automobile industry.  I mean,
+22            just about everything.
+23                "Q  Your company has always been
+24            engaged in the distribution of talc,
+25            has it not?
+26                "A  Yes.
+27                "Q  Is talc a particular type of
+28            raw material product that is used in
+2158
+ 1            certain types of industries that your
+ 2            company has serviced?
+ 3                "A  Yes.
+ 4                "Q  What type of industry is talc
+ 5            used in?
+ 6                "A  Again, I can list them.
+ 7                "Q  The same litany of
+ 8            industries?
+ 9                "A  Basically, the same; only
+10            they will be different types of
+11            talcs.
+12                "Q  You have indicated that your
+13            company or part of it moved to
+14            New Jersey in the 1940s?
+15                "A  Yes.
+16                "Q  Where in New Jersey -- where,
+17            excuse me, in New Jersey did it move
+18            to?
+19                "A  South Kearny.
+20                "Q  What part of the operation
+21            moved there?
+22                "A  The warehouse.
+23                "Q  At the time that your company
+24            moved part of its operation to
+25            South Kearny, did it distribute
+26            products from that location?
+27                "A  Yes.
+28                "Q  During the course of your
+2159
+ 1            affiliation with Whittaker, Clark &
+ 2            Daniels and prior thereto, was it the
+ 3            practice of Whittaker, Clark &
+ 4            Daniels to deliver the products it
+ 5            distributed?
+ 6                "A  In certain areas we
+ 7            delivered, yes.
+ 8                "Q  What area?
+ 9                "A  Now you are speaking about
+10            with our own trucks?
+11                "Q  Yes.
+12                "A  In the local metropolitan
+13            area.
+14                "Q  So in the local metropolitan
+15            area, it was the practice of your
+16            company to utilize trucks to deliver
+17            the products it distributed?
+18                "A  Right.
+19                "Q  Has it always been their
+20            practice to deliver the products they
+21            distributed?
+22                "A  I believe so.
+23                "Q  When you came to Whittaker,
+24            Clark & Daniels in 1949, did they
+25            have a fleet of trucks?
+26                "A  Yes.
+27                "Q  Do they still have a fleet of
+28            trucks?
+2160
+ 1                "A  Yes.
+ 2                "Q  What is your own professional
+ 3            background?  Are you an engineer, a
+ 4            chemist, or a salesman?
+ 5                "A  No, I am a chemist.
+ 6                "Q  Did you actually graduate
+ 7            from college?
+ 8                "A  No.
+ 9                "Q  When you came to Whittaker,
+10            Clark & Daniels, did you have any
+11            professional training or practical
+12            working experience with asbestos?
+13                "A  No.
+14                "Q  Did you know what it was?
+15                "A  Yes.
+16                "Q  How did you know what it was?
+17                "A  What it looked like and what
+18            it did?
+19                "Q  Yes.
+20                "A  Just from seeing it on the
+21            shelf somewhere as a standard
+22            material to be used if needed.
+23                "Q  What was your first job
+24            position with Whittaker, Clark &
+25            Daniels?
+26                "A  In a laboratory.
+27                "Q  Was this a laboratory in
+28            South Kearny?
+2161
+ 1                "A  Yes.
+ 2                "Q  Were you a technician?
+ 3                "A  Yes.
+ 4                "Q  How long were you a
+ 5            technician, approximately?
+ 6                "A  Fifteen years.
+ 7                "Q  What did you do as a lab
+ 8            technician?
+ 9                "A  Basically, quality control.
+10                "Q  Can you break that down for
+11            me and describe exactly what that
+12            entailed on a day-to-day basis?
+13                "A  Well, actually, I told you
+14            that we were next to the warehouse
+15            and as the material came in on trucks
+16            and railroad cars, we would first
+17            check the material to see if it met
+18            the specifications that we have
+19            distributed to the various customers
+20            and test for bulk densities and oil
+21            absorptions and the like.
+22                "Q  What was your next job
+23            position with Whittaker, Clark &
+24            Daniels?
+25                "A  The next job was product
+26            manager.
+27                "Q  Were you still affiliated
+28            with the laboratory?
+2162
+ 1                "A  Yes.
+ 2                "Q  The laboratory in
+ 3            South Kearny?
+ 4                "A  No.  At that time, it was
+ 5            already in South Plainfield.
+ 6                "Q  Just so that we don't lose
+ 7            any understanding of the company
+ 8            history, in the 1940s, part of your
+ 9            company's operation moved to
+10            South Kearny?
+11                "A  That is correct.
+12                "Q  And that included their
+13            laboratory and their warehouse?
+14                "A  No.  I said at a later date
+15            the laboratory came.
+16                "Q  When did the laboratory come
+17            down there?
+18                "A  Well, when I came, the
+19            laboratory came.
+20                "Q  In 1949?
+21                "A  Yes.
+22                "Q  Did your company continue to
+23            maintain a presence in South Kearny?
+24                "A  Until when?
+25                "Q  Well, that's my question.  Is
+26            there a presence there now?
+27                "A  Until 1971 when we moved.
+28                "Q  Where did you move in 1971?
+2163
+ 1                "A  To South Plainfield.
+ 2                "Q  Lock, stock, and barrel?
+ 3                "A  Lock, stock, and barrel, yes.
+ 4                "Q  So you had no offices left in
+ 5            New York?
+ 6                "A  No.
+ 7                "Q  And you have no offices or
+ 8            facilities left in South Kearny?
+ 9                "A  No.
+10                "Q  Up until the 1940s, would it
+11            be fair to say that the bulk of your
+12            company's business dealings was in
+13            the Metropolitan New York area?
+14                "A  Yes.
+15                "Q  At some point in time, did
+16            that begin to change?
+17                "A  Yes.
+18                "Q  When?
+19                "A  I would say the latter part
+20            of the 1960s.
+21                "Q  How did it change and where
+22            did the thrust begin to appear?
+23                "A  We started to service more
+24            geographical areas.
+25                "Q  Such as where?
+26                "A  You name it.  We covered the
+27            entire United States.
+28                "Q  So your business is now
+2164
+ 1            national in scope?
+ 2                "A  Oh, yes.
+ 3                "Q  Does your company export to
+ 4            foreign countries?
+ 5                "A  Yes.
+ 6                "Q  Which ones?
+ 7                "A  Just about every one.
+ 8                "Q  Was this in the late 1960s
+ 9            when you began this expansion?
+10                "A  Yes, I would say that's when
+11            it became more prevalent.
+12                "Q  So you were really a lab
+13            technician between 1949 and 1971?
+14                "A  That's correct.
+15                "Q  When you became product
+16            manager, the laboratory had shifted
+17            to South Plainfield?
+18                "A  That is right.
+19                "Q  Was the function of the
+20            laboratory the same?
+21                "A  Yes.
+22                "Q  Were you basically the
+23            supervisor for the laboratory as the
+24            product manager?
+25                "A  At that time, yes.
+26                "Q  Yes.  Did your job position
+27            change or did your duties change?
+28                "A  Well, in '73 or '74, I became
+2165
+ 1            assistant secretary of the company.
+ 2            And I still was the product manager
+ 3            too at that particular time.
+ 4                "Q  Did you become a member of
+ 5            the board of directors of Whittaker,
+ 6            Clark & Daniels when you became
+ 7            assistant secretary?
+ 8                "A  Yes.
+ 9                "Q  That was your first position
+10            on the board then?
+11                "A  Yes.
+12                "Q  How long were you assistant
+13            secretary and product manager?  Until
+14            what year?
+15                "A  Well, I still could be
+16            considered to be product manager too,
+17            but I am vice-president.
+18                "Q  When did you get that title?
+19                "A  In 1974 or '75.
+20                "Q  And held it until now?
+21                "A  Yes.
+22                "Q  Do you still sit on the
+23            company's board of directors?
+24                "A  I do.
+25                "Q  When you were a lab
+26            technician, your laboratory while it
+27            was in South Kearny was located next
+28            to the warehouse?
+2166
+ 1                "A  Yes.
+ 2                "Q  And the warehouse was the
+ 3            locale where your company received
+ 4            the products that it distributed?
+ 5                "A  That is correct.
+ 6                "Q  And you are basically aware
+ 7            during that period of time of the
+ 8            function that the warehouse played;
+ 9            is that correct?
+10                "A  That's correct.
+11                "Q  And you were aware,
+12            basically, of the types of products
+13            that were coming in and out of that
+14            warehouse?
+15                "A  That's correct.
+16                "Q  When you were a lab
+17            technician, you were also familiar
+18            with the types of products that your
+19            company was manufacturing and
+20            distributing because you were testing
+21            them?
+22                "A  That's correct.
+23                "Q  And you would have generally
+24            been familiar with the types of
+25            products that they were manufacturing
+26            and distributing because you were
+27            basically in charge or were one of
+28            the people testing them?
+2167
+ 1                "A  Yes.
+ 2                "Q  Did that continue to be the
+ 3            case when you were product manager in
+ 4            South Plainfield?
+ 5                "A  Yes.
+ 6                "Q  And also when you were
+ 7            assistant secretary?
+ 8                "A  Yes.
+ 9                "Q  And, of course, when you
+10            became vice-president, you got into
+11            the sales function.  And by virtue of
+12            being affiliated with sales, your
+13            knowledge about the product line
+14            continued to or remained in force?
+15                "A  That's correct.  It still
+16            does today.
+17                "Q  So your job position with
+18            Whittaker, Clark & Daniels has always
+19            required you to be intimately
+20            familiar with the nature and types of
+21            products that they have been
+22            distributing?
+23                "A  Absolutely.
+24                "Q  To your knowledge, commencing
+25            from the time of your first
+26            affiliation with your employer,
+27            Whittaker, Clark & Daniels, has it
+28            ever been engaged in the distribution
+2168
+ 1            of raw asbestos?
+ 2                "A  Yes.
+ 3                "Q  Were they engaging in the
+ 4            distribution of raw asbestos at the
+ 5            time you began your affiliation with
+ 6            Whittaker, Clark & Daniels in 1949?
+ 7                "A  Yes.
+ 8                "Q  Did they continue to
+ 9            distribute raw asbestos for some
+10            length of time?
+11                "A  Yes.
+12                "Q  How long?
+13                "A  Up until the 1960s.
+14                "Q  Was the distribution of raw
+15            asbestos considered to be part of
+16            your company's function as a
+17            manufacturer and distributor of
+18            minerals?
+19                "A  We distributed them, yes.
+20                "Q  And asbestos is a mineral as
+21            opposed to a pigment or color?
+22                "A  Absolutely.
+23                "Q  Based upon your own working
+24            knowledge of the sales history of
+25            your company, did Whittaker, Clark &
+26            Daniels distribute raw asbestos
+27            before 1949?
+28                "A  I would have to believe so.
+2169
+ 1                "Q  In any event, when you came
+ 2            there in 1949, they were already
+ 3            actively engaged in the distribution
+ 4            of raw asbestos?
+ 5                "A  That is correct.
+ 6                "Q  So to the best of your
+ 7            knowledge and from the best of your
+ 8            own knowledge of the corporate
+ 9            history, it would be fair to say that
+10            Whittaker, Clark & Daniels was
+11            engaged in the distribution of raw
+12            asbestos fibers in the 1940s?
+13                "A  Yes.
+14                "Q  Was Mr. Roesch with the
+15            company when you came there in 1949?
+16                "A  Yes, he was.
+17                "Q  How long had he been there
+18            before that time?
+19                "A  I believe" --
+20            THE COURT:  One second.  What page are we on
+21   now, counsel?
+22            MS. KAGAN:  Thirty-six, Your Honor.
+23            THE COURT:  All right.  Continue.
+24            MS. KAGAN:  (Reading):
+25                "Q  How long had he been there
+26            before that time?
+27                "A  I believe two years.
+28                "Q  About 1947?
+2170
+ 1                "A  Something in that respect,
+ 2            yes.
+ 3                "Q  What is Mr. Roesch's
+ 4            background with the company?
+ 5                "A  Sales.
+ 6                "Q  Always?
+ 7                "A  Always.
+ 8                "Q  In 1949, was asbestos stored
+ 9            in the warehouse?
+10                "A  Yes.
+11                "Q  And you would go from time to
+12            time to the warehouse in order to get
+13            a sample to test it?
+14                "A  That is correct.
+15                "Q  And the asbestos came in
+16            bags?
+17                "A  Yes.
+18                "Q  Jute bags?
+19                "A  Yes.
+20                "Q  One hundred pounds?
+21                "A  I believe so.
+22                "Q  What did the product look
+23            like?
+24                "A  The product itself?
+25                "Q  Yes.
+26                "A  It was a very fibrous,
+27            gray-looking material.
+28                "Q  Did it always look the same?
+2171
+ 1                "A  Yes.
+ 2                "Q  Your background prior to and
+ 3            after coming to Whittaker, Clark &
+ 4            Daniels was as a chemist; is that
+ 5            correct?
+ 6                "A  Yes.
+ 7                "Q  And you were generally
+ 8            familiar with the physical properties
+ 9            and characteristics of the products
+10            you were working with, were you not?
+11                "A  That's correct.
+12                "Q  In fact, you were basically
+13            in charge of testing these materials
+14            to make sure that they met certain
+15            criteria?
+16                "A  That's correct.
+17                "Q  Were you familiar with the
+18            basic properties of asbestos?
+19                "A  Yes.
+20                "Q  Tell me what you knew about
+21            the basic properties of asbestos in
+22            1949.
+23                "A  In 1949?
+24                "Q  Yes.
+25                "A  That it was a fibrous
+26            material, that it had high absorbency
+27            and it was an insulating material.
+28            That's it in 1949.
+2172
+ 1                "Q  In 1949, were you familiar
+ 2            with the fact that asbestos was an
+ 3            insulating material that was capable
+ 4            of resisting chemical attack?
+ 5                "A  Yes.
+ 6                "Q  And were you aware that it
+ 7            was fire resistant?
+ 8                "A  Yes.
+ 9                "Q  Basically, you were familiar
+10            with the fact that it was basically
+11            an indestructible material?
+12                "A  Yes.
+13                "Q  And it was fibrous in nature?
+14                "A  That is correct.
+15                "Q  Now, you had workers who
+16            unloaded the asbestos; isn't that
+17            right?
+18                "A  Yes.
+19                "Q  In 1949, had you ever heard
+20            the term 'asbestosis'?
+21                "A  No, sir.
+22                "Q  Have you ever heard that
+23            term?
+24                "A  Recently, certainly.
+25                "Q  When is the first time you
+26            had heard it?
+27                "A  I guess in the early '70s.
+28                "Q  And prior to that time, you
+2173
+ 1            had never ever heard the word?
+ 2                "A  I might have read it in the
+ 3            papers or something, but in the '70s,
+ 4            that was the first time I heard it.
+ 5                "Q  When did you read it in the
+ 6            paper?
+ 7                "A  I don't recall.
+ 8                "Q  In the late '60s or in the
+ 9            early '70s?
+10                "A  Right.
+11                "Q  By 1949, Whittaker, Clark &
+12            Daniels was doing a lot of business
+13            in New Jersey, wasn't it?
+14                "A  I believe so.
+15                "Q  Did you have any knowledge
+16            that asbestosis was a compensable
+17            occupational disease in 1949?
+18                "A  No.
+19                "Q  Between the time your company
+20            first began distributing asbestos up
+21            until the time it terminated the
+22            distribution of this product, did
+23            your company ever promulgate any
+24            health warnings to accompany the
+25            products?
+26                "A  Not to my knowledge.
+27                "Q  Did you ever inform your
+28            customers either in writing or orally
+2174
+ 1            that asbestos was potentially
+ 2            hazardous to human health?
+ 3                "A  I don't remember that, no.
+ 4                "Q  Is the answer no?
+ 5                "A  Yes.
+ 6                "Q  You never did that?
+ 7                "A  I never remember it, no.
+ 8            That is right.
+ 9                "Q  Your company stopped
+10            distributing asbestos in the early
+11            1960s; isn't that correct?
+12                "A  That is right.
+13                "Q  There was still a demand for
+14            it at that time, wasn't there?
+15                "A  And there is today, yes, sir.
+16                "Q  And there was in the early
+17            1960s?
+18                "A  Absolutely.
+19                "Q  And the people who used the
+20            product were still using it?
+21                "A  Right.
+22                "Q  But you got out of the
+23            business, didn't you?
+24                "A  Yes.
+25                "Q  In any event, your company
+26            ceased distributing all asbestos in
+27            the early 1960s?
+28                "A  In the 1960s, yes.  I can't
+2175
+ 1            be specific as to what date or what
+ 2            year.
+ 3                "Q  Was it before 1965 or after?
+ 4                "A  I can't honestly say that.  I
+ 5            really don't know.  It was certainly
+ 6            before 1970.  I can tell you that.
+ 7                "Q  Why did your company stop
+ 8            distributing asbestos?
+ 9                "A  I don't know.
+10                "Q  You have no idea?
+11                "A  No.
+12                "Q  You don't have a working
+13            knowledge of who each and every one
+14            of your company's clients are at the
+15            present time, do you?  It would be
+16            too many different companies?
+17                "A  That is absolutely correct.
+18                "Q  And that would be true over
+19            this period of time, would it not?
+20                "A  That is absolutely correct."
+21            That is the end of this transcript, Your Honor.
+22            THE COURT:  All right.  Thank you.
+23            MS. KAGAN:  We have another one.
+24            THE COURT:  All right.  What exhibit is that?
+25            MS. KAGAN:  Your Honor, this is Exhibit 5007.
+26   This is the deposition of George Dippold, the same
+27   individual, from April 11th, 1984.  And we'll hand the
+28   court a copy.
+2176
+ 1            (Exhibit 5007 marked for
+ 2            identification.)
+ 3   
+ 4            THE COURT:  And Attorney Spangler Khare, have
+ 5   you seen a copy of Exhibit 5007 and the referenced
+ 6   testimony?
+ 7            MS. SPANGLER KHARE:  Yes, Your Honor.
+ 8            THE COURT:  And have all of your objections
+ 9   been addressed?
+10            MS. SPANGLER KHARE:  I believe so, Your Honor.
+11            THE COURT:  All right.  No objection to reading
+12   in the similar fashion to which we've previously done.
+13            MS. SPANGLER KHARE:  No objection.  Just a
+14   reminder that it should be read neutrally.
+15            THE COURT:  That's correct, counsel.  You
+16   shouldn't add any inflection.  Thank you.
+17            What page and line are you beginning on,
+18   counsel?
+19            MS. KAGAN:  We are beginning on page 4, line 5,
+20   Your Honor.
+21            THE COURT:  You may commence.
+22            MS. KAGAN:  (Reading):
+23                "Q  You have been deposed, have
+24            you not?
+25                "A  Yes, sir.
+26                "Q  And you're familiar with the
+27            nature of the proceedings?
+28                "A  Yes, sir.
+2177
+ 1                "Q  And you had an opportunity to
+ 2            discuss this with the attorney who
+ 3            represents your employer this
+ 4            morning?
+ 5                "A  Yes, sir.
+ 6                "Q  Are you employed?
+ 7                "A  Yes, sir.
+ 8                "Q  And by whom?
+ 9                "A  Whittaker, Clark & Daniels.
+10                "Q  And in what capacity?
+11                "A  Vice-president.
+12                "Q  And how long have you been a
+13            vice-president of Whittaker, Clark &
+14            Daniels?
+15                "A  Since 1975.
+16                "Q  Would you describe the nature
+17            of the business that Whittaker, Clark
+18            & Daniels is engaged in.
+19                "A  We manufacture in some
+20            respects, we distribute in most
+21            respects minerals, pigments, and
+22            colors, basically, a distributor.
+23                "Q  Has your company been engaged
+24            in the business of distributing talc
+25            and talc products during the entire
+26            time it's been in business?
+27                "A  To my knowledge, yes, sir.
+28                "Q  When did you first go to work
+2178
+ 1            for Whittaker, Clark & Daniels?
+ 2                "A  In 1949.
+ 3                "Q  Have you been continuously
+ 4            employed by Whittaker, Clark &
+ 5            Daniels since 1949, up until the
+ 6            present day?
+ 7                "A  Yes, sir.
+ 8                "Q  How many different job
+ 9            positions have you held with
+10            Whittaker, Clark & Daniels?
+11                "A  Two.
+12                "Q  What was your first job
+13            position?
+14                "A  Lab technician.
+15                "Q  And how long were you lab
+16            technician?
+17                "A  Almost 25 years.
+18                "Q  Till approximately 1974,
+19            1975?
+20                "A  Uh-huh.
+21                "Q  And that's when you became
+22            vice-president?
+23                "A  Right.
+24                "Q  What were your job
+25            responsibilities as a lab technician?
+26                "A  Testing incoming products for
+27            quality control.
+28                "Q  Did Whittaker, Clark &
+2179
+ 1            Daniels have a lab facility when you
+ 2            came on board in 1949?
+ 3                "A  They did in the New York
+ 4            office, but not at the plant that I
+ 5            went to.
+ 6                "Q  And did they continue to have
+ 7            laboratory facilities up until the
+ 8            time you became vice-president in
+ 9            1974-'75?
+10                "A  Yes.
+11                "Q  Now, as the laboratory
+12            technician, where did you work?
+13                "A  In South Kearny.
+14                "Q  Was there a lab in
+15            South Kearny?
+16                "A  Yes.  After a year or so they
+17            had one built, uh-huh.
+18                "Q  And what kind of equipment
+19            did that lab consist of?
+20                "A  The general glassware and
+21            grinding equipment for paints, pH
+22            meters and the like.  I mean, I can't
+23            go through a listing of the different
+24            pieces of equipment, but anything for
+25            quality control of pigments.
+26                "Q  So that, between the time
+27            frame of 1949 to approximately
+28            1974-'75, you were testing the
+2180
+ 1            products that Whittaker, Clark &
+ 2            Daniels distributed for purposes of
+ 3            quality control; is that correct?
+ 4                "A  That's right.
+ 5                "Q  What I'm asking you, was one
+ 6            aspect of quality control a
+ 7            determination that the product
+ 8            contained the ingredients which you
+ 9            represented to the consumer of the
+10            products?
+11                "A  That was not my
+12            responsibility.  We had other
+13            chemists working there doing that.
+14            Okay.  I was doing physical work.
+15                "Q  What do you mean you were
+16            doing physical --
+17                "A  Physical tests on densities
+18            and things of that nature, colors.
+19                "Q  Who were the lab technicians
+20            who were testing to see what the
+21            ingredients of the product were
+22            during the time that you were at
+23            Whittaker, Clark & Daniels?
+24                "A  I don't recall the names,
+25            actually.  At this time, I don't
+26            remember the fellow.  We only had one
+27            other fellow at that time.
+28                "Q  When you were performing
+2181
+ 1            tests on these different products,
+ 2            did you keep records of the tests
+ 3            that you made?
+ 4                "A  Yes.
+ 5                "Q  And what did you do with
+ 6            those records?
+ 7                "A  Put them in our filing
+ 8            system.
+ 9                "Q  And were they maintained in
+10            the ordinary course of business?
+11                "A  For a length of time, yes.
+12                "Q  What was that length of time?
+13                "A  Generally, it's seven years.
+14                "Q  Now, as a consequence of your
+15            involvement with Whittaker, Clark &
+16            Daniels as a lab technician, did you
+17            become familiar with the different
+18            products that Whittaker, Clark &
+19            Daniels offered for sale in its
+20            business?
+21                "A  Yes, sir.
+22                "Q  Now, when you became a
+23            vice-president, were you assigned
+24            certain specific responsibilities?
+25                "A  Yes.
+26                "Q  And what were those
+27            responsibilities?
+28                "A  The product control, the
+2182
+ 1            marketing of same, various products
+ 2            that we were dealing in.
+ 3                "Q  During the time that you were
+ 4            a lab technician, did your company
+ 5            ever distribute a product known as
+ 6            Number 13 fibrous talc?
+ 7                "A  Yes, sir.
+ 8                "Q  Were you actively
+ 9            distributing that product when you
+10            came on board in 1949?
+11                "A  Yes, sir.
+12                "Q  Did you continue to
+13            distribute that product until 1974 to
+14            1975?
+15                "A  No, sir.  I think we
+16            discontinued that much sooner than
+17            that.
+18                "Q  When you --
+19                "A  In the late '60s or early
+20            '70s, very early '70s.
+21                "Q  Did your company manufacture
+22            the product known as Number 13
+23            fibrous talc?
+24                "A  No, sir.
+25                "Q  Did you distribute it?
+26                "A  13 fibrous talc, yes.
+27                "Q  Who was the manufacturer of
+28            the product?
+2183
+ 1                "A  It was International Talc
+ 2            Company.
+ 3                "Q  Was Whittaker, Clark &
+ 4            Daniels ever a franchise distributor
+ 5            for International Talc Company?
+ 6                "A  I believe we were a
+ 7            distributor for them.  Now, if there
+ 8            was a formal distributorship, I don't
+ 9            know that to be a fact.
+10                "Q  Do you recall what years
+11            Whittaker, Clark & Daniels was a
+12            distributor for International Talc
+13            Company?
+14                "A  All the years that I know of
+15            and since 1949, but prior to that I'm
+16            sure -- I think it was early '35,
+17            '36.
+18                "Q  Is the product Number 13
+19            fibrous talc a natural product, a
+20            mineral, a synthetized product?  What
+21            kind of product is it?
+22                "A  Well, it's natural and it's a
+23            mineral.
+24                "Q  Is it a mined product?
+25                "A  Yes, sir.
+26                "Q  Do you know where it's mined?
+27                "A  I know it's in New York
+28            State.
+2184
+ 1                "Q  During the years that you
+ 2            worked in the laboratory, did you
+ 3            ever test or evaluate Number 13
+ 4            fibrous talc?
+ 5                "A  Yes, I'm sure I did.
+ 6                "Q  As a consequence of tests
+ 7            that you performed on the product,
+ 8            are you familiar with what the
+ 9            ingredients are?
+10                "A  When you are asking
+11            ingredients, you mean the chemical
+12            composition?
+13                "A  Yes.
+14                "Q  Okay.  Yes.  It was a talc
+15            and I'm sure -- I don't know how -- I
+16            don't know exactly what the numbers
+17            were, but it was a combination of
+18            magnesium and silica and magnesium
+19            oxide and silica.  That's the
+20            composition of talc.  There are other
+21            small constituents that are minor
+22            portions.
+23                "Q  What are the other small
+24            constituents?
+25                "A  Well, talcs contains iron
+26            oxide, a small portion of iron oxide,
+27            calcium carbonate, and calcium oxide.
+28                "Q  Don't talcs usually contain
+2185
+ 1            trace amounts of asbestos?
+ 2                "A  No, sir.
+ 3                "Q  They do not?
+ 4                "A  You said 'usually.'
+ 5                "Q  Do they ever?
+ 6                "A  They could.
+ 7                "Q  Did that bag of Number 13
+ 8            fibrous talc ever have any warning
+ 9            labels on it?
+10                "A  No, sir.
+11                "Q  Was it ever provided with any
+12            written instructions either outside
+13            or inside the package?
+14                "A  Not to my knowledge.
+15                "Q  Do you know whether or not
+16            any of the talc materials that your
+17            company ever distributed between 1949
+18            and 1975 contained trace amounts of
+19            asbestos?
+20                "A  It had been alluded to that
+21            some did.  And that particular time
+22            we would have discontinued the sale
+23            of it.
+24                "Q  Which of the talc materials
+25            that your company distributed do you
+26            know had trace amounts of asbestos in
+27            them?
+28                "A  At the time that we got -- we
+2186
+ 1            eliminated it from our sale --
+ 2            Number 13 was alluded to have it.  It
+ 3            wasn't proven to have it, but alluded
+ 4            to have it, so because of that we
+ 5            discontinued the sale and we also
+ 6            sold some Canadian talc and that, we
+ 7            did that.
+ 8                "Q  All right.  Your company
+ 9            never made any changes in the
+10            formulation or content of the Number
+11            13 fibrous talc product from the time
+12            it got it from International Talc
+13            until the time it distributed it; is
+14            that correct?
+15                "A  That's correct.
+16                "Q  All right.  Now, who or what
+17            alluded to the fact that this
+18            particular product, whether you call
+19            it 200 or Number 13, had asbestos in
+20            it?
+21                "A  Well, various pieces of
+22            literature that were out, papers.
+23                "Q  Well, somewhere along the
+24            line you became aware that there was
+25            some information from some source
+26            that this particular product, whether
+27            you call it 200 or 13, had some
+28            amount of asbestos in it; is that
+2187
+ 1            correct?
+ 2                "A  That's correct.
+ 3                "Q  When did you find --
+ 4                "A  Industry was told.
+ 5                "Q  The industry?
+ 6                "A  The industry and I'm part of
+ 7            the industry.
+ 8                "Q  When was the industry told
+ 9            this?
+10                "A  Gosh, it had to be in the
+11            early '70s.
+12                "Q  Where did the information
+13            come from?
+14                "A  I just answered that question
+15            prior to that.
+16                "Q  Oh, literature, papers and
+17            the media?
+18                "A  Right.  To the best of my
+19            knowledge, that's how I became aware
+20            of it.
+21                "Q  As a consequence of receiving
+22            this information from whatever
+23            source, did your company decide to
+24            discontinue selling the product?
+25                "A  That is correct.
+26                "Q  And what year was that?
+27                "A  I believe it was late '60s or
+28            early '70s or early 1970s.  Very
+2188
+ 1            early '70s, yes, sir.
+ 2                "Q  And your company made the
+ 3            decision to stop selling the product
+ 4            because it got this information
+ 5            regarding the fact that it might have
+ 6            asbestos in it; is that correct?
+ 7                "A  That's correct.
+ 8                "Q  Why did you discontinue
+ 9            selling the product because you found
+10            out that it had asbestos in it?
+11                "A  Because in those days, it was
+12            the early part of this whole
+13            situation when asbestos became a
+14            thing, that was bad.  Okay?  So
+15            anything related to that was bad.
+16            And when you have any relation of
+17            things that are bad, you just
+18            discontinue, so you don't further any
+19            problems if there were any to start
+20            with.
+21                "Q  So it was your company's
+22            decision sometime in the late '60s or
+23            early 1970s to discontinue the sale
+24            of fibrous talc because your company
+25            was concerned that the asbestos
+26            ingredient might be potentially
+27            dangerous to the health of those who
+28            were using the product; is that
+2189
+ 1            correct?
+ 2                "A  If, indeed, the material
+ 3            contained what it said or was alleged
+ 4            to have, yes, we were concerned and
+ 5            that's why we stopped.  That's
+ 6            correct.
+ 7                "Q  Now, how many different kinds
+ 8            of talc products did your company
+ 9            sell between 1949 and 1974?
+10                "A  Many.  If you asked me
+11            numbers, it's many.
+12                "Q  Did you discontinue selling
+13            any other talc products because it
+14            contained asbestos other than the
+15            product you sold and labeled as
+16            Number 13 fibrous talc?
+17                "A  As I answered before, we had
+18            a Canadian material that had a
+19            connotation of having asbestos-type
+20            minerals in it.
+21                "Q  And what material was that?
+22                "A  That was Canada talc
+23            material.  I think our numbers -- we
+24            had a number of numbers, but they
+25            were all different grinds, were the
+26            same products, only different grinds.
+27                "Q  What did you sell the product
+28            as?  Under what label, what trade
+2190
+ 1            name?
+ 2                "A  Just talc with a code number.
+ 3                "Q  Have you ever made any
+ 4            special labels on any talc products
+ 5            that you believe had asbestos in it
+ 6            regarding the asbestos ingredient?
+ 7                "A  We had no reason to.
+ 8                "Q  In other words, as soon as
+ 9            you found out you discontinued it?
+10                "A  That's correct.
+11                "Q  At the time that your company
+12            decided to discontinue the sale of
+13            No. 13 fibrous talc, did your company
+14            transmit any information to any of
+15            the customers who were using the
+16            product as to why you were
+17            discontinuing it?
+18                "A  Not to my knowledge.
+19                "Q  And did your company ever
+20            perform any tests on Number 13
+21            fibrous talc to determine if it had
+22            an asbestos ingredient?
+23                "A  It's possible that we did.
+24            Possible that we did.
+25                "Q  Okay.  Did you conduct these
+26            tests?
+27                "A  No, sir.
+28                "Q  Did someone in the laboratory
+2191
+ 1            conduct these tests?
+ 2                "A  No, sir.
+ 3                "Q  Are you a member of
+ 4            Whittaker, Clark & Daniels' board of
+ 5            directors?
+ 6                "A  Yes, sir.
+ 7                "Q  How long have you been a
+ 8            member of the board of directors?
+ 9                "A  Ten years.  I believe it's
+10            ten years.
+11                "Q  Since about 1974?
+12                "A  Right.
+13                "Q  Do you know whether or not
+14            it's ever been Whittaker, Clark &
+15            Daniels' practice to maintain files
+16            on its different major customers or
+17            customers of any type?
+18                "A  For a period of years, yes.
+19                "Q  How many years?
+20                "A  Seven.
+21                "Q  And are those files per
+22            customer?  In other words, every
+23            customer has a file?
+24                "A  I don't think so, no.
+25                "Q  Who does have files?
+26                "A  Every customer that is a
+27            working customer.
+28                "Q  So if indeed your company was
+2192
+ 1            not presently selling a particular
+ 2            customer, you wouldn't maintain a
+ 3            file on them?
+ 4                "A  That's generally true.
+ 5                "Q  So if you were interested in
+ 6            finding out whether or not your
+ 7            company sold any products to a
+ 8            particular company that is no longer
+ 9            in business, you wouldn't have any
+10            records to consult, would you?
+11                "A  That's very possible.
+12                "Q  Are there records you could
+13            consult?
+14                "A  Not that I know of.
+15                "Q  Mr. Dippold, my name is Fred
+16            Heissenbuttel.  I represent
+17            R.T. Vanderbilt company as successor
+18            to International Talc.  But you did
+19            -- you, meaning your company, did
+20            distribute the product known as
+21            Number 13 fibrous talc?
+22                "A  Yes.
+23                "Q  And it's your testimony that
+24            during the years you've been
+25            associated with the company, you
+26            purchased it from an entity known as
+27            International Talc; is that correct?
+28                "A  That's correct.
+2193
+ 1                "Q  During the years you've been
+ 2            working for Whittaker, Clark &
+ 3            Daniels, did you purchase Number 13
+ 4            fibrous talc from any other entities?
+ 5                "A  From Vanderbilt.
+ 6                "Q  Was there any difference in
+ 7            the product that you distributed from
+ 8            International Talc as opposed to
+ 9            Vanderbilt?
+10                "A  I don't believe so."
+11            MS. KAGAN:  That is the end of this transcript,
+12   Your Honor.
+13            THE COURT:  All right.  Do we have another
+14   transcript you're going to read?
+15            MS. KAGAN:  We do.
+16            THE COURT:  What is the estimated time, because
+17   we do need to get one of our jurors to an appointment.
+18            MS. KAGAN:  Well, we can -- we can break for
+19   today, or we can read the transcript.  I think the
+20   transcript will probably take us to noon, but if we run
+21   over I don't want to keep anybody.  And I know that
+22   appointment is important.  So we can let everyone go now
+23   and then resume tomorrow.
+24            THE COURT:  If we are referring to the juror
+25   that's got -- you have an appointment.  If we let you go
+26   now, you should be able to make it.  All right.  And
+27   without any problem, then.  All right then.
+28            Ladies and gentlemen of the jury, at special
+2194
+ 1   request at the very beginning of this, one of the jurors
+ 2   asked that they have an opportunity to do something and
+ 3   I've acknowledged that they can.  And they let us know
+ 4   well in advance so we were able to modify our schedule
+ 5   today.
+ 6            So I know we only had you here for about an
+ 7   hour, but every hour is critical, obviously, in these
+ 8   cases.  If you can return -- you are ordered to return
+ 9   tomorrow without further notice, order, or subpoena, at
+10   10:30 a.m.  We anticipate going through to 4:30
+11   tomorrow, of course, with your requisite breaks.
+12            And we will have live -- we will have live
+13   testimony tomorrow?
+14            MS. KAGAN:  Yes.
+15            THE COURT:  So we will have live testimony for
+16   you.  I do want to remind you of your admonition.  You
+17   are not to do any outside research, investigation,
+18   review of the subject matter, the attorneys, the
+19   parties, the witnesses, or any of the participants,
+20   including the court, until after you have been relieved
+21   as a juror.
+22            That's important because, obviously, you have
+23   to be getting the same information at the same time.
+24            Also, it is critical that you get here on time
+25   on Friday.  We will commence once you get here and we
+26   have everyone assembled.  We can't have you into the
+27   room until we have accounted for everyone.
+28            With that, are there any questions before I
+2195
+ 1   release you?  No show of hands for no questions.  Have a
+ 2   good afternoon and a good evening and we will see you
+ 3   tomorrow morning promptly at 10:30 a.m.
+ 4   
+ 5            (Whereupon, the following proceedings
+ 6            were held in open court outside the
+ 7            presence of the jury:)
+ 8   
+ 9            THE COURT:  Okay.  Let the record reflect that
+10   all jurors and alternates have left the room.
+11            I think we've accomplished some things today.
+12   I'm glad that we had an opportunity to at least have the
+13   jurors here for an hour.  Please be seated.  It didn't
+14   appear that it was a problem for any of them.  And
+15   that's really fortunate.
+16            With that, is there anything that we can
+17   address now or should we simply resume at 1:30 this
+18   afternoon?  Ms. Kagan?
+19            MS. KAGAN:  Your Honor, I have no idea where
+20   Ms. Spangler Khare and Mr. Reid left off.  I haven't had
+21   a chance to look at any of it and so I'm not sure if
+22   resuming at 1:30 would be productive because I would
+23   like to speak with Mr. Kort about whatever the progress
+24   was that the other two made since Mr. Kort and I are the
+25   ones that are handling Dr. Longo.
+26            And perhaps the better approach is arriving a
+27   little bit earlier tomorrow if there are objections we
+28   can't work out instead of today.  That way I can have
+2196
+ 1   the time to work with Dr. Longo to modify any slides if
+ 2   I need to.
+ 3            THE COURT:  Ms. Spangler Khare, your response
+ 4   to that request?
+ 5            MS. SPANGLER KHARE:  I'm fine with that.
+ 6   Mr. Kort will be handling the Dr. Longo witness and
+ 7   exhibits issues, so I would defer to him, but I think
+ 8   that makes sense.
+ 9            MR. KORT:  Yeah.  I can come tomorrow at any
+10   time.
+11            THE COURT:  Well, I want to see my schedule for
+12   tomorrow.
+13            MR. REID:  Your Honor, there's -- as a note
+14   regarding your schedule for tomorrow, I actually believe
+15   I have one of those matters before you.
+16            THE COURT:  Which matter is that?
+17            MR. REID:  That is the Pastusak motion for
+18   summary judgment related to Cla-Val.  And I can promise
+19   you we can keep the argument for that one under five
+20   minutes.
+21            THE COURT:  Okay.  And then we have a minor's
+22   compromise.  So we need to confirm if we got something
+23   in the -- we do have an ISC tomorrow.  Probably 9:45
+24   realistic is when we will start.
+25            Here's my concern.  If you need the court's
+26   resolution of any issues this afternoon, I am available
+27   this afternoon.  The problem is that, if you can't work
+28   through your disputes by 9:45 tomorrow, we've only got
+2197
+ 1   45 minutes for the court to make some rulings.
+ 2            So I just want to get an idea of the scope of
+ 3   the problem now.  Have you narrowed, or is it still
+ 4   pretty voluminous?  If it's a narrow problem, then maybe
+ 5   we shouldn't get together this afternoon.  If it looks
+ 6   like we've got multiple problems and you weren't able to
+ 7   make any progress, you may need the court's assistance
+ 8   this afternoon, and I'm willing to offer it.  I'll leave
+ 9   that to the parties.
+10            And, Ms. Kagan, since -- or is it Attorney
+11   Reid, you would know at this stage.  Since it's
+12   plaintiff's witness, what's the scope of the continued
+13   dispute?  Has it been narrowed at all?
+14            MR. REID:  So I'll put it this way, Your Honor.
+15   And I'm not attempting to fault Ms. Spangler Khare, who
+16   I met and conferred with back in the jury room based on
+17   the understanding that Mr. Kort was the one that
+18   reviewed everything, but I still do not have a list of
+19   what the objections are to the exhibits.  And I think
+20   that is one of the key issues that we're going to have
+21   to resolve.  And because of that, I think it's really
+22   upon us to be able to meet and confer.
+23            What I need from the defense counsel is that
+24   exhaustive list per our 48-hour trial plan to be able to
+25   narrow the issues for the court.
+26            My position would be if they're unable to
+27   provide that exhaustive list by tomorrow, they've now
+28   had 72 hours to do that as of tomorrow morning, then any
+2198
+ 1   objections should be waived.  But we can take up that
+ 2   argument in the event that they are unable to do that.
+ 3            I don't think it would be productive for us to
+ 4   meet this afternoon because they have not provided us
+ 5   with that list.  There are certain objections, for
+ 6   example, hearsay objections that they provided to some
+ 7   of the slides that I know I can satisfy those hearsay
+ 8   requirements with an exception, but I have to be able to
+ 9   pull up that foundational material to provide that to
+10   Your Honor.  And I can't do that for objections that I'm
+11   unaware of.
+12            And so I think from our perspective, defense
+13   counsel needs that time to be able to provide us with
+14   that list of objections.  And --
+15            THE COURT:  All right.
+16            MR. REID:  -- we are the ones offering the
+17   evidence.  The fact of the matter is they had the 48
+18   hours to do it.  They failed to do that.  By default,
+19   we're giving them an additional 24, which I do still
+20   think is unfair for our side, but we've agreed to do
+21   that.  And we read the transcript today, but it should
+22   be on them to provide those objections per not only a
+23   stipulated trial plan, but one that's been entered by
+24   Your Honor's court order.  And, therefore, their failure
+25   to do so would be in violation of a court order.  It's
+26   on them to do it.
+27            THE COURT:  And who is going to address at
+28   least in terms of listing of objections and the length
+2199
+ 1   of time that would take and whether or not this
+ 2   afternoon would be useful or we should delay until
+ 3   tomorrow?  Would that be you, Mr. Kort?
+ 4            MR. KORT:  Yeah, I will.  We provided counsel
+ 5   with all of our objections to the PowerPoint slide.
+ 6   With respect to the exhibits, I think we can get a list
+ 7   this afternoon.  And I'll volunteer to go to the hotel
+ 8   where Ms. Kagan is staying at and I'm happy to meet and
+ 9   confer in person --
+10            THE COURT:  Okay.
+11            MR. KORT:  -- and make some headway.  I'm sure
+12   there will be some issues that can't be resolved, but I
+13   trust that we can do our best.
+14            MS. SPANGLER KHARE:  May I ask, Your Honor, how
+15   late are you available this afternoon in case the
+16   parties might want to call the court to get a jump start
+17   on it?  I don't know that that will be necessary, but --
+18            THE COURT:  If you can let me know by
+19   3:00 o'clock --
+20            MS. SPANGLER KHARE:  Okay.
+21            THE COURT:  -- that would be helpful.  What I
+22   need to understand is, if at 3:00 o'clock you're still
+23   meeting and conferring, there would be no need for the
+24   court, or if at 3:00 o'clock you isolated the universe
+25   and you had your meet and confer and it's reduced to a
+26   certain number of topics, would you be anticipating
+27   returning here or are you simply going to let the court
+28   know how much time you would need tomorrow?  I just need
+2200
+ 1   to know for my planning purposes.
+ 2            MS. KAGAN:  I think it probably makes sense
+ 3   just to return tomorrow morning because whatever we do
+ 4   work out is obviously going to affect the presentation
+ 5   and I have to have time to work with Dr. Longo in
+ 6   preparation for tomorrow.
+ 7            THE COURT:  So I don't know that it makes sense
+ 8   to interrupt you guys this afternoon.  It probably makes
+ 9   better sense we reconvene tomorrow morning at 9:30.
+10   And, hopefully, we don't have more than 45 minutes of
+11   dispute that the court needs to resolve.  That's really
+12   what I'm trying to make sure, that you have the time
+13   that if you need the court's assistance you can get it
+14   resolved.  It sounds to me like you won't need the
+15   court's assistance until sometime tomorrow morning.  Is
+16   that a fair statement, Mr. Kort?
+17            MR. KORT:  I think so, Your Honor.
+18            THE COURT:  Is that your understanding as well,
+19   Attorney Spangler Khare?
+20            MS. SPANGLER KHARE:  Yes, that is, Your Honor.
+21            THE COURT:  Then it's probably better then to
+22   just -- let's target 9:30 a.m. tomorrow morning with a
+23   list of what is remaining disputed evidentiary issues.
+24   And maybe if you want to just give me a brief sort of an
+25   Excel chart with just the grounds and what information,
+26   if anything, I can focus on to resolve the dispute, that
+27   would be helpful.
+28            MS. KAGAN:  Yes, Your Honor.
+2201
+ 1            THE COURT:  All right.  Anything further?
+ 2            MR. KORT:  Nothing from me, Your Honor.  Thank
+ 3   you.
+ 4            MS. SPANGLER KHARE:  No, Your Honor.
+ 5            THE COURT:  All right, then.  Court's in
+ 6   recess.  I'll see everyone tomorrow at 9:30 a.m.
+ 7            MS. KAGAN:  Thank you, Your Honor.
+ 8            THE COURT:  Thank you.
+ 9   
+10            (Whereupon, the proceedings were
+11            adjourned at 11:54 a.m.)
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+26   
+27   
+28   
+2202
+ 1       IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                 FOR THE COUNTY OF LOS ANGELES
+ 3   DEPARTMENT SSC 15        HON. DAVID S. CUNNINGHAM, JUDGE
+ 4   Coordinated Proceeding Special Title  JCCP CASE NO. 4674
+     (Rule 3.550)
+ 5   
+     LAOSD ASBESTOS CASES
+ 6   
+     LINDA ZIMMERMAN,                   )
+ 7                                      )
+                  PLAINTIFF,            )
+ 8                                      )
+            VS.                         ) CASE NO.
+ 9                                      ) BC 720153
+                                        )
+10   WHITTAKER, CLARK & DANIELS,        )
+                                        )
+11                DEFENDANTS.           )
+     ___________________________________)
+12   
+13   
+14          I, DIANNE M. McGIVERN, Certified Shorthand
+15   Reporter, License No. 7576, in the State of California,
+16   hereby certify that the foregoing is a true and accurate
+17   transcript of the proceedings taken before me on
+18   Thursday , April 22, 2021, remotely into Department
+19   SSC 15, as thereon stated.
+20          I declare under penalty of perjury that the
+21   foregoing is true and correct.
+22          Executed at San Pedro, California, on April 22,
+23   2021.
+24   
+25                        __________________________________
+                          DIANNE M. McGIVERN, CSR 7576
+26                        RMR, RDR, CRR, CLR, CRC
+                          OFFICIAL COURT REPORTER PRO TEMPORE
+27   
+28   

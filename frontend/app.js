@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+ * License: Proprietary. See NOTICE.md.
+ * Author: Paul Harvener.
+ */
+
 /**
  * Frontend controller for the deposition dashboard.
  *
@@ -23,14 +29,24 @@ const els = {
   caseId: document.getElementById('caseId'),
   directory: document.getElementById('directory'),
   directoryOptions: document.getElementById('directoryOptions'),
+  browseDepositionBtn: document.getElementById('browseDepositionBtn'),
   caseList: document.getElementById('caseList'),
   llmSelect: document.getElementById('llmSelect'),
+  ingestSchemaSelect: document.getElementById('ingestSchemaSelect'),
+  ingestSchemaKey: document.getElementById('ingestSchemaKey'),
+  ingestSchemaJson: document.getElementById('ingestSchemaJson'),
+  newIngestSchemaBtn: document.getElementById('newIngestSchemaBtn'),
+  saveIngestSchemaBtn: document.getElementById('saveIngestSchemaBtn'),
+  removeIngestSchemaBtn: document.getElementById('removeIngestSchemaBtn'),
+  ingestSchemaStatus: document.getElementById('ingestSchemaStatus'),
   skipReassess: document.getElementById('skipReassess'),
   traceStreamToggle: document.getElementById('traceStreamToggle'),
   newCaseBtn: document.getElementById('newCaseBtn'),
   saveCaseBtn: document.getElementById('saveCaseBtn'),
   importDepositionBtn: document.getElementById('importDepositionBtn'),
+  importDepositionFolderBtn: document.getElementById('importDepositionFolderBtn'),
   importDepositionInput: document.getElementById('importDepositionInput'),
+  importDepositionFolderInput: document.getElementById('importDepositionFolderInput'),
   stopInferenceBtn: document.getElementById('stopInferenceBtn'),
   refreshCasesBtn: document.getElementById('refreshCasesBtn'),
   refreshModelsBtn: document.getElementById('refreshModelsBtn'),
@@ -41,6 +57,7 @@ const els = {
   statusClock: document.getElementById('statusClock'),
   list: document.getElementById('depositionList'),
   timeline: document.getElementById('timeline'),
+  timelineScale: document.getElementById('timelineScale'),
   timelineBack: document.getElementById('timelineBack'),
   timelineForward: document.getElementById('timelineForward'),
   saveIntelligenceBtn: document.getElementById('saveIntelligenceBtn'),
@@ -74,6 +91,7 @@ const els = {
   metricsTextToggle: document.getElementById('metricsTextToggle'),
   metricsBody: document.getElementById('metricsBody'),
   refreshMetricsBtn: document.getElementById('refreshMetricsBtn'),
+  openGrafanaObservablesBtn: document.getElementById('openGrafanaObservablesBtn'),
   metricsSampleMeta: document.getElementById('metricsSampleMeta'),
   metricsStorageMeta: document.getElementById('metricsStorageMeta'),
   metricsGrid: document.getElementById('metricsGrid'),
@@ -93,6 +111,15 @@ const els = {
   ontologyBrowseBtn: document.getElementById('ontologyBrowseBtn'),
   loadOntologyBtn: document.getElementById('loadOntologyBtn'),
   openGraphBrowserBtn: document.getElementById('openGraphBrowserBtn'),
+  graphRagEmbeddingEnabled: document.getElementById('graphRagEmbeddingEnabled'),
+  graphRagEmbeddingProvider: document.getElementById('graphRagEmbeddingProvider'),
+  graphRagEmbeddingModel: document.getElementById('graphRagEmbeddingModel'),
+  graphRagEmbeddingDimensions: document.getElementById('graphRagEmbeddingDimensions'),
+  graphRagEmbeddingIndex: document.getElementById('graphRagEmbeddingIndex'),
+  graphRagEmbeddingNodeLabel: document.getElementById('graphRagEmbeddingNodeLabel'),
+  graphRagEmbeddingProperty: document.getElementById('graphRagEmbeddingProperty'),
+  saveGraphRagEmbeddingBtn: document.getElementById('saveGraphRagEmbeddingBtn'),
+  reloadGraphRagEmbeddingBtn: document.getElementById('reloadGraphRagEmbeddingBtn'),
   graphRagQuestion: document.getElementById('graphRagQuestion'),
   graphRagToggle: document.getElementById('graphRagToggle'),
   graphRagStreamToggle: document.getElementById('graphRagStreamToggle'),
@@ -101,14 +128,131 @@ const els = {
   graphRagAnswer: document.getElementById('graphRagAnswer'),
   graphRagMonitor: document.getElementById('graphRagMonitor'),
   adminTabTestBtn: document.getElementById('adminTabTestBtn'),
+  adminTabUsersBtn: document.getElementById('adminTabUsersBtn'),
+  adminTabPersonasBtn: document.getElementById('adminTabPersonasBtn'),
+  adminTabMlopsBtn: document.getElementById('adminTabMlopsBtn'),
   adminTabPageTest: document.getElementById('adminTabPageTest'),
-  adminUserName: document.getElementById('adminUserName'),
+  adminTabPageUsers: document.getElementById('adminTabPageUsers'),
+  adminTabPagePersonas: document.getElementById('adminTabPagePersonas'),
+  adminTabPageMlops: document.getElementById('adminTabPageMlops'),
+  adminUserCreatePanel: document.getElementById('adminUserCreatePanel'),
+  adminUserFirstName: document.getElementById('adminUserFirstName'),
+  adminUserLastName: document.getElementById('adminUserLastName'),
+  adminUserAuthorization: document.getElementById('adminUserAuthorization'),
   adminAddUserBtn: document.getElementById('adminAddUserBtn'),
+  adminSaveUserBtn: document.getElementById('adminSaveUserBtn'),
+  adminCancelUserBtn: document.getElementById('adminCancelUserBtn'),
+  adminGetUsersBtn: document.getElementById('adminGetUsersBtn'),
+  adminRemoveUserBtn: document.getElementById('adminRemoveUserBtn'),
+  adminUserFeedback: document.getElementById('adminUserFeedback'),
+  adminUserSelect: document.getElementById('adminUserSelect'),
+  adminUserSelectedMeta: document.getElementById('adminUserSelectedMeta'),
   adminUserList: document.getElementById('adminUserList'),
+  adminRefreshUsersBtn: document.getElementById('adminRefreshUsersBtn'),
+  adminUserDetailPanel: document.getElementById('adminUserDetailPanel'),
+  adminUserDetailTitle: document.getElementById('adminUserDetailTitle'),
+  adminUserDetailMeta: document.getElementById('adminUserDetailMeta'),
+  adminUserDetailBody: document.getElementById('adminUserDetailBody'),
+  adminUserDetailCloseBtn: document.getElementById('adminUserDetailCloseBtn'),
+  adminPersonaCreatePanel: document.getElementById('adminPersonaCreatePanel'),
+  adminPersonaName: document.getElementById('adminPersonaName'),
+  adminPersonaLlm: document.getElementById('adminPersonaLlm'),
+  adminPersonaSystemPromptTemplateSelect: document.getElementById('adminPersonaSystemPromptTemplateSelect'),
+  adminPersonaAssistantPromptTemplateSelect: document.getElementById('adminPersonaAssistantPromptTemplateSelect'),
+  adminPersonaContextPromptTemplateSelect: document.getElementById('adminPersonaContextPromptTemplateSelect'),
+  adminPersonaSystemChoosePromptBtn: document.getElementById('adminPersonaSystemChoosePromptBtn'),
+  adminPersonaAssistantChoosePromptBtn: document.getElementById('adminPersonaAssistantChoosePromptBtn'),
+  adminPersonaContextChoosePromptBtn: document.getElementById('adminPersonaContextChoosePromptBtn'),
+  adminPersonaSystemObservableBtn: document.getElementById('adminPersonaSystemObservableBtn'),
+  adminPersonaAssistantObservableBtn: document.getElementById('adminPersonaAssistantObservableBtn'),
+  adminPersonaContextObservableBtn: document.getElementById('adminPersonaContextObservableBtn'),
+  adminPersonaSystemSavePromptBtn: document.getElementById('adminPersonaSystemSavePromptBtn'),
+  adminPersonaAssistantSavePromptBtn: document.getElementById('adminPersonaAssistantSavePromptBtn'),
+  adminPersonaContextSavePromptBtn: document.getElementById('adminPersonaContextSavePromptBtn'),
+  adminPersonaOpenPromptModalBtn: document.getElementById('adminPersonaOpenPromptModalBtn'),
+  adminPersonaToggleRagBtn: document.getElementById('adminPersonaToggleRagBtn'),
+  adminPersonaTogglePromptObservablesBtn: document.getElementById('adminPersonaTogglePromptObservablesBtn'),
+  adminPersonaToggleToolsBtn: document.getElementById('adminPersonaToggleToolsBtn'),
+  adminPersonaPromptPanel: document.getElementById('adminPersonaPromptPanel'),
+  adminPersonaRagPanel: document.getElementById('adminPersonaRagPanel'),
+  adminPersonaPromptObservablesPanel: document.getElementById('adminPersonaPromptObservablesPanel'),
+  adminPersonaToolsPanel: document.getElementById('adminPersonaToolsPanel'),
+  adminPersonaSystemPrompt: document.getElementById('adminPersonaSystemPrompt'),
+  adminPersonaAssistantPrompt: document.getElementById('adminPersonaAssistantPrompt'),
+  adminPersonaContextPrompt: document.getElementById('adminPersonaContextPrompt'),
+  adminPersonaRagSelect: document.getElementById('adminPersonaRagSelect'),
+  adminPersonaLoadRagsBtn: document.getElementById('adminPersonaLoadRagsBtn'),
+  adminPersonaRagAddBtn: document.getElementById('adminPersonaRagAddBtn'),
+  adminPersonaRagList: document.getElementById('adminPersonaRagList'),
+  adminPersonaRefreshPromptObservablesBtn: document.getElementById('adminPersonaRefreshPromptObservablesBtn'),
+  adminPersonaPromptObservablesList: document.getElementById('adminPersonaPromptObservablesList'),
+  adminPersonaPromptObservablesDetail: document.getElementById('adminPersonaPromptObservablesDetail'),
+  adminPersonaToolSelect: document.getElementById('adminPersonaToolSelect'),
+  adminPersonaLoadToolsBtn: document.getElementById('adminPersonaLoadToolsBtn'),
+  adminPersonaToolAddBtn: document.getElementById('adminPersonaToolAddBtn'),
+  adminPersonaToolList: document.getElementById('adminPersonaToolList'),
+  adminAddPersonaBtn: document.getElementById('adminAddPersonaBtn'),
+  adminSavePersonaBtn: document.getElementById('adminSavePersonaBtn'),
+  adminPersonaFormPromptSentimentBtn: document.getElementById('adminPersonaFormPromptSentimentBtn'),
+  adminPersonaFormPromptSentiment: document.getElementById('adminPersonaFormPromptSentiment'),
+  adminCancelPersonaBtn: document.getElementById('adminCancelPersonaBtn'),
+  adminPersonaSmokeTestBtn: document.getElementById('adminPersonaSmokeTestBtn'),
+  adminPersonaFeedback: document.getElementById('adminPersonaFeedback'),
+  adminPersonaSelect: document.getElementById('adminPersonaSelect'),
+  adminPersonaSelectedMeta: document.getElementById('adminPersonaSelectedMeta'),
+  adminPersonaList: document.getElementById('adminPersonaList'),
+  adminPersonaGraphMeta: document.getElementById('adminPersonaGraphMeta'),
+  adminPersonaGraphProgress: document.getElementById('adminPersonaGraphProgress'),
+  adminPersonaGraphClock: document.getElementById('adminPersonaGraphClock'),
+  adminPersonaGraphQuestion: document.getElementById('adminPersonaGraphQuestion'),
+  adminPersonaGraphAskBtn: document.getElementById('adminPersonaGraphAskBtn'),
+  adminPersonaGraphClearBtn: document.getElementById('adminPersonaGraphClearBtn'),
+  adminPersonaGraphAnswer: document.getElementById('adminPersonaGraphAnswer'),
+  adminRunTestsBtn: document.getElementById('adminRunTestsBtn'),
   adminRefreshTestLogBtn: document.getElementById('adminRefreshTestLogBtn'),
+  adminTestRunClock: document.getElementById('adminTestRunClock'),
   adminTestLogSummary: document.getElementById('adminTestLogSummary'),
   adminTestLogOutput: document.getElementById('adminTestLogOutput'),
   adminTestReportFrame: document.getElementById('adminTestReportFrame'),
+  adminMlopsRefreshMetricsBtn: document.getElementById('adminMlopsRefreshMetricsBtn'),
+  adminMlopsRefreshModelsBtn: document.getElementById('adminMlopsRefreshModelsBtn'),
+  adminMlopsOpenGrafanaBtn: document.getElementById('adminMlopsOpenGrafanaBtn'),
+  adminMlopsPromptVersionsBtn: document.getElementById('adminMlopsPromptVersionsBtn'),
+  adminMlopsModelRoutingBtn: document.getElementById('adminMlopsModelRoutingBtn'),
+  adminMlopsRagBehaviorBtn: document.getElementById('adminMlopsRagBehaviorBtn'),
+  adminMlopsTokenContextBtn: document.getElementById('adminMlopsTokenContextBtn'),
+  adminMlopsCorrectnessBtn: document.getElementById('adminMlopsCorrectnessBtn'),
+  adminMlopsTraceQualityBtn: document.getElementById('adminMlopsTraceQualityBtn'),
+  adminMlopsThoughtHealthBtn: document.getElementById('adminMlopsThoughtHealthBtn'),
+  adminMlopsRagHealthBtn: document.getElementById('adminMlopsRagHealthBtn'),
+  adminMlopsOpenGithubActionsBtn: document.getElementById('adminMlopsOpenGithubActionsBtn'),
+  adminMlopsOpenCiWorkflowBtn: document.getElementById('adminMlopsOpenCiWorkflowBtn'),
+  adminMlopsOpenDeployWorkflowBtn: document.getElementById('adminMlopsOpenDeployWorkflowBtn'),
+  adminMlopsRunTestsBtn: document.getElementById('adminMlopsRunTestsBtn'),
+  adminMlopsRefreshReportBtn: document.getElementById('adminMlopsRefreshReportBtn'),
+  adminMlopsTabLlmoopsBtn: document.getElementById('adminMlopsTabLlmoopsBtn'),
+  adminMlopsTabFineTuningBtn: document.getElementById('adminMlopsTabFineTuningBtn'),
+  adminMlopsTabDeploymentBtn: document.getElementById('adminMlopsTabDeploymentBtn'),
+  adminMlopsTabCicdBtn: document.getElementById('adminMlopsTabCicdBtn'),
+  adminMlopsTabPageLlmoops: document.getElementById('adminMlopsTabPageLlmoops'),
+  adminMlopsTabPageFineTuning: document.getElementById('adminMlopsTabPageFineTuning'),
+  adminMlopsTabPageDeployment: document.getElementById('adminMlopsTabPageDeployment'),
+  adminMlopsTabPageCicd: document.getElementById('adminMlopsTabPageCicd'),
+  adminMlopsOpenFineTuningBtn: document.getElementById('adminMlopsOpenFineTuningBtn'),
+  adminMlopsFineTuningRefreshModelsBtn: document.getElementById('adminMlopsFineTuningRefreshModelsBtn'),
+  adminMlopsDeploymentThoughtBtn: document.getElementById('adminMlopsDeploymentThoughtBtn'),
+  adminMlopsDeploymentRagBtn: document.getElementById('adminMlopsDeploymentRagBtn'),
+  adminMlopsDeploymentObservablesBtn: document.getElementById('adminMlopsDeploymentObservablesBtn'),
+  adminMlopsOpenAdminTestBtn: document.getElementById('adminMlopsOpenAdminTestBtn'),
+  adminMlopsStatus: document.getElementById('adminMlopsStatus'),
+  depositionBrowserModal: document.getElementById('depositionBrowserModal'),
+  depositionBrowserTitle: document.getElementById('depositionBrowserTitle'),
+  depositionBrowserPath: document.getElementById('depositionBrowserPath'),
+  depositionBrowserList: document.getElementById('depositionBrowserList'),
+  depositionBrowserCloseBtn: document.getElementById('depositionBrowserCloseBtn'),
+  depositionBrowserUpBtn: document.getElementById('depositionBrowserUpBtn'),
+  depositionBrowserUseFolderBtn: document.getElementById('depositionBrowserUseFolderBtn'),
+  depositionBrowserRefreshBtn: document.getElementById('depositionBrowserRefreshBtn'),
   ontologyBrowserModal: document.getElementById('ontologyBrowserModal'),
   ontologyBrowserTitle: document.getElementById('ontologyBrowserTitle'),
   ontologyBrowserPath: document.getElementById('ontologyBrowserPath'),
@@ -117,7 +261,31 @@ const els = {
   ontologyBrowserUpBtn: document.getElementById('ontologyBrowserUpBtn'),
   ontologyBrowserUseFolderBtn: document.getElementById('ontologyBrowserUseFolderBtn'),
   ontologyBrowserRefreshBtn: document.getElementById('ontologyBrowserRefreshBtn'),
+  adminPersonaPromptModal: document.getElementById('adminPersonaPromptModal'),
+  adminPersonaPromptModalTitle: document.getElementById('adminPersonaPromptModalTitle'),
+  adminPersonaPromptModalMeta: document.getElementById('adminPersonaPromptModalMeta'),
+  adminPersonaPromptModalSystem: document.getElementById('adminPersonaPromptModalSystem'),
+  adminPersonaPromptModalAssistant: document.getElementById('adminPersonaPromptModalAssistant'),
+  adminPersonaPromptModalContext: document.getElementById('adminPersonaPromptModalContext'),
+  adminPersonaPromptSentimentMeta: document.getElementById('adminPersonaPromptSentimentMeta'),
+  adminPersonaPromptSentimentBtn: document.getElementById('adminPersonaPromptSentimentBtn'),
+  adminPersonaPromptApplyBtn: document.getElementById('adminPersonaPromptApplyBtn'),
+  adminPersonaPromptResaveBtn: document.getElementById('adminPersonaPromptResaveBtn'),
+  adminPersonaPromptModalCloseBtn: document.getElementById('adminPersonaPromptModalCloseBtn'),
+  adminPersonaPromptObservableModal: document.getElementById('adminPersonaPromptObservableModal'),
+  adminPersonaPromptObservableModalTitle: document.getElementById('adminPersonaPromptObservableModalTitle'),
+  adminPersonaPromptObservableModalMeta: document.getElementById('adminPersonaPromptObservableModalMeta'),
+  adminPersonaPromptObservableModalBody: document.getElementById('adminPersonaPromptObservableModalBody'),
+  adminPersonaPromptObservableModalCloseBtn: document.getElementById('adminPersonaPromptObservableModalCloseBtn'),
 };
+
+const GITHUB_ACTIONS_URLS = Object.freeze({
+  actions: 'https://github.com/data-blitz-demos/agentic-legal-deposition-demo/actions',
+  ciWorkflow:
+    'https://github.com/data-blitz-demos/agentic-legal-deposition-demo/actions/workflows/ci-cd.yml',
+  deployWorkflow:
+    'https://github.com/data-blitz-demos/agentic-legal-deposition-demo/actions/workflows/deploy.yml',
+});
 
 let depositions = [];
 let cases = [];
@@ -142,18 +310,57 @@ let metricsPollHandle = null;
 const METRICS_POLL_MS = 15000;
 let metricsPanelOpen = false;
 let metricsLoaded = false;
+let depositionBrowserCurrentDirectory = '';
+let depositionBrowserParentDirectory = '';
+let depositionBrowserWildcardPath = '';
 let ontologyBrowserCurrentDirectory = '';
 let ontologyBrowserParentDirectory = '';
 let ontologyBrowserWildcardPath = '';
 let graphRagCycles = [];
 let activeTab = 'landing';
+let activeAdminSubtab = 'users';
+let activeMlopsSubtab = 'llmops';
+let adminUsersCache = [];
+let adminPersonasCache = [];
+let adminPersonaPromptTemplatesCache = [];
+let adminPersonaRagOptionsCache = [];
+let adminPersonaToolOptionsCache = [];
+let selectedAdminUserId = '';
+let editingAdminUserId = '';
+let selectedAdminPersonaId = '';
+let editingAdminPersonaId = '';
+let adminPersonaRagSequence = [];
+let adminPersonaToolSequence = [];
+let adminPersonaSelectedPromptTemplateKey = '';
+let adminPersonaPromptModalPersonaId = '';
+let adminPersonaPromptModalPersonaName = '';
+let adminPersonaPromptPanelActive = false;
+let adminPersonaRagPanelActive = false;
+let adminPersonaPromptObservablesPanelActive = false;
+let adminPersonaToolsPanelActive = false;
+let selectedAdminPersonaPromptObservableKey = '';
+let adminPersonaPromptObservablesScope = 'all';
+let adminPersonaPromptObservableModalScope = '';
+let currentAdminPersonaPromptSentiment = null;
+let adminPersonaPromptSentimentDetailOpen = false;
+let adminTestRunClockHandle = null;
+let adminTestRunStartedAtMs = 0;
 const LAST_USED_CASE_STORAGE_KEY = 'deposition-demo:last-used-case-id';
 const METRICS_CACHE_STORAGE_KEY = 'deposition-demo:last-agent-metrics';
 let metricInteractionLockUntil = 0;
 let focusedReasoningSourceText = '';
 let focusedReasoningIsSummary = false;
 let pendingSavedLlmValue = '';
+let ingestSchemaOptionsCache = [];
+let editingNewIngestSchema = false;
 const ADMIN_TEST_REPORT_URL = '/admin/test-report';
+const ADMIN_AUTHORIZATION_LABELS = {
+  open: 'Open',
+  admin: 'Admin',
+  expert_user: 'Expert User',
+  user: 'User',
+  read_only: 'Read Only',
+};
 const RUNTIME_METRIC_DETAILS = {
   task_success_rate_pct:
     'Measures how often full runs end in completed status instead of failed status. A sustained drop usually indicates provider outages, schema drift, or parser instability in one workflow step.',
@@ -296,6 +503,7 @@ const timerHandles = {
   llm: null,
   reasoning: null,
   chat: null,
+  adminPersonaGraph: null,
 };
 
 function escapeHtml(value) {
@@ -676,6 +884,7 @@ function showMetricTrendFromPayload(metric, payload, source) {
   const bucketHours = Number(payload?.bucket_hours || chooseMetricHistoryBucketHours(lookbackHours));
   const points = Array.isArray(payload?.points) ? payload.points : [];
   const livePoints = points.filter((point) => Number.isFinite(Number(point?.value)));
+  const usesNumericFallback = livePoints.some((point) => String(point?.display || '').trim() === 'N/A');
   const latestPoint = livePoints.length ? livePoints[livePoints.length - 1] : null;
   const latestDisplay = latestPoint ? String(latestPoint.display || metric?.display || '') : 'N/A';
   const relation = describeMetricValueImpact(
@@ -686,7 +895,9 @@ function showMetricTrendFromPayload(metric, payload, source) {
   els.metricTrendTitle.textContent = `${label} Trend`;
   els.metricTrendMeta.textContent = `${lookbackHours}h lookback in ${bucketHours}h buckets. Drag the lower-right corner to resize.`;
   els.metricTrendBody.textContent = livePoints.length
-    ? `Current: ${latestDisplay}. ${relation}`
+    ? usesNumericFallback
+      ? `Current display is unavailable in this window, so the chart is using the stored numeric fallback behind the metric. ${relation}`
+      : `Current: ${latestDisplay}. ${relation}`
     : `No stored live series is available for this observable yet. ${relation}`;
   renderMetricTrendChart(payload);
   revealMetricTrendPanel();
@@ -884,9 +1095,11 @@ function renderMetricCards(container, metrics, source) {
 
 function renderCorrectnessDriftObservables(payload = null) {
   /** Render correctness/drift KPI cards from backend payload with static fallback definitions. */
-  const metrics = Array.isArray(payload?.correctness_metrics) && payload.correctness_metrics.length
-    ? payload.correctness_metrics
-    : CORRECTNESS_DRIFT_OBSERVABLES.map((item) => ({ ...item, status: 'info' }));
+  const liveMetrics = Array.isArray(payload?.correctness_metrics) ? payload.correctness_metrics : [];
+  const metrics = CORRECTNESS_DRIFT_OBSERVABLES.map((item) => {
+    const liveMetric = liveMetrics.find((candidate) => String(candidate?.key || '').trim() === item.key);
+    return liveMetric ? { ...item, ...liveMetric } : { ...item, status: 'info' };
+  });
   renderMetricCards(els.correctnessGrid, metrics, 'correctness');
 }
 
@@ -962,35 +1175,2882 @@ function refreshAdminTestReportFrame() {
 }
 
 async function loadAdminUsers() {
-  /** Load lightweight admin users for the Admin/Test panel. */
+  /** Load saved users for the Admin/Users panel. */
+  const payload = await api('/api/admin/users');
+  adminUsersCache = Array.isArray(payload?.users) ? payload.users : [];
+  renderAdminUsers(adminUsersCache);
+}
+
+function renderAdminUsers(users) {
+  /** Render the saved users list with clear immediate feedback in the Users subtab. */
   if (!els.adminUserList) {
     return;
   }
-  const payload = await api('/api/admin/users');
-  const users = Array.isArray(payload?.users) ? payload.users : [];
-  if (!users.length) {
+  const normalizedUsers = Array.isArray(users) ? users : [];
+  syncAdminUserSelection(normalizedUsers);
+  if (!normalizedUsers.length) {
+    els.adminUserList.classList.add('muted');
     els.adminUserList.textContent = 'No users added yet.';
     return;
   }
-  els.adminUserList.textContent = users
-    .map((item) => `${item.name} (${item.created_at})`)
+  els.adminUserList.classList.remove('muted');
+  const items = normalizedUsers.map((item) => {
+    const row = document.createElement('div');
+    row.className = 'admin-user-row';
+    row.dataset.userId = String(item.user_id || '');
+    row.setAttribute('role', 'button');
+    row.setAttribute('tabindex', '0');
+    row.classList.toggle('selected', row.dataset.userId === selectedAdminUserId);
+    const label = ADMIN_AUTHORIZATION_LABELS[String(item.authorization_level || '').trim()] || 'User';
+    row.textContent = `${item.name} | ${label} | ${item.created_at}`;
+    row.addEventListener('click', () => selectAdminUserById(item.user_id, { openDetail: true }));
+    row.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') {
+        return;
+      }
+      event.preventDefault();
+      selectAdminUserById(item.user_id, { openDetail: true });
+    });
+    return row;
+  });
+  els.adminUserList.replaceChildren(...items);
+}
+
+function syncAdminUserSelection(users) {
+  /** Keep the current-user selector and selected-user text in sync with the user cache. */
+  const normalizedUsers = Array.isArray(users) ? users : [];
+  if (els.adminUserSelect) {
+    els.adminUserSelect.innerHTML = '';
+    if (!normalizedUsers.length) {
+      const option = document.createElement('option');
+      option.value = '';
+      option.textContent = 'No users available';
+      els.adminUserSelect.appendChild(option);
+      els.adminUserSelect.disabled = true;
+      selectedAdminUserId = '';
+    } else {
+      els.adminUserSelect.disabled = false;
+      const availableIds = new Set(normalizedUsers.map((item) => String(item.user_id || '').trim()));
+      if (!availableIds.has(selectedAdminUserId)) {
+        selectedAdminUserId = String(normalizedUsers[0]?.user_id || '').trim();
+      }
+      for (const item of normalizedUsers) {
+        const option = document.createElement('option');
+        option.value = String(item.user_id || '').trim();
+        option.textContent = item.name || 'Unnamed User';
+        els.adminUserSelect.appendChild(option);
+      }
+      els.adminUserSelect.value = selectedAdminUserId;
+    }
+  }
+  const selectedUser = normalizedUsers.find((item) => String(item.user_id || '').trim() === selectedAdminUserId);
+  if (els.adminUserSelectedMeta) {
+    if (!selectedUser) {
+      els.adminUserSelectedMeta.textContent = 'No user selected.';
+    } else {
+      const label =
+        ADMIN_AUTHORIZATION_LABELS[String(selectedUser.authorization_level || '').trim()] || 'User';
+      els.adminUserSelectedMeta.textContent = `Selected: ${selectedUser.name} (${label})`;
+    }
+  }
+}
+
+function selectAdminUserById(userId, { openDetail = false } = {}) {
+  /** Select one user from the current list and optionally open the user-detail pop-out. */
+  const normalizedUserId = String(userId || '').trim();
+  const selectedUser = adminUsersCache.find((item) => String(item.user_id || '').trim() === normalizedUserId);
+  if (!selectedUser) {
+    return;
+  }
+  selectedAdminUserId = normalizedUserId;
+  renderAdminUsers(adminUsersCache);
+  loadAdminUserIntoForm(selectedUser);
+  if (openDetail) {
+    showAdminUserDetail(selectedUser);
+  }
+}
+
+function buildAdminUserDetailText(selectedUser) {
+  /** Build text-box content listing all current users, with the selected one marked. */
+  const normalizedUsers = Array.isArray(adminUsersCache) ? adminUsersCache : [];
+  if (!normalizedUsers.length) {
+    return 'No users are currently available.';
+  }
+  const selectedUserId = String(selectedUser?.user_id || '').trim();
+  return normalizedUsers
+    .map((item, index) => {
+      const label = ADMIN_AUTHORIZATION_LABELS[String(item.authorization_level || '').trim()] || 'User';
+      const marker = String(item.user_id || '').trim() === selectedUserId ? '>>' : '  ';
+      return `${marker} ${index + 1}. ${item.name} | ${label} | ${item.created_at}`;
+    })
     .join('\n');
 }
 
+function showAdminUserDetail(selectedUser) {
+  /** Open a pop-out text box listing all current users and identify the selected user. */
+  if (
+    !els.adminUserDetailPanel ||
+    !els.adminUserDetailTitle ||
+    !els.adminUserDetailMeta ||
+    !els.adminUserDetailBody
+  ) {
+    return;
+  }
+  const selectedName = String(selectedUser?.name || '').trim() || 'Unknown User';
+  const selectedLabel =
+    ADMIN_AUTHORIZATION_LABELS[String(selectedUser?.authorization_level || '').trim()] || 'User';
+  els.adminUserDetailTitle.textContent = 'Current Users';
+  els.adminUserDetailMeta.textContent = `Selected user: ${selectedName} (${selectedLabel})`;
+  els.adminUserDetailBody.value = buildAdminUserDetailText(selectedUser);
+  els.adminUserDetailPanel.classList.remove('hidden');
+}
+
+function hideAdminUserDetail() {
+  /** Close the admin-user detail pop-out. */
+  if (
+    !els.adminUserDetailPanel ||
+    !els.adminUserDetailTitle ||
+    !els.adminUserDetailMeta ||
+    !els.adminUserDetailBody
+  ) {
+    return;
+  }
+  els.adminUserDetailTitle.textContent = 'Current Users';
+  els.adminUserDetailMeta.textContent = 'Selected user:';
+  els.adminUserDetailBody.value = '';
+  els.adminUserDetailPanel.classList.add('hidden');
+}
+
+function setAdminUserFeedback(message, tone = 'info') {
+  /** Render local feedback in the Admin/Users panel so the button never appears inert. */
+  if (!els.adminUserFeedback) {
+    return;
+  }
+  const nextMessage = String(message || '').trim();
+  els.adminUserFeedback.textContent = nextMessage || ' ';
+  els.adminUserFeedback.classList.remove('muted', 'error', 'success');
+  if (!nextMessage) {
+    els.adminUserFeedback.classList.add('muted');
+    return;
+  }
+  if (tone === 'error') {
+    els.adminUserFeedback.classList.add('error');
+    return;
+  }
+  if (tone === 'success') {
+    els.adminUserFeedback.classList.add('success');
+    return;
+  }
+  els.adminUserFeedback.classList.add('muted');
+}
+
+function setAdminUserCreateOpen(open) {
+  /** Toggle the expandable add-user form. */
+  const nextOpen = !!open;
+  if (els.adminUserCreatePanel) {
+    els.adminUserCreatePanel.classList.toggle('hidden', !nextOpen);
+  }
+  if (els.adminAddUserBtn) {
+    els.adminAddUserBtn.textContent = nextOpen ? 'Close Add User' : 'Add User';
+  }
+  if (nextOpen && els.adminUserFirstName) {
+    els.adminUserFirstName.focus();
+  }
+  syncAdminUserSaveButton();
+}
+
+function resetAdminUserForm() {
+  /** Reset add-user form fields back to defaults. */
+  editingAdminUserId = '';
+  if (els.adminUserFirstName) {
+    els.adminUserFirstName.value = '';
+  }
+  if (els.adminUserLastName) {
+    els.adminUserLastName.value = '';
+  }
+  if (els.adminUserAuthorization) {
+    els.adminUserAuthorization.value = 'user';
+  }
+  syncAdminUserSaveButton();
+}
+
+function syncAdminUserSaveButton() {
+  /** Keep the save button text aligned to create vs edit mode. */
+  if (!els.adminSaveUserBtn) {
+    return;
+  }
+  els.adminSaveUserBtn.textContent = editingAdminUserId ? 'Save Changes' : 'Save User';
+}
+
+function loadAdminUserIntoForm(user) {
+  /** Populate the add-user form with the selected user's current values. */
+  if (!user) {
+    return;
+  }
+  editingAdminUserId = String(user.user_id || '').trim();
+  if (els.adminUserFirstName) {
+    els.adminUserFirstName.value = String(user.first_name || '').trim();
+  }
+  if (els.adminUserLastName) {
+    els.adminUserLastName.value = String(user.last_name || '').trim();
+  }
+  if (els.adminUserAuthorization) {
+    els.adminUserAuthorization.value = String(user.authorization_level || 'user').trim() || 'user';
+  }
+  setAdminUserCreateOpen(true);
+  setAdminUserFeedback(`Editing ${user.name}. Update the fields and save changes.`, 'info');
+}
+
+function highlightAdminUserRow(userId) {
+  /** Highlight the saved user row so the add action is obvious to the operator. */
+  const normalizedUserId = String(userId || '').trim();
+  if (!normalizedUserId || !els.adminUserList) {
+    return;
+  }
+  const rows = Array.from(els.adminUserList.querySelectorAll('.admin-user-row'));
+  rows.forEach((row) => row.classList.remove('fresh'));
+  const match = rows.find((row) => String(row.dataset.userId || '').trim() === normalizedUserId);
+  if (!match) {
+    return;
+  }
+  match.classList.add('fresh');
+  match.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  window.setTimeout(() => match.classList.remove('fresh'), 2200);
+}
+
 async function addAdminUser() {
-  /** Add one lightweight admin user and refresh the visible list. */
-  const name = String(els.adminUserName?.value || '').trim();
-  if (!name) {
+  /** Create or update one user and refresh the visible list. */
+  const firstName = String(els.adminUserFirstName?.value || '').trim();
+  const lastName = String(els.adminUserLastName?.value || '').trim();
+  const authorizationLevel = String(els.adminUserAuthorization?.value || '').trim() || 'user';
+  const isEditing = !!editingAdminUserId;
+  if (!firstName || !lastName) {
+    if (!firstName && els.adminUserFirstName) {
+      els.adminUserFirstName.focus();
+    } else if (els.adminUserLastName) {
+      els.adminUserLastName.focus();
+    }
+    setAdminUserFeedback('Enter both a first name and a last name before saving a user.', 'error');
     setStatus('Enter a user name before adding a user.');
     return;
   }
-  await api('/api/admin/users', {
-    method: 'POST',
-    body: JSON.stringify({ name }),
+  if (els.adminSaveUserBtn) {
+    els.adminSaveUserBtn.disabled = true;
+    els.adminSaveUserBtn.textContent = isEditing ? 'Saving Changes...' : 'Saving...';
+  }
+  if (els.adminCancelUserBtn) {
+    els.adminCancelUserBtn.disabled = true;
+  }
+  if (els.adminAddUserBtn) {
+    els.adminAddUserBtn.disabled = true;
+  }
+  setActiveTab('admin');
+  setActiveAdminSubtab('users');
+  setAdminUserFeedback(isEditing ? 'Saving user changes...' : 'Saving user...', 'info');
+  try {
+    const createdUser = await api('/api/admin/users', {
+      method: 'POST',
+      body: JSON.stringify({
+        user_id: editingAdminUserId || null,
+        first_name: firstName,
+        last_name: lastName,
+        authorization_level: authorizationLevel,
+      }),
+    });
+    adminUsersCache = [createdUser, ...adminUsersCache.filter((item) => item.user_id !== createdUser.user_id)];
+    renderAdminUsers(adminUsersCache);
+    highlightAdminUserRow(createdUser.user_id);
+    resetAdminUserForm();
+    await loadAdminUsers();
+    selectedAdminUserId = String(createdUser.user_id || '').trim();
+    renderAdminUsers(adminUsersCache);
+    highlightAdminUserRow(createdUser.user_id);
+    setAdminUserFeedback(
+      `${createdUser.name} ${isEditing ? 'updated' : 'saved'} with ${ADMIN_AUTHORIZATION_LABELS[authorizationLevel] || 'User'} authorization.`,
+      'success'
+    );
+    setAdminUserCreateOpen(false);
+    setStatus(
+      `${isEditing ? 'User updated' : 'User added'} with ${ADMIN_AUTHORIZATION_LABELS[authorizationLevel] || 'User'} authorization.`
+    );
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to save user.');
+    setAdminUserFeedback(message, 'error');
+    throw err;
+  } finally {
+    if (els.adminSaveUserBtn) {
+      els.adminSaveUserBtn.disabled = false;
+      syncAdminUserSaveButton();
+    }
+    if (els.adminCancelUserBtn) {
+      els.adminCancelUserBtn.disabled = false;
+    }
+    if (els.adminAddUserBtn) {
+      els.adminAddUserBtn.disabled = false;
+    }
+  }
+}
+
+async function removeAdminUser() {
+  /** Permanently remove the currently selected user and refresh the visible list. */
+  const userId = String(selectedAdminUserId || '').trim();
+  const selectedUser = adminUsersCache.find((item) => String(item.user_id || '').trim() === userId);
+  if (!userId || !selectedUser) {
+    setAdminUserFeedback('Select a user before removing one.', 'error');
+    setStatus('Select a user before removing one.');
+    return;
+  }
+  const confirmed = window.confirm(`Permanently remove ${selectedUser.name}? This cannot be undone.`);
+  if (!confirmed) {
+    setAdminUserFeedback(`Removal canceled for ${selectedUser.name}.`, 'info');
+    return;
+  }
+  if (els.adminRemoveUserBtn) {
+    els.adminRemoveUserBtn.disabled = true;
+    els.adminRemoveUserBtn.textContent = 'Removing...';
+  }
+  if (els.adminGetUsersBtn) {
+    els.adminGetUsersBtn.disabled = true;
+  }
+  if (els.adminRefreshUsersBtn) {
+    els.adminRefreshUsersBtn.disabled = true;
+  }
+  setAdminUserFeedback(`Removing ${selectedUser.name}...`, 'info');
+  try {
+    await api(`/api/admin/users/${encodeURIComponent(userId)}`, { method: 'DELETE' });
+    adminUsersCache = adminUsersCache.filter((item) => String(item.user_id || '').trim() !== userId);
+    if (editingAdminUserId === userId) {
+      resetAdminUserForm();
+      setAdminUserCreateOpen(false);
+    }
+    hideAdminUserDetail();
+    selectedAdminUserId = '';
+    renderAdminUsers(adminUsersCache);
+    await loadAdminUsers();
+    setAdminUserFeedback(`${selectedUser.name} was permanently removed.`, 'success');
+    setStatus('User removed.');
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to remove user.');
+    setAdminUserFeedback(message, 'error');
+    throw err;
+  } finally {
+    if (els.adminRemoveUserBtn) {
+      els.adminRemoveUserBtn.disabled = false;
+      els.adminRemoveUserBtn.textContent = 'Remove User';
+    }
+    if (els.adminGetUsersBtn) {
+      els.adminGetUsersBtn.disabled = false;
+    }
+    if (els.adminRefreshUsersBtn) {
+      els.adminRefreshUsersBtn.disabled = false;
+    }
+  }
+}
+
+function syncAdminPersonaLlmOptions() {
+  /** Mirror the main LLM selector options into the persona editor. */
+  if (!els.adminPersonaLlm) {
+    return;
+  }
+  const currentValue = String(els.adminPersonaLlm.value || '').trim();
+  const fallbackValue = encodeLlmOption('openai', 'gpt-5.2');
+  const sourceOptions = Array.from(els.llmSelect?.options || []);
+  els.adminPersonaLlm.innerHTML = '';
+  if (!sourceOptions.length) {
+    const fallback = document.createElement('option');
+    fallback.value = fallbackValue;
+    fallback.textContent = 'ChatGPT - gpt-5.2';
+    els.adminPersonaLlm.appendChild(fallback);
+    els.adminPersonaLlm.value = currentValue || fallbackValue;
+    return;
+  }
+  for (const item of sourceOptions) {
+    const option = document.createElement('option');
+    option.value = item.value;
+    option.textContent = item.textContent || item.value;
+    option.disabled = !!item.disabled;
+    option.title = item.title || '';
+    els.adminPersonaLlm.appendChild(option);
+  }
+  const values = Array.from(els.adminPersonaLlm.options).map((item) => item.value);
+  els.adminPersonaLlm.value = values.includes(currentValue)
+    ? currentValue
+    : values.find((value, index) => !els.adminPersonaLlm.options[index]?.disabled) || values[0] || fallbackValue;
+}
+
+function syncAdminPersonaPromptTemplateOptions() {
+  /** Populate section prompt-template dropdowns and preserve current selection when possible. */
+  const selectors = [
+    { section: 'system', element: els.adminPersonaSystemPromptTemplateSelect },
+    { section: 'assistant', element: els.adminPersonaAssistantPromptTemplateSelect },
+    { section: 'context', element: els.adminPersonaContextPromptTemplateSelect },
+  ].filter((item) => item.element instanceof HTMLSelectElement);
+  if (!selectors.length) {
+    return;
+  }
+  for (const selector of selectors) {
+    const currentValue = String(selector.element.value || '').trim();
+    selector.element.innerHTML = '';
+    const placeholder = document.createElement('option');
+    placeholder.value = '';
+    placeholder.textContent = 'Choose Prompt';
+    placeholder.dataset.tone = 'neutral';
+    selector.element.appendChild(placeholder);
+
+    const scopedTemplates = adminPersonaPromptTemplatesCache.filter(
+      (item) => resolveAdminPersonaPromptTarget(item?.key, item?.file_name) === selector.section
+    );
+    const candidates = scopedTemplates.length ? scopedTemplates : adminPersonaPromptTemplatesCache;
+    for (const item of candidates) {
+      const key = String(item?.key || '').trim();
+      if (!key) {
+        continue;
+      }
+      const tone = adminPersonaPromptTemplateTone(item, selector.section);
+      const option = document.createElement('option');
+      option.value = key;
+      option.textContent = adminPersonaPromptTemplateLabel(item, tone);
+      option.dataset.tone = tone;
+      option.style.color = adminPersonaPromptTemplateColor(tone);
+      selector.element.appendChild(option);
+    }
+    const values = Array.from(selector.element.options).map((item) => String(item.value || '').trim());
+    selector.element.value = values.includes(currentValue) ? currentValue : '';
+    syncAdminPersonaPromptTemplateSelectColor(selector.element);
+  }
+  syncAdminPersonaSelectedPromptTemplateKey();
+}
+
+function adminPersonaPromptTemplateTone(template, sectionFallback = 'assistant') {
+  /** Classify one built-in prompt template for dropdown coloring and suffixing. */
+  const key = String(template?.key || '').trim().toLowerCase();
+  const fileName = String(template?.file_name || '').trim().toLowerCase();
+  const section = String(sectionFallback || '').trim().toLowerCase();
+  const combined = `${key} ${fileName}`;
+  if (combined.endsWith('_sys') || combined.includes('_system') || combined.includes(' system')) {
+    return 'system';
+  }
+  if (combined.endsWith('_user') || combined.includes('_user') || combined.includes(' user')) {
+    return 'user';
+  }
+  if (combined.includes('context')) {
+    return 'context';
+  }
+  if (section === 'context') {
+    return 'context';
+  }
+  if (section === 'system') {
+    return 'system';
+  }
+  return 'user';
+}
+
+function adminPersonaPromptTemplateLabel(template, tone = 'user') {
+  /** Render one dropdown option label with expected suffix convention when applicable. */
+  const key = String(template?.key || '').trim();
+  if (!key) {
+    return '';
+  }
+  if (tone === 'system' && !key.toLowerCase().endsWith('_sys')) {
+    return `${key}_sys`;
+  }
+  if (tone === 'user' && !key.toLowerCase().endsWith('_user')) {
+    return `${key}_user`;
+  }
+  return key;
+}
+
+function adminPersonaPromptTemplateColor(tone = 'neutral') {
+  /** Return one color for prompt-template tone rendering. */
+  const normalizedTone = String(tone || '').trim().toLowerCase();
+  if (normalizedTone === 'system') {
+    return '#ff4040';
+  }
+  if (normalizedTone === 'user') {
+    return '#22c55e';
+  }
+  if (normalizedTone === 'context') {
+    return '#b58900';
+  }
+  return '#dbeafe';
+}
+
+function syncAdminPersonaPromptTemplateSelectColor(selectElement) {
+  /** Color the selected dropdown text using the template tone. */
+  if (!(selectElement instanceof HTMLSelectElement)) {
+    return;
+  }
+  const selectedOption = selectElement.options[selectElement.selectedIndex] || null;
+  const tone = String(selectedOption?.dataset?.tone || 'neutral').trim().toLowerCase();
+  selectElement.style.color = adminPersonaPromptTemplateColor(tone);
+}
+
+function setAdminPersonaPromptTemplateSelectionForKey(promptTemplateKey = '') {
+  /** Select one tracked prompt-template key in the matching section dropdown. */
+  const normalizedKey = String(promptTemplateKey || '').trim();
+  adminPersonaSelectedPromptTemplateKey = normalizedKey;
+  const map = {
+    system: els.adminPersonaSystemPromptTemplateSelect,
+    assistant: els.adminPersonaAssistantPromptTemplateSelect,
+    context: els.adminPersonaContextPromptTemplateSelect,
+  };
+  const selectors = Object.values(map).filter((item) => item instanceof HTMLSelectElement);
+  for (const item of selectors) {
+    item.value = '';
+  }
+  if (!normalizedKey) {
+    for (const item of selectors) {
+      syncAdminPersonaPromptTemplateSelectColor(item);
+    }
+    return;
+  }
+  const targetSection = resolveAdminPersonaPromptTarget(normalizedKey);
+  const targetSelect = map[targetSection];
+  if (targetSelect && Array.from(targetSelect.options).some((item) => String(item.value || '').trim() === normalizedKey)) {
+    targetSelect.value = normalizedKey;
+  } else {
+    const fallback = selectors.find((item) =>
+      Array.from(item.options).some((option) => String(option.value || '').trim() === normalizedKey)
+    );
+    if (fallback) {
+      fallback.value = normalizedKey;
+    }
+  }
+  for (const item of selectors) {
+    syncAdminPersonaPromptTemplateSelectColor(item);
+  }
+}
+
+function syncAdminPersonaSelectedPromptTemplateKey() {
+  /** Sync selected prompt-template key from section dropdown selections. */
+  const values = [
+    String(els.adminPersonaSystemPromptTemplateSelect?.value || '').trim(),
+    String(els.adminPersonaAssistantPromptTemplateSelect?.value || '').trim(),
+    String(els.adminPersonaContextPromptTemplateSelect?.value || '').trim(),
+  ];
+  adminPersonaSelectedPromptTemplateKey = values.find((item) => !!item) || '';
+}
+
+function getAdminPersonaPromptTemplateSelect(targetSection = 'assistant') {
+  /** Resolve the prompt-template select element for one Persona prompt section. */
+  const section = String(targetSection || '').trim().toLowerCase();
+  const map = {
+    system: els.adminPersonaSystemPromptTemplateSelect,
+    assistant: els.adminPersonaAssistantPromptTemplateSelect,
+    context: els.adminPersonaContextPromptTemplateSelect,
+  };
+  return map[section] || map.assistant || null;
+}
+
+function hideAdminPersonaPromptTemplateDropdowns() {
+  /** Hide all Persona prompt-template dropdown controls. */
+  const selectors = [
+    els.adminPersonaSystemPromptTemplateSelect,
+    els.adminPersonaAssistantPromptTemplateSelect,
+    els.adminPersonaContextPromptTemplateSelect,
+  ];
+  for (const selector of selectors) {
+    if (!(selector instanceof HTMLSelectElement)) {
+      continue;
+    }
+    selector.classList.add('hidden');
+  }
+}
+
+async function toggleAdminPersonaPromptTemplateDropdown(targetSection = 'assistant') {
+  /** Toggle one Persona prompt-template dropdown and keep others closed. */
+  const selectElement = getAdminPersonaPromptTemplateSelect(targetSection);
+  if (!(selectElement instanceof HTMLSelectElement)) {
+    return;
+  }
+  if (!adminPersonaPromptPanelActive) {
+    setAdminPersonaFeedback('Open Prompt first before choosing a template.', 'error');
+    return;
+  }
+  if (!adminPersonaPromptTemplatesCache.length) {
+    await loadAdminPersonaPromptTemplates();
+  } else {
+    syncAdminPersonaPromptTemplateOptions();
+  }
+  const willShow = selectElement.classList.contains('hidden');
+  hideAdminPersonaPromptTemplateDropdowns();
+  if (!willShow) {
+    return;
+  }
+  selectElement.value = '';
+  syncAdminPersonaPromptTemplateSelectColor(selectElement);
+  selectElement.classList.remove('hidden');
+  selectElement.focus();
+}
+
+async function loadAdminPersonaPromptTemplates() {
+  /** Load the built-in runtime prompts so the Persona editor can seed from them. */
+  const payload = await api('/api/admin/personas/prompts');
+  adminPersonaPromptTemplatesCache = Array.isArray(payload?.prompts) ? payload.prompts : [];
+  syncAdminPersonaPromptTemplateOptions();
+}
+
+function parseLegacyPersonaPromptSections(legacyPrompts) {
+  /** Parse legacy persona prompt text into system/assistant/context sections. */
+  const text = String(legacyPrompts || '').trim();
+  if (!text) {
+    return { system: '', assistant: '', context: '' };
+  }
+  const buckets = { system: [], assistant: [], context: [] };
+  let currentKey = 'system';
+  let sawMarker = false;
+  for (const rawLine of text.split('\n')) {
+    const line = String(rawLine || '').replace(/\r$/, '');
+    const match = line.match(/^\s*(system|assistant|context)\s*:\s*(.*)$/i);
+    if (match) {
+      currentKey = String(match[1] || '').trim().toLowerCase();
+      if (!Object.prototype.hasOwnProperty.call(buckets, currentKey)) {
+        currentKey = 'system';
+      }
+      sawMarker = true;
+      const remainder = String(match[2] || '').trim();
+      if (remainder) {
+        buckets[currentKey].push(remainder);
+      }
+      continue;
+    }
+    buckets[currentKey].push(line);
+  }
+  if (!sawMarker) {
+    return { system: text, assistant: '', context: '' };
+  }
+  return {
+    system: buckets.system.join('\n').trim(),
+    assistant: buckets.assistant.join('\n').trim(),
+    context: buckets.context.join('\n').trim(),
+  };
+}
+
+function resolveAdminPersonaPromptTarget(promptTemplateKey = '', promptFileName = '') {
+  /** Resolve which prompt section a built-in prompt template should map into. */
+  const combined = `${String(promptTemplateKey || '')} ${String(promptFileName || '')}`.toLowerCase();
+  if (combined.includes('context')) {
+    return 'context';
+  }
+  if (combined.includes('_system') || combined.endsWith('system') || combined.startsWith('system_')) {
+    return 'system';
+  }
+  return 'assistant';
+}
+
+function normalizeAdminPersonaPromptSections(promptSections, legacyPrompts = '', promptTemplateKey = '', promptFileName = '') {
+  /** Normalize persona prompt sections with fallback support for legacy prompt strings + template-key routing. */
+  const source = promptSections && typeof promptSections === 'object' ? promptSections : {};
+  const normalized = {
+    system: String(source.system || '').trim(),
+    assistant: String(source.assistant || '').trim(),
+    context: String(source.context || '').trim(),
+  };
+  if (normalized.system || normalized.assistant || normalized.context) {
+    return normalized;
+  }
+  const parsedLegacy = parseLegacyPersonaPromptSections(legacyPrompts);
+  if (parsedLegacy.assistant || parsedLegacy.context) {
+    return parsedLegacy;
+  }
+  const legacyText = String(legacyPrompts || '').trim();
+  if (!legacyText) {
+    return parsedLegacy;
+  }
+  const target = resolveAdminPersonaPromptTarget(promptTemplateKey, promptFileName);
+  if (target === 'context') {
+    return { system: '', assistant: '', context: legacyText };
+  }
+  if (target === 'assistant') {
+    return { system: '', assistant: legacyText, context: '' };
+  }
+  return { system: legacyText, assistant: '', context: '' };
+}
+
+function composeLegacyPersonaPromptSections(promptSections) {
+  /** Compose deterministic legacy prompt text from system/assistant/context sections. */
+  const normalized = normalizeAdminPersonaPromptSections(promptSections, '');
+  const parts = [];
+  if (normalized.system) {
+    parts.push(`System:\n${normalized.system}`);
+  }
+  if (normalized.assistant) {
+    parts.push(`Assistant:\n${normalized.assistant}`);
+  }
+  if (normalized.context) {
+    parts.push(`Context:\n${normalized.context}`);
+  }
+  return parts.join('\n\n').trim();
+}
+
+function setAdminPersonaPromptSectionsInForm(promptSections) {
+  /** Write normalized prompt sections into the Persona form fields. */
+  const normalized = normalizeAdminPersonaPromptSections(promptSections, '');
+  if (els.adminPersonaSystemPrompt) {
+    els.adminPersonaSystemPrompt.value = normalized.system;
+  }
+  if (els.adminPersonaAssistantPrompt) {
+    els.adminPersonaAssistantPrompt.value = normalized.assistant;
+  }
+  if (els.adminPersonaContextPrompt) {
+    els.adminPersonaContextPrompt.value = normalized.context;
+  }
+}
+
+function getAdminPersonaPromptSectionsFromForm() {
+  /** Read prompt sections from the Persona form fields. */
+  return normalizeAdminPersonaPromptSections({
+    system: String(els.adminPersonaSystemPrompt?.value || '').trim(),
+    assistant: String(els.adminPersonaAssistantPrompt?.value || '').trim(),
+    context: String(els.adminPersonaContextPrompt?.value || '').trim(),
   });
-  els.adminUserName.value = '';
-  await loadAdminUsers();
-  setStatus('Admin user added.');
+}
+
+function setAdminPersonaPromptSectionsInModal(promptSections) {
+  /** Write normalized prompt sections into the Persona prompt modal fields. */
+  const normalized = normalizeAdminPersonaPromptSections(promptSections, '');
+  if (els.adminPersonaPromptModalSystem) {
+    els.adminPersonaPromptModalSystem.value = normalized.system;
+  }
+  if (els.adminPersonaPromptModalAssistant) {
+    els.adminPersonaPromptModalAssistant.value = normalized.assistant;
+  }
+  if (els.adminPersonaPromptModalContext) {
+    els.adminPersonaPromptModalContext.value = normalized.context;
+  }
+}
+
+function getAdminPersonaPromptSectionsFromModal() {
+  /** Read prompt sections from the Persona prompt modal fields. */
+  return normalizeAdminPersonaPromptSections({
+    system: String(els.adminPersonaPromptModalSystem?.value || '').trim(),
+    assistant: String(els.adminPersonaPromptModalAssistant?.value || '').trim(),
+    context: String(els.adminPersonaPromptModalContext?.value || '').trim(),
+  });
+}
+
+function adminPersonaPromptSectionsHaveContent(promptSections) {
+  /** Return whether any persona prompt section has content. */
+  const normalized = normalizeAdminPersonaPromptSections(promptSections, '');
+  return Boolean(normalized.system || normalized.assistant || normalized.context);
+}
+
+function loadSelectedAdminPersonaPromptTemplate(targetSection = 'assistant') {
+  /** Add one selected built-in prompt template into one specific Persona prompt section field. */
+  const section = String(targetSection || '').trim().toLowerCase();
+  const selectBySection = {
+    system: els.adminPersonaSystemPromptTemplateSelect,
+    assistant: els.adminPersonaAssistantPromptTemplateSelect,
+    context: els.adminPersonaContextPromptTemplateSelect,
+  };
+  const fieldBySection = {
+    system: els.adminPersonaSystemPrompt,
+    assistant: els.adminPersonaAssistantPrompt,
+    context: els.adminPersonaContextPrompt,
+  };
+  const labelBySection = {
+    system: 'System Prompt',
+    assistant: 'Assistant Prompt',
+    context: 'Context Prompt',
+  };
+  const selectElement = selectBySection[section] || selectBySection.assistant;
+  const field = fieldBySection[section] || fieldBySection.assistant;
+  const sectionLabel = labelBySection[section] || labelBySection.assistant;
+  const selectedKey = String(selectElement?.value || '').trim();
+  if (!selectedKey) {
+    setAdminPersonaFeedback(`Select a ${sectionLabel} template from the dropdown first.`, 'error');
+    return;
+  }
+  const selectedTemplate = adminPersonaPromptTemplatesCache.find(
+    (item) => String(item?.key || '').trim() === selectedKey
+  );
+  if (!selectedTemplate) {
+    setAdminPersonaFeedback('The selected prompt template was not found.', 'error');
+    return;
+  }
+  const content = String(selectedTemplate.content || '').trim();
+  if (field) {
+    const current = String(field.value || '').trim();
+    field.value = current ? `${current}\n\n${content}` : content;
+  }
+  setAdminPersonaPromptTemplateSelectionForKey(selectedKey);
+  setAdminPersonaFeedback(`Added built-in prompt ${selectedKey} into ${sectionLabel}.`, 'info');
+}
+
+async function saveAdminPersonaPromptSection(targetSection = 'assistant') {
+  /** Persist Persona prompt edits from one prompt window while keeping the Persona editor open. */
+  const section = String(targetSection || '').trim().toLowerCase();
+  const fieldBySection = {
+    system: els.adminPersonaSystemPrompt,
+    assistant: els.adminPersonaAssistantPrompt,
+    context: els.adminPersonaContextPrompt,
+  };
+  const labelBySection = {
+    system: 'System Prompt',
+    assistant: 'Assistant Prompt',
+    context: 'Context Prompt',
+  };
+  const field = fieldBySection[section] || fieldBySection.assistant;
+  const label = labelBySection[section] || labelBySection.assistant;
+  const text = String(field?.value || '').trim();
+  if (!text) {
+    field?.focus();
+    setAdminPersonaFeedback(`Enter ${label} text before saving.`, 'error');
+    setStatus(`Enter ${label} text before saving.`);
+    return;
+  }
+  setAdminPersonaFeedback(`Saving ${label}...`, 'info');
+  await addAdminPersona({ closeOnSuccess: false });
+  setAdminPersonaFeedback(`${label} saved.`, 'success');
+  setStatus(`${label} saved.`);
+}
+
+function getAdminPersonaRagLabel(ragKey) {
+  /** Resolve one persona RAG key to a human-friendly label. */
+  const normalizedKey = String(
+    (ragKey && typeof ragKey === 'object' ? ragKey.key : ragKey) || ''
+  ).trim();
+  const match = adminPersonaRagOptionsCache.find((item) => String(item?.key || '').trim() === normalizedKey);
+  return String(match?.label || normalizedKey || 'Unknown RAG');
+}
+
+function getAdminPersonaToolLabel(toolKey) {
+  /** Resolve one persona MCP tool key to a human-friendly label. */
+  const normalizedKey = String(
+    (toolKey && typeof toolKey === 'object' ? toolKey.key : toolKey) || ''
+  ).trim();
+  const match = adminPersonaToolOptionsCache.find((item) => String(item?.key || '').trim() === normalizedKey);
+  return String(match?.label || normalizedKey || 'Unknown Tool');
+}
+
+function normalizeAdminPersonaRagBinding(ragValue) {
+  /** Normalize a saved RAG binding into the frontend shape used by the persona editor. */
+  if (ragValue && typeof ragValue === 'object' && !Array.isArray(ragValue)) {
+    const key = String(ragValue.key || '').trim();
+    if (!key) {
+      return null;
+    }
+    return {
+      key,
+      enabled: ragValue.enabled !== false,
+    };
+  }
+  const key = String(ragValue || '').trim();
+  if (!key) {
+    return null;
+  }
+  return {
+    key,
+    enabled: true,
+  };
+}
+
+function normalizeAdminPersonaToolBinding(toolValue) {
+  /** Normalize a saved MCP tool binding into the frontend shape used by the persona editor. */
+  if (toolValue && typeof toolValue === 'object' && !Array.isArray(toolValue)) {
+    const key = String(toolValue.key || '').trim();
+    if (!key) {
+      return null;
+    }
+    return {
+      key,
+      enabled: toolValue.enabled !== false,
+    };
+  }
+  const key = String(toolValue || '').trim();
+  if (!key) {
+    return null;
+  }
+  return {
+    key,
+    enabled: true,
+  };
+}
+
+function getActiveAdminPersonaGraphConfig() {
+  /** Resolve the active persona graph configuration from the open form or current saved selection. */
+  const formOpen = !els.adminPersonaCreatePanel?.classList.contains('hidden');
+  const selectedPersona = adminPersonasCache.find(
+    (item) => String(item?.persona_id || '').trim() === selectedAdminPersonaId
+  );
+
+  if (formOpen) {
+    const draftName = String(els.adminPersonaName?.value || '').trim();
+    const { provider, model } = decodeLlmOption(els.adminPersonaLlm?.value || '');
+    const draftSequence = Array.isArray(adminPersonaRagSequence)
+      ? adminPersonaRagSequence
+          .map((item) => normalizeAdminPersonaRagBinding(item))
+          .filter((item) => !!item)
+      : [];
+    const draftToolSequence = Array.isArray(adminPersonaToolSequence)
+      ? adminPersonaToolSequence
+          .map((item) => normalizeAdminPersonaToolBinding(item))
+          .filter((item) => !!item)
+      : [];
+    if (draftName || editingAdminPersonaId || draftSequence.length || draftToolSequence.length) {
+      return {
+        source: 'draft',
+        name: draftName || (selectedPersona?.name ? `${selectedPersona.name} (draft)` : 'Unsaved Persona'),
+        llmProvider: provider,
+        llmModel: model,
+        ragSequence: draftSequence,
+        toolSequence: draftToolSequence,
+      };
+    }
+  }
+
+  if (!selectedPersona) {
+    return null;
+  }
+
+  return {
+    source: 'saved',
+    name: String(selectedPersona.name || '').trim() || 'Saved Persona',
+    llmProvider: String(selectedPersona.llm_provider || '').trim().toLowerCase(),
+    llmModel: String(selectedPersona.llm_model || '').trim(),
+    ragSequence: Array.isArray(selectedPersona.rag_sequence)
+      ? selectedPersona.rag_sequence
+          .map((item) => normalizeAdminPersonaRagBinding(item))
+          .filter((item) => !!item)
+      : [],
+    toolSequence: Array.isArray(selectedPersona.tool_sequence)
+      ? selectedPersona.tool_sequence
+          .map((item) => normalizeAdminPersonaToolBinding(item))
+          .filter((item) => !!item)
+      : [],
+  };
+}
+
+function renderAdminPersonaGraphMeta() {
+  /** Show which persona and enabled RAG chain will be used for graph-only questions. */
+  if (!els.adminPersonaGraphMeta) {
+    return;
+  }
+  const config = getActiveAdminPersonaGraphConfig();
+  if (!config) {
+    els.adminPersonaGraphMeta.textContent = 'No active persona graph configuration.';
+    return;
+  }
+  const enabledRags = config.ragSequence.filter((item) => item.enabled);
+  const enabledSummary = enabledRags.length
+    ? enabledRags.map((item) => getAdminPersonaRagLabel(item)).join(' -> ')
+    : 'No enabled RAG steps';
+  const enabledTools = (Array.isArray(config.toolSequence) ? config.toolSequence : []).filter((item) => item.enabled);
+  const enabledToolsSummary = enabledTools.length
+    ? enabledTools.map((item) => getAdminPersonaToolLabel(item)).join(' -> ')
+    : 'No enabled MCP tools';
+  const providerLabel = config.llmProvider === 'ollama' ? 'Ollama' : 'ChatGPT';
+  els.adminPersonaGraphMeta.textContent =
+    `${config.name} [${config.source}] | ${providerLabel} (${config.llmModel || 'unconfigured'}) | `
+    + `${enabledSummary} | ${enabledToolsSummary}`;
+}
+
+function renderAdminPersonaStoredGraphSession(persona) {
+  /** Restore the last saved graph-only persona question and answer from persistence. */
+  if (!els.adminPersonaGraphAnswer) {
+    return;
+  }
+  const question = String(persona?.last_graph_question || '').trim();
+  const answer = String(persona?.last_graph_answer || '').trim();
+  if (!question || !answer) {
+    els.adminPersonaGraphAnswer.value =
+      "Ask a graph question to test the active persona's Graph RAG configuration.";
+    return;
+  }
+  if (els.adminPersonaGraphQuestion) {
+    els.adminPersonaGraphQuestion.value = question;
+  }
+  els.adminPersonaGraphAnswer.value = answer;
+}
+
+function setAdminPersonaGraphProcessing(active) {
+  /** Toggle the local progress indicator and clock for persona graph-only questions. */
+  const isActive = !!active;
+  if (els.adminPersonaGraphProgress) {
+    els.adminPersonaGraphProgress.classList.toggle('hidden', !isActive);
+  }
+  const controlsEnabled = !isActive && adminPersonaRagPanelActive;
+  if (els.adminPersonaGraphAskBtn) {
+    els.adminPersonaGraphAskBtn.disabled = !controlsEnabled;
+    els.adminPersonaGraphAskBtn.textContent = isActive ? 'Asking...' : 'Ask Graph';
+  }
+  if (els.adminPersonaGraphClearBtn) {
+    els.adminPersonaGraphClearBtn.disabled = !controlsEnabled;
+  }
+  if (els.adminPersonaGraphQuestion) {
+    els.adminPersonaGraphQuestion.disabled = !controlsEnabled;
+  }
+  if (!els.adminPersonaGraphClock) {
+    return;
+  }
+  if (isActive) {
+    startClock('adminPersonaGraph', els.adminPersonaGraphClock);
+    return;
+  }
+  stopClock('adminPersonaGraph');
+  els.adminPersonaGraphClock.textContent = '0.0s';
+}
+
+function syncAdminPersonaRagOptions() {
+  /** Mirror current backend RAG chain options into the persona editor selector. */
+  if (!els.adminPersonaRagSelect) {
+    return;
+  }
+  const currentValue = String(els.adminPersonaRagSelect.value || '').trim();
+  els.adminPersonaRagSelect.innerHTML = '';
+  if (!adminPersonaRagOptionsCache.length) {
+    const option = document.createElement('option');
+    option.value = '';
+    option.textContent = 'No RAG steps available';
+    els.adminPersonaRagSelect.appendChild(option);
+    els.adminPersonaRagSelect.disabled = true;
+    return;
+  }
+  els.adminPersonaRagSelect.disabled = !adminPersonaRagPanelActive;
+  const placeholder = document.createElement('option');
+  placeholder.value = '';
+  placeholder.textContent = 'Choose one RAG step';
+  els.adminPersonaRagSelect.appendChild(placeholder);
+  for (const item of adminPersonaRagOptionsCache) {
+    const option = document.createElement('option');
+    option.value = String(item.key || '').trim();
+    option.textContent = item.label || item.key || 'Unknown RAG';
+    option.title = item.description || '';
+    option.disabled = item.available === false;
+    els.adminPersonaRagSelect.appendChild(option);
+  }
+  const values = Array.from(els.adminPersonaRagSelect.options).map((item) => item.value);
+  els.adminPersonaRagSelect.value = values.includes(currentValue) ? currentValue : '';
+}
+
+function renderAdminPersonaRagSequence() {
+  /** Render the ordered RAG chain attached to the persona currently being edited. */
+  if (!els.adminPersonaRagList) {
+    return;
+  }
+  if (!adminPersonaRagSequence.length) {
+    els.adminPersonaRagList.classList.add('muted');
+    els.adminPersonaRagList.textContent = 'No RAG steps selected.';
+    return;
+  }
+  els.adminPersonaRagList.classList.remove('muted');
+  const rows = adminPersonaRagSequence.map((ragBinding, index) => {
+    const row = document.createElement('div');
+    row.className = 'admin-persona-rag-row';
+
+    const label = document.createElement('span');
+    label.className = 'admin-persona-rag-label';
+    const stateLabel = ragBinding.enabled ? 'Enabled' : 'Disabled';
+    label.textContent = `${index + 1}. ${getAdminPersonaRagLabel(ragBinding)} [${stateLabel}]`;
+    row.appendChild(label);
+
+    const actions = document.createElement('div');
+    actions.className = 'admin-persona-rag-actions';
+
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'secondary';
+    toggle.textContent = ragBinding.enabled ? 'Disable' : 'Enable';
+    toggle.disabled = !adminPersonaRagPanelActive;
+    toggle.addEventListener('click', () => toggleAdminPersonaRag(index));
+    actions.appendChild(toggle);
+
+    const up = document.createElement('button');
+    up.type = 'button';
+    up.className = 'secondary';
+    up.textContent = 'Up';
+    up.disabled = !adminPersonaRagPanelActive || index === 0;
+    up.addEventListener('click', () => moveAdminPersonaRag(index, -1));
+    actions.appendChild(up);
+
+    const down = document.createElement('button');
+    down.type = 'button';
+    down.className = 'secondary';
+    down.textContent = 'Down';
+    down.disabled = !adminPersonaRagPanelActive || index >= adminPersonaRagSequence.length - 1;
+    down.addEventListener('click', () => moveAdminPersonaRag(index, 1));
+    actions.appendChild(down);
+
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'secondary';
+    remove.textContent = 'Remove';
+    remove.disabled = !adminPersonaRagPanelActive;
+    remove.addEventListener('click', () => removeAdminPersonaRag(index));
+    actions.appendChild(remove);
+
+    row.appendChild(actions);
+    return row;
+  });
+  els.adminPersonaRagList.replaceChildren(...rows);
+}
+
+function moveAdminPersonaRag(index, direction) {
+  /** Move one persona RAG step earlier or later in the configured execution order. */
+  const currentIndex = Number(index);
+  const nextIndex = currentIndex + Number(direction);
+  if (
+    !Number.isInteger(currentIndex) ||
+    currentIndex < 0 ||
+    currentIndex >= adminPersonaRagSequence.length ||
+    nextIndex < 0 ||
+    nextIndex >= adminPersonaRagSequence.length
+  ) {
+    return;
+  }
+  const nextSequence = [...adminPersonaRagSequence];
+  const [item] = nextSequence.splice(currentIndex, 1);
+  nextSequence.splice(nextIndex, 0, item);
+  adminPersonaRagSequence = nextSequence;
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function removeAdminPersonaRag(index) {
+  /** Remove one RAG step from the current persona chain definition. */
+  const currentIndex = Number(index);
+  if (!Number.isInteger(currentIndex) || currentIndex < 0 || currentIndex >= adminPersonaRagSequence.length) {
+    return;
+  }
+  adminPersonaRagSequence = adminPersonaRagSequence.filter((_, itemIndex) => itemIndex !== currentIndex);
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function toggleAdminPersonaRag(index) {
+  /** Toggle whether one persona RAG step is enabled without changing its position. */
+  const currentIndex = Number(index);
+  if (!Number.isInteger(currentIndex) || currentIndex < 0 || currentIndex >= adminPersonaRagSequence.length) {
+    return;
+  }
+  adminPersonaRagSequence = adminPersonaRagSequence.map((item, itemIndex) =>
+    itemIndex === currentIndex ? { ...item, enabled: !item.enabled } : item
+  );
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function addAdminPersonaRag() {
+  /** Append the currently selected RAG step to the persona chain if it is not already present. */
+  const selectedRagKey = String(els.adminPersonaRagSelect?.value || '').trim();
+  if (!selectedRagKey) {
+    setAdminPersonaFeedback('Choose a RAG step before adding it to the persona chain.', 'error');
+    return;
+  }
+  if (adminPersonaRagSequence.some((item) => item.key === selectedRagKey)) {
+    setAdminPersonaFeedback(`${getAdminPersonaRagLabel(selectedRagKey)} is already in this persona chain.`, 'error');
+    return;
+  }
+  adminPersonaRagSequence = [...adminPersonaRagSequence, { key: selectedRagKey, enabled: true }];
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaGraphMeta();
+  setAdminPersonaFeedback(`${getAdminPersonaRagLabel(selectedRagKey)} added to the persona chain.`, 'info');
+}
+
+async function loadAdminPersonaRagOptions() {
+  /** Load the currently available backend RAG steps that personas can execute in sequence. */
+  const payload = await api('/api/admin/personas/rags');
+  adminPersonaRagOptionsCache = Array.isArray(payload?.rags) ? payload.rags : [];
+  syncAdminPersonaRagOptions();
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function syncAdminPersonaToolOptions() {
+  /** Mirror current backend MCP tool options into the persona editor selector. */
+  if (!els.adminPersonaToolSelect) {
+    return;
+  }
+  const currentValue = String(els.adminPersonaToolSelect.value || '').trim();
+  els.adminPersonaToolSelect.innerHTML = '';
+  if (!adminPersonaToolOptionsCache.length) {
+    const option = document.createElement('option');
+    option.value = '';
+    option.textContent = 'No MCP tools available';
+    els.adminPersonaToolSelect.appendChild(option);
+    els.adminPersonaToolSelect.disabled = true;
+    return;
+  }
+  els.adminPersonaToolSelect.disabled = !adminPersonaToolsPanelActive;
+  const placeholder = document.createElement('option');
+  placeholder.value = '';
+  placeholder.textContent = 'Choose one MCP tool';
+  els.adminPersonaToolSelect.appendChild(placeholder);
+  for (const item of adminPersonaToolOptionsCache) {
+    const option = document.createElement('option');
+    option.value = String(item.key || '').trim();
+    option.textContent = item.label || item.key || 'Unknown MCP tool';
+    option.title = item.description || '';
+    option.disabled = item.available === false;
+    els.adminPersonaToolSelect.appendChild(option);
+  }
+  const values = Array.from(els.adminPersonaToolSelect.options).map((item) => item.value);
+  els.adminPersonaToolSelect.value = values.includes(currentValue) ? currentValue : '';
+}
+
+function renderAdminPersonaToolSequence() {
+  /** Render the ordered MCP tools chain attached to the persona currently being edited. */
+  if (!els.adminPersonaToolList) {
+    return;
+  }
+  if (!adminPersonaToolSequence.length) {
+    els.adminPersonaToolList.classList.add('muted');
+    els.adminPersonaToolList.textContent = 'No MCP tools selected.';
+    return;
+  }
+  els.adminPersonaToolList.classList.remove('muted');
+  const rows = adminPersonaToolSequence.map((toolBinding, index) => {
+    const row = document.createElement('div');
+    row.className = 'admin-persona-rag-row';
+
+    const label = document.createElement('span');
+    label.className = 'admin-persona-rag-label';
+    const stateLabel = toolBinding.enabled ? 'Enabled' : 'Disabled';
+    label.textContent = `${index + 1}. ${getAdminPersonaToolLabel(toolBinding)} [${stateLabel}]`;
+    row.appendChild(label);
+
+    const actions = document.createElement('div');
+    actions.className = 'admin-persona-rag-actions';
+
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'secondary';
+    toggle.textContent = toolBinding.enabled ? 'Disable' : 'Enable';
+    toggle.disabled = !adminPersonaToolsPanelActive;
+    toggle.addEventListener('click', () => toggleAdminPersonaTool(index));
+    actions.appendChild(toggle);
+
+    const up = document.createElement('button');
+    up.type = 'button';
+    up.className = 'secondary';
+    up.textContent = 'Up';
+    up.disabled = !adminPersonaToolsPanelActive || index === 0;
+    up.addEventListener('click', () => moveAdminPersonaTool(index, -1));
+    actions.appendChild(up);
+
+    const down = document.createElement('button');
+    down.type = 'button';
+    down.className = 'secondary';
+    down.textContent = 'Down';
+    down.disabled = !adminPersonaToolsPanelActive || index >= adminPersonaToolSequence.length - 1;
+    down.addEventListener('click', () => moveAdminPersonaTool(index, 1));
+    actions.appendChild(down);
+
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'secondary';
+    remove.textContent = 'Remove';
+    remove.disabled = !adminPersonaToolsPanelActive;
+    remove.addEventListener('click', () => removeAdminPersonaTool(index));
+    actions.appendChild(remove);
+
+    row.appendChild(actions);
+    return row;
+  });
+  els.adminPersonaToolList.replaceChildren(...rows);
+}
+
+function moveAdminPersonaTool(index, direction) {
+  /** Move one persona MCP tool earlier or later in the configured execution order. */
+  const currentIndex = Number(index);
+  const nextIndex = currentIndex + Number(direction);
+  if (
+    !Number.isInteger(currentIndex)
+    || currentIndex < 0
+    || currentIndex >= adminPersonaToolSequence.length
+    || nextIndex < 0
+    || nextIndex >= adminPersonaToolSequence.length
+  ) {
+    return;
+  }
+  const nextSequence = [...adminPersonaToolSequence];
+  const [item] = nextSequence.splice(currentIndex, 1);
+  nextSequence.splice(nextIndex, 0, item);
+  adminPersonaToolSequence = nextSequence;
+  renderAdminPersonaToolSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function removeAdminPersonaTool(index) {
+  /** Remove one MCP tool from the current persona chain definition. */
+  const currentIndex = Number(index);
+  if (!Number.isInteger(currentIndex) || currentIndex < 0 || currentIndex >= adminPersonaToolSequence.length) {
+    return;
+  }
+  adminPersonaToolSequence = adminPersonaToolSequence.filter((_, itemIndex) => itemIndex !== currentIndex);
+  renderAdminPersonaToolSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function toggleAdminPersonaTool(index) {
+  /** Toggle whether one persona MCP tool is enabled without changing its position. */
+  const currentIndex = Number(index);
+  if (!Number.isInteger(currentIndex) || currentIndex < 0 || currentIndex >= adminPersonaToolSequence.length) {
+    return;
+  }
+  adminPersonaToolSequence = adminPersonaToolSequence.map((item, itemIndex) =>
+    itemIndex === currentIndex ? { ...item, enabled: !item.enabled } : item
+  );
+  renderAdminPersonaToolSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+function addAdminPersonaTool() {
+  /** Append the currently selected MCP tool to the persona chain if it is not already present. */
+  const selectedToolKey = String(els.adminPersonaToolSelect?.value || '').trim();
+  if (!selectedToolKey) {
+    setAdminPersonaFeedback('Choose an MCP tool before adding it to the persona chain.', 'error');
+    return;
+  }
+  if (adminPersonaToolSequence.some((item) => item.key === selectedToolKey)) {
+    setAdminPersonaFeedback(`${getAdminPersonaToolLabel(selectedToolKey)} is already in this persona chain.`, 'error');
+    return;
+  }
+  adminPersonaToolSequence = [...adminPersonaToolSequence, { key: selectedToolKey, enabled: true }];
+  renderAdminPersonaToolSequence();
+  renderAdminPersonaGraphMeta();
+  setAdminPersonaFeedback(`${getAdminPersonaToolLabel(selectedToolKey)} added to the persona chain.`, 'info');
+}
+
+async function loadAdminPersonaToolOptions() {
+  /** Load the currently available backend MCP tool steps that personas can execute in sequence. */
+  const payload = await api('/api/admin/personas/tools');
+  adminPersonaToolOptionsCache = Array.isArray(payload?.tools) ? payload.tools : [];
+  syncAdminPersonaToolOptions();
+  renderAdminPersonaToolSequence();
+  renderAdminPersonaGraphMeta();
+}
+
+async function loadAdminPersonas() {
+  /** Load saved personas for the Admin/Personas panel. */
+  const payload = await api('/api/admin/personas');
+  adminPersonasCache = Array.isArray(payload?.personas) ? payload.personas : [];
+  renderAdminPersonas(adminPersonasCache);
+}
+
+function renderAdminPersonas(personas) {
+  /** Render the saved persona list for the Personas subtab. */
+  if (!els.adminPersonaList) {
+    return;
+  }
+  const normalizedPersonas = Array.isArray(personas) ? personas : [];
+  syncAdminPersonaSelection(normalizedPersonas);
+  if (!normalizedPersonas.length) {
+    els.adminPersonaList.classList.add('muted');
+    els.adminPersonaList.textContent = 'No personas added yet.';
+    return;
+  }
+  els.adminPersonaList.classList.remove('muted');
+  const items = normalizedPersonas.map((item) => {
+    const row = document.createElement('div');
+    row.className = 'admin-user-row';
+    row.dataset.personaId = String(item.persona_id || '');
+    row.setAttribute('role', 'button');
+    row.setAttribute('tabindex', '0');
+    row.classList.toggle('selected', row.dataset.personaId === selectedAdminPersonaId);
+    const llmLabel = `${item.llm_provider === 'openai' ? 'ChatGPT' : 'Ollama'} (${item.llm_model})`;
+    const ragCount = Array.isArray(item.rag_sequence) ? item.rag_sequence.length : 0;
+    const toolCount = Array.isArray(item.tool_sequence) ? item.tool_sequence.length : 0;
+    const shell = document.createElement('div');
+    shell.className = 'admin-user-row-shell';
+
+    const copy = document.createElement('span');
+    copy.className = 'admin-user-row-copy';
+    copy.textContent = `${item.name} | ${llmLabel} | RAG steps: ${ragCount} | MCP tools: ${toolCount} | ${item.created_at}`;
+    shell.appendChild(copy);
+
+    row.appendChild(shell);
+
+    const select = () => selectAdminPersonaById(item.persona_id);
+    row.addEventListener('click', select);
+    row.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') {
+        return;
+      }
+      event.preventDefault();
+      select();
+    });
+    return row;
+  });
+  els.adminPersonaList.replaceChildren(...items);
+}
+
+function syncAdminPersonaSelection(personas) {
+  /** Keep the current-persona selector and selected-persona text in sync. */
+  const normalizedPersonas = Array.isArray(personas) ? personas : [];
+  if (els.adminPersonaSelect) {
+    els.adminPersonaSelect.innerHTML = '';
+    if (!normalizedPersonas.length) {
+      const option = document.createElement('option');
+      option.value = '';
+      option.textContent = 'No personas available';
+      els.adminPersonaSelect.appendChild(option);
+      els.adminPersonaSelect.disabled = true;
+      selectedAdminPersonaId = '';
+    } else {
+      els.adminPersonaSelect.disabled = false;
+      const availableIds = new Set(normalizedPersonas.map((item) => String(item.persona_id || '').trim()));
+      if (!availableIds.has(selectedAdminPersonaId)) {
+        selectedAdminPersonaId = String(normalizedPersonas[0]?.persona_id || '').trim();
+      }
+      for (const item of normalizedPersonas) {
+        const option = document.createElement('option');
+        option.value = String(item.persona_id || '').trim();
+        option.textContent = item.name || 'Unnamed Persona';
+        els.adminPersonaSelect.appendChild(option);
+      }
+      els.adminPersonaSelect.value = selectedAdminPersonaId;
+    }
+  }
+  const selectedPersona = normalizedPersonas.find(
+    (item) => String(item.persona_id || '').trim() === selectedAdminPersonaId
+  );
+  if (els.adminPersonaSelectedMeta) {
+    if (!selectedPersona) {
+      els.adminPersonaSelectedMeta.textContent = 'No persona selected.';
+    } else {
+      const llmLabel = `${selectedPersona.llm_provider === 'openai' ? 'ChatGPT' : 'Ollama'} (${selectedPersona.llm_model})`;
+      const ragSummary = Array.isArray(selectedPersona.rag_sequence) && selectedPersona.rag_sequence.length
+        ? selectedPersona.rag_sequence
+            .map((item) => {
+              const binding = normalizeAdminPersonaRagBinding(item);
+              if (!binding) {
+                return null;
+              }
+              return `${getAdminPersonaRagLabel(binding)}:${binding.enabled ? 'on' : 'off'}`;
+            })
+            .filter(Boolean)
+            .join(' -> ')
+        : 'No RAG steps';
+      const toolSummary = Array.isArray(selectedPersona.tool_sequence) && selectedPersona.tool_sequence.length
+        ? selectedPersona.tool_sequence
+            .map((item) => {
+              const binding = normalizeAdminPersonaToolBinding(item);
+              if (!binding) {
+                return null;
+              }
+              return `${getAdminPersonaToolLabel(binding)}:${binding.enabled ? 'on' : 'off'}`;
+            })
+            .filter(Boolean)
+            .join(' -> ')
+        : 'No MCP tools';
+      els.adminPersonaSelectedMeta.textContent =
+        `Selected: ${selectedPersona.name} (${llmLabel}) | ${ragSummary} | ${toolSummary}`;
+    }
+  }
+  renderAdminPersonaGraphMeta();
+}
+
+function setAdminPersonaFeedback(message, tone = 'info') {
+  /** Render local feedback in the Admin/Personas panel. */
+  if (!els.adminPersonaFeedback) {
+    return;
+  }
+  const nextMessage = String(message || '').trim();
+  els.adminPersonaFeedback.textContent = nextMessage || ' ';
+  els.adminPersonaFeedback.classList.remove('muted', 'error', 'success');
+  if (!nextMessage) {
+    els.adminPersonaFeedback.classList.add('muted');
+    return;
+  }
+  if (tone === 'error') {
+    els.adminPersonaFeedback.classList.add('error');
+    return;
+  }
+  if (tone === 'success') {
+    els.adminPersonaFeedback.classList.add('success');
+    return;
+  }
+  els.adminPersonaFeedback.classList.add('muted');
+}
+
+function setAdminPersonaPromptModalSentiment(message, tone = 'info') {
+  /** Render prompt-sentiment feedback inside the persona prompt pop-out. */
+  if (!els.adminPersonaPromptSentimentMeta) {
+    return;
+  }
+  const nextMessage = String(message || '').trim();
+  els.adminPersonaPromptSentimentMeta.textContent = nextMessage || 'Prompt sentiment has not been scored.';
+  els.adminPersonaPromptSentimentMeta.classList.remove('muted', 'error', 'success');
+  if (!nextMessage || tone === 'info') {
+    els.adminPersonaPromptSentimentMeta.classList.add('muted');
+    return;
+  }
+  if (tone === 'error') {
+    els.adminPersonaPromptSentimentMeta.classList.add('error');
+    return;
+  }
+  els.adminPersonaPromptSentimentMeta.classList.add('success');
+}
+
+function showAdminPersonaPromptModal({
+  personaId = '',
+  personaName = '',
+  promptSections = null,
+  promptText = '',
+  promptTemplateKey = '',
+} = {}) {
+  /** Open the persona prompt pop-out for one saved persona or the active draft prompt sections. */
+  if (
+    !els.adminPersonaPromptModal ||
+    !els.adminPersonaPromptModalSystem ||
+    !els.adminPersonaPromptModalAssistant ||
+    !els.adminPersonaPromptModalContext
+  ) {
+    return;
+  }
+  adminPersonaPromptModalPersonaId = String(personaId || '').trim();
+  adminPersonaPromptModalPersonaName = String(personaName || '').trim();
+
+  if (els.adminPersonaPromptModalTitle) {
+    els.adminPersonaPromptModalTitle.textContent = 'Persona Prompt';
+  }
+  if (els.adminPersonaPromptModalMeta) {
+    if (adminPersonaPromptModalPersonaId) {
+      const name = adminPersonaPromptModalPersonaName || 'Saved Persona';
+      els.adminPersonaPromptModalMeta.textContent = `${name} | id: ${adminPersonaPromptModalPersonaId}`;
+    } else {
+      els.adminPersonaPromptModalMeta.textContent = 'Active draft prompt';
+    }
+  }
+  const normalizedPromptSections = normalizeAdminPersonaPromptSections(
+    promptSections,
+    promptText,
+    String(promptTemplateKey || '').trim()
+  );
+  setAdminPersonaPromptSectionsInModal(normalizedPromptSections);
+  setAdminPersonaPromptModalSentiment('', 'info');
+  if (els.adminPersonaPromptResaveBtn) {
+    els.adminPersonaPromptResaveBtn.disabled = !adminPersonaPromptModalPersonaId;
+  }
+  els.adminPersonaPromptModal.classList.remove('hidden');
+  els.adminPersonaPromptModalSystem.focus();
+}
+
+function hideAdminPersonaPromptModal() {
+  /** Close the persona prompt pop-out and clear transient modal state. */
+  if (
+    !els.adminPersonaPromptModal ||
+    !els.adminPersonaPromptModalSystem ||
+    !els.adminPersonaPromptModalAssistant ||
+    !els.adminPersonaPromptModalContext
+  ) {
+    return;
+  }
+  els.adminPersonaPromptModal.classList.add('hidden');
+  els.adminPersonaPromptModalSystem.value = '';
+  els.adminPersonaPromptModalAssistant.value = '';
+  els.adminPersonaPromptModalContext.value = '';
+  if (els.adminPersonaPromptModalMeta) {
+    els.adminPersonaPromptModalMeta.textContent = 'No prompt selected.';
+  }
+  setAdminPersonaPromptModalSentiment('', 'info');
+  adminPersonaPromptModalPersonaId = '';
+  adminPersonaPromptModalPersonaName = '';
+}
+
+function openAdminPersonaPromptFromForm() {
+  /** Open the prompt pop-out using the current draft/editor prompt sections. */
+  const promptSections = getAdminPersonaPromptSectionsFromForm();
+  const draftName = String(els.adminPersonaName?.value || '').trim() || 'Draft Persona';
+  const draftPersonaId = String(editingAdminPersonaId || '').trim();
+  const promptTemplateKey = String(adminPersonaSelectedPromptTemplateKey || '').trim();
+  showAdminPersonaPromptModal({
+    personaId: draftPersonaId,
+    personaName: draftName,
+    promptSections,
+    promptTemplateKey,
+  });
+}
+
+function syncAdminPersonaPromptToggleButtonLabel() {
+  /** Keep the Prompt toggle button label fixed. */
+  if (!els.adminPersonaOpenPromptModalBtn) {
+    return;
+  }
+  els.adminPersonaOpenPromptModalBtn.textContent = 'Prompt';
+}
+
+function syncAdminPersonaRagToggleButtonLabel() {
+  /** Keep the RAG toggle button label fixed. */
+  if (!els.adminPersonaToggleRagBtn) {
+    return;
+  }
+  els.adminPersonaToggleRagBtn.textContent = 'RAG';
+}
+
+function syncAdminPersonaToolsToggleButtonLabel() {
+  /** Keep the Tools toggle button label fixed. */
+  if (!els.adminPersonaToggleToolsBtn) {
+    return;
+  }
+  els.adminPersonaToggleToolsBtn.textContent = 'Tools';
+}
+
+function syncAdminPersonaPromptObservablesToggleButtonLabel() {
+  /** Keep the Prompt Observables toggle button label fixed. */
+  if (!els.adminPersonaTogglePromptObservablesBtn) {
+    return;
+  }
+  els.adminPersonaTogglePromptObservablesBtn.textContent = 'All Prompts Observables';
+}
+
+function normalizeAdminPersonaPromptObservablesScope(scope = 'all') {
+  /** Normalize requested prompt-observables scope to one supported value. */
+  const normalized = String(scope || '')
+    .trim()
+    .toLowerCase();
+  if (normalized === 'system' || normalized === 'assistant' || normalized === 'context') {
+    return normalized;
+  }
+  return 'all';
+}
+
+function adminPersonaPromptObservablesScopeLabel(scope = 'all') {
+  /** Return a display label for the active prompt-observable scope. */
+  const normalized = normalizeAdminPersonaPromptObservablesScope(scope);
+  if (normalized === 'system') {
+    return 'System Prompt';
+  }
+  if (normalized === 'assistant') {
+    return 'Assistant Prompt';
+  }
+  if (normalized === 'context') {
+    return 'Context Prompt';
+  }
+  return 'All Prompts';
+}
+
+function computeAdminPersonaPromptObservableMetrics(scope = 'all') {
+  /** Compute prompt-quality observables from current Persona prompt section content. */
+  const normalizedScope = normalizeAdminPersonaPromptObservablesScope(scope);
+  const sections = getAdminPersonaPromptSectionsFromForm();
+  const scopedSections = {
+    system: normalizedScope === 'all' || normalizedScope === 'system' ? sections.system : '',
+    assistant: normalizedScope === 'all' || normalizedScope === 'assistant' ? sections.assistant : '',
+    context: normalizedScope === 'all' || normalizedScope === 'context' ? sections.context : '',
+  };
+  const scopeLabel = adminPersonaPromptObservablesScopeLabel(normalizedScope);
+  const scopeDescriptor =
+    normalizedScope === 'all'
+      ? 'across system, assistant, and context prompts'
+      : `in the ${scopeLabel.toLowerCase()}`;
+  const combined = `${scopedSections.system}\n${scopedSections.assistant}\n${scopedSections.context}`.trim();
+  if (!combined) {
+    return [];
+  }
+  const tokenize = (text = '') =>
+    String(text || '')
+      .toLowerCase()
+      .match(/[a-z0-9_'-]+/g) || [];
+  const sectionWords = {
+    system: tokenize(scopedSections.system).length,
+    assistant: tokenize(scopedSections.assistant).length,
+    context: tokenize(scopedSections.context).length,
+  };
+  const allWords = tokenize(combined);
+  const totalWords = allWords.length;
+  const totalChars = combined.length;
+  const estimatedTokens = Math.max(1, Math.round(totalWords * 1.33));
+  const uniqueWordRatio = totalWords ? (new Set(allWords).size / totalWords) : 0;
+
+  const constraintPattern = /\b(must|shall|required|always|never|only|exactly|do\s+not|cannot)\b/gi;
+  const ambiguityPattern = /\b(maybe|might|can|could|approximately|roughly|some|various|etc|possibly|generally|usually)\b/gi;
+  const constraintMatches = (combined.match(constraintPattern) || []).length;
+  const ambiguityMatches = (combined.match(ambiguityPattern) || []).length;
+  const constraintDensity = totalWords ? (constraintMatches / totalWords) * 100 : 0;
+  const ambiguityDensity = totalWords ? (ambiguityMatches / totalWords) * 100 : 0;
+
+  const targetShare = 1 / 3;
+  const shares = [
+    sectionWords.system / totalWords,
+    sectionWords.assistant / totalWords,
+    sectionWords.context / totalWords,
+  ];
+  const meanDeviation = shares.reduce((sum, value) => sum + Math.abs(value - targetShare), 0) / shares.length;
+  const sectionBalance = Math.max(0, Math.min(100, 100 - Math.round((meanDeviation / targetShare) * 100)));
+  const clarityScore = Math.max(0, Math.min(100, Math.round(65 + (constraintDensity * 2.2) - (ambiguityDensity * 3.1))));
+  const systemSharePct = totalWords ? (sectionWords.system / totalWords) * 100 : 0;
+  const contextSharePct = totalWords ? (sectionWords.context / totalWords) * 100 : 0;
+  const baseMetrics = [
+    {
+      key: 'prompt_total_words',
+      label: 'Prompt Total Words',
+      value: `${totalWords}`,
+      explanation:
+        `Total words ${scopeDescriptor}. ` +
+        `Higher values usually increase model steering depth, but also cost and latency.`,
+    },
+    {
+      key: 'estimated_prompt_tokens',
+      label: 'Estimated Prompt Tokens',
+      value: `${estimatedTokens}`,
+      explanation:
+        `Approximate token footprint before runtime context is added. ` +
+        `Track this to avoid prompt bloat and context-window pressure.`,
+    },
+    {
+      key: 'system_instruction_share_pct',
+      label: 'System Instruction Share',
+      value: `${systemSharePct.toFixed(1)}%`,
+      explanation:
+        `Portion of prompt words located in the System section. ` +
+        `Too low can weaken policy/control; too high can over-constrain assistant behavior.`,
+    },
+    {
+      key: 'context_instruction_share_pct',
+      label: 'Context Share',
+      value: `${contextSharePct.toFixed(1)}%`,
+      explanation:
+        `Portion of prompt words in Context guidance. ` +
+        `Higher values can improve retrieval grounding, but may crowd out task instructions.`,
+    },
+    {
+      key: 'constraint_density_pct',
+      label: 'Constraint Density',
+      value: `${constraintDensity.toFixed(2)}%`,
+      explanation:
+        `Density of explicit constraint terms (must/never/only/etc). ` +
+        `Higher density usually improves adherence, but excessive constraints can reduce flexibility.`,
+    },
+    {
+      key: 'ambiguity_risk_pct',
+      label: 'Ambiguity Risk',
+      value: `${ambiguityDensity.toFixed(2)}%`,
+      explanation:
+        `Density of ambiguity terms (maybe/could/approximately/etc). ` +
+        `Higher risk often correlates with inconsistent outputs and lower first-pass success.`,
+    },
+    {
+      key: 'section_balance_score',
+      label: 'Section Balance Score',
+      value: `${sectionBalance}/100`,
+      explanation:
+        `How evenly prompt content is distributed across System/Assistant/Context sections. ` +
+        `Low balance can signal one section dominating behavior unexpectedly.`,
+    },
+    {
+      key: 'directive_clarity_score',
+      label: 'Directive Clarity Score',
+      value: `${clarityScore}/100`,
+      explanation:
+        `Composite estimate from explicit constraints minus ambiguity markers. ` +
+        `Higher scores tend to produce more deterministic and policy-aligned responses.`,
+    },
+    {
+      key: 'lexical_diversity_ratio',
+      label: 'Lexical Diversity',
+      value: `${(uniqueWordRatio * 100).toFixed(1)}%`,
+      explanation:
+        `Unique-word ratio in prompt text. ` +
+        `Very low diversity can indicate repetitive prompts; very high diversity can imply diffuse instructions.`,
+    },
+    {
+      key: 'prompt_total_characters',
+      label: 'Prompt Total Characters',
+      value: `${totalChars}`,
+      explanation:
+        `Raw character count ${scopeDescriptor}. ` +
+        `Useful for quick growth tracking and pre-tokenization budget checks.`,
+    },
+  ];
+  if (normalizedScope !== 'all') {
+    return baseMetrics.filter(
+      (metric) =>
+        metric.key !== 'system_instruction_share_pct' &&
+        metric.key !== 'context_instruction_share_pct' &&
+        metric.key !== 'section_balance_score'
+    );
+  }
+  return baseMetrics;
+}
+
+function setAdminPersonaPromptObservableDetail(metric) {
+  /** Render one prompt-observable explanation in the Persona panel detail area. */
+  if (!els.adminPersonaPromptObservablesDetail) {
+    return;
+  }
+  if (!metric || typeof metric !== 'object') {
+    els.adminPersonaPromptObservablesDetail.textContent = 'Select a metric to view what it means.';
+    els.adminPersonaPromptObservablesDetail.classList.add('muted');
+    return;
+  }
+  els.adminPersonaPromptObservablesDetail.classList.remove('muted');
+  els.adminPersonaPromptObservablesDetail.textContent =
+    `${metric.label}: ${metric.value}\n\n${metric.explanation}`;
+}
+
+function renderAdminPersonaPromptObservables() {
+  /** Render prompt observables list and detail for the Persona prompt content. */
+  if (!els.adminPersonaPromptObservablesList) {
+    return;
+  }
+  const scopeLabel = adminPersonaPromptObservablesScopeLabel(adminPersonaPromptObservablesScope);
+  if (!adminPersonaPromptObservablesPanelActive) {
+    els.adminPersonaPromptObservablesList.classList.add('muted');
+    els.adminPersonaPromptObservablesList.textContent = 'Open All Prompts Observables to compute prompt metrics.';
+    setAdminPersonaPromptObservableDetail(null);
+    return;
+  }
+  const metrics = computeAdminPersonaPromptObservableMetrics(adminPersonaPromptObservablesScope);
+  if (!metrics.length) {
+    selectedAdminPersonaPromptObservableKey = '';
+    els.adminPersonaPromptObservablesList.classList.add('muted');
+    els.adminPersonaPromptObservablesList.textContent = `Enter content in ${scopeLabel} to compute prompt observables.`;
+    setAdminPersonaPromptObservableDetail({
+      label: `All Prompts Observables | ${scopeLabel}`,
+      value: 'No Data',
+      explanation: `Add prompt content for ${scopeLabel} and refresh metrics.`,
+    });
+    return;
+  }
+
+  const metricByKey = new Map(metrics.map((item) => [item.key, item]));
+  if (!metricByKey.has(selectedAdminPersonaPromptObservableKey)) {
+    selectedAdminPersonaPromptObservableKey = metrics[0].key;
+  }
+
+  els.adminPersonaPromptObservablesList.classList.remove('muted');
+  const scopeMeta = document.createElement('div');
+  scopeMeta.className = 'muted';
+  scopeMeta.textContent = `Scope: ${scopeLabel}`;
+  const rows = metrics.map((metric) => {
+    const row = document.createElement('div');
+    row.className = 'admin-persona-rag-row';
+
+    const label = document.createElement('div');
+    label.className = 'admin-persona-rag-label';
+    label.textContent = `${metric.label}: ${metric.value}`;
+    row.appendChild(label);
+
+    const actions = document.createElement('div');
+    actions.className = 'admin-persona-rag-actions';
+    const explain = document.createElement('button');
+    explain.type = 'button';
+    explain.className = 'secondary prompt-mini-btn';
+    explain.textContent = selectedAdminPersonaPromptObservableKey === metric.key ? 'Selected' : 'Explain';
+    explain.disabled = selectedAdminPersonaPromptObservableKey === metric.key;
+    explain.addEventListener('click', () => {
+      selectedAdminPersonaPromptObservableKey = metric.key;
+      renderAdminPersonaPromptObservables();
+    });
+    actions.appendChild(explain);
+    row.appendChild(actions);
+    return row;
+  });
+  els.adminPersonaPromptObservablesList.replaceChildren(scopeMeta, ...rows);
+  setAdminPersonaPromptObservableDetail(metricByKey.get(selectedAdminPersonaPromptObservableKey));
+}
+
+function setAdminPersonaPromptPanelActive(active) {
+  /** Enable or disable all controls contained in the grouped Prompt panel. */
+  adminPersonaPromptPanelActive = !!active;
+  const controls = [
+    els.adminPersonaSystemPromptTemplateSelect,
+    els.adminPersonaAssistantPromptTemplateSelect,
+    els.adminPersonaContextPromptTemplateSelect,
+    els.adminPersonaSystemChoosePromptBtn,
+    els.adminPersonaAssistantChoosePromptBtn,
+    els.adminPersonaContextChoosePromptBtn,
+    els.adminPersonaSystemObservableBtn,
+    els.adminPersonaAssistantObservableBtn,
+    els.adminPersonaContextObservableBtn,
+    els.adminPersonaSystemSavePromptBtn,
+    els.adminPersonaAssistantSavePromptBtn,
+    els.adminPersonaContextSavePromptBtn,
+    els.adminPersonaSystemPrompt,
+    els.adminPersonaAssistantPrompt,
+    els.adminPersonaContextPrompt,
+  ];
+  for (const control of controls) {
+    if (!control) {
+      continue;
+    }
+    control.disabled = !adminPersonaPromptPanelActive;
+  }
+  if (!adminPersonaPromptPanelActive) {
+    hideAdminPersonaPromptTemplateDropdowns();
+  }
+}
+
+function setAdminPersonaRagPanelActive(active) {
+  /** Enable or disable all controls contained in the grouped RAG panel. */
+  adminPersonaRagPanelActive = !!active;
+  if (els.adminPersonaLoadRagsBtn) {
+    els.adminPersonaLoadRagsBtn.disabled = !adminPersonaRagPanelActive;
+  }
+  if (els.adminPersonaRagAddBtn) {
+    els.adminPersonaRagAddBtn.disabled = !adminPersonaRagPanelActive;
+  }
+  if (!adminPersonaRagPanelActive) {
+    if (els.adminPersonaGraphQuestion) {
+      els.adminPersonaGraphQuestion.disabled = true;
+    }
+    if (els.adminPersonaGraphAskBtn) {
+      els.adminPersonaGraphAskBtn.disabled = true;
+      els.adminPersonaGraphAskBtn.textContent = 'Ask Graph';
+    }
+    if (els.adminPersonaGraphClearBtn) {
+      els.adminPersonaGraphClearBtn.disabled = true;
+    }
+    if (els.adminPersonaGraphProgress) {
+      els.adminPersonaGraphProgress.classList.add('hidden');
+    }
+    stopClock('adminPersonaGraph');
+    if (els.adminPersonaGraphClock) {
+      els.adminPersonaGraphClock.textContent = '0.0s';
+    }
+  }
+  syncAdminPersonaRagOptions();
+  renderAdminPersonaRagSequence();
+  if (adminPersonaRagPanelActive) {
+    setAdminPersonaGraphProcessing(false);
+  }
+}
+
+function setAdminPersonaPromptObservablesPanelActive(active) {
+  /** Enable or disable Prompt Observables controls and refresh visible metrics. */
+  adminPersonaPromptObservablesPanelActive = !!active;
+  if (els.adminPersonaRefreshPromptObservablesBtn) {
+    els.adminPersonaRefreshPromptObservablesBtn.disabled = !adminPersonaPromptObservablesPanelActive;
+  }
+  if (!adminPersonaPromptObservablesPanelActive) {
+    selectedAdminPersonaPromptObservableKey = '';
+    adminPersonaPromptObservablesScope = 'all';
+  }
+  renderAdminPersonaPromptObservables();
+}
+
+function setAdminPersonaToolsPanelActive(active) {
+  /** Enable or disable all controls contained in the grouped Tools panel. */
+  adminPersonaToolsPanelActive = !!active;
+  if (els.adminPersonaLoadToolsBtn) {
+    els.adminPersonaLoadToolsBtn.disabled = !adminPersonaToolsPanelActive;
+  }
+  if (els.adminPersonaToolAddBtn) {
+    els.adminPersonaToolAddBtn.disabled = !adminPersonaToolsPanelActive;
+  }
+  syncAdminPersonaToolOptions();
+  renderAdminPersonaToolSequence();
+  if (adminPersonaToolsPanelActive && !adminPersonaToolOptionsCache.length) {
+    loadAdminPersonaToolOptions().catch((err) => setStatus(err.message));
+  }
+}
+
+function toggleAdminPersonaPromptPanel() {
+  /** Toggle all prompt-related content as one grouped panel. */
+  if (!els.adminPersonaPromptPanel) {
+    return;
+  }
+  const nextActive = els.adminPersonaPromptPanel.classList.contains('hidden');
+  els.adminPersonaPromptPanel.classList.toggle('hidden', !nextActive);
+  setAdminPersonaPromptPanelActive(nextActive);
+  syncAdminPersonaPromptToggleButtonLabel();
+}
+
+function toggleAdminPersonaRagPanel() {
+  /** Toggle all RAG-related content as one grouped panel. */
+  if (!els.adminPersonaRagPanel) {
+    return;
+  }
+  const nextActive = els.adminPersonaRagPanel.classList.contains('hidden');
+  els.adminPersonaRagPanel.classList.toggle('hidden', !nextActive);
+  setAdminPersonaRagPanelActive(nextActive);
+  syncAdminPersonaRagToggleButtonLabel();
+}
+
+function toggleAdminPersonaPromptObservablesPanel() {
+  /** Toggle prompt-quality observables panel for the active Persona prompt content. */
+  if (!els.adminPersonaPromptObservablesPanel) {
+    return;
+  }
+  const nextActive = els.adminPersonaPromptObservablesPanel.classList.contains('hidden');
+  if (nextActive) {
+    adminPersonaPromptObservablesScope = 'all';
+  }
+  els.adminPersonaPromptObservablesPanel.classList.toggle('hidden', !nextActive);
+  setAdminPersonaPromptObservablesPanelActive(nextActive);
+  syncAdminPersonaPromptObservablesToggleButtonLabel();
+}
+
+function openAdminPersonaPromptObservablesForScope(scope = 'all') {
+  /** Open prompt observables and render metrics for one prompt section or all prompt sections. */
+  if (!els.adminPersonaPromptObservablesPanel) {
+    return;
+  }
+  adminPersonaPromptObservablesScope = normalizeAdminPersonaPromptObservablesScope(scope);
+  els.adminPersonaPromptObservablesPanel.classList.remove('hidden');
+  setAdminPersonaPromptObservablesPanelActive(true);
+  syncAdminPersonaPromptObservablesToggleButtonLabel();
+}
+
+function hideAdminPersonaPromptObservableModal() {
+  /** Close section-scoped prompt observables popup and clear transient modal state. */
+  if (
+    !els.adminPersonaPromptObservableModal ||
+    !els.adminPersonaPromptObservableModalTitle ||
+    !els.adminPersonaPromptObservableModalMeta ||
+    !els.adminPersonaPromptObservableModalBody
+  ) {
+    return;
+  }
+  els.adminPersonaPromptObservableModal.classList.add('hidden');
+  els.adminPersonaPromptObservableModalTitle.textContent = 'Prompt Observables';
+  els.adminPersonaPromptObservableModalMeta.textContent = 'No prompt scope selected.';
+  els.adminPersonaPromptObservableModalBody.classList.add('muted');
+  els.adminPersonaPromptObservableModalBody.textContent =
+    'Click a prompt-level Observable button to inspect section-specific observables.';
+  adminPersonaPromptObservableModalScope = '';
+}
+
+function showAdminPersonaPromptObservableModal(scope = 'system') {
+  /** Open popup with all observables computed for one specific prompt section. */
+  if (
+    !els.adminPersonaPromptObservableModal ||
+    !els.adminPersonaPromptObservableModalTitle ||
+    !els.adminPersonaPromptObservableModalMeta ||
+    !els.adminPersonaPromptObservableModalBody
+  ) {
+    return;
+  }
+  const normalizedScope = normalizeAdminPersonaPromptObservablesScope(scope);
+  const sectionScope = normalizedScope === 'all' ? 'system' : normalizedScope;
+  const scopeLabel = adminPersonaPromptObservablesScopeLabel(sectionScope);
+  adminPersonaPromptObservableModalScope = sectionScope;
+
+  els.adminPersonaPromptObservableModalTitle.textContent = `${scopeLabel} Observables`;
+  els.adminPersonaPromptObservableModalMeta.textContent = `Scoped metrics for ${scopeLabel}.`;
+
+  const metrics = computeAdminPersonaPromptObservableMetrics(sectionScope);
+  if (!metrics.length) {
+    els.adminPersonaPromptObservableModalBody.classList.add('muted');
+    els.adminPersonaPromptObservableModalBody.textContent =
+      `No prompt content found in ${scopeLabel}. Add text and click Observable again.`;
+  } else {
+    const rows = metrics.map((metric) => {
+      const row = document.createElement('article');
+      row.className = 'admin-persona-observable-row';
+
+      const title = document.createElement('div');
+      title.className = 'admin-persona-observable-row-title';
+      const label = document.createElement('strong');
+      label.textContent = metric.label;
+      const value = document.createElement('span');
+      value.className = 'admin-persona-observable-row-value';
+      value.textContent = String(metric.value || 'N/A');
+      title.append(label, value);
+
+      const body = document.createElement('p');
+      body.textContent = String(metric.explanation || 'No explanation available.');
+
+      row.append(title, body);
+      return row;
+    });
+    els.adminPersonaPromptObservableModalBody.classList.remove('muted');
+    els.adminPersonaPromptObservableModalBody.replaceChildren(...rows);
+  }
+
+  els.adminPersonaPromptObservableModal.classList.remove('hidden');
+  els.adminPersonaPromptObservableModalCloseBtn?.focus();
+}
+
+function toggleAdminPersonaToolsPanel() {
+  /** Toggle all MCP tool-related content as one grouped panel. */
+  if (!els.adminPersonaToolsPanel) {
+    return;
+  }
+  const nextActive = els.adminPersonaToolsPanel.classList.contains('hidden');
+  els.adminPersonaToolsPanel.classList.toggle('hidden', !nextActive);
+  if (nextActive) {
+    els.adminPersonaToolsPanel.open = true;
+  }
+  setAdminPersonaToolsPanelActive(nextActive);
+  syncAdminPersonaToolsToggleButtonLabel();
+}
+
+function openAdminPersonaPromptFromPersona(persona) {
+  /** Open the prompt pop-out from one saved persona row. */
+  if (!persona) {
+    return;
+  }
+  showAdminPersonaPromptModal({
+    personaId: String(persona.persona_id || '').trim(),
+    personaName: String(persona.name || '').trim() || 'Saved Persona',
+    promptSections: normalizeAdminPersonaPromptSections(
+      persona.prompt_sections,
+      persona.prompts,
+      String(persona.prompt_template_key || '').trim()
+    ),
+    promptTemplateKey: String(persona.prompt_template_key || '').trim(),
+  });
+}
+
+function applyAdminPersonaPromptFromModal() {
+  /** Apply prompt-section edits from pop-out back into the Persona form without saving to CouchDB. */
+  const promptSections = getAdminPersonaPromptSectionsFromModal();
+  setAdminPersonaPromptSectionsInForm(promptSections);
+  if (els.adminPersonaCreatePanel?.classList.contains('hidden')) {
+    setAdminPersonaCreateOpen(true);
+  }
+  setAdminPersonaFeedback('Applied prompt changes to the Persona editor. Click Save Persona to persist.', 'info');
+  setStatus('Applied prompt changes to the Persona editor.');
+}
+
+async function resaveAdminPersonaPromptFromModal() {
+  /** Persist the edited prompt text for the selected persona directly from the pop-out. */
+  const personaId = String(adminPersonaPromptModalPersonaId || '').trim();
+  if (!personaId) {
+    setStatus('Select and save a persona before re-saving prompts from the pop-out.');
+    return;
+  }
+  const persona = adminPersonasCache.find((item) => String(item?.persona_id || '').trim() === personaId);
+  if (!persona) {
+    setStatus('The selected persona is unavailable. Refresh personas and try again.');
+    return;
+  }
+  const promptSections = getAdminPersonaPromptSectionsFromModal();
+  if (!adminPersonaPromptSectionsHaveContent(promptSections)) {
+    setStatus('At least one prompt section is required before re-saving the persona.');
+    return;
+  }
+  const prompts = composeLegacyPersonaPromptSections(promptSections);
+  if (els.adminPersonaPromptResaveBtn) {
+    els.adminPersonaPromptResaveBtn.disabled = true;
+    els.adminPersonaPromptResaveBtn.textContent = 'Resaving...';
+  }
+  try {
+    const savedPersona = await api('/api/admin/personas', {
+      method: 'POST',
+      body: JSON.stringify({
+        persona_id: personaId,
+        name: String(persona.name || '').trim(),
+        llm_provider: String(persona.llm_provider || '').trim(),
+        llm_model: String(persona.llm_model || '').trim(),
+        prompt_template_key: String(persona.prompt_template_key || '').trim() || null,
+        prompt_sections: promptSections,
+        prompts,
+        rag_sequence: Array.isArray(persona.rag_sequence)
+          ? persona.rag_sequence.map((item) => {
+              const binding = normalizeAdminPersonaRagBinding(item);
+              return binding ? { key: binding.key, enabled: binding.enabled !== false } : null;
+            }).filter((item) => !!item)
+          : [],
+        tool_sequence: Array.isArray(persona.tool_sequence)
+          ? persona.tool_sequence.map((item) => {
+              const binding = normalizeAdminPersonaToolBinding(item);
+              return binding ? { key: binding.key, enabled: binding.enabled !== false } : null;
+            }).filter((item) => !!item)
+          : [],
+      }),
+    });
+    adminPersonasCache = [
+      savedPersona,
+      ...adminPersonasCache.filter((item) => String(item.persona_id || '').trim() !== personaId),
+    ];
+    selectedAdminPersonaId = String(savedPersona.persona_id || '').trim();
+    renderAdminPersonas(adminPersonasCache);
+    if (editingAdminPersonaId && String(editingAdminPersonaId).trim() === personaId) {
+      setAdminPersonaPromptSectionsInForm(promptSections);
+    }
+    setAdminPersonaFeedback(`${savedPersona.name} prompt updated from pop-out.`, 'success');
+    setStatus('Persona prompt saved.');
+    hideAdminPersonaPromptModal();
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to save persona prompt.');
+    setStatus(message);
+    setAdminPersonaPromptModalSentiment(`Save failed: ${message}`, 'error');
+    throw err;
+  } finally {
+    if (els.adminPersonaPromptResaveBtn) {
+      els.adminPersonaPromptResaveBtn.disabled = false;
+      els.adminPersonaPromptResaveBtn.textContent = 'Resave Persona';
+    }
+  }
+}
+
+async function scoreAdminPersonaPromptSentiment() {
+  /** Score sentiment for all prompt sections currently shown in the prompt pop-out editor. */
+  const promptText = composeLegacyPersonaPromptSections(getAdminPersonaPromptSectionsFromModal());
+  if (!promptText) {
+    setAdminPersonaPromptModalSentiment('Enter prompt section text before scoring sentiment.', 'error');
+    return;
+  }
+  if (els.adminPersonaPromptSentimentBtn) {
+    els.adminPersonaPromptSentimentBtn.disabled = true;
+    els.adminPersonaPromptSentimentBtn.textContent = 'Scoring...';
+  }
+  try {
+    const response = await api('/api/text-sentiment', {
+      method: 'POST',
+      body: JSON.stringify({ text: promptText }),
+    });
+    setAdminPersonaPromptModalSentiment(
+      `${String(response.label || '').toUpperCase()} ${Number(response.score || 0).toFixed(2)} | `
+      + `+${Number(response.positive_matches || 0)} / -${Number(response.negative_matches || 0)} `
+      + `across ${Number(response.word_count || 0)} words`,
+      'success'
+    );
+    setStatus('Prompt sentiment scored.');
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to score prompt sentiment.');
+    setAdminPersonaPromptModalSentiment(`Sentiment failed: ${message}`, 'error');
+    throw err;
+  } finally {
+    if (els.adminPersonaPromptSentimentBtn) {
+      els.adminPersonaPromptSentimentBtn.disabled = false;
+      els.adminPersonaPromptSentimentBtn.textContent = 'Score Sentiment';
+    }
+  }
+}
+
+async function askAdminPersonaGraphQuestion() {
+  /** Run a graph-only question using the active persona's LLM and enabled Graph RAG chain. */
+  const question = String(els.adminPersonaGraphQuestion?.value || '').trim();
+  if (!question) {
+    setStatus('Persona graph question is required.');
+    return;
+  }
+  const config = getActiveAdminPersonaGraphConfig();
+  if (!config) {
+    setStatus('Create or select a persona before asking graph questions.');
+    return;
+  }
+  const enabledRags = config.ragSequence.filter((item) => item.enabled);
+  const enabledTools = (Array.isArray(config.toolSequence) ? config.toolSequence : []).filter((item) => item.enabled);
+  const hasGraphRag = enabledRags.some((item) => item.key === 'graph_rag_neo4j');
+  if (!hasGraphRag) {
+    setStatus('Enable Graph RAG (Neo4j) in the active persona before asking graph questions.');
+    return;
+  }
+  if (!config.llmProvider || !config.llmModel) {
+    setStatus('The active persona must have an LLM configured before asking graph questions.');
+    return;
+  }
+
+  const traceId = beginTraceSession('chat');
+  startUiProcessing('Running persona graph question...');
+  startLlmProcessing('Persona graph question is retrieving graph context and generating an answer...');
+  setAdminPersonaGraphProcessing(true);
+  await nextPaint();
+  try {
+    const payload = await inferencingApi('/api/graph-rag/query', {
+      method: 'POST',
+      body: JSON.stringify({
+        question,
+        top_k: 8,
+        use_rag: true,
+        stream_rag: true,
+        llm_provider: config.llmProvider,
+        llm_model: config.llmModel,
+        thought_stream_id: traceId,
+      }),
+    });
+    const sources = Array.isArray(payload?.sources) ? payload.sources : [];
+    const sourceLines = sources.length
+      ? sources.slice(0, 8).map((item) => `- ${item.label} (${item.iri})`).join('\n')
+      : '- No matching source nodes returned.';
+    const renderedAnswer =
+      `Persona: ${config.name}\n`
+      + `LLM: ${config.llmProvider}/${config.llmModel}\n`
+      + `Enabled RAGs: ${enabledRags.map((item) => getAdminPersonaRagLabel(item)).join(' -> ')}\n\n`
+      + `Enabled MCP Tools: ${enabledTools.length ? enabledTools.map((item) => getAdminPersonaToolLabel(item)).join(' -> ') : 'None'}\n\n`
+      + `${payload.answer}\n\nSources (${payload.context_rows}):\n${sourceLines}`;
+    if (els.adminPersonaGraphAnswer) {
+      els.adminPersonaGraphAnswer.value = renderedAnswer;
+    }
+    const savedPersonaId =
+      config.source === 'saved'
+        ? selectedAdminPersonaId
+        : String(editingAdminPersonaId || '').trim();
+    if (savedPersonaId) {
+      const persistedPersona = await api(`/api/admin/personas/${encodeURIComponent(savedPersonaId)}/graph-session`, {
+        method: 'POST',
+        body: JSON.stringify({
+          question,
+          answer: renderedAnswer,
+        }),
+      });
+      adminPersonasCache = [
+        persistedPersona,
+        ...adminPersonasCache.filter((item) => item.persona_id !== persistedPersona.persona_id),
+      ];
+      selectedAdminPersonaId = String(persistedPersona.persona_id || '').trim();
+      renderAdminPersonas(adminPersonasCache);
+    }
+    setStatus(`Persona graph answer generated from ${payload.context_rows} context row(s).`);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Persona graph query failed.');
+    if (els.adminPersonaGraphAnswer) {
+      els.adminPersonaGraphAnswer.value = `Persona graph query failed.\n\n${message}`;
+    }
+    throw err;
+  } finally {
+    setAdminPersonaGraphProcessing(false);
+    await finalizeTraceSession();
+    endLlmProcessing();
+    endUiProcessing();
+  }
+}
+
+function clearAdminPersonaGraphQuestion() {
+  /** Reset the persona graph question input and answer area. */
+  if (els.adminPersonaGraphQuestion) {
+    els.adminPersonaGraphQuestion.value = '';
+  }
+  if (els.adminPersonaGraphAnswer) {
+    els.adminPersonaGraphAnswer.value =
+      "Ask a graph question to test the active persona's Graph RAG configuration.";
+  }
+  renderAdminPersonaGraphMeta();
+  setStatus('Cleared the persona graph question and result.');
+}
+
+function runAdminPersonaSmokeTestStub() {
+  /** Placeholder for Persona smoke testing; implementation intentionally deferred. */
+  setAdminPersonaFeedback('Smoke Test is stubbed and not implemented yet.', 'info');
+  setStatus('Persona Smoke Test is stubbed and will be implemented later.');
+}
+
+function syncAdminPersonaFormPromptSentimentActionState() {
+  /** Keep the Persona prompt sentiment action label aligned with computed/visible state. */
+  if (!els.adminPersonaFormPromptSentimentBtn) {
+    return;
+  }
+  if (!currentAdminPersonaPromptSentiment) {
+    els.adminPersonaFormPromptSentimentBtn.textContent = 'Compute Prompt Sentiment';
+    return;
+  }
+  const hidden = !!els.adminPersonaFormPromptSentiment?.classList.contains('hidden');
+  els.adminPersonaFormPromptSentimentBtn.textContent = hidden ? 'Show Prompt Sentiment' : 'Hide Prompt Sentiment';
+}
+
+function clearAdminPersonaFormPromptSentiment() {
+  /** Reset Persona prompt sentiment panel state for new prompt content or form reset. */
+  currentAdminPersonaPromptSentiment = null;
+  adminPersonaPromptSentimentDetailOpen = false;
+  if (els.adminPersonaFormPromptSentiment) {
+    els.adminPersonaFormPromptSentiment.replaceChildren();
+    els.adminPersonaFormPromptSentiment.classList.add('hidden');
+    els.adminPersonaFormPromptSentiment.classList.remove('detail-sentiment-detailed');
+    els.adminPersonaFormPromptSentiment.removeAttribute('role');
+    els.adminPersonaFormPromptSentiment.removeAttribute('tabindex');
+    els.adminPersonaFormPromptSentiment.removeAttribute('aria-expanded');
+  }
+  syncAdminPersonaFormPromptSentimentActionState();
+}
+
+function hideAdminPersonaFormPromptSentiment({ preserveData = true } = {}) {
+  /** Hide Persona prompt sentiment panel while optionally keeping computed data for re-show. */
+  if (!preserveData) {
+    clearAdminPersonaFormPromptSentiment();
+    return;
+  }
+  adminPersonaPromptSentimentDetailOpen = false;
+  if (els.adminPersonaFormPromptSentiment) {
+    els.adminPersonaFormPromptSentiment.classList.add('hidden');
+    els.adminPersonaFormPromptSentiment.classList.remove('detail-sentiment-detailed');
+    els.adminPersonaFormPromptSentiment.removeAttribute('aria-expanded');
+  }
+  syncAdminPersonaFormPromptSentimentActionState();
+}
+
+function buildAdminPersonaPromptSentimentDetailText(sentiment) {
+  /** Explain Persona prompt sentiment score and what it implies for runtime behavior. */
+  const positive = Number(sentiment?.positive_matches || 0);
+  const negative = Number(sentiment?.negative_matches || 0);
+  const words = Number(sentiment?.word_count || 0);
+  const score = Number(sentiment?.score || 0);
+  const label = String(sentiment?.label || 'neutral').trim() || 'neutral';
+  const totalMarkers = positive + negative;
+
+  let scoringReason =
+    'The prompt tone is near neutral because positive and negative lexical markers are sparse or balanced.';
+  if (label === 'positive') {
+    scoringReason =
+      `The prompt tone trends positive because ${positive} positive markers outweighed ${negative} negative markers across ${words} words.`;
+  } else if (label === 'negative') {
+    scoringReason =
+      `The prompt tone trends negative because ${negative} negative markers outweighed ${positive} positive markers across ${words} words.`;
+  } else if (totalMarkers > 0) {
+    scoringReason =
+      `The prompt tone remains neutral because ${positive} positive and ${negative} negative markers offset each other across ${words} words.`;
+  }
+
+  let implication =
+    'A neutral prompt tone usually reduces emotional bias and keeps responses more controlled. This score does not evaluate factual correctness.';
+  if (label === 'positive') {
+    implication =
+      'A positive prompt tone may increase cooperative or optimistic phrasing in responses. Monitor for over-assurance in legal narratives.';
+  } else if (label === 'negative') {
+    implication =
+      'A negative prompt tone may increase adversarial or caution-heavy phrasing. Monitor for excessive alarm language or defensive output style.';
+  }
+
+  return (
+    `Why this score: ${scoringReason}\n` +
+    `Signal strength: ${totalMarkers} matched tone markers in ${words} words produced a normalized score of ${formatSentimentScore(score)}.\n` +
+    `What this implies: ${implication}`
+  );
+}
+
+function paintAdminPersonaFormPromptSentimentPanel() {
+  /** Paint Persona prompt sentiment panel in summary or detailed explanation mode. */
+  if (!els.adminPersonaFormPromptSentiment || !currentAdminPersonaPromptSentiment) {
+    clearAdminPersonaFormPromptSentiment();
+    return;
+  }
+  const label =
+    currentAdminPersonaPromptSentiment.label.charAt(0).toUpperCase()
+    + currentAdminPersonaPromptSentiment.label.slice(1);
+  const title = document.createElement('div');
+  title.className = 'detail-sentiment-title';
+  title.textContent = `Prompt Sentiment: ${label} (${formatSentimentScore(currentAdminPersonaPromptSentiment.score)})`;
+
+  const body = document.createElement('div');
+  body.className = 'detail-sentiment-body';
+  body.textContent = adminPersonaPromptSentimentDetailOpen
+    ? buildAdminPersonaPromptSentimentDetailText(currentAdminPersonaPromptSentiment)
+    : (
+        `${currentAdminPersonaPromptSentiment.summary}\n`
+        + `Positive markers: ${currentAdminPersonaPromptSentiment.positive_matches} | `
+        + `Negative markers: ${currentAdminPersonaPromptSentiment.negative_matches} | `
+        + `Words: ${currentAdminPersonaPromptSentiment.word_count}`
+      );
+
+  const toggle = document.createElement('div');
+  toggle.className = 'detail-sentiment-toggle';
+  toggle.textContent = adminPersonaPromptSentimentDetailOpen
+    ? 'Click to return to the normal prompt sentiment summary.'
+    : 'Click to see why this prompt score was assigned and what it implies.';
+
+  els.adminPersonaFormPromptSentiment.replaceChildren(title, body, toggle);
+  els.adminPersonaFormPromptSentiment.classList.remove('hidden');
+  els.adminPersonaFormPromptSentiment.classList.toggle('detail-sentiment-detailed', adminPersonaPromptSentimentDetailOpen);
+  els.adminPersonaFormPromptSentiment.setAttribute('role', 'button');
+  els.adminPersonaFormPromptSentiment.setAttribute('tabindex', '0');
+  els.adminPersonaFormPromptSentiment.setAttribute('aria-expanded', adminPersonaPromptSentimentDetailOpen ? 'true' : 'false');
+  syncAdminPersonaFormPromptSentimentActionState();
+}
+
+function renderAdminPersonaFormPromptSentiment(sentiment, { detailOpen = false } = {}) {
+  /** Render computed Persona prompt sentiment summary and optional detailed explanation. */
+  if (!sentiment || typeof sentiment !== 'object') {
+    clearAdminPersonaFormPromptSentiment();
+    return;
+  }
+  currentAdminPersonaPromptSentiment = {
+    score: Number(sentiment.score || 0),
+    label: String(sentiment.label || 'neutral').trim() || 'neutral',
+    summary: String(sentiment.summary || '').trim(),
+    positive_matches: Number(sentiment.positive_matches || 0),
+    negative_matches: Number(sentiment.negative_matches || 0),
+    word_count: Number(sentiment.word_count || 0),
+  };
+  adminPersonaPromptSentimentDetailOpen = !!detailOpen;
+  paintAdminPersonaFormPromptSentimentPanel();
+}
+
+function toggleAdminPersonaFormPromptSentimentDetail() {
+  /** Toggle Persona prompt sentiment panel between summary and detailed explanation. */
+  if (!currentAdminPersonaPromptSentiment || !els.adminPersonaFormPromptSentiment) {
+    return;
+  }
+  if (els.adminPersonaFormPromptSentiment.classList.contains('hidden')) {
+    return;
+  }
+  adminPersonaPromptSentimentDetailOpen = !adminPersonaPromptSentimentDetailOpen;
+  paintAdminPersonaFormPromptSentimentPanel();
+}
+
+async function scoreAdminPersonaFormPromptSentiment() {
+  /** Compute prompt sentiment from current Persona form prompt content and render drill-down panel. */
+  if (currentAdminPersonaPromptSentiment) {
+    if (els.adminPersonaFormPromptSentiment?.classList.contains('hidden')) {
+      renderAdminPersonaFormPromptSentiment(currentAdminPersonaPromptSentiment, {
+        detailOpen: adminPersonaPromptSentimentDetailOpen,
+      });
+      setStatus('Prompt sentiment shown.');
+      return;
+    }
+    hideAdminPersonaFormPromptSentiment({ preserveData: true });
+    setStatus('Prompt sentiment hidden.');
+    return;
+  }
+  const promptText = composeLegacyPersonaPromptSections(getAdminPersonaPromptSectionsFromForm());
+  if (!promptText) {
+    setAdminPersonaFeedback('Enter prompt content before scoring sentiment.', 'error');
+    setStatus('Enter prompt content before scoring sentiment.');
+    return;
+  }
+  if (els.adminPersonaFormPromptSentimentBtn) {
+    els.adminPersonaFormPromptSentimentBtn.disabled = true;
+    els.adminPersonaFormPromptSentimentBtn.textContent = 'Scoring...';
+  }
+  try {
+    const response = await api('/api/text-sentiment', {
+      method: 'POST',
+      body: JSON.stringify({ text: promptText }),
+    });
+    renderAdminPersonaFormPromptSentiment(response, { detailOpen: false });
+    setStatus('Prompt sentiment computed.');
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to score prompt sentiment.');
+    setAdminPersonaFeedback(`Prompt sentiment failed: ${message}`, 'error');
+    throw err;
+  } finally {
+    if (els.adminPersonaFormPromptSentimentBtn) {
+      els.adminPersonaFormPromptSentimentBtn.disabled = false;
+    }
+    syncAdminPersonaFormPromptSentimentActionState();
+  }
+}
+
+function captureAdminPersonaEditorUiState() {
+  /** Snapshot Persona editor visibility state so Save Changes can preserve current UI context. */
+  return {
+    promptPanelOpen: !els.adminPersonaPromptPanel?.classList.contains('hidden'),
+    ragPanelOpen: !els.adminPersonaRagPanel?.classList.contains('hidden'),
+    promptObservablesPanelOpen: !els.adminPersonaPromptObservablesPanel?.classList.contains('hidden'),
+    toolsPanelOpen: !els.adminPersonaToolsPanel?.classList.contains('hidden'),
+    systemTemplateOpen: !els.adminPersonaSystemPromptTemplateSelect?.classList.contains('hidden'),
+    assistantTemplateOpen: !els.adminPersonaAssistantPromptTemplateSelect?.classList.contains('hidden'),
+    contextTemplateOpen: !els.adminPersonaContextPromptTemplateSelect?.classList.contains('hidden'),
+  };
+}
+
+function restoreAdminPersonaEditorUiState(snapshot) {
+  /** Restore Persona editor visibility state after Save Changes refreshes persona data. */
+  if (!snapshot || typeof snapshot !== 'object') {
+    return;
+  }
+  const promptOpen = !!snapshot.promptPanelOpen;
+  const ragOpen = !!snapshot.ragPanelOpen;
+  const promptObservablesOpen = !!snapshot.promptObservablesPanelOpen;
+  const toolsOpen = !!snapshot.toolsPanelOpen;
+
+  if (els.adminPersonaPromptPanel) {
+    els.adminPersonaPromptPanel.classList.toggle('hidden', !promptOpen);
+  }
+  if (els.adminPersonaRagPanel) {
+    els.adminPersonaRagPanel.classList.toggle('hidden', !ragOpen);
+  }
+  if (els.adminPersonaPromptObservablesPanel) {
+    els.adminPersonaPromptObservablesPanel.classList.toggle('hidden', !promptObservablesOpen);
+  }
+  if (els.adminPersonaToolsPanel) {
+    els.adminPersonaToolsPanel.classList.toggle('hidden', !toolsOpen);
+  }
+  setAdminPersonaPromptPanelActive(promptOpen);
+  setAdminPersonaRagPanelActive(ragOpen);
+  setAdminPersonaPromptObservablesPanelActive(promptObservablesOpen);
+  setAdminPersonaToolsPanelActive(toolsOpen);
+
+  if (promptOpen) {
+    if (els.adminPersonaSystemPromptTemplateSelect) {
+      els.adminPersonaSystemPromptTemplateSelect.classList.toggle('hidden', !snapshot.systemTemplateOpen);
+    }
+    if (els.adminPersonaAssistantPromptTemplateSelect) {
+      els.adminPersonaAssistantPromptTemplateSelect.classList.toggle('hidden', !snapshot.assistantTemplateOpen);
+    }
+    if (els.adminPersonaContextPromptTemplateSelect) {
+      els.adminPersonaContextPromptTemplateSelect.classList.toggle('hidden', !snapshot.contextTemplateOpen);
+    }
+  }
+}
+
+function syncAdminPersonaSaveButton() {
+  /** Keep the persona save button text aligned to create vs edit mode. */
+  if (!els.adminSavePersonaBtn) {
+    return;
+  }
+  els.adminSavePersonaBtn.textContent = editingAdminPersonaId ? 'Save Changes' : 'Save Persona';
+}
+
+function setAdminPersonaCreateOpen(open) {
+  /** Toggle the expandable add-persona form. */
+  const nextOpen = !!open;
+  if (els.adminPersonaCreatePanel) {
+    els.adminPersonaCreatePanel.classList.toggle('hidden', !nextOpen);
+  }
+  if (els.adminAddPersonaBtn) {
+    els.adminAddPersonaBtn.textContent = nextOpen ? 'Close Persona Details' : 'Add Persona';
+  }
+  if (nextOpen) {
+    syncAdminPersonaLlmOptions();
+    syncAdminPersonaPromptTemplateOptions();
+    els.adminPersonaName?.focus();
+  }
+  if (els.adminPersonaPromptPanel) {
+    els.adminPersonaPromptPanel.classList.add('hidden');
+  }
+  if (els.adminPersonaRagPanel) {
+    els.adminPersonaRagPanel.classList.add('hidden');
+  }
+  if (els.adminPersonaPromptObservablesPanel) {
+    els.adminPersonaPromptObservablesPanel.classList.add('hidden');
+  }
+  if (els.adminPersonaToolsPanel) {
+    els.adminPersonaToolsPanel.classList.add('hidden');
+  }
+  setAdminPersonaPromptPanelActive(false);
+  setAdminPersonaRagPanelActive(false);
+  setAdminPersonaPromptObservablesPanelActive(false);
+  setAdminPersonaToolsPanelActive(false);
+  if (!nextOpen) {
+    clearAdminPersonaFormPromptSentiment();
+  }
+  renderAdminPersonaGraphMeta();
+  syncAdminPersonaSaveButton();
+  syncAdminPersonaPromptToggleButtonLabel();
+  syncAdminPersonaRagToggleButtonLabel();
+  syncAdminPersonaPromptObservablesToggleButtonLabel();
+  syncAdminPersonaToolsToggleButtonLabel();
+}
+
+function resetAdminPersonaForm() {
+  /** Reset persona form fields back to defaults. */
+  editingAdminPersonaId = '';
+  adminPersonaSelectedPromptTemplateKey = '';
+  if (els.adminPersonaName) {
+    els.adminPersonaName.value = '';
+  }
+  syncAdminPersonaLlmOptions();
+  syncAdminPersonaPromptTemplateOptions();
+  setAdminPersonaPromptTemplateSelectionForKey('');
+  setAdminPersonaPromptSectionsInForm({ system: '', assistant: '', context: '' });
+  adminPersonaRagSequence = [];
+  adminPersonaToolSequence = [];
+  syncAdminPersonaRagOptions();
+  syncAdminPersonaToolOptions();
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaToolSequence();
+  if (els.adminPersonaPromptPanel) {
+    els.adminPersonaPromptPanel.classList.add('hidden');
+  }
+  if (els.adminPersonaRagPanel) {
+    els.adminPersonaRagPanel.classList.add('hidden');
+  }
+  if (els.adminPersonaPromptObservablesPanel) {
+    els.adminPersonaPromptObservablesPanel.classList.add('hidden');
+  }
+  if (els.adminPersonaToolsPanel) {
+    els.adminPersonaToolsPanel.classList.add('hidden');
+  }
+  setAdminPersonaPromptPanelActive(false);
+  setAdminPersonaRagPanelActive(false);
+  setAdminPersonaPromptObservablesPanelActive(false);
+  setAdminPersonaToolsPanelActive(false);
+  clearAdminPersonaFormPromptSentiment();
+  renderAdminPersonaGraphMeta();
+  syncAdminPersonaSaveButton();
+  syncAdminPersonaPromptToggleButtonLabel();
+  syncAdminPersonaRagToggleButtonLabel();
+  syncAdminPersonaPromptObservablesToggleButtonLabel();
+  syncAdminPersonaToolsToggleButtonLabel();
+}
+
+function loadAdminPersonaIntoForm(persona) {
+  /** Populate the persona form with the selected persona's current values. */
+  if (!persona) {
+    return;
+  }
+  editingAdminPersonaId = String(persona.persona_id || '').trim();
+  if (els.adminPersonaName) {
+    els.adminPersonaName.value = String(persona.name || '').trim();
+  }
+  syncAdminPersonaLlmOptions();
+  if (els.adminPersonaLlm) {
+    els.adminPersonaLlm.value = encodeLlmOption(persona.llm_provider, persona.llm_model);
+  }
+  syncAdminPersonaPromptTemplateOptions();
+  adminPersonaSelectedPromptTemplateKey = String(persona.prompt_template_key || '').trim();
+  setAdminPersonaPromptTemplateSelectionForKey(adminPersonaSelectedPromptTemplateKey);
+  setAdminPersonaPromptSectionsInForm(
+    normalizeAdminPersonaPromptSections(
+      persona.prompt_sections,
+      persona.prompts,
+      String(persona.prompt_template_key || '').trim()
+    )
+  );
+  adminPersonaRagSequence = Array.isArray(persona.rag_sequence)
+    ? persona.rag_sequence
+        .map((item) => normalizeAdminPersonaRagBinding(item))
+        .filter((item) => !!item)
+    : [];
+  adminPersonaToolSequence = Array.isArray(persona.tool_sequence)
+    ? persona.tool_sequence
+        .map((item) => normalizeAdminPersonaToolBinding(item))
+        .filter((item) => !!item)
+    : [];
+  renderAdminPersonaRagSequence();
+  renderAdminPersonaToolSequence();
+  clearAdminPersonaFormPromptSentiment();
+  renderAdminPersonaGraphMeta();
+  renderAdminPersonaStoredGraphSession(persona);
+  setAdminPersonaCreateOpen(true);
+  setAdminPersonaFeedback(`Editing ${persona.name}. Update the fields and save changes.`, 'info');
+  syncAdminPersonaPromptToggleButtonLabel();
+  syncAdminPersonaToolsToggleButtonLabel();
+}
+
+function highlightAdminPersonaRow(personaId) {
+  /** Highlight the saved persona row so the save action is obvious. */
+  const normalizedPersonaId = String(personaId || '').trim();
+  if (!normalizedPersonaId || !els.adminPersonaList) {
+    return;
+  }
+  const rows = Array.from(els.adminPersonaList.querySelectorAll('.admin-user-row'));
+  rows.forEach((row) => row.classList.remove('fresh'));
+  const match = rows.find((row) => String(row.dataset.personaId || '').trim() === normalizedPersonaId);
+  if (!match) {
+    return;
+  }
+  match.classList.add('fresh');
+  match.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  window.setTimeout(() => match.classList.remove('fresh'), 2200);
+}
+
+function selectAdminPersonaById(personaId) {
+  /** Select one persona from the current list and load it into the form. */
+  const normalizedPersonaId = String(personaId || '').trim();
+  const selectedPersona = adminPersonasCache.find(
+    (item) => String(item.persona_id || '').trim() === normalizedPersonaId
+  );
+  if (!selectedPersona) {
+    return;
+  }
+  selectedAdminPersonaId = normalizedPersonaId;
+  renderAdminPersonas(adminPersonasCache);
+  loadAdminPersonaIntoForm(selectedPersona);
+}
+
+async function addAdminPersona(options = {}) {
+  /** Create or update one persona and refresh the visible list. */
+  const closeOnSuccess = options?.closeOnSuccess !== false;
+  const uiStateSnapshot = closeOnSuccess ? null : captureAdminPersonaEditorUiState();
+  const name = String(els.adminPersonaName?.value || '').trim();
+  const promptTemplateKey = String(adminPersonaSelectedPromptTemplateKey || '').trim() || null;
+  const promptSections = getAdminPersonaPromptSectionsFromForm();
+  const prompts = composeLegacyPersonaPromptSections(promptSections);
+  const { provider, model } = decodeLlmOption(els.adminPersonaLlm?.value || '');
+  const isEditing = !!editingAdminPersonaId;
+  if (!name) {
+    els.adminPersonaName?.focus();
+    setAdminPersonaFeedback('Enter a persona name before saving.', 'error');
+    setStatus('Enter a persona name before saving.');
+    return;
+  }
+  if (!adminPersonaPromptSectionsHaveContent(promptSections)) {
+    els.adminPersonaSystemPrompt?.focus();
+    setAdminPersonaFeedback('Enter at least one prompt section before saving a persona.', 'error');
+    setStatus('Enter at least one prompt section before saving a persona.');
+    return;
+  }
+  if (els.adminSavePersonaBtn) {
+    els.adminSavePersonaBtn.disabled = true;
+    els.adminSavePersonaBtn.textContent = isEditing ? 'Saving Changes...' : 'Saving...';
+  }
+  if (els.adminCancelPersonaBtn) {
+    els.adminCancelPersonaBtn.disabled = true;
+  }
+  if (els.adminPersonaSmokeTestBtn) {
+    els.adminPersonaSmokeTestBtn.disabled = true;
+  }
+  if (els.adminAddPersonaBtn) {
+    els.adminAddPersonaBtn.disabled = true;
+  }
+  setAdminPersonaFeedback(isEditing ? 'Saving persona changes...' : 'Saving persona...', 'info');
+  try {
+    const savedPersona = await api('/api/admin/personas', {
+      method: 'POST',
+      body: JSON.stringify({
+        persona_id: editingAdminPersonaId || null,
+        name,
+        llm_provider: provider,
+        llm_model: model,
+        prompt_template_key: promptTemplateKey,
+        prompt_sections: promptSections,
+        prompts,
+        rag_sequence: adminPersonaRagSequence.map((item) => ({ key: item.key, enabled: item.enabled !== false })),
+        tool_sequence: adminPersonaToolSequence.map((item) => ({ key: item.key, enabled: item.enabled !== false })),
+      }),
+    });
+    const savedPersonaId = String(savedPersona.persona_id || '').trim();
+    selectedAdminPersonaId = savedPersonaId;
+    adminPersonasCache = [
+      savedPersona,
+      ...adminPersonasCache.filter((item) => item.persona_id !== savedPersona.persona_id),
+    ];
+    renderAdminPersonas(adminPersonasCache);
+    highlightAdminPersonaRow(savedPersona.persona_id);
+    if (closeOnSuccess) {
+      resetAdminPersonaForm();
+    } else {
+      editingAdminPersonaId = String(savedPersona.persona_id || '').trim();
+    }
+    await loadAdminPersonas();
+    selectedAdminPersonaId = savedPersonaId;
+    renderAdminPersonas(adminPersonasCache);
+    highlightAdminPersonaRow(savedPersona.persona_id);
+    if (!closeOnSuccess) {
+      const refreshedPersona = adminPersonasCache.find(
+        (item) => String(item.persona_id || '').trim() === selectedAdminPersonaId
+      );
+      if (refreshedPersona) {
+        if (els.adminPersonaName) {
+          els.adminPersonaName.value = String(refreshedPersona.name || '').trim();
+        }
+        if (els.adminPersonaLlm) {
+          els.adminPersonaLlm.value = encodeLlmOption(refreshedPersona.llm_provider, refreshedPersona.llm_model);
+        }
+        adminPersonaSelectedPromptTemplateKey = String(refreshedPersona.prompt_template_key || '').trim();
+        setAdminPersonaPromptTemplateSelectionForKey(adminPersonaSelectedPromptTemplateKey);
+        setAdminPersonaPromptSectionsInForm(
+          normalizeAdminPersonaPromptSections(
+            refreshedPersona.prompt_sections,
+            refreshedPersona.prompts,
+            String(refreshedPersona.prompt_template_key || '').trim()
+          )
+        );
+        adminPersonaRagSequence = Array.isArray(refreshedPersona.rag_sequence)
+          ? refreshedPersona.rag_sequence
+              .map((item) => normalizeAdminPersonaRagBinding(item))
+              .filter((item) => !!item)
+          : [];
+        adminPersonaToolSequence = Array.isArray(refreshedPersona.tool_sequence)
+          ? refreshedPersona.tool_sequence
+              .map((item) => normalizeAdminPersonaToolBinding(item))
+              .filter((item) => !!item)
+          : [];
+        renderAdminPersonaRagSequence();
+        renderAdminPersonaToolSequence();
+      }
+      restoreAdminPersonaEditorUiState(uiStateSnapshot);
+    }
+    setAdminPersonaFeedback(`${savedPersona.name} ${isEditing ? 'updated' : 'saved'}.`, 'success');
+    if (closeOnSuccess) {
+      setAdminPersonaCreateOpen(false);
+    }
+    setStatus(`Persona ${isEditing ? 'updated' : 'saved'}.`);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to save persona.');
+    setAdminPersonaFeedback(message, 'error');
+    throw err;
+  } finally {
+    if (els.adminSavePersonaBtn) {
+      els.adminSavePersonaBtn.disabled = false;
+      syncAdminPersonaSaveButton();
+    }
+    if (els.adminCancelPersonaBtn) {
+      els.adminCancelPersonaBtn.disabled = false;
+    }
+    if (els.adminPersonaSmokeTestBtn) {
+      els.adminPersonaSmokeTestBtn.disabled = false;
+    }
+    if (els.adminAddPersonaBtn) {
+      els.adminAddPersonaBtn.disabled = false;
+    }
+  }
 }
 
 async function loadAdminTestLog() {
@@ -1003,10 +4063,230 @@ async function loadAdminTestLog() {
   els.adminTestLogOutput.value = String(payload?.log_output || 'No test log output loaded.');
 }
 
+function formatAdminTestDuration(durationMs) {
+  /** Format an elapsed duration as MM:SS.hh so sub-second test runs stay visible. */
+  const totalCentiseconds = Math.max(0, Math.floor(Number(durationMs || 0) / 10));
+  const minutes = Math.floor(totalCentiseconds / 6000);
+  const seconds = Math.floor((totalCentiseconds % 6000) / 100);
+  const centiseconds = totalCentiseconds % 100;
+  return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}.${String(centiseconds).padStart(2, '0')}`;
+}
+
+function setAdminTestRunClockText(label) {
+  /** Render one runtime label in the Admin/Test clock. */
+  if (!els.adminTestRunClock) {
+    return;
+  }
+  els.adminTestRunClock.textContent = String(label || 'Test runtime: 00:00.00');
+}
+
+function stopAdminTestRunClock(finalDurationMs = null) {
+  /** Stop the live Admin/Test runtime clock and optionally lock in a final duration. */
+  if (adminTestRunClockHandle) {
+    window.clearInterval(adminTestRunClockHandle);
+    adminTestRunClockHandle = null;
+  }
+  if (finalDurationMs !== null && finalDurationMs !== undefined) {
+    setAdminTestRunClockText(`Last run: ${formatAdminTestDuration(finalDurationMs)}`);
+  } else {
+    setAdminTestRunClockText('Test runtime: 00:00.00');
+  }
+  adminTestRunStartedAtMs = 0;
+}
+
+function startAdminTestRunClock() {
+  /** Start the live Admin/Test runtime clock while pytest is running. */
+  if (adminTestRunClockHandle) {
+    window.clearInterval(adminTestRunClockHandle);
+  }
+  adminTestRunStartedAtMs = Date.now();
+  setAdminTestRunClockText('Running: 00:00.00');
+  adminTestRunClockHandle = window.setInterval(() => {
+    const elapsedMs = Date.now() - adminTestRunStartedAtMs;
+    setAdminTestRunClockText(`Running: ${formatAdminTestDuration(elapsedMs)}`);
+  }, 50);
+}
+
+async function runAdminTests() {
+  /** Execute the full pytest suite from the Admin/Test panel and refresh the report artifacts. */
+  if (!els.adminRunTestsBtn || !els.adminTestLogSummary || !els.adminTestLogOutput) {
+    return;
+  }
+  els.adminRunTestsBtn.disabled = true;
+  els.adminRunTestsBtn.textContent = 'Running...';
+  startAdminTestRunClock();
+  els.adminTestLogSummary.textContent = 'Running the full pytest suite...';
+  els.adminTestLogOutput.value = 'Pytest is running. This can take a moment.';
+  try {
+    const payload = await api('/api/admin/run-tests', {
+      method: 'POST',
+    });
+    els.adminTestLogSummary.textContent = String(payload?.summary || 'Test run completed.');
+    els.adminTestLogOutput.value = String(payload?.output || 'Pytest completed without additional console output.');
+    stopAdminTestRunClock(Number(payload?.duration_seconds || 0) * 1000);
+    await refreshAdminTestView();
+    setStatus(String(payload?.summary || 'All tests finished.'));
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Failed to run tests.');
+    const elapsedMs = adminTestRunStartedAtMs > 0 ? Date.now() - adminTestRunStartedAtMs : 0;
+    stopAdminTestRunClock(elapsedMs);
+    els.adminTestLogSummary.textContent = `Failed to run tests: ${message}`;
+    els.adminTestLogOutput.value = `Run All Tests failed.\n\n${message}`;
+    setStatus(`Failed to run tests: ${message}`);
+  } finally {
+    if (adminTestRunStartedAtMs > 0) {
+      stopAdminTestRunClock();
+    }
+    els.adminRunTestsBtn.disabled = false;
+    els.adminRunTestsBtn.textContent = 'Run All Tests';
+  }
+}
+
 async function refreshAdminTestView() {
   /** Refresh the Admin/Test content and reset the embedded report to its collapsed default state. */
   refreshAdminTestReportFrame();
-  await Promise.all([loadAdminUsers(), loadAdminTestLog()]);
+  await loadAdminTestLog();
+}
+
+async function refreshAdminUsersView() {
+  /** Refresh the Admin/Users content. */
+  await loadAdminUsers();
+}
+
+async function refreshAdminPersonasView() {
+  /** Refresh the Admin/Personas content. */
+  syncAdminPersonaLlmOptions();
+  await loadAdminPersonaPromptTemplates();
+  await loadAdminPersonaRagOptions();
+  await loadAdminPersonaToolOptions();
+  await loadAdminPersonas();
+}
+
+function setAdminMlopsStatus(message) {
+  /** Render one operational status line for the Admin/MLOps panel. */
+  if (!els.adminMlopsStatus) {
+    return;
+  }
+  const timestamp = new Date().toLocaleTimeString();
+  els.adminMlopsStatus.value = `[${timestamp}] ${String(message || 'MLOps operations are ready.')}`;
+}
+
+async function refreshAdminMlopsView() {
+  /** Refresh the Admin/MLOps status surface without forcing a backend call. */
+  setActiveMlopsSubtab(activeMlopsSubtab);
+  setAdminMlopsStatus('MLOps operations are ready.');
+}
+
+async function runAdminMlopsAction(actionLabel, fn) {
+  /** Execute one MLOps action and write the outcome into the MLOps status box. */
+  setAdminMlopsStatus(`${actionLabel}...`);
+  try {
+    const detail = await fn();
+    const suffix = detail ? ` ${detail}` : '';
+    setAdminMlopsStatus(`${actionLabel} completed.${suffix}`);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err || 'Operation failed.');
+    setAdminMlopsStatus(`${actionLabel} failed. ${message}`);
+    setStatus(message);
+  }
+}
+
+function openGithubActionsUrl(url) {
+  /** Open one GitHub Actions destination in a separate tab. */
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+function setActiveMlopsSubtab(subtabName) {
+  /** Toggle nested MLOps subtabs and keep the selected tool surface visible. */
+  const normalized = String(subtabName || '').trim().toLowerCase();
+  const nextSubtab = ['llmops', 'fine_tuning', 'deployment', 'cicd'].includes(normalized)
+    ? normalized
+    : 'llmops';
+  activeMlopsSubtab = nextSubtab;
+
+  const isLlmoops = nextSubtab === 'llmops';
+  const isFineTuning = nextSubtab === 'fine_tuning';
+  const isDeployment = nextSubtab === 'deployment';
+  const isCicd = nextSubtab === 'cicd';
+
+  if (els.adminMlopsTabLlmoopsBtn) {
+    els.adminMlopsTabLlmoopsBtn.classList.toggle('active', isLlmoops);
+    els.adminMlopsTabLlmoopsBtn.setAttribute('aria-selected', isLlmoops ? 'true' : 'false');
+  }
+  if (els.adminMlopsTabFineTuningBtn) {
+    els.adminMlopsTabFineTuningBtn.classList.toggle('active', isFineTuning);
+    els.adminMlopsTabFineTuningBtn.setAttribute('aria-selected', isFineTuning ? 'true' : 'false');
+  }
+  if (els.adminMlopsTabDeploymentBtn) {
+    els.adminMlopsTabDeploymentBtn.classList.toggle('active', isDeployment);
+    els.adminMlopsTabDeploymentBtn.setAttribute('aria-selected', isDeployment ? 'true' : 'false');
+  }
+  if (els.adminMlopsTabCicdBtn) {
+    els.adminMlopsTabCicdBtn.classList.toggle('active', isCicd);
+    els.adminMlopsTabCicdBtn.setAttribute('aria-selected', isCicd ? 'true' : 'false');
+  }
+
+  if (els.adminMlopsTabPageLlmoops) {
+    els.adminMlopsTabPageLlmoops.classList.toggle('hidden', !isLlmoops);
+  }
+  if (els.adminMlopsTabPageFineTuning) {
+    els.adminMlopsTabPageFineTuning.classList.toggle('hidden', !isFineTuning);
+  }
+  if (els.adminMlopsTabPageDeployment) {
+    els.adminMlopsTabPageDeployment.classList.toggle('hidden', !isDeployment);
+  }
+  if (els.adminMlopsTabPageCicd) {
+    els.adminMlopsTabPageCicd.classList.toggle('hidden', !isCicd);
+  }
+}
+
+function setActiveAdminSubtab(subtabName) {
+  /** Toggle Admin subtabs and refresh the selected panel content. */
+  const normalized = String(subtabName || '').trim().toLowerCase();
+  const nextSubtab = ['users', 'personas', 'test', 'mlops'].includes(normalized) ? normalized : 'users';
+  activeAdminSubtab = nextSubtab;
+  const isUsers = nextSubtab === 'users';
+  const isPersonas = nextSubtab === 'personas';
+  const isTest = nextSubtab === 'test';
+  const isMlops = nextSubtab === 'mlops';
+
+  if (els.adminTabTestBtn) {
+    els.adminTabTestBtn.classList.toggle('active', isTest);
+    els.adminTabTestBtn.setAttribute('aria-selected', isTest ? 'true' : 'false');
+  }
+  if (els.adminTabUsersBtn) {
+    els.adminTabUsersBtn.classList.toggle('active', isUsers);
+    els.adminTabUsersBtn.setAttribute('aria-selected', isUsers ? 'true' : 'false');
+  }
+  if (els.adminTabPersonasBtn) {
+    els.adminTabPersonasBtn.classList.toggle('active', isPersonas);
+    els.adminTabPersonasBtn.setAttribute('aria-selected', isPersonas ? 'true' : 'false');
+  }
+  if (els.adminTabMlopsBtn) {
+    els.adminTabMlopsBtn.classList.toggle('active', isMlops);
+    els.adminTabMlopsBtn.setAttribute('aria-selected', isMlops ? 'true' : 'false');
+  }
+  if (els.adminTabPageTest) {
+    els.adminTabPageTest.classList.toggle('hidden', !isTest);
+  }
+  if (els.adminTabPageUsers) {
+    els.adminTabPageUsers.classList.toggle('hidden', !isUsers);
+  }
+  if (els.adminTabPagePersonas) {
+    els.adminTabPagePersonas.classList.toggle('hidden', !isPersonas);
+  }
+  if (els.adminTabPageMlops) {
+    els.adminTabPageMlops.classList.toggle('hidden', !isMlops);
+  }
+
+  const refresh = isTest
+    ? refreshAdminTestView
+    : isMlops
+      ? refreshAdminMlopsView
+      : isPersonas
+        ? refreshAdminPersonasView
+        : refreshAdminUsersView;
+  refresh().catch((err) => setStatus(err.message));
 }
 
 function setActiveTab(tabName) {
@@ -1049,15 +4329,12 @@ function setActiveTab(tabName) {
   if (isObservables && previousTab !== 'observables') {
     setMetricsPanelOpen(true);
     renderCorrectnessDriftObservables();
-    if (!metricsLoaded) {
-      loadAgentMetrics({ silent: true })
-        .then(() => {
-          setStatus('Observables loaded.');
-        })
-        .catch((err) => setStatus(err.message));
-    } else {
-      setStatus('Observables ready.');
-    }
+    const hadMetricsLoaded = metricsLoaded;
+    loadAgentMetrics({ silent: true })
+      .then(() => {
+        setStatus(hadMetricsLoaded ? 'Observables refreshed.' : 'Observables loaded.');
+      })
+      .catch((err) => setStatus(err.message));
   }
 
   if (isIntelligence) {
@@ -1066,7 +4343,7 @@ function setActiveTab(tabName) {
   }
 
   if (isAdmin && previousTab !== 'admin') {
-    refreshAdminTestView().catch((err) => setStatus(err.message));
+    setActiveAdminSubtab(activeAdminSubtab);
   }
 }
 
@@ -1334,16 +4611,24 @@ async function finalizeTraceSession() {
   await pollTraceOnce();
 }
 
+function looksLikeTxtPath(value) {
+  /** Return true when one typed deposition source looks like a single text-file path. */
+  return String(value || '').trim().toLowerCase().endsWith('.txt');
+}
+
 function syncCaseActionState() {
   /** Keep case-index actions aligned with current case id/name values. */
   const hasCaseId = !!els.caseId.value.trim();
-  const hasDirectory = !!els.directory.value.trim();
+  const selectedSource = els.directory.value.trim();
+  const hasDirectory = !!selectedSource;
+  const canImportIntoDirectory = hasDirectory && !looksLikeTxtPath(selectedSource);
   const selectedModel = els.llmSelect.selectedOptions[0];
   const selectedModelAvailable = !!selectedModel && !selectedModel.disabled;
   els.saveCaseBtn.disabled = uiOpsInFlight > 0 || !hasCaseId || !selectedModelAvailable;
   els.saveIntelligenceBtn.disabled = uiOpsInFlight > 0 || !hasCaseId || !selectedModelAvailable;
   els.duplicateCaseBtn.disabled = uiOpsInFlight > 0 || !hasCaseId;
-  els.importDepositionBtn.disabled = uiOpsInFlight > 0 || !hasDirectory;
+  els.importDepositionBtn.disabled = uiOpsInFlight > 0 || !canImportIntoDirectory;
+  els.importDepositionFolderBtn.disabled = uiOpsInFlight > 0 || !canImportIntoDirectory;
   els.computeSentimentBtn.disabled = uiOpsInFlight > 0 || !selectedDepositionId;
   els.stopInferenceBtn.disabled = inferencingControllers.size === 0;
 }
@@ -1382,6 +4667,7 @@ function setControlsDisabled(disabled) {
   /** Toggle top-level controls while UI operations are in-flight. */
   els.newCaseBtn.disabled = disabled;
   els.importDepositionBtn.disabled = disabled;
+  els.importDepositionFolderBtn.disabled = disabled;
   els.ingestBtn.disabled = disabled;
   els.refreshBtn.disabled = disabled;
   els.saveCaseBtn.disabled = disabled || !els.caseId.value.trim();
@@ -1397,6 +4683,15 @@ function setControlsDisabled(disabled) {
   els.ontologyBrowseBtn.disabled = disabled;
   els.loadOntologyBtn.disabled = disabled;
   els.openGraphBrowserBtn.disabled = disabled;
+  els.graphRagEmbeddingEnabled.disabled = disabled;
+  els.graphRagEmbeddingProvider.disabled = disabled;
+  els.graphRagEmbeddingModel.disabled = disabled;
+  els.graphRagEmbeddingDimensions.disabled = disabled;
+  els.graphRagEmbeddingIndex.disabled = disabled;
+  els.graphRagEmbeddingNodeLabel.disabled = disabled;
+  els.graphRagEmbeddingProperty.disabled = disabled;
+  els.saveGraphRagEmbeddingBtn.disabled = disabled;
+  els.reloadGraphRagEmbeddingBtn.disabled = disabled;
   els.graphRagQuestion.disabled = disabled;
   els.graphRagToggle.disabled = disabled;
   els.graphRagStreamToggle.disabled = disabled;
@@ -1596,9 +4891,12 @@ function updateTimelineSlots() {
   /** Apply visible-slot count CSS variable for the current timeline item count. */
   if (!depositions.length) {
     els.timeline.style.removeProperty('--timeline-node-slots');
+    els.timelineScale?.style.removeProperty('--timeline-node-slots');
     return;
   }
-  els.timeline.style.setProperty('--timeline-node-slots', String(timelineVisibleSlots(depositions.length)));
+  const nextSlotCount = String(timelineVisibleSlots(depositions.length));
+  els.timeline.style.setProperty('--timeline-node-slots', nextSlotCount);
+  els.timelineScale?.style.setProperty('--timeline-node-slots', nextSlotCount);
 }
 
 function timelineStepPixels() {
@@ -1746,6 +5044,7 @@ async function loadLlmOptions({ silent = false, forceProbe = false } = {}) {
     }
 
     els.llmSelect.value = selected;
+    syncAdminPersonaLlmOptions();
     const selectedMeta = getSelectedOptionMeta(options);
     if (selectedMeta && !selectedMeta.operational) {
       const fix = selectedMeta.possible_fix ? ` Possible fix: ${selectedMeta.possible_fix}` : '';
@@ -1775,6 +5074,201 @@ function ensureLlmFallbackOption() {
   els.llmSelect.appendChild(fallback);
   els.llmSelect.value = fallback.value;
   syncCaseActionState();
+}
+
+function ensureIngestSchemaFallbackOption() {
+  /** Ensure selector still has at least one schema option when the API is unavailable. */
+  if (els.ingestSchemaSelect.options.length > 0) {
+    return;
+  }
+  const fallback = document.createElement('option');
+  fallback.value = 'deposition_schema';
+  fallback.textContent = 'DepositionSchema';
+  els.ingestSchemaSelect.appendChild(fallback);
+  els.ingestSchemaSelect.value = fallback.value;
+}
+
+async function loadIngestSchemaOptions({ silent = false } = {}) {
+  /** Fetch available ingest schemas and populate the schema selector. */
+  if (!silent) {
+    startUiProcessing('Loading ingest schemas...');
+  }
+  try {
+    const previous = String(els.ingestSchemaSelect.value || '').trim();
+    const payload = await api('/api/ingest-schemas');
+    const options = Array.isArray(payload) ? payload : [];
+    ingestSchemaOptionsCache = options;
+    els.ingestSchemaSelect.innerHTML = '';
+
+    for (const item of options) {
+      const option = document.createElement('option');
+      option.value = String(item.key || '').trim();
+      option.textContent = String(item.key || 'Unnamed schema').trim();
+      option.title = `${String(item.file_name || '').trim()} (${String(item.mode || 'native').trim()})`;
+      els.ingestSchemaSelect.appendChild(option);
+    }
+
+    ensureIngestSchemaFallbackOption();
+    const values = Array.from(els.ingestSchemaSelect.options || []).map((option) =>
+      String(option.value || '').trim()
+    );
+    els.ingestSchemaSelect.value = values.includes(previous)
+      ? previous
+      : values.includes('deposition_schema')
+        ? 'deposition_schema'
+        : values[0] || 'deposition_schema';
+    syncSelectedIngestSchemaEditor();
+    if (!silent) {
+      setStatus(`Loaded ${values.length} ingest schema option${values.length === 1 ? '' : 's'}.`);
+    }
+  } finally {
+    if (!silent) {
+      endUiProcessing();
+    }
+  }
+}
+
+function setIngestSchemaStatus(message, isError = false) {
+  /** Render one local status message for ingest schema management. */
+  if (!els.ingestSchemaStatus) {
+    return;
+  }
+  els.ingestSchemaStatus.textContent = String(message || '').trim();
+  els.ingestSchemaStatus.classList.toggle('error', !!isError);
+  els.ingestSchemaStatus.classList.toggle('muted', !isError);
+}
+
+function getSelectedIngestSchemaOption() {
+  /** Return metadata for the currently selected ingest schema option. */
+  const selectedKey = String(els.ingestSchemaSelect.value || '').trim();
+  return (
+    ingestSchemaOptionsCache.find((item) => String(item?.key || '').trim() === selectedKey) || null
+  );
+}
+
+function syncSelectedIngestSchemaEditor() {
+  /** Sync the schema editor fields with the currently selected schema option. */
+  if (editingNewIngestSchema) {
+    return;
+  }
+  const option = getSelectedIngestSchemaOption();
+  if (!option) {
+    els.ingestSchemaKey.value = '';
+    els.ingestSchemaJson.value = '';
+    els.saveIngestSchemaBtn.disabled = false;
+    els.removeIngestSchemaBtn.disabled = true;
+    setIngestSchemaStatus('Choose a schema path to inspect or create a new custom schema.');
+    return;
+  }
+
+  els.ingestSchemaKey.value = String(option.key || '').trim();
+  els.ingestSchemaJson.value = JSON.stringify(option.schema || option.schema_payload || {}, null, 2);
+  const builtin = !!option.builtin;
+  els.saveIngestSchemaBtn.disabled = builtin;
+  els.removeIngestSchemaBtn.disabled = !option.removable;
+  setIngestSchemaStatus(
+    builtin
+      ? 'Built-in schemas are read-only. Click New Schema to create a custom schema.'
+      : 'Custom schema loaded. Save changes or remove it.',
+    false
+  );
+}
+
+function startNewIngestSchemaDraft() {
+  /** Reset the schema editor into a blank draft state for a new custom schema. */
+  editingNewIngestSchema = true;
+  els.ingestSchemaKey.value = '';
+  els.ingestSchemaJson.value = JSON.stringify(
+    {
+      title: 'Custom Schema',
+      type: 'object',
+      properties: {},
+    },
+    null,
+    2
+  );
+  els.saveIngestSchemaBtn.disabled = false;
+  els.removeIngestSchemaBtn.disabled = true;
+  setIngestSchemaStatus('Enter a schema path and JSON payload, then save.');
+}
+
+async function saveIngestSchema() {
+  /** Persist one custom ingest schema to the backend and reload selector options. */
+  const key = String(els.ingestSchemaKey.value || '').trim();
+  const rawJson = String(els.ingestSchemaJson.value || '').trim();
+  if (!key || !rawJson) {
+    setIngestSchemaStatus('Schema key and schema JSON are required.', true);
+    return;
+  }
+
+  let schemaPayload;
+  try {
+    schemaPayload = JSON.parse(rawJson);
+  } catch (err) {
+    setIngestSchemaStatus(`Schema JSON is invalid: ${err.message}`, true);
+    return;
+  }
+  if (!schemaPayload || typeof schemaPayload !== 'object' || Array.isArray(schemaPayload)) {
+    setIngestSchemaStatus('Schema JSON must be a JSON object.', true);
+    return;
+  }
+
+  startUiProcessing('Saving ingest schema...');
+  try {
+    const payload = await api('/api/ingest-schemas', {
+      method: 'POST',
+      body: JSON.stringify({
+        key,
+        schema: schemaPayload,
+      }),
+    });
+    editingNewIngestSchema = false;
+    await loadIngestSchemaOptions({ silent: true });
+    const savedKey = String(payload?.key || '').trim();
+    if (savedKey) {
+      els.ingestSchemaSelect.value = savedKey;
+    }
+    syncSelectedIngestSchemaEditor();
+    setIngestSchemaStatus(`Saved custom ingest schema '${savedKey || key}'.`);
+    setStatus(`Saved ingest schema ${savedKey || key}.`);
+  } finally {
+    endUiProcessing();
+  }
+}
+
+async function removeIngestSchema() {
+  /** Permanently delete the currently selected custom ingest schema. */
+  const option = getSelectedIngestSchemaOption();
+  if (!option) {
+    setIngestSchemaStatus('Select a schema first.', true);
+    return;
+  }
+  if (option.builtin || !option.removable) {
+    setIngestSchemaStatus('Built-in schemas cannot be removed.', true);
+    return;
+  }
+  const confirmed = window.confirm(`Permanently remove ingest schema "${option.key}"?`);
+  if (!confirmed) {
+    return;
+  }
+
+  startUiProcessing('Removing ingest schema...');
+  try {
+    await api(`/api/ingest-schemas/${encodeURIComponent(option.key)}`, {
+      method: 'DELETE',
+    });
+    editingNewIngestSchema = false;
+    await loadIngestSchemaOptions({ silent: true });
+    ensureIngestSchemaFallbackOption();
+    if (Array.from(els.ingestSchemaSelect.options || []).some((item) => item.value === 'deposition_schema')) {
+      els.ingestSchemaSelect.value = 'deposition_schema';
+    }
+    syncSelectedIngestSchemaEditor();
+    setIngestSchemaStatus(`Removed ingest schema '${option.key}'.`);
+    setStatus(`Removed ingest schema ${option.key}.`);
+  } finally {
+    endUiProcessing();
+  }
 }
 
 function renderDirectoryDropdown(payload) {
@@ -1833,35 +5327,205 @@ async function loadDirectoryOptions({ silent = false } = {}) {
   }
 }
 
+function setDepositionBrowserOpen(open) {
+  /** Toggle deposition file-browser modal visibility. */
+  els.depositionBrowserModal.classList.toggle('hidden', !open);
+}
+
+function renderDepositionBrowserRows(title, items, kind) {
+  /** Build one directory/file section markup for the deposition browser. */
+  const rows = [];
+  rows.push(`<div class="browser-section-title">${escapeHtml(title)}</div>`);
+  if (!items.length) {
+    rows.push('<div class="browser-empty">No items in this section.</div>');
+    return rows.join('');
+  }
+  for (const item of items) {
+    rows.push(`
+      <button
+        class="browser-item ${escapeHtml(kind)}"
+        type="button"
+        data-path="${escapeHtml(item.path || '')}"
+        data-kind="${escapeHtml(kind)}"
+      >
+        <strong>${escapeHtml(item.name || item.path || '')}</strong>
+        <small>${escapeHtml(item.path || '')}</small>
+      </button>
+    `);
+  }
+  return rows.join('');
+}
+
+function renderDepositionBrowser(payload) {
+  /** Render deposition browser directory and file rows from API payload. */
+  depositionBrowserCurrentDirectory = String(payload?.current_directory || '').trim();
+  depositionBrowserParentDirectory = String(payload?.parent_directory || '').trim();
+  depositionBrowserWildcardPath = String(payload?.wildcard_path || '').trim();
+
+  const directories = Array.isArray(payload?.directories) ? payload.directories : [];
+  const files = Array.isArray(payload?.files) ? payload.files : [];
+  const base = String(payload?.base_directory || '').trim();
+  els.depositionBrowserTitle.textContent = 'Deposition Browser';
+  els.depositionBrowserPath.textContent = `Current folder: ${depositionBrowserCurrentDirectory || base || '(none)'}`;
+  els.depositionBrowserUpBtn.disabled = !depositionBrowserParentDirectory;
+  els.depositionBrowserUseFolderBtn.disabled = !depositionBrowserCurrentDirectory;
+  els.depositionBrowserList.innerHTML = [
+    renderDepositionBrowserRows('Folders', directories, 'directory'),
+    renderDepositionBrowserRows('TXT Files', files, 'file'),
+  ].join('');
+}
+
+async function browseDepositionDirectory(path = '') {
+  /** Fetch one deposition directory level for modal browser navigation. */
+  const query = path ? `?path=${encodeURIComponent(path)}` : '';
+  const payload = await api(`/api/deposition-browser${query}`);
+  renderDepositionBrowser(payload);
+}
+
+async function openGrafanaWithCredentials() {
+  /** Open Grafana login and surface the configured runtime credentials to the user. */
+  const payload = await api('/api/observability/grafana');
+  const grafanaUrl = String(
+    payload?.dashboard_url || payload?.login_url || payload?.url || 'http://localhost:3000'
+  ).trim();
+  const username = String(payload?.username || '').trim();
+  const password = String(payload?.password || '').trim();
+  const credentialText = username || password ? ` Username: ${username} Password: ${password}` : '';
+  window.open(grafanaUrl, '_blank', 'noopener,noreferrer');
+  setStatus(`Opened Grafana.${credentialText}`.trim());
+}
+
+function resolveDepositionBrowserStartPath() {
+  /** Resolve the best starting point for browsing from the current deposition input. */
+  const raw = String(els.directory?.value || '').trim();
+  if (!raw) {
+    return depositionBrowserCurrentDirectory || '';
+  }
+
+  const wildcardIndex = raw.search(/[*?\[]/);
+  if (wildcardIndex !== -1) {
+    const prefix = raw.slice(0, wildcardIndex).replace(/[\\/]+$/, '');
+    if (prefix) {
+      return prefix;
+    }
+    if (raw.startsWith('/')) {
+      return '/';
+    }
+    return depositionBrowserCurrentDirectory || '';
+  }
+
+  return raw;
+}
+
+async function openDepositionBrowser() {
+  /** Open deposition browser modal and load its starting directory rows. */
+  setDepositionBrowserOpen(true);
+  await browseDepositionDirectory(resolveDepositionBrowserStartPath());
+}
+
+async function handleDepositionBrowserListClick(event) {
+  /** Handle click actions on deposition browser rows (navigate/select). */
+  const target = event.target instanceof HTMLElement ? event.target.closest('.browser-item') : null;
+  if (!(target instanceof HTMLElement)) {
+    return;
+  }
+  const path = String(target.dataset.path || '').trim();
+  const kind = String(target.dataset.kind || '').trim();
+  if (!path) {
+    return;
+  }
+  if (kind === 'directory') {
+    await browseDepositionDirectory(path);
+    return;
+  }
+  els.directory.value = path;
+  setDepositionBrowserOpen(false);
+  syncCaseActionState();
+  setStatus(`Deposition file selected: ${path}`);
+}
+
 function promptImportDeposition() {
   /** Open the file picker for uploading new deposition text files into the selected folder. */
-  if (!els.directory.value.trim()) {
-    setStatus('Select a deposition folder before importing a deposition.');
+  const selected = els.directory.value.trim();
+  if (!selected) {
+    setStatus('Select a deposition directory before importing a deposition.');
+    return;
+  }
+  if (looksLikeTxtPath(selected)) {
+    setStatus('Import Deposition writes into a directory. Select a deposition directory, not a single .txt file.');
     return;
   }
   els.importDepositionInput.click();
 }
 
-async function importSelectedDepositionFiles() {
+function promptImportDepositionFolder() {
+  /** Open the folder picker for uploading every ``.txt`` file inside one selected folder. */
+  const selected = els.directory.value.trim();
+  if (!selected) {
+    setStatus('Select a deposition directory before importing a folder.');
+    return;
+  }
+  if (looksLikeTxtPath(selected)) {
+    setStatus('Import Folder writes into a directory. Select a deposition directory, not a single .txt file.');
+    return;
+  }
+  els.importDepositionFolderInput.click();
+}
+
+function normalizeImportedDepositionFiles(fileList, fromFolder = false) {
+  /** Keep only ``.txt`` uploads and preserve folder-relative names when importing a folder. */
+  const files = Array.isArray(fileList) ? fileList : [];
+  return files
+    .filter((file) => String(file?.name || '').toLowerCase().endsWith('.txt'))
+    .map((file) => {
+      if (!fromFolder) {
+        return { file, uploadName: file.name };
+      }
+      const relativePath = String(file.webkitRelativePath || file.name || '').trim();
+      const uploadName = relativePath ? relativePath.replace(/[\\/]+/g, '__') : file.name;
+      return { file, uploadName };
+    });
+}
+
+async function importSelectedDepositionFilesFromInput(inputEl, { fromFolder = false } = {}) {
   /** Upload chosen deposition files into the current folder and re-ingest the current case. */
   const directory = els.directory.value.trim();
-  const files = Array.from(els.importDepositionInput?.files || []);
+  const rawFiles = Array.from(inputEl?.files || []);
+  const files = normalizeImportedDepositionFiles(rawFiles, fromFolder);
   if (!directory) {
-    setStatus('Select a deposition folder before importing a deposition.');
-    els.importDepositionInput.value = '';
+    setStatus(
+      fromFolder
+        ? 'Select a deposition directory before importing a folder.'
+        : 'Select a deposition directory before importing a deposition.'
+    );
+    inputEl.value = '';
+    return;
+  }
+  if (looksLikeTxtPath(directory)) {
+    setStatus(
+      fromFolder
+        ? 'Import Folder requires a deposition directory target, not a single .txt file.'
+        : 'Import Deposition requires a deposition directory target, not a single .txt file.'
+    );
+    inputEl.value = '';
+    return;
+  }
+  if (!rawFiles.length) {
     return;
   }
   if (!files.length) {
+    setStatus(fromFolder ? 'No .txt files were found in the selected folder.' : 'Choose at least one .txt file.');
+    inputEl.value = '';
     return;
   }
 
   const formData = new FormData();
   formData.append('directory', directory);
-  for (const file of files) {
-    formData.append('files', file, file.name);
+  for (const item of files) {
+    formData.append('files', item.file, item.uploadName);
   }
 
-  startUiProcessing('Importing deposition files...');
+  startUiProcessing(fromFolder ? 'Importing deposition folder...' : 'Importing deposition files...');
   try {
     const payload = await api('/api/depositions/upload', {
       method: 'POST',
@@ -1869,15 +5533,27 @@ async function importSelectedDepositionFiles() {
     });
     await loadDirectoryOptions({ silent: true });
     if (els.caseId.value.trim()) {
-      setStatus(`Imported ${payload.file_count} deposition file(s). Re-ingesting current folder...`);
+      setStatus(
+        `Imported ${payload.file_count} deposition ${payload.file_count === 1 ? 'file' : 'files'}. Re-ingesting current folder...`
+      );
       await ingestCase();
       return;
     }
     setStatus(`Imported ${payload.file_count} deposition file(s) into ${payload.directory}.`);
   } finally {
-    els.importDepositionInput.value = '';
+    inputEl.value = '';
     endUiProcessing();
   }
+}
+
+async function importSelectedDepositionFiles() {
+  /** Upload selected ``.txt`` files from the file picker. */
+  await importSelectedDepositionFilesFromInput(els.importDepositionInput, { fromFolder: false });
+}
+
+async function importSelectedDepositionFolder() {
+  /** Upload every ``.txt`` file found in the chosen folder selection. */
+  await importSelectedDepositionFilesFromInput(els.importDepositionFolderInput, { fromFolder: true });
 }
 
 function renderOntologyDropdown(payload) {
@@ -2071,6 +5747,14 @@ function resolveSavedLlmValue(caseSummary, snapshot = null) {
   return '';
 }
 
+function resolveSavedIngestSchemaValue(snapshot = null) {
+  /** Resolve the best saved ingest schema selector value from a persisted snapshot. */
+  const snapshotValue = String(
+    snapshot?.dropdowns?.ingest_schema_selected || snapshot?.controls?.ingest_schema || ''
+  ).trim();
+  return snapshotValue || '';
+}
+
 function firstOperationalLlmValue() {
   /** Return the first enabled LLM selector option value, or empty string when unavailable. */
   const option = Array.from(els.llmSelect.options || []).find((item) => !item.disabled);
@@ -2110,11 +5794,30 @@ function applySavedLlmSelection(caseSummary, snapshot = null) {
   return false;
 }
 
+function applySavedIngestSchemaSelection(snapshot = null) {
+  /** Apply one saved ingest schema choice into the selector when that option exists. */
+  const desiredValue = resolveSavedIngestSchemaValue(snapshot);
+  if (!desiredValue) {
+    return false;
+  }
+  const option = Array.from(els.ingestSchemaSelect.options || []).find(
+    (item) => item.value === desiredValue
+  );
+  if (!option) {
+    return false;
+  }
+  els.ingestSchemaSelect.value = desiredValue;
+  syncSelectedIngestSchemaEditor();
+  return true;
+}
+
 function applyCaseSelection(caseSummary) {
   /** Apply selected case id and saved folder path into form controls. */
   if (!caseSummary) {
     els.caseId.value = '';
     els.directory.value = '';
+    ensureIngestSchemaFallbackOption();
+    els.ingestSchemaSelect.value = 'deposition_schema';
     writeLastUsedCaseId('');
     syncCaseActionState();
     return;
@@ -2217,10 +5920,16 @@ function selectedLlmIsOperational() {
 function renderTimeline() {
   /** Render chronological timeline strip for all loaded depositions. */
   els.timeline.innerHTML = '';
+  if (els.timelineScale) {
+    els.timelineScale.innerHTML = '';
+  }
   if (!depositions.length) {
     updateTimelineSlots();
     syncTimelineNavButtons();
     els.timeline.innerHTML = '<div class="muted">Timeline will appear after loading depositions.</div>';
+    if (els.timelineScale) {
+      els.timelineScale.innerHTML = '<div class="muted">Time scale will appear after loading depositions.</div>';
+    }
     return;
   }
 
@@ -2237,6 +5946,15 @@ function renderTimeline() {
     `;
     item.addEventListener('click', () => selectDeposition(dep._id));
     els.timeline.appendChild(item);
+    if (els.timelineScale) {
+      const scaleItem = document.createElement('div');
+      scaleItem.className = 'timeline-scale-item';
+      scaleItem.textContent = displayDate(dep.deposition_date);
+      els.timelineScale.appendChild(scaleItem);
+    }
+  }
+  if (els.timelineScale) {
+    els.timelineScale.scrollLeft = els.timeline.scrollLeft;
   }
   syncTimelineNavButtons();
 }
@@ -2290,6 +6008,35 @@ function clearDepositionSentiment() {
   els.detailSentiment.removeAttribute('tabindex');
   els.detailSentiment.removeAttribute('aria-expanded');
   els.computeSentimentBtn.disabled = true;
+  els.computeSentimentBtn.textContent = 'Compute Sentiment';
+}
+
+function syncDepositionSentimentActionState() {
+  /** Keep the sentiment action label aligned with whether sentiment is computed and visible. */
+  if (!els.computeSentimentBtn) {
+    return;
+  }
+  if (!currentDepositionSentiment) {
+    els.computeSentimentBtn.textContent = 'Compute Sentiment';
+    return;
+  }
+  els.computeSentimentBtn.textContent = els.detailSentiment.classList.contains('hidden')
+    ? 'Show Sentiment'
+    : 'Hide Sentiment';
+}
+
+function hideDepositionSentiment({ preserveData = true } = {}) {
+  /** Hide the rendered sentiment panel, optionally retaining the computed result for re-show. */
+  if (!preserveData) {
+    clearDepositionSentiment();
+    return;
+  }
+  depositionSentimentDetailOpen = false;
+  els.detailSentiment.classList.add('hidden');
+  els.detailSentiment.classList.remove('detail-sentiment-detailed');
+  els.detailSentiment.removeAttribute('aria-expanded');
+  els.computeSentimentBtn.disabled = false;
+  syncDepositionSentimentActionState();
 }
 
 function formatSentimentScore(score) {
@@ -2373,6 +6120,7 @@ function paintDepositionSentimentPanel() {
   els.detailSentiment.setAttribute('tabindex', '0');
   els.detailSentiment.setAttribute('aria-expanded', depositionSentimentDetailOpen ? 'true' : 'false');
   els.computeSentimentBtn.disabled = false;
+  syncDepositionSentimentActionState();
 }
 
 function renderDepositionSentiment(sentiment, { detailOpen = false } = {}) {
@@ -2393,9 +6141,27 @@ function renderDepositionSentiment(sentiment, { detailOpen = false } = {}) {
   paintDepositionSentimentPanel();
 }
 
+function restoreHiddenDepositionSentiment(sentiment, { detailOpen = false } = {}) {
+  /** Restore a previously computed sentiment result without reopening the visible panel. */
+  if (!sentiment || typeof sentiment !== 'object') {
+    clearDepositionSentiment();
+    return;
+  }
+  depositionSentimentDetailOpen = !!detailOpen;
+  currentDepositionSentiment = {
+    score: Number(sentiment.score || 0),
+    label: String(sentiment.label || 'neutral').trim() || 'neutral',
+    summary: String(sentiment.summary || '').trim(),
+    positive_matches: Number(sentiment.positive_matches || 0),
+    negative_matches: Number(sentiment.negative_matches || 0),
+    word_count: Number(sentiment.word_count || 0),
+  };
+  hideDepositionSentiment({ preserveData: true });
+}
+
 async function toggleDepositionSentimentDetail() {
   /** Toggle the sentiment panel between summary and detailed explanation. */
-  if (!currentDepositionSentiment) {
+  if (!currentDepositionSentiment || els.detailSentiment.classList.contains('hidden')) {
     return;
   }
   depositionSentimentDetailOpen = !depositionSentimentDetailOpen;
@@ -2421,12 +6187,17 @@ function restoreDepositionSentimentFromCaseSnapshot(snapshot) {
     conflictDetail && conflictDetail.sentiment && typeof conflictDetail.sentiment === 'object'
       ? conflictDetail.sentiment
       : null;
-  if (!sentiment || !(conflictDetail.sentiment_visible ?? true)) {
+  if (!sentiment) {
     return false;
   }
-  renderDepositionSentiment(sentiment, {
+  const renderState = {
     detailOpen: !!conflictDetail.sentiment_detail_view,
-  });
+  };
+  if (conflictDetail.sentiment_visible ?? true) {
+    renderDepositionSentiment(sentiment, renderState);
+  } else {
+    restoreHiddenDepositionSentiment(sentiment, renderState);
+  }
   return true;
 }
 
@@ -2452,6 +6223,7 @@ function renderDetail(dep) {
   clearDepositionSentiment();
   clearFocusedReasoning();
   els.computeSentimentBtn.disabled = false;
+  syncDepositionSentimentActionState();
 
   if (!contradictions.length) {
     els.detailContradictions.innerHTML = '<li>No contradictions identified.</li>';
@@ -2515,6 +6287,18 @@ async function computeDepositionSentiment() {
   /** Compute a deterministic sentiment summary across the full selected deposition text. */
   if (!selectedDepositionId || !loadedCaseId) {
     setStatus('Load a case and select a deposition first.');
+    return;
+  }
+  if (currentDepositionSentiment) {
+    if (els.detailSentiment.classList.contains('hidden')) {
+      paintDepositionSentimentPanel();
+      await persistCurrentCaseSnapshot();
+      setStatus('Deposition sentiment shown.');
+      return;
+    }
+    hideDepositionSentiment({ preserveData: true });
+    await persistCurrentCaseSnapshot();
+    setStatus('Deposition sentiment hidden.');
     return;
   }
 
@@ -2712,6 +6496,7 @@ async function loadDepositions() {
     const savedSnapshot = shouldRestoreSavedState ? await loadSavedCaseSnapshot(caseId) : null;
     if (shouldRestoreSavedState) {
       applySavedLlmSelection(currentCaseSummary, savedSnapshot);
+      applySavedIngestSchemaSelection(savedSnapshot);
     }
     loadedCaseId = caseId;
     writeLastUsedCaseId(caseId);
@@ -2817,6 +6602,7 @@ function buildCaseSaveSnapshot() {
   const selectedDeposition = depositions.find((item) => item._id === selectedDepositionId) || null;
   const dropdownOptions = {
     llm_selected: els.llmSelect.value,
+    ingest_schema_selected: String(els.ingestSchemaSelect.value || '').trim() || 'deposition_schema',
     llm_options: Array.from(els.llmSelect.options || []).map((option) => ({
       value: String(option.value || ''),
       label: String(option.textContent || '').trim(),
@@ -2868,6 +6654,7 @@ function buildCaseSaveSnapshot() {
       llm_provider: llm.provider,
       llm_model: llm.model,
       llm_label: getSelectedLlmLabel(),
+      ingest_schema: String(els.ingestSchemaSelect.value || '').trim() || 'deposition_schema',
     },
     dropdowns: dropdownOptions,
     conflict_detail: {
@@ -2918,6 +6705,13 @@ function buildCaseSaveSnapshot() {
       question: els.graphRagQuestion.value.trim(),
       rag_enabled: !!els.graphRagToggle.checked,
       rag_stream_enabled: !!els.graphRagStreamToggle.checked,
+      embedding_enabled: !!els.graphRagEmbeddingEnabled.checked,
+      embedding_provider: String(els.graphRagEmbeddingProvider?.value || '').trim(),
+      embedding_model: String(els.graphRagEmbeddingModel?.value || '').trim(),
+      embedding_dimensions: Number.parseInt(String(els.graphRagEmbeddingDimensions?.value || '0'), 10) || 0,
+      embedding_index_name: String(els.graphRagEmbeddingIndex?.value || '').trim(),
+      embedding_node_label: String(els.graphRagEmbeddingNodeLabel?.value || '').trim(),
+      embedding_property_name: String(els.graphRagEmbeddingProperty?.value || '').trim(),
       answer: String(els.graphRagAnswer?.textContent || '').trim(),
       monitor: String(els.graphRagMonitor?.textContent || '').trim(),
       cycles: graphRagCycles.length,
@@ -2966,7 +6760,7 @@ async function saveCase() {
     return;
   }
   if (!directory) {
-    setStatus('Select a deposition folder before saving.');
+    setStatus('Select a deposition folder or .txt file before saving.');
     return;
   }
   if (!selectedLlmIsOperational()) {
@@ -3004,7 +6798,7 @@ async function duplicateCaseToNew() {
 
   const directory = els.directory.value.trim();
   if (!directory) {
-    setStatus('Select a deposition folder before duplicating.');
+    setStatus('Select a deposition folder or .txt file before duplicating.');
     return;
   }
 
@@ -3065,6 +6859,83 @@ async function loadOntologyGraph() {
   }
 }
 
+function applyGraphRagEmbeddingConfig(payload) {
+  /** Apply one backend Graph RAG embedding configuration payload into the UI controls. */
+  const config = payload && typeof payload === 'object' ? payload : {};
+  els.graphRagEmbeddingEnabled.checked = !!config.enabled;
+  els.graphRagEmbeddingProvider.value = String(config.provider || 'openai').trim() || 'openai';
+  els.graphRagEmbeddingModel.value = String(config.model || 'text-embedding-3-small').trim()
+    || 'text-embedding-3-small';
+  els.graphRagEmbeddingDimensions.value = String(config.dimensions || 1536);
+  els.graphRagEmbeddingIndex.value = String(config.index_name || 'resource_embeddings').trim()
+    || 'resource_embeddings';
+  els.graphRagEmbeddingNodeLabel.value = String(config.node_label || 'Resource').trim() || 'Resource';
+  els.graphRagEmbeddingProperty.value = String(config.property_name || 'embedding').trim() || 'embedding';
+}
+
+async function loadGraphRagEmbeddingConfig({ silent = false } = {}) {
+  /** Load the persisted Graph RAG embedding configuration from the backend. */
+  const payload = await api('/api/graph-rag/embedding-config');
+  applyGraphRagEmbeddingConfig(payload);
+  if (!silent) {
+    const mode = payload.enabled ? 'enabled' : 'disabled';
+    setStatus(`Loaded Graph RAG embedding configuration (${mode}).`);
+  }
+  return payload;
+}
+
+async function saveGraphRagEmbeddingConfig() {
+  /** Persist the current Graph RAG embedding configuration to the backend. */
+  const model = String(els.graphRagEmbeddingModel.value || '').trim();
+  const indexName = String(els.graphRagEmbeddingIndex.value || '').trim();
+  const nodeLabel = String(els.graphRagEmbeddingNodeLabel.value || '').trim();
+  const propertyName = String(els.graphRagEmbeddingProperty.value || '').trim();
+  const dimensionsText = String(els.graphRagEmbeddingDimensions.value || '').trim();
+  const dimensions = Number.parseInt(dimensionsText || '1536', 10);
+
+  if (!model) {
+    setStatus('Embedding model is required.');
+    return;
+  }
+  if (!indexName) {
+    setStatus('Vector index name is required.');
+    return;
+  }
+  if (!nodeLabel) {
+    setStatus('Embedding node label is required.');
+    return;
+  }
+  if (!propertyName) {
+    setStatus('Embedding property name is required.');
+    return;
+  }
+  if (!Number.isFinite(dimensions) || dimensions <= 0) {
+    setStatus('Embedding dimensions must be a positive number.');
+    return;
+  }
+
+  startUiProcessing('Saving Graph RAG embedding configuration...');
+  try {
+    const payload = await api('/api/graph-rag/embedding-config', {
+      method: 'POST',
+      body: JSON.stringify({
+        enabled: !!els.graphRagEmbeddingEnabled.checked,
+        provider: String(els.graphRagEmbeddingProvider.value || 'openai').trim() || 'openai',
+        model,
+        dimensions,
+        index_name: indexName,
+        node_label: nodeLabel,
+        property_name: propertyName,
+      }),
+    });
+    applyGraphRagEmbeddingConfig(payload);
+    const mode = payload.enabled ? 'enabled' : 'disabled';
+    setStatus(`Saved Graph RAG embedding configuration (${mode}, ${payload.provider}/${payload.model}).`);
+  } finally {
+    endUiProcessing();
+  }
+}
+
 async function askGraphRag() {
   /** Query ontology graph via backend Graph RAG endpoint and render answer/sources. */
   const question = els.graphRagQuestion.value.trim();
@@ -3092,6 +6963,15 @@ async function askGraphRag() {
         top_k: 8,
         use_rag: useRag,
         stream_rag: streamRag,
+        embedding_config: {
+          enabled: !!els.graphRagEmbeddingEnabled.checked,
+          provider: String(els.graphRagEmbeddingProvider.value || 'openai').trim() || 'openai',
+          model: String(els.graphRagEmbeddingModel.value || '').trim() || 'text-embedding-3-small',
+          dimensions: Number.parseInt(String(els.graphRagEmbeddingDimensions.value || '1536'), 10) || 1536,
+          index_name: String(els.graphRagEmbeddingIndex.value || '').trim() || 'resource_embeddings',
+          node_label: String(els.graphRagEmbeddingNodeLabel.value || '').trim() || 'Resource',
+          property_name: String(els.graphRagEmbeddingProperty.value || '').trim() || 'embedding',
+        },
         llm_provider: llm.provider,
         llm_model: llm.model,
         thought_stream_id: traceId,
@@ -3105,7 +6985,7 @@ async function askGraphRag() {
     renderGraphRagCycle(payload);
     setStatus(
       useRag
-        ? `Graph RAG answer generated from ${payload.context_rows} context row(s).`
+        ? `Graph RAG answer generated from ${payload.context_rows} context row(s) via ${payload.monitor?.retrieval_mode || 'keyword'} retrieval.`
         : 'Graph answer generated with RAG retrieval disabled.'
     );
   } catch (err) {
@@ -3134,6 +7014,10 @@ function renderGraphRagCycle(payload) {
   const monitor = payload?.monitor || {};
   const terms = Array.isArray(monitor.retrieval_terms) ? monitor.retrieval_terms : [];
   const retrievedResources = Array.isArray(monitor.retrieved_resources) ? monitor.retrieved_resources : [];
+  const retrievalMode = String(monitor?.retrieval_mode || 'keyword').trim() || 'keyword';
+  const embeddingMode = monitor?.embedding_enabled
+    ? `${String(monitor?.embedding_provider || '').trim() || 'embedding'}:${String(monitor?.embedding_model || '').trim() || 'default'}`
+    : 'disabled';
   const retrievedLines = [];
   retrievedResources.slice(0, 8).forEach((resource, index) => {
     const label = String(resource?.label || resource?.iri || '').trim() || '(unknown)';
@@ -3162,6 +7046,10 @@ function renderGraphRagCycle(payload) {
     at: new Date().toLocaleTimeString(),
     ragEnabled: monitor.rag_enabled !== false,
     ragStreamEnabled: monitor.rag_stream_enabled !== false,
+    retrievalMode,
+    embeddingMode,
+    queryEmbeddingUsed: !!monitor?.query_embedding_used,
+    embeddingError: String(monitor?.embedding_error || '').trim(),
     question: String(payload?.question || '').trim(),
     contextRows: Number(payload?.context_rows || 0),
     terms: terms.join(', ') || '(none)',
@@ -3177,6 +7065,9 @@ function renderGraphRagCycle(payload) {
         `Cycle ${graphRagCycles.length - index} @ ${item.at}`,
         `RAG enabled: ${item.ragEnabled ? 'yes' : 'no'}`,
         `RAG stream logging: ${item.ragStreamEnabled ? 'yes' : 'no'}`,
+        `Retrieval mode: ${item.retrievalMode}`,
+        `Embeddings: ${item.embeddingMode} | Query vector used: ${item.queryEmbeddingUsed ? 'yes' : 'no'}`,
+        item.embeddingError ? `Embedding fallback: ${item.embeddingError}` : null,
         `Question: ${item.question}`,
         `Context rows: ${item.contextRows}`,
         `Retrieval terms: ${item.terms}`,
@@ -3188,7 +7079,9 @@ function renderGraphRagCycle(payload) {
         item.llmSystemPrompt,
         'User prompt -> LLM:',
         item.llmUserPrompt,
-      ].join('\n')
+      ]
+        .filter(Boolean)
+        .join('\n')
   );
   els.graphRagMonitor.textContent = lines.join('\n\n==============================\n\n');
 }
@@ -3266,6 +7159,7 @@ async function ingestCase() {
   /** Start full-case ingestion using selected provider/model selection. */
   const caseId = els.caseId.value.trim();
   const directory = els.directory.value.trim();
+  const schemaName = String(els.ingestSchemaSelect.value || '').trim() || 'deposition_schema';
   const llm = getSelectedLlm();
   const skipReassess = !!els.skipReassess.checked;
 
@@ -3295,6 +7189,7 @@ async function ingestCase() {
         directory,
         llm_provider: llm.provider,
         llm_model: llm.model,
+        schema_name: schemaName,
         skip_reassess: skipReassess,
         thought_stream_id: traceId,
       }),
@@ -3375,29 +7270,527 @@ els.tabIntelligenceBtn.addEventListener('click', () => setActiveTab('intelligenc
 els.tabProvisioningBtn.addEventListener('click', () => setActiveTab('provisioning'));
 els.tabObservablesBtn.addEventListener('click', () => setActiveTab('observables'));
 els.tabAdminBtn.addEventListener('click', () => setActiveTab('admin'));
-els.adminTabTestBtn.addEventListener('click', () => refreshAdminTestView().catch((err) => setStatus(err.message)));
-els.adminAddUserBtn.addEventListener('click', () => addAdminUser().catch((err) => setStatus(err.message)));
+els.adminTabTestBtn.addEventListener('click', () => setActiveAdminSubtab('test'));
+els.adminTabUsersBtn.addEventListener('click', () => setActiveAdminSubtab('users'));
+if (els.adminTabPersonasBtn) {
+  els.adminTabPersonasBtn.addEventListener('click', () => setActiveAdminSubtab('personas'));
+}
+if (els.adminTabMlopsBtn) {
+  els.adminTabMlopsBtn.addEventListener('click', () => setActiveAdminSubtab('mlops'));
+}
+if (els.adminMlopsTabLlmoopsBtn) {
+  els.adminMlopsTabLlmoopsBtn.addEventListener('click', () => setActiveMlopsSubtab('llmops'));
+}
+if (els.adminMlopsTabFineTuningBtn) {
+  els.adminMlopsTabFineTuningBtn.addEventListener('click', () => setActiveMlopsSubtab('fine_tuning'));
+}
+if (els.adminMlopsTabDeploymentBtn) {
+  els.adminMlopsTabDeploymentBtn.addEventListener('click', () => setActiveMlopsSubtab('deployment'));
+}
+if (els.adminMlopsTabCicdBtn) {
+  els.adminMlopsTabCicdBtn.addEventListener('click', () => setActiveMlopsSubtab('cicd'));
+}
+els.adminAddUserBtn.addEventListener('click', () => {
+  const nextOpen = !!els.adminUserCreatePanel?.classList.contains('hidden');
+  if (nextOpen) {
+    resetAdminUserForm();
+  }
+  setAdminUserCreateOpen(nextOpen);
+  if (nextOpen) {
+    setAdminUserFeedback('Enter a first name, last name, and authorization level, then save.', 'info');
+    return;
+  }
+  setAdminUserFeedback('Click Add User to enter a first name, last name, and authorization level.', 'info');
+});
+els.adminSaveUserBtn.addEventListener('click', () => addAdminUser().catch((err) => setStatus(err.message)));
+els.adminCancelUserBtn.addEventListener('click', () => {
+  resetAdminUserForm();
+  setAdminUserCreateOpen(false);
+  setAdminUserFeedback('Click Add User to enter a first name, last name, and authorization level.', 'info');
+});
+els.adminUserSelect.addEventListener('change', () => {
+  const selectedId = String(els.adminUserSelect?.value || '').trim();
+  if (!selectedId) {
+    return;
+  }
+  selectAdminUserById(selectedId, { openDetail: false });
+});
+els.adminGetUsersBtn.addEventListener('click', () => loadAdminUsers().catch((err) => setStatus(err.message)));
+if (els.adminRemoveUserBtn) {
+  els.adminRemoveUserBtn.addEventListener('click', () =>
+    removeAdminUser().catch((err) => setStatus(err.message))
+  );
+}
+els.adminRefreshUsersBtn.addEventListener('click', () => loadAdminUsers().catch((err) => setStatus(err.message)));
+if (els.adminAddPersonaBtn) {
+  els.adminAddPersonaBtn.addEventListener('click', () => {
+    const nextOpen = !!els.adminPersonaCreatePanel?.classList.contains('hidden');
+    if (nextOpen) {
+      resetAdminPersonaForm();
+    }
+    setAdminPersonaCreateOpen(nextOpen);
+    if (nextOpen) {
+      setAdminPersonaFeedback('Enter a persona name, choose an LLM, and define prompts, then save.', 'info');
+      return;
+    }
+    setAdminPersonaFeedback('Click Add Persona to enter a name, choose an LLM, and define prompts.', 'info');
+  });
+}
+if (els.adminSavePersonaBtn) {
+  els.adminSavePersonaBtn.addEventListener('click', () =>
+    addAdminPersona({ closeOnSuccess: false }).catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaRagAddBtn) {
+  els.adminPersonaRagAddBtn.addEventListener('click', () => addAdminPersonaRag());
+}
+if (els.adminPersonaLoadRagsBtn) {
+  els.adminPersonaLoadRagsBtn.addEventListener('click', () => {
+    loadAdminPersonaRagOptions()
+      .then(() => setAdminPersonaFeedback('Loaded the currently available RAG steps.', 'info'))
+      .catch((err) => setStatus(err.message));
+  });
+}
+if (els.adminPersonaToolAddBtn) {
+  els.adminPersonaToolAddBtn.addEventListener('click', () => addAdminPersonaTool());
+}
+if (els.adminPersonaLoadToolsBtn) {
+  els.adminPersonaLoadToolsBtn.addEventListener('click', () => {
+    loadAdminPersonaToolOptions()
+      .then(() => setAdminPersonaFeedback('Loaded the currently available MCP tools.', 'info'))
+      .catch((err) => setStatus(err.message));
+  });
+}
+if (els.adminPersonaOpenPromptModalBtn) {
+  els.adminPersonaOpenPromptModalBtn.addEventListener('click', () => toggleAdminPersonaPromptPanel());
+}
+if (els.adminPersonaToggleRagBtn) {
+  els.adminPersonaToggleRagBtn.addEventListener('click', () => toggleAdminPersonaRagPanel());
+}
+if (els.adminPersonaTogglePromptObservablesBtn) {
+  els.adminPersonaTogglePromptObservablesBtn.addEventListener('click', () => toggleAdminPersonaPromptObservablesPanel());
+}
+if (els.adminPersonaToggleToolsBtn) {
+  els.adminPersonaToggleToolsBtn.addEventListener('click', () => toggleAdminPersonaToolsPanel());
+}
+if (els.adminPersonaRefreshPromptObservablesBtn) {
+  els.adminPersonaRefreshPromptObservablesBtn.addEventListener('click', () => renderAdminPersonaPromptObservables());
+}
+if (els.adminPersonaSystemChoosePromptBtn) {
+  els.adminPersonaSystemChoosePromptBtn.addEventListener('click', () =>
+    toggleAdminPersonaPromptTemplateDropdown('system').catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaSystemObservableBtn) {
+  els.adminPersonaSystemObservableBtn.addEventListener('click', () => showAdminPersonaPromptObservableModal('system'));
+}
+if (els.adminPersonaSystemSavePromptBtn) {
+  els.adminPersonaSystemSavePromptBtn.addEventListener('click', () =>
+    saveAdminPersonaPromptSection('system').catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaAssistantChoosePromptBtn) {
+  els.adminPersonaAssistantChoosePromptBtn.addEventListener('click', () =>
+    toggleAdminPersonaPromptTemplateDropdown('assistant').catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaAssistantObservableBtn) {
+  els.adminPersonaAssistantObservableBtn.addEventListener('click', () => showAdminPersonaPromptObservableModal('assistant'));
+}
+if (els.adminPersonaAssistantSavePromptBtn) {
+  els.adminPersonaAssistantSavePromptBtn.addEventListener('click', () =>
+    saveAdminPersonaPromptSection('assistant').catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaContextChoosePromptBtn) {
+  els.adminPersonaContextChoosePromptBtn.addEventListener('click', () =>
+    toggleAdminPersonaPromptTemplateDropdown('context').catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaContextObservableBtn) {
+  els.adminPersonaContextObservableBtn.addEventListener('click', () => showAdminPersonaPromptObservableModal('context'));
+}
+if (els.adminPersonaContextSavePromptBtn) {
+  els.adminPersonaContextSavePromptBtn.addEventListener('click', () =>
+    saveAdminPersonaPromptSection('context').catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaSystemPromptTemplateSelect) {
+  els.adminPersonaSystemPromptTemplateSelect.addEventListener('change', () => {
+    syncAdminPersonaPromptTemplateSelectColor(els.adminPersonaSystemPromptTemplateSelect);
+    syncAdminPersonaSelectedPromptTemplateKey();
+    if (String(els.adminPersonaSystemPromptTemplateSelect.value || '').trim()) {
+      loadSelectedAdminPersonaPromptTemplate('system');
+      els.adminPersonaSystemPromptTemplateSelect.classList.add('hidden');
+      if (adminPersonaPromptObservablesPanelActive) {
+        renderAdminPersonaPromptObservables();
+      }
+    }
+  });
+}
+if (els.adminPersonaAssistantPromptTemplateSelect) {
+  els.adminPersonaAssistantPromptTemplateSelect.addEventListener('change', () => {
+    syncAdminPersonaPromptTemplateSelectColor(els.adminPersonaAssistantPromptTemplateSelect);
+    syncAdminPersonaSelectedPromptTemplateKey();
+    if (String(els.adminPersonaAssistantPromptTemplateSelect.value || '').trim()) {
+      loadSelectedAdminPersonaPromptTemplate('assistant');
+      els.adminPersonaAssistantPromptTemplateSelect.classList.add('hidden');
+      if (adminPersonaPromptObservablesPanelActive) {
+        renderAdminPersonaPromptObservables();
+      }
+    }
+  });
+}
+if (els.adminPersonaContextPromptTemplateSelect) {
+  els.adminPersonaContextPromptTemplateSelect.addEventListener('change', () => {
+    syncAdminPersonaPromptTemplateSelectColor(els.adminPersonaContextPromptTemplateSelect);
+    syncAdminPersonaSelectedPromptTemplateKey();
+    if (String(els.adminPersonaContextPromptTemplateSelect.value || '').trim()) {
+      loadSelectedAdminPersonaPromptTemplate('context');
+      els.adminPersonaContextPromptTemplateSelect.classList.add('hidden');
+      if (adminPersonaPromptObservablesPanelActive) {
+        renderAdminPersonaPromptObservables();
+      }
+    }
+  });
+}
+if (els.adminPersonaSystemPrompt) {
+  els.adminPersonaSystemPrompt.addEventListener('input', () => {
+    if (adminPersonaPromptObservablesPanelActive) {
+      renderAdminPersonaPromptObservables();
+    }
+  });
+}
+if (els.adminPersonaAssistantPrompt) {
+  els.adminPersonaAssistantPrompt.addEventListener('input', () => {
+    if (adminPersonaPromptObservablesPanelActive) {
+      renderAdminPersonaPromptObservables();
+    }
+  });
+}
+if (els.adminPersonaContextPrompt) {
+  els.adminPersonaContextPrompt.addEventListener('input', () => {
+    if (adminPersonaPromptObservablesPanelActive) {
+      renderAdminPersonaPromptObservables();
+    }
+  });
+}
+if (els.adminCancelPersonaBtn) {
+  els.adminCancelPersonaBtn.addEventListener('click', () => {
+    resetAdminPersonaForm();
+    setAdminPersonaCreateOpen(false);
+    setAdminPersonaFeedback('Click Add Persona to enter a name, choose an LLM, and define prompts.', 'info');
+  });
+}
+if (els.adminPersonaSmokeTestBtn) {
+  els.adminPersonaSmokeTestBtn.addEventListener('click', () => runAdminPersonaSmokeTestStub());
+}
+if (els.adminPersonaFormPromptSentimentBtn) {
+  els.adminPersonaFormPromptSentimentBtn.addEventListener('click', () =>
+    scoreAdminPersonaFormPromptSentiment().catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaFormPromptSentiment) {
+  els.adminPersonaFormPromptSentiment.addEventListener('click', () => toggleAdminPersonaFormPromptSentimentDetail());
+  els.adminPersonaFormPromptSentiment.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') {
+      return;
+    }
+    event.preventDefault();
+    toggleAdminPersonaFormPromptSentimentDetail();
+  });
+}
+if (els.adminPersonaSelect) {
+  els.adminPersonaSelect.addEventListener('change', () => {
+    const selectedId = String(els.adminPersonaSelect?.value || '').trim();
+    if (!selectedId) {
+      return;
+    }
+    selectAdminPersonaById(selectedId);
+  });
+}
+if (els.adminPersonaLlm) {
+  els.adminPersonaLlm.addEventListener('change', () => renderAdminPersonaGraphMeta());
+}
+if (els.adminPersonaName) {
+  els.adminPersonaName.addEventListener('input', () => renderAdminPersonaGraphMeta());
+}
+if (els.adminPersonaGraphAskBtn) {
+  els.adminPersonaGraphAskBtn.addEventListener('click', () =>
+    askAdminPersonaGraphQuestion().catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaGraphClearBtn) {
+  els.adminPersonaGraphClearBtn.addEventListener('click', () => clearAdminPersonaGraphQuestion());
+}
+if (els.adminPersonaGraphQuestion) {
+  els.adminPersonaGraphQuestion.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter') {
+      return;
+    }
+    event.preventDefault();
+    askAdminPersonaGraphQuestion().catch((err) => setStatus(err.message));
+  });
+}
+els.adminRunTestsBtn.addEventListener('click', () => runAdminTests().catch((err) => setStatus(err.message)));
 els.adminRefreshTestLogBtn.addEventListener('click', () =>
   loadAdminTestLog().catch((err) => setStatus(err.message))
 );
-els.adminUserName.addEventListener('keydown', (event) => {
-  if (event.key !== 'Enter') {
-    return;
-  }
-  event.preventDefault();
-  addAdminUser().catch((err) => setStatus(err.message));
-});
+if (els.adminMlopsRefreshMetricsBtn) {
+  els.adminMlopsRefreshMetricsBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Refresh observables', async () => {
+      await loadAgentMetrics({ silent: true });
+      return 'Observables snapshot refreshed from the backend.';
+    });
+  });
+}
+if (els.adminMlopsRefreshModelsBtn) {
+  els.adminMlopsRefreshModelsBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Refresh models', async () => {
+      await loadLlmOptions({ forceProbe: true });
+      return 'Model availability was re-probed.';
+    });
+  });
+}
+if (els.adminMlopsOpenGrafanaBtn) {
+  els.adminMlopsOpenGrafanaBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Open Grafana', async () => {
+      const payload = await api('/api/observability/grafana');
+      const grafanaUrl = String(
+        payload?.dashboard_url || payload?.login_url || payload?.url || 'http://localhost:3000'
+      ).trim();
+      window.open(grafanaUrl, '_blank', 'noopener,noreferrer');
+      return `Opened Grafana. Username: ${payload.username} Password: ${payload.password}`;
+    });
+  });
+}
+if (els.adminMlopsPromptVersionsBtn) {
+  els.adminMlopsPromptVersionsBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Prompt versions', async () =>
+      'Stub only. Wire prompt registry versioning and prompt-diff history here.'
+    );
+  });
+}
+if (els.adminMlopsModelRoutingBtn) {
+  els.adminMlopsModelRoutingBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Model selection / routing', async () =>
+      'Stub only. Wire routing policy inspection and provider/model decision logs here.'
+    );
+  });
+}
+if (els.adminMlopsRagBehaviorBtn) {
+  els.adminMlopsRagBehaviorBtn.addEventListener('click', () => {
+    runAdminMlopsAction('RAGs', async () =>
+      'Stub only. Wire retrieval coverage, toggle behavior, and RAG impact summaries here.'
+    );
+  });
+}
+if (els.adminMlopsTokenContextBtn) {
+  els.adminMlopsTokenContextBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Token / context size', async () => {
+      const payload = await api('/api/agent-metrics?lookback_hours=24');
+      const byKey = Object.fromEntries((payload.metrics || []).map((item) => [item.key, item]));
+      const callCount = String(byKey.llm_calls_sampled?.display || '0');
+      const promptBytes = String(byKey.avg_prompt_context_bytes_per_llm_call?.display || '0 B');
+      const promptTokens = String(byKey.avg_estimated_prompt_tokens_per_llm_call?.display || '0.0');
+      const outputTokens = String(byKey.avg_estimated_output_tokens_per_llm_call?.display || '0.0');
+      const ragContextBytes = String(byKey.rag_avg_context_bytes_on?.display || '0 B');
+      return [
+        'Live 24h LLMOps size telemetry:',
+        `- Sampled LLM calls: ${callCount}`,
+        `- Avg prompt context size / call: ${promptBytes}`,
+        `- Avg estimated prompt tokens / call: ${promptTokens}`,
+        `- Avg estimated output tokens / call: ${outputTokens}`,
+        `- Avg RAG context size / ON call: ${ragContextBytes}`,
+      ].join('\n');
+    });
+  });
+}
+if (els.adminMlopsCorrectnessBtn) {
+  els.adminMlopsCorrectnessBtn.addEventListener('click', () => {
+    runAdminMlopsAction(
+      'Correctness / drift',
+      async () => `LLM drift remediation checklist:
+1. Confirm drift on the golden evaluation set before changing anything.
+2. Isolate the changed layer: model version, prompt version, routing policy, or RAG index/settings.
+3. Roll back the changed layer first if the regression started after a known release.
+4. Re-run A/B checks with RAG on and off to separate retrieval drift from generation drift.
+5. Tighten output constraints: schema validation, retries on invalid structure, and explicit grounding rules.
+6. Check retrieval quality: expected source hit rate, noisy chunk inflation, and context size growth.
+7. Pin model routing for critical flows so fallback models do not silently change behavior.
+8. Expand the eval set with recent production failures and keep a stable core golden set.
+9. Fine-tune only after prompt and retrieval fixes fail on a narrow, repeatable error pattern.
+10. Monitor post-fix metrics: golden set accuracy, schema adherence, unsupported claims, repeat inconsistency, and RAG answer deltas.`
+    );
+  });
+}
+if (els.adminMlopsTraceQualityBtn) {
+  els.adminMlopsTraceQualityBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Thought stream / trace quality', async () =>
+      'Stub only. Wire trace completeness, prompt capture coverage, and event-sequence integrity checks here.'
+    );
+  });
+}
+if (els.adminMlopsThoughtHealthBtn) {
+  els.adminMlopsThoughtHealthBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Check Thought Stream DB', async () => {
+      const payload = await api('/api/thought-streams/health');
+      return `Database ${payload.database} is connected.`;
+    });
+  });
+}
+if (els.adminMlopsRagHealthBtn) {
+  els.adminMlopsRagHealthBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Check RAG Stream DB', async () => {
+      const payload = await api('/api/rag-streams/health');
+      return `Database ${payload.database} is connected.`;
+    });
+  });
+}
+if (els.adminMlopsOpenGithubActionsBtn) {
+  els.adminMlopsOpenGithubActionsBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Open GitHub Actions', async () => {
+      openGithubActionsUrl(GITHUB_ACTIONS_URLS.actions);
+      return 'Opened the GitHub Actions overview.';
+    });
+  });
+}
+if (els.adminMlopsOpenCiWorkflowBtn) {
+  els.adminMlopsOpenCiWorkflowBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Open CI/CD workflow', async () => {
+      openGithubActionsUrl(GITHUB_ACTIONS_URLS.ciWorkflow);
+      return 'Opened the CI/CD workflow definition.';
+    });
+  });
+}
+if (els.adminMlopsOpenDeployWorkflowBtn) {
+  els.adminMlopsOpenDeployWorkflowBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Open deploy workflow', async () => {
+      openGithubActionsUrl(GITHUB_ACTIONS_URLS.deployWorkflow);
+      return 'Opened the deploy workflow definition.';
+    });
+  });
+}
+if (els.adminMlopsRunTestsBtn) {
+  els.adminMlopsRunTestsBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Run all tests', async () => {
+      await runAdminTests();
+      return 'Pytest completed and the Admin/Test view was refreshed.';
+    });
+  });
+}
+if (els.adminMlopsRefreshReportBtn) {
+  els.adminMlopsRefreshReportBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Refresh test view', async () => {
+      await refreshAdminTestView();
+      return 'Test log and pytest HTML report were refreshed.';
+    });
+  });
+}
+if (els.adminMlopsOpenFineTuningBtn) {
+  els.adminMlopsOpenFineTuningBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Focus Fine Tuning', async () => {
+      setActiveTab('admin');
+      setActiveAdminSubtab('mlops');
+      setActiveMlopsSubtab('fine_tuning');
+      return 'Focused the Fine Tuning tools inside Admin -> MLOps.';
+    });
+  });
+}
+if (els.adminMlopsFineTuningRefreshModelsBtn) {
+  els.adminMlopsFineTuningRefreshModelsBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Refresh fine tuning models', async () => {
+      await loadLlmOptions({ forceProbe: true });
+      return 'Model availability was refreshed for fine tuning workflows.';
+    });
+  });
+}
+if (els.adminMlopsDeploymentThoughtBtn) {
+  els.adminMlopsDeploymentThoughtBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Verify deployment thought stream', async () => {
+      const payload = await api('/api/thought-streams/health');
+      return `Thought Stream database ${payload.database} is connected.`;
+    });
+  });
+}
+if (els.adminMlopsDeploymentRagBtn) {
+  els.adminMlopsDeploymentRagBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Verify deployment RAG stream', async () => {
+      const payload = await api('/api/rag-streams/health');
+      return `RAG Stream database ${payload.database} is connected.`;
+    });
+  });
+}
+if (els.adminMlopsDeploymentObservablesBtn) {
+  els.adminMlopsDeploymentObservablesBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Pull deployment observables snapshot', async () => {
+      await loadAgentMetrics({ silent: true });
+      return 'Deployment observables snapshot refreshed from the backend.';
+    });
+  });
+}
+if (els.adminMlopsOpenAdminTestBtn) {
+  els.adminMlopsOpenAdminTestBtn.addEventListener('click', () => {
+    runAdminMlopsAction('Open Test subtab', async () => {
+      setActiveAdminSubtab('test');
+      return 'Switched to the Admin Test subtab.';
+    });
+  });
+}
+for (const field of [els.adminUserFirstName, els.adminUserLastName].filter(Boolean)) {
+  field.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter') {
+      return;
+    }
+    event.preventDefault();
+    addAdminUser().catch((err) => setStatus(err.message));
+  });
+}
 els.saveIntelligenceBtn.addEventListener('click', () => saveCase().catch((err) => setStatus(err.message)));
 els.duplicateCaseBtn.addEventListener('click', () => duplicateCaseToNew().catch((err) => setStatus(err.message)));
 els.newCaseBtn.addEventListener('click', () => createBlankCase());
+if (els.ingestSchemaSelect) {
+  els.ingestSchemaSelect.addEventListener('change', () => {
+    editingNewIngestSchema = false;
+    syncSelectedIngestSchemaEditor();
+  });
+}
+if (els.newIngestSchemaBtn) {
+  els.newIngestSchemaBtn.addEventListener('click', () => startNewIngestSchemaDraft());
+}
+if (els.saveIngestSchemaBtn) {
+  els.saveIngestSchemaBtn.addEventListener('click', () =>
+    saveIngestSchema().catch((err) => setStatus(err.message))
+  );
+}
+if (els.removeIngestSchemaBtn) {
+  els.removeIngestSchemaBtn.addEventListener('click', () =>
+    removeIngestSchema().catch((err) => setStatus(err.message))
+  );
+}
+els.browseDepositionBtn.addEventListener('click', () =>
+  openDepositionBrowser().catch((err) => setStatus(err.message))
+);
 els.importDepositionBtn.addEventListener('click', () => promptImportDeposition());
+els.importDepositionFolderBtn.addEventListener('click', () => promptImportDepositionFolder());
 els.importDepositionInput.addEventListener('change', () =>
   importSelectedDepositionFiles().catch((err) => setStatus(err.message))
+);
+els.importDepositionFolderInput.addEventListener('change', () =>
+  importSelectedDepositionFolder().catch((err) => setStatus(err.message))
 );
 els.ingestBtn.addEventListener('click', () => ingestCase().catch((err) => setStatus(err.message)));
 els.refreshBtn.addEventListener('click', () => refreshCase().catch((err) => setStatus(err.message)));
 els.saveCaseBtn.addEventListener('click', () => saveCase().catch((err) => setStatus(err.message)));
 els.loadOntologyBtn.addEventListener('click', () => loadOntologyGraph().catch((err) => setStatus(err.message)));
+els.saveGraphRagEmbeddingBtn.addEventListener(
+  'click',
+  () => saveGraphRagEmbeddingConfig().catch((err) => setStatus(err.message))
+);
+els.reloadGraphRagEmbeddingBtn.addEventListener(
+  'click',
+  () => loadGraphRagEmbeddingConfig().catch((err) => setStatus(err.message))
+);
 els.graphRagAskBtn.addEventListener('click', () => askGraphRag().catch((err) => setStatus(err.message)));
 els.graphRagClearBtn.addEventListener('click', () => clearGraphRag());
 els.openGraphBrowserBtn.addEventListener('click', () => openGraphBrowser().catch((err) => setStatus(err.message)));
@@ -3412,6 +7805,9 @@ els.traceOlderBtn.addEventListener('click', () => shiftTraceWindow(-1));
 els.traceNewerBtn.addEventListener('click', () => shiftTraceWindow(1));
 els.metricsTextToggle.addEventListener('click', () => toggleMetricsPanel().catch((err) => setStatus(err.message)));
 els.refreshMetricsBtn.addEventListener('click', () => loadAgentMetrics().catch((err) => setStatus(err.message)));
+els.openGrafanaObservablesBtn.addEventListener('click', () =>
+  openGrafanaWithCredentials().catch((err) => setStatus(err.message))
+);
 els.computeSentimentBtn.addEventListener('click', () =>
   computeDepositionSentiment().catch((err) => setStatus(err.message))
 );
@@ -3445,13 +7841,48 @@ els.caseId.addEventListener('change', () => {
   syncCaseActionState();
   renderCaseIndex();
 });
+els.caseId.addEventListener('input', () => {
+  syncCaseActionState();
+  renderCaseIndex();
+});
+els.directory.addEventListener('input', () => {
+  syncCaseActionState();
+});
 els.directory.addEventListener('change', () => {
   const selected = els.directory.value.trim();
   if (!selected) {
-    setStatus('Select a deposition folder.');
+    setStatus('Select a deposition folder or .txt file.');
     return;
   }
-  setStatus(`Deposition folder selected: ${selected}`);
+  setStatus(
+    looksLikeTxtPath(selected)
+      ? `Deposition file selected: ${selected}`
+      : `Deposition folder selected: ${selected}`
+  );
+});
+els.depositionBrowserCloseBtn.addEventListener('click', () => setDepositionBrowserOpen(false));
+els.depositionBrowserUpBtn.addEventListener('click', () =>
+  browseDepositionDirectory(depositionBrowserParentDirectory).catch((err) => setStatus(err.message))
+);
+els.depositionBrowserRefreshBtn.addEventListener('click', () =>
+  browseDepositionDirectory(depositionBrowserCurrentDirectory).catch((err) => setStatus(err.message))
+);
+els.depositionBrowserUseFolderBtn.addEventListener('click', () => {
+  if (!depositionBrowserCurrentDirectory) {
+    return;
+  }
+  els.directory.value = depositionBrowserCurrentDirectory;
+  setDepositionBrowserOpen(false);
+  syncCaseActionState();
+  setStatus(`Deposition folder selected: ${depositionBrowserCurrentDirectory}`);
+});
+els.depositionBrowserList.addEventListener('click', (event) =>
+  handleDepositionBrowserListClick(event).catch((err) => setStatus(err.message))
+);
+els.depositionBrowserModal.addEventListener('click', (event) => {
+  if (event.target === els.depositionBrowserModal) {
+    setDepositionBrowserOpen(false);
+  }
 });
 els.ontologyBrowseBtn.addEventListener('click', () =>
   openOntologyBrowser().catch((err) => setStatus(err.message))
@@ -3479,6 +7910,45 @@ els.ontologyBrowserModal.addEventListener('click', (event) => {
     setOntologyBrowserOpen(false);
   }
 });
+els.adminUserDetailCloseBtn.addEventListener('click', () => hideAdminUserDetail());
+els.adminUserDetailPanel.addEventListener('click', (event) => {
+  if (event.target === els.adminUserDetailPanel) {
+    hideAdminUserDetail();
+  }
+});
+if (els.adminPersonaPromptModalCloseBtn) {
+  els.adminPersonaPromptModalCloseBtn.addEventListener('click', () => hideAdminPersonaPromptModal());
+}
+if (els.adminPersonaPromptModal) {
+  els.adminPersonaPromptModal.addEventListener('click', (event) => {
+    if (event.target === els.adminPersonaPromptModal) {
+      hideAdminPersonaPromptModal();
+    }
+  });
+}
+if (els.adminPersonaPromptObservableModalCloseBtn) {
+  els.adminPersonaPromptObservableModalCloseBtn.addEventListener('click', () => hideAdminPersonaPromptObservableModal());
+}
+if (els.adminPersonaPromptObservableModal) {
+  els.adminPersonaPromptObservableModal.addEventListener('click', (event) => {
+    if (event.target === els.adminPersonaPromptObservableModal) {
+      hideAdminPersonaPromptObservableModal();
+    }
+  });
+}
+if (els.adminPersonaPromptApplyBtn) {
+  els.adminPersonaPromptApplyBtn.addEventListener('click', () => applyAdminPersonaPromptFromModal());
+}
+if (els.adminPersonaPromptResaveBtn) {
+  els.adminPersonaPromptResaveBtn.addEventListener('click', () =>
+    resaveAdminPersonaPromptFromModal().catch((err) => setStatus(err.message))
+  );
+}
+if (els.adminPersonaPromptSentimentBtn) {
+  els.adminPersonaPromptSentimentBtn.addEventListener('click', () =>
+    scoreAdminPersonaPromptSentiment().catch((err) => setStatus(err.message))
+  );
+}
 els.metricDetailPanel.addEventListener('click', (event) => {
   if (event.target === els.metricDetailPanel) {
     resetMetricDetail();
@@ -3516,7 +7986,12 @@ els.llmSelect.addEventListener('change', () => {
 });
 els.timelineBack.addEventListener('click', () => scrollTimeline(-1));
 els.timelineForward.addEventListener('click', () => scrollTimeline(1));
-els.timeline.addEventListener('scroll', () => syncTimelineNavButtons());
+els.timeline.addEventListener('scroll', () => {
+  if (els.timelineScale) {
+    els.timelineScale.scrollLeft = els.timeline.scrollLeft;
+  }
+  syncTimelineNavButtons();
+});
 els.chatForm.addEventListener('submit', (event) => sendChat(event).catch((err) => setStatus(err.message)));
 window.addEventListener('resize', () => {
   updateTimelineSlots();
@@ -3526,8 +8001,20 @@ window.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') {
     return;
   }
+  if (els.adminPersonaPromptObservableModal && !els.adminPersonaPromptObservableModal.classList.contains('hidden')) {
+    hideAdminPersonaPromptObservableModal();
+    return;
+  }
+  if (els.adminPersonaPromptModal && !els.adminPersonaPromptModal.classList.contains('hidden')) {
+    hideAdminPersonaPromptModal();
+    return;
+  }
   if (!els.metricDetailPanel.classList.contains('hidden')) {
     resetMetricDetail();
+    return;
+  }
+  if (!els.adminUserDetailPanel.classList.contains('hidden')) {
+    hideAdminUserDetail();
     return;
   }
   if (!els.metricTrendPanel.classList.contains('hidden')) {
@@ -3551,7 +8038,14 @@ loadLlmOptions({ silent: true }).catch((err) => {
   ensureLlmFallbackOption();
   setStatus(`Failed to load LLM options: ${err.message}`);
 });
-loadDirectoryOptions({ silent: true })
+Promise.all([
+  loadIngestSchemaOptions({ silent: true }).catch((err) => {
+    ensureIngestSchemaFallbackOption();
+    syncSelectedIngestSchemaEditor();
+    throw new Error(`Failed to load ingest schemas: ${err.message}`);
+  }),
+  loadDirectoryOptions({ silent: true }),
+])
   .then(async () => {
     await loadCases({ silent: true });
     if (els.caseId.value.trim()) {
@@ -3560,6 +8054,10 @@ loadDirectoryOptions({ silent: true })
   })
   .catch((err) => {
     const message = err instanceof Error ? err.message : String(err || 'Unknown error');
+    if (message.startsWith('Failed to load ingest schemas:')) {
+      setStatus(message);
+      return;
+    }
     if (message.toLowerCase().includes('folder')) {
       setStatus(`Failed to load deposition folders: ${message}`);
       return;
@@ -3569,6 +8067,10 @@ loadDirectoryOptions({ silent: true })
 loadOntologyOptions({ silent: true }).catch((err) => {
   const message = err instanceof Error ? err.message : String(err || 'Unknown error');
   setStatus(`Failed to load ontology options: ${message}`);
+});
+loadGraphRagEmbeddingConfig({ silent: true }).catch((err) => {
+  const message = err instanceof Error ? err.message : String(err || 'Unknown error');
+  setStatus(`Failed to load Graph RAG embedding config: ${message}`);
 });
 setActiveTab('landing');
 setMetricsPanelOpen(false);

@@ -1,0 +1,78 @@
+{
+  "deposition_id": "DEP-2023-001",
+  "case_number": "2023-CV-789",
+  "deponent": {
+    "name": "William E. Longo, Ph.D.",
+    "role": "Expert Witness",
+    "organization": "Materials Analytical Services, LLC"
+  },
+  "date": "2023-09-15",
+  "location": "Atlanta, GA",
+  "court": {
+    "name": "Superior Court of Fulton County",
+    "judge": "Hon. Mary Blake"
+  },
+  "participants": {
+    "questioners": ["John D. Smith", "Karen Liu"],
+    "answerer": "William E. Longo, Ph.D.",
+    "observers": ["Court Reporter", "Plaintiff’s Counsel", "Defense Counsel"]
+  },
+  "transcript": [
+    {
+      "type": "question",
+      "timestamp": "09:05:12",
+      "speaker": "John D. Smith",
+      "text": "Dr. Longo, when did you first examine the sample?",
+      "followed_by": [
+        {
+          "type": "answer",
+          "timestamp": "09:05:35",
+          "speaker": "William E. Longo",
+          "text": "I first examined the sample on March 12th, 2023."
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "timestamp": "09:07:20",
+      "speaker": "Karen Liu",
+      "text": "Did you perform a differential thermal analysis?",
+      "followed_by": [
+        {
+          "type": "objection",
+          "timestamp": "09:07:24",
+          "speaker": "Defense Counsel",
+          "basis": "Foundation",
+          "text": "Objection. Lacks foundation.",
+          "ruling": {
+            "timestamp": "09:07:30",
+            "speaker": "Judge Mary Blake",
+            "decision": "Overruled",
+            "notes": "The witness has already established sufficient expertise."
+          }
+        },
+        {
+          "type": "answer",
+          "timestamp": "09:07:40",
+          "speaker": "William E. Longo",
+          "text": "Yes, I did perform a differential thermal analysis as part of the protocol."
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "timestamp": "09:12:10",
+      "speaker": "John D. Smith",
+      "text": "What method did you use to quantify asbestos fibers?",
+      "followed_by": [
+        {
+          "type": "answer",
+          "timestamp": "09:12:28",
+          "speaker": "William E. Longo",
+          "text": "We used a combination of TEM and PLM to quantify asbestos fibers."
+        }
+      ]
+    }
+  ],
+  "notes": "Deposition lasted approximately 3.5 hours, with a 15-minute break at 10:30 AM."
+}

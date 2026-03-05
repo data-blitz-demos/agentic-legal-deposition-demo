@@ -1,0 +1,1440 @@
+00001
+  1               UNITED STATES DISTRICT COURT 
+  2                  DISTRICT OF NEW JERSEY
+  3   
+  4   ______________________________________________________
+  5   IN RE:  JOHNSON & JOHNSON
+                                                   MDL NO.:
+  6   TALCUM POWDER PRODUCTS        
+                                              16-2738 (FLW)(LGH)
+  7   MARKETING, SALES PRACTICES,
+  8   AND PRODUCTS LIABILITY
+  9   LITIGATION                              
+ 10   ______________________________________________________
+ 11   
+ 12   
+                     Tuesday, October 5, 2021
+ 13   
+                            - - - - -
+ 14   
+ 15   
+               The Videoconference Deposition 
+ 16   
+               of WILLIAM E. LONGO, Ph.D., taken with the 
+ 17   
+               witness located in Suwanee, Georgia,
+ 18   
+               commencing at approximately 10:24 a.m. EST, 
+ 19   
+               on the above date, before Debra Amos Isbell, 
+ 20   
+               Certified Realtime Reporter.
+ 21   
+ 22   
+ 23   
+ 24   
+ 25   
+
+00002
+  1                  A P P E A R A N C E S  
+  2           (ALL APPEARANCES VIA VIDEOCONFERENCE)
+  3   FOR THE PLAINTIFFS:      
+           COHEN, PLACITELLA & ROTH
+  4        127 Maple Avenue
+           Red Bank, NJ  07701
+  5        732-747-9003
+           BY:  CHRISTOPHER M. PLACITELLA, ESQUIRE 
+  6             cplacitella@cprlaw.com
+  7        AND
+  8        BEASLEY ALLEN LAW FIRM
+           218 Commerce Street
+  9        Montgomery, AL  36104
+           334-954-7555
+ 10        BY:  PATRICIA LEIGH O'DELL, ESQUIRE
+                leigh.odell@beasleyallen.com
+ 11   
+           AND
+ 12   
+           ASHCRAFT & GEREL
+ 13        1825 K Street NW, Suite 700
+           Washington, DC  20006
+ 14        202-783-6400
+           BY:  MICHELLE A. PARFITT, ESQUIRE
+ 15                  
+ 16   
+ 17   FOR THE DEFENDANTS:
+           KING & SPALDING, LLP 
+ 18        1185 Avenue of the Americas, 34th Floor
+           New York, NY  10036
+ 19        212-556-2100
+           BY:  JOHN EWALD, ESQUIRE
+ 20             jewald@kslaw.com
+ 21   
+ 22   
+ 23   COURT REPORTER:         
+           DEBRA AMOS ISBELL, CCR,RDR,CRR 
+ 24                             
+ 25   
+
+00003
+  1                         I N D E X
+  2   DEPOSITION OF WILLIAM E. LONGO, Ph.D., 10/5/2021
+  3                             
+  4                     EXAMINATION INDEX
+  5        BY MR. EWALD . . . . . . . . . . . . . . . . .  4
+  6        BY MR. PLACITELLA . . . . . . . . . . . . . .  46
+  7   
+  8   
+  9   
+ 10   
+ 11                       EXHIBIT INDEX
+ 12    Exhibit 1 Notice of Deposition for the Federal     7
+                 MDL case
+ 13   
+       Exhibit 2 Notice of Deposition for the Swann       7   
+ 14              case (marked in error, does not exist)
+ 15    Exhibit 3 Appendix A, Johnson & Johnson            9
+                 Reliance and Reviewed Documents
+ 16   
+       Exhibit 4 Chart - Amphibole Asbestos Found in     15
+ 17              Historical Johnson's Baby Powder
+                 1960-2000s
+ 18   
+       Exhibit 5 MAS Chart of J&J Testing (current as    26
+ 19              of September 16, 2021)
+ 20    Exhibit 6 Testimony Listing, William E. Longo,    39
+                 Ph.D., 1/23/2018 - 9/30/2021
+ 21   
+       Exhibit 7 Curriculum Vitae of William Edward      40
+ 22              Longo, Ph.D.
+ 23   
+ 24   
+ 25   
+
+00004
+  1             COURT REPORTER:  All parties to this 
+  2   deposition are appearing remotely and have agreed to 
+  3   the witness being sworn in remotely.  Due to the 
+  4   nature of remote reporting, please pause briefly 
+  5   before speaking to ensure all parties are heard 
+  6   completely.
+  7             Counsel, please state your appearances.  
+  8             MR. EWALD:  John Ewald for the Johnson & 
+  9   Johnson defendants.
+ 10             MR. PLACITELLA:  Chris Placitella for the 
+ 11   Plaintiffs' Steering Committee.
+ 12             MS. PARFITT:  Michelle Parfitt for the 
+ 13   Plaintiffs' Steering Committee.
+ 14             MS. O'DELL:  Leigh O'Dell for the 
+ 15   Plaintiffs' Steering Committee.  
+ 16             COURT REPORTER:  Dr. Longo?
+ 17             THE WITNESS:  Yes?
+ 18             COURT REPORTER:  Would you raise your right 
+ 19   hand, please, sir.
+ 20                  WILLIAM E. LONGO, Ph.D.
+ 21            was sworn and testified as follows:
+ 22             THE WITNESS:  Yes, I do.
+ 23                        EXAMINATION
+ 24   BY MR. EWALD:
+ 25       Q.    Good morning, Dr. Longo.
+
+00005
+  1       A.    Good morning, Mr. Ewald.
+  2       Q.    And where are you located today, for the 
+  3   record?
+  4       A.    I'm located at MAS in our second conference 
+  5   room, and there is nobody in the room with me.
+  6       Q.    You've done this enough where you've 
+  7   anticipated my second question.  So thank you.
+  8             So you can also anticipate then one of my 
+  9   next questions, which is:  What, if any, materials do 
+ 10   you have with you today?
+ 11       A.    Well, I brought -- I don't have much.  I 
+ 12   brought the file that was sent to me for Valerie 
+ 13   Swann, which was just the deposition, and the Notice 
+ 14   of Oral and Videotaped Deposition of William Longo, 
+ 15   Ph.D, and Duces Tecum.  And I brought the ovarian 
+ 16   cancer -- our MDL report, February 1st, 2019.  
+ 17             I didn't gather too much because it was my 
+ 18   understanding that I was going to receive a box of 
+ 19   materials that you wanted to go over, and it never 
+ 20   arrived.  It apparently wasn't sent.  So if there's 
+ 21   something that you need, I can try to get it at a 
+ 22   break.
+ 23       Q.    No problem.  And I appreciate that.  And as 
+ 24   I indicated by email to Plaintiffs' counsel, at least 
+ 25   at this time I don't anticipate going into any of the 
+
+00006
+  1   documents in substantive depth.  But I appreciate your 
+  2   offer to the extent something comes up.
+  3             You mentioned the Valerie Swann case.  And 
+  4   so is it your understanding that you're here to give 
+  5   testimony in this deposition for both the MDL, Federal 
+  6   MDL and the Swann case? 
+  7       A.    Well, I didn't plan on really giving too 
+  8   much testimony specific for that case.  I read the 
+  9   deposition, and there wasn't really enough information 
+ 10   for me to do any exposure calculations.  I didn't get 
+ 11   frequency and that sort of thing.  I mean she did 
+ 12   testify that she did use Johnson & Johnson Baby Powder 
+ 13   and it was a daily thing.  But other than that, I 
+ 14   didn't have really any other opinions about it.  I 
+ 15   didn't see any other potential asbestos exposure in 
+ 16   the case.  So that's about the range of my opinions 
+ 17   for that case.
+ 18       Q.    All right.  And we may get more into it as 
+ 19   we get along a little bit further.  But apart from 
+ 20   what you just talked about on a case-specific level 
+ 21   regarding your review of Ms. Swann's deposition, are 
+ 22   you aware of any other distinction between the 
+ 23   opinions that you're offering in the Federal MDL as 
+ 24   opposed to the Swann case?
+ 25       A.    No.
+
+00007
+  1       Q.    And just so we can all be on the same page, 
+  2   you can assume that my questions apply to both unless 
+  3   there's some -- actually let's do it this way:  Why 
+  4   don't you assume that I'm going to be focused on the 
+  5   Federal MDL, and then I'll probably tie up at the end 
+  6   if there are any distinctions that you would draw as 
+  7   to the Swann case.  Fair?  All right?
+  8       A.    Yes, sir.
+  9             MR. EWALD:  Okay.  Let's go ahead and mark 
+ 10   as Exhibit 1 the notice for the MDL for this 
+ 11   deposition, and we'll mark as Exhibit 2 the notice for 
+ 12   the Swann case.
+ 13             (EXHIBITS 1 AND 2 IDENTIFIED.)
+ 14   BY MR. EWALD:  
+ 15       Q.    Did you review, Dr. Longo, the notice for 
+ 16   the MDL for this deposition?
+ 17       A.    Yes, I did.
+ 18       Q.    And did you work with counsel in providing 
+ 19   documents responsive to the request in that notice 
+ 20   that's been marked as Exhibit 1?
+ 21       A.    I provided documents, some documents that 
+ 22   were requested, such as my CV, my testimony list, 
+ 23   typical like Johnson & Johnson reliance documents, 
+ 24   reliance list.  But I found out yesterday -- and 
+ 25   hopefully my assistant sent the updated copy -- she 
+
+00008
+  1   sent the April 2021 update and not the latest update.  
+  2   I didn't check to see if people got that this morning 
+  3   or not.
+  4       Q.    Unless I'm missing something, I don't 
+  5   believe I got that.  
+  6             MR. EWALD:  Mr. Placitella, do you know 
+  7   anything about that?
+  8             MR. PLACITELLA:  I think we were waiting on 
+  9   it from his assistant.  I'll check during a break.
+ 10             MR. EWALD:  I appreciate that.  And while 
+ 11   we're --
+ 12             MR. PLACITELLA:  I think part of the issue 
+ 13   was she was ill and out for a while, so I think that's 
+ 14   why you got stuff a little on the late side.  
+ 15             MR. EWALD:  Understood.
+ 16       Q.    Dr. Longo, we'll talk about -- 
+ 17       A.    I got her text back that says April was the 
+ 18   last edited one.  And I don't believe that is correct, 
+ 19   but so be it.  Because I know I added more documents.
+ 20       Q.    All right.  So I guess for purposes of this 
+ 21   deposition and the opinions you're offering in the MDL 
+ 22   cases and the Swann case, are you going to be relying 
+ 23   on the material that are included in the reliance list 
+ 24   in April 2021?  
+ 25       A.    I can go get -- I know of at least one, and 
+
+00009
+  1   I can go get it for you.  It's a J&J document from 
+  2   1974.  And I can give you the date and Bates stamp 
+  3   numbers.  And I have turned it over in the past, but 
+  4   I'll get that.  That's the only one that I added -- I 
+  5   thought I added -- that I wanted on the reliance list.
+  6       Q.    Okay.  During the next -- or during the 
+  7   first break why don't you pull that.  
+  8             MR. EWALD:  And for the record, I will go 
+  9   ahead and mark as Exhibit 3 what is entitled Appendix 
+ 10   A, Johnson & Johnson Reliance and Reviewed Documents.  
+ 11   And for the record, it is 10 pages long, what we 
+ 12   received, with a date of 4/23/21 at the bottom and 161 
+ 13   references.  
+ 14             Does that sound right, Mr. Longo?
+ 15       A.    Yes, that sounds right.  
+ 16             (EXHIBIT 3 WAS IDENTIFIED.)
+ 17   BY MR. EWALD:  
+ 18       Q.    And then what I'm understanding from your 
+ 19   testimony is that you will be providing counsel with 
+ 20   at least one other document, that 1974 Johnson & 
+ 21   Johnson document, which you would add to that; is that 
+ 22   correct?
+ 23       A.    That's correct.  
+ 24             I'm sorry.  How many did you say were on 
+ 25   there?  141?
+
+00010
+  1       Q.    161.  161.
+  2       A.    Okay.  Thank you.
+  3             Now, everything else in here were things I 
+  4   did not have or things I could not produce or 
+  5   documents that I've already -- I've already sent.  
+  6   (Document review.)
+  7       Q.    When you say there are documents that you 
+  8   could not produce, what are you referring to?
+  9       A.    Well, let me just find an example.  
+ 10             You know, for item 3:  
+ 11                 "All documents related to 
+ 12               all payments paid since the 
+ 13               date of your last MDL 
+ 14               deposition to any third party 
+ 15               ..."  
+ 16             Well, that's payments out.  Hold on.  
+ 17   (Document review.)
+ 18             Well, number 3, I don't have any payments 
+ 19   that I paid anybody.  
+ 20               "... or other thing of value 
+ 21               paid as compensation for 
+ 22               testifying in connection with 
+ 23               the talc litigation."  
+ 24             The talc litigation means what?  Everything?  
+ 25   Every case I've been in, even cases that are not 
+
+00011
+  1   associated with J&J?  
+  2             I did turn over in -- was it the Prudencio 
+  3   case?  I can't remember which case where both sides 
+  4   had to turn over all J&J documents, redacted 
+  5   documents.  I mean I have done that.  
+  6             But I can't produce anything outside of J&J 
+  7   and I can't produce anything that is not directly -- 
+  8   that is not associated with the MDL other than 
+  9   invoices I may have generated in the MDL.
+ 10       Q.    All right.  I don't think it really makes 
+ 11   much of a difference to your answer based on what I'm 
+ 12   going to follow up on.  But just so the record is 
+ 13   clear, if you go to the first page of the Schedule A, 
+ 14   Definitions, the "talc products" and "talc litigation" 
+ 15   are limited to J&J cosmetic talc products sold in the 
+ 16   United States and not to --
+ 17       A.    You know, I apologize.  I never read the 
+ 18   Definitions part.
+ 19       Q.    That's fair.  
+ 20             Okay.  So you talked about what I wanted to 
+ 21   drill down on a little bit, which is you mentioned -- 
+ 22   and I believe you are correct -- that the Prudencio 
+ 23   case you provided to J&J counsel basically a total -- 
+ 24   all the invoices related to J&J cosmetics talc 
+ 25   litigation that you had sent to Plaintiffs' counsel to 
+
+00012
+  1   date; is that accurate?
+  2       A.    Yes, sir.
+  3       Q.    And so to the extent that -- let me take a 
+  4   step back.  
+  5             We're here focused on any kind of work and 
+  6   testimony or opinions that you're going to give that 
+  7   postdate the first deposition you took in the MDL, 
+  8   which was around February 2019.  
+  9             Is that what you generally understand?
+ 10       A.    I do understand.
+ 11       Q.    So to the extent that there were any 
+ 12   invoices that MAS sent to Plaintiffs' counsel in 
+ 13   connection with work you did for the MDL up to the 
+ 14   production in Prudencio that you referred to, would 
+ 15   those invoices be captured within that production?
+ 16       A.    Yes. 
+ 17       Q.    So I don't have a date in front of me, but 
+ 18   you would agree with me that it's been at least two 
+ 19   months since that production was made in the Prudencio 
+ 20   case; does that sound about right?
+ 21       A.    That's about right.  I can't disagree with 
+ 22   that.
+ 23       Q.    And right or wrong, whatever date it was 
+ 24   provided -- I'm not worried about the specific date.  
+ 25   But as a conceptual matter, what I want to know is:  
+
+00013
+  1   Has MAS generated any invoices that it's sent to 
+  2   Plaintiffs' counsel in connection with its work with 
+  3   the MDL since that production in Prudencio?
+  4       A.    No.
+  5       Q.    If you had to characterize what, if any, 
+  6   work you've done in connection with the MDL since the 
+  7   Prudencio trial, what would you say?
+  8       A.    I haven't done -- I haven't done anything 
+  9   that I've billed for.  
+ 10             Wait a minute.  I did make a simple chart 
+ 11   for the MDL on the samples where we had done a 
+ 12   qualitative estimate of the amount of talc fibers.  I 
+ 13   believe that may have been a month or two ago.  But I 
+ 14   never billed for it.  It was just taking the estimated 
+ 15   amount and multiplying it through for the different 
+ 16   size containers for J&J.
+ 17       Q.    All right.  I'm going to show it to you in a 
+ 18   second just to make sure we're on the same page about 
+ 19   that.  
+ 20             But apart from the work on that chart that 
+ 21   you did not bill for, as you sit here today, can you 
+ 22   recall any other work that you've done in the MDL 
+ 23   since the Prudencio case?
+ 24       A.    Other than reading the Swann deposition -- 
+ 25   which I have not billed for; it wasn't very long -- I 
+
+00014
+  1   haven't done any other billable work for the MDL or 
+  2   any other work nonbillable, I guess.
+  3             MR. PLACITELLA:  Just so we're clear, the 
+  4   Swann deposition is not for the MDL.
+  5             THE WITNESS:  Okay.  
+  6       A.    So I haven't done any work.
+  7   BY MR. EWALD:  
+  8       Q.    So I broke down that timeline largely in 
+  9   connection with the invoices that you generated.  But 
+ 10   I do want to ask a more general question as well, 
+ 11   which is:  Since the deposition of you in this MDL in 
+ 12   February of 2019, what, if any, work have you done 
+ 13   specific to the MDL?  
+ 14             And I will, as I say that question, give a 
+ 15   quick caveat:  leaving aside the hearing and in 
+ 16   preparation for the hearing that took place for the 
+ 17   schedules.  
+ 18             MR. PLACITELLA:  Object to the form.
+ 19       A.    Other than the chart we talked about, I have 
+ 20   not done any other work for the MDL.
+ 21             MR. PLACITELLA:  Just so the record is 
+ 22   clear, the chart was prepared as communicated.  But we 
+ 23   did serve reports that you've had from other cases as 
+ 24   supplements; right?  And that was in the production.
+ 25             MR. EWALD:  Right.  I'm going to get to 
+
+00015
+  1   that.  But thank you.  
+  2             MR. PLACITELLA:  Okay.  Just so we're all on 
+  3   the same page.
+  4             MR. EWALD:  I appreciate that.  
+  5             Let me see if I'm successful in sharing my 
+  6   screen for the first time.  
+  7       Q.    Dr. Longo, can you see that on your screen?
+  8       A.    Yes.
+  9       Q.    And is this the chart that you were just 
+ 10   referring to in your testimony?
+ 11       A.    It is.
+ 12       Q.    And did I understand you correctly that you 
+ 13   were the one that created this chart?
+ 14       A.    You are.  I think I said fibrous talc.  I 
+ 15   meant asbestos.  I'm sorry.
+ 16       Q.    Did Dr. Rigler assist at all in the 
+ 17   preparation of the chart?
+ 18       A.    No, sir.
+ 19             MR. EWALD:  We'll go ahead and mark as 
+ 20   Exhibit 4 the chart that Dr. Longo is referring to.  
+ 21   And for the record, it's identified -- the title is 
+ 22   Amphibole Asbestos Found in Historical Johnson's Baby 
+ 23   Powder 1960-2000s.  
+ 24             (EXHIBIT 4 WAS IDENTIFIED.)  
+ 25             MR. PLACITELLA:  I don't have that chart as 
+
+00016
+  1   produced by us.  Just give me a second.
+  2             MR. EWALD:  I can't remember which materials 
+  3   it was, but I definitely got it from you guys.
+  4             MS. PARFITT:  I can get that to you.  I can 
+  5   shoot over a copy if you need that, Chris.  
+  6             MR. PLACITELLA:  Okay.
+  7             MS. O'DELL:  Yeah.  It's in the folder that 
+  8   we shared, Chris.  And I'll send it to you as well.  
+  9             I think it would be helpful for Dr. Longo to 
+ 10   see it in full.  It's sort of hard to see, at least as 
+ 11   I can appreciate it.  
+ 12             I guess you're not sharing your screen at 
+ 13   this point.  
+ 14             MR. EWALD:  I appreciate that.  I'm happy to 
+ 15   have him take a look at it.  I'm not going to ask him 
+ 16   any more questions, at least at this time, on it.
+ 17             MR. PLACITELLA:  Okay.  Thank you.
+ 18   BY MR. EWALD:  
+ 19       Q.    While we're on the topic of Dr. Rigler, have 
+ 20   you had any communications with Dr. Rigler since your 
+ 21   deposition in the MDL, in relation to the MDL?
+ 22       A.    No. 
+ 23       Q.    Do you have an understanding as to whether 
+ 24   or not you have been retained by Plaintiffs' counsel 
+ 25   in specific MDL cases as opposed to the MDL litigation 
+
+00017
+  1   overall?
+  2       A.    I believe I have been retained in one or two 
+  3   cases.  I can't recall the cases now.  But I think 
+  4   that's it.
+  5       Q.    And would that be something -- the 
+  6   information about the specific cases you've been 
+  7   retained -- that MAS would have records about?
+  8       A.    If we've been retained, yes.
+  9       Q.    And have you done any work specific to the 
+ 10   cases in which you've been retained from the MDL?
+ 11       A.    Again, it may be just one or it could be 
+ 12   two, and the answer would be no.
+ 13       Q.    As you sit here today, do you intend to 
+ 14   offer any opinions specific to any plaintiff in the 
+ 15   MDL?
+ 16       A.    As I sit here right now, the answer would be 
+ 17   I have no case-specific information, so I would not be 
+ 18   offering any opinions about case specific.  My 
+ 19   opinions would have to do with more on what's in the 
+ 20   containers, what our findings are.  So it wouldn't be 
+ 21   case specific, but it would be my general opinions 
+ 22   about the findings of our analysis for the MDL samples 
+ 23   as well as some other reports outside what I would 
+ 24   call the MDL or ovarian cancer reports.
+ 25       Q.    Now, you may be referring to those right 
+
+00018
+  1   now, and I believe Mr. Placitella referred to them.  
+  2   Are you aware that amongst the materials that counsel 
+  3   served in advance of your deposition were some 
+  4   specific reports from MAS?  Is that something you're 
+  5   aware of?
+  6       A.    Yes, sir, I am aware of that.
+  7       Q.    And did you play any role in the selection 
+  8   of which of those reports to have Plaintiffs' counsel 
+  9   serve on us?
+ 10       A.    My primary involvement is with a number of 
+ 11   reports of the Chinese retained that were collected, I 
+ 12   believe, by Dr. Sanchez.  And that would be our 
+ 13   September -- our September 2020 analysis.  And there 
+ 14   were three different projects in there.  And I can't 
+ 15   recall, but there may have been some others.  I just 
+ 16   can't think of it off the top of my head.  Maybe not.
+ 17       Q.    We'll talk about them maybe a little bit 
+ 18   more in depth, not substance really.  But I also 
+ 19   received the Supplemental 1 and Supplemental 2 version 
+ 20   of the Off-the-Shelf Johnson's Baby Powder Talcum 
+ 21   Powder Analysis dated January 29th, 2020, and December 
+ 22   8th, 2020.  
+ 23             Does that sound right?
+ 24       A.    Yes, it does.  Thank you.  
+ 25       Q.    Am I correct that you have not issued an MDL 
+
+00019
+  1   specific report since the original report you issued 
+  2   before your first deposition in February 2019?
+  3       A.    Well, I haven't issued a specific report on 
+  4   the Plaintiffs or calculated -- typically I calculate 
+  5   specific exposure for the amounts.  So the reports 
+  6   that I've issued are really the reports in the past -- 
+  7   I mean the reports on the analytical side, not 
+  8   specific reports.
+  9             MR. PLACITELLA:  They would be the reports 
+ 10   that have been generated since his first deposition.  
+ 11   They weren't relabeled MDL, but the MDL is relying 
+ 12   upon them and they have been served.
+ 13             MR. EWALD:  Understood.
+ 14       Q.    So what I'm trying to get an understanding 
+ 15   of, Dr. Longo, is if I take the February 2nd, 2019 
+ 16   report -- well, let me just start there.  
+ 17             The February 2nd, 2019 report is the final 
+ 18   update of the report that you had issued in connection 
+ 19   with the MDL; right?
+ 20       A.    Yes, sir.
+ 21       Q.    And am I correct that MAS has not made any 
+ 22   edits to that February 2nd, 2019 report since February 
+ 23   2nd, 2019?
+ 24       A.    That is correct.
+ 25       Q.    And so if I want to know the opinions that 
+
+00020
+  1   you intend to offer in the MDL -- and we have the 
+  2   February 2nd, 2019 report and we have the deposition 
+  3   that was taken of you in connection with that 
+  4   report -- what additional materials are you relying on 
+  5   for your opinions in the MDL?
+  6             MR. PLACITELLA:  So you want him to 
+  7   delineate by date all the reports?  Or do you just 
+  8   want me to run through them?  I mean you were served 
+  9   with a bunch of reports.  So I just want to make sure 
+ 10   the record is clear, you know, as things got updated.
+ 11             MR. EWALD:  Right.
+ 12             MR. PLACITELLA:  So what exactly are you 
+ 13   asking him?  To identify the reports by date?  What 
+ 14   are you asking him to do?
+ 15             MR. EWALD:  Well, we can work together on 
+ 16   this.  What I want to know is -- I got, as you said, 
+ 17   some specific reports in addition to the reliance 
+ 18   list.  And I want to know that, if I'm looking for the 
+ 19   opinions that Dr. Longo is going to be offering in the 
+ 20   MDL, is it safe for me to conclude that those are 
+ 21   included within the four corners of the written 
+ 22   reports that were produced by Plaintiffs' counsel in 
+ 23   advance of this deposition?
+ 24             MR. PLACITELLA:  Yeah.  Everything that we 
+ 25   sent you, yes.
+
+00021
+  1             MR. EWALD:  All right.
+  2             THE WITNESS:  That would be a fair 
+  3   assumption.  I mean I know the MDL -- you know, 
+  4   reading Judge Wolfson's order, the only thing I will 
+  5   not be relying on is the ISO PLM analysis 22262-1 
+  6   without heavy liquid density separation.  As I read 
+  7   the order, that is something that you can't use.  But 
+  8   all the rest of the analyses we did with the heavy 
+  9   liquid density separation, I believe, is appropriate 
+ 10   for my opinions in the case.
+ 11             MR. EWALD:  So we're all clear, I'm 
+ 12   referencing the different reports -- my understanding 
+ 13   of what was produced by Plaintiffs' counsel as a 
+ 14   report.  And that would be:  
+ 15             The February 1st, 2019 report from MAS 
+ 16   entitled The Analysis of Johnson & Johnson's 
+ 17   Historical Product Containers and Imerys' Historical 
+ 18   Railroad Car Samples from 1960s to the Early 2000s for 
+ 19   Amphibole Asbestos, Second Supplemental Report.
+ 20             The next would be Supplemental -- Supplement 
+ 21   Report Number 1, MAS Project Number M71166, 
+ 22   Off-the-Shelf 2020 JBP Talcum Powder Analysis, dated 
+ 23   September 29th, 2020.
+ 24             The third report is entitled Supplement 
+ 25   Report 2, MAS Project Number M71166 and M71180, 
+
+00022
+  1   Off-the Shelf 2020 JBP Talcum Powder Analysis, dated 
+  2   December 8th, 2020.
+  3             And then -- hold on. 
+  4             And then the fourth one would be Analysis 
+  5   Report, MAS Project Number M71109-M71111, Chinese Talc 
+  6   Research Samples, dated September 16th, 2020.
+  7             And so I'll pause there for a second.  
+  8             And I guess, first, Mr. Placitella, did I 
+  9   leave any of the reports out that Plaintiffs served in 
+ 10   connection with this deposition for Dr. Longo?
+ 11             MR. PLACITELLA:  So far so good.  There was 
+ 12   also a chart of J&J testing concurrent as of September 
+ 13   16th, 2021.  
+ 14             Do you have that?  
+ 15             MR. EWALD:  I do have that, yes.  And I was 
+ 16   going to get to that in a second.
+ 17             MR. PLACITELLA:  Okay.  And --
+ 18             MR. EWALD:  Go ahead.
+ 19             MR. PLACITELLA:  I'll double check with 
+ 20   Leigh and Michelle at a break, but I think that's the 
+ 21   only other one I'm aware of.
+ 22             MR. EWALD:  Okay.  And we already talked 
+ 23   about the reliance list.  And I understand -- well, 
+ 24   I'll pause there for a second.
+ 25             MR. PLACITELLA:  Okay.
+
+00023
+  1   BY MR. EWALD:
+  2       Q.    So Dr. Longo, before we leave those reports, 
+  3   I just want to ask a question specifically about the 
+  4   off-the-shelf analysis.  And counsel provided, as I 
+  5   indicated, Supplement 1 and Supplement 2.  And I'm 
+  6   going to share the screen just so you can be oriented.  
+  7   I'm not going to ask any substantive questions.
+  8             But is it fair -- well, withdrawn.
+  9             My understanding is that the Supplement 
+ 10   Report Number 2 dated December 8th, 2020, of this MAS 
+ 11   project number M71166 and M71180 supersedes Supplement 
+ 12   Report Number 1 of the same analysis; am I correct in 
+ 13   that?
+ 14       A.    Yes, sir. 
+ 15       Q.    When we're talking about the reports that we 
+ 16   just went through -- you just went through and I just 
+ 17   identified -- you talked about your interpretation of 
+ 18   Judge Wolfson's ruling.  And am I correct in 
+ 19   understanding you that to the extent those reports 
+ 20   include analysis by PLM under ISO 22262-1 without 
+ 21   heavy liquid separation, it is not your intent to 
+ 22   offer opinions about that testing in the MDL; right?
+ 23       A.    Well, I would offer opinions about them, but 
+ 24   I think Judge Wolfson might object to that.  So I 
+ 25   don't see any need to push that for any reason.  So I 
+
+00024
+  1   won't be relying on that particular PLM analysis for 
+  2   the case in front of Judge Wolfson.
+  3             MR. PLACITELLA:  Just so it's clear, Debbie, 
+  4   it's W-O-L-F-S-O-N, Wolfson. 
+  5             COURT REPORTER:  Thank you, sir.
+  6             MR. PLACITELLA:  Just so at the end you 
+  7   don't have to go back and fix it all the way through.  
+  8   Okay?
+  9             Sorry, John.
+ 10             MR. EWALD:  No.  That's okay.
+ 11             I won't tell her, Dr. Longo, that you said 
+ 12   Wilson.
+ 13             MR. PLACITELLA:  It's the whole southern 
+ 14   drawl thing.  But I want to make sure it gets right on 
+ 15   the record.
+ 16             MR. EWALD:  I hear you.  
+ 17   BY MR. PLACITELLA: 
+ 18       Q.    Okay.  So do you recall in reviewing, at 
+ 19   least at one point in time, Dr. Wolfson's Daubert 
+ 20   opinion related to -- that she also made a ruling with 
+ 21   respect to whether or not you could be offering 
+ 22   opinions with respect to exposure to asbestos?  Do you 
+ 23   recall that?
+ 24       A.    I do.
+ 25       Q.    And so when I review at least some of the 
+
+00025
+  1   reports that I just identified, there are certain 
+  2   sections in there that discuss your opinions in those 
+  3   cases about what you believe would be a significant 
+  4   exposure to asbestos from use of these J&J talc 
+  5   products.  As a general matter, is it fair that those 
+  6   are in your reports?
+  7       A.    Yes.
+  8       Q.    And with MDL, do you intend to rely -- do 
+  9   you intend to offer any opinions relating to exposure 
+ 10   to asbestos?
+ 11             MR. PLACITELLA:  Just so we're clear, he was 
+ 12   never asked to do specific exposure opinions.  Whether 
+ 13   that might change after the selection of a bellwether 
+ 14   plaintiff or not, that's an issue that we've got to 
+ 15   take up with the Court.  But at this point he's not 
+ 16   offering such opinions, if that helps move things 
+ 17   along.
+ 18             MR. EWALD:  That does help.  So that takes 
+ 19   half of my inquiry out of the way.  
+ 20       Q.    But I have a more general one, which is, for 
+ 21   example, Dr. Longo, in what I will call a typical talc 
+ 22   case involving J&J that you've been previously 
+ 23   disclosed on, you gave testimony that you would expect 
+ 24   exposures for a consumer if they used Johnson & 
+ 25   Johnson talc to range from 0.01 fiber per cc to        
+
+00026
+  1   1 fiber per cc; right?  That's an opinion you've given 
+  2   in other cases?  
+  3       A.    Yes, sir, it is.
+  4       Q.    And that is not specific to any particular 
+  5   plaintiff; right?  It's your general exposure range 
+  6   with the caveat that you say all the time, that 
+  7   sometimes it will be lower, sometimes it will be 
+  8   higher; right? 
+  9       A.    Yes, sir; that's correct.
+ 10       Q.    And so is it your intent to offer any 
+ 11   general, I'll say, in that same vein, opinions 
+ 12   relating to the expected exposure consumers would have 
+ 13   from using -- to asbestos from using Johnson & Johnson 
+ 14   talc products?
+ 15       A.    I believe my client was very articulate in 
+ 16   that.  At this point I'm not being asked to do that.
+ 17             MR. EWALD:  Fine.  So then let's go ahead 
+ 18   and make sure the record is clear.  I'll mark as 
+ 19   Exhibit 5 the -- I'll share my screen here in a 
+ 20   second.
+ 21             All right.  I'll mark as Exhibit 5 the MAS 
+ 22   Chart of J&J Testing (current as of September 16, 
+ 23   2021).  
+ 24             (EXHIBIT 5 WAS IDENTIFIED.)
+ 25   BY MR. EWALD: 
+
+00027
+  1       Q.    And Dr. Longo, what I'm showing you dated 
+  2   September 16th, 2021, is that the current version of 
+  3   the MAS Chart of J&J Testing upon which you will be 
+  4   relying on for your opinions in the MDL?
+  5       A.    Yes, sir.
+  6       Q.    All right.  And consistent with your 
+  7   testimony about the reports that we just discussed, am 
+  8   I correct that at least at this time, to the extent 
+  9   this chart that we've marked as Exhibit 5 contains 
+ 10   results by MAS of testing of Johnson & Johnson bottles 
+ 11   using PLM 22262-1 without having liquid separation, 
+ 12   that you'll not be relying on those opinions at this 
+ 13   time?
+ 14       A.    That's correct.
+ 15       Q.    Now, this chart includes testing from beyond 
+ 16   the U.S. market; right?
+ 17       A.    Correct.  I believe that these will be the 
+ 18   pre-MDL containers I will not be relying on.  
+ 19   Containers outside the U.S. market I would not be 
+ 20   relying on.  
+ 21             And anything post MDL -- such as, you know, 
+ 22   the Chinese retains and obviously off-the-shelf 
+ 23   material where we have very good chains of custody so 
+ 24   we don't have an issue -- off-the-shelf containers 
+ 25   were sealed and the milled material that came from the 
+
+00028
+  1   Chinese mine -- but I believe that is the totality of 
+  2   what I'm relying on, MDL samples going in off the 
+  3   shelf.  Obviously nothing from Korea.  I mean nothing 
+  4   from outside the United States.
+  5             MR. PLACITELLA:  We'll limit it -- just to 
+  6   truncate this, we'll stipulate that at this point, 
+  7   unless some plaintiff comes forward in the MDL and 
+  8   we'll revisit it, products that were sold outside the 
+  9   United States are not part of this deposition.
+ 10             MR. EWALD:  Thank you.
+ 11             MR. PLACITELLA:  We'll leave it open -- 
+ 12   whether somebody in the 30,000 cases that had an 
+ 13   exposure that we're not contemplating, we'll come back 
+ 14   to that.  But for moving this forward, we're not 
+ 15   there.
+ 16             MR. EWALD:  All right.  I appreciate that.  
+ 17   Thank you.
+ 18             THE WITNESS:  Thank you.  I appreciate that.  
+ 19   I was specifically talking about today's deposition.
+ 20             MR. EWALD:  Right.  
+ 21       Q.    Am I correct that to date MAS has not 
+ 22   analyzed any of the J&J MDL samples using the Colorado 
+ 23   School of Mines PLM method?
+ 24       A.    That is correct.
+ 25       Q.    And am I correct that MAS has not asked a 
+
+00029
+  1   third party to try and replicate it's CSM PLM findings 
+  2   relating to J&J cosmetic talc samples?
+  3             MR. PLACITELLA:  Object to the form.
+  4       A.    I mean I haven't specifically gone out and 
+  5   made a request that anybody do this.  Certainly the 
+  6   protocol and how to do the analysis is written out so 
+  7   others could try that and verify the results.  I just 
+  8   don't know how many labs out there have the more 
+  9   sophisticated polarized light microscopes to do the 
+ 10   work.  So it's hard for me to bring in a third -- send 
+ 11   samples to a third party if they don't have the proper 
+ 12   equipment.
+ 13       Q.    Is it fair to say as of today MAS has not 
+ 14   asked any third party to replicate the CSM PLM 
+ 15   findings relating to J&J cosmetic talc samples?
+ 16       A.    That's correct.
+ 17       Q.    And just so the record is clear -- I know 
+ 18   you know this, Dr. Longo -- when I say CSM, I am 
+ 19   referring to the Colorado School of Mines.
+ 20       A.    Yes, sir.
+ 21       Q.    You did mention the process described in 
+ 22   your reports; right?  Let me start that over again.
+ 23             You made mention that the Colorado School of 
+ 24   Mines PLM approach that MAS has been using -- it's 
+ 25   described in the MAS' report of its findings; right?
+
+00030
+  1       A.    Correct.
+  2       Q.    And do you agree that the reports MAS has 
+  3   issued that we discussed a little bit earlier relating 
+  4   to the CSM method accurately describe the process that 
+  5   MAS used?
+  6             MR. PLACITELLA:  Object to the form.
+  7       A.    Yes.  It has changed a little bit over time.  
+  8   But it is the process of what we use.
+  9       Q.    And that's fair, too.  I should probably 
+ 10   modify the question a little bit, which is that 
+ 11   accurately describes the CSM method used at the time 
+ 12   the analysis was done; right?
+ 13       A.    Yes, sir.  That is a very articulate answer 
+ 14   to that.  I'll have to remember that.
+ 15       Q.    Once in a while I get lucky.
+ 16             And do you recall approximately -- it was 
+ 17   probably a little less than a month ago -- being 
+ 18   deposed by me and a few other attorneys for other 
+ 19   defendants in the Bonnem case?
+ 20       A.    I remember being deposed by you.  What did 
+ 21   you say, a couple of months ago?
+ 22       Q.    It was actually a couple of weeks ago.  I 
+ 23   have it down as September 19th.
+ 24       A.    Yes, I remember that.  Yes.
+ 25       Q.    And I'm not going to -- I want to use that 
+
+00031
+  1   as a jumping-off point, which is:  Have there been any 
+  2   developments in MAS' approach to the CSM method since 
+  3   that deposition in September -- we'll call it mid 
+  4   September 2021?  
+  5       A.    No.
+  6             MR. EWALD:  How about this?  I do have some 
+  7   more questions, not a whole heck of a lot.  We've been 
+  8   going for about an hour.  I know there's a couple of 
+  9   things that we're going to take a break and check on.  
+ 10   One would be, Dr. Longo, the J&J 1974 document that 
+ 11   you want to add to the reliance list.  
+ 12             And so do we want to take 15 minutes now?
+ 13             THE WITNESS:  That's correct.  I'll go get 
+ 14   that.  And what I'll do is I'll scan it and send it 
+ 15   off to my clients.  And maybe they can get it to you.  
+ 16   But when you see it, you'll recognize it.
+ 17             MR. EWALD:  That's fine.  I'm confident -- 
+ 18   I'm more interested -- I'm mainly interested in making 
+ 19   sure it's identified for the record.  But I will take 
+ 20   a look at whatever --
+ 21             MR. PLACITELLA:  We can probably do it by 
+ 22   Bates number, John --
+ 23             MR. EWALD:  Yeah, agreed.
+ 24             MR. PLACITELLA:  -- and make life easier.  
+ 25             Dr. Longo, rather than make yourself crazy, 
+
+00032
+  1   if you read the date, the to and the from and the 
+  2   Bates number, then we can send it to the reporter and 
+  3   she can include it so you're not running around there.  
+  4   Because I know your assistant is out.
+  5             THE WITNESS:  Yes.  It's like you realize 
+  6   what your life would be like if your 10-year assistant 
+  7   was all of a sudden gone.  As disorganized as I am, 
+  8   that would put a cap on it.
+  9             MR. EWALD:  All right.  Do we want to say 
+ 10   11:30?  That's a little more than 15 minutes.  Is that 
+ 11   all right?
+ 12             MR. PLACITELLA:  That's fine.
+ 13             (A RECESS WAS TAKEN FROM 11:12 A.M.
+ 14              TO 11:35 A.M.) 
+ 15             THE WITNESS:  Okay.  I have the document.
+ 16             MR. PLACITELLA:  Dr. Longo, before you do 
+ 17   that, we had a conversation with counsel during the 
+ 18   break.  There was an Exhibit 4.  You were shown the 
+ 19   first page, marked the first page.  
+ 20             That was not served for this deposition.  
+ 21   That was a chart that was created by Dr. Rigler, and 
+ 22   he was asked questions about it in his deposition.  
+ 23   Some of it -- counsel can ask you about it.  Some of 
+ 24   it has information in it that came from MAS testing, 
+ 25   but that was not a chart that we supplied for purposes 
+
+00033
+  1   of this deposition.
+  2             MR. EWALD:  I guess, before I go back to 
+  3   asking questions of Dr. Longo, I'm not sure if it was 
+  4   Leigh or Michelle that jumped in when we were having 
+  5   the conversation.  But I thought they confirmed -- 
+  6   whether or not it was intended to be part of this 
+  7   deposition, it was supplied with the materials for 
+  8   Dr. Longo's deposition.
+  9             THE WITNESS:  All right.
+ 10             MR. EWALD:  Michelle or Leigh, either one -- 
+ 11   I apologize, I can't remember who it was.
+ 12             MS. O'DELL:  This is Leigh, John.  I should 
+ 13   have identified myself because I'm not on camera.
+ 14             MR. EWALD:  No problem.
+ 15             MS. O'DELL:  What I said was it was served 
+ 16   on July 2nd with other -- that was the date for the 
+ 17   MDL reports to be served.  It was served at that time 
+ 18   is what I stated.  And so I didn't make a distinction.  
+ 19   There was a joint folder, but this is Dr. Rigler's 
+ 20   chart that was being discussed.
+ 21             MR. EWALD:  Okay.  That's helpful.  So I'm 
+ 22   ready when everybody else is.
+ 23             THE WITNESS:  I'm ready.
+ 24             COURT REPORTER:  Did you want that 
+ 25   discussion on the record?
+
+00034
+  1             MR. EWALD:  Yeah, I think that would be 
+  2   helpful to have it on the record.
+  3             MR. PLACITELLA:  Yes.
+  4             MR. EWALD:  Are you ready, Dr. Longo?
+  5             THE WITNESS:  Yes.
+  6       Q.    So counsel was just having a discussion that 
+  7   is on the record before we had your questioning begin 
+  8   again about what I had marked as Exhibit 4.  And I'm 
+  9   going to pull it back up.  I guess once I get it up 
+ 10   there, I'll ask a couple of questions.
+ 11             Now, there's a representation by counsel -- 
+ 12   I'm happy to scroll through or if you want to take it 
+ 13   a look at it by email, that's also fine.  What was 
+ 14   stated by counsel is that this is a chart that was 
+ 15   prepared by Dr. Rigler.
+ 16             And so my first question is:  Based on what 
+ 17   you're seeing here, is that consistent with your 
+ 18   understanding?
+ 19       A.    You know, after looking at it closely, I was 
+ 20   wondering -- it does not look like my chart that I 
+ 21   did.  So we both did the same thing.  My chart -- his 
+ 22   is talc fibers.  Mine is amphiboles.  I thought we 
+ 23   were looking at one that said amphiboles on it.
+ 24       Q.    And for the record, what has been marked as 
+ 25   Exhibit 4 -- and I did not realize this when I was 
+
+00035
+  1   first showing you the first page.  So that's 
+  2   understandable why you may have been confused.  But 
+  3   for the record, what I've marked as Exhibit 4 is seven 
+  4   pages long.  The first page chart has at the top 
+  5   Amphibole Asbestos Found in Historical Johnson's Baby 
+  6   Powder in 1960-2000s.
+  7             And then if you scroll down, that's the same 
+  8   title on the same page, and then the same title on 
+  9   page 3.  And then you find starting on page 4 a new 
+ 10   title:  Talc Fibers Found in Historical J&J Cosmetic 
+ 11   Talcum Powders 1960s, on page 5 it's 1970s, on page 6 
+ 12   it's 1980s and 1990s, and then page 7 is early 2000s.
+ 13             So with that now explanation of what was 
+ 14   marked as Exhibit 4, what is your understanding as to 
+ 15   what role, if any, you played in either chart?
+ 16       A.    Well, that is not my chart.  Mine starts off 
+ 17   with -- some were results for Johnson & Johnson's 
+ 18   1960s Historical Johnson's Baby Powder -- I mean JBP 
+ 19   and STS samples.  And mine has what our results were 
+ 20   for the amphibole asbestos structures on TEM.  
+ 21             And then I have a 1.5-ounce container, a 
+ 22   4-ounce container, 9-ounce container, 15-ounce 
+ 23   container, and 22-ounce container showing the amount 
+ 24   of amphiboles in it.  
+ 25             So I didn't look very closely at that.  In 
+
+00036
+  1   comparing it to mine, it's completely different.  And 
+  2   I don't have anything about fibrous talc amounts in 
+  3   mine.
+  4       Q.    All right.  So the chart that you prepared, 
+  5   is that something that you previously produced in the 
+  6   mesothelioma litigation, do you know?
+  7       A.    No.  It's not been -- I thought it was 
+  8   produced here, but it's not been produced in any meso 
+  9   cases.
+ 10             MR. EWALD:  So then I guess I'll ask 
+ 11   Plaintiffs' counsel whether they -- whether you intend 
+ 12   for Dr. Longo to be relying on that chart for purposes 
+ 13   of the opinions in the MDL?
+ 14             MR. PLACITELLA:  Well -- go ahead, Leigh.
+ 15             MS. O'DELL:  I think, you know, there is -- 
+ 16   Dr. Longo -- let's just table that question, if we 
+ 17   can, John.  Because I think we've got some confusion 
+ 18   on our end, to be candid.  And then we'll circle back 
+ 19   to that later in the deposition.
+ 20             MR. EWALD:  Okay.  In the end, just being 
+ 21   very straightforward, if it is what he says it is, I 
+ 22   don't think I'll need much, if any, questioning on it.  
+ 23   But maybe if you can describe, Dr. Longo -- well, 
+ 24   we'll table it.  I'll get back to it if necessary.
+ 25             MR. PLACITELLA:  I don't have any such chart 
+
+00037
+  1   in front of me or on my computer, to be perfectly 
+  2   honest about it.  So we're going to have to figure out 
+  3   what that is.  And if you need to take supplemental 
+  4   testimony, we'll make him available.  But I don't 
+  5   know.
+  6             MR. EWALD:  No.  And --
+  7             THE WITNESS:  I'm not sure you need it 
+  8   because it's an easy calculation off the data.  You 
+  9   just take the amount of amphibole structures -- and 
+ 10   Mr. Ewald, we have done this in actual testimony with 
+ 11   just a representative container where -- say it's a 9 
+ 12   ounce -- and just do the math.
+ 13       Q.    How about this then -- how about this:  Can 
+ 14   you state on the record -- you say it's a simple 
+ 15   mathematical calculation.  And I'm familiar generally 
+ 16   with the approach.  But if can you make clear on the 
+ 17   record what mathematical calculation you make, then 
+ 18   maybe we can just obviate the need for further 
+ 19   discussion.
+ 20       A.    Sure.  
+ 21             So the very first one on my chart, it's 
+ 22   M68503-010.  It was a Johnson's Baby Powder 167 from 
+ 23   the historical samples 1960.  We found 31,400 
+ 24   fiber/bundles of tremolite in a 1.5-ounce container.  
+ 25   You calculate the number of grams -- excuse me -- yes, 
+
+00038
+  1   you calculate the number of grams in 1.5 ounces, which 
+  2   is going to be approximately 20, 38 -- 42 grams.  And 
+  3   you take 42 and multiply it by the 31,400.  And the 
+  4   results of that is that there is 1,319,000 
+  5   fiber/bundles of tremolite per gram.  
+  6             And for 4-ounce and 9-ounce and 15-ounce 
+  7   you'd just do the same thing. 
+  8       Q.    All right.  Thank you.
+  9             MR. PLACITELLA:  Just for the record, 
+ 10   because it won't show it on the video, but Dr. Longo, 
+ 11   who is much brighter than me, is doing this in his 
+ 12   head on the record without a calculator.  So I just 
+ 13   want the record to be clear.
+ 14             THE WITNESS:  Well, to be fair, the final 
+ 15   calculation, I'm reading it.  And it happened to be 
+ 16   1.5 ounces, which makes it a little bit easier if you 
+ 17   just say 28 grams per ounce and not the .35.  I'm not 
+ 18   that smart.
+ 19   BY MR. EWALD:
+ 20       Q.    I think we've got it clear already.  But if 
+ 21   there's any doubt, what I marked as Exhibit 4 are 
+ 22   tables prepared by Dr. Rigler, and you do not intend 
+ 23   to rely on those tables for your opinions in the MDL?  
+ 24       A.    No.  I wasn't aware that Dr. Rigler had 
+ 25   generated such a table, and it's my fault for not 
+
+00039
+  1   scrutinizing it closely.
+  2       Q.    No.  It certainly was unintentional.  I 
+  3   didn't realize there were four more pages and a 
+  4   different chart.
+  5             Okay.  So we talked about whether you had 
+  6   any communications with Dr. Rigler about the MDL.  
+  7   Have you had any communications with any expert about 
+  8   the MDL since your deposition in February 2019?
+  9       A.    No, sir.
+ 10             MR. EWALD:  I want to mark as Exhibit 6 the 
+ 11   testimony listing that was provided by counsel.  And 
+ 12   I'm going to share it just to ask you one question, I 
+ 13   think, Dr. Longo.
+ 14             (EXHIBIT 6 WAS IDENTIFIED.)  
+ 15   BY MR. EWALD:
+ 16       Q.    The last entry for testimony on this list 
+ 17   that's been marked as Exhibit 6 is a September 30th, 
+ 18   2021 deposition, in Gutierrez; correct?
+ 19       A.    Correct.
+ 20       Q.    And are you aware, aside from this 
+ 21   deposition right now, of any other testimony you've 
+ 22   given as an expert since September 30th, 2021?
+ 23       A.    There has been no other testimony.  
+ 24   September 30th was, I believe, Friday.  And I didn't 
+ 25   have a deposition yesterday.
+
+00040
+  1       Q.    It wouldn't be the first time.
+  2       A.    I know that.
+  3             MR. EWALD:  And then we'll mark as Exhibit 7 
+  4   the CV that was provided by counsel.  
+  5             (EXHIBIT 7 WAS IDENTIFIED.)
+  6   BY MR. EWALD:  
+  7       Q.    I'm just going to go down to the bottom 
+  8   page.  It's nine pages long.  And at the bottom it 
+  9   says:  Updated 3/12/2020.  
+ 10             Is this the current version of your CV, 
+ 11   Dr. Longo?
+ 12       A.    Yes, sir, it is.
+ 13             MR. PLACITELLA:  Did you mark that as 7, 
+ 14   John?
+ 15             MR. EWALD:  Yes, I marked that as 7.
+ 16       Q.    I also realized when we were talking about 
+ 17   the chart, that, Dr. Longo, I had asked before the 
+ 18   break for you, to the extent that you wanted, to add 
+ 19   any materials to the reliance list that we have marked 
+ 20   as Exhibit 3 and that was dated April 23rd, 2021.  And 
+ 21   I believe you have now information regarding one such 
+ 22   document that you would like to add; is that correct?
+ 23       A.    That is correct.
+ 24       Q.    And would you mind reading into the record 
+ 25   the Bates number, but if you'd also identify it with a 
+
+00041
+  1   date, if there is one, and any other kind of relevant 
+  2   information.
+  3       A.    The date -- well, I'll start from the 
+  4   beginning.  
+  5             This is labeled "confidential" in big, bold, 
+  6   black letters.  And it's New Reagent Systems - Plant 
+  7   Trial at Windsor Minerals, Inc.  It has a Plaintiffs' 
+  8   Exhibit J&J 335.  And it starts off with Bates stamped 
+  9   number JNJM as a Mary X68_000004996 and runs to 5044.
+ 10             And it doesn't have a date on the front.  
+ 11   But the confidential memo, which starts after the 
+ 12   title page, starts on page 1 and goes to page 6 where 
+ 13   it is signed by Vernon Zeitz, Z-E-I-T-Z, Manager, 
+ 14   Research and Development, Windsor Minerals, Inc., 
+ 15   5/14/1974.
+ 16             And then behind that, starting with     
+ 17   table 2 -- there is no table 1, but the Bates stamps 
+ 18   are sequential -- it has all the data for their 
+ 19   testing of the surfactants they were using to try and 
+ 20   remove both chrysotile and amphibole asbestos from 
+ 21   grade 66 talc, obviously Vermont, and the J&J grade.
+ 22             COURT REPORTER:  Obviously Vermont?  
+ 23       A.    Obviously from Vermont.  And it's the J&J 
+ 24   grade of cosmetic talc.
+ 25   BY MR. EWALD:  
+
+00042
+  1       Q.    Thank you, Doctor.  
+  2             With respect to your -- or MAS' CSM PLM 
+  3   method, am I correct that your reports relating to the 
+  4   analysis of -- using the CSM PLM method identifies and 
+  5   describes the visual estimation process of how your 
+  6   analyst quantified the chrysotile observed; is that 
+  7   right?
+  8       A.    Yes, sir.  Yes, sir; that's correct.
+  9       Q.    And you've been questioned by J&J attorneys 
+ 10   at depositions about different aspects of that 
+ 11   process; correct?
+ 12             MR. PLACITELLA:  Object to the form.
+ 13       A.    I have.
+ 14   BY MR. EWALD:
+ 15       Q.    I'm not going to replow that ground right 
+ 16   now.  I just have a couple of questions.
+ 17             My understanding is that the visual 
+ 18   calibration uses a spiked sample of Johnson's Baby 
+ 19   Powder that MAS spiked with Calidria chrysotile; 
+ 20   right?
+ 21       A.    Yes, sir.
+ 22       Q.    And am I correct that the sample -- the 
+ 23   spiked sample of Calidria chrysotile in Johnson's Baby 
+ 24   Powder is not something that is publicly available; 
+ 25   right?
+
+00043
+  1             MR. PLACITELLA:  Object to the form.
+  2       A.    It's not publicly available, but I've turned 
+  3   it over at least two or three times to J&J.
+  4       Q.    When you say you "turned it over," what are 
+  5   you specifically referring to that you turned over?
+  6       A.    Well, I turned over the PLM sheets for the 
+  7   various spiked samples for concentrations going from 
+  8   0.01 to 0.05 to 0.001 to 0.005.  And I believe we have 
+  9   a 0.0001 and maybe a 5.  
+ 10             So it's PLM sheets that show the number of 
+ 11   chrysotile structures found for each of those 
+ 12   concentrations.  It's a validation report -- not a 
+ 13   report but it's just the PLM sheets.
+ 14       Q.    As for the standard itself, the spiked 
+ 15   sample, you have not produced any, for example, splits 
+ 16   of that; correct?
+ 17       A.    I don't believe I've ever been asked.
+ 18       Q.    If asked, would you?
+ 19       A.    Well, no disrespect to you, Mr. Ewald, but 
+ 20   that's something that would have to come from my 
+ 21   client.
+ 22       Q.    I understand.
+ 23       A.    I would discuss it with my client.  And I 
+ 24   can't -- I don't know what their thinking is, et 
+ 25   cetera, so I can't talk about what their position 
+
+00044
+  1   would be on that.
+  2       Q.    Fair enough.  Okay.  
+  3             With respect to the Swann case -- I just 
+  4   want to circle back.  
+  5             MR. PLACITELLA:  Can I just say one thing 
+  6   about that?
+  7             MR. EWALD:  Sure.
+  8             MR. PLACITELLA:  I'm here to defend the MDL 
+  9   case.  I don't know anything about the Swann case.  
+ 10   Okay?  I've never seen a deposition.  I didn't know 
+ 11   that it was an issue until the word "Swann" was 
+ 12   mentioned.  So I think you -- I mean I'll let whoever 
+ 13   represents Swann speak for Swann.  But I think that 
+ 14   any questions related to Swann you should defer for a 
+ 15   day when the Swann deposition is an issue.  Because I 
+ 16   don't know anything about it.
+ 17             MR. EWALD:  No.  That's fair.  The reason 
+ 18   I'm asking is it's my understanding it has been cross 
+ 19   noticed.  And I don't know who counsel is in the Swann 
+ 20   case, candidly.
+ 21             Leigh, you're unmuted, so I don't know if 
+ 22   you want to chime in with anything.
+ 23             MS. O'DELL:  I did not see a notice for the 
+ 24   Swann case.  I actually am -- Beasley Allen is 
+ 25   involved on the Swann case, and I wasn't aware it was 
+
+00045
+  1   on the docket for today.  So let's defer all of that, 
+  2   John.  And we can have another occasion to discuss the 
+  3   Swann case when we get to that point.
+  4             MR. EWALD:  I am more than happy to do that.
+  5             MR. PLACITELLA:  Great.  You took my stress 
+  6   away.  Because I know when Dr. Longo gives opinions on 
+  7   specific cases, he just doesn't read a deposition 
+  8   once.  You know, he does a whole bunch of stuff.  So I 
+  9   was a little taken aback by it.  
+ 10             So thank you.  My stress level just went 
+ 11   down three levels.
+ 12             MR. EWALD:  Okay.  How about this?  The 
+ 13   first question:  Do you guys on the Plaintiffs' side 
+ 14   need to confer at all about whether you need to ask 
+ 15   any questions?
+ 16             MR. PLACITELLA:  We probably want to stop 
+ 17   for two minutes.  But if it is, it's going to be very, 
+ 18   very short.
+ 19             MR. EWALD:  How about this?  I'm going to 
+ 20   look back at my notes, too.  I don't think I have 
+ 21   anything further.  But why don't we just break until 
+ 22   12:05 Eastern or something like that.
+ 23             THE WITNESS:  That works.
+ 24             MR. PLACITELLA:  All right.  Thank you.
+ 25             (A RECESS WAS TAKEN FROM 11:58 A.M.
+
+00046
+  1              TO 12:05 P.M.)   
+  2             MR. EWALD:  So Dr. Longo, I don't have any 
+  3   further questions at this time.  Thank you for your 
+  4   time.
+  5             THE WITNESS:  Thank you.
+  6             MR. PLACITELLA:  I just have a few 
+  7   followups.  Nothing controversial, I don't think.
+  8                        EXAMINATION
+  9   BY MR. PLACITELLA:
+ 10       Q.    You provided before a calculation of fibers 
+ 11   in a bottle.  Could you do that same calculation for 
+ 12   any size bottle depending on whatever was given you on 
+ 13   the stand?
+ 14       A.    Yes.
+ 15       Q.    Okay.  And you talked about -- and you were 
+ 16   asked by counsel about the PLM heavy liquid separation 
+ 17   method.  And you referenced the CSM methodology.  
+ 18   Could you just explain that a little bit for the 
+ 19   record so it's on the record what the method is?
+ 20       A.    Sure.  Both the CSM and the Blount are 
+ 21   fairly similar.  And the only difference is that for 
+ 22   the Blount method, it's specifically for amphibole 
+ 23   asbestos in Alice Blount's 1991 paper.  And so she 
+ 24   uses a heavy liquid that has a density of 2.81.  
+ 25   Therefore anything with a higher density, such as 
+
+00047
+  1   amphibole asbestos, from 3.0 up to about 3.2, will go 
+  2   to the bottom of the test tube during centrifugation, 
+  3   and everything else will be above it.  So there you 
+  4   will just take the material at the tip of the 
+  5   centrifuge tube and analyze it.
+  6             The Colorado School of Mines is really just 
+  7   a sample preparation method.  Alice Blount's is a 
+  8   simple preparation method.  Then you have the other 
+  9   tools to analyze it.  There we're using a heavy liquid 
+ 10   of 2.72, which will -- anything with a higher density, 
+ 11   such as amphiboles, et cetera, will go to the bottom 
+ 12   of the test tube.  The chrysotile has a density of 
+ 13   2.55.  Theoretically that goes to the very top of the 
+ 14   test tube.  And right under that will be the talc, 
+ 15   which has a density of roughly 2.66.
+ 16             And so you're using the same science.  The 
+ 17   science is well established.  It's just changing the 
+ 18   density of the liquid.
+ 19             The first recorded use of heavy liquid 
+ 20   density separation is back in the California Gold Rush 
+ 21   when they used the pans to pan -- people say they 
+ 22   panned for gold.  They take silt and dirt material 
+ 23   from where they think gold is with water and they 
+ 24   cause the water to -- it's sort of a sloshing motion 
+ 25   where the water goes over the top.  And then they add 
+
+00048
+  1   some more water and keep doing that.  Gold has a 
+  2   density of approximately 14, and most of your silt and 
+  3   dirt and fine-grain particles will have a density -- 
+  4   fine-grain materials will have a density of about 2.6.  
+  5   Water has a density of 1.1.  So they have to keep it 
+  6   in suspension by sloshing it around in the pan very 
+  7   carefully.  And over time all the silt and dirt and 
+  8   whatever materials, except for maybe small petals, get 
+  9   to the bottom of the pan, and they can pick out the 
+ 10   gold if they're lucky.
+ 11             Walter McCrone in his particle outlets books 
+ 12   goes through a series of densities, different 
+ 13   chemicals that have different densities to separate 
+ 14   different minerals.  Now, he doesn't use 
+ 15   centrifugation; he uses what's known as a settling 
+ 16   routine where the heavier density minerals, slowly 
+ 17   over time, will settle to the bottom of the test tube, 
+ 18   and anything that has a density higher will be above 
+ 19   it.  
+ 20             So it's a well-established science of heavy 
+ 21   liquid density separation.
+ 22             The ISO 22262-1 and 2 has a protocol 
+ 23   specifically for talc and talcum powder.  And they use 
+ 24   a density of 2.5 grams.  Now, that method was written 
+ 25   by Dr. Chatfield, and he states that theoretically 
+
+00049
+  1   chrysotile can be done, but it's not practical.  And I 
+  2   understand the practical part after working on this 
+  3   for over a year.
+  4             So that's the basic procedure.  
+  5             And then you analyze -- after the sample 
+  6   prep is done, then you analyze with whatever tool you 
+  7   want to use.  The ISO method says you can use PLM, SEM 
+  8   and/or TEM.  That's it.  So we analyze all the samples 
+  9   by polarized lab microscopy, the PLMs, but the sample 
+ 10   preparation using the different heavy-density liquids 
+ 11   makes the difference.
+ 12       Q.    So I just have a followup to that.  How is 
+ 13   that -- that's different than what you did the first 
+ 14   time with PLM for the MDL report that was addressed by 
+ 15   Judge Wolfson; right?
+ 16       A.    Yeah.  That's different than the sample prep 
+ 17   method that Judge Wolfson -- where there was no heavy 
+ 18   liquid density done.  And really we were only doing 
+ 19   that as a comparison to show that, when you compare it 
+ 20   to the Blount method, that the Blount method was much 
+ 21   more sensitive in concentration and more positive 
+ 22   samples than what was in the MDL.  It wasn't a method 
+ 23   that we were using to understand exactly how much was 
+ 24   in there but more of a comparison to the Blount method 
+ 25   we used in the MDL just to show how the Blount method 
+
+00050
+  1   is more sensitive.  As Dr. Blount stated in her 
+  2   peer-reviewed paper, removing the talc made it more 
+  3   sensitive.  And I think she estimated that for every 
+  4   amphibole fiber or bundle she was looking at, for 
+  5   every one, there was something like 6 or 700,000 talc 
+  6   particles.  
+  7             And in order to be able to find the needle 
+  8   in the haystack, as coined by -- not coined but as 
+  9   stated by the Colorado School of Mines in their final 
+ 10   heavy double-density liquid separation protocol that 
+ 11   was issued in December of 2013, they state:  You're 
+ 12   looking for the needles in the haystack.  You've got 
+ 13   to get rid of the hay to make it more sensitive, 
+ 14   something along that line. 
+ 15       Q.    Then I have one more question.  You talked 
+ 16   about the visualization method.  Is that a generally 
+ 17   accepted method by microscopists?
+ 18       A.    It's called estimated visual weight 
+ 19   concentrations.  And that's in the protocol.  When we 
+ 20   get audited, that's what we use.  We don't use 
+ 21   anything else.  We don't use the point count method 
+ 22   because for these types of samples, it's not very 
+ 23   accurate.  As stated in the ISO 22262-1 or 2 protocol, 
+ 24   whichever one, they don't recommend it for samples 
+ 25   like this.
+
+00051
+  1             MR. PLACITELLA:  All right.  That's all the 
+  2   questions I have.  Thank you so much.
+  3             THE WITNESS:  Thank you.
+  4             MR. EWALD:  I don't have anything further.  
+  5   Thanks.
+  6             (A DISCUSSION WAS HELD OFF THE RECORD.)
+  7             COURT REPORTER:  I have one question.  Would 
+  8   the doctor like to read and sign?
+  9             MS. O'DELL:  Yes, please.
+ 10             THE WITNESS:  I'll waive.
+ 11             MR. EWALD:  And Debbie, I will email you the 
+ 12   exhibits that I used.
+ 13             COURT REPORTER:  Great.  Thank you so much.  
+ 14             (THE DEPOSITION OF WILLIAM E. LONGO, Ph.D., 
+ 15              WAS CONCLUDED AT 12:15 P.M. EASTERN TIME.)
+ 16                             
+ 17   
+ 18   
+ 19   
+ 20   
+ 21   
+ 22   
+ 23   
+ 24   
+ 25   
+
+00052
+  1                   C E R T I F I C A T E
+  2   
+  3            I do hereby certify that the foregoing 
+  4   proceedings were taken down by me and transcribed 
+  5   using computer-aided transcription and that the 
+  6   foregoing is a true and correct transcript of said 
+  7   proceedings.
+  8   
+  9            I further certify that I am neither of 
+ 10   counsel nor of kin to any of the parties, nor am I in 
+ 11   anywise interested in the result of said cause.
+ 12   
+ 13            I further certify that I have earned the 
+ 14   certifications awarded by the National Court Reporters 
+ 15   Association of RPR,RMR,RDR,CRR,CRC,RSA. 
+ 16   
+ 17   
+ 18   
+ 19   
+ 20   
+ 21           _____________________________________________  
+              DEBRA AMOS ISBELL, CCR,RDR,CRR
+ 22           NCRA (expires 12/31/2021)
+                Registered Professional Reporter
+ 23             Registered Merit Reporter
+                Registered Diplomate Reporter
+ 24             Certified Realtime Reporter
+                Certified Realtime Captioner
+ 25             Realtime Systems Administrator
+

@@ -1,10 +1,28 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 import pytest
 from pydantic import ValidationError
 
 from backend.app.models import (
+    AdminPersonaListResponse,
+    AdminPersonaPromptTemplate,
+    AdminPersonaPromptTemplatesResponse,
+    AdminPersonaPromptSections,
+    AdminPersonaRagBinding,
+    AdminPersonaRagOption,
+    AdminPersonaRagOptionsResponse,
+    AdminPersonaToolBinding,
+    AdminPersonaToolOption,
+    AdminPersonaToolOptionsResponse,
+    AdminPersonaRequest,
+    AdminPersonaResponse,
+    AdminUserDeleteResponse,
     AdminTestLogResponse,
+    AdminTestRunResponse,
     AdminUserListResponse,
     AdminUserRequest,
     AdminUserResponse,
@@ -26,6 +44,8 @@ from backend.app.models import (
     ContradictionReasonRequest,
     FocusedReasoningSummaryRequest,
     FocusedReasoningSummaryResponse,
+    DepositionBrowserEntry,
+    DepositionBrowserResponse,
     DepositionDocument,
     DeleteCaseResponse,
     DepositionSentimentRequest,
@@ -33,6 +53,8 @@ from backend.app.models import (
     DepositionUploadResponse,
     DepositionSchema,
     GraphBrowserResponse,
+    GraphRagEmbeddingConfigRequest,
+    GraphRagEmbeddingConfigResponse,
     GraphHealthResponse,
     GraphOntologyBrowserEntry,
     GraphOntologyBrowserResponse,
@@ -46,6 +68,9 @@ from backend.app.models import (
     GraphRagSource,
     IngestCaseRequest,
     IngestCaseResponse,
+    IngestSchemaDeleteResponse,
+    IngestSchemaOption,
+    IngestSchemaSaveRequest,
     LLMOption,
     LLMOptionsResponse,
     SaveCaseRequest,
@@ -141,6 +166,26 @@ def test_ingest_case_response_default_empty():
     payload = IngestCaseResponse(case_id="case-1")
     assert payload.ingested == []
     assert payload.thought_stream is None
+
+
+def test_ingest_schema_models_round_trip():
+    save = IngestSchemaSaveRequest(
+        key="custom_schema",
+        schema={"title": "Custom Schema", "type": "object"},
+    )
+    option = IngestSchemaOption(
+        key="custom_schema",
+        file_name="[couchdb]",
+        mode="raw_capture",
+        builtin=False,
+        removable=True,
+        schema=save.schema_payload,
+    )
+    deleted = IngestSchemaDeleteResponse(deleted=True, key="custom_schema")
+
+    assert option.schema_payload == {"title": "Custom Schema", "type": "object"}
+    assert option.removable is True
+    assert deleted.deleted is True
 
 
 def test_agent_trace_payload_and_event_model():
@@ -291,18 +336,121 @@ def test_case_models_defaults_and_bounds():
     version_list = CaseVersionListResponse(case_id="CASE-001", versions=[version_summary])
     assert version_list.versions[0].case_id == "CASE-001"
 
-    admin_user_request = AdminUserRequest(name="Paul Harvener")
-    assert admin_user_request.name == "Paul Harvener"
+    browser_entry = DepositionBrowserEntry(
+        path="/data/depositions/default/sample.txt",
+        name="sample.txt",
+        kind="file",
+    )
+    browser_payload = DepositionBrowserResponse(
+        base_directory="/data/depositions",
+        current_directory="/data/depositions/default",
+        wildcard_path="/data/depositions/default/*.txt",
+        files=[browser_entry],
+    )
+    assert browser_payload.files[0].name == "sample.txt"
+    assert browser_payload.parent_directory is None
+
+    admin_user_request = AdminUserRequest(
+        user_id="user:1",
+        first_name="Paul",
+        last_name="Harvener",
+        authorization_level="admin",
+    )
+    assert admin_user_request.user_id == "user:1"
+    assert admin_user_request.first_name == "Paul"
+    assert admin_user_request.last_name == "Harvener"
+    assert admin_user_request.authorization_level == "admin"
 
     admin_user = AdminUserResponse(
         user_id="admin-user-1",
         name="Paul Harvener",
+        first_name="Paul",
+        last_name="Harvener",
+        authorization_level="read_only",
         created_at="2026-02-28T00:00:00+00:00",
     )
     assert admin_user.user_id == "admin-user-1"
+    assert admin_user.first_name == "Paul"
+    assert admin_user.authorization_level == "read_only"
 
     admin_users = AdminUserListResponse(users=[admin_user])
     assert admin_users.users[0].name == "Paul Harvener"
+
+    admin_user_delete = AdminUserDeleteResponse(user_id="admin-user-1", deleted=True)
+    assert admin_user_delete.user_id == "admin-user-1"
+    assert admin_user_delete.deleted is True
+
+    admin_persona_request = AdminPersonaRequest(
+        persona_id="persona:1",
+        name="Cross Examiner",
+        llm_provider="openai",
+        llm_model="gpt-5.2",
+        prompt_template_key="chat_system",
+        prompts="",
+        prompt_sections={"system": "Stay concise and adversarial.", "assistant": "", "context": ""},
+        rag_sequence=[{"key": "graph_rag_neo4j", "enabled": False}],
+        tool_sequence=[{"key": "mcp_couchdb_deposition_access", "enabled": True}],
+    )
+    assert admin_persona_request.persona_id == "persona:1"
+    assert admin_persona_request.llm_provider == "openai"
+    assert admin_persona_request.prompt_template_key == "chat_system"
+    assert admin_persona_request.prompt_sections.system == "Stay concise and adversarial."
+    assert admin_persona_request.rag_sequence[0].key == "graph_rag_neo4j"
+    assert admin_persona_request.rag_sequence[0].enabled is False
+    assert admin_persona_request.tool_sequence[0].key == "mcp_couchdb_deposition_access"
+    assert admin_persona_request.tool_sequence[0].enabled is True
+
+    admin_persona = AdminPersonaResponse(
+        persona_id="persona:1",
+        name="Cross Examiner",
+        llm_provider="ollama",
+        llm_model="law_model",
+        prompt_template_key="graph_rag_system",
+        prompts="System:\nChallenge weak assumptions.",
+        prompt_sections=AdminPersonaPromptSections(
+            system="Challenge weak assumptions.",
+            assistant="",
+            context="Use deposition context.",
+        ),
+        rag_sequence=[AdminPersonaRagBinding(key="graph_rag_neo4j", enabled=True)],
+        tool_sequence=[AdminPersonaToolBinding(key="mcp_couchdb_deposition_access", enabled=True)],
+        created_at="2026-03-03T00:00:00+00:00",
+    )
+    assert admin_persona.llm_model == "law_model"
+    assert admin_persona.prompt_template_key == "graph_rag_system"
+    assert admin_persona.prompts == "System:\nChallenge weak assumptions."
+    assert admin_persona.prompt_sections.context == "Use deposition context."
+    assert admin_persona.rag_sequence[0].key == "graph_rag_neo4j"
+    assert admin_persona.rag_sequence[0].enabled is True
+    assert admin_persona.tool_sequence[0].key == "mcp_couchdb_deposition_access"
+    assert admin_persona.tool_sequence[0].enabled is True
+    assert admin_persona.last_graph_question == ""
+    assert admin_persona.last_graph_answer == ""
+    assert admin_persona.last_graph_asked_at is None
+
+    admin_personas = AdminPersonaListResponse(personas=[admin_persona])
+    assert admin_personas.personas[0].name == "Cross Examiner"
+    persona_rag_option = AdminPersonaRagOption(
+        key="graph_rag_neo4j",
+        label="Graph RAG (Neo4j)",
+        description="Runs the current Graph RAG flow.",
+    )
+    persona_rag_options = AdminPersonaRagOptionsResponse(rags=[persona_rag_option])
+    assert persona_rag_options.rags[0].key == "graph_rag_neo4j"
+    persona_tool_option = AdminPersonaToolOption(
+        key="mcp_couchdb_deposition_access",
+        label="MCP: CouchDB Deposition Access",
+        description="Expose deposition retrieval tools.",
+    )
+    persona_tool_options = AdminPersonaToolOptionsResponse(tools=[persona_tool_option])
+    assert persona_tool_options.tools[0].key == "mcp_couchdb_deposition_access"
+    persona_prompt_template = AdminPersonaPromptTemplate(
+        key="chat_system",
+        file_name="chat_system.txt",
+        content="You are a seasoned attorney.",
+    )
+    persona_prompt_templates = AdminPersonaPromptTemplatesResponse(prompts=[persona_prompt_template])
+    assert persona_prompt_templates.prompts[0].key == "chat_system"
 
     admin_test_log = AdminTestLogResponse(
         summary="Parsed 1 recorded test runs from tests.html.",
@@ -310,12 +458,27 @@ def test_case_models_defaults_and_bounds():
     )
     assert "Parsed 1 recorded test runs" in admin_test_log.summary
 
+    admin_test_run = AdminTestRunResponse(
+        summary="All tests passed.",
+        succeeded=True,
+        exit_code=0,
+        output="404 passed",
+        duration_seconds=2.4,
+    )
+    assert admin_test_run.succeeded is True
+    assert admin_test_run.exit_code == 0
+    assert admin_test_run.duration_seconds == 2.4
+
     upload_response = DepositionUploadResponse(
         directory="/data/depositions/default",
         saved_files=["/data/depositions/default/new_dep.txt"],
+        root_directory="/data/depositions",
+        copied_to_root_files=["/data/depositions/new_dep.txt"],
         file_count=1,
     )
     assert upload_response.file_count == 1
+    assert upload_response.root_directory == "/data/depositions"
+    assert upload_response.copied_to_root_files == ["/data/depositions/new_dep.txt"]
 
 
 def test_agent_runtime_metrics_models():
@@ -350,6 +513,27 @@ def test_agent_runtime_metrics_models():
 
 
 def test_graph_rag_models():
+    embedding_request = GraphRagEmbeddingConfigRequest(
+        enabled=True,
+        provider="openai",
+        model="text-embedding-3-small",
+        dimensions=512,
+        index_name="resource_embeddings",
+        node_label="Resource",
+        property_name="embedding",
+    )
+    assert embedding_request.enabled is True
+    assert embedding_request.dimensions == 512
+
+    embedding_response = GraphRagEmbeddingConfigResponse(
+        **embedding_request.model_dump(),
+        source="saved",
+        configured=True,
+        last_saved_at="2025-01-01T00:00:00Z",
+    )
+    assert embedding_response.source == "saved"
+    assert embedding_response.configured is True
+
     request = GraphOntologyLoadRequest(path="/data/ontology/*.owl", clear_existing=True, batch_size=750)
     assert request.clear_existing is True
     assert request.batch_size == 750
@@ -418,12 +602,15 @@ def test_graph_rag_models():
         top_k=12,
         use_rag=False,
         stream_rag=False,
+        embedding_config=embedding_request,
         llm_provider="openai",
         llm_model="gpt-5.2",
     )
     assert query_request.top_k == 12
     assert query_request.use_rag is False
     assert query_request.stream_rag is False
+    assert query_request.embedding_config is not None
+    assert query_request.embedding_config.index_name == "resource_embeddings"
 
     source = GraphRagSource(
         iri="http://example.org/Contract",
@@ -439,7 +626,14 @@ def test_graph_rag_models():
         monitor=GraphRagMonitor(
             rag_enabled=True,
             rag_stream_enabled=False,
+            retrieval_mode="vector",
             retrieval_terms=["contract", "breach"],
+            query_embedding_used=True,
+            embedding_enabled=True,
+            embedding_provider="openai",
+            embedding_model="text-embedding-3-small",
+            embedding_index_name="resource_embeddings",
+            embedding_error=None,
             retrieved_resources=[
                 {
                     "iri": "http://example.org/Contract",
@@ -470,4 +664,5 @@ def test_graph_rag_models():
     assert query_response.monitor is not None
     assert query_response.monitor.rag_enabled is True
     assert query_response.monitor.rag_stream_enabled is False
+    assert query_response.monitor.retrieval_mode == "vector"
     assert query_response.monitor.retrieved_resources[0].relations[0].predicate == "relatedTo"

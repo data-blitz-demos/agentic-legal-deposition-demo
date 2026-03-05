@@ -1,0 +1,7575 @@
+
+                                                                 1
+
+
+ 1       IN THE CIRCUIT COURT OF THE SEVENTEENTH JUDICIAL
+
+ 2          CIRCUIT IN AND FOR BROWARD COUNTY, FLORIDA
+
+ 3                    CASE NO: CACE18028502
+
+ 4   ALBERTO CASARETTO and
+     IRENE CASARETTO,
+ 5
+        Plaintiffs,
+ 6
+        vs.
+ 7
+     JOHNSON & JOHNSON, INC.,
+ 8   JOHNSON & JOHNSON CONSUMER,
+     INC. f/k/a JOHNSON & JOHNSON
+ 9   CONSUMER COMPANIES, INC.,
+     PUBLIX SUPER MARKETS, INC.
+10   CVS HEALTH CORP., and ECKERD
+     CORPORATION OF FLORIDA, INC.
+11
+        Defendants.
+12   *****************************************************
+
+13   VIDEOCONFERENCE DEPOSITION OF:  MARK RIGLER, PhD
+
+14   DATE TAKEN:                  December 11, 2020
+
+15   TIME:                        10:00 a.m. to 2:07 p.m.
+
+16   PLACE:                       Videoconference Via Zoom
+
+17   TAKEN BEFORE:                JERI DRUM, COURT REPORTER
+                                  AND NOTARY PUBLIC
+18   *****************************************************
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25   Job No. CS4358763
+
+                                                                 2
+
+
+ 1   APPEARANCES:
+
+ 2   LEVIN, PAPANTONIO
+     BY: Chris Tisi, Esq.
+ 3   316 South Baylen Street
+     Pensacola, FL 32502
+ 4   ctisi@levinlaw.com
+     Appearing on behalf of the Plaintiffs via
+ 5   videoconference
+
+ 6   Kelley, Uustal
+     BY: Catherine C. Darlson, Esq.
+ 7   500 North Federal Highway, Suite 200
+     Fort Lauderdale, Florida 33301
+ 8   ccd@kulaw.com
+     Appearing on behalf of the Plaintiffs via
+ 9   videoconference
+
+10   CARLTON, FIELDS
+     BY:  Mel Bailey, Esq.
+11   525 Okeechobee Boulevard, Suite 1200
+     West Palm Beach, Florida 33401
+12   mbailey@carltonfields.com
+     Appearing on behalf of the Defendant, Johnson and
+13   Johnson via videoconference
+
+14   SAUL, EWING, ARNSTEIN & LEHR, LLP
+     BY:  Andrea Cox, Esq.
+15   701 Brickel Avenue, Fl 17
+     Miami, Florida
+16   andie.cox@saul.com
+     Appearing on behalf of the Defendant, Publix via
+17   videoconference
+
+18   Also present:
+
+19   Michael Hirsch, ESQ.
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+                                                                 3
+
+
+ 1                       C O N T E N T S
+
+ 2   TESTIMONY OF:  MARK RIGLER, PhD
+
+ 3     Direct Examination By:    Mr. Bailey             4
+
+ 4     Cross Examination By:     Ms. Cox               118
+
+ 5     Cross Examination By:     Ms. Darlson           135
+
+ 6   CERTIFICATE OF REPORTER                           139
+
+ 7   CERTIFICATE OF OATH                               140
+
+ 8   ERRATA SHEET                                      141
+
+ 9   READ LETTER                                       142
+
+10                       E X H I B I T S
+
+11           ****Exhibits retained by Mr. Bailey****
+
+12   Exhibit 1                                          5
+     (Deposition notice)
+13
+     Exhibit 2                                          8
+14   (Updated version of resume)
+
+15   Exhibit 3                                         12
+     (Reference list)
+16
+     Exhibit 4                                         45
+17   (Johnson's Baby Talco analysis report)
+
+18   Exhibit 5                                         109
+     (Authoritative standard by Bill Longo)
+19
+     Exhibit 6                                         116
+20   (Article authored in part by Mr. Fitzgerald)
+
+21
+
+22
+
+23
+
+24
+
+25
+
+                                                                 4
+
+
+ 1                    P R O C E E D I N G S
+
+ 2             THE REPORTER:  Due to the need for this
+
+ 3        deposition to take place remotely because of
+
+ 4        the government's order for social distancing,
+
+ 5        the parties have stipulated that the court
+
+ 6        reporter may swear in the witness over zoom and
+
+ 7        the witness has verified he is in fact Mark
+
+ 8        Rigler, Ph.D.
+
+ 9             Would you raise your right hand, please.
+
+10             THE WITNESS:  (The witness complies.)
+
+11             THE REPORTER:  Do you swear or affirm that
+
+12        the testimony you are about to give will be the
+
+13        truth, the whole truth, and nothing but the
+
+14        truth?
+
+15             THE WITNESS:  Yes, I do.
+
+16                     MARK RIGLER, Ph.D.,
+
+17   having first been duly sworn, testified under oath as
+
+18   follows:
+
+19   DIRECT EXAMINATION:
+
+20   BY MR. BAILEY:
+
+21        Q    Good morning, Doctor.
+
+22        A    Good morning.
+
+23        Q    We've met.  I'm Mel Bailey.
+
+24        A    Yes.
+
+25        Q    Can you hear me okay this morning?
+
+                                                                 5
+
+
+ 1        A    I can hear you well.
+
+ 2        Q    Great.  Thank you.  If I ask you a question
+
+ 3   and you don't pick it all up, you don't understand it
+
+ 4   for whatever reason, raise your hand, waive your hand,
+
+ 5   tell me you can't understand it and I'll rephrase it for
+
+ 6   you.  Okay?
+
+ 7        A    All right.
+
+ 8        Q    I'm going to try to do this in the morning
+
+ 9   session so that we don't spill over into the afternoon
+
+10   just for your planning purposes.
+
+11        A    Okay.
+
+12        Q    I'm going to mark as Exhibit No. 1 the
+
+13   deposition notice for your deposition and ask you have
+
+14   you seen that document?
+
+15                    (Exhibit 1 was marked
+
+16                     for identification.)
+
+17             THE WITNESS:  I have, yes.
+
+18        Q    (By Mr. Bailey)  When did you first see that
+
+19   document?
+
+20        A    Oh, I believe I saw that -- it was either at
+
+21   the end of last week or beginning of this week.
+
+22        Q    And as you are aware, it requires you or
+
+23   requests that you produce certain documents prior to
+
+24   your deposition; fair enough?
+
+25        A    Yes.
+
+                                                                 6
+
+
+ 1        Q    I just want to ask you about a couple of these
+
+ 2   because I know you did produce documents in response to
+
+ 3   this.  And number one catches my attention.  The
+
+ 4   deponent's complete file as it relates to this case.
+
+ 5             Have you produced everything in your file
+
+ 6   related to this matter?
+
+ 7        A    Yes.  To my knowledge, yes.
+
+ 8        Q    Okay.  Tell me just, basically, what you
+
+ 9   reviewed in connection with the facts specific to the
+
+10   plaintiff's claimed exposure in this case?
+
+11        A    I reviewed documents that were sent to me by
+
+12   the plaintiff's firm, Mr. Tisi's firm.  And they
+
+13   included a number of depositions and exhibits.  Also, I
+
+14   have a number of documents that I reviewed on my
+
+15   reference list.  And let me think.  What else?  There
+
+16   were also documents that I reviewed that were related to
+
+17   the testing of the samples that were sent to the MAS
+
+18   laboratory, by my request, to Mr. Tisi's firm.
+
+19             The notes that I took, I was there at that
+
+20   laboratory so those notes are there, also photographs of
+
+21   the two samples that were submitted.  And I believe
+
+22   there were some additional photographs that were part of
+
+23   the testing and analysis at the laboratory.  I think
+
+24   that's the lion's share of it.  There may be some others
+
+25   that I can't recall this second but that's most of them.
+
+                                                                 7
+
+
+ 1        Q    Okay.  I'm going to track that in the order
+
+ 2   that I think that you gave it to me.  And let's start
+
+ 3   with just notes that you have taken.
+
+ 4        A    Yes.
+
+ 5        Q    Have you provided plaintiffs' counsel with all
+
+ 6   of the notes that you have taken in connection with any
+
+ 7   work that you have done in this case?
+
+ 8        A    Yes.
+
+ 9        Q    When you read the depositions that were
+
+10   forwarded to you, did you make notes either on the
+
+11   transcript themselves, on your computer or any
+
+12   handwritten form?
+
+13        A    I did.  I highlighted areas of the depositions
+
+14   that I read.  So the notes, there may be some notes in
+
+15   margins and those.  But mainly overall there is
+
+16   highlighting on those.
+
+17        Q    And have you provided plaintiffs' counsel with
+
+18   your highlighted versions of those depositions?
+
+19        A    Yes.  To my knowledge I have, yes.
+
+20        Q    Okay.  My understanding, you did not prepare a
+
+21   report in this case, correct?
+
+22        A    That is correct.
+
+23        Q    Okay.  Do you have any plans to prepare a
+
+24   report in this case currently?
+
+25        A    If I'm asked, then I will.
+
+                                                                 8
+
+
+ 1        Q    Okay.  But right now there has been no
+
+ 2   requests that you do so, true?
+
+ 3        A    No.  That is true.
+
+ 4        Q    Yesterday I received an updated version of
+
+ 5   your resume.  I'm going to mark that -- or your CV.  And
+
+ 6   I'm going to mark that as Exhibit 2.
+
+ 7        A    Okay.
+
+ 8                    (Exhibit 2 was marked
+
+ 9                     for identification.)
+
+10        Q    (By Mr. Bailey)  I haven't compared it because
+
+11   I got it in late yesterday evening to the one that you
+
+12   had previously.  So can you just tell me if you updated
+
+13   it?
+
+14        A    Sure.  The address, my office address has
+
+15   changed.  I got a notice of a change of that.  They
+
+16   moved the office to -- from Atlanta to Lawrenceville,
+
+17   Georgia.  So I made a note of that.  And I added --
+
+18   well, let's see, Published Scientific Commentaries on
+
+19   page three.  And then on the last page I added my
+
+20   membership on the editorial board for The Journal of
+
+21   Scientific Practices Integrity.
+
+22        Q    I did notice that this morning.  But can you
+
+23   help me on page three, identify what changes you made?
+
+24        A    In the middle of the page.  It says Published
+
+25   Scientific Commentary and it was comments -- do you see
+
+                                                                 9
+
+
+ 1   that?  Comments regarding testing methods for asbestos
+
+ 2   and talc and cosmetic products containing talc.  And
+
+ 3   that was accepted by the FDA for the FDA public meeting
+
+ 4   February 4, 2020 in Silver Spring, Maryland.  So I've
+
+ 5   put that on there and then the reference link to that.
+
+ 6        Q    Is that on page two or page three, Doctor?
+
+ 7        A    Page three.  It is on my page three.  Do you
+
+ 8   have it on page three?
+
+ 9        Q    All right.  You said that you were notified
+
+10   that they had changed the address of your office?
+
+11        A    Yes.
+
+12        Q    Explain that to me, please.
+
+13        A    I have an office where I have documents, sent
+
+14   and receive mail.  And it was in the Atlanta area.  It
+
+15   was originally set up when I registered my corporation
+
+16   Aspects.  So they notified me that they had moved that
+
+17   office address into Lawrenceville, Georgia.  So it is
+
+18   not that far away but it is a different address location
+
+19   so I wanted to make sure I noted that.
+
+20        Q    When you say they notified you, who is it that
+
+21   notified you that your office address had changed?
+
+22        A    It is the legal firm.  It is called Inc. File.
+
+23        Q    I don't want to get into your communication
+
+24   with any legal firm but can you tell me, basically, what
+
+25   role Inc. File plays in connection with your
+
+                                                                10
+
+
+ 1   relationship with Aspects, LLC, your company?
+
+ 2        A    Sure.  They helped me set up the LLC
+
+ 3   originally.  And along with that goes an office so you
+
+ 4   can be at -- have your mail sent to that place.  I think
+
+ 5   we talked about that somewhat before.  And so they just
+
+ 6   notified me of the change of address.  I believe it
+
+ 7   was -- might have been last week or so.
+
+ 8        Q    Is it fair to say that the physical address of
+
+ 9   Aspects, LLC is more of a Dropbox location for receiving
+
+10   mail and things of that nature than it is as an
+
+11   operating business facility for you?
+
+12        A    Yes.  And I've testified to that before.
+
+13   That's what it is.
+
+14        Q    Okay.  So your primary practice is out of your
+
+15   home still for Aspects?
+
+16        A    Yes, out of my office, home office, yes.
+
+17        Q    Okay.
+
+18        A    Now, when I have client meetings -- and this
+
+19   has not happened because of COVID -- I have an office
+
+20   location that I use.  It is also in Lawrenceville.  And
+
+21   it is a -- what do you call it?  Regus Office Suites.
+
+22   So I go there to meet with clients.
+
+23        Q    So if you need to make arrangements for having
+
+24   a meeting with somebody, this is an executive suite sort
+
+25   of arrangement?
+
+                                                                11
+
+
+ 1        A    Yes.
+
+ 2        Q    Are you still the only employee of Aspects,
+
+ 3   LLC?
+
+ 4        A    Yes.
+
+ 5        Q    Staying with the deposition notice -- well,
+
+ 6   let me ask you this, what did you do to prepare for your
+
+ 7   deposition this morning?
+
+ 8        A    I reviewed the case file materials that we had
+
+ 9   just previously discussed and also reviewed the reports
+
+10   for the Johnson and Johnson tested products that I was a
+
+11   co-author on at MAS.  I also examined and reviewed the
+
+12   reports from MAS in this case for the testing of the --
+
+13   Mr. Casaretto's talc sample.  One of them the South
+
+14   American talc sample.  And, additionally, I reviewed a
+
+15   report -- a couple of reports, actually, from MAS
+
+16   relating to their recent testing of off the shelf
+
+17   Johnson and Johnson products.
+
+18        Q    I received several e-mails yesterday updating
+
+19   your reliance materials or at least sending me portions
+
+20   of the documents that you relied upon.  How did you come
+
+21   to update those particular documents?
+
+22        A    There were a few that I had come across when I
+
+23   was reviewing the other materials.  And one of them was
+
+24   fairly recent in reference to finding asbestos in
+
+25   cosmetic talc products.  Additionally, there were some
+
+                                                                12
+
+
+ 1   others that were related to mixed mineral phases that I
+
+ 2   wanted to include.  And, additionally, the summary
+
+ 3   report from Johnson and Johnson regarding the testing of
+
+ 4   the AMA samples that were received from the FDA.
+
+ 5        Q    I'm going to mark as Exhibit No. 3 what was
+
+ 6   previously presented to me as your reference list.  And
+
+ 7   I believe it is a seven-page document.
+
+ 8        A    Yes.
+
+ 9                    (Exhibit 3 was marked
+
+10                     for identification.)
+
+11        Q    (By Mr. Bailey)  And, first of all, my
+
+12   question is have you physically updated this list or did
+
+13   you just send additional materials that were not on the
+
+14   list?
+
+15        A    I sent additional materials that were not on
+
+16   the list.  So I hadn't had time to add those since
+
+17   yesterday, the ones that we just discussed, at least --
+
+18   well, trying to think one of them.  All three of them
+
+19   are on -- yes, I haven't had time to update that so they
+
+20   were just added to the list.
+
+21        Q    Okay.  Just for my record keeping, your
+
+22   reference list now consists of the seven-page document
+
+23   and I believe something, like, four additional documents
+
+24   that were added yesterday; is that it?
+
+25        A    Yes.
+
+                                                                13
+
+
+ 1        Q    Okay.
+
+ 2             MS. DARLSON:  This is Catherine.  Do you
+
+ 3        have that in front of you?  And, Mel, are you
+
+ 4        going to ask him some questions about the
+
+ 5        document?  Are you going to either put it up on
+
+ 6        the screen or verify that he has it in front of
+
+ 7        him?
+
+ 8             MR. BAILEY:  I'm not going to ask him
+
+ 9        anymore questions.  I'm just marking them so we
+
+10        have them and so I understand.  It is a bit of
+
+11        a moving target but I'm tracking what he is
+
+12        doing which is fine with me.
+
+13             MS. DARLSON:  Okay.
+
+14        Q    (By Mr. Bailey)  Stay on the notice so I don't
+
+15   jump around.  Have you produced in this case any
+
+16   communications between you and plaintiffs' counsel,
+
+17   whether in written correspondence or electronic
+
+18   communication?
+
+19        A    I believe there have been communications that
+
+20   have been produced.
+
+21        Q    Okay.  Have you seen physically what has been
+
+22   produced so that you could review it and understand
+
+23   whether or not that represented your entire list of
+
+24   documents?
+
+25        A    To my knowledge, I have.
+
+                                                                14
+
+
+ 1        Q    Okay.  When is the last time that you
+
+ 2   exchanged e-mail communications with plaintiffs'
+
+ 3   counsel?
+
+ 4        A    I don't remember.  It might have been the day
+
+ 5   before yesterday.  They had asked for a document and I
+
+ 6   tried to upload that document but it was -- it was too
+
+ 7   large to upload.  It was one of the ones that we just
+
+ 8   had discussed.  So I essentially put it up in the
+
+ 9   Dropbox area, in the shared Dropbox area.  So then after
+
+10   that it was, to my knowledge, everybody's.
+
+11        Q    You have a shared Dropbox specific to this
+
+12   case?
+
+13        A    Well, to my knowledge, there was one that the
+
+14   attorneys have that have all of my documents in it and
+
+15   that you guys got.
+
+16             MS. DARLSON:  That's the one that you have
+
+17        as well.
+
+18        Q    (By Mr. Bailey)  Yeah.  I received some e-mail
+
+19   communication late in the evening last night updating
+
+20   your reliance documents, which is fine.  But my only
+
+21   question is was that transmitted by e-mail or by
+
+22   uploading into the Dropbox?
+
+23        A    To my knowledge, it was just uploaded into the
+
+24   Dropbox.
+
+25        Q    And were you the person that did that?
+
+                                                                15
+
+
+ 1        A    Yes.
+
+ 2        Q    Tell me, what caused you to decide to add
+
+ 3   these additional documents to the Dropbox?
+
+ 4        A    Again, as I was saying before, they were -- a
+
+ 5   couple of them were mixed mineral references and the
+
+ 6   other was the MAS report.  I think it was, I don't know,
+
+ 7   30 or 40 megabytes in size.  I tried to e-mail it but it
+
+ 8   wouldn't go so I put it up in the Dropbox.
+
+ 9        Q    Okay.  So, as far as e-mail correspondence
+
+10   between plaintiffs' counsel and yourself, have you
+
+11   provided them with all copies that you have regarding
+
+12   those correspondence?
+
+13        A    They have the same ones that I had, to my
+
+14   knowledge.
+
+15        Q    But there is no doubt there are e-mail
+
+16   electronic communications between you and plaintiffs'
+
+17   counsel as part of your role as an expert in this case;
+
+18   is that fair?
+
+19        A    I believe that has already -- you guys already
+
+20   have those, to my knowledge.
+
+21        Q    Well, that's why I'm asking because I don't
+
+22   want there to be a disconnect between what I have and
+
+23   what you think I have.  So have you ever seen exactly
+
+24   what it is that I do have?
+
+25        A    I have not.
+
+                                                                16
+
+
+ 1        Q    All right.
+
+ 2        A    It could only be what I sent them.
+
+ 3        Q    Okay.  Have you prepared an invoice for your
+
+ 4   work in this case so far, Doctor?
+
+ 5        A    I have not.
+
+ 6        Q    Okay.  When you left MAS, did you sign a
+
+ 7   non-disclosure agreement as part of your exit?
+
+ 8        A    No.
+
+ 9        Q    When you were employed at MAS did you have a
+
+10   non-disclosure agreement?
+
+11        A    Working -- non-disclosure agreement, I don't
+
+12   believe so.  Working at MAS, employee projects and the
+
+13   like are all considered company confidential data and
+
+14   information, so...
+
+15        Q    I'm trying to manage the tension between what
+
+16   is confidential and what is testified to publicly in
+
+17   courtrooms.  Do you understand that?
+
+18        A    Sure.
+
+19        Q    And, first of all, is there an across the
+
+20   board for people working in the lab an understanding
+
+21   that they are not to publicly disclose the work
+
+22   performed in the lab in a general matter?
+
+23             MS. DARLSON:  Object to the form.  This is
+
+24        Catherine.
+
+25             THE WITNESS:  Well, at this particular
+
+                                                                17
+
+
+ 1        point I don't know what their procedural
+
+ 2        protocols are at this time.  So that is
+
+ 3        something that you would have to ask Dr. Longo
+
+ 4        about.  I don't know what has changed since I
+
+ 5        have been there so I really can't speak to
+
+ 6        that.
+
+ 7        Q    (By Mr. Bailey)  When you were there, and I
+
+ 8   understand under several titles, was it your
+
+ 9   understanding that work that you did in connection with
+
+10   testing products was considered confidential?
+
+11        A    Yes.
+
+12        Q    Okay.  And what -- explain the decision
+
+13   process to me as to how something moved from
+
+14   confidential in nature to available for public
+
+15   disclosure.
+
+16             MS. DARLSON:  Object to the form.
+
+17             THE WITNESS:  Yeah, I don't know -- I
+
+18        don't understand what you mean by that.
+
+19        Q    (By Mr. Bailey)  Well, if you test a
+
+20   particular product, as you and I have discussed in the
+
+21   past, I have asked questions about it and you would say
+
+22   that's confidential, true?
+
+23             MS. DARLSON:  Form.
+
+24             THE WITNESS:  Well, I may have said that
+
+25        on occasions, yes.
+
+                                                                18
+
+
+ 1        Q    (By Mr. Bailey)  And that's fair enough.  I'm
+
+ 2   just trying to understand the process or the procedure
+
+ 3   at MAS for how you determine whether or not something is
+
+ 4   confidential or you can talk about it and rely upon it
+
+ 5   in a courtroom and public.
+
+ 6        A    Well, if it is -- I would believe, again, if
+
+ 7   it was a matter of a courtroom matter whereby a firm was
+
+ 8   in court and the data was available to the Court, then
+
+ 9   that data would be available to be discussed within the
+
+10   confines of court.
+
+11        Q    Are there tests of cosmetic talc, for example,
+
+12   that you know were conducted at MAS at the time that you
+
+13   were in the lab that have been treated as confidential
+
+14   as opposed to disclosed to the public?
+
+15             MS. DARLSON:  Object to the form.
+
+16             THE WITNESS:  Can you -- I have to think
+
+17        about that.  Can you ask that again?
+
+18        Q    (By Mr. Bailey)  Sure.
+
+19        A    Because --
+
+20        Q    I just want to make sure that when I ask
+
+21   questions about what the experience of people working in
+
+22   the MAS lab were in connection with testing cosmetic
+
+23   talc, that I know whether or not there are certain tests
+
+24   that they are not telling me about and claiming they are
+
+25   confidential or am I being told about the entire
+
+                                                                19
+
+
+ 1   experience in testing cosmetic talc within the MAS lab.
+
+ 2             MS. DARLSON:  Form.
+
+ 3             MR. TISI:  I know that I'm not defending
+
+ 4        the deposition but because of my role in the
+
+ 5        MDL, I know that there is -- and, Mel, you may
+
+ 6        or may not know -- there are negotiations
+
+ 7        with -- between counsel for J and J, in
+
+ 8        particular, Rich Bernardo and ourselves,
+
+ 9        regarding disclosure of tests that have been
+
+10        done or not done and that there would be
+
+11        something presented to Judge Pizano in the MDL.
+
+12             I don't know how that overlaps with your
+
+13        question.  But what I don't want to do is interfere
+
+14        with what is currently being done between MDL
+
+15        leadership and leadership for J and J to try to get
+
+16        that information.  I assume you're at least
+
+17        familiar with the topic, right?
+
+18             MR. BAILEY:  Sure.  And I'm just wondering
+
+19        if whether he knows whether or not there are
+
+20        tests done that would inform him one way or
+
+21        another at MAS about talc that haven't been
+
+22        publicly disclosed and then I'll move on from
+
+23        there.
+
+24             MR. TISI:  Right.  What I don't want to do
+
+25        is have Dr. Rigler testify to something that is
+
+                                                                20
+
+
+ 1        the subject of negotiation that would be
+
+ 2        reciprocle from both sides with respect to RJ
+
+ 3        Lee and MAS, for example.  So, you know, with
+
+ 4        that I just wanted to put that on the record.
+
+ 5        I'm sorry, Catherine.  I just have some unique
+
+ 6        experience with that issue.
+
+ 7             So I'm going to go back on mute.  I just
+
+ 8        wanted to say that.
+
+ 9             MR. BAILEY:  That's fine.  Thanks, Chris.
+
+10        I'm happy for you to chime in any time you see
+
+11        fit.  Don't hesitate at all.
+
+12             MR. TISI:  Don't give me that permission,
+
+13        Mel.  That's a bad thing.
+
+14        Q    (By Mr. Bailer)  Let me ask it another way.
+
+15   Who is Mike Mount, Dr. Rigler?
+
+16        A    Mike Mount is a certified industrial
+
+17   hygienist.
+
+18        Q    During the course of 2010 through 2018 or '19,
+
+19   whenever you left MAS --
+
+20        A    2018.
+
+21        Q    -- did you work with Mike Mount in connection
+
+22   with any testing of cosmetic talc?
+
+23        A    I would say yes to that.
+
+24        Q    Can you recall when was the first time you
+
+25   worked with Mike Mount in connection with testing
+
+                                                                21
+
+
+ 1   cosmetic talc?
+
+ 2        A    I believe it was in either 2017 or 2018.
+
+ 3        Q    If there was testing going on of cosmetic talc
+
+ 4   at MAS in 2013, would you have been made aware of that
+
+ 5   fact at the time, given your role within the lab?
+
+ 6        A    Not necessarily.  The laboratory has hundreds
+
+ 7   of samples that come through a week and thousands that
+
+ 8   come through a month.  So my knowledge about all of the
+
+ 9   samples that were in or being tested, I may or may not
+
+10   have known about them.
+
+11        Q    Do you know what year it is that any lab
+
+12   technician issued any written report for litigation
+
+13   where MAS was testing cosmetic talc for the presence of
+
+14   asbestos?
+
+15        A    Any lab technician you're asking?
+
+16        Q    Well, don't hang up on the title.  Any
+
+17   employee of MAS.
+
+18             MS. DARLSON:  Form.
+
+19             THE WITNESS:  No, I don't know.  I don't
+
+20        know.
+
+21        Q    (By Mr. Bailey)  Do you know internally at MAS
+
+22   what year the first test protocol for testing cosmetic
+
+23   talc in the MAS lab was designed?
+
+24        A    That would have been in probably 2017.
+
+25        Q    And I'm just testing your awareness of the
+
+                                                                22
+
+
+ 1   development of these tests.
+
+ 2        A    Yes.
+
+ 3        Q    If there was cosmetic talc testing going on in
+
+ 4   2013 in the MAS lab, no one ever shared the results of
+
+ 5   that with you; is that fair?
+
+ 6        A    Yes.  And I think I have been asked this
+
+ 7   question before.  And, again, I don't know of that
+
+ 8   testing or any testing that was done.
+
+ 9        Q    I didn't know you had been asked.  It wasn't
+
+10   by me because I didn't know it.
+
+11        A    Okay.
+
+12        Q    I'm not going to waste a lot of time here on
+
+13   it.
+
+14        A    Sure.
+
+15        Q    Since you have been asked about it, though,
+
+16   the better question is have you ever gone back to look
+
+17   and see whether or not MAS was testing cosmetic talc for
+
+18   asbestos in 2013?
+
+19             MS. DARLSON:  Form.
+
+20             THE WITNESS:  No.
+
+21        Q    (By Mr. Bailey)  In litigation?
+
+22        A    No.
+
+23        Q    Have you talked to Mike Mount about any work
+
+24   that he may have done in connection with testing
+
+25   cosmetic talc at MAS?
+
+                                                                23
+
+
+ 1        A    I have not talked to Mike, no.
+
+ 2        Q    When is the last time you talked to Mike
+
+ 3   Mount?
+
+ 4        A    I talked to Mike -- I was at the laboratory in
+
+ 5   the summer of this year and he was at the laboratory and
+
+ 6   we spoke briefly.  I was in the PLM laboratory looking
+
+ 7   at some samples with one of the analysts and he came by
+
+ 8   and said hello.
+
+ 9        Q    So that I use the right title, what was his
+
+10   job title?
+
+11        A    You know, I don't know exactly what his job
+
+12   title but I do know he was a certified industrial
+
+13   hygienist.  So I don't know exactly what his job title
+
+14   was at the time.
+
+15        Q    Okay.  During the year 2013 was it your job
+
+16   responsibility to oversee the testing of any talc
+
+17   product if it was being conducted in MAS and you were
+
+18   aware of it?
+
+19        A    No.  I mean, I was -- as I recall, I have to
+
+20   look on here.  2013 I was lab manager.  I mean, that
+
+21   would have been -- it would have been amongst other
+
+22   samples that would have been tested at MAS if there was
+
+23   one like that.
+
+24        Q    I understand.
+
+25             MS. DARLSON:  I just want to make sure
+
+                                                                24
+
+
+ 1        that you are aware, if you're talking about --
+
+ 2        and I'm not sure if you recall and I'm not
+
+ 3        really sure what 2013 has to do with this case
+
+ 4        in the first place -- but if you're talking
+
+ 5        about reports or analyses that were conducted
+
+ 6        with you or MAS as a consulting witness, you
+
+ 7        don't have to testify about that if it is
+
+ 8        protected.  If it was later disclosed, you can
+
+ 9        answer the question if you know.  I just want
+
+10        to make that point.
+
+11             THE WITNESS:  I don't know.
+
+12        Q    (By Mr. Bailey)  Okay.  Yeah, I'm really
+
+13   getting at what you know.  Because my understanding of
+
+14   your role in this MAS operation was in part that you
+
+15   were the person that oversaw personally, you tell me,
+
+16   testing of talc when it occurred in the lab.  That's why
+
+17   I'm asking.
+
+18        A    I mean, as laboratory manager my role was
+
+19   administrative and also as a scientist doing research
+
+20   and that kind of thing.  And so -- as I was telling
+
+21   you -- many, many samples come into that laboratory.
+
+22   And like all laboratories, there could be, you know,
+
+23   thousands of them coming in a month.  And I was not -- I
+
+24   wouldn't know all of the samples that came through or
+
+25   all of the reports that were done.
+
+                                                                25
+
+
+ 1        Q    And I understand that your job title and
+
+ 2   responsibilities changed over time.
+
+ 3        A    Yes.
+
+ 4        Q    You told me that in the past.  But when I go
+
+ 5   back and read your deposition I'm always reminded maybe
+
+ 6   I need to better understand just a little bit about what
+
+ 7   job responsibilities you had.  So bear with me here.
+
+ 8        A    Yes.
+
+ 9        Q    From 2013 you said your job responsibilities
+
+10   included administrative and doing research; is that
+
+11   right?
+
+12        A    That was part of my -- part of my job, yes.
+
+13        Q    And you've told me recently that at different
+
+14   points in time part of your job was to oversee
+
+15   physically the testing of talc products, correct?
+
+16        A    In conjunction with Dr. Longo, yes.
+
+17        Q    Okay.  I need to have a better understanding
+
+18   in my mind -- I'm sure you've told me -- but in my mind
+
+19   when that responsibility began.
+
+20        A    That began in 2017.  So that would have been
+
+21   around that time.
+
+22        Q    Okay.  That helps.  So -- and also would
+
+23   explain if there was testing going on in 2013 it would
+
+24   not have been your responsibility to be aware of it;
+
+25   fair enough?
+
+                                                                26
+
+
+ 1        A    Fair enough.
+
+ 2        Q    Okay.  And so with respect to overseeing TEM
+
+ 3   analysis of talc for the presence of asbestos, your
+
+ 4   responsibility in that regard would not have begun until
+
+ 5   2017; is that fair?
+
+ 6        A    Well, I would say yes as specifically for TEM
+
+ 7   analysis.  And, again, I was working very closely with
+
+ 8   Dr. Longo at that time.
+
+ 9        Q    Well, I want to take that part of the sentence
+
+10   out because I understand you were working closely with
+
+11   Dr. Longo in whatever role you had.  I want to focus on
+
+12   the first part.  So bear with me.
+
+13             Is it fair to say that the responsibilities
+
+14   you've told me about, with respect to overseeing
+
+15   physically testing within the lab, began after 2017 as
+
+16   it pertains to talc?
+
+17        A    I mean, that was part of my responsibility as
+
+18   the laboratory manager.
+
+19        Q    I'm looking for the year, though.  2017?
+
+20        A    Yes.
+
+21        Q    Prior to that, you were not the laboratory
+
+22   manager, correct?
+
+23        A    No.  I was the laboratory manager from 2013 to
+
+24   2017.
+
+25        Q    See, here is where my confusion comes from and
+
+                                                                27
+
+
+ 1   I apologize.  Your job responsibilities changed in some
+
+ 2   manner in 2017, though; is that true?
+
+ 3        A    Yes.
+
+ 4        Q    Explain to me, so that I can understand it,
+
+ 5   how that changed and why that would have impacted your
+
+ 6   role in overseeing testing procedures.
+
+ 7             MS. DARLSON:  Objection to the form.
+
+ 8             THE WITNESS:  Sorry?
+
+ 9             MS. DARLSON:  No, you are good.  Just made
+
+10        a form objection.
+
+11             THE WITNESS:  I became the chief science
+
+12        officer after 2017 at the laboratory and that I
+
+13        still had a number of responsibilities for
+
+14        research, testing, the projects that I was
+
+15        working on and also in conjunction with Dr.
+
+16        Longo.
+
+17             So there were the additional responsibilities
+
+18        of looking at new technologies.  The laboratory
+
+19        hired another new laboratory manager at the time as
+
+20        it was expanding.  So that was part of what was
+
+21        going on at that time.
+
+22        Q    (By Mr. Bailey)  Have you had any
+
+23   communication with Dr. Longo since you left MAS with
+
+24   respect to testing cosmetic talc?
+
+25        A    Yes.
+
+                                                                28
+
+
+ 1        Q    Do you have electronic correspondence in your
+
+ 2   files with respect to communications between you and Dr.
+
+ 3   Longo in connection with testing of talc products?
+
+ 4             MS. DARLSON:  Form.
+
+ 5             THE WITNESS:  Of the communications that I
+
+ 6        have had been limited to reports that had been
+
+ 7        sent to me, you know, from the laboratory.
+
+ 8        So -- and, again, here we are with these large
+
+ 9        file issues.  They may have been uploaded
+
+10        through a file server service and I may have
+
+11        heard about that.  So, you know, those are the
+
+12        main communications that I have had.
+
+13        Q    (By Mr. Bailey)  So there are e-mails, just
+
+14   simple communications back and forth between you and Dr.
+
+15   Longo; is that right?
+
+16        A    There may be a few in relation to, like I
+
+17   said, these reports.  So in this case I think you have
+
+18   that or -- well, we had this issue with the large files.
+
+19   So as far as an e-mail goes, it was just that report was
+
+20   just uploaded because it was so large.
+
+21        Q    Sure.  And I want to separate out you gaining
+
+22   access by a Dropbox, for example, of Dr. Longo or MAS's
+
+23   reports and focus more on communications about the
+
+24   reports themselves.
+
+25             Do you have e-mail communications with Dr.
+
+                                                                29
+
+
+ 1   Longo one way or the other, from him to you or you to
+
+ 2   him, about the contents of these reports, the
+
+ 3   methodology used of these reports or any questions that
+
+ 4   you may have in connection with these reports?
+
+ 5             MS. DARLSON:  Form.
+
+ 6             THE WITNESS:  Mainly we have communicated
+
+ 7        by phone.  So that's been the main
+
+ 8        communication on these.  It is just faster.
+
+ 9        Q    (By Mr. Bailey)  Than an e-mail?
+
+10        A    Oh, yeah.  Yup.  I mean, the amount of time it
+
+11   can take some people to respond to e-mails is too slow.
+
+12        Q    All right.  If I were to ask you, though, Dr.
+
+13   Rigler, do you have e-mail communications between you
+
+14   and Dr. Longo discussing the contents of any work done
+
+15   by MAS related to cosmetic talc testing, what would your
+
+16   answer be?
+
+17             MS. DARLSON:  Form.
+
+18             THE WITNESS:  Well, I can't think of any
+
+19        that I have now that haven't been produced
+
+20        before.  And typically for me for e-mails, I
+
+21        don't save e-mails.  I probably delete, I don't
+
+22        know, many e-mails a day because I get so many
+
+23        of them.  The box just fills up.  So I'm always
+
+24        just deleting my e-mails.
+
+25             So the main communications we have had are
+
+                                                                30
+
+
+ 1        just, you know, verbally or if I had gone to the
+
+ 2        laboratory and we've met.
+
+ 3        Q    (By Mr. Bailey)  If you get an e-mail from Dr.
+
+ 4   Longo discussing questions related to MAS testing, is it
+
+ 5   your practice to delete it?
+
+ 6        A    Well, I haven't gotten any that I can think
+
+ 7   of.  There may have been communications regarding
+
+ 8   meetings or conferences, that kind of thing.  But as far
+
+ 9   as discussing data in reports, it has mainly been, you
+
+10   know, on the phone or directly or in a meeting.
+
+11        Q    If you delete e-mails from Dr. Longo or anyone
+
+12   else related to litigation, do you then delete your
+
+13   deleted items so that they are then, I'll say, double
+
+14   deleted?
+
+15        A    Yeah, I mean, I don't --
+
+16             MS. DARLSON:  Object to the form.  He
+
+17        didn't say anything about litigation.
+
+18             THE WITNESS:  Right.  As I say, they are
+
+19        not anything that was litigation-related, as I
+
+20        say.
+
+21        Q    (By Mr. Bailey)  I'll take litigation out of
+
+22   the word.  If Dr. Longo sends you an e-mail about the
+
+23   contents of cosmetic talc testing or the results and you
+
+24   delete it, is it normally your practice to then double
+
+25   delete it so that it is completely removed from your
+
+                                                                31
+
+
+ 1   computer?
+
+ 2             MS. DARLSON:  Form.
+
+ 3             THE WITNESS:  Well, he hasn't sent me any
+
+ 4        like that.  As I told you, we discuss them
+
+ 5        directly or we meet.  So I haven't had to do
+
+ 6        that.
+
+ 7        Q    (By Mr. Bailey)  Okay.  Just as a general
+
+ 8   practice in your professional role as an expert witness,
+
+ 9   when you delete e-mails that come to you, not personal
+
+10   e-mails but work-related --
+
+11        A    Yes.
+
+12        Q    -- do you then delete the deleted files so
+
+13   that it is then gone from your server?
+
+14        A    Well, I mean, if they delete, they are gone.
+
+15        Q    Do you understand the difference in deleting
+
+16   something and then going to your deleted files and
+
+17   making a second delete of those communications, do you
+
+18   understand that?
+
+19        A    Are you talking about, like, a trash bin, that
+
+20   kind of thing?
+
+21        Q    Right.
+
+22        A    Yes, sure.  I mean, I'll empty the trash
+
+23   routinely.
+
+24        Q    Okay.  You don't make any effort to store
+
+25   those on a hard drive or make sure that you've not
+
+                                                                32
+
+
+ 1   deleted anything related to your professional practice
+
+ 2   in connection with litigation?
+
+ 3             MS. DARLSON:  Form.
+
+ 4             THE WITNESS:  Yeah, I don't do that.
+
+ 5        Q    (By Mr. Bailey)  All right.
+
+ 6        A    I don't do that.
+
+ 7        Q    And my apologies for this.  This is a
+
+ 8   challenge of having multiple cases with multiple firms,
+
+ 9   right?
+
+10        A    Sure.
+
+11        Q    When you say you've produced e-mails related
+
+12   to Dr. Longo, that doesn't mean you produced them in
+
+13   this case, correct?
+
+14             MS. DARLSON:  Object to the form.
+
+15             THE WITNESS:  No, they should have been
+
+16        produced in this case.  My experience has been
+
+17        that the law firms retain the e-mails and they
+
+18        turn them over to the defendants.
+
+19        Q    (By Mr. Bailey)  Well, step one being you have
+
+20   to give it to them so they know it exists, right?
+
+21        A    Well, of course.  When you're doing the
+
+22   communication, they get it.  So they have it.
+
+23             MS. DARLSON:  He is talking about e-mails
+
+24        between you and Dr. Longo, Dr. Rigler.
+
+25             THE WITNESS:  Oh, again, we don't -- if we
+
+                                                                33
+
+
+ 1        communicated by e-mails, it has been about
+
+ 2        conferences, ASTM, FDA, these kind of things.
+
+ 3        It is not -- it is not about data or that kind
+
+ 4        of thing.  We talk about that directly or in a
+
+ 5        meeting.
+
+ 6        Q    (By Mr. Bailey)  And if he sends you
+
+ 7   information about data or testing that doesn't come by
+
+ 8   Dropbox, how does he get it to you?
+
+ 9             MS. DARLSON:  Object to the form.
+
+10             THE WITNESS:  Well, I don't know.  I don't
+
+11        recall any of that.  I mean, normally the files
+
+12        are large and they are sent by like a file
+
+13        transfer, like a Hightail or something like
+
+14        that.
+
+15        Q    (By Mr. Bailey)  Do you have a file that would
+
+16   be identified however -- by whatever electronic means
+
+17   you use that you could go to that said these are
+
+18   communications between Dr. Longo and myself where he is
+
+19   either forwarding me the results of tests he has
+
+20   performed or answering some question regarding cosmetic
+
+21   talc, do you have a central location where you can find
+
+22   that?
+
+23             MS. DARLSON:  Object to the form.
+
+24             THE WITNESS:  No.  I think typically what
+
+25        I do is take the data, this includes documents
+
+                                                                34
+
+
+ 1        from attorney firms or downloaded documents
+
+ 2        that may be resources or articles, and then
+
+ 3        they go with the project file or they will go
+
+ 4        into my library.  And to say as far as the
+
+ 5        e-mails and these kind of communications, I
+
+ 6        normally don't have those.
+
+ 7        Q    (By Mr. Bailey)  Okay.  Let me take, just as
+
+ 8   an example, Dr. Longo's MAS study that I received
+
+ 9   yesterday --
+
+10        A    Okay.
+
+11        Q    -- at some point.  When did you first review
+
+12   that study?
+
+13        A    I first reviewed that study yesterday.
+
+14        Q    How did you become aware of that study?
+
+15        A    Dr. Longo's assistant sent it to me.
+
+16        Q    How did she send it to you?
+
+17        A    By a Hightail link.
+
+18        Q    What is her name?
+
+19        A    Cathy Mulino (phonetic).
+
+20        Q    Okay.  What all was sent with that link?
+
+21        A    That was it.  The report.
+
+22        Q    Did you request that they send that to you?
+
+23        A    I asked if they had any updates or supplements
+
+24   to the -- I believe it was the September 29th first
+
+25   supplemental report.  So I said do you have anymore
+
+                                                                35
+
+
+ 1   supplements to that report.  And she said yes and they
+
+ 2   sent it to me.
+
+ 3        Q    Did you call and make that request or did you
+
+ 4   send an e-mail?
+
+ 5        A    I called and asked her about that.
+
+ 6        Q    Okay.  Did you request that anything else be
+
+ 7   sent?
+
+ 8        A    Not that I recall, no.  I asked if there was
+
+ 9   any other newer or any supplement to that report.  And
+
+10   she said yes.
+
+11        Q    And I'm going to apologize for jumping around.
+
+12   I want to make sure I close the loop on Mike Mount.
+
+13        A    Okay.
+
+14        Q    Have you ever talked to Mike Mount about
+
+15   whether he conducted cosmetic talc testing at MAS?
+
+16        A    I know he was involved in testing cosmetic
+
+17   talc at MAS while I was at MAS.
+
+18        Q    Let me ask the question again.  Have you ever
+
+19   talked to Mike Mount about cosmetic talc testing at MAS?
+
+20             MS. DARLSON:  Object to the form; asked
+
+21        and answered.
+
+22             THE WITNESS:  I think I answered that.
+
+23        That would be no.
+
+24        Q    (By Mr. Bailey)  This was your answer.  I'm
+
+25   aware that he did it while I was there.  And my question
+
+                                                                36
+
+
+ 1   was have you ever talked to Mike Mount.  So you see the
+
+ 2   difference?
+
+ 3             MS. DARLSON:  I think he answered the
+
+ 4        question within the first ten minutes of his
+
+ 5        deposition.  But you can answer it again, Dr.
+
+ 6        Rigler.
+
+ 7             THE WITNESS:  Sure.  I communicated with
+
+ 8        Mike Mount about talc testing that was done at
+
+ 9        MAS in the past.
+
+10        Q    (By Mr. Bailey)  Okay.  Tricky answer.  You
+
+11   communicated in the past.  When did you have this
+
+12   communication?
+
+13        A    While I was at MAS.
+
+14        Q    Okay.  When is the last time --
+
+15        A    While I was working at MAS.
+
+16        Q    Since you left MAS you have not talked to Mike
+
+17   Mount about cosmetic talc testing?
+
+18        A    No.
+
+19        Q    Okay.  If you told me that earlier, I
+
+20   apologize.
+
+21        A    That's okay.
+
+22        Q    Have you talked to Bill Longo or anyone else
+
+23   at MAS about cosmetic talc testing that Mike Mount may
+
+24   have done while at MAS?
+
+25        A    I did because he was telling me that Mike had
+
+                                                                37
+
+
+ 1   been hired back at MAS.  He was working for one of the
+
+ 2   large hospitals in Atlanta and he came back to work at
+
+ 3   MAS.  So Bill had told me about that.
+
+ 4        Q    Okay.  How did that end up being related to
+
+ 5   cosmetic talc?
+
+ 6             MS. DARLSON:  Form.
+
+ 7             THE WITNESS:  I don't know as far as that
+
+ 8        goes.  He may have been working on this project
+
+ 9        with Bill Longo recently or when he was
+
+10        employed there.
+
+11        Q    (By Mr. Bailey)  All right.  So I hope this is
+
+12   a pretty clean question.  When you talked to Dr. Longo
+
+13   about Mike Mount, did the two of you discuss whether or
+
+14   not Mike Mount had been doing cosmetic talc testing back
+
+15   as early as 2013?
+
+16             MS. DARLSON:  Object to the form.
+
+17             THE WITNESS:  I don't recall any
+
+18        conversation like that.
+
+19        Q    (By Mr. Bailey)  All right.  Help me here.
+
+20   When was this conversation that you had with Bill Longo?
+
+21        A    Let's see, talked to him -- it was earlier
+
+22   this week.
+
+23        Q    And earlier this week you and Bill Longo had a
+
+24   communication about Mike Mount and his time at MAS?
+
+25             MS. DARLSON:  Object to the form.
+
+                                                                38
+
+
+ 1             THE WITNESS:  No.  He mentioned that they
+
+ 2        had worked on the project, on a talc project,
+
+ 3        so -- and then we had talked -- then we were
+
+ 4        talking about the recent talc USP that is
+
+ 5        currently in a rewrite.  So we were discussing
+
+ 6        that.
+
+ 7        Q    (By Mr. Bailey)  Do you know, from your
+
+ 8   communication with Dr. Longo, when it is he first became
+
+ 9   aware of Mike Mount's study of cashmere bouquet cosmetic
+
+10   talc?
+
+11             MS. DARLSON:  Object to the form.
+
+12             THE WITNESS:  I have no idea about that.
+
+13             MS. DARLSON:  Why is this relevant to this
+
+14        case?  Cashmere bouquet is not one of the
+
+15        products in question.
+
+16        Q    (By Mr. Bailey)  Okay.  The question is when
+
+17   did testing of cosmetic talc begin at MAS?
+
+18             MS. DARLSON:  No, that wasn't the
+
+19        question.
+
+20             MR. BAILEY:  Sure, it is.  Prior testimony
+
+21        of Dr. Longo or Dr. Rigler is that there was no
+
+22        testing of talc, cosmetic talc at MAS before
+
+23        2017.  I'm going to show eventually a 2013
+
+24        testing of cashmere bouquet by Mike Mount who
+
+25        Dr. Rigler just happens to have been talking to
+
+                                                                39
+
+
+ 1        Dr. Longo about this week, Mike Mount doing
+
+ 2        cosmetic talc testing.
+
+ 3             This is to impeach whether or not we're being
+
+ 4        told the truth about when cosmetic talc was first
+
+ 5        studied at MAS.  You can agree with it or not agree
+
+ 6        with it but that is why I'm asking.  There is a
+
+ 7        whole trail of testimony completely contrary to --
+
+ 8             MS. DARLSON:  Dr. Rigler said that
+
+ 9        cosmetic testing began in 2013.  I don't think
+
+10        you even have a foundation for that.
+
+11             MR. BAILEY:  I don't need a foundation.
+
+12        I'm taking his deposition.  You will have the
+
+13        foundation at trial.
+
+14             MS. DARLSON:  Are you impeaching him or
+
+15        taking his deposition?  You haven't once asked
+
+16        him about his opinions in this case yet and
+
+17        we've been going about an hour.
+
+18             MR. BAILEY:  Okay.  Noted.
+
+19        Q    (By Mr. Bailey)  Dr. Rigler --
+
+20        A    Yes.
+
+21        Q    -- do you have an opinion when MAS first
+
+22   tested cosmetic talc, based on your knowledge currently,
+
+23   even following your discussion with Dr. Longo?
+
+24             MS. DARLSON:  Object to the form.
+
+25             THE WITNESS:  I have no idea when it
+
+                                                                40
+
+
+ 1        had -- was first tested.  I told -- I have
+
+ 2        testified before that I have worked on products
+
+ 3        that contained talc at MAS, et cetera, that
+
+ 4        kind of thing.  But as far as when it was first
+
+ 5        tested, I do not know.
+
+ 6        Q    (By Mr. Bailey)  Do you have an opinion about
+
+ 7   whether or not MAS tested cashmere bouquet cosmetic talc
+
+ 8   in 2013?
+
+ 9             MS. DARLSON:  Object to the form.
+
+10             THE WITNESS:  I don't know.
+
+11        Q    (By Mr. Bailey)  Do you have any understanding
+
+12   about what methodology would be used at MAS to test
+
+13   cosmetic talc for asbestos prior to 2017?
+
+14             MS. DARLSON:  Object to the form.
+
+15             THE WITNESS:  Are you asking me is
+
+16        there -- are you asking if there is a protocol
+
+17        for that?
+
+18        Q    (By Mr. Bailey)  Do you have an opinion about
+
+19   whether or not MAS had a protocol for testing cosmetic
+
+20   talc prior to 2016?
+
+21             MS. DARLSON:  Object to the form.
+
+22             THE WITNESS:  Well, cosmetic talc could
+
+23        have easily been tested, if it had been at that
+
+24        time, by the current protocols that existed at
+
+25        MAS for testing bulk materials.
+
+                                                                41
+
+
+ 1             So, for instance, using the ISO 22262-1
+
+ 2        protocol, you could test talc.  You could use AHERA
+
+ 3        to test talc.  So there are a number of protocols
+
+ 4        that could be used that were in place at MAS to do
+
+ 5        the testing.
+
+ 6        Q    (By Mr. Bailey)  Mine was a little more
+
+ 7   specific.  Well, let me ask to put it in context.  Does
+
+ 8   MAS currently have a testing protocol for best practices
+
+ 9   in connection with evaluating cosmetic talc for the
+
+10   presence of asbestos?
+
+11             MS. DARLSON:  Object to the form.
+
+12             THE WITNESS:  To my knowledge, they do.
+
+13        In fact, they have a certificate, the only lab
+
+14        that I know of that has an actual certificate
+
+15        through the American Industrial Hygiene
+
+16        Association, slash, ISO, for the heavy density
+
+17        liquid preparation separation and analysis for
+
+18        talc.  So, yeah.
+
+19        Q    (By Mr. Bailey)  So that became first -- well,
+
+20   that became published in the literature in 1991,
+
+21   correct?
+
+22        A    No.  No.  No.  This is --
+
+23             MS. DARLSON:  Form.
+
+24             THE WITNESS:   This is their own
+
+25        certification that they received through the
+
+                                                                42
+
+
+ 1        AIHA, which is an ISO certification.  And I
+
+ 2        think that was obtained in 2019 probably.  It
+
+ 3        is on their certificate.
+
+ 4        Q    (By Mr. Bailey)  Bad question.
+
+ 5        A    Okay.
+
+ 6        Q    And we don't need to rehash when Dr. Blount's
+
+ 7   papers and methods were published.  I want to keep
+
+ 8   moving forward.  I have asked you about that.  Okay.
+
+ 9             Have you ever seen the written report issued
+
+10   by Mike Mount in connection with the cashmere bouquet
+
+11   tests?
+
+12             MS. DARLSON:  Object to the form.
+
+13             THE WITNESS:  No.
+
+14        Q    (By Mr. Bailey)  Have you ever been told by
+
+15   Dr. Longo or anyone else what methods were used at that
+
+16   time?
+
+17             MS. DARLSON:  Object to the form.
+
+18             THE WITNESS:  Not that I can recall, no.
+
+19        Q    (By Mr. Bailey)  Okay.  After you became aware
+
+20   of the fact that Mike Mount had tested cosmetic talc at
+
+21   MAS, did you ask Dr. Longo or anyone else to see the
+
+22   results of those tests so that you could be better
+
+23   informed?
+
+24             MS. DARLSON:  Object to the form.
+
+25             THE WITNESS:  I'm not quite sure how I
+
+                                                                43
+
+
+ 1        could if I didn't know that that was done.  So,
+
+ 2        like I said, if you can show me -- do you have
+
+ 3        the document?  Can you show it to me?  Do you
+
+ 4        have that?
+
+ 5        Q    (By Mr. Bailey)  I can and I will.  Although
+
+ 6   I'm not going to have it uploaded the way you want it.
+
+ 7        A    I would like to see it.
+
+ 8        Q    We'll have to do it the old school way and
+
+ 9   I'll do that.
+
+10        A    Okay.
+
+11        Q    But let me stay on track because I have a
+
+12   habit of jumping around but I'll do that.  And if I
+
+13   don't, remind me.
+
+14             Prior to 2017 did you play any role in
+
+15   developing any of the protocol for testing of cosmetic
+
+16   talc for any reason?
+
+17        A    Prior to 2017?  Not that I can recall as I sit
+
+18   here.
+
+19        Q    For the recent tests done by Dr. Longo --
+
+20   well, you provided me a copy of I think now two of them
+
+21   in this case.  Did you play any role in designing the
+
+22   protocols used for those tests or were you already gone?
+
+23        A    I was already gone.
+
+24        Q    Okay.  Were you present when the testing and
+
+25   analysis was done for either of those recent
+
+                                                                44
+
+
+ 1   supplemental reports that Dr. Longo provided you in this
+
+ 2   case?
+
+ 3             MS. DARLSON:  Form.
+
+ 4             THE WITNESS:  Not that I can recall.
+
+ 5        Q    (By Mr. Bailey)  Maybe I can handle this with
+
+ 6   a general question.  Since you left MAS, have you been
+
+ 7   back over to the facility to oversee any testing of any
+
+ 8   cosmetic talc products at MAS?
+
+ 9        A    Yes.
+
+10        Q    I thought you said that earlier and I wanted
+
+11   to make sure I caught that.  Tell me when that was
+
+12   first.
+
+13        A    This would have been in January of this year.
+
+14   This was in relation to Dr. Casaretto's samples that
+
+15   were sent to MAS that they received in December of last
+
+16   year.
+
+17        Q    What is it that caused you to be -- well,
+
+18   strike that.
+
+19             You were already gone from MAS as an employee,
+
+20   correct?
+
+21        A    Correct.
+
+22        Q    What were the circumstances that caused you to
+
+23   return to MAS to oversee this testing?
+
+24        A    Well, Mr. Tisi asked me if I would oversee the
+
+25   tests to see that they used the best available tests and
+
+                                                                45
+
+
+ 1   most advanced tests for the analysis of the talc for
+
+ 2   asbestos.
+
+ 3        Q    Okay.  I'm just going to do this for the
+
+ 4   record.  I know you have this and I'm not asking you any
+
+ 5   specific questions about it.
+
+ 6        A    Okay.
+
+ 7        Q    But I'm going to mark as Exhibit No. 4 a copy
+
+ 8   of Johnson's Baby talco Analysis report for Alberto
+
+ 9   Casaretto.
+
+10                    (Exhibit 4 was marked
+
+11                    for identification.)
+
+12        Q    (By Mr. Bailey)  Are you familiar with that?
+
+13        A    Yes, I have a copy of it here.
+
+14        Q    Okay.  Is that, Dr. Rigler, the report that
+
+15   you say you oversaw during its preparation or when the
+
+16   work was performed?
+
+17        A    Yes.
+
+18        Q    So the first time you and I met was in
+
+19   February of this year in Miami in trial.  Do you recall
+
+20   that?
+
+21        A    Yes.
+
+22        Q    Moore Cabrera versus Johnson and Johnson?
+
+23        A    Yes.
+
+24        Q    How many times have you testified at trial in
+
+25   a cosmetic talc case?
+
+                                                                46
+
+
+ 1        A    I want to say twice, maybe three times.
+
+ 2        Q    The first one being Moore Cabrera in Miami?
+
+ 3        A    No.  It would have been in the Ingham case in
+
+ 4   St. Louis.
+
+ 5        Q    Oh, that is right.  Ingham, Moore Cabrera.  Is
+
+ 6   there a third?
+
+ 7        A    There was another case in St. Louis.  I'm
+
+ 8   trying to remember the name of that.
+
+ 9             MR. TISI:  Was it Forrest?
+
+10             THE WITNESS:  Excuse me?
+
+11             MR. TISI:  Was it Forrest?
+
+12             THE WITNESS:  No.  I can't recall but as
+
+13        we go along I'll remember it.
+
+14        Q    (By Mr. Bailey)  That's okay.  I probably
+
+15   should know it.  I had some notes that I hoped were
+
+16   going to allow me to save some time so bear with me
+
+17   here.
+
+18        A    All right.
+
+19        Q    Here they are.  You told us that you were in
+
+20   the MAS lab when the Cabrera testing was done, correct?
+
+21        A    Well, yes.
+
+22        Q    When you say, well, you make me nervous.
+
+23        A    I wasn't there for the entire time of the
+
+24   testing.  It was done over the span of time I was there.
+
+25   But I was there in January over three days, three
+
+                                                                47
+
+
+ 1   different days, different occasions for sample
+
+ 2   preparation and analysis that was being done on the
+
+ 3   sample.
+
+ 4        Q    Okay.
+
+ 5             MR. TISI:  Mel, you said Cabrera.  Do you
+
+ 6        mean Casaretto?
+
+ 7             MR. BAILEY:  Casaretto, I'm sorry.
+
+ 8             MR. TISI:  I'm sorry.
+
+ 9             MR. BAILEY:  No.  Thank you for keeping me
+
+10        from embarrassing myself for the rest of the
+
+11        deposition.  Thanks.
+
+12        Q    (By Mr. Bailey)  So I want to do this because
+
+13   I understand where you were in January and what you said
+
+14   your role was.  And I want to ask these questions as a
+
+15   follow up to what you told me in the Cabrera -- in the
+
+16   Moore/Cabrera trial in Miami in February.  Okay?
+
+17        A    All right.
+
+18        Q    So hopefully we can just update what you have
+
+19   done since then as far as laboratory work or oversight
+
+20   or hands on anything.  Okay?
+
+21        A    Sure.
+
+22        Q    And I really don't want to rehash it.  I just
+
+23   want to move forward.  So I did it by dates.  And I'll
+
+24   represent to you that our trial in Miami was, roughly,
+
+25   February 6th or your deposition was February 6.  I don't
+
+                                                                48
+
+
+ 1   think the exact date is going to matter that much but
+
+ 2   tell me if it does.  I just want to move forward and see
+
+ 3   if your answers change from when you were originally
+
+ 4   asked this series of questions.  Okay?  I don't mean
+
+ 5   changed.  I mean updated.
+
+ 6        A    Sure.  I'm sorry.  What are we talking about
+
+ 7   in terms of timing?  Are we talking about the Cabrera
+
+ 8   trial or --
+
+ 9        Q    Your deposition in Cabrera was taken in
+
+10   February 6, 2019.  Let's just use February because
+
+11   that's when the trial was.
+
+12        A    Okay.
+
+13        Q    I don't think the exact date is going to make
+
+14   any real difference.  I'm just trying to move forward
+
+15   because I know what your opinions were going back.
+
+16             MS. DARLSON:  Trial testimony.
+
+17             THE WITNESS:  The deposition was in 2019
+
+18        but the trial was in 2020.
+
+19        Q    (By Mr. Bailey)  You are right.  You're right.
+
+20   I'm using 2019.  Thank you.
+
+21        A    Sure.
+
+22        Q    I think you confirmed this testimony at trial
+
+23   in 2020 but let's just be neat and clean here.
+
+24             Since 2019, February, have you yourself tested
+
+25   talcum powder that came out of the bottle and you were
+
+                                                                49
+
+
+ 1   the person responsible for testing it?
+
+ 2             MS. DARLSON:  Object to the form.
+
+ 3             THE WITNESS:  Since that time?
+
+ 4        Q    (By Mr. Bailey)  Right.
+
+ 5        A    Yes.
+
+ 6        Q    What lab did you perform those tests in?
+
+ 7        A    I have my own microscope here in my home
+
+ 8   office and I've looked at product here.
+
+ 9        Q    Okay.  When did that occur?
+
+10        A    That occurred in the fall of this year.
+
+11        Q    Because I thought I took your deposition 90
+
+12   days ago and you had not ever done any testing at your
+
+13   lab.  Do you remember that?
+
+14             MS. DARLSON:  Object to the form.
+
+15             THE WITNESS:  Yes.  And you asked me that.
+
+16        You asked me if I have done it since and I
+
+17        have.
+
+18        Q    (By Mr. Bailey)  Fair enough.
+
+19             MR. TISI:  Can we take a break in a
+
+20        moment?  When you get to a good stopping point,
+
+21        I would appreciate it.
+
+22             MR. BAILEY:  Perfect time.
+
+23             MR. TISI:  We can go off the record.
+
+24           (A break was taken in the proceedings.)
+
+25        Q    (By Mr. Bailey)  I'm going to look back at
+
+                                                                50
+
+
+ 1   Exhibit No. 4, which we said was the test done in
+
+ 2   connection with Alberto Casaretto's product.  You told
+
+ 3   me you were there for parts of this testing?
+
+ 4        A    Yes.
+
+ 5        Q    I would like to drill down a little deeper on
+
+ 6   that.  When you travel on a trip like that that is
+
+ 7   related to your role as an expert, do you maintain your
+
+ 8   expenses and submit them for reimbursement?
+
+ 9        A    Yes.
+
+10        Q    Would that have been the case here?
+
+11        A    Well, the time would be billed in reference to
+
+12   the project.
+
+13        Q    Do you know whether or not -- and I apologize
+
+14   if you already answered this -- you submitted any
+
+15   invoices for this work?
+
+16        A    Not lately I haven't, no.
+
+17        Q    Well, this was prepared September 23, 2020.
+
+18   Have you submitted an invoice, specifically, to the time
+
+19   spent at the MAS lab?
+
+20        A    I believe I have.  I believe that was in --
+
+21   maybe might have been in a July or August invoice
+
+22   possibly.
+
+23        Q    Okay.  And you submitted that to plaintiffs'
+
+24   counsel?
+
+25        A    I believe so.
+
+                                                                51
+
+
+ 1        Q    Okay.  Do you have a copy of that with you as
+
+ 2   part of your file here?
+
+ 3        A    No.
+
+ 4        Q    Do you know whether or not that was produced
+
+ 5   in this case?
+
+ 6        A    I thought that it was.  I thought that all of
+
+ 7   the billing documents that I had to date have already
+
+ 8   been produced.
+
+ 9        Q    Well, either way, you've produced it to
+
+10   plaintiffs' counsel, right?
+
+11        A    Yes.
+
+12        Q    No doubt about that?
+
+13        A    Yes.
+
+14        Q    Okay.
+
+15             MR. TISI:  Mel, are you saying that you
+
+16        don't have it?
+
+17             MR. BAILEY:  I'm not saying I don't have
+
+18        it.  I'm saying I haven't seen it.  But I don't
+
+19        want to be accusing anyone of anything
+
+20        because --
+
+21             MR. TISI:  I mean, look, because we are
+
+22        doing things electronically, it is not as easy
+
+23        sometimes.  If for some reason we haven't
+
+24        turned over those invoices, we're happy to do
+
+25        so.  It would have just been a clerical issue.
+
+                                                                52
+
+
+ 1             MR. BAILEY:  Of course.  And that's why
+
+ 2        I'm not being accusatory.  I don't want to
+
+ 3        embarrass myself and there it sits in a
+
+ 4        Dropbox.
+
+ 5             MR. TISI:  It is also possible it wasn't
+
+ 6        sent.  So I will take it upon myself, since I
+
+ 7        would have been -- to contact you.
+
+ 8             MR. BAILEY:  Thank you, Chris.
+
+ 9             MR. TISI:  Just to make sure that we have
+
+10        it.  And if you already have it, let me know.
+
+11             MR. BAILEY:  I will.  I didn't see it last
+
+12        night but we'll work around it.
+
+13             MR. TISI:  Okay.
+
+14        Q    (By Mr. Bailey)  Dr. Rigler, did you play any
+
+15   role in deciding which testing methods would be used in
+
+16   connection with the Casaretto container?
+
+17        A    I discussed the testing with Dr. Longo and
+
+18   mentioned it to him in terms of the kind of testing that
+
+19   was being done at the time, which included PLM, the
+
+20   heavy liquid separation method, and also analytical TEM,
+
+21   specifically, for both amphiboles and chrysotile in the
+
+22   product.
+
+23        Q    So, explain what role you played in connection
+
+24   with this test as opposed to, say, other off the store,
+
+25   off the shelf tests that you sent me from Dr. Longo that
+
+                                                                53
+
+
+ 1   were done in their entirety after you were gone from
+
+ 2   MAS?
+
+ 3             MS. DARLSON:  Object to the form.
+
+ 4             THE WITNESS:  Well, originally I had met
+
+ 5        with Mr. Tisi and had discussed the testing
+
+ 6        itself and made the recommendation that it be
+
+ 7        done at the MAS laboratory and discussed the
+
+ 8        kind of analysis that would be done.
+
+ 9             So I was involved in that.  And then Kelley,
+
+10        Uustal firm sent the samples to MAS.  And whereupon
+
+11        once they received them in December and they were
+
+12        logged in, examined and that kind of thing, then I
+
+13        went over in January and began working with the
+
+14        folks at MAS on the preparation and the analysis
+
+15        initially.
+
+16             It is the same kind of role that I have had at
+
+17        MAS when I worked there.  Essentially, if a project
+
+18        came in and I was in charge of it, I would go over,
+
+19        look at the samples and log in -- you know, take
+
+20        photographs of the samples, as I did in this case.
+
+21        Examine the samples to see if there was any damage,
+
+22        that kind of thing.  And then go speak with the
+
+23        analysts to begin the process of the analysis of
+
+24        the samples, the preparation and the analysis.
+
+25             So it is really no different than when I
+
+                                                                54
+
+
+ 1        worked at MAS.
+
+ 2        Q    (By Mr. Bailey)  And that's why I'm wondering
+
+ 3   why they needed you to be there to conduct a test like
+
+ 4   this when they do these fairly routinely without you
+
+ 5   there.  Do you know why?
+
+ 6             MS. DARLSON:  Object to the form.
+
+ 7             THE WITNESS:  Well, I was asked by
+
+ 8        Mr. Tisi's firm to shepherd the project.
+
+ 9        Q    (By Mr. Bailey)  Oh.  So help me understand
+
+10   the chronology of how long this would take.  And let's
+
+11   just say January 1st of the year you have a bottle that
+
+12   you would like to undertake this type of testing for.
+
+13   What is the approximate timeframe for getting a bottle
+
+14   like that in, getting it tested, analyzing the results,
+
+15   and generating a report like this?
+
+16             MS. DARLSON:  Form.
+
+17             THE WITNESS:  Well, my experience at MAS
+
+18        testing and doing custom sample analysis and
+
+19        testing with the protocols that are in place,
+
+20        it can take quite a while.  So anywhere from
+
+21        weeks to months.
+
+22             I remember when the testing was started in
+
+23        2017 I believe it was on the first talc samples
+
+24        that came in to be tested.  That testing went on
+
+25        for more than a year.  And I was also involved in
+
+                                                                55
+
+
+ 1        doing tissue testing at the time.  And that testing
+
+ 2        took more than a year.
+
+ 3             So in this case I was over there three times.
+
+ 4        I think it was the 24th and the 27th and maybe the
+
+ 5        28th, something like that, in January to begin the
+
+ 6        process and get things moving along.  And then they
+
+ 7        were -- they were preparing the samples for TEM
+
+ 8        analysis when I left, the last day that I was
+
+ 9        there.  And they were continuing to do the
+
+10        preparation for heavy liquid separation.
+
+11             And then, you know, it was taking whatever
+
+12        time it took at the laboratory.  And then in March
+
+13        COVID hit and then everything, I believe, went
+
+14        sideways to some degree with everybody's
+
+15        laboratories at that time.
+
+16             So then overtime the laboratory was using the
+
+17        CSM, the Colorado School of Mines technique for
+
+18        analyzing talc samples for chrysotile.  And that
+
+19        was part of the analysis, too.  That is part of
+
+20        what took quite a while for the analysis, too.
+
+21        Q    (By Mr. Bailey)  Okay.  I'm just tracking some
+
+22   of the dates in this report and I want to make sure I
+
+23   understand when you were there and when you weren't.
+
+24   You say, approximately, three days.  And I think you had
+
+25   some idea of what days those were?
+
+                                                                56
+
+
+ 1        A    Yes.  I gave you a copy of the notes that I
+
+ 2   took on the days that I was there.  Do you have that?
+
+ 3   It should be in the materials.
+
+ 4        Q    I don't see it.  We'll work with the dates you
+
+ 5   have.
+
+ 6        A    Okay.
+
+ 7        Q    So that I can understand exactly what your
+
+ 8   role was, you said you were there for three days.  Would
+
+ 9   you be there eight hours a day specifically attending to
+
+10   this project or were there other things you were doing?
+
+11        A    I was attending to this project the days that
+
+12   I was there and I can't recall.  They were, I don't
+
+13   know, three, four hour blocks of time maybe, something
+
+14   like that.  This is what you should have.  It should
+
+15   look like this.  Do you have this?
+
+16        Q    Yes, I think I do.
+
+17        A    Okay.
+
+18        Q    That's why I'm quick to not scream that I
+
+19   don't have something because many times I do.
+
+20        A    Okay.
+
+21        Q    You took the responsibility of photographing
+
+22   the products, correct, the product?
+
+23        A    Yes, that's part of the responsibility of the
+
+24   laboratory and I always did that.  So that was part of
+
+25   what I did, too.
+
+                                                                57
+
+
+ 1        Q    Now, a product has been photographed, what is
+
+ 2   the next significant step in connection with this
+
+ 3   testing?
+
+ 4        A    Well, the product would then be -- well, it
+
+ 5   essentially is logged in first into the LIMS system of
+
+ 6   the laboratory, laboratory information management
+
+ 7   system.  And then it is photographed and examined for
+
+ 8   any kind of, you know, damage.
+
+ 9             And in this case the two samples, the two of
+
+10   them had been submitted, one was a Johnson and Johnson
+
+11   talc sample bottle that had damage on one corner of the
+
+12   bottle.  I noticed it because it had a band aid on the
+
+13   bottom of the bottle.  And when I looked at it I
+
+14   thought, that one probably has got some kind of damage
+
+15   to it.  So I alerted the laboratory at the time, the
+
+16   technician that I was working with, and then we pulled
+
+17   back the band aid and sure enough there was a hole there
+
+18   in the bottle.  So that sample was not -- I didn't do
+
+19   anything further with that particular sample.  Moved
+
+20   onto the South American talc sample.
+
+21        Q    Okay.  And that's the bottle reflected in
+
+22   Exhibit No. 4, correct?
+
+23        A    Yes.  Well, let me see.  Yeah, the one that is
+
+24   on the cover.
+
+25        Q    When you inspected that bottle, did you make
+
+                                                                58
+
+
+ 1   any note of what year the manufacturer would have been?
+
+ 2        A    I believe that one was 2009.
+
+ 3        Q    What source do you believe -- what mine source
+
+ 4   would you believe -- strike that.
+
+ 5             What do you believe to be the proper mine
+
+ 6   source for this particular product, given its location
+
+ 7   of sale and the year it was sold?
+
+ 8             MS. DARLSON:  Form.
+
+ 9             THE WITNESS:  I would say this one was
+
+10        from Brazil and was mined by the Magnesita
+
+11        Group which I think is IMI Fabi now.  But that
+
+12        was my understanding of the origin of the
+
+13        product.
+
+14        Q    (By Mr. Bailey)  How did you come to that
+
+15   understanding?  What was the source of your information?
+
+16        A    The documents that I had from Mr. Tisi and the
+
+17   bottle itself, the Johnson and Johnson document showed
+
+18   that the talcum product is -- that South American
+
+19   product originates from that mine source.
+
+20        Q    You said the bottle itself.  I don't think you
+
+21   meant to say that.
+
+22        A    The product in the bottle.
+
+23        Q    You lost me on this one.  Is there anything
+
+24   about the bottle itself that tells you would the mine
+
+25   source would have been?  Meaning, a more specific
+
+                                                                59
+
+
+ 1   question, does the bottle say this is mined from a
+
+ 2   particular mine?
+
+ 3        A    Not to my knowledge it does not, no.
+
+ 4        Q    So you tell me how you came about coming to
+
+ 5   the conclusion that you knew the mine source?
+
+ 6        A    There is only, to my knowledge, one source of
+
+ 7   South American talc.
+
+ 8        Q    And tell me how you came to learn that?
+
+ 9        A    From the documents that I have obtained from
+
+10   Mr. Tisi.
+
+11        Q    Okay.  Do you have those documents in front of
+
+12   you?
+
+13        A    They are on my list.
+
+14        Q    Okay.
+
+15        A    I've pulled the ones that I witnessed that.
+
+16        Q    Have you ever been to that particular mine?
+
+17        A    I have not, no.
+
+18        Q    Have you ever been to a talc mine at all?
+
+19        A    I have been to Kaolin mines in South Georgia
+
+20   so I have not been to a talc mine.
+
+21        Q    You booked in and logged in the bottle and
+
+22   then it was photographed.  What was your next role in
+
+23   connection with the analysis performed for this product?
+
+24        A    Well, I oversaw the sample preparation for TEM
+
+25   analysis that was going to be done and also the heavy
+
+                                                                60
+
+
+ 1   liquid separation method that was going to be used.  So
+
+ 2   the sample itself, a portion of it was taken out of the
+
+ 3   bottle.  I think it was one or two grams, something like
+
+ 4   that, and then it was placed in a glass vile and then it
+
+ 5   was put into a muffle furnace at about 400 degrees
+
+ 6   centigrade for at least four hours.  And this is to get
+
+ 7   rid of the organic components that may be associated
+
+ 8   with the product.
+
+ 9        Q    Where are we now on the timeline?  Is this
+
+10   still the first day that you are there?
+
+11        A    That would be the first day on the 24th, yes.
+
+12        Q    And then what happened next?
+
+13        A    Then I left the laboratory at that time simply
+
+14   because the sample itself was being -- you know, it was
+
+15   in a muffle furnace.  I couldn't do anything at that
+
+16   particular point.  So then I returned on the 27th, I
+
+17   believe it was.  And then the preparation was continued
+
+18   at that point.
+
+19        Q    How long does it stay in the muffle furnace?
+
+20        A    The minimum in the muffle furnace is about
+
+21   four hours.  It could go longer than that.  So, again,
+
+22   the objective there is to remove any organic material
+
+23   associated with the sample.
+
+24        Q    So who was it that physically performed the
+
+25   preparation of the product itself, what MAS employee?
+
+                                                                61
+
+
+ 1        A    I believe that was Mr. John Martin.
+
+ 2        Q    Okay.  I asked you in February of 2020 whether
+
+ 3   you had ever performed a heavy density preparation and
+
+ 4   at that time your answer was you had not, correct?
+
+ 5        A    That's correct.
+
+ 6        Q    So on my update here, since that point in
+
+ 7   time, have you -- strike that.
+
+ 8             Since February of 2020 have you performed a
+
+ 9   heavy density preparation of cosmetic talc for the
+
+10   purposes of evaluating the presence of asbestos?
+
+11        A    Since -- what was the date again that you gave
+
+12   at the beginning of that question?  I apologize.
+
+13        Q    Let's just start with January 2020.  It is
+
+14   easier.
+
+15        A    Okay.
+
+16        Q    Since January of 2020, have you yourself
+
+17   conducted the preparation of heavy density evaluation
+
+18   for cosmetic talc?
+
+19        A    I have not since that time for a number of
+
+20   reasons, COVID, that kind of thing was a lot of it.
+
+21        Q    Okay.
+
+22        A    Yeah.
+
+23        Q    And I'm not going to rehash going back before
+
+24   that.  You and I have done that, right?
+
+25        A    Yes.
+
+                                                                62
+
+
+ 1        Q    Okay.  So now we've -- walk me through the
+
+ 2   first day.  You came back the second time, which I think
+
+ 3   was the 28th; is that right?
+
+ 4        A    Twenty-seventh.
+
+ 5        Q    Twenty-seventh.  Tell me where things were in
+
+ 6   the process on the 27th.
+
+ 7        A    So at that particular point the sample was
+
+ 8   cooled down and it was ready to be prepared for the
+
+ 9   heavy density liquid separation.  So what was done
+
+10   there, and I'm looking at the sheet, the notes that I
+
+11   have taken, a small portion of the amount that had been
+
+12   muffled, 100 milligrams was taken and then that was put
+
+13   into a small centrifuge tube, a one and a half mil
+
+14   centrifuge tube.  Then the heavy density liquid, which
+
+15   has a density of 2.81 grams per cc, was added.  Then
+
+16   that is stired and then that is degassed in a desiccator
+
+17   to get the air bubbles out of it, that kind of thing.
+
+18        Q    Who did that?
+
+19        A    That was also done by -- Mr. Martin and I were
+
+20   working on that.
+
+21        Q    Who somebody -- doesn't seem like it is a job
+
+22   that requires four hands but two, right?
+
+23        A    Yes.
+
+24        Q    Who physically conducted that part of the
+
+25   test?
+
+                                                                63
+
+
+ 1        A    Well, Mr. Martin did.  I was right there with
+
+ 2   him.
+
+ 3        Q    Understood.  What else happened on that, your
+
+ 4   second day in the lab?
+
+ 5        A    Well, at that point, after it had been
+
+ 6   degassed, it was put into the centrifuge and then it was
+
+ 7   spun at 7,000 RPM's for ten minutes.  And then the tube
+
+ 8   was taken out and the pellet -- there is a pellet that
+
+ 9   is in the bottom of the tube, that is the heavier
+
+10   density material, was removed.  That pellet was taken
+
+11   and put into another tube with the ionized water.  And
+
+12   the idea of this is to take that pellet and then wash
+
+13   out the heavy density liquid material.  And that's done
+
+14   for a number of times.
+
+15             Step No. 11 on here says that was spun again
+
+16   for 7,000 RPM's for ten minutes and then that pellet is
+
+17   removed, re-suspended, and then we do the same thing
+
+18   again.  Step 12 has got a typo in it.  It should say
+
+19   repeat step 11 two times.
+
+20        Q    How much total time in the centrifuge would
+
+21   you have expected this to take?
+
+22        A    Oh, at least 30 minutes.
+
+23        Q    How much time between spinning in the
+
+24   centrifuge would you expect to take?
+
+25        A    Between spinning in the centrifuge?
+
+                                                                64
+
+
+ 1        Q    Yeah, I'm just trying to see how long this
+
+ 2   whole process takes when it is 30 minutes total in the
+
+ 3   centrifuge.
+
+ 4        A    Yeah.  Between it is about, I don't know, five
+
+ 5   or ten minutes for the re-suspension and then adding the
+
+ 6   filtered deionized water so that you can re-spin again.
+
+ 7   Because, again, the objective is to get rid of the heavy
+
+ 8   liquid at this particular point.
+
+ 9             So after that, then on the last spin the
+
+10   pellet in the bottom of the tube is removed and then
+
+11   that is put onto a glass slide and then that is dried in
+
+12   the oven for 30 minutes.
+
+13        Q    Were you there for that?
+
+14        A    Yes.
+
+15        Q    What do you do in the meanwhile while you're
+
+16   waiting around in that lab for 30 minutes for something
+
+17   to dry?
+
+18        A    Oh, well, I was probably answering e-mails,
+
+19   that kind of thing, on the phone, that kind of thing.
+
+20             So then at that point, once it is dry, we went
+
+21   to the PLM lab with the samples on the glass slides and
+
+22   then they were scraped off and then prepared for
+
+23   analysis for amphiboles in this case.
+
+24        Q    And who did that preparation?
+
+25        A    I believe that was done by Mr. Paul Hess.
+
+                                                                65
+
+
+ 1        Q    As we look at the documentation of this study
+
+ 2   it should tell us exactly what day these particular
+
+ 3   steps were performed, correct?
+
+ 4        A    Yes.  These were the days that I was there and
+
+ 5   the steps were being performed.
+
+ 6        Q    And the way to cross check that is look at the
+
+ 7   dates entered in the results, correct, or the lab
+
+ 8   documents?
+
+ 9        A    Yes.
+
+10        Q    All right.  Tell me about the third day.
+
+11   Well, strike that.
+
+12             By the end of the 27th had anyone done any
+
+13   testing to determine whether or not there was the
+
+14   presence of asbestos in any of this product?
+
+15        A    Yes.
+
+16        Q    What particular test was performed on the
+
+17   second day that you were there?  Start with that.
+
+18        A    Oh, the -- at this particular point we did the
+
+19   PLM analysis on this.
+
+20        Q    Okay.
+
+21        A    And, again, this was specific for amphibole
+
+22   asbestos.
+
+23        Q    You have this report in front of you, correct?
+
+24        A    I have my notes here.
+
+25        Q    Okay.  Where in the report should I look to
+
+                                                                66
+
+
+ 1   see the results of the PLM analysis?
+
+ 2        A    Okay.  Are we talking the October report?
+
+ 3        Q    September 23, 2020?
+
+ 4        A    Oh, no, that is a different one.  Yeah, that
+
+ 5   should be -- hold on.  I got to pull one up here.  I'm
+
+ 6   just going to have to pull up the hard copy.  Hold on a
+
+ 7   second.
+
+ 8        Q    And I don't mean to interrupt you.  I'm just
+
+ 9   trying to get my point through how we can track exactly
+
+10   what day this PLM testing was done.
+
+11        A    Well, no, if you're talking September 29,
+
+12   that's a different -- that's not the talco report.  You
+
+13   should be looking at the October 20 report.  You should
+
+14   look at the one that has October 2020 date on that.
+
+15        Q    Let me just start with what we marked as
+
+16   Exhibit 4.
+
+17        A    Right.
+
+18        Q    And what I have is Alberto Casaretto's Johnson
+
+19   baby talco container.
+
+20        A    Yes.
+
+21        Q    AMS project M71040 dated September 23, 2020.
+
+22   So, first of all, is that a report that reflects the
+
+23   results of the tests that you and I have been talking
+
+24   about this morning?
+
+25        A    Yes, it is.  The one I've got is the
+
+                                                                67
+
+
+ 1   supplement to that.
+
+ 2        Q    Okay.  Well, I'm just starting with this one.
+
+ 3        A    All right.
+
+ 4        Q    We'll talk about why it was supplemented
+
+ 5   later.  This is the initial report reflecting the
+
+ 6   results of the work that you said was performed while
+
+ 7   you were there, correct?
+
+ 8        A    To my knowledge, yes.
+
+ 9             MS. DARLSON:  Can you share the document,
+
+10        Mel, so we are all looking at the same thing on
+
+11        the screen maybe?
+
+12             MR. BAILEY:  I didn't download it to put
+
+13        it on the screen.
+
+14             THE WITNESS:  I'll find it.
+
+15             MR. TISI:  Would you at least, Mel, if you
+
+16        are not going to share it, if you could just
+
+17        show us.
+
+18             MR. BAILEY:  Sure.  Sure.  I'm not sharing
+
+19        it by design.  I'm sharing it by --
+
+20             THE WITNESS:  I see it.  I got it now.
+
+21             MR. TISI:  If you can do that going
+
+22        forward.  For the past 15 minutes you both are
+
+23        talking about different documents.
+
+24             MR. BAILEY:  All right.  My mistake.
+
+25             MR. TISI:  No problem.
+
+                                                                68
+
+
+ 1        Q    (By Mr. Bailey)  This is the original report.
+
+ 2        A    Yes.
+
+ 3        Q    This report reflects the work that was
+
+ 4   performed on the days you say you were in the MAS lab,
+
+ 5   correct?
+
+ 6             MS. DARLSON:  Form.
+
+ 7             THE WITNESS:  This should reflect work
+
+ 8        that was done, yes, for the days that I was
+
+ 9        there.
+
+10        Q    (By Mr. Bailey)  All right.  If I look in this
+
+11   particular report, and I didn't mean to really go into
+
+12   any detail about this, will I find the dates that the
+
+13   PLM work was performed?
+
+14        A    Yes.
+
+15        Q    Where would I find those, just in general?
+
+16        A    That would be in the PLM report.  Looks like
+
+17   page 22.
+
+18        Q    Are there count sheets in connection with the
+
+19   work that was done at the time that you were there?
+
+20        A    Well, this one is dated 8/4/20.  So this must
+
+21   have been when it was done at that time.  When I sat
+
+22   with the analyst, he simply looked at the sample for
+
+23   amphiboles.
+
+24        Q    Let me slow down so I can understand.
+
+25        A    Sure.
+
+                                                                69
+
+
+ 1        Q    My understanding is that you were there on the
+
+ 2   24th, correct?
+
+ 3        A    I was there on the 24th, the 27th and the
+
+ 4   30th.
+
+ 5        Q    Of what month?
+
+ 6        A    January.
+
+ 7        Q    Of what year?
+
+ 8        A    2020.
+
+ 9        Q    Okay.  Exhibit No. 4, which I have been
+
+10   discussing with you, was prepared in September of 2020,
+
+11   correct?
+
+12        A    Yes.
+
+13        Q    Okay.  Now, I'll ask you an easy one.  Was
+
+14   this supplemented?
+
+15        A    Yes.
+
+16        Q    Why was it supplemented?
+
+17        A    There were typographical errors in this
+
+18   report.
+
+19        Q    Anything other than typographical errors?
+
+20        A    Not that I know of.
+
+21        Q    Who oversaw the quality control of the text of
+
+22   the report?
+
+23             MS. DARLSON:  Form.
+
+24             THE WITNESS:  Are you asking -- well, that
+
+25        would be a question for Dr. Longo, as far as
+
+                                                                70
+
+
+ 1        that goes.  But when I received the report and
+
+ 2        I read it, I saw typographical errors in it.
+
+ 3        Q    (By Mr. Bailey)  Did you communicate with Dr.
+
+ 4   Longo what the typographical errors were that you had
+
+ 5   seen?
+
+ 6        A    Yes.  I communicated with his -- with Ms.
+
+ 7   Mulino about it.
+
+ 8        Q    Okay.  By e-mail or by some sort of document
+
+ 9   correction?
+
+10        A    I called and talked to her directly about it
+
+11   and I think -- I'm trying to remember what we did as far
+
+12   as that goes.
+
+13        Q    That's all right.  If I want to know what
+
+14   changes were made as a result of the typographical
+
+15   errors you identified, all I need to do is compare the
+
+16   supplemental report to the first report; is that right?
+
+17        A    Yes.
+
+18        Q    And is it your testimony that the only changes
+
+19   that were made in connection with the first report and
+
+20   the second report were to correct supplemental -- not
+
+21   supplemental.  To correct grammatical or grammatical
+
+22   errors?
+
+23        A    Typographical errors?
+
+24        Q    Yeah.
+
+25        A    Yeah, correct.
+
+                                                                71
+
+
+ 1        Q    You think I could come up with that word.
+
+ 2        A    To my knowledge, yes.
+
+ 3        Q    All right.  Did any additional work go into
+
+ 4   this project between the September 30th time that it was
+
+ 5   generated, the first one, and the time that the
+
+ 6   supplemental report was generated?
+
+ 7        A    Any additional work?  I don't know.  That you
+
+ 8   will probably have to ask Dr. Longo.
+
+ 9        Q    Have you gone back to compare the second
+
+10   report to the first report to see whether there were any
+
+11   substantive changes made?
+
+12        A    No.  To my -- as far as my check on the
+
+13   report, they were errors that were typographical errors.
+
+14        Q    Were there any additional methodologies
+
+15   introduced or subsequent testing done between
+
+16   September 23rd report and the supplemental report?
+
+17             MS. DARLSON:  Object to the form.
+
+18             THE WITNESS:  Again, I think you would
+
+19        have to ask Dr. Longo about that.  I just
+
+20        looked for the changes in the typographicals.
+
+21        Q    (By Mr. Bailey)  Yeah.  I don't know that I'll
+
+22   get to talk to Dr. Longo about it so let me ask it to
+
+23   you the easiest way I can.  As far as you know, are the
+
+24   only differences in the first report and the second
+
+25   report typographical or grammatical changes?
+
+                                                                72
+
+
+ 1        A    To my knowledge, yes.
+
+ 2        Q    All right.  And you studied them both
+
+ 3   carefully, right?
+
+ 4        A    Yes.  And I think in the second the changes
+
+ 5   are outlined in that as far as what was in the
+
+ 6   supplemental, I believe.  I'm going to look at them real
+
+ 7   quick.  Let's see what it says.  Yeah, on the second
+
+ 8   page of the supplemental it says -- yeah, typographical.
+
+ 9   Change 200 grams to 200 milligrams.  Remove section
+
+10   eight coversheet.  Not associated with any data.
+
+11   Correct VRR talc data from high to high end of moderate.
+
+12             So, yeah.  So whatever, those were the changes
+
+13   that were implemented.
+
+14        Q    What was the difference -- did you say 200
+
+15   grams and 200 milligrams?
+
+16        A    Yeah, typo.
+
+17        Q    What is that reflecting, the amount of product
+
+18   tested?
+
+19             MS. DARLSON:  Object to the form.
+
+20             THE WITNESS:  Yes, in the prep section.
+
+21        You could never do 200 grams.  That is a
+
+22        definite typo.
+
+23        Q    (By Mr. Bailey)  So you were walking me
+
+24   through on the 27th.  You said the PLM testing was done;
+
+25   is that right?
+
+                                                                73
+
+
+ 1        A    Yes.  That is what is on the report.  That's
+
+ 2   the date on the report.
+
+ 3        Q    And you remember being there on the day that
+
+ 4   the PLM testing was done?
+
+ 5        A    Well, the day that I was there, it was more of
+
+ 6   a general survey to look at the sample to see if it was
+
+ 7   a good preparation.  Could you read it by PLM.  And, oh,
+
+ 8   while we're there, let's take a look and see if we see
+
+ 9   anything.
+
+10             So the analyst sort of did a real quick scan
+
+11   of the sample.  And at the time I was there he said the
+
+12   prep looks good.  There is plenty of it here, and, you
+
+13   know.  So that's pretty much what happened the day that
+
+14   I was there working with the analyst.
+
+15        Q    Okay.  Since February of 2020 until today have
+
+16   you done heavy density PLM testing of cosmetic talc for
+
+17   the presence of asbestos?
+
+18        A    I have not, no.
+
+19        Q    Okay.  And so the PLM testing that was
+
+20   actually done in connection with this particular bottle,
+
+21   you were not present when the actual testing and
+
+22   calculations were done, as I understand what you just
+
+23   said, right?
+
+24        A    That's correct.
+
+25             MS. DARLSON:  Object to the form.
+
+                                                                74
+
+
+ 1        Q    (By Mr. Bailey)  So tell me then -- let's move
+
+ 2   to the 30th and tell me what was going on.
+
+ 3        A    Oh, the 30th, this was the -- this was,
+
+ 4   essentially, the beginning of the ISO prep for -- the
+
+ 5   ISO prep is similar to the Blount prep.  It is another
+
+ 6   heavy density liquid type prep.  So it is similar to it.
+
+ 7             You begin with, approximately, the 20
+
+ 8   milligrams of talc sample here.  Put it into the tube as
+
+ 9   it was done in the other one.  And then you add heavy
+
+10   density liquid 2.85.  The isometric calls for a density
+
+11   of 2.85.  That's stirred and degassed in the desiccator
+
+12   as the other one was done.
+
+13             In this case the spin is at 9,000 RPMs for 90
+
+14   minutes.  And this is done three times, 30 minutes each.
+
+15   So we spin it one time for 30 minutes and then you spin
+
+16   it again and then you do it again.  Then at that point
+
+17   the centrifuge tube is taken out and then the sample is
+
+18   frozen in liquid nitrogen, the entire tube.  All right.
+
+19   So what you have is a frozen tube and within that tube,
+
+20   at the bottom of the tube, as was in the other
+
+21   preparation, you have the sample that you're going to
+
+22   recover.
+
+23             So what you do in this case is you cut the tip
+
+24   off and that's done at the presence very close to
+
+25   another tube so when you chop it it goes into the
+
+                                                                75
+
+
+ 1   other -- it goes into a larger tube.  And I think that
+
+ 2   is a 25 milliter tube that it goes into.
+
+ 3             Then the next step is to add filtered
+
+ 4   deionized water to the tube.  Because what you're trying
+
+ 5   to do is you want to recover the plastic tip out of
+
+ 6   the -- out of that sample.  And then you retrieve the
+
+ 7   tube tip.  That is step number eight that I have there.
+
+ 8             Then what you do is you take the entire sample
+
+ 9   that is now been mixed with water and then that's poured
+
+10   into a filter tower that contains a filter 25
+
+11   millimeters in diameter.  It is a point four micron PC
+
+12   filter.  And then so that is entirely filtered.  Then
+
+13   you also, while you are doing that, you run a control
+
+14   along with that which it is just a heavy density liquid,
+
+15   same thing.
+
+16             Then you take those two filters and then they
+
+17   are dried under a warm lamp for ten to 20 minutes.  And
+
+18   then samples are cut out of that filter, mounted onto a
+
+19   slide for carbon coding.  And then that is carbon coded.
+
+20   All of these I have images, pictures of all of this
+
+21   process.  And then those cut portions of the coded
+
+22   sample filters are mounted on TEM grids and then that is
+
+23   prepared for TEM.
+
+24             So what you have there is ISO 22262-2
+
+25   preparation for a talc, analyzing talc that may contain
+
+                                                                76
+
+
+ 1   asbestos.
+
+ 2        Q    Is it still true that you never personally
+
+ 3   performed this ISO 22262-2 amphibole asbestos testing
+
+ 4   method on cosmetic talc yourself?
+
+ 5        A    I don't know how I could get much closer to it
+
+ 6   than this, Mr. Bailey.  But the way I look at it, I was
+
+ 7   there.  I saw every step.  Was a part of the process.
+
+ 8   Was helping the analyst understand what step was next
+
+ 9   and where we were going with what we were doing there.
+
+10   And so this is a protocol that MAS has at their
+
+11   laboratory.  So I wanted to be sure that I was there to
+
+12   be a part of that sample preparation.
+
+13        Q    The question isn't whether you've been closer.
+
+14   That is like saying you rode in the middle seat of the
+
+15   front seat and you don't know how you can get any closer
+
+16   to driving a car than that.
+
+17             MS. DARLSON:  Move to strike.
+
+18        Q    (By Mr. Bailey)  My question is have you ever
+
+19   done that process yourself personally?  Not where you
+
+20   were overseeing it from the middle seat.  But when you
+
+21   were actually doing the work yourself, hands on the
+
+22   wheel.
+
+23             MS. DARLSON:  Object to the form.
+
+24             THE WITNESS:  Well, as I say, I have done
+
+25        all of the steps that we've described here at
+
+                                                                77
+
+
+ 1        one time or another in preparation with MAS.
+
+ 2        Now, specifically for this test in this
+
+ 3        sequence, I have -- again, I've done all of
+
+ 4        these in other kinds of preparations.  So, you
+
+ 5        know, I am well versed in it and experienced in
+
+ 6        doing it.
+
+ 7        Q    (By Mr. Bailey)  Have you ever hands on
+
+ 8   performed the ATEM ISO 22262-2 method on cosmetic talc
+
+ 9   for testing for the presence of asbestos where you were
+
+10   the person there responsible for personally doing it
+
+11   yourself?
+
+12             MS. DARLSON:  Form.
+
+13             THE WITNESS:  I have been there, as I say.
+
+14        But as far as answering that question, having
+
+15        done that exact set of sequences myself, I have
+
+16        not done that.  But, again, I have done all of
+
+17        that kind of process.
+
+18        Q    (By Mr. Bailey)  Okay.  At what point in time
+
+19   is your understanding that the final testing was
+
+20   completed in connection with this particular bottle?
+
+21        A    Oh, it would have probably been end of August,
+
+22   September of this year.
+
+23        Q    Okay.
+
+24        A    Yes.
+
+25        Q    All right.  Did you do anything else -- strike
+
+                                                                78
+
+
+ 1   that.
+
+ 2             Were you present when any other aspects of
+
+ 3   this testing was performed?
+
+ 4        A    Aside from what we've already described, is
+
+ 5   that what you're asking?
+
+ 6        Q    Yes, sir.
+
+ 7        A    This is the extent of it for me to say.
+
+ 8        Q    Was there a TEM analysis performed?
+
+ 9        A    On the samples, yes.
+
+10        Q    Were you there when that occurred?
+
+11        A    I was not there when the TEM was done.
+
+12        Q    Okay.  Is there anything different about the
+
+13   methods that were used in connection with the Casaretto
+
+14   testing than the methods that were initially used at MAS
+
+15   in 2017 or '16 when testing of cosmetic talc began?
+
+16             MS. DARLSON:  Objection to the form.
+
+17        Misstates prior testimony.
+
+18             THE WITNESS:  In terms of -- are you
+
+19        asking in terms of differences?
+
+20        Q    (By Mr. Bailey)  I want to stick with the
+
+21   technical names of the methods used.  Because you have
+
+22   given me very specific names, correct?
+
+23        A    Sure.
+
+24        Q    So when you were involved in the initial
+
+25   testing of the 56 bottles at MAS in 2016 or '17, what
+
+                                                                79
+
+
+ 1   methods were used to evaluate those products for
+
+ 2   asbestos?
+
+ 3        A    They were -- they used the methods that
+
+ 4   were -- the Blount type method.  They also used the PLM
+
+ 5   method for the analysis and they also used the TEM
+
+ 6   method.  And the Blount method is a heavy liquid
+
+ 7   separation method.
+
+ 8        Q    They were using two methods, PLM and TEM?
+
+ 9        A    Yes.
+
+10        Q    Is that your -- well, strike that.
+
+11             Did you design the protocol for those initial
+
+12   tests?
+
+13        A    I collaborated with Dr. Longo on those
+
+14   protocols.
+
+15        Q    Can you specifically recall TEM testing being
+
+16   done as part of the protocols that you oversaw in the
+
+17   initial testing of the 56 bottles at MAS, is that your
+
+18   testimony?
+
+19             MS. DARLSON:  Form.
+
+20             THE WITNESS:  TEM -- yes, TEM was
+
+21        performed on those samples, yes.
+
+22        Q    (By Mr. Bailey)  Okay.  Have you been asked to
+
+23   perform any estimation or calculation of what you
+
+24   believe to be the range of possible exposure levels
+
+25   incurred by Mr. Casaretto as a result of baby powder
+
+                                                                80
+
+
+ 1   exposure?
+
+ 2        A    I was not asked to do that, specifically.
+
+ 3        Q    Have you made any efforts, between the time
+
+ 4   that you were retained and the time that we are here
+
+ 5   sitting for your deposition, to develop an estimated
+
+ 6   total dose of exposure for this particular plaintiff
+
+ 7   tailored specifically by the factual allegations
+
+ 8   provided by the plaintiff in this case?
+
+ 9        A    I have not been asked to do that.  I believe
+
+10   that Dr. Longo was asked to do that.
+
+11        Q    Okay.  Do you have any intention of making
+
+12   your own independent calculations of exposure levels for
+
+13   Mr. Casaretto?
+
+14        A    If I'm asked I can.
+
+15        Q    When did you become aware of the work done by
+
+16   Dr. Longo?
+
+17             MS. DARLSON:  Form.
+
+18             THE WITNESS:  Yeah.  I mean, in this case?
+
+19        Q    (By Mr. Bailey)  Yeah.  And maybe I
+
+20   misunderstood your answer.  Are you aware of any
+
+21   estimated total dose exposure or dose estimation for
+
+22   exposure of asbestos in connection with Mr. Casaretto's
+
+23   use of baby powder?
+
+24        A    Yes, I believe that is in his -- in the
+
+25   reports, in the test reports.
+
+                                                                81
+
+
+ 1        Q    And what is -- do you intend to rely on that
+
+ 2   in giving your testimony in this case?
+
+ 3        A    If asked to do so, yes.
+
+ 4        Q    Have you spoken with Dr. Longo about whether
+
+ 5   he intends to testify as an expert in this case?
+
+ 6        A    I don't recall that conversation, if we had
+
+ 7   that conversation or not.
+
+ 8        Q    You just don't know one way or another?
+
+ 9        A    Yeah, I don't know one way or another.
+
+10        Q    Okay.  Any reliance that you have on Dr.
+
+11   Longo's estimation is based solely on the work that he
+
+12   has done and not as a result of independent work that
+
+13   you have done in this case, correct?
+
+14             MS. DARLSON:  Object to the form.
+
+15             THE WITNESS:  Well, the work that has been
+
+16        done is all based on samples that were analyzed
+
+17        at Dr. Longo's laboratory.  So he is making
+
+18        his -- he is making his estimations of the
+
+19        exposures in the report.
+
+20        Q    (By Mr. Bailey)  Have you evaluated those to
+
+21   determine whether or not you agree with them?
+
+22        A    They are reasonable from a scientific point of
+
+23   view.  When I looked at the way he did the exposure
+
+24   calculations, they appeared to me to be reasonable.
+
+25        Q    I'm sorry.  Have you discussed those
+
+                                                                82
+
+
+ 1   calculations and the method that he used to come to
+
+ 2   those conclusions with him?
+
+ 3        A    The method appears to be consistent with the
+
+ 4   kinds of exposure calculations that he has used in the
+
+ 5   past.
+
+ 6        Q    My question really is have you discussed this
+
+ 7   particular finding in this case with him?  Then we'll go
+
+ 8   from there.
+
+ 9        A    Not specifically, no.
+
+10        Q    Have you studied those numbers that he
+
+11   provided and compared them against the exposure claims
+
+12   made or identified in the depositions themselves?
+
+13        A    No.
+
+14        Q    Have you done anything to verify the accuracy
+
+15   of the math done in Dr. Longo's calculation as it
+
+16   pertains to the factual assertions in this case?
+
+17        A    Well, I've checked his math and it checks out.
+
+18        Q    Have you checked it against the facts in this
+
+19   case or the testimony provided in this case to see if it
+
+20   is accurate?
+
+21             MS. DARLSON:  Object to the form.
+
+22             THE WITNESS:  I've only -- I checked what
+
+23        is in the report, the calculations in the
+
+24        report.
+
+25        Q    (By Mr. Bailey)  You mean if the
+
+                                                                83
+
+
+ 1   multiplication and the addition is correct?
+
+ 2        A    Yes, all of that.
+
+ 3        Q    Anything beyond that?  Have you done any
+
+ 4   evaluation of the accuracy or inaccuracy in his
+
+ 5   calculations?
+
+ 6        A    I hadn't been asked to do that.
+
+ 7        Q    All right.
+
+ 8        A    Like I said, the calculations are accurate, as
+
+ 9   far as I'm concerned.
+
+10        Q    The math is what you've checked and I'll leave
+
+11   it at that.
+
+12             Back to the September 23, 2020 report.  Did
+
+13   you see any indication in this report that any amphibole
+
+14   asbestos was identified?
+
+15        A    No.  As I recall, there was not amphibole
+
+16   asbestos detected at the detection limit.
+
+17        Q    Was there any indication at all that anyone
+
+18   identified even a single fiber of tremolite?
+
+19        A    I don't believe that I recall seeing that in
+
+20   any of the data there.
+
+21        Q    Okay.
+
+22        A    I don't recall that.
+
+23        Q    Sorry?
+
+24        A    No.
+
+25        Q    So when you go down these sheets, if you see a
+
+                                                                84
+
+
+ 1   fiber or two or three or whatever you consider to be
+
+ 2   significant, you note them in the log that you're
+
+ 3   making, correct?
+
+ 4        A    Correct.
+
+ 5        Q    Or rather the person doing the actual work
+
+ 6   would do that, right?
+
+ 7             MS. DARLSON:  Form.
+
+ 8             THE WITNESS:  Yes.
+
+ 9        Q    (By Mr. Bailey)  And you've looked over that
+
+10   both for accuracy and relevance, I assume, correct?
+
+11             MS. DARLSON:  Form.
+
+12             THE WITNESS:  Well, I've looked at what is
+
+13        in the report and what they have put into the
+
+14        report.  They have their count sheets in the
+
+15        report for the PLM and the TEM.
+
+16        Q    (By Mr. Bailey)  Have you studied for accuracy
+
+17   the count sheets themselves to see if they are accurate
+
+18   in fact?
+
+19        A    Yes.
+
+20        Q    So in studying the count sheets, did you see
+
+21   any indication of even a single fiber of anthophyllite?
+
+22        A    For the count sheets that are in this report,
+
+23   the TEM count sheets that are in this report, at the
+
+24   detection limit that is there, there is not a report of
+
+25   amphiboles at that detection limit.  Now, it doesn't
+
+                                                                85
+
+
+ 1   mean they are not there.  Just at that particular
+
+ 2   detection limit you can't -- there isn't anything to
+
+ 3   detect.
+
+ 4        Q    Well, the whole point of this testing is to
+
+ 5   see whether or not you detect asbestos fibers or not,
+
+ 6   correct?
+
+ 7             MS. DARLSON:  Form.
+
+ 8             THE WITNESS:  Sure.  But you are always
+
+ 9        limited by your detection limit.
+
+10        Q    (By Mr. Bailey)  I understand that.  But if
+
+11   the end result when you don't see it is, well, that
+
+12   doesn't mean it is not there, then what is the point of
+
+13   testing it, right?
+
+14             MS. DARLSON:  Form; argumentative.
+
+15             MR. BAILEY:  I'll withdraw that.  Fair
+
+16        enough.
+
+17        Q    (By Mr. Bailey)  How many different testing
+
+18   methods were used in connection with the Casaretto
+
+19   bottle?
+
+20        A    Well, PLM was used, TEM was used, heavy liquid
+
+21   separation methods were used.
+
+22        Q    Okay.  The PLM method that was used, MAS ISO
+
+23   22262-1, was that used initially at MAS in the initial
+
+24   rounds of testing in 2017?
+
+25        A    PLM was used, as I recall.  I don't know if it
+
+                                                                86
+
+
+ 1   was the ISO method, which method was used.  But PLM was
+
+ 2   used.
+
+ 3        Q    Okay.  My question is, and maybe you just
+
+ 4   answered it, do you know whether or not MAS has changed
+
+ 5   the methodology, the testing method by identification
+
+ 6   number used in the Casaretto matter composed to what it
+
+ 7   used early on in testing the initial bottles of baby
+
+ 8   powder?
+
+ 9             MS. DARLSON:  Object to the form.
+
+10             THE WITNESS:  Well, in the Casaretto there
+
+11        was -- the method that you used additionally is
+
+12        what is called the CSM, the Colorado School of
+
+13        Minds method.  And that is, essentially, a
+
+14        heavy density liquid method.  It has been
+
+15        around since the 1970s and has been used to
+
+16        separate chrysotile from talc.  It is an
+
+17        adjustment of heavy density liquid specifically
+
+18        to select out for chrysotile.
+
+19        Q    (By Mr. Bailey)  Okay.  I understand that but
+
+20   I want to track my question.  And that was pretty
+
+21   simple, was MAS ISO 222621 a method used by MAS when you
+
+22   were working there for testing cosmetic talc?
+
+23        A    Yes.
+
+24        Q    When was it first used there?
+
+25        A    I couldn't tell you when it was first used.  I
+
+                                                                87
+
+
+ 1   don't know the data of when it was first used.
+
+ 2        Q    When was the Blount method first used with PLM
+
+ 3   at MAS?
+
+ 4        A    That is another question to ask Dr. Longo.  So
+
+ 5   I would ask him that.  He may have a better answer for
+
+ 6   you.
+
+ 7        Q    Do you know -- well, my understanding was you
+
+ 8   were designing the protocol for these early tests,
+
+ 9   correct?
+
+10        A    I was collaborating with Dr. Longo, yes.
+
+11        Q    And my understanding is you were overseeing
+
+12   the test right there in the middle seat looking at the
+
+13   driver in 2017, correct?
+
+14             MS. DARLSON:  Form.
+
+15             THE WITNESS:   I saw a lot of the testing
+
+16        that was done at the laboratory, yes.
+
+17        Q    (By Mr. Bailey)  So my question is was the PLM
+
+18   Blount method being used when you were observing the MAS
+
+19   initial test in 2017 or '18?
+
+20             MS. DARLSON:  Form.
+
+21             THE WITNESS:  To my knowledge, the PLM
+
+22        Blount method was being used at that time.
+
+23        Q    (By Mr. Bailey)  Okay.  Colorado School of
+
+24   Mines, do you know when it was first used at MAS?
+
+25        A    Colorado School of Mines was used first at
+
+                                                                88
+
+
+ 1   MAS, I believe, in 2000 -- it was either early 2020 or
+
+ 2   late 2019.  Again, that is something to ask Dr. Longo.
+
+ 3        Q    I just want to make sure that I understand
+
+ 4   what methods you've overseen as you described it or not.
+
+ 5   I think I understand.
+
+ 6             I want to switch gears just a second to talk
+
+ 7   about the significance of a finding of a single asbestos
+
+ 8   fiber or two asbestos fibers in connection with a
+
+ 9   particular grid.  Okay?
+
+10        A    Okay.  If I can answer.
+
+11        Q    I'm trying to understand if --
+
+12             MR. TISI:  Can I interrupt you?  I'm
+
+13        trying to be sensitive to Dr. Rigler's surgery.
+
+14        If this is a good time maybe --
+
+15             MR. BAILEY:  Perfect.
+
+16             THE WITNESS:  If you don't mind.
+
+17             MR. BAILEY:  You couldn't have picked a
+
+18        better time.
+
+19             MR. TISI:  Can I ask you, Mark, if you
+
+20        would just do us all a favor, don't be a stoic
+
+21        here and let us know when you need to get up.
+
+22        Because I don't want to have to keep -- I might
+
+23        be accused of coaching and I'm not.
+
+24             MR. BAILEY:  We need to get this done in
+
+25        an hour so this may be our last break
+
+                                                                89
+
+
+ 1        hopefully.
+
+ 2             THE WITNESS:  All right.  Give me five
+
+ 3        minutes.
+
+ 4             MR. BAILEY:  Whatever you want because we
+
+ 5        are going to get it done.
+
+ 6           (A break was taken in the proceedings.)
+
+ 7        Q    (By Mr. Bailey)  In looking at your CV one of
+
+ 8   the things that you added was -- I highlighted it --
+
+ 9   that you were on the Editorial Board for the Journal of
+
+10   Scientific Practice and Integrity, correct?
+
+11        A    Yes.
+
+12        Q    Is that Dr. Eagleman's journal?
+
+13        A    Yes.  You've asked me this before.
+
+14        Q    Somebody else was and I wasn't focused on it.
+
+15   But I want to ask sort of an update.
+
+16        A    Sure.
+
+17        Q    Have you done anything as an editor for that
+
+18   journal?
+
+19        A    I have been asked to do that.  The time I was
+
+20   asked I wasn't able to because of my workload.  So I
+
+21   essentially said, yeah, if I could move such and such
+
+22   and this and that around.  And by the time they got back
+
+23   to me, they said don't worry about it.  So I haven't
+
+24   been able to do that yet.
+
+25        Q    You have done nothing with your role on that
+
+                                                                90
+
+
+ 1   board at least as we sit here today; fair enough?
+
+ 2        A    I'm ready to do whatever I can time
+
+ 3   permitting.
+
+ 4        Q    Okay.  Another question that --
+
+ 5             MS. DARLSON:  Did we go back on the record
+
+ 6        while I was gone?
+
+ 7             MR. BAILEY:  Oh, sorry.  I thought you
+
+ 8        were there.
+
+ 9             MS. DARLSON:  What did I miss?
+
+10             MR. TISI:  Nothing.  I'll talk to you
+
+11        later.  There was nothing that happened.
+
+12        Q    (By Mr. Bailey)  There was one question.
+
+13             So, Doctor, when last I asked you didn't know
+
+14   what you had generated in revenue as a consulting expert
+
+15   for the year 2019.  Do you now have an estimation based
+
+16   upon the tax returns that you filed or anything that you
+
+17   reviewed in connection with filing your returns that
+
+18   allows you to testify about that number?
+
+19        A    Well, I mean, as far as I'm concerned with the
+
+20   company, that is company confidential.  So, I mean, I'd
+
+21   rather not testify on that.  But, you know, I would
+
+22   rather not.
+
+23        Q    Okay.  We'll leave it there for now.  You
+
+24   probably surmised that.  Have you reviewed any Johnson
+
+25   and Johnson internal documents specific to this case
+
+                                                                91
+
+
+ 1   that you have not previously seen in your role as an
+
+ 2   expert?
+
+ 3        A    Yes.
+
+ 4        Q    Can you identify what those are?
+
+ 5        A    They are on the -- they are on the list under,
+
+ 6   let's see, I'm looking at the file area.  I'll tell you
+
+ 7   what, if you look at the -- my notes, they are indicated
+
+ 8   on my notes and the J and J Bates numbers are also on
+
+ 9   there for each one of them.  So about 36 of them.
+
+10        Q    Have you looked at any Johnson and Johnson
+
+11   documents specific to the source mine that you believe
+
+12   is relevant to this case?
+
+13        A    Yes.
+
+14             MS. DARLSON:  Object to the form.
+
+15        Q    (By Mr. Bailey)  Have you looked at any
+
+16   testing of the source mine ore in this case that you're
+
+17   going to rely on as an expert?
+
+18        A    Yes.
+
+19        Q    Who all has tested the mine -- strike that.
+
+20             What test results have you reviewed in
+
+21   connection with the source mine that you are relying on
+
+22   in this case?
+
+23        A    There are documents that show quarterly
+
+24   testing back I believe it is to 2009, at least for the
+
+25   mine.  And there are testing documents that I've
+
+                                                                92
+
+
+ 1   reviewed that were produced by the testing company, the
+
+ 2   RJ Lee Group.
+
+ 3        Q    Start with the RJ Lee Group.  Are you
+
+ 4   referring to testing done by Drew VanOrten?
+
+ 5        A    Yes.
+
+ 6        Q    Do you know Drew VanOrten?
+
+ 7        A    Yes.
+
+ 8        Q    Do you know anything about the methodology
+
+ 9   that he used in connection with overseeing or evaluating
+
+10   previous tests done at the source mine?
+
+11             MS. DARLSON:  Form.
+
+12             THE WITNESS:  Are you asking -- can you be
+
+13        a little more specific?
+
+14        Q    (By Mr. Bailey)  You reviewed his -- I guess
+
+15   there are actually two reports related to testing of the
+
+16   source mine, correct?
+
+17        A    There is more than two.  There are at least
+
+18   four, maybe more than that.
+
+19        Q    Okay.  What is your conclusion that you take
+
+20   away as a result of the work done by Drew VanOrton?
+
+21   I'll shorten this process.
+
+22             MS. DARLSON:  Form.
+
+23             THE WITNESS:  There was testing that was
+
+24        done back in at least, say, back in 2010 on
+
+25        product that came from that mine.  And the
+
+                                                                93
+
+
+ 1        initial testing showed what was called the --
+
+ 2        they had discovered serpentine minerals, which
+
+ 3        they identified as lizardite initially.  And
+
+ 4        then subsequent testing beyond that, more
+
+ 5        samples were tested and chrysotile asbestos was
+
+ 6        found associated with those samples.  And then
+
+ 7        more samples were tested, forty-two.  More than
+
+ 8        that.  I believe about 50 or so were also
+
+ 9        tested and then a number of those samples also
+
+10        showed chrysotile asbestos contamination.
+
+11        Q    (By Mr. Bailey)  By what testing method?
+
+12        A    They used PLM and they also used TEM.
+
+13        Q    Did your review of the reports cause you to
+
+14   believe there was some question about what -- whether or
+
+15   not there was actually chrysotile in the source mine, at
+
+16   least by the people writing the reports?
+
+17             MS. DARLSON:  Form.
+
+18             THE WITNESS:  I think the reports that I
+
+19        looked at, and they also did XRD.  They were
+
+20        using -- they were using those three methods at
+
+21        least to try to analyze those samples and they
+
+22        came up with contamination in the ore of
+
+23        chrysotile.  And there was a question about the
+
+24        analysis at the time and they tried to
+
+25        investigate where they believed this chrysotile
+
+                                                                94
+
+
+ 1        may have come from.
+
+ 2             So the interesting thing for me, as someone
+
+ 3        who has worked in a laboratory for over 30 years
+
+ 4        and a laboratory that has tested asbestos, is where
+
+ 5        a laboratory that is like RJ Lee who has to follow
+
+ 6        practices and protocols specified by government
+
+ 7        agencies such NBLAP and IST, where they get a
+
+ 8        positive result and all of a sudden they've got a
+
+ 9        question about a positive result.
+
+10             Which to me is -- I don't understand this
+
+11        because the land blanks with these samples in every
+
+12        case and never found anything in the blanks which
+
+13        would indicate contamination.  But then they
+
+14        progressed to continue to do more testing until
+
+15        they essentially didn't find anything.
+
+16             And then they said that this testing was,
+
+17        essentially, there was -- the laboratory was
+
+18        contaminated.  They went and they looked at the
+
+19        water at the site.  They looked at the tiles at the
+
+20        site, the building materials at the site and they
+
+21        found no asbestos in any of those materials.
+
+22             So there was no asbestos to be indicated in
+
+23        any of the samples, yet they didn't believe their
+
+24        own results.  Which to me, again, I don't
+
+25        understand this.  It is something that the
+
+                                                                95
+
+
+ 1        laboratory -- no laboratory does it the way that
+
+ 2        they do it.  If they find a positive, for some
+
+ 3        reason they go on this wild hunt to try to figure
+
+ 4        out why a sample is positive.  If you find a
+
+ 5        positive and your QC is good, you got a positive
+
+ 6        sample.  Your sample is contaminated.
+
+ 7        Q    (By Mr. Bailey)  I want to talk to you about
+
+ 8   QC.
+
+ 9        A    Sure.
+
+10        Q    About testing methods and about blanks.  Okay?
+
+11        A    Sure.
+
+12        Q    Maybe we'll -- this will be near the end of
+
+13   it.
+
+14        A    Okay.
+
+15        Q    There are regulations and standards that
+
+16   discuss what the standard testing methods are with
+
+17   respect to blanks and how they are to be used in
+
+18   comparison with testing of whatever product you're
+
+19   looking for for asbestos, right?
+
+20        A    Yes.
+
+21        Q    And in an ideal world your blank would have
+
+22   zero asbestos fibers and you would use that to compare
+
+23   against grids you're looking at to see whether or not
+
+24   they are contaminated with asbestos fibers, correct?
+
+25        A    Yes.
+
+                                                                96
+
+
+ 1        Q    And sometimes you hear questions about
+
+ 2   contaminations within labs that can confound the results
+
+ 3   of a test, correct?
+
+ 4        A    Well, here is what happens in those
+
+ 5   situations.  If a laboratory is doing the quality
+
+ 6   control along with the analysis, they are doing it in
+
+ 7   tandem.  This is what they should be doing.  All
+
+ 8   laboratories do it in this kind of fashion.  For
+
+ 9   instance, you hear this ten percent QC, which means
+
+10   every tenth sample you run a quality control sample to
+
+11   see if your analysis is on track or if you have
+
+12   contamination or something like that.
+
+13             So what you have as far as asbestos goes, you
+
+14   have these blanks that you look at and if the blanks are
+
+15   clean, your testing is clean.  Because they look at a
+
+16   filter blank.  They look at a water blank.  They look at
+
+17   a blank that is beside the sample as they are preparing
+
+18   it and those blanks are clean.
+
+19             So you move on from there and you say, okay,
+
+20   my analysis is good.  My technique is good.  I'm going
+
+21   to move forward and whatever I find is going to be in
+
+22   that sample.  So if I find chrysotile or anthophyllite
+
+23   or tremolite in the sample and I've got clean blanks, my
+
+24   sample has anthophyllite, tremolite, some form of
+
+25   asbestos in it.
+
+                                                                97
+
+
+ 1             So now if the laboratory finds a blank that is
+
+ 2   not clean.  Let's say they find a contaminated blank.
+
+ 3   They stop.  They stop immediately.  They look at the
+
+ 4   previous samples that they've analyzed and they go, we
+
+ 5   can't count on those results right there.  All right?
+
+ 6   But they stop and then they figure out what happened in
+
+ 7   their process where the contamination came from.
+
+ 8             But that didn't happen in this case.  Their
+
+ 9   blanks were clean.  There was no reason to stop.  So you
+
+10   move forward with your analysis.  But for some reason RJ
+
+11   Lee doesn't believe their own analysis.  They believe
+
+12   that their samples were contaminated, even though the
+
+13   blanks were clean.
+
+14        Q    This won't surprise you but I'm going to
+
+15   object to the responsiveness of that.
+
+16             I want to break this down.  It is recognized
+
+17   in the industry that -- in the scientific industry that
+
+18   contamination occurs in labs, do you agree with that?
+
+19             MS. DARLSON:  Form.
+
+20        Q    (By Mr. Bailey)  That's an easy one.
+
+21        A    No, I can't agree with that.
+
+22        Q    Okay.
+
+23        A    In a laboratory that is running their quality
+
+24   control, as they should be, is checking their
+
+25   laboratory, whether it is their air or their water for
+
+                                                                98
+
+
+ 1   contamination.  If they find that they have some kind of
+
+ 2   contamination issue, it must be rectified immediately.
+
+ 3   You cannot send out anymore analyses until that is
+
+ 4   rectified.
+
+ 5             So I understand your question about that,
+
+ 6   sure, if a lab has a contamination issue, they have to
+
+ 7   do something about it right away.  But they don't send
+
+ 8   out results in the midst of that.
+
+ 9        Q    Have you ever been in charge of quality
+
+10   control or overseeing MAS lab when findings of
+
+11   contamination were made by regulatory agencies coming in
+
+12   to audit the lab?
+
+13             MS. DARLSON:  Form.
+
+14             THE WITNESS:  A little more specific.
+
+15        Q    (By Mr. Bailey)  Than that?
+
+16        A    Can you be more specific?  I think I know
+
+17   where you're going with it but can you be more specific?
+
+18        Q    Sure.  Who is in charge of making sure there
+
+19   is not contamination at the MAS lab when you say you
+
+20   were in charge of overseeing quality control?
+
+21        A    Quality control, QC is in charge of that.
+
+22        Q    If there were findings in audits of
+
+23   contamination or unclean testing facilities, that would
+
+24   have been within your purview as the person responsible
+
+25   for quality control at MAS, do you agree with that?
+
+                                                                99
+
+
+ 1             MS. DARLSON:  Form.
+
+ 2             THE WITNESS:  No.  That is in the purview
+
+ 3        of the quality control manager.  And then they
+
+ 4        bring that to -- that issue to management.  And
+
+ 5        what you have at the laboratory in an ongoing
+
+ 6        sense is quality control all the time.  So they
+
+ 7        are working on a daily basis to maintain the
+
+ 8        cleanliness of the laboratory.
+
+ 9             MS. DARLSON:  Form.
+
+10        Q    (By Mr. Bailey)  Has MAS -- go ahead.  I'm
+
+11   sorry.
+
+12        A    That's okay.  In an audit -- with an audit
+
+13   typically what the auditors will do, they will come into
+
+14   the laboratory and they will look at all of the
+
+15   laboratory systems.  They will review the paperwork.
+
+16   They will review the protocols.  They will review the
+
+17   SOPs.  They will pull random reports and they will look
+
+18   for issues or problems.  They will walk through the
+
+19   laboratory and they will go looking for free agents.
+
+20             They will look for expiration dates.  They
+
+21   will look for storage.  They will look for all of these
+
+22   issues.  And then in their audit report they will come
+
+23   back and tell you what their findings are.
+
+24        Q    So these are easy questions.  In your role as
+
+25   the person responsible for overseeing quality control at
+
+                                                               100
+
+
+ 1   MAS, were you ever made aware of audits that were
+
+ 2   critical of the MAS lab and whether or not it was being
+
+ 3   operated in a way as to prevent contamination in
+
+ 4   testing?
+
+ 5             MS. DARLSON:  Object to the form.
+
+ 6             THE WITNESS:  I don't recall audits that
+
+ 7        showed contamination at the MAS laboratory.
+
+ 8        Q    (By Mr. Bailey)  My question was were you ever
+
+ 9   aware of them being audited for operating in such a way
+
+10   as to give rise to an increased risk of contamination
+
+11   with instructions to change the methods used within the
+
+12   lab?
+
+13        A    Not that I can recall, no.
+
+14             MS. DARLSON:  Object to the form.
+
+15        Q    (By Mr. Bailey)  All right.  So back to this
+
+16   issue of contamination.  It is an important issue when
+
+17   you're understanding that particular findings of --
+
+18   positive findings of fibers may be driven by the finding
+
+19   of a single one, two or three fibers in a grid, correct?
+
+20             MS. DARLSON:  Form.
+
+21             THE WITNESS:  Well, sure.  Your blank
+
+22        should not have anything.  I mean, it shouldn't
+
+23        have anything on it.
+
+24        Q    (By Mr. Bailey)  I want to ask you about ASTM
+
+25   D5755-09.  You are familiar with that, right?
+
+                                                               101
+
+
+ 1        A    Yes.
+
+ 2        Q    That's -- I'm going to use the title Standard
+
+ 3   Test Method for Micro Vacuum Sampling and Indirect
+
+ 4   Analysis of Dust by Transmission Electron Microscopy for
+
+ 5   Asbestos Structure Number Surface Loading.  That is a
+
+ 6   long title but that is it, right?
+
+ 7        A    It is, right.
+
+ 8        Q    And this is a standard by the ASTM that Dr.
+
+ 9   Longo sat on the committee responsible for drafting this
+
+10   procedure, right?
+
+11        A    I believe he was a co-author of that, yes.
+
+12        Q    Are you familiar with it?
+
+13        A    Yes.
+
+14        Q    Then I don't want to go through the details of
+
+15   it because I know you don't have it in front of you.
+
+16   But can you and I agree that it does discuss the
+
+17   preparation and evaluation of blanks in the lab setting
+
+18   and the role that they play, correct?
+
+19        A    Yes.
+
+20             MS. DARLSON:  Form.
+
+21        Q    (By Mr. Bailey)  And does acknowledge that at
+
+22   a certain level blanks can have asbestos fibers and yet
+
+23   still be considered not contaminated for the purpose of
+
+24   moving forward in comparative tests, right?
+
+25             MS. DARLSON:  Object to the form.
+
+                                                               102
+
+
+ 1             THE WITNESS:  No, I don't think so.
+
+ 2             MS. DARLSON:  Can you give the witness the
+
+ 3        document, Mr. Bailey?
+
+ 4             THE WITNESS:  Yeah.  Is this 5756 we're
+
+ 5        talking about?
+
+ 6        Q    (By Mr. Bailey)  5755-09.
+
+ 7        A    Okay.
+
+ 8             MS. DARLSON:  I don't have that in front
+
+ 9        of me.  I think if you're going to ask my
+
+10        expert questions about it I would like to see
+
+11        it, too.
+
+12             MR. BAILEY:  I'm sure you read it a
+
+13        million times and I'm not going to ask anything
+
+14        in detail.
+
+15        Q    (By Mr. Bailey)  Not you, Doctor.  I'm arguing
+
+16   with her.  I'll do this as fairly as I can because you
+
+17   say there are standards that dictate the responsible
+
+18   operation of the labs, testing facilities, correct?
+
+19        A    Yes.
+
+20        Q    This is one of those standards, correct?
+
+21        A    It is a standard.
+
+22        Q    It is written by, in part, Bill Longo, your
+
+23   former boss and the president of MAS, correct?
+
+24        A    He was --
+
+25             MS. DARLSON:  Object to the form.
+
+                                                               103
+
+
+ 1             THE WITNESS:  -- to my knowledge, one of
+
+ 2        the co-authors on the committee.
+
+ 3        Q    (By Mr. Bailey)  Are you familiar with it?
+
+ 4   I'm not going to read it to you.  I'm not going to
+
+ 5   expect you to read it.  Are you familiar with it as an
+
+ 6   expert in this field?
+
+ 7        A    Yeah, I'm familiar with it and I'm looking at
+
+ 8   it.
+
+ 9        Q    Okay.
+
+10        A    So you want to tell me what page you're
+
+11   looking at?
+
+12        Q    Page 523.
+
+13             MS. DARLSON:  Can you show it to me, Dr.
+
+14        Rigler or Mr. Bailey because I don't have it in
+
+15        front of me?
+
+16             THE WITNESS:  I'm sorry.  Let me be clear
+
+17        again.  Is this 5755?
+
+18        Q    (By Mr. Bailey)  Yes.
+
+19        A    Yeah.  Okay.  Okay.  So blanks will be
+
+20   considered contaminated if -- this is No. 11.  If after
+
+21   analysis they are shown to contain more than 53 asbestos
+
+22   structures per square millimeter.  This generally
+
+23   corresponds to three or four asbestos structures found
+
+24   in ten grid openings.  The source of the contamination
+
+25   must be found before any further analysis can be
+
+                                                               104
+
+
+ 1   performed.  Reject samples that were processed along
+
+ 2   with the contaminated blanks and prepare new samples
+
+ 3   after the source of the contamination is found.
+
+ 4             That is pretty much what I said before.
+
+ 5        Q    Well, what this does is -- I wasn't going to
+
+ 6   parse through this --
+
+ 7             MS. DARLSON:  Wait for a question, Doctor.
+
+ 8        Q    (By Mr. Bailey)  I wasn't going to parse
+
+ 9   through this this way but if that is your response.
+
+10   What it says is if it is contaminated, then you need to
+
+11   go find the source of the contamination, right?
+
+12             MS. DARLSON:  Object to the form.
+
+13             THE WITNESS:  Yes.  But it says you don't
+
+14        do any additional analysis in the meantime.
+
+15        Q    (By Mr. Bailey)  If it is contaminated, right?
+
+16    Okay.  Stick with me.  Blanks will be considered
+
+17   contaminated if after analysis they're shown to contain
+
+18   more than 53 asbestos structures per milliter.  In other
+
+19   words, if they have more than 53 structures per milliter
+
+20   or three to four fibers, they are contaminated.  That's
+
+21   what that paragraph says, right?
+
+22             MS. DARLSON:  Object to the form.
+
+23             THE WITNESS:  Yes.
+
+24             MS. DARLSON:  I don't know if you are
+
+25        trying to impeach him but it is not proper.
+
+                                                               105
+
+
+ 1        I'm not even sure if we are all looking at the
+
+ 2        same document.
+
+ 3             MR. BAILEY:  Well, he and I are.  He read
+
+ 4        it to me.
+
+ 5             MS. DARLSON:  Well, it would be nice if I
+
+ 6        could see it, too.  But, anyway, he is not the
+
+ 7        author of this document and he has acknowledged
+
+ 8        it is authoritative.  So if you want to move on
+
+ 9        because I'm not sure what the purpose of this
+
+10        is.  Kind of a waste of time.
+
+11        Q    (By Mr. Bailey)  Do you find this to be a
+
+12   waste of time as an expert in this field on the issue of
+
+13   what is and isn't considered contamination in a
+
+14   laboratory, Doctor?
+
+15        A    Here is the point --
+
+16             MS. DARLSON:  Move to strike;
+
+17        argumentative.
+
+18             THE WITNESS:  Here is the point.
+
+19             MS. DARLSON:  Hang on, Dr. Rigler.
+
+20        Q    (By Mr. Bailey)  Let me back up before you
+
+21   give me a point.  Is this document authoritative?  It is
+
+22   written by Bill Longo in part.  It is the standard for
+
+23   ASTM for testing and measuring for contaminations.  So
+
+24   in response to her objection I want to ask you this
+
+25   question.  Is this authoritative or not?
+
+                                                               106
+
+
+ 1             MS. DARLSON:  Objection.
+
+ 2             THE WITNESS:  I have it on my reliance
+
+ 3        list.  It is an ISO document.  It is followed
+
+ 4        in the procedurals.  But let me say, again,
+
+ 5        the --
+
+ 6        Q    (By Mr. Bailey)  I don't mean to interrupt.
+
+ 7   We got to get through the first part.  Is this
+
+ 8   authoritative or not?
+
+ 9        A    I would rely on this document.
+
+10        Q    Meaning it is authoritative?
+
+11        A    Yes.  So here again --
+
+12        Q    You have to wait until I ask you a question
+
+13   first.
+
+14        A    I know but you've asked me.  I haven't been
+
+15   able to fully answer it yet.
+
+16        Q    That's because of the objection.  Let's do
+
+17   this right so when we read it we'll know where we are.
+
+18   I don't mean to be rude.  I never want to be rude to
+
+19   you, Doctor, but let's do questions and answers.  And I
+
+20   want to work right now with whether or not you agree
+
+21   what this document says is if your blank is
+
+22   contaminated, don't use it and go find out the source.
+
+23             That is exactly what it says, right?
+
+24        A    Yes.
+
+25        Q    It also says it will be considered
+
+                                                               107
+
+
+ 1   contaminated if it has three or four asbestos structures
+
+ 2   found in a grid opening, correct?
+
+ 3        A    Yes.
+
+ 4             MS. DARLSON:  Object to the form.  For the
+
+ 5        record, whatever document you are looking at, I
+
+ 6        don't have in front of me.
+
+ 7        Q    (By Mr. Bailey)  There is no reason to belabor
+
+ 8   that.  It is pretty easy to read that what they are
+
+ 9   saying is it is contaminated if it has three or four
+
+10   structures on it.  Do you agree it is a fair read to say
+
+11   if there are less than that it is not considered
+
+12   contaminated?
+
+13             MS. DARLSON:  Object to the form.
+
+14             THE WITNESS:  No.  If there is one on
+
+15        there I consider it contaminated.  Here is the
+
+16        thing --
+
+17        Q    (By Mr. Bailey)  That's not what this document
+
+18   says.
+
+19        A    Here is the thing, the RJ Lee Group had no
+
+20   contamination on their blanks.  There was no reason for
+
+21   them to stop doing anything, yet they did.  And they
+
+22   moved forward in trying to figure out what their
+
+23   contamination issue was.
+
+24             So they completely ignored -- they completely
+
+25   ignored this protocol.  They have gone off on their own
+
+                                                               108
+
+
+ 1   and done their own thing and it is not proper.
+
+ 2        Q    I understand that and I appreciate your
+
+ 3   explanation.  My question is this authoritative standard
+
+ 4   written by Bill Longo says that a blank is contaminated
+
+ 5   if it has three or four asbestos structures on a grid
+
+ 6   opening.  That is what it says, right?
+
+ 7             MS. DARLSON:  Object to the form.
+
+ 8             THE WITNESS:  I would consider if it had
+
+ 9        one.
+
+10        Q    (By Mr. Bailey)  But that is not what he wrote
+
+11   and that is not what this standard says.  This is an
+
+12   important point.  Not whether you agree with it, just
+
+13   what it says.
+
+14        A    It says --
+
+15             MS. DARLSON:  Document speaks for itself.
+
+16        Could we move on?  I mean, I assume it does.
+
+17        You still haven't sent it to me.  I don't know
+
+18        what you're looking at.  It is not on the
+
+19        screen.  You haven't marked it as an exhibit.
+
+20             So I'm just going to have to say if you're
+
+21        asking him what the document says, it speaks for
+
+22        itself and I would appreciate it if you move on.
+
+23        Q    (By Mr. Bailey)  Okay.  Let's do two things.
+
+24   I'm going to mark this as Defendant's Exhibit No --
+
+25   where are we, 6?
+
+                                                               109
+
+
+ 1                    (Exhibit 5 was marked
+
+ 2                     for identification.)
+
+ 3        Q    (By Mr. Bailey)  Since this is on your
+
+ 4   reliance list, I assume you provided it to plaintiffs'
+
+ 5   counsel, Dr. Rigler?
+
+ 6        A    Yes.
+
+ 7             MR. TISI:  Mel, is there a way that you
+
+ 8        can at least, if you're going to question him
+
+ 9        on it -- I mean, Catherine has asked you about
+
+10        five times.  Can you at least send an e-mail
+
+11        with a copy of what you're looking at?
+
+12             MR. BAILEY:  If you want to take that much
+
+13        time?  I really wasn't --
+
+14             MR. TISI:  I really don't but it appears
+
+15        to be important to you and it appears to be
+
+16        important --
+
+17             MR. BAILEY:  I'll do this, yes, I can.  It
+
+18        will take me a little while.  I'm not as adept
+
+19        at some of this as you or I am going to move
+
+20        on.  Whichever you prefer.  We can stand down.
+
+21        I'll scan it, I'll send it or I'll go get it or
+
+22        we can move on.  I really didn't intend to go
+
+23        into that level of detail with him.  I don't
+
+24        mind.  I can do it.  It is not like my
+
+25        paralegal is going to run down and do it for me
+
+                                                               110
+
+
+ 1        in two seconds.  It will take me a minute.  And
+
+ 2        I'm done asking him about it.
+
+ 3             MS. DARLSON:  Great.
+
+ 4             MR. BAILEY:  It is up to you, Chris.
+
+ 5             MR. TISI:  I leave it to Catherine.  It is
+
+ 6        just she has asked you five times so I want
+
+ 7        to -- you know, she is defending the
+
+ 8        deposition.
+
+ 9             MR. BAILEY:  Or Catherine.  I didn't mean
+
+10        to cut you out.  I'm sorry.  I can move on and
+
+11        we can take a break and I can e-mail it to you.
+
+12             MS. DARLSON:  It is up to you.  It is your
+
+13        deposition, Mr. Bailey.  If you're done, then
+
+14        you're done.
+
+15             MR. BAILEY:  All right.
+
+16        Q    (By Mr. Bailey)  Other than -- strike that.
+
+17             Do you have the opinion that Mr. Casaretto was
+
+18   exposed to asbestos from baby powder made by Johnson and
+
+19   Johnson from any source other than Brazil?
+
+20             MS. DARLSON:  Object to the form.
+
+21             THE WITNESS:  To my knowledge, his use of
+
+22        baby powder was mostly an American product,
+
+23        American made product.  A portion of the time
+
+24        he used South American baby powder.
+
+25             So, yeah, in my opinion, he would have had --
+
+                                                               111
+
+
+ 1        for his years of use, he would have had a
+
+ 2        significant exposure to asbestos from baby powder
+
+ 3        contaminated with asbestos.
+
+ 4        Q    (By Mr. Bailey)  And what years do you contend
+
+ 5   that he would have been exposed to baby powder from a
+
+ 6   source other than Brazil?
+
+ 7        A    I would have to look back -- I don't recall,
+
+ 8   again.  I would have to look back again at his
+
+ 9   depositions.  But my understanding that it was in the
+
+10   '60s and '70s and '80s at least.
+
+11        Q    That's based upon your familiarities with the
+
+12   facts in this case?
+
+13        A    To my knowledge.
+
+14        Q    What are the source mines that you look to to
+
+15   answer the question in your mind whether there is
+
+16   asbestos contamination in the mines?
+
+17        A    It would have been the mines in Vermont and
+
+18   Italy.
+
+19        Q    You sent a -- at least I received a report
+
+20   from Dr. Longo yesterday evening, I think it is dated
+
+21   June of 2020; is that right?
+
+22        A    No.  That one was September 8th of 2020.
+
+23        Q    That's right.  I got one last night.
+
+24        A    Yeah.
+
+25        Q    I've got it on my screen.
+
+                                                               112
+
+
+ 1        A    I just got it, I think, yesterday.
+
+ 2        Q    Did you study it enough to offer your opinions
+
+ 3   about whether or not you agree with the findings?
+
+ 4        A    Yes.
+
+ 5        Q    How much time did you spend studying that
+
+ 6   particular report?
+
+ 7        A    Probably at least a good hour, hour and a
+
+ 8   half.
+
+ 9        Q    What methods of testing were used in
+
+10   connection with that report?
+
+11        A    He used -- the laboratory used -- they used
+
+12   PLM.  I believe they used -- and I can double check and
+
+13   look back at it.  Let me look at the report real quick.
+
+14   Yeah, this one used PLM.  He used the CSM heavy liquid
+
+15   separation method and it also used the ISO 22262-1
+
+16   method without heavy liquid for PLM.  And then also used
+
+17   the Blount PLM for amphibole asbestos analysis.  So --
+
+18        Q    I'm sorry.
+
+19        A    That's okay.
+
+20        Q    What year was the product that was tested
+
+21   there?
+
+22        A    I believe the products, let's see, were
+
+23   2000 -- at least 2000 -- I've got to go back and look at
+
+24   the --
+
+25        Q    Here is an easier one.  What mines are they
+
+                                                               113
+
+
+ 1   from?
+
+ 2        A    They were relatively newer containers.  The
+
+ 3   small containers were all, I believe, 2019 and 2020.
+
+ 4   But I have to double check that.
+
+ 5        Q    What mine would that have been from?
+
+ 6        A    That would have mainly been from the Chinese
+
+ 7   mines.
+
+ 8        Q    Do you have any information to suggest that
+
+ 9   Mr. Casaretto used any Johnson and Johnson product from
+
+10   the Chinese mine?
+
+11        A    I would have to review his deposition, the
+
+12   information that I have to see.  If he used it there for
+
+13   2003 -- if he used North American products from 2003,
+
+14   then, yes.
+
+15        Q    Do you have any notes or anything there in
+
+16   front of you that would allow you -- before we put this
+
+17   to bed?
+
+18        A    No.
+
+19        Q    As the expert witness related to his use of
+
+20   products and exposure, give me your best estimate, based
+
+21   upon what you know about this case today, as to when he
+
+22   last used Johnson and Johnson baby powder.
+
+23             MS. DARLSON:  Object to the form.  Move to
+
+24        strike.  Misstates his disclosure and misstates
+
+25        his prior testimony.  He has already said he
+
+                                                               114
+
+
+ 1        has not calculated exposures.
+
+ 2             THE WITNESS:  Right.  That would be -- Dr.
+
+ 3        Longo had done that.
+
+ 4        Q    (By Mr. Bailey)  Maybe that was too
+
+ 5   complicated a question.
+
+ 6             As the expert witness here in this case about
+
+ 7   the products used by Mr. Casaretto, can you tell me,
+
+ 8   based upon your familiarity with the facts of this case,
+
+ 9   when he last used Johnson and Johnson products?
+
+10             MS. DARLSON:  Object to form.
+
+11             THE WITNESS:  I was not asked to opine on
+
+12        his exposure so that was not part of what I did
+
+13        in this case.
+
+14        Q    (By Mr. Bailey)  Well, were you asked to opine
+
+15   about whether mine sources that sold talc ore to Johnson
+
+16   and Johnson contained asbestos?
+
+17        A    Was I asked to opine on that?
+
+18        Q    I'm not trying to be cute here.  Are you going
+
+19   to get on a witness stand and say there is asbestos in
+
+20   these mines?
+
+21        A    If asked about specific mines in time, sure.
+
+22        Q    Okay.  Do you know, as his expert witness,
+
+23   whether or not he ever used a product that would have
+
+24   been mined in China and, therefore, relevant to the
+
+25   report I got last night?
+
+                                                               115
+
+
+ 1        A    Again, I would have to check his record of use
+
+ 2   and I don't recall that as I sit here.
+
+ 3        Q    As you sit here today, can you tell me under
+
+ 4   oath that any of the findings regarding Dr. Longo's
+
+ 5   study of Chinese talc in 2019 products relate to the
+
+ 6   actual product that Mr. Casaretto used?
+
+ 7        A    I would have to defer that to Dr. Longo.
+
+ 8        Q    You can't do that today?
+
+ 9        A    Not as I sit here.
+
+10        Q    You can't tell me --
+
+11        A    I hadn't been ask to do that.
+
+12        Q    Well, you looked at his exposure estimations
+
+13   and I think stood ready to verify those, right?
+
+14        A    And I did in terms of his calculations, yes.
+
+15        Q    Okay.  Well, what I want to know is part of
+
+16   the calculation is how long you used the product, right?
+
+17        A    Well, the --
+
+18             MS. DARLSON:  Object to the form.
+
+19             THE WITNESS:  In this case it was based
+
+20        only on the amount of material in the product
+
+21        bottle, as I recall.  It wasn't based on his
+
+22        exposure.  It was based on the amount of
+
+23        product involved.
+
+24        Q    (By Mr. Bailey)  I won't belabor this.  So as
+
+25   you sit here today you really don't know when he first
+
+                                                               116
+
+
+ 1   claims to have used Johnson baby powder or when he last
+
+ 2   claimed to use is; is that fair?
+
+ 3        A    As I said, I don't recall as I sit here.
+
+ 4        Q    Okay.  Let me move on to one last thing and I
+
+ 5   said I would stop.  And that is what I'm going to mark
+
+ 6   as Exhibit No. 6, which is an article you guys sent me
+
+ 7   last night authored by, in part, Shawn Fitzgerald.
+
+ 8                    (Exhibit 6 was marked
+
+ 9                     for identification.)
+
+10        Q    (By Mr. Bailey)  Are you familiar with that?
+
+11        A    Yes.
+
+12        Q    Only question I'm going to ask you about that
+
+13   is when did you first read it?
+
+14        A    I read that probably a couple of weeks ago.
+
+15        Q    Okay.
+
+16        A    When it first came out, to my knowledge -- I
+
+17   can't remember exactly when it first came out but it
+
+18   wasn't that long ago that it was out.
+
+19        Q    Did you -- I said I was going to ask you one,
+
+20   let's do three.  Did he find any asbestos in the
+
+21   cosmetic talcum powder that he tested, the baby powder?
+
+22             MS. DARLSON:  Form.
+
+23             THE WITNESS:  I don't believe so.  He
+
+24        mainly found it in the cosmetic -- what do you
+
+25        call them?  The facial powders.
+
+                                                               117
+
+
+ 1        Q    (By Mr. Bailey)  Let me ask it in a cleaner
+
+ 2   way.  Did he find asbestos in any baby powder?
+
+ 3             MS. DARLSON:  Form.
+
+ 4             THE WITNESS:  I don't -- I would have to
+
+ 5        go back and look.  As I recall, it was in the
+
+ 6        facial powder materials.
+
+ 7        Q    (By Mr. Bailey)  Okay.  Is there anything
+
+ 8   about the way that he identified the products in the
+
+ 9   table that allows you to know who manufactured the
+
+10   products?
+
+11        A    Again, my understanding was that they were
+
+12   current products within the last five, four, three
+
+13   years, something like that.
+
+14        Q    I just need the name of the manufacturer.
+
+15        A    Far back.  I don't know.  I would have to look
+
+16   again.
+
+17        Q    How about the mine sources for any of those
+
+18   products, do you know that?
+
+19        A    I don't.  I don't have that information.
+
+20        Q    Okay.  These depositions, as you know, aren't
+
+21   easy.  And I apologize.  Sometimes I didn't get you what
+
+22   you needed document wise.  I appreciate you being
+
+23   patient with me.
+
+24             Just one last question.  Do you have any
+
+25   additional work that you expect to do by way of testing
+
+                                                               118
+
+
+ 1   or analyzing additional facts related to this case that
+
+ 2   you haven't already done?
+
+ 3        A    None.  Only if asked by my client.  Not at
+
+ 4   this time.  I don't know of any.
+
+ 5        Q    Okay.  I think that's it.  I hope I didn't go
+
+ 6   over too long.  Thanks.  It is good to see you again, by
+
+ 7   the way.  And thanks for your patience.
+
+ 8             MS. COX:  Hold on.  I will be asking some
+
+ 9        questions, too.
+
+10             MR. TISI:  I appreciate that.  I just
+
+11        wanted to make sure we weren't signing off.
+
+12             MR. BAILEY:  No.  No.  I'm saying good
+
+13        bye.
+
+14   CROSS EXAMINATION:
+
+15   BY MS. COX:
+
+16        Q    Good afternoon, Dr. Rigler.  It has been about
+
+17   an hour.  I'm not going to have very long but I do want
+
+18   to give you the opportunity to take a break if you need
+
+19   it and then come back or would you rather just finish?
+
+20        A    Can you give me five minutes?
+
+21        Q    Sure.
+
+22        A    Then we can go on.
+
+23        Q    That's fine.
+
+24        A    Thank you.
+
+25           (A break was taken in the proceedings.)
+
+                                                               119
+
+
+ 1        Q    (By Ms. Cox)  Good afternoon, Dr. Rigler.  My
+
+ 2   name is Andrea Cox and I'm going to be asking you very
+
+ 3   different questions from what you've already been asked
+
+ 4   today.
+
+ 5        A    Okay.
+
+ 6        Q    First, I would like to begin with asking if
+
+ 7   you are familiar with the off the shelf report prepared
+
+ 8   by Dr. Longo?
+
+ 9        A    Yes.
+
+10        Q    Okay.  Because we haven't really talked about
+
+11   it today.  You had mentioned earlier that there was an
+
+12   updated report for the South American talc.  Was there
+
+13   also an updated report for the off the shelf?
+
+14        A    Yes.  That was the one that I received
+
+15   yesterday and it is dated December 8, 2020.
+
+16        Q    Is that the same thing where the changes were
+
+17   primarily typographical or grammatical changes?
+
+18        A    On that one there was the addition of another
+
+19   sample.  From what I saw, there were the three travel
+
+20   size bottles of Johnson and Johnson baby powder and then
+
+21   there was a large bottle, I think a 22 ounce bottle,
+
+22   that was -- I'm trying to remember.  I believe it was an
+
+23   '80s vintage bottle.  I would have to look at the
+
+24   report.
+
+25        Q    Okay.  Could we go off the record for a
+
+                                                               120
+
+
+ 1   second?
+
+ 2           (An off the record discussion was had.)
+
+ 3        Q    (By Ms. Cox)  Dr. Rigler, I was just informed
+
+ 4   that there is a supplemental report for the off the
+
+ 5   shelf container that is dated December 8th and I
+
+ 6   inadvertently was excluded from the e-mail alerting us
+
+ 7   to look for updated information for you.  So I'm not
+
+ 8   really in a position to discuss anything that might be
+
+ 9   supplemental in that report and it is entirely possible
+
+10   that it won't be material but if it is it is possible I
+
+11   would want to take a quick update deposition.
+
+12             But I would like to spend the time I got with
+
+13   you now.  Maybe you can walk me through, besides the 22
+
+14   ounce bottle, is there any other substantive change to
+
+15   this updated report?
+
+16        A    So the only thing in the top of it it says
+
+17   9/29/2020 revision.  I was talking with Mr. Bailey
+
+18   before, CSM, HLS, PLM method section changed 200 grams
+
+19   to 200 milligrams.  Removed section A coversheet, not
+
+20   associated with any data.  Correct BRR talc data.  By
+
+21   referring high to high and medium, moderate.  Then it
+
+22   says 1208, that is this revision.  Revision two, add
+
+23   analysis of the off the shelf 22 ounce bottle.  Has
+
+24   minimum of that and edited report for that analysis.
+
+25   Remove duplicate pages in section three of the report.
+
+                                                               121
+
+
+ 1             So in the other -- in the 9/29 report there
+
+ 2   was an entire section that was duplicated inside of the
+
+ 3   report and that was taken out.  It was essentially
+
+ 4   saying that it just got duplicated.  But it is not in
+
+ 5   this one anymore.  So those are the major revisions that
+
+ 6   are noted in the header above the table of contents.
+
+ 7        Q    And, to your knowledge, the header above the
+
+ 8   table of contents reflects all the changes?
+
+ 9        A    Again, that's what is indicated there.
+
+10        Q    When you were reviewing the updated report,
+
+11   did anything else stand out to you as being different
+
+12   than what is reflected in that header?
+
+13        A    I don't recall anything different as I sit
+
+14   here.  So the main thing was the addition of the off the
+
+15   shelf 22 ounce bottle.
+
+16        Q    Okay.  So looking at this supplemental report,
+
+17   it identifies that Dr. Longo purchased three bottles of
+
+18   Johnson's baby powder at 1.5 ounces.  Do you agree with
+
+19   me those would not have been products provided by
+
+20   Mr. Casaretto to Dr. Longo?
+
+21        A    Yes, because they were products that I believe
+
+22   Dr. Longo bought at CVS and Walgreens in the area of the
+
+23   laboratory over in Suwannee, Georgia.
+
+24        Q    Where did the 22 ounce bottle of Johnson's
+
+25   powder originate from?
+
+                                                               122
+
+
+ 1        A    That originated from, it looks like, in the
+
+ 2   chain of custody from Mr. Steve Crick of Hunter,
+
+ 3   Farrington, McClain.  It looks like a sample -- It looks
+
+ 4   like a sample that came from his wife that she
+
+ 5   purchased.
+
+ 6        Q    So, again, that is not a product that, to your
+
+ 7   understanding, Mr. Casaretto used?
+
+ 8        A    I don't -- again, I would have to review his
+
+ 9   usage beyond 2003 because that would have all been
+
+10   products from China.  So the three small bottles are
+
+11   ones that would be Chinese products.  And also this one,
+
+12   if it was beyond 2003, will also be that kind of
+
+13   product, too.
+
+14        Q    Let me ask a different question.  I mean,
+
+15   there is no understanding on your part that
+
+16   Mr. Casaretto used the powder that is in that 22 ounce
+
+17   bottle that was examined?
+
+18        A    I don't believe that would be possible unless
+
+19   it was his bottle and he had submitted it.
+
+20        Q    That's what I'm trying to find out.
+
+21        A    The powder, if it was China powder, it could
+
+22   have come from the same mine, from the same mine source.
+
+23   They have been mining that source for nearly a decade.
+
+24   So it could be from the same mine source, yeah.
+
+25        Q    What I'm getting at is I don't know who Steve
+
+                                                               123
+
+
+ 1   Crick is and I'm trying to find out if this 22 ounce
+
+ 2   bottle is something that had been in Dr. Casaretto's
+
+ 3   possession that he submitted for testing similar to what
+
+ 4   occurred with the South American talc?
+
+ 5        A    Not that I know of.
+
+ 6        Q    Okay.  Dr. Rigler, do you know what Publix
+
+ 7   Supermarkets is?  Are you familiar with Publix?
+
+ 8        A    Yes.
+
+ 9        Q    Have you shopped there?
+
+10        A    My wife does.
+
+11        Q    Okay.  What kind of products do you associate
+
+12   with Publix?
+
+13        A    They have all types of grocery products.  They
+
+14   also have hardware products.  They have cosmetic care
+
+15   products.  They sell the Johnson and Johnson powder line
+
+16   and they got Gold Bonds and those kind of things.  They
+
+17   also sell produce, meats, you know, balloons, cards, you
+
+18   know, all kinds of things.
+
+19        Q    And, I'm sorry, I don't -- you're located in
+
+20   Georgia; is that right?
+
+21        A    Yes.
+
+22        Q    And does your family shop at Publix for its
+
+23   groceries currently?
+
+24        A    Well, my wife does.  She likes going to
+
+25   Publix.  I believe they are pricey so I don't
+
+                                                               124
+
+
+ 1   specifically shop at Publix.
+
+ 2        Q    All right.  And I presume you know what CVS
+
+ 3   is.  What do you associate as far as what CVS sells?
+
+ 4        A    Again, they are sort of a mini supermarket
+
+ 5   these days.  But they sell -- they also sell grocery
+
+ 6   items, snacks, this and that kind of things, lunch meats
+
+ 7   in the freezers.  They also got cards, greeting cards,
+
+ 8   batteries.  They also sell powder products, cosmetic
+
+ 9   products and also, you know, over-the-counter
+
+10   pharmaceuticals and also prescription pharmaceuticals,
+
+11   too.
+
+12        Q    And do you shop at CVS?
+
+13        A    I have on occasion, yes.
+
+14        Q    In preparing your opinions in this case, have
+
+15   you reviewed any documents from a retailer?
+
+16        A    That's kind of broad.  Can you narrow it down
+
+17   a bit?
+
+18        Q    Sure.  Have you reviewed any of the documents
+
+19   that Publix produced in this case?
+
+20        A    Let me think.  I don't recall Publix
+
+21   documents.  No, I don't recall Publix documents, as I
+
+22   sit here.
+
+23        Q    Do you recall reviewing any interrogatory
+
+24   responses from Publix for CVS?
+
+25        A    Again, I don't recall those.  There may have
+
+                                                               125
+
+
+ 1   been but I don't recall them.
+
+ 2        Q    When you were reviewing Dr. Casaretto's
+
+ 3   testimony, did you take any notes about where he
+
+ 4   purchased the products from?
+
+ 5        A    No.
+
+ 6        Q    Have you ever tested any products, any powder
+
+ 7   products that you understood to have been purchased at a
+
+ 8   Publix?
+
+ 9        A    Yes.  When I was at MAS a number of the powder
+
+10   products that were tested early on, I believe some of
+
+11   them came from the Publix supermarkets.
+
+12        Q    Is that something that you personally were
+
+13   testing or Dr. Longo or someone else in the group?
+
+14        A    Well, I was part of the group that was testing
+
+15   the products.  What I was talking about with Mr. Bailey,
+
+16   collaborated on the project with Dr. Longo.
+
+17             So in the beginning of the project a number of
+
+18   sources were sought for on the shelf products and CVS,
+
+19   Walgreens, Kroger, Wal-Mart, Publix -- trying to think
+
+20   if there were others.  Some came from e-Bay.  I'm not
+
+21   sure if any came from Itsy or not but, you know,
+
+22   available products that was out there, talcum powder
+
+23   products.
+
+24        Q    Did you prepare any reports that reflected
+
+25   testing results from products purchased from Publix?
+
+                                                               126
+
+
+ 1        A    I don't recall.  Those -- any from Publix.  I
+
+ 2   don't recall those, no.
+
+ 3        Q    If a report was prepared, is that something
+
+ 4   that would be in the MAS records?
+
+ 5        A    It should be, yes.
+
+ 6        Q    I note from this supplemental report of
+
+ 7   December 2020 that it refers to CVS, Walgreens and
+
+ 8   Target.
+
+ 9        A    Yes.
+
+10        Q    Why doesn't it mention Publix?
+
+11        A    I don't believe there were any products that
+
+12   were purchased from Publix in that.  I'm looking quickly
+
+13   through the chains and I don't think that was the case.
+
+14   I think -- yeah, let me see.  Purchased CVS, Walgreens.
+
+15   There weren't any.  Wait.  I take that back.  There was
+
+16   one that was purchased -- there were two that were
+
+17   purchased from Publix.
+
+18        Q    Where are you looking, sir?
+
+19        A    I'm looking at the chain of custody -- let's
+
+20   see, section two, first page of section two.
+
+21        Q    Which page of 18 is that?
+
+22        A    No.  Well, I say -- I would say 20, page 20.
+
+23   You see section two there and then a page that follows
+
+24   that?  Are we looking at the same report?  Are we
+
+25   looking at the supplemental two report, report two?
+
+                                                               127
+
+
+ 1        Q    Report two that I just received --
+
+ 2        A    Dated December 8th.
+
+ 3        Q    Dated -- yup, December 8th.
+
+ 4        A    Okay.
+
+ 5        Q    I have it shows 18 pages.
+
+ 6        A    No.  It should be a lot more than that.  It is
+
+ 7   about 194 pages.
+
+ 8        Q    Okay.  We're talking about two different
+
+ 9   things.  You're talking about the exhibit.  I'm
+
+10   following you now.  Please be patient with me.
+
+11        A    That's all right.
+
+12        Q    I just got this report.  I'm with you.  Okay.
+
+13        A    Okay.  So, yeah, all on page 20.  There is a
+
+14   chain of custody.  It is dated July 8, 2020 and then
+
+15   sample number 006 and sample number 007 are both Johnson
+
+16   baby powder 1.5 ounce purchased from Publix in Suwannee,
+
+17   Georgia.  July 1st they were purchased.
+
+18        Q    Why aren't the test results for those two
+
+19   Publix bottles reflected in the written report?
+
+20        A    I don't know.  That is something that you will
+
+21   have to ask Dr. Longo.  Apparently, it looks like the
+
+22   first three were analyzed, the two from CVS and the ones
+
+23   from Walgreens.  And he had a total of 13 of them that
+
+24   were purchased.  And it looks like the first three were
+
+25   analyzed.  So that is a question for Dr. Longo.
+
+                                                               128
+
+
+ 1        Q    Is it fair to say, though, that with regard to
+
+ 2   your opinions in this case, you have not relied on the
+
+ 3   results of any testing of a product purchased from
+
+ 4   Publix?
+
+ 5             MS. DARLSON:  Object to the form.
+
+ 6             THE WITNESS:  I don't have -- I don't have
+
+ 7        a recollection of that.  I may have but I don't
+
+ 8        recall that as I sit here.
+
+ 9        Q    (By Ms. Cox)  Well, this is my opportunity to
+
+10   find out what you know and what you will tell a jury,
+
+11   so...
+
+12        A    I understand.  I would have to go back and
+
+13   look at previous chains of custody for products.  Again,
+
+14   I remember that a number of products were produced --
+
+15   were purchased, I believe, in 2017, something like that,
+
+16   that were off the shelf.  And now whether any were
+
+17   purchased from Publix or not, I couldn't say.  But I
+
+18   would definitely say there were samples purchased from,
+
+19   I believe, Wal-Mart and Kroger, I believe, CVS.  They
+
+20   were stores that were in the Suwannee Creek area there
+
+21   in -- close to MAS.
+
+22             So unless there were some other laborer,
+
+23   essentially going to be controlled samples for the work
+
+24   that was being done.
+
+25        Q    So I understand that you might have some
+
+                                                               129
+
+
+ 1   historical recollection of powder purchased from a
+
+ 2   Publix.  But as we sit here today, are you able to give
+
+ 3   me any detailed opinion about testing of a bottle of
+
+ 4   Johnson's baby powder that was purchased from a Publix?
+
+ 5        A    I don't recall any.  I don't recall that, no.
+
+ 6        Q    Okay.  Do any of your opinions depend on where
+
+ 7   the powders were purchased from?
+
+ 8        A    No.  The opinions are based upon the results
+
+ 9   from the analysis of the powders regardless of where
+
+10   they were purchased.
+
+11        Q    So the location of where the powder is
+
+12   purchased is not material to your analysis; is that
+
+13   fair?
+
+14        A    Only in terms of the location of the material
+
+15   that was put into the bottle, where it actually came
+
+16   from.
+
+17        Q    And do you have any information that certain
+
+18   stores received bottles that are mined from one place
+
+19   and other stores received bottles that are mined from a
+
+20   different place?
+
+21        A    No.  Again, depending upon the year of
+
+22   manufacturer of the Johnson and Johnson products, beyond
+
+23   2003 they were mined in China.  So they would have been
+
+24   from that area, to my knowledge, at that time.
+
+25        Q    Right.  But you're talking about manufacture
+
+                                                               130
+
+
+ 1   point of view and I'm asking a retailer point of view.
+
+ 2        A    Yes.
+
+ 3        Q    You got no information that stores make any
+
+ 4   determination of where the talc material is mined from,
+
+ 5   right?
+
+ 6        A    Well, again, I don't know in terms of how they
+
+ 7   do their marketing, you know, as far as how they work
+
+ 8   with their venders.  Because, of course, you know,
+
+ 9   everyone that's in business, you know, wants to be as
+
+10   profitable as possible.  So they are going to look
+
+11   probably more in terms of the profitability of products
+
+12   and cost and that kind of thing rather than some of
+
+13   these other factors.
+
+14        Q    And I think that is what we're drilling down
+
+15   to, you just don't know those facts, is that right,
+
+16   about what retailers do and their input on the products
+
+17   that end up on their shelves?
+
+18        A    Well, again, if -- I mean, it just has to do
+
+19   with the buyers and the way that they do their buying
+
+20   from the venders.  So whatever their protocols or
+
+21   procedures are for that, I'm not -- I don't know what
+
+22   they are.  I'm sure they're documented within the
+
+23   corporation that are doing the buying and selling, yeah.
+
+24        Q    That is not you, right, Dr. Rigler?
+
+25        A    No, that's correct.
+
+                                                               131
+
+
+ 1        Q    All right.  And so is it fair to say that you
+
+ 2   don't plan on offering any opinions about the standard
+
+ 3   of care for retailers that sell talc products?
+
+ 4        A    That is correct.
+
+ 5        Q    Okay.  And you don't have any particular
+
+ 6   education or training or other expertise regarding
+
+ 7   retail sellers; is that fair?
+
+ 8        A    Only in my past life jobs earlier when I was
+
+ 9   working in some retail locations.  But I wasn't privy of
+
+10   all of the insides of the way things were being done,
+
+11   no.
+
+12        Q    Well, let's talk about that.  Were you a
+
+13   shelfer or a bag boy, a cashier?  Are we talking about
+
+14   those kind of jobs?
+
+15        A    Yeah, pretty much just putting things on the
+
+16   shelf, more than anything else.
+
+17        Q    Okay.  But you wouldn't have been in the
+
+18   corporate side of the retail shop; is that fair?
+
+19        A    Correct.
+
+20        Q    All right.  There is nothing on your CV that
+
+21   indicates any sort of expertise regarding retailers; is
+
+22   that true?
+
+23        A    Not that I know of.  Not that I can think of,
+
+24   no.
+
+25        Q    And the attorneys in this case have provided
+
+                                                               132
+
+
+ 1   us with some reliance materials that support your
+
+ 2   opinions.  Did any of those reliance materials address
+
+ 3   the retailers in this case, Publix or CVS?
+
+ 4        A    Not that I can recall.  They may have referred
+
+ 5   to retail sources but I don't recall specific names of
+
+ 6   retailers in those documents.  I would have to go back
+
+ 7   and review them again.  But they have referred to, you
+
+ 8   know, off the shelf products.  So I would have to go
+
+ 9   back and look.
+
+10        Q    Do you have any information about how
+
+11   manufactured lots of baby powder are distributed to the
+
+12   retail stores?
+
+13        A    I have information in regard to mining and the
+
+14   distribution throughout the world.  Specifically to
+
+15   processing plants in the world.  Now beyond the
+
+16   processors to retailers, I don't recall information like
+
+17   that.  It is mainly from the mine to the processors.
+
+18        Q    So when we get to trial, you're not going to
+
+19   be discussing what happens in the life of a bottle of
+
+20   Johnson baby powder after it leaves Johnson and Johnson,
+
+21   right?
+
+22        A    Well, I have -- again, I knew certain steps of
+
+23   where things begin and where things may end again on the
+
+24   processing side.  But as far as retail goes, I don't
+
+25   recall much specific information on that.
+
+                                                               133
+
+
+ 1        Q    But you don't have an opinion about it; is
+
+ 2   that fair?
+
+ 3        A    Only that it happens.  Only that the product
+
+ 4   is mined, milled and distributed throughout those
+
+ 5   different locations in the world.
+
+ 6        Q    But am I correct that you don't have an
+
+ 7   opinion about what happens with the finished product and
+
+ 8   how it gets onto the shelves of a retailer?
+
+ 9        A    I just know that when I walk into the store
+
+10   and it is on the shelf, that somebody put it there.  It
+
+11   most likely came out of a box, a carton and was put in
+
+12   the shelf there.
+
+13        Q    And I think anyone who has ever shopped at any
+
+14   store also has that same experience, there is nothing
+
+15   particular about the experience you just described that
+
+16   requires an expert to discuss; is that fair?
+
+17        A    Yeah, I don't know, again, as far as where
+
+18   we're going with this but in terms of how it gets on the
+
+19   shelf and all of that, it is obvious, again, that it is
+
+20   to end up on retail shelves or in hospitals, if that is
+
+21   a specific place where it is to go.  That's really up to
+
+22   the buyers and venders who are, you know, operational in
+
+23   that chain of scheme of things.
+
+24        Q    And do you have any information about how long
+
+25   it takes between the manufacturer of the finished
+
+                                                               134
+
+
+ 1   product until the time it is available for sale at any
+
+ 2   given store?
+
+ 3        A    I don't recall specific information on that in
+
+ 4   terms of the distribution that way.  Talc is one of
+
+ 5   those products that has somewhat of an unlimited
+
+ 6   lifetime.  So, anyway, I don't know what that time
+
+ 7   period would be.
+
+ 8        Q    Do you have any data about how many shipments
+
+ 9   of any given product have been made to any given store?
+
+10        A    No.
+
+11        Q    All right.  If you will be patient with me,
+
+12   I'm just going to look through my notes and I'm going
+
+13   to -- I would like to -- I would like to take ten
+
+14   minutes because I would like to have a deeper read of
+
+15   this supplemental.  I saw the earlier one.  I just want
+
+16   to eyeball it.  So if we can take ten minutes, that
+
+17   would be great.
+
+18        A    Sure.
+
+19        Q    Thank you.
+
+20           (A break was taken in the proceedings.)
+
+21        Q    (By Ms. Cox)  Dr. Rigler, I do not have any
+
+22   further questions for you.  Thank you for your time,
+
+23   sir.
+
+24        A    You're welcome.  Thank you.
+
+25   CROSS EXAMINATION:
+
+                                                               135
+
+
+ 1   BY MS. DARLSON:
+
+ 2        Q    Hi, Dr. Rigler.
+
+ 3        A    How are you doing?
+
+ 4        Q    Pretty good.  You holding up okay?
+
+ 5        A    Good.  How about you and the weather out
+
+ 6   there?
+
+ 7        Q    Lovely.
+
+ 8        A    Good.
+
+ 9        Q    Just a couple of follow-up questions.  You
+
+10   weren't asked a lot about your case specific opinions in
+
+11   this case but have you reviewed our expert disclosure?
+
+12        A    Yes.
+
+13        Q    And are you prepared to testify at trial as to
+
+14   the matters that are outlined in that expert disclosure?
+
+15        A    Yes, I am.
+
+16        Q    Okay.  And you were asked a couple of
+
+17   questions by Mr. Bailey concerning the results of the RJ
+
+18   Lee testing of the samples from the Magnesita mine, do
+
+19   you recall that line of questioning?
+
+20        A    Yes.
+
+21        Q    And I believe he asked you a few questions
+
+22   specifically about chrysotile.  Was that the only type
+
+23   of asbestos that was found in the samples from the
+
+24   Magnesita mine?
+
+25        A    No.  There was also tremolite found in -- I
+
+                                                               136
+
+
+ 1   believe, in about three samples.
+
+ 2        Q    Okay.
+
+ 3        A    So there was also -- tremolite was also found,
+
+ 4   yes.
+
+ 5        Q    Okay.  Thank you.  And then probably my final
+
+ 6   question.  Do you -- assume that Dr. Casaretto used
+
+ 7   Johnson's baby powder consistently from 1969 until
+
+ 8   shortly after his diagnosis with mesothelioma in 2017.
+
+ 9   Based on that assumption, would you agree -- or, well,
+
+10   based on that assumption, let me ask you in a non
+
+11   leading way because I don't want to draw an objection.
+
+12             Assuming Dr. Casaretto used Johnson baby
+
+13   powder from 1969 to 2017 in North America and in
+
+14   Argentina, what would be the sources of those mines for
+
+15   those exposures to Johnson's baby powder?
+
+16        A    For those years the mine sources would have
+
+17   been Vermont, also Italy.  And for the South American it
+
+18   would have been Brazil.  It would have been Brazilian
+
+19   talc.
+
+20        Q    Okay.  And if he used Johnson's baby powder
+
+21   from 2013 to 2017, would he also have been exposed to
+
+22   baby powder from China, talc from China?
+
+23        A    Yes, from 2003 on he would have been exposed
+
+24   from baby powder from China, yes.
+
+25        Q    So assuming that 90 percent of Dr. Casaretto's
+
+                                                               137
+
+
+ 1   exposure, assuming there will be testimony elicited from
+
+ 2   other individuals that Dr. Casaretto was in fact exposed
+
+ 3   to Johnson's baby powder from 2003 until 2017, he would
+
+ 4   have been exposed to talc derived from mines in Vermont,
+
+ 5   Italy, China and Brazil?
+
+ 6        A    Correct.
+
+ 7        Q    Okay.  Thank you.  Those are all the questions
+
+ 8   that I have.
+
+ 9        A    Yes.
+
+10             MR. BAILEY:  No further questions from me,
+
+11        Doctor.
+
+12             THE WITNESS:  All right.
+
+13             MS. DARLSON:  Good to go.
+
+14             MR. BAILEY:  Thanks everybody.
+
+15             THE REPORTER:  At this time does anybody
+
+16        want to order the transcript?
+
+17             MR. BAILEY:  I do.
+
+18             MS. DARLSON:  Dr. Rigler will read.
+
+19        Right, Dr. Rigler?
+
+20             THE WITNESS:  Yes, I want to read.
+
+21             MS. DARLSON:  And we'll take a copy as
+
+22        well.
+
+23             MS. COX:  I will take a copy, too, please.
+
+24   (Thereupon, at 2:07 p.m. the deposition was concluded
+
+25   and the reading and signing of the deposition was not
+
+                                                               138
+
+
+ 1   waived.)
+
+ 2
+
+ 3
+
+ 4
+
+ 5
+
+ 6
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+                                                               139
+
+
+ 1                         CERTIFICATE
+
+ 2   STATE OF FLORIDA
+     COUNTY OF PALM BEACH
+ 3
+
+ 4      I, Jeri Drum, do hereby certify that I was authorized
+
+ 5   to and did report the foregoing proceedings, and that
+
+ 6   the transcript, pages 4 through 139 is a true and
+
+ 7   correct record of my stenographic notes.
+
+ 8      I further certify that I am not a relative, employee,
+
+ 9   attorney or counsel of any of the parties, nor relative
+
+10   or employee of such attorney or counsel, nor financially
+
+11   interested in the foregoing action.
+
+12      Dated this 20th day of December, 2020, Palm Beach
+
+13   County, Florida.
+
+14
+
+15                          <%20653,Signature%>
+                            Jeri Drum
+16                          Court Reporter
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+                                                               140
+
+
+ 1                     CERTIFICATE OF OATH
+
+ 2   STATE OF FLORIDA
+     COUNTY OF PALM BEACH
+ 3
+
+ 4      I, Jeri Drum, Notary Public, State of Florida,
+
+ 5   certify that MARK RIGLER, PhD, appeared before me via
+
+ 6   videoconference on the 11th day of December, 2020 and
+
+ 7   was duly sworn.
+
+ 8      WITNESS my hand and official seal this 11th day of
+
+ 9   December 2020.
+
+10
+
+11                           <%20653,Signature%>
+                             Jeri Drum, FPR
+12                           Notary Public-State of Florida
+                             My Commission #GG 984102
+13                           Expires:  May 25, 2024
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+ 1  Catherine C. Darlson, Esq.
+
+ 2  ccd@kulaw.com
+
+ 3                         December 29th, 2020
+
+ 4  RE:	Casaretto, Alberto, Et Al v. Johnson & Johnson Company
+
+ 5      12/11/2020, Dr. Mark Rigler (#4358763) 
+
+ 6      The above-referenced transcript is available for 
+ 
+ 7  review.  
+ 
+ 8      Within the applicable timeframe, the witness should 
+ 
+ 9  read the testimony to verify its accuracy. If there are 
+ 
+10  any changes, the witness should note those with the 
+
+11  reason, on the attached Errata Sheet.
+
+12      The witness should sign the Acknowledgment of 
+
+13  Deponent and Errata and return to the deposing attorney. 
+
+14  Copies should be sent to all counsel, and to Veritext at 
+
+15  erratas-cs@veritext.com
+
+16       
+
+17   Return completed errata within 30 days from  
+
+18 receipt of testimony.                      
+
+19    If the witness fails to do so within the time                        
+
+20 allotted, the transcript may be used as if signed.
+
+21
+
+22                 Yours,
+
+23                Veritext Legal Solutions
+
+24
+
+25
+
+
+ 1  Casaretto, Alberto, Et Al v. Johnson & Johnson Company
+
+ 2  Dr. Mark Rigler (#4358763) 
+
+ 3                   E R R A T A  S H E E T
+
+ 4  PAGE_____ LINE_____ CHANGE________________________
+
+ 5  __________________________________________________
+
+ 6  REASON____________________________________________
+
+ 7  PAGE_____ LINE_____ CHANGE________________________
+
+ 8  __________________________________________________
+
+ 9  REASON____________________________________________
+
+10  PAGE_____ LINE_____ CHANGE________________________
+
+11  __________________________________________________
+
+12  REASON____________________________________________
+
+13  PAGE_____ LINE_____ CHANGE________________________
+
+14  __________________________________________________
+
+15  REASON____________________________________________
+
+16  PAGE_____ LINE_____ CHANGE________________________
+
+17  __________________________________________________
+
+18  REASON____________________________________________
+
+19  PAGE_____ LINE_____ CHANGE________________________
+
+20  __________________________________________________
+
+21  REASON____________________________________________
+
+22
+
+23  ________________________________   _______________
+
+24  Dr. Mark Rigler	     		       Date
+
+25
+
+
+ 1  Casaretto, Alberto, Et Al v. Johnson & Johnson Company
+ 
+ 2  Dr. Mark Rigler (#4358763) 
+
+ 3                 ACKNOWLEDGEMENT OF DEPONENT
+
+ 4      I, Dr. Mark Rigler, do hereby declare that I 
+ 
+ 5  have read the foregoing transcript, I have made any 
+ 
+ 6  corrections, additions, or changes I deemed necessary as 
+ 
+ 7  noted above to be appended hereto, and that the same is 
+ 
+ 8  a true, correct and complete transcript of the testimony 
+ 
+ 9  given by me.
+
+10
+
+11  ______________________________	________________
+
+12  Dr. Mark Rigler		    		    Date
+
+13  *If notary is required
+
+14                    SUBSCRIBED AND SWORN TO BEFORE ME THIS 
+
+15                    ______ DAY OF ________________, 20___.
+
+16
+
+17
+
+18                    __________________________
+
+19                    NOTARY PUBLIC
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+

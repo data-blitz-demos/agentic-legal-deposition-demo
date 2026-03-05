@@ -50,7 +50,7 @@ Resulting image format:
 
 Edit these before deployment:
 
-- `/Users/paulharvener/workspace/demos/agentic-legal-deposition-demo/deploy/k8s/aws/efs-storageclass.yaml`
+- `deploy/k8s/aws/efs-storageclass.yaml`
 - `fileSystemId: fs-REPLACE_ME`
 - `deploy/k8s/aws/ingress.yaml`
   - `alb.ingress.kubernetes.io/certificate-arn`

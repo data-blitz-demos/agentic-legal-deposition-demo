@@ -1,0 +1,4865 @@
+
+
+
+
+
+ 1            SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+ 2                 FOR THE COUNTY OF SAN FRANCISCO
+
+ 3                            ---o0o---
+
+ 4    ROSALINO REYES III and
+      GEMMA REYES,
+ 5
+             Plaintiffs,
+ 6    vs.                           No. RG20052391
+
+ 7    JOHNSON & JOHNSON, et al.,
+
+ 8           Defendants.
+
+ 9    ________________________/
+
+10
+
+11
+
+12         TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D
+
+13               (Pages 391 through 480, inclusive)
+
+14                            VOLUME V
+
+15
+
+16                 Taken before VALERIE L. PADILLA
+
+17                          CSR No. 3081
+
+18                         October 23, 2020
+
+19
+
+20
+
+21
+
+22
+                       Aiken Welch - Veritext
+23                   One Kaiser Plaza, Suite 250
+                      Oakland, California 94612
+24                  (510) 451-1580/(877) 451-1580
+                         Fax: (510) 451-3797
+25                        www.veritext.com
+
+
+                                                      392
+
+
+ 1                         I N D E X
+
+ 2    EXAMINATION BY MS. WHITE:                     396
+
+ 3    EXAMINATION BY MR. HYNES:                     458
+
+ 4
+
+ 5
+
+ 6
+
+ 7
+
+ 8                      E X H I B I T S
+
+ 9    DEFENDANTS'                                    PAGE
+
+10    Exhibits 5-K Correspondence Between the         398
+      Through 5-W  Parties that are in the
+11                 Deposition
+
+12    Exhibit 8-A  PLM Temp Sheet for M71166          398
+                   Off-the-Shelf Report
+13
+      Exhibit 10-A Updated Philippines Report         398
+14
+      Exhibit 10-B Asian Container Sample List        398
+15
+      Exhibit 15-A Baby Diaper One TEM Data           398
+16
+      Exhibit 17-A Baby Diaper Two, Baby Doll         399
+17                 Receipt
+
+18    Exhibit 18   Prop 65 Report                     439
+
+19    Exhibit 30   Dr. Su Report                      420
+
+20    Exhibit 34   2020 Off-the-Shelf Samples         434
+
+21    Exhibit 49   Invoices                           399
+
+22    Exhibit 50   M65329 Sample Series Data          401
+
+23    Exhibit 51   M69925-002 TEM Photos and SAED     401
+                   Data
+24
+      Exhibit 52   Johnson & Johnson Chinese Talc     412
+25                 Sample M70850
+
+
+                                                      393
+
+
+ 1    Exhibit 53   Zimmerman Report, Revision 2,      415
+                   5-14-20
+ 2
+
+ 3    Exhibit 54   SEM Photos from M70484             416
+
+ 4    Exhibit 55   Linear Regression Page             415
+
+ 5    Exhibit 59   SEM Photos and EDS from M70484     416
+
+ 6
+
+ 7
+
+ 8
+
+ 9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+                                                      394
+
+
+ 1      TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D
+
+ 2
+
+ 3          BE IT REMEMBERED, that pursuant to Notice,
+
+ 4    and on the 23rd day of October 2020, commencing at
+
+ 5    the hour of 7:35 a.m., before me, VALERIE L.
+
+ 6    PADILLA, Certified Shorthand Reporter, State of
+
+ 7    California, telephonically appeared WILLIAM E.
+
+ 8    LONGO, Ph.D, produced as a witness in said action,
+
+ 9    and being by me first duly sworn, was thereupon
+
+10    examined as a witness in said cause.
+
+11                         ---o0o---
+
+12    APPEARANCES:
+
+13
+
+14    For the Plaintiffs:
+
+15                    HENRY STEINBERG, ESQ.
+                      (via phone)
+16                    Kazan, McClain, Satterley &
+                      Greenwood
+17                    55 Harrison St., Suite 400
+                      Oakland, CA 94607
+18                    (510) 302-1000
+                      hsteinberg@kazanlaw.com
+19
+
+20    For the Defendants Longs Drugstores California,
+      LLC; Lucky Stores, Inc.; and Safeway, Inc.:
+21
+                      MEREDITH THORNBURGH WHITE, ESQ.
+22                    (via phone)
+                      Barnes & Thournburg LLP
+23                    11 South Meridian Street
+                      Indianapolis, IN  46204
+24                    (317) 231-6417
+                      meredith.white@btlaw.com
+25
+
+
+                                                      395
+
+
+ 1    For the Defendant O'Reilly Auto Enterprise, LLC:
+
+ 2                    ALEX G. TAHERI, ESQ.
+                      (via phone)
+ 3                    Hugo Parker. LLP
+                      240 Stockton St., 8th Fl.
+ 4                    San Francisco, CA 94108
+                      (415) 940-4072
+ 5                    ataheri@hugoparker.com
+
+ 6
+
+ 7    For the Defendants Johnson & Johnson, Johnson &
+      Johnson Consumer, Inc., and Johnson & Johnson
+ 8    International:
+
+ 9                    KEVIN HYNES, ESQ.
+                      (via phone)
+10                    King & Spalding LLP
+                      1185 Avenue of the Americas
+11                    34th Floor
+                      New York, NY  10036
+12                    (212) 790-5349
+                      khynes@kslaw.com
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+                                                      396
+
+
+ 1                  WILLIAM E. LONGO, Ph.D,
+
+ 2               previously sworn as a witness,
+
+ 3                    testified as follows:
+
+ 4    EXAMINATION BY MS. WHITE:
+
+ 5        Q.   Good morning.  This is Meredith White.
+
+ 6    I'm appearing at this deposition for Lucky Stores,
+
+ 7    Inc.; Safeway, Inc.; and Longs Drugstores LLC --
+
+ 8    Longs Drugstores California LLC, and I think other
+
+ 9    counsel has given their appearances to the court
+
+10    reporter.
+
+11             Dr. Longo, I'll remind you that you're
+
+12    still under oath from your previous deposition.
+
+13             Do you understand that?
+
+14        A.   Yes, ma'am, I do.
+
+15        Q.   Great.
+
+16             At the beginning here, I'll just note
+
+17    that this is the fifth day of this continuing
+
+18    deposition.  I think this will be marked Volume V.
+
+19             This is one of several times the
+
+20    deposition has had a delayed start from the time
+
+21    that we agreed on.  We were told the witness is
+
+22    running late.  We're now starting on the record at
+
+23    about 10:34, 10:35 eastern time and we'll push
+
+24    through and reserve any rights of objections to the
+
+25    extent we cannot conclude today.
+
+
+                                                      397
+
+
+ 1        A.   I certainly --
+
+ 2        Q.   Go ahead.
+
+ 3        A.   And I understand.  I apologize.  I had a
+
+ 4    family issue, and certainly the 35 minutes, I don't
+
+ 5    know how long this is going to go today, but I hope
+
+ 6    it's not going all the way to 5:00 o'clock, but I
+
+ 7    would absolutely give back those 35 minutes not to
+
+ 8    prejudice any attorneys who want to ask questions.
+
+ 9        Q.   I appreciate that, Dr. Longo, and I
+
+10    certainly don't intend for my questioning to go
+
+11    till 5:00 o'clock.  I won't speak for any other
+
+12    party.
+
+13             I'm going to start with a couple
+
+14    housekeeping items regarding exhibits that will let
+
+15    us get to the meat of things without any sort of
+
+16    interruptions.
+
+17             MS. WHITE:  So, Court Reporter, a number
+
+18    of new documents were generated or produced over
+
+19    the course of the past few deposition volumes.
+
+20    They've been provided to the parties and the
+
+21    reporters for the Veritext sharing site.  I'll go
+
+22    through them now so they're attached to the record
+
+23    for the deposition, and then to the extent I want
+
+24    to ask the witness about them, I will specifically
+
+25    call them up so that we're all clear that they're
+
+
+                                                      398
+
+
+ 1    going to be discussed.
+
+ 2             So 5-K through 5-W are exhibits that are
+
+ 3    correspondence between the parties that are in the
+
+ 4    deposition.
+
+ 5           (Defendants' Exhibit No. 5-K through 5-W
+
+ 6            were marked for identification.)
+
+ 7             MS. WHITE:  Exhibit 8-A, as in Adam, so
+
+ 8    it was marked as PLM Temp Sheet for M71166
+
+ 9    Off-the-Shelf Report.
+
+10           (Defendants' Exhibit No. 8-A was marked for
+
+11            identification.)
+
+12             MS. WHITE:  Additionally, we'll mark
+
+13    Exhibit 10-A as an updated Philippines report that
+
+14    was produced.
+
+15           (Defendants' Exhibit No. 10-A was marked
+
+16            for identification.)
+
+17             MS. WHITE:  We'll additionally mark
+
+18    Exhibit 10-B, Asian container sample list.
+
+19           (Defendants' Exhibit No. 10-B was marked
+
+20            for identification.)
+
+21             MS. WHITE:  We'll additionally mark
+
+22    Exhibit 15-A, as in Adam, baby diaper one TEM data.
+
+23           (Defendants' Exhibit No. 15-A was marked
+
+24            for identification.)
+
+25             MS. WHITE:  Mark Exhibit 17-A, baby
+
+
+                                                      399
+
+
+ 1    diaper two, baby doll receipt.
+
+ 2           (Defendants' Exhibit No. 17-A was marked
+
+ 3            for identification.)
+
+ 4             MS. WHITE:  We received invoices for the
+
+ 5    Reyes matter which we'll mark as Exhibit 49.
+
+ 6           (Defendants' Exhibit No. 49 was marked for
+
+ 7            identification.)
+
+ 8    BY MS. WHITE:
+
+ 9        Q.   And I do want to pause on this one, Dr.
+
+10    Longo.  Hopefully you can look at what's been
+
+11    marked as Exhibit 49 in that Veritext link.
+
+12        A.   49.  Okay.  Give me a second to get
+
+13    there.
+
+14             Invoices.
+
+15        Q.   Yeah.
+
+16        A.   I'm here.
+
+17        Q.   Give me one second, Dr. Longo.  I think
+
+18    the delay has made my screen freeze just a bit.  I
+
+19    was all ready, I thought.
+
+20             Let's see here.  It wants a little
+
+21    password.  Lord.  That's not working.
+
+22             Well, I can tell you from my memory.
+
+23    Exhibit 49 I believe was five pages of invoices.
+
+24             Is that what you see, Dr. Longo?
+
+25        A.   I do.  They're all, I guess, in the Reyes
+
+
+                                                      400
+
+
+ 1    case.
+
+ 2        Q.   That's my understanding.
+
+ 3             And so my question to you was, are there
+
+ 4    any additional invoices that you have generated for
+
+ 5    this case that are not included in those files?
+
+ 6        A.   Looks like it's -- no, looks like
+
+ 7    everything I've done so far.  Obviously except for
+
+ 8    today.
+
+ 9        Q.   Okay.  I understand on today.
+
+10             I wanted to ask you, then, specifically.
+
+11    I had understood from prior segments of this
+
+12    deposition testimony that you had also conducted
+
+13    the off-the-shelf testing and Chinese testing
+
+14    reports recently and understood you would be
+
+15    relying on them for this case.
+
+16             And if that is true, why were the
+
+17    invoices for those not produced?
+
+18        A.   Well, the Chinese retained -- both sets
+
+19    came from -- came -- excuse me.  Let me strike
+
+20    that.  Start over.
+
+21             The eight samples of Chinese that were
+
+22    J&J retained came from Simon Greenstone and they
+
+23    were produced -- done on their behalf, so the
+
+24    invoice would have gone to them.
+
+25             And the eighteen Chanel Chinese mill
+
+
+                                                      401
+
+
+ 1    retained that were collected by their expert,
+
+ 2    Seagrave, I don't know if it's been invoiced or
+
+ 3    not, but that, too, would go to Simon Greenstone,
+
+ 4    and that's -- so those invoices were not sent to
+
+ 5    the Kazan firm.
+
+ 6        Q.   Okay.  I think I understand.  There had
+
+ 7    been invoices generated, they just weren't sent to
+
+ 8    this firm so they haven't been produced in this
+
+ 9    case; is that a fair understanding?
+
+10        A.   That would be fair.
+
+11        Q.   Okay.
+
+12             MS. WHITE:  Court Reporter, I also wanted
+
+13    to mark Exhibit 50, which is labeled as M65329
+
+14    Sample Series Data, another document that was
+
+15    recently produced.
+
+16           (Defendants' Exhibit No. 50 was marked for
+
+17            identification.)
+
+18             MS. WHITE:  I also wanted to mark Exhibit
+
+19    51, labeled as M69925-002, TEM photos and SAED
+
+20    data.
+
+21           (Defendants' Exhibit No. 51 was marked for
+
+22            identification.)
+
+23    BY MS. WHITE:
+
+24        Q.   And so firstly, Dr. Longo, I'm going to
+
+25    ask you, what is Exhibit 51 that I just described
+
+
+                                                      402
+
+
+ 1    and that is at the link site that we provided to
+
+ 2    you?
+
+ 3        A.   That is a TEM photo of what we have
+
+ 4    identified as fibrous talc.  And this was from our
+
+ 5    TEM reports of 69925, and I'd have to look up that
+
+ 6    number, but that is a J&J -- as I recall, that's a
+
+ 7    J&J -- I believe that's Chinese, it's Chinese talc,
+
+ 8    and it's a rebuttal to Dr. Sanchez's opinion that
+
+ 9    there is no such thing as fibrous talc in J&J's
+
+10    talcum powders, especially in Chinese, and that's
+
+11    just not true.  We see it all the time.
+
+12             And Dr. Sanchez's opinion is based on
+
+13    what we're really looking at are multiple talc, I
+
+14    call them talc plates, but irregular plates, and
+
+15    they tend to stack up on each other, so you will
+
+16    have a talc plate that has multiple plates in
+
+17    between from the bottom to the top of the
+
+18    particulate, and Sanchez's position is that when
+
+19    we're doing analyses like TEM or PLM, we're
+
+20    actually looking straight down it because it's on
+
+21    edge, you know, sort of like taking a book and
+
+22    putting it on its end, so if you're looking down at
+
+23    it, you're looking at the inside and outside of the
+
+24    book, and all the pages in between, you kind of
+
+25    think of those as the talc plates.
+
+
+                                                      403
+
+
+ 1             So there's a couple problems with Dr.
+
+ 2    Sanchez's theory.  One -- and let me back up.
+
+ 3             And in TEM, course you're only looking at
+
+ 4    a two-dimensional object.  You're only seeing two
+
+ 5    dimensions of a three-dimensional object.  So why
+
+ 6    we did this is, if you have this book standing up
+
+ 7    on end and you're looking at it from the top down
+
+ 8    and alls you can see, like in the TEM, it, you
+
+ 9    know, it could resemble, you know, a straight -- a
+
+10    straight fiber like we're seeing on this.  And I'm
+
+11    just looking at --I'm looking at the TEM.
+
+12             However, one of the things the TEM can do
+
+13    is tilt the sample up to 60 degrees.  So if you're
+
+14    looking at the so-called talc plate on end and you
+
+15    start tilting it, you start seeing the, either way
+
+16    you're tilting it, the back side of the book.
+
+17             If you have a fibrous cylinder and you
+
+18    start tilting it, alls you're going to see is the
+
+19    cylinder.
+
+20             So for the first sample --
+
+21             How did I get rid of that?
+
+22             Oh, the first sample --
+
+23             I just had to move the picture.
+
+24             The first sample is M69925-002, talc
+
+25    number --
+
+
+                                                      404
+
+
+ 1        Q.   Okay, I see that.
+
+ 2        A.   Can you see off to the right after the
+
+ 3    size of it, do you see zero degree tilt?
+
+ 4        Q.   Uh-huh.
+
+ 5        A.   Well, the sample surface is directly
+
+ 6    perpendicular to the electron beam, so you're
+
+ 7    seeing right down what the top looks like.
+
+ 8             And then if you go through the series of
+
+ 9    photographs, we start tilting it.  The next one is
+
+10    10 degrees tilt.  Don't see any difference.  Next
+
+11    one is 20 degrees tilt.  No difference.  The next
+
+12    one is 30 degrees tilt.  No difference.  And the
+
+13    next one is 40 degrees tilt.  Now you're starting
+
+14    to see -- you're tilting it so much in the
+
+15    right-hand corner -- I mean in the left-hand
+
+16    corner, you're starting to see where the edge of
+
+17    the carbon film is that you can't see before
+
+18    because you're twisting it, you're twisting that
+
+19    sample in space.
+
+20        Q.   Okay.
+
+21        A.   And then if you go to the next one, it's
+
+22    50 degrees tilt.  And also --
+
+23        Q.   And it goes all the --
+
+24             I'm sorry, go ahead.
+
+25        A.   And I think there's -- and the most we
+
+
+                                                      405
+
+
+ 1    can tilt it is 60 degrees.
+
+ 2        Q.   Based on the instrument?
+
+ 3        A.   Yes, it's called a goniometer, and they
+
+ 4    don't go past 60 degrees.  So, you know, you're not
+
+ 5    at a right angle but you're getting -- you know,
+
+ 6    you're 60 instead of 90.
+
+ 7             Now, if that was a top plate on edge, and
+
+ 8    you can see the holes.  Very interesting.  You see
+
+ 9    the holes around the sample, you know, little white
+
+10    holes?  And it has --
+
+11        Q.   Okay.
+
+12        A.   Those white holes are the pores, the
+
+13    replication of the pores on the nuclear filter, and
+
+14    the nuclear filter -- nuclear pore filter has been
+
+15    removed and that's all carbon.  That tells you the
+
+16    thickness of the carbon film.  You can see it now
+
+17    because you've tilted it so much.  If you're
+
+18    looking straight down, you can't see it.
+
+19             Now, if this was really truly a talc
+
+20    plate on edge, you would see what would look like
+
+21    those like darker areas under the white hole, you'd
+
+22    have to see that.  You don't.
+
+23             The second problem with this is when you
+
+24    put talc in a solution of water to filter it, and,
+
+25    again, I'll just go to some really basic physics
+
+
+                                                      406
+
+
+ 1    and energy, if you take a book on edge and it will
+
+ 2    stand there, but if you just -- that's called
+
+ 3    metastable because it's not rigid, it's not held
+
+ 4    in.  And if you just tap -- you just push your
+
+ 5    finger on it a little bit, that's the sound of the
+
+ 6    book falling over.
+
+ 7             If a plate talc somehow landed perfectly
+
+ 8    perpendicular and standing up, the solution that
+
+ 9    it's in is being filtered under a vacuum, under a
+
+10    head pressure so the water will go through that
+
+11    filter.  There's absolutely no physical way of any
+
+12    types of physics calculations that I know of that
+
+13    that fibrous -- that talc plate could remain up on
+
+14    edge.
+
+15             In PLM analysis, if you think you have a
+
+16    talc plate on edge, you know, Walter McCrone back
+
+17    in the '70s just said if you just tap it, just tap
+
+18    the top of the cover slip a little bit and it will
+
+19    fall over.
+
+20             So that's what that was done, to show
+
+21    that Dr. Sanchez's testimony about no fibrous talc,
+
+22    and I think he just said in any of J&J's cosmetic
+
+23    talcum powders, but it may be --
+
+24        Q.   Okay.
+
+25        A.   So it's demonstrative to help the jury
+
+
+                                                      407
+
+
+ 1    understand the difference between what a fibrous --
+
+ 2    what a talc on edge would look like when you tilted
+
+ 3    it versus a cylinder like this which gives you the,
+
+ 4    you know, the visual of a talc fiber.
+
+ 5             And this one's a bundle, I think, 'cause
+
+ 6    I can see protrusions on the bottom left-hand
+
+ 7    corner.
+
+ 8        Q.   Okay.  I think I've understood what
+
+ 9    you've said.
+
+10             I guess I want to ask you, could this be
+
+11    a talc plate that has rolled up?
+
+12        A.   No.  They don't really have the structure
+
+13    to roll up, you know.  You have to have something
+
+14    that's flexible.
+
+15             You can get a -- well, this fibrous talc
+
+16    is essentially a rolled up -- all the way rolled
+
+17    up.  It's the metamorphic transformation typically
+
+18    from asbestos.
+
+19             You don't get naturally fibrous talc out
+
+20    of the mine.  And over the, you know, I don't know
+
+21    how many hundreds of millions of years, but you'll
+
+22    get it -- it's transforming from chrysotile to
+
+23    fibrous talc.  I don't think -- it doesn't go the
+
+24    opposite.  So it's not rolled up anymore.  It's
+
+25    actually plates.
+
+
+                                                      408
+
+
+ 1             There's some high resolution electron
+
+ 2    microscopy work in the early '80s where they showed
+
+ 3    the interface between fibrous talc and chrysotile
+
+ 4    and it's a cross-section, so you're like -- it's
+
+ 5    like taking a loaf of bread and you slice it down
+
+ 6    the middle and you turn it up and look to see what
+
+ 7    it looks like.  Well, they'll do that and they have
+
+ 8    to slice a lot so they can hit that transformation
+
+ 9    area.
+
+10             So it's changing from a scrolled up
+
+11    structure of chrysotile.  Then when I say "scrolled
+
+12    up," if you take a piece of paper and you rolled it
+
+13    into a tube, that's how chrysotile is formed.  That
+
+14    tube, you almost -- you can get a soda
+
+15    straw-looking appearance on high resolution TEM,
+
+16    and if the, you know, the geological conditions are
+
+17    right, over time you'll get a transformation of
+
+18    chrysotile to fibrous talc.
+
+19             That also happens with amphibole.
+
+20    Fibrous tremolite will metamorph into fibrous talc,
+
+21    anthophyllite will metamorph into fibrous talc, and
+
+22    in this case, in the Chinese, you're going to
+
+23    primarily see fibrous -- I mean chrysotile
+
+24    metamorphic into fibrous talc.  So it's not a
+
+25    rolled up but you can get corners of a plate that
+
+
+                                                      409
+
+
+ 1    are bent up.
+
+ 2             And the reason it can't roll up, it
+
+ 3    doesn't have the crystalline structure to do that.
+
+ 4    Chrysotile is one of the very few minerals out
+
+ 5    there that rolls up.  I'm not aware of any others,
+
+ 6    but I'm not a mineralogist, I don't have a degree
+
+ 7    in it.  My mineralogy is really based around
+
+ 8    asbestos and talc.
+
+ 9        Q.   Okay.  So I'm listening to you.
+
+10             What is the basis -- are there any
+
+11    studies you rely on for the idea that, here's what
+
+12    I wrote down, anthophyllite and chrysotile can
+
+13    morph or transition to talc?
+
+14             Did I get it right?
+
+15        A.   Yeah.  I have a, I don't know where it
+
+16    is, but I have a paper published in 1984 and it's
+
+17    around here somewhere.  After all these days of --
+
+18    multiple days of depositions of two different --
+
+19    everything's kind of scattered.
+
+20             Oh, got it.  It was sitting under my note
+
+21    pad right here.
+
+22             So this was published in Science, Volume
+
+23    2006, December 21st, 1979.  And to get a paper in
+
+24    the Science journal is a big deal.  For every
+
+25    researcher out there that publishes papers in the
+
+
+                                                      410
+
+
+ 1    areas that Science publishes, this is the golden
+
+ 2    key.  And it's -- it is entitled Serpentine
+
+ 3    Minerals Intergrowths, I-n-t-e-r-g-r-o-w-t-h-s, and
+
+ 4    New Combination Structures, and it is published by
+
+ 5    David R. Veblen who also has published the
+
+ 6    metamorphic change of anthophyllite to fibrous talc
+
+ 7    in Vermont samples.  He published a new
+
+ 8    anthophyllite-type structure called chesterite, so
+
+ 9    he's well-known in this area.  And a Peter
+
+10    D-u-s-e-c-k, Duseck, and they're both from the
+
+11    departments of geology and chemistry, Arizona State
+
+12    University, Tempe, at least back in 1979.
+
+13             And on table -- on Figure 1, he has high
+
+14    resolution TEMs showing where the talc is, where
+
+15    the chrysotile is, and where the serpentine
+
+16    material is.
+
+17        Q.   Okay.
+
+18        A.   And he also has amphibole material where
+
+19    he doesn't identify the amphibole, I don't believe.
+
+20    This is all in one rock.  This is all in one
+
+21    cross-section.
+
+22        Q.   Okay.  So I think I have two followup
+
+23    questions I hope that are easy, which is, when I
+
+24    look at Exhibit 51, these slides were all created
+
+25    and the testing was performed on October 12th,
+
+
+                                                      411
+
+
+ 1    2020; is that right?
+
+ 2        A.   Yes and no.  Actually, when we see
+
+ 3    fibrous talc in any of these talc samples, we
+
+ 4    always take one representative photograph of it.
+
+ 5             So the zero tilt photomicrograph was
+
+ 6    already in the report for 69925, and alls we had to
+
+ 7    do is we take them all at zero tilt, so all they
+
+ 8    can do is put a zero tilt on the photograph.
+
+ 9             So if you look at that report, you'll see
+
+10    that original photograph.  So we put the TEM grid
+
+11    back in for this particular sample, and since we
+
+12    know what grid opening it's in, we went and located
+
+13    the same chrysotile bundle, and then I had the TEM
+
+14    technician, it's more than that, I mean, go ahead
+
+15    and then rotate the goniometer the degrees to be
+
+16    able to look at what happens when you tilt it.
+
+17             It's either got to keep looking like a
+
+18    cylinder or you start seeing the sides of the
+
+19    plates of the talc from the edge, like the holes we
+
+20    see, the white holes we see there in the nuclear
+
+21    pore filter.  It's not the nuclear pore filter
+
+22    anymore, it's a replica of it because we put a very
+
+23    thin, continuous carbon film down on the surface of
+
+24    the polycarbonate.
+
+25        Q.   Okay.
+
+
+                                                      412
+
+
+ 1        A.   And then we dissolve away the
+
+ 2    polycarbonate filter underneath that carbon film.
+
+ 3             MS. WHITE:  Okay.  And it's 10:58, so I
+
+ 4    just want to make sure, Valerie, do we need to go
+
+ 5    off the record for a moment?
+
+ 6             THE WITNESS:  I need to get a cup of
+
+ 7    coffee, anyway.
+
+ 8                    (Recess taken.)
+
+ 9    BY MS. WHITE:
+
+10        Q.   So, Dr. Longo, we just finished
+
+11    discussing Exhibit 51, and I think I have two
+
+12    questions on Exhibit 52, which looks similar to me,
+
+13    but that's what I want to ask you about.
+
+14           (Defendants' Exhibit No. 52 was marked for
+
+15            identification.)
+
+16             THE WITNESS:  Let me get Exhibit 52.
+
+17    BY MS. WHITE:
+
+18        Q.   I was just going to ask you, can you pull
+
+19    up 52 to make sure we're talking about the same
+
+20    thing?
+
+21        A.   I saw that the sample number was
+
+22    different.  It's the exact same thing on a
+
+23    different Chinese -- a J&J Chinese talc sample that
+
+24    we had analyzed.
+
+25        Q.   Okay.  And so that was my question, so
+
+
+                                                      413
+
+
+ 1    thanks for that.
+
+ 2             It's your opinion that this is a fibrous
+
+ 3    talc bundle and showing the different degrees of
+
+ 4    tilt like Exhibit 51 but for a different sample; is
+
+ 5    that correct?
+
+ 6        A.   Correct.
+
+ 7        Q.   And this sample M70850, it's a Chinese
+
+ 8    talc sample; is that correct?
+
+ 9        A.   Yes.
+
+10        Q.   And if I wanted to match that up to a
+
+11    report or to see what sample that is, where would I
+
+12    look?  What sample is it, I guess, is the question?
+
+13        A.   If I can find it real quick.  It may be
+
+14    one of the ones we're seeing here.
+
+15             So I think the other one was 69925-1.
+
+16        Q.   Uh-huh.
+
+17        A.   And that would be from our samples that
+
+18    were Simon Greenstone.  I think there may be a
+
+19    supplement report, but you can use either one.
+
+20             So this is an 8-27-2019 sample and it's
+
+21    69225-001, which is the container that came from --
+
+22    hold on.  It is the container that was supplied by
+
+23    Johnson's -- by Johnson & Johnson.
+
+24             If you go to page 9, it shows you the
+
+25    picture of the container and when it was sampled
+
+
+                                                      414
+
+
+ 1    and it's got Jack N. Frost, Jr.'s name on it.
+
+ 2             And then number two, also.  And I
+
+ 3    think -- I think that one was in the --
+
+ 4             I've got to find it here.  Here we go.
+
+ 5             If you go to Section 2, to the chain of
+
+ 6    custodies, it has the joint catalog for Johnson &
+
+ 7    Johnson, what the sample is, and it is a 1970 to
+
+ 8    1980.  It should have in here that this was a
+
+ 9    Philippine product.  It's in here somewhere.
+
+10        Q.   Okay.
+
+11        A.   And during that time frame, 1970 to 1980,
+
+12    the source of their -- so I misspoke when I said
+
+13    Chinese.  I should have looked it up first.  This
+
+14    is actually, the mine source for this is the Korean
+
+15    mine.
+
+16        Q.   Okay.  And is that for M69925 is the
+
+17    Korean?
+
+18        A.   70850 right here, so I can tell you what
+
+19    that is.
+
+20             I'm going to have to look around for it.
+
+21    Maybe we'll do that -- if you don't mind, we can do
+
+22    that at the next break.
+
+23        Q.   Yeah, I'd actually prefer that, but it
+
+24    really was just a question of which report so I
+
+25    know the source and stuff.  So I don't want to take
+
+
+                                                      415
+
+
+ 1    all of our time.  If you can look that up at the
+
+ 2    next break, that would be great.
+
+ 3        A.   Yeah, I'll do that.  It will take me a
+
+ 4    few minutes to dig through that.  My assistant's
+
+ 5    not here today, she's on vacation, and that causes
+
+ 6    me great problems, but I'll look it up.  It takes a
+
+ 7    little while.
+
+ 8        Q.   I understand.
+
+ 9             I'm going to continue through my list of
+
+10    the new stuff and I shouldn't have that many more
+
+11    questions.
+
+12             MS. WHITE:  So, Madame Court Reporter,
+
+13    Exhibit 53, we're going to mark the Zimmerman
+
+14    report, Revision 2, dated 5-14-20 as Exhibit 53.
+
+15           (Defendants' Exhibit No. 53 was marked for
+
+16            identification.)
+
+17             MS. WHITE:  Marked as Exhibit, looks like
+
+18    55, is a linear regression page.
+
+19           (Defendants' Exhibit No. 55 was marked for
+
+20            identification.)
+
+21             MS. WHITE:  And then Exhibit 54 is SEM
+
+22    photos from M70484, which is Zimmerman, and it
+
+23    appears similar to Exhibit 59, which is SEM photos
+
+24    and EDS from M70484 Zimmerman.
+
+25             ///
+
+
+                                                      416
+
+
+ 1           (Defendants' Exhibit No. 54 was marked for
+
+ 2            identification.)
+
+ 3           (Defendants' Exhibit No. 59 was marked for
+
+ 4            identification.)
+
+ 5    BY MS. WHITE:
+
+ 6        Q.   And if you can look at 54 and 59, Dr.
+
+ 7    Longo, I just have a couple similar questions about
+
+ 8    what these are just so that I understand.
+
+ 9        A.   Sure.  I have it up.
+
+10        Q.   Great.
+
+11             So Exhibit 54, let's start with this.  It
+
+12    is a picture; is that correct?
+
+13        A.   These are photomicrographs from our field
+
+14    emission scanning electron microscope.
+
+15        Q.   Okay.  And what are they of?  Because on
+
+16    my other documents we just looked at, I see the
+
+17    project number M70484 but I wasn't clear on what
+
+18    sample or substance this was.
+
+19        A.   Yeah, this is from the Zimmerman -- the
+
+20    Zimmerman case, and this was one of Mrs.
+
+21    Zimmerman's containers of talcum powder.  And she
+
+22    produced -- and she had two that she had in her
+
+23    house.  One of them was -- one of them was from a
+
+24    time period, it was Vermont, and the other one was
+
+25    Chinese, and this is the Chinese one.
+
+
+                                                      417
+
+
+ 1        Q.   Is it 001 or 002?
+
+ 2        A.   I believe it's 002.  And then she even
+
+ 3    put the 002 on it.  I'd have to check the report.
+
+ 4    And I can dig up the Zimmerman report around here
+
+ 5    at the break.
+
+ 6             And we were looking -- and what I wanted
+
+ 7    to do for the SEM was to take some of the powder
+
+ 8    from the Zimmerman container to show what plating
+
+ 9    and fibrous talc looks like in SEM because, if you
+
+10    notice, you're getting a more three-dimensional
+
+11    look than the TEM does because the scanning
+
+12    electron beam shows you what's on the surface.
+
+13             And the first photographs, there's three
+
+14    small ones, and what was of interest there, and
+
+15    there should be some more, is that kind of fibrous
+
+16    structure right through the middle there and you
+
+17    got plates all around it.
+
+18             And then we have a little higher
+
+19    magnification a little lower, and that's actually a
+
+20    very long -- a very small bundle in width but a
+
+21    very long bundle that, more likely than not, is
+
+22    chrysotile.
+
+23        Q.   Okay.
+
+24        A.   And then if you go to the fourth
+
+25    photograph, you can see at higher magnification
+
+
+                                                      418
+
+
+ 1    that that bundle is made up of probably five --
+
+ 2    maybe two to three fibers across, maybe five fibers
+
+ 3    total, and around it is all what I would call the
+
+ 4    platy tech talc.
+
+ 5        Q.   Okay.
+
+ 6        A.   And then if you keep going on this,
+
+ 7    you'll get to a photograph, and I can count them
+
+ 8    for you.  It is -- when you get to the bigger
+
+ 9    photographs, it's one, two, three, four -- the
+
+10    fourth big photograph, you can see what one of
+
+11    these bundles of talc looks like in the scanning
+
+12    electron microscope.
+
+13        Q.   Okay.  Well, I think I --
+
+14             Oh, are you finished?
+
+15        A.   And so it's, I think, on all the
+
+16    examples, this one is at -- well, maybe this one
+
+17    wasn't tilted.  Let me see what it says on the
+
+18    photograph.  Let me see what the next photograph
+
+19    says.
+
+20             Okay.  The first photograph is at -- it's
+
+21    at a tilt of zero.  And then the second photograph,
+
+22    we've now tilted it, it's at 30 degrees.  You can
+
+23    start seeing more of the bundle, you know, more of
+
+24    the surface of the bundles.  The third one is at 45
+
+25    degrees.
+
+
+                                                      419
+
+
+ 1        Q.   Okay.  And, I mean, I don't want to cut
+
+ 2    you off, I just really wanted to know which sample
+
+ 3    it was related to.
+
+ 4        A.   Okay.  I'm sorry.
+
+ 5        Q.   You're okay.  I just want to make sure,
+
+ 6    frankly, that we all get done in time and I know we
+
+ 7    all have things.
+
+ 8             So I think I understood related to 002.
+
+ 9             And one other exhibit I wanted to bring
+
+10    up is Exhibit 30.
+
+11           (Defendants' Exhibit No. 30 was marked for
+
+12            identification.)
+
+13    BY MS. WHITE:
+
+14        Q.   And this should be, I think, easy.  It
+
+15    says Dr. Su report.  And this is just a question
+
+16    about its completeness and accuracy because, as I
+
+17    look at Exhibit 30, Dr. Longo, it starts with a
+
+18    cover page and then page 1, 2, 3, and then it skips
+
+19    4 and goes to 5 --
+
+20        A.   Oh.
+
+21        Q.   -- and 6 and then 32.
+
+22        A.   Three -- I'm not sure why I did that.
+
+23        Q.   Can we ask you to produce a complete,
+
+24    with all the pages, version that's in order as it
+
+25    is in your reference materials?
+
+
+                                                      420
+
+
+ 1        A.   Sure.  Just for completeness, the reason
+
+ 2    I stopped it at -- I got -- I was just putting in
+
+ 3    the chrysotile, but the entire document I have goes
+
+ 4    to 29.
+
+ 5             Is that what you have, page 29?
+
+ 6        Q.   My pdf has 33 pages, and the last of
+
+ 7    those in the pdf I have says page 11 of 32.  So my
+
+ 8    understanding is that we have similar but different
+
+ 9    documents, and I think the best thing to do is just
+
+10    ask you and your counsel to produce in order the
+
+11    full contents of whatever you're looking at and
+
+12    relying on and then we'll be talking about the same
+
+13    thing.
+
+14        A.   Yeah.  Mine has pages 11 to 29, and the
+
+15    first two pages are, you know, the cover and then
+
+16    it starts on the introduction on page 1 of 29, and
+
+17    then the first thing it covers is, you know, how
+
+18    you do dispersion staining and then it goes --
+
+19        Q.   Well --
+
+20        A.   I'm sorry.
+
+21        Q.   -- mine says 1 of 32.  So it actually
+
+22    sounds like they're somewhat different.
+
+23             MS. WHITE:  So I think it's important,
+
+24    Henry, that we just put it on the record that we
+
+25    want to see the version or the way of this report
+
+
+                                                      421
+
+
+ 1    that Dr. Longo has and then we can deal with that
+
+ 2    later.
+
+ 3             THE WITNESS:  I don't mean to ask
+
+ 4    questions, but if you go to what would be page 3,
+
+ 5    can you look up in the right-hand corner?  Do you
+
+ 6    see page 1 of 29?
+
+ 7    BY MS. WHITE:
+
+ 8        Q.   No.  I see page 1 of 32.
+
+ 9        A.   That's interesting.
+
+10        Q.   Yeah.  So that's why I think it's better
+
+11    I put the request out there.  It sounds like
+
+12    there's a miscommunication on which version or
+
+13    document that you have, so I'm going to ask to meet
+
+14    and confer with counsel about what version it is
+
+15    that we got and then also ask for the version that
+
+16    you have and then we can just move on from there
+
+17    for right now.
+
+18        A.   Well, you're suggesting that there's
+
+19    different versions.  I just think it's the exact
+
+20    same thing.
+
+21             And I do have one that says page 29 of 29
+
+22    and then there's a blank page behind it, but it's
+
+23    the exact same document.  They may not just have
+
+24    all the back pages that had more to do with the
+
+25    amphibole.
+
+
+                                                      422
+
+
+ 1        Q.   Okay.  And I'm not attempting to imply
+
+ 2    anything nefarious.  I just want to have the
+
+ 3    document you have.  I think that's the most
+
+ 4    efficient way to talk about it.
+
+ 5             MS. WHITE:  And so I'll put that on the
+
+ 6    record, Henry, and we can talk about it later and
+
+ 7    we'll move on from Exhibit 30 for now.
+
+ 8             THE WITNESS:  The only thing I'm using
+
+ 9    for my opinion in this case --
+
+10             MR. STEINBERG:  Yeah.
+
+11             THE WITNESS:  -- is the Su document that
+
+12    goes up to page, which you will have, hold on, is
+
+13    going up to page -- up to the --
+
+14             Oh, I know what's happened.  This
+
+15    document, if you start scrolling through it, we're
+
+16    only using the chrysotile portion of this document
+
+17    for what we're doing here, not for the amphiboles,
+
+18    and so anything -- any opinions I'm giving in this
+
+19    case would only go up to the Su table.
+
+20             I'm just getting to the last page of the
+
+21    chrysotile.  Let me -- what I can do is tell you,
+
+22    if you want to ask questions about chrysotile, what
+
+23    page to go to and --
+
+24    BY MS. WHITE:
+
+25        Q.   Well, I think the problem, I'm just being
+
+
+                                                      423
+
+
+ 1    logistically and efficiently minded, is that
+
+ 2    there's pdf pages.  I have a 33-page pdf as Exhibit
+
+ 3    30.  If you look at that, then we can talk about
+
+ 4    the same pages, but if you're looking at something
+
+ 5    that has 29 on the top, then we're looking at two
+
+ 6    different things, so I just don't want to have a
+
+ 7    confusing record.
+
+ 8        A.   Look at the top and go to Table 4-A, page
+
+ 9    7 of 32.  That is the range of refractive indices
+
+10    for both the gamma alpha or parallel and
+
+11    perpendicular and it's what I referenced in my
+
+12    report on the ranges of refractive indices for
+
+13    chrysotile and how they -- how I am relying on them
+
+14    to show that the ranges of chrysotile are -- the
+
+15    ranges of refractive indices for the chrysotile
+
+16    we're finding in the Chinese talc are in the Su
+
+17    table range what is expected for chrysotile of
+
+18    different bundle sizes and a little different
+
+19    chemistry, so we can still talk about that.
+
+20             And alls you have to do is you look at
+
+21    the -- 'cause I'm using your -- you know, what you
+
+22    sent me is you just go to page 7 of 32 and --
+
+23        Q.   Okay, I see that page.  It's pdf page 29
+
+24    in Exhibit 30.
+
+25        A.   And that's -- and we can then -- and I
+
+
+                                                      424
+
+
+ 1    can tell you why I'm relying on it because that's
+
+ 2    what's referenced in the report.
+
+ 3        Q.   Well, again, I just want to have a
+
+ 4    complete document.  I wasn't planning to ask you --
+
+ 5    wait, hold on one second.  I wasn't planning to ask
+
+ 6    you specifically about what you were relying on.
+
+ 7    It honestly, Dr. Longo, jumped out to me when I
+
+ 8    read it that it went from cover 1 to 3 and then
+
+ 9    skipped page 4, and I just want to ask for the
+
+10    complete version so I understand the contents in
+
+11    order, and I can meet and confer with your counsel
+
+12    about that.
+
+13        A.   Okay.
+
+14             MR. STEINBERG:  Let me just jump in.
+
+15             Counsel, we can certainly meet and
+
+16    confer, but now, as a result of this questioning, I
+
+17    think it's -- the doctor's made clear that Table
+
+18    4-A is the table that he's relying on.  That is in
+
+19    Exhibit 30 as the 29th page of Exhibit 30, and so I
+
+20    think that we actually have produced what was
+
+21    requested, which is the Dr. Su table that Dr. Longo
+
+22    is relying on in this case.  It just happens to be
+
+23    one of multiple pages in Exhibit 30.
+
+24             THE WITNESS:  Just to clarify, and it's
+
+25    my fault, it's Table 4-A and 4-B that's on the same
+
+
+                                                      425
+
+
+ 1    page.
+
+ 2             MS. WHITE:  Okay.  I think I understand
+
+ 3    your position and we'll meet and confer about a
+
+ 4    different or more complete version of the report.
+
+ 5    BY MS. WHITE:
+
+ 6        Q.   Okay.  Last question about newly produced
+
+ 7    documents, I think, Dr. Longo.
+
+ 8        A.   Okay.
+
+ 9        Q.   We received two videos that were created
+
+10    in the past week.
+
+11             Does that sound familiar to you?
+
+12        A.   It does.
+
+13        Q.   And there was a video made on October
+
+14    19th and a video made on October 20th; is that
+
+15    correct?
+
+16        A.   This is correct.
+
+17        Q.   And what was the reason for creating
+
+18    these new video tests or experiments or however you
+
+19    would describe the content?
+
+20        A.   I wanted to show what the particulate --
+
+21    strike that.
+
+22             When mesothelioma victims talk about in
+
+23    their depositions when they're using talcum powder,
+
+24    that they'll say they'll see it's dusty, and these
+
+25    videos use high-intensity lighting that will
+
+
+                                                      426
+
+
+ 1    refract and scatter microscopic particles in the
+
+ 2    air where you can see concentrations of particulate
+
+ 3    that stay airborne very easily, where the person
+
+ 4    who's doing the powdering may see some dustiness
+
+ 5    initially, but the dust -- but the microscopic
+
+ 6    particles of talc, or in this case the cornstarch,
+
+ 7    that's what was used, so this was not a talcum,
+
+ 8    this was a Johnson baby powder product that has
+
+ 9    cornstarch particulates in it and no talc so we
+
+10    didn't have to wear a respirator, as a
+
+11    demonstration to the jury for a couple reasons.
+
+12             One, that the shear amount of what stays
+
+13    airborne for, I think we took them up to five
+
+14    minutes, it stays airborne for five minutes,
+
+15    becomes completely invisible to the human after
+
+16    about a half a -- ten, twenty, or thirty seconds.
+
+17             And, two, and it also shows how these
+
+18    particles can travel.  And that was done in our ECL
+
+19    that has air exchange rates of four to -- I think
+
+20    it was four-and-a-half times per hour, where the
+
+21    normal residential home has an average air exchange
+
+22    rate of anywhere from .4 to .6 times an hour, and
+
+23    especially if you're in a bathroom that you don't
+
+24    have the window open, it's a lot less.
+
+25             So I think it's a good teaching tool for
+
+
+                                                      427
+
+
+ 1    the jury to understand how it's not just when you
+
+ 2    put the product on, it shows how you can have
+
+ 3    continuous exposures while you're standing either
+
+ 4    in the bathroom or the bedroom.
+
+ 5             And the second video I did because it --
+
+ 6    it simulates how Mr. Reyes applied his talcum
+
+ 7    powder on his chest and neck area.  He discussed,
+
+ 8    and there's a video clip of him demonstrating it
+
+ 9    from his video depo that we looked at, you know, he
+
+10    opens his shirt collar a little bit and he puts a
+
+11    couple shakes in and then, you know, in testimony
+
+12    he puts one in the back and then he puffs his
+
+13    shirt, and that shows how the puffing of the shirt
+
+14    will redistribute -- and the shirt wasn't tucked
+
+15    in, redistributes a lot of the -- some of the
+
+16    talcum powder that gets inside the shirt.
+
+17             And that puffing is sort of like a very
+
+18    weak air pump pushing air in and out, and you can
+
+19    see how the talcum powder comes back out from under
+
+20    the shirt and causes that cloud, and it's a
+
+21    teaching tool for the jury to understand how that
+
+22    particular type of application, in my mind, I
+
+23    think, just looking at it, and I'm not going to
+
+24    testify to this, but it would give higher exposure
+
+25    concentrations.
+
+
+                                                      428
+
+
+ 1        Q.   And those videos were both created and
+
+ 2    both depict the use of cornstarch powder; is that
+
+ 3    right?
+
+ 4        A.   That's right.
+
+ 5        Q.   Okay.  I think we made it through the new
+
+ 6    exhibit part of my questions, so congratulations.
+
+ 7        A.   Thank you.
+
+ 8        Q.   I'm going to ask some general questions
+
+ 9    to follow up on my understanding of the first four
+
+10    volumes of your testimony.
+
+11             So have you tested any bottles from Mr.
+
+12    Reyes?
+
+13        A.   No.  I didn't receive any bottles and I
+
+14    think he testified in his deposition they didn't
+
+15    have any old ones around.  They didn't have any.
+
+16        Q.   Have you tested any bottles from Mrs.
+
+17    Reyes?
+
+18        A.   No.
+
+19        Q.   Have you tested any bottles from the
+
+20    Reyes home?
+
+21        A.   No.
+
+22        Q.   Have you tested any bottles provided by
+
+23    the Reyes family?
+
+24        A.   No.
+
+25        Q.   Have you tested any bottles that you have
+
+
+                                                      429
+
+
+ 1    knowledge came from a Longs store?
+
+ 2        A.   I don't have any knowledge of any
+
+ 3    containers that came -- right now any containers
+
+ 4    that came from the Longs store.
+
+ 5        Q.   Okay.  And I just want to clarify.  Not
+
+ 6    the Longs store but any Longs store.  Do you have
+
+ 7    knowledge that you tested any bottles from any
+
+ 8    Longs store shelf at any time?
+
+ 9        A.   I don't know.  We have tested containers
+
+10    from other plaintiffs from the California, Alameda,
+
+11    Los Angeles area, and they, of course, bought those
+
+12    from somewhere, so we may have already tested the
+
+13    containers, but we haven't, you know, did the
+
+14    connection from where that container came from from
+
+15    plaintiff's testimony because I think it was at the
+
+16    last deposition that I discussed at length and I
+
+17    typically don't give that kind of testimony.
+
+18             So, in fact, we may have tested some
+
+19    from, you know -- and if I recall, you were
+
+20    primarily interested in Longs -- what were they?
+
+21        Q.   Luckys.
+
+22        A.   Lucky, Longs, was it -- not Walmart.
+
+23        Q.   Safeway.
+
+24        A.   Safeway?
+
+25        Q.   Yes.
+
+
+                                                      430
+
+
+ 1        A.   Wasn't Walgreens in there?
+
+ 2        Q.   Well, I did ask you about several.  But I
+
+ 3    wanted to start with asking if you had tested any
+
+ 4    bottles from Longs, Lucky, or Safeway, and my
+
+ 5    understanding of your testimony last time was that,
+
+ 6    to your knowledge, you had not.
+
+ 7             Is that still correct?
+
+ 8        A.   Well, to my knowledge, because I've --
+
+ 9    for these containers that were purchased by
+
+10    plaintiffs in the mesothelioma cases, I have the
+
+11    containers.  And, of course, they bought them
+
+12    somewhere, probably around where they lived, and if
+
+13    I go back through the depositions, I probably could
+
+14    match up where they said the containers came from.
+
+15             So these containers have already been
+
+16    analyzed.  I don't want to say we never have and
+
+17    then later, you know, say, oh, well, this testimony
+
+18    shows it came from Walgreens or whatever store it
+
+19    is.  I don't want to be accused of, Dr. Longo, you
+
+20    said you haven't done that.  Well, we've already
+
+21    tested the containers.  It would be just a matter
+
+22    of matching up the testimony to the plaintiffs and
+
+23    where they got them.
+
+24        Q.   Okay.  And do you plan to do that
+
+25    matching up prior to your testimony in the Reyes
+
+
+                                                      431
+
+
+ 1    case?
+
+ 2        A.   No.  I wouldn't do that to you.
+
+ 3        Q.   Okay.  You understood my questions, then.
+
+ 4    I don't want to get to trial and have you say now I
+
+ 5    can tell you for sure I've tested bottles from
+
+ 6    Longs and here's the test results.  If that's the
+
+ 7    case, I want to know now, that's why I'm asking the
+
+ 8    question.
+
+ 9        A.   I understand that.
+
+10        Q.   Okay.
+
+11        A.   And I believe Judge Cunningham would
+
+12    probably not be happy with that.
+
+13        Q.   Okay.  We talked about Longs, Safeway,
+
+14    and Luckys.  And then now I just want to ask you
+
+15    about Target and Walmart.
+
+16             Is the answer the same, that, to your
+
+17    knowledge, you can't say whether any bottles you
+
+18    tested had come from the shelves of Target or
+
+19    Walmart and it's true that you don't plan to go
+
+20    back and do some kind of match-up analysis prior to
+
+21    your testimony at the Reyes trial?
+
+22        A.   You know, I may -- now, you're just
+
+23    talking about Walmart and Target and those from
+
+24    California, right?
+
+25        Q.   I guess I'm talking about any retailer
+
+
+                                                      432
+
+
+ 1    match-up.  Do you plan to offer -- do any work or
+
+ 2    offer any opinions in this case that certain
+
+ 3    bottles you've tested have come from certain
+
+ 4    retailers?
+
+ 5        A.   Well, sure.  The off-the-shelf samples
+
+ 6    that were tested and produced, you know, they were
+
+ 7    bought from Publix and Walgreens.  I still have
+
+ 8    those.
+
+ 9        Q.   Okay.
+
+10        A.   And if I'm asked, I will tell, you know,
+
+11    I got the receipt and stuff and we've analyzed it,
+
+12    but I do have off-the-shelf samples from Target
+
+13    and -- that I have not tested yet from both Target,
+
+14    CVS, Walmart, and a few other places, but they're
+
+15    still, you know, they're still waiting to be tested
+
+16    and I have not done those analyses yet, so if I was
+
+17    asked, the only three that I have personal
+
+18    knowledge about are the three that I've already
+
+19    tested and produced in this case.
+
+20        Q.   Okay.  I want to break that down just a
+
+21    little bit.  I wrote down that you said "I do have
+
+22    off-the-shelf from Target, CVS, Walmart, and a few
+
+23    other places that I have not tested yet. "
+
+24        A.   Yes.
+
+25        Q.   What other places?
+
+
+                                                      433
+
+
+ 1        A.   I'd have to get the chain of custodies
+
+ 2    out.  Publix would be one.  I think Kroger is one.
+
+ 3    I think.  CVS.  Walgreens.  Publix for sure.  I
+
+ 4    believe Target and I believe Walmart.  It may be
+
+ 5    Kroger.
+
+ 6        Q.   And including both the ones that you have
+
+ 7    not tested yet and the ones that you did test in
+
+ 8    the 2020 off-the-shelf talcum powder analysis, were
+
+ 9    all of those samples purchased in Georgia?
+
+10        A.   Yes.
+
+11        Q.   Were they all purchased in 2020?
+
+12        A.   Yes.
+
+13        Q.   Okay.  And then a minute ago, I thought I
+
+14    heard you say in referring to what is Exhibit 34,
+
+15    the 2020 off-the-shelf, that you had tested
+
+16    products from Publix, and that, frankly, Dr. Longo,
+
+17    is not my understanding.
+
+18        A.   Well, that's why I should have looked at
+
+19    it before I did that.
+
+20        Q.   Can we look at Exhibit 34 together, then?
+
+21        A.   Yes.  I'm not disputing you.  I didn't
+
+22    look at it.  And let's go to the page.  I'm sure
+
+23    you're right.
+
+24           (Defendants' Exhibit No. 34 was marked for
+
+25            identification.)
+
+
+                                                      434
+
+
+ 1    BY MS. WHITE:
+
+ 2        Q.   So I want to start -- if I start at
+
+ 3    page -- pdf page 3, and it says at the bottom page
+
+ 4    1 of 2.  This is a chain of custody form; is that
+
+ 5    correct?
+
+ 6        A.   Yes.
+
+ 7        Q.   And between page 1 and page 2 of this
+
+ 8    chain of custody form, I see thirteen different
+
+ 9    off-the-shelf bottles of purported talcum powder;
+
+10    is that right?
+
+11        A.   That's right.
+
+12        Q.   And is it fair that twelve of those are
+
+13    labeled as Johnson's baby powder and one is labeled
+
+14    Gold Bond medicated powder?
+
+15        A.   That's right.
+
+16        Q.   And it's my understanding that out of the
+
+17    thirteen samples or products on this chain of
+
+18    custody form, that you have only tested to date
+
+19    001, 002, 003; is that true?
+
+20        A.   That's true.
+
+21        Q.   And 001 came from a CVS store 2279 in,
+
+22    I'm going to say this wrong, Suwanee, Georgia?
+
+23        A.   That's absolutely perfect and that is
+
+24    correct.
+
+25        Q.   Okay.  And sample 002 came from the same
+
+
+                                                      435
+
+
+ 1    CVS store in Suwanee, Georgia, and they were both
+
+ 2    purchased on 7-1-2020?
+
+ 3        A.   That is correct.
+
+ 4        Q.   And then the third of the three samples
+
+ 5    that you tested was a Johnson's baby powder product
+
+ 6    purchased at Walgreens in Johns Creek, Georgia on
+
+ 7    the same date, 7-1-2020; is that correct?
+
+ 8        A.   Correct.
+
+ 9        Q.   And then all three of those samples
+
+10    you've tested and all twelve of the Johnson's baby
+
+11    powder products are 1.5 ounce, which is sometimes
+
+12    referred to as travel size; is that correct?
+
+13        A.   That's correct.
+
+14        Q.   And is there a reason that you purchased
+
+15    the 1.5 ounce bottles for the samples for your lab?
+
+16        A.   Yes.
+
+17        Q.   And what was the reason?
+
+18        A.   That was the only size they had at the
+
+19    time I walked in there and purchased them.
+
+20        Q.   And they had other products on the
+
+21    shelves, other Johnson's baby powder products that
+
+22    were non-talc based?  Is that the only talc-based
+
+23    product were the 1.5 ounce, is that what I'm
+
+24    understanding?
+
+25        A.   That's the only one that were present in
+
+
+                                                      436
+
+
+ 1    the stores, yes.
+
+ 2        Q.   Okay.  And then just to close the loop,
+
+ 3    earlier you had mentioned Publix, and the only
+
+ 4    Publix I see on this chain of custody form is
+
+ 5    sample 007 purchased from Publix 0565 in Suwanee,
+
+ 6    Georgia on 7-1-20.  I'm sorry, I misstated.  And
+
+ 7    also sample 006 purchased from the same Publix on
+
+ 8    the same date.
+
+ 9             Were those two samples the only Publix
+
+10    purchases?
+
+11        A.   They're the only ones purchased on that
+
+12    chain of custody.  I'd have to look to see if we
+
+13    have additional ones or not.
+
+14        Q.   Okay.  And these have not been tested yet
+
+15    from this chain of custody and neither has any of
+
+16    the other Publix, to your knowledge; is that fair?
+
+17        A.   That's fair.
+
+18        Q.   And do you plan to test any of the other,
+
+19    what did you call it, ten remaining samples
+
+20    identified on this chain of custody prior to your
+
+21    testimony in the Reyes case?
+
+22        A.   Oh, no.
+
+23        Q.   Okay.  And I apologize if I asked you
+
+24    this last time.  I just want to, as we're talking
+
+25    about it, make sure I've asked you.  What was the
+
+
+                                                      437
+
+
+ 1    reason for purchasing off-the-shelf product in July
+
+ 2    of 2020 when it's my understanding that previously
+
+ 3    your lab and your team had not been purchasing
+
+ 4    off-the-shelf products to test?
+
+ 5        A.   We had purchased a lot of off-the-shelf
+
+ 6    products initially back in 2016, 2017 and we've
+
+ 7    only --
+
+ 8        Q.   Okay.
+
+ 9        A.   -- and we only analyzed one of
+
+10    them, number 13, and -- and we have some chain of
+
+11    custodies for that and we've been using it for
+
+12    making our spike samples for the heavy liquid
+
+13    density separation for chrysotile, and I just got
+
+14    all these exemplars that I've not tested from --
+
+15    I've got them all over the place.  But I wanted
+
+16    to -- and have been criticized quite a bit in trial
+
+17    about not ever getting off-the-shelf, you know --
+
+18    you have never found asbestos in any off-the-shelf
+
+19    Johnson & Johnson products, and we'd only tested
+
+20    like one off-the-shelf at that point.
+
+21             So my plan is to analyze all of these,
+
+22    analyze all the ones from the first round and take
+
+23    a look and see where they've all come from and --
+
+24    but none of it will be -- so we have some off the
+
+25    shelves from some previous years, I think going
+
+
+                                                      438
+
+
+ 1    back to either late 2016 or early 2017.
+
+ 2             And then going back to the off-the-shelf
+
+ 3    ones in California, and I can --
+
+ 4             Well, hold on.  That's a good point.
+
+ 5             Can we take a five-minute break?  I want
+
+ 6    to grab our off-the-shelf California ones to let
+
+ 7    you know where we got them because I forgot about
+
+ 8    that.  That came from the Lanier firm.  So we took
+
+ 9    like five minutes the first time.  I'm finished
+
+10    with the answer.  Can we take a five-minute break?
+
+11        Q.   We can.  That's fine with me.
+
+12             MR. STEINBERG:  Sure.  Yup.
+
+13                    (Recess taken.)
+
+14             MS. WHITE:  We're back on the record.
+
+15    BY MS. WHITE:
+
+16        Q.   And, Dr. Longo, I am looking at what has
+
+17    been marked in this deposition as Exhibit 18, which
+
+18    I --
+
+19        A.   Let me get to it.
+
+20        Q.   Yup.  And I'll just read the title of it
+
+21    into the record, which may help.  It's Analysis of
+
+22    Johnson & Johnson's Baby Powder and Valeant Shower
+
+23    to Shower Talc Products For Amphibole Asbestos
+
+24    Chinese, prepared by William Longo, February 2019.
+
+25        A.   Correct.
+
+
+                                                      439
+
+
+ 1           (Defendants' Exhibit No. 18 was marked for
+
+ 2            identification.)
+
+ 3    BY MS. WHITE:
+
+ 4        Q.   Okay.  And my understanding is that prior
+
+ 5    to the break, we were talking about some
+
+ 6    off-the-shelf products that you had reviewed
+
+ 7    previously, and you said that, wait a minute, maybe
+
+ 8    there were some that were from California, so we
+
+ 9    took a break and now we're looking at Exhibit 18.
+
+10             And can you identify where I should look
+
+11    in this report for the source of the off-the-shelf
+
+12    products?
+
+13        A.   This is a different set of samples.
+
+14        Q.   Oh, okay.
+
+15        A.   You're talking about samples, but we can
+
+16    go to that.  I would just like to clarify this one
+
+17    and then I'll go to 18.
+
+18        Q.   Okay.  Sure.
+
+19        A.   This is project M67420, and they are five
+
+20    J&J baby powder -- four baby powder containers and
+
+21    one Shower to Shower and they were purchased in
+
+22    September of 20 -- September 22nd, 2017 and they
+
+23    came from two places of -- they came from a place
+
+24    called Imperial Westwood, a four ounce and an eight
+
+25    ounce Shower to Shower, and then the other three
+
+
+                                                      440
+
+
+ 1    came from Westwood Medical Pharmacy.
+
+ 2        Q.   And the other three were Johnson baby
+
+ 3    powder?
+
+ 4        A.   Yes.
+
+ 5        Q.   Okay.  And that's M67420?
+
+ 6        A.   Correct.
+
+ 7        Q.   Okay.  And then I had, I think
+
+ 8    mistakenly, asked you to look at Exhibit 18.
+
+ 9             Could you tell me if you know the source
+
+10    of the samples noted as, quote, off the shelves in
+
+11    that report or the source of any of the samples in
+
+12    that report?
+
+13        A.   The off-the-shelf ones in that report are
+
+14    the ones I just gave you.  And mine says it's too
+
+15    big to open, but I have those chains of custody and
+
+16    I can tell you at least what I know about the
+
+17    Johnson baby powder ones.
+
+18        Q.   Okay, maybe I misunderstood.  The ones
+
+19    you gave me for M67420 are in Exhibit 18?
+
+20        A.   Yes, so that's our Prop 65 Report.  And I
+
+21    don't have that report handy, and when I go to
+
+22    click on it, it says this file is too large to be
+
+23    previewed, but the only -- those had to be
+
+24    California samples, and the only California
+
+25    samples, because it was in California that we have
+
+
+                                                      441
+
+
+ 1    analyzed where we know where it came from, were the
+
+ 2    ones I just gave you.
+
+ 3        Q.   Oh, I understand.  Okay.  I think I put
+
+ 4    it together now, so that make sense.
+
+ 5             So I know you're downloading, but can we
+
+ 6    go back, then, to the 2020 off-the-shelf to close
+
+ 7    that out?
+
+ 8        A.   Sure.
+
+ 9        Q.   So when I looked at the Exhibit 34, the
+
+10    2020 off-the-shelf report, a question I had for you
+
+11    is for the samples you tested, 001, 002, 003, do
+
+12    you know the date of manufacture for those samples?
+
+13        A.   Let me get to the --
+
+14             24, right?
+
+15        Q.   34.
+
+16        A.   Oh, 34, excuse me.  I was going to say
+
+17    yes, we do, but I just -- before I look at it, as I
+
+18    recall, the container had the dates on them.
+
+19             It's not opening for me.
+
+20             There it goes.
+
+21             So if you look -- if you look at page --
+
+22    go past Section 2.  If you look at page -- I don't
+
+23    have them on there.
+
+24             Let's look at the next table.  It's not
+
+25    there, either.
+
+
+                                                      442
+
+
+ 1             I'm assuming the photographs are in here.
+
+ 2        Q.   I see photographs in Section 6, Dr.
+
+ 3    Longo.
+
+ 4        A.   What page did you go to?
+
+ 5        Q.   Pdf page 141.
+
+ 6        A.   Alright, I'm getting there.  See if the
+
+ 7    resolution is good enough to see the date.  Okay.
+
+ 8    For sample 003?
+
+ 9        Q.   Uh-huh.
+
+10        A.   It has a date on the back under the bar
+
+11    card -- the bar code right above the zero of 2019
+
+12    for the -- to the back of the container.
+
+13        Q.   Okay.  I'm looking at pdf page 168 of
+
+14    Exhibit 34, and it's the picture of a back of a
+
+15    container.  The numbers at the bottom say 30044731.
+
+16        A.   See the line where it says "China talc"
+
+17    right above that?
+
+18        Q.   I see -- yes, sir.
+
+19        A.   If you go to "China" and go straight up,
+
+20    you'll see a 2019.
+
+21        Q.   Okay.  And so my question for you, Dr.
+
+22    Longo, is if this product was manufactured in
+
+23    2019 --
+
+24        A.   Yes.
+
+25        Q.   -- and you bought it off the shelf in
+
+
+                                                      443
+
+
+ 1    July of 2020, do you have information or an opinion
+
+ 2    about how long it takes to get from manufacturer to
+
+ 3    the shelf?
+
+ 4        A.   No.  We'd have to know when this
+
+ 5    particular bottle was put on the shelf and I don't
+
+ 6    have any of that information.
+
+ 7        Q.   And so would it be fair to say you don't
+
+ 8    have information, for instance, about the time from
+
+ 9    manufacture until it first gets on the shelf at any
+
+10    stores?
+
+11        A.   Well, you know, any more than the
+
+12    obvious.  If it was bottled and manufactured in
+
+13    2019 and this would have been done in China, you
+
+14    know, how long after it's bottled and put in a
+
+15    crate, goes to the distribution center and, you
+
+16    know, is it -- I'm assuming it comes over on a
+
+17    ship.  I'm assuming it's trucked.  I don't have any
+
+18    of that information.  Obviously it can't be before
+
+19    2019 and -- and J&J, see the codes at the top, the
+
+20    2411, I have a better picture of that, I think it's
+
+21    9RA --
+
+22        Q.   Yes, sir.
+
+23        A.   -- J&J has that information because
+
+24    that's the code it essentially will give you that
+
+25    they know where it's been manufactured and the
+
+
+                                                      444
+
+
+ 1    date, what lot that came from.  It could be they
+
+ 2    can run that code and tell you, I think, within the
+
+ 3    month and year that it was manufactured.
+
+ 4        Q.   Okay.  And I don't think it's a mystery
+
+ 5    here.  What I'm trying to understand is, we have a
+
+ 6    particular plaintiff in this case, Mr. Reyes, and
+
+ 7    my understanding is you have not provided and I
+
+ 8    haven't seen any bottles that Mr. Reyes actually
+
+ 9    used, so we're relying on his testimony about when
+
+10    he purchased bottles.
+
+11             I'm trying to understand if you, Dr.
+
+12    Longo, have looked at his testimony and have an
+
+13    opinion, if he purchased a bottle in 2004, do you
+
+14    have an opinion about the date of manufacture of
+
+15    that bottle?
+
+16        A.   Well, it looks like, you know, it could
+
+17    be -- you know, I would have to do more research.
+
+18    I don't have an opinion other than if it was
+
+19    purchased in 2004, you know, was it like these
+
+20    bottles where, I can go look to the other ones, is
+
+21    it a year apart, does it take that long or how long
+
+22    does it sit on the shelf.  You know, I don't have
+
+23    any of that information, so I couldn't give you any
+
+24    opinion about that.
+
+25        Q.   Okay.  And that's really what I was
+
+
+                                                      445
+
+
+ 1    trying to understand is the timing of the purchase.
+
+ 2             Is it fair to say, without more
+
+ 3    information provided to you about distribution
+
+ 4    timing, stocking, shelf life timing, you couldn't
+
+ 5    provide an opinion about the vintage of the bottles
+
+ 6    actually purchased at a certain time?
+
+ 7        A.   Well, if it was -- if it was purchased in
+
+ 8    2003 and we were able to analyze it and it was
+
+ 9    positive for asbestos by TEM, you know, you could
+
+10    say it's more -- you know, could be China or it
+
+11    could be Vermont, so -- but --
+
+12        Q.   But we can't, right?  I mean, we don't
+
+13    have the bottles to use, we only have his
+
+14    testimony.  So I'm trying to understand if you're
+
+15    going to offer an opinion at trial based solely on
+
+16    his testimony of the year of manufacture of the
+
+17    products that he purchased from the individual
+
+18    retailers at the times he says he bought them.
+
+19        A.   When you say faithfully rely on his
+
+20    testimony, does that mean is he telling, you know,
+
+21    accurate testimony or is he telling untruthful
+
+22    testimony?
+
+23        Q.   I didn't recall saying "faithfully."  I
+
+24    think I just was saying, my understanding is the
+
+25    basis of the years of products that he used, the
+
+
+                                                      446
+
+
+ 1    only basis is his and his family's testimony.  Is
+
+ 2    that fair?
+
+ 3        A.   Well, it's not quite fair.  You know, you
+
+ 4    have a date from when he was first exposed and when
+
+ 5    he was first buying containers, and it's been very,
+
+ 6    you know, common to say if he's buying containers
+
+ 7    of -- you know, for example, when he came to the
+
+ 8    United States, the containers he was buying, if it
+
+ 9    takes a year or -- either way, he's buying
+
+10    containers that have Vermont talc in it.  I'm not
+
+11    ever going to testify that, well, he says when he
+
+12    came here, he was buying it, and this would have
+
+13    been the vintage year and month that that was
+
+14    manufactured.
+
+15             And in a lot of these, you know, if you
+
+16    had the containers, they have bar codes.  They may
+
+17    not have these kind of codes in '82, I don't
+
+18    remember when they started, you can get within a
+
+19    year or so what I think is accurate enough to what
+
+20    is the talc source because my reports are broken
+
+21    down into Italian, Vermont, in this case Korean,
+
+22    Vermont, and Chinese source talc.
+
+23             And so -- and when he got to the United
+
+24    States, it would have been Vermont talc.  Somewhere
+
+25    in the range of 2003, 2004, it would have gone from
+
+
+                                                      447
+
+
+ 1    Vermont source talc to Chinese talc.
+
+ 2        Q.   When you say somewhat of a range of 2003
+
+ 3    to 2004, do you mean the manufacturer changed from
+
+ 4    Vermont to Chinese or do you mean what was on the
+
+ 5    shelf?
+
+ 6        A.   Well, again, we're going on what's on the
+
+ 7    shelf, etcetera.  I'm looking at when Johnson &
+
+ 8    Johnson says they -- they switched over.  And so in
+
+ 9    that 2003, 2004 range, to sit here and testify, you
+
+10    know, when it's on the shelf, how long it's
+
+11    replaced, you know, what distributor it came from,
+
+12    how long it took, no, I'm not testifying about any
+
+13    of that.  It doesn't --
+
+14        Q.   Okay.
+
+15        A.   -- change the facts that he's using --
+
+16    he's using a product through that time, but for
+
+17    your inquiries, I can't give any testimony from the
+
+18    time it got in.
+
+19             You know, if it's Vermont, they have a --
+
+20    you know, you have the mill right there where they
+
+21    will process the talc and get it into the particle
+
+22    sizes and sterilization, etcetera, and typically
+
+23    put it on a railroad car and, you know, send it to
+
+24    either Houston or Georgia to get bottled, that
+
+25    obviously would be a lot faster, but it would be a
+
+
+                                                      448
+
+
+ 1    lot slower if that's the mill they're using during
+
+ 2    Vermont for what's going out to California, but you
+
+ 3    don't have it sitting in a ship being shipped over.
+
+ 4    I don't know how long it takes for a cargo ship to
+
+ 5    get from the port in China to the port on the west
+
+ 6    coast, so it's not what I'm testifying about.
+
+ 7        Q.   Okay.  And you don't intend to gather any
+
+ 8    additional information or data in order to
+
+ 9    understand or provide testimony or opinions about
+
+10    the distribution timing and process and when
+
+11    certain vintages got on to certain shelves; is that
+
+12    fair?
+
+13        A.   That's fair.  It would be very hard for
+
+14    me to do that.  It would seem like that would be
+
+15    information available to both the folks who are
+
+16    making this product and to the folks who are
+
+17    putting, you know, putting it on their shelves,
+
+18    etcetera, etcetera.  That's not something I would
+
+19    do.
+
+20        Q.   Okay.  I'm trying to be efficient, so
+
+21    give me a minute here while I look at my notes.
+
+22             My understanding from our discussion from
+
+23    a moment ago is that you've identified five
+
+24    off-the-shelf products from two different retailers
+
+25    in Westwood, California that you're aware of that
+
+
+                                                      449
+
+
+ 1    were purchased and tested by your lab in 2017; is
+
+ 2    that fair?
+
+ 3        A.   That's fair.
+
+ 4        Q.   And that you're not aware of any products
+
+ 5    purchased from any retailer shelf from the 1980s
+
+ 6    that has been tested by you or your company?
+
+ 7        A.   You have to, you know, let me see if I
+
+ 8    understand, that either I or somebody actually
+
+ 9    purchased it in the '80s, and this is not like the
+
+10    container in the Zimmerman case that the plaintiff,
+
+11    the mesothelioma plaintiff had a 1986 or 1982
+
+12    bottle that she had -- she had purchased and it was
+
+13    put on a shelf and then provided that, and I don't
+
+14    recall in the -- well, this case, I don't recall.
+
+15    Not this case but it's the last -- it was the case
+
+16    yesterday was a five-day case.  I don't recall what
+
+17    she testified to, if she knew when that was
+
+18    purchased or where.
+
+19        Q.   Okay.  Maybe a better question, Dr.
+
+20    Longo, is it fair that you don't intend to offer an
+
+21    opinion in the Reyes case that anything beyond the
+
+22    five bottles from Westwood, that you can identify a
+
+23    specific store and a specific time in California
+
+24    that they came from?
+
+25        A.   If I could open -- and I can go get the
+
+
+                                                      450
+
+
+ 1    files.  If I could have opened that exhibit,
+
+ 2    because we do have samples from Simon Greenstone,
+
+ 3    the Shower to Shower containers, it was -- those
+
+ 4    Shower to Shower containers were sold by a company
+
+ 5    that essentially bought it from J&J, and I would
+
+ 6    have to look.  Just give me a second to see if I
+
+ 7    can find one that makes sense here.
+
+ 8             Okay.  So the chain of custodies for the
+
+ 9    Simon Greenstone project that we had done some time
+
+10    ago, I'm just looking at their chains of custody,
+
+11    they purchased, you know, Valeant Shower to Shower
+
+12    powder, 13 ounce blue plastic bottle purchased by
+
+13    Simon Greenstone Panatier, and I forget what the P
+
+14    stands for.  So that was an off-the-shelf that they
+
+15    purchased, and the rest of them are --
+
+16        Q.   From the plaintiff?
+
+17        A.   -- a Johnson baby powder 1.5 ounce
+
+18    purchased by Simon Greenstone in January of 2017, a
+
+19    Johnson's baby powder 22 ounce purchased by Simon
+
+20    Greenstone, and I'd have to go back and get the
+
+21    original custody to see where they may have
+
+22    purchased those.
+
+23             And we have analyzed all those, of
+
+24    course.  And I'll just look at the numbers of the
+
+25    purchased ones.  Blah, blah, blah.  Off the self,
+
+
+                                                      451
+
+
+ 1    off the shelf, off the shelf.  I would have to get
+
+ 2    the whole study out, but those are off the shelves
+
+ 3    that they purchased in 2017, and I don't -- you
+
+ 4    know, with what I'm looking at, I don't have where
+
+ 5    they were purchased, but somewhere in Los Angeles,
+
+ 6    I think.
+
+ 7             Without getting the original -- the
+
+ 8    original file out, that No.  18 you have, I would
+
+ 9    have to search the chain of custodies.
+
+10        Q.   Okay.  I'm looking over my notes here.
+
+11    Let me just ask you a few followup conclusion
+
+12    questions because I think I'm done with my specific
+
+13    ones.
+
+14        A.   Okay.
+
+15        Q.   And I'll try to make sure I haven't
+
+16    missed anything.
+
+17             I think I've asked you this a couple
+
+18    different ways, but I'll ask it again, Dr. Longo,
+
+19    to make sure I understand.  Do you plan to do any
+
+20    additional work for this case prior to your trial
+
+21    testimony?
+
+22        A.   Not specific for this case.  Obviously,
+
+23    you know, we have ongoing projects with similar --
+
+24    similar materials, but I don't think I would have
+
+25    to be doing anything new that would impact any of
+
+
+                                                      452
+
+
+ 1    my testimony in this case.
+
+ 2        Q.   And I'm only asking because we did talk
+
+ 3    about new videos that were just done this week, so
+
+ 4    I just want to be sure to prepare for trial that
+
+ 5    you don't have plans to do any videos or testing
+
+ 6    that you're going to rely on at trial.
+
+ 7        A.   I mean, I -- it's very hard for me to --
+
+ 8    I'm not going to specifically say that, you know,
+
+ 9    I'm not going to do anything else.  I'm working on
+
+10    other things that could impact my testimony, but I
+
+11    can't -- I don't know when I'm going to be
+
+12    testifying.  Maybe two weeks.  We're constantly
+
+13    doing research.  I don't know how to say I'm not
+
+14    going to do anything that would impact my
+
+15    testimony.  If I do, I'll let my client know
+
+16    because I can't stop working on stuff.  It's not
+
+17    specific for the Reyes case but it's specific for
+
+18    other cases.
+
+19        Q.   Okay.
+
+20             MS. WHITE:  I guess I should note at that
+
+21    point that, Henry, I would make a request that if
+
+22    there are new materials generated between now and
+
+23    when Dr. Longo testifies, that we would ask to be
+
+24    provided a copy of those materials, testing
+
+25    results, or videos prior to his testimony.
+
+
+                                                      453
+
+
+ 1             MR. STEINBERG:  It's generated in the
+
+ 2    system but you reserve the right to request such.
+
+ 3    BY MS. WHITE:
+
+ 4        Q.   And, Dr. Longo, do you have any
+
+ 5    additional opinions that we have not discussed in
+
+ 6    your five volume days of deposition related to the
+
+ 7    Reyes case?
+
+ 8        A.   I mean, I can't remember every opinion
+
+ 9    I've given.  I don't have any additional opinions
+
+10    that I can think of off the top of my head, but you
+
+11    can imagine, after four days and an hour or so, a
+
+12    lot of opinions have been rendered.
+
+13        Q.   Well, let me ask you one more question
+
+14    and I'll be more specific.
+
+15             Relating to my clients, Lucky Stores,
+
+16    Safeway, and Longs, do you plan to offer any
+
+17    opinions or testimony specific to the products that
+
+18    would have been, in your opinion, on their shelves
+
+19    or sold to Mr. Reyes that we have not already
+
+20    discussed?
+
+21        A.   I don't recall having any expert opinion
+
+22    about that they were on the shelf.  I think what
+
+23    I've stated is if, in fact, these products were
+
+24    sold and the products that were at issue here, I
+
+25    don't have any opinions about anything about who
+
+
+                                                      454
+
+
+ 1    sold it, what knowledge they may have had, did they
+
+ 2    know, should they have tested, you know, who knew
+
+ 3    what when about the hazards of asbestos.
+
+ 4             My opinions are about this is what we --
+
+ 5    this is our opinion about the types of asbestos
+
+ 6    that are in there and etcetera, etcetera.  It's
+
+ 7    really immaterial where it was purchased.  That
+
+ 8    doesn't change any of my opinions if it was
+
+ 9    purchased at Safeway versus Longs versus another
+
+10    store.  That doesn't change anything that I have
+
+11    opinions about.
+
+12        Q.   Do you plan to do any additional work or
+
+13    offer any additional opinions regarding the amount
+
+14    of Johnson's talc-based baby powder that Mr. Reyes
+
+15    was exposed to?
+
+16        A.   No.  There's nothing more to do with
+
+17    that.  They're on my reliance list.  Those amounts
+
+18    that I used was really based on Johnson & Johnson's
+
+19    own data from, you know, human trials on the
+
+20    average amount that is used in -- when it's applied
+
+21    and from all the way -- you know, from infants up
+
+22    to what they call heavy users, and the applications
+
+23    are pretty straightforward if he said he did it
+
+24    twice a day and I think he had fifty-some years of
+
+25    exposure, so I don't have anything else to add to
+
+
+                                                      455
+
+
+ 1    that.
+
+ 2        Q.   Okay.  Now, I've asked you up until now
+
+ 3    about your plans.  I'm going to ask you a little
+
+ 4    different question, which is, have you been asked
+
+ 5    to do any additional testing, analysis,
+
+ 6    calculations relating to Mr. Reyes's exposure that
+
+ 7    we have not talked about in our deposition?
+
+ 8        A.   I have not been asked to do any
+
+ 9    additional work on the Reyes case.  And when I say
+
+10    "any additional work," I've completed my report of
+
+11    those calculations.  Unless I made a typo in them,
+
+12    I'm not going to do any additional work on it.
+
+13             But, again, I have a lot of other ongoing
+
+14    cases and I am continuing to work on those cases.
+
+15    If we happen to work on anything that may have any
+
+16    impact on my testimony, I'll let Henry know right
+
+17    away.
+
+18        Q.   Okay.  Thank you, sir.
+
+19             Any additional reliance materials that
+
+20    you plan to rely on for your opinions in this case
+
+21    that have not been disclosed?
+
+22        A.   I can't think of anything as I sit here.
+
+23        Q.   Okay.  Sorry for interrupting you.
+
+24        A.   That's alright.
+
+25        Q.   It's hard on the phone, right?  We can't
+
+
+                                                      456
+
+
+ 1    see.
+
+ 2             Do the reports that you produced in this
+
+ 3    case, along with the exhibits and the reliance
+
+ 4    materials that you've produced to date, cover the
+
+ 5    opinions -- cover all the opinions you intend to
+
+ 6    offer at trial in this matter?
+
+ 7        A.   Well, that's really a two-part question
+
+ 8    so it's a two-part answer.
+
+ 9             Certainly the documents that I'm relying
+
+10    on for specific areas of science on polarized light
+
+11    microscopy, exposure, etcetera, that's all in my
+
+12    reliance with the J&J documents, but I've been
+
+13    doing TEM asbestos analysis and research in
+
+14    publications in the past.  It's very hard for me to
+
+15    say what can I give you for all this information
+
+16    about some of the basics, and so I don't think of
+
+17    anything.  I'll just use what were my opinions on
+
+18    here about, you know, sort of the new stuff, not
+
+19    that new, but, you know, the testing methods on
+
+20    dispersion staining.
+
+21             And I can't think of anything, but, you
+
+22    know, I have been doing this for thirty years, I
+
+23    don't have any specific references, but I do have a
+
+24    lot of knowledge that either you would have to go
+
+25    back to basic chemistry books to talk about high
+
+
+                                                      457
+
+
+ 1    intensity lighting and the Tyndall effect, stuff
+
+ 2    like that.  I haven't produced any of that, but
+
+ 3    it's been produced a ton of times.
+
+ 4        Q.   Okay.  I understand.  And I think, you
+
+ 5    know, my questions come from the iterative process
+
+ 6    of this deposition, the production of materials,
+
+ 7    and I want to feel comfortable that what has been
+
+ 8    produced to date are the things that you will rely
+
+ 9    on in your testimony and refer to and that there's
+
+10    not going to be opinions that point to or rely on
+
+11    pictures, videos, or testing that have not been
+
+12    produced yet.  That's really it.
+
+13        A.   Everything I was asked to produce that I
+
+14    could for, you know, the usual question what are
+
+15    you relying on, well, I'm relying on the Su tables
+
+16    for the ranges of chrysotile.  I'll get you one
+
+17    that has all the pages in the right order.
+
+18             I have produced everything and any, you
+
+19    know, any publications.  I wasn't sure if you'd
+
+20    asked for the serpentine minerals intergrowth paper
+
+21    showing the metamorphic pictures of going from
+
+22    chrysotile to fibrous talc.
+
+23        Q.   Okay.  Well, I appreciate --
+
+24             MR. STEINBERG:  Sorry, Meredith, I'll
+
+25    jump in with a belated objection as argumentative,
+
+
+                                                      458
+
+
+ 1    assumes facts, calls for speculation.
+
+ 2             Your questions seem to not encompass the
+
+ 3    possibility that a demonstrative could be marked at
+
+ 4    trial or some evidence that would come in and that
+
+ 5    he could not be asked about that.  Obviously Dr.
+
+ 6    Longo doesn't know what he's going to be asked
+
+ 7    about, but that's my objection.
+
+ 8             MS. WHITE:  I appreciate that.  I really
+
+ 9    try hard not to be argumentative, but I won't take
+
+10    it personally.
+
+11    BY MS. WHITE:
+
+12        Q.   I appreciate your time, Dr. Longo.  I
+
+13    think that we've asked for and hopefully have
+
+14    agreement on just getting a revised, complete, in
+
+15    order copy of the Dr. Su report, and I think I've
+
+16    concluded my questions and can pass the witness at
+
+17    this point.
+
+18        A.   Okay.
+
+19    EXAMINATION BY MR. HYNES:
+
+20        Q.   Hi, Dr. Longo.  Kevin Hynes.
+
+21        A.   Hello.
+
+22        Q.   How are you?
+
+23        A.   I'm fine.  How are you today?
+
+24        Q.   Good.
+
+25             The J&J defendants reserved the right to
+
+
+                                                      459
+
+
+ 1    ask you some questions about some of the documents
+
+ 2    that you've produced since the last time we spoke,
+
+ 3    so we'll do that now.  Hopefully we can conclude so
+
+ 4    we can get Henry off to his hearing.
+
+ 5             So, Dr. Longo, can you please turn to
+
+ 6    Exhibit 55, the linear regression?
+
+ 7        A.   Sure.
+
+ 8        Q.   When was this document created?
+
+ 9        A.   That I don't know.  I got it from Dr.
+
+10    Rigler and I printed it out and I found it the
+
+11    other day, so I don't know if I can give you a date
+
+12    when it was -- when it was actually generated.
+
+13        Q.   Was it before or after your report in the
+
+14    Reyes matter?
+
+15        A.   I'd have to ask Mark when he did it.
+
+16        Q.   Okay.
+
+17        A.   He's always had various iterations as
+
+18    we've gone along, so I think versions of this one
+
+19    has been -- has been printed in the past but I
+
+20    would have to check.
+
+21             I'm sorry, what number was that?
+
+22        Q.   This is Exhibit 55.
+
+23        A.   Okay.
+
+24        Q.   And so did you have this?  Were you aware
+
+25    of this specific document, this specific linear
+
+
+                                                      460
+
+
+ 1    regression at the time that you issued your report
+
+ 2    in the Reyes matter?
+
+ 3             MR. STEINBERG:  Vague as to "specific."
+
+ 4             THE WITNESS:  I don't know.
+
+ 5    BY MR. HYNES:
+
+ 6        Q.   Okay.  So did you use this in your
+
+ 7    regression model for your 0.01 to 1 fiber per cc
+
+ 8    estimate as part of your opinions in the Reyes
+
+ 9    matter?
+
+10        A.   No.  I think at the very first depo I
+
+11    don't recall stating that 'cause I've been using
+
+12    the .01 -- the .1 for a long time, way before we
+
+13    even had -- before we had the linear regression and
+
+14    I was asked many times what do you base that on and
+
+15    I said it's really my experience with all the work
+
+16    practice studies we've done for the last twenty
+
+17    years of different concentrations of materials and
+
+18    accessory minerals, such as, you know, we've done
+
+19    work practice studies with Vanderbilt talc and you
+
+20    have concentrations there, obviously much, much
+
+21    higher anthophyllite and to a lesser amount
+
+22    tremolite, but I've just had all this experience of
+
+23    doing exposure studies and what the material form
+
+24    is, you know, a solid piece of thermal insulation
+
+25    that has 15 percent asbestos versus a fine powder
+
+
+                                                      461
+
+
+ 1    like the Vanderbilt talc that has two to three
+
+ 2    percent.  Obviously the levels found there are in
+
+ 3    the 15, you pour 22 ounces of that material into a
+
+ 4    container and you have exposures in the 20, 30, 40
+
+ 5    fiber per cc range.
+
+ 6             So it's decades of experience because I
+
+ 7    was doing those exposure ranges, you know, based on
+
+ 8    the analysis of the cosmetic talc and the
+
+ 9    concentrations and the particle size of the
+
+10    material and its ability to get up in the air, our
+
+11    own studies that we've done, you know, the below
+
+12    the waist, the baby one and then baby two and then
+
+13    doing the linear regression now and putting in the
+
+14    right data.
+
+15             When I say the right data, the -- you put
+
+16    in the data that we're finding, you know, for -- I
+
+17    think this one is all the fibers that are, you
+
+18    know, greater than 5 microns, greater than .5
+
+19    microns in length and 5-to-1 aspect ratio because
+
+20    we're comparing that, you know, apples to apples.
+
+21             Before the linear regressions we were
+
+22    using, it was mainly comparing apples to oranges
+
+23    because the NIOSH 7402 method has its size
+
+24    restrictions, and those levels are usually always
+
+25    lower because you're taking just a small pie out of
+
+
+                                                      462
+
+
+ 1    the population versus all fibers greater than .5,
+
+ 2    5-to-1 aspect ratio, you're taking the rest of the
+
+ 3    slice out, the rest of the pie out because in the
+
+ 4    TEM analysis using, say, you know, the EPA or the
+
+ 5    ASTM counting rules, it is biased to the larger
+
+ 6    size bundles that you see by the 7402 method.
+
+ 7             So this is now taking the data that we're
+
+ 8    finally starting to put together for the standard
+
+ 9    TEM analysis and then we compare it to the exact
+
+10    same counting protocols that we were using for the
+
+11    analysis of the custody talc bulk samples.
+
+12        Q.   I apologize for nonresponsive portions.
+
+13             Dr. Longo, do you recall what the
+
+14    question was?
+
+15        A.   Yes.  You were asking me did I rely on
+
+16    this chart for the .1 to .01 exposure ranges.  And
+
+17    then my answer to that is, not this chart 'cause I
+
+18    have been giving these same exposure ranges for
+
+19    years.  And then I went ahead and explained what
+
+20    was used in this chart, which was not what you
+
+21    asked.  I apologize.
+
+22        Q.   That's fine.  I'm just trying to get us
+
+23    along here.
+
+24             So let's look at the chart.  Under a
+
+25    couple places on the left side where it has fiber
+
+
+                                                      463
+
+
+ 1    per gram greater than 5 microns, I think it's in a
+
+ 2    few places, one at the top, one in the actual chart
+
+ 3    itself, actually you recreated 0.5 microns,
+
+ 4    correct?
+
+ 5        A.   You know, we've calculated with just
+
+ 6    greater than 5 where, you know, you're taking the
+
+ 7    data, but there should be another one that I have
+
+ 8    that is all.  So you're comparing greater than 5 on
+
+ 9    how many greater than 5, you know, how many
+
+10    structures in the talcum powder itself that we
+
+11    measured would meet the criteria for the NIOSH 7402
+
+12    method and measuring the same thing.
+
+13             But there's another one, and maybe that's
+
+14    not completely done yet, where it's just all
+
+15    fibers.
+
+16        Q.   So I'll represent to you, the fiber per
+
+17    gram here, the 1.31 million fibers, 4.13 million
+
+18    fibers, 15.1 million fibers, those are the bulk
+
+19    concentrations in your counting criteria 0.5
+
+20    greater than 5-to-1.
+
+21        A.   Yeah, let me see those samples.  6-1.
+
+22    5-2.  I think those are the averages.  .21.  5.82.
+
+23        Q.   Dr. Longo, that's not -- the question I
+
+24    asked is, those fiber per gram figures should be
+
+25    the 1.3 million, 4.1 million, 15.1 million, those
+
+
+                                                      464
+
+
+ 1    are particle sizes that are greater than half a
+
+ 2    micron in length during the 5 point aspect ratio
+
+ 3    based on your PEL bulk analysis test, correct?
+
+ 4        A.   It should be 0. -- 0.5.  0. -- yeah, it
+
+ 5    should be greater than the equal to zero -- as I
+
+ 6    look at it right now, that is absolutely correct,
+
+ 7    it should be greater than -- greater than or equal
+
+ 8    to 0.5 microns with a 5-to-1 aspect ratio.  That is
+
+ 9    a typo.
+
+10        Q.   Yes.  And the fiber per cc of air, that's
+
+11    the same particle sizes, right, those are fibers
+
+12    per cc in air that are greater than 0.5 microns
+
+13    greater than 5 point aspect ratio?
+
+14        A.   Greater.
+
+15             I'm sorry.
+
+16        Q.   No worries.  That's fine.  Just trying to
+
+17    get this thing through.
+
+18             And so you developed, was it you or Dr.
+
+19    Rigler developed this linear regression line?
+
+20        A.   Well, it's not developed.  It's just in
+
+21    windows.  It was Dr. Rigler and I that started
+
+22    looking at it.  Initially it was just for, you
+
+23    know, the Prop 65 size OSHA fibers that you count,
+
+24    which is greater than 5, greater than .3 wide, and
+
+25    I think I've testified about this.  We realized
+
+
+                                                      465
+
+
+ 1    that we were comparing it to a bulk sample that
+
+ 2    basically was using a different TEM method, size
+
+ 3    ranges that the OSHA method, excuse me, the NIOSH
+
+ 4    7400 -- 7402 method, it's different.  And he's the
+
+ 5    one who actually created the chart.
+
+ 6        Q.   Right.  And so you applied this --
+
+ 7    there's a slope that you generated, which is 4.133
+
+ 8    for either the negative fibers, right?
+
+ 9        A.   Correct.
+
+10        Q.   And using that slope, you found -- you
+
+11    applied that to 15.1 hundred thousand -- 15.1
+
+12    million fibers per gram finding that it would
+
+13    result in a five to six minutes fiber per cc level
+
+14    of 6.24 fibers per cc in air that are greater than
+
+15    or equal to .5 microns in length, greater than 5
+
+16    point aspect ratio, right?
+
+17        A.   Yes.  I think -- did you say greater than
+
+18    or equal?
+
+19        Q.   Greater than or equal, yes.
+
+20        A.   Yes, that's exactly right.
+
+21        Q.   Okay.  And then applying that slope to
+
+22    the 4.1 million container, you got a fiber per cc
+
+23    level of particles in the TEM size range of 1.7
+
+24    fibers per cc, right?
+
+25        A.   Right.
+
+
+                                                      466
+
+
+ 1        Q.   And then similarly, you applied that
+
+ 2    4.133 slope equation to the 1.3 million fiber per
+
+ 3    gram concentration and you wound up with a 0.54
+
+ 4    fiber per cc TEM fiber size concentration, right?
+
+ 5        A.   Let's see here.  We have the 1.3 million
+
+ 6    to 4.12 million and the 15 million.  What size did
+
+ 7    you say?
+
+ 8        Q.   The fibers per gram was 1.3 million.  You
+
+ 9    applied the slope that you generated to that bulk
+
+10    concentration and you wound up with a fiber per cc
+
+11    particles that are greater than or equal to .5
+
+12    microns in length, greater than a five point aspect
+
+13    ratio, five minute fiber per cc level of .54,
+
+14    correct, drawing your attention to the third entry
+
+15    in that chart on the bottom right?
+
+16        A.   Well, it's the -- the bottom right chart
+
+17    is the fiber per gram versus the fibers per cc that
+
+18    were measured.  So the 1.310 is 1.3 million.  The
+
+19    overall average was 0.12.  The 4.12 -- the 4.120 --
+
+20    4,120,000, the overall average for the personal air
+
+21    samples was 1.77.  For the 15 million 100, it was
+
+22    582.  So it's plotted with those three -- with
+
+23    those three concentrations and using zero as the
+
+24    fourth intercept.  So you can --
+
+25        Q.   Right.  So what you did was you generated
+
+
+                                                      467
+
+
+ 1    a trim line slope and then you applied that trim
+
+ 2    line equation to certain concentrations and then
+
+ 3    that's what's being displayed in the bottom right,
+
+ 4    correct?  You're using the slope that you generated
+
+ 5    from plotting those three entries?  Using that
+
+ 6    slope, you applied it against some bulk
+
+ 7    concentration, and that's what's being displayed in
+
+ 8    the bottom right application, the slope to the bulk
+
+ 9    concentrations to arrive at a fiber per cc figure
+
+10    for particles that are greater than half a micron
+
+11    and -- greater than or equal to half a micron in
+
+12    length or with a greater than or equal to five
+
+13    point aspect ratio, right?
+
+14        A.   That's right.  My computer screen on my
+
+15    laptop had that cut off.  I was looking at that
+
+16    chart and I didn't see, you know, the rest of what
+
+17    we have here of applying to the slope and what the
+
+18    actual numbers would be based on that slope.
+
+19        Q.   Okay.  And if I can just continue here.
+
+20             You applied that slope to a container
+
+21    that is 18,000 fibers per gram.  You determined
+
+22    that that would result in a five minute airborne
+
+23    concentration of .007 fibers per cc that are
+
+24    greater than or equal to a half micron in length,
+
+25    greater than or equal to five point aspect ratio,
+
+
+                                                      468
+
+
+ 1    correct?
+
+ 2        A.   That's correct.
+
+ 3        Q.   Okay.  And then if we just look at that
+
+ 4    1.3 million fiber per gram container, the average
+
+ 5    measure data resulted in an airborne concentration
+
+ 6    of .12 fibers per cc, right?
+
+ 7        A.   Yes.
+
+ 8        Q.   And then the trim line slope results in
+
+ 9    the estimate of .54 fibers per cc; is that correct?
+
+10        A.   That's correct.
+
+11        Q.   So applying the trim line to that
+
+12    concentration, full concentration results in a
+
+13    four-and-a-half times greater fiber per cc estimate
+
+14    than did the actual measured data; is that right?
+
+15        A.   That's correct.
+
+16        Q.   Quick questions on Exhibits 54 and 59.
+
+17    These are the SEM photos for that Zimmerman sample,
+
+18    M70484.
+
+19             Are you with me?
+
+20        A.   I'll go to 59 first, yes.
+
+21        Q.   Okay.  So when was -- when were these SEM
+
+22    photos and EDS spectra generated?
+
+23        A.   Between -- let's see.  When was Sanchez
+
+24    last deposed, not today but the last time?
+
+25        Q.   I think a week ago.
+
+
+                                                      469
+
+
+ 1        A.   Yeah, they were generated the evening
+
+ 2    before.
+
+ 3        Q.   Okay.  And if we're looking at 59, you
+
+ 4    generated some EDS data here, so this particle in
+
+ 5    the middle on page 1 I believe is one that you
+
+ 6    generated EDS data for on page 2, the top of page
+
+ 7    2; is that correct?
+
+ 8        A.   I don't have 59.
+
+ 9        Q.   It's the one that was produced in the
+
+10    last evening.  The file name which you likely have
+
+11    is Longo M70484, 10-14-2020.
+
+12        A.   Okay.  We can go to the 54 one.
+
+13        Q.   Sure.  I guess in terms of identifying
+
+14    chrysotile, what is the typical ratio of magnesia
+
+15    to silica in a chrysotile particle?
+
+16        A.   Good catch.
+
+17             If you just have chrysotile and with
+
+18    these kind of detectors, you should have a
+
+19    chrysotile magnesium peak that are even.
+
+20        Q.   Okay.  And --
+
+21        A.   All peak seven to ten, but we have
+
+22    obviously one of the state-of-the-art 45 degree EDS
+
+23    systems in there.
+
+24        Q.   So it should be even?
+
+25        A.   Well, it should be even if he's not
+
+
+                                                      470
+
+
+ 1    sitting on talc.  You know, the talc EDS is about
+
+ 2    half of what would be normally the talc EDS.
+
+ 3             And what the problem is, and I'm not
+
+ 4    saying within a reasonable degree of scientific
+
+ 5    certainty.  I'm saying it's more likely than not
+
+ 6    chrysotile.
+
+ 7             And if you look at some of the -- the two
+
+ 8    different -- we took it at two different places, so
+
+ 9    if we go to 54 and we go to the third -- so we took
+
+10    the EDS patterns from the chrysotile, what I
+
+11    believe were more likely than not chrysotile laying
+
+12    on a talc plate, and with field emission SEM, the
+
+13    X-rays are not just generated from the EDS spectra,
+
+14    the X-rays are not generated just on the surface of
+
+15    something this thin.  A lot of the, they call it
+
+16    Brimstrong radiation, and I'll have to look that
+
+17    up.  No, that's for something else.  The volume
+
+18    excitation is going to be through the -- through
+
+19    and around all this talc that's there and it
+
+20    overwhelms the chrysotile spectrum.  So we took one
+
+21    very short timeframe where the ratio is actually
+
+22    higher getting more -- a better contribution of
+
+23    just the chrysotile versus the talc, and that was a
+
+24    little higher.  It's higher.  I think it's about 20
+
+25    or 30 percent higher than the one laying on the
+
+
+                                                      471
+
+
+ 1    talc.
+
+ 2             And then I looked at, okay, is it
+
+ 3    antigorite, one of the lookalikes, one of the
+
+ 4    polymorphs, and it's no 'cause antigorite mostly is
+
+ 5    non-fibrous, but when it's fibrous, it has more of
+
+ 6    a monoclinic tremolite, amphibole look.  You don't
+
+ 7    have these nice curly fibers.  And is it lizardite.
+
+ 8    And lizardite primarily has an orthorhombic
+
+ 9    structure.  So that, again, has more of an
+
+10    amphibole look to it.  It's not a chrysotile
+
+11    structure, even though the chemistry's identical.
+
+12    And it's obviously not -- it's not fibrous talc.
+
+13    You never get something that has that kind of
+
+14    flexibility.  You won't have that flexibility in
+
+15    those short distances with the monoclinic and
+
+16    orthorhombic crystals but you do have a problem of
+
+17    EDS bleed-over from the talc.
+
+18             So I would never say that within a
+
+19    reasonable degree of scientific certainty that that
+
+20    is chrysotile but I would give the reasons why I
+
+21    think it is more likely than not.
+
+22        Q.   Okay.  And for any of the SEM photographs
+
+23    you generated for M70484, whether that's in Exhibit
+
+24    54 or 59, you would not be able to testify to a
+
+25    reasonable degree of scientific certainty that any
+
+
+                                                      472
+
+
+ 1    of those photos identify chrysotile, correct?
+
+ 2        A.   That's correct.
+
+ 3        Q.   Next you pass along what was marked as
+
+ 4    Exhibit 17-A through all those using the baby
+
+ 5    diapering two studies.  I have a few questions,
+
+ 6    Doctor.
+
+ 7        A.   I misunderstood.  I do have the -- we do
+
+ 8    have the one for baby two.  That one was used in
+
+ 9    baby one.  I can send that to you.  It looks just
+
+10    like that except it's at a later date.
+
+11        Q.   Okay.  Same sellers, Pinky Reborn?
+
+12        A.   Well, I think the other one, yeah,
+
+13    Amazon.  I apologize.  Somehow I got the wires
+
+14    crossed.  I do have that.
+
+15        Q.   Do you know where it was manufactured for
+
+16    either of them?
+
+17        A.   Not unless it's printed somewhere on the
+
+18    baby, no.
+
+19        Q.   Okay.  And did you test the clothing for
+
+20    either doll prior to performing either of the
+
+21    simulation studies, baby diapering one or baby
+
+22    diapering two?
+
+23        A.   Yes, it should be in there, the
+
+24    background, what we call them, the fiber blanks,
+
+25    meaning we take a piece off and run it the same
+
+
+                                                      473
+
+
+ 1    way, and they were negative.
+
+ 2        Q.   Okay.  Exhibit 15-A, this is from backup
+
+ 3    data from baby diapering one, Section 7, and that
+
+ 4    begins on page 196, that includes TEM all analyses
+
+ 5    performed on samples P1A, P1C, and P1E.  I did not
+
+ 6    see TEM all data for P1B, P1D, P1E.  Does that data
+
+ 7    not exist?
+
+ 8        A.   I have the copies of what was sent and
+
+ 9    I'm just looking for them.  What are you missing?
+
+10        Q.   It would be the data that was in progress
+
+11    at the time of the January 2019 report which was
+
+12    Exhibit 15 which is labeled on page 1 of that.  I
+
+13    have P1D, P1B, P1E and A1A.  They all read "in
+
+14    progress" on that and I just didn't see any of
+
+15    those TEM all what was produced and marked as
+
+16    Exhibit 15-A.
+
+17        A.   I have P1A I'm looking at.  I have P1C I
+
+18    have in my stack.
+
+19        Q.   I think we're missing P1B, P1D, P1E, A1A.
+
+20    And my question, just whether or not that work was
+
+21    done or not 'cause it reads "in progress" on
+
+22    Exhibit 15 at page 9.
+
+23        A.   I got to go pull it again 'cause it
+
+24    doesn't make sense to me.
+
+25        Q.   Sure.
+
+
+                                                      474
+
+
+ 1        A.   I know when I was looking at the data, we
+
+ 2    didn't have the P110 and I don't think that was
+
+ 3    done yet.  It's not going to be done because this
+
+ 4    was done on --
+
+ 5             I know what happened with this data now.
+
+ 6    The 7402 grids were reanalyzed for all fibers, and
+
+ 7    the 7402 grids sample prep is not allowed for all
+
+ 8    fiber analysis because you don't do the etching
+
+ 9    step on the filter.  So you have to reprep them
+
+10    because you'll lose smaller fibers, smaller widths
+
+11    and smaller lengths when you fuse the filter and
+
+12    clear it, which you do the same thing for the EPA
+
+13    protocol but then have to etch the surface for
+
+14    about -- I think it takes about five to ten microns
+
+15    off in a plasma asher.  It just oxidizes the top.
+
+16    Otherwise you'll never get any reliable count for
+
+17    all fibers, but it will give you the same count for
+
+18    the 7402 so you can compare the two from the first
+
+19    study to the second, but I will look and see where
+
+20    those -- where those are, if they were actually
+
+21    done or not.
+
+22        Q.   That's fine.
+
+23             And I'm really trying to finish.  I'm
+
+24    trying to save time.  So two final questions, I
+
+25    guess.
+
+
+                                                      475
+
+
+ 1             Has MAS ever identified chrysotile using
+
+ 2    TEM for any Chinese or cosmetic talc sample not
+
+ 3    limited to just Johnson & Johnson?
+
+ 4        A.   No.
+
+ 5        Q.   And then the two cornstarch application
+
+ 6    videos dated October 19th and October 20th, did the
+
+ 7    attorneys for the Kazan firm ask you to do those?
+
+ 8        A.   No.
+
+ 9        Q.   Okay.  You just did them on your own
+
+10    volition and provided them to Kazan?
+
+11        A.   Well, yes, I wanted -- you know, it
+
+12    occurred to me that I wouldn't have to wear a
+
+13    respirator with the cornstarch.  I mean, I hope
+
+14    not.  And I think it's a good demonstrative to show
+
+15    the -- show how it gets up in the air and stays
+
+16    suspended for long periods of time, just like
+
+17    regular talc does, without having to have
+
+18    respirators on and, you know, and some safety
+
+19    equipment and the hoods under the work clothes and
+
+20    stuff, so it's more demonstrative than anything.
+
+21        Q.   Okay.  You mentioned fibrous talc
+
+22    earlier.  Is there a difference, in your mind,
+
+23    between fibrous talc and asbestiform talc and, if
+
+24    so, what is it?
+
+25        A.   And what?
+
+
+                                                      476
+
+
+ 1        Q.   And, if so, what's the difference?
+
+ 2        A.   I heard the fibrous talc.  Different than
+
+ 3    what?
+
+ 4        Q.   So, in your mind, is there a difference
+
+ 5    between fibrous talc and asbestiform talc and, if
+
+ 6    so, what is that difference?
+
+ 7        A.   No, I think asbestiform talc is fibrous
+
+ 8    like asbestos.  That's the geological definition.
+
+ 9    There is no difference.
+
+10        Q.   Okay.  So is fibrous talc, the manner in
+
+11    which you use it, is it talc that grew in an
+
+12    asbestiform habit; that is, you know, parallel,
+
+13    long, thin fibers growing in parallel, is that your
+
+14    definition?
+
+15        A.   You know, asbestiform habit, in my
+
+16    definition, is just your standard geological
+
+17    definition that it was formed, it's fibrous like
+
+18    asbestos.
+
+19             Fibrous talc is not formed in the ground
+
+20    that I'm aware of.  It's all plating.  How you get
+
+21    fibrous talc is the metamorphic intergrowths
+
+22    between asbestos, in this case, Chinese, I would
+
+23    say that the majority of it is from chrysotile.  So
+
+24    it's not formed in the ground like asbestos, you
+
+25    know, like what you would say how asbestos is
+
+
+                                                      477
+
+
+ 1    formed, temperature, pressure ingredients, but it's
+
+ 2    a metamorphic.
+
+ 3             You know, we have lots of examples of
+
+ 4    chrysotile bundles in Chinese talc where half of it
+
+ 5    is chrysotile and half of it is talc.  And so it's
+
+ 6    formed differently.
+
+ 7        Q.   Okay.  Ms. White walked through this with
+
+ 8    you.  Are there -- do the reports that you produced
+
+ 9    in this case, along with the exhibits to the
+
+10    deposition, your testimony at this deposition, and
+
+11    the reference materials you referred to and
+
+12    produced during the course of this deposition cover
+
+13    everything you intend to offer at trial in the
+
+14    Reyes matter?
+
+15        A.   As I've already testified to, yes.
+
+16        Q.   Okay.  And that's all I've got.  Thanks
+
+17    for your time.
+
+18        A.   Thank you.
+
+19             MR. HYNES:  Henry -- Dr. Longo, if you
+
+20    want to send through counsel an invoice for your
+
+21    time spent during these depositions, I'm happy to
+
+22    get that covered for you.
+
+23             MS. WHITE:  Same for me, please.
+
+24             THE WITNESS:  Alright.  Thank you.  Thank
+
+25    you guys for, I have to say this at the end of the
+
+
+                                                      478
+
+
+ 1    deposition, for your professionalism and I hope
+
+ 2    there was nothing that I said that was anything
+
+ 3    more than professional answers.
+
+ 4             MS. WHITE:  I appreciate it.
+
+ 5             MR. STEINBERG:  Thanks, everybody.
+
+ 6             MR. HYNES:  Thanks, Henry.  Good luck at
+
+ 7    your hearing.
+
+ 8             MS. WHITE:  We'll see you all later.
+
+ 9
+
+10
+
+11            (Time noted:  9:57 a.m.)
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+                                                      479
+
+
+ 1                   SIGNATURE OF DEPONENT
+
+ 2
+
+ 3           I, the undersigned, WILLIAM E. LONGO, Ph.D,
+
+ 4    do hereby certify that I have read the foregoing
+
+ 5    deposition and find it to be a true and accurate
+
+ 6    transcription of my testimony, with the following
+
+ 7    corrections, if any:
+
+ 8
+
+ 9    PAGE   LINE            CHANGE
+
+10    ____   ____  _____________________________________
+
+11    ____   ____  _____________________________________
+
+12    ____   ____  _____________________________________
+
+13    ____   ____  _____________________________________
+
+14    ____   ____  _____________________________________
+
+15    ____   ____  _____________________________________
+
+16    ____   ____  _____________________________________
+
+17    ____   ____  _____________________________________
+
+18    ____   ____  _____________________________________
+
+19    ____   ____  _____________________________________
+
+20    ____   __________________________________________
+
+21    ____   ____  _____________________________________
+
+22    ____   ____  _____________________________________
+
+23    ____   ____  _____________________________________
+
+24
+
+25                 ____________________________________
+                   WILLIAM E. LONGO, Ph.D, Date
+
+
+                                                      480
+
+
+ 1                  REPORTER'S CERTIFICATE
+
+ 2
+
+ 3
+
+ 4           I, VALERIE PADILLA, a Shorthand Reporter,
+
+ 5    State of California, do hereby certify:
+
+ 6           That WILLIAM E. LONGO, Ph.D, in the
+
+ 7    foregoing deposition named, was present and by me
+
+ 8    sworn as a witness in the above-entitled action at
+
+ 9    the time and place therein specified;
+
+10           That said deposition was taken before me at
+
+11    said time and place, and was taken down in
+
+12    shorthand by me, a Certified Shorthand Reporter of
+
+13    the State of California, and was thereafter
+
+14    transcribed into typewriting, and that the
+
+15    foregoing transcript constitutes a full, true and
+
+16    correct report of said deposition and of the
+
+17    proceedings that took place;
+
+18             IN WITNESS WHEREOF, I have hereunder
+
+19    subscribed my hand this 26th day of October 2020.
+
+20
+
+21                 <%22549,Signature%>
+                   VALERIE PADILLA, CSR NO. 3081
+22                 State of California
+
+23
+
+24
+
+25
+
+
+
+

@@ -98,3 +98,53 @@ This file records the implementation steps performed in this workspace, in chron
 - UI is available on configured API port (default `http://localhost:8000`).
 - Deposition folder should be entered as `/data/depositions` in the UI.
 - Contradiction list is score-ranked numerically, with timeline navigation and focused contradiction re-analysis.
+
+37. Expanded the UI into top-level tabs:
+    - `Home`
+    - `Deposition`
+    - `Case`
+    - `Observables`
+    - `Admin`
+38. Expanded `Admin` into operational subtabs:
+    - `Users`
+    - `Personas`
+    - `Test`
+    - `MLOps`
+39. Added `Admin -> Users` management:
+    - Create, edit, select, list, and permanently delete users in CouchDB.
+40. Added `Admin -> Personas` management:
+    - Save persona records with `Name`, `LLM`, and `Prompts`.
+41. Added `Admin -> Test` controls:
+    - Run all tests from the UI.
+    - Display `pytest` HTML report.
+    - Persist and surface test console output.
+42. Added `Admin -> MLOps` nested sections:
+    - `LLMOps`
+    - `Fine Tuning`
+    - `Deployment`
+    - `CI/CD`
+43. Added GitHub Actions workflows:
+    - `.github/workflows/ci-cd.yml`
+    - `.github/workflows/deploy.yml`
+44. Added application logging and Prometheus metrics:
+    - Centralized Python logging.
+    - `/metrics` endpoint.
+    - Prometheus/Grafana services in `docker-compose.yml`.
+45. Added local Grafana integration in the UI:
+    - `Open Grafana` buttons in `Observables` and `Admin -> MLOps`.
+    - Grafana access details now come from runtime configuration.
+46. Added a deposition source browser in the `Case` tab:
+    - Supports navigating to folders or single `.txt` files.
+    - Accepts paths beyond the original `./depositions` root when visible inside the container.
+47. Updated deposition ingestion to walk folders recursively:
+    - Nested `.txt` files are now discovered and ingested.
+    - This specifically fixes case folders such as `depositions/example` where files are nested under subdirectories.
+48. Added stronger regression coverage across the stack:
+    - Full suite currently exercises API routes, UI support paths, observability helpers, admin actions, and CouchDB indexing behavior.
+49. Expanded internal documentation substantially:
+    - Added `docs/internal/system_guide.md` as the hand-maintained architecture and operations guide.
+    - The new guide documents major maintained files, UI tabs, overlays/modals, persistence model, prompt/schema source of truth, LangGraph state, and runtime flows.
+    - Regenerated `docs/internal/code_function_reference.md` so the generated function inventory matches the current codebase.
+50. Updated top-level docs to point at the expanded internal documentation:
+    - `README.md` now links both the generated function reference and the hand-maintained system guide.
+    - `README.md` now explicitly describes the documentation maintenance workflow.

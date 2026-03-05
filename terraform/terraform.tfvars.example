@@ -1,0 +1,9 @@
+app_name                = "attorneyos"
+environment             = "dev"
+aws_region              = "us-east-1"
+cluster_version         = "1.30"
+single_nat_gateway      = true
+cpu_node_instance_type  = "m6i.large"
+gpu_node_instance_type  = "g5.2xlarge"
+cpu_node_desired_size   = 2
+gpu_node_desired_size   = 1

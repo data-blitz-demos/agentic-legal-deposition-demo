@@ -1,0 +1,3928 @@
+0001
+ 1            SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                  FOR THE COUNTY OF LOS ANGELES
+ 3   
+ 4   SAN JUANA SANDOVAL, et al.,   ) JCCP 4674
+                                   )
+ 5                                 ) Case No. BC592765
+                  Plaintiffs,      )
+ 6                                 )
+            vs.                    )
+ 7                                 )
+     AMERICAN WATER HEATER COMPANY,)
+ 8   et al.,                       )
+                                   )
+ 9                Defendants.      )
+     ______________________________) (Pages 1-148)
+10   
+11   
+12   
+13   
+14   
+15                    REMOTE ORAL DEPOSITION OF
+16                       WILLIAM LONGO, Ph.D.
+17                     VIA ZOOM VIDEOCONFERENCE
+18                   Monday, September 20, 2021
+19   
+20   
+21   
+22   
+23   
+24   Reported by:    LAURIE HELD-BIEHL,
+                     CA CSR No. 6781, RPR/CRR No. 32836
+25   
+0002
+ 1            SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                  FOR THE COUNTY OF LOS ANGELES
+ 3   
+ 4   SAN JUANA SANDOVAL, et al.,   ) JCCP 4674
+                                   )
+ 5                                 ) Case No. BC592765
+                  Plaintiffs,      )
+ 6                                 )
+            vs.                    )
+ 7                                 )
+     AMERICAN WATER HEATER COMPANY,)
+ 8   et al.,                       )
+                                   )
+ 9                Defendants.      )
+     ______________________________)
+10   
+11   
+12   
+13             The Remote Oral Deposition of WILLIAM LONGO,
+14   Ph.D., taken on behalf of Defendants via Zoom
+15   Videoconference commencing at 9:04 a.m., Monday,
+16   September 20, 2021, before LAURIE HELD-BIEHL,
+17   Certified Shorthand Reporter for the State of
+18   California No. 6781, Certified Shorthand Reporter for the
+19   State of Illinois No. 084002860, Certified Court Reporter
+20   for the State of New Jersey No. 30XI00239100, Certified
+21   Shorthand Reporter for the State of Texas No. 8555,
+22   Certified Court Reporter for the State of Washington
+23   No. 21020748, and Registered Professional
+24   Reporter/Certified Realtime Reporter No. 32836.
+25   
+0003
+ 1   APPEARANCES:
+ 2   
+ 3   For Plaintiffs:
+ 4   WEITZ & LUXENBERG, P.C.
+     BY:  MARK BRATT, ESQ.
+ 5   1880 Century Park East
+     Suite 700
+ 6   Los Angeles, California  90067
+     310-247-0921
+ 7   mbratt@weitzlux.com.com
+     (Via Zoom Videoconference.)
+ 8   
+ 9   For Defendant American Appliance Manufacturing Corp.:
+10   HUGO PARKER LLP
+     BY:  EDWARD R. HUGO, ESQ.
+11   240 Stockton Street
+     8th Floor
+12   San Francisco, California  94108
+     415-808-0300
+13   ehugo@hugoparker.com
+     (Via Zoom Videoconference.)
+14   
+15   For Defendants Johnson & Johnson and Johnson & Johnson
+     Consumer, Inc.:
+16   
+     KING & SPALDING LLP
+17   BY:  ALEXANDER CALFO, ESQ.
+     633 West Fifth Street
+18   Suite 1600
+     Los Angeles, California  90071
+19   213-443-4355
+     acalfo@kslaw.com
+20   (Via Zoom Videoconference.)
+21   
+22   Also Present:
+23   SYED HASSAN, DEPOSITION MODERATOR
+     (Via Zoom Videoconference.)
+24   
+25   
+0004
+ 1                         I N D E X
+ 2   
+ 3   DEPONENT:             EXAMINATION                  PAGE:
+ 4   WILLIAM LONGO, Ph.D.  BY MR. CALFO                9, 115
+ 5                         BY MR. HUGO                     95
+ 6   
+ 7   
+ 8                   INFORMATION TO BE SUPPLIED
+ 9                             (None)
+10   
+11   
+12   
+13               QUESTIONS INSTRUCTED NOT TO ANSWER
+14                             (None)
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0005
+ 1                     I N D E X (continued):
+ 2   
+ 3                         E X H I B I T S
+ 4   MARKED                                             PAGE:
+ 5   EXHIBIT 1         Photocopy of 8-27-21 cover          10
+                       letter from Sarah Arvizu,
+ 6                     expert coordinator at
+                       Weitz & Luxenberg scheduling
+ 7                     the deposition of William Longo
+                       (1 page)
+ 8   
+     EXHIBIT 2         Photocopy of document entitled      11
+ 9                     "Appendix A, Johnson & Johnson
+                       Reliance and Reviewed Documents"
+10                     (10 pages)
+11   EXHIBIT 3         Photocopy of document entitled      31
+                       "Comments of Johns-Manville with
+12                     respect to Notice of Proposed
+                       Rulemaking, Occupational Exposure
+13                     for Asbestos," dated April 1976
+                       (3 pages)
+14   
+     EXHIBIT 4         Photocopy of document entitled      33
+15                     "Asbestos-Related Disease from
+                       Household Exposure," by Epler,
+16                     et al., dated 1980
+                       (12 pages)
+17   
+     EXHIBIT 5         Photocopy of article entitled       33
+18                     "Domestic asbestos exposure,
+                       lung fibre burden, and pleural
+19                     mesothelioma in a housewife,"
+                       by Huncharek, et al., dated 1989
+20                     (2 pages)
+21   EXHIBIT 6         Photocopy of article entitled       34
+                       "Mesothelioma among Railroad
+22                     Workers in the United States,"
+                       by Mancuso
+23                     (8 pages)
+24   
+25   
+0006
+ 1                     I N D E X (continued):
+ 2   
+ 3                         E X H I B I T S
+ 4   MARKED                                             PAGE:
+ 5   EXHIBIT 7         Photocopy of document entitled      35
+                       "Report to Congress on Workers'
+ 6                     Home Contamination Study
+                       Conducted Under The Workers'
+ 7                     Family Protection Act,"
+                       dated September of 1995
+ 8                     (8 pages)
+ 9   EXHIBIT 8         Photocopy of document entitled      36
+                       "MAS:  Cutting and Handling of
+10                     Asbestos Cloth - Work Practice
+                       Study," dated October 2001
+11                     (105 pages)
+12   EXHIBIT 9         Photocopy of article entitled       36
+                       "Pipe Wrap Abrasion, Work
+13                     Practice Simulation Demonstration,"
+                       by William E. Longo, Ph.D., and
+14                     Richard L. Hatfield,
+                       dated August 1999
+15                     (82 pages)
+16   EXHIBIT 10        Colorcopy of document entitled      38
+                       "Secondary Exposure Reliance
+17                     Materials"
+                       (339 pages)
+18   
+     EXHIBIT 11        Colorcopy of San Juana Sandoval     69
+19                     Expert Report prepared by the
+                       witness, dated 8-18-21
+20                     (14 pages)
+21   EXHIBIT 12        Colorcopy of report of              99
+                       Ronald E. Gordon, Ph.D., with
+22                     attachments, dated 8-14-19
+                       (23 pages)
+23   
+     EXHIBIT 13        Photocopy of Dames & Moore         107
+24                     Report, dated 6-18-91
+                       (31 pages)
+25   
+0007
+ 1                      I N D E X (continued):
+ 2   
+ 3                         E X H I B I T S
+ 4   MARKED                                             PAGE:
+ 5   EXHIBIT 14        Photocopy of article entitled      112
+                       "Airborne asbestos take-home
+ 6                     exposures during handling of
+                       chrysotile-contaminated clothing
+ 7                     following simulated full shift
+                       workplace exposures," by Sahmel,
+ 8                     et al., dated 2016
+                       (15 pages)
+ 9   
+     EXHIBIT 15        Photocopy of article entitled      112
+10                     "Evaluation of Take-Home Exposure
+                       and Risk Associated with the
+11                     Handling of Clothing Contaminated
+                       with Chrysotile Asbestos," by
+12                     Sahmel, et al., dated 2014
+                       (31 pages)
+13   
+     EXHIBIT 16        Photocopy of article entitled      113
+14                     "Domestic Asbestos Exposure:
+                       A Review of Epidemiologic and
+15                     Exposure Data," by Goswami,
+                       dated 2013
+16                     (23 pages)
+17   EXHIBIT 17        Photocopy of documents related     125
+                       to the Johns-Manville Personal
+18                     Injury Settlement Trust Documents
+                       (12 pages)
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0008
+ 1                    VIA ZOOM VIDEOCONFERENCE
+ 2                    Monday, September 20, 2021
+ 3                            9:04 a.m.
+ 4                             -o0o-
+ 5   
+ 6             THE REPORTER:  This is the remote deposition of
+ 7   Dr. William Longo in the matter of Sandoval v American
+ 8   Water Heater Company, et al., taken on behalf of Defendant
+ 9   Johnson & Johnson.
+10                  Today's date is Monday, September 20, 2021,
+11   and the time is approximately 9:04 a.m.
+12                  Counsel, would you please identify
+13   yourselves for the record, state whom you represent, and
+14   agree on the record that there is no objection to me
+15   swearing in the witness via videoconference.
+16             MR. CALFO:  Alexander Calfo on behalf of the
+17   Johnson & Johnson defendants.
+18                  And I have no objection.
+19             MR. HUGO:  Edward Hugo for American Appliance
+20   Manufacturing Corp.
+21                  No objection.
+22             MR. BRATT:  Mark Bratt for the plaintiffs.
+23                  No objection.
+24             (Witness sworn.)
+25             THE WITNESS:  Yes, I do.
+0009
+ 1                      WILLIAM LONGO, Ph.D.,
+ 2                  having been first duly sworn
+ 3                    and administered an oath
+ 4                pursuant to California CCP 2094,
+ 5             was examined and testified as follows:
+ 6   
+ 7                           EXAMINATION
+ 8   BY MR. CALFO:
+ 9       Q.    Morning, Dr. Longo.
+10       A.    Good morning.
+11       Q.    As we were just saying, it's been a while since
+12   I've seen you; it's nice to see you again.
+13       A.    Good to see you.  I think it was at trial --
+14       Q.    Yep.
+15       A.    -- out in California, somewhere.
+16       Q.    Yep, one of my favorite places --
+17       A.    Either Oakland or LA.
+18       Q.    Yeah, it was Oakland.
+19                  So, Dr. Longo, we're here to take your
+20   deposition in a case called "Sandoval."
+21                  And are you prepared to give your
+22   deposition today?
+23       A.    Yes, sir.
+24       Q.    And have you done all the work necessary to
+25   render your opinions in this case?
+0010
+ 1       A.    I have.
+ 2       Q.    Okay, great.
+ 3             THE REPORTER:  Can you speak up a little,
+ 4   Doctor?
+ 5             THE WITNESS:  Sure.  How's that?
+ 6             THE REPORTER:  Better.
+ 7                  Thank you.
+ 8   BY MR. CALFO:
+ 9       Q.    Now, I've been provided some documents by the
+10   Weitz & Luxenberg firm; so bear with me, Doctor, while I
+11   do a few housekeeping matters.  Okay?
+12       A.    Yes.
+13       Q.    And I will provide them to Laurie.
+14                  The first document is an August 27, 2021
+15   cover letter from Sarah Arvizu, expert coordinator at the
+16   Weitz & Luxenberg firm which provides a link to us.  And
+17   it schedules your deposition.
+18                  Have you seen that document, Doctor?
+19       A.    No, sir.
+20       Q.    All right.  Well, I have it here on the screen;
+21   nothing fancy about it, it just provides a link for us.
+22                  Do you see it?
+23       A.    I do.
+24             MR. CALFO:  And we'll mark that as Exhibit 1.
+25             (Defendant's Exhibit 1 was marked for
+0011
+ 1             identification and is attached
+ 2             hereto.)
+ 3   BY MR. CALFO:
+ 4       Q.    And the next document I have is an "Appendix A,"
+ 5   which is a "Johnson & Johnson Reliance and Reviewed
+ 6   Documents" document that was provided to us.
+ 7                  Are you familiar with that, Dr. Longo?
+ 8       A.    Yes.
+ 9             MR. CALFO:  We'll mark that as Exhibit 2.
+10             (Defendant's Exhibit 2 was marked for
+11             identification and is attached
+12             hereto.)
+13   BY MR. CALFO:
+14       Q.    And it has what looks like 161 reliance
+15   materials.
+16                  Is that what you were sent as well?
+17       A.    It may -- I don't have it with me --
+18       Q.    Okay.
+19       A.    -- but that sounds about right.
+20       Q.    Okay.  You know what I'm thinking of, right, or
+21   what I have here?
+22       A.    Yes, sir.
+23       Q.    Okay.  Now, let me ask you --
+24                  I'm going to ask you some questions I kind
+25   of wanted to ask you but I can't do it in front of the
+0012
+ 1   jury; so bear with me.  Okay?
+ 2       A.    You mean the judge wouldn't let you ask these
+ 3   questions?
+ 4       Q.    Yes, maybe.
+ 5                  You know, I was thinking back when I was
+ 6   taking your deposition today, when was it that you,
+ 7   Dr. Bill Longo, had the first inkling that Johnson's Baby
+ 8   Powder might have, even remotely, asbestos in it?
+ 9       A.    You know, I don't -- I don't really recall.  I
+10   got interested in it because of the Gordon paper.
+11             THE REPORTER:  "Because of the" what?  Your
+12   voice is dropping.
+13             THE WITNESS:  Yeah.
+14                  I got interested in it in the Gordon paper.
+15   And it really wasn't until we started testing the -- the
+16   Johnson & Johnson Baby Powder that I could see that it was
+17   con- -- it did have asbestos in it.  And then that was
+18   just -- as we've slowly got all of the -- most of the
+19   documents from Johnson & Johnson showing that they've also
+20   tested it and found asbestos in it; so I'd have to say
+21   that I was convinced about it sometime in -- late 2017 to
+22   2018.
+23   BY MR. CALFO:
+24       Q.    Okay.  Because, I don't know if you remember,
+25   but I think I was the first one that ever presented your
+0013
+ 1   prior testimony about -- remember about testing talc?
+ 2       A.    I remember it well.
+ 3       Q.    I don't think I got a lot of credit for it.
+ 4                  But I was the first one to do it, wasn't I?
+ 5       A.    Yes, you were the first one.
+ 6       Q.    Okay.
+ 7       A.    And then your colleagues followed suit for the
+ 8   next six months.
+ 9       Q.    Yeah.  So -- so that's why I kind of have this
+10   keen interest, Dr. Longo.
+11                  So the Gordon paper was in 2014, give or
+12   take.
+13                  Do you recall that?
+14             MR. BRATT:  Well, let's be precise.
+15             MR. CALFO:  Yes, let's be precise.  I'm not
+16   trying to trick Dr. Longo here.
+17             THE WITNESS:  It was either 2014 or 2015.  And I
+18   didn't really review it until a little bit of time after
+19   that.
+20                  But I was in --
+21   BY MR. CALFO:
+22       Q.    Okay.  So that was would have been --
+23                  Go ahead.
+24       A.    But I was in a deposition for -- for Scotts and
+25   Moshe Maimon was deposing me and this was like a throwaway
+0014
+ 1   question, he asked me if I reviewed the Gordon paper and
+ 2   did I find it authoritative.  And I said yes, I thought it
+ 3   was well done.
+ 4                  And Cashmere Bouquet happened to be a
+ 5   defendant also in that case.  And that's when and Mr. --
+ 6   Mr. Kobe decided we couldn't have that on the record --
+ 7       Q.    Okay.
+ 8       A.    -- so we spent the next two hours debating about
+ 9   all that and that really piqued my interest.
+10       Q.    Dr. Longo, had you ever found in your work
+11   over -- what was it since 1988, '89, since you had started
+12   MAS, had you ever found asbestos in any cosmetic talcum
+13   powders, prior to the Cashmere Bouquet paper that you just
+14   told us about?
+15       A.    Well, as it turns out once this all came to
+16   light there was a lot of requests, judges, et cetera, to
+17   go search the database.  And by just unusual circumstances
+18   a -- a 2013 Cashmere Bouquet analysis was found and it was
+19   positive by TEM.
+20                  And that was the report written by Mr. Mike
+21   Mount.
+22       Q.    Is that the first time that you had learned that
+23   a cosmetic talcum powder was, according to MAS at that
+24   time, positive for some level of asbestos finding?
+25             MR. BRATT:  Well, wait.  Hold on.
+0015
+ 1                  I think it's -- I think it's vague as
+ 2   phrased.  I mean --
+ 3             MR. CALFO:  Let me just re-ask it.  I was just
+ 4   kind of thinking of that as I went along; so I'll just
+ 5   re-ask it.
+ 6             MR. BRATT:  Okay.
+ 7   BY MR. CALFO:
+ 8       Q.    Dr. Longo, was that the first time that you had
+ 9   learned the positive finding by TEM by Mike Mount that
+10   there was, according to MAS, a positive finding of
+11   asbestos in a cosmetic talcum powder?
+12             MR. BRATT:  I think it's vague as phrased.
+13                  But go ahead, Dr. Longo.
+14             THE WITNESS:  It was the --
+15                  I didn't recall that ever being done and I
+16   still don't recall it being done in 2013.  And what I knew
+17   in 2013 versus, I guess it was 2018 or 2019 when that came
+18   to light, I don't know.
+19   BY MR. CALFO:
+20       Q.    Okay.
+21       A.    But it's the only one that I have pre-2017.  I
+22   think we have now located four projects, period, where it
+23   is positive.
+24       Q.    Okay.  And I'm not trying to trick you at all on
+25   this one, I'm just trying to ask when was the first time
+0016
+ 1   that you had learned that either your lab, MAS, or some
+ 2   other laboratory had found asbestos, according to them, in
+ 3   a cosmetic talcum powder?  When was the first time, if you
+ 4   can remember the date, Doctor?
+ 5             MR. BRATT:  You're saying before the --
+ 6                  Are you including his reading the Gordon
+ 7   article or -- in that?
+ 8             MR. CALFO:  Yes.
+ 9             MR. BRATT:  Or are you talking only about MAS?
+10             MR. CALFO:  Any article.
+11             MR. BRATT:  Okay.  Go ahead, Dr. Longo.
+12             THE WITNESS:  I think the only thing I recall
+13   where I had reviewed documents or reviewed published
+14   papers was the Gordon paper since cosmetic talc was really
+15   not my area that I was doing research in.  I was working
+16   mostly on asbestos-added products and, you know,
+17   industrial talcs; so that's -- that's the only thing I can
+18   recall, you know, versus some of the Mount Sinai stuff
+19   back in the '70s and et cetera, et cetera.
+20   BY MR. CALFO:
+21       Q.    All right.  So when -- and I don't know anything
+22   about Mike Mount so bear me, Doctor; I've been a little
+23   bit away from this for a while, but let me ask you this.
+24                  Did Mike Mount, according to what you know
+25   as you sit here today, did he find asbestos in cosmetic
+0017
+ 1   talc by using TEM without the concentration method?
+ 2       A.    Yes.
+ 3       Q.    Okay.  All right.  And then you mentioned Mount
+ 4   Sinai.
+ 5                  You know the first Mount Sinai tests, as
+ 6   you know, were in the early 1970s, give or take a few
+ 7   years, right?
+ 8       A.    Correct.
+ 9       Q.    When was the first time that you recall,
+10   Dr. Longo, being a microscopist who has been involved in
+11   asbestos, when was the first time that you knew that
+12   anyone from Mount Sinai claimed that they may have found
+13   asbestos in cosmetic talc?
+14       A.    I can't tell you when I first knew.  I don't
+15   know if I had looked over that early on.  But certainly
+16   starting going forward in early 2017 I started
+17   accumulating more documents.
+18       Q.    Okay.  And I know I'm taxing your memory but if
+19   you and I were sitting down and you weren't under oath and
+20   we were having a cup of coffee and I said "Hey,
+21   Dr. Longo," and this is in 2017, "can you recall anyone
+22   other than yourself who claims they found asbestos in
+23   cosmetic talc," who would you have cited other than the
+24   Gordon article involving Cashmere Bouquet?
+25       A.    I can't say.  I've looked at so many documents
+0018
+ 1   now I couldn't tell you what I would have told you in
+ 2   2017.
+ 3       Q.    All right.  With all the work that you've done
+ 4   though, with brakes and other asbestos-containing
+ 5   products, you're familiar with Mount Sinai; you're very
+ 6   familiar I would imagine, right?
+ 7       A.    I am.
+ 8       Q.    So while thinking back, when you got into this
+ 9   business or when you became an expert in 1988, '89 at MAS,
+10   when would you suppose that you had learned about Mount
+11   Sinai having tested cosmetic talc for the first time?  Can
+12   you give me any year whatsoever?  Was it 5, 10, 20 years
+13   after you started MAS?
+14       A.    I have no idea.  Again, I don't recall -- just
+15   if I had seen it.
+16                  And you have to understand, the first
+17   litigation I was involved in was a product identification
+18   of asbestos in asbestos-added products.  And I knew of
+19   Mount Sinai then because Art Rohl was the one who was
+20   doing product ID and he felt that he -- he didn't want to
+21   do it or something anymore and I started doing more of it.
+22                  And only when we were doing things like --
+23   it wasn't until mid- to -- you know, mid- to -- not late
+24   1990s but mid-1990s or so when I started getting involved
+25   in personal injury claims.  And so that was a whole
+0019
+ 1   different -- you know, whole different thing.
+ 2                  But it was all -- you know, it was all
+ 3   about the literature on asbestos-added products which, you
+ 4   know, is extensive.  But I never was involved in any
+ 5   cosmetic talcs.
+ 6                  You know, Richard Hatfield, of course, was
+ 7   a manager over at McCrone's in Atlanta when they were
+ 8   still analyzing cosmetic talcs for J&J.  You know, I don't
+ 9   know what influence he had on me about that.  We do have
+10   one, two, three -- four different projects over, you know,
+11   a 30-year span on cosmetic talcs that I wasn't involved
+12   in.
+13       Q.    All right.  Well, let me ask you this, because
+14   I'm not a real scientist like a lot of the other lawyers
+15   are.
+16                  Are you with me?
+17                  So the reason --
+18       A.    None of us are the real scientists.
+19       Q.    I'm not a scientist, I admit it; so I'm thinking
+20   back and I'm trying to put myself in your position.
+21                  So you find what you -- well, we'll talk
+22   about this a little bit.
+23                  But you get a call from someone and they
+24   say "Hey, Dr. Longo, have you ever examined cosmetic
+25   talc?"  Or "Would you like to work on this project?"  I'll
+0020
+ 1   make it easier, "Would you like to work on this project
+ 2   involving potential asbestos in cosmetic talc?"
+ 3                  Do you remember that call that you first
+ 4   got?
+ 5       A.    Yes.  I think that I -- I testified that it was
+ 6   Mark Lanier.
+ 7       Q.    Okay.
+ 8       A.    But going back through all this in -- and in --
+ 9   I was -- you know, doing searches, et cetera, thought I'd
+10   covered everything.  And then they wanted the six
+11   months -- J&J wanted the six months from June of 2016 to
+12   December of 2016.  And it had to have been Joe Satterly,
+13   because we received his samples first before we received
+14   any of Mark Lanier's samples; so it must have been
+15   Mr. Satterly who asked me if I would test it and receive
+16   those three containers that they got from the collector.
+17             THE REPORTER:  "That they got from" who?
+18             THE WITNESS:  "The collector."
+19                  Everybody knows who "the collector" is.
+20             MR. CALFO:  We do.  And we don't need to go into
+21   that; it would take too long and there's not much more
+22   gain.
+23             THE REPORTER:  I just couldn't hear.
+24             MR. CALFO:  Okay.  It's okay.
+25       Q.    So let's talk about --
+0021
+ 1                  When Mr. Satterly called you, you didn't
+ 2   know that either Mr. Hatfield or Mr. Mount had tested
+ 3   cosmetic talc; is that fair?
+ 4       A.    I didn't recall that they had tested cosmetic
+ 5   talc.
+ 6       Q.    All right.  So -- so when you got that call did
+ 7   you ever go back to your friend Mr. Mount and say "Hey,
+ 8   did you ever test cosmetic talc?"  Or "Do I remember
+ 9   anything about that?"  Anything --
+10                  Any discussions after Mr. Satterly called
+11   you?
+12       A.    I'm not going to discuss any -- any more any
+13   discussions I had with Mr. Mount.  This has been litigated
+14   now and in two different courtrooms and I've given
+15   everything.
+16                  I've only been deposed on the Mr. Mount
+17   thing about 25 hours to 30 hours, and I'm done talking
+18   about Mr. Mount.
+19       Q.    Okay.  I don't know anything about it; honestly
+20   I just have not read anything about it.
+21                  What about Mr. Hatfield?
+22       A.    Sadly, Mr. Hatfield has passed away.
+23       Q.    Okay.  When did he pass away?
+24       A.    2013 or 2014.
+25       Q.    Okay.  All right.  So -- so let's get a little
+0022
+ 1   more substantive then and I'll back off of Mr. Mount for
+ 2   you; is that fair?
+ 3       A.    That's fair.
+ 4       Q.    All right.  So Mr. Mount, did he test cosmetic
+ 5   talc for Cashmere Bouquet with TEM only?
+ 6       A.    No.  It was analyzed by PLM using the R-93/600
+ 7   and it was negative.  But he also -- he found also that
+ 8   he -- there was a 2009 project with two Cashmere Bouquet
+ 9   samples from Moshe Maimon.  And both of those were
+10   negative by TEM, then in 2013 they were both positive by
+11   TEM without heavy liquid density.
+12                  And, of course, we went back and relooked
+13   at those and actually had the grids.  And we were only at
+14   that point calculating -- we calculated the -- the
+15   detection limit for both sets of samples, and it was a
+16   complete set, which told me why one set was positive by
+17   TEM and the 2009 set was not.
+18       Q.    And why is that, just in a nutshell?
+19       A.    The detection limit was approximately 4 million
+20   for the dilution technique.  In the 2013 sample,
+21   concentrations were higher than that.  In the 2009 the
+22   detection limit was 105,000 and, therefore, it was -- the
+23   detection limit was almost 50 times higher -- lower --
+24   higher than that; so if you have samples that have that
+25   much asbestos in it, it is not surprising it will be
+0023
+ 1   positive by TEM.
+ 2       Q.    All right.  So -- so you've been deposed, you
+ 3   would estimate, about 20 to 25 hours on that issue,
+ 4   Dr. Longo?
+ 5       A.    Yes.  You want to get transcripts from, I think,
+ 6   John Ewald, Morgan Toby had many hours of it.
+ 7       Q.    Okay.  All right.
+ 8       A.    Dubin.  Morty Dubin --
+ 9       Q.    Yep.
+10       A.    -- he's deposed me on that.
+11                  And Morty Dubin has the ruling from Judge
+12   Hanna in Chicago -- no, Cleveland.
+13                  And also there was the hearing in Gwinnett
+14   County where Rob Buck defended Mr. Mount.  And that ruling
+15   was -- where they -- where J&J wanted me to produce all
+16   the HR records and stuff.
+17       Q.    Okay.  Well, let's move on then.
+18       A.    Yeah.  I did produce the HR records to Judge
+19   Hanna in camera and then he read them and sent them back;
+20   so it's just -- it's just been -- it's been litigated into
+21   the ground.
+22       Q.    Okay.  All right.  So let's move on then.  I
+23   don't mean to relitigate something, Doctor.
+24                  So let me just ask you this, though,
+25   because this is a question for me.  You mentioned the
+0024
+ 1   dissolution (sic).
+ 2                  Remember the dissolution method?
+ 3       A.    "Dissolution method"?
+ 4       Q.    You mentioned the word "dissolution" and I
+ 5   didn't know what you meant by that when you were talking
+ 6   about Mr. Mount.
+ 7       A.    Oh, "dilution."  The "dilution method."
+ 8       Q.    Okay.  What is the "dilution method"?
+ 9       A.    Well, when you're -- when you're analyzing bulk
+10   sample by TEM and the component you're interested in to
+11   see if it's there like asbestos versus the talc; so the
+12   talc -- 90 -- for J&J, you know, 96 to 97 percent of it is
+13   talc.
+14                  It's been estimated anywhere that for every
+15   amphibole fiber you're going to have anywhere from
+16   700,0000 to a million talc plates of fibers; so if you
+17   want to get any reasonable detection limit you have to
+18   dilute it so you don't have nothing but talc plates in
+19   there and you can't see anything.  It will cover up the
+20   TEM grid openings and you can't -- you can't analyze it.
+21                  So you have to -- you know, you have to
+22   dilute it to the point where the amount of material that's
+23   going onto the filter of talcum powder usually runs
+24   somewhere in the 100-to-250-nanogram range, where the
+25   concentration method, what we put on the filter, the
+0025
+ 1   starting method is about 30 milligrams; so you're talking
+ 2   about quarters of thousands of magnitude of difference.
+ 3                  And that's what makes it -- makes it where
+ 4   you can separate out the talc and concentrate the
+ 5   amphiboles and if they're present to the detection limit
+ 6   you get to.
+ 7       Q.    All right.  So really what I -- what I should
+ 8   have asked and it would have saved you some time is the
+ 9   dilution method is not the concentration method, right?
+10       A.    No, it's not.
+11       Q.    Is that correct?
+12       A.    That's fair.  You're not separating out any of
+13   the components.
+14       Q.    Okay.  So -- so Mr. Mount used the dilution
+15   method, which is not the concentration method, and TEM
+16   and PLM?
+17       A.    Correct.
+18       Q.    Okay.  Did you ever figure out what method
+19   Mr. Hatfield used?
+20       A.    Well, Mr. Hatfield, while they were at McCrone,
+21   you know, they were using the same method, the same
+22   method, you know, the 7042 (sic) method at J&J.
+23                  Is it 7024 or --
+24       Q.    It's 7204.
+25       A.    -- 7042?  7204.
+0026
+ 1                  It's -- so it would have been the same
+ 2   method that everybody was using.  J&J was -- made it their
+ 3   method.
+ 4                  But I think what he was doing is he looked
+ 5   at -- he must have looked at that Gold Bond from 2000 by
+ 6   PLM, because he was a PLM analyst, and if there was a
+ 7   report we can't locate it.
+ 8       Q.    Okay.  So -- so this is what I was thinking.
+ 9                  When was it that you first learned of
+10   the -- I'm trying to use the right word, is it the
+11   concentration method, do you feel comfortable with that,
+12   or do you prefer the other words that other people use?
+13       A.    You know, it's the heavy density liquid
+14   separation.
+15       Q.    Okay.
+16       A.    I've known about heavy liquid density
+17   separation.  It's part of what, you know, Chatfield and
+18   the vermiculite -- vermiculite in Libby, Montana, there's
+19   other papers associated with it for minerals.
+20                  But I wasn't aware that Alice Blount
+21   published a heavy liquid density separation method in 1990
+22   and '91 specifically for talc.
+23                  And I learned about that before we even got
+24   started with this because I started right off the bat
+25   because I was aware that other people were starting to
+0027
+ 1   find it, you know, like QuanTEM Labs was finding it, you
+ 2   know, MVA was finding it.  But they typically had to look
+ 3   at -- especially QuanTEM, they would look between 500 and
+ 4   1,000 grid openings to get -- and even at 1,000 grid
+ 5   openings or 500 grid openings, you're only at an
+ 6   analytical sensitivity of about 250,000 or so.
+ 7                  So we were going to do heavy liquid density
+ 8   separation.
+ 9                  You know, if you go back to McCrone's stuff
+10   from the 1980s, "The Particle Atlas," he talks about it.
+11   We all knew about muffle -- you know, using muffle furnace
+12   to get rid of the organics, the acetone solution to get
+13   rid of the carbonates, but to actually separate out the
+14   talc.  And then we located Alice Blount's paper and that's
+15   what we started with.
+16       Q.    Okay.
+17       A.    Then we went on to the 20 -- you know, to the
+18   22262-2 method which basically is only slightly different
+19   than what Alice Blount talked about.
+20       Q.    All right.  But is it -- is it fair to say, I
+21   think I know this.
+22                  But is it fair to say that you'd never
+23   utilized the concentration method for any product until
+24   2017 or later; is that fair?
+25       A.    Not quite.
+0028
+ 1       Q.    Okay.
+ 2       A.    We didn't use any heavy liquid density
+ 3   separation because there was -- we didn't have any need
+ 4   for it because we were doing mostly asbestos-added
+ 5   products and you don't need heavy liquid density
+ 6   separation for that.
+ 7       Q.    So one of the reasons that you did heavy liquid
+ 8   density separation for cosmetic talc, I hope we can agree
+ 9   on this, is because other products, Dr. Longo, that you've
+10   tested were -- you knew were designed and intended to have
+11   asbestos; is that fair?
+12       A.    That's fair up to Vanderbilt talc.
+13       Q.    Okay.  And when did you test Vanderbilt talc for
+14   the first time?
+15       A.    In the 2000s sometime.  It may have been all the
+16   way back to 1990s.
+17       Q.    And did you ever consider using the heavy liquid
+18   density separation -- or heavy density liquid separation
+19   or concentration method for Vanderbilt talc before 2017?
+20       A.    No, because it was very easy to find the
+21   asbestos.  You know, in some cases we're talking 2 to
+22   3 percent by weight of the amphiboles.  And it's a very
+23   unique amphibole signature in that it's primarily
+24   through -- primarily anthophyllite and it's anthophyllite
+25   with no iron.  It's the only anthophyllite we've run
+0029
+ 1   across over and over that has no iron in it.
+ 2       Q.    All right.  So let's get back -- I kind of
+ 3   diverted so forgive me.  But we were on your reliance --
+ 4       A.    That's all right.
+ 5       Q.    -- we were on your reliance list when I just
+ 6   asked what I was thinking for the last couple days.
+ 7                  So what other documents have you received
+ 8   specifically for the Sandoval case that are J&J-company
+ 9   specific that are not on your reliance list?  Are there
+10   any?
+11       A.    No.  What I received is, you know, all the
+12   depositions from Sandoval, the -- her husband's
+13   deposition, the husband's brother's deposition.
+14                  And I don't think I listed it on the report
+15   but I did receive amendment to complaint which I didn't
+16   review, I don't know why I get those from everybody.
+17       Q.    For completeness.  For completeness.  They want
+18   to make sure you have everything.
+19       A.    I got the declaration of Taras Kirk, which was
+20   verifying the Dames & Moore Asbestos Survey for the
+21   American Appliance Manufacturing Company.  I also got the
+22   multipage complaint -- plaintiffs' complaint for damages
+23   and I didn't review that either.
+24       Q.    Okay.
+25       A.    And that's it.
+0030
+ 1       Q.    What did you --
+ 2                  So you received the plaintiffs' complaint.
+ 3   I think I don't have --
+ 4                  Do you have the date that that was signed
+ 5   just so we have for the record?
+ 6       A.    Let's see, I'm looking for the signature page.
+ 7   Dated August 26, 2015.
+ 8       Q.    Okay.  And then when is the amended complaint
+ 9   dated?  These are softball questions.
+10       A.    Yes, but I have to go search around and I'm
+11   always not sure where everything is.
+12                  September 5, 2018.
+13       Q.    Okay.  Did you ever --
+14             MR. BRATT:  Hey, just -- Alex, sorry.
+15                  I just want to be upfront.  We also
+16   provided Dr. Longo with Dr. Gordon's --
+17             THE WITNESS:  I forgot about that.  Sorry.
+18             MR. BRATT:  -- report, Dr. Gordon's report and
+19   then the -- I guess for lack of a better term the backup
+20   data.
+21                  It's about a 29- or 30-page PDF.  I mean,
+22   you -- you and Ed have them both, but I just wanted to put
+23   that out there.
+24             MR. CALFO:  All right.
+25       Q.    When did you receive Dr. Gordon's report?
+0031
+ 1       A.    Friday.
+ 2       Q.    Okay.  "Friday" as in like three days ago,
+ 3   right?
+ 4       A.    Yes.
+ 5       Q.    Okay.  All right.  Let's keep -- let's keep
+ 6   going on our housekeeping.
+ 7       A.    Sure.
+ 8       Q.    I have here a "Comments of Johns-Manville,
+ 9   Notice of Proposed Rulemaking."
+10       A.    Yes.  Yes.
+11             MR. CALFO:  And, Laurie, what's our next in
+12   order?
+13             THE REPORTER:  Exhibit 3.
+14             MR. CALFO:  We'll mark that as Exhibit 3.  Okay,
+15   Dr. Longo?
+16             (Defendant's Exhibit 3 was marked for
+17             identification and is attached
+18             hereto.)
+19             THE WITNESS:  That's fine.
+20   BY MR. CALFO:
+21       Q.    And let me ask you, I've taken your deposition
+22   in a lot of cases, I've never seen this.
+23                  Why -- why did you produce this in this
+24   case?
+25       A.    Well, it doesn't have anything to do with
+0032
+ 1   J&J, clearly.
+ 2                  There's an allegation that the plaintiff
+ 3   had secondary exposure to her husband's clothing from
+ 4   cutting the fabric pads which are -- which are described
+ 5   by him as asbestos-containing to keep the electrostatic
+ 6   paint off the rollers themselves where he was cutting it
+ 7   and then also wrapping around the -- the track.
+ 8                  And then they talked about it being dusty.
+ 9   She said the clothes were dirty.  And you're cutting --
+10   you know, you're cutting asbestos fabric, and we'd done a
+11   workplace study on cutting fabric and it will produce very
+12   significant exposures, it will also cause significant
+13   contamination to work clothes.
+14                  So that's just a discussion about
+15   Johns-Manville where they were trying to -- they were
+16   trying to not have that 1976 PEL put in of 2 fibers per
+17   CC; so they were talking about how asbestos -- take-home
+18   clothes can cause a -- almost a continuous, chronic
+19   low-level exposure, so it is really higher than what
+20   Dr. Selikoff was saying.
+21                  That's because they're seeing mesos with
+22   secondary exposure and the secondary exposure levels are
+23   lower than typical occupational exposure levels, and
+24   that's why they issued the 2 fiber per CC PEL in 1976.
+25   And Johns-Manville was against that and they were trying
+0033
+ 1   to put some information in saying that Dr. Selikoff was
+ 2   wrong, that it is -- secondary exposure is higher than
+ 3   what you would think.
+ 4             MR. CALFO:  All right.  Well, I'm going to let
+ 5   Mr. Huge ask you about that.
+ 6             MR. HUGO:  Before we get by, I'm just going to
+ 7   for the record move to strike it as hearsay, lacks
+ 8   foundation.
+ 9             THE WITNESS:  Right.
+10             MR. CALFO:  And then I have Exhibit 4, we'll
+11   mark as "Asbestos-Related Disease from Household
+12   Exposure."
+13             (Defendant's Exhibit 4 was marked for
+14             identification and is attached
+15             hereto.)
+16   BY MR. CALFO:
+17       Q.    Is that a document that you provided to Mr. --
+18       A.    It is.
+19       Q.    -- Mr. Bratt?  Okay.
+20                  I think I can, from the title, figure out
+21   why you produced that; so I'm going to move on.
+22                  Let's go to Exhibit 5, which is
+23   "Domestic asbestos exposure, lung fibre burden, and
+24   pleural mesothelioma in a housewife."
+25             (Defendant's Exhibit 5 was marked for
+0034
+ 1             identification and is attached
+ 2             hereto.)
+ 3   BY MR. CALFO:
+ 4       Q.    Did you provide that to Mr. Bratt as well?
+ 5       A.    Yes.
+ 6       Q.    And why did you do that, sir?
+ 7       A.    Well, it's -- it's typically what I provide when
+ 8   I'm involved in asbestos-added products, secondary
+ 9   exposure, to show that it is well-recognized that this
+10   happens, there it is, you know, case-specific literature
+11   on it.
+12                  And we've done a lot of work on
+13   asbestos-added products with secondary exposure
+14   specifically for chrysotile, some amosite products.  And I
+15   even gave a presentation to the DRI on secondary exposure
+16   to brake products to -- you know, the -- for Exponent's,
+17   their -- their -- their paper versus our unpublished
+18   stuff; so I've been involved in a lot of it over the
+19   years.  And I've accumulated things that -- maybe not so
+20   much now but there used to be some argument that there was
+21   no sound science on it.
+22             MR. CALFO:  Okay.  So let's mark as Exhibit 6
+23   "Mesothelioma among Railroad Workers in the United States"
+24   by Thomas Mancuso.
+25             (Defendant's Exhibit 6 was marked for
+0035
+ 1             identification and is attached
+ 2             hereto.)
+ 3   BY MR. CALFO:
+ 4       Q.    Did you provide that to Mr. Bratt as well?
+ 5       A.    I go.
+ 6       Q.    And why did you do that, sir?
+ 7       A.    Because they go through a number of different
+ 8   job activities in the railroad where you're going to have
+ 9   high exposures and low exposures.  And so it covers the
+10   ranges of different products that are asbestos-containing.
+11             MR. CALFO:  All right.  Number 7 is a "Report to
+12   Congress on Workers' Home Contamination Study Conducted
+13   Under the Workers' Family Protection Act," dated September
+14   of 1995.
+15             (Defendant's Exhibit 7 was marked for
+16             identification and is attached
+17             hereto.)
+18   BY MR. CALFO:
+19       Q.    Did you provide that to Mr. Bratt as well?
+20       A.    I did.
+21       Q.    We'll mark that as Exhibit 7.
+22                  I think I can figure that out but is there
+23   anything new in this document that you haven't told us
+24   about?
+25       A.    No.
+0036
+ 1       Q.    I'll leave it to Mr. Hugo.
+ 2                  Okay.  Then Exhibit 8 is what I have here
+ 3   as "MAS:  Cutting and Handling of Asbestos Cloth."
+ 4             (Defendant's Exhibit 8 was marked for
+ 5             identification and is attached
+ 6             hereto.)
+ 7   BY MR. CALFO:
+ 8       Q.    Did you provide that to Mr. Bratt as well?
+ 9       A.    I did.
+10       Q.    And I think you told us a little bit about that.
+11                  Is there anything -- other reason that you
+12   provided that to us other than what you told us earlier?
+13       A.    No.  We had a roll of fabric, asbestos fabric,
+14   and -- and there was testimony that they would cut squares
+15   off.
+16                  Now, this is wider than the 3-inch roll
+17   with what they were using but it has the same concept of
+18   what happens when you cut this material.
+19             MR. CALFO:  Okay.  And then Exhibit 9 we'll mark
+20   as "Pipe Wrap Abrasion, Work Practice Simulation
+21   Demonstration," by William E. Longo, Ph.D., and Richard L
+22   Hatfield dated August 1999.
+23             (Defendant's Exhibit 9 was marked for
+24             identification and is attached
+25             hereto.)
+0037
+ 1   BY MR. CALFO:
+ 2       Q.    Are you with me, Doctor?
+ 3       A.    I am.
+ 4       Q.    Why did you provide us with Exhibit 9?
+ 5       A.    Well, while the plaintiff's husband was at the
+ 6   hot water manufacturing plant, he talked about that in
+ 7   reaching under some equipment he would brush up against
+ 8   some thermal insulation for hot water lines.  And
+ 9   typically that type of thermal insulation, if it is
+10   asbestos-containing, is sort of a paper product.
+11                  And this was on some air -- on a -- on a
+12   furnace-type ducting.  And we were just seeing what would
+13   happen if you -- if you would abrade it with your hand,
+14   would there be an exposure.
+15             THE REPORTER:  "If you would" what?
+16             THE WITNESS:  Abrade the -- the insulation,
+17   the -- we call it air cell, air cell insulation by hand,
+18   would there be an exposure.
+19   BY MR. CALFO:
+20       Q.    Okay.  And what type of asbestos are you
+21   claiming were in the -- was in the pipe wrap abrasion
+22   study?
+23       A.    The only one I've ever seen and the only one
+24   that the manufacturer has ever made was chrysotile.  The
+25   same with the fabric; you won't find anything in fabrics
+0038
+ 1   other than chrysotile --
+ 2       Q.    Okay.
+ 3       A.    -- in any industrial application.
+ 4             MR. CALFO:  Then we have "Secondary Exposure
+ 5   Reliance Materials."  I'll mark that as Exhibit 10.
+ 6             (Defendant's Exhibit 10 was marked for
+ 7             identification and is attached
+ 8             hereto.)
+ 9   BY MR. CALFO:
+10       Q.    Do you --
+11             MR. BRATT:  What was that again?  I'm sorry, you
+12   cut out.
+13             MR. CALFO:  It's called "Secondary Exposure
+14   Reliance Materials."
+15             MR. BRATT:  Okay.
+16             MR. CALFO:  Exhibit 10.
+17       Q.    Why did you produce that to us, Doctor?
+18       A.    Because it's all the reliance materials that
+19   I've ever used for any reason in secondary exposure and I
+20   didn't want to forget something.
+21       Q.    Okay.  So, you know, here's -- here's my bind:
+22   I want to ask you some questions but I don't want to spend
+23   25 hours on a topic that everyone else has covered; so let
+24   me -- let me narrow it down here for you.
+25                  Have you done any case-specific Johnson &
+0039
+ 1   Johnson work in the Sandoval case?
+ 2                  You understand what I mean, Doctor?
+ 3       A.    Right.
+ 4                  We had no containers specifically for the
+ 5   Sandoval case.  Her exposures are all Vermont and we
+ 6   probably have not done anything new with any Vermont
+ 7   samples in some time; so --
+ 8       Q.    Okay.
+ 9       A.    -- there's not any additional work that has been
+10   specifically for this case.
+11       Q.    Okay.  And so -- so I know you were -- I heard,
+12   and I haven't read your transcript, but you were recently
+13   a witness in a case in Los Angeles; is that right?
+14       A.    I was.  The Johnson -- Sean Johnson case.
+15       Q.    And how did that go?
+16       A.    You know, it's always hard for me to know how it
+17   goes.  You know, I didn't get struck or --
+18       Q.    Okay.
+19       A.    -- the judge -- the judge didn't yell at me, so,
+20   you know, it was okay.
+21       Q.    Okay.  Well, then that's good.  You've seen the
+22   judge yell at me a few times I think but --
+23                  So -- so you have not done any work since
+24   the Sean Johnson testimony specifically in -- in relation
+25   to your analysis of Johnson's Baby Powder; is that fair?
+0040
+ 1       A.    That's fair.
+ 2                  Mr. Williams, who was the defense attorney,
+ 3   said he was not a scientist and he didn't ask one science
+ 4   question --
+ 5       Q.    Okay.
+ 6       A.    -- so I -- it was -- it was all bias.
+ 7       Q.    Okay.  100 percent?  100 percent bias, give or
+ 8   take?
+ 9       A.    Just about.  I can't think of anything --
+10                  Oh, yeah.  I went through the time line.
+11       Q.    Okay.  And even though I was joking with you I'm
+12   not a scientist, at least I've asked you some scientific
+13   questions; fair?
+14       A.    I mean, he flat-out said at the beginning "I am
+15   not a scientist, I'm not going to ask you any science
+16   questions.  I'm going to wait for Mr. Sanchez to come in
+17   and explain all that."
+18       Q.    Okay.
+19       A.    Or "Dr. Sanchez," excuse me, that's what he
+20   said.
+21       Q.    All right.  So --
+22       A.    And then with Mr. Dubin in the Prudencio case,
+23   that was different.
+24       Q.    Right.
+25                  So in a cosmetic talc case, Dr. Longo,
+0041
+ 1   since -- let's say since I saw you in mid-2019, other than
+ 2   Johnson & Johnson trials, which I can find, what other
+ 3   cosmetic talcum powder products have you testified in
+ 4   trial about?  Can you remember just generally if you --
+ 5                  Do you have a list or can you just remember
+ 6   off the top of your head?
+ 7       A.    I don't think I've testified in trial on
+ 8   anything but Johnson & Johnson.
+ 9       Q.    Okay.
+10       A.    Now, I've had depositions with Cashmere Bouquet,
+11   Jean Nate -- Cashmere Bouquet, Jean Nate, Chanel, Avon.
+12   And either they have settled or they have not gone to
+13   trial.
+14       Q.    Okay.  So where does that leave us?
+15                  Well, let me -- let me ask you a few
+16   questions on this --
+17                  You know your talcum application of baby
+18   diaper change hygiene study?
+19       A.    Yes.
+20       Q.    You did two of them, right?
+21       A.    Two babies.
+22       Q.    I've got to ask you this, and I know -- I can't
+23   remember the name of the guy who actually applied the
+24   powder, I think he's since passed away; is that right?
+25       A.    On the babies?
+0042
+ 1       Q.    Yes.
+ 2       A.    That would be me.
+ 3       Q.    Oh, that was you?
+ 4                  Are you the one wearing the respirator and
+ 5   the moon suit?
+ 6       A.    Well, they're not moon suits.
+ 7       Q.    They're not, I know.
+ 8       A.    They're just -- they're just Tyvek suits.  A
+ 9   moon suit would be something you'd wear on the moon.
+10       Q.    Right.
+11       A.    These are not moon suits.
+12       Q.    Okay.  So --
+13       A.    For both baby studies, I'm the one doing the
+14   powdering.
+15       Q.    So that's you wearing the black outfit with the
+16   black respirator?
+17       A.    Yes.
+18       Q.    What respirator were you wearing?  What brand?
+19       A.    I don't remember the brand but it is a full-air.
+20   We either use full-air or we use PAPRs.  The new PAPRs are
+21   now rated as high as the -- the air supply ones and
+22   they're easier to deal with; so what I've been -- what
+23   I've been wearing lately in studies, not any J&J studies,
+24   is the PAPRs.  But I forget what the brand of the
+25   full-face air-fit respirators were.
+0043
+ 1       Q.    All right.  So is it -- is it your belief that
+ 2   if -- I have some Johnson's Baby Powder at home, if I'm
+ 3   going to put Johnson's Baby Powder on myself that I should
+ 4   wear one of these full pays PAPR-type respirators?
+ 5       A.    No.  I would tell you don't use it if it's
+ 6   talcum powder.
+ 7       Q.    Okay.
+ 8       A.    That's the easiest way because, you know,
+ 9   Johnson -- J&J has a really good non-talcum powder baby
+10   powder product that I couldn't tell the difference between
+11   the two unless I looked at it under a microscope; so I
+12   would advise you don't --
+13                  If you have talcum powder ones, send it to
+14   me and I'll let you know if there's asbestos in it.
+15       Q.    Okay.  But if I have one -- I do have talcum
+16   powder under my sink.  Should I put a PAPR or a full-face
+17   respirator on if I decide to apply it?
+18       A.    I mean, how can I tell you -- I wouldn't tell --
+19   I wouldn't --
+20                  My best advice to you is don't use it.
+21       Q.    Well, you've told me that before but do I really
+22   need a respirator?
+23       A.    No, because you -- you know, it is --
+24                  You're an adult, you see all the evidence.
+25   If you make the decision to use it because you don't
+0044
+ 1   believe any of it, then I would say your best bet is not
+ 2   to go get a respirator and put it on, you'd have to get
+ 3   fit tested.
+ 4                  There's a lot of -- there are some
+ 5   technical issues there.
+ 6                  You'd have to get tanks of breathable air.
+ 7   It's not just oxygen but air that's been filtered,
+ 8   et cetera.  You have to get fit tested on the respirator
+ 9   and to do the whole process then you have to
+10   decontaminate, meaning go through the showers and I think
+11   that eliminates the need, then you'd have to do it again
+12   all over again because you just washed all your talcum
+13   powder off.
+14       Q.    Well, did you fit check and fit test before you
+15   did that?
+16       A.    Well, we fit -- we fit test about once a year
+17   for me where you put it on and you put in a -- a somewhat
+18   irritant that you know right away if you have leaks.
+19       Q.    Right.  Okay.  So -- so let me -- let me get
+20   more specific here.
+21                  Your client here is the Weitz & Luxenberg
+22   firm, right?
+23       A.    Yes, sir.
+24       Q.    And you know that law firm represents the
+25   Sandoval family, right?
+0045
+ 1       A.    I do.
+ 2       Q.    And it's the Weitz law firm who's paying for
+ 3   your time in this case?
+ 4       A.    Yes, sir, they are.
+ 5       Q.    And, Dr. Longo, is it still true that you're not
+ 6   here to talk about the health effects of asbestos or any
+ 7   other inhaled minerals?
+ 8       A.    That's correct.
+ 9       Q.    All right.  And you told me earlier, you've
+10   never -- never tested a container that Ms. Gutierrez or
+11   her family members ever used, right?
+12             MR. BRATT:  Wait, wait, wait.  You're asking
+13   about "Gutierrez," we're doing "Sandoval."
+14             MR. CALFO:  I'm sorry.  I'm sorry.
+15   Ms. Sandoval.
+16             MR. BRATT:  That would be what, next week?
+17             MR. CALFO:  Sorry.
+18                  I was thinking with Mark, I've got that
+19   case too; so let me ask it differently.
+20       Q.    You've never tested a container that
+21   Ms. Sandoval or her family has ever used; is that fair?
+22       A.    That's fair.
+23       Q.    While I'm at it, have you tested a Gutierrez
+24   bottle?
+25       A.    I'm not ready to answer that because I would
+0046
+ 1   have to check and see what we've done.
+ 2       Q.    Okay.  All right.  But as you sit here today,
+ 3   you can't remember one way or the other; is that fair?
+ 4       A.    That's fair.
+ 5       Q.    All right.  Now, you were provided a document --
+ 6   a test from Ronald Gordon; is that right?
+ 7       A.    That's right.
+ 8       Q.    How, if at all, has that impacted your opinions
+ 9   in this case, Dr. Longo?
+10       A.    Well, it verifies to me that there was talcum
+11   powder exposure.  There's talc.  I think there's
+12   anthophyllite.  I left -- I left that at at my office but
+13   it was consistent with talcum powder exposure.
+14                  I think there was some depleted magnesium
+15   silicate fibers which you would expect to find in -- I
+16   believe in Vanderbilt -- excuse me, strike Vanderbilt, in
+17   Vermont talc.  Johnson & Johnson trying to get the
+18   chrysotile out of that talc.
+19       Q.    Did you --
+20                  Have you also seen that in Vanderbilt talc
+21   as well?
+22       A.    You know, I've never checked for Vanderbilt
+23   talc.  But I've seen some Johnson and -- JM data that
+24   suggests that chrysotile is in there.  We've never seen
+25   chrysotile in it doing the regular analysis but it might
+0047
+ 1   be time to do some very heavy liquid on it and see if we
+ 2   can find chrysotile in Vanderbilt talc.
+ 3       Q.    Okay.
+ 4       A.    I think the public definitely would appreciate
+ 5   it.
+ 6       Q.    Why would they call is it a "Ph.D. and a doctor
+ 7   of philosophy in material science and engineering"?
+ 8       A.    Because it's not easy --
+ 9       Q.    Because I got my degree -- I got my degree in
+10   philosophy.
+11                  Why do you have a degree in philosophy if
+12   you're a material science and engineering major?
+13       A.    Well, philosophy is potentially thinking why,
+14   why do people do this, outside of the box.  Put -- put the
+15   things together so it makes sense on a human level, on the
+16   development of mankind sort of.
+17                  A Doctor of Philosophy is because you have
+18   solved an issue in your Ph.D. that had you thinking about
+19   the totality of material science and how did it affect
+20   your project.  That's the best I can do on that.
+21       Q.    Okay.
+22       A.    And you're the first person to ever ask that.
+23       Q.    Well, I just wondered.  I've always wondered --
+24   I'm asking you questions I've wondered about, so --
+25                  You know, I'm not going to ask you in front
+0048
+ 1   of 12 people but I can ask you now.
+ 2       A.    Yes, you can.
+ 3       Q.    And they're harmless questions.
+ 4       A.    So far.
+ 5       Q.    Is so -- so here's another one I have for you.
+ 6   And -- and I've asked you this at trial and you've told
+ 7   me.
+ 8                  If someone were to, in the litigation
+ 9   world, back in 2016, find an expert who was an expert in
+10   testing asbestos and the possibility of it in cosmetic
+11   talc, and they had published in the peer-reviewed
+12   literature, you've told us before that wouldn't be you.
+13                  You know that -- you know that basic
+14   question you get asked?
+15       A.    If the requirement was you had to have published
+16   in the peer-reviewed literature for the analysis of
+17   cosmetic talc, I couldn't fulfill that requirement and I
+18   still can't.
+19       Q.    Right.
+20       A.    However --
+21       Q.    Go ahead.  And the same question --
+22                  Go ahead.
+23       A.    -- if you wanted to have somebody that was
+24   invited to testify in front of Congress about the best
+25   testing methods for analyzing cosmetic talc, I would be
+0049
+ 1   that person and nobody else in the litigation would be.
+ 2       Q.    Okay.  But that was after 2016, right?
+ 3       A.    Right.
+ 4       Q.    So I was asking you about when -- when
+ 5   Mr. Satterly and our friend Mark Lanier came to you and
+ 6   said "Hey, Mr. Longo" -- "Dr. Longo, I've got this
+ 7   case" --
+ 8                  Well, what did they say to you?  Did they
+ 9   say "You want to test talc?"  "Hey, you want a new
+10   assignment?"  What do you remember them telling you?
+11       A.    I remember Satterly going "Do you want to" --
+12   "Do you want to get involved in testing cosmetic talc and
+13   seeing if there's asbestos there?"
+14       Q.    Okay.
+15       A.    And up until that point, I had stayed away from
+16   it because it's -- you know, it's how long am I going to
+17   be doing this type of stuff?  I've -- I've been
+18   testifying, you know, for a while.  And I had to think
+19   about it, did I would really want to get involved in this.
+20                  If I knew then what I know now, just how
+21   much time it needs and -- and the -- the aggressiveness on
+22   the defense side, I may have said no.
+23       Q.    Okay.  When you were asked by Mr. Satterly,
+24   "Hey, do you want to he get involved in it this" and
+25   you -- I assume at some point you said "yes," did you go
+0050
+ 1   back in the scientific literature and see what was in the
+ 2   peer-reviewed literature or other publicly available
+ 3   information as to whether or not there was testing for
+ 4   asbestos in talc?
+ 5       A.    I don't know how many I got but certainly --
+ 6                  I was only looking for one type of testing
+ 7   from the beginning, that we wanted to -- wanted to do
+ 8   heavy liquid density because looking at -- you know,
+ 9   looking at the -- the Gordon paper, MVA, looking at --
+10   QuanTEM was doing work, we got some of their records and
+11   the detection limits were just terrible.  I didn't --
+12                  I was not going to do any work where we
+13   were going to have to look at 500 to 1,000 grid openings.
+14   It takes way too much time and that's not something that I
+15   think my analysts would -- you know, would have enjoyed
+16   and I wasn't going to do that.
+17                  And even when they look at 1,000, I've not
+18   seen a lot of asbestos fibers, except for some of the
+19   really high-content cosmetic talcs; so it was -- Alice
+20   Blount's paper came up and that's what we started with.
+21   And then it progressed over time.
+22                  You know, I wasn't convinced early on, I
+23   thought the -- the R-93 or the ISO PLM method was just
+24   useless and we weren't going to do it.  And that XRD was
+25   useless and and it is useless and it's still useless.
+0051
+ 1       Q.    So you -- haven't you --
+ 2                  So, didn't --
+ 3                  I mean, when I think of you in litigation,
+ 4   I'm going to be candid, when I of you in litigation I
+ 5   think of "TEM."  Okay?  Maybe it's because of the picture
+ 6   of you in the courtroom with the TEM stuff; you know what
+ 7   I mean?  But when I think of Dr. --
+ 8       A.    I can picture you sitting there.
+ 9       Q.    But when I think of Dr. Bill Longo I think
+10   "TEM."
+11                  And so did you ever test cosmetic talc --
+12   Johnson & Johnson cosmetic talc solely with TEM, without
+13   the concentration method or the heavy liquid density
+14   samples?
+15       A.    The -- the first analysis we -- we only analyzed
+16   the samples by TEM with heavy liquid density separation.
+17   Then we --
+18                  In the MDL, we sent samples to Lee Poye to
+19   do XRD.  We -- and then we used the -- then we went to the
+20   Blount PLM method as well as -- for heavy liquid density
+21   as well as TEM heavy liquid density.  And had --
+22                  I think we had Lee Poye also do ISO PLM
+23   where we were doing ISO PLM to look at a comparison
+24   between the two.  And then it went from there to we were
+25   only looking for amphiboles by ISO PLM with no heavy
+0052
+ 1   liquid density separation to compare it to the
+ 2   Blount ISO PLM.  It's the --
+ 3                  The Blount method is the sample prep part.
+ 4   All of these analysis -- when I say "the Blount method,"
+ 5   that's sample preparation only, then it's analyzed by the
+ 6   ISO 22262-1 PLM method.
+ 7                  And I wanted to compare the two to see if
+ 8   the difference in concentrating it versus not
+ 9   concentrating it, could we -- was there -- was there more
+10   positives or the same or less or what have you; so it was
+11   only done as a comparison.
+12       Q.    All right.  So my question, if I asked it
+13   inartfully forgive me, but did you ever analyze Johnson &
+14   Johnson cosmetic talc by TME only without the heavy liquid
+15   density separation or concentration method?
+16             MR. BRATT:  Asked and answered.
+17             THE WITNESS:  Not for asbestos but we have done
+18   that just to get a concentration -- an amount of fibrous
+19   talc a few times that we've been asked by the client to do
+20   that.  And you don't need to do heavy liquid density
+21   separation because 9 to 10 percent of the cosmetic talc
+22   material is fibrous talc.
+23                  But I have never taken, without heavy
+24   liquid density, except for Mike Mount doing that in the
+25   2013 report and the 2009.  But those were Cashmere
+0053
+ 1   Bouquet.
+ 2                  As far as I can tell, and I'm -- and I've
+ 3   searched so much, we have never analyzed Johnson & Johnson
+ 4   until the first reports went out in 2017.  Or 2018,
+ 5   whenever it was.
+ 6             MR. CALFO:  Okay.  Should we just take a --
+ 7                  We've been going an hour; should we take a
+ 8   five-minute break?
+ 9             THE WITNESS:  Yes.  I was going to say five
+10   minutes but expect ten.
+11             MR. CALFO:  Okay.  If you want to take ten
+12   that's fine?
+13             THE WITNESS:  Let's take ten minutes if you
+14   don't mind.
+15             MR. CALFO:  That's fine.  Sure no problem.
+16             THE WITNESS:  All right.  Thank you.
+17                  (Off the record.)
+18             MR. CALFO:  All right.  Let's go back on the
+19   record.
+20       Q.    Dr. Longo, before the break we were talking
+21   about the heavy liquid density separation.
+22                  Is that how you say it, or heavy density
+23   liquid separation?
+24       A.    It's "heavy density liquid separation."
+25       Q.    I always get it mixed up.
+0054
+ 1                  So other than Dr. Alice Blount, before you
+ 2   did that method, was there anyone else that you can recall
+ 3   in the peer-reviewed literature who used the heavy liquid
+ 4   density separation?
+ 5       A.    No, not that I know of.
+ 6       Q.    So other than Alice Blount you're basically one
+ 7   of the revolutionaries of this method, aren't you?
+ 8       A.    No.  I thought I was.
+ 9       Q.    Who else is?
+10       A.    J&J.
+11                  I thought I was so clever using heavy
+12   density liquid separation until I ran across the
+13   Colorado School of Mines '73 and '74.  And I was going
+14   "They already did it."
+15       Q.    In your -- in your appendix of materials did
+16   you -- do you have the famous documents from -- well, I
+17   shouldn't say "famous" because Mark will object.
+18                  In your appendix of documents do you have
+19   the one from Dr. Fred Cooley where he states the "liquid
+20   density separation or concentration method does not work"?
+21       A.    I do.  I -- I don't have it in there but I have
+22   been crossed on it a number of times.
+23                  But he wasn't really using heavy liquid
+24   density, he was talking about his method because the
+25   Colorado School of Mines heavy density liquid method, they
+0055
+ 1   were contemplating patenting it.
+ 2                  And the December -- December 200- -- the
+ 3   December 1973 final protocol which the director of the
+ 4   Colorado School of Mines signed off on, the lead
+ 5   scientists for the Colorado School of Mines signed off on,
+ 6   and one other individual that I haven't been able to
+ 7   determine, and they start the whole -- like the intro --
+ 8   not the intro but something that I have used many times,
+ 9   you know, finding a needle in a haystack, they have that
+10   all out; you know, finding asbestos in cosmetic talc is
+11   like a needle in a haystack, get rid of the haystack --
+12   and so they had it all worked out.
+13                  What Cooley was doing was using two
+14   different chemicals that were different densities and one
+15   of them would react with the chrysotile right at the
+16   interface between the two chemicals.  And it wasn't
+17   reproducible, which is not surprising, because you have to
+18   put a pipe head in and just get that layer.
+19                  So that may have been Cooley's opinion but
+20   it was not Colorado School of Mines' opinion and not J&J's
+21   opinion where they discuss the fact that they could patent
+22   it to help -- to show how you would remove, you know,
+23   tremolite and amphiboles and chrysotile out of the
+24   cosmetic talc.  And do they share with the world or do
+25   they keep it a secret until the world could use it?
+0056
+ 1       Q.    So let me ask this:  Why wouldn't Colorado
+ 2   School of Mines patent this revolutionary method if they
+ 3   knew about it and they were part of it?  Do you have any
+ 4   understanding as to why?
+ 5       A.    Yes.
+ 6       Q.    Why?
+ 7       A.    Because the technology belonged to J&J.
+ 8                  There is an email between Johns-Manville
+ 9   and Colorado School of Mines, because Johns-Manville got
+10   wind of it and wanted to use it, and the email starts off
+11   "I know this is proprietary.  I know you did this on
+12   behalf of your client J&J but, hey, you used part of our
+13   stuff," the iodine staining of the chrysotile which
+14   only -- the Colorado School of Mines was using it only to
+15   facilitate finding -- finding the chrysotile easier by PLM
+16   but not determine if it was chrysotile.
+17                  So they wouldn't give it to Johns-Manville
+18   based on it was -- it belonged to J&J.
+19       Q.    Now, when you say it "belonged to J&J," it was
+20   not patented by J&J, right?
+21       A.    No.  They kept it a secret.
+22       Q.    No.
+23                  When you say was "proprietary," what does
+24   that mean?
+25       A.    It means that it's technology -- when it's
+0057
+ 1   proprietary to a particular company or group, that means
+ 2   the technology belongs to them and they're not going to
+ 3   share it, it's proprietary.
+ 4       Q.    Okay.  So how did it -- and this is for my
+ 5   benefit.
+ 6                  How did the concentration method become
+ 7   proprietary to Johnson & Johnson?  Was it Johnson  &
+ 8   Johnson scientists or what?
+ 9       A.    They paid for it.
+10       Q.    To whom?
+11       A.    Johnson & Johnson paid -- paid Colorado School
+12   of Mines, they were their consultants.
+13                  If you're in a university and company X
+14   comes along and says "We'd like you to work on this but
+15   it's proprietary, we own the patent rights and you have to
+16   get permission from us if you ever publish it."
+17                  Even today we do work in non-litigation for
+18   companies.  We've got to sign a nondisclosure agreement.
+19   We can't -- we can't breathe a word for two or three to
+20   five years unless it comes out somewhere else and if we
+21   want to publish it we have to get permission.
+22       Q.    So are you telling me that if -- if your place,
+23   MAS, had tested Johnson's Baby Powder in 1989 pursuant to
+24   this concentration method and you found asbestos, you
+25   would have kept that proprietary for all the people in the
+0058
+ 1   world that were using Johnson's Baby Powder?
+ 2       A.    If the plaintiffs' attorney -- attorneys had me
+ 3   sign a confidential agreement that -- if I had developed
+ 4   and was able to do this.  I mean, they didn't know what
+ 5   methods I was going to use, they just said "Test it."
+ 6                  Since there's no confidentiality agreement,
+ 7   you know, what if, what if, you can't deal with "what if"
+ 8   is.  They -- they didn't come in and say "Solve this
+ 9   analytical problem," they just said "Can you test it and
+10   see if you can see if there's any asbestos in there?"
+11                  That's all they said.
+12       Q.    But when you said that it was "proprietary,"
+13   what other document other than the one you told me about
+14   makes you believe that the reason the concentration method
+15   was not disclosed was because it was proprietary?  What
+16   other document do you have?
+17       A.    We have the document with Nash saying "The
+18   concentration method is too sensitive," and then we have
+19   the document where the J&J -- I guess the upper-level
+20   J&J said "The concentration method is not in the best
+21   interests of Johnson & Johnson's worldwide talc market."
+22                  And then there's the -- there's the
+23   discussion that goes on further because in '74,
+24   Johnson & Johnson and Windsor Mineral were working on a
+25   pilot plan to use surfactants during the benefication and
+0059
+ 1   flotation to see if they could remove chrysotile in
+ 2   amphibole asbestos out of 66 Grade.  And they were using
+ 3   spike samples and this was a crash course, "crash" to get
+ 4   this done, and it was they put a whole pilot plan together
+ 5   to see if they could do it.
+ 6                  Now, they reduce it but they couldn't get
+ 7   rid of it.  And they were talking about "Should we keep
+ 8   this confidential for us or should we patent the process
+ 9   if it all works out?"  And I don't have any documents
+10   after that, I don't think, that say anything different.
+11   And it was never patented.
+12       Q.    So Dr. Gordon did not use liquid density
+13   separation or concentration, right, based on what you
+14   reviewed in this case?
+15       A.    No.
+16       Q.    MVA never used heavy liquid density separation
+17   or concentration method, right?
+18       A.    That's correct.
+19       Q.    And QuanTEM never used those methods; true?
+20       A.    That's correct.
+21       Q.    So here's, really, the question I'm asking you.
+22                  If we were even just sitting there having a
+23   cup of coffee, the same question, why Bill Longo?  How did
+24   Bill Longo, of all the people in the world, come to learn,
+25   out of millions of people in the world, that there is
+0060
+ 1   purportedly asbestos in baby powder, why you?  Are you
+ 2   that smart?  What is it about you?
+ 3       A.    I'm not that smart.  But I tend to be able to
+ 4   look at -- I love looking at analytical problems and
+ 5   thinking outside the box how to solve it.  And it made
+ 6   perfect sense to me that if we used heavy liquid density,
+ 7   you know, at a certain density, anything in any amphibole
+ 8   range is going to go to the bottom of the test tube.  And
+ 9   anything in the -- anything else should go to the top.
+10                  Well, it's not 100 percent efficient, you
+11   know.  Once we -- once we got a centrifuge that was more
+12   state of the art, we're typically seeing about 19 to
+13   21 percent recovery through that, even though the am- --
+14   even though the amphiboles are probably not that much but
+15   you get some talc too.
+16                  You know, we're always in -- in a research
+17   stage; so we're looking at different heavy liquids that
+18   are not as viscous as the ones we're using and we're
+19   trying to see if we can increase the efficiency with that
+20   method.  We want to do that before we publish it.
+21       Q.    Okay.  But -- but is it because you're just, you
+22   know, so inquisitive and so --
+23                  I mean, have you ever thought about it?
+24   I mean, you had to think at night "Why me?  Why was I the
+25   one that discovered this asbestos out of millions of other
+0061
+ 1   people who have analyzed it."
+ 2             MR. BRATT:  Assumes facts, that there hasn't
+ 3   been other findings.
+ 4             THE WITNESS:  I don't know -- I don't know if
+ 5   millions have but there --
+ 6                  The people that have been analyzing by TEM
+ 7   have been doing it for a while and once you get into a
+ 8   mode of "This is how we're going to do it and we're
+ 9   following this protocol," laboratories tend -- especially
+10   commercial laboratories tend to not develop things.
+11                  You know, I just -- when I looked at all
+12   the grid openings, the first thing that hit me is "There's
+13   got to be a better way to increase the concentration.
+14   There must be -- you can do heavy liquid and let me
+15   research that."
+16                  And then we ran the first samples and we
+17   happened to have run -- one of the -- the first three
+18   samples that we got, one of them was one of the higher
+19   ones we've ever seen and then we went from there.
+20                  No, I mean, it's -- I'm turning, you know,
+21   I'm blushing here that somehow I'm way smarter than
+22   everybody else.  My wife will tell you that's just not
+23   true.
+24   BY MR. CALFO:
+25       Q.    Have you ever -- have you ever thought to
+0062
+ 1   yourself "Maybe I am identifying non-asbestiform minerals
+ 2   as asbestiform"?
+ 3                  Did that ever cross your mind before you
+ 4   wrote your report?
+ 5       A.    No.  It's -- I --
+ 6                  What crossed my mind was -- is that we are
+ 7   using the protocols that give you very specific morphology
+ 8   on what is called "regulated asbestos."  And regulated
+ 9   asbestos --
+10                  I wasn't going to get into the whole it's
+11   not asbestiform, non-asbestiform, because it's not in the
+12   methodology that you have to make that determination.  You
+13   don't have to know what kind of habit it grew in, you
+14   don't have to know -- but we -- we already knew that, what
+15   the habits were.
+16                  You know, this is talc.  Specifically,
+17   these are the mines.  And we are seeing numbers of bundles
+18   in these mines of -- of tremolite or anthophyllite.
+19                  Chrysotile, of course, by just the fact
+20   that it's chrysotile would be asbestiform.  And by PLM you
+21   get to see the structure and it meets the definition else
+22   of asbestiform -- quote, asbestiform by PLM.
+23                  Where the problem comes in is that folks
+24   like Sanchez and others want to redefine it and they want
+25   to call it all non-asbestiform, even though they're using
+0063
+ 1   a cal- -- they're using a protocol that nobody has ever
+ 2   identified as the protocol you should use for TEM, no
+ 3   government agency has ever accepted, no ISO, nothing.  You
+ 4   can't take PLM counting rules and use that critiquing it.
+ 5   It doesn't work.
+ 6       Q.    So --
+ 7       A.    And that's how -- that's how everything is
+ 8   called non-asbestiform.
+ 9                  And, also, we decided to increase the
+10   resolution of our PLM microscope so we could see if
+11   there's actually individuals bundling -- individual fibers
+12   in the bundle.
+13       Q.    So I took your deposition in Atlanta in 2018 and
+14   one of the questions I asked you was "Would you agree that
+15   prior to your use of the methods that you used, TEM was
+16   state of the art?"  And you said "Yes."
+17                  And so my question is if it was state of
+18   the art until you got it, what did you expect all these
+19   other cosmetic talc companies to use?  And I know you told
+20   me about J&J.
+21                  But what did you expect other talc
+22   companies to use up until you or even Alice Blount?  TEM,
+23   PLM, XRD, or all three, or a combination of three?
+24       A.    I never really took a look at -- until I got
+25   involved and started looking at cosmetic talcs and could
+0064
+ 1   see that XRD no matter what was silly.  I mean, even if
+ 2   you have a positive, you still would have to go back and
+ 3   verify the structures.
+ 4                  PLM -- most PLM labs don't know how to
+ 5   analyze a sample like this because they're so used to
+ 6   asbestos-added products.
+ 7                  A typical PLM analyst at a commercial
+ 8   lab, you know, is expected to -- they may spend 15 to
+ 9   20 minutes total on the sample because you have so much
+10   asbestos in there and it's huge.  Currently, when we do an
+11   analysis for chrysotile, we may spend a half a day to
+12   three-quarters of a day on one sample because of the
+13   higher resolution.  And you have to analyze it and take
+14   your time because the -- the chrysotile bundles are so
+15   small as compared to asbestos-added products.
+16                  I -- I don't know what they should have
+17   done.  I mean, I'm not state of the art.  You can ask
+18   David -- Dr. Egilman what they should have done.
+19       Q.    Well, you know Dr. Egilman in the 1990s said
+20   that Johnson's Baby Powder had no asbestos; you know that,
+21   right?
+22       A.    I know that.  I thought it didn't have any
+23   asbestos in it when we started.  I bought the stuff off
+24   the shelf, I was going to use it as a control.
+25                  I was thinking the same thing, that no way
+0065
+ 1   do they'd have anything on the shelves that's going to
+ 2   have asbestos in it.
+ 3       Q.    So you've tested Cashmere Bouquet?
+ 4       A.    I have.
+ 5       Q.    And you've test tested Gold Bond?
+ 6       A.    I have.
+ 7       Q.    You've tested Avon products?
+ 8       A.    I have.
+ 9       Q.    You've tested Chanel?
+10       A.    I have.
+11       Q.    Coty?
+12       A.    I have.
+13       Q.    What else?  That you can talk about.
+14       A.    Jean Nate -- these are all reports that have
+15   been given.
+16       Q.    Okay.
+17       A.    Jean Nate.  Old Spice.  The --
+18                  You know, we got the Shulton Retains.  And
+19   then we've also now recently analyzed Desert Flower, which
+20   is one of their others.  And we've also got its sister
+21   product, I forgot what it's called but I finally found
+22   one, because I'm only looking for stuff that's not been
+23   opened so we don't have to go through that anymore.
+24       Q.    Okay.  So --
+25                  Go ahead, anything else?
+0066
+ 1       A.    I think that's -- I think that's it.
+ 2                  Maybe Estee Lauder White Linen.  I know
+ 3   there's a couple more but those are the primary ones.
+ 4       Q.    All right.
+ 5             MR. BRATT:  I missed hearing "Shower to Shower"
+ 6   but we all know --
+ 7             THE WITNESS:  Oh, yeah.  Shower to Shower.  I'm
+ 8   not talking about J&J stuff.
+ 9             MR. BRATT:  Right.  I just wanted to make sure.
+10             MR. CALFO:  That's fair.
+11       Q.    So, Dr. Longo, isn't it fair to say that out of
+12   all those products that in terms of the talc, Johnson &
+13   Johnson is the purest?
+14             MR. BRATT:  Assumes facts, vague, overbroad.
+15             THE WITNESS:  It's -- it's hard to evaluate.
+16                  Certainly when Johnson & Johnson was using
+17   the Italian, we're seeing similar concentrations on
+18   Italian.  And I've not run across anybody other than
+19   Johnson & Johnson so far that was using Vermont talc.
+20                  Typically, everybody else is going from
+21   Italian to Montana, North Carolina.  And then everybody
+22   kind of switched over to China at different periods of
+23   time.
+24   BY MR. CALFO:
+25       Q.    But you know --
+0067
+ 1       A.    I can't say yours is the purest.
+ 2       Q.    Okay.  But you've read Alice Blount where she
+ 3   says the Johnson & Johnson is very pure; you know that?
+ 4       A.    I don't know if I've seen that or not but what
+ 5   does that mean?  I mean, all she was looking at was
+ 6   talc -- you know, talc -- talc from mines, Vermont, I
+ 7   think a few others.  And what does it mean, "very pure"?
+ 8                  You're dealing with thousands of a percent
+ 9   of accessory bundles.
+10       Q.    But of those, Cashmere Bouquet, Chanel, Gold
+11   Bond, Avon, Coty, Old Spice, Estee Lauder, isn't it your
+12   opinion that Johnson & Johnson is the purest based on your
+13   analyses of those products?
+14             MR. BRATT:  Assumes facts, vague, overbroad.
+15   Vague as to the definition of "pure."
+16                  Go ahead.
+17             THE WITNESS:  The only product I would compare
+18   Johnson & Johnson to would be when up until '68, say the
+19   '50s and the '60s, everybody was using -- most people were
+20   using the talc from the Italian mine.  After that, I don't
+21   have any of these companies that were using Vermont talc
+22   that I can see.
+23                  If you want to look just for the purest,
+24   the highest concentrations we have found in cosmetic talc
+25   from Italy is Johnson & Johnson; so if I'm going to just
+0068
+ 1   compare apples to apples, the highest amount of amphibole
+ 2   asbestos that we have found is in Johnson & Johnson.
+ 3   Second would be the Cashmere Bouquets that we analyzed.
+ 4   MVA has found Cashmere Bouquets that are in the 17 to 20
+ 5   million range.
+ 6   BY MR. CALFO:
+ 7       Q.    Have you ever had -- I mean, have you to this
+ 8   day still not had any discussions with James Millette
+ 9   about him signing off on all the reports that say
+10   "No Asbestos"?
+11       A.    No.
+12       Q.    That's true, you have not?
+13       A.    I have not.  He's retired.  I don't want to drag
+14   him into this, let him get subpoenas and stuff from you
+15   guys.
+16                  I respect Jim Millette.  I wasn't there.
+17   He's given a deposition or two.
+18                  That's -- I'm sure that's what he
+19   thought, was that there's no asbestos present.  You get
+20   nondetects.  We get nondetects.  What you can't do is say
+21   "This is clean because we have a nondetect," when your
+22   detection limit is anywhere from 6 million to 14 million
+23   fibers -- bundles per gram.
+24             MR. CALFO:  So let's mark as next in order your
+25   report in this case dated August 18, 2021.
+0069
+ 1             THE REPORTER:  Exhibit 11, I believe.
+ 2             MR. CALFO:  11.
+ 3             (Defendant's Exhibit 11 was marked for
+ 4             identification and is attached
+ 5             hereto.)
+ 6   BY MR. CALFO:
+ 7       Q.    Do you have that in front of you?
+ 8       A.    I do.
+ 9       Q.    Okay.  Great.  And Dr. Longo, is it fair to say
+10   that this report --
+11                  When did you prepare this report, on that
+12   date, August 18th?
+13       A.    It usually takes a few days and this happens to
+14   be one where I got it done ahead of time and not turned it
+15   into you, like, this morning.
+16       Q.    Okay.  Yeah, it's pretty early.
+17       A.    I know.  I mean, I'm kind of shocked.
+18       Q.    Okay.  So all the documents that you reviewed
+19   other than the Gordon report are referenced in this
+20   report; is that fair?  Specifically to the Sandoval
+21   matter.
+22       A.    Well, I didn't put in the report the Dames &
+23   Moore Asbestos Survey.
+24       Q.    Okay.  And other that, other than the documents
+25   that we've discussed and that are in your appendix and
+0070
+ 1   what's referenced here, that's what you've basically
+ 2   reviewed specifically for this case; fair?
+ 3       A.    That's fair.
+ 4       Q.    All right.  So you indicate here on the second
+ 5   page, "Ms. Sandoval stated she lived in Mexico the first
+ 6   nineteen years of her life."
+ 7                  Do you remember writing that?
+ 8       A.    I don't remember writing it but that would be
+ 9   something I would put down just to keep track of where she
+10   was.
+11       Q.    Okay.  Have you ever had cases involving
+12   exposures of asbestos in Mexico in the last 30 or
+13   35 years?
+14             MR. BRATT:  It's vague.
+15                  Are you just saying that circumstantially
+16   they were within the borders of Mexico or are you saying
+17   that there's some --
+18             MR. CALFO:  Yes.
+19             MR. BRATT:  Okay.  All right.  Go ahead.
+20             THE WITNESS:  I've been involved where it has
+21   been alleged by the defense side but not -- not asbestos
+22   but emurite (sic).
+23   BY MR. CALFO:
+24       Q.    Erionite.
+25       A.    Erionite.  They said it was in the soil but the
+0071
+ 1   RJ Lee people kind of had to back off on it when they
+ 2   admitted in their depositions that they basically took
+ 3   bags of soil and -- and put it in their luggage.
+ 4                  I think that's question 6 on your -- when
+ 5   you want to get back in the states from Mexico, "Are you
+ 6   bringing any plants or soil or anything," and they didn't
+ 7   disclose it; so that defense went away.
+ 8                  But I've never seen one where you could --
+ 9   you could show that there was asbestos exposure that I can
+10   recall.  I'm not saying --
+11                  Just to be clear, I'm not saying I haven't,
+12   I just don't remember it.
+13       Q.    Okay.  Have you -- have you ever researched --
+14                  I mean, first of all, are you aware that --
+15   that asbestos is still being imported into Mexico today?
+16       A.    I'm not aware of that.
+17       Q.    Okay.  Are you aware or have you had cases
+18   involving transport and disposal of wastes containing
+19   asbestos?  Have you ever testified in those type of cases?
+20       A.    No --
+21       Q.    Have you testified --
+22       A.    -- not that I can recall.
+23       Q.    Have you testified in cases involving demolition
+24   of buildings constructed with asbestos-containing
+25   products, including insulation?
+0072
+ 1       A.    I didn't -- I haven't testified to that.  But we
+ 2   have worked for the -- the DOJ in the past where somebody
+ 3   has done demolition in the United States and tear-out and
+ 4   did not go through the proper channels and now they were
+ 5   being prosecuted.  And typically they'll say, you know,
+ 6   "You need to show up at court on this date."  And every
+ 7   time that's happened so far the -- the plaintiff has pled
+ 8   out so I didn't have to do it.
+ 9                  But that's it.
+10       Q.    Okay.  You've testified in insulation cases,
+11   right?
+12       A.    Many times.
+13       Q.    And you've testified in the past insulation has
+14   what type of amphibole?
+15       A.    Well --
+16             MR. BRATT:  I'll just say it's vague as to --
+17   and assumes facts.  But vague as to "amphibole," vague as
+18   to "insulation."  Assumes facts that it always contained
+19   one type.
+20                  But go ahead.
+21             THE WITNESS:  When we see that, you see two
+22   types.  You see chrysotile and/or amosite.  Chrysotile on
+23   your insulating cements, your air cell-type products, your
+24   paper insulation.  And then when you get to things like
+25   calcium silicates, you typically see both.  Or just one,
+0073
+ 1   just amosite versus -- like Owens Corning Fiberglass, or
+ 2   Owens Illinois, that would have used both chrysotile and
+ 3   amosite.
+ 4                  And if you go all the way back and talk
+ 5   about the 85 percent Mags, M-A-G-S, magnesium silicates,
+ 6   they could have either both or one or the other.  And that
+ 7   always had 15 percent.  The air cells could be all over
+ 8   the board; so that's -- that's pretty much it in a
+ 9   nutshell.
+10                  Then, of course, you have Thermobestos
+11   which was amosite but it was 65 percent amosite.
+12   BY MR. CALFO:
+13       Q.    Have you done any research in this case about
+14   the type of asbestos insulation used generally in Mexico?
+15       A.    No.
+16       Q.    What about fireproofing, are you aware of what
+17   type of asbestos was used in Mexico for fireproofing?
+18       A.    I haven't done any research on that but I have
+19   looked at where the plaintiff lived.  I didn't see any
+20   evidence that she ever came in contact that I could see
+21   with -- from her sworn testimony that she was exposed to
+22   any asbestos in Mexico.
+23       Q.    Okay.  Same with ceiling and floor tiles, you
+24   don't know what type of asbestos is in ceiling and floor
+25   tiles?
+0074
+ 1       A.    I am so sorry.  Hold on.
+ 2       Q.    Sure.
+ 3       A.    I forgot to turn that off.
+ 4                  Well, floor tiles, if they're using VAT
+ 5   that's usually the only floor style that had asbestos in
+ 6   it, unless you're ripping it up and in my opinion you
+ 7   wouldn't have any exposure just walking around on it.
+ 8                  And ceiling tiles, typically they were
+ 9   either chrysotile or amosite --
+10                  Bless you.
+11             THE REPORTER:  Thank you.
+12                  Excuse me.
+13             THE WITNESS:  But usually they were being used
+14   as essentially a fireproofing-type product; so you would
+15   find them more in office buildings where you might have
+16   only two stories or three stories.  And so it could meet
+17   Code.
+18   BY MR. CALFO:
+19       Q.    What is ATSDR?
+20       A.    ATSDR is the Agency for Toxic Substances and
+21   Disease Registry.
+22       Q.    Okay.  And are you familiar with it?
+23       A.    Yes.
+24       Q.    And have you read the ATSDR 2001 version?  Does
+25   that ring a bell with you?
+0075
+ 1       A.    It doesn't.  But typically I look at the -- the
+ 2   ATSDR to come up with the yardstick for what's about
+ 3   background.
+ 4       Q.    Okay.  Have you looked at the -- have you looked
+ 5   at that with respect to cement in Mexico?
+ 6       A.    No.
+ 7       Q.    What about in the United States, have you looked
+ 8   at ATSDR 2001?
+ 9             MR. BRATT:  I think it's vague without --
+10                  I mean, listen, you know, personally you
+11   just give a year without a publication, you're asking him
+12   to guess a little bit.
+13   BY MR. CALFO:
+14       Q.    How about ATSDR generally?
+15       A.    I mean, I've reviewed it generally.  And if you
+16   show me what you're talking about, I can probably tell you
+17   if I've seen it or not.  I'm pretty familiar with what
+18   type of asbestos -- what type of cement products in the
+19   United States has asbestos in it.
+20       Q.    What type?
+21       A.    Pipe, transite board.  That's --
+22                  If you're going to go with just cement or
+23   cement and concrete, but just cement, those are the two
+24   primary ones.
+25       Q.    Have you testified in cases where a plaintiff
+0076
+ 1   claimed exposure from working with pools or destruction of
+ 2   pools?
+ 3       A.    I have.  And that would be because of gunite.
+ 4   And some of those would use a small amount of asbestos in
+ 5   it so that you could pump it and spray it.
+ 6       Q.    Okay.  So let's talk about your report.
+ 7                  Did you -- did you analyze --
+ 8                  Did you write this report or did you have
+ 9   someone else write it?
+10       A.    I primarily write it.  I have other people look
+11   at it but I want to transition over to other people
+12   writing it so that's --
+13       Q.    Okay.  I was going to say of the 14 pages here,
+14   Dr. Longo, how many of these did you write?
+15       A.    I would say just about all of it.  But a lot of
+16   these are done -- you know, a lot of what I'm relying on,
+17   et cetera, come from other reports; so it kind of grows.
+18   That's why I see some typos already where I have "Italian
+19   and Vermont" that I'm relying on even though it's only
+20   Vermont exposures.
+21       Q.    So that was --
+22                  What do you attribute that to?
+23       A.    Pulling things from other reports and not -- and
+24   not QC'ing it.
+25       Q.    Okay.
+0077
+ 1       A.    And catching it.
+ 2       Q.    All right.  So I'm trying to think if you've
+ 3   been deposed so many times and testified so much, is there
+ 4   anything else you want to tell me that I should learn
+ 5   about this case specific with respect to Johnson's Baby
+ 6   Powder?
+ 7       A.    You know what, I -- I -- I can never, ever be
+ 8   able to predict anything that you might ask.  You know,
+ 9   you --
+10                  I have to take my hat off to you, you gave
+11   me one of the hardest cross-examine questions that I ever
+12   witnessed -- I ever had and I go "Oh, my God, I've
+13   forgotten so much over time."
+14       Q.    But I will admit we were both gentlemen I hope,
+15   weren't we?
+16       A.    Yeah.  You -- you were.  You -- you know, I'm
+17   surprised you could wait so long to get me back.
+18             MR. BRATT:  He just found is the night before,
+19   that's the problem.
+20             MR. CALFO:  We haven't seen each other since --
+21             THE WITNESS:  Can we go off the record?
+22             MR. CALFO:  Let's go off the record.
+23                  (Off the record.)
+24             MR. CALFO:  Let's go back on the record.
+25       Q.    So, Dr. Longo, I wanted to ask you this:  Have
+0078
+ 1   you ever read any of Sean Fitzgerald's deposition
+ 2   transcripts?
+ 3       A.    I have.
+ 4       Q.    Did you read where he tested all kinds of
+ 5   products, for example, flour, and found asbestos?
+ 6       A.    You know, I didn't see that.  I saw that he's
+ 7   tested a bunch of different things but I don't remember
+ 8   the flour.
+ 9       Q.    Have you ever tested baking flour for asbestos?
+10       A.    No, I wouldn't think that that would be
+11   something that we would want to spend some time on.
+12       Q.    Okay.  Well, Sean Fitzgerald has.  I just
+13   wondered if you have.
+14       A.    We've never tested flour.  It's unclear to me
+15   why it would be.
+16       Q.    Let me just ask a few more and then I'll pass
+17   you to Mr. Hugo.
+18       A.    Sure.
+19       Q.    Do you know the Alice Blount samples that --
+20                  She brought that bottle of baby powder in
+21   her deposition, are you familiar with that?
+22       A.    She brought it to my deposition?
+23       Q.    No, she brought it to her deposition when
+24   Mr. Dubin asked her questions.
+25       A.    I remember that.
+0079
+ 1       Q.    Did you ever receive that bottle and test it?
+ 2       A.    I would have liked to but she refused to give it
+ 3   to everybody or any samples of hers, that I'm aware of.
+ 4       Q.    Did you --
+ 5                  So you asked her to test it and you never
+ 6   received it?
+ 7       A.    No.  I just heard that -- I think she was asked
+ 8   by Mr. Dubin or Mr. Lanier to get samples out of it and
+ 9   she said she was not providing any samples to anybody.  I
+10   never pursued it.
+11       Q.    So let's talk a little bit about Dr. Gordon.
+12                  You've looked at his report, right?
+13       A.    Yes, sir.
+14       Q.    And it's your understanding that he's the expert
+15   in this case who performed the mineral analysis for the
+16   fiber burden analysis?
+17       A.    Yes, sir.
+18       Q.    Okay.  Have you been asked -- or let me ask it
+19   this way:  Have you actually looked at his -- what would
+20   be the right word, photomicrographs, grids?  What would be
+21   the right word?
+22       A.    What I looked at was his backup data; so that
+23   would have to count sheets, the photomicrographs, I
+24   believe.  I have not looked at his grids to date.
+25       Q.    You haven't looked at anything that Dr. Gordon
+0080
+ 1   analyzed under a microscope; is that fair, Dr. Longo?
+ 2       A.    I haven't looked at the -- the grids, no.
+ 3       Q.    Okay.  Have you been asked to give an opinion on
+ 4   whether or not Dr. Gordon properly identified the
+ 5   structure or structures that he deemed to be asbestos?
+ 6       A.    What I looked at, as I recall, I didn't see
+ 7   anything wrong with what he identified.
+ 8       Q.    But my question was have you been asked to give
+ 9   an opinion whether or not Dr. Ron Gordon properly
+10   identified the structures that he deemed to be asbestos to
+11   actually be asbestos as opposed to, say, non-asbestiform?
+12             MR. BRATT:  It's been asked and answered.
+13             THE WITNESS:  Well, that's -- that's -- you
+14   know, you just asked a different question.
+15                  You know, I believe in my opinion, if
+16   asked, the Vermont mine has asbestiform amphibole asbestos
+17   in it because we have analyzed too much of that and have
+18   looked at enough of bundles of either tremolite or
+19   anthophyllite.  And Alice Blount says it's asbestiform if
+20   you have bundles.  Ed Wiley says it's asbestiform if you
+21   have bundles; so I would say -- and I've given this
+22   opinion in court, that the Vermont mine is a -- it has
+23   asbestiform, besides being regulated asbestos.
+24   BY MR. CALFO:
+25       Q.    But is it your opinion based on your analysis
+0081
+ 1   that the Vermont mine has non-asbestiform minerals in it
+ 2   as well, like non-asbestiform tremolite and
+ 3   non-asbestiform anthophyllite?
+ 4       A.    We have detected non-asbestiform tremolite and
+ 5   non-asbestiform anthophyllite because what I have
+ 6   determined is my in my opinion you can't have one without
+ 7   the other, you're going to have both.
+ 8                  And typically in PLM what we do is anything
+ 9   that does not meet the counting criteria for PLM, we write
+10   down -- we don't count them up but we usually write down
+11   in the comments that they're just non-asbestiform
+12   tremolite or non-asbestiform -- well, cleavage fragments
+13   we call them.  There's cleavage fragments for both.
+14       Q.    Okay.  So given that, you -- you have not looked
+15   at the --
+16       A.    Grids.
+17       Q.    -- tissue of Ms. Sandoval --
+18       A.    I have not, no.
+19       Q.    -- to confirm for yourself whether or not
+20   Dr. Gordon was actually correct; is that fair?
+21                  At least give me that.
+22             MR. BRATT:  Well, wait a minute.  Wait a minute.
+23                  I mean, I think it assumes facts that
+24   that's a necessary step.
+25                  But go ahead.
+0082
+ 1             THE WITNESS:  Well, I would have to tell you yes
+ 2   and no.
+ 3                  No, I have not done my own independent
+ 4   analysis and I have not reviewed the grids.  But, yes, I
+ 5   looked at what he reported and it would be my opinion it's
+ 6   regulated asbestos.  And he --
+ 7                  You know, Dr. Gordon's credentials are --
+ 8   he's more than fully qualified to do this.  He certainly
+ 9   has published many, many papers on tissue analysis and
+10   mineral burden.  He's been doing this for a long time.
+11                  But I didn't try to sit there and go "Okay,
+12   is this all asbestiform?"  But it's coming out in my
+13   opinion, is asbestiform a fibrous habit?  If you look at
+14   just the typical definition of "asbestiform" -- what
+15   "asbestiform" is and it's "fibrous-like asbestos."
+16                  I think this whole have-to-have-this-aspect
+17   ratio and that-aspect ratio is not something that is --
+18   that you can look at and say that "This is what it has to
+19   have" because you're dealing with mils.  And cosmetic talc
+20   is mils with minus 200 -- 200 grid -- or 200 mesh, minus
+21   200.
+22                  And both anthophyllite and tremolite is
+23   brittle.  It's -- it's never formed in a height -- where
+24   it's going to be high tensile strength.  It doesn't have
+25   high tensile strength.  And that includes the mine --
+0083
+ 1   anthophyllite mine in Finland; so for it to meet all these
+ 2   definitions that really have no meaning for this type of
+ 3   work, just the physical characteristics of tremolite and
+ 4   anthophyllite prohibit you to be able to say only high
+ 5   tensile strength, only the population that's not defined,
+ 6   a high tensile strength that's not defined, flexibility
+ 7   that you cannot do on an optical microscope or a TEM, high
+ 8   tense -- measuring the tensile strength in a TEM or
+ 9   optical microscope is impossible.
+10                  And nobody knows what "a population" means.
+11   Is it 2, 3.  Is it 100?  Is it 50?  There's no --
+12                  You know, even Dr. Sanchez struggles a
+13   little bit with that when he says "I know it when I see
+14   it."  Well, that's not a protocol.
+15                  Anyway, I probably answered more than your
+16   question.
+17   BY MR. CALFO:
+18       Q.    Well, who have you -- I have a note here that
+19   your lab used R-93 to analyze cosmetic talc; is that true?
+20       A.    That's true.
+21       Q.    And have you personally used R-93 to analyze
+22   cosmetic talc?
+23       A.    No.  We used R-93 for the 2013 analysis, the
+24   2009 analysis of the Cashmere Bouquet.
+25                  When we started actively analyzing cosmetic
+0084
+ 1   talc by PLM, we went to the ISO 22262-1 because that's the
+ 2   only method out there that specifically looks at things
+ 3   like talc and cosmetic talc.  And I believe it has a more
+ 4   realistic definition of what is asbestiform than the R-93.
+ 5       Q.    Because I have a note here and it says
+ 6   "Dr. Longo's lab used R-93 for J&J talc as recently as
+ 7   July of 2018."
+ 8                  Are you familiar with that?
+ 9       A.    No, I don't think that's true.  I think the only
+10   thing we discussed was the ISO grid.  In July of 2018?  I
+11   don't recall that.
+12                  Now, I'm not saying I haven't, I just don't
+13   recall it.
+14       Q.    Okay.
+15       A.    I've got to be careful with you because if I
+16   don't remember it, I should not say we haven't done it.
+17       Q.    But if I were trying to trick you I wouldn't
+18   mention it; so you --
+19                  I have a note here July of 2018 your lab
+20   has used it and you don't know that; is that what you're
+21   telling me?
+22                  Or you don't remember?
+23             MR. BRATT:  Well, wait.  Wait.  Wait.
+24             THE WITNESS:  I don't recall that happening
+25   because we were using the ISO.  Now, I could be wrong but
+0085
+ 1   I'd have to see that document.
+ 2                  July 2018?
+ 3             MR. CALFO:  Yes.
+ 4             MR. BRATT:  Are you referring to a particular
+ 5   document?  Are these Mr. Calfo's midnight notes after a
+ 6   bottle of Cab?
+ 7             MR. CALFO:  These are Mr. Calfo's midnight --
+ 8   these are Mr. Calfo's midnight notes for Dr. Longo.
+ 9             MR. BRATT:  After a bottle of Cabernet, right?
+10             THE WITNESS:  I'd have to see the report to
+11   verify that.  That would be unusual in that year.
+12   BY MR. CALFO:
+13       Q.    Okay.
+14       A.    We were using the ISO 22262-1 --
+15       Q.    All right.
+16       A.    -- by then because we weren't really doing
+17   the PLM initially.
+18       Q.    So I also have a note here about a Mr. Gore.
+19                  And I know you've been asked about him,
+20   haven't you?
+21       A.    I have.
+22       Q.    I'm not going to get into the 25 hours.
+23                  But -- but have you spoken to Mr. Gore
+24   about his testing of cosmetic talc?
+25       A.    No, and I would not.  Mr. Gore --
+0086
+ 1       Q.    Why not?
+ 2       A.    -- used to work for me.  And Mr. Gore, I guess,
+ 3   was severely depressed and he tried to commit suicide
+ 4   where he's a black powder enthusiast and shot himself in
+ 5   the forehead on the side and he lived; so I don't know
+ 6   that that would be very fruitful.
+ 7                  A very nice guy, it really broke our hearts
+ 8   that --
+ 9                  You know, he had an eight-month old baby,
+10   just very hard to understand, if you don't have
+11   depression, how debilitating it is; so I know he's been
+12   involved in it but I'm not going to --
+13       Q.    Okay.  So this is one benefit of taking your
+14   deposition so I don't ask something like that at the time
+15   of trial; is that fair?
+16       A.    I should have just said "No."
+17       Q.    That would --
+18       A.    But I don't want you guys calling him and I
+19   don't know if he's even in Atlanta.
+20       Q.    No.  Okay.  Let's move on.  I won't -- won't ask
+21   anything more about him.
+22                  So let me talk -- let's talk a little bit
+23   about this fiber limit of detection because it still --
+24   and I'm not going to tread new ground on this but I know
+25   you know --
+0087
+ 1                  You know what I'm talking about, fiber --
+ 2   the fiber limit of detection, which is something that
+ 3   Dr. Millette used when he was at EPA.
+ 4                  You know what I'm talking about, right?
+ 5       A.    Uh-huh, I do know.
+ 6       Q.    The limits of detection, I think you would agree
+ 7   are in several methods, and I know "several" is vague.
+ 8                  But there are a lot of methods, right, that
+ 9   have limits of detection?
+10       A.    Yes.
+11       Q.    And in that you need to find a certain number of
+12   fibers, right, if you look at those limits of detection?
+13       A.    Certain methods will call for typically zero to
+14   3, if you find one.  Then there's methods that say that
+15   the limit of detection is either 1 fiber or 1 bundle.
+16   That's what we use.
+17       Q.    And the main point is when I see that in these
+18   cases, the limit of detection is not something that's
+19   unique to Johnson & Johnson's method, right?  There are
+20   other methods that use a limit of detection?
+21       A.    Yes.
+22       Q.    All right.  So in your samples, were there some
+23   that were positive that did not have 3 fibers in terms
+24   of --
+25       A.    Yes.
+0088
+ 1       Q.    -- limit of detection?
+ 2       A.    We've found -- we've found everything from zero
+ 3   to 1, 2, 3 and above.
+ 4       Q.    Have you ever counted how many of them have 3 or
+ 5   less?
+ 6             MR. BRATT:  And you're talking about individual
+ 7   fibers as compared to bundles?
+ 8             MR. CALFO:  Yes, I'm talking about Dr. Longo's
+ 9   testing.
+10             THE WITNESS:  If we're talking about any
+11   structures, I have not counted those up because typically
+12   that's stuff you guys do --
+13   BY MR. CALFO:
+14       Q.    Okay.
+15       A.    -- and give me the data.
+16       Q.    So you haven't counted how many have 5 or less;
+17   is that fair?
+18       A.    That's fair.
+19       Q.    Okay.
+20       A.    I mean, I can go through and look at it but it's
+21   not something that's important to me because we're
+22   following the ISO method and the limit of detection.  And
+23   we're dealing with something that you're not --
+24                  You know, why do you have to have 3 or 2 or
+25   whatever the number is, is -- there's only one reason, is
+0089
+ 1   because you're dealing with laboratory contamination or --
+ 2   so that you can have enough in there that you know it
+ 3   really came from the source.
+ 4                  But that was primarily developed because of
+ 5   the polycarbonate filters back in the '80s were being
+ 6   contaminated with crocidolite and/or chrysotile.
+ 7                  If you look at the Yamate protocol, you can
+ 8   see that as you get higher in your counts, the amount that
+ 9   you have to have to get above, quote, the background, is
+10   astronomical, because we're dealing with those.  And it's
+11   a holdover.
+12                  Now, if you have a lab that is constantly
+13   contaminating your own samples, that may be important,
+14   such as the RJ Lee Group; they tend to find contamination
+15   of chrysotile in samples.
+16                  But you're dealing with anthophyllite and
+17   tremolite primarily and there is -- there is no products
+18   ever made from tremolite.
+19                  Anthophyllite has two that I know of, you
+20   know, a chemical specialty pipe and a filter that was --
+21   started being made in, like, 1914 and then they switched
+22   over to -- with anthophyllite coming out of a -- I think
+23   it was the -- coming out of North Carolina, either that or
+24   up in New York.  And they stopped making that some time
+25   ago.
+0090
+ 1                  You know, we have -- we run process blanks
+ 2   with every TEM we do.  And process blanks -- and we have
+ 3   never yet had one amphibole fiber or one chrysotile fiber
+ 4   in our laboratory prep.
+ 5                  We take air samples in and around there;
+ 6   we've never found an asbestos fiber.  It doesn't make any
+ 7   sense that when you find tremolite or anthophyllite in
+ 8   cosmetic talc and you don't have any contamination in your
+ 9   process blanks or, you know, the laboratory blank,
+10   that you have to find three.  And I think the ISO method
+11   agrees with that.
+12       Q.    So -- so, you know, we've talked about this
+13   before.
+14                  You have the Department of Public Health,
+15   you've got the NIOSH Dement analysis, you've got the Mount
+16   Sinai in '76 paper, you've got Dr. Fred Cooley, you've got
+17   all of these scientists that have put their reputations on
+18   the line and said there's no asbestos in Johnson's Baby
+19   Powder or Vermont talc.
+20                  How do you explain it from your
+21   perspective, Dr. Longo?
+22             MR. BRATT:  I think that assumes facts, it's
+23   argumentative, it's compound.
+24                  But go ahead.
+25             THE WITNESS:  It is my opinion Johnson & Johnson
+0091
+ 1   never shared their internal documents with these folks and
+ 2   data.  I don't think you ever shared that in the Vermont
+ 3   mine that you guys had developed a heavy liquid density
+ 4   separation and you were finding amphibole asbestos as well
+ 5   as chrysotile, did you ever -- you know, you didn't get
+ 6   that to McCrone and tell him "Hey, use this method."
+ 7                  I don't know what you guys have said or not
+ 8   said to RJ Lee Group that "Yeah, we had this method worked
+ 9   out but we're not using it, we hid it."
+10                  I think these great scientists who said
+11   there's no asbestos in cosmetic talc, there's two reasons:
+12   One, their detection limit was so crummy, you know, how
+13   rare it is.
+14                  When I look at all these TEM slides, I mean
+15   TEM photographs, they're not good quality.  But the
+16   majority of the sample is covered up.  Even with a bad
+17   detection limit you've got to have, you know, more than
+18   50, 60, 70 percent -- you've got to have up to 75 percent
+19   of the grid opening not covered with something.
+20                  You know, how did -- how was Alice Blount
+21   so smart in 1991?
+22                  And then you go through all your documents,
+23   you guys have been finding it in Vermont where you called
+24   it what it is.
+25                  You know, why would Johnson & Johnson be
+0092
+ 1   doing a pilot program for the benefication process where
+ 2   they were -- where they were looking at different
+ 3   surfactants to see during the flotation that they could
+ 4   get rid of something.  Get rid of the asbestos.
+ 5                  That's a lot of money to spend to get rid
+ 6   of something that doesn't exist in your mine.
+ 7   BY MR. CALFO:
+ 8       Q.    Well, you know that part of that was obviously
+ 9   they were looking at other mines, right?
+10       A.    I mean, they -- they may have been looking at
+11   other mines.  But they used 66 as their test and they
+12   spiked 66 core sample with 2 percent chrysotile and
+13   counted the number of structures that was in it.  And then
+14   went through the flotation process and counted how many
+15   structures were still in it, not a weight percent.
+16                  And then they looked at 66 and others, they
+17   couldn't get rid of them; so they might have been thinking
+18   about other mines but they tested it on Vermont.
+19       Q.    Okay.  So we can agree that you are the smartest
+20   man in the world, right?
+21       A.    No.  We can't agree with that.
+22       Q.    All right.  Let me --
+23       A.    We'll agree that I've spent a lot of time
+24   looking at your documents because, you know, the crosses
+25   have been fairly robust from your side.
+0093
+ 1       Q.    Well, I think --
+ 2                  I will state for the record reasonable
+ 3   minds can disagree on that, so -- at least from my
+ 4   perspective, so --
+ 5       A.    From my perspective when it's there in black and
+ 6   white --
+ 7       Q.    Well, let me -- I can --
+ 8                  We can go days and start disputing the
+ 9   documents.
+10                  And we're not going to have to do that
+11   today, are we?
+12       A.    I mean, you're just -- I'm not -- I mean, I'm
+13   telling you what they say.  That's my opinion.
+14       Q.    Your interpretation of a lot of them but anyway,
+15   for another day.
+16                  So let me ask you this:  You produced an
+17   exposure -- an exposure document we marked or we talked
+18   about earlier.
+19                  As I understand it, you have not done an
+20   exposure study with any samples that came from the '60s,
+21   '70s, '80s, '90s or 2000s, right?
+22       A.    That's true.  That's true.
+23       Q.    And --
+24       A.    Well, I think one of them is -- it's still --
+25   it's still --
+0094
+ 1                  I have to look back to the three because I
+ 2   think one of them is in the -- in the early '60s but it's
+ 3   still --
+ 4       Q.    Which one?  Which one is in the early '60s
+ 5   because I never saw that.
+ 6       A.    Well, we had the three -- two of the -- the --
+ 7   one of them was 4 million, one of them was a million.  The
+ 8   two from Chasin --
+ 9                  I mean, there's -- they're -- they're still
+10   tens; so I think -- you know, I -- maybe not.  I mean,
+11   it's very hard to -- to get a vintage between, like, the
+12   late '50s and early '60s on where that sits --
+13       Q.    Okay.
+14       A.    -- so I may be wrong on that.
+15       Q.    None of your simulation studies, though,
+16   involved the use of Vermont talc; fair?
+17       A.    That's fair.
+18             MR. CALFO:  All right.  I think I'm -- I'm going
+19   to pass you on unless you want to debate the documents for
+20   a couple hours.
+21             THE WITNESS:  I don't know, it sounds like you
+22   want to debate me.
+23             MR. CALFO:  All right.
+24                  Ed, I'm going to pass Dr. Longo.
+25             THE WITNESS:  Mr. Hugo, do you mind if we take
+0095
+ 1   like five or ten minutes, please?
+ 2                  I know that you will have a very different
+ 3   topic and I just want to -- I don't know, I just want to
+ 4   take --
+ 5                  Well, for whatever reason, can we take a
+ 6   five-, ten-minute break?
+ 7             MR. HUGO:  Yes.
+ 8             THE WITNESS:  Okay.  Great.
+ 9                  (Off the record.)
+10   
+11                           EXAMINATION
+12   BY MR. HUGO:
+13       Q.    Hi, Dr. Longo.  This is Edward Hugo and I
+14   represent American Appliance Manufacturing Corporation in
+15   this case.
+16                  Are you ready to continue?
+17       A.    Yes.
+18                  Mr. Hugo, how you doing?
+19       Q.    I'm doing --
+20       A.    I think I've seen you one other time in the last
+21   year or two.
+22       Q.    I'm doing well.
+23                  How are you?
+24       A.    I'm doing fine.
+25       Q.    Good.
+0096
+ 1                  Will you answer all of my questions today
+ 2   to a reasonable degree of scientific certainty?
+ 3       A.    Yes, sir.  If it calls for that type of
+ 4   certainty, I will certainly do it.  If it's not, then I
+ 5   will give you a different answer, like
+ 6   more-likely-than-not-type of thing.
+ 7       Q.    And did you answer the same judgment in terms of
+ 8   Mr. Calfo's questions, if it called for an answer that was
+ 9   to a degree of reasonable scientific certainty, did you
+10   give him that?
+11       A.    Yes, sir.  I don't think he asked me any
+12   questions where I would have to answer it "More likely
+13   than not."
+14       Q.    So I have your report dated August 18, 2021.
+15                  Is that the only report that you prepared
+16   in this matter?
+17       A.    Yes, sir.
+18       Q.    And I understand that you read all of the
+19   deposition transcripts of the Sandoval family, correct?
+20       A.    I would say 80 percent of them.  I tend to skip
+21   over some of the material that may be redundant or goes
+22   into the medical, that sort of thing.
+23                  But anything I thought had to do with the
+24   facts of the case I read.
+25       Q.    And then your report outlines Ms. Sandoval's
+0097
+ 1   history of asbestos exposure from Johnson & Johnson Baby
+ 2   Powder, correct?
+ 3       A.    Yes, sir, it does.
+ 4       Q.    And why do you have a section that is entitled
+ 5   "1968-2003 Vermont Talc Source"?
+ 6       A.    Well, if you look at my copy, if I can get to
+ 7   it, I don't know if you can see where the "'68" is crossed
+ 8   out and it says "1978"?
+ 9       Q.    Okay.
+10       A.    That is a typo that I only seem to catch when
+11   I'm in this type of situation where I'm looking at it very
+12   focused.
+13       Q.    Thank you.
+14                  What research did you do to determine that
+15   the Johnson & Johnson Baby Powder that Ms. Sandoval claims
+16   to have used came from Vermont?
+17       A.    Well, I have a number of documents from J&J when
+18   they switched from Italian to Vermont and that happened
+19   '67, '68.
+20                  Now, I didn't put in there 1980 when they
+21   could not get Vermont talc; they had about one year where
+22   it was Italian.  And from 1968/'69, they primarily used
+23   Vermont and they used Vermont talc up to 2003, then they
+24   switched to Chinese source.
+25       Q.    In reviewing Ms. Sandoval's deposition
+0098
+ 1   transcripts, did you determine yourself how many
+ 2   applications of Johnson's Baby Powder she either used on
+ 3   herself or her family members?
+ 4       A.    I did.
+ 5       Q.    And how many applications did you determine that
+ 6   she used either in that -- strike that, in applying
+ 7   Johnson & Johnson Baby Powder to herself or her relatives?
+ 8       A.    My calculations came to 20,209; so roughly --
+ 9   approximately 20,200 applications.
+10       Q.    Is it your opinion that Ms. Sandoval would have
+11   been exposed to significant levels of airborne amphibole
+12   asbestos caused by her personal daily routine use of
+13   Johnson & Johnson Baby Powder from 1978 to 1990?
+14       A.    Yes, that would be my opinion.
+15       Q.    And with regard to that asbestos, would those
+16   exposures be to tremolite and anthophyllites?
+17       A.    Primarily anthophyllite, less tremolite.
+18       Q.    Now, at the time that you came to this
+19   conclusion on or before August 18th of 2021, did you have
+20   Dr. Gordon's report, which is dated August 14, 2019?
+21       A.    No.  I would have reached these opinions without
+22   Dr. Gordon's tissue burden analysis.
+23             MR. HUGO:  I don't think that we've marked
+24   Dr. Gordon's report as an exhibit yet.  I think it's -- it
+25   would be 12 next in order; so I will provide that to the
+0099
+ 1   court reporter.
+ 2             (Defendant's Exhibit 12 was marked for
+ 3             identification and is attached
+ 4             hereto.)
+ 5   BY MR. HUGO:
+ 6       Q.    You have read and reviewed Dr. Gordon's report
+ 7   and the photomicrographs and other data that he provided,
+ 8   correct?
+ 9       A.    Yes, sir.
+10       Q.    Dr. Gordon concludes, quote, Electron
+11   microscopic analysis of the lymph node tissue revealed two
+12   amphibole asbestos fibers, one was tremolite and the other
+13   was anthophyllite fiber, both greater than 5 microns in
+14   length, close quote, correct?
+15       A.    Correct.
+16       Q.    First of all, do you agree with his analysis of
+17   finding a tremolite fiber and an anthophyllite fiber both
+18   greater than 5 microns in length which he concluded were
+19   amphibole asbestos fibers?
+20       A.    Yes.
+21       Q.    What impact does finding tremolite and
+22   anthophyllite fibers in Ms. Sandoval's tissue have on your
+23   opinion that she was exposed to asbestos from the Vermont
+24   mine within Johnson's Baby Powder?
+25             MR. CALFO:  Objection.  Calls for speculation,
+0100
+ 1   no foundation for this witness.
+ 2             THE WITNESS:  Finding both of those amphibole
+ 3   asbestos would be consistent with what is found in the
+ 4   Vermont mine and therefore -- and then her exposure was
+ 5   primarily -- is all Vermont-sourced talcum powder.
+ 6                  And those are the two types of amphiboles
+ 7   that you would see, tremolite, to a lesser extent, but
+ 8   anthophyllite by TEM is primarily what we find what we do
+ 9   TME of the Vermont talc, where it's a positive sample.
+10   BY MR. HUGO:
+11       Q.    Dr. Gordon also indicated that his "electron
+12   microscopic analysis of the parietal and visceral pleura
+13   tissue revealed talc."
+14                  Did you see that in his report?
+15       A.    Yes.
+16       Q.    And do you agree with that conclusion based on
+17   your review of his report?
+18             MR. CALFO:  Again, no foundation for this
+19   witness.  Dr. Gordon has testified.
+20                  Go ahead.
+21             THE WITNESS:  Yes, what he showed were talc.
+22                  And that would be one -- that would be the
+23   primary reading ingredient in J&J's cosmetic talc
+24   products, either Shower to Shower or Johnson Baby Powder.
+25                  Shower to Shower, I think -- it's hard
+0101
+ 1   really tell exactly when they started but certainly in the
+ 2   early 1970s is when that product came on the market.  But
+ 3   there was no testimony here that Shower to Shower was one
+ 4   of the products used.
+ 5   BY MR. HUGO:
+ 6       Q.    Do you have any evidence that Mr. Sandoval
+ 7   worked with talc in any way?
+ 8       A.    No.  That would not be a product that would be
+ 9   used to manufacture hot water heaters that I know of.
+10       Q.    Dr. Gordon has a two-sentence conclusion, I'm
+11   going to read the first one and ask you about it.
+12                  The first sentence is, quote, Based on this
+13   fiber burden analysis, it is my opinion that Ms. Sandoval
+14   had a typical substantial exposure to talcum powder
+15   containing asbestos, close quote.
+16                  Do you remember reading that?
+17       A.    I do.
+18       Q.    Do you agree with that conclusion?
+19       A.    I do.
+20       Q.    All right.  And the next sentence is, quote,
+21   "This fiber burden is indicative of an exposure that
+22   cannot be considered background was the cause of her
+23   plural mesothelioma."
+24                  Do you remember reading that?
+25       A.    I do.
+0102
+ 1       Q.    And I want to ask you about the first half of
+ 2   that, which is, quote, This fiber burden is indicative of
+ 3   an exposure that cannot be considered background, close
+ 4   quote.
+ 5                  Do you agree with that statement?
+ 6             MR. CALFO:  Again, this is all speculative.  It
+ 7   calls for speculation, no foundation.
+ 8             THE WITNESS:  I do, primarily in that there is
+ 9   no background of anthophyllite and tremolite.  I suppose
+10   you would have to pick a number to say it's above
+11   background and you can't pick above zero.
+12                  But background, even if you go out and
+13   sample air, and even going back when they were finding
+14   chrysotile, you have to have a source to have background
+15   of asbestos for the simple reason that asbestos is --
+16   is -- has a higher density than air so therefore it cannot
+17   float along with air or go -- or if it was lower density
+18   than air it would be on top of all the air.  It has to
+19   obey the laws of gravity; so it does not stay airborne.
+20                  And then you're dealing with amphibole --
+21   amphibole asbestos types that were very --
+22                  Tremolite was never used in the product and
+23   amphibole -- and anthophyllite on a very limited basis; so
+24   I agree with that statement.
+25   BY MR. HUGO:
+0103
+ 1       Q.    And have you previously seen the writings of
+ 2   Dr. Gordon in the past?
+ 3       A.    Yes, sir, I have.
+ 4       Q.    And what's your opinion about Dr. Gordon and his
+ 5   methodology and credibility?
+ 6       A.    Dr. Gordon, I think, is -- is very credible.
+ 7   He's been doing this type of work and publishing this type
+ 8   of work for many years.
+ 9       Q.    Now --
+10       A.    And we've had Dr. Gordon in our laboratory to
+11   look at grids and -- and I don't see any issues with his
+12   ability to identity asbestos by TEM.
+13       Q.    Let me change the subject and ask you about
+14   Mr. Sandoval.
+15                  You read his depositions, correct?
+16       A.    I did.
+17       Q.    All right.  And one of the things you address in
+18   your report is a roll of cloth material that was used in
+19   the painting department, correct?
+20       A.    Correct.
+21       Q.    Now, were you ever at the American Appliance
+22   Manufacturing Corporation facility?
+23       A.    I was not.  I never have been there.  I never
+24   saw him ever do this type of work.  I had to read it a few
+25   times to understand exactly how this conveyor system works
+0104
+ 1   and so the --
+ 2                  I have his testimony on what he would do to
+ 3   keep the metal materials, the rollers, and I know it's a
+ 4   chain that goes along with -- or takes these things but
+ 5   you have to have something on the chain to roll along.
+ 6                  And they were using it as a way to keep the
+ 7   rollers and also the big wrapping -- because they were
+ 8   using electrostatic.  They were using it in a way to have
+ 9   the rollers be cushioned somewhat so they would stay in
+10   the -- quote, the tracks.
+11       Q.    Were you able to obtain a sample of the actual
+12   cloth that Mr. Sandoval ever used or was around to test
+13   for the presence of asbestos?
+14       A.    No.  I have not -- I haven't -- I haven't
+15   received a sample or any information -- any information
+16   from American Appliance what they -- what the source of
+17   material was.
+18       Q.    So would it be your --
+19             MR. BRATT:  Sorry.  Sorry.
+20   BY MR. HUGO:
+21       Q.    Would it be fair to say you don't know the brand
+22   name or manufacturer of the cloth product?
+23       A.    That would be fair.
+24       Q.    And what Mr. Sandoval testified was, quote, And
+25   the supervisor told me to wear a mask when I was working
+0105
+ 1   with the bin because it was possible that it had asbestos,
+ 2   close quote, correct?
+ 3             MR. BRATT:  Well, I'm just going to say that
+ 4   that  assumes facts that that's the only time there was a
+ 5   reference to that in the testimony.  The testimony speaks
+ 6   for itself.
+ 7                  But go ahead.
+ 8             THE WITNESS:  I think he testified a few times
+ 9   either that -- he did once that possibly -- but he
+10   testified a number of times he was told it was asbestos.
+11                  And then sometime in the early '80s he was
+12   told that they changed it when they moved over to the new
+13   warehouse.  That's what I kind of recall.
+14   BY MR. HUGO:
+15       Q.    All right.  Do you have any information
+16   regarding the credibility of the person who allegedly told
+17   Mr. Sandoval about the content of the cloth?
+18       A.    I don't have any information one way or the
+19   other but the fact that he would spend the time to say
+20   that it's either probably asbestos or asbestos and that
+21   you should wear a mask, that is typical in some plants
+22   that understand that they have an asbestos product; so
+23   it's not out of bounds that somebody said that.
+24                  To make somebody wear a mask eight hours a
+25   day is -- is something that -- that you will see -- paper
+0106
+ 1   masks, you'll see in these types of situations.
+ 2             MR. HUGO:  Move to strike the nonresponsive and
+ 3   speculative portions.
+ 4       Q.    Let me ask you about Mr. Sandoval's testimony
+ 5   with regard to coming in contact with an insulated pipe.
+ 6                  Mr. Sandoval never testified that the pipe
+ 7   was insulated with asbestos, correct?
+ 8       A.    That's correct.
+ 9       Q.    And the pipe that he claimed that he touched at
+10   some point in time was in the paint department, correct?
+11       A.    Correct.  Now, it was under some equipment.  I
+12   mean, it wasn't --
+13                  How I interpreted his testimony is that it
+14   wasn't that it was just a piece of pipe sitting out there,
+15   that it was down under something.  And the only
+16   information I have about a potential pipe is the one
+17   sample that was analyzed where they talked about an elbow
+18   piping and it had 4 percent chrysotile in it.
+19                  Now, they say it's in Building S.  We could
+20   not find any testimony where -- since I understand it was
+21   all one big giant -- one big area with different sections;
+22   so I don't know where Building S is as compared to the
+23   plant in general.
+24                  And if it's June 18, 1991, and it sounded
+25   like this whole group moved into another warehouse versus
+0107
+ 1   where he was describing where he worked initially; so it's
+ 2   pretty hard for me to pin down what that is --
+ 3       Q.    Are you looking at --
+ 4       A.    -- or where he touched it.
+ 5       Q.    Are you looking at the Dames & Moore report?
+ 6       A.    Yes, sir.
+ 7             MR. HUGO:  Okay.  And we'll mark that as
+ 8   Exhibit 13.
+ 9             (Defendant's Exhibit 13 was marked for
+10             identification and is attached
+11             hereto.) Huge huge.
+12   BY MR. HUGO:
+13       Q.    First of all, the Dames & Moore report indicates
+14   that there were some products at the American Appliance
+15   Manufacturing Corporation that contained asbestos; true?
+16       A.    True.  And I went through it.  I didn't see
+17   anything other than -- that contained asbestos was 9-by-9
+18   floor tiles and some mastic.  Everything else, except for
+19   that pipe sample, was floor tile and/or mastic.
+20       Q.    And the only form of asbestos that Dames & Moore
+21   found in any product at the American Appliance
+22   Manufacturing Corporation facility was chrysotile,
+23   correct?
+24       A.    Correct.
+25       Q.    Now, it's important if we're going to try to
+0108
+ 1   find out whether Mr. Sandoval touched the pipe elbow that
+ 2   had chrysotile in it to determine whether it was in the
+ 3   same building that he was working, correct?
+ 4             MR. BRATT:  Assumes facts.
+ 5                  Go ahead.
+ 6             THE WITNESS:  For him to have touched it, he
+ 7   would have to be in the same building.
+ 8   BY MR. HUGO:
+ 9       Q.    Okay.  And where did you understand that the
+10   pipe elbow that had asbestos in it was located?
+11                  Are you looking at the Dames & Moore report
+12   now to answer my question?
+13             MR. BRATT:  Dr. Longo, I think you've
+14   accidentally muted.  Or something happened.
+15             THE WITNESS:  I don't understand how that
+16   happens --
+17             THE REPORTER:  Paper hits that microphone all
+18   the time.
+19             THE WITNESS:  -- because I hadn't touched
+20   anything but, you're right, I was muted.
+21                  I had recalled that it was in Building S
+22   because I looked at it before but I went and just checked
+23   to make sure that I was correct in my memory.
+24   BY MR. HUGO:
+25       Q.    Well, close.  Take a look at page 6 under the
+0109
+ 1   heading "3.0 Conclusions," and the second sentence states,
+ 2   quote, The white pipe elbow insulation is also considered
+ 3   friable and was found on the roof of Building S, close
+ 4   quote.
+ 5                  Did I read that correctly?
+ 6       A.    Yes, sir.
+ 7       Q.    Mr. Sandoval was never on the roof of Building S
+ 8   to your knowledge, correct?
+ 9       A.    I never saw any testimony that he was on a roof.
+10                  I'm not here to say that he did or did not
+11   touch this thermal insulation; so if he -- if that is, in
+12   fact, on the roof and he was never on the roof, he never
+13   would have had an opportunity to touch the white -- the
+14   white pipe elbow insulation on the roof.
+15       Q.    Okay. And there's no information from any source
+16   including Dames & Moore that any other pipe insulation at
+17   the American Appliance Manufacturing Corporation facility
+18   contained asbestos; true?
+19             MR. BRATT:  I think it's vague, in regards to
+20   timing of the report versus when the work happened.
+21                  But go ahead.
+22             THE WITNESS:  That is the only thing they say.
+23   And, again, if this is 1991 this would not be in the
+24   original building.  And I don't recall what he stated on
+25   the time line that he said he touched the -- the
+0110
+ 1   insulation.
+ 2   BY MR. HUGO:
+ 3       Q.    Regardless of the time period, you don't have
+ 4   any evidence from any testing facility that the pipe
+ 5   insulation that Mr. Sandoval talked about touching
+ 6   actually contained asbestos; true?
+ 7       A.    If, in fact, your hypothetical is correct, that
+ 8   it was in the first building and not the -- this, of
+ 9   course, from a date after they moved, then if he never --
+10   he never touched any asbestos-containing thermal, he
+11   wouldn't have had an exposure from it.
+12       Q.    And you don't have any evidence as you sit here
+13   at this deposition that he actually touched any asbestos
+14   containing thermal insulation; true?
+15             MR. BRATT:  I think that assumes facts to some
+16   extent by deduction and reason.
+17                  But go ahead.
+18             THE WITNESS:  If it is in the 1970s and he is
+19   actually doing insulation, I think he talked about hot
+20   water pipes, I don't know any white thermal insulation
+21   that's probably air cell that would have been used that
+22   was not asbestos, but I could not say within a reasonable
+23   degree of scientific certainty.
+24                  So my only opinion is if it was, in fact,
+25   asbestos-containing thermal insulation of hot water pipes,
+0111
+ 1   it would be my opinion that it would have been air cell
+ 2   because that's the temperature range they would use that
+ 3   product.  And those products during that timeframe would
+ 4   have had asbestos.  But if it was no asbestos in it, then
+ 5   he wouldn't have had the exposure.
+ 6                  I'm not here in this particular instance to
+ 7   say it was or it wasn't, I'm just here to say if it was
+ 8   and he was touching it, he would have had some exposure if
+ 9   it was an asbestos-containing product.  If it was
+10   non-asbestos containing, he would have no exposure.
+11   BY MR. HUGO:
+12       Q.    And speaking of "no exposure," it's your opinion
+13   that any insulation that was used in the water heaters
+14   that were being manufactured was non-asbestos, correct?
+15       A.    That is my opinion.  They don't get hot enough
+16   to use asbestos, not even on -- not even the gaskets.  You
+17   don't have water heaters that get over, even when you turn
+18   them all the way up, 120, 130 degrees, since, you know,
+19   you don't want to burn people.
+20                  And that yellow insulation, that's a --
+21   that's a glass fiber material.  If it's yellow, we tend to
+22   call it "stink glass," because if you break it, it's got
+23   some sulfur in it and it doesn't smell very good.  But
+24   there's no asbestos in that.
+25       Q.    I've just got a couple more questions for you
+0112
+ 1   about different papers.
+ 2                  Have you read "Airborne asbestos take-home
+ 3   exposures during handling of chrysotile-contaminated
+ 4   clothing following simulated full shift workplace
+ 5   exposures" by Sahmel, S-A-H-M-E-L, et al., from 2016?
+ 6       A.    Of course.
+ 7             MR. HUGO:  I'll mark that as Exhibit 14.
+ 8             (Defendant's Exhibit 14 was marked for
+ 9             identification and is attached
+10             hereto.)
+11   BY MR. HUGO:
+12       Q.    Have you read "Evaluation of Take-Home Exposure
+13   and Risk Associated with the Handling of Clothing
+14   Contaminated with Chrysotile Asbestos," also by Sahmel,
+15   and that's a 2014 paper?
+16       A.    I have read them both.
+17             MR. HUGO:  I'll mark that as 15.
+18             (Defendant's Exhibit 15 was marked for
+19             identification and is attached
+20             hereto.)
+21   BY MR. HUGO:
+22       Q.    Have you read "Domestic Asbestos Exposure:
+23   A Review of Epidemiologic and Exposure Data" by Goswami,
+24   G-O-S-W-A-M-I, from 2013?
+25       A.    Yeah, I think that's the same group.  They were
+0113
+ 1   either Cardinal Risk or Exponent at the time.
+ 2             MR. HUGO:  All right.  And I'll mark that as
+ 3   Exhibit 16.
+ 4             (Defendant's Exhibit 16 was marked for
+ 5             identification and is attached
+ 6             hereto.)
+ 7   BY MR. HUGO:
+ 8       Q.    And Dr. Longo --
+ 9                  First of all, I'm referring to you as
+10   "Doctor."
+11                  Can you tell us, just for the record, your
+12   educational background, starting with college?
+13       A.    I have a bachelor's in microbiology/virology
+14   with a minor in chemistry.  I have a master's in
+15   engineering in the material science department.  In 1983,
+16   I received my Ph.D., or Doctorate of Philosophy, in
+17   material science and engineering.
+18       Q.    And have you previously qualified and testified
+19   as an expert with regard to the analysis of substances for
+20   the presence of asbestos?
+21       A.    I have.
+22       Q.    And approximately how many times?
+23       A.    Oh, somewhere between 200 and 300 times, I would
+24   say, in court, where as I look at it, is -- is where the
+25   judge accepts you as an expert.  I don't believe you can
+0114
+ 1   actually call yourself an expert.
+ 2                  To meet the burden of being somebody who
+ 3   can testify is obviously that you know more than the
+ 4   average layperson on a particular subject; so I've been
+ 5   qualified before as an expert by a number of judges for
+ 6   material science and engineering, for microscopy, for
+ 7   analysis of asbestos, for analyzing products for exposure
+ 8   and as an industrial hygienist.
+ 9       Q.    And when is the last time you testified as be
+10   expert witness on those subjects?
+11       A.    Last Monday and Tuesday.
+12       Q.    And where did that testimony take place?
+13       A.    That took place in Los Angeles in the
+14   Sean Johnson case.  That was --
+15                  Weitz & Luxenberg were the plaintiffs that
+16   were there -- for the plaintiff -- they were the -- they
+17   were the plaintiffs.
+18                  And a Mr. Williams, who I have not run
+19   across before, was the defense attorney out of Louisiana.
+20       Q.    What disease was alleged in that case?
+21       A.    Mesothelioma.
+22       Q.    And who was the defendant?
+23       A.    Johnson & Johnson.
+24             MR. HUGO:  Thank you, sir.  I have no further
+25   questions.
+0115
+ 1             THE WITNESS:  Thank you.
+ 2             MR. BRATT:  Mr. Calfo, do you have any --
+ 3                  Well, this is Mark Bratt for the record.
+ 4                  I have plenty of topics I'll cover with
+ 5   Dr. Longo at trial, but at this point I have nothing that
+ 6   I'll follow up on today.
+ 7                  Mr. Calfo, do you have any follow-up?
+ 8             MR. CALFO:  Well, now I do, I wasn't going to,
+ 9   but I guess we'll play ball.  I never did this before.
+10   
+11                       FURTHER EXAMINATION
+12   BY MR. CALFO:
+13       Q.    All righty.  Ready to play ball?
+14       A.    Ready to answer your questions to the best of my
+15   ability.
+16       Q.    Thank you, Doctor.  I appreciate it.
+17                  All right.  Well, let's go through some of
+18   your report here.
+19                  First of all, did you receive Plaintiff
+20   Sandoval's responses to interrogatories, Dr. Longo, in
+21   this case?
+22       A.    I did not.
+23       Q.    Well, let's go through some of them, if we
+24   could, just to give you a little background.  All right?
+25       A.    Certainly.
+0116
+ 1       Q.    You -- you normally read plaintiffs' responses
+ 2   to discovery when -- in cases at least that I've had with
+ 3   you, don't you?
+ 4       A.    Yes, sir.  I do at times.  Specifically for
+ 5   shortcuts, you know, I want to make sure I cover all the
+ 6   places they lived and that sort of thing.
+ 7       Q.    Well, let's talk about some of plaintiffs'
+ 8   responses in this case.
+ 9                  I'm going to refer you to Plaintiffs'
+10   Amended Responses to Los Angeles Interrogatories, Second
+11   Amended Responses, dated December 4, 2015.
+12                  Do you have those?
+13       A.    I'm not sure.
+14       Q.    Well, let me just tell you --
+15             MR. BRATT:  Counsel, we can --
+16                  It might be easier if we either display
+17   them, and if that's not possible, we can have them
+18   emailed; that way he's looking at what you're reading.
+19             MR. CALFO:  Well, can you email them to him,
+20   Mark, because it will make it easier?
+21             MR. BRATT:  Sure.  Can you --
+22                  Sorry about not writing down exactly
+23   what --
+24             MR. CALFO:  It's okay.
+25             MR. BRATT:  -- you're referring to.
+0117
+ 1             MR. CALFO:  Let's get a couple of them.
+ 2             MR. BRATT:  Okay.
+ 3             MR. CALFO:  The first is December 4, 2015, with
+ 4   a verification served on December 15, 2015.
+ 5             MR. BRATT:  Okay.
+ 6             THE WITNESS:  Hey, Mark, hold on.
+ 7                  Can you --
+ 8                  Since I'm not at my office at MAS, can you
+ 9   email them to williamlongo39@yahoo?
+10             MR. BRATT:  Yep.  "Williamlongo39@yahoo."  Okay.
+11             THE WITNESS:  It's easier for me to pull them up
+12   here than have to go through all the stuff I have to go
+13   through to get into my system at MAS.
+14             MR. BRATT:  Sure.
+15                  So we have the December 4, 2015 Standard
+16   Interrogatory Responses -- or that's when it was signed,
+17   with verification on December 15th.
+18                  What are the other ones that way we can
+19   just kill all the birds --
+20             MR. CALFO:  The Third Amended Responses dated
+21   January 12, 2016, with the verifications on January 15th
+22   and January 16th.
+23             MR. BRATT:  Okay.  Any others?
+24             MR. CALFO:  Sorry, I didn't plan on doing this,
+25   just give me one second.
+0118
+ 1                  That's good for now.
+ 2             MR. BRATT:  Okay.  Why don't we -- I mean, is
+ 3   there --
+ 4                  It's going to take me a moment; so do you
+ 5   have another topic you want to talk about for two minutes
+ 6   while I do this or do you want to take a break?  It's up
+ 7   to you.
+ 8             MR. CALFO:  Let's take a break and you can send
+ 9   those.
+10             MR. BRATT:  Okay.  Don't go far unless everyone
+11   wants to take five.
+12             MR. CALFO:  Let's take five.
+13             MR. BRATT:  Okay.
+14                  (Off the record.)
+15   BY MR. CALFO:
+16       Q.    Dr. Longo, do you now have Plaintiffs' Second
+17   Amended Responses to LAOSD interrogatories?
+18       A.    Yes, sir, I do.
+19       Q.    And let me direct you to interrogatory
+20   number 26, subpart a, the response.
+21                  Do you see plaintiffs' response there?
+22       A.    Let me get to 26.  Okay.
+23       Q.    And plaintiffs here identify "all water heaters
+24   and boilers that American Appliance and American Water
+25   Company, A. L. Smith distributed, manufactured or
+0119
+ 1   assembled at its Santa Monica plant from 1976 to 1989."
+ 2                  Do you see that?
+ 3       A.    Yes, sir, I do.
+ 4             MR. HUGO:  Objection.  Calls for hearsay.
+ 5   BY MR. CALFO:
+ 6       Q.    It says "Plaintiff has admitted in his or her
+ 7   interrogatory responses that such products routinely
+ 8   contained asbestos fibers contained within
+ 9   asbestos-containing insulation, namely pink or yellow
+10   rolled insulation or sprayed-on insulation."
+11                  Do you see that?
+12       A.    I do.
+13             MR. HUGO:  Same objection.
+14   BY MR. CALFO:
+15       Q.    It then says that "Plaintiffs are unaware of the
+16   type of asbestos used or the precise asbestos content of
+17   such insulation."
+18                  Do you see that?
+19       A.    I do.
+20             MR. HUGO:  Same objection.
+21                  Alex, can you give me a running hearsay
+22   objection, so I don't --
+23             MR. CALFO:  Of course.  Of course.  Of course.
+24             MR. HUGO:  Thank you.
+25   BY MR. CALFO:
+0120
+ 1       Q.    It says "Rodolfo Sandoval repeatedly observed
+ 2   such insulation over an approximately 13-year period while
+ 3   working with the above-described products at the
+ 4   above-described facility."
+ 5                  Do you see that?
+ 6       A.    I do.
+ 7       Q.    And is that something you had not seen before
+ 8   your deposition today?
+ 9       A.    I had not seen that.  I saw where he had
+10   identified yellow insulation.  I don't recall him saying
+11   either pink or sprayed on.
+12       Q.    Okay.  And then on interrogatory number 26,
+13   subpart e --
+14                  Can you get there for me, Dr. Longo?
+15       A.    Yes.
+16       Q.    -- it indicates that "Plaintiff Rodolfo Sandoval
+17   worked with and around asbestos and asbestos-containing
+18   products manufactured by, purchased by, distributed by,
+19   installed by, supplied by, or in the control of defendants
+20   while performing his work assembling and preparing for
+21   distribution, the water heaters and boilers manufactured
+22   by, distributed by or in the control of his employer
+23   American Appliance, American Water Heater,
+24   A. L. Smith."
+25                  Do you see that?
+0121
+ 1       A.    You read that correctly.
+ 2       Q.    All right.  Did you see this before your
+ 3   deposition today?
+ 4       A.    No, sir.
+ 5       Q.    All right.  Then it says "Plaintiff San Juana
+ 6   Sandoval did not personally use the above-described
+ 7   asbestos-containing products, nor was she involved in the
+ 8   assembly thereof, rather she was exposed to the asbestos
+ 9   contained therein through take-home exposure."
+10                  Do you see that?
+11       A.    Yes, sir.  You read that correctly.
+12       Q.    All right.  Fair enough.
+13                  Now, we marked as Exhibits 3, 4, 5, 6, 7,
+14   8, 9 and 10 which are -- Exhibit 3 is the Johns-Manville
+15   corporation occupational exposure to asbestos rulemaking.
+16                  Do you remember that?
+17       A.    Yes, sir, I do.
+18       Q.    Exhibit 4 is "Asbestos-related Disease from
+19   Household Exposure."
+20                  Do you remember that?
+21       A.    I do.
+22       Q.    And I didn't ask you any questions about this
+23   but maybe we'll go into it a little bit more.
+24                  If you go to Exhibit 3,
+25   Johns-Manville Corporation --
+0122
+ 1                  First of all, did you know that there was a
+ 2   trust claim filed by the Sandovals as a result of asbestos
+ 3   exposure from Johns-Manville products in this case?
+ 4       A.    No, sir.
+ 5       Q.    Well, would you like to see it?
+ 6       A.    It's not would I like to see it or not.  Is it
+ 7   your pleasure to show it to me?
+ 8       Q.    It would be my pleasure.
+ 9                  Before we do that, let me ask you a little
+10   bit.
+11                  You've testified in many cases where
+12   Johns-Manville was a product where the plaintiff claimed
+13   exposure to asbestos, right?
+14       A.    Yes.
+15       Q.    And those Johns-Manville exposures included not
+16   only chrysotile asbestos but amphibole asbestos like
+17   amosite, right?
+18       A.    Yes.
+19             MR. BRATT:  Well, I think --
+20                  I'll just say that it's an incomplete
+21   hypothetical, it's vague, overbroad, compound.
+22                  But go ahead.
+23   BY MR. CALFO:
+24       Q.    Go ahead, Doctor.
+25       A.    Yes.  Primarily their -- their thermal
+0123
+ 1   insulation, their calcium silicates, their 85 bags, would
+ 2   have had amosite in it.
+ 3                  Their -- their marinite board had amosite
+ 4   in it.  I'm trying to think what else.
+ 5                  That was primarily what the amosite
+ 6   products were.
+ 7       Q.    And are you aware that Johns-Manville also
+ 8   manufactured asbestos pipe insulation in buildings?
+ 9       A.    Yes, sir, they did.
+10       Q.    And asbestos insulation was widely used on
+11   heating pipes like water pipes, wasn't it?
+12             MR. BRATT:  It's vague, overbroad.
+13                  But go ahead.
+14             THE WITNESS:  They had a chrysotile product that
+15   was like air cell that could go on -- that may have been
+16   used on water pipes.
+17                  Hot water pipes are on -- for furnaces on
+18   ducting and that's where I would have seen that.  They
+19   didn't have an amosite product that did that.
+20                  I don't see -- and their chrysotile content
+21   in those air cells were typically in the 40-to-70-percent
+22   range.  I don't see anything close to that in the Dames &
+23   More report.
+24                  4 percent -- and I don't know how well the
+25   lab understood how much was in there, et cetera; so it
+0124
+ 1   would not have been Thermobestos, or 85 Mags, that would
+ 2   have been used in something like that.  That would have
+ 3   been overkill.
+ 4                  And you wouldn't have had a roof,
+ 5   especially 85 Mags because it would go back --
+ 6   essentially, it was -- you could make mud out of 85 Mags
+ 7   by just powdering it up and -- it's like joint compound,
+ 8   but --
+ 9                  So it doesn't match -- this analysis
+10   doesn't match anything that would have been either 85 Mags
+11   or their Thermobestos brands.
+12   BY MR. CALFO:
+13       Q.    What's the date of the Dames & Moore?
+14       A.    1991.
+15       Q.    And what is your knowledge as to when
+16   Mr. Sandoval worked at the water heater facility or AAMC?
+17       A.    He started in 1971.
+18                  And somewhere in the early '80s they moved
+19   over to the -- either 1980, '81, '82, '83, I could never
+20   get a firm -- I didn't see a firm date.  But it was
+21   obviously they moved to a new facility where everything
+22   moved over to it sometime in the early 1980s.
+23             MR. CALFO:  Okay.  Let's mark as next in
+24   order --
+25                  Are we at Exhibit --
+0125
+ 1             THE REPORTER:  17.
+ 2             MR. CALFO:  -- 16?
+ 3             THE REPORTER:  17.
+ 4             MR. CALFO:  17.
+ 5                  Let me see if I can figure out how to do
+ 6   this.
+ 7             THE REPORTER:  You can "Screen Share" and drop
+ 8   it into the "CHAT."
+ 9             MR. CALFO:  There we go.
+10             (Defendant's Exhibit 17 was marked for
+11             identification and is attached
+12             hereto.)
+13   BY MR. CALFO:
+14       Q.    Exhibit 17, do you see that, Dr. Longo?
+15       A.    Let me get to it.
+16                  Yes, I do.
+17       Q.    Okay.  Okay.  This is an invoice --
+18                  Well, let me see.
+19                  This is a Johns-Manville Personal Injury
+20   Settlement Trust.
+21                  You've seen these before, haven't you?
+22       A.    I'm sure I've been showed them before; so I
+23   would have to say yes, I have seen these before.
+24       Q.    Okay.  And you see there is an affidavit here
+25   from Melissa Antonucci from the trust?
+0126
+ 1       A.    Yes.
+ 2       Q.    Okay.  And if we go down to the client
+ 3   information report, you can see the claimant's name was
+ 4   "San Juana Sandoval"?
+ 5       A.    Yes.
+ 6       Q.    And you have not seen this document before your
+ 7   deposition today?
+ 8       A.    I have not.
+ 9       Q.    And you can see the law firm was "Weitz &
+10   Luxenberg" and Arthur M. Luxenberg was the attorney who
+11   filed the personal injury claim, right?
+12             MR. BRATT:  Wait a minute.
+13                  I don't know if it's a personal injury
+14   claim or -- I mean, I don't know if that's a fair
+15   characterization.
+16                  But go ahead.
+17   BY MR. CALFO:
+18       Q.    Do you see where it is it says "Personal Injury
+19   Settlement Trust"?
+20       A.    Is that at the beginning of this?
+21       Q.    Yes.  Right there on the screen.
+22       A.    I see it. "Manville Personal Injury Settlement
+23   Trust."
+24       Q.    And do you see where it says "Claim Information
+25   Report" on the top?
+0127
+ 1       A.    Yes.
+ 2       Q.    So it looks like Mr. Arthur Luxenberg of Weitz &
+ 3   Luxenberg filed a claim in relation to the Manville
+ 4   Personal Injury Settlement Trust.
+ 5                  Do you see that?
+ 6       A.    I do.
+ 7       Q.    Okay.  Have you done any investigation before
+ 8   your deposition today on the Johns-Manville products or
+ 9   product that Ms. Sandoval has claimed she was exposed to
+10   asbestos which caused, in part at least, her mesothelioma?
+11             MR. BRATT:  I mean, I think it assumes facts,
+12   you know, that they were a fiber supplier as well; so I
+13   think, as phrased, it's argumentative, assumes facts.
+14                  Go ahead.
+15             THE WITNESS:  The only thing I did was to go
+16   through other potential exposures other than the cosmetic
+17   talc.  And the only thing I saw that had a -- what I would
+18   say "more likely than not" would be the fabric material
+19   that they were using to essentially put on the rollers so
+20   that where -- where the chain was moving along with the
+21   hook, taking it through the -- the paint booth in a
+22   U-shape where it was automatically painted and they were
+23   using it to essentially isolate the roller inside the
+24   trap.
+25   BY MR. CALFO:
+0128
+ 1       Q.    Okay.  But as far as this claim itself, it
+ 2   indicates that from January of 1977 to December 1989, the
+ 3   industry is the "Construction trades."
+ 4                  Do you see that?
+ 5       A.    That's what it says.
+ 6       Q.    And it states that the "Bystander," including --
+ 7   that includes "Family Members."
+ 8                  Do you see under "Occupation"?
+ 9       A.    Yes, sir.
+10       Q.    And so does that make --
+11                  Does that lead you to believe that
+12   Ms. Sandoval was claiming she was a bystander to someone
+13   in the construction trade who was exposed to asbestos and
+14   brought it home on their clothes?
+15             MR. HUGO:  Objection.  Lacks foundation, calls
+16   for speculation, hearsay.
+17             MR. BRATT:  I think it's vague as to --
+18             THE WITNESS:  I don't know --
+19             MR. BRATT:  I think it's vague as phrased,
+20   "Bystander" as opposed to, like, paid occupation or
+21   take-home.
+22                  But go ahead.
+23             THE WITNESS:  I don't --
+24                  You know, it's number 51.  I don't have a
+25   clue how the Johns-Manville Trust, what they define as
+0129
+ 1   "51"; so I can't really comment on that.
+ 2   BY MR. CALFO:
+ 3       Q.    And then another item under "Exposure History"
+ 4   is from January of 1977 to December 1989 the Sandavols
+ 5   claim that it was due to her husband's occupation as a
+ 6   "Painter."
+ 7                  Do you see that?
+ 8             MR. HUGO:  Objection.  Calls for hearsay, lacks
+ 9   foundation, calls for speculation.
+10             THE WITNESS:  He worked in the painting
+11   department.  I don't know if I would call him a "painter."
+12                  He was somebody who made sure the automated
+13   painting system worked properly with the outside surface
+14   of the water heaters.
+15   BY MR. CALFO:
+16       Q.    Okay.  Now, you've testified in the past,
+17   Dr. Longo, that industrial talc contains amphibole
+18   asbestos, including anthophyllite and tremolite, haven't
+19   you?
+20       A.    Yes, sir.
+21       Q.    Did you know that -- let me just see what it
+22   says here.
+23                  Did you know that Ms. Sandoval signed this
+24   trust claim form?
+25             MR. BRATT:  Assumes facts.
+0130
+ 1                  I don't think that --
+ 2             THE WITNESS:  I think that --
+ 3                  I can't tell -- I don't know anything about
+ 4   it. I've never seen this before.  I wouldn't have any
+ 5   prior knowledge about anything to do with this document.
+ 6   BY MR. CALFO:
+ 7       Q.    Okay.  Now, Dr. Gordon gave a pretty lengthy
+ 8   deposition in this case, Dr. Longo.
+ 9                  Have you reviewed that?
+10       A.    I have not.
+11       Q.    Would you defer to Dr. Gordon in terms of his
+12   analysis and his conclusions?
+13             MR. HUGO:  Objection.  Overbroad, lacks
+14   foundation, calls for speculation.
+15                  He hasn't seen the deposition.
+16             MR. BRATT:  I'll join --
+17             THE WITNESS:  Only that --
+18             MR. BRATT:  I'll join in that.
+19                  This is Mark Bratt.
+20                  But go ahead.  Sorry.
+21             THE WITNESS:  Only if I were to read his
+22   deposition and see what he cited -- what opinions he may
+23   have had outside of just his mineral analysis.
+24   BY MR. CALFO:
+25       Q.    Did you know that Dr. Gordon had been deposed
+0131
+ 1   earlier, like a couple weeks before your deposition today?
+ 2       A.    No.
+ 3       Q.    So if we go to your Johns-Manville Corporation,
+ 4   Exhibit 3, will you tell me what it is that you're
+ 5   referencing specifically in this document as to why you
+ 6   produced it in this litigation, Dr. Longo?
+ 7       A.    It had nothing to do with the products, it had
+ 8   to do with the fact that Johns-Manville is writing in
+ 9   about the statement that Dr. Selikoff made where he said
+10   that the "Secondary exposures are low in assuming
+11   mesotheliomas," and "lower than the PPL"; so therefore
+12   there would be reasons we have to lower that.
+13                  Johns-Manville wrote back disagreeing with
+14   that, saying that "Secondary exposures are such that it
+15   would be the assigned area of the house" -- you know, it
+16   gets contaminated in the house.  You're going to have a
+17   low-grade chronic exposure 7/24.
+18                  I'm not necessarily agreeing with that, but
+19   I was showing it as Johns-Manville is recognizing that
+20   secondary exposure can be significant.
+21                  And it's sort of like -- I'll use your
+22   baseball analogy.  When your own side says you're out,
+23   you're out.
+24       Q.    Well, let's -- let's go to Exhibit 4,
+25   "Asbestos-Related Disease from Household Exposure."
+0132
+ 1                  Do you see that?
+ 2       A.    Are you showing it?
+ 3       Q.    No.
+ 4                  But do you have it in front of you?
+ 5       A.    I know I produced that because it does show that
+ 6   secondary exposures do cause mesothelioma.
+ 7       Q.    And here it talks about wives of asbestos
+ 8   workers who cleaned their husband's work-- work clothes;
+ 9   is that right?
+10       A.    Yes.  Yes.
+11       Q.    And so why did you -- why did you --
+12                  What's the bottom line as to why you
+13   brought that to this deposition or litigation?
+14       A.    Because if, in fact, the plaintiff was washing
+15   contaminated clothing with asbestos, she would have had a
+16   significant exposure.
+17                  Now --
+18       Q.    How many --
+19                  Go ahead.
+20       A.    I'm -- I'm not talking about if it was
+21   significant enough to cause mesothelioma or not.  But it's
+22   recognized that this is a problem that you can have
+23   exposure from washing clothes where somebody has handled
+24   asbestos products.
+25       Q.    And one of the reasons you're not talking about
+0133
+ 1   the cause is because that's not -- that's not your area,
+ 2   causation, right, Dr. Longo?
+ 3       A.    That is correct.
+ 4       Q.    Now, how many asbestos containing products are
+ 5   you aware of?
+ 6                  Are you aware of that figure of 3,000
+ 7   asbestos-containing products in the US at some point in
+ 8   time?
+ 9       A.    I've heard that number but I think in industrial
+10   and -- and -- we can boil it down to a few.  You know,
+11   you're dealing with depending -- you're dealing with
+12   fireproofing, you're dealing with plasters, you're dealing
+13   with texture products, you're dealing with gaskets, you're
+14   dealing with joint compounds, you're dealing with --
+15                  And those are the -- those are the primary
+16   materials that one would run into.
+17                  Asbestos cloth, depending on what they're
+18   doing with it, a lot of times they're using it as a --
+19   for, you know, welders would use it a lot; so sometimes
+20   you use this cloth as an insulation material.
+21                  Builders will use it a lot.
+22                  Welding, they don't drop something with
+23   steel coming down and going somewhere that it might cause
+24   a fire; so you're --
+25                  It's -- it's really a limited source
+0134
+ 1   ever -- of types of materials.
+ 2                  But I've heard the 3,000.  I have never
+ 3   seen anybody put together a list that has 3,000 different
+ 4   products.  It's, you know, "ceiling tiles," "construction
+ 5   products," that's what you run into in these situations.
+ 6       Q.    Well, if you look at your Exhibit 4, at the last
+ 7   paragraph -- or on page 238.
+ 8                  And this is back in what year?  Let's
+ 9   see --
+10                  When was this article published, Dr. Longo,
+11   do you know?
+12       A.    Sometimes in the '70s.
+13       Q.    Yes.
+14                  If you look at the last paragraph on
+15   page 238 it says "First, there are over 1,000
+16   asbestos-containing products, that, until recently were
+17   not labeled as to content so that workers in secondary
+18   industries often were not aware of exposure."
+19                  Do you see that?
+20       A.    That's what it states.
+21       Q.    And you've read that before, haven't you, today?
+22       A.    Yes, I've seen 1,000, I've seen 2,000, I've seen
+23   3,000, but I don't believe any individual has probably
+24   seen the propensity of what the primary products are
+25   that -- for asbestos exposure.  And depending --
+0135
+ 1                  There's thermal insulations, insulating
+ 2   cements, gunite, fireproof materials.  It goes with that
+ 3   industry.
+ 4                  In the steel mill you're going to have
+ 5   different types of products than you would, say, within a
+ 6   refinery because if they're melting steel they're using
+ 7   gunite-types of materials.  In those we only have
+ 8   1 percent asbestos but they have a product that they could
+ 9   spray that could stand up to the type of temperatures that
+10   you're seeing in a furnace for a steel mill; so in the
+11   1 or 2 percent asbestos in there is just if it slips
+12   whenever they spray it.
+13                  On the other hand, if you go to
+14   fireproofings, most of what's in those fireproofings are
+15   not asbestos that can --
+16                  Monokote Fireproofing, back before
+17   W.R. Grace bought it, it was just Zonolite Fireproofing
+18   and it was nothing more than vermiculite and gypsum,
+19   putting 10 percent chrysotile in it that allowed them to
+20   spray it and they could get a lot more on very fast
+21   compared with the others; so there was different reasons
+22   why they used asbestos.
+23                  But there's not 1,000 products that we're
+24   dealing with here.  In my opinion you're dealing with one
+25   for what I've seen so far.
+0136
+ 1       Q.    Then we have Exhibit 5 which is "Domestic
+ 2   asbestos exposure, lung fibre burden, and pleural
+ 3   mesothelioma in a housewife."
+ 4                  Why do you have it this -- why do you have
+ 5   this article?
+ 6       A.    These, again, are to show that -- not so much
+ 7   what they're being exposed to but they are -- you know,
+ 8   according to the authors, they got it from secondary or
+ 9   para-occupational exposure.
+10                  It's the problem of the -- of -- again, of
+11   the exposure, not where these are the only products or --
+12   they've got meso from it but it shows that it's been
+13   published in the literature that this is an issue.
+14       Q.    Okay.  We talked about Exhibit 6, which are the
+15   railroad workers.
+16                  Exhibit 7, "Workers' Home Contamination
+17   Study Conducted Under the Workers' family protection act."
+18                  Can you pull that up?  Do you have that
+19   under -- on page 6?
+20       A.    I don't have the document with me.  You'll have
+21   to show it to me, I didn't grab it.
+22       Q.    That's okay.
+23                  If you look three paragraphs down I'll read
+24   it to you and then Mark can check it.
+25                  "The occupations associated with
+0137
+ 1   asbestos-related disease in family members are those where
+ 2   workers were exposed to asbestos dust during:
+ 3   construction and renovation; prospecting and mining;
+ 4   manufacturing tiles" -- "textiles, tiles, boilers, and
+ 5   ovens; shipbuilding and associated trades; certain
+ 6   railroad shop trades; welding; insulation; use and
+ 7   manufacture of asbestos products such as cords, seals, and
+ 8   plates; and renovation and demolition projects within the
+ 9   construction industry."
+10                  Is it your opinion that --
+11                  Or do you include this Exhibit 7 because
+12   it's your opinion that you can have secondary exposure
+13   from workers in those trades?
+14       A.    Yes.
+15       Q.    All right.  Then we have "Cutting and Handling
+16   of Asbestos Cloth," which is Exhibit 8.
+17                  Do you have that, Dr. Longo?
+18       A.    I don't have it but I'm very familiar with it.
+19       Q.    All right.  Is there anything specific about a
+20   roll of asbestos cloth that relates to this case?
+21       A.    Well, there is a roll of cloth that was used in
+22   the track conveyor system for the painting booth that was
+23   for the outside of the water heater and you had a roll
+24   that was 3 inches wide.  It's -- and asbestos cloth like
+25   that is sold like that.  And Johns-Manville had some,
+0138
+ 1   others also manufactured it.
+ 2                  And it was a fairly significant -- this is
+ 3   fairly a significant roll because if I looked at his --
+ 4   you know, he estimated that the booth was 15-by-15 and it
+ 5   was U-shaped; so it had to go down, turn around so that
+ 6   the automated system could -- could paint both sides.
+ 7   It's electrostatic.  And they didn't talk about -- that
+ 8   there was a surface charge being put onto it so that it
+ 9   would track the paint.
+10                  I think they said one time, you know, "How
+11   come they didn't have walls on either side?  What kept the
+12   paint from going anywhere?  Why didn't it just fall down?"
+13                  And they were -- and he was talking about
+14   it as it would allow the rollers to keep going, you know.
+15                  I would like to see it to get a true
+16   picture of how this was working.  But you had the roll
+17   where you would make sure the paint was not getting on the
+18   tracking system and then you had the 4-inch by 3-inch
+19   pieces that were put on as banding, it sounded like it was
+20   some kind of tape to keep it on; so the rollers -- the
+21   rollers would keep turning, especially on the -- on the
+22   U-shape, the round part of it.
+23       Q.    So --
+24                  Sorry.
+25       A.    And it's more likely --
+0139
+ 1                  In my opinion, more likely than not, that
+ 2   was asbestos-containing.  I cannot say within a reasonable
+ 3   degree of scientific certainty unless I had more
+ 4   information.  But for what it was supposed to stand up to,
+ 5   it made sense to me.
+ 6       Q.    So if you look under "Results and Conclusions,"
+ 7   you did testing of cutting and handing of asbestos cloth,
+ 8   right, you and MAS?
+ 9       A.    Yes, sir.
+10       Q.    And if you look at your "Results and
+11   Conclusions" --
+12                  Was it you who wrote this report, Doctor?
+13       A.    It was.
+14       Q.    You wrote "During the work practice, the
+15   individual cutting and handling the asbestos cloth was
+16   exposed to airborne asbestos fiber of between 5.9 and
+17   6.9 fibers per CC as measured by PCM.  And between
+18   approximately 37 and 1,633 asbestos structures per CC as
+19   measured by TEM."
+20                  Is that something you wrote?
+21       A.    Yes, sir.
+22       Q.    Then you said "Additionally, the clothing worn
+23   by the worker was highly contaminated by the asbestos
+24   released from the asbestos cloth," right?
+25       A.    Yes.
+0140
+ 1       Q.    "The level of contamination found on the
+ 2   clothing was measured at 6.1 billion chrysotile structures
+ 3   per square foot"; true?
+ 4       A.    Yes, that is -- that is true.
+ 5       Q.    And then you conclude from your study that
+ 6   "This study shows that during the simple procedure of
+ 7   cutting and handling of asbestos cloth, significant
+ 8   amounts of asbestos fibers were released into the
+ 9   breathing zone of the individuals who were performing the
+10   work activity," right?
+11       A.    Correct.
+12                  Now, to be fair to -- is that we were
+13   cutting -- I think it was about a 2-foot section, I forget
+14   the total length of the roll that we were pulling off and
+15   cutting.
+16                  I wouldn't expect as high of levels of the
+17   cutting of 3-inch-by-4-inch pieces.  But he was doing it
+18   repetitively where he could fill up a box -- excuse me, a
+19   bag, because he would --
+20                  He said every 2 feet.  And if it's 15 feet
+21   long, then he would need -- 15-by-15 is 30; so would he
+22   would need 15 of these cases to replace on them on all the
+23   rollers; so that handling, in my opinion, would have
+24   contaminated his clothing.
+25                  I don't -- I can't tell you what level,
+0141
+ 1   because we haven't done a study specifically like this.
+ 2   But his clothing would have been contaminated if, in fact,
+ 3   it is asbestos.  And it all points to that, but I can't
+ 4   say within a reasonable degree of scientific certainty.
+ 5       Q.    And how many years did he cut asbestos cloth,
+ 6   Mr. Sandoval?
+ 7       A.    If they moved in the early 1980s into a new
+ 8   building, and I think his supervisor said they changed it;
+ 9   so you would have '71, say, to 1980.
+10                  And that would cover from '77, when he was
+11   married, to 1980 or '81, '82 or '83; so we have four --
+12   somewhere in the range of three to four to five years
+13   where she would have been --
+14                  If this is all asbestos, she would have had
+15   secondary exposure to asbestos in my opinion when she
+16   handled clothing.
+17       Q.    And then in the conclusion you also say "The
+18   clothing worn by the worker in your study was found to be
+19   highly contaminated with chrysotile asbestos dust," right?
+20       A.    Yes, sir.
+21       Q.    And then you wrote "The contamination is yet
+22   another potential source of exposure through
+23   re-entrainment of the asbestos dust from such activities
+24   on the brushing of the clothing or during typical laundry
+25   activities.  And if taken home, additional exposure can
+0142
+ 1   occur to the work and other family members."
+ 2                  That's something you wrote back in what
+ 3   year, October of 2001?
+ 4       A.    Yes, that's correct.
+ 5       Q.    Then we have Exhibit 9, which is "Pipe Wrap
+ 6   Abrasion," right?
+ 7       A.    Yes.
+ 8       Q.    And here, this is another study that you did on
+ 9   the protocol for work practice study pipe wrap abrasions;
+10   true?
+11       A.    True.
+12       Q.    And here you placed the investigator's feet on
+13   the wrapped pipe and rubbing the wrap with the soles of
+14   the work shoes.
+15                  Additionally the wrap was touched and
+16   rubbed with a gloved hand, right?
+17       A.    Yes, sir.
+18       Q.    And you did this back in August of 1999, about
+19   16 years before Ms. Sandoval originally filed her
+20   complaint; true?
+21       A.    True.
+22       Q.    You indicate "The results of the study
+23   demonstrated that these abrasive activities caused
+24   significant release of asbestos fibers into the air"; is
+25   that right?
+0143
+ 1       A.    Yes.
+ 2       Q.    Did you write this, Dr. Longo, or did someone
+ 3   else from MAS?
+ 4       A.    I think Richard Hatfield was on that.  I don't
+ 5   recall if I wrote it or not.
+ 6       Q.    Is it fair to say you stand by this testing?
+ 7       A.    I do stand by the testing.
+ 8                  But that testing was to show that if, in
+ 9   fact, that he was rubbing the material --
+10                  This had to do with a railroad case where
+11   the piping was wrapped underneath the conductors and they
+12   could rest their feet on it; so it's not for this is what
+13   the exposures are going to be but this material came from
+14   these asbestos.
+15       Q.    But did you produce this because of your opinion
+16   that Ms. Sandoval was exposed to secondhand work?
+17       A.    This, again -- this, again, was a pipe wrap
+18   material but it was -- it was a fabric.  And we were --
+19   and I was just showing that if you handled this material,
+20   the fabric -- asbestos-containing fabric it can release
+21   asbestos fibers.
+22       Q.    All right.  And then you have here on
+23   Exhibit 10, "29 Secondary Exposure Reliance Material."
+24       A.    Yes, sir.  That just covers everything that I
+25   have about secondary exposure.  I don't --
+0144
+ 1                  I didn't know when I produced it but I'm
+ 2   not sure what I would be using out of it.  But I'm happy
+ 3   to answer any questions about any of those but I've
+ 4   covered the primary materials that I rely on.
+ 5       Q.    Why is it that you printed out the first 9 -- or
+ 6   8 or 9 articles as opposed to the other 29?
+ 7       A.    Because they had to do more with the science of
+ 8   secondary exposure than the actual -- some of the other
+ 9   materials that may -- may not be indicative of what
+10   happened here.
+11                  And I just try to cover my bases because I
+12   don't know what's going to happen under cross-examination.
+13       Q.    What do you define "industrial dust" to be?
+14       A.    Any type of dust that's generated in an
+15   industrial environment.
+16                  And typically industrial dust will have --
+17   can have a myriad of different things, but I'm mostly
+18   looking at industrial dust where an asbestos product is
+19   being used, an asbestos product is being put on something,
+20   an asbestos product is being taken off something.  Or that
+21   the just normal course of the process in an industrial
+22   setting generates asbestos fibers.
+23       Q.    Okay.  You note on page 12 of your report,
+24   "Asbestos insulation manufacturer Johns-Manville had a
+25   very good understanding of the problem of take-home or
+0145
+ 1   secondary asbestos exposures" -- "exposure issues in the
+ 2   household."
+ 3       A.    I do.
+ 4       Q.    Did you write that on page 12 of 14 without even
+ 5   knowing that Ms. Sandoval filed a claim with the
+ 6   Johns-Manville personal injury trust?
+ 7       A.    Yes.
+ 8                  You've got to understand that the
+ 9   bankruptcy claim does not have anything to do with what I
+10   do in looking at it.  I'm not the one approving the
+11   bankruptcy claims, I'm not involved in it.  It doesn't
+12   have anything to do with my opinions in a case.
+13             MR. CALFO:  Okay.  Thanks, Dr. Longo.
+14             THE WITNESS:  Thank you.
+15             MR. BRATT:  Ed, do you have any follow-up?
+16             MR. HUGO:  Nope.
+17             MR. BRATT:  All right.  I'll reserve --
+18                  I'll reserve any questions I have until
+19   trial; so that will be the conclusion.
+20                  I assume, based on the way things were
+21   attached, that between the two of you, you'll get Exhibit
+22   1 through what, 17, at this point is what was attached,
+23   you'll get all those to the reporter?
+24                  I don't think we need anything from
+25   Dr. Longo or my office.
+0146
+ 1             THE WITNESS:  That's great.
+ 2             MR. BRATT:  But as far as --
+ 3             THE WITNESS:  You know how hard it is to get
+ 4   stuff out of me.
+ 5                  (Discussion off the record.)
+ 6             MR. BRATT:  Okay.  Why don't we -- why don't we
+ 7   get any spelling issues that we might need resolved done
+ 8   right now so Dr. Longo can enjoy the rest of his day
+ 9   without --
+10             THE REPORTER:  And I just want to know, you're
+11   handling signature per the Code.
+12                  And who wants copies.
+13             THE WITNESS:  I'll waive signature.
+14             MR. BRATT:  I'll take one.  No need for a rush
+15   for me.
+16             MR. HUGO:  I'll take one.
+17             MR. CALFO:  Me neither.
+18             (Deposition concluded at 12:59 p.m.)
+19   /
+20   /
+21   
+22   
+23   
+24   
+25   
+0147
+ 1                     CERTIFICATE OF REPORTER
+ 2   
+ 3   
+ 4   
+ 5   
+ 6                I, LAURIE HELD-BIEHL, California Certified
+ 7   Shorthand Reporter No. 6781, Illinois Certified Shorthand
+ 8   Reporter No. 084002860, New Jersey Certified Court
+ 9   Reporter No. 30XI00239100, Texas Certified Shorthand
+10   Reporter No. 8555, Washington State Certified Court
+11   Reporter No. 21020748, and Registered Professional
+12   Reporter/Certified Realtime Reporter No. 32836 do hereby
+13   certify:
+14                That prior to being examined, the witness
+15   named in the foregoing deposition was by me duly sworn to
+16   testify to the truth, the whole truth and nothing but the
+17   truth;
+18                That said deposition was taken down by me in
+19   shorthand at the time and place therein named, and
+20   thereafter reduced to print by means of computer-aided
+21   transcription; and the same is a true, correct and
+22   complete transcript of said proceedings.
+23                I further certify that I am not interested in
+24   the outcome of the action.
+25   /
+0148
+ 1                In witness whereof, I have hereunto
+ 2   subscribed my name this 27th day of September, 2021.
+ 3   
+ 4   
+ 5   
+ 6                      __________________________________
+                        LAURIE HELD-BIEHL, CSR, CCR, RPR, CRR
+ 7                      Certified Shorthand Reporter for
+                        the State of California No. 6781,
+ 8                      Certified Shorthand Reporter for the
+                        State of Illinois No. 084002860,
+ 9                      Certified Court Reporter for the
+                        State of New Jersey No. 30XI00239100,
+10                      Certified Shorthand Reporter for the
+                        State of Texas No. 8555,
+11                      Certified Court Reporter for the
+                        State of Washington No. 21020748,
+12                      Registered Professional
+                        Reporter/Certified Realtime
+13                      Reporter No. 32836
+                        iDepo Reporters
+14                      323-393-3768 or 1-888-99-iDEPO
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   

@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AttorneyDepositionIndex",
+  "type": "object",
+  "properties": {
+    "plaintiffs": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Attorney" }
+    },
+    "defendants": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Attorney" }
+    }
+  },
+  "required": ["plaintiffs", "defendants"],
+  "definitions": {
+    "Attorney": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "law_firm": { "type": "string" },
+        "party": { "type": "string" },
+        "depositions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/DepositionParticipation" }
+        }
+      },
+      "required": ["name", "law_firm", "party", "depositions"]
+    },
+    "DepositionParticipation": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "start_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "content": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/Exchange" }
+        }
+      },
+      "required": ["title"]
+    },
+    "Exchange": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "object",
+          "properties": {
+            "by": { "type": "string" },
+            "text": { "type": "string" },
+            "timestamp": { "type": "string", "format": "date-time" }
+          },
+          "required": ["by", "text"]
+        },
+        "objection": {
+          "type": "object",
+          "properties": {
+            "by": { "type": "string" },
+            "text": { "type": "string" },
+            "timestamp": { "type": "string", "format": "date-time" }
+          }
+        },
+        "ruling": { "type": "string" },
+        "judge_comment": {
+          "type": "object",
+          "properties": {
+            "by": { "type": "string", "enum": ["Judge"] },
+            "text": { "type": "string" },
+            "timestamp": { "type": "string", "format": "date-time" }
+          }
+        },
+        "answer": {
+          "type": "object",
+          "properties": {
+            "by": { "type": "string" },
+            "text": { "type": "string" },
+            "timestamp": { "type": "string", "format": "date-time" }
+          }
+        },
+        "follow_up": {
+          "anyOf": [
+            { "$ref": "#/definitions/Exchange" },
+            { "type": "null" }
+          ],
+          "description": "Optional follow-up exchange from a question or objection"
+        }
+      },
+      "required": ["question"]
+    }
+  }
+}

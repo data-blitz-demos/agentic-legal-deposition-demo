@@ -1,0 +1,2233 @@
+0001
+ 1       IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                 FOR THE COUNTY OF LOS ANGELES
+ 3   
+ 4   DEPARTMENT SSC 15        HON. DAVID S. CUNNINGHAM, JUDGE
+ 5   Coordinated Proceeding Special Title  JCCP CASE NO. 4674
+     (Rule 3.550)
+ 6   
+     LAOSD ASBESTOS CASES
+ 7   
+ 8   LINDA ZIMMERMAN,                   )
+                                        )
+ 9                PLAINTIFF,            )
+                                        )
+10          VS.                         ) CASE NO.
+                                        ) BC 720153
+11                                      )
+     WHITTAKER, CLARK & DANIELS,        )
+12                                      )
+                  DEFENDANTS.           )
+13   ___________________________________)
+14   
+15   
+16   
+17   
+18          REPORTER'S TRIAL TRANSCRIPT OF PROCEEDINGS
+19                    FRIDAY, APRIL 23, 2021
+20   
+21   
+22   
+23   
+24   
+25   
+26   
+27          DIANNE M. McGIVERN, CSR 7576, RMR, RDR, CRR, CLR
+                  OFFICIAL COURT REPORTER PRO TEMPORE
+28   
+0002
+ 1   APPEARANCES OF COUNSEL:
+ 2   
+ 3   FOR THE PLAINTIFF:
+ 4   
+               SIMON GREENSTONE PANATIER
+ 5             BY:  LEAH KAGAN, ESQ.
+                    MICHAEL REID, ESQ.
+ 6             1201 Elm Street, Suite 3400
+               Dallas, Texas 75270
+ 7             214.276.7680
+               lkagan@sgptrial.com
+ 8             mreid@sgptrial.com
+ 9   
+10   FOR THE DEFENDANT WHITTAKER, CLARK & DANIELS:
+11   
+               BERKES CRANE ROBINSON & SEAL
+12             BY:  VIIU SPANGLER KHARE, ESQ.
+                    JASON KORT, ESQ.
+13             515 South Figueroa Street, Suite 1500
+               Los Angeles, California  90071
+14             213.955.1150
+               vspanglerkhare@bcrslaw.com
+15             jkort@bcrslaw.com
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+26   
+27   
+28   
+0003
+ 1                           I N D E X
+ 2                    FRIDAY, APRIL 23, 2021
+ 3   
+ 4                      INDEX OF WITNESSES
+ 5   WITNESS                                         PAGE
+ 6   WILLIAM LONGO, Ph.D.
+ 7   VOIR DIRE EXAMINATION
+ 8   DIRECT EXAMINATION BY MS. KAGAN                 2427
+     CROSS-EXAMINATION BY MR. KORT                   2433
+ 9   
+10   WILLIAM LONGO, Ph.D.
+11   REDIRECT EXAMINATION BY MS. KAGAN               2434
+     DIRECT EXAMINATION BY MS. KAGAN                 2452
+12   
+13   
+14   
+15                           EXHIBITS
+16                                       MARKED    RECEIVED
+     EXHIBIT                             FOR I.D.   IN EVD.
+17   
+18   Exhibit 1790                                    2465
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+26   
+27   
+28   
+2401
+ 1   CASE NUMBER:               BC 720153
+ 2   CASE NAME:                 ZIMMERMAN vs. WHITTAKER,
+ 3                              CLARK & DANIELS
+ 4   LOS ANGELES, CALIFORNIA    FRIDAY, APRIL 23, 2021
+ 5   DEPARTMENT SSC 15          HON. DAVID CUNNINGHAM, JUDGE
+ 6   APPEARANCES:               (AS HERETOFORE NOTED)
+ 7   REPORTER:                  DIANNE M. McGIVERN, CSR 7576
+ 8   TIME:                      A.M. SESSION
+ 9   
+10            (Whereupon, the following proceedings
+11            were held in open court outside the
+12            presence of the jury:)
+13   
+14            THE COURT:  Good morning and welcome to
+15   Department 15.  The court will call the Zimmerman
+16   matter.  Make your appearances for the record, please.
+17            MS. KAGAN:  Good morning, Your Honor.
+18   Leah Kagan from Simon, Greenstone & Panatier for the
+19   plaintiff.
+20            MR. REID:  Good morning, Your Honor.
+21   Michael Reid from the Simon, Greenstone & Panatier law
+22   firm on behalf of the plaintiff, Linda Zimmerman family.
+23            THE COURT:  Good morning.
+24            MS. SPANGLER KHARE:  Good morning, Your Honor.
+25   Viiu Spangler Khare for defendant Whittaker, Clark &
+26   Daniels.
+27            THE COURT:  Good morning.
+28            MR. KORT:  Good morning, Your Honor.
+2402
+ 1   Jason Kort for Whittaker, Clark & Daniels.
+ 2            THE COURT:  Good morning.  All sides ready to
+ 3   proceed?
+ 4            MS. KAGAN:  Yes, Your Honor.
+ 5            MR. KORT:  Yes, Your Honor.
+ 6            THE COURT:  I did get a supplemental USB drive.
+ 7   And as I understand it, it purports to be some
+ 8   additional trial exhibits that you anticipate with
+ 9   Dr. Longo.
+10            MS. KAGAN:  That's correct, Your Honor.
+11            THE COURT:  All right.  Well, let's proceed.
+12            MR. KORT:  Your Honor, as we stated at the end
+13   of our hearing yesterday, Ms. Kagan, Mr. Reid, and I met
+14   and conferred regarding some issues as to the exhibits
+15   and as to the PowerPoint that Dr. Longo is going to be
+16   using during his direct examination.  And I think you'll
+17   be glad to hear that we have resolved all but one issue
+18   that we need your guidance on.
+19            THE COURT:  That's pretty impressive.
+20            MS. KAGAN:  We tried.
+21            THE COURT:  I know there was some lengthy
+22   objections, so that's good.  Let's start with what did
+23   you approve or consent to?
+24            MR. KORT:  Well, we approved -- I've consented
+25   to the PowerPoint that they are going to be using with
+26   Dr. Longo subject to the argument that I'll be making
+27   with the one remaining issue.  And I believe that's the
+28   issue.  I mean, I think I know what documents are going
+2403
+ 1   to be shown during Dr. Longo's direct examination.  I
+ 2   know what his reliance materials versus what may be
+ 3   shown to the jury and, you know, subject to any
+ 4   surprises that I'm not aware about, I think we're in
+ 5   agreement as to the way Ms. Kagan could proceed, subject
+ 6   to the one remaining issue.
+ 7            THE COURT:  What's the one remaining issue?
+ 8            MR. KORT:  The one remaining issue pertains to
+ 9   the allegations that Ms. Zimmerman is making with
+10   respect to Whittaker.  And as the court knows,
+11   Ms. Zimmerman is alleging exposure to asbestos through
+12   four different products, three of which plaintiffs argue
+13   implicate Whittaker.  And Whittaker stopped selling
+14   talcs and minerals in 2004.
+15            Dr. Longo has tested Chanel No. 5 samples.
+16   That's one of the products that Ms. Zimmerman alleges to
+17   have used.  And I believe over a dozen of those samples
+18   post-date 2004.  So two things here.  One, Ms. Zimmerman
+19   stopped using Chanel No. 5 in 2005.  The second issue
+20   is, Whittaker stopped selling and distributing anything
+21   in 2004.  Plaintiffs have no evidence that Whittaker
+22   distributed talc after 2004.
+23            So Dr. Longo, regarding his opinions as to
+24   Chanel and whether or not the products contained
+25   asbestos, he relies on -- Ms. Kagan will have the exact
+26   number -- but it's over a dozen samples that are from,
+27   you know, 2008, 2009, 2010, 2011.  I don't know the
+28   exact years, but I do know they're all after the 2005
+2404
+ 1   period.
+ 2            So there is -- there cannot be any allegation
+ 3   as to those samples that Whittaker would have been in
+ 4   the supply chain from talc in the mine to the product
+ 5   that went on the market.  And there's no evidence that
+ 6   Ms. Zimmerman would have used any of those products
+ 7   because they post-date the time that she was using
+ 8   Chanel No. 5.
+ 9            So, Your Honor, I point the court to the Lyons
+10   versus Colgate-Palmolive Company case, 2017, 16 Cal.App.
+11   5th 463.  Also, the Berg v. Colgate-Palmolive Company
+12   case, 2019, 42 Cal.App.5th 630.  And the Gibbons versus
+13   Johnson & Johnson Consumer, Inc., case, 2020,
+14   44 Cal.App. 5th, 475.
+15            Under 352, this evidence should be excluded.
+16   It's not related to Whittaker directly.  Plaintiffs
+17   cannot prove that Whittaker was in the supply
+18   distribution.  It's simply more evidence that the talc
+19   that Dr. Longo tested contained asbestos.  And because
+20   he tested these samples after the time period, the jury
+21   is going to infer and speculate that Whittaker should be
+22   liable for it, even though there's no connection.
+23            And I also point the court to the CACI
+24   instructions.  Whittaker is being sued for strict
+25   liability.  And one of -- if you look at CACI 1201,
+26   Your Honor, Ms. Kagan is going to ask that that
+27   instruction be included as to Whittaker, and that
+28   pertains to manufacturing defect essential factual
+2405
+ 1   elements.
+ 2            And I'm just going to read a portion of that
+ 3   instruction.
+ 4            THE COURT:  You're reading CACI 1201?
+ 5            MR. KORT:  Yes, Your Honor.
+ 6            THE COURT:  Okay.  I'm with you.
+ 7            MR. KORT:  So the instruction will read
+ 8   (reading):
+ 9                "Linda Zimmerman claims that the
+10            talc, the Whittaker talc, contained a
+11            manufacturing defect.  To establish
+12            this claim, Linda Zimmerman must
+13            prove all of the following:  That the
+14            Whittaker talc that it manufactured,
+15            distributed, and sold."
+16            That's the first element.  So my argument,
+17   Your Honor, is anything after 2005 cannot fall into that
+18   category because Whittaker is not in the supply chain.
+19   So we are asking that any PowerPoint slide that
+20   references any of Dr. Longo's testing pertaining to
+21   Chanel No. 5 after 2005, that that be stricken, that he
+22   not be allowed to talk about that testing.
+23            That doesn't eliminate the testing that he's
+24   done and he's got plenty of it and he's got plenty for
+25   all the other products.  I'm focused on the testing that
+26   concerns products after Ms. Zimmerman used it and after
+27   Whittaker stopped selling minerals and pigments.
+28            And one related issue -- I said I have one
+2406
+ 1   issue, but it's kind of two issues, one-and-a-half
+ 2   issues.  Dr. Longo's PowerPoint references, and I'm
+ 3   probably going to butcher this because I've never used
+ 4   the product, but it's a Coco Mademoiselle product.
+ 5            THE COURT:  Yes.
+ 6            MR. KORT:  And he's tested that.  Ms. Zimmerman
+ 7   has never used that product.  There's no evidence
+ 8   that -- the jury is not going to hear evidence about
+ 9   that product because she didn't use it.  So I would also
+10   ask that his testing on the Mademoiselle product also be
+11   excluded because it's a product she did not use, it's
+12   not at issue, it's confusing.
+13            And under 352, again, the more testing --
+14   you're going to see all the testing he's done.  It's an
+15   abundance, abundance.  We don't need to also include
+16   testing related to products she didn't use and products
+17   for which Whittaker is not being alleged to have sold
+18   talc to in this case.
+19            So those are my objections, Your Honor, any
+20   reference to the Mademoiselle products and any reference
+21   to his testing of Chanel No. 5 after 2004 when Whittaker
+22   stopped selling talc.
+23            THE COURT:  All right.  Well, I think what
+24   you're saying is that you want to exclude representative
+25   sampling from testing that is not coterminous with
+26   either the time the talc was supplied to various end
+27   product users or the time that Ms. Zimmerman
+28   acknowledges, admits that she used the product.
+2407
+ 1            One thing I want to get some clarity on, and
+ 2   I'm just asking for an offer of proof from your
+ 3   perspective, Mr. Kort, is your position that the talc,
+ 4   number one, was contaminated or not contaminated.  And
+ 5   by this I mean, is it Whittaker, Clark & Daniels'
+ 6   position that asbestos was not an intentional ingredient
+ 7   in talc?
+ 8            MR. KORT:  Yes.
+ 9            THE COURT:  Because the cases that you've cited
+10   focus on that.
+11            MR. KORT:  Yes.  There's full cases about that.
+12   We certainly don't take the position --
+13            THE COURT:  It hasn't been clear yet, but we
+14   haven't gotten to your defense, so I just -- I'm knowing
+15   about these line of cases and how it develops.  That's
+16   one component.
+17            The next issue that I would ask is, it's a
+18   probability analysis if you look at Lyons and Bader and
+19   Berg, they each have a little bit different take on it,
+20   but I'm familiar with those cases.  But, ultimately,
+21   it's a question of probability.
+22            So I want to just be clear.  What are you
+23   seeking to exclude?  It sounds as though you're saying
+24   you want to exclude the certain representative sampling
+25   tests from Dr. Longo that does not cover a relevant time
+26   period where there was either use or distribution.  Is
+27   that a fair assessment of your position?
+28            MR. KORT:  Yes, Your Honor.
+2408
+ 1            THE COURT:  So what evidence from your
+ 2   perspective would be subject to that exclusion if I
+ 3   agree with you?
+ 4            MR. KORT:  The evidence that Ms. Zimmerman
+ 5   stopped using Chanel No. 5 in 2005 and the evidence that
+ 6   Whittaker stopped distributing talcs in 2004.  And we
+ 7   talked about the probability analysis, Your Honor.
+ 8            THE COURT:  Right.
+ 9            MR. KORT:  The prejudicial aspect to Whittaker
+10   is the more -- the more samples you include in that
+11   probability analysis, the more detrimental it is to
+12   Whittaker because Dr. Longo finds asbestos in these
+13   samples.
+14            THE COURT:  Well, but what I'm trying to get to
+15   is, are you -- you're not excluding Dr. Longo's opinion.
+16   What you're seeking to exclude are representative
+17   samples from a particular time frame.  That's what I'm
+18   trying to get to.
+19            MR. KORT:  That's correct, Your Honor.
+20            THE COURT:  So what is that time frame and what
+21   are the specific samples to which you refer?
+22            MR. KORT:  Again, I'll try to be a little bit
+23   more clear.
+24            THE COURT:  Sure.
+25            MR. KORT:  Anything that Dr. Longo tested
+26   related to Chanel No. 5 after 2004, we're seeking to
+27   exclude all of that.  For example, if his product
+28   chart -- and Ms. Kagan is going to have it right in
+2409
+ 1   front of her, I don't have it in front of me right now
+ 2   and it will be on the PowerPoint and she'll know what
+ 3   I'm referencing.  But, for instance, if he had the
+ 4   sample and it's clear from his chart that the sample of
+ 5   the Chanel No. 5 came from 2012, that would be something
+ 6   that I would be seeking to exclude in this argument.
+ 7            THE COURT:  Okay.  I think I understand where
+ 8   you're going with this.  As I understand how this
+ 9   process works, and I'm going to have to turn to
+10   Attorney Kagan to ask for your offer of proof, is that,
+11   basically, Dr. Longo goes to the archives, at least this
+12   was the case with Johnson, I don't know if that's the
+13   case with Chanel, and I need to know what the offer of
+14   proof is, but the question is, does he go and get
+15   representative samples from archives from years relevant
+16   to when Whittaker, Clark & Daniels was supplying talc
+17   and is it also relevant or coterminous to the time
+18   period that Ms. Zimmerman was using the talc?  If it's
+19   not, or we can't answer that question, then I would be
+20   more inclined to agree with you.
+21            But I think this really turns on the time
+22   period from which the representative samples are taken.
+23   And I would tend to agree with you in the analysis of --
+24   and I'm going to, Attorney Kagan, allow you to give me
+25   your offer of proof in response, but I would agree with
+26   you that Bader, Lyons and Berg in the main would
+27   disallow those samples.
+28            MR. KORT:  Yeah.
+2410
+ 1            THE COURT:  So the question is, what are those
+ 2   samples, where are they referenced.  And then,
+ 3   Attorney Kagan, you need to respond given what the court
+ 4   is -- in approaching it.
+ 5            MS. KAGAN:  I'm happy to respond.
+ 6            THE COURT:  So it really comes down to whether
+ 7   or not these are archive representative samples or, as
+ 8   Mr. Kort is contending, they are representative samples
+ 9   that do not correlate with the relevant use period or
+10   distribution period.  That's, I think, the issue.  Is
+11   that correct, Mr. Kort?
+12            MR. KORT:  It is.
+13            THE COURT:  Okay.
+14            MR. KORT:  I'm just going to answer those
+15   questions and I'll turn it over to Ms. Kagan, Your
+16   Honor.  I think you asked two questions.  Are there
+17   representative samples that Dr. Longo tested related to
+18   the time period that Ms. Zimmerman used?  Yes.  And he's
+19   going to testify about that and I'm not seeking to
+20   exclude that.
+21            THE COURT:  So there's no objection to those.
+22   Okay.
+23            MR. KORT:  No.  Any samples that are from 1964
+24   to 2004, no, there's no objection because --
+25            THE COURT:  Okay.
+26            MR. KORT:  -- that's when Whittaker was
+27   distributing talc and that's when Ms. Zimmerman was
+28   using talcum powder products.
+2411
+ 1            THE COURT:  Okay.
+ 2            MR. KORT:  The objection, and this is where the
+ 3   disagreement is, and Ms. Kagan will inform the court of
+ 4   her position, but the objection is whether the
+ 5   Chanel No. 5 powders that Dr. Longo tested after 2004,
+ 6   whether that's linked to Whittaker or, as the court
+ 7   says, whether that's a representative sample of the talc
+ 8   that Ms. Zimmerman used in her Chanel No. 5, even if it
+ 9   was prior to 2005.  My position is no.  Ms. Kagan takes
+10   the opposite position.
+11            And the problem and the prejudice here,
+12   Your Honor, the 352, is Whittaker cannot respond to what
+13   happened between the mine source and the manufacturer
+14   after it stopped distributing talc.  We have no answer
+15   for that.  We don't have that information.  So by
+16   allowing Dr. Longo to testify about those samples, the
+17   jury -- it's just more evidence the jury is going to use
+18   against Whittaker.
+19            THE COURT:  I just need to get the samples that
+20   are at issue because this is a factual -- I look at this
+21   as a factual foundation question.  And I look at it as a
+22   chain of custody question.  And I look at it as a
+23   representative sample question.  Much of it is going to
+24   turn on the factual offer of proof.
+25            MS. KAGAN:  I can direct Your Honor's attention
+26   to the samples.  We have it on the flash drive.
+27            THE COURT:  Attorney Kagan, before we go, I
+28   just want to make sure Mr. Kort is finished and he's
+2412
+ 1   ready to yield the floor and I'll be more than happy
+ 2   to --
+ 3            MS. KAGAN:  I just want to help both of you.
+ 4            MR. KORT:  I'll reserve after Ms. Kagan.
+ 5            THE COURT:  So you yield the floor to
+ 6   Ms. Kagan?
+ 7            MR. KORT:  Yes, Your Honor.
+ 8            THE COURT:  All right.  Go ahead, Ms. Kagan.
+ 9            MS. KAGAN:  First, for the record, attempting
+10   to direct the court and Mr. Kort to the specific samples
+11   that are at issue.
+12            THE COURT:  I appreciate that.
+13            MS. KAGAN:  Make sure we're clear on that.  If
+14   Your Honor turns to the flash drive, it's
+15   Exhibit 1792-10.
+16            THE COURT:  1792-10.  And what else?
+17            MS. KAGAN:  And this is -- well, this is just a
+18   summary chart I want Your Honor to look at so we can get
+19   it on the record of what specific samples we're talking
+20   about.
+21            THE COURT:  Let me pull that up.  Just a
+22   moment.  Okay.  Do you have a copy, Attorney Kort, of
+23   1792-10?
+24            MR. KORT:  Yes, Your Honor.
+25            THE COURT:  We have one drive, I have to upload
+26   it, and it is somewhat slow in terms of downloading so
+27   just give me a second.
+28            MR. KORT:  The Internet is a little slow here,
+2413
+ 1   too, Your Honor, so I have to upload it as well.
+ 2            THE COURT:  Part of it has to do with the
+ 3   servers that we use.  Okay.  I have it up.
+ 4            MS. KAGAN:  If Your Honor turns to page 20; the
+ 5   PDF, page 20.  And this, again, is simply for
+ 6   identification so that we all know what we're talking
+ 7   about.
+ 8            THE COURT:  All right.  1710, it says on the
+ 9   first page, "Declaration of William Longo."
+10            MS. KAGAN:  Correct.  And it attaches the chart
+11   that identifies every container that he analyzed of
+12   Chanel and the corresponding vintages, the corresponding
+13   source of talc.
+14            THE COURT:  Which exhibit is that?  Is that A?
+15            MS. KAGAN:  That's B.  So it's PDF, page 20 is
+16   the one we're talking about, the products that are at
+17   issue.
+18            THE COURT:  All right.  So I'm on Exhibit B.
+19            MS. KAGAN:  If you scroll to PDF, page 20,
+20   beginning with sample No. 25, it says -- sample 25
+21   through 39 are the ones that Mr. Kort is objecting to.
+22            THE COURT:  Maybe I'm off on this, but my
+23   samples only go to 15.
+24            MS. KAGAN:  If you go to PDF, page 20.
+25            THE COURT:  PDF, page 20.
+26            MS. KAGAN:  I'm sorry.  Are you on the
+27   Jean Nate chart?
+28            THE COURT:  I'm on the MSA chart of Jean Nate.
+2414
+ 1            MS. KAGAN:  Oh, I'm sorry.  It's
+ 2   Exhibit 1792-11, not 10.  That's my fault.  I'm sorry.
+ 3            THE COURT:  Okay.  So we're talking -- 1792-
+ 4            MS. KAGAN:  Dash 11.
+ 5            THE COURT:  Okay.
+ 6            MS. KAGAN:  We have it up here, actually.
+ 7   Thank you, Ryan.
+ 8            So what we are talking about are Nos. 25
+ 9   through 39 for the record.  And numbers 25 through 36 --
+10   25 through 36 are Chanel No. 5 products that are
+11   Chanel's retained.  These are from Chanel.  They are
+12   from their historic collection.  They retain them in the
+13   event that somebody has an allergic reaction.
+14            THE COURT:  They're archives.
+15            MS. KAGAN:  They're archives produced by Chanel
+16   in this case.
+17            THE COURT:  But the vintage does not seem to
+18   match.
+19            MS. KAGAN:  If I can, Your Honor, the vintage
+20   does match.  It's because it's the same talc.  And this
+21   is exactly what Lyons said.  I represented Mary Lyons.
+22   That was my case.  I tried that case.  And Mary Lyons'
+23   exposure period ended in 1971.  The 50 products at issue
+24   in that case, the Cashmere Bouquet, extended into the
+25   1990s.  And the court found that those were
+26   representative of Mary's exposure prior to that time
+27   period because the talc was the same.
+28            And so here we have, for all of these
+2415
+ 1   containers from '09 through '11, the same Chinese talc
+ 2   that was in the same containers that Ms. Zimmerman used.
+ 3   And it's the same Chinese talc that Whittaker supplied.
+ 4            THE COURT:  The offer of proof would have to be
+ 5   because you've got Lyons and that's one set.  You've got
+ 6   Berg and you've got Bader, and they're slightly
+ 7   different.  But what you would have to show is that,
+ 8   because, apparently, it was both testing, but it was
+ 9   both testing from what time period.
+10            As I see the column that you're pointing me to,
+11   if you could scroll up to the first one, 25.  And if you
+12   look at the column where it has the year, it says
+13   vintage 2009.  And then you scroll down to 35, so it's
+14   2010, 2014, 2011.  All of those come from a vintage
+15   which, apparently, is not the relevant time frame.
+16            So what you would have to establish is that --
+17   and if you can do this, I don't know that you can, that
+18   the sourced talc was derived from the same mines during
+19   the same time period.  And I don't know how you would do
+20   that.
+21            MS. KAGAN:  I've got invoices, I've got
+22   Whittaker's sales records, I have Chanel's corporate
+23   testimony, I have Chanel's interrogatories, and I have
+24   invoices that show that the talc is exactly the same,
+25   the one that Whittaker sold in '02 to the one that
+26   Linda Zimmerman was exposed to.  '02 is the exact one
+27   that is in these containers and I have that.  Again --
+28            THE COURT:  So here's the foundational fact
+2416
+ 1   that you would have to establish because, one, on its
+ 2   face, the vintage does not match.  The use period and
+ 3   the distribution period, so you have got to show that
+ 4   the vintage that you're referring to is derived from, A,
+ 5   Whittaker, Clark & Daniels, and B, from the source pile
+ 6   during the relevant time period.
+ 7            MS. KAGAN:  I can show that, Your Honor, and
+ 8   Dr. Longo will actually testify to that.  There are
+ 9   exhibits on your flash drive that support that.  He has
+10   reviewed Chanel's testimony from the corporate
+11   representative, he has reviewed their interrogatory
+12   responses, and I literally have their specifications
+13   that show --
+14            THE COURT:  Then give me that offer of proof
+15   because the 1792-11, samples 25 through 34, conflict
+16   with that representation on their face.
+17            MS. KAGAN:  Your Honor, if you could please
+18   turn to Exhibit 5116-5.
+19            THE COURT:  Where is that?
+20            MS. KAGAN:  That is on your flash drive.
+21            MR. KORT:  I would just ask for a moment,
+22   Your Honor, also to pull that up, please.  Ms. Kagan
+23   sent that electronically to me and I'm just trying to
+24   pull it up.
+25            THE COURT:  All right.  So, Ms. Kagan, you want
+26   me to look at which exhibit?
+27            MS. KAGAN:  My tech actually has it up on your
+28   screen, Your Honor.  It is Exhibit 5116-5.
+2417
+ 1            THE COURT:  Walk me through that.  I'm looking
+ 2   at it now.
+ 3            MS. KAGAN:  This is a document that Chanel
+ 4   produced.  This is Chanel's raw material specifications
+ 5   that was issued in September of 2000.  So
+ 6   Linda Zimmerman is using this product.  This is the
+ 7   years that Linda is using this product.  And it has
+ 8   "Distributor:  Whittaker, Clark & Daniels."
+ 9            THE COURT:  Where does it say that?
+10            MS. KAGAN:  Bottom.  Ryan, can you scroll to
+11   the right bottom?
+12            Right there, "Distributor:  Whittaker, Clark &
+13   Daniels."
+14            THE COURT:  And so from your --
+15            MS. KAGAN:  And if you look at the --
+16            THE COURT:  What I'm trying to determine, so
+17   that tells you that they got there --
+18            MS. KAGAN:  It's Supra H, so if we can scroll
+19   up to the top, Ryan, the talc is Supra H talc.  Supra H
+20   talc is the name for the Chinese talc.
+21            THE COURT:  So that's sourced from which mines?
+22   Because it's going to the source mine.
+23            MS. KAGAN:  Correct.
+24            THE COURT:  And establishing contamination.
+25            MS. KAGAN:  Correct.
+26            THE COURT:  And tying it to the use period and
+27   the distribution period.  That is critical.
+28            MS. KAGAN:  Right.  It's the Guangxi Mine.
+2418
+ 1   It's the same mine that J&J used.  It's the same mine
+ 2   that Imerys milled and sold to Whittaker.  And if you
+ 3   actually look down and we scroll, you can see in 2000,
+ 4   the manufacturer here for this is listed as Luzenac.
+ 5   That's the same one for J&J, the same Chinese mine, but
+ 6   for Chanel, Whittaker was distributing it to Chanel
+ 7   versus for J&J, Imerys was distributing it for J&J.
+ 8            THE COURT:  Now, does the representative
+ 9   testing come from that source mine during the relevant
+10   time period --
+11            MS. KAGAN:  Yes.
+12            THE COURT:  -- which is 2004 to 2005?
+13            MS. KAGAN:  Yes.  So we have testing.
+14            THE COURT:  How do you tie that?  Because I
+15   don't necessarily see that link in this exhibit.
+16            MS. KAGAN:  I'm not sure what you're asking.
+17   You're asking to show you that there's testing of this
+18   talc in Dr. Longo's testing?
+19            THE COURT:  Yes.
+20            MS. KAGAN:  If we can go back.
+21            THE COURT:  How do you link Dr. Longo's testing
+22   chart, which says it's from a different vintage, to your
+23   representation that this is the same source talc during
+24   the relevant time period that he relied upon as a
+25   representative sampling?
+26            MS. KAGAN:  It's the only Supra H.  There is no
+27   other Supra H.  Supra H is Supra H is Supra H.  And so
+28   when Whittaker --
+2419
+ 1            THE COURT:  The Supra H alone, it's not the
+ 2   talc.
+ 3            MS. KAGAN:  Yes, it is, Your Honor.
+ 4            THE COURT:  Well, hold on.  You have to
+ 5   establish that that talc was contaminated during the
+ 6   relevant time period.
+ 7            MS. KAGAN:  Right.
+ 8            THE COURT:  And I need to see what was the
+ 9   level of contamination, and I need to -- what's your
+10   offer of proof from a statistician --
+11            MS. KAGAN:  Absolutely.
+12            THE COURT:  -- that this is from the relevant
+13   time period and at least what percentage of it was
+14   contaminated?  Because that's critical.
+15            MS. KAGAN:  Absolutely, 100 percent of the
+16   testing of the Chinese talc has shown asbestos.
+17   Dr. Madigan will be here next week.  He is a
+18   statistician.  Dr. Madigan will testify that,
+19   statistically, these findings are representative, they
+20   are unbiased in that there is literally every single
+21   Chinese sample that was tested contains asbestos,
+22   chrysotile and amphibole.
+23            And so whether it's from 2011 or it's from
+24   2000, it is the exact same mine, it is the exact same
+25   manufacturer.  Whittaker was a distributor until '04 and
+26   then they stopped distributing it, but the talc is the
+27   same.  And Dr. Madigan will testify that that is --
+28            THE COURT:  When you say the talc is the same,
+2420
+ 1   then are you then saying that, because Dr. Longo says
+ 2   his samples are from 2011?  What was distributed by
+ 3   Chanel in 2011?  What the real question from the court's
+ 4   perspective is, are you relating that back to the source
+ 5   mines from 2004 or before?
+ 6            MS. KAGAN:  Absolutely.
+ 7            THE COURT:  How do you do that?  How do you
+ 8   make that link?
+ 9            MS. KAGAN:  Their geologist tells that to us.
+10   Their geologist, Alan Seagrave, explains that talc
+11   mines, they don't change from year to year.  He actually
+12   called them a homogenous talc variety.
+13            THE COURT:  But that's not the issue.  The
+14   issue isn't whether or not the mines change.  The issue
+15   is, is the sampling that Dr. Longo is relying on from
+16   the same vintage as the time period when Whittaker --
+17            MS. KAGAN:  Yes.
+18            THE COURT:  -- was distributing the talc --
+19            MS. KAGAN:  Yes, Your Honor.
+20            THE COURT:  -- that was contaminated?
+21            MS. KAGAN:  Yes, Your Honor.
+22            THE COURT:  Okay.  Where is that evidence?
+23            MS. KAGAN:  If we can go back to the chart,
+24   please.
+25            THE COURT:  Because, again, the problem I'm
+26   having is that Dr. Longo's vintage is post 2004.  So if
+27   -- I don't know what his vintage means.  Maybe we need
+28   to hear from Dr. Longo.
+2421
+ 1            MS. KAGAN:  I think we need to hear from
+ 2   Dr. Longo because he will link all of this foundation.
+ 3            THE COURT:  All right.  Then let's get him in
+ 4   here and let's hear from him briefly.  I would just ask
+ 5   him a few questions.  I don't think we need to spend a
+ 6   lot of time on it.
+ 7            MS. KAGAN:  Sure.  He should be in the hallway.
+ 8   I'll be right back.
+ 9            THE COURT:  Because I hear what you're saying.
+10   But here's the concern I have.  You seem to be saying
+11   that all the talc that was used post 2004 that was
+12   tested in subsequent vintage years was the same talc.
+13   And I'm not -- that may or may not be true.  That's not
+14   the issue for me.
+15            The issue is offer of proof that the talc, one,
+16   was from that same time period; and two, that that talc
+17   from that time period tested positive for asbestos.  And
+18   then at that point, it's a matter of numbers and then
+19   that goes to weight.  I don't seem to see the link at
+20   this moment between the 2004 -- or before supply and
+21   whether or not that supply was contaminated with
+22   asbestos.  And that's what he's relying on when he says
+23   vintage 2011.
+24            The conflict is that the vintage that Dr. Longo
+25   is referencing does not match the distribution time
+26   frame.  That's the concern I have.
+27            MS. KAGAN:  Your Honor, I have causes of action
+28   for negligence, strict products liability, failure to
+2422
+ 1   warn, and for design defect, and for manufacturing
+ 2   defect.  I have to prove that there is asbestos in the
+ 3   talc.  And so the talc is the same.
+ 4            THE COURT:  From the relevant time period.
+ 5            MS. KAGAN:  Right.  But if the talc is exactly
+ 6   the same, that's what Lyons says.  Mary Lyons stopped
+ 7   using Cashmere Bouquet in 1971.  The products at issue
+ 8   in Lyons went through to 1990.  And our appellate court
+ 9   said that that was appropriate and representative
+10   because the talc was the same.
+11            THE COURT:  But Lyons was 2017.  Berg and Bader
+12   followed that and defined it more.
+13            MS. KAGAN:  Berg and Bader only had one
+14   container, Your Honor.  We're not talking about one
+15   container being representative of an entire time period.
+16   We're talking about a significant number of containers
+17   tested over a long time period and the talc being
+18   exactly the same as the exposure time period.
+19            THE COURT:  Let's talk about the holding in
+20   Lyons.  The issue in that case was whether the
+21   declaration raised a triable issue of material fact in
+22   the Cashmere Bouquet plaintiff used over a 20-year time
+23   frame contained asbestos.  And the court ruled yes,
+24   based on those facts.
+25            And, basically, the appellate court ruled that
+26   the Fitzgerald conclusion that all the Cashmere Bouquet
+27   talcum sold during the relevant time period, and that's
+28   the language that the court used in Lyons, contained
+2423
+ 1   asbestos was acceptable because -- because Colgate had
+ 2   waived its objection to the declaration and because,
+ 3   quote, "any deficiency in that respect was not
+ 4   apparent."
+ 5            So you got to read Lyons in conjunction with
+ 6   Berg and Bader, which followed that.  And when you look
+ 7   at the rationale in Lyons, the Fitzgerald declaration
+ 8   opined that all of the Cashmere Bouquet product
+ 9   contained significant concentrations of airborne
+10   asbestos during the relevant time period based on
+11   testing conducted on samples from the relevant time
+12   period.
+13            MS. KAGAN:  Right.
+14            THE COURT:  So if you can establish that the
+15   testing is from -- is based on -- conducted on samples
+16   from the relevant time period, and the relevant time
+17   period is -- when did she start using it?
+18            MS. KAGAN:  1964.
+19            THE COURT:  To 2004.
+20            MS. KAGAN:  '05.
+21            THE COURT:  Or '05 based on use, because you
+22   got that time period where there may be a lag where
+23   Whittaker, Clark & Daniels says we stopped making talc,
+24   supplying talc.
+25            The issue I'm having is, Dr. Longo says my
+26   samples come from a different time period.  So even
+27   under Lyons, you've got to tie that portion up.
+28            MS. KAGAN:  But that's not what Dr. Longo says.
+2424
+ 1   He has samples from the time period she was exposed in
+ 2   his samples that are after that time period.  And he
+ 3   says that they are representative, the ones that are
+ 4   after are the same as the ones that were before.  I'm
+ 5   happy to have him say that.
+ 6            THE COURT:  I need to hear from Dr. Longo.  But
+ 7   before we call him, Mr. Kort, I'll hear from you.
+ 8            MR. KORT:  Two brief things and then let's get
+ 9   Dr. Longo in here.
+10            The chart that is on the screen right now also
+11   references samples, quote/unquote, 2000s.  So that's
+12   vague.  And I think --
+13            THE COURT:  Sample what?
+14            MR. KORT:  For instance --
+15            THE COURT:  Point me to what you're
+16   specifically talking about.
+17            MR. KORT:  Would you mind scrolling up, sir?
+18            THE COURT:  Because this comes down to what are
+19   the columns and what does vintage mean.
+20            MR. KORT:  For instance, Your Honor, No. 22.
+21   So that says "2000s."  So I would just say we're going
+22   to hear from Dr. Longo, you're going to ask Dr. Longo
+23   some questions.  But "2000s" is vague, so if 2000s means
+24   -- if it can't be shown that 2000s means before 2004 or
+25   2005, then I think those also fall under the same
+26   argument.
+27            And, secondly, Your Honor, and I think you're
+28   familiar with the issues, but it's a 352 issue as well
+2425
+ 1   by allowing this evidence in as to Whittaker.
+ 2            THE COURT:  I think it raises a Lyons/Berg
+ 3   question.  I think we need to hear from Dr. Longo.  I
+ 4   understand what the issue is.  I understand your
+ 5   position.  I think, Attorney Kagan, in that you're
+ 6   arguing, look, it's the same sourced talc, all right, so
+ 7   we should be able to get the representative samples,
+ 8   then, because it's from the same sourced talc.  But
+ 9   that's not the end of the analysis.  It has to be from
+10   the same relevant time period.
+11            You are arguing that it is from the same
+12   relevant time period.  I don't know that for a fact.
+13   And what contradicts that is Dr. Longo's chart because
+14   the vintage does not match the vintage that we're
+15   referring to, so that needs to be explained.  That
+16   suggests that there's some issue with his chart.  That's
+17   all I'm saying.  You got to tie it into the relevant
+18   time period.
+19            MS. KAGAN:  There is no issue with his chart.
+20   The Chanel routine -- the dates that are listed that are
+21   2009, 2010, those are the correct dates.  And yes,
+22   Linda Zimmerman was not using Chanel at that time.  But
+23   the talc inside of those containers is the exact same
+24   talc that she was exposed to in the earlier years.  And
+25   Dr. Longo --
+26            THE COURT:  But that's not the issue.  The talc
+27   itself is not the issue.  The issue is whether or not
+28   it's contaminated.
+2426
+ 1            MS. KAGAN:  Exactly, Your Honor.  The talc is
+ 2   what has the hazard in it.  And if the talc is the same,
+ 3   if the --
+ 4            THE COURT:  You have to show that it contained
+ 5   asbestos, though --
+ 6            MS. KAGAN:  Right, Your Honor, and we have.
+ 7            THE COURT:  -- from the same time period.  If
+ 8   it's not the same relevant time period, the problem with
+ 9   your argument, Attorney Kagan, from my perspective, is
+10   you seem to be saying you want the court to assume that
+11   once you find contamination in the talc from any time
+12   period, does that mean every time period was
+13   contaminated?
+14            MS. KAGAN:  No, absolutely that's not correct.
+15   It's based on a statistical analysis.  Dr. Longo
+16   analyzed over 20 samples of Chinese talc from the
+17   vintage that is relevant and vintages that are after.
+18            THE COURT:  We need to hear from Dr. Longo.
+19            MS. KAGAN:  Okay.
+20            THE COURT:  Because I understand your argument,
+21   but you got a conflict in the evidence.  And the way
+22   it's presented, it needs to be clarified.  And I think
+23   only Dr. Longo can do it.  This is a factual dispute.
+24            MS. KAGAN:  Absolutely.
+25            THE COURT:  I understand your position, but I
+26   need to hear from Dr. Longo.
+27            MS. KAGAN:  Absolutely.
+28            THE COURT:  Anything further before we bring
+2427
+ 1   Dr. Longo in?
+ 2            MR. KORT:  No, Your Honor.  Thank you.
+ 3   
+ 4            (Interruption in proceedings.)
+ 5   
+ 6            MS. KAGAN:  May Dr. Longo take the stand?
+ 7            THE COURT:  Yeah, please.  Okay.  Do you want
+ 8   to just lay a foundation to tie the time period to the
+ 9   samples that you're referring to?
+10            MS. KAGAN:  Sure.  Yes, Your Honor.  Thank you.
+11            THE COURT:  All right.
+12   
+13                      DIRECT EXAMINATION
+14                          (VOIR DIRE)
+15   
+16   BY MS. KAGAN:
+17       Q    Dr. Longo, we have your --
+18            THE COURT:  One second.  Have we sworn
+19   Dr. Longo yet?
+20            THE CLERK:  He's still under oath, Your Honor.
+21            THE COURT:  Just remind you, you're still under
+22   oath, Dr. Longo.
+23            THE WITNESS:  Yes, Your Honor.
+24            THE COURT:  Continue.
+25   BY MS. KAGAN:
+26       Q    Dr. Longo, we have your testing summary chart
+27   up for the Chanel product.  And the issue that we need
+28   to establish is whether or not the post 2005, so Linda's
+2428
+ 1   post-exposure containers, are representative of the
+ 2   containers that you analyzed that represent the time
+ 3   period she actually used the containers.
+ 4            So first let's take a look at sample 22.  You
+ 5   can see that on your screen, it says "Ripley."  I
+ 6   retained you in the Ripley case, didn't I?
+ 7       A    Yes, ma'am.
+ 8       Q    And you have here that the time period for that
+ 9   container is 2000s and the source is Chinese.  Do you
+10   remember more specifically when Ms. Ripley had recalled
+11   using that container and buying that container?
+12       A    It was approximately 2001 or 2002, as I recall.
+13       Q    And is that during Linda Zimmerman's exposure
+14   period?
+15       A    Yes.  She was exposed to Chanel No. 5 up to
+16   2005, if I recall correctly.
+17       Q    Now, this Chinese talc that's in the Ripley
+18   container from approximately '01 or '02, is that the
+19   same Chinese talc, the same grade that was in the Chanel
+20   retained that you analyzed that began starting in 2009?
+21            THE COURT:  Is the issue the same grade or the
+22   same source mine?
+23            MS. KAGAN:  That's a good question, Your Honor.
+24       Q    Is it from the same source mine?
+25       A    Yes, it is.
+26       Q    And how do you know it's from the same source
+27   mine?
+28       A    Because they used Supra H.  And Supra H came
+2429
+ 1   from the Guangxi mine in China.  And it's cosmetic talc
+ 2   grade, so it's usually minus 200, but plus 325 mesh for
+ 3   cosmetic for the Supra H.
+ 4       Q    And this Guangxi mine source, that was the same
+ 5   for the Ripley sample that was from 2001-2002 and the
+ 6   same for the after-'09 samples.  Have you actually
+ 7   analyzed that same grade of talc, just independently,
+ 8   just that talc?
+ 9            THE COURT:  Well, I want to -- you're
+10   introducing the concept of "same grade."  I don't know
+11   what "same grade" means.
+12            MS. KAGAN:  I keep saying "grade."  I should
+13   say same "mine source."
+14            THE COURT:  Thank you.
+15            MS. KAGAN:  I'm sorry, Your Honor.
+16            THE WITNESS:  Yes, same mine source.
+17   BY MS. KAGAN:
+18       Q    So it's the same mine source during Linda's use
+19   that you analyzed and the same mine source for the same
+20   containers after?
+21       A    That is correct.
+22       Q    Have you analyzed the Chinese talc from that
+23   mine source in its ore form outside of a product?
+24       A    Yes, both it's ore form as well as the minerals
+25   that were put into it.
+26       Q    And all the Chinese products that you -- the
+27   Chinese mine source ones that we're talking about here,
+28   the sample 22, all of the ones from '09 after, and then
+2430
+ 1   those actual talc samples from the mine source, did they
+ 2   all contain asbestos?
+ 3       A    A hundred percent of them were positive for
+ 4   asbestos.
+ 5            THE COURT:  Well, but here's the issue.  We
+ 6   need to look at the -- we've got 22, so I'm satisfied as
+ 7   to 22.  But we need to establish 25 through 39 because
+ 8   those vintage years --
+ 9            MS. KAGAN:  Okay.
+10            THE COURT:  -- are from different time frames.
+11   BY MS. KAGAN:
+12       Q    So let's look at No. 25.  Number 25, you have,
+13   Dr. Longo, from 2009 vintage.  And it says "Chinese."
+14   Is that Chinese mine the same as the container from
+15   Ripley from '01?
+16       A    Yes, it is.
+17       Q    Now, No. 26 --
+18            THE COURT:  Wait a minute.  Let me go back.  I
+19   have some questions.  You see sample No. 25 on, what is
+20   this, Exhibit 17- --
+21            MS. KAGAN:  -92-11.
+22            THE COURT:  -92-11.  You see the columns.  Did
+23   you prepare this document?
+24            THE WITNESS:  It was a joint effort, yes.
+25   That's all my data in that document.
+26            THE COURT:  But did you actually prepare the
+27   chart?
+28            THE WITNESS:  No.  I pulled in the chart.
+2431
+ 1            THE COURT:  Do you know how the chart was
+ 2   prepared?
+ 3            THE WITNESS:  Yes, sir.  It was our data.
+ 4   There were columns, the end numbers were put in, the
+ 5   M69785-001, that is our laboratory tracking number when
+ 6   we get the sample.  And then all the data there is what
+ 7   we did for analysis.
+ 8            THE COURT:  I want to go to the column that has
+ 9   the vintage.  It says 2009; right?  Did you populate
+10   that column "2009"?
+11            THE WITNESS:  Yes.
+12            THE COURT:  Okay.  And how did you assign the
+13   vintage date for that particular sample, 25?
+14            THE WITNESS:  I didn't establish it.
+15            THE COURT:  You didn't establish it?
+16            THE WITNESS:  The defense attorneys for Chanel
+17   established it because they're the ones who provided
+18   those samples.
+19            THE COURT:  So then your -- you are relying
+20   upon what to ascertain the vintage year for those
+21   samples?
+22            THE WITNESS:  I'm relying on the manufacturer
+23   because they're the ones, Chanel, who produced those and
+24   that is the type of container also that --
+25            THE COURT:  Did Chanel -- so you made the
+26   assumption that it was from 2009 based upon information
+27   you received from Chanel; is that a fair statement?
+28            THE WITNESS:  Yes, Your Honor.  It's fair to
+2432
+ 1   say that I relied on Chanel to say what time they made
+ 2   these containers.
+ 3            THE COURT:  Okay.  Is that true for -- let's
+ 4   scroll down.  For 27, just in that column for vintage
+ 5   year, it says "2010."  How did you ascertain the vintage
+ 6   year for 2010 for item 27?  You made an assumption about
+ 7   it, or did you research it?  What did you do?
+ 8            THE WITNESS:  I relied on Chanel because that's
+ 9   what they put in their statement.  I think it was an
+10   interrogatory because these were their samples that they
+11   had to turn over to us or turn over to plaintiffs to us.
+12   So they said yes, these are our retaineds, meaning they
+13   keep them for whatever reason.  And this is when it was
+14   manufactured.
+15            THE COURT:  So as we go through item 28 through
+16   35, let's just scroll down, I'm looking at the column
+17   vintage, is it your representation that the vintage that
+18   you listed in that column is derived from an assumption
+19   based upon what Chanel told you in interrogatory
+20   responses?
+21            THE WITNESS:  Yes, sir.  I just assumed that
+22   they were correct.
+23            THE COURT:  Okay.  Anything further?
+24            MS. KAGAN:  Yes, Your Honor.
+25       Q    Dr. Longo, did you receive chains of custody
+26   from Chanel that accompanied these containers?
+27       A    Yes, ma'am.
+28       Q    And did Chanel identify the -- if you look at
+2433
+ 1   next to the column it says "Sender" and "Chanel."  Did
+ 2   Chanel actually assign a specific number to each
+ 3   container?
+ 4       A    That is their chain of custody number that
+ 5   arrived with the container.  And if you go up on the
+ 6   photographs, you can see there's stickers on it with
+ 7   their numbers.
+ 8       Q    And did the chain of custody to your
+ 9   recollection also include a date for the vintage of the
+10   specific container from Chanel?
+11       A    Yes.  That's where I received -- that's where I
+12   got the information on what they said is when it was
+13   manufactured.
+14       Q    And it was the same mine as the talc that they
+15   used for that Ripley container in '01 or '02?
+16       A    Yes, ma'am.
+17       Q    Okay.  Thank you.
+18            THE COURT:  Cross?
+19   
+20                       CROSS-EXAMINATION
+21                          (VOIR DIRE)
+22   
+23   BY MR. KORT:
+24       Q    Dr. Longo, directing you to row 29 where it
+25   indicates a vintage year of 2012.  Do you see that, sir?
+26       A    Yes, sir, I do.
+27       Q    That Chanel No. 5 product, are you able to say
+28   that that incorporated any talc that Whittaker
+2434
+ 1   distributed prior to 2004?
+ 2       A    Personally, no.  I don't have that information.
+ 3       Q    And that's true for any product from -- I don't
+ 4   know if it starts at 29, but with any vintage in the
+ 5   2012 time frame, 2009 time frame, 2008 time frame, 2007
+ 6   time frame, you can't say whether that Chanel No. 5
+ 7   product incorporated any talc that was distributed
+ 8   specifically by Whittaker years earlier; is that true?
+ 9       A    I don't have the personal knowledge.  I only go
+10   by what Whittaker says and what Chanel says.  I don't
+11   have any personal knowledge.  I wasn't there when it got
+12   bottled.
+13            THE COURT:  Anything further?
+14            MS. KAGAN:  Yes, Your Honor.
+15   
+16                     REDIRECT EXAMINATION
+17                          (VOIR DIRE)
+18   
+19   BY MS. KAGAN:
+20       Q    The asbestos contamination in each of these
+21   products that you analyzed, where did you determine that
+22   contamination came from?
+23       A    The talc.
+24       Q    And, specifically, did it come from the talc
+25   mine or did it come from some outside source?
+26       A    Oh, the chrysotile content that we found in
+27   each of these absolutely came from the mine.  The
+28   concentrations we're finding of chrysotile and the lack
+2435
+ 1   of amphibole asbestos points to the Chinese mine because
+ 2   that particular mine, the accessory minerals are rich in
+ 3   chrysotile, but lacking somewhat in the amphiboles.
+ 4   Very rarely find the amphiboles asbestos, but you find
+ 5   -- always find this level of chrysotile asbestos.
+ 6            THE COURT:  Can you tell me what -- let's, for
+ 7   example, take the item 22.  Go up to sample 22, which
+ 8   was within the use time frame.  Can you tell me whether
+ 9   or not asbestos was found in that sample?
+10            THE WITNESS:  It was.
+11            THE COURT:  And what percentage of the asbestos
+12   was found in the sample?  What percentage?
+13            THE WITNESS:  Our results showed 0.2 to
+14   0.6 percent.
+15            THE COURT:  All right.  And did you have a --
+16   did you rely on any of the calculations of Dr. Madigan
+17   to determine the probability of whether or not -- the
+18   probability of contamination throughout the distribution
+19   of that product?
+20            THE WITNESS:  No.  Our -- our analysis is not
+21   relying on any statistical information that Dr. Madigan
+22   -- I believe he relies on what our results are instead
+23   of vice versa.
+24            THE COURT:  So did you analyze any of the talc
+25   from sample 22 where there was no asbestos in it?
+26            THE WITNESS:  No, sample 22, our analysis
+27   showed there was asbestos.
+28            THE COURT:  All right.  Anything further?
+2436
+ 1            MS. KAGAN:  No, Your Honor.
+ 2            THE COURT:  And let me ask a couple of
+ 3   questions.  With respect to -- let's move forward to
+ 4   item 25.  Now, that sample you have, did you find that
+ 5   was contaminated?
+ 6            THE WITNESS:  Yes, sir.  It had chrysotile
+ 7   asbestos in it.
+ 8            THE COURT:  And at what percentage?
+ 9            THE WITNESS:  0.006 to 0.0009 percent.
+10            THE COURT:  So that percentage varied from
+11   sample 22; is that correct?
+12            THE WITNESS:  Yes, sir.  It varied in that it
+13   was one of our first chrysotile analysis for the Ripley
+14   before we got our analyst calibrated to the actual
+15   weight percent.  It would be my opinion within a
+16   reasonable degree of scientific certainty if we would go
+17   back to analyze it, we would still find chrysotile, but
+18   it would be more in line with the lower percentages.
+19            THE COURT:  And is it your understanding that
+20   asbestos is not an intentional ingredient in talc?
+21            THE WITNESS:  It is not.
+22            THE COURT:  And is it your understanding that
+23   talc can be asbestos-free at any point in time?
+24            THE WITNESS:  No.
+25            THE COURT:  So it's your position that there is
+26   no asbestos-free talc?
+27            THE WITNESS:  It's my position that at our
+28   current detection limits, we can never say it's
+2437
+ 1   asbestos-free.  We can say it's non-detect, but no
+ 2   scientists can really ever say it's talc free unless you
+ 3   can get analytical sensitivity down to finding one fiber
+ 4   per gram.
+ 5            THE COURT:  And what's the non-detect level
+ 6   from your perspective?
+ 7            THE WITNESS:  Our perspective for TEM, our
+ 8   non-detect level, we have it down to approximately 5,000
+ 9   fibers per gram.  It has to have at least that much for
+10   us to see one.  And for PLM, we have now the detection
+11   down to 0.0001 percent by PLM.  If it's less than that,
+12   we probably won't detect it.
+13            THE COURT:  And is it fair that of the samples
+14   from 25 to 39, of all of those samples that you
+15   conducted, did you find asbestos in them?
+16            THE WITNESS:  Yes, sir.
+17            THE COURT:  Okay.  Was the -- what was the
+18   range of asbestos contamination in just those samples?
+19   High level.  Give me a high level.
+20            THE WITNESS:  I'm thinking we're looking at
+21   probably the low.  I would have to refresh my memory, go
+22   back to 22, and scan real quickly.  Now, 22 is -- 22 and
+23   23, as I've testified, those I would expect to be lower,
+24   so those are outliers at this point.  I would not use
+25   those as the high.
+26            And what were the other two?
+27            MS. KAGAN:  From 25, Dr. Longo, to --
+28            THE COURT:  Thirty-six.
+2438
+ 1            MS. KAGAN:  -- to 36.
+ 2            THE COURT:  Or 39, I think.
+ 3            MS. KAGAN:  Thirty-nine.
+ 4            THE WITNESS:  If you scroll through slow, I can
+ 5   do this.  Okay.  Okay.  The range would be on the high
+ 6   side, a 0.002 percent.  And on the low side would be
+ 7   0.000 -- I think it was 6.
+ 8            THE COURT:  So, then, the amount of asbestos
+ 9   contamination varied from sample to sample; is that
+10   correct?
+11            THE WITNESS:  Yes, sir, it does.  Not from
+12   sample to sample, but over the range from different
+13   samples.  And the range that we're talking about in
+14   variation, though, is between tenths to a thousandths of
+15   a percent.  So it is a range, but if you look at it as,
+16   well, what kind of range is that, it's a very short
+17   range.
+18            THE COURT:  Do you have an opinion as to what
+19   causes the range to vary some?
+20            THE WITNESS:  Two things.  One, I don't believe
+21   it's homogenous throughout the mine because it is an
+22   accessory mineral, so the mine will have more --
+23   sometimes have more of the accessory minerals than
+24   others.  And two, you have a human being who is making
+25   an estimated volume weight percent decision on what the
+26   range is.  Even though they're very skilled, I'm not
+27   surprised to see it within a thousandths to ten
+28   thousandths of a percent.
+2439
+ 1            THE COURT:  Anything further?
+ 2            MS. KAGAN:  No, Your Honor.
+ 3            THE COURT:  Anything further?
+ 4            MR. KORT:  No, Your Honor.
+ 5            THE COURT:  Can we release him for one moment?
+ 6            MS. KAGAN:  Yes, Your Honor.
+ 7            THE WITNESS:  Your Honor, is it okay if I leave
+ 8   my stuff up here?
+ 9            THE COURT:  Certainly.  Thank you, Dr. Longo.
+10            I think you have a foundational problem,
+11   Attorney Kagan.  How do you tie this up?  Do you have
+12   the interrogatory responses from Chanel where they
+13   acknowledge that the samples are from pre-2004 or 2004
+14   talc?  That's really the issue, because it appears that
+15   Dr. Longo made an assumption that it was the same talc
+16   from 2004, but he's relying upon the representation of
+17   Chanel.
+18            MS. KAGAN:  I'm happy to pull the
+19   interrogatories up for Your Honor.
+20            THE COURT:  All right.
+21            MS. KAGAN:  One moment.
+22            THE COURT:  Because I think that -- I think you
+23   got a foundational problem.
+24            MS. KAGAN:  I'm happy to pull up the
+25   interrogatories to answer this question.
+26            Your Honor, actually, I can direct you to --
+27   this is the corporate representative's testimony.  This
+28   is in page and lines and this is what we will actually
+2440
+ 1   be playing for the jury.
+ 2            THE COURT:  Do I have it in front of me?
+ 3            MS. KAGAN:  You do not.
+ 4            THE COURT:  If you can just get me the
+ 5   transcript or you can get your A/V to publish it so that
+ 6   I can see it.  And make sure that Attorney Kort has a
+ 7   copy.  Okay.  What do we have here?
+ 8            MS. KAGAN:  This is the May 9th, 2019,
+ 9   deposition of Chanel's corporate representative Amy
+10   Wyatt in the Aline case.  This was the page and line
+11   designations that Your Honor ruled on that we will be
+12   playing for the jury.
+13            THE COURT:  Okay.  What are you pointing them
+14   to?
+15            MS. KAGAN:  So we are at page 48, line 4.  She
+16   is asked --
+17            THE COURT:  One second.  So you're reading page
+18   48?
+19            MS. KAGAN:  Beginning at line 4.
+20            THE COURT:  Through what?
+21            MS. KAGAN:  Through 22.  And then, again, we
+22   will move to page 50, line 1 through 16.  She's
+23   explaining their talc sources for all of their vintages.
+24            THE COURT:  Before you read that into the
+25   record, do you have any objection or do you want to add
+26   a supplement to that?  I think we dealt with this on
+27   page/lines.
+28            MR. KORT:  No objection to reading the
+2441
+ 1   testimony, Your Honor.
+ 2            THE COURT:  Read it in, then.
+ 3            MS. KAGAN:  Actually, I'm going to start -- I'm
+ 4   actually going to start a little higher at 47, line 9.
+ 5            THE COURT:  Any objection to that, the
+ 6   highlighted portion?
+ 7            MR. KORT:  No, Your Honor.
+ 8            THE COURT:  All right.  Proceed.
+ 9            MS. KAGAN:  (Reading):
+10                "Q  So Chanel has maintained all
+11            of the retains, all of the retains
+12            from finished product and lots from
+13            2009 going forward; is that correct?
+14                "A  Correct.
+15                "Q  Is the 2009 samples, retains,
+16            do you know if those are Italian?
+17                "A  Yeah, so it is -- they're
+18            Supra H.  It's my understanding that
+19            they're Chinese talc.
+20                "Q  Based on your previous
+21            testimony, would you agree that
+22            Chanel No. 5 used Italian talc from
+23            approximately at least 1980 till
+24            2010?
+25                "A  So I had said before 2010
+26            because I was thinking that the
+27            Supra H USP was the Chinese, but it's
+28            actually Supra H that is Chinese.  So
+2442
+ 1            that would be earlier.
+ 2                "Q  Okay.
+ 3                "A  Not just 2010.
+ 4                "Q  Okay.
+ 5                "A  So it is into -- in the -- by
+ 6            early 2000s, that is Supra H, which
+ 7            is Chinese also.
+ 8                "Q  Okay.  So based on your
+ 9            investigation, when did Chanel No. 5
+10            Bath Powder start to exclusively use
+11            Chinese-based talcum powder?
+12                "A  So it is a little difficult
+13            to have an exact date because of,
+14            again, of our seven-year retention
+15            policy."
+16            And then Ms. Weiss, Chanel's attorney,
+17   clarified for her.  She continued answering (reading):
+18                "A  Okay.  I believe it was in --
+19            again, from the records, and it's
+20            better if we could lay them all out,
+21            but I believe it's around 2000, like,
+22            early 2000s.
+23                "Q  Okay.  Prior to that,
+24            Chanel No. 5 exclusively used Italian
+25            talc, correct, at least from 1980?
+26                "A  Yes, except I -- I understand
+27            that the Supra A could be Italian and
+28            Australian.
+2443
+ 1                "Q  A blend?
+ 2                "A  That's -- again, I'm not an
+ 3            expert on that, but my understanding
+ 4            is that Supra A was Italian and
+ 5            Australian and there was a time frame
+ 6            where Supra A was used."
+ 7            So here the corporate representative clearly
+ 8   says that, beginning in the early 2000s, in 2000, that
+ 9   the talc that Chanel used -- the No. 5 Bath Powder was
+10   the Supra H Chinese talc.  And that continues forward so
+11   it is the same talc.
+12            THE COURT:  That doesn't answer the court's
+13   question.
+14            MS. KAGAN:  I guess I'm not -- it's the same
+15   mine, it's the Chinese Guangxi mine.  They're calling it
+16   Supra H.  That's their brand name for it.
+17            THE COURT:  I don't dispute that.  That's not
+18   the issue for the court.
+19            MS. KAGAN:  In 2000, when Chanel started using
+20   it, it was that.  In 2010, Chanel continued to use it.
+21   It's the same -- I guess I'm not understanding what the
+22   issue is.
+23            THE COURT:  Mr. Kort?
+24            MR. KORT:  Chanel is not the defendant in the
+25   case.  Whittaker is the defendant in the case.  And
+26   there -- there is a foundational problem.  There's
+27   nothing from a Chanel representative saying that the
+28   samples that Dr. Longo tested were for the vintage year
+2444
+ 1   of 2009, 2010, whatever year you want to pick up from
+ 2   2005 that that talc is connected to Whittaker in any
+ 3   way.  There's no foundational issue for that.
+ 4            And Dr. Longo admitted he has no personal
+ 5   knowledge about that.  He doesn't know about the
+ 6   statistical probability.  His samples' range and how
+ 7   much exposure he finds, this evidence is prejudicial.
+ 8   It's not connected to Whittaker.  And that testimony
+ 9   does not answer the court's question as to whether
+10   Dr. Longo can tie those samples and his results to the
+11   tests -- to the talc that Whittaker specifically
+12   supplied pre-2004.
+13            THE COURT:  I think we have a problem.  My
+14   inclination would be absent some foundational offer of
+15   proof that the samples shown on 1792-11, samples 25
+16   through 39, are derived from the sampling from the
+17   relevant time period, the relevant vintage, that it
+18   would be excluded.
+19            The assumption that Dr. Longo said is, he
+20   relied upon the representation of Chanel as to the
+21   vintage.  The testimony does talk about Supra H, A, the
+22   testimony talks about different source mines, it talks
+23   about blending.  The bottom line is, we don't have
+24   foundational testimony that establishes that the samples
+25   identified in samples 25 through 39 are from the
+26   pre-2004 vintage.
+27            Indeed, we have an assumption to the contrary.
+28   I think that's in direct conflict with certainly the
+2445
+ 1   rationale behind the Lyons decision and, more
+ 2   importantly, specifically as to the Berg decision, Berg
+ 3   v. Colgate-Palmolive, that's a 2019 case.  42
+ 4   Cal.App.5th 630, where they really talk about making --
+ 5   that's a case that really talks about the testing.  And
+ 6   in that case, in the facts there was a representation
+ 7   that you had samples occurring that showed contamination
+ 8   from a time period in the '70s, but then you have that
+ 9   expert who tested samples himself from 2016 and 2018.
+10   And the court had a problem with that.
+11            I think that's the problem that we have here
+12   and I think Gibbons also helps to flush that out.
+13            MS. KAGAN:  But, Your Honor, the container in
+14   Berg, the exposure period was to a talc that is
+15   different than the talc in the containers tested.  If I
+16   recall correctly, Berg is either a single container of
+17   Mennen or a single container of Cashmere Bouquet or two
+18   containers of Mennen.  And the containers, the talc in
+19   the containers from the 2000s, the source mine was not
+20   the same as the person's exposure period.
+21            Here, even though the dates are different on
+22   when Ms. Zimmerman used the product and the product that
+23   Dr. Longo tested, the mine is the same.  And that's how
+24   it is completely distinguishable from Berg.
+25            THE COURT:  Well, let's look at the holding
+26   because the issue in Berg was whether plaintiffs
+27   presented sufficient evidence to create a triable issue
+28   of whether the Mennen products to which Berg was exposed
+2446
+ 1   actually contained asbestos.  And the court held no, the
+ 2   trial court correctly determined that plaintiffs failed
+ 3   to carry their burden because, at best, the evidence
+ 4   they presented demonstrated only a possibility that Berg
+ 5   was exposed to asbestos through Mennen products.
+ 6            It goes on to talk about -- the court talked
+ 7   about the evidence must be of sufficient quality to
+ 8   allow the trier of fact to find the underlying fact in
+ 9   favor of opposing party on a claim to asbestos-related
+10   entity and speculation that the product plaintiff used
+11   might have contained asbestos is not enough.
+12            It was really clear on that.  And then they
+13   went into the declaration of the geologist.  And they
+14   said the plaintiff was exposed to asbestos would be only
+15   as likely or even less likely than the contrary
+16   inference, a trial court must grant the defendant's MSJ
+17   on the asbestos-related injury claim because a
+18   reasonable trier of fact could not find for the
+19   plaintiff.
+20            Ultimately, though, it's a different factual
+21   setting because it was as to a motion for summary
+22   judgment, but I think it demonstrates the appellate
+23   courts are really paying very close attention to the
+24   vintage and the relevant time frame and the source
+25   mines.
+26            I don't think you have a foundation for that as
+27   it relates to sample 25 and 39, so I'm excluding them.
+28            MS. KAGAN:  Your Honor, may I please be heard
+2447
+ 1   on Berg?
+ 2            THE COURT:  Yes.  Go ahead.
+ 3            MS. KAGAN:  The key in Berg, and I'm reading
+ 4   directly, is at 636 Berg says (reading):
+ 5                "The only basis on which to
+ 6            conclude that the samples tested were
+ 7            of the correct vintage was Berg's
+ 8            testimony that the containers
+ 9            Fitzgerald tested looked like the
+10            ones he used, as no evidence was
+11            presented on the time span that these
+12            containers were actually marketed.
+13            This testimony falls short of
+14            establishing that any containers of
+15            Mennen Shave outsold between 59 and
+16            61 or 62 contained asbestos, much
+17            less that it is more likely than not
+18            that the containers Berg used
+19            contained asbestos."
+20            This is completely factually different from
+21   what we have here.  Here we have Chanel specifically
+22   saying in the chain of custody for those containers
+23   they're their containers.  They produced them to us
+24   saying these are the vintages of these containers and
+25   this is the talc mine source for them.
+26            THE COURT:  I don't think that testimony was
+27   that clear, Attorney Kagan.
+28            MS. KAGAN:  I will pull up the chain of custody
+2448
+ 1   for that, Your Honor.  One moment.
+ 2            THE COURT:  I mean, because what I don't see is
+ 3   testimony from Chanel or anyone who has personal
+ 4   knowledge or a business record or any record that
+ 5   establishes that the samples that Dr. Longo tested from
+ 6   Chanel were derived from a pre-2005, which would have
+ 7   been when Whittaker, Clark & Daniels, which I think is
+ 8   undisputed, stopped distributing that particular talc.
+ 9            Now, you have testimony where Chanel says yes,
+10   we got -- this is what I would be looking for,
+11   Attorney Kagan, so I can just point you, if you give me
+12   an offer of proof I'll accept it, where someone says the
+13   Chanel No. 5 samples that Dr. Longo looked at from 25 to
+14   39 were derived from the source talc that pre-dated
+15   2005.
+16            MS. KAGAN:  I'm happy to get that.
+17            THE COURT:  Okay.  If you can show me that, I
+18   will admit the evidence, but I think that's going to
+19   need to be explained because the chart does have an
+20   assumption in it.  And I think it's going to need to be
+21   clear where that assumption was derived.  And you're
+22   going to have to tie that up with some evidence because
+23   that's the issue here, the link.
+24            MS. KAGAN:  I'm happy to get that.
+25            THE COURT:  Thank you.  I'm really concerned
+26   about that jury just sitting around doing nothing, so I
+27   want to try and tie this down.  So give me that offer
+28   and then let's bring Dr. Longo in and we can get some
+2449
+ 1   testimony on the record.
+ 2            MS. KAGAN:  I'm having connection issues, but
+ 3   I'll pull up the Chanel data for you.
+ 4            THE COURT:  I note that in the Berg case,
+ 5   Whittaker, Clark & Daniels was indeed the primary
+ 6   supplier of the talc in that case for Mennen.
+ 7            Let me suggest this.  When we get to this,
+ 8   because perhaps you need some time, maybe we can get
+ 9   going on Dr. Longo, reserve on this issue.  My tentative
+10   is to exclude those specific samples, avoid the
+11   discussion on this.  Once you find the information, you
+12   can revisit it.  Will that work, Attorney Kagan?
+13            MS. KAGAN:  Yes, that's fine.
+14            THE COURT:  All right.  Let's do it that way.
+15            MR. KORT:  I think that's fine.  I don't know
+16   if Ms. Kagan is going to get to the PowerPoint slide
+17   that talks about the number of samples.
+18            THE COURT:  I just don't want the jury sitting
+19   out there.  You start to lose jurors when you do it too
+20   much.
+21            MR. KORT:  I understand.
+22            THE COURT:  Ms. Kagan, you understand I have
+23   the tentative, but I'm going to certainly let you make
+24   the offer of proof.  I'm certainly open that if you
+25   present the discovery that connects and links it to that
+26   time frame, I think you will have addressed the Berg
+27   question.  But right now, the court does not see that.
+28   So let's move on.
+2450
+ 1            MS. KAGAN:  Thank you.
+ 2            THE COURT:  Are you ready to bring the jury in?
+ 3            MS. KAGAN:  Let me just make sure, Your Honor,
+ 4   that we have all of the right exhibits.
+ 5            THE COURT:  Just make sure you're ready and
+ 6   we'll bring them in when you say you're ready.
+ 7            Is that acceptable to you, Attorney Kagan?
+ 8            MS. KAGAN:  Yes.
+ 9            THE COURT:  Acceptable to you, Attorney Kort?
+10            MR. KORT:  Yes, Your Honor.  Thank you.
+11            THE COURT:  Remember, we still have to address
+12   the medical bill issue about the Howell and Corenbaum
+13   question.  I don't know if you guys addressed that yet.
+14            MS. SPANGLER KHARE:  We have not.
+15            THE COURT:  Remember, that issue is still out
+16   there, too.
+17            MS. KAGAN:  Okay.
+18            THE COURT:  All right.  Shall we bring them in?
+19   Let's bring the jury in.
+20            MS. KAGAN:  We should bring Dr. Longo in, too.
+21            THE COURT:  All right.  And Dr. Longo.
+22   
+23            (Whereupon, the following proceedings
+24            were held in open court in the presence
+25            of the jury:)
+26   
+27            THE COURT:  We are back on the record.  Let the
+28   record reflect that all 12 jurors are present, the four
+2451
+ 1   alternates are present.  Dr. Longo is now about to take
+ 2   the stand.
+ 3            Ladies and gentlemen, sorry we had you out in
+ 4   the hall.  I try my best to manage your time so you're
+ 5   not sitting around, but let me assure you that if we are
+ 6   addressing issues and you're waiting, it is to help
+ 7   streamline the case so that we have a smooth
+ 8   presentation.
+ 9            It's far better for me to resolve the
+10   evidentiary issues outside your presence, and I don't
+11   want to keep going back in the back and that whole
+12   thing, so I try to deal with them upfront.  You can't
+13   always address when these issues will arise and it does
+14   take time for us to go through them.
+15            So I appreciate your patience, but while you
+16   were waiting, what is happening is we're finding the
+17   best way to present this evidence so it can streamline
+18   it.  So understand that we are not wasting your time.
+19   And I appreciate your patience.
+20            With that, let's begin with Dr. Longo.  I think
+21   your time estimate is four hours.  Is that still your
+22   estimate, counsel?
+23            MS. KAGAN:  Yes, Your Honor.
+24            THE COURT:  All right.  Let's proceed.
+25   ///
+26   
+27   
+28   
+2452
+ 1                      DIRECT EXAMINATION
+ 2   
+ 3   BY MS. KAGAN:
+ 4       Q    Good morning, Dr. Longo.
+ 5       A    Good morning.
+ 6       Q    Could you please introduce yourself to the
+ 7   ladies and gentlemen of the jury?
+ 8       A    Sure.  My name is Bill Longo.  I live in
+ 9   Alpharetta, Georgia, which is among the many -- one of
+10   the many housing developments that are in Atlanta.
+11       Q    Are you from Atlanta?
+12       A    No.  I actually was raised in Miami, Florida.
+13       Q    And you're currently based outside of Atlanta?
+14       A    Yes.
+15       Q    Does your materials science -- the materials
+16   science microscopy, can you tell us what that means?
+17       A    Well, the first part, materials science, I have
+18   degrees in materials science and engineering.  And as a
+19   materials scientist and engineer, you look at basically
+20   five types of materials.  Metals, or metallurgy;
+21   ceramics; minerals, minerals like asbestos; plastics or
+22   polymers; composites where they may take a couple of
+23   these different types of materials and put them together
+24   for some new type of product.
+25            For example, a lot of the polymer advancements
+26   have been made to make them stronger by putting
+27   microscopic pellets of metals in them to give them
+28   different properties.
+2453
+ 1            And then an area that I've spent a lot of time
+ 2   researching for my Ph.D. was biomaterials.  These are
+ 3   things that are implanted into the body such as a hip
+ 4   replacement or an artificial knee or intraocular lenses
+ 5   for when you may have a cataract that gets bad enough
+ 6   that they have to replace it.
+ 7            As a materials scientist, you learn all the
+ 8   ways that these different materials can be used, their
+ 9   strengths, their weaknesses, and so it's used for the
+10   proper application.  Also, materials scientists are
+11   usually the ones that come up with new types of
+12   materials to be used in situations that people haven't
+13   thought of before.  All your semiconductor advances is
+14   typically from a materials scientist, for the materials
+15   that make the chips faster, last longer, et cetera.
+16            A few of your CEOs of semiconductor
+17   manufacturers started off as materials scientists.
+18   Something as simple as the aluminum cans that everybody
+19   uses almost on a daily basis for whatever beverage, if
+20   you're as old as me, you can remember when cans for any
+21   type of soda, beer, what have you, was made out of
+22   steel, it had a seam down the side.  It was a
+23   two-component.  And it cost a lot more to manufacture
+24   those so they came up with the aluminum can.  That was a
+25   materials scientist, but it's not aluminum.  There's a
+26   percentage of copper in there, so it's an alloy.
+27            The heat shields on all of the spacecrafts were
+28   developed by materials scientists.
+2454
+ 1            The last part of being a materials scientist is
+ 2   to understand why a material is put in a particular
+ 3   product, for what it helped to do for that product.  And
+ 4   a good example of that is why was asbestos used in
+ 5   various products over the years.
+ 6            Lastly, we're very good at taking a look at why
+ 7   things fail.  These Plexiglas shields that we're getting
+ 8   used to now these days, sometimes they'll start crazing,
+ 9   meaning you'll see, like, these microscopic cracks
+10   through it.  Why is that happening?  Well, it could be
+11   because the polymer was subject to some kind of solvent
+12   that made it into the surface and made it weaker.
+13   Materials scientists do a lot of that failure analysis.
+14       Q    Let me see if I understand.  Materials
+15   scientists develop new products?
+16       A    Yes.
+17       Q    They research the ingredients of current
+18   products?
+19       A    And why the ingredients are used.
+20       Q    And then they look at why products fail?
+21       A    Correct.
+22       Q    Sort of a thumbnail sketch?
+23       A    That's pretty good.  I should use that.
+24       Q    We're on a time limit.  And microscopy?
+25       A    Microscopy is literally using some type of
+26   instrument, we call them tools or microscopes to observe
+27   something that you normally cannot see with the naked
+28   eye.  You know, in biology class you probably had an
+2455
+ 1   optical microscope that you could look at whatever they
+ 2   were trying to demonstrate.  Doctors' offices, pathology
+ 3   offices all are using optical microscopes.
+ 4            Then you go to a higher level of resolution,
+ 5   electron microscopes.  They generate an image way
+ 6   different than an optical microscope and so on.
+ 7            Ever since graduate school, I've been heavily
+ 8   involved in using all types of microscopes, optical,
+ 9   electron microscopes, scanning tunneling microscopes, to
+10   help observe and understand why a product does what it
+11   does or materials does what it does or fails or what
+12   have you.  So I've spent literally my career around
+13   microscopy, optical, and transmission electron
+14   microscopes.
+15       Q    Can you give us a little bit of a thumbnail
+16   sketch of your educational background?
+17       A    I've got a bachelor's of science in
+18   microbiology with a minor in chemistry.  I received a
+19   master's of science in engineering, it was in the
+20   materials science department.  And then I received my
+21   Ph.D. in materials science and engineering or doctorate
+22   in 1983.
+23       Q    And it says here, "EPA peer-review group
+24   asbestos engineering."  What does that mean?  Let me
+25   take a step back.  What's the EPA?
+26       A    The Environmental Protection Agency.
+27       Q    And what does it mean to be a peer-review group
+28   asbestos engineering for the Environmental Protection
+2456
+ 1   Agency?
+ 2       A    Back in the late '80s, early 1990s, the
+ 3   Environmental Protection Agency had what they called a
+ 4   peer-review group.  And this was four scientists from
+ 5   around the United States and one from Canada that would
+ 6   meet with the Environmental Protection Agency peer group
+ 7   in Cincinnati, Ohio, twice a year.
+ 8            And as the peer, which we were overlooking some
+ 9   of their research, they had us, one, give them
+10   information on where they should spend their money
+11   investigating asbestos issues; two, when the EPA has
+12   outside contractors do some research that they put out
+13   for bid, we would be the peer reviewers of that work to
+14   make sure it met scientific standards; and three, we
+15   would always go and try to guide them into areas we
+16   thought were important.  And I did that twice a year for
+17   a number of years.
+18       Q    What does "peer review" mean?
+19       A    That -- say I have a scientific paper that I
+20   want to get published in a scientific journal.  They
+21   will then send it out for peer review.  They find other
+22   scientists that are in your field, that would be your
+23   peers.  And they review it and say, yes, this is good
+24   science, it's important for this journal and should be
+25   published, or they'll say, you know, we need some more
+26   information, or they can say, no, this does not meet the
+27   standard for what this journal is.
+28            So you're a peer reviewer.  So we were peer
+2457
+ 1   reviewing EPA's research.
+ 2       Q    So you were actually serving as kind of like a
+ 3   gatekeeper for EPA's research on asbestos?
+ 4       A    Not exactly.  We couldn't tell them what to do.
+ 5       Q    Fair.
+ 6       A    But we could make suggestions and say this is
+ 7   what we feel you need to do.  This is what we feel that
+ 8   the project that you're funding for what happens to
+ 9   asbestos when it gets in the carpet from a building and
+10   can you clean a carpet.  And there was a whole study
+11   about that.  And that's one of the ones where we said
+12   this is great, but we need more information here.  And
+13   usually they will accept that.
+14       Q    Now, you have this logo here at the top.  It
+15   says, "MAS."  What is that?
+16       A    That's my company.  And it's in Suwanee,
+17   Georgia.  And it stands for Materials Analytical
+18   Services.  It just got easy some years ago just to give
+19   it a -- get the acronym.  Scientists love acronyms, MAS.
+20       Q    And what is your position?  You said it was
+21   your company.  What does that mean?
+22       A    I'm the CEO.
+23       Q    And how long have you been the CEO?
+24       A    Well, only for about a year.  I was the
+25   president, and then we promoted one of our key people to
+26   president, so I needed another title.
+27       Q    I see.  How long have you actually been with
+28   MAS?
+2458
+ 1       A    I started the company and opened the doors in
+ 2   February of 1988.
+ 3       Q    And can you tell us a little bit about what the
+ 4   scope of work is that MAS does?
+ 5       A    MAS grew to -- we had essentially two
+ 6   divisions.  We had the environmental division, which was
+ 7   the Atlanta laboratory and materials science work.  And
+ 8   then we had offices eventually in Raleigh, North
+ 9   Carolina.  We had one here in California up in Silicon
+10   Valley, San Jose.  We had an office in --
+11       Q    Sorry.  I'm listening.  I'm sorry.
+12       A    I thought maybe something I was doing.
+13       Q    No.  I was concerned about something coming
+14   out?
+15       A    Okay.
+16       Q    Sorry about that.
+17       A    And we had an office in Phoenix that was
+18   focused on semiconductor work, so we had about
+19   100-some-odd people.  And then we diversified and sold
+20   the semiconductor group in 2006-2007.  We are now just
+21   the Atlanta office.
+22            And the Atlanta office focuses in on materials
+23   science issues, failures, QC on products.  We also do a
+24   lot of work in the VOC, volatile organic compounds for
+25   all the new green, the green certificates.  It's -- VOCs
+26   is, the example I like to use because everybody loves
+27   this -- this fragrance is the new car smell.
+28            Everybody knows what a new car smell is.
+2459
+ 1   Actually, what you're smelling is volatile organic
+ 2   compounds that are outgassing from either the carpet,
+ 3   some of the adhesives, the plastics that they'll use in
+ 4   some of the cars.  And, actually, we're trying and we
+ 5   work with companies to come up with new materials, new
+ 6   adhesives and do those measurements.
+ 7            We do a lot of environmental testing.  And we
+ 8   work for a lot of companies that have issues or
+ 9   problems, everything from why a lazy boy-type chair --
+10   not La-Z-Boy, I'll not use the name -- would catch fire.
+11   And, you know, those are issues that companies who make
+12   those would like to know.  And it was a transformer
+13   overheating.
+14            And then, of course, I'm involved in a lot of
+15   litigation involving asbestos such as what I'm doing
+16   here.
+17       Q    Now, the companies that you work for outside of
+18   litigation, could you tell us, are they major
+19   corporations, small companies, what types of companies
+20   does MAS service?
+21       A    We have worked for everything from the
+22   Department of Defense on doing some microsurgery on some
+23   things that were going up in a satellite that I can't
+24   talk about, but it was -- not talk about what it was,
+25   but it was actually taken, what we developed, using
+26   focus ion beams and able to drill microscopic holes in
+27   semiconductor chips to put a jumper cable around that
+28   chip because it was bad.  And the jumper cable was made
+2460
+ 1   out of platinum and this was all on the microscopic
+ 2   scale.
+ 3            We have done work for NASA.  We have worked for
+ 4   companies like IBM, Westinghouse, General Electric,
+ 5   outside of litigation.  We also worked with them in
+ 6   litigation.  Dow Company, BF Goodrich.  We actually did
+ 7   work for a scientific group in MIT in which we developed
+ 8   a way to make these probes for a standing tunneling
+ 9   microscope, and they were purchasing them from us.
+10            So it's a huge across-the-board group of
+11   companies that is -- nonlitigation.
+12       Q    What about the litigation side?  What type of
+13   clients do you have when you come into court like you're
+14   in today?
+15       A    Well, the clients are either plaintiff's
+16   attorneys representing plaintiffs, like as I'm sitting
+17   here, and it's also for defense attorneys representing
+18   companies that are on the reverse of what we're doing
+19   here, that I would be testifying on behalf of them for
+20   products I've tested of theirs that I don't believe
+21   releases asbestos.
+22            And so my rule is if I can test your product
+23   and prove it, I will defend it.
+24       Q    And so the work that you do, like you're doing
+25   for me here today, you do that same type of work for
+26   companies.  And if you can actually show that their
+27   products don't release asbestos, you'll come into court
+28   and testify for them?
+2461
+ 1       A    Correct.  These would be asbestos-added
+ 2   products.  This is not involving cosmetic talc.  Only
+ 3   plaintiffs have hired me for that.  And it's kind of
+ 4   hard to do both in this area.
+ 5       Q    And, Dr. Longo, does the way that you do the
+ 6   work that you do when you're retained in litigation
+ 7   change whether you're retained by someone like me or if
+ 8   you're retained by a company?
+ 9       A    No, it does not change.  We do the same types
+10   of tests.  And the rule is, the chips fall where they
+11   may.  If we're asked by plaintiffs' attorneys about a
+12   product that they think releases asbestos and we test it
+13   and say no, we tell them no.  We will not write you a
+14   report that says the opposite.
+15            And the same thing goes with defendants,
+16   defense attorneys.  We've tested one product that
+17   actually had almost one fiber per cc exposure.  I told
+18   them and they actually still had me testify because they
+19   don't think it's as much as some of the other products
+20   out there.
+21            But I don't change anything for one side or the
+22   other.
+23       Q    Do you get paid for your time?  Does MAS get
+24   paid?
+25       A    Yes, sir.  My company will -- MAS will bill my
+26   time at $625 an hour on behalf of plaintiffs.  It's $625
+27   on behalf of defendants.  And it's $625 if I get
+28   involved in a particular non-litigation project.
+2462
+ 1       Q    Does it matter the project, does it matter who
+ 2   is paying the bill, the bill is the same regardless?
+ 3       A    Yes.
+ 4       Q    And over the 30 or so years that you have been
+ 5   with MAS, how much money has MAS made in total doing
+ 6   litigation consulting?
+ 7       A    Just on behalf of plaintiffs, I would say it's
+ 8   about $30 million over 30 years.  And defendants is
+ 9   probably almost $60 -- 60, 70 percent additional.  So
+10   between the two, we've probably averaged $1.5 million a
+11   year if you go all the way back to '88.
+12       Q    Does that mean that you've personally made over
+13   $30 million over these 30 years?
+14       A    No.  The evidence I think is clear that that's
+15   not true.  I'm sitting here.
+16       Q    Where does the money go?
+17       A    Well, we have employees.  You know, we
+18   currently have 42 employees and they like to get paid
+19   every two weeks.  We have investments in analytical
+20   equipment.  Our electric bill is outrageous with all
+21   these transmission electron microscopes and scanning
+22   electron microscopes.
+23            And we provide health insurance, full coverage
+24   at a very low price for the employees.  We put money
+25   away.  We were -- we didn't have to lay off one employee
+26   throughout the entire pandemic because we -- you know,
+27   it's a family, even as 40, 41 people.  The building has
+28   rent.  The latest tool we bought, the scanning electron
+2463
+ 1   microscope, was $1.2 million.
+ 2            So I think there's this thought that the
+ 3   scientists get rich.  I haven't, at least not in my lab
+ 4   to that degree.
+ 5       Q    Let's talk a little bit more about your lab.
+ 6   Let's see if my slides are correct.
+ 7            Now, yes, it says, "MAS official referee lab."
+ 8   What's that?
+ 9       A    Well, I started in the litigation, as I was
+10   asked back in 1989, if I could reverse engineer
+11   asbestos-containing fireproofing, asbestos-containing
+12   acoustical plasters, ceiling tiles.  And as a materials
+13   scientist, I thought, well, if I can tell you what's in
+14   it and if I have the formulations that tell me what's in
+15   it, I can do it, I believe.
+16            And so I started receiving samples from around
+17   the country and got the formulas.  And when I looked at
+18   the formulas, even though a lot of these materials,
+19   these fireproofing acoustical masters were kind of the
+20   same, everyone had what I call the fingerprint.  They
+21   had that one ingredient that showed that they were
+22   different than every other fireproofing.  And they all
+23   had that.
+24            And the referee lab became -- when some of the
+25   bankruptcies in these -- where WR Grace said, okay.  We
+26   will pay people who have WR Grace products in the
+27   building.  We were chosen as the referee lab so that if
+28   we said it was, they would get some compensation.  If we
+2464
+ 1   said it was not, they would not.
+ 2            And we were that for the U.S. Gypsum, WR Grace,
+ 3   U.S. Mineral, Unibestos, Limpid Fireproofing, and
+ 4   Celotex.  Those.  And even testified at one bankruptcy
+ 5   trial on behalf of Celotex showing that their product,
+ 6   in fact, did release a lot of asbestos in its normal
+ 7   course of use.
+ 8       Q    And so these different states and cities
+ 9   reached out specifically to you because you were able to
+10   analyze the insulation and determine the signature of
+11   who actually made it?
+12       A    Yes.  I could get a sample of
+13   asbestos-containing fireproofing and I can tell you who
+14   made it.  I could even tell you at times because
+15   sometimes they would change the formula a little bit.  I
+16   could tell you in the decades that it was used.  And the
+17   same with acoustical plaster, the same with ceiling
+18   tiles for two types.
+19            And also, we took a look at thermal insulation.
+20   Could you identify thermal insulation.  Now, thermal
+21   insulation was harder because a lot of the companies
+22   made identical products except for two.  And two we
+23   could easily identify.
+24       Q    May I have the ELMO, please?
+25            Let's take a look at what we've marked as
+26   Exhibit 1790.  It's in your binder, but I'm going to put
+27   it up here.  And this is -- let me know if you recognize
+28   this.
+2465
+ 1       A    I do.
+ 2       Q    What is this?
+ 3       A    You know, when you get to this level, people
+ 4   like to call it a vitae.  It's really just a resume.
+ 5       Q    And is this a fair and accurate copy of your
+ 6   curriculum vitae, or resume?
+ 7       A    Yes, it is.
+ 8       Q    Your Honor, we'd like to move Exhibit 1790 into
+ 9   evidence.
+10            THE COURT:  Any objection?
+11            MR. KORT:  It's hearsay.
+12            THE COURT:  Overruled.  It's admitted.
+13   
+14            (Exhibit 1790 admitted into evidence.)
+15   
+16   BY MS. KAGAN:
+17       Q    Dr. Longo, let's see if I can be a little
+18   straighter here.  You told us about your educational
+19   background?
+20       A    Yes.
+21       Q    I want to take a look at first this section
+22   here, Patents.  Do you actually have patents?
+23       A    Yes.  They -- on my research work for my Ph.D.,
+24   I was able to figure out how to make a protein
+25   microsphere that you could load with cancer drugs such
+26   as mitomycin, adriamycin, 5 Fluorouracil.  And the whole
+27   theory behind what I was trying to do was that the
+28   cancer drugs are very effective at eliminating
+2466
+ 1   fast-growing cells in the body.
+ 2            Unfortunately, cancer cells, which are fast
+ 3   growing, so is hair, so is skin, and they have also
+ 4   other side effects such as adriamycin attacks the heart.
+ 5            My thought was, if I could localize it at the
+ 6   tumor and do a slow release like a tiny -- you know,
+ 7   like a pill, slow release there, that it could just
+ 8   attack the tumor and eliminate the side effects for the
+ 9   rest.
+10            So -- but you had to do a couple things.  You
+11   had to, one, make this microsphere; two, it had to be
+12   nonantigenic, so you don't cause an allergic reaction.
+13   So I was able to do that with a protein actually from
+14   milk, milk protein, and it worked.  And we were -- did
+15   some animal testing and cured every tumor that was ever
+16   injected.
+17            But it was at a time when oncologists were not
+18   really excited with the fact about sticking a needle
+19   inside a tumor because they were afraid of metastases.
+20   But I did get a patent on it.  Unfortunately, when the
+21   university decided to give the patent up that first
+22   offer there, Dr. Goldberg, my professor, went and bought
+23   it.  I didn't have $2,000.  And if that had happened, I
+24   wouldn't be sitting here today.  Oh, well.
+25       Q    Oh, well.  At least you did some good for
+26   science.
+27       A    But it's still -- if you ever look up the paper
+28   itself, I think it has over 200 people that reference
+2467
+ 1   that paper.
+ 2       Q    Now, let's talk about your publications and
+ 3   presentations.  It says here that in February of 2020,
+ 4   there was an FDA presentation on testing methods for
+ 5   asbestos in talc and cosmetic products containing talc,
+ 6   public meeting.  Could you tell us about that?
+ 7       A    Yes.  The FDA put out a notice that they were
+ 8   considering changing -- actually regulating cosmetic
+ 9   talc.  They never had regulated cosmetic talc.  And so
+10   they were putting in -- they wanted some testing
+11   protocols that were more in line of what was being done
+12   in the industry.
+13            And one of the things they were very interested
+14   in was this heavy liquid or concentration method that we
+15   were using in our lab.  And I present -- so if you -- it
+16   was open to the public.  And if you wanted to give a
+17   presentation, you just clicked the box on the
+18   application that says, "I want to give a presentation."
+19            And so what I presented was our work.  And that
+20   was the first time I presented the work.  And we'll hear
+21   later about it, the Colorado School of Mines method for
+22   finding chrysotile, I presented it there at the FDA.
+23       Q    Have you ever presented to Congress?
+24       A    Yes.  I was invited to testify in front of
+25   Congress.  They were wanting to know what was the best
+26   method for analyzing cosmetic talc.  They reached out to
+27   me and said would I be interested in presenting my
+28   research work.  And I said yes.
+2468
+ 1            And so I -- it was -- and I've given a lot of
+ 2   public speaking engagements, but the five minutes in
+ 3   there in Congress was terrifying.  I just have to say, I
+ 4   was very nervous.  And I presented our work that the
+ 5   best method to use for testing cosmetic talc was the
+ 6   heavy density concentration method that we were using.
+ 7       Q    Now, if we flip through your CV here in this
+ 8   publications section, I'm just going to zoom out, we've
+ 9   got pages of peer-reviewed publications.  How many
+10   peer-reviewed publications do you have, Dr. Longo?
+11       A    You know, I haven't counted them up, but
+12   they're well over a dozen or so, couple dozen maybe.
+13       Q    And have you published on asbestos?
+14       A    That's most of my work.  The early publications
+15   was while I was in graduate school.  And a lot of the
+16   presentations were about the -- the albumin microspheres
+17   for the delivery of therapeutic drugs.
+18            But then when I started my first company, Micro
+19   Analytical Labs, I became very interested in asbestos
+20   because of the use of microscopy, which I used a ton in
+21   graduate school.  I was able to use instruments that --
+22   to help analyze and develop new methods for testing of
+23   asbestos.
+24       Q    Have you published in the peer-reviewed
+25   literature on not only asbestos content in products, but
+26   also asbestos exposures and release from products?
+27       A    Yes, I have.
+28       Q    Have you published on asbestos in talc?
+2469
+ 1       A    I have, and also the release in talc.  That was
+ 2   published in 2020, I think it was.
+ 3       Q    And, again, this is the peer-reviewed
+ 4   literature?
+ 5       A    Yes.  These are all peer reviewed.  I've given
+ 6   a number of presentations and courses that -- around
+ 7   there that is not peer reviews, but I have published in
+ 8   the peer-reviewed literature.
+ 9            THE COURT:  Attorney Kagan, you may want to
+10   find a point where there's a natural break.  We're
+11   approaching the lunch hour.  It's five to 12:00.
+12            MS. KAGAN:  Thank you, Your Honor.
+13       Q    I want to touch briefly on your activities and
+14   organizations professionally.  Can you tell us what ASTM
+15   is?
+16       A    It is the American Society for Testing
+17   Materials.
+18       Q    And what do they do?
+19       A    ASTM is probably the largest group out there
+20   that puts consensus protocols together.  And protocols
+21   you can look at as a recipe for a cake.  You start off
+22   at A.  Then when you get down to some level, you have a
+23   cake.
+24            What ASTM does is it does a consensus for
+25   protocols for all types of testing, everything from the
+26   strength of concrete that you should use in a building
+27   and the type of concrete for high-rises or bridges to
+28   how many times a cabinet door can open and shut before
+2470
+ 1   the hinge fails, if you want an ASTM standard.
+ 2            I worked in the ASTM group, which was a
+ 3   subcommittee in the environmental, the D2205, and I
+ 4   volunteered to write a method for the analysis of
+ 5   asbestos in building dust, which would be for a building
+ 6   which has asbestos products in it.  And you want to know
+ 7   if those products such as the fireproofing or the
+ 8   ceiling tiles or the acoustical masters is shedding
+ 9   asbestos onto the surfaces in the building.
+10            ASTM -- and it was EPA wanted ASTM to do this.
+11   And we had a protocol that EPA was going to use, but
+12   they kicked it to ASTM.  And so I thought it would be an
+13   easy task of just writing this up and --
+14       Q    Was it an easy task?
+15       A    Well, I started in 1990 and did not get it
+16   approved until 1996.  Herding 100 stray cats would have
+17   been easier than this.  With 125 scientists on your
+18   subcommittee, any one of them can vote negative even
+19   though they said they were going to vote positive at our
+20   biannual meetings.  Then you had to address it and on
+21   and on and on.  When it was finally approved in 1996, I
+22   swore I would never do another one.
+23       Q    So you actually wrote an asbestos method that
+24   was requested by the EPA and it was approved?
+25       A    Well, EPA was going to do their own and I was
+26   on the EPA Blue Ribbon Committee for microscopists.  And
+27   it was looking like the method that we had put together
+28   and was using, but they decided it would be better for
+2471
+ 1   ASTM to do it, so I shepherded it through, and was not
+ 2   good in politics, I guess.
+ 3       Q    Is it still an active method today?
+ 4       A    Yes.  Every -- it's V5755.  Every commercial
+ 5   TEM laboratory in the country has that method on there
+ 6   for the measuring of asbestos in dust.
+ 7            The thing about methods, you just don't write
+ 8   one and it stays.  Every four years -- since 2006, every
+ 9   four years it has to be revalidated to make sure the
+10   scientists are all in agreement, it's still a good
+11   method.  And our method, I think in 2020 they had
+12   released the next round of it and, yes, it's still a
+13   valid method.
+14       Q    Now, Your Honor, at this point I'd like to
+15   offer Dr. Longo as an expert in materials analysis,
+16   microscopy, asbestos, asbestos exposure, and risk
+17   assessment.
+18            THE COURT:  Any objection?
+19            MR. KORT:  No objection, Your Honor.
+20            THE COURT:  He is so accepted as an expert in
+21   the designated fields.
+22            And with that, ladies and gentlemen, we are
+23   going to take our lunch hour break.  Everyone is ordered
+24   back at 1:30 p.m. without further notice, order, or
+25   subpoena.  And I'll see you when you return.
+26            Can we release Dr. Longo as well?
+27            MS. KAGAN:  Yes, Your Honor.
+28   
+2472
+ 1            (Whereupon, the following proceedings
+ 2            were held in open court outside the
+ 3            presence of the jury:)
+ 4   
+ 5            THE COURT:  Let the record reflect that the
+ 6   jurors are out of the courtroom.
+ 7            Ms. Kagan, is there anything you need to take
+ 8   up before we leave?
+ 9            MS. KAGAN:  No, Your Honor.  I will find that
+10   offer of proof and present it when I come back.
+11            THE COURT:  And Attorney -- who is handling?
+12   Is it you, Mr. Kort?
+13            MR. KORT:  Yes, Your Honor.
+14            THE COURT:  Anything you wish to take up?
+15            MR. KORT:  No, Your Honor.  The only question I
+16   have, I recall from a few days ago you said that maybe
+17   this would be a short day because you have some IDCs.  I
+18   just wanted to see when and how long.
+19            THE COURT:  That's a good point.  Do we have
+20   that IDC at 4:15?  Is that still on calendar?
+21            All right.  We'll break at 4:15, 4:20.  Maybe
+22   it shaves off ten minutes at most.
+23            MR. KORT:  Thank you, Your Honor.
+24            THE COURT:  All right.  Have a good lunch.
+25   We're in recess.
+26            MS. KAGAN:  Thank you, Your Honor.
+27            (Whereupon, the proceedings were
+28            adjourned at 12:00 p.m.)
+2473
+ 1       IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                 FOR THE COUNTY OF LOS ANGELES
+ 3   DEPARTMENT SSC 15        HON. DAVID S. CUNNINGHAM, JUDGE
+ 4   Coordinated Proceeding Special Title  JCCP CASE NO. 4674
+     (Rule 3.550)
+ 5   
+     LAOSD ASBESTOS CASES
+ 6   
+     LINDA ZIMMERMAN,                   )
+ 7                                      )
+                  PLAINTIFF,            )
+ 8                                      )
+            VS.                         ) CASE NO.
+ 9                                      ) BC 720153
+                                        )
+10   WHITTAKER, CLARK & DANIELS,        )
+                                        )
+11                DEFENDANTS.           )
+     ___________________________________)
+12   
+13   
+14          I, DIANNE M. McGIVERN, Certified Shorthand
+15   Reporter, License No. 7576, in the State of California,
+16   hereby certify that the foregoing is a true and accurate
+17   transcript of the proceedings taken before me on Friday,
+18   April 23, 2021, remotely into Department SSC 15, as
+19   thereon stated.
+20          I declare under penalty of perjury that the
+21   foregoing is true and correct.
+22          Executed at San Pedro, California, on April 23,
+23   2021.
+24   
+25                        __________________________________
+                          DIANNE M. McGIVERN, CSR 7576
+26                        RMR, RDR, CRR, CLR, CRC
+                          OFFICIAL COURT REPORTER PRO TEMPORE
+27   
+28   

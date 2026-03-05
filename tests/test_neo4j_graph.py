@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -490,3 +494,112 @@ def test_retrieve_context_handles_no_rows(monkeypatch):
 
     assert payload["resource_count"] == 0
     assert payload["context_text"] == "No matching ontology context found."
+
+
+def test_retrieve_context_prefers_vector_query_when_embedding_is_available(monkeypatch):
+    graph = neo_module.Neo4jOntologyGraph(
+        uri="bolt://localhost:7687",
+        user="neo4j",
+        password="password",
+        database="neo4j",
+        browser_url="http://localhost:7474/browser/",
+    )
+
+    class _VectorSession:
+        def __init__(self):
+            self.calls = []
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def run(self, query, **params):
+            self.calls.append((query, params))
+            if query == neo_module._GRAPH_RAG_VECTOR_RETRIEVAL:
+                return [
+                    {
+                        "iri": "http://example.org/Contract",
+                        "label": "Contract",
+                        "score": 0.93,
+                        "relations": [],
+                        "literals": [],
+                    }
+                ]
+            raise AssertionError("Keyword query should not run when vector results exist.")
+
+    class _VectorDriver:
+        def __init__(self):
+            self.session_obj = _VectorSession()
+
+        def session(self, database=None):
+            assert database == "neo4j"
+            return self.session_obj
+
+    driver = _VectorDriver()
+    monkeypatch.setattr(graph, "_get_driver", lambda: driver)
+
+    payload = graph.retrieve_context(
+        "contract breach",
+        node_limit=4,
+        embedding_config={"enabled": True, "index_name": "resource_embeddings"},
+        query_embedding=[0.1, 0.2, 0.3],
+    )
+
+    assert payload["retrieval_mode"] == "vector"
+    assert payload["query_embedding_used"] is True
+    assert payload["vector_index_name"] == "resource_embeddings"
+    assert payload["vector_error"] is None
+    assert payload["resource_count"] == 1
+    assert "[score=0.9300]" in payload["context_text"]
+    assert driver.session_obj.calls[0][1]["index_name"] == "resource_embeddings"
+
+
+def test_retrieve_context_falls_back_to_keyword_when_vector_query_fails(monkeypatch):
+    graph = neo_module.Neo4jOntologyGraph(
+        uri="bolt://localhost:7687",
+        user="neo4j",
+        password="password",
+        database="neo4j",
+        browser_url="http://localhost:7474/browser/",
+    )
+
+    class _FallbackSession:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def run(self, query, **params):
+            if query == neo_module._GRAPH_RAG_VECTOR_RETRIEVAL:
+                raise RuntimeError("missing vector index")
+            assert query == neo_module._GRAPH_RAG_RETRIEVAL
+            assert params["terms"] == ["contract"]
+            return [
+                {
+                    "iri": "http://example.org/Contract",
+                    "label": "Contract",
+                    "relations": [],
+                    "literals": [],
+                }
+            ]
+
+    class _FallbackDriver:
+        def session(self, database=None):
+            assert database == "neo4j"
+            return _FallbackSession()
+
+    monkeypatch.setattr(graph, "_get_driver", lambda: _FallbackDriver())
+
+    payload = graph.retrieve_context(
+        "contract",
+        embedding_config={"enabled": True, "index_name": "resource_embeddings"},
+        query_embedding=[0.4, 0.5],
+    )
+
+    assert payload["retrieval_mode"] == "keyword_fallback"
+    assert payload["query_embedding_used"] is True
+    assert payload["resource_count"] == 1
+    assert payload["vector_error"] == "missing vector index"

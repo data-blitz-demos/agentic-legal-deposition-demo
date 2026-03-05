@@ -1,0 +1,98 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/deposition.schema.json",
+    "title": "Deposition",
+    "type": "object",
+    "required": ["deposition_id", "date", "deponent", "transcript"],
+    "properties": {
+      "deposition_id": { "type": "string" },
+      "case_number": { "type": "string" },
+      "date": { "type": "string", "format": "date" },
+      "location": { "type": "string" },
+      "court": {
+        "type": "object",
+        "required": ["name", "judge"],
+        "properties": {
+          "name": { "type": "string" },
+          "judge": { "type": "string" }
+        }
+      },
+      "deponent": {
+        "type": "object",
+        "required": ["name", "role"],
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "organization": { "type": "string" }
+        }
+      },
+      "participants": {
+        "type": "object",
+        "properties": {
+          "questioners": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "answerer": { "type": "string" },
+          "observers": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "transcript": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["type", "timestamp", "speaker", "text"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["question"]
+            },
+            "timestamp": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+            "speaker": { "type": "string" },
+            "text": { "type": "string" },
+            "followed_by": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["type", "timestamp", "speaker", "text"],
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["answer", "objection"]
+                  },
+                  "timestamp": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+                  "speaker": { "type": "string" },
+                  "text": { "type": "string" },
+                  "basis": { "type": "string" },  // only for objections
+                  "ruling": {
+                    "type": "object",
+                    "required": ["timestamp", "speaker", "decision"],
+                    "properties": {
+                      "timestamp": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+                      "speaker": { "type": "string" },
+                      "decision": {
+                        "type": "string",
+                        "enum": ["Sustained", "Overruled", "Reserved", "Stricken"]
+                      },
+                      "notes": { "type": "string" }
+                    }
+                  }
+                },
+                "if": {
+                  "properties": { "type": { "const": "objection" } }
+                },
+                "then": {
+                  "required": ["basis"]
+                }
+              }
+            }
+          }
+        }
+      },
+      "notes": { "type": "string" }
+    }
+  }
+  

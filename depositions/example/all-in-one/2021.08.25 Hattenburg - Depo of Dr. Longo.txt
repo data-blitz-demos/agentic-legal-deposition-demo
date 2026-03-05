@@ -1,0 +1,2075 @@
+0001
+ 1   IN RE:  BALTIMORE CITY  *  IN THE CIRCUIT COURT
+ 2   ASBESTOS CASES          *  FOR BALTIMORE CITY
+ 3                    *   *   *   *
+ 4   RAYMOND A. HATTENBURG,  *
+ 5   et ux.                  *
+ 6     Plaintiffs            *
+ 7   v.                      *  Case No.:
+ 8   HONEYWELL INTERNATIONAL *  24X20000031
+ 9   INC., et al.            *
+10     Defendants            *
+11                    *   *   *   *
+12           VIDEOCONFERENCE DEPOSITION OF
+13                WILLIAM LONGO, Ph.D.
+14                  August 25th, 2021
+15   
+16             Reported by:  Dawn M. Hyde
+17   
+18   
+19   
+                EVANS REPORTING SERVICE
+20          7 North Calvert Street, Suite 409
+                Baltimore, Maryland 21202
+21             410.727.7100  800.256.8410
+0002
+ 1            VIDEOCONFERENCE DEPOSITION OF
+ 2                WILLIAM LONGO, Ph.D.
+ 3        The videoconference deposition of William
+ 4   Longo, Ph.D., taken by the Defendants in the
+ 5   above-captioned case on Wednesday, August 25th,
+ 6   2021, commencing at 10:00 a.m., and was
+ 7   reported by Dawn M. Hyde, a notary public.
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+0003
+ 1                      I N D E X
+ 2            VIDEOCONFERENCE DEPOSITION OF
+ 3                WILLIAM LONGO, Ph.D.
+ 4                  August 25th, 2021
+ 5   
+ 6   EXAMINATION BY                          PAGE
+ 7   Mr. Bishop                                 6
+ 8   Mr. Henderson                             51
+ 9   Mr. Fitzpatrick                           84
+10   
+11   EXHIBITS    DESCRIPTION                 PAGE
+12   1           List of Trials and
+13               Depositions                    9
+14   2           Brake Reliance Index          37
+15   3           Carlisle Motion Control
+16               document                      37
+17   4           Tyndall Lighting Reliance
+18               Index                         38
+19   5           Letter from Mr. Cantor,
+20               8/17/21                       39
+21   
+0004
+ 1   APPEARANCES:
+ 2   ANDREW CANTOR, ESQ.
+       Law Offices of Peter G. Angelos, P.C.
+ 3     One Charles Center
+       100 North Charles Street
+ 4     Baltimore, Maryland  21201
+       410.649.2000
+ 5     acantor@lawpga.com
+       Appearing telephonically on behalf of
+ 6     Plaintiffs
+ 7   EDWARD C. BACON, ESQ.
+       Bacon, Thornton & Palmer
+ 8     Capital Office Park
+       6411 Ivy Lane, Suite 500
+ 9     Greenbelt, Maryland 20770
+       301.345.7001
+10     ebacon@lawbtp.com
+       Appearing telephonically on behalf of
+11     Defendant DARCARS Imports, Inc.; Mariam, Inc.
+       d/b/a DARCARS Automotive Group; DARCARS of
+12     Rockville, Inc.; DARCARS of Rockville Pike,
+       LLC; and DARCARS Motors of Silver Spring,
+13     Inc.
+14   BRENDAN H. FITZPATRICK, ESQ.
+       DeHay & Elliston, LLP
+15     36 South Charles Street, Suite 1300
+       Baltimore, Maryland 21201
+16     410.783.7225
+       bfitzpatrick@dehay.com
+17     Appearing telephonically on behalf of
+       Defendant The Pep Boys - Manny, Moe & Jack
+18     and Kaiser Gypsum Co., Inc.
+19   
+20   
+21   
+0005
+ 1   APPEARANCES: (Cont'd.)
+ 2   JOHN R. HENDERSON, ESQ.
+       McGuireWoods
+ 3     200 McKinney Avenue, Suite 1400
+       Dallas, Texas 75201
+ 4     443.392.9400
+       jhenderson@mcguirewoods.com
+ 5     Appearing telephonically on behalf of Ford
+       Motor Company
+ 6   
+     WARREN N. WEAVER, ESQ.
+ 7     Whiteford, Taylor & Preston, LLP
+       Seven Saint Paul Street
+ 8     Baltimore, Maryland 21202
+       410.263.8205
+ 9     wweaver@wtplaw.com
+       Appearing telephonically on behalf of
+10     Defendant Sport Chevrolet Company, LLC
+11   BRUCE T. BISHOP, ESQ.
+       Willcox & Savage, P.C.
+12     Wells Fargo Center
+       440 Monticello Avenue, Suite 2200
+13     Norfolk, Virginia 23510
+       757.628.550909
+14     bbishop@wilsav.com
+       Appearing telephonically on behalf of
+15     Honeywell International, Inc. and Union
+       Carbide Corporation
+16   
+17   
+18   
+19   
+20   
+21   
+0006
+ 1                P R O C E E D I N G S
+ 2                    *   *   *   *
+ 3                     STIPULATION
+ 4             It is stipulated by and between the
+ 5   respective counsel for the parties that the
+ 6   reading and signing of the deposition by the
+ 7   witness is hereby waived.
+ 8   Whereupon,
+ 9               WILLIAM LONGO, Ph.D.,
+10   a witness herein, called for oral examination
+11   in the matter pending, being first duly sworn
+12   to tell the truth, the whole truth, and nothing
+13   but the truth, testified as follows:
+14                    EXAMINATION
+15        BY MR. BISHOP:
+16        Q    Good morning, Dr. Longo, how are you?
+17        A    I'm doing fine.  Ah, Mr. Bishop, how
+18   are you?
+19        Q    I'm doing great.  I'm going to ask
+20   you some general questions and then we'll get
+21   to a few specific questions.  And I'll ask you
+0007
+ 1   a few questions about the studies that have
+ 2   been identified, but rest assured, I don't
+ 3   intend to go through each and every one of them
+ 4   in any detail.
+ 5        A    Thank you.
+ 6        Q    I'm sure there'll be others on the
+ 7   line that will ask more intelligent questions
+ 8   than I will.  Let me ask you this, Dr. Longo,
+ 9   have your basic qualifications changed
+10   significantly in the last five years?
+11        A    No.
+12        Q    And in the past you said you're not
+13   the warnings guy.  You don't typically give
+14   testimony about warnings.  Is that your
+15   understanding in this case as well?
+16        A    Yes.
+17        Q    And likewise in the past you said you
+18   don't discuss or interpret corporate conduct,
+19   and you don't intend to do that in this case?
+20        A    That is correct, I will not.
+21        Q    And you have not reviewed,
+0008
+ 1   specifically for this case, any corporate
+ 2   documents?
+ 3        A    I have not.
+ 4        Q    It's my understanding, Dr. Longo, you
+ 5   are now the CEO of MAS; is that correct?
+ 6        A    That is correct.
+ 7        Q    All right.  So who's the president
+ 8   now?
+ 9        A    The president is Ms. Jane Martin.
+10        Q    And typically you give one to two
+11   depositions per week?
+12        A    That's typical, but it seems to have
+13   increased now, catching up from some of the
+14   year of COVID so...
+15        Q    Fair enough.  So the typical rate was
+16   one to two per week and it might be a little
+17   more now because of catch-up for COVID, but
+18   typically it was around 70 to 100 per year?
+19        A    Yes, sir.
+20        Q    Could you provide the court reporter
+21   or provide to Andy, who can provide it to the
+0009
+ 1   court reporter, a current list of testimony in
+ 2   depositions and trials?
+ 3        A    If Andy asks for it --
+ 4             MR. CANTOR:  That's fine.
+ 5        A    -- I will make it available.
+ 6             MR. BISHOP:  We will make
+ 7   arrangements to mark that as Exhibit Number 1
+ 8   once you have it, Andy.
+ 9             (Longo Deposition Exhibit Number 1
+10             was marked for identification.)
+11             MR. CANTOR:  We'll get it out to
+12   everybody.
+13             MR. BISHOP:  No problem.
+14        BY MR. BISHOP:
+15        Q    Is it fair to say, Dr. Longo, that
+16   although you've been retained by both
+17   defendants and plaintiffs in asbestos personal
+18   injury litigation, about 95 percent of the time
+19   when you're deposed or testify at trial, it's
+20   in a case where you've been retained by the
+21   plaintiff?
+0010
+ 1        A    Yes, sir.
+ 2        Q    You gave -- let me rephrase the
+ 3   question.  In a prior deposition this year you
+ 4   mentioned you had been retained by and given a
+ 5   deposition in a Scotts fertilizer case, which
+ 6   just caught my eye.  What -- 30,000 foot level,
+ 7   what was your role in that case and what were
+ 8   your opinions?
+ 9        A    The role was to determine after the
+10   processing, how much processing of the would-be
+11   vermiculite at the facility where they did the
+12   exfoliation of Scotts after it went through all
+13   the different processes to put the polymer
+14   coating on the vermiculite, placed-- how much
+15   tremolite was detectable before and after the
+16   polymer was removed.
+17             Also we did some -- we did tremolite
+18   content of these grade two of the vermiculite.
+19   Also we took vermiculite with -- the South
+20   African vermiculite and did pouring studies as
+21   well as spreading studies and then measured the
+0011
+ 1   amount of particulate, exposure particulate in
+ 2   the air to try to get an idea of what
+ 3   percentage gets up into the air versus what
+ 4   percentage gets down into the -- you know, goes
+ 5   down into the hopper or whatever.  And that's
+ 6   probably it.
+ 7        Q    In a deposition you gave in May you
+ 8   estimated that about 50 to 60 percent of your
+ 9   time currently is spent involved with
+10   litigation consulting.  Is that still a fair
+11   estimate?
+12        A    Because of all the cases, and
+13   specifically the talcum powder cases, I am not
+14   doing too much defendant work now.  That's all
+15   been turned over to Mr. Bill Egeland, who works
+16   in the office.  So he is doing more of that and
+17   he's also doing most of the non-talc cases
+18   except for I will take one every now and then
+19   for clients that I've had a really long
+20   relationship with, like Mr. Cantor.
+21        Q    You also estimate that -- and this is
+0012
+ 1   in a deposition in May of this year -- that MAS
+ 2   has earned over $30 million in litigation
+ 3   consulting work for plaintiffs' lawyers in
+ 4   asbestos and talc litigation over the past 30
+ 5   years.
+ 6        A    Yes.
+ 7        Q    When were you contacted, Dr. Longo,
+ 8   regarding the Hattenburg matter?
+ 9        A    You know, I am not sure.  I think
+10   maybe last month or so.
+11        Q    And what were you asked to do
+12   specifically?
+13        A    I was asked to give my general
+14   opinions concerning brake exposure and joint
+15   compound exposure with some limited information
+16   about Mr. Hattenburg.  I mean, I understand
+17   that when he was a kid, they did a remodeling
+18   on their house that went on for a number of
+19   years.  And according to the information I was
+20   given, he was involved in some of the joint
+21   compound work, mixing, sanding.
+0013
+ 1             Then he worked -- then his friend's
+ 2   father own a construction company.  He worked
+ 3   there and was again involved in joint compound
+ 4   work that was primarily Ready Mix from the -- I
+ 5   guess the late '60s, early '70s.
+ 6             And then I was asked to give general
+ 7   opinions about our brake studies and that
+ 8   Mr. Hattenburg did sort of the shade-tree
+ 9   mechanic for his own cars, and he also worked
+10   at a gas station in the early 1980s where he
+11   was around mechanics that were sanding, filing,
+12   compressed air blowout, and sweep up brake
+13   products.
+14             I have not reviewed any case-specific
+15   information.  I understand that Mr. Templin,
+16   who I have not spoken to about this case, the
+17   CIH will be giving that kind of testimony.
+18             Mr. Cantor said that he would be
+19   asking me hypotheticals at trial, and that is
+20   kind of what I was asked to do.
+21        Q    Fair enough.  Did you receive an
+0014
+ 1   occupational exposure history for
+ 2   Mr. Hattenburg?
+ 3        A    No, sir.
+ 4        Q    Did you receive any written
+ 5   communication that provided a summary of the
+ 6   occupational and exposure history for
+ 7   Mr. Hattenburg?
+ 8        A    No.
+ 9        Q    So it was verbal in a telephone
+10   conversation?
+11        A    Yes.
+12        Q    And you haven't reviewed any
+13   deposition transcripts of the case, correct?
+14        A    I have not.
+15        Q    Never talked to any factual witness
+16   including the plaintiff in the case?
+17        A    I have not.
+18        Q    And I'm sure this is the case, to
+19   your knowledge, you haven't visited any of the
+20   locations in which he allegedly performed brake
+21   work or was around others performing brake work
+0015
+ 1   or did or was around others applying or sanding
+ 2   joint compound?
+ 3        A    That's a good assumption that I did
+ 4   not.
+ 5        Q    Fair enough.  We received a list of
+ 6   studies which I will show you in just a second,
+ 7   but let me just ask you generally.  Is it fair
+ 8   to state that your joint compound workplace --
+ 9   work practice studies as well as your brake
+10   work practice studies have not been published
+11   in the peer-reviewed scientific literature?
+12        A    That would be a fair statement.
+13        Q    You don't rely on Tyndall lighting to
+14   determine whether what is visible in the air is
+15   asbestos or not, correct?
+16        A    The Tyndall lighting is not designed
+17   to detect asbestos versus the other airborne
+18   particulates that are up in the air.  Tyndall
+19   lighting is primarily a teaching tool to
+20   provide to juries as well as -- we've given
+21   those videos from the courses of people being
+0016
+ 1   taught about abatement, et cetera, to
+ 2   understand about what kind of concentration
+ 3   there can be up in the air that is not visible
+ 4   to the human eye.  So that is what it's --
+ 5   primarily what we use it for.
+ 6        Q    Your work practice simulation studies
+ 7   are all litigation-related, correct?
+ 8        A    Not all.  We have done things as
+ 9   interesting as setting off bug bombs to see
+10   what the concentrations are.
+11        Q    Let me try to narrow that down.  The
+12   workplace -- or the work practice simulation
+13   studies that have been identified in this case
+14   involving joint compound or brakes are
+15   litigation-related, correct?
+16        A    They are used in litigation from time
+17   to time, but it was really a lot to do with
+18   understanding more of how certain products are
+19   manipulated:  Do they release measurable levels
+20   of asbestos using common work practices.  But
+21   they do end up in litigation quite often.
+0017
+ 1        Q    And some of them were specifically
+ 2   done at the request of plaintiffs' counsel and
+ 3   you billed plaintiffs' counsel for the work
+ 4   practice simulations in those instances,
+ 5   correct?
+ 6             MR. CANTOR:  Objection.
+ 7             You can answer.
+ 8        A    Yes.  So when a particular plaintiff
+ 9   or a particular defendant asks specifically we
+10   want this work practice, they do get billed.
+11        BY MR. BISHOP:
+12        Q    In those instances where you and
+13   others at MAS performed a work practice
+14   simulation not specifically at the request of
+15   any counsel, plaintiff or defendant, is it
+16   still your practice to bill a law firm that
+17   intends to use -- utilize the work practice
+18   simulation, you know, in a litigation
+19   environment?
+20        A    If somebody wants to use a work
+21   practice simulation -- there's two cases here.
+0018
+ 1   If you want to use the work practice simulation
+ 2   that another law firm has funded, I send them
+ 3   to them.
+ 4             If it's something we have done in our
+ 5   research and the particular person -- law firm
+ 6   doesn't have them, we will charge some amount
+ 7   of money for them.
+ 8        Q    And what is the standard rate for
+ 9   that when you do charge?
+10        A    Depending on how old it is or how
+11   much was -- there really is not a standard
+12   rate, you know.  If it was a work practice that
+13   cost $100,000, it could be four or five
+14   thousand dollars.  If it was something that
+15   cost ten or 15 thousand dollars, it may be --
+16   or $25,000, it may be $2,000 and something.  It
+17   just depends on what was done.
+18        Q    In the past you have indicated that
+19   you are not aware of any studies published in
+20   the scientific literature that demonstrated
+21   that brake mechanics were exposed to asbestos
+0019
+ 1   above the OSHA permissible exposure limit on a
+ 2   time-weighted average, the eight-hour
+ 3   time-weighted average.  Is that still the case?
+ 4        A    It depends on what the purpose of the
+ 5   level is.  I don't think we have ever seen one
+ 6   that would have been over the '71 five fibers
+ 7   per cc but, you know, certainly want to equate
+ 8   it to today.  It depends on what they're doing.
+ 9             So grinding brakes without a guard on
+10   the grinder, yes, that would be over the 0.1 or
+11   the one fiber per cc for 30 minutes.  But the
+12   five fiber per cc, I've not seen one that has
+13   been published that violated that PEL.
+14        Q    And in your work practice simulations
+15   you're typically -- there are a few exceptions
+16   to this when you're specifically asked to do
+17   so -- but typically you're not trying to
+18   duplicate any particular work environment,
+19   correct?
+20        A    No, that would be impossible.
+21        Q    And the friction studies that have
+0020
+ 1   been identified for potential use in this case,
+ 2   none of them involve a brake job measurement
+ 3   from beginning to end, correct?
+ 4        A    Not in this case, no.  We do have one
+ 5   of those, though.
+ 6        Q    You and I have chatted about that in
+ 7   the past.
+ 8             And the measurements that are
+ 9   reflected in your work practice simulation
+10   studies that are identified in this case,
+11   they're all peak exposures?  Or to state it
+12   differently, exposures for a particular
+13   activity for a particular period of time,
+14   correct?
+15        A    Yes, they're short-term air samples.
+16        Q    We received a list of -- oops, hold
+17   on.  Oh, shoot.
+18        A    I have it in front of me if you --
+19        Q    Oh, good.  Okay.  Unfortunately, I've
+20   only got the first page, so I apologize.  So
+21   you have the list in front of you?
+0021
+ 1        A    Yes, sir, I do.
+ 2        Q    Great.
+ 3        A    That is why I was late.  I was trying
+ 4   to get everything together so I wouldn't have
+ 5   to say, oh, I don't have that.  I've got to go
+ 6   get it.
+ 7             Segueing, I love Zoom depositions
+ 8   until we get to documents.
+ 9        Q    True.
+10        A    That's why now I try to get
+11   everything I think may be applicable.
+12        Q    All right.  So the list I have is a
+13   letter from Mr. Cantor dated August 17th, 2021.
+14   The first item is Kaiser Gypsum finishing
+15   compound.  The last item is Tyndall reliance
+16   materials.  Is that the list you have?
+17        A    Yes, sir, I do.
+18             MR. CANTOR:  I'm sorry, so the one
+19   document on there that I don't think actually
+20   exists are Tyndall reliance documents.  That
+21   was something -- I don't think there is such a,
+0022
+ 1   quote, set of documents in one place.
+ 2             MR. BISHOP:  Okay.  All right.  Thank
+ 3   you.
+ 4        A    We do have a book that says Tyndall
+ 5   Reliance Documents.
+ 6             MR. CANTOR:  You have it.  I don't.
+ 7        A    I think everybody else does.
+ 8        BY MR. BISHOP:
+ 9        Q    All right.  Let me ask you a few
+10   questions about the first -- the friction
+11   studies.  And the first one that I see is
+12   number nine, it's entitled "Brake Blow Out II."
+13   And is that January 2001?
+14        A    Hold on.  Well, it's supposed to be
+15   here but I believe you're correct.  I just
+16   wanted to verify.
+17        Q    Sure.
+18        A    Yes, that's the one.
+19        Q    All right.  And that was one of the
+20   tasks that was performed -- that was not
+21   performed for any particular law firm, correct?
+0023
+ 1        A    Correct.
+ 2        Q    And you had obtained from a junkyard
+ 3   a rear axle assembly for I think it was a
+ 4   Chrysler Newport?
+ 5        A    Yes.
+ 6        Q    And you actually found out that the
+ 7   brake that was on the vehicle, when you did a
+ 8   post sample analysis, didn't contain any
+ 9   asbestos?
+10        A    That's correct.
+11        Q    The next item that is listed as
+12   Appendix A, "Opening of a Brake Box and Hand
+13   Sanding of Brake Shoes."
+14        A    So just looking at it now, the brakes
+15   they took off to put the new brakes on did
+16   contain asbestos and they were in the trunk of
+17   the car.
+18        Q    Fair enough.
+19        A    I knew there was something unusual
+20   about it.
+21        Q    So Appendix A, opening of a brake box
+0024
+ 1   and hand sanding of brake shoes, let me ask you
+ 2   generally regarding this, as well as the other
+ 3   brake studies that you have listed.
+ 4             If I was looking for information that
+ 5   would be relevant to a bystander, would I look
+ 6   at the area samples as opposed to the personnel
+ 7   samples?
+ 8        A    Yes.
+ 9        Q    Okay.  And the Appendix A, opening of
+10   brake box and hand sanding of brake shoes, in
+11   fact, I think I can ask you this with respect
+12   to all of the ones that are listed.  For all of
+13   the friction-related work practice simulation
+14   studies that are listed, they were all
+15   conducted in your test chamber that typically
+16   was, I don't know, 15 by 20 by 8 feet?
+17        A    Yes, sir, and I am just being picky.
+18   It's not really a chamber because it does have
+19   ventilation through it.  So we call it a
+20   contained area.
+21        Q    Fair enough.  Okay.  Appendix D,
+0025
+ 1   which is number 12 on the second page, is
+ 2   entitled "Clean up with Compressed Air," and
+ 3   that was a test where Mr. Hatfield used an air
+ 4   hose to blow off the arc grinder, work table
+ 5   and floor criteria.
+ 6             Would that be applicable to a case
+ 7   where there is no arc grinding?
+ 8        A    Yes and no.
+ 9        Q    Tell me why yes and tell me why no.
+10        A    Yes, it would -- let's start with the
+11   no.  It wouldn't be applicable if -- it
+12   wouldn't be applicable if there was no other
+13   type of work activity.  Maybe, you know, just a
+14   little hand sanding.  So if you're trying to --
+15   it wouldn't be applicable if you're trying to
+16   get in the range of -- strike all that first
+17   because I am just rambling and I apologize.
+18             It would not be applicable if you
+19   were trying to determine what the exposure
+20   range is for something else.  If you're not
+21   using compressed air on an arc grinder, say,
+0026
+ 1   but if you're using other products, it is
+ 2   applicable because it demonstrates that the
+ 3   dust can get back up in the air and easily
+ 4   reentrains with compressed air.  But it
+ 5   certainly would not be at the level you receive
+ 6   from an arc grinder that doesn't have a
+ 7   ventilation bag on it.  So it's more of a
+ 8   demonstration.
+ 9        Q    You mentioned a moment ago that all
+10   of the friction-related studies on this list
+11   were done inside an enclosed space.  If we were
+12   interested in knowing what the bystander
+13   exposure concentrations could be from these
+14   activities performed outdoors, we would need to
+15   look to those studies performed outdoors; would
+16   you agree?
+17        A    Yes and no.  If you have outdoor
+18   studies that were robust enough -- because you
+19   can't ever predict on any particular day what
+20   the environmental conditions will be: still
+21   air, upwind, downwind.  And there are studies
+0027
+ 1   out there outdoors for thermal insulation, but
+ 2   they've taken them both upwind and downwind
+ 3   during the removal of thermal insulation.
+ 4             So it's very hard to predict what
+ 5   would outdoors be.  If it's -- you know, you
+ 6   could have higher exposures, you could have
+ 7   lower exposures, just depending on the
+ 8   environment.
+ 9        Q    None of the studies on this list were
+10   performed outdoors, correct?
+11        A    That is correct.  The only time we
+12   have done outdoor studies is when we are
+13   testing something that does not have asbestos
+14   in it.
+15        Q    Appendix D is -- I'm sorry, let
+16   me -- yes, number -- I'm sorry, number 13,
+17   Appendix E, "Compressed Air Blow Out of
+18   Asbestos-containing Brake Dust."  That was a
+19   study that was done for a specific case; is
+20   that your recollection?
+21        A    Yes.  It was done on behalf of Steve
+0028
+ 1   Crick of Farrington Humphrey and McClain [sic].
+ 2   It was --
+ 3        Q    Go ahead, I apologize.
+ 4        A    No, it was a mechanic, and I think it
+ 5   was his son that had that 1947 Plymouth.
+ 6        Q    And they actually sent the Plymouth
+ 7   to you and you built an enclosure around the
+ 8   Plymouth and then performed the work simulation
+ 9   study, correct?
+10        A    Correct.  But in this case we
+11   actually had a mechanic who owned that car.
+12        Q    Correct.  The son came, right?
+13        A    Huh?
+14        Q    Did the son come out?
+15        A    He was the one that drove it down.
+16   We wanted to keep it but -- we asked if we
+17   could keep that car but he said no.
+18        Q    The next one is Appendix F.  I'm
+19   going to pass over that because I'm sure you
+20   will be asked about that by others.  Number 15
+21   is entitled "Hand Sawing[sic] a Ford Brake
+0029
+ 1   Shoe."  That's a June 2014 study, I think,
+ 2   isn't it?
+ 3        A    I think that ought to say Hand
+ 4   Sanding.  I have to look.  I don't think we had
+ 5   sawing.
+ 6             MR. CANTOR:  Yes, no, that was an
+ 7   error on our part.  I had one or two counsel
+ 8   call me about that.  That was a typographical
+ 9   error.
+10        BY MR. BISHOP:
+11        Q    I understand.  I know exactly, you're
+12   right.  Hand Sanding of Ford Brake Shoes.
+13        A    Yes.  Let me get it.
+14        Q    Is number 16, "Detection of Amphibole
+15   Asbestos and Chrysotile Brake Linings," is that
+16   a compilation?  Because I know you've done a
+17   number of bulk samples using the -- an enhanced
+18   Addison/Davies technique.
+19        A    Yes, that was probably the first one
+20   we've done and put together.  And then as we've
+21   gone along, we have done Addison/Davies for
+0030
+ 1   individual projects.  So we have that.  And if
+ 2   we have the time, I want to check to see which
+ 3   is more efficient, the Addison/Davies or the
+ 4   heavy liquid separation.  Because that would be
+ 5   a lot easier than doing the Addison/Davies.
+ 6        Q    And that's something you haven't
+ 7   completed at this point?
+ 8        A    I have not.
+ 9        Q    All right.  Let's go back to page one
+10   because I want to now just talk for a few
+11   minutes about the joint compound studies.
+12             The first one is labeled "Kaiser
+13   Gypsum Finishing Compound."  What is the
+14   difference between finishing compound and joint
+15   compound?
+16        A    Typically, the finishing compound is
+17   a finer product, and as the board says, they
+18   tend to sell it as the -- after you put the
+19   first couple coats on the joint compound, this
+20   would be the last coat, and when you sand it,
+21   it feathers nice.  I guess it feathers better
+0031
+ 1   for that smooth surface over the tape.
+ 2        Q    The second study is entitled "Kaiser
+ 3   Gypsum Joint Compound," I think that's a
+ 4   September 1997 study.  Do you by chance have
+ 5   that handy?
+ 6        A    I'm supposed to.  I am just looking
+ 7   for it.  Unless I've missed it, I've only got
+ 8   the finishing compound.  I might not have --
+ 9   it's the only one I think I don't have.
+10        Q    All right.  That's okay.  I think the
+11   numbers are going to speak for themselves.
+12        A    Yes, I don't have that.
+13        Q    Is it fair to state that, generally
+14   speaking, if I wanted to know the air sampling
+15   concentrations for direct exposure to somebody
+16   doing the work, I would look at the personnel
+17   samples results, and if I was looking for
+18   bystander numbers, I would look at the area
+19   samples referring to the joint compound
+20   studies?
+21        A    Yes.
+0032
+ 1        Q    Number four and five are additional
+ 2   joint compound studies and both of them involve
+ 3   sanding, correct?
+ 4        A    They both have sanding.  The
+ 5   Georgia-Pacific was more of a -- we actually
+ 6   rock-sheeted out the room, the small ECL, and
+ 7   did application and two layers of the joint
+ 8   compound and cleanup.  So the USG was mixing,
+ 9   applying and cleanup.
+10        Q    On number six, it's "Pouring of
+11   Calidria Asbestos."  Can you give me an
+12   executive summary of that study?
+13        A    Yes.  We were -- we had a bag of 144
+14   Calidria, and this has been a long time ago,
+15   where it was suggested that the average size
+16   distribution of -- you know, was all less than
+17   five microns.  It wasn't -- it was [inaudible]
+18   short.  And then it wasn't the average -- it's
+19   primarily bundles.
+20             You see very few single chrysotile
+21   fibers, and so we took some and sonicated the
+0033
+ 1   death out of them and then just did a size
+ 2   distribution of the fibers that were released,
+ 3   and those too were greater than five
+ 4   micrometers.  After that, we didn't hear much
+ 5   more about that.  That's why we did that.
+ 6        Q    And that was a January 2011 study?
+ 7        A    I think so because we have two of
+ 8   them.  So we have Calidria -- Pouring of
+ 9   Calidria I and II.  I think II was done a
+10   little bit -- I think there was a 2011 and then
+11   something like 2015 or 2016 we did a second
+12   one.
+13        Q    Is the second, entitled "Pouring of
+14   Calidria Asbestos II," is that the last
+15   Calidria study that's been performed at MAS?
+16        A    Yes.
+17        Q    Number eight just refers to "Joint
+18   Compound Reference Materials."  Anything
+19   specifically there you rely upon, given the
+20   nature of your assignment in this case?
+21        A    Well, we have the two papers, of
+0034
+ 1   course.  We have the Gypsum Association study
+ 2   done by Clayton in November 1973, which I rely
+ 3   on, and I've never been able to find out whose
+ 4   products they were using but they have similar
+ 5   results that we see.
+ 6             But what I found interesting about it
+ 7   is that particular study of overloaded samples
+ 8   used indirect process -- indirect analysis,
+ 9   which I think I've been criticized immensely
+10   about over the years.
+11             Then I have some studies from USG,
+12   National Loss Control Service Corporation for
+13   things like breathing zone, hand-mixing one bag
+14   of Durabond.  You know, we have -- we have got
+15   similar levels there that you find in the
+16   Selikoff work.
+17             I believe there's a UCC study in here
+18   where they were measuring -- and I'll give
+19   you -- it's in section four.  It's a July 14th,
+20   1975 on Calidria Asbestos letterhead of Union
+21   Carbide from a Mr. Jerry Nichols to
+0035
+ 1   H.B. Rhodes, Technology Manager.  And if you go
+ 2   to the back of that, they have a study in
+ 3   Table Two -- maybe I misspoke here.  Where is
+ 4   that.
+ 5             There is a Union Carbide study where
+ 6   they're mixing Kaiser Gypsum joint compound.
+ 7   I'm going to have to dig that out but I know
+ 8   it's in here somewhere.
+ 9        Q    Is there an index to that binder?
+10        A    Yes, there is an index but it
+11   doesn't -- you know, it's joint compound --
+12   it's not laid out in each one.  We never did
+13   that and, you know, there's two published
+14   articles, you know, Fischbein and
+15   Verma/Middleton published in the '70s -- excuse
+16   me, '80s.  No, '79 and '80, two peer-reviewed
+17   published joint compound exposure for what I
+18   would call real-world studies.  That's
+19   the primary ones in there.
+20        Q    All right.  And we go back to page
+21   two, the "Brake Reliance Materials."  Can you
+0036
+ 1   describe generally what is included in that
+ 2   group of documents?
+ 3        A    Well, the Brake alliance -- Brake
+ 4   Reliance, and we have an index here.  We
+ 5   have 43 documents, essentially everything from
+ 6   both published and unpublished literature,
+ 7   including unpublished studies from the Ammco
+ 8   Tools to the Friction Materials Standards
+ 9   Institute, Selikoff's work and others for
+10   published data on exposure, again from brake
+11   blowout to sanding to grinding to clutch
+12   blowout.
+13             We can provide -- I think you should
+14   have this and the latest -- and it was last
+15   updated on November 5th of 2020, where I have a
+16   handout from Carlisle Motion Control on brake
+17   temperatures from doing different activities.
+18   But I know from time to time we debate the
+19   whole forsterite issue.
+20             But my opinion is brakes don't get
+21   hot enough to turn chrysotile into forsterite,
+0037
+ 1   and Carlisle goes through the what you would
+ 2   expect on different loads, different
+ 3   temperatures and what happens to the braking
+ 4   system when you reach temperatures.
+ 5             And according to Carlisle, if you
+ 6   look at the temperatures, before it got to the
+ 7   temperature where chrysotile turns into
+ 8   forsterite, the brakes would fail because of
+ 9   the expansion of the drum due to the heat.
+10        Q    What I would like to do, Dr. Longo,
+11   is I'd like to mark as Exhibit Number 2 the
+12   index to the brake reliance materials, and then
+13   if you could provide to Andy the Carlisle
+14   document that you have mentioned -- I am not
+15   sure I have that -- and we will mark that as
+16   Exhibit Number 3.
+17        A    Sure.
+18             (Longo Deposition Exhibit Numbers 2
+19             and 3 were marked for
+20             identification.)
+21   
+0038
+ 1        BY MR. BISHOP:
+ 2        Q    Is there an index to the Tyndall
+ 3   reliance materials?  You mentioned there was a
+ 4   notebook.
+ 5        A    I don't have it.  There could be.
+ 6        Q    Why don't we leave Exhibit Number 4
+ 7   open, and if there is an index, if you can
+ 8   provide that to Andy for the court reporter.
+ 9   Obviously, if there isn't, you don't have to
+10   provide one.
+11        A    Okay.
+12             (Longo Deposition Exhibit Number 4
+13             was marked for identification.)
+14        BY MR. BISHOP:
+15        Q    Based upon the MAS studies that are
+16   outlined in the letter dated August 17th, 2021,
+17   which we'll mark as Exhibit Number 5 since
+18   we've mentioned it, what is the range of direct
+19   exposure associated with hand sanding of
+20   brakes?
+21   
+0039
+ 1             (Longo Deposition Exhibit Number 5
+ 2             was marked for identification.)
+ 3        A    I think of the three different -- the
+ 4   studies we've done, the range is approximately
+ 5   about two fibers per cc up to about seven or
+ 6   eight fibers per cc.
+ 7        BY MR. BISHOP:
+ 8        Q    And as I recall in the past you have
+ 9   indicated that the majority of your
+10   measurements have been closer to two.  That
+11   seven is -- I'm not going to say it's an
+12   outlier but it's only one that is at seven.
+13   Most of the others are closer to the two to
+14   three range?
+15        A    Let's see.  The 2014 would be --
+16   well, two to three.  So I think you're correct.
+17        Q    And do you have a range you could
+18   provide us for area samples that would be
+19   relevant for bystander for again sanding the
+20   brakes?
+21        A    The area samples for this one ranges
+0040
+ 1   from approximately 0.05 to one fiber per cc.
+ 2   And that would [inaudible].
+ 3             COURT REPORTER:  I'm sorry, Doctor, I
+ 4   lost you there.
+ 5        A    Yes.  Let me just -- what's happening
+ 6   is I'm looking away and you're not getting it,
+ 7   but let me just get a few of the data points.
+ 8             Looking at a couple of them,
+ 9   Mr. Bishop, I would say that they're in the --
+10   if you were to average them out, they're in
+11   around the 0.5 -- 0.4 to 0.5 to one fiber per
+12   cc.  Some are a little higher, some a little
+13   lower.
+14        BY MR. BISHOP:
+15        Q    Could you give me an estimate for the
+16   range of direct exposure in the MAS studies for
+17   compressed air blowout or brake changes that
+18   involved asbestos-containing brakes?
+19        A    So for the two studies, the Brake
+20   Blow Out II, there's two personnel, four to six
+21   fibers per cc.  And the Appendix B, the range
+0041
+ 1   is a high of 3.3 and the low is about 0.4.  I
+ 2   think if it's all averaged up, it's going to be
+ 3   around one and [inaudible] fibers per cc for
+ 4   all the air samples --
+ 5             COURT REPORTER:  I'm sorry, Doctor,
+ 6   one and what, sorry?
+ 7        A    The range looks like it would -- on
+ 8   average would be about one fiber to 1.5 fibers
+ 9   per cc for all the air samples from the
+10   compressed air blowout.
+11        BY MR. BISHOP:
+12        Q    If I asked you the same question
+13   regarding compressed air blowout, but focusing
+14   on bystander, what would be the range, in your
+15   opinion, based upon the MAS studies outlined in
+16   Mr. Cantor's letter of August 17th, 2021?
+17        A    Well, the compressed air blowout on
+18   the inspection for the area samples are from
+19   0.06 fibers per cc, one nondetect, up to 0.56
+20   and for the Compressed Air Blow Out II, the
+21   range is 3.4 to 4.2 fibers per cc.
+0042
+ 1             So the range is -- the amount is
+ 2   really dictated about how much brake dust is in
+ 3   the drums.  These levels here are probably on
+ 4   the lower end of what you see in the
+ 5   literature.
+ 6             Selikoff's work at a mechanic shop, I
+ 7   think they have as high as 20 fibers per cc for
+ 8   the direct.  Then they take area samples I
+ 9   think all the way out to 40 or 50 feet so you
+10   can get an idea of what they were measuring.
+11        Q    Let's focus on the joint compound
+12   based upon the MAS studies that are outlined in
+13   the correspondence dated August 17th, 2021.
+14   What, in your opinion, is the range of direct
+15   exposures associated with sanding joint
+16   compound?
+17        A    If we could take a few-minutes
+18   break --
+19        Q    Sure.
+20        A    I think the best example of at least
+21   the range is the Georgia-Pacific joint
+0043
+ 1   compounds because I actually did one room
+ 2   because we Sheetrocked the ceilings and the
+ 3   three walls -- and the walls.  So if we could,
+ 4   you know, if we could take like a five-minute
+ 5   break, I can go grab those and give you a
+ 6   range.
+ 7             All the other joint compound studies
+ 8   were just a, you know, I think it was nine
+ 9   linear feet, you know, two walls, so like
+10   parallel and perpendicular.
+11             MR. BISHOP:  All right.  Let's take a
+12   five-minute break.
+13             (Recess taken from 11:00 a.m.
+14             until 11:06 a.m.)
+15        A    Mr. Bishop, this is our November 2014
+16   report and let's just get to the data.  So the
+17   hand sanding of the walls, first phase -- I
+18   call it phase one; it would be the first
+19   level -- I mean, the first coat with the tape
+20   ranged from one to four fibers per cc.
+21             The ceiling ranged from -- or the
+0044
+ 1   helper was 1.6 to 2.  The worker was 4.2.  And
+ 2   then for the cleanup, ranged from -- for the
+ 3   worker 3.4 to 4.7 fibers per cc.
+ 4             Then the second coat was 1.2 to --
+ 5   excuse me, for the worker was three fibers per
+ 6   cc, for the helper was two fibers per cc.
+ 7             The ceiling was 3.7 for the worker
+ 8   and 3.4 for the helper, and I don't know if I
+ 9   have a cleanup range.
+10             So that was the range for a room with
+11   the Georgia-Pacific.
+12        BY MR. BISHOP:
+13        Q    Okay.  Referring back to the friction
+14   studies that are on the list dated August 17th,
+15   2021, do any of these studies address cleanup?
+16        A    Bendix brakes for Chrysler vehicles,
+17   I got a cleanup after filing but I forget how
+18   we did the cleanup.  But the cleanup range from
+19   13 to 14 fibers per cc and the filing ranged
+20   from approximately almost nine fibers per cc.
+21             I'm going to check and see if we have
+0045
+ 1   any other cleanups.
+ 2             COURT REPORTER:  I can't hear you,
+ 3   Doctor.
+ 4             THE WITNESS:  I'm going to check and
+ 5   see if we have any other cleanups.  It might be
+ 6   it other than the compressed air.  That's it.
+ 7        BY MR. BISHOP:
+ 8        Q    All right.  Other than what is listed
+ 9   on what we have marked as Exhibit Number 5,
+10   which is the August 17th, 2021 letter,
+11   including any of the indices of documents that
+12   are listed here, are there any other documents
+13   that you reviewed specifically for the
+14   Hattenburg case?
+15        A    No.
+16        Q    Are there any other documents other
+17   than what's listed on Mr. Cantor's letter of
+18   August 17th, 2021 documents, that you believe
+19   you would specifically refer to and comment on,
+20   given what you have been asked to do at trial?
+21        A    No.
+0046
+ 1        Q    I take it you haven't received any
+ 2   expert reports from other experts retained in
+ 3   this case, correct?
+ 4        A    I have not.
+ 5        Q    And I think we know the answer to
+ 6   this but just for the record, you haven't
+ 7   prepared a written expert report in this case?
+ 8        A    No, sir, I haven't.
+ 9        Q    And in the past you've indicated,
+10   Dr. Longo, that you don't comment on the
+11   biological activity of chrysotile, or brake
+12   dust for that matter, and that is still true
+13   for the Hattenburg matter?
+14        A    That is still true.
+15        Q    And for the Hattenburg matter, you
+16   haven't prepared any qualitative or
+17   quantitative estimates of cumulative exposure
+18   of Mr. Hattenburg to any particular product or
+19   any particular activity?
+20        A    I have not since I have not been
+21   given any specific information.
+0047
+ 1        Q    You mentioned a moment ago that there
+ 2   was a "Pouring of Calidria Study II" that was
+ 3   conducted in 2015.  Did I hear you correctly?
+ 4        A    Somewhere around there.
+ 5        Q    Is there anything in that that you
+ 6   intend to rely upon for purposes of your
+ 7   opinions in this case?
+ 8        A    No, sir.
+ 9        Q    Okay.  Have you ever tested asbestos
+10   and nonasbestos-containing joint compound under
+11   Tyndall light conditions to see if there were
+12   any differences between the two?
+13        A    The only time we did anything like
+14   that was stacking nonasbestos joint compound
+15   bags, and it was more of a -- it was more to
+16   determine, if somebody was stacking
+17   asbestos-containing joint compound bags, would
+18   there be a potential for exposure, and that is
+19   the reason we did that.
+20             And stacking nonasbestos joint
+21   compound dry bags does produce dust.  So if you
+0048
+ 1   were sanding nonasbestos joint compound, I
+ 2   didn't think it would look any different in the
+ 3   Tyndall lighting because you're generating
+ 4   microscopic-sized particles during the sanding.
+ 5        Q    I read in a prior transcript where
+ 6   you indicated that you or MAS had conducted
+ 7   studies on asbestos fireproofing in the field.
+ 8   I just was curious generally about what those
+ 9   studies were.  Can you give me sort of an
+10   executive-level summary?
+11        A    If I said it was MAS, I misspoke.
+12   This was some early work by Mr. Hatfield where,
+13   in the Embarcadero Center that had W.R. Grace
+14   Monokote 3 that was being abated,
+15   Mr. Hatfield -- and was in a contained area --
+16   Mr. Hatfield had set up lighting and videotaped
+17   another individual, an investigator, just go up
+18   a ladder and lightly rub the Monokote to see if
+19   it generated particulates to a degree that you
+20   would see it under Tyndall lighting and see it
+21   with and without Tyndall lighting.
+0049
+ 1             So he -- as far as I know, that was
+ 2   in the first Tyndall lighting study of
+ 3   asbestos-containing products.
+ 4        Q    Did Mr. Cantor or anyone else at the
+ 5   Angelos firm provide any information about
+ 6   whether Mr. Hattenburg used talcum powder
+ 7   products?
+ 8        A    The only information I received about
+ 9   Mr. Hattenburg was what I told you.
+10        Q    Have you ever tested a cosmetic
+11   talcum powder product where at least some of
+12   the product -- let me rephrase the question.
+13             Have you ever tested any cosmetic
+14   talcum powder product where at least some of
+15   the product didn't contain asbestos?
+16        A    We have had containers that were
+17   nondetect by all the different methods.  We
+18   can't say that it doesn't have asbestos or that
+19   it does because you can only go down to your
+20   analytical sensitivity.
+21        Q    Are there any particular brands of
+0050
+ 1   cosmetic talcum powder products where the only
+ 2   containers you tested didn't contain asbestos?
+ 3        A    Again, we have had -- we may have
+ 4   analyzed products where we've only had one
+ 5   container or two containers and they may have
+ 6   been nondetect, but they're typically from
+ 7   mines where other products that we have tested
+ 8   has come from the same mines.
+ 9             So we're only dealing with a finite
+10   amount of talcum powder mines.  In the United
+11   States it's Vermont, Montana, North Carolina
+12   and Alabama.  That's it.  All those mines have
+13   asbestos in it.
+14             Then you go, you know, Italy,
+15   Australia, Brazil, China, and we have found
+16   asbestos in each of those mines.  The only
+17   mines we really haven't had the opportunity to
+18   get samples yet is in Australia they have the
+19   western mine and the southern mine.  We have
+20   found asbestos in the western mine from J&J
+21   retains, which they sold in both Australia and
+0051
+ 1   England.  But sometimes, depending on who you
+ 2   ask in J&J, at some point they switched to the
+ 3   southern mine and we haven't had an opportunity
+ 4   to test samples from the southern Australia
+ 5   mine.
+ 6             MR. BISHOP:  Dr. Longo, thanks very
+ 7   much for answering my questions.
+ 8             THE WITNESS:  Mr. Bishop, always a
+ 9   pleasure.
+10             MR. CANTOR:  Anyone else, please?
+11                     EXAMINATION
+12        BY MR. HENDERSON:
+13        Q    Hi, this is John Henderson.  I have a
+14   few general questions for Dr. Longo.
+15             Hi, Dr. Longo, how are you?
+16        A    Mr. Henderson, good to see you again.
+17   How have you been?
+18        Q    I've been well, thank you.  I think
+19   the last time we talked, we both decided we had
+20   gotten older than the last time we had talked
+21   before that.
+0052
+ 1        A    Next week is my 67th birthday and
+ 2   I've never really thought about birthdays
+ 3   before, but somehow that 70 just kind of hangs
+ 4   in my mind.
+ 5        Q    Well, congratulations.  At our age,
+ 6   it's just good that we keep having birthdays.
+ 7        A    Above ground is a good day, right?
+ 8        Q    Exactly.
+ 9        A    Is your family well?  They survived
+10   COVID all right and everything?
+11        Q    Everything's fine.
+12        A    Good, good.
+13        Q    And like Mr. Bishop, I'm not going to
+14   be very long because we have visited quite a
+15   bit in the past.  A couple of questions,
+16   though.
+17             Have you generated or has MAS
+18   generated any invoices for your time in the
+19   Hattenburg case?
+20        A    No, I have not issued any invoices
+21   for my time there.
+0053
+ 1        Q    Okay.  And I would assume that MAS
+ 2   would at some point issue invoices for your
+ 3   work in connection with the Hattenburg case?
+ 4        A    Absolutely.
+ 5        Q    And I would assume that if the
+ 6   Angelos firm, if Andy was agreeable to
+ 7   providing those to us, to the defense, you
+ 8   would have no problem with that, correct?
+ 9        A    You'd have to ask Mr. Cantor.
+10             MR. CANTOR:  I have no problems doing
+11   that.
+12             MR. HENDERSON:  Thank you.
+13        A    I can't -- you know, Mr. Henderson, I
+14   just can't speak for him.
+15        BY MR. HENDERSON:
+16        Q    I understand completely.
+17             MR. HENDERSON:  So we would make a
+18   request that when the plaintiffs' law firm
+19   receives the invoices, that they be provided to
+20   the defense counsel that are still active in
+21   this case.  Is that acceptable, Counsel?
+0054
+ 1             MR. CANTOR:  It is.
+ 2        BY MR. HENDERSON:
+ 3        Q    Okay.  I have had a chance to talk to
+ 4   you at length in the past about the "Hand
+ 5   Sanding for Ford Brakes" from June of '14 and
+ 6   so I am not going to go into that, but just a
+ 7   couple of general questions on that based upon
+ 8   some answers that you gave to Mr. Bishop
+ 9   earlier.
+10             Has the Angelos -- that -- well, real
+11   quick.  That study was done for the case for --
+12   well, for Joe Satterley, correct?
+13        A    Correct.
+14        Q    And you said that the study was done
+15   specifically for a plaintiffs' law firm, and if
+16   another plaintiffs' law firm or I guess a
+17   defense law firm that wanted to use that study,
+18   you would send them to the law firm that paid
+19   for the study; is that right?
+20        A    Yes, sir.
+21        Q    Okay.  And do you know if the Angelos
+0055
+ 1   firm is being charged or will you -- let me
+ 2   back up.
+ 3             Does MAS intend to charge the Angelos
+ 4   law firm for the use of that Hand Sanding of
+ 5   Ford Brakes in this case, the Hattenburg case?
+ 6        A    No, sir.  The Angelos office has had
+ 7   this study for a while.
+ 8        Q    Right.
+ 9        A    So no charges for any of these
+10   studies.
+11        Q    Correct.  That was my understanding.
+12   Thank you for confirming that.
+13             What about the first time that the
+14   Angelos firm ever wanted to use the hand
+15   Sanding of Ford Brakes.  Was there a charge at
+16   that time to allow them to use that study?
+17        A    You know, I don't have any recall of
+18   what happened way back when.  I am assuming I
+19   just had them talk to Mr. Satterley at that
+20   time, so I don't know if anything ever got
+21   charged or not.
+0056
+ 1        Q    Okay.  And so assuming that
+ 2   Mr. Satterley said sure, you can use the study,
+ 3   would that information get back to you or
+ 4   someone at MAS and then MAS would issue a
+ 5   charge for that study, or would it just be
+ 6   comped?
+ 7             MR. CANTOR:  Objection.
+ 8             You can answer, though.
+ 9        A    It's not that it's comped, you know,
+10   it's whatever the plaintiffs' firms work out.
+11   All the information I need is to know if it's
+12   okay to send it to them or not since it's
+13   essentially their work product.
+14        BY MR. HENDERSON:
+15        Q    Okay.  So if -- hypothetically, if
+16   Mr. Satterley or somebody in his firm said
+17   sure, you know, Angelos law firm, you can use
+18   this study, would it be your understanding or
+19   expectation that some amount of money would
+20   have been paid to Satterley's firm by the
+21   Angelos firm for the use of that study?  Or do
+0057
+ 1   you have any understanding one way or the
+ 2   other?
+ 3        A    I don't have any understanding one
+ 4   way or the other.
+ 5        Q    But from what I'm hearing you say,
+ 6   MAS would not charge the Angelos law firm for
+ 7   the Satterley study.  If any money was going to
+ 8   be paid, it would be paid to the Satterley
+ 9   firm; is that correct?
+10        A    Again, I don't have any idea and it's
+11   not our typical practice once they have --
+12   whoever paid for the study says it's okay, I
+13   try not to get involved in any of that.
+14        Q    I understand.  I guess I -- just to
+15   wrap it up, but MAS -- if the Satterley firm
+16   said sure, use the study, MAS would then not
+17   charge the Angelos firm for the study?
+18             MR. CANTOR:  Objection.
+19        A    That is our practice but I hate to
+20   ever say it absolutely no way happened.
+21   
+0058
+ 1        BY MR. HENDERSON:
+ 2        Q    Sure.  Never want to say never.
+ 3        A    Anytime I do that, I get burned.
+ 4        Q    Okay.  Well, I'm not trying to burn
+ 5   you.  We've been doing this a long time, we --
+ 6        A    -- depositions.
+ 7        Q    Okay.  The next study I want to ask
+ 8   you about very briefly is the one that's
+ 9   entitled on the sheet that we got, "Secondary
+10   Exposure from Work Clothing" from June of '16,
+11   2016.  Do you have that study available to you?
+12        A    I can get it.
+13             MR. CANTOR:  What number is that?
+14        BY MR. HENDERSON:
+15        Q    I don't know what number it is.
+16             (Reporter requests one person talk at
+17              a time.)
+18             MR. CANTOR:  I'm sorry.
+19             MR. HENDERSON:  Andy, I can't tell
+20   you, I'm sorry.  I just had my paralegal pull
+21   one or two of these studies, but the name of
+0059
+ 1   the study is "Secondary Exposure from Brake,
+ 2   Clothing-Friction Products."
+ 3             MR. CANTOR:  That's not one of the --
+ 4             MR. HENDERSON:  It's from June
+ 5   of 2016.
+ 6             MR. CANTOR:  That's not one that is
+ 7   listed in the letter that Dr. Longo will be
+ 8   relying on.
+ 9             Is that correct, Dr. Longo?
+10             THE WITNESS:  That is correct.
+11        BY MR. HENDERSON:
+12        Q    Then I have no questions about that
+13   at this time.  Thank you.  I don't know what my
+14   paralegal did here.  I'm not throwing my
+15   paralegal under the bus.  I can't do that.
+16             Okay.  Another study that she pulled
+17   for me, and it's entitled, "Bendix Brakes for
+18   Ford Vehicles: Filing, Clean Up and Fabric
+19   Analysis" from January of '98.  Is that one
+20   that you are going to rely on in any way for
+21   the Hattenburg case?
+0060
+ 1        A    Well, if in fact there's hand filing,
+ 2   the answer would be yes.  It certainly is --
+ 3   it's a representation of what happens when you
+ 4   clean up using dry sweeping or compressed air.
+ 5   It is not intended to represent the levels
+ 6   because you're going to have a range of levels
+ 7   depending on what contamination is on the
+ 8   floor, but if there was hand filing of brakes,
+ 9   yes.
+10             I think I was told there was some
+11   sanding, blowout and hand filing.  If hand
+12   filing is one of the practices that was done by
+13   the plaintiff, then yes, I would be relying on
+14   it.
+15        Q    And I guess I am a little unclear as
+16   to what you envision your role versus
+17   Mr. Templin's role in the case.  Are you --
+18   tell me what you understand to be your role
+19   versus that of Mr. Templin.
+20        A    My role is just to talk generally
+21   about the potential exposure to asbestos from
+0061
+ 1   work practices on brakes.  Also my role would
+ 2   be to talk about, as a material science, the
+ 3   composition of the brakes.  Is it encapsulated
+ 4   or not.  You've been taking my depositions for
+ 5   a long time.  As you know, I give it the --
+ 6   different times, the corn dog effect.
+ 7             And any of the science behind on why
+ 8   it's not encapsulated versus just a mixture.
+ 9   So more of in I'm the one who directed all
+10   these studies.
+11             Mr. Templin as the CIH would be doing
+12   what they do, you know, the exposure levels he
+13   would anticipate from the literature.  How
+14   often -- I guess how often he was around and
+15   the dates and all that, that I am not going
+16   to do.
+17        Q    For example, Mr. Templin might rely
+18   on your study of filing, for example, to get
+19   some numbers that he could then use to talk
+20   about the individual plaintiffs' potential
+21   exposure; is that fair?
+0062
+ 1             MR. CANTOR:  Objection.
+ 2        A    I assume that's fair.  I know that's
+ 3   what he particularly does.  And also to
+ 4   validate, you know, to be able to say yes,
+ 5   these are my studies and I am the one who
+ 6   directed it, put it together.  And this is what
+ 7   we were trying -- this is the hypothesis we
+ 8   have and that is how the data fits and
+ 9   generally how this relates to the published
+10   literature and unpublished literature.
+11             And, you know, what procedures did we
+12   use to make the measurements, the air samples,
+13   and why did -- you know, there's a myriad of
+14   questions that could be asked that Mr. Templin
+15   may not have all the information.
+16        BY MR. HENDERSON:
+17        Q    Okay.
+18             MR. CANTOR:  John, can I just add one
+19   thing.  You and Dr. Longo were talking in
+20   regards to specifically to brake studies.  I
+21   don't want to ignore the fact that he's also
+0063
+ 1   going to be testifying as to various matters
+ 2   concerning the joint compound studies, just so
+ 3   it's a complete picture here because I know
+ 4   that your question is narrowly focused on I
+ 5   believe the brakes, but obviously they'll be
+ 6   doing the same with regard to the brakes to the
+ 7   joint compound issues.
+ 8             MR. HENDERSON:  Yes, absolutely.  And
+ 9   all of my questions, since I represent Ford,
+10   they didn't make joint compound that I know of
+11   so --
+12             MR. CANTOR:  Right.  I just tried to
+13   be clear.  Thank you.
+14             MR. HENDERSON:  Thank you, Counsel.
+15        BY MR. HENDERSON:
+16        Q    Do you have that "Bendix Brakes for
+17   Ford Vehicles Work Practice Simulation
+18   Demonstration," that study, available to you
+19   right now, Dr. Longo?
+20        A    I was just talking about it and I've
+21   just got to find out where I put it.  Give me a
+0064
+ 1   second to go through.
+ 2        Q    Sure.
+ 3        A    You're asking about the hand filing?
+ 4        Q    Yes.  The name of the study is
+ 5   "Bendix Brakes for Ford Vehicles Work Practice
+ 6   Simulation Demonstration" and it includes
+ 7   filing -- let's see, cleanup and fabric
+ 8   analysis.
+ 9        A    I have that in front of me.
+10        Q    Okay.  I have some general questions
+11   about it.  It's been a long time, if ever, that
+12   I have asked you about or talked to you about
+13   that study.  So first of all, why was that
+14   study done, Dr. Longo?
+15        A    It was a case involving -- the
+16   plaintiffs' attorney was Mr. Lipman, I think it
+17   was, down in Miami.  And he had a case in which
+18   there was hand sanding and hand filing and we
+19   were asked to replicate or to do those work
+20   practices simulations.
+21             And I think there was cleanup also.
+0065
+ 1   So we did both.  Sanding, I think we had some
+ 2   Ford brakes, we had the Chrysler brakes.  We
+ 3   did the filing.  And I think this is the only
+ 4   one we did cleanup.  So that was on his behalf.
+ 5        Q    Okay.  So it was done at the request
+ 6   of the plaintiffs' law firm in Miami; is that
+ 7   correct?
+ 8        A    Yes, sir.
+ 9        Q    In connection with a case either
+10   pending or a potential case that that law firm
+11   had, correct?
+12        A    It was a potential -- it was a
+13   pending case because we received some of the
+14   depositions to look at the work practices he
+15   was doing, if I remember correctly, but it's
+16   been a while.
+17        Q    Sure.  Do you recall where you got --
+18   where the brakes came from?
+19        A    Yes, they came from a company that
+20   sold -- and I don't have the original box but I
+21   have the FedEx here -- Automobilia.  They sold
+0066
+ 1   vintage brake parts, and this came in a box
+ 2   from a Mr. -- I can't read it on here, so I
+ 3   would have to get the whole study where it has
+ 4   the original chains of custody.  Just what I
+ 5   have here is just the short version of
+ 6   everything.
+ 7        Q    All right.  Were they new brakes or
+ 8   were they used brakes?
+ 9        A    They were what I call now ONP, old
+10   new product.
+11        Q    Describe what you mean by that.
+12        A    Old new product.  So it's a product
+13   that was made some years ago but it is in new
+14   condition, never been used.  So when you say
+15   new product, people think of something you just
+16   bought.  So I try to change what I write down
+17   now.  It's an old new product, does that make
+18   sense?
+19        Q    That makes a lot of sense.  The study
+20   says "Bendix brakes for Ford vehicles."  Why
+21   did you think it was for a Ford vehicle?
+0067
+ 1   That's my question.
+ 2        A    Bendix brakes for Chrysler -- let me
+ 3   get the other one.  That was a hand sander.  I
+ 4   think this is it right here.  Yes, I'm sorry, I
+ 5   am looking at the wrong one.
+ 6        Q    I thought maybe you were.
+ 7        A    So why did we think it was Ford?
+ 8        Q    Yes.
+ 9        A    Because the picture shows them in a
+10   Ford box that's wrapped up and it says "for
+11   rear Ford truck" sticker on the box, and it
+12   says "R&P Parts Rebuild Inc." and "We
+13   manufacture Ford brakes."
+14             And we know it's Bendix brakes
+15   because on the lining of the brake it says
+16   "Bendix -NY -ZF."  And on the top of the brake,
+17   the friction material which has the Ford stamp
+18   logo, and a P-R-I-M.  Does that mean premium, I
+19   guess?
+20        Q    And just so we're clear, there may be
+21   some confusion at the start.  Is this the study
+0068
+ 1   that was done for the Miami law firm?
+ 2        A    Yes.
+ 3        Q    If we look at the -- I'll call them
+ 4   summary sheets where the data is listed sort of
+ 5   in the -- way back in the back.  But at the
+ 6   front of the study, the first one we have here
+ 7   is "Asbestos air analysis result for filing
+ 8   demonstration."  Do you see that page?  It's
+ 9   got data on it?
+10        A    Yes.
+11        Q    Okay.  I think it's fairly
+12   self-explanatory.  This would have been the air
+13   samples that were taken during the filing
+14   portion of the study, correct?
+15        A    Correct.
+16        Q    Okay.  And there is an RHL personal
+17   and RHR personal.  I assume that's Mr. Hatfield
+18   left, Mr. Hatfield right; is that correct?
+19        A    Right.
+20        Q    And then there's WLL and WLR, that's
+21   Dr. Longo left, Dr. Longo right, correct?
+0069
+ 1   Correct?
+ 2        A    Correct, I'm sorry.
+ 3        Q    Sure.  And how long did the filing --
+ 4   how long did the two of you actually file the
+ 5   brakes?  How many seconds or minutes?
+ 6        A    The brakes were filed, and there was
+ 7   only one person filing and I can't remember if
+ 8   it was me or Mr. Hatfield.  And the filing
+ 9   took 21 -- is that correct? -- 21 minutes for
+10   this study as compared to the hand filing in
+11   Appendix B which was done for one minute, where
+12   the personnel sample ranged from 1.2 to 2
+13   fibers per cc.
+14        Q    All right.  Let me make sure I
+15   understand.  As you sit here today, looking at
+16   this data, you don't know if you were doing the
+17   filing or if Mr. Hatfield was doing the filing;
+18   is that correct?
+19        A    Correct.  I would just have to look
+20   at the video.  It's easy to tell us apart.  One
+21   is taller than the other.  I am doing the work
+0070
+ 1   practice, you know, that is from 1997 and I
+ 2   haven't looked at that video in a long time.
+ 3        Q    I can imagine.  Why were there two of
+ 4   you having air samples taken if only one was
+ 5   doing the filing?
+ 6        A    We were just getting more air samples
+ 7   say for a helper right there, you know.  It's
+ 8   still bystander, but it's a bystander within a
+ 9   couple of feet of the work versus seven or
+10   eight feet away.  Or, you know, in our big
+11   study now, we have bystander samples going all
+12   the way to 30 feet away with the Honda car.
+13        Q    Sure.  And these are -- there were --
+14   is it -- at least, I don't see any data.  There
+15   was no area samples taken; is that correct?
+16        A    No, there should be data.  Yes, we
+17   have two area samples.
+18        Q    Oh, I see it.  I apologize.
+19        A    -- it was connoted to be analyzed,
+20   and the other one was, you know, 2.9 fibers per
+21   cc.
+0071
+ 1        Q    And how far were the area samples
+ 2   from the, you know, the source point, if you
+ 3   will, from the release of the fibers?
+ 4        A    I think it was approximately four
+ 5   feet, four to -- yes, no more than four to five
+ 6   feet.
+ 7        Q    And then to determine how close you
+ 8   and Mr. Hatfield were to each other, we would
+ 9   just have to watch the video; is that correct?
+10        A    Yes, sir.
+11        Q    Now, you said the filing was for 21
+12   minutes.  How many brake shoes were actually
+13   filed?
+14        A    Four.
+15        Q    Okay.
+16        A    So, you know, you're averaging about
+17   five minutes of brake shoe.  These brake shoes
+18   were truck brake shoes so they're bigger than
+19   the ones we did later.
+20             As I recall, you know, it's been a
+21   while, but there was more -- instead of just
+0072
+ 1   doing, you know, rounding the corners, there
+ 2   was roughing up of the surface too.
+ 3             There was a reason that we did it 21
+ 4   minutes or, you know, roughly five minutes of
+ 5   brake shoe as compared to the study we did
+ 6   later on in our Appendix B which was trying to
+ 7   duplicate the best we could the Charlie Blake
+ 8   paper.  They were filing for about a minute.
+ 9        Q    Okay.  And I don't know, maybe the
+10   picture that you have of the box will tell you,
+11   but do you know what size or what model of Ford
+12   truck these brakes were intended for?
+13        A    The size of the brakes were 12 by
+14   two -- and I think that's two and a half -- and
+15   it says for either front or rear Ford brake.
+16   It will fit both an F-250 and an F-350 on the
+17   front and a F-250 and an F-350 for the rear,
+18   and it will fit an Econoline and I can't quite
+19   read the code on the rear.
+20        Q    Okay.
+21        A    Anything from a '69 to '71.
+0073
+ 1        Q    All right.  And is that information
+ 2   that you're reading from, is that actually on
+ 3   the box or is that on some type of insert that
+ 4   came with the box?  What are you reading from?
+ 5        A    It looks like it was stuck right on
+ 6   the box.
+ 7        Q    On the box.  Okay.  All right.  That
+ 8   answers that.
+ 9             Now, on that first sheet that I
+10   talked to you about where I missed the area
+11   samples that you corrected me on, below the
+12   personnel samples there are two data points
+13   for -- that say "fabric."  Do you see those?
+14        A    Yes.
+15        Q    Tell me what those represent.
+16        A    It represents that on the work
+17   clothes -- new work clothes where a piece of
+18   fabric is taken out of the chest area and then
+19   they're analyzed by the EPA fabric method.
+20        Q    And is that just how much -- well,
+21   first of all, they're entitled "structures."
+0074
+ 1   What does that mean, structures?
+ 2        A    Well, it's the EPA method for TEM
+ 3   analyzing this material.  They break it down.
+ 4   You either can have a cluster, a bundle -- a
+ 5   cluster of asbestos where you have particulate.
+ 6   You have asbestos sticking out of a matrix of
+ 7   nonasbestos.  You can have a bundle which is
+ 8   multiple fibers that are left in lung fiber
+ 9   distance, in closeness.  And then you can have
+10   a single fiber, which are all structures.
+11             So they came up with a category
+12   called structures, and if you go to the actual
+13   count sheet, they are broken down into they're
+14   either fiber or bundle or a matrix or cluster.
+15   Cluster would be at least three fibers
+16   criss-crossing sort of like this.  You have to
+17   have three intersections.
+18        Q    I gotcha.  Okay.  For the first
+19   fabric, it says RH.  I'm assuming again that's
+20   Mr. Hatfield's clothes?
+21        A    Correct.
+0075
+ 1        Q    And then the WL I assume came from
+ 2   yours, correct?
+ 3        A    Correct.
+ 4        Q    And if we look at the numbers, the
+ 5   numbers are much bigger for your clothes than
+ 6   Mr. Hatfield's clothes; do you see that?
+ 7        A    I might have been the one doing the
+ 8   filing.
+ 9        Q    That's what I was going to ask.  Does
+10   that maybe suggest to you that you did the
+11   filing because the numbers are so much bigger?
+12        A    Well, looking at what you find on
+13   these clothes, I don't look at it as it's that
+14   much bigger, but it seems to suggest that I am
+15   the one doing the filing.
+16        Q    I'm sorry, you cut out there, Doctor.
+17        A    Yes.  It seems to suggest that I'm
+18   the one doing the filing, but the range is not
+19   far enough apart for me where I would say
+20   without looking at it that it was definitely
+21   me.
+0076
+ 1        Q    Okay.  That's fine.  And then lastly
+ 2   on that page we have dust from inside brake
+ 3   box.  And analyzed -- I think again that is
+ 4   self-explanatory, but would you describe what
+ 5   that is and how that determination of those
+ 6   data points were arrived at?
+ 7        A    Yes.  After the brakes were removed,
+ 8   a ASTM dust -- micro dust sample was taken where
+ 9   the entire inside area of the box was
+10   micro-vacuumed and then analyzed to determine
+11   the concentration of the free asbestos fibers
+12   in the box.
+13        Q    Okay.  Again, this is referred to as
+14   structures that could include something besides
+15   an individual fiber; is that correct?
+16        A    Yes, sir, it's broken down --
+17   structures are broken down into four different
+18   types of things: an individual fiber; a bundle;
+19   a matrix where you may have a nonasbestos
+20   particle where you have fibers sticking out of
+21   it; or a cluster where you have to have at
+0077
+ 1   least three fibers that are touching each
+ 2   other.
+ 3        Q    Right.  And under the TEM analysis
+ 4   for fibers, it says at the top greater than
+ 5   five microns, we have the number 3.1 million,
+ 6   correct?
+ 7        A    On the -- yes, sir, we do.
+ 8        Q    Okay.  And actually so were there
+ 9   individual -- I guess I'm trying to -- I'm
+10   struggling just a little bit with that.  Are
+11   you saying -- is this telling us that there
+12   were 3.1 million fibers in the dust that were
+13   longer than five microns in length?  What does
+14   that number mean?
+15        A    Oh, no, no, no.  You're going all the
+16   way up to the top.
+17        Q    Right.  I'm confused.
+18        A    That would be all structures.  All
+19   five structures that meet the EPA definition of
+20   morphology, which would be anything greater
+21   than or equal to 0.5 micrometers in length.
+0078
+ 1   Anything greater than or equal that has at
+ 2   least a five-to-one aspect ratio length to
+ 3   width, and that the structure itself or the
+ 4   fiber or the bundle has substantially parallel
+ 5   sides.  That at the top is the from the air
+ 6   samples.
+ 7        Q    Okay.  And then for the fabric, we
+ 8   have the structures per square foot and
+ 9   structures per centimeter squared, I guess is
+10   what that is, correct?
+11        A    Correct.
+12        Q    And again, I'm still struggling.
+13   What is the 3.1 million?  What is that?
+14        A    Three point million would be the
+15   amount of individual asbestos structures,
+16   chrysotile, that would be in one square
+17   centimeter inside the box.
+18             So it just shows that the loose --
+19   that the asbestos-containing brake shoes, when
+20   they are packed, there is contamination inside
+21   these boxes from just the work activity.
+0079
+ 1             And just over time you will get some
+ 2   rattling around in the box, in my opinion.
+ 3   You'll get some release of asbestos fibers
+ 4   because you have -- if you look at the surface
+ 5   of the asbestos-containing brake shoes, you can
+ 6   see fairly large clumps of bundles protruding
+ 7   out of the surface of what I will call a new
+ 8   friction product material on a steel brake
+ 9   shoe.
+10        Q    Okay.  And then how did you get --
+11   for the dust inside the box, how did you come
+12   up with the 2.9 million -- billion structures?
+13   Is that structures per square foot?
+14        A    Yes.  That's just a conversion of
+15   structures per square foot, but I typically
+16   don't use that number because we didn't measure
+17   a whole square foot.  So the best number to use
+18   I think is the most accurate would be
+19   structures per centimeter squared.
+20        Q    Okay.  Thank you.  If we turn to the
+21   next data page, the next page, it's entitled
+0080
+ 1   "Clean Up After Filing Demonstration Asbestos
+ 2   Air Analysis Results."  Do you see that page?
+ 3        A    Yes, sir, I do.
+ 4        Q    Okay.  Again, I think it's all fairly
+ 5   self-explanatory based on what we did just a
+ 6   minute ago, but how long did the cleanup take,
+ 7   number one, and what was involved in the
+ 8   cleanup?
+ 9        A    I just have to get to the chain of
+10   custody for that.  There we go.  No, that would
+11   be hand filing.  So I have two copies of the
+12   hand filing -- the actual hand filing work
+13   practice.  The short version of the report
+14   doesn't have that in there.  I need to take a
+15   break anyway.  I can grab that.
+16        Q    That would be great.  Why don't we do
+17   that.
+18        A    How about five to ten minutes?
+19        Q    Sure.  You're running the show,
+20   Doctor.
+21   
+0081
+ 1             (Recess taken from 11:55 a.m.
+ 2             until 12:14 p.m.)
+ 3        BY MR. HENDERSON:
+ 4        Q    So we took a short break, Dr. Longo,
+ 5   while you went to get some back-up material or
+ 6   some material to help you answer the few
+ 7   questions I have left regarding this Bendix
+ 8   Brakes for Ford Vehicles Work Practice
+ 9   Simulation Demonstration, and I think we were
+10   talking about -- when we took the break, we
+11   were talking about the cleanup portion of the
+12   study.
+13        A    Yes, sir.  The little -- what we call
+14   the minis did not have the data for the chain
+15   of custody for the cleanup and I have that now.
+16   It was ten minutes for cleanup.
+17        Q    Okay.  And I assume that portion of
+18   the work practice study was videotaped,
+19   correct?
+20        A    Yes, sir, it was.  I think
+21   Mr. Hatfield did the cleanup.
+0082
+ 1        Q    And do you recall -- would we have to
+ 2   look at the video to see what instruments he
+ 3   used to clean up with?  A push broom or --
+ 4        A    [Inaudible] and there may have
+ 5   been --
+ 6             COURT REPORTER:  I'm sorry, Doctor,
+ 7   could you start over.
+ 8        A    I believe it was like dry sweeping
+ 9   and there may have been a small broom to clean
+10   off the work table.
+11        BY MR. HENDERSON:
+12        Q    Okay.  And the dry sweeping, would
+13   that have been done with -- typically you guys
+14   use a push broom for that; is that right?
+15        A    Not a push broom in this case.  I
+16   think it was your typical straw broom.
+17        Q    Okay.
+18        A    But not a push broom.
+19        Q    Okay.  And again, whatever type of
+20   instruments were used, it would show that on
+21   the video, correct?
+0083
+ 1        A    Yes, sir.
+ 2             MR. HENDERSON:  And we can go off the
+ 3   record for just one second.
+ 4             (Discussion off the record.)
+ 5        BY MR. HENDERSON:
+ 6        Q    Let me look at my notes real quick,
+ 7   Dr. Longo.  Well, I would be remiss if I didn't
+ 8   ask this question.  I assume the answer is no,
+ 9   you have not.  But have you done any other work
+10   practice studies for Ford involving Ford
+11   products like brakes, clutches or gaskets that
+12   we haven't talked about today?
+13        A    No, sir, I haven't.
+14             MR. HENDERSON:  All right.  Thank
+15   you.  That's all the questions I have.
+16             THE WITNESS:  It's always good to see
+17   you.
+18             MR. HENDERSON:  Likewise, Doctor.
+19   Thanks very much.
+20             MR. CANTOR:  Anyone else, please?
+21   
+0084
+ 1                    EXAMINATION
+ 2        BY MR. FITZPATRICK:
+ 3        Q    Dr. Longo, this is Brendan
+ 4   Fitzpatrick.  Can you hear me all right?
+ 5        A    Yes, sir, I can.
+ 6        Q    Very good.  Thank you.  Mr. Bishop
+ 7   and Mr. Henderson have already covered pretty
+ 8   much everything I might hope to ask but there's
+ 9   a few follow-ups.
+10        A    Sure.
+11        Q    Early on, you mentioned that you had
+12   received some information about the Hattenburg
+13   case from counsel, and you indicated that you
+14   might be asked to give answers to hypothetical
+15   questions at trial.  As you sit here today,
+16   you've not been provided with any of those
+17   hypotheticals at this stage?
+18        A    No, sir, I haven't.
+19        Q    Okay.  And beyond the factual
+20   information provided by counsel, you have no
+21   other factual information concerning this
+0085
+ 1   Hattenburg case at all?
+ 2        A    That is correct, I do not.
+ 3        Q    Okay.  Mr. Bishop asked a series of
+ 4   questions about your ranges of exposures for
+ 5   various activities as they relate to studies
+ 6   that we've been talking about today.
+ 7             One other activity set that I want to
+ 8   follow up with is on the mixing of dry mix
+ 9   joint compound.  For the studies that are
+10   identified on what is I believe the Exhibit
+11   Number 5, the August letter from Mr. Cantor
+12   relating to joint compound, what is your range
+13   of exposure that you associate with doing the
+14   activity of mixing dry mix joint compound?
+15        A    There are two Kaiser studies
+16   [inaudible] dry mixing, but it was a very -- it
+17   wasn't -- I am just looking for it at this
+18   second.  The finishing compound study, the
+19   levels were -- we had levels of approximately
+20   ten fibers per cc, and the second mixing was
+21   6.5 to seven, but we were only pouring a small
+0086
+ 1   amount of material.  That is why we had to do
+ 2   it twice.
+ 3             But if you go to the public
+ 4   literature, the mixing range for dry mixing
+ 5   from Verma/Middleton, they had a range of nine
+ 6   to 12 fibers per cc for dry powder and premixed
+ 7   they had a range of 1.2 to 3.2.  And for
+ 8   Selikoff dry mixing, they had a range of 35
+ 9   to 59.
+10             And some of the studies that I was
+11   talking about earlier, USG has a dry mixing one
+12   bag of Durabond by hand from 42 to 55 fibers
+13   per cc in the breathing zone, and when they use
+14   a drill mix, it was ten to six fibers per cc.
+15             Then they have another one that says
+16   hand mixing one bag, and they have 15 to 13.
+17   And somewhere in here is actual mixing for
+18   Kaiser Gypsum.  So it depends on how much
+19   they're mixing, but it looks like the ranges
+20   can be from ten to 15 up to 40 or 50 fibers
+21   per cc.  So there seems to be a fairly wide
+0087
+ 1   range of mixing.
+ 2        Q    Does that range -- are these for
+ 3   direct exposures, the user that's doing the
+ 4   mixing him or herself?
+ 5        A    I believe so.  Let me just look back
+ 6   real quick.  Let's see.  You have one here that
+ 7   says, you know, they're giving, at least for
+ 8   the -- we have one from Loss Control.  They're
+ 9   giving some like northeast, southeast, from
+10   hand mixing and drill mixing.  You know, those
+11   are the ten-to-one -- or they have northeast,
+12   they have 42 to 55, and then they have
+13   southeast, ten to six.
+14             I don't know if I have an explanation
+15   for this data.  So I don't see where I can say
+16   positively area samples.
+17        Q    Okay.  So I guess the follow-up to
+18   that is are you able to give a range of
+19   exposure for bystander or area [inaudible] --
+20             COURT REPORTER:  Sorry, bystander or
+21   area...?
+0088
+ 1        BY MR. FITZPATRICK:
+ 2        Q    Depending on how you want to
+ 3   characterize that.
+ 4        A    If you look at the Selikoff work,
+ 5   they have dry mixing, three to four feet.  That
+ 6   is -- the average is 47.  They have
+ 7   background -- then they say background of ten
+ 8   to 20 feet, which is five fibers per cc.  They
+ 9   have background adjacent room, 16 to 35 feet,
+10   2.6 fibers per cc.  And I think they're calling
+11   background not an area sample.  I have to go
+12   through the report again but that is my
+13   understanding.
+14             The Verma/Middleton, I don't see area
+15   for the mixing, only the area for sanding.  And
+16   for ours -- I just had it in my hand.  There we
+17   go.
+18             Our area samples were between 1.5 and
+19   2.9 fibers per cc, and those were approximately
+20   seven to eight feet away from the mixing.
+21        Q    Which study was that, Doctor?
+0089
+ 1        A    That is the Kaiser Gypsum finishing
+ 2   compound study.  I know I grabbed the other
+ 3   one -- the Kaiser gypsum joint compound, not
+ 4   the finishing compound.  The area samples --
+ 5   oh, where's the mixing?  We don't have a mixing
+ 6   for that, just the area sample -- I mean the
+ 7   personal sample was about 14 fibers per cc.
+ 8        Q    All right.  Thank you.  The Kaiser
+ 9   Gypsum products involved in the joint compound
+10   and finishing compound studies, both of those
+11   were provided to you by the Brayton Harley
+12   Curtis firm, correct?
+13        A    Correct.
+14        Q    Those were identified and came into
+15   their possession, according to the chain of
+16   custody documentation, from a home in
+17   Pacolomas[phonetic], California; is that right.
+18        A    That is correct.
+19        Q    Okay.  Based on what you told us
+20   today about the lack of case-specific
+21   information and what you told us about not
+0090
+ 1   reviewing any corporate information for
+ 2   purposes of this case at this point, is it fair
+ 3   to say that if I asked you questions about
+ 4   years those products were in use, where they
+ 5   were made, where they were sold: East Coast,
+ 6   West Coast, you wouldn't have any answers to
+ 7   those sort of questions; is that fair?
+ 8             MR. CANTOR:  Objection.
+ 9        A    That's fair.
+10             MR. FITZPATRICK:  We can go off the
+11   record.
+12             (Discussion off the record.)
+13             MR. FITZPATRICK:  Dr. Longo, that is
+14   all I've got for you.  Thank you for your time.
+15   I appreciate it.
+16             THE WITNESS:  Thank you, sir.  I
+17   think we have -- you have deposed me in the
+18   past a few times so it's always good to see
+19   you.
+20             MR. FITZPATRICK:  Thank you.  Take
+21   care.
+0091
+ 1             MR. CANTOR:  Anyone else?
+ 2             MR. BACON:  Hey, Dr. Longo, Ed Bacon
+ 3   here.
+ 4             THE WITNESS:  Hey, Mr. Bacon, how are
+ 5   you?
+ 6             MR. BACON:  I'm doing well.  How are
+ 7   you doing?
+ 8             THE WITNESS:  I'm doing okay.
+ 9             MR. BACON:  I don't have any
+10   questions.  I just wanted to come on and say
+11   hi, I'm actually in the land of the living.
+12             THE WITNESS:  Good.  Everything okay
+13   with your family?  Made it through COVID?
+14             MR. BACON:  We did.
+15             THE WITNESS:  We made it through --
+16   well, I didn't.  My whole family didn't make it
+17   the first time.  We all caught it.
+18             MR. BACON:  Oh, wow.
+19             THE WITNESS:  And I got to tell you,
+20   I had mild symptoms and it sucked.  I got as
+21   sick as a dog.
+0092
+ 1             MR. BACON:  I'm trying to be careful.
+ 2   I take this everywhere I go.
+ 3             THE WITNESS:  I mean, I thought we
+ 4   were done with the masks.
+ 5             MR. CANTOR:  Not yet.  Not yet.
+ 6             Anybody else?
+ 7             MR. BACON:  I don't have any
+ 8   questions.
+ 9             MR. CANTOR:  Doctor, I guess that is
+10   it.  Do you read or would you like to waive?
+11             THE WITNESS:  I'll waive.
+12             MR. CANTOR:  Okay.
+13             (Deposition concluded at 12:30 p.m.)
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+0093
+ 1   STATE OF MARYLAND
+ 2   HOWARD COUNTY
+ 3        I, Dawn Michele Hyde, a Notary Public of
+ 4   the State of Maryland, Howard County, do hereby
+ 5   certify that the above-captioned proceeding
+ 6   took place before me at the time and place
+ 7   herein set out.
+ 8        I further certify that the proceeding was
+ 9   recorded stenographically by me and this
+10   transcript is a true record of the proceedings.
+11        I further certify that I am not of counsel
+12   to any of the parties, nor an employee of
+13   counsel, nor related to any of the parties, nor
+14   in any way interested in the outcome of the
+15   action.
+16        As witness my hand and seal this 25th day
+17   of August, 2021.
+18   
+19                  Dawn M. Hyde
+20                  My Commission Expires 10/7/2023
+21   

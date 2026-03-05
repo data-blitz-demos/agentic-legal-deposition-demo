@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 import asyncio
@@ -18,6 +22,7 @@ from backend.app.models import (
     DepositionSentimentRequest,
     DepositionRootRequest,
     FocusedReasoningSummaryRequest,
+    GraphRagEmbeddingConfigRequest,
     GraphOntologyLoadRequest,
     GraphRagQueryRequest,
     IngestCaseRequest,
@@ -41,14 +46,55 @@ def test_path_has_glob_detection():
     assert main._path_has_glob(Path("/tmp/depositions")) is False
 
 
+def test_request_metrics_path_prefers_route_pattern_and_falls_back_to_url():
+    route_request = main.Request(
+        {
+            "type": "http",
+            "asgi": {"version": "3.0"},
+            "http_version": "1.1",
+            "method": "GET",
+            "scheme": "http",
+            "path": "/api/cases/123",
+            "raw_path": b"/api/cases/123",
+            "query_string": b"",
+            "headers": [],
+            "client": ("testclient", 50000),
+            "server": ("testserver", 80),
+            "route": SimpleNamespace(path="/api/cases/{case_id}"),
+        }
+    )
+    plain_request = main.Request(
+        {
+            "type": "http",
+            "asgi": {"version": "3.0"},
+            "http_version": "1.1",
+            "method": "GET",
+            "scheme": "http",
+            "path": "/healthz",
+            "raw_path": b"/healthz",
+            "query_string": b"",
+            "headers": [],
+            "client": ("testclient", 50000),
+            "server": ("testserver", 80),
+        }
+    )
+
+    assert main._request_metrics_path(route_request) == "/api/cases/{case_id}"
+    assert main._request_metrics_path(plain_request) == "/healthz"
+
+
 def test_collect_txt_files_from_directory_file_and_glob(tmp_path):
     dep_dir = tmp_path / "deps"
     dep_dir.mkdir()
+    nested_dir = dep_dir / "nested"
+    nested_dir.mkdir()
     a = dep_dir / "a.txt"
     b = dep_dir / "b.TXT"
+    nested = nested_dir / "nested.txt"
     c = dep_dir / "c.pdf"
     a.write_text("a", encoding="utf-8")
     b.write_text("b", encoding="utf-8")
+    nested.write_text("n", encoding="utf-8")
     c.write_text("c", encoding="utf-8")
 
     directory_files = main._collect_txt_files(dep_dir)
@@ -56,7 +102,7 @@ def test_collect_txt_files_from_directory_file_and_glob(tmp_path):
     glob_files = main._collect_txt_files(dep_dir / "*.txt")
     non_txt_file = main._collect_txt_files(c)
 
-    assert directory_files == [a, b]
+    assert directory_files == [a, b, nested]
     assert single_file == [a]
     assert glob_files == [a]
     assert non_txt_file == []
@@ -96,6 +142,23 @@ def test_resolve_upload_directory_and_sanitize_filename(tmp_path, monkeypatch):
     assert main._sanitize_uploaded_deposition_filename("***.txt", 3) == "uploaded_deposition_3.txt"
 
 
+def test_resolve_upload_root_directory_prefers_nearest_matching_root(tmp_path, monkeypatch):
+    base = tmp_path / "depositions"
+    target = base / "default"
+    extra = tmp_path / "extra_deps"
+    target.mkdir(parents=True)
+    extra.mkdir()
+    monkeypatch.setattr(main, "_resolve_directory_base", lambda: ("configured", base))
+    monkeypatch.setattr(main, "_configured_deposition_root", lambda: base)
+    monkeypatch.setattr(main, "_configured_extra_deposition_roots", lambda: [extra])
+    monkeypatch.setattr(main, "container_deposition_root", Path("/data/depositions"))
+    monkeypatch.setattr(main, "app_root", tmp_path)
+
+    assert main._resolve_upload_root_directory(target) == base
+    assert main._resolve_upload_root_directory(extra) == extra
+    assert main._resolve_upload_root_directory(tmp_path / "outside") == (tmp_path / "outside")
+
+
 def test_resolve_upload_directory_rejects_missing_target(monkeypatch):
     monkeypatch.setattr(main, "_build_ingest_candidates", lambda _path: [Path("/missing/deps")])
 
@@ -130,6 +193,28 @@ def test_upload_depositions_rejects_empty_list_and_non_txt(tmp_path, monkeypatch
     assert ".txt file" in bad_exc.value.detail
 
 
+def test_upload_depositions_saves_to_selected_and_root_directory(tmp_path, monkeypatch):
+    root = tmp_path / "depositions"
+    target = root / "default"
+    target.mkdir(parents=True)
+    monkeypatch.setattr(main, "_resolve_upload_directory", lambda _path: target)
+    monkeypatch.setattr(main, "_resolve_upload_root_directory", lambda _target: root)
+
+    upload = UploadFile(
+        filename="witness_new.txt",
+        file=SimpleNamespace(read=lambda: b"Date: April 1, 2025\nWitness: New Witness", close=lambda: None),
+    )
+
+    payload = main.upload_depositions(directory=str(target), files=[upload])
+
+    assert payload.file_count == 1
+    assert payload.saved_files == [str(target / "witness_new.txt")]
+    assert payload.root_directory == str(root)
+    assert payload.copied_to_root_files == [str(root / "witness_new.txt")]
+    assert (target / "witness_new.txt").read_text(encoding="utf-8") == "Date: April 1, 2025\nWitness: New Witness"
+    assert (root / "witness_new.txt").read_text(encoding="utf-8") == "Date: April 1, 2025\nWitness: New Witness"
+
+
 def test_upload_depositions_wraps_write_error_and_ignores_close_error(tmp_path, monkeypatch):
     target = tmp_path / "deps"
     target.mkdir()
@@ -152,7 +237,10 @@ def test_upload_depositions_wraps_write_error_and_ignores_close_error(tmp_path, 
 
 
 def test_render_themed_admin_test_report_returns_input_when_already_themed():
-    html = '<html><head><style id="admin-report-theme"></style></head><body>ready</body></html>'
+    html = (
+        '<html><head><style id="admin-report-theme"></style></head>'
+        '<body>ready<script id="admin-report-helper"></script></body></html>'
+    )
 
     themed = main._render_themed_admin_test_report(html)
 
@@ -165,11 +253,58 @@ def test_render_themed_admin_test_report_prefixes_style_without_head():
     themed = main._render_themed_admin_test_report(html)
 
     assert themed.startswith(main._ADMIN_REPORT_THEME_CSS)
-    assert themed.endswith(html)
+    assert html in themed
+    assert 'id="admin-report-helper"' in themed
+
+
+def test_render_themed_admin_test_report_adds_helper_when_theme_exists_without_helper():
+    html = '<html><head><style id="admin-report-theme"></style></head><body>ready</body></html>'
+
+    themed = main._render_themed_admin_test_report(html)
+
+    assert themed.count('id="admin-report-theme"') == 1
+    assert 'id="admin-report-helper"' in themed
+    assert "toggleDetailRowFromCell" in themed
+    assert "collapseDetailRowFromExpander" in themed
+
+
+def test_admin_report_helper_script_covers_row_log_and_summary_toggles():
+    helper = main._ADMIN_REPORT_HELPER_JS
+
+    assert "bindDynamicControls" in helper
+    assert "readCollapsedIds" in helper
+    assert "writeCollapsedIds" in helper
+    assert "window.sessionStorage.getItem('collapsedIds')" in helper
+    assert "window.sessionStorage.setItem('collapsedIds', JSON.stringify(ids))" in helper
+    assert "tbody.results-table-row tr.collapsible td:not(.col-links)" in helper
+    assert "tbody.results-table-row .logexpander" in helper
+    assert "cell.dataset.adminBound" in helper
+    assert "expander.dataset.adminBound" in helper
+    assert "wrapper.classList.add('expanded');" in helper
+    assert "collapseDetailRowFromExpander" in helper
+    assert "collapsedIds.filter(function (id) { return id !== rowId; })" in helper
+    assert "collapsedIds.push(rowId);" in helper
+    assert ".logexpander" in helper
+    assert "show_all_details" in helper
+    assert "hide_all_details" in helper
+    assert "setAllDetailsVisible(true)" in helper
+    assert "setAllDetailsVisible(false)" in helper
+    assert "event.stopImmediatePropagation()" in helper
+
+
+def test_render_themed_admin_test_report_inserts_helper_before_body_end():
+    html = "<html><head><title>tests</title></head><body><div>report</div></body></html>"
+
+    themed = main._render_themed_admin_test_report(html)
+
+    assert themed.count('id="admin-report-theme"') == 1
+    assert themed.count('id="admin-report-helper"') == 1
+    assert themed.index('id="admin-report-helper"') < themed.index("</body>")
 
 
 def test_extract_test_report_log_output_handles_missing_file(monkeypatch, tmp_path):
     monkeypatch.setattr(main, "tests_report_file", tmp_path / "missing-tests.html")
+    monkeypatch.setattr(main, "last_test_run_output_file", tmp_path / "missing-last-output.txt")
 
     payload = main._extract_test_report_log_output()
 
@@ -181,6 +316,7 @@ def test_extract_test_report_log_output_handles_missing_data_blob(monkeypatch, t
     report_file = tmp_path / "tests.html"
     report_file.write_text("<html><body><h1>No blob</h1></body></html>", encoding="utf-8")
     monkeypatch.setattr(main, "tests_report_file", report_file)
+    monkeypatch.setattr(main, "last_test_run_output_file", tmp_path / "missing-last-output.txt")
 
     payload = main._extract_test_report_log_output()
 
@@ -192,6 +328,7 @@ def test_extract_test_report_log_output_handles_bad_payload_and_no_explicit_logs
     bad_file = tmp_path / "bad-tests.html"
     bad_file.write_text('<div data-jsonblob="{not-json}"></div>', encoding="utf-8")
     monkeypatch.setattr(main, "tests_report_file", bad_file)
+    monkeypatch.setattr(main, "last_test_run_output_file", tmp_path / "missing-last-output.txt")
 
     bad_payload = main._extract_test_report_log_output()
 
@@ -225,6 +362,7 @@ def test_extract_test_report_log_output_skips_non_list_and_non_dict_runs(monkeyp
         encoding="utf-8",
     )
     monkeypatch.setattr(main, "tests_report_file", report_file)
+    monkeypatch.setattr(main, "last_test_run_output_file", tmp_path / "missing-last-output.txt")
 
     payload = main._extract_test_report_log_output()
 
@@ -232,28 +370,787 @@ def test_extract_test_report_log_output_skips_non_list_and_non_dict_runs(monkeyp
     assert "No explicit per-test log output was captured" in payload.log_output
 
 
+def test_persist_last_test_run_output_defaults_when_empty(monkeypatch, tmp_path):
+    output_file = tmp_path / "last-test-run-output.txt"
+    monkeypatch.setattr(main, "reports_dir", tmp_path)
+    monkeypatch.setattr(main, "last_test_run_output_file", output_file)
+
+    main._persist_last_test_run_output("   ")
+
+    assert output_file.read_text(encoding="utf-8") == "Pytest completed without additional console output."
+
+
+def test_persist_last_test_run_output_ignores_filesystem_failures(monkeypatch, tmp_path):
+    class _BrokenPath:
+        def write_text(self, *_args, **_kwargs):
+            raise OSError("read only")
+
+    monkeypatch.setattr(main, "reports_dir", tmp_path)
+    monkeypatch.setattr(main, "last_test_run_output_file", _BrokenPath())
+
+    main._persist_last_test_run_output("captured output")
+
+
+def test_persist_last_test_run_output_ignores_directory_creation_failures(monkeypatch):
+    class _BrokenDir:
+        def mkdir(self, *_args, **_kwargs):
+            raise OSError("nope")
+
+    monkeypatch.setattr(main, "reports_dir", _BrokenDir())
+
+    main._persist_last_test_run_output("captured output")
+
+
+def test_extract_test_report_log_output_uses_latest_console_output_fallbacks(monkeypatch, tmp_path):
+    output_file = tmp_path / "last-test-run-output.txt"
+    output_file.write_text("401 passed", encoding="utf-8")
+    monkeypatch.setattr(main, "last_test_run_output_file", output_file)
+
+    missing_blob = tmp_path / "missing-blob.html"
+    missing_blob.write_text("<html><body>no blob</body></html>", encoding="utf-8")
+    monkeypatch.setattr(main, "tests_report_file", missing_blob)
+
+    missing_blob_payload = main._extract_test_report_log_output()
+
+    assert "Showing captured console output from the most recent pytest run." in missing_blob_payload.summary
+    assert missing_blob_payload.log_output == "401 passed"
+
+    bad_payload_file = tmp_path / "bad-payload.html"
+    bad_payload_file.write_text('<div data-jsonblob="{not-json}"></div>', encoding="utf-8")
+    monkeypatch.setattr(main, "tests_report_file", bad_payload_file)
+
+    bad_payload = main._extract_test_report_log_output()
+
+    assert "Showing captured console output from the most recent pytest run." in bad_payload.summary
+    assert bad_payload.log_output == "401 passed"
+
+    quiet_file = tmp_path / "quiet-tests.html"
+    quiet_file.write_text(
+        (
+            '<div id="data-container" data-jsonblob="{&#34;tests&#34;:{&#34;tests/test_quiet.py::test_only&#34;:'
+            '[{&#34;result&#34;:&#34;Passed&#34;,&#34;log&#34;:&#34;No log output captured.&#34;}]}}"></div>'
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(main, "tests_report_file", quiet_file)
+
+    quiet_payload = main._extract_test_report_log_output()
+
+    assert "Showing captured console output from the most recent pytest run." in quiet_payload.summary
+    assert "=== Latest pytest console output ===" in quiet_payload.log_output
+    assert "401 passed" in quiet_payload.log_output
+
+
+def test_extract_test_report_log_output_combines_console_output_before_explicit_logs(monkeypatch, tmp_path):
+    report_file = tmp_path / "tests.html"
+    output_file = tmp_path / "last-test-run-output.txt"
+    report_file.write_text(
+        (
+            '<div id="data-container" data-jsonblob="{&#34;tests&#34;:{&#34;tests/test_sample.py::test_case&#34;:'
+            '[{&#34;result&#34;:&#34;Failed&#34;,&#34;duration&#34;:&#34;8 ms&#34;,&#34;log&#34;:&#34;Traceback line&#34;}]}}"></div>'
+        ),
+        encoding="utf-8",
+    )
+    output_file.write_text("435 passed", encoding="utf-8")
+    monkeypatch.setattr(main, "tests_report_file", report_file)
+    monkeypatch.setattr(main, "last_test_run_output_file", output_file)
+
+    payload = main._extract_test_report_log_output()
+
+    assert payload.log_output.startswith("=== Latest pytest console output ===\n435 passed")
+    assert "=== Parsed per-test log output from tests.html ===" in payload.log_output
+    assert payload.log_output.index("=== Latest pytest console output ===") < payload.log_output.index(
+        "=== Parsed per-test log output from tests.html ==="
+    )
+    assert "[Failed] tests/test_sample.py::test_case (8 ms)" in payload.log_output
+
+
 def test_list_admin_users_skips_invalid_docs_and_save_admin_user_validates(monkeypatch):
     class _BrokenDoc:
         def get(self, _key, _default=None):
             raise RuntimeError("bad doc")
 
+    saved_docs: list[dict] = []
+
+    def _save_doc(doc: dict):
+        stored = dict(doc)
+        stored["_id"] = "user:new"
+        saved_docs.append(stored)
+        return stored
+
     couchdb = Mock()
-    couchdb.find.return_value = [
-        {"_id": "", "name": "Missing Id", "created_at": "2026-02-28T00:00:00+00:00"},
-        _BrokenDoc(),
-        {"_id": "admin:1", "name": "Paul Harvener", "created_at": "2026-02-28T00:00:00+00:00"},
+    couchdb.find.side_effect = [
+        [
+            {"_id": "", "name": "Missing Id", "created_at": "2026-02-28T00:00:00+00:00"},
+            _BrokenDoc(),
+            {
+                "_id": "user:1",
+                "type": "user",
+                "name": "Paul Harvener",
+                "first_name": "Paul",
+                "last_name": "Harvener",
+                "authorization_level": "expert_user",
+                "created_at": "2026-02-28T00:00:00+00:00",
+            },
+        ],
+        [
+            {
+                "_id": "legacy:1",
+                "type": "admin_user",
+                "name": "Legacy Admin",
+                "created_at": "2026-02-27T00:00:00+00:00",
+            }
+        ],
+    ]
+    couchdb.save_doc.side_effect = _save_doc
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    users = main._list_admin_users()
+
+    assert len(users) == 2
+    assert users[0].name == "Legacy Admin"
+    assert users[0].first_name == "Legacy"
+    assert users[0].last_name == "Admin"
+    assert users[0].authorization_level == "admin"
+    assert users[1].name == "Paul Harvener"
+    assert users[1].first_name == "Paul"
+    assert users[1].last_name == "Harvener"
+    assert users[1].authorization_level == "expert_user"
+
+    with pytest.raises(HTTPException) as excinfo:
+        main._save_admin_user(None, None, None, "   ", "user")
+
+    assert excinfo.value.status_code == 400
+
+    with pytest.raises(HTTPException) as level_exc:
+        main._save_admin_user(None, None, None, "Valid Name", "bad_level")
+
+    assert level_exc.value.status_code == 400
+
+    saved = main._save_admin_user(None, "Test", "User", None, "user")
+
+    assert saved.first_name == "Test"
+    assert saved.last_name == "User"
+    assert saved.name == "Test User"
+    assert saved.user_id == "user:new"
+    assert saved_docs[0]["first_name"] == "Test"
+    assert saved_docs[0]["last_name"] == "User"
+    assert saved_docs[0]["name"] == "Test User"
+    assert saved_docs[0]["authorization_level"] == "user"
+
+
+def test_list_admin_users_handles_find_errors_and_skips_invalid_name_shapes(monkeypatch):
+    couchdb = Mock()
+    couchdb.find.side_effect = [
+        RuntimeError("primary lookup failed"),
+        [
+            {
+                "_id": "bad-level",
+                "type": "user",
+                "name": "Bad Level",
+                "first_name": "Bad",
+                "last_name": "Level",
+                "authorization_level": "super_admin",
+                "created_at": "2026-02-28T00:00:00+00:00",
+            },
+            {
+                "_id": "missing-first",
+                "type": "user",
+                "name": "OnlyLast",
+                "first_name": "",
+                "last_name": "OnlyLast",
+                "authorization_level": "user",
+                "created_at": "2026-02-28T00:00:00+00:00",
+            },
+            {
+                "_id": "good",
+                "type": "admin_user",
+                "name": "Legacy Admin",
+                "created_at": "2026-02-28T00:00:00+00:00",
+            },
+        ],
     ]
     monkeypatch.setattr(main, "couchdb", couchdb)
 
     users = main._list_admin_users()
 
     assert len(users) == 1
-    assert users[0].name == "Paul Harvener"
+    assert users[0].user_id == "good"
+
+
+def test_save_admin_user_rejects_partial_name_and_missing_existing_user(monkeypatch):
+    with pytest.raises(HTTPException) as partial_exc:
+        main._save_admin_user(None, "Only", None, None, "user")
+
+    assert partial_exc.value.status_code == 400
+    assert "Both first name and last name are required" in partial_exc.value.detail
+
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = RuntimeError("missing")
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as missing_exc:
+        main._save_admin_user("user:missing", "Paul", "Harvener", None, "user")
+
+    assert missing_exc.value.status_code == 404
+    assert missing_exc.value.detail == "User not found"
+
+
+def test_save_admin_user_rejects_non_user_existing_doc(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {
+        "_id": "trace:1",
+        "type": "trace_session",
+        "created_at": "2026-02-28T00:00:00+00:00",
+    }
+    monkeypatch.setattr(main, "couchdb", couchdb)
 
     with pytest.raises(HTTPException) as excinfo:
-        main._save_admin_user("   ")
+        main._save_admin_user("trace:1", "Paul", "Harvener", None, "user")
 
-    assert excinfo.value.status_code == 400
+    assert excinfo.value.status_code == 404
+    assert excinfo.value.detail == "User not found"
+
+
+def test_save_admin_user_updates_existing_doc(monkeypatch):
+    existing_doc = {
+        "_id": "user:1",
+        "_rev": "1",
+        "type": "user",
+        "name": "Paul Harvener",
+        "first_name": "Paul",
+        "last_name": "Harvener",
+        "authorization_level": "user",
+        "created_at": "2026-02-28T00:00:00+00:00",
+    }
+    updated_docs: list[dict] = []
+
+    def _get_doc(doc_id: str):
+        assert doc_id == "user:1"
+        return dict(existing_doc)
+
+    def _update_doc(doc: dict):
+        updated_docs.append(dict(doc))
+        return dict(doc)
+
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = _get_doc
+    couchdb.update_doc.side_effect = _update_doc
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    updated = main._save_admin_user("user:1", "Paula", "Harvener", None, "admin")
+
+    assert updated.user_id == "user:1"
+    assert updated.name == "Paula Harvener"
+    assert updated.authorization_level == "admin"
+    assert updated.created_at == "2026-02-28T00:00:00+00:00"
+    assert updated_docs[0]["_id"] == "user:1"
+    assert updated_docs[0]["name"] == "Paula Harvener"
+    assert updated_docs[0]["first_name"] == "Paula"
+    assert updated_docs[0]["authorization_level"] == "admin"
+
+
+def test_delete_admin_user_permanently_removes_doc(monkeypatch):
+    existing_doc = {
+        "_id": "user:1",
+        "_rev": "2-b",
+        "type": "user",
+        "name": "Paul Harvener",
+        "created_at": "2026-02-28T00:00:00+00:00",
+    }
+    deleted: list[tuple[str, str | None]] = []
+
+    couchdb = Mock()
+    couchdb.get_doc.return_value = dict(existing_doc)
+    couchdb.delete_doc.side_effect = lambda doc_id, rev=None: deleted.append((doc_id, rev))
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    payload = main._delete_admin_user("user:1")
+
+    assert payload.user_id == "user:1"
+    assert payload.deleted is True
+    assert deleted == [("user:1", "2-b")]
+
+
+def test_delete_admin_user_rejects_missing_or_wrong_type(monkeypatch):
+    with pytest.raises(HTTPException) as missing_id:
+        main._delete_admin_user("   ")
+
+    assert missing_id.value.status_code == 400
+
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = RuntimeError("missing")
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as missing_user:
+        main._delete_admin_user("user:missing")
+
+    assert missing_user.value.status_code == 404
+
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {"_id": "trace:1", "type": "trace_session"}
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as wrong_type:
+        main._delete_admin_user("trace:1")
+
+    assert wrong_type.value.status_code == 404
+
+
+def test_list_and_save_admin_personas(monkeypatch):
+    saved_docs: list[dict] = []
+
+    def _save_doc(doc: dict):
+        stored = dict(doc)
+        stored["_id"] = "persona:new"
+        saved_docs.append(stored)
+        return stored
+
+    couchdb = Mock()
+    couchdb.find.return_value = [
+        {
+            "_id": "persona:1",
+            "type": "persona",
+            "name": "Cross Examiner",
+            "llm_provider": "openai",
+            "llm_model": "gpt-5.2",
+            "prompt_template_key": "chat_system",
+            "prompts": "Challenge the witness.",
+            "prompt_sections": {
+                "system": "Challenge the witness.",
+                "assistant": "Use precise legal language.",
+                "context": "Use case-specific deposition facts only.",
+            },
+            "rag_sequence": ["graph_rag_neo4j", "graph_rag_neo4j", "unknown_rag"],
+            "tool_sequence": [
+                "mcp_couchdb_deposition_access",
+                {"key": "mcp_couchdb_thought_stream_access", "enabled": False},
+                "unknown_tool",
+            ],
+            "created_at": "2026-03-03T00:00:00+00:00",
+        },
+        {
+            "_id": "bad",
+            "type": "persona",
+            "name": "",
+            "llm_provider": "openai",
+            "llm_model": "",
+            "prompts": "",
+            "created_at": "",
+        },
+    ]
+    couchdb.save_doc.side_effect = _save_doc
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    personas = main._list_admin_personas()
+
+    assert len(personas) == 1
+    assert personas[0].persona_id == "persona:1"
+    assert personas[0].name == "Cross Examiner"
+    assert personas[0].prompt_template_key == "chat_system"
+    assert personas[0].prompt_sections.system == "Challenge the witness."
+    assert personas[0].prompt_sections.assistant == "Use precise legal language."
+    assert personas[0].prompt_sections.context == "Use case-specific deposition facts only."
+    assert len(personas[0].rag_sequence) == 1
+    assert personas[0].rag_sequence[0].key == "graph_rag_neo4j"
+    assert personas[0].rag_sequence[0].enabled is True
+    assert len(personas[0].tool_sequence) == 2
+    assert personas[0].tool_sequence[0].key == "mcp_couchdb_deposition_access"
+    assert personas[0].tool_sequence[0].enabled is True
+    assert personas[0].tool_sequence[1].key == "mcp_couchdb_thought_stream_access"
+    assert personas[0].tool_sequence[1].enabled is False
+
+    with pytest.raises(HTTPException) as missing_name:
+        main._save_admin_persona(None, "   ", "openai", "gpt-5.2", None, "Prompt text")
+
+    assert missing_name.value.status_code == 400
+
+    saved = main._save_admin_persona(
+        None,
+        "Trial Strategist",
+        "ollama",
+        "law_model",
+        "graph_rag_system",
+        "Stay direct.",
+        [{"key": "graph_rag_neo4j", "enabled": False}, "graph_rag_neo4j", "ignored"],
+        tool_sequence=[
+            {"key": "mcp_couchdb_deposition_access", "enabled": True},
+            "mcp_couchdb_deposition_access",
+            {"key": "mcp_couchdb_thought_stream_access", "enabled": False},
+            "ignored_tool",
+        ],
+    )
+
+    assert saved.persona_id == "persona:new"
+    assert saved.name == "Trial Strategist"
+    assert saved.llm_provider == "ollama"
+    assert saved.llm_model == "law_model"
+    assert saved.prompt_template_key == "graph_rag_system"
+    assert saved.prompts == "System:\nStay direct."
+    assert saved.prompt_sections.system == "Stay direct."
+    assert saved.prompt_sections.assistant == ""
+    assert saved.prompt_sections.context == ""
+    assert len(saved.rag_sequence) == 1
+    assert saved.rag_sequence[0].key == "graph_rag_neo4j"
+    assert saved.rag_sequence[0].enabled is False
+    assert len(saved.tool_sequence) == 2
+    assert saved.tool_sequence[0].key == "mcp_couchdb_deposition_access"
+    assert saved.tool_sequence[0].enabled is True
+    assert saved.tool_sequence[1].key == "mcp_couchdb_thought_stream_access"
+    assert saved.tool_sequence[1].enabled is False
+    assert saved_docs[0]["type"] == "persona"
+    assert saved_docs[0]["prompt_template_key"] == "graph_rag_system"
+    assert saved_docs[0]["prompts"] == "System:\nStay direct."
+    assert saved_docs[0]["prompt_sections"] == {
+        "system": "Stay direct.",
+        "assistant": "",
+        "context": "",
+    }
+    assert saved_docs[0]["rag_sequence"] == [{"key": "graph_rag_neo4j", "enabled": False}]
+    assert saved_docs[0]["tool_sequence"] == [
+        {"key": "mcp_couchdb_deposition_access", "enabled": True},
+        {"key": "mcp_couchdb_thought_stream_access", "enabled": False},
+    ]
+
+
+def test_save_admin_persona_updates_existing_doc(monkeypatch):
+    existing_doc = {
+        "_id": "persona:1",
+        "_rev": "1-a",
+        "type": "persona",
+        "name": "Cross Examiner",
+        "llm_provider": "openai",
+        "llm_model": "gpt-5.2",
+        "prompt_template_key": "chat_system",
+        "prompts": "Challenge weak assumptions.",
+        "prompt_sections": {
+            "system": "Challenge weak assumptions.",
+            "assistant": "",
+            "context": "",
+        },
+        "rag_sequence": [],
+        "tool_sequence": [],
+        "created_at": "2026-03-03T00:00:00+00:00",
+    }
+    updated_docs: list[dict] = []
+
+    couchdb = Mock()
+    couchdb.get_doc.return_value = dict(existing_doc)
+    couchdb.update_doc.side_effect = lambda doc: updated_docs.append(dict(doc)) or dict(doc)
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    updated = main._save_admin_persona(
+        "persona:1",
+        "Lead Attorney",
+        "openai",
+        "gpt-5.2",
+        "reason_contradiction_system",
+        "Be precise.",
+        ["graph_rag_neo4j"],
+        tool_sequence=["mcp_couchdb_deposition_access"],
+    )
+
+    assert updated.persona_id == "persona:1"
+    assert updated.name == "Lead Attorney"
+    assert updated.prompt_template_key == "reason_contradiction_system"
+    assert updated.prompts == "System:\nBe precise."
+    assert updated.prompt_sections.system == "Be precise."
+    assert updated.prompt_sections.assistant == ""
+    assert updated.prompt_sections.context == ""
+    assert len(updated.rag_sequence) == 1
+    assert updated.rag_sequence[0].key == "graph_rag_neo4j"
+    assert updated.rag_sequence[0].enabled is True
+    assert len(updated.tool_sequence) == 1
+    assert updated.tool_sequence[0].key == "mcp_couchdb_deposition_access"
+    assert updated.tool_sequence[0].enabled is True
+    assert updated.created_at == "2026-03-03T00:00:00+00:00"
+    assert updated_docs[0]["name"] == "Lead Attorney"
+    assert updated_docs[0]["prompt_template_key"] == "reason_contradiction_system"
+    assert updated_docs[0]["prompts"] == "System:\nBe precise."
+    assert updated_docs[0]["prompt_sections"] == {
+        "system": "Be precise.",
+        "assistant": "",
+        "context": "",
+    }
+    assert updated_docs[0]["rag_sequence"] == [{"key": "graph_rag_neo4j", "enabled": True}]
+    assert updated_docs[0]["tool_sequence"] == [{"key": "mcp_couchdb_deposition_access", "enabled": True}]
+
+
+def test_normalize_persona_rag_sequence_deduplicates_and_skips_unknown():
+    normalized = main._normalize_persona_rag_sequence(
+        [
+            {"key": "graph_rag_neo4j", "enabled": False},
+            "graph_rag_neo4j",
+            "unknown",
+            "",
+            "graph_rag_neo4j",
+        ]
+    )
+    assert len(normalized) == 1
+    assert normalized[0].key == "graph_rag_neo4j"
+    assert normalized[0].enabled is False
+
+
+def test_normalize_persona_tool_sequence_deduplicates_and_skips_unknown():
+    normalized = main._normalize_persona_tool_sequence(
+        [
+            {"key": "mcp_couchdb_deposition_access", "enabled": False},
+            "mcp_couchdb_deposition_access",
+            "mcp_couchdb_thought_stream_access",
+            "unknown",
+            "",
+            "mcp_couchdb_thought_stream_access",
+        ]
+    )
+    assert len(normalized) == 2
+    assert normalized[0].key == "mcp_couchdb_deposition_access"
+    assert normalized[0].enabled is False
+    assert normalized[1].key == "mcp_couchdb_thought_stream_access"
+    assert normalized[1].enabled is True
+
+
+def test_save_admin_persona_graph_session_updates_existing_doc(monkeypatch):
+    existing_doc = {
+        "_id": "persona:1",
+        "_rev": "1-a",
+        "type": "persona",
+        "name": "Cross Examiner",
+        "llm_provider": "openai",
+        "llm_model": "gpt-5.2",
+        "prompt_template_key": "chat_system",
+        "prompts": "Challenge weak assumptions.",
+        "prompt_sections": {
+            "system": "Challenge weak assumptions.",
+            "assistant": "",
+            "context": "",
+        },
+        "rag_sequence": [{"key": "graph_rag_neo4j", "enabled": True}],
+        "tool_sequence": [{"key": "mcp_couchdb_deposition_access", "enabled": True}],
+        "created_at": "2026-03-03T00:00:00+00:00",
+    }
+    updated_docs: list[dict] = []
+
+    couchdb = Mock()
+    couchdb.get_doc.return_value = dict(existing_doc)
+    couchdb.update_doc.side_effect = lambda doc: updated_docs.append(dict(doc)) or dict(doc)
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    updated = main._save_admin_persona_graph_session(
+        "persona:1",
+        "What does the graph show?",
+        "Graph answer here.",
+    )
+
+    assert updated.persona_id == "persona:1"
+    assert updated.prompt_template_key == "chat_system"
+    assert updated.prompt_sections.system == "Challenge weak assumptions."
+    assert len(updated.tool_sequence) == 1
+    assert updated.tool_sequence[0].key == "mcp_couchdb_deposition_access"
+    assert updated.last_graph_question == "What does the graph show?"
+    assert updated.last_graph_answer == "Graph answer here."
+    assert updated.last_graph_asked_at
+    assert updated_docs[0]["last_graph_question"] == "What does the graph show?"
+    assert updated_docs[0]["last_graph_answer"] == "Graph answer here."
+
+
+def test_list_admin_personas_handles_find_errors_and_skips_invalid_items(monkeypatch):
+    couchdb = Mock()
+    couchdb.find.side_effect = [RuntimeError("db down"), ["skip", {
+        "_id": "persona:bad-provider",
+        "type": "persona",
+        "name": "Bad Provider",
+        "llm_provider": "invalid",
+        "llm_model": "gpt-5.2",
+        "prompt_template_key": "chat_system",
+        "prompts": "Prompt",
+        "created_at": "2026-03-03T00:00:00+00:00",
+    }]]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    assert main._list_admin_personas() == []
+    assert main._list_admin_personas() == []
+
+
+def test_list_admin_personas_maps_legacy_context_prompt_by_template_key(monkeypatch):
+    couchdb = Mock()
+    couchdb.find.return_value = [
+        {
+            "_id": "persona:legacy-context",
+            "type": "persona",
+            "name": "Legacy Context Persona",
+            "llm_provider": "openai",
+            "llm_model": "gpt-5.2",
+            "prompt_template_key": "chat_user_context",
+            "prompts": "Use only this retrieved context text.",
+            "created_at": "2026-03-03T00:00:00+00:00",
+        }
+    ]
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    personas = main._list_admin_personas()
+
+    assert len(personas) == 1
+    assert personas[0].prompt_sections.system == ""
+    assert personas[0].prompt_sections.assistant == ""
+    assert personas[0].prompt_sections.context == "Use only this retrieved context text."
+    assert personas[0].prompts == "Context:\nUse only this retrieved context text."
+
+
+def test_save_admin_persona_validates_required_fields_and_missing_existing_doc(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = KeyError("missing")
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as invalid_provider:
+        main._save_admin_persona(None, "Name", "invalid", "gpt-5.2", None, "Prompt")
+
+    assert invalid_provider.value.status_code == 400
+
+    with pytest.raises(HTTPException) as missing_model:
+        main._save_admin_persona(None, "Name", "openai", "   ", None, "Prompt")
+
+    assert missing_model.value.status_code == 400
+
+    with pytest.raises(HTTPException) as missing_prompts:
+        main._save_admin_persona(None, "Name", "openai", "gpt-5.2", None, "   ")
+
+    assert missing_prompts.value.status_code == 400
+
+    with pytest.raises(HTTPException) as missing_persona:
+        main._save_admin_persona("persona:missing", "Name", "openai", "gpt-5.2", None, "Prompt")
+
+    assert missing_persona.value.status_code == 404
+
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {"_id": "user:1", "type": "user"}
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    with pytest.raises(HTTPException) as wrong_type:
+        main._save_admin_persona("user:1", "Name", "openai", "gpt-5.2", None, "Prompt")
+
+    assert wrong_type.value.status_code == 404
+
+    with pytest.raises(HTTPException) as invalid_prompt_template:
+        main._save_admin_persona(None, "Name", "openai", "gpt-5.2", "not_a_prompt", "Prompt")
+
+    assert invalid_prompt_template.value.status_code == 400
+
+
+def test_save_admin_persona_accepts_structured_prompt_sections(monkeypatch):
+    saved_docs: list[dict] = []
+
+    couchdb = Mock()
+    couchdb.save_doc.side_effect = lambda doc: saved_docs.append(dict(doc)) or {"_id": "persona:new", **dict(doc)}
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    saved = main._save_admin_persona(
+        None,
+        "Structured Persona",
+        "openai",
+        "gpt-5.2",
+        "chat_system",
+        "",
+        [{"key": "graph_rag_neo4j", "enabled": True}],
+        {"system": "Direct legal style.", "assistant": "Answer clearly.", "context": "Use only case evidence."},
+        tool_sequence=[{"key": "mcp_couchdb_deposition_access", "enabled": True}],
+    )
+
+    assert saved.persona_id == "persona:new"
+    assert saved.prompt_sections.system == "Direct legal style."
+    assert saved.prompt_sections.assistant == "Answer clearly."
+    assert saved.prompt_sections.context == "Use only case evidence."
+    assert "System:\nDirect legal style." in saved.prompts
+    assert "Assistant:\nAnswer clearly." in saved.prompts
+    assert "Context:\nUse only case evidence." in saved.prompts
+    assert saved_docs[0]["prompt_sections"]["system"] == "Direct legal style."
+    assert saved_docs[0]["tool_sequence"] == [{"key": "mcp_couchdb_deposition_access", "enabled": True}]
+
+
+def test_current_persona_prompt_templates_returns_runtime_prompt_inventory():
+    templates = main._current_persona_prompt_templates()
+
+    assert templates
+    assert templates[0].key == "map_deposition_system"
+    assert templates[0].file_name == "map_deposition_system.txt"
+    assert templates[0].content
+
+
+def test_current_persona_tool_options_returns_runtime_tool_inventory():
+    tools = main._current_persona_tool_options()
+
+    assert tools
+    assert tools[0].key == "mcp_couchdb_deposition_access"
+    assert tools[0].available is True
+
+
+def test_run_admin_tests_timeout_and_failure(monkeypatch):
+    timeout_exc = main.subprocess.TimeoutExpired(
+        cmd=[
+            main.sys.executable,
+            "-m",
+            "pytest",
+            "-vv",
+            "-rA",
+            "--tb=short",
+            "--capture=tee-sys",
+            "-o",
+            "log_cli=true",
+            "-o",
+            "log_cli_level=INFO",
+        ],
+        timeout=900,
+        output="slow",
+        stderr="still running",
+    )
+    monotonic_values = iter([10.0, 10.5])
+    monkeypatch.setattr(main, "monotonic", lambda: next(monotonic_values))
+    monkeypatch.setattr(main.subprocess, "run", Mock(side_effect=timeout_exc))
+
+    timeout_response = main.run_admin_tests()
+
+    assert timeout_response.exit_code == 124
+    assert timeout_response.succeeded is False
+    assert timeout_response.duration_seconds == 0.5
+    assert "slow" in timeout_response.output
+
+    monkeypatch.setattr(main, "monotonic", lambda: 20.0)
+    monkeypatch.setattr(main.subprocess, "run", Mock(side_effect=RuntimeError("boom")))
+
+    with pytest.raises(HTTPException) as excinfo:
+        main.run_admin_tests()
+
+    assert excinfo.value.status_code == 500
+    assert "Failed to run tests: boom" == excinfo.value.detail
+
+
+def test_run_admin_tests_uses_verbose_logging_command(monkeypatch):
+    captured: dict[str, object] = {}
+
+    def _fake_run(command, **kwargs):
+        captured["command"] = list(command)
+        return SimpleNamespace(returncode=0, stdout="ok", stderr="")
+
+    monkeypatch.setattr(main.subprocess, "run", _fake_run)
+    monotonic_values = iter([100.0, 100.25])
+    monkeypatch.setattr(main, "monotonic", lambda: next(monotonic_values))
+
+    response = main.run_admin_tests()
+
+    assert response.succeeded is True
+    assert response.duration_seconds == 0.25
+    assert captured["command"] == [
+        main.sys.executable,
+        "-m",
+        "pytest",
+        "-vv",
+        "-rA",
+        "--tb=short",
+        "--capture=tee-sys",
+        "-o",
+        "log_cli=true",
+        "-o",
+        "log_cli_level=INFO",
+    ]
 
 
 def test_build_ingest_candidates_handles_container_mapping(monkeypatch):
@@ -689,6 +1586,175 @@ def test_get_deposition_directories_returns_discovered_options(monkeypatch, tmp_
     assert payload.suggested in paths
 
 
+def test_deposition_browser_base_directory_fallbacks(monkeypatch, tmp_path):
+    mounted = tmp_path / "mounted"
+    configured = tmp_path / "configured"
+    repo_root = tmp_path / "repo"
+    repo_deps = repo_root / "depositions"
+    mounted.mkdir()
+    configured.mkdir()
+    repo_deps.mkdir(parents=True)
+
+    monkeypatch.setattr(main, "_resolve_directory_base", lambda: ("mounted", mounted))
+    monkeypatch.setattr(main, "_configured_deposition_root", lambda: configured)
+    monkeypatch.setattr(main, "app_root", repo_root)
+    assert main._deposition_browser_base_directory() == mounted.resolve()
+
+    monkeypatch.setattr(main, "_resolve_directory_base", lambda: ("mounted", tmp_path / "missing-mounted"))
+    assert main._deposition_browser_base_directory() == configured.resolve()
+
+    monkeypatch.setattr(main, "_configured_deposition_root", lambda: tmp_path / "missing-configured")
+    assert main._deposition_browser_base_directory() == repo_deps.resolve()
+
+    monkeypatch.setattr(main, "app_root", tmp_path / "empty-root")
+    assert main._deposition_browser_base_directory() == Path.cwd().resolve()
+
+
+def test_resolve_deposition_browser_directory_supports_relative_file_wildcard_and_missing(monkeypatch, tmp_path):
+    base = tmp_path / "depositions"
+    nested = base / "default"
+    nested.mkdir(parents=True)
+    sample = nested / "sample.txt"
+    sample.write_text("x", encoding="utf-8")
+
+    monkeypatch.setattr(main, "_deposition_browser_base_directory", lambda: base.resolve())
+
+    resolved_base, current = main._resolve_deposition_browser_directory("default")
+    assert resolved_base == base.resolve()
+    assert current == nested.resolve()
+
+    _, from_file = main._resolve_deposition_browser_directory(str(sample))
+    assert from_file == nested.resolve()
+
+    _, from_wildcard = main._resolve_deposition_browser_directory(str(nested / "*.txt"))
+    assert from_wildcard == nested.resolve()
+
+    _, from_missing = main._resolve_deposition_browser_directory(str(nested / "future" / "deeper.txt"))
+    assert from_missing == nested.resolve()
+
+
+def test_resolve_deposition_browser_directory_maps_depositions_prefix_into_base(monkeypatch, tmp_path):
+    base = tmp_path / "depositions"
+    nested = base / "custom-browser-path"
+    nested.mkdir(parents=True)
+
+    monkeypatch.setattr(main, "_deposition_browser_base_directory", lambda: base.resolve())
+
+    _, from_prefixed = main._resolve_deposition_browser_directory("depositions/custom-browser-path")
+    assert from_prefixed == nested.resolve()
+
+    _, from_dot_prefixed = main._resolve_deposition_browser_directory("./depositions/custom-browser-path")
+    assert from_dot_prefixed == nested.resolve()
+
+
+def test_resolve_deposition_browser_directory_defaults_to_base_without_path(monkeypatch, tmp_path):
+    base = tmp_path / "depositions"
+    base.mkdir()
+    monkeypatch.setattr(main, "_deposition_browser_base_directory", lambda: base.resolve())
+
+    resolved_base, current = main._resolve_deposition_browser_directory(None)
+
+    assert resolved_base == base.resolve()
+    assert current == base.resolve()
+
+
+def test_resolve_deposition_browser_directory_handles_existing_special_file_and_missing_child_under_file(
+    monkeypatch, tmp_path
+):
+    base = tmp_path / "depositions"
+    nested = base / "default"
+    nested.mkdir(parents=True)
+    sample = nested / "sample.txt"
+    sample.write_text("x", encoding="utf-8")
+    fifo_path = nested / "stream.fifo"
+    import os
+
+    os.mkfifo(fifo_path)
+
+    monkeypatch.setattr(main, "_deposition_browser_base_directory", lambda: base.resolve())
+
+    _, from_fifo = main._resolve_deposition_browser_directory(str(fifo_path))
+    assert from_fifo == nested.resolve()
+
+    _, from_child_of_file = main._resolve_deposition_browser_directory(str(sample / "child"))
+    assert from_child_of_file == nested.resolve()
+
+
+def test_list_deposition_browser_entries_lists_directories_and_txt_files_only(tmp_path):
+    root = tmp_path / "depositions"
+    child = root / "default"
+    root.mkdir()
+    child.mkdir()
+    (root / "sample.txt").write_text("x", encoding="utf-8")
+    (root / "ignore.md").write_text("x", encoding="utf-8")
+
+    directories, files = main._list_deposition_browser_entries(root)
+
+    assert [item.kind for item in directories] == ["directory"]
+    assert directories[0].path == str(child)
+    assert [item.kind for item in files] == ["file"]
+    assert files[0].path == str(root / "sample.txt")
+
+
+def test_list_deposition_browser_entries_returns_empty_for_missing_path(tmp_path):
+    directories, files = main._list_deposition_browser_entries(tmp_path / "missing")
+    assert directories == []
+    assert files == []
+
+
+def test_deposition_browser_returns_serialized_entries(monkeypatch):
+    base = Path("/data/depositions")
+    current = base / "default"
+    directories = [
+        main.DepositionBrowserEntry(
+            path="/data/depositions/default/sub",
+            name="sub",
+            kind="directory",
+        )
+    ]
+    files = [
+        main.DepositionBrowserEntry(
+            path="/data/depositions/default/sample.txt",
+            name="sample.txt",
+            kind="file",
+        )
+    ]
+    monkeypatch.setattr(main, "_resolve_deposition_browser_directory", lambda _path: (base, current))
+    monkeypatch.setattr(main, "_list_deposition_browser_entries", lambda _dir: (directories, files))
+
+    payload = main.deposition_browser("/tmp/example.txt")
+
+    assert payload.base_directory == "/data/depositions"
+    assert payload.current_directory == "/data/depositions/default"
+    assert payload.parent_directory == "/data/depositions"
+    assert payload.wildcard_path == "/data/depositions/default/*.txt"
+    assert [item.path for item in payload.directories] == ["/data/depositions/default/sub"]
+    assert [item.path for item in payload.files] == ["/data/depositions/default/sample.txt"]
+
+
+def test_grafana_access_info_uses_runtime_settings(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "settings",
+        SimpleNamespace(
+            grafana_url="http://grafana.internal:3000/",
+            grafana_admin_user="admin",
+            grafana_admin_password="password",
+        ),
+    )
+
+    payload = main.grafana_access_info()
+
+    assert payload.url == "http://grafana.internal:3000"
+    assert payload.login_url == "http://grafana.internal:3000/login"
+    assert (
+        payload.dashboard_url
+        == "http://grafana.internal:3000/d/attorneyos-observability/attorneyos-observability?orgId=1"
+    )
+    assert payload.username == "admin"
+    assert payload.password == "password"
+
+
 def test_txt_count_returns_zero_for_missing_path(tmp_path):
     assert main._txt_count(tmp_path / "missing") == 0
 
@@ -724,6 +1790,22 @@ def test_add_directory_option_skips_directory_without_txt(tmp_path):
     main._add_directory_option(options, seen, base, no_txt, "mounted")
 
     assert options == []
+
+
+def test_add_directory_option_includes_directory_with_nested_txt(tmp_path):
+    options = []
+    seen = set()
+    base = tmp_path / "base"
+    nested_dir = base / "example"
+    child = nested_dir / "all-in-one"
+    child.mkdir(parents=True)
+    (child / "sample.txt").write_text("x", encoding="utf-8")
+
+    main._add_directory_option(options, seen, base, nested_dir, "mounted")
+
+    assert len(options) == 1
+    assert options[0].path == str(nested_dir)
+    assert options[0].file_count == 1
 
 
 def test_configured_deposition_root_uses_relative_app_root(monkeypatch):
@@ -1131,6 +2213,44 @@ def test_public_trace_session_and_trace_sequence_helpers():
     assert seq == 5
 
 
+def test_refresh_thought_stream_inventory_metrics_syncs_counts(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "_collect_runtime_trace_sessions",
+        lambda: (
+            [
+                {
+                    "status": "completed",
+                    "trace": {
+                        "legal_clerk": [
+                            {"persona": "Persona:Legal Clerk", "phase": "ingest_start"},
+                            {"persona": "Persona:Legal Clerk", "phase": "ingest_start"},
+                        ],
+                        "attorney": [
+                            {"persona": "Persona:Attorney", "phase": "ingest_complete"},
+                        ],
+                    },
+                }
+            ],
+            True,
+        ),
+    )
+    sync_calls: list[tuple[dict, dict]] = []
+    monkeypatch.setattr(main, "sync_thought_stream_inventory", lambda events, sessions: sync_calls.append((events, sessions)))
+
+    main._refresh_thought_stream_inventory_metrics()
+
+    assert sync_calls == [
+        (
+            {
+                ("Persona:Legal Clerk", "ingest_start"): 2,
+                ("Persona:Attorney", "ingest_complete"): 1,
+            },
+            {"completed": 1},
+        )
+    ]
+
+
 def test_load_and_ensure_trace_session_branches(monkeypatch):
     trace_db = Mock()
     monkeypatch.setattr(main, "trace_couchdb", trace_db)
@@ -1246,6 +2366,51 @@ def test_append_and_delete_trace_event_branches(monkeypatch):
     monkeypatch.setattr(main, "trace_couchdb", trace_db)
     assert main._delete_trace_session("trace-unknown") is False
     main._trace_sessions.clear()
+
+
+def test_append_trace_events_records_metrics_and_logs(monkeypatch, caplog):
+    main._trace_sessions.clear()
+    monkeypatch.setattr(main, "_flush_trace_session", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-02-26T00:00:00+00:00")
+
+    event_calls: list[tuple[str, str]] = []
+    session_calls: list[str] = []
+    monkeypatch.setattr(main, "record_thought_stream_event", lambda persona, phase: event_calls.append((persona, phase)))
+    monkeypatch.setattr(main, "record_thought_stream_session", lambda status: session_calls.append(status))
+
+    with caplog.at_level("INFO"):
+        main._append_trace_events(
+            "trace-metrics",
+            legal_clerk=[
+                {
+                    "persona": "Persona:Legal Clerk",
+                    "phase": "ingest_start",
+                    "llm_provider": "openai",
+                    "llm_model": "gpt-5.2",
+                    "notes": "start",
+                }
+            ],
+            attorney=[
+                {
+                    "persona": "Persona:Attorney",
+                    "phase": "chat_response",
+                    "llm_provider": "openai",
+                    "llm_model": "gpt-5.2",
+                    "notes": "done",
+                }
+            ],
+            status="completed",
+        )
+
+    assert event_calls == [
+        ("Persona:Legal Clerk", "ingest_start"),
+        ("Persona:Attorney", "chat_response"),
+    ]
+    assert session_calls == ["completed"]
+    messages = [record.getMessage() for record in caplog.records]
+    assert any("thought_stream_event trace_id=trace-metrics persona=Persona:Legal Clerk phase=ingest_start" in item for item in messages)
+    assert any("thought_stream_event trace_id=trace-metrics persona=Persona:Attorney phase=chat_response" in item for item in messages)
+    assert any("thought_stream_status trace_id=trace-metrics status=completed" in item for item in messages)
 
 
 def test_rag_stream_doc_id_prefix_and_uniqueness():
@@ -1463,6 +2628,102 @@ def test_graph_rag_health_uses_client_payload(monkeypatch):
     assert payload.database == "neo4j"
 
 
+def test_graph_rag_embedding_config_defaults_when_doc_missing(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "couchdb",
+        SimpleNamespace(get_doc=lambda _doc_id: (_ for _ in ()).throw(KeyError("missing"))),
+    )
+
+    payload = main.graph_rag_embedding_config()
+
+    assert payload.enabled is False
+    assert payload.source == "defaults"
+    assert payload.configured is False
+
+
+def test_save_graph_rag_embedding_config_persists_doc(monkeypatch):
+    saved_docs: list[dict] = []
+    monkeypatch.setattr(
+        main,
+        "couchdb",
+        SimpleNamespace(
+            get_doc=lambda _doc_id: (_ for _ in ()).throw(KeyError("missing")),
+            update_doc=lambda doc: saved_docs.append(dict(doc)) or doc,
+        ),
+    )
+
+    payload = main.save_graph_rag_embedding_config(
+        GraphRagEmbeddingConfigRequest(
+            enabled=True,
+            provider="openai",
+            model="text-embedding-3-small",
+            dimensions=512,
+            index_name="resource_embeddings",
+            node_label="Resource",
+            property_name="embedding",
+        )
+    )
+
+    assert payload.enabled is True
+    assert payload.source == "saved"
+    assert saved_docs[0]["type"] == "graph_rag_embedding_config"
+    assert saved_docs[0]["dimensions"] == 512
+
+
+def test_build_graph_rag_query_embedding_returns_none_when_disabled():
+    config = main.GraphRagEmbeddingConfigRequest(
+        enabled=False,
+        provider="openai",
+        model="text-embedding-3-small",
+        dimensions=1536,
+        index_name="resource_embeddings",
+        node_label="Resource",
+        property_name="embedding",
+    )
+
+    embedding, error = main._build_graph_rag_query_embedding("contract", config)
+
+    assert embedding is None
+    assert error is None
+
+
+def test_build_graph_rag_query_embedding_uses_openai(monkeypatch):
+    monkeypatch.setattr(main.settings, "openai_api_key", "test-key")
+
+    class _Response:
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return {"data": [{"embedding": [0.1, 0.2, 0.3]}]}
+
+    captured: dict[str, object] = {}
+
+    def _fake_post(url, **kwargs):
+        captured["url"] = url
+        captured["kwargs"] = kwargs
+        return _Response()
+
+    monkeypatch.setattr(main.httpx, "post", _fake_post)
+
+    config = main.GraphRagEmbeddingConfigRequest(
+        enabled=True,
+        provider="openai",
+        model="text-embedding-3-small",
+        dimensions=256,
+        index_name="resource_embeddings",
+        node_label="Resource",
+        property_name="embedding",
+    )
+
+    embedding, error = main._build_graph_rag_query_embedding("contract", config)
+
+    assert embedding == [0.1, 0.2, 0.3]
+    assert error is None
+    assert captured["url"] == "https://api.openai.com/v1/embeddings"
+
+
 def test_graph_rag_owl_options_returns_dropdown_payload(monkeypatch):
     base = Path("/data/ontology")
     options = [
@@ -1597,6 +2858,8 @@ def test_query_graph_rag_success(monkeypatch):
     monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(retrieve_context=retrieval))
     monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
     monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
+    monkeypatch.setattr(main, "_load_graph_rag_embedding_config", lambda: main._default_graph_rag_embedding_config())
+    monkeypatch.setattr(main, "_build_graph_rag_query_embedding", lambda _question, _config: (None, None))
     monkeypatch.setattr(
         main,
         "_append_trace_events",
@@ -1622,7 +2885,12 @@ def test_query_graph_rag_success(monkeypatch):
         )
     )
 
-    retrieval.assert_called_once_with("What is breach of contract?", node_limit=6)
+    retrieval.assert_called_once()
+    retrieval_args, retrieval_kwargs = retrieval.call_args
+    assert retrieval_args == ("What is breach of contract?",)
+    assert retrieval_kwargs["node_limit"] == 6
+    assert retrieval_kwargs["query_embedding"] is None
+    assert retrieval_kwargs["embedding_config"]["enabled"] is False
     assert payload.context_rows == 2
     assert payload.llm_provider == "openai"
     assert payload.llm_model == "gpt-5.2"
@@ -1631,6 +2899,8 @@ def test_query_graph_rag_success(monkeypatch):
     assert payload.monitor is not None
     assert payload.monitor.rag_enabled is True
     assert payload.monitor.rag_stream_enabled is True
+    assert payload.monitor.retrieval_mode == "keyword"
+    assert payload.monitor.query_embedding_used is False
     assert payload.monitor.retrieval_terms == ["breach", "contract"]
     assert len(payload.monitor.retrieved_resources) == 2
     assert payload.monitor.retrieved_resources[0].iri == "http://example.org/Contract"
@@ -2136,9 +3406,67 @@ def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
     assert by_key["p95_time_to_first_event_sec"].status == "info"
     assert by_key["avg_steps_per_finished_run"].status == "info"
     assert by_key["loop_risk_rate_pct"].status == "info"
-    assert correctness_by_key["golden_set_accuracy"].display == "N/A"
-    assert correctness_by_key["schema_adherence_rate"].display == "N/A"
-    assert correctness_by_key["unsupported_claim_rate"].display == "N/A"
+    assert by_key["p95_end_to_end_latency_sec"].display == "0.0s"
+    assert by_key["p95_time_to_first_event_sec"].display == "0.0s"
+    assert correctness_by_key["golden_set_accuracy"].display == "0.0%"
+    assert correctness_by_key["schema_adherence_rate"].display == "0.0%"
+    assert correctness_by_key["unsupported_claim_rate"].display == "0.0%"
+
+
+def test_compute_llm_io_metrics_returns_prompt_and_output_sizes():
+    sampled = [
+        {
+            "trace_id": "trace-1",
+            "status": "completed",
+            "created_at": "",
+            "updated_at": "",
+            "trace": {
+                "legal_clerk": [],
+                "attorney": [
+                    {
+                        "sequence": 1,
+                        "system_prompt": "System prompt.",
+                        "user_prompt": "Context goes here",
+                        "input_preview": "hello world",
+                        "output_preview": "Short answer.",
+                    },
+                    {
+                        "sequence": 2,
+                        "output_preview": "Done now",
+                    },
+                ],
+            },
+        }
+    ]
+
+    metrics = main._compute_llm_io_metrics(sampled)
+
+    by_key = {item.key: item for item in metrics}
+    assert by_key["llm_calls_sampled"].display == "2"
+    assert by_key["avg_prompt_context_bytes_per_llm_call"].display == "22 B"
+    assert by_key["avg_estimated_prompt_tokens_per_llm_call"].display == "4.0"
+    assert by_key["avg_estimated_output_tokens_per_llm_call"].display == "2.5"
+
+
+def test_compute_llm_io_metrics_skips_non_dict_trace_events():
+    sampled = [
+        {
+            "trace": {
+                "attorney": [
+                    "skip",
+                    {
+                        "input_preview": "hello",
+                        "output_preview": "world",
+                    },
+                ]
+            }
+        }
+    ]
+
+    metrics = main._compute_llm_io_metrics(sampled)
+
+    by_key = {item.key: item for item in metrics}
+    assert by_key["llm_calls_sampled"].display == "1"
 
 
 def test_collect_recent_rag_stream_events_and_compute_influence_metrics(monkeypatch):
@@ -2441,6 +3769,25 @@ def test_get_agent_metrics_endpoint_validates_lookback(monkeypatch):
     assert "lookback_hours must be between 1 and 168" in exc.value.detail
 
 
+def test_get_agent_metrics_persists_full_observable_snapshot(monkeypatch):
+    saved_docs: list[dict] = []
+
+    monkeypatch.setattr(main, "_collect_runtime_trace_sessions", lambda: ([], True))
+    monkeypatch.setattr(main, "_collect_recent_rag_stream_events", lambda _hours: ([], True))
+    monkeypatch.setattr(main.trace_couchdb, "save_doc", lambda doc: saved_docs.append(dict(doc)) or doc)
+
+    payload = main.get_agent_metrics(lookback_hours=24)
+
+    assert payload.metrics
+    assert payload.correctness_metrics
+    assert len(saved_docs) == 1
+    snapshot = saved_docs[0]
+    assert snapshot["type"] == "observable_snapshot"
+    assert snapshot["generated_at"] == payload.generated_at
+    assert len(snapshot["metrics"]) == len(payload.metrics)
+    assert len(snapshot["correctness_metrics"]) == len(payload.correctness_metrics)
+
+
 def test_compute_agent_metric_history_builds_runtime_and_rag_series():
     now = datetime.now(timezone.utc)
     older_created = now - timedelta(hours=3, minutes=1)
@@ -2556,9 +3903,134 @@ def test_compute_agent_metric_history_builds_runtime_and_rag_series():
     assert correctness_history["points"][1]["display"] == "0.0%"
 
 
+def test_compute_agent_metric_history_preserves_numeric_values_when_display_is_na():
+    history = main._compute_agent_metric_history(
+        [],
+        lookback_hours=4,
+        bucket_hours=2,
+        metric_key="unsupported_claim_rate",
+        storage_connected=True,
+        rag_events=[],
+        rag_storage_connected=True,
+    )
+
+    assert history["label"] == "Unsupported Claim Rate"
+    assert len(history["points"]) == 2
+    assert all(point["display"] == "0.0%" for point in history["points"])
+    assert all(point["value"] == 0.0 for point in history["points"])
+
+
+def test_coerce_metric_history_value_handles_numeric_boolean_and_non_numeric():
+    assert main._coerce_metric_history_value(SimpleNamespace(value=12.5)) == 12.5
+    assert main._coerce_metric_history_value(SimpleNamespace(value=True)) == 1
+    assert main._coerce_metric_history_value(SimpleNamespace(value="n/a")) is None
+    assert main._coerce_metric_history_value({"value": 7.0}) == 7.0
+
+
+def test_collect_recent_observable_snapshots_filters_and_sorts(monkeypatch):
+    now = datetime.now(timezone.utc)
+    stored_docs = [
+        {"type": "observable_snapshot", "generated_at": (now - timedelta(hours=3)).isoformat()},
+        {"type": "observable_snapshot", "generated_at": (now - timedelta(hours=1)).isoformat()},
+        {"type": "observable_snapshot", "generated_at": (now - timedelta(hours=30)).isoformat()},
+        {"type": "observable_snapshot", "generated_at": "not-a-date"},
+    ]
+    monkeypatch.setattr(main.trace_couchdb, "find", lambda selector, limit=5000: list(stored_docs))
+
+    snapshots = main._collect_recent_observable_snapshots(lookback_hours=24)
+
+    assert len(snapshots) == 2
+    assert snapshots[0]["_generated_dt"] <= snapshots[1]["_generated_dt"]
+
+
+def test_collect_recent_observable_snapshots_handles_store_failures_and_bad_rows(monkeypatch):
+    monkeypatch.setattr(
+        main.trace_couchdb,
+        "find",
+        lambda selector, limit=5000: (_ for _ in ()).throw(RuntimeError("offline")),
+    )
+    assert main._collect_recent_observable_snapshots(lookback_hours=24) == []
+
+    now = datetime.now(timezone.utc)
+    monkeypatch.setattr(
+        main.trace_couchdb,
+        "find",
+        lambda selector, limit=5000: [
+            "bad-row",
+            {"type": "observable_snapshot", "generated_at": (now - timedelta(hours=1)).isoformat()},
+        ],
+    )
+    snapshots = main._collect_recent_observable_snapshots(lookback_hours=24)
+    assert len(snapshots) == 1
+
+
+def test_persist_observable_snapshot_ignores_storage_errors(monkeypatch):
+    monkeypatch.setattr(main.trace_couchdb, "save_doc", lambda doc: (_ for _ in ()).throw(RuntimeError("boom")))
+
+    payload = main._compute_agent_runtime_metrics(
+        [],
+        lookback_hours=24,
+        storage_connected=True,
+        rag_events=[],
+        rag_storage_connected=True,
+    )
+
+    main._persist_observable_snapshot(payload)
+
+
+def test_find_metric_in_snapshot_skips_malformed_rows():
+    snapshot = {
+        "metrics": "not-a-list",
+        "correctness_metrics": ["bad-row", {"key": "judge_human_disagreement", "value": 0.0}],
+    }
+
+    assert main._find_metric_in_snapshot(snapshot, "judge_human_disagreement") == {
+        "key": "judge_human_disagreement",
+        "value": 0.0,
+    }
+    assert main._find_metric_in_snapshot(snapshot, "missing") is None
+
+
+def test_compute_agent_metric_history_prefers_persisted_observable_snapshots():
+    now = datetime.now(timezone.utc)
+    observable_snapshots = [
+        {
+            "_generated_dt": now - timedelta(hours=3),
+            "generated_at": (now - timedelta(hours=3)).isoformat(),
+            "sampled_runs": 17,
+            "rag_sampled_queries": 4,
+            "metrics": [],
+            "correctness_metrics": [
+                {
+                    "key": "unsupported_claim_rate",
+                    "display": "12.5%",
+                    "status": "warn",
+                    "value": 12.5,
+                }
+            ],
+        }
+    ]
+
+    history = main._compute_agent_metric_history(
+        [],
+        lookback_hours=4,
+        bucket_hours=2,
+        metric_key="unsupported_claim_rate",
+        storage_connected=True,
+        rag_events=[],
+        rag_storage_connected=True,
+        observable_snapshots=observable_snapshots,
+    )
+
+    assert history["points"][0]["display"] == "12.5%"
+    assert history["points"][0]["value"] == 12.5
+    assert history["points"][0]["sample_size"] == 17
+
+
 def test_get_agent_metric_history_endpoint_validates_and_handles_missing_metric(monkeypatch):
     monkeypatch.setattr(main, "_collect_runtime_trace_sessions", lambda: ([], True))
     monkeypatch.setattr(main, "_collect_recent_rag_stream_events", lambda _hours: ([], True))
+    monkeypatch.setattr(main, "_collect_recent_observable_snapshots", lambda _hours: [])
 
     payload = main.get_agent_metric_history(
         metric_key=" task_success_rate_pct ",
@@ -2575,6 +4047,15 @@ def test_get_agent_metric_history_endpoint_validates_and_handles_missing_metric(
     )
     assert correctness_payload["key"] == "golden_set_accuracy"
     assert len(correctness_payload["points"]) == 12
+
+    unavailable_payload = main.get_agent_metric_history(
+        metric_key="unsupported_claim_rate",
+        lookback_hours=24,
+        bucket_hours=2,
+    )
+    assert unavailable_payload["key"] == "unsupported_claim_rate"
+    assert all(point["display"] == "0.0%" for point in unavailable_payload["points"])
+    assert all(point["value"] == 0.0 for point in unavailable_payload["points"])
 
     with pytest.raises(HTTPException) as blank_exc:
         main.get_agent_metric_history(metric_key=" ", lookback_hours=24, bucket_hours=2)
@@ -2728,28 +4209,22 @@ def test_save_case_memory_and_upsert_case_doc_wrap_errors(monkeypatch):
 
 def test_list_case_summaries_and_case_endpoints(monkeypatch):
     couchdb = Mock()
-    couchdb.find.side_effect = [
-        [
-            {
-                "_id": "case:case-1",
-                "type": "case",
-                "case_id": "CASE-001",
-                "deposition_count": 2,
-                "memory_entries": 3,
-                "updated_at": "2026-01-02T00:00:00+00:00",
-                "last_action": "chat",
-                "last_directory": "/data/depositions/oj_simpson",
-                "last_llm_provider": "openai",
-                "last_llm_model": "gpt-5.2",
-            },
-            {"_id": "case:bad", "type": "case"},
-        ],
-        [
-            {"_id": "dep:1", "type": "deposition", "case_id": "CASE-001"},
-            {"_id": "dep:2", "type": "deposition", "case_id": "CASE-XYZ"},
-            {"_id": "dep:3", "type": "deposition"},
-        ],
+    couchdb.find.return_value = [
+        {
+            "_id": "case:case-1",
+            "type": "case",
+            "case_id": "CASE-001",
+            "deposition_count": 2,
+            "memory_entries": 3,
+            "updated_at": "2026-01-02T00:00:00+00:00",
+            "last_action": "chat",
+            "last_directory": "/data/depositions/oj_simpson",
+            "last_llm_provider": "openai",
+            "last_llm_model": "gpt-5.2",
+        },
+        {"_id": "case:bad", "type": "case"},
     ]
+    couchdb.list_deposition_counts.return_value = {"CASE-001": 1, "CASE-XYZ": 1}
     monkeypatch.setattr(main, "couchdb", couchdb)
 
     summaries = main._list_case_summaries()
@@ -2758,27 +4233,21 @@ def test_list_case_summaries_and_case_endpoints(monkeypatch):
     assert summaries[0].memory_entries == 3
     assert summaries[1].deposition_count == 1
 
-    couchdb.find.side_effect = [
-        [
-            {
-                "_id": "case:case-1",
-                "type": "case",
-                "case_id": "CASE-001",
-                "deposition_count": 2,
-                "memory_entries": 3,
-                "updated_at": "2026-01-02T00:00:00+00:00",
-                "last_action": "chat",
-                "last_directory": "/data/depositions/oj_simpson",
-                "last_llm_provider": "openai",
-                "last_llm_model": "gpt-5.2",
-            }
-        ],
-        [
-            {"_id": "dep:1", "type": "deposition", "case_id": "CASE-001"},
-            {"_id": "dep:2", "type": "deposition", "case_id": "CASE-XYZ"},
-            {"_id": "dep:3", "type": "deposition"},
-        ],
+    couchdb.find.return_value = [
+        {
+            "_id": "case:case-1",
+            "type": "case",
+            "case_id": "CASE-001",
+            "deposition_count": 2,
+            "memory_entries": 3,
+            "updated_at": "2026-01-02T00:00:00+00:00",
+            "last_action": "chat",
+            "last_directory": "/data/depositions/oj_simpson",
+            "last_llm_provider": "openai",
+            "last_llm_model": "gpt-5.2",
+        }
     ]
+    couchdb.list_deposition_counts.return_value = {"CASE-001": 1, "CASE-XYZ": 1}
     payload = main.list_cases()
     assert len(payload.cases) == 2
 
@@ -3487,6 +4956,11 @@ def test_ingest_case_success(monkeypatch):
     file_a = Path("/tmp/a.txt")
     file_b = Path("/tmp/b.txt")
     monkeypatch.setattr(main, "_resolve_ingest_txt_files", lambda _path: [file_a, file_b])
+    monkeypatch.setattr(
+        main,
+        "_resolve_ingest_schema_selection",
+        lambda _name: ("deposition_schema", {"title": "Deposition"}, "native"),
+    )
 
     workflow = Mock()
     workflow.run.side_effect = [
@@ -3533,6 +5007,9 @@ def test_ingest_case_success(monkeypatch):
         file_path="/tmp/a.txt",
         llm_provider="ollama",
         llm_model="llama3.3",
+        schema_name="deposition_schema",
+        selected_schema={"title": "Deposition"},
+        selected_schema_mode="native",
     )
     workflow.reassess_case.assert_called_once_with(
         "case-1",
@@ -3553,6 +5030,188 @@ def test_ingest_case_wraps_processing_errors(monkeypatch):
 
     assert exc.value.status_code == 502
     assert "a.txt" in exc.value.detail
+
+
+def test_ingest_case_passes_selected_schema_to_workflow(monkeypatch):
+    file_a = Path("/tmp/a.txt")
+    monkeypatch.setattr(main, "_resolve_ingest_txt_files", lambda _path: [file_a])
+    monkeypatch.setattr(
+        main,
+        "_resolve_ingest_schema_selection",
+        lambda _name: ("deposition_schema_g1", {"title": "Alt"}, "raw_capture"),
+    )
+    workflow = Mock()
+    workflow.run.return_value = {"deposition_doc": {"_id": "dep:1"}}
+    workflow.reassess_case.return_value = []
+    couchdb = Mock()
+    couchdb.get_doc.return_value = {
+        "_id": "dep:1",
+        "file_name": "a.txt",
+        "witness_name": "Jane",
+        "contradiction_score": 0,
+        "flagged": False,
+    }
+    monkeypatch.setattr(main, "workflow", workflow)
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    response = main.ingest_case(
+        IngestCaseRequest(
+            case_id="case-1",
+            directory="/tmp",
+            schema_name="deposition_schema_g1",
+        )
+    )
+
+    assert response.case_id == "case-1"
+    workflow.run.assert_called_once_with(
+        case_id="case-1",
+        file_path="/tmp/a.txt",
+        llm_provider="openai",
+        llm_model=main.settings.model_name,
+        schema_name="deposition_schema_g1",
+        selected_schema={"title": "Alt"},
+        selected_schema_mode="raw_capture",
+    )
+
+
+def test_ingest_case_rejects_invalid_schema(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "_resolve_ingest_schema_selection",
+        Mock(side_effect=HTTPException(status_code=400, detail="Invalid ingest schema 'bad_schema': boom")),
+    )
+
+    with pytest.raises(HTTPException) as exc:
+        main.ingest_case(
+            IngestCaseRequest(
+                case_id="case-1",
+                directory="/tmp",
+                schema_name="bad_schema",
+            )
+        )
+
+    assert exc.value.status_code == 400
+    assert "Invalid ingest schema 'bad_schema'" in exc.value.detail
+
+
+def test_get_ingest_schemas_returns_options(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "_build_ingest_schema_options",
+        Mock(
+            return_value=[
+                main.IngestSchemaOption(
+                    key="deposition_schema",
+                    file_name="deposition_schema.json",
+                    mode="native",
+                    builtin=True,
+                    removable=False,
+                    schema={"title": "Deposition"},
+                ),
+                main.IngestSchemaOption(
+                    key="deposition_schema_g1",
+                    file_name="[couchdb]",
+                    mode="raw_capture",
+                    builtin=False,
+                    removable=True,
+                    schema={"title": "Alt"},
+                ),
+            ]
+        ),
+    )
+
+    payload = main.get_ingest_schemas()
+
+    assert [item.key for item in payload] == ["deposition_schema", "deposition_schema_g1"]
+
+
+def test_save_ingest_schema_persists_custom_doc(monkeypatch):
+    couchdb = Mock()
+    couchdb.get_doc.side_effect = RuntimeError("missing")
+    couchdb.save_doc.side_effect = lambda doc: {**doc, "_rev": "1-a"}
+    monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(
+        main,
+        "_build_ingest_schema_options",
+        Mock(
+            return_value=[
+                main.IngestSchemaOption(
+                    key="deposition_schema",
+                    file_name="deposition_schema.json",
+                    mode="native",
+                    builtin=True,
+                    removable=False,
+                    schema={"title": "Deposition"},
+                )
+            ]
+        ),
+    )
+
+    response = main.save_ingest_schema(
+        main.IngestSchemaSaveRequest(
+            key="custom_schema",
+            schema={"title": "Custom Schema", "type": "object"},
+        )
+    )
+
+    assert response.key == "custom_schema"
+    assert response.removable is True
+    saved_doc = couchdb.save_doc.call_args.args[0]
+    assert saved_doc["_id"] == "ingest_schema:custom_schema"
+    assert saved_doc["type"] == "ingest_schema"
+
+
+def test_save_ingest_schema_rejects_builtin_key(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "_build_ingest_schema_options",
+        Mock(
+            return_value=[
+                main.IngestSchemaOption(
+                    key="deposition_schema",
+                    file_name="deposition_schema.json",
+                    mode="native",
+                    builtin=True,
+                    removable=False,
+                    schema={"title": "Deposition"},
+                )
+            ]
+        ),
+    )
+
+    with pytest.raises(HTTPException) as exc:
+        main.save_ingest_schema(
+            main.IngestSchemaSaveRequest(
+                key="deposition_schema",
+                schema={"title": "Nope"},
+            )
+        )
+
+    assert exc.value.status_code == 400
+
+
+def test_delete_ingest_schema_rejects_builtin_key(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "_build_ingest_schema_options",
+        Mock(
+            return_value=[
+                main.IngestSchemaOption(
+                    key="deposition_schema",
+                    file_name="deposition_schema.json",
+                    mode="native",
+                    builtin=True,
+                    removable=False,
+                    schema={"title": "Deposition"},
+                )
+            ]
+        ),
+    )
+
+    with pytest.raises(HTTPException) as exc:
+        main.delete_ingest_schema("deposition_schema")
+
+    assert exc.value.status_code == 400
 
 
 def test_ingest_case_skip_reassess_uses_per_file_docs(monkeypatch):

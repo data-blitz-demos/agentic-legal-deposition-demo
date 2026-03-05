@@ -1,0 +1,1178 @@
+1594
+ 1       IN THE CIRCUIT COURT OF THE 11th JUDICIAL CIRCUIT
+               IN AND FOR MIAMI-DADE COUNTY, FLORIDA
+ 2                    CIRCUIT CIVIL DIVISION
+ 3                  CASE NO.: 2019-017627-CA-01
+ 4   
+ 5   ROBERT A. SUGARMAN, Individually and as
+     Personal Representative of the Estate of
+ 6   MARILYN WENDY SESKIN,
+ 7             Plaintiff,
+ 8   v.
+ 9   JOHNSON & JOHNSON, JOHNSON & JOHNSON
+     CONSUMER, INC., f/k/a JOHNSON & JOHNSON,
+10   CONSUMER COMPANIES, INC., and PUBLIX
+     SUPER MARKETS, INC.,
+11   
+               Defendants.
+12   ________________________________________/
+13   
+14                           *   *   *
+15                          Volume VIII
+16                       Pages 1594 - 1856
+17                           *   *   *
+18   
+                             Miami-Dade County Courthouse
+19                           73 West Flagler Street
+                             Miami, Florida 33130
+20                           Tuesday, February 20, 2024
+                             9:31 a.m. - 3:52 p.m.
+21   
+22             This cause came on for trial before the
+23   Honorable William Thomas, Circuit Court Judge, taken
+24   by Christine Savoureux-Mariner, FPR and Notary
+25   Public in and for the State of Florida at Large.
+1595
+ 1   APPEARANCES:
+ 2   ATTORNEYS ON BEHALF OF THE PLAINTIFF:
+ 3             LANCE V. OLIVER, ESQUIRE
+               LAURA K. STEMKOWSKI, ESQUIRE
+ 4             MOTLEY RICE, LLC
+               28 Bridgeside Boulevard
+ 5             Mount Pleasant, South Carolina  29464
+               (843) 216-9061
+ 6             Loliver@motleyrice.com
+               lstemkowski@motleyrice.com
+ 7             tfamiloni@motleyrice.com
+               rmazingo@motleyrice.com
+ 8   
+ 9             MICHAEL J. PENDELL, ESQUIRE
+               MOTLEY RICE, LLC
+10             20 Church Street
+               Hartford, Connecticut 06103
+11             (860) 882-1681
+               Mpendell@motleyrice.com
+12   
+13             LEIGH O'DELL, ESQUIRE
+               BEASLEY ALLEN LAW FIRM
+14             272 Commerce Street
+               Montgomery, Alabama 36104
+15             (334) 269-2343
+               Leigh.odell@beasleyallen.com
+16   
+17             NICHOLAS REYES, ESQUIRE
+               THE ALVAREZ LAW FIRM
+18             355 Palermo Avenue
+               Coral Gables, Florida 33134
+19             (305) 444-7675
+               Nick@talf.law
+20   
+21   ATTORNEYS ON BEHALF OF THE JOHNSON & JOHNSON DEFENDANTS:
+22             SYDNEY SCOTT, ESQUIRE
+               GIBSON DUNN & CRUTCHER, LLP
+23             811 Main Street
+               Suite 3000
+24             Houston, Texas 77002
+               (346) 718-6963
+25             Sascott@gibsondunn.com
+1596
+ 1   APPEARANCES: (Continued)
+ 2             ALLISON BROWN, ESQUIRE
+               SKADDEN ARPS SLATE MEAGHER & FLOM, LLP
+ 3             One Manhattan West
+               395 9th Avenue
+ 4             New York, New York 10001
+               (212) 735-2173
+ 5             Anthony.balzano@skadden.com
+               Allison.brown@skadden.com
+ 6             joseph.caruso@skadden.com
+ 7   
+ 8             HASSIA DIOLOMBI, ESQUIRE
+               SHOOK HARDY & BACON, LLP
+ 9             2555 Grand Boulevard
+               Kansas City, Missouri 64108
+10             (816) 474-6550
+               Hdiolombi@shb.com
+11             Hdiolombi@shb.com
+12   
+13             MICHAEL RAYFIELD, ESQUIRE
+               SHOOK HARDY & BACON, LLP
+14             One Rockefeller Plaza
+               Suite 2801
+15             New York, New York 10020
+               (212) 989-8844
+16             Mrayfield@shb.com
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+1597
+ 1                           I N D E X
+ 2   PROCEEDING                                        PAGE
+ 3   Continued Trial Proceedings                       1598
+ 4   
+ 5                       W I T N E S S E S
+ 6   PLAINTIFF'S                                       PAGE
+ 7   CONTINUED VIDEOTAPED DEPOSITION OF JOHN HOPKINS   1610
+ 8   MATTHEW DIAZ
+ 9      Direct Examination By MR. OLIVER               1680
+10      Cross-Examination By MS. BROWN                 1699
+11   MARK W. RIGLER, Ph.D.
+12      Direct Examination By MS. STEMKOWSKI           1707
+13      Cross-Examination By MS. BROWN                 1785
+14      Direct Examination By MS. STEMKOWSKI           1847
+15   
+16                        E X H I B I T S
+17   PLAINTIFF'S                                       PAGE
+18   Exhibit 2464                                      1687
+19   Exhibit D3624                                     1757
+20   Exhibit P2089                                     1758
+21   Exhibit 2078.2                                    1768
+22   Exhibit P3936                                     1771
+23   Exhibit 2238                                      1776
+24   Exhibit D1652                                     1810
+25   
+1598
+ 1             (Continued from Volume VII.)
+ 2             (Trial proceedings continued at 9:31 a.m.)
+ 3             THE COURT:  All right.  Good morning,
+ 4        everyone.  We are missing three jurors, so is there
+ 5        anything we can take up while we're waiting?
+ 6             MR. OLIVER:  Your Honor, this morning I
+ 7        received a brief on our witness, Mr. Diaz.  I
+ 8        obviously haven't had time to do it, but I believe
+ 9        the defendants would like to argue that.
+10             Is that right, Ms. Scott?
+11             MS. SCOTT:  That's correct, Mr. Oliver.  And
+12        Your Honor, may I approach?  We have prepared
+13        another bench memo for you.
+14             MR. OLIVER:  Is it the same thing you gave me?
+15             THE COURT:  I would just have to tell you all,
+16        if you really want me to rely upon your brief, you
+17        can't just hand it to me.  I actually think this is
+18        how mistakes are made during trials, is when trial
+19        judges do the best they possibly can with whatever
+20        issue is presented to them, but y'all went and
+21        gave -- you did a brief.
+22             And just so that we're clear, you just handed
+23        me an 11-page brief with a signature page and two
+24        exhibits, okay?  I'm just saying I haven't had a
+25        chance to review it, but why don't you tell me
+1599
+ 1        what's in it.
+ 2             MS. SCOTT:  Understood, Your Honor, and I
+ 3        think we thought that -- well, before we get
+ 4        started, I believe this goes to Mr. Diaz's
+ 5        testimony and Mr. Diaz --
+ 6             THE COURT:  Tell me first, who is Mr. Diaz?
+ 7             MS. SCOTT:  He is the plaintiff's economist.
+ 8             MR. OLIVER:  Mr. Diaz is in the room, by the
+ 9        way.
+10             THE COURT:  Mr. Diaz, can you step outside,
+11        please.
+12             MR. DIAZ:  Yes, of course.
+13             MS. SCOTT:  So, Your Honor, I probably thought
+14        Mr. Diaz was going to come after lunch, but
+15        appreciate your comments and we will get these to
+16        you earlier.  But the issue here is regarding the
+17        scope of Mr. Diaz's testimony as an economist.
+18             THE COURT:  Well, first of all, why don't we
+19        just have them tell me what the scope of his
+20        testimony is going to be and then you tell me what
+21        your problem is with the scope of that testimony.
+22             MR. OLIVER:  Sure, Your Honor.  This morning,
+23        I handed Ms. Brown a redacted copy of Johnson &
+24        Johnson's most recent 10-K sworn statement they
+25        filed with the SEC.  It includes, I believe, three
+1600
+ 1        pages.  I mean, you know, it's bigger than that.
+ 2        We are only going to introduce three pages.  We
+ 3        have, under their objections, appropriately
+ 4        redacted those pages to remove all reference to
+ 5        bankruptcy.
+ 6             The things that are included are, I believe,
+ 7        on the cover page, we have their signature and all
+ 8        that, and I believe it says number of shares
+ 9        outstanding, which is relevant to a net worth
+10        calculation.  There is a page that includes their
+11        use of cash during the year, that includes
+12        dividends, share buybacks and some other stuff
+13        that, you know, we are not going to refer to.
+14             THE COURT:  Their use of cash?
+15             MR. OLIVER:  It's their end of the year cash,
+16        so dividends and buybacks figuring the company's
+17        net worth and available cash.  And then there is a
+18        small paragraph, that's probably five sentences,
+19        where the company explains what they've done --
+20        like, they explain the existence of LTL and we've
+21        sanitized that from any mention of bankruptcy.  In
+22        fact, there's a place where they called LTL "the
+23        debtor."  We redacted that appropriately.
+24             So, essentially, Mr. Diaz will testify to who
+25        LTL is, who J&J is, what their general corporate
+1601
+ 1        structure is with regard to baby powder.  Then he
+ 2        is going to testify to their overall net worth, and
+ 3        then he is going to talk about each company's -- so
+ 4        their overall net worth and then elements of each
+ 5        company's net worth so the jury understands what
+ 6        that means.
+ 7             With Johnson & Johnson, that will mean he will
+ 8        explain dividends and share buybacks because that's
+ 9        essentially free cash that they spend off on a
+10        yearly basis after they've covered all operating
+11        costs.  And for LTL Management, since it has no
+12        business, you know, they don't sell any products or
+13        anything, he will talk about the actual cash they
+14        have on hand and he will talk about the value of
+15        their funding agreement with Johnson & Johnson, and
+16        that's it.  It's not going to take long.  It's very
+17        basic.
+18             MS. SCOTT:  So the issue we have, Your Honor,
+19        is on any evidence or discussion of dividends or
+20        stock buybacks, that does not go into the net worth
+21        calculation.  Those are funds that have been paid
+22        in the past to our shareholders.
+23             THE COURT:  So those funds are not available
+24        to pay any judgment of accumulative damage of it
+25        anyway.
+1602
+ 1             MS. SCOTT:  They're not available, exactly.
+ 2        That's correct, Your Honor.  And the question is
+ 3        inability to pay at the time of trial based on net
+ 4        worth.
+ 5             And the Florida law is very clear on what that
+ 6        is, and that is the amount to which the assets
+ 7        exceed liabilities.  And so even this financial
+ 8        minutia that Mr. Oliver says that their economist
+ 9        is going to get into is also going to be -- is
+10        irrelevant because all of that is bound up into the
+11        net worth calculation, but it's also going to be
+12        confusing and misleading to the jurors.
+13             So Mr. Diaz is disclosed on things like net
+14        sales, that's completely irrelevant to cash on
+15        hand.  That's --
+16             MR. OLIVER:  He's not going to talk about
+17        that.
+18             MS. SCOTT:  -- things like returns and
+19        discounts.  I'm just saying what he's been
+20        disclosed on.  But again, that's similar for these
+21        other elements of financial metrics.
+22             Again, the courts are very clear, the guide
+23        rails are very defined in this case because it is
+24        highly prejudicial for this sort of information to
+25        be going in front of the jury.  You know, the
+1603
+ 1        inferences that are drawn are this is a big
+ 2        company, it has a lot of money, and so you can
+ 3        award a higher compensatory damages amount or you
+ 4        could hit them harder for punitive damages.
+ 5             Now, we're not saying that that evidence --
+ 6        that the evidence of inability to pay can't come
+ 7        in, but there do need to be appropriate guide
+ 8        rails, and the Florida case law sets those guide
+ 9        rails.
+10             MR. OLIVER:  So, Your Honor, the first thing I
+11        would I say is we have a burden under 763.78, the
+12        punitive damages statute, to show you that the
+13        punishment has been insufficient and we need to
+14        make a record on that, and dividends and share
+15        buybacks are relevant to that.  But to the second
+16        point in terms of ability to pay, Ms. Scott is
+17        wrong.  The Florida standard jury instruction says
+18        that you can introduce evidence and the jury may
+19        consider the financial resources of the defendant.
+20        It is not so circumscribed as they suggest.
+21             And in fact, in Wios (phonetic), the Third
+22        District Court of Appeal held that if the
+23        defendants object to introducing this type of
+24        financial information, then when they get to an
+25        appellate situation and they say this is an
+1604
+ 1        excessive verdict, they can't complain.  Because
+ 2        they're like, look, the jury has to have something
+ 3        to understand what's excessive and what's not, and
+ 4        dividends and share buybacks are very important for
+ 5        that calculation because it shows them, at the end
+ 6        of the year, a jury may say, for example, I don't
+ 7        want to make Walmart go broke, right.
+ 8             And share buybacks and dividends in the
+ 9        amounts that they are giving off show that this
+10        company has enough money to do whatever it wants
+11        with operations, with research and development, all
+12        of that.  And then at the end of the year every
+13        year for the last three years, they've spun off
+14        roughly $15 billion in buybacks and dividends.
+15        This is money that, if they didn't do that with,
+16        they could put it in their coffers, they could put
+17        it in the market, they could invest it.
+18             So it gives the jury a real understanding of
+19        what that means.  A jury may or may not really
+20        understand the concept of net worth and how that
+21        relates to what a company can and cannot do with
+22        its funds.  So that's why it's relevant.
+23             THE COURT:  I don't understand how a juror
+24        wouldn't understand net worth.  Why is that a
+25        difficult concept, net worth?
+1605
+ 1             MR. OLIVER:  Well, for these types of
+ 2        companies, net worth is a difficult concept because
+ 3        you could have a company that actually has a very,
+ 4        very high net worth but doesn't have any extra cash
+ 5        and any extra dividends and a financial expert
+ 6        might say, gosh, if you hit this company for
+ 7        $12 million, they are going to have an operations
+ 8        problem next year, right, because they need that
+ 9        money.
+10             THE COURT:  But why can't we do it -- if they,
+11        basically through cross-examination, if they stand
+12        up there and they suggest that somehow the
+13        testimony being presented by your expert is
+14        somewhat skewed, in the sense that if they were to
+15        do -- if the jury was to award a significant
+16        punitive damages, that that somehow would cause a
+17        crisis within the company or something like that,
+18        well then, that may open the door to explaining
+19        what all this other stuff is.
+20             But if they don't do that, then I don't know
+21        why we just don't stick to the normal this is what
+22        the net worth of the company is.
+23             MR. OLIVER:  What I anticipate they will do --
+24        because every talc defense lawyer who has done a
+25        closing has done this in some form or fashion -- is
+1606
+ 1        they will attack the lawyers and say, you know,
+ 2        they're out here asking for these outrageous
+ 3        amounts of money.  And my only response to that is
+ 4        to put in context and say, ladies and gentlemen of
+ 5        the jury, it's not an outrageous amount of money.
+ 6        In fact, it's a de minimis amount of money compared
+ 7        to the size and resources of this company.
+ 8             THE COURT:  I don't understand, but isn't that
+ 9        part of the resources -- isn't that part of net
+10        worth?
+11             MR. OLIVER:  Yes, but so are dividends and
+12        share buybacks.
+13             THE COURT:  But you say size and resources of
+14        the company, then that's going to be before the
+15        jury.  The jury is going to get to know -- no one
+16        is stopping -- and I don't know, maybe you are
+17        saying you don't want him to testify about the size
+18        and the resources of the company, but how do size
+19        and resources don't go into net worth?
+20             So if you were going to stand up and that
+21        we're asking for $1.7 million -- I mean, I made the
+22        number up, but whatever the number is -- and the
+23        jury -- and that seems like a really big number and
+24        they stand up and say, "That's incredible, how
+25        could they possibly stand up here and ask for such
+1607
+ 1        a large number, you know?"
+ 2             And then you stand up and you say in rebuttal,
+ 3        "You have to understand, the percentage that I'm
+ 4        asking for that $1.6 billion, when you look at all
+ 5        of their assets, you look at all of their
+ 6        resources, it's only .4 percent of everything that
+ 7        they own."  I don't know why we've got to get into
+ 8        dividends.
+ 9             MR. OLIVER:  I think because it provides a
+10        more clear measure of how much money the company
+11        actually has available each year to pay verdicts.
+12        I mean, net worth doesn't necessarily tell you
+13        that.
+14             THE COURT:  I am not going to -- I am going to
+15        grant your motion in limine.  I will not permit
+16        there to be any testimony as to dividends.  I will
+17        say that that also means though that if you stand
+18        up in closing, I can stop you here because if that
+19        testimony comes in during the examination, I can
+20        deal with it immediately.
+21             But if you stand up in closing after all the
+22        evidence has already come in, then unfortunately,
+23        I'm going to have to give the jury an instruction
+24        that they are only to consider, you know, and your
+25        argument was an improper argument.  Now, I'm hoping
+1608
+ 1        that we don't even have that, that's not even going
+ 2        to be part of the argument that you make.
+ 3             But what else is the -- does that take care of
+ 4        your concern or is there something else?
+ 5             MS. SCOTT:  That's our main concern, Your
+ 6        Honor.  We also -- and this might not be an issue,
+ 7        but we noticed in Mr. --
+ 8             THE COURT:  Everybody is here?  Okay.
+ 9             Go ahead.
+10             MS. SCOTT:  Disclosures that he was typically
+11        to talk about the relationship of past punitive
+12        damages awards.
+13             MR. OLIVER:  He is not going to talk about
+14        that.
+15             MS. SCOTT:  Okay.
+16             MR. OLIVER:  He's not offering that.
+17             MS. SCOTT:  And so I think the stock buyback
+18        and the dividends issue really takes care of our
+19        concerns.
+20             And then if you will indulge me to just put
+21        this on the record for preservation purposes, we
+22        also believe that this evidence that solely goes to
+23        punitive damages should not be presented to the
+24        jury at this time given that Section 7687.2 --
+25        excuse me, 73B2 requires this Court to make a
+1609
+ 1        sufficiency finding as to the $1.6 billion, the
+ 2        past punitive damages award that we have already
+ 3        paid, prior to this sort of evidence going before
+ 4        the jury.
+ 5             And so we just wanted to preserve the record,
+ 6        object to any evidence related to punitive damages
+ 7        as irrelevant and unfairly prejudicial.
+ 8             THE COURT:  All right.  Let me respond to that
+ 9        by saying you all put me in this position.  You all
+10        filed these motions and put them before me; I think
+11        the first time I ever heard this issue was, I
+12        think, less than a week before trial.
+13             Then you all explained to me that you're doing
+14        one trial.  You're not bifurcating the trial.  I've
+15        never done a trial where it's just been one trial.
+16        It's always been a bifurcated proceeding.  So you
+17        all basically endorsed this, and I didn't undo it,
+18        but that's something you all agreed to, not me.
+19             And so I thought I had more opportunity to
+20        basically look at this.  So, I mean, if you hadn't
+21        agreed, then maybe we wouldn't even be having this
+22        conversation.  But we are where we are and it's
+23        preserved.
+24             The jury is coming in.
+25             (The jury enters the courtroom.)
+
+
+
+11             THE COURT:  Plaintiff, please call your next
+12        witness.
+13             MR. OLIVER:  Plaintiff calls Matt Diaz to the
+14        stand.
+15             THE COURT:  Mr. Diaz, please.
+16   Thereupon:
+17                         MATTHEW DIAZ
+18             Was called as a witness and, having been first
+19   duly sworn and responding "I do," was examined and
+20   testified as follows:
+21             THE COURT:  You can have a seat.  Give us your
+22        full name and spell your last name for the record,
+23        please.
+24             THE WITNESS:  Matthew Diaz, M-A-T-T-H-E-W,
+25        D-I-A-Z.
+1680
+ 1                      DIRECT EXAMINATION
+ 2   BY MR. OLIVER:
+ 3        Q    Good morning, Mr. Diaz.  How are you this
+ 4   morning?
+ 5        A    I'm doing well.  Good morning.
+ 6        Q    Good morning, ladies and gentlemen of the
+ 7   jury.
+ 8             Mr. Diaz, in preparation for your testimony
+ 9   today, did you prepare and help us prepare some slides?
+10        A    I did.  I prepared some slides to be helpful.
+11        Q    Okay.  And what exactly -- or what generally
+12   do those slides show?
+13        A    Generally, those slides show some information
+14   about my background, information about J&J's legal
+15   entity structure and how baby powder moved throughout
+16   those companies, as well as some information about
+17   Johnson & Johnson's net worth and LTL Management's net
+18   worth as well too.
+19             MR. OLIVER:  Your Honor, the remaining slides
+20        have no objections.  May we display them?
+21             THE COURT:  Any objection?
+22             MS. BROWN:  Once the testimony comes in, as I
+23        understand, Your Honor, I have no objection.
+24             THE COURT:  I don't know what that means.
+25             MR. OLIVER:  Okay.  So may I display them?
+1681
+ 1             MS. BROWN:  Well, Your Honor, the objection
+ 2        would be leading if he didn't --
+ 3             THE COURT:  So I guess what she's saying is
+ 4        that she wants -- she doesn't want him reading from
+ 5        the slides.
+ 6             MS. BROWN:  Otherwise, no objection, Your
+ 7        Honor.
+ 8   BY MR. OLIVER:
+ 9        Q    Mr. Diaz, why don't you go ahead and tell the
+10   ladies and gentlemen of the jury what you do for a
+11   living today.
+12        A    Sure.  I am a financial advisor.  I work at
+13   FTI Consulting, and I do financial advisory type work as
+14   part of that job.  I look at balance sheets and income
+15   statements, I help value companies, look at claims, look
+16   at budgets, evaluate litigation, look at legal entities
+17   and capital structures and that sort of thing.
+18        Q    When you say "capital structures," do you also
+19   look at corporate structures about how companies are
+20   organized?
+21        A    I do.  I'll look at, you know, big companies
+22   like Johnson & Johnson have hundreds of legal entities
+23   underneath it that they call subsidiaries.  So part of
+24   my job is to look at subsidiaries of bigger companies as
+25   well too.
+1682
+ 1        Q    Can you tell the ladies and gentlemen of the
+ 2   jury what type of education you have in order to do that
+ 3   work.
+ 4        A    Sure.  I have a master's of business
+ 5   administration from Columbia Business School.  I also
+ 6   have a bachelor of science from New York University with
+ 7   a major in accounting and finance.
+ 8        Q    Have you received any special certifications
+ 9   in the areas that we're talking about?
+10        A    I do.  I'm a certified public accountant where
+11   I'm licensed to do accounting services in the state of
+12   New York.  I'm also a certified insolvency restructuring
+13   advisor, as well as a certified turnaround professional.
+14   Those last two credentials relate more to analyzing
+15   corporate transactions, and that's something I do as
+16   part of my day-to-day job.
+17        Q    How long have you been with FTI?
+18        A    I've been with FTI almost 20 years, since
+19   2005.  Prior to that, I was a chief financial officer at
+20   Graham-Field Health Products, the director of
+21   restructuring at Impath Laboratories, and then prior to
+22   that, I worked at Deloitte Consulting and I was an
+23   auditor at PricewaterhouseCoopers.
+24        Q    What did you do at Deloitte Consulting?
+25        A    At Deloitte Consulting, I do similar to what I
+1683
+ 1   do at FTI Consulting where I look at corporate
+ 2   transactions and evaluate them and projections and
+ 3   business plans and financial type analysis.
+ 4        Q    What did you do while you were at
+ 5   PricewaterhouseCoopers?
+ 6        A    PricewaterhouseCoopers, I was an auditor and I
+ 7   audited the books and records of large companies.
+ 8        Q    Do you have experience evaluating the
+ 9   financial condition of companies like the defendants in
+10   this case?  Not the defendants in this case, but
+11   companies like the defendants in this case?
+12        A    I do.  I have been involved in over 50
+13   different types of corporate transactions, all size of
+14   companies, you know, a lot of big companies like
+15   Toys-R-Us, JCPenney, iHeart Radio, Friendly's
+16   Restaurant, Northwest Airlines, you know, companies like
+17   that, but over 50 I've been involved with.
+18             MR. OLIVER:  Gina, can we now display our
+19        first slide.
+20   BY MR. OLIVER:
+21        Q    And, Mr. Diaz, can you just tell the ladies
+22   and gentlemen of the jury what's on the page here.
+23        A    Sure.  That's just, in writing, you know, what
+24   I mentioned, you know, my educational background at New
+25   York University and Columbia, and my certifications of,
+1684
+ 1   you know, what allows me and gives me part of my
+ 2   acknowledgment of some of the things that I do.  But the
+ 3   certified public accountant, certified insolvency and
+ 4   restructuring advisor, and certified turnaround
+ 5   professional.
+ 6        Q    Well, I asked you a moment ago whether you had
+ 7   experience with companies like the defendants in this
+ 8   case, and you provided some examples.  Do you actually
+ 9   have experience evaluating the corporate structure and
+10   the financial resources of the defendants that are
+11   before this jury in this case?
+12        A    I do.  I was engaged by claimants in a
+13   different proceeding, you know, where I evaluated the
+14   corporate structure and financial position of these
+15   companies in connection with that assignment.
+16        Q    Have you formed some opinions about the
+17   financial structure of the defendants in this case and
+18   their financial resources that you plan to share with
+19   the jury?
+20        A    I do, yes.
+21        Q    To reach your opinions in this case, what
+22   materials did you review?
+23        A    So I primarily looked at three things.  One
+24   was I looked at the financial statements of Johnson &
+25   Johnson.  They file publicly available financial
+1685
+ 1   statements that anybody can pull down off of Google.
+ 2             I also looked up the stock price of Johnson &
+ 3   Johnson, you know, the New York Stock Exchange reports,
+ 4   what shares of stock are Johnson & Johnson sold, and I
+ 5   looked at that because I thought that was relevant to my
+ 6   testimony today.
+ 7             And then lastly, I looked at certain
+ 8   information, you know, sworn testimony, exhibits from
+ 9   other court proceedings involving these defendants in
+10   order to get more information about the financial
+11   wherewithal of these companies, as well as, you know,
+12   how some of the corporate entities moved and that sort
+13   of thing.
+14        Q    Mr. Diaz, I'm going to hand you Plaintiff's
+15   2464 in appropriately redacted format.  First of all,
+16   can you tell the ladies and gentlemen of the jury what
+17   that document is.
+18        A    Yes, of course.  This is Johnson & Johnson's
+19   Form 10-K.  When you're a publicly traded company that's
+20   regulated by the Securities and Exchange Commission,
+21   annually or once a year, you need to file this form.
+22             And this provides financial information about
+23   Johnson & Johnson and other companies.  It also provides
+24   information about corporate transactions, information
+25   about the management of the different entities, and it's
+1686
+ 1   a document that is audited by an accountant and it's
+ 2   something that people in the business world rely upon
+ 3   because of all the regulations that go around this
+ 4   document.
+ 5        Q    Is that the type of document that you would
+ 6   typically rely on as an expert in your area?
+ 7        A    Absolutely.  This is something I look at every
+ 8   day.
+ 9        Q    Are those documents sworn before the SEC?
+10        A    These documents are audited and there's
+11   disclosures that are made pursuant to the Sarbanes-Oxley
+12   Act that gives certifications to the accuracy of these
+13   documents.
+14        Q    Now, I've only handed you three pages.  A
+15   typical 10-K is a lot more pages than that, right?
+16        A    Yes, that's right.  I mean, a typical 10-K
+17   like this would be 150-plus pages, maybe even more with
+18   exhibits.  These are just some excerpts that I felt were
+19   relevant to my testimony.
+20        Q    So when you prepared to offer your opinions to
+21   the jury, you reviewed the entirety of the information,
+22   fair?
+23        A    That's right.
+24        Q    But we're not going to give that to the jury.
+25   We're just going to give them the relevant material?
+1687
+ 1        A    That's right.
+ 2             MR. OLIVER:  Your Honor, plaintiffs would move
+ 3        the redacted copy of 2464 into evidence.
+ 4             THE COURT:  Any objection?
+ 5             MS. BROWN:  No, Your Honor.
+ 6             THE COURT:  It shall be received without
+ 7        objection.
+ 8             THE CLERK:  Moved into evidence.
+ 9             (The referred-to document was marked into
+10   evidence as Plaintiff's Exhibit 2464.)
+11             MR. OLIVER:  Gina, can we go to the next slide
+12        really quickly?
+13   BY MR. OLIVER:
+14        Q    Mr. Diaz, can you tell the ladies and
+15   gentlemen of the jury what is on the board here?
+16        A    Sure.  What I thought -- what I like to do is
+17   walk you through the timeline of how Johnson & Johnson's
+18   Baby Powder moved throughout the Johnson & Johnson's
+19   legal entity structure.
+20             As I mentioned a moment or so ago, it's not
+21   uncommon for a big company like J&J to have hundreds of
+22   subsidiaries underneath it.  And what I want to walk you
+23   through is, over the last 100 years or so in a very
+24   abridged format, what -- where Johnson & Johnson's Baby
+25   Powder went between among all those different legal
+1688
+ 1   entities within Johnson & Johnson.
+ 2        Q    Okay.  So the first line here says Johnson &
+ 3   Johnson, 1894 to the present.  One of the defendants in
+ 4   this case is Johnson & Johnson.
+ 5             Does that company still exist today?
+ 6        A    Johnson & Johnson still exists today, correct.
+ 7        Q    And why do we have 1894 up here on the board?
+ 8        A    So 1894 is significant because that's when
+ 9   Johnson & Johnson started to market and sell baby
+10   powder.  So that was the first date, I wanted to put
+11   that on the screen because it was in that legal entity,
+12   Johnson & Johnson.
+13        Q    Okay.  And another line has popped up on the
+14   board that says 1979, J&J various companies, and it has
+15   some writing at the end.
+16             Can you tell us what that line is there to
+17   signify?
+18        A    Sure.  So from 1894 to 1979, Johnson & Johnson
+19   was the company that marketed and sold the baby
+20   products, baby powder.
+21        Q    And let me ask you really quickly -- I'll ask
+22   you some additional questions.  So what happens in 1979
+23   with JBP, the products we're talking about here?
+24        A    So in 1979, Johnson & Johnson transfers that
+25   to one of its subsidiaries called Johnson Baby Products.
+1689
+ 1        Q    Okay.  And that's an asset, right?
+ 2        A    And that's the assets and liabilities that
+ 3   relate to the Johnson's Baby Products product.
+ 4        Q    So assets and liabilities go to these new
+ 5   companies in 1979, true?
+ 6        A    That's right.
+ 7        Q    Okay.  What happens next?
+ 8        A    Then between 1979 and 2015, the same thing
+ 9   that just happened, there were a bunch of transfers.  I
+10   think there were another three or four transfers that
+11   happened where the assets and liabilities of Johnson
+12   Baby Products moved to different subsidiaries within the
+13   Johnson & Johnson umbrella.
+14             Finally, in 2015, it stopped with Johnson &
+15   Johnson Consumer, Inc., which was JJCI.  And now the
+16   assets and liabilities are now at that legal entity as
+17   of 2015.
+18        Q    Okay.  So what happened?  Did they stay with
+19   that legal entity?
+20        A    They did not stay with that legal entity.
+21   That then moved again in 2021.
+22        Q    Okay.  So what does this -- and let me ask you
+23   a question really quickly:  Did you say that moved again
+24   in 2021?
+25        A    That's right.
+1690
+ 1        Q    Okay.  First of all, does JJCI exist today in
+ 2   this format that it happened in 2015?
+ 3        A    JJCI is a company that has since changed its
+ 4   name, and there are some other things that have happened
+ 5   mut JJCI is now New JJCI.
+ 6        Q    So did it cease to exist in 2021?
+ 7        A    So in October 2021, what happened was JJCI
+ 8   went through a divisional merger where it split, more or
+ 9   less, into two companies.  One company was called New
+10   JJCI.
+11             And the other company was called LTL.  Now,
+12   JJCI is a company that doesn't sound like anything, but
+13   it's a big company at Johnson and Johnson.  It sells
+14   their consumer products.  It's things that you know.
+15   It's like Tylenol, it's Band-Aids.  It's consumer
+16   products where you go to Walgreens or CVS, you could buy
+17   that sort of thing.
+18             And in 2015, JJCI also held the baby powder,
+19   including the litigation, you know, such as litigation
+20   like this and other litigation.
+21        Q    Let me stop you.  Where did the baby powder go
+22   in 2021?
+23        A    So in 2021, when the split off happened, the
+24   consumer products, the Tylenol and the Band-Aids, went
+25   to New JJCI, which is a go-forward company, and the
+1691
+ 1   litigation related to the talc went to LTL.
+ 2        Q    So all the assets went to New JJCI in 2021?
+ 3        A    That's right.
+ 4        Q    Okay.  And what went to LTL?
+ 5        A    And what went to LTL was the talc litigation.
+ 6   Some cash, not a lot.  Some insurance rights in
+ 7   connection with the talc litigation, as well as a small
+ 8   royalty business as well.
+ 9        Q    So can anybody buy anything from LTL now?
+10        A    No.  You can't buy a thing from LTL.
+11        Q    What is LTL's purpose?
+12        A    So LTL's purpose, according to its chief legal
+13   officer, is to manage and resolve the talc litigation,
+14   presumably including this litigation we are here today.
+15        Q    And our defendant in this case today, other
+16   than Johnson & Johnson, is LTL?
+17        A    LTL Management, LLC, correct.
+18        Q    Okay.  The ladies and gentlemen of the jury
+19   heard that you are going to offer us some testimony
+20   about the financial worth of these defendants.  Let's
+21   start with the next slide, which is Johnson & Johnson,
+22   the first defendant in this case.
+23             Actually, before we do that, can we go back?
+24   What is the benefit from a corporate standpoint of a
+25   transaction like what we just described?
+1692
+ 1             MS. BROWN:  Objection, Your Honor.  Further to
+ 2        what we discussed this morning, relevance.
+ 3             THE COURT:  Overruled.
+ 4   BY MR. OLIVER:
+ 5        Q    What is the benefit of a transaction like
+ 6   this, Mr. Diaz?
+ 7        A    It's complicated.  I mean, you are doing a
+ 8   bunch of chess pieces where you're moving around assets
+ 9   and liabilities among companies and, I mean, I haven't
+10   done an investigation of this period of time to try to
+11   identify what the companies' motives were of doing this,
+12   but some things that come to mind.  You can do that for
+13   risk management.
+14             MS. BROWN:  Objection, Your Honor.
+15             THE COURT:  Sustained.  Disregard the last
+16        response.
+17   BY MR. OLIVER:
+18        Q    Mr. Diaz, let's talk about the financial
+19   condition of the first defendant in this case, Johnson &
+20   Johnson.  Have you reached an opinion about Johnson &
+21   Johnson's financial condition?
+22        A    I have, yes.
+23        Q    How does Johnson & Johnson compare, in market
+24   value, to other U.S. companies?
+25        A    So Johnson & Johnson is one of the most
+1693
+ 1   valuable companies in the U.S., probably within the top
+ 2   25 in terms of value.
+ 3        Q    And how does a corporate professional with
+ 4   your background value the net worth of a company like
+ 5   that?  What is the equation?
+ 6        A    Yes.  So the most -- the first thing that
+ 7   folks like me would do, when thinking about evaluating a
+ 8   company, is pretty straightforward.  What I did in this
+ 9   case and what I would do is I would look at the stock
+10   price of Johnson & Johnson's stock price.  I would look
+11   at the number of shares that Johnson & Johnson has
+12   outstanding.  I would just multiply the two.  And as of
+13   Friday, that value or that net worth was $377 billion as
+14   of Friday.
+15             Before I came onto the stand, I just checked
+16   my phone to see if things have changed, and I think it's
+17   about $380 billion, you know, as of 30 minutes ago.  But
+18   there's more complicated ways to do valuations, and
+19   there's people who do valuations, but as a quick litmus
+20   test of what do we think the market thinks Johnson &
+21   Johnson is worth, right now, it's about $377 billion.
+22        Q    Now, on the screen, we actually have not just
+23   what the market -- excuse me, not what the net worth of
+24   Johnson & Johnson was on Friday, but you actually have a
+25   range, correct?
+1694
+ 1        A    Yeah.  You know, as a finance professional, I
+ 2   don't feel comfortable just saying to you, as of Friday,
+ 3   the number was $377 billion.  As you know, the stock
+ 4   market goes up and down every day, every minute.
+ 5             So I thought it would be better to just look
+ 6   at, all right, over last 90 days, what was the average
+ 7   closing price per day?  And just coincidently, it was
+ 8   $377 billion.  It was the same number I saw as of
+ 9   Friday.
+10             So like I said, I don't like to look at just
+11   one number, so I went back 90 days and looked to see
+12   what the average was.
+13        Q    How does the metric that just shared with the
+14   jury, net worth, relate to a company's ability to pay
+15   judgments?
+16        A    It gives you a sense of the value of the
+17   company.  And when I think about what goes to
+18   shareholders --
+19             MS. BROWN:  Objection, Your Honor.
+20             THE COURT:  Sustained.
+21   BY MR. OLIVER:
+22        Q    Mr. Diaz, how does the net worth of a company
+23   relate to Johnson & Johnson's ability to pay judgments?
+24        A    It gives you a sense of value that they have
+25   that could potentially be available for judgments.
+1695
+ 1        Q    Okay.  Let's look at LTL.
+ 2             MR. OLIVER:  Next slide, please, Gina.
+ 3   BY MR. OLIVER:
+ 4        Q    So first of all, you told us that Johnson &
+ 5   Johnson is a publicly traded company with shares on the
+ 6   market, correct?
+ 7        A    That's correct.
+ 8        Q    Is LTL that same type of company?
+ 9        A    No, it's not a public company.
+10        Q    Who or what owns LTL?
+11        A    LTL is one of the hundreds of subsidiaries of
+12   Johnson & Johnson, and it rolls eventually all the way
+13   up, you know, like an umbrella to Johnson & Johnson.
+14        Q    So obviously you can't do the same net worth
+15   calculation with a company like LTL because it doesn't
+16   have publically traded shares, fair?
+17        A    That's right.  I can't go to Google and find
+18   the value of LTL.
+19        Q    Okay.  And you can't go to the open stock
+20   market and find the price of the shares, they don't have
+21   shares?
+22        A    That's right.
+23        Q    So how did you look at the value of LTL in
+24   this case?
+25        A    So what I did for LTL was I looked at some
+1696
+ 1   documents in other court proceedings that I deemed to be
+ 2   reliable.  One of those documents was a balance sheet
+ 3   for LTL, and on that balance sheet -- and I'm focused on
+ 4   the top part of that slide, it showed that it had
+ 5   $30 million, give or take, of cash as of August 2023.
+ 6             It also had, you know, give or take 300-plus
+ 7   million dollars of value in this royalty business.  And
+ 8   when I added that up, I got $364 million that I saw on
+ 9   their balance sheet.
+10        Q    And let me just stop you, Mr. Diaz.  You used
+11   a term on the slides, "equity."
+12             Can you tell the ladies and gentlemen of the
+13   jury why you used that term, because that's different
+14   from cash.  You said cash, but tell them about equity.
+15        A    I apologize.  So on a company's balance sheet,
+16   you are going to have assets and liabilities.  So assets
+17   are things like cash and things you own.
+18             Liabilities are things you owe, when you net
+19   the two, you get an equity number, you know, which, in
+20   the case of LTL, it was $364 million.  You know, in the
+21   other court documents I've looked at, it also mentioned
+22   that LTL has some insurance, so there may be some
+23   insurance to coverage litigation and that sort of thing,
+24   but there wasn't a value on that, so I just put plus
+25   insurance.  So that was one asset.
+1697
+ 1        Q    What other funds or assets does LTL have?
+ 2        A    The other asset that they have -- and this
+ 3   also wasn't valued on this balance sheet, so I looked at
+ 4   another source for that.  There was an opinion in this
+ 5   other case that valued this asset, which was called the
+ 6   funding agreement, at $30 billion.
+ 7             And what a funding agreement is here was, as
+ 8   you may recall from a moment or so ago when we talked
+ 9   about how the different assets and liabilities of baby
+10   powder moved, LTL, when that entity got formed in
+11   October of 2021, it received this funding agreement,
+12   which allows it to pay for litigation and costs of the
+13   like.
+14             And the funding agreement was valued
+15   separately, in a different case, at $30 billion.  So
+16   that's how I came up with that number.
+17        Q    And are there any limitations on what those
+18   funds from the funding agreement can be used for?
+19        A    There are rules.  You have to submit a funding
+20   request to the payee -- the payor on the funding
+21   agreement requesting the money.  But in general, the
+22   money is intended to be used for verdicts and
+23   settlements and defense cross.
+24             MS. BROWN:  Objection, Your Honor.
+25             THE COURT:  Sustained.
+1698
+ 1   BY MR. OLIVER:
+ 2        Q    Mr. Diaz, final two questions:  Can you
+ 3   explain the concept of materiality from a financial
+ 4   standpoint to the jury?  What does materiality mean?
+ 5             MS. BROWN:  Objection, Your Honor.
+ 6             THE COURT:  Overruled.
+ 7             THE WITNESS:  So materiality is a concept in
+ 8        generally accepted accounting principles, which as
+ 9        a CPA is something that I rely upon.  Under
+10        generally accepted principles, materiality is
+11        something that would be an error or omission in
+12        your financial statements that would impact an
+13        average reader's decision-making ability when they
+14        look at these financial statements.
+15             So it's something that -- if something's
+16        material, in other words, it would impact
+17        somebody's point of view on the business.
+18   BY MR. OLIVER:
+19        Q    And based on your experience, what is a
+20   material percentage for companies like this?
+21        A    So materiality is a subjective thing about
+22   what would impact a person, so it sort of depends on the
+23   person.  But, you know, doing auditing and being around
+24   auditors and financial statements, it could be as high
+25   as 5 percent on some items.
+1699
+ 1             On other items, it could be 1 percent or less
+ 2   than 1 percent, depending on how meaningful that is.
+ 3   But I generally think about 5 percent or less as a
+ 4   material item that could potentially impact a reader of
+ 5   financial statements.
+ 6             MR. OLIVER:  I don't have any further
+ 7        questions for you, Mr. Diaz.
+ 8             THE COURT:  Cross?
+ 9             MS. BROWN:  Yes, please, Your Honor.
+10                       CROSS-EXAMINATION
+11   BY MS. BROWN:
+12        Q    Good morning, everyone.  Good morning,
+13   Mr. Diaz.  How are you?
+14        A    Good morning.  I'm well, thank you.
+15        Q    I'm Alli Brown.  I have some questions for you
+16   on behalf of the folks at J&J and LTL.  Okay, sir?
+17        A    Sure.
+18        Q    You are the third expert witness that these
+19   plaintiff's lawyers have brought into this case, and
+20   you, like the other two before you, are not here to talk
+21   about Dr. Seskin; is that fair?
+22        A    I'm a financial expert.  I'm not a doctor.
+23        Q    Right.  J&J's corporate structure has got
+24   nothing to do with whether or not Johnson's Baby Powder
+25   caused Dr. Seskin's primary peritoneal cancer; would you
+1700
+ 1   agree?
+ 2        A    So in terms of the corporate structure, what
+ 3   my expertise is on today was to walk the jury through
+ 4   how the baby powder moved throughout the subsidiaries of
+ 5   Johnson & Johnson.
+ 6        Q    And one of the things you're here to tell us
+ 7   about is our net worth, correct?
+ 8        A    Correct.
+ 9        Q    And that information came from public
+10   documents for your testimony, correct, sir?
+11        A    Correct.
+12        Q    And in fact, I think you told us you could
+13   just Google it, correct?
+14        A    Correct.
+15        Q    You could Google what is Johnson & Johnson's
+16   net worth and we'd get a number close to the one you put
+17   forward for our jurors, correct?
+18        A    Something like that.  It would change every
+19   minute, but yes, something like that.
+20        Q    But instead of that, the lawyers have brought
+21   you in here, and your company is charging for your time,
+22   correct, sir?
+23        A    Correct.
+24        Q    And do you know that they are charging $1,390
+25   per hour for your time to come in here and talk about
+1701
+ 1   what you could Google?
+ 2        A    Correct.  No, not correct.  That is my hourly
+ 3   rate, but I've provided testimony other than what you
+ 4   could Google.
+ 5        Q    And you know, because you are the economist,
+ 6   that $1,390 an hour works out to $23 a minute?  Did you
+ 7   know that?
+ 8        A    I didn't do the math on that.
+ 9        Q    That's a lot of money, isn't it?
+10        A    It is a lot of money.
+11        Q    Do you know that they are paying you more
+12   money to come talk about how much money we have than
+13   they are going pay any expert witness to come in here
+14   and talk about the science?  Did you know that?
+15             MR. OLIVER:  Objection, Your Honor.
+16             THE COURT:  Sustained to the form of the
+17        question.
+18   BY MS. BROWN:
+19        Q    Did you look at your expert disclosures in
+20   this case, sir?
+21        A    I have, yes.
+22        Q    And you know it lists your expertise, how much
+23   money you are charging, and then it lists all the other
+24   experts in the case.  You looked at that document,
+25   right, sir?
+1702
+ 1        A    I've looked at my section of that.  I don't
+ 2   know that I've looked at the whole document.
+ 3        Q    Did you know that your hourly rate is higher
+ 4   than anybody else in our --
+ 5             MR. OLIVER:  Objection, Your Honor.
+ 6             THE COURT:  Sustained.
+ 7   BY MS. BROWN:
+ 8        Q    You spoke a little bit, Mr. Diaz, about LTL --
+ 9             THE COURT:  Ladies and gentlemen, I need to
+10        remind you:  What the lawyers say is not evidence.
+11   BY MS. BROWN:
+12        Q    Your company is charging $1,390.  We can agree
+13   on that?
+14             MR. OLIVER:  Cumulative, Your Honor.  He's
+15        answered.
+16             THE COURT:  Sustained, asked and answered.
+17             MS. BROWN:  We'll move on.
+18   BY MS. BROWN:
+19        Q    Mr. Diaz, you spoke a little bit about LTL,
+20   correct?
+21        A    Correct.
+22        Q    And one of the things you said is that LTL is
+23   now tasked with managing litigation, correct?
+24        A    Managing talc litigation, correct.
+25        Q    And you know of course, though, you've looked
+1703
+ 1   at a lot of documents related to the talc litigation; is
+ 2   that fair?
+ 3        A    In connection with this assignment, I have not
+ 4   looked at a lot of documents related to the talc
+ 5   litigation.
+ 6        Q    You told us that you've done a lot of work on
+ 7   another matter where you had the opportunity to look at
+ 8   some documents, correct?
+ 9        A    In another matter, I've looked at documents.
+10   In connection with this matter, I focused on the
+11   movement of the J&J baby products throughout the legal
+12   entity structure.  I've looked at net worth and some
+13   other things.
+14        Q    And one of the other things you do know,
+15   though, Mr. Diaz, is that Johnson & Johnson has never
+16   wavered in its position that the science doesn't support
+17   the claims that are being made in these lawsuits?
+18             MR. OLIVER:  Objection, Your Honor.
+19             THE COURT:  Sustained.
+20   BY MS. BROWN:
+21        Q    Well, sir, you've looked at information about
+22   how much it's costing Johnson & Johnson to defend cases
+23   in litigation, correct?
+24             MR. OLIVER:  Objection, Your Honor, relevance.
+25             THE COURT:  Ladies and gentlemen, can you step
+1704
+ 1        into the jury room just for a brief minute for me,
+ 2        please.
+ 3             (The jurors exited the courtroom.)
+ 4             THE COURT:  I'm going to let you ask your
+ 5        question, but I think if you get an answer to that
+ 6        question, I think they get to get up and they get
+ 7        to ask their questions about things that I
+ 8        sustained about what the money -- what this pocket
+ 9        of money is used for and all of that.  So I'm
+10        telling you now, if you want him to answer the
+11        question, I will let it, but I'm not stop counsel
+12        from standing up there on redirect and asking the
+13        questions about monies, what monies are available,
+14        what can be used to satisfy the judgment --
+15        objections that you've raised, I sustained.
+16             MS. BROWN:  Could I just be heard, Your Honor?
+17        Because I certainly don't want to run afoul of your
+18        ruling.  He was permitted to say that LTL exists to
+19        manage talc liability and the only point --
+20             THE COURT:  That's all he said.
+21             MS. BROWN:  I understand, Judge.  The only
+22        point that I want to make is that doesn't mean we
+23        concede we are liable.  And he knows because he's
+24        reviewed all of the documents in connection with
+25        this other matter that he spoke about, all of the
+1705
+ 1        documents where Johnson & Johnson says we firmly
+ 2        believe we have done this because we have --
+ 3             THE COURT:  But do you really want to have to
+ 4        start having a conversation about what that means?
+ 5             MS. BROWN:  I don't, just this one little
+ 6        piece, Your Honor.
+ 7             THE COURT:  But that's for you.  But then you
+ 8        think you are going to get an answer --
+ 9             MS. BROWN:  I understand.
+10             THE COURT:  But that doesn't mean -- and then
+11        counsel is going to get up there and want to
+12        explain.  Well, what does it mean?
+13             MS. BROWN:  I understand, Your Honor.  I'll
+14        withdraw the question.
+15             THE COURT:  The jury is coming in.
+16             (The jury enters the courtroom.)
+17             THE COURT:  All right.  For the record, the
+18        jurors are present, all the parties are present.
+19             Ma'am, you may continue your examination.
+20             MS. BROWN:  Thank you, Your Honor.  I'll
+21        withdraw that question and move forward.
+22             I'm almost done, Mr. Diaz.
+23   BY MS. BROWN:
+24        Q    One of the things in connection with some of
+25   the work that you've done in the past is you came to
+1706
+ 1   learn that the sale of Johnson's Baby Powder did not --
+ 2   was not a big contributor to Johnson & Johnson's net
+ 3   worth, correct?
+ 4        A    I'm sorry, could you repeat the question?
+ 5        Q    Sure.
+ 6             One of the things you've learned over the time
+ 7   period that Dr. Seskin claims to have used Johnson's
+ 8   Baby Powder, 1949 to 2019, you know that the sales of
+ 9   Johnson's Baby Powder, the product, contributed only a
+10   teeny, teeny, tiny percentage to the overall net worth
+11   of the company?
+12             MR. OLIVER:  Objection, relevance.
+13             THE COURT:  Overruled.
+14             THE WITNESS:  I can't speak to that.
+15   BY MS. BROWN:
+16        Q    Did you look into that, sir?
+17        A    I did not look into that, no.
+18        Q    And finally, sir, you said that you had done,
+19   in connection with another matter, some work on behalf
+20   of talc claimants, correct, sir?
+21        A    Correct.
+22        Q    And you know that for that work, your company,
+23   FTI, charged $11 million for your fees?
+24        A    I don't remember what the fees were in that
+25   case.
+1707
+ 1             MS. BROWN:  No further questions.
+ 2             THE COURT:  Redirect?
+ 3             MR. OLIVER:  I don't think I have anything.
+ 4             THE COURT:  Ladies and gentlemen of the jury,
+ 5        do you have any questions for this witness?  Sir,
+ 6        thank you, you may step down.

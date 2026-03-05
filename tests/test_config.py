@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 from backend.app.config import get_settings
@@ -20,11 +24,16 @@ def test_get_settings_reads_environment(monkeypatch):
     monkeypatch.setenv("MEMORY_DB", "memory-test")
     monkeypatch.setenv("THOUGHT_STREAM_DB", "thought-stream-test")
     monkeypatch.setenv("RAG_STREAM_DB", "rag-stream-test")
+    monkeypatch.setenv("LOG_LEVEL", "DEBUG")
+    monkeypatch.setenv("LOG_FILE_PATH", "/tmp/logs/app.log")
     monkeypatch.setenv("NEO4J_URI", "bolt://localhost:7687")
     monkeypatch.setenv("NEO4J_USER", "neo4j")
     monkeypatch.setenv("NEO4J_PASSWORD", "pw")
     monkeypatch.setenv("NEO4J_DATABASE", "neo4j")
     monkeypatch.setenv("NEO4J_BROWSER_URL", "http://localhost:7474/browser/")
+    monkeypatch.setenv("GRAFANA_URL", "http://localhost:3000")
+    monkeypatch.setenv("GRAFANA_ADMIN_USER", "grafana-admin")
+    monkeypatch.setenv("GRAFANA_ADMIN_PASSWORD", "grafana-pass")
     monkeypatch.setenv("ONTOLOGY_DIR", "/tmp/ontology")
     monkeypatch.setenv("MAX_CONTEXT_DEPOSITIONS", "9")
     monkeypatch.setenv("DEPOSITION_DIR", "/tmp/deps")
@@ -47,11 +56,16 @@ def test_get_settings_reads_environment(monkeypatch):
     assert settings.memory_db == "memory-test"
     assert settings.thought_stream_db == "thought-stream-test"
     assert settings.rag_stream_db == "rag-stream-test"
+    assert settings.log_level == "DEBUG"
+    assert settings.log_file_path == "/tmp/logs/app.log"
     assert settings.neo4j_uri == "bolt://localhost:7687"
     assert settings.neo4j_user == "neo4j"
     assert settings.neo4j_password == "pw"
     assert settings.neo4j_database == "neo4j"
     assert settings.neo4j_browser_url == "http://localhost:7474/browser/"
+    assert settings.grafana_url == "http://localhost:3000"
+    assert settings.grafana_admin_user == "grafana-admin"
+    assert settings.grafana_admin_password == "grafana-pass"
     assert settings.ontology_dir == "/tmp/ontology"
     assert settings.max_context_depositions == 9
     assert settings.deposition_dir == "/tmp/deps"

@@ -1,0 +1,4373 @@
+
+                                                            1
+
+ 1         IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+ 2                 IN AND FOR THE COUNTY OF ALAMEDA
+
+ 3                             --o0o--
+
+ 4  ROSALINO REYES and GEMMA REYES,
+
+ 5       Plaintiffs,
+
+ 6  vs.                               No. RG20052391
+
+ 7  JOHNSON & JOHNSON, et al.,
+
+ 8       Defendants.
+                                  /
+ 9
+
+10
+
+11
+
+12
+
+13         TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D
+
+14                    (Volume I, pages 1 to 78)
+
+15
+
+16
+
+17                  Taken before JANICE L. BELCHER
+
+18                          CSR No. 12342
+
+19                        September 21, 2020
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+                                                            2
+
+ 1                            I N D E X
+
+ 2                                                      PAGE
+
+ 3  EXAMINATION BY MR. HYNES                               5
+
+ 4
+
+ 5                         E X H I B I T S              PAGE
+
+ 6  EXHIBIT 1   Notice of Deposition                       6
+
+ 7  EXHIBIT 2   9/16/20 Kazan Letter with attachments      7
+
+ 8  EXHIBIT 3   9/17/20 Kazan Letter                      10
+
+ 9  EXHIBIT 4   9/18/20 Kazan Letter                      11
+
+10  EXHIBIT 5   9/21/20 Kazan Letter                      11
+
+11  EXHIBIT 6   9/6/20 Report                             11
+
+12  EXHIBIT 7   9/16/20 MAS Report                        11
+
+13  EXHIBIT 8   9/17/20 MAS Report                        11
+
+14  EXHIBIT 9   10/2018 Analysis on Asian samples         12
+
+15  EXHIBIT 10  8/28/19 Report of Philippines Containers  12
+
+16  EXHIBIT 11  2/1/19 MDL Second Supplemental Report     12
+
+17  EXHIBIT 12  9/27 Below the Waist Report               41
+
+18  EXHIBIT 13  1/18 Below the Waist Report, Supp. 2      46
+
+19  EXHIBIT 14  5/20 Below the Waist Report               51
+
+20  EXHIBIT 15  1/19 Report, "Johnson's Baby Powder       55
+                Application to Baby During Diaper
+21              Change or Practice Study"
+
+22  EXHIBIT 16  5/20 Report, "Johnson's Baby Powder       60
+                Application to Baby and Diaper Change,
+23              a Hygiene Study Supplemental"
+
+24  EXHIBIT 17  6/28/19 Report, Talcum Powder             63
+                Application to Baby and Diaper
+25              Change 2, A Hygiene Study"
+
+
+
+
+
+                                                            3
+
+ 1         TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D
+
+ 2
+
+ 3       BE IT REMEMBERED, that pursuant to Notice, and on
+
+ 4  the 21st day of September, 2020, commencing at the hour
+
+ 5  of 1:22 p.m. Pacific Standard Time, telephonically
+
+ 6  before me, JANICE L. BELCHER, a Certified Shorthand
+
+ 7  Reporter, appeared WILLIAM E. LONGO, Ph.D, produced as a
+
+ 8  witness in said action, and being by me first duly
+
+ 9  sworn, was thereupon examined as a witness in said
+
+10  cause.
+
+11
+
+12                             --o0o--
+
+13
+
+14  TELEPHONIC APPEARANCES:
+
+15  For the Plaintiffs:
+
+16            HENRY A. STEINBERG
+              Kazan, McClain, Satterley & Greenwood
+17            55 Harrison Street, Suite 400
+              Oakland, California  94607
+18            (877)995-6372
+              hsteinberg@kazanlaw.com
+19
+
+20  For the Defendants Johnson & Johnson; Johnson & Johnson
+    Consumer, Inc.; and Johnson & Johnson Philippines, Inc.:
+21
+
+22            KEVIN HYNES
+              King & Spalding, LLP
+23            1185 Avenue of the Americas
+              34th Floor
+24            New York, New York  10036
+              (212)556-2100
+25            khynes@kslaw.com
+
+
+
+
+
+                                                            4
+
+ 1  For the Defendants Honeywell International, Inc.; and
+    James Crapo, M.D.:
+ 2
+              PETER HOEFS
+ 3            Ongaro, P.C.
+              1604 Union Street
+ 4            San Francisco, California  94123
+              (415)433-3900
+ 5            phoefs@ongaropc.com
+
+ 6  For the Defendant O'Reilly Auto Enterprises, LLC:
+
+ 7            CHRISTINA M. GLEZAKOS
+              Hugo Parker, LLP
+ 8            240 Stockton Street, 8th Floor
+              San Francisco, California  94108
+ 9            (415)940-4072
+              cglezakos@hugoparker.com
+10
+    For the Defendants Longs Drug Stores California LLC, on
+11  behalf of Longs Drug Stores California, Inc.; Safeway,
+    Inc.; and Lucky Stores, Inc.:
+12
+              MEREDITH WHITE
+13            Barnes & Thornburg, LLP
+              2029 Century Park East, Suite 300
+14            Los Angeles, California  90067
+              (310)284-3884
+15            meredith.white@btlaw.com
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+                                                            5
+
+ 1                     WILLIAM E. LONGO, Ph.D,
+
+ 2                       sworn as a witness,
+
+ 3                      testified as follows:
+
+ 4
+
+ 5                           EXAMINATION
+
+ 6  BY MR. HYNES:
+
+ 7       Q.  Hi, Dr. Longo.  How are you today?
+
+ 8       A.  Fine.  How are you?
+
+ 9       Q.  Good, thanks.  So it's about 4:20 p.m. Eastern
+
+10  Time.  This deposition was previously scheduled to begin
+
+11  at 9:00 a.m. Pacific time, noon Eastern, and we were
+
+12  informed this morning by Counsel for Plaintiffs that we
+
+13  needed to reschedule due to a conflict of Dr. Longo's.
+
+14           Dr. Longo, what was your conflict today at noon
+
+15  Eastern?
+
+16       A.  The conflict didn't have anything to do with
+
+17  this case, so I prefer not to put personal issues on the
+
+18  record.
+
+19       Q.  So just --
+
+20           MR. STEINBERG:  Outside scope.
+
+21  BY MR. HYNES:
+
+22       Q.  Okay.  The conflict was one that was personal
+
+23  in nature?
+
+24       A.  That's all I'm going to state.
+
+25       Q.  That's fine.  Just wanted to confirm.
+
+
+
+
+
+                                                            6
+
+ 1           MR. HYNES:  Okay.  So I premarked some exhibits
+
+ 2  for today's deposition.  Exhibit 1 is the September 11,
+
+ 3  2020, Notice of Deposition for your noon Eastern
+
+ 4  telephonic deposition in this case.
+
+ 5           (Exhibit 1 marked for identification.)
+
+ 6  BY MR. HYNES:
+
+ 7       Q.  Dr. Longo, have you reviewed that Notice of
+
+ 8  Deposition?
+
+ 9       A.  I think I did, because I left my -- I left my
+
+10  file at home.  I don't recall seeing it, so I can't say
+
+11  that I saw it or not.
+
+12       Q.  Okay.  I guess for information, are you
+
+13  currently -- where are you presently located for today's
+
+14  deposition?
+
+15       A.  I'm at MAS, and I'm in our large conference
+
+16  room.
+
+17       Q.  And to the extent we reference prior MAS
+
+18  reports, or reports that you've reviewed in connection
+
+19  with the -- with this case, would you be able to -- do
+
+20  you have a laptop or any sort of materials where you
+
+21  would be able to pull that material up?
+
+22       A.  I can get it depending on what it is.
+
+23           MR. HYNES:  Okay.  Great.  So premarked
+
+24  Exhibit No. 2 is a September 16, 2020 letter, from
+
+25  Maegan, M-A-E-G-A-N, Wilborn, W-I-L-B-O-R-N, from Kazan
+
+
+
+
+
+                                                            7
+
+ 1  that enclosed several items; although the first was,
+
+ 2  Dr. Longo, your CV, which was undated.  The most recent
+
+ 3  publication on that CV is the Stefen, Egilman, Longo,
+
+ 4  Rigler article from 2019.
+
+ 5           (Exhibit 2 marked for identification.)
+
+ 6  BY MR. HYNES:
+
+ 7       Q.  Are there any more recent articles that you've
+
+ 8  published since that time that should be included or
+
+ 9  would be included on a CV?
+
+10       A.  No, I think that's the last one.
+
+11       Q.  Okay.  And there are no -- do you have any
+
+12  other publications that have been accepted for
+
+13  publication that don't appear on this CV?
+
+14       A.  We have not had any publications, either
+
+15  accepted or rejected.
+
+16       Q.  Okay.  How about submitted for publication?
+
+17       A.  I don't talk about submitted for publication
+
+18  after I did that once and the defense firm tried to get
+
+19  it stopped through their experts.  So you have a right
+
+20  to know if it's been rejected.  Obviously you have a
+
+21  right to know it's been accepted.  So I'm not saying we
+
+22  have put any in, but that's all the information that I
+
+23  can give now.
+
+24       Q.  Okay.  And this September 16th letter that was
+
+25  marked as Exhibit 2 also encloses three written
+
+
+
+
+
+                                                            8
+
+ 1  communications with Counsel for Plaintiffs in this case.
+
+ 2  Dr. Longo, do you have additional written communications
+
+ 3  with counsel beyond the three letters that are included
+
+ 4  in what's been marked as Exhibit 2; that would be a
+
+ 5  January 31st, 2020, email from Maegan Wilborn,
+
+ 6  requesting your attention, a June 23rd, 2020, letter for
+
+ 7  Ms. Wilborn, enclosing a binder of deposition testimony,
+
+ 8  and then an August 13, 2020, letter from Mr. Angelo Hunt
+
+ 9  enclosing additional depositions in this case.
+
+10       A.  Let me see now.
+
+11       Q.  Okay.  In addition, there are two reports that
+
+12  were enclosed in this letter that was marked as
+
+13  Exhibit 2, a September 16, 2020 report in this case,
+
+14  with an Appendix A reference list, and then a
+
+15  September 16, 2020 report on samples numbered M71109,
+
+16  71111.
+
+17           This letter then also refers to previously
+
+18  produced January 15th, 2019, called the MDL report and
+
+19  associated notebooks for samples from the '60s, '70s,
+
+20  '80s, and '90s, as well as some railcar samples produced
+
+21  by Imerys from the 2000s, along with blank notebooks.
+
+22           This letter also referred to your previously
+
+23  produced November 5th, 2018 verification of Mr. Lee
+
+24  Poye's Shower to Shower analyses.
+
+25           And then with respect to case specific
+
+
+
+
+
+                                                            9
+
+ 1  materials, it referenced that you reviewed Ms. Reyes' --
+
+ 2  or Mr. Reyes' May 4 through 8 deposition transcripts;
+
+ 3  Gemma Reyes' June 24th, 2020 deposition transcript; Roy
+
+ 4  Reyes' July 1st, 2020 deposition transcript; Jose Reyes'
+
+ 5  July, 9th, 2020, transcript; as well as Lourdes,
+
+ 6  L-O-U-R-D-E-S, Delima, D-E-L-I-M-A, his deposition, from
+
+ 7  July 29th, 2020.
+
+ 8           And, Dr. Longo, I'll represent that that's the
+
+ 9  list of materials reviewed in your September 16, 2020
+
+10  report.  Are there any other case specific materials
+
+11  such as other depositions, interrogatory responses,
+
+12  declarations that you've reviewed in connection with the
+
+13  Rosalino Reyes matter?
+
+14       A.  Yes.  But it has nothing to do with J&J.  It
+
+15  has to do with the brake exposure.  And I don't know if
+
+16  you want to go through that or not.
+
+17       Q.  I mean, if you would just list the additional
+
+18  materials that are case specific that you reviewed, so
+
+19  that I can get a complete list of the materials that you
+
+20  reviewed, and you can hold questioning on that until
+
+21  counsel for Honeywell and others have a chance to
+
+22  question you.
+
+23       A.  I don't know that I would forget this, I
+
+24  have -- it's not case specific, but I have a Rule 26, a
+
+25  November 16, 2018, Rule 26 expert report of Mark,
+
+
+
+
+
+                                                           10
+
+ 1  Krekeler, I think that's how you say it.  Let me say it,
+
+ 2  Krekeler, K-R-E-K-E-L-E-R.  It's not case specific, but
+
+ 3  I was sent that, and I think that is it.  I will have to
+
+ 4  look around.  I have lots of stuff sitting here on this
+
+ 5  table, sadly.
+
+ 6       Q.  Okay.  Then that sort of rounds out Exhibit 2
+
+ 7  materials that were enclosed.
+
+ 8           MR. HYNES:  Exhibit 3 is a September 17th,
+
+ 9  2020, letter from Ms. Wilborn at Kazan, the defense
+
+10  counsel, providing a link to your September 15th, 2020,
+
+11  project M71166, on three Johnson's Baby Powder
+
+12  containers.
+
+13           I'll just note for the record that that was
+
+14  produced after this statutory deadline for
+
+15  pre-deposition production.
+
+16           (Exhibit 3 marked for identification.)
+
+17  BY MR. HYNES:
+
+18       Q.  Exhibit 4 is another letter from Ms. Wilborn,
+
+19  linking to that M71166 report, once again, and then also
+
+20  providing an August 27th, 2019 report, from Dr. Longo
+
+21  numbered M69925, report on two containers of Johnson's
+
+22  Baby Powder from the Philippines market.  And this
+
+23  letter also noted that Dr. Longo has reviewed
+
+24  Dr. Matt Sanchez's September 11, 2020 report in this
+
+25  case.
+
+
+
+
+
+                                                           11
+
+ 1           (Exhibit 4 marked for identification.)
+
+ 2           MR. HYNES:  Exhibit 5 is a September 21st,
+
+ 3  2020, letter from Plaintiffs enclosing an October 2018,
+
+ 4  M69248 report on seven Asian market containers of
+
+ 5  Johnson talcum powder products, as well as several
+
+ 6  materials related to friction products, again note that
+
+ 7  those were received the same day as the deposition, well
+
+ 8  after the statutory requirements for pre-deposition
+
+ 9  production.
+
+10           (Exhibit 5 marked for identification.)
+
+11           MR. HYNES:  So that we're all on the same page,
+
+12  mark the September 16th, 2020, case specific report,
+
+13  with a reference list as Appendix A as Exhibit 6.
+
+14           (Exhibit 6 marked for identification.)
+
+15           MR. HYNES:  Mark the September 16th, 2020, MAS
+
+16  report 71109 to 71111 on 11 Chinese talc core samples as
+
+17  Exhibit No. 7.
+
+18           (Exhibit 7 marked for identification.)
+
+19           MR. HYNES:  We'll mark as Exhibit No. 8, a
+
+20  September 17th, 2020, MAS report, M71166, on the three
+
+21  off-the-shelf Johnson's Baby Powder containers.
+
+22           (Exhibit 8 marked for identification.)
+
+23           MR. HYNES:  And, Henry, Johnson & Johnson will
+
+24  reserve its rights to request splits of the three
+
+25  containers that Dr. Longo tested under this report, as
+
+
+
+
+
+                                                           12
+
+ 1  well as what the additional samples that are reflected
+
+ 2  on the chain of custody form that Dr. Longo acquired in
+
+ 3  the July 2020 time frame in connection with this report.
+
+ 4           MR. STEINBERG:  And, Kevin, thank you for that.
+
+ 5  Presently it's unclear if J&J has any right and can
+
+ 6  reserve, but we will of course be open to meeting and
+
+ 7  conferring off the record regarding any such matters.
+
+ 8           MR. HYNES:  Thanks.  Exhibit 9 will be that
+
+ 9  October 2018 analysis on Asian samples, the report
+
+10  M69248.  It was produced earlier today.
+
+11           (Exhibit 9 marked for identification.)
+
+12           MR. HYNES:  We'll mark as Exhibit 10, the
+
+13  August 27th, 2019, report M69925, the report on the two
+
+14  Philippines market containers.
+
+15           (Exhibit 10 marked for identification.)
+
+16           MR. HYNES:  And then for now, as Exhibit 11,
+
+17  we'll mark the, I guess the most recent, February 1st,
+
+18  2019 MDL report, the second supplemental report.
+
+19           We can mark further exhibits as we go.
+
+20           (Exhibit 11 marked for identification.)
+
+21  BY MR. HYNES:
+
+22       Q.  Okay.  Dr. Longo, how much time have you spent
+
+23  on this case to date?
+
+24       A.  The report, reviewing all the material, I would
+
+25  estimate about 20 hours.
+
+
+
+
+
+                                                           13
+
+ 1       Q.  And that does not include the work that you
+
+ 2  spent or the time that you spent on either projects
+
+ 3  M71109 to 71111, or the off-the-shelf analysis report
+
+ 4  M71166 --
+
+ 5       A.  That is correct.
+
+ 6       Q.  -- correct?  How much time did you spend on
+
+ 7  each of those reports; you can take them each separately
+
+ 8  starting with the 11 ore sample report?
+
+ 9       A.  Since I'm the one who wrote the Section 1, the
+
+10  actual report, those took approximately 10 hours for
+
+11  M71166, and I think M1109 and M7111 was approximately 12
+
+12  to 13 hours, so probably 12 hours.
+
+13       Q.  Okay.  And is that simply drafting the
+
+14  narrative portions of the report, does that include any
+
+15  sort of QC review, review of backup data, anything of
+
+16  that nature?
+
+17       A.  No, just the report.  It's a review of all the
+
+18  data.  I forgot about reviewing all the data, so I would
+
+19  say for the first one, the three off-the-shelf
+
+20  containers, is approximately 15 hours.  And the retains
+
+21  was approximately 20 hours.
+
+22       Q.  And did you perform any of the actual
+
+23  microscopical analyses in either of those two reports
+
+24  yourself, or was that performed by analysts at MAS?
+
+25       A.  It was performed by analysts at MAS.
+
+
+
+
+
+                                                           14
+
+ 1       Q.  Okay.  And have you generated any invoices in
+
+ 2  connection with the Reyes case to date?
+
+ 3       A.  I have not.
+
+ 4       Q.  Okay.  Have you generated any invoices with
+
+ 5  respect to either of the two reports that we just
+
+ 6  discussed, M71109 series or the M71166 series?
+
+ 7       A.  I have not.
+
+ 8       Q.  Okay.  How much would you estimate that MAS
+
+ 9  will bill for the work performed on the M71109 report?
+
+10       A.  I prefer not to estimate, since it would -- may
+
+11  not be accurate, so I guess you'll have to wait until I
+
+12  issue the invoices, then take whatever appropriate
+
+13  action you feel necessary to get copies of those from
+
+14  Plaintiffs attorneys.
+
+15       Q.  And you haven't invoiced on the 7166 report at
+
+16  this rate?
+
+17       A.  I have not.
+
+18       Q.  At this stage, correct?
+
+19       A.  That's correct.
+
+20       Q.  Do you anticipate invoicing the Kazan firm for
+
+21  your work performed on each of those two reports?
+
+22       A.  I was -- I don't know.  I'd have to look.  I
+
+23  think one of those, we got the samples and authorized to
+
+24  run them, the big report from Simon Greenstone.  So I
+
+25  would have to think about who I'm billing for those.
+
+
+
+
+
+                                                           15
+
+ 1       Q.  And when do you anticipate submitting invoices
+
+ 2  for those two reports?
+
+ 3       A.  Well, my plan would be this week.
+
+ 4       Q.  Okay.  And for the Rosalino Reyes report and
+
+ 5  time spent reviewing materials in this case, when do you
+
+ 6  anticipate the sharing of an invoice with Kazan for that
+
+ 7  work?
+
+ 8       A.  My plan will be this week.
+
+ 9           MR. HYNES:  Henry, we'll put a request on the
+
+10  record the production of invoices for Dr. Longo's and
+
+11  his laboratory's time in the Reyes case, on the Reyes
+
+12  report, on the M71109 series report, and the invoice for
+
+13  the M71166 report for the request for production of
+
+14  those materials on the record.
+
+15           MR. STEINBERG:  And we can always be available
+
+16  to meet and confer about that.
+
+17  BY MR. HYNES:
+
+18       Q.  Great.  And, Dr. Longo, I know we've asked you
+
+19  this before you, but could you please estimate for me
+
+20  how much MAS has earned back in 2019 from consulting
+
+21  work on behalf of plaintiffs in talc litigation?
+
+22       A.  I think I testified early on that it may be
+
+23  about 800- to 900,000 maybe, somewhere around there.
+
+24       Q.  Okay.  And are you able to tell me what
+
+25  percentage of MAS's overall billings that represented in
+
+
+
+
+
+                                                           16
+
+ 1  2019?
+
+ 2       A.  No.
+
+ 3       Q.  And do you have an estimate for how much MAS
+
+ 4  will earn in 2020 from consulting work on behalf of
+
+ 5  plaintiffs in talc litigation?
+
+ 6       A.  It's very hard to estimate anything this year.
+
+ 7       Q.  Right.
+
+ 8       A.  No trials, no -- you know, I'm not sure when
+
+ 9  civil -- civil trials are going to start back up, so --
+
+10  I would have to sit down and go through that, and I
+
+11  don't think I can estimate anything as everything stands
+
+12  right now.
+
+13       Q.  All right.  We talked about your written
+
+14  communication with attorneys from Kazan regarding the
+
+15  Reyes case, which were all attached to Exhibit 2 in this
+
+16  deposition.
+
+17           Have you had any verbal conversations with
+
+18  attorneys from Kazan regarding this case?
+
+19       A.  Yes.
+
+20       Q.  Okay.  How many?
+
+21       A.  I had one with Justin Bosl, because I was
+
+22  informed by Joe Satterley that Dr. Crapo was being
+
+23  deposed and that he was, I guess, testifying for
+
+24  Honeywell.  And besides Mr. Reyes' exposure to cosmetic
+
+25  talc, I mean Mrs. Reyes, and the potential for brake
+
+
+
+
+
+                                                           17
+
+ 1  exposure, he didn't see any other, any other potential
+
+ 2  asbestos exposure from products, et cetera, and I wanted
+
+ 3  to know if that's what he said.
+
+ 4           I think Justin -- if I recall, Justin Bosl took
+
+ 5  the deposition and said he did.  And I think you will
+
+ 6  see that in my report somewhere.
+
+ 7           And I've had couple few depositions with --
+
+ 8  excuse me, a few depositions, phone calls from
+
+ 9  Mr. Satterley, and mostly what I remember of those is
+
+10  that he was trying to motivate me to get some of this
+
+11  stuff done, especially the report, that sort of thing.
+
+12       Q.  Okay.  And so, communication with Mr. Bosl
+
+13  related to Dr. Crapo's deposition.  To be clear, you
+
+14  have not reviewed the transcript from Dr. Crapo's
+
+15  deposition; is that true?
+
+16       A.  That is true.  I think the transcript at the
+
+17  time I wrote the report hadn't been finished yet and I
+
+18  hadn't received it, and of course if Mr. Bosl -- Justin
+
+19  has given me false information, then I will withdraw
+
+20  that statement in my report.
+
+21       Q.  Sure.  And your telephonic conversations with
+
+22  Mr. Satterley, when was the first one in the Reyes case?
+
+23       A.  I don't remember.  I don't keep a log of phone
+
+24  calls and I don't keep notes.
+
+25       Q.  Was it this month?
+
+
+
+
+
+                                                           18
+
+ 1       A.  I mean, I know I had some this month, but I
+
+ 2  know that there's been conversations before about when
+
+ 3  depos were going to be scheduled and when the case was,
+
+ 4  you know, being scheduled for trial.  I guess it has
+
+ 5  been suggested to be a Zoom trial.  So I couldn't tell
+
+ 6  you.
+
+ 7       Q.  Okay.  You said you recall Mr. Satterley trying
+
+ 8  to motivate you to finish some of the reports that
+
+ 9  you've issued in this case.  Did Mr. Satterley discuss
+
+10  with you or make any recommendations regarding the
+
+11  contents of those reports?
+
+12       A.  No.  I don't typically discuss that unless it's
+
+13  all done, and so Mr. Satterley learned about what was in
+
+14  the report when he received it.
+
+15       Q.  Okay.  Any other communications with
+
+16  Plaintiffs' Counsel in this case, beyond the phone calls
+
+17  of Mr. Satterley and the conversation of Mr. Bosl
+
+18  regarding Dr. Crapo's deposition?
+
+19       A.  That's all I can recall.  I certainly couldn't
+
+20  rule out there was others, but that's the only thing I
+
+21  can recall.
+
+22       Q.  Okay.  Talk about the other experts in this
+
+23  case.  Have you had any recent communications with
+
+24  Mr. Lee Poye, the Plaintiffs' expert in this case?
+
+25       A.  No.
+
+
+
+
+
+                                                           19
+
+ 1       Q.  Okay.  What about Dr. Steven Compton, have you
+
+ 2  had any communications with Dr. Compton in 2020?
+
+ 3       A.  I have, but unrelated to any litigation or
+
+ 4  Johnson & Johnson.
+
+ 5       Q.  Okay.  So you have not had any conversations
+
+ 6  with Dr. Compton related to some of the materials that
+
+ 7  you received in that report, and 71109; is that right?
+
+ 8       A.  That's correct.  I think that was all handled
+
+ 9  by Leah Kagan at Simon, Greenstone & Panatier.
+
+10       Q.  You mentioned reviewing a 2018 report, I think,
+
+11  from Dr. Mark Krekeler.  Have you had any communications
+
+12  with him in 2020?
+
+13       A.  No.
+
+14       Q.  Okay.  What about Dr. David Madigan?
+
+15       A.  I have not.
+
+16       Q.  Dr. David Egilman?
+
+17       A.  No.  I may have had conversations with him in
+
+18  2020, but I don't recall him calling in a while, and I
+
+19  certainly haven't had any conversations with him in this
+
+20  case -- about this case.
+
+21       Q.  Okay.  Was it more housekeeping?  So your most
+
+22  recent deposition in a Johnson & Johnson case was the
+
+23  Polombo deposition, the Rhode Island matter, where you
+
+24  were deposed by my colleague John Ewald back in early
+
+25  August.  Is that consistent with your memory?
+
+
+
+
+
+                                                           20
+
+ 1       A.  Sure is.
+
+ 2       Q.  Okay.  And during that deposition, Mr. Ewald
+
+ 3  had a few requests for production; I don't think we have
+
+ 4  received those?
+
+ 5       A.  What are they?
+
+ 6       Q.  Go ahead.
+
+ 7       A.  I said what are they?
+
+ 8       Q.  So I will reiterate them and you can follow up
+
+ 9  with Plaintiffs' Counsel in this case, as well.
+
+10       A.  Okay.
+
+11       Q.  Some of the items identified were the initial
+
+12  version of the Baby Diapering study No. 2, which
+
+13  predated the June 2019 version, that has been produced
+
+14  in these cases.
+
+15       A.  Okay.
+
+16       Q.  Also requested, the all TEM or the TEM, open
+
+17  parentheses, all, closed parentheses, data from both the
+
+18  Baby Diapering No. 1 and Baby Diapering No. 2 studies
+
+19  that hasn't yet been produced.
+
+20           And then all data from the one-year regression
+
+21  calculation that was discussed in the May 11, 2020,
+
+22  report in the Lopez matter that was pending in Texas.
+
+23       A.  Okay.
+
+24       Q.  We will reraise those requests for production.
+
+25           And additionally, Dr. Longo, have you done
+
+
+
+
+
+                                                           21
+
+ 1  anything in 2020 to look for the results of MAS's
+
+ 2  cosmetic talc testing that predates 2017?
+
+ 3       A.  I started going through the chains of custody,
+
+ 4  and the handwritten ones, and I haven't found it, I
+
+ 5  think I'm up to like 2012, I haven't found anything to
+
+ 6  date up to 2012.  Other than stuff we have, the
+
+ 7  Gold Bond material.  So, so far, certainly no
+
+ 8  Johnson & Johnson has shown up.
+
+ 9       Q.  You say going back to 2012, are you working
+
+10  backwards from 2017 or from the inception of MAS?
+
+11       A.  I started from 2000.
+
+12       Q.  Okay.
+
+13       A.  Or 1999 it was, so up to 2012, like a few
+
+14  hundred, few hundred thousand projects.  I don't know
+
+15  how many at this point.  I lost count.
+
+16       Q.  And when was the last time that you searched
+
+17  for that material?
+
+18       A.  About four or five, six weeks ago, seven weeks
+
+19  ago maybe, two months ago, something like that.
+
+20       Q.  All right.  Let's turn to your case specific
+
+21  report in the Reyes matter which is marked as Exhibit 6
+
+22  here.  Do you have that with you, Dr. Longo?
+
+23       A.  Yes, Mr. Reyes' -- my opinions on Mr. Reyes'
+
+24  exposure.
+
+25       Q.  Right.  And so in this report, which is
+
+
+
+
+
+                                                           22
+
+ 1  something you've done before, you've calculated the
+
+ 2  total number of applications that Mr. Reyes had from
+
+ 3  Johnson & Johnson baby powder, as well as the total
+
+ 4  number of bottles, 15-ounce bottles that he may have
+
+ 5  used which are sort of striated by mine source.
+
+ 6           My first question is, do you have any
+
+ 7  corrections to any of the calculations that appear on
+
+ 8  pages 3 to 7 of this report at this time?
+
+ 9       A.  I haven't checked them a fourth time.  I've
+
+10  been prone to sometimes get that math a little wrong,
+
+11  but as I sit here right now, no.
+
+12       Q.  And so we're clear, the calculations that you
+
+13  rendered in this case resulted in a summary on page 7 of
+
+14  the report, in your summary is that based on your review
+
+15  of the testimony and your calculations, you estimated
+
+16  that Mr. Reyes would have used a 145 15-ounce baby
+
+17  powder containers containing Korean talcum powder, 278
+
+18  15-ounce baby powder containers containing Vermont
+
+19  talcum powder, and 208 baby powder bottles containing
+
+20  Chinese talcum powder; is that correct?
+
+21       A.  That is correct.
+
+22       Q.  Okay.  So based on your review, it's your
+
+23  opinion that Mr. Reyes most likely did not have any
+
+24  Italian sourced talcum powder use?
+
+25       A.  No.  When he came to the United States in 2082
+
+
+
+
+
+                                                           23
+
+ 1  or 2083 [sic], it would have been all Vermont.
+
+ 2       Q.  And later on, on page, at the top of page 10 of
+
+ 3  this report, you have included an estimate.  I'll just
+
+ 4  read this paragraph.  I will ask you some questions
+
+ 5  about it.
+
+ 6           You write here in the second full paragraph on
+
+ 7  page 10 of your report, you write:  Using our "Below the
+
+ 8  Waist Application of Johnson & Johnson Baby Powder"
+
+ 9  hygiene study and our additional hygiene study with JBP
+
+10  entitled "Johnson's Baby Powder Applications to a Baby
+
+11  During Diaper Change," and taking into account public
+
+12  literature, it is my opinion that the exposure level to
+
+13  amphibole asbestos that Mr. Reyes would have had using
+
+14  Johnson's Baby Powder talcum powder products would have
+
+15  an average range of exposure from 0.01 fiber-per-cc to
+
+16  1.0 fiber-per-cc.
+
+17           Did I read that correctly?
+
+18       A.  You did.
+
+19       Q.  Okay.  Do you have a calculation that you made
+
+20  to get the 0.01 fiber-per-cc to 1.0 fiber-per-cc
+
+21  estimate here?
+
+22       A.  Well, it's been the same estimate that I've
+
+23  been using for almost two and a half years.  It's based
+
+24  on our Below the Waist; it's based on the Cashmere
+
+25  Bouquet study done by Millette and company; it's based
+
+
+
+
+
+                                                           24
+
+ 1  on the studies done on behalf of defendants, the
+
+ 2  Anderson and the Pierce, I think it is; it's based on
+
+ 3  our own work.
+
+ 4           And if you look at our linear regression where
+
+ 5  you're measuring apples to apples, it pretty much lines
+
+ 6  up to this level.  Of course, I also state in here that
+
+ 7  I would expect it would be expected that there will be
+
+ 8  airborne concentrations down to non-detects as well as
+
+ 9  higher concentrations.
+
+10       Q.  Okay.  But there was no mathematical
+
+11  calculation that you performed to arrive at a 0.01 to 1
+
+12  estimate for Mr. Reyes' exposure per use in this case;
+
+13  is that correct?
+
+14       A.  I didn't do a mathematical calculation because
+
+15  it's been pretty standard.  Now, how I went through it
+
+16  all, two, two and a half years ago, I don't recall.
+
+17  There must be some deposition testimony somewhere.  And
+
+18  these levels were reaffirmed by our linear regression
+
+19  and reanalyzing the bulk samples, for both essentially a
+
+20  heat -- what you would call a modified Level 2 slash
+
+21  AHERA counting rules, which are the standard greater
+
+22  than or equal to 0.5 micrometers in length greater than
+
+23  equal aspect ratios of 5 to 1 or greater, parallel sides
+
+24  and all that, versus just what was measured by PCME,
+
+25  which is, you know, 3 to 1 aspect ratio greater than
+
+
+
+
+
+                                                           25
+
+ 1  5 micrometers in length, and that doesn't account for
+
+ 2  everything that is missed by the NIOSH 7400 and 7402
+
+ 3  method.
+
+ 4           So if you're exposing somebody to a product or
+
+ 5  a material that has the range of tremolite fibers and
+
+ 6  anthophyllite fibers and sizes and you do PCM, you're
+
+ 7  cutting out a lot of the -- a majority of the exposure.
+
+ 8           So they pulled -- those analyses just
+
+ 9  reaffirmed what my opinion was about the range of
+
+10  exposures that somebody would have.
+
+11       Q.  Okay.  So you've mentioned that this estimate,
+
+12  the 0.01 to 1 fiber-per-cc estimate is something that
+
+13  you've been testifying about, you said for what, two and
+
+14  a half years or so; is that right?
+
+15       A.  At least two years, I think.
+
+16       Q.  Okay.  And this is not a cumulative dose
+
+17  estimate, right, this is a five- to six- --
+
+18       A.  No.
+
+19       Q.  -- minute fiber-per-cc estimate?
+
+20       A.  This is a -- it's not a cumulative fiber year
+
+21  exposure.  That has not been calculated here.
+
+22       Q.  Right.  This is a short-term five- to
+
+23  six-minute estimate; is that right?
+
+24       A.  Well, we did it for five minutes, and that
+
+25  would all depend on how long the plaintiff stayed in the
+
+
+
+
+
+                                                           26
+
+ 1  area, Mr. Reyes, after it was applied, was -- it's not
+
+ 2  so much, you know, it's the initial application, but if
+
+ 3  you're staying in the bathroom or you're staying in the
+
+ 4  bedroom, there's additional exposure.  So this would be
+
+ 5  a short-term exposure from the application, and then
+
+ 6  it -- then being in the environment for, you know,
+
+ 7  another four minutes.
+
+ 8       Q.  And this 0.1 to 1 fiber-per-cc estimate, is
+
+ 9  this a PCM fiber-per-cc value, or is this a TEM
+
+10  fiber-per-cc value?
+
+11       A.  It is not a PCM.  It is partially PCMEs and --
+
+12  and the greater than 5, 5 to 1 -- greater than or equal
+
+13  to 5, greater than or equal to 5 to 1 aspect ratio, and
+
+14  greater than .5 micrometers in length.  But it came from
+
+15  limited data, because I think in Below the Waist, we had
+
+16  only done one sample like that, and it was a factor of
+
+17  3, I think, almost of what the same sample was by PCME.
+
+18           Now that all the data has been generated, it
+
+19  provides the same information for my opinions.
+
+20       Q.  So this 0.01 to 1 fiber-per-cc estimate is not
+
+21  specific to PCME or TEM-based fiber dimension, it's two
+
+22  different values?
+
+23       A.  No, it was -- it was the same values, and it
+
+24  was a combination of both PCMEs and all fibers,
+
+25  quote/unquote --
+
+
+
+
+
+                                                           27
+
+ 1       Q.  Isn't that --
+
+ 2       A.  -- for some very limited work that was done a
+
+ 3  couple of years ago, and as well as taking into
+
+ 4  consideration the literature, but it was not appropriate
+
+ 5  for how it was initially done, using OSHA guidelines for
+
+ 6  measurement when it's not -- not an occupational
+
+ 7  exposure, it's -- especially with infants and small
+
+ 8  children, there is no OSHA levels for that.  This is the
+
+ 9  straight -- this is an industrial hygiene or, in this
+
+10  case, a hygiene study showing what the potential is for
+
+11  the three studies that we've done.
+
+12       Q.  Aren't TEM and PCM fiber types comparing apples
+
+13  and oranges, not something that you have testified to in
+
+14  the past?
+
+15       A.  It is because -- I may have said apples and
+
+16  oranges, but PCMEs or PCM fibers are typically not the
+
+17  type of structures that you will see in TEM.  The TEM is
+
+18  biased to smaller structures.
+
+19           What you can do and what others have done,
+
+20  including Sanchez, is you can take the low magnification
+
+21  analysis, for example, if one were to take the PCMEs and
+
+22  remove everything that is less than 5 to 1 aspect ratio,
+
+23  but 5 microns -- but greater than 5 microns, you can get
+
+24  what is known as the low magnification TEM, so tissue
+
+25  analysis is routinely done that way.
+
+
+
+
+
+                                                           28
+
+ 1           Dr. Sanchez does that with his bulk analysis, a
+
+ 2  low magnification and a high magnification, because the
+
+ 3  7402 is done I think at 1100 or 1200 magnification.  So
+
+ 4  if you take out and have the same population, meaning 5
+
+ 5  to 1 aspect ratios but only the ones greater than
+
+ 6  5 micrometers, it's appropriate to add those two
+
+ 7  together.
+
+ 8           MR. HYNES:  Object to the nonresponsive portion
+
+ 9  of the response.
+
+10  BY MR. HYNES:
+
+11       Q.  Dr. Longo, so you're saying that your estimate
+
+12  here, 0.01 to 1 fiber-per-cc is a combination of both
+
+13  PCME and TEM fiber-per-cc dimensions?
+
+14       A.  Let's be clear.  The TEM portion of it, of all
+
+15  fibers was I think one sample that we did for P-1-A in
+
+16  the Below the Waist, where it was 4 fibers,
+
+17  4-point-something fibers by PCME, and the level found
+
+18  there was -- at the time, was like greater than
+
+19  10 fibers-per-cc or something around that.  So that had
+
+20  me looking at okay, if we were combining all of this,
+
+21  that we would be in this range.  It wasn't until the
+
+22  linear regression and we were looking at our
+
+23  concentrations and averages, and with the three baby
+
+24  studies, plus using 0 -- 0 intercept, that data pretty
+
+25  much holds up.
+
+
+
+
+
+                                                           29
+
+ 1       Q.  So wouldn't it be more appropriate to report an
+
+ 2  estimate, one, based on PCME, and then a different
+
+ 3  estimate based on TEM fiber sizes, given that they're
+
+ 4  different populations of fiber sizes that can't be
+
+ 5  compared directly against one other because they are
+
+ 6  apples and oranges populations, as you have testified to
+
+ 7  in the past?
+
+ 8       A.  Well, no that's not right.  If you're just
+
+ 9  comparing the PCME fibers to the all fibers, you're
+
+10  looking at different counting rules.  You know, 3 to
+
+11  1 -- you know, greater than 3 to 1 aspect ratio is the
+
+12  main thing.
+
+13           If you take out the apples and just use the
+
+14  oranges, where the oranges are now everything that has
+
+15  at least a 5 to 1 aspect ratio and is at least -- and is
+
+16  greater than 5 micrometers in length, than you're
+
+17  looking at pretty much the same type of population
+
+18  because of the aspect ratio, but you are looking at the
+
+19  larger bundles that you typically don't see in TEM that
+
+20  you do see in PCME.
+
+21           So if you go through that exercise, that
+
+22  changes the -- the -- changes the -- changes the data
+
+23  somewhat.  And that I don't agree with that as apples
+
+24  and oranges.  Just taking the straight 7402 PCMEs with
+
+25  everything that has a 3 to 1 or greater aspect ratio,
+
+
+
+
+
+                                                           30
+
+ 1  absolutely you can't compare that because you're looking
+
+ 2  at a different type of population.  You remove that
+
+ 3  different type of population, and then you can make
+
+ 4  that -- you can add those together actually.
+
+ 5       Q.  So when I'm doing this estimate for an airborne
+
+ 6  test, you have a fiber-per-cc value that the airborne
+
+ 7  level is measured in, right?  That's just yes or no,
+
+ 8  fiber-per-cc is the value you're using, right?
+
+ 9       A.  Value, that's a unit of measurement for
+
+10  airborne particulate.
+
+11       Q.  Right, right.  And so that unit of measurement
+
+12  is different when you're using a PCME versus when you're
+
+13  doing TEM.  For example, PCME, your unit of measurement
+
+14  for fiber is 5 microns in length, 3 to 1 or greater
+
+15  aspect ration.  By contrast, when it's TEM, that fiber
+
+16  unit of measurement is 0.5 microns or greater in length
+
+17  greater than or equal to 5 to 1 aspect ratio.  Those are
+
+18  two different fibers creating two different units of
+
+19  measurement to the two different types of airborne fiber
+
+20  measurements, correct?
+
+21       A.  They're not two different types of fibers, they
+
+22  are still fibers, in this case bundles, for PCME.  It is
+
+23  a different aspect ratio.  That is different.  3 to 1 or
+
+24  greater versus 5 to 1 or greater.  But greater than
+
+25  5 micrometers is not different, and it's different how
+
+
+
+
+
+                                                           31
+
+ 1  it's worded.  In PCMEs, you're only counting greater
+
+ 2  than 5 micrometers.  All fibers you are counting from .5
+
+ 3  up until however big they are.  And those analyses will
+
+ 4  show you that there's plenty of fiber bundles in there,
+
+ 5  fibers in there greater than 5 micrometers, for all TEM.
+
+ 6  So if you take a PCME and remove the, we'll call it the
+
+ 7  problem area, to compare the two by the 3 to 1 aspect
+
+ 8  ratio, you can make that comparison.  But at the end of
+
+ 9  the day, human lungs aren't trying to figure out if it's
+
+10  PCMEs or all fibers, they're inhaling everything.
+
+11           MR. HYNES:  Object to the nonresponsive
+
+12  portions of the response.
+
+13  BY MR. HYNES:
+
+14       Q.  So, Dr. Longo, these are different units of
+
+15  measurement, though.  PCME, the unit for fiber under a
+
+16  fiber-per-cc, is 5 microns in length, greater than 3 to
+
+17  1 aspect ration.  TEM is a different fiber unit of
+
+18  measurement; it's half a micron in length, different
+
+19  length, greater than 5 to 1 aspect ratio, different
+
+20  aspect ratio.  Can we agree with that then?
+
+21       A.  No.  Because the all fibers, you are measuring
+
+22  things greater than 5 micrometers.  There's no cutoff,
+
+23  like, okay, you can only go up to 5.  But I've already
+
+24  agreed with you on the 3 to 1 aspect ratio.  That will
+
+25  give you different population of fibers, but most of
+
+
+
+
+
+                                                           32
+
+ 1  them are actually -- you know, have at least -- have 5
+
+ 2  to 1 or greater aspect ratio.  But if you remove the 3
+
+ 3  to 1, in my opinion you can add the two together.
+
+ 4       Q.  Well, when you're using that unit of
+
+ 5  measurement, you're measuring a total number of that
+
+ 6  specific size, range and fibers, say PCM, you're
+
+ 7  measuring a specific number of fibers that are 5 microns
+
+ 8  in length, greater than 3 to 1 aspect ratio in, a cubic
+
+ 9  centimeter of air.  That population of fibers of that
+
+10  dimension may be different from a population of fibers,
+
+11  say, the same cubic centimeter of air but you're
+
+12  measuring half a micron in length greater than 5 to 1
+
+13  aspect ratio, different populations potentially between
+
+14  the two units of measurement, correct?
+
+15       A.  That's only correct if you take the 3 to 1
+
+16  versus 5 to 1.
+
+17       Q.  But even if you were to remove the 3 to 1 to
+
+18  5 to 1, we're still actually talking about potentially
+
+19  different populations being measured in that population
+
+20  because, as you mentioned, the PCME will only measure
+
+21  those that are greater than 5 in length, whereas TEM
+
+22  will measure those that are greater than 5 in length,
+
+23  but also those that are below 5 all the way down to half
+
+24  a micron in length, so you get a different total number
+
+25  of fibers to different population because the unit of
+
+
+
+
+
+                                                           33
+
+ 1  measurement that you're using, TEM versus PCM, could be
+
+ 2  different; do you agree?
+
+ 3           MR. STEINBERG:  Counsel, I'm going to move to
+
+ 4  strike your penultimate question, because in your last
+
+ 5  question, you cut off the doctor's answer.
+
+ 6           MR. HYNES:  I apologize if I did so.
+
+ 7           THE WITNESS:  Again, as I've testified before,
+
+ 8  the PCMEs are everything from 3 to 1 or greater, so you
+
+ 9  have a population of bundles that are measured by PCME
+
+10  that are not measured by TEM.  Anything less than 5 to 1
+
+11  aspect ratio is not measured.
+
+12           But if you take the PCME and start removing
+
+13  the -- everything, all the fibers are -- it's always
+
+14  bundles, all the bundles with aspect ratios less than
+
+15  5 to 1, then you're looking at a population that would
+
+16  be in the larger population of TEM, if the TEM didn't --
+
+17  if those bundles actually got there, and some do, but
+
+18  usually you will find more of a greater than five
+
+19  micrometers in length, 5 to 1 aspect ratio for bundles
+
+20  in the PCME than you do for the TEM.  The TEM has some
+
+21  bias for the larger ones, but it's all coming out of the
+
+22  same cloud.
+
+23           So no, I can't agree that it is a different
+
+24  population.  I just won't agree to that.  After the data
+
+25  has been scrubbed --
+
+
+
+
+
+                                                           34
+
+ 1           (Telephonic interruption.)
+
+ 2           MR. HYNES:  Did someone just join?
+
+ 3           THE WITNESS:  I don't know.
+
+ 4           MR. HYNES:  Sounds like somebody did.  Go
+
+ 5  ahead.
+
+ 6           THE WITNESS:  I don't think anybody in my
+
+ 7  office has the call-in number but me now.
+
+ 8  BY MR. HYNES:
+
+ 9       Q.  Dr. Longo, do you want to continue --
+
+10       A.  Sure.
+
+11       Q.  -- or re-ask another question?
+
+12       A.  I think I made my point.
+
+13           MR. HYNES:  Okay.  And, Madam Court Reporter,
+
+14  are you still with us?
+
+15           THE REPORTER:  Yes, I am.
+
+16  BY MR. HYNES:
+
+17       Q.  Okay.  Dr. Longo, I'll ask you have just a
+
+18  hypothetical to figure this out.
+
+19           So same fiber release, say somebody has sanded
+
+20  joint compound and we say one cubic centimeter of air,
+
+21  there are two fibers that are in that cubic centimeter
+
+22  or air.  One is 7 microns in length, and has a greater
+
+23  than 3 to 1 aspect ratio; the other is 4 microns in
+
+24  length and has a greater than 5 to 1 aspect ratio.  I
+
+25  guess for purposes of this, they both have greater than
+
+
+
+
+
+                                                           35
+
+ 1  1 aspect ratio.  If you were measuring via PCME, you
+
+ 2  would measure 1 fiber-per-cc in that cloud, and if you
+
+ 3  were measuring using TEM, you would measure 2 fibers per
+
+ 4  cc in that same cloud; is that right?
+
+ 5       A.  That's correct.
+
+ 6       Q.  Okay.  And so because the units of measurement
+
+ 7  are different, you get different values for the total
+
+ 8  numbers of fibers per cc in that same cubic centimeter
+
+ 9  of air; is that correct?
+
+10       A.  Because it has the 3 to 1 aspect ratio.  If you
+
+11  took the PCME and removed the 3 to 1 aspect ratio, and
+
+12  then you just had 5 to 1 or greater aspect ratio, you
+
+13  would get the same number.  You would both have
+
+14  1 fiber-per-cc.
+
+15       Q.  Let's try it again -- sorry, go ahead.
+
+16       A.  So if you have two fibers in there, one is 7
+
+17  microns long and has 3 to 1 aspect ratio, and one is 4
+
+18  microns long and has 5 to 1 aspect ration, if you did a
+
+19  PCME, you would have 1 fiber-per-cc.  If you did a TEM,
+
+20  you would not count the 3 to 1, and you would have
+
+21  1 fiber-per-cc.
+
+22       Q.  Okay.
+
+23       A.  But you're getting the same number.
+
+24       Q.  How about if you have a particle that is
+
+25  7 microns in length with a 5 to 1 or greater aspect
+
+
+
+
+
+                                                           36
+
+ 1  ratio, and a particle that is 4 microns in length with a
+
+ 2  greater than 5 to 1 aspect ratio.  Under PCME you would
+
+ 3  wind up with 1 fiber-per-cc.  Under TEM you would wind
+
+ 4  up with 2 fibers-per-cc.  Is that right?
+
+ 5       A.  Let's see.  Under TEM, you would have
+
+ 6  1 fiber-per-cc -- 2 fibers-per-cc.  And PCMEs -- PCMEs,
+
+ 7  you would have 2 fibers-per-cc.  That is correct.
+
+ 8       Q.  Well, no, you'd have 1 fiber-per-cc under PCME,
+
+ 9  correct, because one was shorter than 5 microns in
+
+10  length?
+
+11       A.  Sorry, I don't mean to interrupt you, but you
+
+12  don't have to ask it again.  You're right.  You would
+
+13  have 1 fiber-per-cc by PCME, and if the TEM counted that
+
+14  fiber, you don't know yet until you take a look at it,
+
+15  it may not count it at all if the size of this bundle
+
+16  wide or -- and let's just say hypothetically it
+
+17  does, then you would be correct.
+
+18       Q.  Right.  And there would be a 1 fiber-per-cc
+
+19  estimate for PCME, and a 2 fiber-per-cc estimate for
+
+20  TEM?
+
+21       A.  However, if I went and looked at that data, and
+
+22  TEM had actually counted that one fiber, then I wouldn't
+
+23  count it again in PCME.  And what we did is all the grid
+
+24  openings we looked at, we didn't recount anything.  So
+
+25  we looked at new grid openings when went back for all
+
+
+
+
+
+                                                           37
+
+ 1  fibers.
+
+ 2           So it would be by TEM, PCME, that may or may
+
+ 3  not be counted -- I mean, by TEM, that may or may not be
+
+ 4  counted.  So actually until you could really design a
+
+ 5  hypothetical experiment like that, which nobody could,
+
+ 6  you don't know what your answer would be, other than the
+
+ 7  fact that if you did TEM, you would have the true
+
+ 8  exposure of the individual.  Because if you have PCMEs
+
+ 9  only, it's 1 fiber-per-cc, but again, and you did PCM
+
+10  and TEM all fibers, you would have a better idea of
+
+11  the -- in this occupational setting, what that person's
+
+12  exposure would be.  But since it's an occupational
+
+13  setting and joint compound, it would still retain
+
+14  1 fiber-per-cc, because you're only doing NIOSH
+
+15  analysis.  So the one -- you wouldn't be doing TEM
+
+16  there, typically, for all fibers, if you wanted to
+
+17  compare it to an OSHA level of exposure.  So the
+
+18  hypothetical essentially is because it's an occupational
+
+19  exposure, the only data you could rely on would be your
+
+20  PCMEs, or PCM and PCMEs, and you would be reporting
+
+21  1 fiber-per-cc, hence the PCMEs.
+
+22           MR. HYNES:  I'll object to the nonresponsive
+
+23  portion of the response.
+
+24  BY MR. HYNES:
+
+25       Q.  So let's get back to your 0.01 to 1
+
+
+
+
+
+                                                           38
+
+ 1  fiber-per-cc estimate.  You said this was based on, you
+
+ 2  talked about published data, and then the Below the
+
+ 3  Waist study that you performed in the Baby Diapering 1
+
+ 4  study, did you include the second Baby Diapering study,
+
+ 5  Baby Diapering 2, as part of this estimate here?
+
+ 6       A.  Well, when I first came up with this estimate,
+
+ 7  no.  Now that we have the Baby 2 data, and if you
+
+ 8  plotted the Below the Waist, the Baby 1, the Baby 2
+
+ 9  supports the .01, sometimes less than .01 to 1, and
+
+10  sometimes higher.
+
+11       Q.  Okay.  So I guess the question is, is this
+
+12  Baby Diapering 2 study something that you're rely upon
+
+13  for your opinions in this case or not?
+
+14       A.  Well, I didn't put it on my list of what --
+
+15  what I was relying on, but I'll have to think about
+
+16  that.
+
+17           Certainly you all will have -- I think you
+
+18  already have the data.  Maybe not the final -- the final
+
+19  Baby 2 because I still have to, you know, finish
+
+20  tweaking it for the supplement report.  So I don't know.
+
+21       Q.  Okay.  For purposes of your opinions here in
+
+22  the Reyes estimate, it wasn't something that you
+
+23  specifically cited to or referenced or included when you
+
+24  generated the 0.1 to 1 fiber-per-cc estimate?
+
+25       A.  No, I did not.  I only put it in the Baby 1
+
+
+
+
+
+                                                           39
+
+ 1  study.
+
+ 2       Q.  Okay.  And is there a reason why you did not
+
+ 3  include the Baby Diapering 2 study?  Is it -- you said
+
+ 4  that it's because there's still TEM data that needs to
+
+ 5  be included?
+
+ 6           Sorry, it's because there was still TEM data
+
+ 7  that you needed to include in that study?
+
+ 8       A.  The TEM data, everything is finished except for
+
+ 9  I have to do a supplement for the report and add the
+
+10  data into the tables, et cetera.  So, you know, I keep
+
+11  thinking I'm going to finish it up, and maybe within the
+
+12  next two weeks, and then I will release it, I'll send it
+
+13  to you.
+
+14           Well, I'll send it to my client.  He can make
+
+15  the decision if he wants to send it to you or not.
+
+16       Q.  Okay.  All right.  And for purposes of your
+
+17  opinions in the Reyes case, you did not calculate a
+
+18  cumulative dose of exposure for Mr. Reyes from use of
+
+19  Johnson's Baby Powder products overall, correct?
+
+20       A.  No, I did not.
+
+21       Q.  And I believe you, your opinion is that he
+
+22  would have a significant exposure from use of Johnson's
+
+23  Baby Powder products, but, Dr. Longo, you're not a
+
+24  medical doctor, correct?
+
+25       A.  I'm still not a medical doctor.  I don't
+
+
+
+
+
+                                                           40
+
+ 1  testify about epidemiology, toxicology.  Certainly, you
+
+ 2  know, I probably know more than the layperson, but
+
+ 3  that's not something that I testify about.
+
+ 4           Typically when I say it's significant, it is
+
+ 5  over a certain level of background, and I was using 10
+
+ 6  to 20 times for a while.  And if you look at background
+
+ 7  of the Agency for Toxic Substance Disease Register, I
+
+ 8  think there are -- they have a range of 4 zeros and a 5
+
+ 9  and 5 zeros and the 5 for a background, and it's
+
+10  background in the '80s.  And if you look at some of the
+
+11  data, they have as low as 10 to the minus 7.  We've done
+
+12  an ambient background here, it was a non-detect, so it
+
+13  was 10 to the minus 6.  But hopefully we don't have to
+
+14  debate the -- which background is, so it has to be 10, I
+
+15  think it's significantly above background, 10 times or
+
+16  10 to 20 times above background, but not just any
+
+17  background.  You have to have TEM background, and I
+
+18  think the closest that we have at the moment is the
+
+19  ATSDR background.
+
+20       Q.  And, Dr. Longo, you haven't evaluated
+
+21  literature on levels of exposure that may be significant
+
+22  for biphasic peritoneal mesothelioma specifically,
+
+23  correct?
+
+24       A.  No.  I don't testify about that.  That's not an
+
+25  area.  I can't remember what's required in Texas.  It's
+
+
+
+
+
+                                                           41
+
+ 1  either 2 times or 1.5 times over, quote, the normal
+
+ 2  population that get mesothelioma or something.  But
+
+ 3  that's not my area that I testify about.
+
+ 4       Q.  Let's talk about, so you mentioned the Below
+
+ 5  the Waist study.
+
+ 6       A.  Before you ask another question, we've been
+
+ 7  going for about an hour and five minutes.  Can we take
+
+ 8  like a five to ten-minute break?
+
+ 9           MR. HYNES:  Sure.  Let's take a five-minute
+
+10  break, off the record quickly.
+
+11           (Recess was taken.)
+
+12  BY MR. HYNES:
+
+13       Q.  So, Dr. Longo, let's talk about some of your
+
+14  studies related to those that you used to calculate
+
+15  Mr. Reyes' potential exposure for using Johnson's baby
+
+16  powder products.
+
+17           I have attached as Exhibit 12 to the
+
+18  deposition, a copy of your September 27 version of the
+
+19  Below the Waist report, MAS project No. 14-1852.
+
+20           (Exhibit 12 marked for identification.)
+
+21           THE WITNESS:  Okay.
+
+22  BY MR. HYNES:
+
+23       Q.  Do you have that report available to you?
+
+24       A.  No.  I apologize, I have all three of them at
+
+25  home since I've been working out of the house.  But
+
+
+
+
+
+                                                           42
+
+ 1  hopefully I can answer questions about it.
+
+ 2           MR. HYNES:  Okay.  Let's go off the record for
+
+ 3  just one moment, please.
+
+ 4           THE WITNESS:  Sure.
+
+ 5           (Discussion off the record.)
+
+ 6  BY MR. HYNES:
+
+ 7       Q.  Dr. Longo, we're back on the record.  You have
+
+ 8  access to the materials that are provided to Madam Court
+
+ 9  Reporter, Plaintiffs' Counsel, before today's
+
+10  deposition.
+
+11           I want to turn your attention to Exhibit 12.
+
+12  As we mentioned before, this is the September 2017 Below
+
+13  the Waste report, MAS project No. 14-1852.
+
+14           Are you with me now?
+
+15       A.  I'm with you.
+
+16       Q.  Great.  So, Dr. Longo, at the time that MAS
+
+17  performed the Below the Waist study, your laboratory had
+
+18  performed dozens of airborne simulation studies on a
+
+19  variety of different materials like joint compound,
+
+20  brakes, gaskets, electrical equipment, among other
+
+21  material, right?
+
+22       A.  That is correct.
+
+23       Q.  Okay.  And for purposes of the Below the Waist
+
+24  study that we're looking at here, you chose the methods
+
+25  that you were going to use to study -- you chose the
+
+
+
+
+
+                                                           43
+
+ 1  methods that you were going to use in the simulation
+
+ 2  studies, correct?
+
+ 3       A.  Yeah, me and Dr. Rigler and Bill Egeland, we
+
+ 4  all worked on this project.
+
+ 5       Q.  Right.  And you chose what data to collect and
+
+ 6  report, as part of the September 2017 report, right?
+
+ 7       A.  Correct.
+
+ 8       Q.  And it looks like you, Dr. Rigler and
+
+ 9  Mr. Egeland wrote a study protocol dated September 6th,
+
+10  2017, before performing this study; is that correct?
+
+11       A.  That is correct.
+
+12       Q.  Okay.  And as part of that protocol, if I could
+
+13  direct your attention to page 12 of the PDF, in Section
+
+14  4 of the study protocol, under the heading "laboratory
+
+15  analysis," the protocol reads:  All air samples will be
+
+16  analyzed by the NIOSH 7400 PCM method using, quote,
+
+17  capital A, end quote, counting rules.  After a portion
+
+18  of the filter has been removed for the PCM analysis,
+
+19  selected air filter samples will be analyzed by the
+
+20  NIOSH 7402 method using TEM.
+
+21           Did I read that correctly?
+
+22       A.  You did.
+
+23       Q.  So part of that Below the Waist study, you
+
+24  chose to collect and report NIOSH 7400 and 7402 data as
+
+25  part of the September 2017 Below the Waist study?
+
+
+
+
+
+                                                           44
+
+ 1       A.  That is correct.
+
+ 2       Q.  Okay.  And the original simulation protocol
+
+ 3  from September 6th, 2017, did not include additional,
+
+ 4  whether it's TEM, open parentheses, all, closed
+
+ 5  parentheses, or Level 2 TEM analysis as part of that
+
+ 6  initial protocol, correct?
+
+ 7       A.  That is correct.
+
+ 8       Q.  And at the time that you had performed the
+
+ 9  Below the Waist study, MAS has done simulation studies
+
+10  that included study design protocols contemplating the
+
+11  measurement of TEM, open parentheses, all, closed
+
+12  parentheses, or modified level of analysis, correct?
+
+13       A.  Yes and no.
+
+14       Q.  The no?
+
+15       A.  The no part was we never contemplated when we
+
+16  moved away from measuring all fibers by the indirect
+
+17  method; however, from time to time we do go back and do
+
+18  all fibers, even though it's not on a protocol, the
+
+19  protocol is not set in stone, obviously.  And you're
+
+20  still analyzing the same air filters; you're just using
+
+21  the all fiber counting rules.
+
+22       Q.  Okay.  And as part of this protocol, you chose
+
+23  not to include whether it's TEM, open parentheses, all,
+
+24  closed parentheses, indirect or direct prep method or
+
+25  any form of EPA Level 2 analysis as part of the
+
+
+
+
+
+                                                           45
+
+ 1  September 6, 2017, protocol, correct?
+
+ 2       A.  The original protocol did not have all fibers
+
+ 3  in it; that is correct.  I don't know if I anticipated
+
+ 4  it or not, but we just ran it our standard way at that
+
+ 5  time.  So I don't try to anticipate.  I usually put a
+
+ 6  standard down, unless we're going to do something
+
+ 7  different initially.  But that protocol doesn't restrict
+
+ 8  you from not going back and looking at all the data in
+
+ 9  that population.
+
+10       Q.  Right.  But the protocol itself doesn't
+
+11  specifically state that that would be part of the
+
+12  project, correct?
+
+13       A.  On that date, that is correct.
+
+14       Q.  Okay.  And just so we're clear, the container
+
+15  that was used, this was container M6205-001, correct?
+
+16       A.  Let me just look to be sure.  I believe you're
+
+17  correct, but I just want to see it.  Yes.
+
+18       Q.  Would it be overview on page 5 of the PDF?
+
+19       A.  Yes, I have it.
+
+20       Q.  And that was a 1950's vintage container?
+
+21       A.  I think it was late '40s to early 1950s; it's
+
+22  somewhere in there.
+
+23       Q.  And the likely talc, if it was the original
+
+24  talc, would be Italian sourced?
+
+25       A.  That is correct.
+
+
+
+
+
+                                                           46
+
+ 1       Q.  And that was originally purchased by Mr. Steven
+
+ 2  Berkness and then provided to the Kazan firm and then
+
+ 3  provided to you, correct?
+
+ 4       A.  I believe that's correct.
+
+ 5       Q.  Okay.  Let's turn to Exhibit 13, which is sort
+
+ 6  of confusing, so this is the another version of the
+
+ 7  Below the Waist study, Project No. 14-1852.  On the
+
+ 8  front cover, it's dated January 2018, and reads
+
+ 9  "Supplemental Report No. 2."
+
+10       A.  I'm trying to figure out how to get to it.
+
+11  Hold on.
+
+12           Okay.  Which exhibit is that?
+
+13       Q.  13.
+
+14       A.  13.  Okay.  I have it.
+
+15           (Exhibit 13 marked for identification.)
+
+16  BY MR. HYNES:
+
+17       Q.  Okay.  And so it reads "January 2018," on the
+
+18  front cover, but if you turn to the second page under
+
+19  the heading index of supplemental data, it looks like
+
+20  there's some supplementation occurring in January of
+
+21  2018 as well as March 2018.  I guess, Dr. Longo, you
+
+22  tell me, I guess this is probably a March 2018 version
+
+23  of the report despite the January 2018 label on the
+
+24  front?
+
+25       A.  I think that's correct.
+
+
+
+
+
+                                                           47
+
+ 1       Q.  Okay.  And the updates in January of 2018,
+
+ 2  those did not include any sort of TEM analyses, correct?
+
+ 3       A.  Yeah, in Section 7 it did.
+
+ 4       Q.  Right.  So the changes -- if you're looking at
+
+ 5  page 2, the changes from January 11 through 16 of 2018,
+
+ 6  all to Section 6, did not involve any additional TEM
+
+ 7  analysis, right?
+
+ 8       A.  Let me get to it so I can verify that.  I know
+
+ 9  it's towards the back.
+
+10       Q.  I guess I can withdraw the question and short
+
+11  circuit this.
+
+12           But it looks like for the first time on
+
+13  March 8th, 2018, you added a Section 7 to this report
+
+14  that added a new TEM Level 2 analysis as part of this
+
+15  project; is that correct?
+
+16       A.  That is correct.  I just want to get to it to
+
+17  make sure.
+
+18       Q.  And as we discussed, that analysis was not
+
+19  specifically contemplated as part of the original
+
+20  study's protocol from September 6th, 2017, correct?
+
+21       A.  I was not in the protocol, no.
+
+22       Q.  Okay.  And so does MAS, from time to time,
+
+23  modify a study protocol following the completion of the
+
+24  study to include additional analyses that weren't
+
+25  specifically contemplated in the original study
+
+
+
+
+
+                                                           48
+
+ 1  protocol?
+
+ 2       A.  Some for additional analysis, some to answer
+
+ 3  questions, some that if we want some more scientific
+
+ 4  data, sometimes the clients ask for it.
+
+ 5       Q.  Do you recall how this came about; was this due
+
+ 6  to a client request, or was your own decision to move
+
+ 7  forward with additional analysis?
+
+ 8       A.  Yeah, I moved forward because I wanted to see
+
+ 9  if the PCMEs versus the all fibers, if it follows the
+
+10  rule of thumb that there -- for all TEM fibers were the
+
+11  same -- it's the same population.  It's just another
+
+12  subset of the population, if that followed suit for the
+
+13  sample.  So one was analyzed, that P-1-A, looking at the
+
+14  count sheets, you know, it's all greater than .5 microns
+
+15  in length.  And, you know, we do have structures that --
+
+16  structures that would make -- would be counted by PCMEs,
+
+17  but the majority of the structures are less than what
+
+18  would be counted by PCMEs.  So that's why it was done.
+
+19       Q.  Okay.  And are you relying upon the data that
+
+20  appears in Section 7 of this version of the report from
+
+21  March 2018, for purposes of your opinions in this case?
+
+22       A.  Yes.
+
+23       Q.  Okay.  And I have a question, I don't know if
+
+24  you can flip between them, but related to the summary of
+
+25  results table, between the report for September 2017 and
+
+
+
+
+
+                                                           49
+
+ 1  the update from March 2018.  The summary table appears
+
+ 2  on page 14 of the PDF from the earlier September 2017
+
+ 3  version, and the summary table is on page 15 of the PDF
+
+ 4  from the March 2018 version.  Are you with me?
+
+ 5       A.  Yeah, I'm with you.  I'm just -- I'm just
+
+ 6  scrolling to it.
+
+ 7       Q.  Okay.
+
+ 8       A.  All right.  I have it.
+
+ 9       Q.  So if you look, we'll just use Sample P-I-A,
+
+10  under the personal sample, first.  So under the TEM 7402
+
+11  column, percent asbestos, you have 76.9, and then under
+
+12  the TEM 7402 column, you have percent talc, and for the
+
+13  September of 2017 version, you have 7.7 percent.  But in
+
+14  the March 2018 report, you have 23.1 percent talc.  And
+
+15  there's some adjustments to a few of the figures in the
+
+16  percent talc column; for example P-1-A, P-1-B, and
+
+17  P-1-D.  Do you see that?
+
+18       A.  Well, first thing I'm going to go to the actual
+
+19  count sheets and see what it says the percentage is to
+
+20  see why there was a change.  I don't recall it now.  So
+
+21  let me just get to the section.
+
+22           So P-1-A on this one is 76.9 percent, which
+
+23  leads -- as I recall, all the non-asbestos was talc.
+
+24  Talc, talc, two talc.  So 76.9.  Let's see what
+
+25  structures those are.
+
+
+
+
+
+                                                           50
+
+ 1           Okay.  Now, for No. 2.
+
+ 2       Q.  You can just limit this question to P-1-A.
+
+ 3       A.  Okay, P-1-A.  So I have 76.9 percent, and if I
+
+ 4  go to P, back to 12, I have 76.9 percent.  And 7.7.  So
+
+ 5  what happened here?
+
+ 6           Let me flip back to this one.  I'm flipping
+
+ 7  back to the second version.
+
+ 8           So that says 23 percent.  That's an error.
+
+ 9  That should be 10 percent, not 7.7, because it's two --
+
+10  two structures of talc.  Did you say the other ones are
+
+11  off, too?
+
+12       Q.  In addition to P-1-A, there are discrepancies
+
+13  between P-1-C and P-1-B for the percent talc column
+
+14  between the September of 2017 report and the March 2018
+
+15  report.
+
+16           Sitting here today, do you have an explanation
+
+17  for these discrepancies?
+
+18       A.  Well, let's see.  We have -- let me just look
+
+19  at C real quick and see if it's a typo again.
+
+20           So while I'm updating -- I'm glad you pointed
+
+21  that out.  When I update it, I will fix that.
+
+22       Q.  I guess before you turn to P-1-C, I'll limit
+
+23  the question to P-1-A.  Do you have understanding for
+
+24  the reason for the potential discrepancies between the
+
+25  reports?
+
+
+
+
+
+                                                           51
+
+ 1       A.  Well, the 7.7 is not correct.
+
+ 2       Q.  Okay.
+
+ 3       A.  I did the math, it was 10 percent.  So I don't
+
+ 4  know what happened there when that was updated, but
+
+ 5  clearly the first one was correct -- was a little
+
+ 6  under -- it was a typo, and the second one is too.  I
+
+ 7  mean, the data is that data.
+
+ 8       Q.  We can turn away from that issue for now.
+
+ 9           So there's a third update here that is attached
+
+10  as Exhibit 14 to today's deposition, to Supplemental
+
+11  May 2020 update to the Below the Waist report, Project
+
+12  No. 14-1862.
+
+13           (Exhibit 14 marked for identification.)
+
+14  BY MR. HYNES:
+
+15       Q.  Dr. Longo, we can take a look at that, if
+
+16  you're ready?
+
+17       A.  Yeah, I'm just trying to figure out how to get
+
+18  back there again.
+
+19       Q.  Sure.
+
+20       A.  Let's see here.  I can see that -- oh, here we
+
+21  go.  Got to log in again.  Sorry about that.  There must
+
+22  be a way to jump back, but I wasn't able to do it.
+
+23           Which number was that again, I'm sorry?
+
+24       Q.  Exhibit No. 14.
+
+25       A.  14, okay.  Okay, I got it.
+
+
+
+
+
+                                                           52
+
+ 1       Q.  Okay.  And so if you take a look on page 2, of
+
+ 2  the PDF here of Exhibit 14, another index of
+
+ 3  supplemental data, there's one more row added to this
+
+ 4  table of updates to the Below the Waist report series,
+
+ 5  the most recent change after the March 8th, 2018, change
+
+ 6  that we were just discussing is a May 8, 2020, update to
+
+ 7  Section 7 of this report that adds an additional
+
+ 8  modified Level 2 analysis and removes Level 2 data for
+
+ 9  those particles that have a greater than 3 to 1 but less
+
+10  than 5 to 1 aspect ratio, as well as an update to the
+
+11  summary table to include that modified Level 2 data; is
+
+12  that correct, Dr. Longo?
+
+13       A.  That is correct.
+
+14       Q.  Okay.  And was this -- as you mentioned before,
+
+15  sometimes these updates happen because of conversations
+
+16  with counsel; other times it's due to your decision to
+
+17  move forward with additional analyses.  What spurned
+
+18  this update?
+
+19       A.  It occurred to me that we were not correctly
+
+20  measuring the population of exposure for a
+
+21  non-occupational exposure, that this doesn't fall under
+
+22  that realm, because it's in somebody's house and it's
+
+23  not a workplace, and we were taking the PCMEs and
+
+24  comparing it to a bulk analysis that was all fibers.  So
+
+25  if you want a true representation of what's in the
+
+
+
+
+
+                                                           53
+
+ 1  sample to what we're measuring in the air, you have to
+
+ 2  do the level -- you know, the modified Level 2, or the
+
+ 3  modified AHERA, or the counting rules for the ASTM or
+
+ 4  ISO.  And that's what spurred this.
+
+ 5       Q.  Okay.  And that happened sometime in the first
+
+ 6  half of 2020, is when you had that -- that occurred to
+
+ 7  you; is that right?
+
+ 8       A.  Yes.
+
+ 9       Q.  Okay.  And you're then testifying and
+
+10  presenting data from the Below the Waist report in cases
+
+11  since September or October of 2017?
+
+12       A.  Well, I think this might be the second one.  I
+
+13  think I had one in August.  Whenever John Ewald deposed
+
+14  me, and that was the first deposition I've had since
+
+15  like maybe January.
+
+16       Q.  Right.  But this issue of the particles sizes
+
+17  that you wanted to measure using TEM based airborne
+
+18  calculation, which occurred to you at some point in the
+
+19  first half of 2020, that occurred to you after several
+
+20  years of testifying regarding exposure data that you had
+
+21  generated for Johnson's Baby Powder?
+
+22       A.  Yes.  It's -- nothing wrong with that data,
+
+23  other than it was heavily biased to look for
+
+24  non-occupational exposures when comparing apples and
+
+25  oranges, so to speak.
+
+
+
+
+
+                                                           54
+
+ 1       Q.  And this May 8, 2020, update to the Below the
+
+ 2  Waist report mentioned that you removed the -- some of
+
+ 3  the Level 2 data, which I believe was part of Section 7
+
+ 4  in that March 2018 version of the report.
+
+ 5           Are you, just for clarification purposes, are
+
+ 6  you relying on the data that was removed from the
+
+ 7  March 2018 report for your opinions in this case, or are
+
+ 8  you only relying upon the supplement, the Section 7,
+
+ 9  that appears in the May 8th, 2020 version of this
+
+10  report?
+
+11       A.  I'm only relying on what's presented here.  The
+
+12  Level 2, the analyst measured both 3 to 1 and 5 to 1,
+
+13  and it was unclear between the instructions, because I
+
+14  had thought about measuring all fibers back in 2019.
+
+15  But the analysts -- we had a miscommunication that they
+
+16  didn't measure the -- they were measuring both 3 to 1,
+
+17  5 to 1, 1 to 1.  When I told them all sizes, they
+
+18  considered it all sizes.
+
+19       Q.  Right.  And that miscommunication, you know,
+
+20  something that could have helped with clearing that up
+
+21  may have been a written study design protocol that
+
+22  contemplated a specified counting criteria for a TEM
+
+23  portion of the analysis, right?
+
+24       A.  Well, that's a hypothetical.  Maybe yes, maybe
+
+25  no.
+
+
+
+
+
+                                                           55
+
+ 1       Q.  Okay.  As we mentioned before, there was no
+
+ 2  such protocol here, correct?
+
+ 3       A.  I mean, other than telling them to do all
+
+ 4  fibers using Level 2 modified.  And, again, we have a
+
+ 5  hard time tracking down where the miscommunication came
+
+ 6  from.
+
+ 7       Q.  And so in addition to that, the data from
+
+ 8  Section 7, are you relying on the PCME data that was
+
+ 9  generated as part of this report for your opinions in
+
+10  this case?
+
+11       A.  Yeah, absolutely.  There's nothing wrong with
+
+12  the PCME data.  It's just if you were to say this was an
+
+13  occupational exposure, this would be the exposure
+
+14  levels.
+
+15           MR. HYNES:  All right.  So let's move to
+
+16  Exhibit 15, which is the other simulation study that you
+
+17  specifically referenced in your report in this case.
+
+18  Exhibit 15 is the January 2019 report titled "Johnson's
+
+19  Baby Powder Application to Baby During Diaper Change or
+
+20  Practice Study."
+
+21           (Exhibit 15 marked for identification.)
+
+22  BY MR. HYNES:
+
+23       Q.  Are you with me?
+
+24       A.  I'm with you.  I'm just trying to figure out
+
+25  how I got to all this before.  All right.  What number
+
+
+
+
+
+                                                           56
+
+ 1  is this?
+
+ 2       Q.  15.
+
+ 3       A.  It's taking a little while to download it.
+
+ 4  Says we have a minute left, so --
+
+ 5       Q.  Okay.  I guess while we're waiting, if you
+
+ 6  recall, this report used the container No. M66173-003.
+
+ 7  It was that cardboard container from World War II era,
+
+ 8  if you recall.  Does that sound correct?
+
+ 9       A.  That is correct.
+
+10       Q.  Okay.  And that particular --
+
+11       A.  Different containers.  The first container for
+
+12  Below the Waist was pre -- was early 1950s.
+
+13       Q.  Okay.
+
+14       A.  In the '50s sometime.
+
+15       Q.  Right.  And this particular cardboard container
+
+16  was likely from the 1940s, probably during World War II?
+
+17       A.  Yes, sometime in there.
+
+18       Q.  And this one was purchased by attorneys from
+
+19  the Lanier law firm off of eBay; is that correct?
+
+20       A.  That's correct.  I believe when I was looking
+
+21  at all the MDL retained, I think it could have been
+
+22  World War II up to maybe 1949 or so.
+
+23       Q.  Okay.  And so --
+
+24       A.  I've not been --
+
+25       Q.  Go ahead, sorry.
+
+
+
+
+
+                                                           57
+
+ 1       A.  All right.  I'm sorry.  It's still -- now I got
+
+ 2  it.  Okay.  I'm sorry.
+
+ 3       Q.  Assuming it's the original talc in that
+
+ 4  container, is it a possibility it would be Italian or
+
+ 5  potentially a domestic U.S. source, non-Vermont during
+
+ 6  that time frame; is that correct?
+
+ 7       A.  You mean the four years that you used
+
+ 8  California?
+
+ 9       Q.  So it's your understanding that it could be
+
+10  either Italian or potentially a California talc source
+
+11  during World War II, and obviously it couldn't be
+
+12  trading with Italy; is that your understanding?
+
+13       A.  Well, I would say, if -- which source is it
+
+14  because of the level in there.  If you're using the
+
+15  California source, it would have a little bit different
+
+16  profile because the California source has more winchite
+
+17  and richterite.  If you look at that, you know, I've
+
+18  analyzed samples from that mine, and it's -- and we
+
+19  didn't have any of these types of tremolite solid
+
+20  solution series, so it would be my opinion more likely
+
+21  than not that this was Italian.
+
+22       Q.  All right.  So this is a second simulation
+
+23  study and a second Italian container being used as part
+
+24  of that study from your point of view, correct?
+
+25       A.  Yes, sir.
+
+
+
+
+
+                                                           58
+
+ 1       Q.  Okay.  And so if we look at the protocol that's
+
+ 2  part of this report, dated May 4, 2018, starts at page 4
+
+ 3  of the PDF, if you look at page 7 under Section 4 of
+
+ 4  that protocol titled "Laboratory Analysis," paragraph A
+
+ 5  reads:  All air samples will be analyzed by the NIOSH
+
+ 6  7400 PCM method using, quote, A, end quote, counting
+
+ 7  rules after a portion of the filter has been removed for
+
+ 8  the PCM analysis.  Selected air filter samples will be
+
+ 9  analyzed by the NIOSH 7402 method using ATEM, period.
+
+10  Additionally, air samples were analyzed by the typical
+
+11  TEM counting protocols, parentheses, asbestos fibers,
+
+12  slash, bundles greater than or equal to 0.5 microns in
+
+13  length with parallel sides and aspect ratio greater than
+
+14  or equal to 5.0 to 1.
+
+15           Did I read that correctly, Dr. Longo?
+
+16       A.  You did.
+
+17       Q.  Okay.  And so this protocol does specifically
+
+18  contemplate air samples analyzed by typical TEM counting
+
+19  protocols, correct?
+
+20       A.  Correct.
+
+21       Q.  And so here, you specified asbestos fibrous
+
+22  bundles greater than or equal to 5 microns or half a
+
+23  micron in length with parallel sides and aspect ratios
+
+24  greater than or equal to 5.01, correct?
+
+25       A.  Correct.
+
+
+
+
+
+                                                           59
+
+ 1       Q.  And I believe at the time that this report was
+
+ 2  issued, if you scroll down to page 9, some of that TEM
+
+ 3  data was still in progress at the time that this report
+
+ 4  was issued in January of 2019, if you look at the right
+
+ 5  column, correct?
+
+ 6       A.  Correct.
+
+ 7           MR. HYNES:  And so we'll put a request on the
+
+ 8  record for, you know, the data for samples P-1-B, P-1-D,
+
+ 9  P-1-E, and A-1-A, for the TEM all data from this
+
+10  January 2019 report.
+
+11           THE WITNESS:  I'll update the whole study and
+
+12  put -- have all that data in there with, you know, all
+
+13  finalized and send it to my client.
+
+14  BY MR. HYNES:
+
+15       Q.  Okay.  Are you relying upon the TEM all
+
+16  fiber-per-cc data that's presented in the January 2019
+
+17  version of this report for your opinions in the Reyes
+
+18  case?
+
+19       A.  Yes.
+
+20       Q.  You are, okay.  I think you mentioned that
+
+21  there was a miscommunication with the analysts here, and
+
+22  they may not have followed the initial study design of
+
+23  counting only those particles that are greater than or
+
+24  equal to half a micron in length with parallel sides and
+
+25  aspect ratios greater than 5.0 to 1; is that correct?
+
+
+
+
+
+                                                           60
+
+ 1       A.  In the Baby 1 study, I don't know if that's
+
+ 2  correct.  Let me look what we have here for the data.  I
+
+ 3  just have to get to it.
+
+ 4           No.  All the structures are the appropriate
+
+ 5  size.  Everything is greater than 5.  Aspect ratio,
+
+ 6  everything is greater than .5.  5 to 1 or greater.  So
+
+ 7  no, this wasn't the issue.
+
+ 8       Q.  Okay.  So the TEM analysis is part of the
+
+ 9  January 2019 Baby Diapering 1 study was done correctly,
+
+10  and do you intend to rely upon it for your opinion
+
+11  related to Mr. Reyes' potential dose of exposure in this
+
+12  case?
+
+13       A.  I believe so.  When I finish up putting the
+
+14  other data in and going through all the other data, I
+
+15  will -- it should be fine.
+
+16       Q.  And I anticipate you also intend to rely upon
+
+17  the PCME data that was generated and recorded in this
+
+18  January 2019 report for your opinions in the Reyes
+
+19  matter?
+
+20       A.  Yes, sir.
+
+21           MR. HYNES:  Okay.  So let's turn to Exhibit
+
+22  No. 16; it's a May 2020 supplement to this report.  It's
+
+23  titled, "Johnson's Baby Powder Application to Baby and
+
+24  Diaper Change, a Hygiene Study Supplemental."
+
+25           (Exhibit 16 marked for identification.)
+
+
+
+
+
+                                                           61
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  Give you a moment to get with me.
+
+ 3       A.  Trying to get back.  Here we go.  15?
+
+ 4       Q.  16.
+
+ 5       A.  16.  Okay.  I'm there.
+
+ 6       Q.  Okay.  So this report is, you know, a little
+
+ 7  over a year after the original January 2019 report,
+
+ 8  about two years after the initial study protocol that we
+
+ 9  looked at was drafted for the Baby Diapering 1 study,
+
+10  correct?
+
+11       A.  Correct.
+
+12       Q.  And if you turn to just page 2 of the PDFs, for
+
+13  Exhibit 16, there's an EPA modified Level 2 column there
+
+14  with new values replacing the data that was included in
+
+15  the tables that appear on page 9 of Exhibit 15; is that
+
+16  correct?
+
+17       A.  Page 9.  I don't know if that's correct or not.
+
+18  Let me look.
+
+19           All right.  Let me go to 15.  Yeah, I'd have to
+
+20  check that.  I'm not sure what happened as I sit here
+
+21  right now.  Sure.  When I go through all the data, I
+
+22  think it will be in the report why it's different.
+
+23       Q.  So just so we're clear, so there's a -- on
+
+24  Exhibit 15, page 9, the right most column is TEM all,
+
+25  and there's data for all four background samples, three
+
+
+
+
+
+                                                           62
+
+ 1  of the six personal samples, three of the four area
+
+ 2  samples, and then two of the field blanks.
+
+ 3           And Exhibit No. 16, the same table, page 2,
+
+ 4  there's a column for EPA modified Level 2 that replaces
+
+ 5  the TEM all column, no data is presented for any of the
+
+ 6  four background samples.  There's no data for all six of
+
+ 7  the personal samples.  There is no data presented for
+
+ 8  any of the four area samples, and there is no data
+
+ 9  presented for either of the two field marks; is that
+
+10  right?
+
+11       A.  That's correct.
+
+12       Q.  And then I guess it sounds like you may need to
+
+13  look into it, but why is the EPA modified Level 2 column
+
+14  data replacing all of the previously generated and
+
+15  issued data from the TEM all column in the January 2019
+
+16  version this report?
+
+17       A.  You know, thinking back, I knew there was a
+
+18  reason something happened, and I can't remember, saying
+
+19  grid openings were looked at or what.  Anyway, I'll have
+
+20  to look into it.  I can't answer it right now.
+
+21       Q.  Okay.  And do you intend to rely upon the
+
+22  results of those different analyses for your opinions in
+
+23  this case, or just one type of the TEM analysis, or do
+
+24  you know at this stage?
+
+25       A.  I'm certainly -- you know, I'm relying on this
+
+
+
+
+
+                                                           63
+
+ 1  update, but there has to be a reason on why that
+
+ 2  happened.  So we'll have to see.
+
+ 3       Q.  Okay.  Sitting here today in your deposition in
+
+ 4  this case, you do not know the reason why that column
+
+ 5  was replaced with the data that appears in the May 2020
+
+ 6  version of the report?
+
+ 7       A.  I can't -- I can't recall.  There was a reason
+
+ 8  but I can't recall why.  Looking at the all fibers and
+
+ 9  it's definitely the same samples.  Definitely, you know,
+
+10  structures for every one of them, ones we counted.
+
+11  Anyway, I have to check it and see what happened.
+
+12           MR. HYNES:  Okay.  All right.  Let's turn to
+
+13  Exhibit 17.
+
+14           (Exhibit 17 marked for identification.)
+
+15  BY MR. HYNES:
+
+16       Q.  This is sort of the third family of simulation
+
+17  studies that you have performed using Johnson and
+
+18  Johnson talcum powder product.  This is the June 28th,
+
+19  2019, Revision No. 1, report titled, "Talcum Powder
+
+20  Application to Baby and Diaper Change 2, A Hygiene
+
+21  Study."
+
+22           Are you with me, Dr. Longo?
+
+23       A.  I've got it.
+
+24       Q.  Okay.  And so the container that was used for
+
+25  this one was container M65329-041, correct?
+
+
+
+
+
+                                                           64
+
+ 1       A.  Correct.
+
+ 2       Q.  And that's a 1940s container, as well, correct?
+
+ 3       A.  Correct.
+
+ 4       Q.  And that one was purchased by attorneys from
+
+ 5  the Lanier law firm off of eBay before being sent to
+
+ 6  you, correct?
+
+ 7       A.  If I'm thinking correctly, that came from the
+
+ 8  collector.
+
+ 9       Q.  Okay.  I'll ask it again.  So this container
+
+10  was purchased by Mr. Berkness, sent to attorneys at the
+
+11  Kazan law firm, and then that container was sent to you;
+
+12  is that correct?
+
+13       A.  That is correct.  I believe that's the -- the
+
+14  chain of custody is with the Below the Waist.
+
+15       Q.  Yes.  That's my mistake.  Thank you for that.
+
+16           And if the talc in the container is the
+
+17  original talc, it would most likely be Italy; is that
+
+18  correct?
+
+19       A.  Yes, sir.
+
+20           MR. HYNES:  Okay.  And so as far as the
+
+21  timeline of reports, it mentioned this at the top, but
+
+22  so we have Revision No. 1 dated June 28th, 2019.  I do
+
+23  not believe any prior version of the report has been
+
+24  produced in litigation, so we would issue a request for
+
+25  the first version of this Baby Diapering 2 study.
+
+
+
+
+
+                                                           65
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  And so, let's turn to the protocol here.  It
+
+ 3  says, Dr. Longo, the protocol for this study is dated
+
+ 4  May 17th, 2019; is that correct?
+
+ 5       A.  That is correct.
+
+ 6       Q.  Okay.  And it appears on page 5, and it runs
+
+ 7  all the way to page 8 of the PDF that we're looking at
+
+ 8  here, Exhibit 17.  And similar to the other baby
+
+ 9  diapering study, Section 4 entitled "laboratory
+
+10  analysis," and I won't read this one out, but this also
+
+11  contemplates NIOSH 7400 and 7402 analysis, as well as
+
+12  analysis by typical TEM counting protocols, which would
+
+13  be particles that are greater than or equal to half a
+
+14  micron in length with parallel sides, and aspect ratios
+
+15  greater than or equal to 5 to 1; is that right?
+
+16       A.  That is correct.
+
+17       Q.  And then this paragraph B is a bit different
+
+18  than some of the other protocols.  It reads:  Additional
+
+19  because of the low air volume collected to the
+
+20  investigator's personal samples after the preparation of
+
+21  the NIOSH 7402, and for typically TEM analysis, the
+
+22  remaining personal air filter will be asked and
+
+23  recombined into one air filter preparation and then
+
+24  analyzed.
+
+25           Did I read that correctly?
+
+
+
+
+
+                                                           66
+
+ 1       A.  You did.
+
+ 2       Q.  Okay.  Can you just explain briefly for what
+
+ 3  that means, for purposes of the analysis, it sounds like
+
+ 4  you have multiple filters, combine them all, then
+
+ 5  analyze them, but please provide a brief explanation of
+
+ 6  that process and why it was included here?
+
+ 7       A.  It was included because if you -- when you
+
+ 8  use -- strike all that.  It's late.
+
+ 9           When you dispense Johnson's Baby Powder or
+
+10  anybody's body powder, talcum powder, the majority of
+
+11  what you're dispensing is going on the body.  Then some
+
+12  small percentage gets up in the air.  You know,
+
+13  Johnson & Johnson measured this on babies where they
+
+14  dispensed about 1.79 grams and 1.78 grams, and then they
+
+15  measured by weight what was in the air, and it was a
+
+16  very small percentage.  It's less than one, I believe,
+
+17  one percent.
+
+18           Now if you take, and, you know, this particular
+
+19  bottle had a 1.4 million fibers per gram.  And then only
+
+20  one percent of that gets up in the air, and that's
+
+21  actually higher then, because I don't have that document
+
+22  in front of me.  So if you have 1,400,000 per gram, the
+
+23  percentage that actually gets up in the air is 14,000.
+
+24  If it is at one percent, but I believe it's less than
+
+25  that.  Now you have got to think about the air volume
+
+
+
+
+
+                                                           67
+
+ 1  inside that chamber.
+
+ 2           So if you have 10, and just say the air volume
+
+ 3  around the whole baby, which would be about 2x2 meters,
+
+ 4  20 feet tall -- excuse me, 8 feet tall.  So 3.3 times
+
+ 5  3.3 times 3.3 equals -- 35 cubic feet times 8 is
+
+ 6  287 cubic feet where you're sampling the air, and I
+
+ 7  think there's 26,000 -- 26,000, so that's -- it's a very
+
+ 8  rough calculation, and I'd have to sit down and check
+
+ 9  all this, but just because of this, that would mean
+
+10  there's 7,000,470.  So we'll just round it off to
+
+11  7,000,500.  And if you have only 14,000 divided by
+
+12  7,000,400 -- the calculation must be off, but we
+
+13  calculated that.  In order to find any fibers because of
+
+14  how that is dispersed, we would have to combine samples
+
+15  so that we could get enough air volume to have a
+
+16  potential for finding the air -- the amount of fibers
+
+17  that are in the air.
+
+18           When you get to lower and lower numbers, you
+
+19  know, the human lungs filter a lot better than taking
+
+20  these air samples.  That's why we did it, is just the
+
+21  fact that only a very small, small percentage is getting
+
+22  up in the air.  It's not 1.4 million per gram being
+
+23  dispersed in the air.  It's -- I think it was a 10th
+
+24  percent of that.  Anyway, I have to check those
+
+25  calculations, so that's why we did it back then.
+
+
+
+
+
+                                                           68
+
+ 1       Q.  Okay.  Let's turn to page 14 of the PDF,
+
+ 2  please.
+
+ 3       A.  What are we looking for, because I don't see
+
+ 4  where it's numbering as I go along.
+
+ 5       Q.  So it's a -- you don't have page numbers on
+
+ 6  this report, unfortunately, but looking at page 14 of
+
+ 7  the PDF itself, are you with me?  It's the first page of
+
+ 8  Section 3 of the report dated --
+
+ 9       A.  Section 3, there we go.  That's all I needed.
+
+10       Q.  Yep.  And so that's a document titled, "MAS,
+
+11  LLC Chain of Custody," correct?
+
+12       A.  That's the bulk chain of custody, I believe.
+
+13  Where is that one sample?
+
+14       Q.  Are you with me, Dr. Longo?
+
+15       A.  Oh, yes.  I was mistaken.  This actually came
+
+16  from the Lanier office, 165329041, so I was in error
+
+17  when I testified that this actually came from the
+
+18  Satterley office.
+
+19       Q.  Okay.  So why don't we correct that quickly.
+
+20  So this -- the container that was used is part of the
+
+21  Baby Diapering 2 study.  You erroneously testified that
+
+22  it was a container purchased by Mr. Berkness, correct?
+
+23       A.  Correct.
+
+24       Q.  And it was actually a container that was
+
+25  purchased by the Lanier firm off of eBay, before the
+
+
+
+
+
+                                                           69
+
+ 1  inspection, correct?
+
+ 2           Did you answer?
+
+ 3       A.  Yeah, I said that is correct.  I'm sorry.
+
+ 4       Q.  Thanks.  Sorry, you cut out.  So looking at
+
+ 5  this chain of custody, client is Lanier law firm, that
+
+ 6  MAS job, No. M65329, with a log-in date of October 4th
+
+ 7  of 2016, are you with me?
+
+ 8       A.  I'm with you.
+
+ 9       Q.  Okay.  And so, the container that was used as
+
+10  part of this analysis, defined it, and on this chain of
+
+11  custody sheet, the second page there, M65329-041, and it
+
+12  says, you know, received 9-1-16 J&J baby powder, right?
+
+13       A.  Correct.
+
+14       Q.  In addition to that container, and then
+
+15  M65329-043, that's another container that was received
+
+16  on November 14th, 2016, in the Lanier law firm, correct?
+
+17       A.  Correct.
+
+18       Q.  Okay.  In addition to those two containers,
+
+19  there's also M65329-013; that's the MAS control sample
+
+20  that was added to the March 11th, 2018, supplement to
+
+21  your original August 2017, we'll call it the Phase 1
+
+22  customer report, correct?
+
+23       A.  Correct.
+
+24       Q.  Okay.  And then samples M65329-014, 015, 016,
+
+25  017, 018, 019, 020, 021, 022, 023, 024, and 025, are
+
+
+
+
+
+                                                           70
+
+ 1  those containers of Johnson's Baby Powder that MAS
+
+ 2  purchased off the shelf at some point in 2016?
+
+ 3       A.  Yes.
+
+ 4       Q.  And are those the containers that you chose not
+
+ 5  to test using the Blount TEM method because you believed
+
+ 6  it was unlikely that that testing would result in the
+
+ 7  identification of detectable levels of amphibole
+
+ 8  asbestos at the time that you -- at that time?
+
+ 9       A.  No.  We have never analyzed it for any of them.
+
+10       Q.  Okay.
+
+11       A.  We have been using repeatedly the number 13 for
+
+12  the standard, but all these other off-the-shelves we
+
+13  have never analyzed.
+
+14       Q.  Okay.  And there are two others here,
+
+15  M65329-028 and 029; those are Shower to Shower
+
+16  containers that were also purchased off the shelf by MAS
+
+17  back in 2016?
+
+18       A.  Which ones are those?
+
+19       Q.  M65329-028 and 029.
+
+20       A.  M65329-008 and 009?
+
+21       Q.  M65329-028 and 029.
+
+22       A.  That's the problem.
+
+23           That's correct.
+
+24       Q.  Correct, that those are two Shower to Shower
+
+25  containers that MAS purchased off the shelf in 2016,
+
+
+
+
+
+                                                           71
+
+ 1  correct?
+
+ 2       A.  Correct.
+
+ 3       Q.  And MAS has not tested either of those
+
+ 4  containers to date, correct?
+
+ 5       A.  That is correct.
+
+ 6       Q.  Okay.  If you look at the first page of this
+
+ 7  chain of custody form, there's a comment here that says:
+
+ 8  Analysis on 013.
+
+ 9           That's the MAS control J, I guess -- yes, the
+
+10  MAS control Johnson's Baby Powder that was purchased off
+
+11  the shelf, right?
+
+12       A.  That's correct.
+
+13       Q.  041, that's one of those Johnson's baby powders
+
+14  received from the Lanier firm, correct?
+
+15       A.  Correct.
+
+16       Q.  And then 043, that's the second Lanier firm
+
+17  bottle that's on the chain of custody form?
+
+18       A.  Correct.
+
+19       Q.  And you see next to that, it says -- there's a
+
+20  semicolon and it says "PLM," and above there's a date
+
+21  August 19, 2018; do you see that?
+
+22       A.  No.  That has to do with samples returned by --
+
+23  I'm not sure what samples might have been returned.
+
+24  That doesn't have to do with the PLM, I don't think, but
+
+25  it has an arrow coming down.
+
+
+
+
+
+                                                           72
+
+ 1       Q.  Well, if you look at the -- let's go above.
+
+ 2  There's a line there that says "MAS location" colon, or
+
+ 3  it says "132 for analysis," right?
+
+ 4       A.  That is the -- that's the room where the
+
+ 5  samples are kept, yeah.
+
+ 6       Q.  Okay.  And the note here is "for analysis,"
+
+ 7  right?
+
+ 8       A.  Correct.
+
+ 9       Q.  And the date of that is July 11, 2018,
+
+10  initialed by PH, right?
+
+11       A.  Paul Hess.
+
+12       Q.  Right.  Paul Hess, he's MAS's PLM analyst; is
+
+13  that right?
+
+14       A.  He is.
+
+15       Q.  Okay.  And it looks like he preps materials,
+
+16  see that line, on July 11 to 23rd, 2018, right?
+
+17       A.  That's what it suggests, yeah.
+
+18       Q.  And then there's an analysis by PH dated July
+
+19  11th to 23rd, 2018, right?
+
+20       A.  Correct.
+
+21       Q.  Do you recognize the signature under the QC
+
+22  section?
+
+23       A.  That is Victoria Panarelli -- Panarello; I
+
+24  believe that's who that is.
+
+25       Q.  Okay.  So it looks like there's a report done
+
+
+
+
+
+                                                           73
+
+ 1  August 19, 2018; correct?
+
+ 2       A.  It looks that way.
+
+ 3       Q.  Okay.
+
+ 4       A.  We sent all those off, as I recall -- yeah, I
+
+ 5  have to check on that.  I don't understand that because
+
+ 6  I don't recall ever seeing that.
+
+ 7           MR. HYNES:  Okay.  So we'll put a request on
+
+ 8  the record for any results of testing by PLM or any
+
+ 9  other testing from this July to August 2018 time frame
+
+10  on Sample 013, 041 or 043, or any other sample on this
+
+11  chain of custody sheet to the extent that it exists.
+
+12           THE WITNESS:  That's interesting.
+
+13           MR. STEINBERG:  We can meet and confer off the
+
+14  record.
+
+15  BY MR. HYNES:
+
+16       Q.  Okay.  Dr. Longo, has your laboratory done PLM
+
+17  analysis of your Phase 1 samples?
+
+18       A.  Of my what samples?
+
+19       Q.  The Phase 1 from the report series from August
+
+20  of 2017 that was updated on March 11, 2018, of the
+
+21  containers that were received by MAS from the
+
+22  Simon Greenstone firm, the Lanier firm, and the Kazan
+
+23  firm?
+
+24       A.  I don't think so.  It may be possible because I
+
+25  know that some of the Blounts were done on the MDLs, but
+
+
+
+
+
+                                                           74
+
+ 1  there's no other chain of custody here.  So we initially
+
+ 2  weren't doing any PLM until we started doing PLM after
+
+ 3  we to got the -- after we updated the PLM microscope to
+
+ 4  be more sensitive, because it was using -- the old PLM
+
+ 5  methods are pretty much waste of time, but we are
+
+ 6  getting positives now, ISO PLM.
+
+ 7           Anyway, I have to check on it, but that's
+
+ 8  pretty interesting.
+
+ 9       Q.  Right.  So my question was, do you know whether
+
+10  MAS has performed PLM analyses on any of those Phase 1
+
+11  samples, and it sounds like here today you don't know?
+
+12       A.  I mean, I don't think so, but if you would have
+
+13  asked me if we had done PLM on this, I would have said I
+
+14  don't think so.  So anyway, I'll have to check on it if
+
+15  my client requests it.
+
+16       Q.  Right.  At least as far as this chain of
+
+17  custody is concerned, it suggests that there was
+
+18  additional analysis performed on at least three of these
+
+19  samples, M65329-013, -041, and -043, performed July and
+
+20  August 2018, correct?
+
+21       A.  That's what it suggests, yes.
+
+22           MR. HYNES:  Okay.  Again, we'll request
+
+23  production of any of the PLM analyses on these specific
+
+24  containers or any of the Phase 1 samples to the extent
+
+25  those data exist.
+
+
+
+
+
+                                                           75
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  Back to this --
+
+ 3       A.  The actual -- it's actually in here.  If you --
+
+ 4  yeah, there's no secret here.  If you go after the
+
+ 5  photographs, for 041, there's a PLM sheet on 7-18-2018
+
+ 6  by Paul Hess, so there it is.
+
+ 7       Q.  And to be clear, this is a PLM sheet for only
+
+ 8  one of those three samples that we were discussing,
+
+ 9  correct?  This is sample M65329-041, PLM analysis by
+
+10  Paul Hess on July 18, 2018, page 28 of the
+
+11  Exhibit No. 17?
+
+12       A.  Yes.  Now I need to check the other data from
+
+13  the -- and see if it's actually -- if it's in there.
+
+14       Q.  And -- go ahead.
+
+15       A.  So the PLM analysis was produced, and not
+
+16  surprisingly, nothing was found because it's using
+
+17  the -- at this point, probably the R93 method.  And we
+
+18  did not have the scope -- the PLM scope.  Now we have
+
+19  two of them.  So I'll dig the other ones up.  If that
+
+20  one's there, the other ones have to be there.  And I
+
+21  think I've already produced those 13 in the past.  What
+
+22  is 30?
+
+23       Q.  It's a different manufacturer.
+
+24       A.  That's Avon, so I'll have to look all this up.
+
+25  But if that one is in that one, the other one -- is, I'm
+
+
+
+
+
+                                                           76
+
+ 1  assuming anyway.
+
+ 2       Q.  Right.  So there was PLM analysis performed on
+
+ 3  041, which suggests that there must have been PLM
+
+ 4  analysis performed on 013 and 043, correct?
+
+ 5       A.  I would agree with you on that.
+
+ 6       Q.  At least for M65329-041 by PLM, nothing was
+
+ 7  detected under that analysis, correct?
+
+ 8       A.  As the analysis shows.
+
+ 9           THE WITNESS:  So it's 7:09.  I apologize, but
+
+10  we'll have to end it here.
+
+11           MR. HYNES:  All right.  Well, we will meet and
+
+12  confer.  We'll continue this deposition to another day.
+
+13           THE WITNESS:  Sorry.
+
+14           MR. HYNES:  And go off the record right now.
+
+15           THE WITNESS:  All right.
+
+16           (Off the record at 4:08 p.m.)
+
+17                             --o0o--
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+                                                           77
+
+ 1                      SIGNATURE OF DEPONENT
+
+ 2
+
+ 3       I, the undersigned, WILLIAM E. LONGO, Ph.D, do
+
+ 4  hereby certify that I have read the foregoing deposition
+
+ 5  and find it to be a true and accurate transcription of
+
+ 6  my testimony, with the following corrections, if any:
+
+ 7  PAGE     LINE                    CHANGE
+
+ 8  ____     ____     ______________________________________
+
+ 9  ____     ____     ______________________________________
+
+10  ____     ____     ______________________________________
+
+11  ____     ____     ______________________________________
+
+12  ____     ____     ______________________________________
+
+13  ____     ____     ______________________________________
+
+14  ____     ____     ______________________________________
+
+15  ____     ____     ______________________________________
+
+16  ____     ____     ______________________________________
+
+17  ____     ____     ______________________________________
+
+18  ____     ____     ______________________________________
+
+19  ____     ____     ______________________________________
+
+20  ____     ____     ______________________________________
+
+21  ____     ____     ______________________________________
+
+22  ____     ____     ______________________________________
+
+23  ____     ____     ______________________________________
+
+24
+                           _________________________________
+25                         WILLIAM E. LONGO, Ph.D, Date
+
+
+
+
+
+                                                           78
+
+ 1                      REPORTER'S CERTIFICATE
+
+ 2
+
+ 3       I, JANICE L. BELCHER, do hereby certify:
+
+ 4       That WILLIAM E. LONGO, Ph.D, in the foregoing
+
+ 5  deposition named, was present and by me sworn as a
+
+ 6  witness in the above-entitled action at the time therein
+
+ 7  specified;
+
+ 8       That said deposition was taken before me at said
+
+ 9  time, and was taken down in shorthand by me, a
+
+10  Certified Shorthand Reporter of the State of California,
+
+11  and was thereafter transcribed into typewriting, and
+
+12  that the foregoing transcript constitutes a full, true
+
+13  and correct report of said deposition and of the
+
+14  proceedings that took place;
+
+15       IN WITNESS WHEREOF, I have hereunder subscribed my
+
+16  hand this 28th day of September, 2020.
+
+17
+
+18
+
+19
+
+20                        <%12163,Signature%>
+
+21                        JANICE L. BELCHER, CSR No. 12342
+                          State of California
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+
+
+
+

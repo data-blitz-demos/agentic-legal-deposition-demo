@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 """FastAPI entrypoint and HTTP route handlers for the deposition demo.
@@ -20,16 +24,19 @@ import json
 import math
 from pathlib import Path
 import re
+import subprocess
+import sys
 from threading import Lock
 from time import monotonic
 from typing import Literal
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from uuid import uuid4
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+import httpx
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.encoders import jsonable_encoder
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 from langchain_core.messages import HumanMessage, SystemMessage
 
@@ -46,12 +53,43 @@ from .llm import (
     list_llm_options,
     resolve_llm_selection,
 )
+from .logging_config import configure_application_logging, get_logger
+from .metrics import (
+    CONTENT_TYPE_LATEST,
+    record_admin_persona_mutation,
+    record_admin_test_run,
+    record_admin_user_mutation,
+    record_case_doc_upsert,
+    record_case_memory_write,
+    record_http_request,
+    record_llm_operation,
+    record_thought_stream_event,
+    record_thought_stream_session,
+    render_metrics_payload,
+    sync_thought_stream_inventory,
+    track_inflight_request,
+)
 from .models import (
+    AdminPersonaGraphSessionRequest,
+    AdminPersonaListResponse,
+    AdminPersonaPromptTemplate,
+    AdminPersonaPromptSections,
+    AdminPersonaPromptTemplatesResponse,
+    AdminPersonaRagBinding,
+    AdminPersonaRagOption,
+    AdminPersonaRagOptionsResponse,
+    AdminPersonaToolBinding,
+    AdminPersonaToolOption,
+    AdminPersonaToolOptionsResponse,
+    AdminPersonaRequest,
+    AdminPersonaResponse,
+    AdminUserDeleteResponse,
     AgentRuntimeMetric,
     AgentRuntimeMetricsResponse,
     AgentTraceEvent,
     AgentTracePayload,
     AdminTestLogResponse,
+    AdminTestRunResponse,
     AdminUserListResponse,
     AdminUserRequest,
     AdminUserResponse,
@@ -64,8 +102,11 @@ from .models import (
     CaseVersionSummary,
     ClearCaseDepositionsResponse,
     DeleteCaseResponse,
+    DepositionBrowserEntry,
+    DepositionBrowserResponse,
     DepositionSentimentRequest,
     DepositionSentimentResponse,
+    TextSentimentRequest,
     DepositionUploadResponse,
     DepositionDirectoriesResponse,
     DepositionDirectoryOption,
@@ -75,8 +116,12 @@ from .models import (
     ContradictionReasonResponse,
     FocusedReasoningSummaryRequest,
     FocusedReasoningSummaryResponse,
+    GrafanaAccessResponse,
     IngestCaseRequest,
     IngestCaseResponse,
+    IngestSchemaDeleteResponse,
+    IngestSchemaOption,
+    IngestSchemaSaveRequest,
     IngestedDepositionResult,
     LLMOption,
     LLMOptionsResponse,
@@ -85,6 +130,8 @@ from .models import (
     GraphOntologyBrowserEntry,
     GraphOntologyBrowserResponse,
     GraphHealthResponse,
+    GraphRagEmbeddingConfigRequest,
+    GraphRagEmbeddingConfigResponse,
     GraphOntologyOption,
     GraphOntologyLoadRequest,
     GraphOntologyLoadResponse,
@@ -105,9 +152,258 @@ from .models import (
     TraceSessionResponse,
 )
 from .neo4j_graph import Neo4jOntologyGraph
-from .prompts import render_prompt
+from .prompts import PROMPT_FILES, list_prompt_templates, render_prompt
+from .schemas import list_schema_options, load_schema
 
 settings = get_settings()
+configure_application_logging(settings.log_level, settings.log_file_path)
+logger = get_logger(__name__)
+_GRAPH_RAG_EMBEDDING_DOC_ID = "graph_rag_embedding_config"
+
+
+def _current_persona_prompt_templates() -> list[AdminPersonaPromptTemplate]:
+    """Return the current built-in runtime prompt templates for Persona configuration."""
+
+    return [AdminPersonaPromptTemplate(**item) for item in list_prompt_templates()]
+
+
+def _current_persona_rag_options() -> list[AdminPersonaRagOption]:
+    """Return the currently available RAG chain steps for persona configuration."""
+
+    return [
+        AdminPersonaRagOption(
+            key="graph_rag_neo4j",
+            label="Graph RAG (Neo4j)",
+            description=(
+                "Runs the current Neo4j-backed Graph RAG retrieval flow. "
+                "If multiple RAGs are configured later, they execute in list order."
+            ),
+            available=True,
+        )
+    ]
+
+
+def _current_persona_tool_options() -> list[AdminPersonaToolOption]:
+    """Return the currently available MCP tool steps for persona configuration."""
+
+    return [
+        AdminPersonaToolOption(
+            key="mcp_couchdb_deposition_access",
+            label="MCP: CouchDB Deposition Access",
+            description=(
+                "Expose the deposition CouchDB MCP server tools to the persona pipeline "
+                "for case/deposition retrieval."
+            ),
+            available=True,
+        ),
+        AdminPersonaToolOption(
+            key="mcp_couchdb_thought_stream_access",
+            label="MCP: Thought Stream Access",
+            description=(
+                "Expose the thought-stream MCP server tools to the persona pipeline "
+                "for trace read/write operations."
+            ),
+            available=True,
+        ),
+    ]
+
+
+def _normalize_persona_rag_sequence(
+    rag_sequence: list[str | dict | AdminPersonaRagBinding] | tuple[str | dict | AdminPersonaRagBinding, ...] | None,
+) -> list[AdminPersonaRagBinding]:
+    """Validate and de-duplicate ordered persona RAG bindings while preserving first appearance."""
+
+    available_keys = {item.key for item in _current_persona_rag_options() if item.available}
+    normalized: list[AdminPersonaRagBinding] = []
+    seen: set[str] = set()
+    for raw_value in list(rag_sequence or []):
+        if isinstance(raw_value, AdminPersonaRagBinding):
+            key = str(raw_value.key or "").strip()
+            enabled = bool(raw_value.enabled)
+        elif isinstance(raw_value, dict):
+            key = str(raw_value.get("key") or "").strip()
+            enabled = bool(raw_value.get("enabled", True))
+        else:
+            key = str(raw_value or "").strip()
+            enabled = True
+        if not key or key in seen or key not in available_keys:
+            continue
+        normalized.append(AdminPersonaRagBinding(key=key, enabled=enabled))
+        seen.add(key)
+    return normalized
+
+
+def _normalize_persona_tool_sequence(
+    tool_sequence: list[str | dict | AdminPersonaToolBinding]
+    | tuple[str | dict | AdminPersonaToolBinding, ...]
+    | None,
+) -> list[AdminPersonaToolBinding]:
+    """Validate and de-duplicate ordered persona MCP tool bindings while preserving first appearance."""
+
+    available_keys = {item.key for item in _current_persona_tool_options() if item.available}
+    normalized: list[AdminPersonaToolBinding] = []
+    seen: set[str] = set()
+    for raw_value in list(tool_sequence or []):
+        if isinstance(raw_value, AdminPersonaToolBinding):
+            key = str(raw_value.key or "").strip()
+            enabled = bool(raw_value.enabled)
+        elif isinstance(raw_value, dict):
+            key = str(raw_value.get("key") or "").strip()
+            enabled = bool(raw_value.get("enabled", True))
+        else:
+            key = str(raw_value or "").strip()
+            enabled = True
+        if not key or key in seen or key not in available_keys:
+            continue
+        normalized.append(AdminPersonaToolBinding(key=key, enabled=enabled))
+        seen.add(key)
+    return normalized
+
+
+def _default_graph_rag_embedding_config() -> GraphRagEmbeddingConfigResponse:
+    """Return the environment-backed default Graph RAG embedding configuration."""
+
+    provider = str(settings.graph_rag_embedding_provider or "openai").strip().lower()
+    if provider not in {"openai", "ollama"}:
+        provider = "openai"
+    dimensions = max(1, int(settings.graph_rag_embedding_dimensions or 1536))
+    return GraphRagEmbeddingConfigResponse(
+        enabled=False,
+        provider=provider,
+        model=str(settings.graph_rag_embedding_model or "text-embedding-3-small").strip()
+        or "text-embedding-3-small",
+        dimensions=dimensions,
+        index_name=str(settings.graph_rag_embedding_index or "resource_embeddings").strip()
+        or "resource_embeddings",
+        node_label=str(settings.graph_rag_embedding_node_label or "Resource").strip() or "Resource",
+        property_name=str(settings.graph_rag_embedding_property or "embedding").strip() or "embedding",
+        source="defaults",
+        configured=False,
+        last_saved_at=None,
+    )
+
+
+def _load_graph_rag_embedding_config() -> GraphRagEmbeddingConfigResponse:
+    """Load the persisted Graph RAG embedding configuration or return defaults."""
+
+    defaults = _default_graph_rag_embedding_config()
+    try:
+        doc = couchdb.get_doc(_GRAPH_RAG_EMBEDDING_DOC_ID)
+    except Exception:
+        return defaults
+    if not isinstance(doc, dict):
+        return defaults
+
+    payload = {
+        "enabled": bool(doc.get("enabled", defaults.enabled)),
+        "provider": str(doc.get("provider") or defaults.provider).strip().lower() or defaults.provider,
+        "model": str(doc.get("model") or defaults.model).strip() or defaults.model,
+        "dimensions": int(doc.get("dimensions") or defaults.dimensions or 1536),
+        "index_name": str(doc.get("index_name") or defaults.index_name).strip() or defaults.index_name,
+        "node_label": str(doc.get("node_label") or defaults.node_label).strip() or defaults.node_label,
+        "property_name": str(doc.get("property_name") or defaults.property_name).strip() or defaults.property_name,
+        "source": "saved",
+        "configured": True,
+        "last_saved_at": str(doc.get("last_saved_at") or "").strip() or None,
+    }
+    if payload["provider"] not in {"openai", "ollama"}:
+        payload["provider"] = defaults.provider
+    try:
+        return GraphRagEmbeddingConfigResponse.model_validate(payload)
+    except Exception:
+        return defaults
+
+
+def _save_graph_rag_embedding_config(
+    request: GraphRagEmbeddingConfigRequest,
+) -> GraphRagEmbeddingConfigResponse:
+    """Persist the Graph RAG embedding configuration in CouchDB."""
+
+    now = datetime.now(timezone.utc).isoformat()
+    document = {
+        "_id": _GRAPH_RAG_EMBEDDING_DOC_ID,
+        "type": "graph_rag_embedding_config",
+        "enabled": bool(request.enabled),
+        "provider": request.provider,
+        "model": request.model.strip(),
+        "dimensions": int(request.dimensions or 1536),
+        "index_name": request.index_name.strip(),
+        "node_label": request.node_label.strip(),
+        "property_name": request.property_name.strip(),
+        "last_saved_at": now,
+    }
+    try:
+        existing = couchdb.get_doc(_GRAPH_RAG_EMBEDDING_DOC_ID)
+        if existing.get("_rev"):
+            document["_rev"] = existing["_rev"]
+    except Exception:
+        pass
+    couchdb.update_doc(document)
+    return GraphRagEmbeddingConfigResponse(
+        **request.model_dump(),
+        source="saved",
+        configured=True,
+        last_saved_at=now,
+    )
+
+
+def _build_graph_rag_query_embedding(
+    question: str,
+    config: GraphRagEmbeddingConfigRequest,
+) -> tuple[list[float] | None, str | None]:
+    """Return one query embedding for vector retrieval, or a non-fatal error string."""
+
+    if not config.enabled:
+        return None, None
+
+    text = str(question or "").strip()
+    if not text:
+        return None, "Question is required before building an embedding."
+
+    try:
+        if config.provider == "openai":
+            if not settings.openai_api_key:
+                return None, "OPENAI_API_KEY is not configured."
+            body: dict[str, object] = {
+                "input": text,
+                "model": config.model,
+            }
+            if config.dimensions:
+                body["dimensions"] = int(config.dimensions)
+            response = httpx.post(
+                "https://api.openai.com/v1/embeddings",
+                headers={
+                    "Authorization": f"Bearer {settings.openai_api_key}",
+                    "Content-Type": "application/json",
+                },
+                json=body,
+                timeout=20.0,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            data = payload.get("data") or []
+            if not data:
+                return None, "OpenAI embedding response did not include any vectors."
+            embedding = data[0].get("embedding")
+        else:
+            response = httpx.post(
+                f"{settings.ollama_url.rstrip('/')}/api/embed",
+                json={"model": config.model, "input": text},
+                timeout=20.0,
+            )
+            response.raise_for_status()
+            payload = response.json()
+            embedding = payload.get("embedding")
+            if embedding is None:
+                embeddings = payload.get("embeddings") or []
+                embedding = embeddings[0] if embeddings else None
+
+        if not isinstance(embedding, list) or not embedding:
+            return None, f"{config.provider} embedding response did not include a usable vector."
+        return [float(item) for item in embedding], None
+    except Exception as exc:
+        logger.warning("Graph RAG embedding generation failed: %s", exc)
+        return None, str(exc)
 couchdb = CouchDBClient(settings.couchdb_url, settings.couchdb_db)
 memory_couchdb = CouchDBClient(settings.couchdb_url, settings.memory_db)
 trace_couchdb = CouchDBClient(settings.couchdb_url, settings.thought_stream_db)
@@ -162,6 +458,8 @@ _NEGATIVE_SENTIMENT_TERMS = {
     "trauma",
     "violent",
 }
+_AUTHORIZATION_LEVELS: tuple[str, ...] = ("open", "admin", "expert_user", "user", "read_only")
+_AUTHORIZATION_LEVEL_RANK = {level: index for index, level in enumerate(_AUTHORIZATION_LEVELS)}
 
 
 @asynccontextmanager
@@ -175,17 +473,22 @@ async def lifespan(_: FastAPI):
     - closes CouchDB HTTP client
     """
 
+    logger.info("startup begin app_root=%s deposition_dir=%s", app_root, settings.deposition_dir)
     _ensure_startup_llm_connectivity()
     couchdb.ensure_db()
+    couchdb.ensure_deposition_views()
     memory_couchdb.ensure_db()
     trace_couchdb.ensure_db()
     rag_couchdb.ensure_db()
+    logger.info("startup complete")
     yield
+    logger.info("shutdown begin")
     couchdb.close()
     memory_couchdb.close()
     trace_couchdb.close()
     rag_couchdb.close()
     neo4j_graph.close()
+    logger.info("shutdown complete")
 
 
 app = FastAPI(title="Legal Deposition Analysis Demo", lifespan=lifespan)
@@ -197,10 +500,101 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+def _request_metrics_path(request: Request) -> str:
+    """Return a low-cardinality path label for request logs and metrics."""
+
+    route = request.scope.get("route")
+    route_path = str(getattr(route, "path", "") or "").strip()
+    if route_path:
+        return route_path
+    return str(request.url.path or "/")
+
+
+@app.middleware("http")
+async def log_http_requests(request: Request, call_next):
+    """Emit one application log entry for each non-static HTTP request."""
+
+    path_label = _request_metrics_path(request)
+    should_log = not request.url.path.startswith("/static/") and path_label != "/metrics"
+    started_at = monotonic()
+    inflight_gauge = track_inflight_request(request.method, path_label) if should_log else None
+    if inflight_gauge is not None:
+        inflight_gauge.inc()
+    status_code = 500
+    try:
+        response = await call_next(request)
+        status_code = response.status_code
+    except Exception:
+        if should_log:
+            logger.exception(
+                "request failed method=%s path=%s duration_ms=%.2f",
+                request.method,
+                path_label,
+                max((monotonic() - started_at) * 1000.0, 0.0),
+            )
+        raise
+    finally:
+        duration_seconds = max(monotonic() - started_at, 0.0)
+        if inflight_gauge is not None:
+            inflight_gauge.dec()
+        if should_log:
+            record_http_request(request.method, path_label, status_code, duration_seconds)
+    if should_log:
+        logger.info(
+            "request complete method=%s path=%s status=%s duration_ms=%.2f",
+            request.method,
+            path_label,
+            status_code,
+            duration_seconds * 1000.0,
+        )
+    return response
+
+
+@app.middleware("http")
+async def disable_browser_cache(request: Request, call_next):
+    """Prevent browser caching for the app shell and static frontend assets."""
+
+    response = await call_next(request)
+    path = request.url.path
+    if request.method in {"GET", "HEAD"} and (
+        path == "/" or path == "/static" or path.startswith("/static/") or path == "/admin/test-report"
+    ):
+        response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
+    return response
+
 frontend_dir = Path(__file__).resolve().parents[2] / "frontend"
 reports_dir = Path(__file__).resolve().parents[2] / "reports"
 tests_report_file = reports_dir / "tests.html"
+last_test_run_output_file = reports_dir / "last-test-run-output.txt"
 app.mount("/static", StaticFiles(directory=frontend_dir), name="static")
+
+
+def _read_last_test_run_output() -> str:
+    """Return the most recently captured pytest console output, if present."""
+
+    if not last_test_run_output_file.is_file():
+        return ""
+    return last_test_run_output_file.read_text(encoding="utf-8", errors="replace").strip()
+
+
+def _persist_last_test_run_output(output: str) -> None:
+    """Persist pytest console output so the Admin/Test panel can reload it after refresh."""
+
+    try:
+        reports_dir.mkdir(parents=True, exist_ok=True)
+    except Exception:
+        return
+    normalized_output = str(output or "").strip()
+    if not normalized_output:
+        normalized_output = "Pytest completed without additional console output."
+    try:
+        last_test_run_output_file.write_text(normalized_output, encoding="utf-8")
+    except Exception:
+        return
+
 _ADMIN_REPORT_THEME_CSS = """
 <style id="admin-report-theme">
   :root {
@@ -295,6 +689,185 @@ _ADMIN_REPORT_THEME_CSS = """
     padding: 10px 0 !important;
   }
 </style>
+""".strip()
+
+_ADMIN_REPORT_HELPER_JS = """
+<script id="admin-report-helper">
+  (function () {
+    function findResultBodies() {
+      return Array.from(document.querySelectorAll('tbody.results-table-row'));
+    }
+
+    function readCollapsedIds() {
+      try {
+        return JSON.parse(window.sessionStorage.getItem('collapsedIds')) || [];
+      } catch (_error) {
+        return [];
+      }
+    }
+
+    function writeCollapsedIds(ids) {
+      try {
+        window.sessionStorage.setItem('collapsedIds', JSON.stringify(ids));
+      } catch (_error) {
+        return;
+      }
+    }
+
+    function setDetailRowVisible(detailRow, visible) {
+      if (!detailRow) {
+        return;
+      }
+      detailRow.style.display = visible ? 'table-row' : 'none';
+      detailRow.classList.toggle('hidden', !visible);
+
+      const body = detailRow.closest('tbody.results-table-row');
+      const resultCell = body ? body.querySelector('tr.collapsible > .col-result') : null;
+      if (resultCell) {
+        resultCell.classList.toggle('collapsed', !visible);
+      }
+    }
+
+    function setAllDetailsVisible(visible) {
+      const collapsedIds = [];
+      findResultBodies().forEach((body) => {
+        setDetailRowVisible(body.querySelector('tr.extras-row, tr[data-toggle-row], tr.extra-row'), visible);
+        const collapsibleRow = body.querySelector('tr.collapsible');
+        const rowId = collapsibleRow ? String(collapsibleRow.dataset.id || '').trim() : '';
+        if (!visible && rowId) {
+          collapsedIds.push(rowId);
+        }
+      });
+      writeCollapsedIds(visible ? [] : collapsedIds);
+    }
+
+    function toggleDetailRowFromCell(cell) {
+      const body = cell ? cell.closest('tbody.results-table-row') : null;
+      const collapsibleRow = cell ? cell.closest('tr.collapsible') : null;
+      const detailRow = body ? body.querySelector('tr.extras-row, tr[data-toggle-row], tr.extra-row') : null;
+      const rowId = collapsibleRow ? String(collapsibleRow.dataset.id || '').trim() : '';
+      if (!detailRow || !rowId) {
+        return;
+      }
+      const hidden = detailRow.classList.contains('hidden') || window.getComputedStyle(detailRow).display === 'none';
+      const collapsedIds = readCollapsedIds();
+      if (hidden) {
+        writeCollapsedIds(collapsedIds.filter(function (id) { return id !== rowId; }));
+      } else if (!collapsedIds.includes(rowId)) {
+        collapsedIds.push(rowId);
+        writeCollapsedIds(collapsedIds);
+      }
+      setDetailRowVisible(detailRow, hidden);
+    }
+
+    function collapseDetailRowFromExpander(expander) {
+      const body = expander ? expander.closest('tbody.results-table-row') : null;
+      const collapsibleRow = body ? body.querySelector('tr.collapsible') : null;
+      const detailRow = body ? body.querySelector('tr.extras-row, tr[data-toggle-row], tr.extra-row') : null;
+      const rowId = collapsibleRow ? String(collapsibleRow.dataset.id || '').trim() : '';
+      if (!detailRow || !rowId) {
+        return;
+      }
+      const hidden = detailRow.classList.contains('hidden') || window.getComputedStyle(detailRow).display === 'none';
+      if (hidden) {
+        return;
+      }
+      const collapsedIds = readCollapsedIds();
+      if (!collapsedIds.includes(rowId)) {
+        collapsedIds.push(rowId);
+        writeCollapsedIds(collapsedIds);
+      }
+      setDetailRowVisible(detailRow, false);
+    }
+
+    function bindSummaryControls() {
+      const showButton = document.getElementById('show_all_details');
+      const hideButton = document.getElementById('hide_all_details');
+      if (showButton && !showButton.dataset.adminBound) {
+        showButton.dataset.adminBound = 'true';
+        showButton.addEventListener(
+          'click',
+          function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            setAllDetailsVisible(true);
+          },
+          true,
+        );
+      }
+      if (hideButton && !hideButton.dataset.adminBound) {
+        hideButton.dataset.adminBound = 'true';
+        hideButton.addEventListener(
+          'click',
+          function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            setAllDetailsVisible(false);
+          },
+          true,
+        );
+      }
+    }
+
+    function bindDynamicControls() {
+      const cells = Array.from(
+        document.querySelectorAll('tbody.results-table-row tr.collapsible td:not(.col-links)'),
+      );
+      cells.forEach(function (cell) {
+        if (cell.dataset.adminBound) {
+          return;
+        }
+        cell.dataset.adminBound = 'true';
+        cell.addEventListener(
+          'click',
+          function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            toggleDetailRowFromCell(cell);
+          },
+          true,
+        );
+      });
+
+      const expanders = Array.from(document.querySelectorAll('tbody.results-table-row .logexpander'));
+      expanders.forEach(function (expander) {
+        const wrapper = expander.closest('.logwrapper');
+        if (wrapper) {
+          wrapper.classList.add('expanded');
+        }
+        if (expander.dataset.adminBound) {
+          return;
+        }
+        expander.dataset.adminBound = 'true';
+        expander.addEventListener(
+          'click',
+          function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            collapseDetailRowFromExpander(expander);
+          },
+          true,
+        );
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        bindSummaryControls();
+        bindDynamicControls();
+      });
+    } else {
+      bindSummaryControls();
+      bindDynamicControls();
+    }
+
+    const observer = new MutationObserver(function () {
+      bindSummaryControls();
+      bindDynamicControls();
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+  })();
+</script>
 """.strip()
 
 
@@ -430,17 +1003,11 @@ def _build_ingest_candidates(requested_path: str) -> list[Path]:
 
 
 def _txt_count(path: Path) -> int:
-    """Count immediate ``.txt`` files in a directory."""
+    """Count all ``.txt`` files contained in a directory tree."""
 
     if not path.exists() or not path.is_dir():
         return 0
-    return len(
-        [
-            child
-            for child in path.iterdir()
-            if child.is_file() and child.suffix.lower() == ".txt"
-        ]
-    )
+    return len([child for child in path.rglob("*") if child.is_file() and child.suffix.lower() == ".txt"])
 
 
 def _add_directory_option(
@@ -543,6 +1110,96 @@ def _list_deposition_directories() -> tuple[Path, list[DepositionDirectoryOption
     return base, options
 
 
+def _deposition_browser_base_directory() -> Path:
+    """Choose one sensible starting folder for the deposition browser."""
+
+    _, base = _resolve_directory_base()
+    if base.exists() and base.is_dir():
+        return base.resolve()
+
+    configured = _configured_deposition_root()
+    if configured.exists() and configured.is_dir():
+        return configured.resolve()
+
+    repo_default = app_root / "depositions"
+    if repo_default.exists() and repo_default.is_dir():
+        return repo_default.resolve()
+
+    return Path.cwd().resolve()
+
+
+def _resolve_deposition_browser_directory(requested_path: str | None) -> tuple[Path, Path]:
+    """Resolve one browseable deposition directory without restricting traversal."""
+
+    base = _deposition_browser_base_directory()
+    raw = str(requested_path or "").strip()
+    if not raw:
+        return base, base
+
+    wildcard_index = re.search(r"[*?\[]", raw)
+    if wildcard_index is not None:
+        prefix = raw[: wildcard_index.start()].rstrip("/\\")
+        raw = prefix or "/"
+
+    candidate = Path(raw).expanduser()
+    if not candidate.is_absolute():
+        normalized_parts = list(candidate.parts)
+        while normalized_parts and normalized_parts[0] in (".", ""):
+            normalized_parts.pop(0)
+        if normalized_parts and normalized_parts[0] == base.name:
+            candidate = Path(*normalized_parts[1:]) if len(normalized_parts) > 1 else Path()
+        base_relative = (base / candidate).resolve()
+        cwd_relative = (Path.cwd() / candidate).resolve()
+        candidate = base_relative if base_relative.exists() or not cwd_relative.exists() else cwd_relative
+    else:
+        candidate = candidate.resolve()
+
+    if candidate.exists():
+        if candidate.is_dir():
+            return base, candidate.resolve()
+        if candidate.is_file():
+            return base, candidate.parent.resolve()
+        parent = candidate.parent
+        return base, parent.resolve() if parent.exists() and parent.is_dir() else base
+
+    current = candidate
+    while not current.exists() and current != current.parent:
+        current = current.parent
+
+    if current.is_file():
+        current = current.parent
+    return base, current.resolve() if current.exists() and current.is_dir() else base
+
+
+def _list_deposition_browser_entries(
+    directory: Path,
+) -> tuple[list[DepositionBrowserEntry], list[DepositionBrowserEntry]]:
+    """List immediate subdirectories and ``.txt`` files for deposition browsing."""
+
+    if not directory.exists() or not directory.is_dir():
+        return [], []
+
+    directories = [
+        DepositionBrowserEntry(path=str(child), name=child.name, kind="directory")
+        for child in sorted(
+            [item for item in directory.iterdir() if item.is_dir()],
+            key=lambda item: item.name.lower(),
+        )
+    ]
+    files = [
+        DepositionBrowserEntry(path=str(child), name=child.name, kind="file")
+        for child in sorted(
+            [
+                item
+                for item in directory.iterdir()
+                if item.is_file() and item.suffix.lower() == ".txt"
+            ],
+            key=lambda item: item.name.lower(),
+        )
+    ]
+    return directories, files
+
+
 def _suggest_directory_option(options: list[DepositionDirectoryOption]) -> str | None:
     """Choose a preferred default path for the UI directory navigator."""
 
@@ -570,14 +1227,14 @@ def _path_has_glob(path: Path) -> bool:
 
 
 def _collect_txt_files(candidate: Path) -> list[Path]:
-    """Collect ``.txt`` files from a file, directory, or glob candidate path."""
+    """Collect ``.txt`` files from a file, directory tree, or glob candidate path."""
 
     if candidate.exists():
         if candidate.is_dir():
             return sorted(
                 [
                     path
-                    for path in candidate.iterdir()
+                    for path in candidate.rglob("*")
                     if path.is_file() and path.suffix.lower() == ".txt"
                 ]
             )
@@ -660,6 +1317,43 @@ def _resolve_upload_directory(requested_path: str) -> Path:
         status_code=400,
         detail=f"Deposition upload target must be an existing directory: {normalized}",
     )
+
+
+def _resolve_upload_root_directory(target_directory: Path) -> Path:
+    """Resolve the top-level deposition root that owns one selected upload directory."""
+
+    normalized_target = target_directory.expanduser()
+    known_roots: list[Path] = []
+    seen: set[str] = set()
+
+    def add_root(path: Path) -> None:
+        candidate = path.expanduser()
+        key = str(candidate)
+        if key in seen:
+            return
+        seen.add(key)
+        known_roots.append(candidate)
+
+    add_root(_resolve_directory_base()[1])
+    add_root(_configured_deposition_root())
+    add_root(container_deposition_root)
+    add_root(app_root / "depositions")
+    for extra_root in _configured_extra_deposition_roots():
+        add_root(extra_root)
+
+    matching_roots: list[Path] = []
+    for root in known_roots:
+        try:
+            normalized_target.relative_to(root)
+            matching_roots.append(root)
+        except ValueError:
+            continue
+
+    if not matching_roots:
+        return normalized_target
+
+    matching_roots.sort(key=lambda item: len(item.parts), reverse=True)
+    return matching_roots[0]
 
 
 def _sanitize_uploaded_deposition_filename(filename: str, index: int) -> str:
@@ -1204,6 +1898,22 @@ def _append_trace_events(
     legal_items = [AgentTraceEvent.model_validate(item).model_dump() for item in (legal_clerk or [])]
     attorney_items = [AgentTraceEvent.model_validate(item).model_dump() for item in (attorney or [])]
 
+    for item in legal_items + attorney_items:
+        persona = str(item.get("persona") or "unknown")
+        phase = str(item.get("phase") or "unknown")
+        record_thought_stream_event(persona, phase)
+        logger.info(
+            "thought_stream_event trace_id=%s persona=%s phase=%s provider=%s model=%s",
+            normalized_trace_id,
+            persona,
+            phase,
+            str(item.get("llm_provider") or "unknown"),
+            str(item.get("llm_model") or "unknown"),
+        )
+    if status is not None:
+        record_thought_stream_session(status)
+        logger.info("thought_stream_status trace_id=%s status=%s", normalized_trace_id, status)
+
     with _trace_lock:
         now = _utc_now_iso()
         for item in legal_items:
@@ -1454,6 +2164,107 @@ def _word_count(value: str) -> int:
     return len(re.findall(r"[A-Za-z0-9_]+", str(value or "")))
 
 
+def _estimate_token_count(value: str) -> int:
+    """Estimate token count from text using a simple word-plus-punctuation heuristic."""
+
+    return len(re.findall(r"[A-Za-z0-9_]+|[^\w\s]", str(value or "")))
+
+
+def _compute_llm_io_metrics(sampled: list[dict]) -> list[AgentRuntimeMetric]:
+    """Compute prompt/output token and prompt-context size KPIs from thought-stream traces."""
+
+    llm_call_count = 0
+    prompt_token_totals: list[float] = []
+    output_token_totals: list[float] = []
+    prompt_context_byte_totals: list[float] = []
+
+    for session in sampled:
+        for item in _flatten_trace_events(session.get("trace")):
+            prompt_parts = [
+                str(item.get("system_prompt") or ""),
+                str(item.get("user_prompt") or ""),
+                str(item.get("input_preview") or ""),
+            ]
+            prompt_text = "\n".join(part for part in prompt_parts if part)
+            output_text = str(item.get("output_preview") or "")
+            if not prompt_text and not output_text:
+                continue
+            llm_call_count += 1
+            prompt_token_totals.append(float(_estimate_token_count(prompt_text)))
+            output_token_totals.append(float(_estimate_token_count(output_text)))
+            prompt_context_byte_totals.append(float(len(prompt_text.encode("utf-8"))))
+
+    avg_prompt_tokens = (
+        sum(prompt_token_totals) / len(prompt_token_totals)
+        if prompt_token_totals
+        else 0.0
+    )
+    avg_output_tokens = (
+        sum(output_token_totals) / len(output_token_totals)
+        if output_token_totals
+        else 0.0
+    )
+    avg_prompt_context_bytes = (
+        sum(prompt_context_byte_totals) / len(prompt_context_byte_totals)
+        if prompt_context_byte_totals
+        else 0.0
+    )
+
+    return [
+        AgentRuntimeMetric(
+            key="llm_calls_sampled",
+            label="LLM Calls Sampled",
+            value=float(llm_call_count),
+            display=str(llm_call_count),
+            status="info",
+            target="Track trend",
+            description="Count of thought-stream trace events with captured prompt or output content in the current lookback.",
+            formula="count(events with prompt/output telemetry)",
+            detail="This is the denominator for token and prompt-context averages. If it is near zero, the other LLMOps size metrics are not yet statistically useful.",
+            tracking="Computed from thought-stream trace events that contain any captured system prompt, user prompt, input preview, or output preview text.",
+        ),
+        AgentRuntimeMetric(
+            key="avg_prompt_context_bytes_per_llm_call",
+            label="Avg Prompt Context Size / LLM Call",
+            value=round(avg_prompt_context_bytes, 3),
+            display=f"{avg_prompt_context_bytes:.0f} B",
+            unit="bytes",
+            status="info",
+            target="Track trend",
+            description="Average UTF-8 byte size of captured prompt/context payload per sampled LLM call.",
+            formula="avg(bytes(system_prompt + user_prompt + input_preview))",
+            detail="This approximates prompt-budget pressure in production. Rising values usually indicate larger retrieval payloads, longer hidden instructions, or more conversational carry-forward.",
+            tracking="Computed from thought-stream trace events by concatenating captured system_prompt, user_prompt, and input_preview fields, then averaging their UTF-8 byte size.",
+        ),
+        AgentRuntimeMetric(
+            key="avg_estimated_prompt_tokens_per_llm_call",
+            label="Avg Estimated Prompt Tokens / LLM Call",
+            value=round(avg_prompt_tokens, 3),
+            display=f"{avg_prompt_tokens:.1f}",
+            unit="tokens",
+            status="info",
+            target="Track trend",
+            description="Average estimated prompt-token footprint across sampled LLM calls.",
+            formula="avg(estimated_tokens(system_prompt + user_prompt + input_preview))",
+            detail="This is an estimate, not provider-billed tokens. Use it to spot prompt growth and routing changes before they become latency or cost incidents.",
+            tracking="Computed from thought-stream trace events using a simple word-plus-punctuation token heuristic over captured prompt/context text.",
+        ),
+        AgentRuntimeMetric(
+            key="avg_estimated_output_tokens_per_llm_call",
+            label="Avg Estimated Output Tokens / LLM Call",
+            value=round(avg_output_tokens, 3),
+            display=f"{avg_output_tokens:.1f}",
+            unit="tokens",
+            status="info",
+            target="Track trend",
+            description="Average estimated response-token footprint across sampled LLM calls.",
+            formula="avg(estimated_tokens(output_preview))",
+            detail="Use this to spot response inflation, overly verbose outputs, or truncation risk when model behavior drifts or prompts become less constrained.",
+            tracking="Computed from thought-stream trace events using the same token heuristic over each captured output_preview field.",
+        ),
+    ]
+
+
 def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRuntimeMetric], int]:
     """Compute Graph RAG on/off influence KPIs from rag-stream answer events."""
 
@@ -1543,7 +2354,7 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
             key="rag_context_hit_rate_pct",
             label="RAG Context Hit Rate",
             value=round(context_hit_rate, 3),
-            display=f"{context_hit_rate:.1f}%" if rag_on_count else "N/A",
+            display=f"{context_hit_rate:.1f}%",
             unit="%",
             status=_status_low_is_bad(context_hit_rate, warn_below=70.0, bad_below=40.0)
             if rag_on_count
@@ -1555,7 +2366,7 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
             key="rag_avg_context_rows_on",
             label="Avg Context Rows (RAG ON)",
             value=round(avg_context_rows, 3),
-            display=f"{avg_context_rows:.2f}" if rag_on_count else "N/A",
+            display=f"{avg_context_rows:.2f}",
             status=_status_low_is_bad(avg_context_rows, warn_below=1.0, bad_below=0.25)
             if rag_on_count
             else "info",
@@ -1566,7 +2377,7 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
             key="rag_avg_context_bytes_on",
             label="Avg RAG Context Size / LLM Call",
             value=round(avg_context_bytes, 3),
-            display=f"{avg_context_bytes:.0f} B" if rag_on_count else "N/A",
+            display=f"{avg_context_bytes:.0f} B",
             unit="bytes",
             status="info",
             target="Track trend",
@@ -1576,7 +2387,7 @@ def _compute_rag_influence_metrics(rag_events: list[dict]) -> tuple[list[AgentRu
             key="rag_avg_answer_word_delta_on_minus_off",
             label="Avg Answer Word Delta (ON-OFF)",
             value=round(avg_answer_delta_words, 3),
-            display=f"{avg_answer_delta_words:+.1f} words" if paired_count else "N/A",
+            display=f"{avg_answer_delta_words:+.1f} words",
             status="info",
             target="Track trend",
             description="Average answer length difference between paired RAG ON and RAG OFF responses.",
@@ -1764,7 +2575,7 @@ def _compute_correctness_drift_metrics(
             key="golden_set_accuracy",
             label="Golden Set Accuracy",
             value=round(golden_set_accuracy, 3),
-            display=f"{golden_set_accuracy:.1f}%" if finished_count else "N/A",
+            display=f"{golden_set_accuracy:.1f}%",
             unit="%",
             status=_status_low_is_bad(golden_set_accuracy, warn_below=95.0, bad_below=90.0)
             if finished_count
@@ -1779,7 +2590,7 @@ def _compute_correctness_drift_metrics(
             key="schema_adherence_rate",
             label="Schema Adherence Rate",
             value=round(schema_adherence, 3),
-            display=f"{schema_adherence:.1f}%" if finished_count else "N/A",
+            display=f"{schema_adherence:.1f}%",
             unit="%",
             status=_status_low_is_bad(schema_adherence, warn_below=99.0, bad_below=95.0)
             if finished_count
@@ -1794,7 +2605,7 @@ def _compute_correctness_drift_metrics(
             key="unsupported_claim_rate",
             label="Unsupported Claim Rate",
             value=round(unsupported_claim_rate, 3),
-            display=f"{unsupported_claim_rate:.1f}%" if rag_on_completed else "N/A",
+            display=f"{unsupported_claim_rate:.1f}%",
             unit="%",
             status=_status_high_is_bad(unsupported_claim_rate, warn_at=15.0, bad_at=35.0)
             if rag_on_completed
@@ -1963,7 +2774,7 @@ def _build_agent_runtime_metrics_response(
             key="p95_end_to_end_latency_sec",
             label="P95 End-to-End Latency",
             value=round(float(p95_latency or 0.0), 3),
-            display=f"{p95_latency:.1f}s" if p95_latency is not None else "N/A",
+            display=f"{float(p95_latency or 0.0):.1f}s",
             unit="s",
             status=_status_high_is_bad(float(p95_latency), warn_at=45.0, bad_at=75.0)
             if p95_latency is not None
@@ -1975,7 +2786,7 @@ def _build_agent_runtime_metrics_response(
             key="p95_time_to_first_event_sec",
             label="P95 Time To First Event",
             value=round(float(p95_ttft or 0.0), 3),
-            display=f"{p95_ttft:.1f}s" if p95_ttft is not None else "N/A",
+            display=f"{float(p95_ttft or 0.0):.1f}s",
             unit="s",
             status=_status_high_is_bad(float(p95_ttft), warn_at=3.0, bad_at=8.0)
             if p95_ttft is not None
@@ -2031,6 +2842,7 @@ def _build_agent_runtime_metrics_response(
             description="Throughput of completed + failed runs over lookback horizon.",
         ),
     ]
+    metrics.extend(_compute_llm_io_metrics(sampled))
 
     rag_metrics, rag_paired_comparisons = _compute_rag_influence_metrics(rag_events)
     metrics.extend(rag_metrics)
@@ -2104,6 +2916,73 @@ def _find_any_metric(payload: AgentRuntimeMetricsResponse, metric_key: str) -> A
     )
 
 
+def _coerce_metric_history_value(metric: AgentRuntimeMetric) -> float | int | None:
+    """Return a graphable numeric history value when one exists."""
+
+    if isinstance(metric, dict):
+        value = metric.get("value")
+    else:
+        value = getattr(metric, "value", None)
+    if isinstance(value, bool):
+        return int(value)
+    if isinstance(value, (int, float)):
+        return value
+    return None
+
+
+def _persist_observable_snapshot(payload: AgentRuntimeMetricsResponse) -> None:
+    """Store one full observable snapshot so all metrics can trend over time."""
+
+    try:
+        trace_couchdb.save_doc(
+            {
+                "type": "observable_snapshot",
+                **jsonable_encoder(payload),
+            }
+        )
+    except Exception:
+        return
+
+
+def _collect_recent_observable_snapshots(lookback_hours: int) -> list[dict]:
+    """Load recent persisted observable snapshots from the thought-stream store."""
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=lookback_hours)
+    try:
+        docs = trace_couchdb.find({"type": "observable_snapshot"}, limit=5000)
+    except Exception:
+        return []
+
+    snapshots: list[dict] = []
+    for doc in docs:
+        if not isinstance(doc, dict):
+            continue
+        created_at = _parse_iso_datetime(doc.get("generated_at") or doc.get("created_at"))
+        if created_at is None or created_at < cutoff:
+            continue
+        normalized = dict(doc)
+        normalized["_generated_dt"] = created_at
+        snapshots.append(normalized)
+
+    snapshots.sort(key=lambda item: item["_generated_dt"])
+    return snapshots
+
+
+def _find_metric_in_snapshot(snapshot: dict, metric_key: str) -> dict | None:
+    """Return one stored metric dict from a persisted observable snapshot."""
+
+    for key in ("metrics", "correctness_metrics"):
+        raw_items = snapshot.get(key)
+        if not isinstance(raw_items, list):
+            continue
+        for item in raw_items:
+            if not isinstance(item, dict):
+                continue
+            if str(item.get("key") or "").strip() == metric_key:
+                return item
+    return None
+
+
 def _compute_agent_metric_history(
     sessions: list[dict],
     *,
@@ -2113,6 +2992,7 @@ def _compute_agent_metric_history(
     storage_connected: bool,
     rag_events: list[dict],
     rag_storage_connected: bool,
+    observable_snapshots: list[dict] | None = None,
 ) -> dict[str, object]:
     """Build bucketed history points for one runtime metric key."""
 
@@ -2130,9 +3010,36 @@ def _compute_agent_metric_history(
 
     bucket_delta = timedelta(hours=bucket_hours)
     cursor = now_utc - timedelta(hours=lookback_hours)
+    snapshots = [
+        snapshot
+        for snapshot in (observable_snapshots or [])
+        if isinstance(snapshot, dict) and isinstance(snapshot.get("_generated_dt"), datetime)
+    ]
     points: list[dict[str, object]] = []
     while cursor < now_utc:
         bucket_end = min(cursor + bucket_delta, now_utc)
+        bucket_snapshots = [
+            snapshot for snapshot in snapshots if cursor <= snapshot["_generated_dt"] < bucket_end
+        ]
+        if bucket_snapshots:
+            latest_snapshot = bucket_snapshots[-1]
+            snapshot_metric = _find_metric_in_snapshot(latest_snapshot, metric_key)
+            if snapshot_metric is not None:
+                points.append(
+                    {
+                        "at": latest_snapshot["_generated_dt"].isoformat(),
+                        "value": _coerce_metric_history_value(snapshot_metric),
+                        "display": str(snapshot_metric.get("display") or "N/A"),
+                        "status": str(snapshot_metric.get("status") or "info"),
+                        "sample_size": (
+                            int(latest_snapshot.get("rag_sampled_queries") or 0)
+                            if metric_key.startswith("rag_")
+                            else int(latest_snapshot.get("sampled_runs") or 0)
+                        ),
+                    }
+                )
+                cursor = bucket_end
+                continue
         bucket_sessions = [
             session
             for session in sessions
@@ -2159,7 +3066,7 @@ def _compute_agent_metric_history(
         points.append(
             {
                 "at": bucket_end.isoformat(),
-                "value": None if bucket_metric.display == "N/A" else bucket_metric.value,
+                "value": _coerce_metric_history_value(bucket_metric),
                 "display": bucket_metric.display,
                 "status": bucket_metric.status,
                 "sample_size": (
@@ -2328,6 +3235,8 @@ def _save_case_memory(case_id: str, channel: str, payload: dict) -> None:
             status_code=502,
             detail=f"Failed to persist case memory for '{case_id}': {exc}",
         ) from exc
+    record_case_memory_write(channel)
+    logger.info("case memory saved case_id=%s channel=%s", case_id, channel)
 
 
 def _upsert_case_doc(
@@ -2376,6 +3285,14 @@ def _upsert_case_doc(
             status_code=502,
             detail=f"Failed to persist case index for '{case_id}': {exc}",
         ) from exc
+    record_case_doc_upsert()
+    logger.info(
+        "case doc upserted case_id=%s deposition_count=%s memory_entries=%s last_action=%s",
+        case_id,
+        doc.get("deposition_count"),
+        doc.get("memory_entries"),
+        doc.get("last_action"),
+    )
 
 
 def _list_case_summaries() -> list[CaseSummary]:
@@ -2398,12 +3315,7 @@ def _list_case_summaries() -> list[CaseSummary]:
             "last_llm_model": doc.get("last_llm_model"),
         }
 
-    deposition_counts: dict[str, int] = {}
-    for doc in couchdb.find({"type": "deposition"}, limit=5000):
-        case_id = str(doc.get("case_id") or "").strip()
-        if not case_id:
-            continue
-        deposition_counts[case_id] = deposition_counts.get(case_id, 0) + 1
+    deposition_counts = couchdb.list_deposition_counts()
 
     for case_id, count in deposition_counts.items():
         if case_id not in summaries:
@@ -2681,20 +3593,67 @@ def root() -> FileResponse:
     return FileResponse(frontend_dir / "index.html")
 
 
+@app.get("/metrics", response_model=None)
+def prometheus_metrics() -> Response:
+    """Expose Prometheus metrics for scrape-based observability."""
+
+    _refresh_thought_stream_inventory_metrics()
+    return Response(content=render_metrics_payload(), media_type=CONTENT_TYPE_LATEST)
+
+
+def _refresh_thought_stream_inventory_metrics() -> None:
+    """Refresh persisted thought-stream inventory gauges from the current trace store."""
+
+    sessions, _connected = _collect_runtime_trace_sessions()
+    event_counts: dict[tuple[str, str], int] = {}
+    session_counts: dict[str, int] = {}
+
+    for session in sessions:
+        status = str(session.get("status") or "unknown")
+        session_counts[status] = session_counts.get(status, 0) + 1
+        trace = session.get("trace") if isinstance(session.get("trace"), dict) else {}
+        for stream_name in ("legal_clerk", "attorney"):
+            events = trace.get(stream_name) if isinstance(trace.get(stream_name), list) else []
+            for item in events:
+                if not isinstance(item, dict):
+                    continue
+                key = (
+                    str(item.get("persona") or "unknown"),
+                    str(item.get("phase") or "unknown"),
+                )
+                event_counts[key] = event_counts.get(key, 0) + 1
+
+    sync_thought_stream_inventory(event_counts, session_counts)
+
+
 def _render_themed_admin_test_report(html: str) -> str:
     """Inject Admin-specific theme overrides into the pytest HTML report."""
 
-    if 'id="admin-report-theme"' in html:
-        return html
-    if "</head>" in html:
-        return html.replace("</head>", f"{_ADMIN_REPORT_THEME_CSS}</head>", 1)
-    return f"{_ADMIN_REPORT_THEME_CSS}{html}"
+    themed = html
+    if 'id="admin-report-theme"' not in themed:
+        if "</head>" in themed:
+            themed = themed.replace("</head>", f"{_ADMIN_REPORT_THEME_CSS}</head>", 1)
+        else:
+            themed = f"{_ADMIN_REPORT_THEME_CSS}{themed}"
+    if 'id="admin-report-helper"' not in themed:
+        if "</body>" in themed:
+            themed = themed.replace("</body>", f"{_ADMIN_REPORT_HELPER_JS}</body>", 1)
+        else:
+            themed = f"{themed}{_ADMIN_REPORT_HELPER_JS}"
+    return themed
 
 
 def _extract_test_report_log_output() -> AdminTestLogResponse:
     """Collect explicit per-test log output from pytest HTML report when available."""
 
+    latest_console_output = _read_last_test_run_output()
+
     if not tests_report_file.is_file():
+        if latest_console_output:
+            return AdminTestLogResponse(
+                summary="tests.html is not available. Showing captured console output from the most recent pytest run.",
+                log_output=latest_console_output,
+            )
         return AdminTestLogResponse(
             summary="tests.html is not available.",
             log_output="Run the test suite to regenerate /reports/tests.html before viewing test log output.",
@@ -2703,6 +3662,14 @@ def _extract_test_report_log_output() -> AdminTestLogResponse:
     html = tests_report_file.read_text(encoding="utf-8", errors="replace")
     match = re.search(r'data-jsonblob="([^"]+)"', html)
     if not match:
+        if latest_console_output:
+            return AdminTestLogResponse(
+                summary=(
+                    "No structured test metadata was found in tests.html. "
+                    "Showing captured console output from the most recent pytest run."
+                ),
+                log_output=latest_console_output,
+            )
         return AdminTestLogResponse(
             summary="No structured test metadata was found in tests.html.",
             log_output="The pytest HTML report did not expose a data-jsonblob payload to parse.",
@@ -2711,6 +3678,14 @@ def _extract_test_report_log_output() -> AdminTestLogResponse:
     try:
         payload = json.loads(unescape(match.group(1)))
     except Exception:
+        if latest_console_output:
+            return AdminTestLogResponse(
+                summary=(
+                    "The embedded test metadata could not be parsed. "
+                    "Showing captured console output from the most recent pytest run."
+                ),
+                log_output=latest_console_output,
+            )
         return AdminTestLogResponse(
             summary="The embedded test metadata could not be parsed.",
             log_output="The Admin/Test log parser could not decode the tests.html data-jsonblob content.",
@@ -2739,12 +3714,35 @@ def _extract_test_report_log_output() -> AdminTestLogResponse:
             visible_logs.append(f"{header}\n{raw_log}")
 
     if visible_logs:
+        combined_logs = "\n\n".join(visible_logs)
+        if latest_console_output:
+            combined_logs = (
+                "=== Latest pytest console output ===\n"
+                f"{latest_console_output}\n\n"
+                "=== Parsed per-test log output from tests.html ===\n"
+                f"{combined_logs}"
+            )
         return AdminTestLogResponse(
             summary=(
                 f"Collected explicit log output for {explicit_log_count} of {total_runs} recorded test runs "
                 "from tests.html."
+                + (" Included the latest pytest console output." if latest_console_output else "")
             ),
-            log_output="\n\n".join(visible_logs),
+            log_output=combined_logs,
+        )
+
+    if latest_console_output:
+        return AdminTestLogResponse(
+            summary=(
+                f"Parsed {total_runs} recorded test runs from tests.html. "
+                "Showing captured console output from the most recent pytest run."
+            ),
+            log_output=(
+                "=== Latest pytest console output ===\n"
+                f"{latest_console_output}\n\n"
+                "=== Parsed tests.html log output ===\n"
+                "No explicit per-test log output was captured in the current pytest HTML report."
+            ),
         )
 
     return AdminTestLogResponse(
@@ -2754,40 +3752,480 @@ def _extract_test_report_log_output() -> AdminTestLogResponse:
 
 
 def _list_admin_users() -> list[AdminUserResponse]:
-    """List lightweight admin user records from CouchDB."""
+    """List saved user records from CouchDB, including legacy admin-user docs."""
 
     users: list[AdminUserResponse] = []
-    for doc in couchdb.find({"type": "admin_user"}, limit=1000):
+    docs: list[dict] = []
+    for selector in ({"type": "user"}, {"type": "admin_user"}):
+        try:
+            found = couchdb.find(selector, limit=1000)
+        except Exception:
+            found = []
+        if isinstance(found, list):
+            docs.extend(found)
+
+    seen_user_ids: set[str] = set()
+    for doc in docs:
         try:
             user_id = str(doc.get("_id") or "").strip()
             name = str(doc.get("name") or "").strip()
+            first_name = str(doc.get("first_name") or "").strip()
+            last_name = str(doc.get("last_name") or "").strip()
             created_at = str(doc.get("created_at") or "").strip()
-            if not user_id or not name or not created_at:
+            doc_type = str(doc.get("type") or "").strip()
+            level = str(doc.get("authorization_level") or "").strip().lower()
+            if not level:
+                level = "admin" if doc_type == "admin_user" else "user"
+            if level not in _AUTHORIZATION_LEVEL_RANK:
                 continue
-            users.append(AdminUserResponse(user_id=user_id, name=name, created_at=created_at))
+            if not user_id or not name or not created_at or user_id in seen_user_ids:
+                continue
+            if not first_name and not last_name:
+                first_name, _, remaining = name.partition(" ")
+                last_name = remaining.strip()
+            if not first_name:
+                continue
+            seen_user_ids.add(user_id)
+            users.append(
+                AdminUserResponse(
+                    user_id=user_id,
+                    name=name,
+                    first_name=first_name,
+                    last_name=last_name,
+                    authorization_level=level,
+                    created_at=created_at,
+                )
+            )
         except Exception:
             continue
     users.sort(key=lambda item: (item.created_at, item.user_id), reverse=True)
+    users.sort(
+        key=lambda item: _AUTHORIZATION_LEVEL_RANK.get(
+            item.authorization_level, len(_AUTHORIZATION_LEVEL_RANK)
+        )
+    )
     return users
 
 
-def _save_admin_user(name: str) -> AdminUserResponse:
-    """Persist one lightweight admin user record in CouchDB."""
+def _save_admin_user(
+    user_id: str | None,
+    first_name: str | None,
+    last_name: str | None,
+    name: str | None,
+    authorization_level: str,
+) -> AdminUserResponse:
+    """Persist one user record in CouchDB."""
 
-    normalized_name = name.strip()
+    normalized_first = str(first_name or "").strip()
+    normalized_last = str(last_name or "").strip()
+    normalized_name = str(name or "").strip()
+    if normalized_first or normalized_last:
+        if not normalized_first or not normalized_last:
+            raise HTTPException(
+                status_code=400,
+                detail="Both first name and last name are required",
+            )
+        normalized_name = f"{normalized_first} {normalized_last}".strip()
+    elif normalized_name:
+        normalized_first, _, remaining = normalized_name.partition(" ")
+        normalized_first = normalized_first.strip()
+        normalized_last = remaining.strip()
     if not normalized_name:
         raise HTTPException(status_code=400, detail="User name is required")
+    normalized_level = str(authorization_level or "").strip().lower()
+    if normalized_level not in _AUTHORIZATION_LEVEL_RANK:
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                "Authorization level is required and must be one of: "
+                + ", ".join(_AUTHORIZATION_LEVELS)
+            ),
+        )
 
+    normalized_user_id = str(user_id or "").strip()
+    existing_doc: dict | None = None
     created_at = _utc_now_iso()
-    stored = couchdb.save_doc(
-        {
-            "type": "admin_user",
-            "name": normalized_name,
-            "created_at": created_at,
-        }
+    if normalized_user_id:
+        try:
+            candidate = couchdb.get_doc(normalized_user_id)
+        except Exception as exc:
+            raise HTTPException(status_code=404, detail="User not found") from exc
+        if str(candidate.get("type") or "").strip() not in {"user", "admin_user"}:
+            raise HTTPException(status_code=404, detail="User not found")
+        existing_doc = candidate
+        created_at = str(candidate.get("created_at") or "").strip() or created_at
+
+    payload = {
+        "type": "user",
+        "name": normalized_name,
+        "first_name": normalized_first,
+        "last_name": normalized_last,
+        "authorization_level": normalized_level,
+        "created_at": created_at,
+    }
+    if existing_doc is not None:
+        existing_doc.update(payload)
+        stored = couchdb.update_doc(existing_doc)
+        action = "updated"
+    else:
+        stored = couchdb.save_doc(payload)
+        action = "created"
+    normalized_user_id = str(stored.get("_id") or "").strip()
+    record_admin_user_mutation(action)
+    logger.info(
+        "admin user %s user_id=%s authorization_level=%s",
+        action,
+        normalized_user_id,
+        normalized_level,
     )
-    user_id = str(stored.get("_id") or "").strip()
-    return AdminUserResponse(user_id=user_id, name=normalized_name, created_at=created_at)
+    return AdminUserResponse(
+        user_id=normalized_user_id,
+        name=normalized_name,
+        first_name=normalized_first,
+        last_name=normalized_last,
+        authorization_level=normalized_level,
+        created_at=created_at,
+    )
+
+
+def _delete_admin_user(user_id: str) -> AdminUserDeleteResponse:
+    """Permanently remove one user record from CouchDB."""
+
+    normalized_user_id = str(user_id or "").strip()
+    if not normalized_user_id:
+        raise HTTPException(status_code=400, detail="User id is required")
+    try:
+        existing = couchdb.get_doc(normalized_user_id)
+    except Exception as exc:
+        raise HTTPException(status_code=404, detail="User not found") from exc
+    if str(existing.get("type") or "").strip() not in {"user", "admin_user"}:
+        raise HTTPException(status_code=404, detail="User not found")
+    couchdb.delete_doc(normalized_user_id, rev=existing.get("_rev"))
+    record_admin_user_mutation("deleted")
+    logger.info("admin user deleted user_id=%s", normalized_user_id)
+    return AdminUserDeleteResponse(user_id=normalized_user_id, deleted=True)
+
+
+def _coerce_persona_prompt_sections(
+    prompt_sections: AdminPersonaPromptSections | dict | None,
+) -> AdminPersonaPromptSections:
+    """Normalize one persona prompt-sections payload into trimmed string fields."""
+
+    if isinstance(prompt_sections, AdminPersonaPromptSections):
+        source = prompt_sections.model_dump()
+    elif isinstance(prompt_sections, dict):
+        source = prompt_sections
+    else:
+        source = {}
+    return AdminPersonaPromptSections(
+        system=str(source.get("system") or "").strip(),
+        assistant=str(source.get("assistant") or "").strip(),
+        context=str(source.get("context") or "").strip(),
+    )
+
+
+def _legacy_persona_prompts_to_sections(prompts: str | None) -> AdminPersonaPromptSections:
+    """Parse legacy persona prompt text into structured system/assistant/context sections."""
+
+    text = str(prompts or "").strip()
+    if not text:
+        return AdminPersonaPromptSections()
+
+    buckets: dict[str, list[str]] = {"system": [], "assistant": [], "context": []}
+    current_key = "system"
+    saw_marker = False
+    marker = re.compile(r"^\s*(system|assistant|context)\s*:\s*(.*)$", flags=re.IGNORECASE)
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip()
+        match = marker.match(line)
+        if match:
+            current_key = str(match.group(1) or "").strip().lower()
+            if current_key not in buckets:
+                current_key = "system"
+            saw_marker = True
+            remainder = str(match.group(2) or "").strip()
+            if remainder:
+                buckets[current_key].append(remainder)
+            continue
+        buckets[current_key].append(line)
+
+    if not saw_marker:
+        return AdminPersonaPromptSections(system=text)
+
+    return AdminPersonaPromptSections(
+        system="\n".join(buckets["system"]).strip(),
+        assistant="\n".join(buckets["assistant"]).strip(),
+        context="\n".join(buckets["context"]).strip(),
+    )
+
+
+def _prompt_template_section(prompt_template_key: str | None) -> str:
+    """Resolve the target prompt section for one built-in prompt template key."""
+
+    key = str(prompt_template_key or "").strip().lower()
+    if "context" in key:
+        return "context"
+    if "_system" in key or key.endswith("system") or key.startswith("system_"):
+        return "system"
+    return "assistant"
+
+
+def _normalize_persona_prompt_sections(
+    prompt_sections: AdminPersonaPromptSections | dict | None,
+    prompts: str | None,
+    prompt_template_key: str | None = None,
+) -> AdminPersonaPromptSections:
+    """Resolve structured persona prompts with legacy fallback support."""
+
+    structured = _coerce_persona_prompt_sections(prompt_sections)
+    if structured.system or structured.assistant or structured.context:
+        return structured
+    parsed_legacy = _legacy_persona_prompts_to_sections(prompts)
+    if parsed_legacy.assistant or parsed_legacy.context:
+        return parsed_legacy
+
+    legacy_text = str(prompts or "").strip()
+    if not legacy_text:
+        return parsed_legacy
+
+    target = _prompt_template_section(prompt_template_key)
+    if target == "context":
+        return AdminPersonaPromptSections(system="", assistant="", context=legacy_text)
+    if target == "assistant":
+        return AdminPersonaPromptSections(system="", assistant=legacy_text, context="")
+    return AdminPersonaPromptSections(system=legacy_text, assistant="", context="")
+
+
+def _compose_legacy_persona_prompts(prompt_sections: AdminPersonaPromptSections) -> str:
+    """Compose deterministic legacy prompt text from structured prompt sections."""
+
+    parts: list[str] = []
+    if prompt_sections.system:
+        parts.append(f"System:\n{prompt_sections.system}")
+    if prompt_sections.assistant:
+        parts.append(f"Assistant:\n{prompt_sections.assistant}")
+    if prompt_sections.context:
+        parts.append(f"Context:\n{prompt_sections.context}")
+    return "\n\n".join(parts).strip()
+
+
+def _persona_prompt_sections_has_content(prompt_sections: AdminPersonaPromptSections) -> bool:
+    """Return whether any persona prompt section has non-empty content."""
+
+    return bool(prompt_sections.system or prompt_sections.assistant or prompt_sections.context)
+
+
+def _list_admin_personas() -> list[AdminPersonaResponse]:
+    """List saved persona definitions from CouchDB."""
+
+    personas: list[AdminPersonaResponse] = []
+    try:
+        docs = couchdb.find({"type": "persona"}, limit=1000)
+    except Exception:
+        docs = []
+
+    for doc in docs:
+        try:
+            persona_id = str(doc.get("_id") or "").strip()
+            name = str(doc.get("name") or "").strip()
+            llm_provider = str(doc.get("llm_provider") or "").strip().lower()
+            llm_model = str(doc.get("llm_model") or "").strip()
+            prompt_template_key = str(doc.get("prompt_template_key") or "").strip() or None
+            prompt_sections = _normalize_persona_prompt_sections(
+                doc.get("prompt_sections"),
+                doc.get("prompts"),
+                doc.get("prompt_template_key"),
+            )
+            prompts = _compose_legacy_persona_prompts(prompt_sections)
+            rag_sequence = _normalize_persona_rag_sequence(doc.get("rag_sequence"))
+            tool_sequence = _normalize_persona_tool_sequence(doc.get("tool_sequence"))
+            last_graph_question = str(doc.get("last_graph_question") or "").strip()
+            last_graph_answer = str(doc.get("last_graph_answer") or "").strip()
+            last_graph_asked_at = str(doc.get("last_graph_asked_at") or "").strip() or None
+            created_at = str(doc.get("created_at") or "").strip()
+            if not persona_id or not name or not llm_model or not created_at:
+                continue
+            if not _persona_prompt_sections_has_content(prompt_sections):
+                continue
+            if llm_provider not in {"openai", "ollama"}:
+                continue
+            personas.append(
+                AdminPersonaResponse(
+                    persona_id=persona_id,
+                    name=name,
+                    llm_provider=llm_provider,
+                    llm_model=llm_model,
+                    prompt_template_key=prompt_template_key,
+                    prompts=prompts,
+                    prompt_sections=prompt_sections,
+                    rag_sequence=rag_sequence,
+                    tool_sequence=tool_sequence,
+                    last_graph_question=last_graph_question,
+                    last_graph_answer=last_graph_answer,
+                    last_graph_asked_at=last_graph_asked_at,
+                    created_at=created_at,
+                )
+            )
+        except Exception:
+            continue
+
+    personas.sort(key=lambda item: (item.created_at, item.persona_id), reverse=True)
+    return personas
+
+
+def _save_admin_persona(
+    persona_id: str | None,
+    name: str,
+    llm_provider: str,
+    llm_model: str,
+    prompt_template_key: str | None,
+    prompts: str | None,
+    rag_sequence: list[str | dict | AdminPersonaRagBinding]
+    | tuple[str | dict | AdminPersonaRagBinding, ...]
+    | None = None,
+    prompt_sections: AdminPersonaPromptSections | dict | None = None,
+    tool_sequence: list[str | dict | AdminPersonaToolBinding]
+    | tuple[str | dict | AdminPersonaToolBinding, ...]
+    | None = None,
+) -> AdminPersonaResponse:
+    """Persist one persona definition in CouchDB."""
+
+    normalized_name = str(name or "").strip()
+    normalized_provider = str(llm_provider or "").strip().lower()
+    normalized_model = str(llm_model or "").strip()
+    normalized_prompt_template_key = str(prompt_template_key or "").strip() or None
+    normalized_prompt_sections = _normalize_persona_prompt_sections(
+        prompt_sections,
+        prompts,
+        normalized_prompt_template_key,
+    )
+    normalized_prompts = _compose_legacy_persona_prompts(normalized_prompt_sections)
+    normalized_rag_sequence = _normalize_persona_rag_sequence(rag_sequence)
+    normalized_tool_sequence = _normalize_persona_tool_sequence(tool_sequence)
+    if not normalized_name:
+        raise HTTPException(status_code=400, detail="Persona name is required")
+    if normalized_provider not in {"openai", "ollama"}:
+        raise HTTPException(status_code=400, detail="Persona LLM provider is invalid")
+    if not normalized_model:
+        raise HTTPException(status_code=400, detail="Persona LLM model is required")
+    if normalized_prompt_template_key and normalized_prompt_template_key not in PROMPT_FILES:
+        raise HTTPException(status_code=400, detail="Persona prompt template is invalid")
+    if not _persona_prompt_sections_has_content(normalized_prompt_sections):
+        raise HTTPException(status_code=400, detail="Persona prompts are required")
+
+    normalized_persona_id = str(persona_id or "").strip()
+    existing_doc: dict | None = None
+    created_at = _utc_now_iso()
+    if normalized_persona_id:
+        try:
+            candidate = couchdb.get_doc(normalized_persona_id)
+        except Exception as exc:
+            raise HTTPException(status_code=404, detail="Persona not found") from exc
+        if str(candidate.get("type") or "").strip() != "persona":
+            raise HTTPException(status_code=404, detail="Persona not found")
+        existing_doc = candidate
+        created_at = str(candidate.get("created_at") or "").strip() or created_at
+
+    payload = {
+        "type": "persona",
+        "name": normalized_name,
+        "llm_provider": normalized_provider,
+        "llm_model": normalized_model,
+        "prompt_template_key": normalized_prompt_template_key,
+        "prompts": normalized_prompts,
+        "prompt_sections": normalized_prompt_sections.model_dump(),
+        "rag_sequence": [item.model_dump() for item in normalized_rag_sequence],
+        "tool_sequence": [item.model_dump() for item in normalized_tool_sequence],
+        "last_graph_question": str((existing_doc or {}).get("last_graph_question") or "").strip(),
+        "last_graph_answer": str((existing_doc or {}).get("last_graph_answer") or "").strip(),
+        "last_graph_asked_at": str((existing_doc or {}).get("last_graph_asked_at") or "").strip() or None,
+        "created_at": created_at,
+    }
+    if existing_doc is not None:
+        existing_doc.update(payload)
+        stored = couchdb.update_doc(existing_doc)
+        action = "updated"
+    else:
+        stored = couchdb.save_doc(payload)
+        action = "created"
+    normalized_persona_id = str(stored.get("_id") or "").strip()
+    record_admin_persona_mutation(action)
+    logger.info(
+        "admin persona %s persona_id=%s llm_provider=%s llm_model=%s rag_steps=%s tool_steps=%s",
+        action,
+        normalized_persona_id,
+        normalized_provider,
+        normalized_model,
+        len(normalized_rag_sequence),
+        len(normalized_tool_sequence),
+    )
+    return AdminPersonaResponse(
+        persona_id=normalized_persona_id,
+        name=normalized_name,
+        llm_provider=normalized_provider,
+        llm_model=normalized_model,
+        prompt_template_key=normalized_prompt_template_key,
+        prompts=normalized_prompts,
+        prompt_sections=normalized_prompt_sections,
+        rag_sequence=normalized_rag_sequence,
+        tool_sequence=normalized_tool_sequence,
+        last_graph_question=str(payload.get("last_graph_question") or "").strip(),
+        last_graph_answer=str(payload.get("last_graph_answer") or "").strip(),
+        last_graph_asked_at=str(payload.get("last_graph_asked_at") or "").strip() or None,
+        created_at=created_at,
+    )
+
+
+def _save_admin_persona_graph_session(
+    persona_id: str,
+    question: str,
+    answer: str,
+) -> AdminPersonaResponse:
+    """Persist the last graph-only question/answer for an existing persona."""
+
+    normalized_persona_id = str(persona_id or "").strip()
+    normalized_question = str(question or "").strip()
+    normalized_answer = str(answer or "").strip()
+    if not normalized_persona_id:
+        raise HTTPException(status_code=400, detail="Persona id is required")
+    if not normalized_question:
+        raise HTTPException(status_code=400, detail="Graph question is required")
+    if not normalized_answer:
+        raise HTTPException(status_code=400, detail="Graph answer is required")
+
+    try:
+        doc = couchdb.get_doc(normalized_persona_id)
+    except Exception as exc:
+        raise HTTPException(status_code=404, detail="Persona not found") from exc
+    if str(doc.get("type") or "").strip() != "persona":
+        raise HTTPException(status_code=404, detail="Persona not found")
+
+    doc["last_graph_question"] = normalized_question
+    doc["last_graph_answer"] = normalized_answer
+    doc["last_graph_asked_at"] = _utc_now_iso()
+    stored = couchdb.update_doc(doc)
+    normalized_prompt_sections = _normalize_persona_prompt_sections(
+        stored.get("prompt_sections"),
+        stored.get("prompts"),
+        stored.get("prompt_template_key"),
+    )
+    normalized_prompts = _compose_legacy_persona_prompts(normalized_prompt_sections)
+    logger.info("admin persona graph session saved persona_id=%s", normalized_persona_id)
+    return AdminPersonaResponse(
+        persona_id=normalized_persona_id,
+        name=str(stored.get("name") or "").strip(),
+        llm_provider=str(stored.get("llm_provider") or "").strip().lower(),
+        llm_model=str(stored.get("llm_model") or "").strip(),
+        prompt_template_key=str(stored.get("prompt_template_key") or "").strip() or None,
+        prompts=normalized_prompts,
+        prompt_sections=normalized_prompt_sections,
+        rag_sequence=_normalize_persona_rag_sequence(stored.get("rag_sequence")),
+        tool_sequence=_normalize_persona_tool_sequence(stored.get("tool_sequence")),
+        last_graph_question=str(stored.get("last_graph_question") or "").strip(),
+        last_graph_answer=str(stored.get("last_graph_answer") or "").strip(),
+        last_graph_asked_at=str(stored.get("last_graph_asked_at") or "").strip() or None,
+        created_at=str(stored.get("created_at") or "").strip(),
+    )
 
 
 @app.get("/admin/test-report", response_model=None)
@@ -2816,18 +4254,164 @@ def get_admin_test_log() -> AdminTestLogResponse:
     return _extract_test_report_log_output()
 
 
+@app.post("/api/admin/run-tests", response_model=AdminTestRunResponse)
+def run_admin_tests() -> AdminTestRunResponse:
+    """Execute the full pytest suite and return the command outcome."""
+
+    command = [
+        sys.executable,
+        "-m",
+        "pytest",
+        "-vv",
+        "-rA",
+        "--tb=short",
+        "--capture=tee-sys",
+        "-o",
+        "log_cli=true",
+        "-o",
+        "log_cli_level=INFO",
+    ]
+    started_at = monotonic()
+    logger.info("admin test run started command=%s", " ".join(command))
+    try:
+        result = subprocess.run(
+            command,
+            cwd=str(app_root),
+            capture_output=True,
+            text=True,
+            timeout=900,
+            check=False,
+        )
+    except subprocess.TimeoutExpired as exc:
+        stdout = str(exc.stdout or "")
+        stderr = str(exc.stderr or "")
+        output = "\n".join(part for part in [stdout.strip(), stderr.strip()] if part).strip()
+        _persist_last_test_run_output(output)
+        duration_seconds = round(max(monotonic() - started_at, 0.0), 3)
+        record_admin_test_run(False)
+        return AdminTestRunResponse(
+            summary="Timed out while running the full pytest suite.",
+            succeeded=False,
+            exit_code=124,
+            output=output or "Pytest did not complete before the timeout.",
+            duration_seconds=duration_seconds,
+        )
+    except Exception as exc:
+        record_admin_test_run(False)
+        logger.exception("admin test run failed before completion")
+        raise HTTPException(status_code=500, detail=f"Failed to run tests: {exc}") from exc
+
+    combined_output = "\n".join(
+        part for part in [str(result.stdout or "").strip(), str(result.stderr or "").strip()] if part
+    ).strip()
+    _persist_last_test_run_output(combined_output)
+    duration_seconds = round(max(monotonic() - started_at, 0.0), 3)
+    success = result.returncode == 0
+    record_admin_test_run(success)
+    logger.info(
+        "admin test run completed succeeded=%s exit_code=%s duration_seconds=%.3f",
+        success,
+        result.returncode,
+        duration_seconds,
+    )
+    summary = (
+        "All tests passed."
+        if success
+        else f"Pytest finished with failures (exit code {result.returncode})."
+    )
+    return AdminTestRunResponse(
+        summary=summary,
+        succeeded=success,
+        exit_code=int(result.returncode),
+        output=combined_output or "Pytest completed without additional console output.",
+        duration_seconds=duration_seconds,
+    )
+
+
 @app.get("/api/admin/users", response_model=AdminUserListResponse)
 def list_admin_users() -> AdminUserListResponse:
-    """List saved admin users for the Admin/Test panel."""
+    """List saved users for the Admin workspace."""
 
     return AdminUserListResponse(users=_list_admin_users())
 
 
 @app.post("/api/admin/users", response_model=AdminUserResponse)
 def add_admin_user(request: AdminUserRequest) -> AdminUserResponse:
-    """Create one lightweight admin user record."""
+    """Create one user record with an authorization level."""
 
-    return _save_admin_user(request.name)
+    return _save_admin_user(
+        request.user_id,
+        request.first_name,
+        request.last_name,
+        request.name,
+        request.authorization_level,
+    )
+
+
+@app.delete("/api/admin/users/{user_id}", response_model=AdminUserDeleteResponse)
+def delete_admin_user(user_id: str) -> AdminUserDeleteResponse:
+    """Permanently delete one saved user record."""
+
+    return _delete_admin_user(user_id)
+
+
+@app.get("/api/admin/personas", response_model=AdminPersonaListResponse)
+def list_admin_personas() -> AdminPersonaListResponse:
+    """List saved persona definitions for the Admin workspace."""
+
+    return AdminPersonaListResponse(personas=_list_admin_personas())
+
+
+@app.get("/api/admin/personas/prompts", response_model=AdminPersonaPromptTemplatesResponse)
+def list_admin_persona_prompts() -> AdminPersonaPromptTemplatesResponse:
+    """List the current built-in runtime prompt templates that can seed Personas."""
+
+    return AdminPersonaPromptTemplatesResponse(prompts=_current_persona_prompt_templates())
+
+
+@app.get("/api/admin/personas/rags", response_model=AdminPersonaRagOptionsResponse)
+def list_admin_persona_rags() -> AdminPersonaRagOptionsResponse:
+    """List the currently available RAG chain steps that personas can execute in order."""
+
+    return AdminPersonaRagOptionsResponse(rags=_current_persona_rag_options())
+
+
+@app.get("/api/admin/personas/tools", response_model=AdminPersonaToolOptionsResponse)
+def list_admin_persona_tools() -> AdminPersonaToolOptionsResponse:
+    """List the currently available MCP tool steps that personas can execute in order."""
+
+    return AdminPersonaToolOptionsResponse(tools=_current_persona_tool_options())
+
+
+@app.post("/api/admin/personas", response_model=AdminPersonaResponse)
+def add_admin_persona(request: AdminPersonaRequest) -> AdminPersonaResponse:
+    """Create or update one persona definition."""
+
+    return _save_admin_persona(
+        request.persona_id,
+        request.name,
+        request.llm_provider,
+        request.llm_model,
+        request.prompt_template_key,
+        request.prompts,
+        request.rag_sequence,
+        prompt_sections=request.prompt_sections,
+        tool_sequence=request.tool_sequence,
+    )
+
+
+@app.post("/api/admin/personas/{persona_id}/graph-session", response_model=AdminPersonaResponse)
+def save_admin_persona_graph_session(
+    persona_id: str,
+    request: AdminPersonaGraphSessionRequest,
+) -> AdminPersonaResponse:
+    """Persist the latest graph-only question/answer for one saved persona."""
+
+    return _save_admin_persona_graph_session(
+        persona_id,
+        request.question,
+        request.answer,
+    )
 
 
 @app.get("/api/llm-options", response_model=LLMOptionsResponse)
@@ -2874,18 +4458,37 @@ def get_deposition_directories() -> DepositionDirectoriesResponse:
     )
 
 
+@app.get("/api/deposition-browser", response_model=DepositionBrowserResponse)
+def deposition_browser(path: str | None = None) -> DepositionBrowserResponse:
+    """Return one level of directory and ``.txt`` file rows for deposition browsing."""
+
+    base, current = _resolve_deposition_browser_directory(path)
+    directories, files = _list_deposition_browser_entries(current)
+    parent = current.parent if current.parent != current else None
+    return DepositionBrowserResponse(
+        base_directory=str(base),
+        current_directory=str(current),
+        parent_directory=str(parent) if parent is not None else None,
+        wildcard_path=str(current / "*.txt"),
+        directories=directories,
+        files=files,
+    )
+
+
 @app.post("/api/depositions/upload", response_model=DepositionUploadResponse)
 def upload_depositions(
     directory: str = Form(...),
     files: list[UploadFile] = File(...),
 ) -> DepositionUploadResponse:
-    """Save uploaded deposition text files into the selected deposition folder."""
+    """Save uploaded deposition text files into the selected folder and its deposition root."""
 
     target_directory = _resolve_upload_directory(directory)
+    root_directory = _resolve_upload_root_directory(target_directory)
     if not files:
         raise HTTPException(status_code=400, detail="At least one deposition file is required")
 
     saved_files: list[str] = []
+    copied_to_root_files: list[str] = []
     for index, upload in enumerate(files, start=1):
         original_name = str(upload.filename or "").strip()
         if Path(original_name).suffix.lower() != ".txt":
@@ -2895,9 +4498,12 @@ def upload_depositions(
             )
         safe_name = _sanitize_uploaded_deposition_filename(original_name, index)
         destination = target_directory / safe_name
+        root_copy_destination = root_directory / safe_name
         try:
             content = upload.file.read()
             destination.write_bytes(content)
+            if root_copy_destination != destination:
+                root_copy_destination.write_bytes(content)
         except Exception as exc:
             raise HTTPException(
                 status_code=502,
@@ -2909,10 +4515,14 @@ def upload_depositions(
             except Exception:
                 pass
         saved_files.append(str(destination))
+        if root_copy_destination != destination:
+            copied_to_root_files.append(str(root_copy_destination))
 
     return DepositionUploadResponse(
         directory=str(target_directory),
         saved_files=saved_files,
+        root_directory=str(root_directory) if root_directory != target_directory else None,
+        copied_to_root_files=copied_to_root_files,
         file_count=len(saved_files),
     )
 
@@ -2990,11 +4600,65 @@ def graph_browser_info() -> GraphBrowserResponse:
     )
 
 
+@app.get("/api/observability/grafana", response_model=GrafanaAccessResponse)
+def grafana_access_info() -> GrafanaAccessResponse:
+    """Return local Grafana URL and login credentials configured for this runtime."""
+
+    base_url = str(settings.grafana_url or "http://localhost:3000").strip().rstrip("/")
+    if not base_url:
+        base_url = "http://localhost:3000"
+    return GrafanaAccessResponse(
+        url=base_url,
+        login_url=f"{base_url}/login",
+        dashboard_url=f"{base_url}/d/attorneyos-observability/attorneyos-observability?orgId=1",
+        username=str(settings.grafana_admin_user or "admin"),
+        password=str(settings.grafana_admin_password or "password"),
+    )
+
+
 @app.get("/api/graph-rag/health", response_model=GraphHealthResponse)
 def graph_rag_health() -> GraphHealthResponse:
     """Return Neo4j configuration/connectivity status for Graph RAG readiness checks."""
 
     return GraphHealthResponse.model_validate(neo4j_graph.health())
+
+
+@app.get("/api/graph-rag/embedding-config", response_model=GraphRagEmbeddingConfigResponse)
+def graph_rag_embedding_config() -> GraphRagEmbeddingConfigResponse:
+    """Return the active Graph RAG embedding configuration for UI editing."""
+
+    return _load_graph_rag_embedding_config()
+
+
+@app.post("/api/graph-rag/embedding-config", response_model=GraphRagEmbeddingConfigResponse)
+def save_graph_rag_embedding_config(
+    request: GraphRagEmbeddingConfigRequest,
+) -> GraphRagEmbeddingConfigResponse:
+    """Persist the active Graph RAG embedding configuration."""
+
+    model = request.model.strip()
+    index_name = request.index_name.strip()
+    node_label = request.node_label.strip()
+    property_name = request.property_name.strip()
+    if not model:
+        raise HTTPException(status_code=400, detail="Embedding model is required.")
+    if not index_name:
+        raise HTTPException(status_code=400, detail="Embedding index name is required.")
+    if not node_label:
+        raise HTTPException(status_code=400, detail="Embedding node label is required.")
+    if not property_name:
+        raise HTTPException(status_code=400, detail="Embedding property name is required.")
+
+    normalized = GraphRagEmbeddingConfigRequest(
+        enabled=request.enabled,
+        provider=request.provider,
+        model=model,
+        dimensions=request.dimensions,
+        index_name=index_name,
+        node_label=node_label,
+        property_name=property_name,
+    )
+    return _save_graph_rag_embedding_config(normalized)
 
 
 @app.get("/api/graph-rag/owl-options", response_model=GraphOntologyOptionsResponse)
@@ -3063,6 +4727,7 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
     trace_id = str(request.thought_stream_id or request.trace_id or "").strip() or None
     use_rag = bool(request.use_rag)
     stream_rag = bool(request.stream_rag)
+    embedding_config = request.embedding_config or _load_graph_rag_embedding_config()
     llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
     _ensure_request_llm_operational(llm_provider, llm_model)
     _append_trace_events(
@@ -3084,8 +4749,14 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
     )
 
     if use_rag:
+        query_embedding, embedding_error = _build_graph_rag_query_embedding(question, embedding_config)
         try:
-            retrieval = neo4j_graph.retrieve_context(question, node_limit=request.top_k)
+            retrieval = neo4j_graph.retrieve_context(
+                question,
+                node_limit=request.top_k,
+                embedding_config=embedding_config.model_dump(),
+                query_embedding=query_embedding,
+            )
         except ValueError as exc:
             _append_trace_events(
                 trace_id,
@@ -3171,10 +4842,15 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
                 detail=f"Failed to retrieve graph context from Neo4j: {exc}",
             ) from exc
     else:
+        embedding_error = None
         retrieval = {
             "resource_count": 0,
             "resources": [],
             "terms": [],
+            "retrieval_mode": "keyword",
+            "query_embedding_used": False,
+            "vector_index_name": embedding_config.index_name,
+            "vector_error": None,
             "context_text": "RAG processing was disabled for this request.",
         }
         _append_trace_events(
@@ -3300,7 +4976,16 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
     monitor = GraphRagMonitor(
         rag_enabled=use_rag,
         rag_stream_enabled=stream_rag,
+        retrieval_mode=str(retrieval.get("retrieval_mode") or "keyword"),
         retrieval_terms=[str(item) for item in retrieval.get("terms", [])],
+        query_embedding_used=bool(retrieval.get("query_embedding_used")),
+        embedding_enabled=bool(embedding_config.enabled),
+        embedding_provider=embedding_config.provider if embedding_config.enabled else None,
+        embedding_model=embedding_config.model if embedding_config.enabled else None,
+        embedding_index_name=(
+            str(retrieval.get("vector_index_name") or embedding_config.index_name or "").strip() or None
+        ),
+        embedding_error=str(retrieval.get("vector_error") or embedding_error or "").strip() or None,
         retrieved_resources=retrieved_resources,
         context_preview=str(retrieval.get("context_text", ""))[:9000],
         llm_system_prompt=system_prompt,
@@ -3400,13 +5085,15 @@ def get_agent_metrics(lookback_hours: int = 24) -> AgentRuntimeMetricsResponse:
         raise HTTPException(status_code=400, detail="lookback_hours must be between 1 and 168")
     sessions, storage_connected = _collect_runtime_trace_sessions()
     rag_events, rag_storage_connected = _collect_recent_rag_stream_events(lookback_hours)
-    return _compute_agent_runtime_metrics(
+    payload = _compute_agent_runtime_metrics(
         sessions,
         lookback_hours=lookback_hours,
         storage_connected=storage_connected,
         rag_events=rag_events,
         rag_storage_connected=rag_storage_connected,
     )
+    _persist_observable_snapshot(payload)
+    return payload
 
 
 @app.get("/api/agent-metrics/history")
@@ -3429,6 +5116,7 @@ def get_agent_metric_history(
 
     sessions, storage_connected = _collect_runtime_trace_sessions()
     rag_events, rag_storage_connected = _collect_recent_rag_stream_events(lookback_hours)
+    observable_snapshots = _collect_recent_observable_snapshots(lookback_hours)
     try:
         return _compute_agent_metric_history(
             sessions,
@@ -3438,6 +5126,7 @@ def get_agent_metric_history(
             storage_connected=storage_connected,
             rag_events=rag_events,
             rag_storage_connected=rag_storage_connected,
+            observable_snapshots=observable_snapshots,
         )
     except KeyError as exc:
         raise HTTPException(
@@ -3669,12 +5358,104 @@ def clear_case_depositions(case_id: str) -> ClearCaseDepositionsResponse:
     )
 
 
+def _normalize_ingest_schema_key(value: str) -> str:
+    """Normalize one ingest schema key into a stable identifier."""
+
+    normalized = re.sub(r"[^a-z0-9]+", "_", str(value or "").strip().lower()).strip("_")
+    if not normalized:
+        raise HTTPException(status_code=400, detail="Schema key is required.")
+    return normalized
+
+
+def _ingest_schema_doc_id(schema_key: str) -> str:
+    """Build the document id for one persisted custom ingest schema."""
+
+    return f"ingest_schema:{schema_key}"
+
+
+def _list_custom_ingest_schema_docs() -> list[dict]:
+    """Return custom ingest schema docs stored in CouchDB."""
+
+    try:
+        docs = couchdb.find({"type": "ingest_schema"}, limit=500)
+    except Exception:
+        return []
+    if not isinstance(docs, list):
+        try:
+            docs = list(docs)
+        except Exception:
+            return []
+    return [doc for doc in docs if isinstance(doc, dict)]
+
+
+def _build_ingest_schema_options() -> list[IngestSchemaOption]:
+    """Return builtin and persisted custom ingest schema options."""
+
+    options: list[IngestSchemaOption] = []
+    seen_keys: set[str] = set()
+    for item in list_schema_options():
+        key = str(item.get("key") or "").strip()
+        if not key or key in seen_keys:
+            continue
+        try:
+            schema_payload = load_schema(key)
+        except (FileNotFoundError, ValueError, json.JSONDecodeError):
+            continue
+        options.append(
+            IngestSchemaOption(
+                key=key,
+                file_name=str(item.get("file_name") or "").strip(),
+                mode=str(item.get("mode") or "native").strip() or "native",
+                builtin=True,
+                removable=False,
+                schema_payload=schema_payload,
+            )
+        )
+        seen_keys.add(key)
+
+    for doc in sorted(_list_custom_ingest_schema_docs(), key=lambda item: str(item.get("key") or item.get("_id") or "")):
+        key = str(doc.get("key") or "").strip()
+        if not key or key in seen_keys:
+            continue
+        schema_payload = doc.get("schema")
+        if not isinstance(schema_payload, dict):
+            continue
+        options.append(
+            IngestSchemaOption(
+                key=key,
+                file_name="[couchdb]",
+                mode=str(doc.get("mode") or "raw_capture").strip() or "raw_capture",
+                builtin=False,
+                removable=True,
+                schema_payload=schema_payload,
+            )
+        )
+        seen_keys.add(key)
+    return options
+
+
+def _resolve_ingest_schema_selection(schema_name: str | None) -> tuple[str, dict, str]:
+    """Resolve one ingest schema key into a payload and mode."""
+
+    selected_schema_name = _normalize_ingest_schema_key(schema_name or "deposition_schema")
+    for option in _build_ingest_schema_options():
+        if option.key == selected_schema_name and isinstance(option.schema_payload, dict):
+            return option.key, option.schema_payload, option.mode
+    raise HTTPException(
+        status_code=400,
+        detail=f"Invalid ingest schema '{selected_schema_name}': schema was not found.",
+    )
+
+
 @app.post("/api/ingest-case", response_model=IngestCaseResponse)
 def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
     """Ingest all deposition text files for a case and return updated scores."""
 
     llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
     _ensure_request_llm_operational(llm_provider, llm_model)
+    selected_schema_name, selected_schema_payload, selected_schema_mode = _resolve_ingest_schema_selection(
+        request.schema_name
+    )
     txt_files = _resolve_ingest_txt_files(request.directory)
     _purge_stale_case_depositions(request.case_id, txt_files)
     _purge_noncanonical_case_depositions(request.case_id, txt_files)
@@ -3692,6 +5473,7 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
                 "input_preview": (
                     f"case_id={request.case_id}\n"
                     f"directory={request.directory}\n"
+                    f"schema_name={selected_schema_name}\n"
                     f"skip_reassess={request.skip_reassess}"
                 ),
             }
@@ -3723,6 +5505,9 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
                 file_path=str(file_path),
                 llm_provider=llm_provider,
                 llm_model=llm_model,
+                schema_name=selected_schema_name,
+                selected_schema=selected_schema_payload,
+                selected_schema_mode=selected_schema_mode,
             )
         except Exception as exc:
             _append_trace_events(
@@ -3826,6 +5611,78 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
     )
 
 
+@app.get("/api/ingest-schemas", response_model=list[IngestSchemaOption])
+def get_ingest_schemas() -> list[IngestSchemaOption]:
+    """Return valid ingest schema options discovered from backend schema files."""
+
+    return _build_ingest_schema_options()
+
+
+@app.post("/api/ingest-schemas", response_model=IngestSchemaOption)
+def save_ingest_schema(request: IngestSchemaSaveRequest) -> IngestSchemaOption:
+    """Create or update one custom ingest schema persisted in CouchDB."""
+
+    schema_key = _normalize_ingest_schema_key(request.key)
+    builtin_keys = {item.key for item in _build_ingest_schema_options() if item.builtin}
+    if schema_key in builtin_keys:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Schema key '{schema_key}' is reserved by a built-in schema.",
+        )
+    if not isinstance(request.schema_payload, dict):
+        raise HTTPException(status_code=400, detail="Schema payload must be a JSON object.")
+
+    now_iso = datetime.now(timezone.utc).isoformat()
+    existing: dict | None
+    try:
+        existing = couchdb.get_doc(_ingest_schema_doc_id(schema_key))
+    except Exception:
+        existing = None
+
+    doc = {
+        "_id": _ingest_schema_doc_id(schema_key),
+        "type": "ingest_schema",
+        "key": schema_key,
+        "mode": "raw_capture",
+        "schema": request.schema_payload,
+        "created_at": str(existing.get("created_at") if existing else now_iso),
+        "updated_at": now_iso,
+    }
+    if existing and existing.get("_rev"):
+        doc["_rev"] = existing["_rev"]
+    saved = couchdb.save_doc(doc)
+    return IngestSchemaOption(
+        key=schema_key,
+        file_name="[couchdb]",
+        mode="raw_capture",
+        builtin=False,
+        removable=True,
+        schema_payload=request.schema_payload,
+    )
+
+
+@app.delete("/api/ingest-schemas/{schema_key}", response_model=IngestSchemaDeleteResponse)
+def delete_ingest_schema(schema_key: str) -> IngestSchemaDeleteResponse:
+    """Delete one persisted custom ingest schema from CouchDB."""
+
+    normalized_key = _normalize_ingest_schema_key(schema_key)
+    builtin_keys = {item.key for item in _build_ingest_schema_options() if item.builtin}
+    if normalized_key in builtin_keys:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Built-in schema '{normalized_key}' cannot be removed.",
+        )
+    doc_id = _ingest_schema_doc_id(normalized_key)
+    try:
+        existing = couchdb.get_doc(doc_id)
+    except Exception as exc:
+        raise HTTPException(status_code=404, detail="Ingest schema not found.") from exc
+    if existing.get("type") != "ingest_schema":
+        raise HTTPException(status_code=404, detail="Ingest schema not found.")
+    couchdb.delete_doc(doc_id, rev=existing.get("_rev"))
+    return IngestSchemaDeleteResponse(deleted=True, key=normalized_key)
+
+
 @app.get("/api/depositions/{case_id}")
 def list_depositions(case_id: str) -> list[dict]:
     """List case depositions sorted by descending contradiction score."""
@@ -3850,13 +5707,23 @@ def chat(request: ChatRequest) -> ChatResponse:
     """Generate attorney chat response for a selected deposition context."""
 
     llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
+    logger.info(
+        "chat request received case_id=%s deposition_id=%s llm_provider=%s llm_model=%s history_items=%s",
+        request.case_id,
+        request.deposition_id,
+        llm_provider,
+        llm_model,
+        len(request.history),
+    )
     _ensure_request_llm_operational(llm_provider, llm_model)
     trace_id = str(request.thought_stream_id or request.trace_id or "").strip() or None
     try:
         deposition = couchdb.get_doc(request.deposition_id)
     except Exception as exc:
+        record_llm_operation("chat", False, llm_provider)
         raise HTTPException(status_code=404, detail="Deposition not found") from exc
     if deposition.get("case_id") != request.case_id:
+        record_llm_operation("chat", False, llm_provider)
         raise HTTPException(status_code=400, detail="Deposition does not belong to requested case")
 
     peers = [
@@ -3918,6 +5785,7 @@ def chat(request: ChatRequest) -> ChatResponse:
                 }
             ],
         )
+        record_llm_operation("chat", False, llm_provider)
         raise HTTPException(status_code=502, detail=str(exc)) from exc
     _append_trace_events(trace_id, attorney=trace_items, status="completed")
     _save_case_memory(
@@ -3940,6 +5808,14 @@ def chat(request: ChatRequest) -> ChatResponse:
         llm_provider=llm_provider,
         llm_model=llm_model,
     )
+    logger.info(
+        "chat request completed case_id=%s deposition_id=%s trace_id=%s response_chars=%s",
+        request.case_id,
+        request.deposition_id,
+        trace_id,
+        len(response),
+    )
+    record_llm_operation("chat", True, llm_provider)
     return ChatResponse(
         response=response,
         thought_stream=AgentTracePayload(attorney=[AgentTraceEvent.model_validate(item) for item in trace_items]),
@@ -3951,12 +5827,21 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
     """Re-analyze a single contradiction item with strict model validation."""
 
     llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
+    logger.info(
+        "contradiction reanalysis started case_id=%s deposition_id=%s llm_provider=%s llm_model=%s",
+        request.case_id,
+        request.deposition_id,
+        llm_provider,
+        llm_model,
+    )
     _ensure_request_llm_operational(llm_provider, llm_model)
     try:
         deposition = couchdb.get_doc(request.deposition_id)
     except Exception as exc:
+        record_llm_operation("reason_contradiction", False, llm_provider)
         raise HTTPException(status_code=404, detail="Deposition not found") from exc
     if deposition.get("case_id") != request.case_id:
+        record_llm_operation("reason_contradiction", False, llm_provider)
         raise HTTPException(status_code=400, detail="Deposition does not belong to requested case")
 
     peers = [
@@ -3973,6 +5858,7 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
             llm_model=llm_model,
         )
     except Exception as exc:
+        record_llm_operation("reason_contradiction", False, llm_provider)
         raise HTTPException(status_code=502, detail=str(exc)) from exc
     _save_case_memory(
         request.case_id,
@@ -3993,6 +5879,13 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
         llm_provider=llm_provider,
         llm_model=llm_model,
     )
+    logger.info(
+        "contradiction reanalysis completed case_id=%s deposition_id=%s response_chars=%s",
+        request.case_id,
+        request.deposition_id,
+        len(response),
+    )
+    record_llm_operation("reason_contradiction", True, llm_provider)
     return ContradictionReasonResponse(response=response)
 
 
@@ -4003,12 +5896,21 @@ def summarize_focused_reasoning(
     """Summarize focused contradiction analysis while preserving selected-case validation."""
 
     llm_provider, llm_model = _resolve_request_llm(request.llm_provider, request.llm_model)
+    logger.info(
+        "focused reasoning summary started case_id=%s deposition_id=%s llm_provider=%s llm_model=%s",
+        request.case_id,
+        request.deposition_id,
+        llm_provider,
+        llm_model,
+    )
     _ensure_request_llm_operational(llm_provider, llm_model)
     try:
         deposition = couchdb.get_doc(request.deposition_id)
     except Exception as exc:
+        record_llm_operation("summarize_focused_reasoning", False, llm_provider)
         raise HTTPException(status_code=404, detail="Deposition not found") from exc
     if deposition.get("case_id") != request.case_id:
+        record_llm_operation("summarize_focused_reasoning", False, llm_provider)
         raise HTTPException(status_code=400, detail="Deposition does not belong to requested case")
 
     try:
@@ -4018,6 +5920,7 @@ def summarize_focused_reasoning(
             llm_model=llm_model,
         )
     except Exception as exc:
+        record_llm_operation("summarize_focused_reasoning", False, llm_provider)
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
     _save_case_memory(
@@ -4039,6 +5942,13 @@ def summarize_focused_reasoning(
         llm_provider=llm_provider,
         llm_model=llm_model,
     )
+    logger.info(
+        "focused reasoning summary completed case_id=%s deposition_id=%s summary_chars=%s",
+        request.case_id,
+        request.deposition_id,
+        len(summary),
+    )
+    record_llm_operation("summarize_focused_reasoning", True, llm_provider)
     return FocusedReasoningSummaryResponse(summary=summary)
 
 
@@ -4046,6 +5956,11 @@ def summarize_focused_reasoning(
 def deposition_sentiment(request: DepositionSentimentRequest) -> DepositionSentimentResponse:
     """Compute whole-document sentiment for the selected deposition."""
 
+    logger.info(
+        "deposition sentiment started case_id=%s deposition_id=%s",
+        request.case_id,
+        request.deposition_id,
+    )
     try:
         deposition = couchdb.get_doc(request.deposition_id)
     except Exception as exc:
@@ -4074,5 +5989,28 @@ def deposition_sentiment(request: DepositionSentimentRequest) -> DepositionSenti
         deposition_count=len(_safe_case_depositions(request.case_id)),
         memory_increment=1,
         last_action="sentiment",
+    )
+    logger.info(
+        "deposition sentiment completed case_id=%s deposition_id=%s label=%s score=%s",
+        request.case_id,
+        request.deposition_id,
+        response.label,
+        response.score,
+    )
+    return response
+
+
+@app.post("/api/text-sentiment", response_model=DepositionSentimentResponse)
+def text_sentiment(request: TextSentimentRequest) -> DepositionSentimentResponse:
+    """Compute deterministic sentiment for arbitrary text payloads."""
+
+    text = str(request.text or "").strip()
+    logger.info("text sentiment started chars=%s", len(text))
+    response = _compute_deposition_sentiment(text)
+    logger.info(
+        "text sentiment completed label=%s score=%s words=%s",
+        response.label,
+        response.score,
+        response.word_count,
     )
     return response

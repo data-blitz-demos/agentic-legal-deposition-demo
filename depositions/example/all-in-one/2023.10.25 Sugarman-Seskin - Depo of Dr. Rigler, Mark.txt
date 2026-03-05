@@ -1,0 +1,2059 @@
+0001
+ 1   IN THE CIRCUIT COURT FOR THE ELEVENTH JUDICIAL CIRCUIT 
+              IN AND FOR MIAMI-DADE COUNTY, FLORIDA
+ 2   
+ 3                  Case No. 19-017627 CA 27
+ 4   ____________________________________________________
+ 5   ROBERT A. SUGARMAN, Individually and as 
+     Personal Representative of the Estate of 
+ 6   Marilyn Wendy Seskin,
+ 7             Plaintiff,
+ 8        vs.                      
+ 9   JOHNSON & JOHNSON; JOHNSON & JOHNSON CONSUMER INC. 
+     f/k/a JOHNSON & JOHNSON CONSUMER COMPANIES INC.; 
+10   and PUBLIX SUPER MARKETS, INC.,
+11             Defendants.
+     ____________________________________________________
+12   
+13   
+14   
+15                    REMOTE DEPOSITION OF 
+                       MARK W. RIGLER, PhD
+16   
+17   
+18                 Wednesday, October 25, 2023
+19   
+20   
+21   
+22   
+23   
+24   
+25    Court Reporter:  Michelle M. Boudreaux-Phillips, CCR
+0002
+ 1   
+ 2   
+ 3   
+ 4   
+ 5   
+ 6                       October 25, 2023
+ 7                       9:25 a.m.
+ 8   
+ 9   
+10             Remote deposition of 
+11        MARK W. RIGLER, PhD, conducted at the 
+12        location of the witness, pursuant to 
+13        Agreement, before Michelle M. 
+14        Boudreaux-Phillips, a Certified Court 
+15        Reporter in the State of Georgia.
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0003
+ 1                         APPEARANCES
+ 2                         (Via Zoom)
+ 3   
+ 4   On behalf of the Plaintiff:
+ 5        LANCE OLIVER, Esq.
+          Motley Rice LLC
+ 6        28 Bridgeside Boulevard
+          Mt. Pleasant, South Carolina 29464
+ 7        843.216.9000
+          loliver@motleyrice.com
+ 8   
+ 9   On behalf of Defendants Johnson & Johnson and LTL:
+10        GREGORY BOULOS, Esq.
+          Shook, Hardy & Bacon LLP
+11        Citigroup Center, Suite 3200
+          201 S. Biscayne Boulevard
+12        Miami, Florida 33131
+          305.358.5171
+13        gboulos@shb.com
+14   
+     On behalf of Defendant Publix Super Markets, Inc.:
+15        
+          MONICA R. BROWNEWELL SMITH, Esq.
+16        Barnes & Thornburg LLP
+          11 S. Meridian Street
+17        Indianapolis, Indiana 46204-3535
+          317.236.1313  
+18        mbrownewell@btlaw.com
+19   
+     Also Present:  Tola Familoni, Esq.
+20                  Katy Lawrimore, Paralegal
+21   
+22             
+23             
+24             
+25             
+0004
+ 1                            INDEX
+ 2   
+ 3                       EXAMINATIONS
+ 4      By Mr. Boulos ................................ 7
+ 5      By Ms. Brownewell Smith ...................... 45
+ 6      By Mr. Oliver ................................ 47
+ 7      By Mr. Boulos ................................ 53
+ 8      By Mr. Oliver ................................ 72
+ 9      By Mr. Boulos ................................ 73
+10      By Mr. Oliver ................................ 73
+11      By Mr. Boulos ................................ 74
+12                            - - -
+13                       EXHIBITS
+14   Exhibit                                           Page
+15   Exhibit 1 ....................................... 12
+        Notice of Deposition                           
+16                                                     
+     Exhibit 2 ....................................... 13
+17      Plaintiff's Amended Expert Disclosures         
+18   Exhibit 3 ....................................... 14
+        Curriculum Vitae of Mark W. Rigler, PhD        
+19                                                     
+     Exhibit 4 ....................................... 15
+20      Rigler Reference Documents, 10-5-23            
+21   Exhibit 5 ....................................... 16
+        Emails (collective exhibit)                    
+22                                                     
+     Exhibit 6 ....................................... 23
+23      Marilyn Seskin - Estimate of 47-Year Exposure  
+        to Johnson & Johnson Baby Powder               
+24   
+25   
+0005
+ 1                       INDEX (Cont'd)
+ 2   
+ 3   Exhibit                                           Page
+ 4   Exhibit 7 ....................................... 24
+        Marilyn Seskin Case Related Depositions -      
+ 5      Rigler Notes Re Sugarman and Ronell Testimony  
+ 6   Exhibit 8 ....................................... 39
+        Reliance List (Matthey case)                   
+ 7                                                     
+     Exhibit 9 ....................................... 56
+ 8      September 11, 2020 deposition transcript of    
+        Mark W. Rigler, PhD                            
+ 9                                                     
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0006
+ 1             THE COURT REPORTER:  All parties to this 
+ 2        deposition are appearing remotely and have 
+ 3        agreed to the witness being sworn in 
+ 4        remotely.  Due to the nature of remote 
+ 5        reporting, please pause briefly before 
+ 6        speaking to ensure all parties are heard 
+ 7        completely. 
+ 8             Counsel, please state your appearance.
+ 9             MR. BOULOS:  Good morning.  Greg 
+10        Boulos -- 
+11             MR. OLIVER:  Lance Oliver -- I'm 
+12        sorry.  
+13             MR. BOULOS:  Sorry, Lance. 
+14             Greg Boulos with Shook, Hardy & Bacon.  
+15        I represent Johnson & Johnson and LTL.  
+16             MS. BROWNEWELL SMITH:  Monica Brownewell 
+17        Smith -- 
+18             MR. OLIVER:  Lance Oliver -- 
+19             MS. BROWNEWELL SMITH:  -- with Barnes & 
+20        Thornburg representing Publix Super Markets, 
+21        Inc.
+22             MR. OLIVER:  All right, I think that's 
+23        it. 
+24             Lance Oliver, Motley Rice.  I represent 
+25        Bob Sugarman on behalf of the Estate of 
+0007
+ 1        Marilyn Seskin.  
+ 2                       MARK W. RIGLER, PhD,
+ 3   being first duly sworn, was examined and testified as 
+ 4   follows:
+ 5                         EXAMINATION
+ 6   BY MR. BOULOS:  
+ 7        Q    Good morning, Dr. Rigler.  As you heard, my 
+ 8   name is Greg Boulos.  I'm going to be starting with the 
+ 9   questions today.  And so I'm going to put a link in the 
+10   Chat, and this link is going to lead you to a folder.  
+11   It's empty right now; but as I mention exhibits, they 
+12   will appear in that folder.  And so you'll be able to 
+13   look at those documents, to scroll through them and -- 
+14   while I ask you questions.  Okay?
+15        A    Okay.  
+16        Q    So here's the link in the Chat.  
+17             MR. BOULOS:  And, Lance, you should -- I 
+18        know you're mobile right now, but you should 
+19        be able to access that, too, in the Chat.  
+20             MR. OLIVER:  Okay.  Well, I'm not -- 
+21        yeah, just for the record, I'm not sure I'm 
+22        going to be able to do that right at this 
+23        minute, but don't sweat it.  Just clearly 
+24        identify what you're referring to on the 
+25        record; and if I have questions about it or 
+0008
+ 1        objections, I'll state it or I'll go back and 
+ 2        do something after you're done.  
+ 3             MR. BOULOS:  Sounds good, Lance.  I'll 
+ 4        make it clear what we're pulling up so you 
+ 5        know what it is.  
+ 6        Q    (By Mr. Boulos)  Okay.  So, Dr. Rigler, 
+ 7   you've had your deposition taken many times before.  Do 
+ 8   you need me to remind you of the ground rules, like not 
+ 9   speaking over each other, things like that?
+10        A    No.  I think we're good on all of that.
+11        Q    Okay.  I'll just give you two reminders.  You 
+12   know, first, if you don't understand my question, just 
+13   let me know, and I'll rephrase it.  Can we agree on 
+14   that?
+15        A    Yes.  
+16        Q    Okay.  And the second, you know, if you need 
+17   to refer to a document to answer any of my questions, 
+18   that's completely fine.  Just let me know what you're 
+19   looking at so we can identify it for the record.  Okay?
+20        A    Okay.  
+21        Q    All right.  So I just want to start with some 
+22   questions about your preparation for today. 
+23             Did you meet with counsel to prepare for 
+24   today's deposition?  
+25        A    Yes.  
+0009
+ 1        Q    Okay.  And when did you meet with counsel to 
+ 2   prepare for today's deposition?
+ 3        A    I spoke with counsel yesterday.
+ 4        Q    Okay.  Was that the only conversation you 
+ 5   guys had to prepare for today?
+ 6        A    I believe that's -- that's the one that I 
+ 7   recall at this point.
+ 8        Q    Okay.  And about how long was that meeting?
+ 9        A    Maybe a half an hour.
+10        Q    Okay.  Was anyone else there besides you, 
+11   counsel, or anyone who works in counsel's office?
+12        A    No.  
+13        Q    Okay.  All right.  So I'm going to ask you if 
+14   you had discussions with a few experts.  You'll 
+15   probably recognize a lot of the names. 
+16             Have you discussed this case with Dr. Longo?  
+17        A    No.
+18        Q    Have you discussed this case with 
+19   Dr. John Chan?  
+20        A    No.  
+21        Q    Have you discussed this case with 
+22   Dr. Roberta Ness?  
+23        A    No.  
+24        Q    Have you discussed this case with 
+25   Dr. Arthur Sitelman?  
+0010
+ 1        A    I have not discussed the case with 
+ 2   Dr. Sitelman recently.
+ 3        Q    Okay.  So you have discussed this case with 
+ 4   Dr. Sitelman at some point in time?
+ 5        A    It was a long time ago.
+ 6        Q    Okay.
+ 7             MR. OLIVER:  Hey, Greg -- 
+ 8             MR. BOULOS:  Yes, sir?  
+ 9             MR. OLIVER:  -- just real quick, for the 
+10        record, we probably need to note that this 
+11        was -- I believe this deposition was noticed 
+12        for both the Matthey and the Seskin case.  
+13        Right?  Isn't that right?  
+14             MR. BOULOS:  I think that's right, so 
+15        I'll be specific about -- 
+16             MR. OLIVER:  So you need to make a -- 
+17        yeah, you need to make a distinction because 
+18        of the tissue testing that was done in 
+19        Matthey. 
+20             MR. BOULOS:  Gotcha.  Thank you for 
+21        that, Lance.  I'll clarify.  
+22        Q    (By Mr. Boulos)  So, Dr. Rigler, Mr. Oliver 
+23   made a good point.  So there's two cases you've been 
+24   noticed in.  In one, the plaintiff is -- the last name 
+25   is Matthey.  And in another case, this case, is Dr. -- 
+0011
+ 1   I'm sorry, Mr. Sugarman is the plaintiff.  Dr. Seskin 
+ 2   is the person who has the alleged injury and who 
+ 3   unfortunately passed away. 
+ 4             So when I ask you if you discussed this case 
+ 5   with Dr. Sitelman, I'm actually referring to 
+ 6   Dr. Seskin's case. 
+ 7             Have you discussed this case, Dr. Seskin's 
+ 8   case, with Dr. Sitelman?  
+ 9        A    I don't recall that I have.
+10        Q    Okay.  Great.  And, you know, I'm going to 
+11   ask you about three more experts, and it's the same 
+12   question -- same case I'm referring to.  
+13        A    Yes.  
+14        Q    Have you discussed Dr. Seskin's case with 
+15   Dr. Laura Plunkett?
+16        A    No.
+17        Q    Have you discussed this case with 
+18   Dr. Lara Freidenfelds?  
+19        A    No.  
+20        Q    Have you discussed this case with 
+21   Dr. Edward Wolpert?  
+22        A    No.  
+23        Q    Okay.  Other than plaintiff's counsel, have 
+24   you communicated with anyone concerning your opinions 
+25   or your work on this case specifically?
+0012
+ 1        A    No.  
+ 2        Q    Okay. 
+ 3             All right, so we're going to start marking a 
+ 4   couple of documents.  I'm going to start with your 
+ 5   notice of deposition for today. 
+ 6             So you should now see that notice in the 
+ 7   folder.  Can you confirm you can see it?  
+ 8        A    Hold on a minute.
+ 9        Q    Sure.  
+10        A    There it is.  Yes.  
+11        Q    Okay.  
+12             MR. BOULOS:  For the court reporter, 
+13        we're going to mark Dr. Rigler's deposition 
+14        notice as Exhibit 1.  
+15             (Exhibit 1 marked for identification.)
+16        Q    (By Mr. Boulos)  So, Dr. Rigler, have you 
+17   reviewed Exhibit 1 recently?
+18        A    Yes.  
+19        Q    Okay.  And as you know from your other 
+20   depositions, the notice requires you to produce certain 
+21   documents. 
+22             If you had documents responsive to this 
+23   notice, did you provide them to Mr. Oliver's firm?  
+24        A    Yes.  
+25        Q    Okay.  Great. 
+0013
+ 1             MR. BOULOS:  I'm going to move on to the 
+ 2        next document.  This is plaintiff's fourth 
+ 3        amended expert disclosure.  We're going to 
+ 4        mark this as Exhibit 2.  
+ 5             (Exhibit 2 marked for identification.) 
+ 6        Q    (By Mr. Boulos)  And let me know if you are 
+ 7   able to access Exhibit 2.  
+ 8        A    Okay.  Hold on a second. 
+ 9             Hold on.  Let me just close this one second 
+10   and get back to you guys.  
+11             (Discussion off the record.)
+12        Q    (By Mr. Boulos)  Exhibit 2 -- are you able to 
+13   open it now?
+14        A    Yes.
+15        Q    All right.  So the portion of Exhibit 2 that 
+16   describes your testimony starts on page 7.  Can you 
+17   turn to that section?
+18        A    Sure.  Yes.
+19        Q    And I just -- have you seen this before?
+20        A    Yes.  
+21        Q    Okay.  And did you help prepare this?
+22        A    I did not.
+23        Q    Okay.  All right.  So --
+24        A    But I had a discussion with the plaintiff's 
+25   counsel about all of this.
+0014
+ 1        Q    Okay.  And so on page 8, it describes your 
+ 2   fees.  Can you confirm for me that those are still your 
+ 3   fees that will apply in this case?
+ 4        A    Yes.  
+ 5        Q    Okay.  Great. 
+ 6             All right, so now I'm going to mark your CV 
+ 7   as Exhibit 3.  
+ 8        A    Okay.  
+ 9             (Exhibit 3 marked for identification.)
+10        Q    (By Mr. Boulos)  That should now be available 
+11   in your folder.  
+12        A    Okay.  
+13        Q    And I'll let you know that I got this CV from 
+14   the Mississippi AG case that you testified in last 
+15   month.  
+16        A    Yes.  
+17        Q    So let me know when you're able to open that 
+18   CV.  
+19        A    Let's see, how does this...  
+20             (Discussion off the record.)
+21             THE WITNESS:  Got it.  
+22             MR. BOULOS:  All right. 
+23        Q    (By Mr. Boulos)  So is this your most 
+24   up-to-date CV?
+25        A    Yes.  
+0015
+ 1        Q    Okay.  Great. 
+ 2             All right.  Next, I am going to mark as 
+ 3   Exhibit 4 your reliance list in this case.  
+ 4        A    Okay.  
+ 5        Q    So let me go ahead and add that as Exhibit 4. 
+ 6             (Exhibit 4 marked for identification.)
+ 7        Q    (By Mr. Boulos)  You should be able to access 
+ 8   it now.  
+ 9        A    Got it.
+10        Q    Okay.  And do you agree that at the top of 
+11   Exhibit 4, it has the date October 5th, 2023?
+12        A    Yes.  
+13        Q    Okay.  Do you agree that Exhibit 4 sets forth 
+14   the references and authorities you relied on for your 
+15   opinions in this case?
+16        A    Yes.  
+17        Q    Okay.  Did you review these documents to 
+18   prepare for today's deposition?
+19        A    Yes.  
+20        Q    All right.  Did you review any documents not 
+21   in this Exhibit 4 to prepare for today's deposition?
+22        A    Did I -- ask again.  I apologize.  
+23        Q    No problem.  I'm asking is there a document 
+24   not listed in Exhibit 4 that you reviewed to prepare 
+25   for today's deposition?
+0016
+ 1        A    No.  
+ 2        Q    Okay.  Now, I have a folder here with about 
+ 3   40 emails.  I'm going to introduce them collectively as 
+ 4   Exhibit 5.  
+ 5        A    Okay.  
+ 6             (Exhibit 5 marked for identification.)
+ 7        Q    (By Mr. Boulos)  All I want to do is just for 
+ 8   you to confirm that these are the email communications 
+ 9   you had with plaintiff's firm, nothing beyond that.  So 
+10   if you can let me know when you're able to open Exhibit 
+11   5, I'll -- 
+12        A    Okay.  
+13             (Discussion off the record.)
+14        Q    (By Mr. Boulos)  And the question, for the 
+15   record, is just:  Can you confirm that these are email 
+16   communications between you and plaintiff's firm?
+17        A    I'm moving through them, so...
+18             (Discussion off the record.)
+19             THE WITNESS:  Yes.  
+20             MR. BOULOS:  Yes.  Okay.  Great. 
+21        Q    (By Mr. Boulos)  So I want to turn now to 
+22   your opinions in this case. 
+23             You do not intend to offer opinions about any 
+24   medical diagnosis or what caused Dr. Seskin's cancer; 
+25   is that correct?  
+0017
+ 1        A    I'm not a medical doctor.  I will leave that 
+ 2   to other experts.
+ 3        Q    Okay.  So I'm correct, you will not offer 
+ 4   those opinions, right?
+ 5        A    Yes.  
+ 6        Q    Great. 
+ 7             And along the same lines, you will not offer 
+ 8   opinions about general causes of any type of cancer, 
+ 9   correct?  
+10        A    Not unless asked.  I mean, I'm aware of the 
+11   medical literature, those kinds of things, but not 
+12   unless I'm asked.
+13        Q    And up until this point, sitting here today, 
+14   have you been asked to offer opinions about general 
+15   causes of any types of cancer?
+16        A    Are you talking about in this case or other 
+17   cases or --
+18        Q    Yes.  I'll clarify -- I'll restate the 
+19   question.  
+20             In Dr. Seskin's case, will you offer -- I'm 
+21   sorry, let me start again.  
+22             In Dr. Seskin's case, have you been asked to 
+23   offer opinions about general causes of any type of 
+24   cancer?  
+25        A    I haven't been asked.
+0018
+ 1        Q    You have not been asked.  Okay.  
+ 2             In Dr. Seskin's case, have you done any 
+ 3   digestive testing?  
+ 4        A    No.  
+ 5        Q    All right.  I think the last trial you 
+ 6   testified in, at least that I'm aware of, is the 
+ 7   Kleiner case.  Do I have that right?
+ 8        A    I testified in a trial earlier this year in 
+ 9   the Graham case in -- I believe it was in Washington.
+10        Q    And that was a Johnson & Johnson Baby Powder 
+11   case?
+12        A    No.  It was -- it was a -- it was a baby 
+13   powder case, but it wasn't a J -- well, they were 
+14   involved, but due to the issues that were going on with 
+15   the -- all the J&J stuff, they weren't part of that at 
+16   the time.  
+17        Q    Okay.  And I'll let you know where I'm going 
+18   with this so that we can try to streamline the 
+19   questioning.  
+20             So you have some general opinions about 
+21   asbestos and Johnson & Johnson, right --
+22        A    Yes.  
+23        Q    -- and provided those opinions in trial? 
+24             And I just want to get a sense of what's the 
+25   last trial you offered those opinions in.  That way I 
+0019
+ 1   can just confirm those are the same opinions you have 
+ 2   here. 
+ 3             So can you tell me what was the last trial 
+ 4   where you offered those general opinions about asbestos 
+ 5   and Johnson & Johnson?  
+ 6        A    It would have been the Kleiner trial.
+ 7        Q    Kleiner.  Okay. 
+ 8             And so with regards to your general opinions, 
+ 9   not your opinions specific to Dr. Seskin, do you intend 
+10   to provide the same general opinions in this case that 
+11   you provided in Kleiner?  
+12        A    Yes.  
+13        Q    All right.  When you were retained in this 
+14   case, can you give me a general summary of what you 
+15   were asked to do as an expert?
+16        A    I was asked to look at the medical documents 
+17   for Dr. Seskin earlier on, and then I was also asked to 
+18   review the testimony of Robert Sugarman.  Also, I was 
+19   asked to review the testimony of Dr. Ronell, and also I 
+20   was asked to do an exposure estimate.  
+21        Q    Okay.  And you were also asked to review the 
+22   Plaintiff Fact Sheet, right?
+23        A    Yes.  
+24        Q    Okay.  
+25        A    That was all included, I think, in the 
+0020
+ 1   documents early on also.  
+ 2        Q    Okay.  Were you -- did you review any medical 
+ 3   records for Dr. Seskin?
+ 4        A    Yes.  
+ 5        Q    Okay.  Do you have a list of those medical 
+ 6   records?
+ 7             MR. OLIVER:  Let me -- guys, let me -- 
+ 8        this is Lance.  Let me interject here. 
+ 9             Greg, I am concerned that Dr. Rigler 
+10        might be confusing Matthey with Seskin.  I 
+11        don't believe there are any medical records 
+12        on one.  I can't see it in front of me.  But 
+13        make sure we're talking about the same 
+14        thing.  
+15             MR. BOULOS:  Got it.  Yeah, Lance, no 
+16        problem.  I'll make sure of that.  And, you 
+17        know, I -- for the record and so everyone is 
+18        aware, my understanding is that we did not 
+19        notice this depo in Matthey.  It's only for 
+20        Dr. Seskin. 
+21             So, Dr. Rigler, just so you're aware, 
+22        all of my questions are about Dr. Seskin's 
+23        case today and Mr. Sugarman's case.  And 
+24        Mr. Oliver is correct that, you know, there's 
+25        no -- I'm only asking about Dr. Seskin today, 
+0021
+ 1        and so...
+ 2             MR. OLIVER:  Okay.  Wait, wait, wait.  
+ 3        Let me back up real quick -- 
+ 4             MR. BOULOS:  Sure.  
+ 5             MR. OLIVER:  -- just so we're clear 
+ 6        because I didn't understand that -- 
+ 7             MR. BOULOS:  Okay.  
+ 8             MR. OLIVER:  -- and I am not going to 
+ 9        acquiesce to producing Dr. Rigler again on 
+10        generic opinions in Matthey.  I'll certainly 
+11        talk with you about it, but my default 
+12        position is going to be this is the day and 
+13        this is the depo, and I'll tell you why. 
+14             We simply don't have the time to be 
+15        sliding in additional depos.  So that is 
+16        something you can share with your people.  
+17        And, obviously, if I end up having the time 
+18        and you just want another three hours with 
+19        Dr. Rigler, I'll work on it, but I'm not -- 
+20        my default position is going to be no, like, 
+21        this is the day, because I don't know why you 
+22        would need another depo, other than in 
+23        Matthey, but go ahead and ask your questions.  
+24        Sorry.  
+25             MS. BROWNEWELL SMITH:  Dr. Rigler has 
+0022
+ 1        not even been deposed in the Matthey case.  
+ 2             MR. BOULOS:  So, Monica, if it's okay, 
+ 3        I'll -- my -- I don't -- Lance, to answer 
+ 4        your question directly, I will speak with my 
+ 5        folks.  I'm not anticipating an issue for the 
+ 6        same reason Monica just mentioned.  So I 
+ 7        think we'll be okay on that front, but we can 
+ 8        address it later if we need to.  
+ 9        Q    (By Mr. Boulos)  All right.  So, Dr. Rigler, 
+10   I'll get back to -- I'll restate the question for you. 
+11             So with regards to Dr. Seskin, did you review 
+12   any of Dr. Seskin's medical records to form your 
+13   opinions in this case?  
+14        A    I did review Dr. Seskin's medical records.  I 
+15   know that I did -- that I do have a list of them, and 
+16   so that's -- that is a fact.  
+17        Q    Okay.  And so we had marked your reliance 
+18   list as Exhibit 4.  You can access that.  I did not see 
+19   any medical records listed on that reliance list, but 
+20   you mentioned you do have a list.  So if you could 
+21   provide that to Mr. Oliver, and Mr. Oliver will, of 
+22   course, get that to us, that would be great.  
+23             MR. OLIVER:  Sure.  I don't know that 
+24        that's accurate, but I'm going to go ahead 
+25        and find out.  Somebody could have sent 
+0023
+ 1        something I'm unaware of, but I'm not aware 
+ 2        of it.  But if I have it, I'll give it to 
+ 3        you.  
+ 4             MR. BOULOS:  Thanks.  Appreciate it.  
+ 5        Okay.
+ 6        Q    (By Mr. Boulos)  All right.  So let's move 
+ 7   forward. 
+ 8             All right, so you mentioned you were asked -- 
+ 9   let me rephrase the question. 
+10             Were you asked to estimate Dr. Seskin's 
+11   overall dose exposure to talcum powder?  
+12        A    Yes.  
+13        Q    All right.  
+14             MR. BOULOS:  So I am going to mark a 
+15        document that is titled "Marilyn Seskin - 
+16        Estimate of 47-Year Exposure to Johnson & 
+17        Johnson Baby Powder."  I'm going to mark that 
+18        as Exhibit 6.  
+19             (Exhibit 6 marked for identification.)
+20        Q    (By Mr. Boulos)  Okay.  Dr. Rigler, you 
+21   should be able to see that now.  Just let me know when 
+22   you have it.  
+23        A    Okay.  All right.  Got it.
+24        Q    Great.  You created Exhibit 6, right?
+25        A    Yes.  
+0024
+ 1        Q    All right.  Can we agree to refer to 
+ 2   Exhibit 6 as your exposure estimate?  It just makes the 
+ 3   questions easier.  
+ 4        A    Yes.  
+ 5        Q    Okay.  Great. 
+ 6             Your exposure estimate states that it's based 
+ 7   on Plaintiff's Fact Sheet, Robert Sugarman's testimony, 
+ 8   and Diana Ronell's testimony, right?  
+ 9        A    Yes.  
+10        Q    Your exposure estimate is based on 47 years 
+11   of exposure to Johnson's Baby Powder, correct?
+12        A    Yes.  
+13        Q    All right.  And I'm going to introduce 
+14   another exhibit as Exhibit 7.  You took notes on 
+15   Plaintiff's Fact Sheet and Robert Sugarman's deposition 
+16   as well as Diana Ronell's deposition, right?
+17        A    Yes.  
+18        Q    Okay.  I'm going to mark those notes as 
+19   Exhibit 7.  
+20             (Exhibit 7 marked for identification.)
+21        Q    (By Mr. Boulos)  All right.  Just let me know 
+22   when you can see Exhibit 7.  
+23        A    There we go.  All right.  Yes, there it is.
+24        Q    I just want to bring your attention to the 
+25   middle of the page, the sentence that starts with 
+0025
+ 1   "P. 78."  Do you see that paragraph there?  
+ 2        A    Yeah.  But before that, there is -- I have a 
+ 3   typo error.  When I was reading/reviewing the 
+ 4   documents, I -- she did not pass away from 
+ 5   mesothelioma.  It says -- page 25.  That's not correct.  
+ 6   It should be she passed away from ovarian cancer.  So 
+ 7   that needs to be corrected.
+ 8        Q    Thanks for that clarification, Dr. Rigler. 
+ 9        A    Yeah.
+10        Q    That's fine.  
+11        A    Thank you.  My apologies. 
+12        Q    No problem.  I actually was intending only to 
+13   ask you about this paragraph here that starts with 
+14   capital P, period, 78.  
+15        A    Yeah.
+16        Q    It's around the middle of the page.  Do you 
+17   see that paragraph?
+18        A    Yes.  Uh-huh.
+19        Q    Okay.  So do you agree you start that 
+20   paragraph by writing, "Dr. Seskin stated in the 
+21   Plaintiff Fact Sheet that she used Johnson's Baby 
+22   Powder from 1949 to 1994"?
+23        A    Yes.  
+24        Q    Okay.  And can you agree 1949 to 1994, that's 
+25   a 45-year time frame?
+0026
+ 1        A    Yes.  
+ 2        Q    Okay.  Now, you went on in that paragraph to 
+ 3   explain that Robert Sugarman stated she continued to 
+ 4   use Johnson's Baby Powder after 1994.  Do you agree?
+ 5        A    Yes.  
+ 6        Q    All right.  So when you prepared your 
+ 7   estimate based on 47 years of exposure, you were 
+ 8   relying on Robert Sugarman's testimony that Dr. Seskin 
+ 9   continued using Johnson's Baby Powder after '94; is 
+10   that right?
+11        A    Yes.  He was essentially, to my 
+12   understanding, transcribing what she had described to 
+13   him.  So my understanding, she was unable to -- because 
+14   she had passed away.  So it is from his -- yes.
+15        Q    Okay.  And so the Plaintiff's Fact Sheet had 
+16   45 years; Robert Sugarman's testimony had 47 years. 
+17             So my question is simply:  Why did you use 
+18   Bob -- excuse me -- Mr. Sugarman's testimony about 
+19   Dr. Seskin's talc use instead of using Dr. Seskin's 
+20   statement about her talc use to prepare your exposure 
+21   estimate?  
+22        A    Well, he said that she had used it up until 
+23   essentially her final hospitalization, so -- and I 
+24   believe that was in 2019.  I made my estimate to 2018, 
+25   but it was -- it was beyond what she originally had 
+0027
+ 1   described simply, you know, based on his observations 
+ 2   of her, you know, usage.
+ 3        Q    Okay.  
+ 4        A    Yeah.  
+ 5        Q    Did you prepare a separate exposure estimate 
+ 6   based exclusively on Dr. Seskin's own statement that 
+ 7   she used talcum powder for 45 years?
+ 8        A    Well, if we look at the -- if we look at the 
+ 9   table, we can -- we can get that kind of understanding 
+10   to some degree from it. 
+11             So, you know, I think we have to be aware of 
+12   all of the years of exposure, but -- I understand your 
+13   question, but I do believe that we need to consider all 
+14   of the years of exposure.  
+15        Q    And I don't need you to do another 
+16   calculation, Dr. Rigler.  I'm just confirming that 
+17   there's not another estimate that was prepared based on 
+18   Dr. Seskin's statement exclusively.  Can you confirm 
+19   that?
+20        A    That's correct.
+21        Q    Okay. 
+22             All right.  So let's turn back to your 
+23   exposure estimate, which we marked as Exhibit -- let 
+24   me -- I'll get the right number.  We marked it as 
+25   Exhibit 6.  And I would like to talk to you about the 
+0028
+ 1   columns in this exposure estimate.  
+ 2        A    Sure.
+ 3        Q    So the first column includes a description of 
+ 4   Dr. Seskin's use of Johnson's powder, right?
+ 5        A    Yes.  
+ 6        Q    And you would have gotten that information 
+ 7   here from the deposition testimony you referenced 
+ 8   earlier or Plaintiff's Fact Sheet, correct?
+ 9        A    Correct.  
+10        Q    All right.  And I'm going to group the next 
+11   six columns:  Date Range, Applications Per Day, 
+12   Days Per Week, Number of Days Per Year, Number of 
+13   Years, and Applications of Johnson's Baby Powder. 
+14             So the information for all of those columns 
+15   also came from either Robert Sugarman's depo -- 
+16   deposition, Dr. Ronell's deposition, or Plaintiff's 
+17   Fact Sheet, right?  
+18        A    Yes.  
+19        Q    Okay.  Then we have a title -- column titled 
+20   Grams of Johnson's Baby Powder used."  I assume that 
+21   means grams of baby powder used per application.  Do I 
+22   have that right --
+23        A    Yes. 
+24        Q    -- or is it per day?
+25        A    No, that's good.  Yes.
+0029
+ 1        Q    So it's per application?
+ 2        A    Per application, correct.  
+ 3        Q    Got it.  Okay. 
+ 4             And in the first two rows of that column, you 
+ 5   state 4 grams, right?  
+ 6        A    Yes.  
+ 7        Q    Can you tell me how you determined Dr. Seskin 
+ 8   used 4 grams of Johnson's Baby Powder per application?
+ 9        A    Sure.  The number that's used here is a 
+10   conservative number.  When I was at MAS doing the 
+11   powder exposure studies, the amount that was used in 
+12   what we call the below-the-waist study was 
+13   approximately that amount.  
+14             Now, Johnson & Johnson had done studies in 
+15   the 1970s on powder usage, women and men.  And their 
+16   average for men, I believe, after showering was about 
+17   13 grams, and I believe for a woman it was about 8. 
+18             So, you know, this value of 4 is, I believe, 
+19   somewhat conservative, based on what they did.  
+20        Q    Thank you, Dr. Rigler. 
+21             And those Johnson & Johnson studies, when you 
+22   said for women it was about 8, was the average 8 or was 
+23   the amount 8, if you know?  
+24        A    I believe the average was about 8 because it 
+25   varied quite a bit.
+0030
+ 1        Q    It varied quite a bit.  Okay. 
+ 2             All right.  So in the final column here 
+ 3   titled "Total Grams Johnson's Baby Powder," you 
+ 4   multiplied the number of Dr. Seskin's baby powder 
+ 5   applications by 4 grams, correct?  
+ 6        A    Yes.  
+ 7        Q    So for that first row, 2,920 times 4 grams 
+ 8   equals 11,680, right?
+ 9        A    Yes.  
+10        Q    And for the second one, 31,390 applications 
+11   times 4 grams equals 125,560 grams of Johnson's Baby 
+12   Powder, right?
+13        A    Yes.  
+14        Q    And those math problems I kind of just stated 
+15   there, those are fairly basic math problems, right?
+16        A    Yes.  
+17        Q    Okay.  Now, you -- we did talk about this 
+18   Matthey case.  I think you heard Counsel mention that. 
+19   You actually prepared a similar estimate in that case.  
+20   Do you remember that estimate?  
+21        A    I do not off the top of my head.  I would 
+22   have to go back and review that.
+23        Q    Okay.  But are you -- do you remember the 
+24   Matthey case and the fact that you prepared an estimate 
+25   in that case?
+0031
+ 1        A    Again, I would have to go back and review 
+ 2   that.  I haven't looked at that for quite a while.
+ 3        Q    Understood. 
+ 4             You've prepared one of these estimates in 
+ 5   other asbestos -- in Johnson & Johnson cases; do I have 
+ 6   that right?  
+ 7        A    Yes.  
+ 8        Q    Okay.  And when you prepare a table that 
+ 9   looks like your exposure estimate here, are you always 
+10   using the same calculation?
+11             MR. OLIVER:  Object to the form as to 
+12        "same calculation."  
+13             THE WITNESS:  Do you mean in terms of 
+14        how the total amounts are calculated?  I 
+15        would say yes to that.  
+16             MR. BOULOS:  Yes, that is my question.  
+17        Q    (By Mr. Boulos)  So you will -- whenever you 
+18   prepare an exposure estimate, do you determine the 
+19   applications per day, multiply that by the number of 
+20   days in a year, multiply that by -- you know what, 
+21   strike that question.  I think that got too 
+22   complicated.  
+23             Your -- the way you calculated the total 
+24   grams of Johnson's Baby Powder for Dr. Seskin, is that 
+25   the same way you calculate the total grams of Johnson's 
+0032
+ 1   Baby Powder used by plaintiffs in your other cases?  
+ 2        A    I would say it's similar.  Unless I look back 
+ 3   at those -- there may be some variation, but I would -- 
+ 4   I would have to look and see.  
+ 5        Q    Is the methodology that you used to determine 
+ 6   the total talc exposure for plaintiffs in general the 
+ 7   same methodology you used for Dr. Seskin here?
+ 8        A    It would be similar.
+ 9        Q    Okay.  And aside from this exposure estimate, 
+10   have you prepared any other report for Dr. Seskin's 
+11   case?
+12        A    No.  
+13        Q    All right.  I want to ask you about source 
+14   mines.  
+15        A    Okay.  
+16        Q    Which source mine do you believe is relevant 
+17   in connection with the talcum powder Dr. Seskin used?
+18        A    Mainly be the Vermont source mines.
+19        Q    Okay.  And you say "mainly."  Are there any 
+20   other source mines that you believe are relevant to 
+21   Dr. Seskin?
+22        A    Well, based on her usage beyond 2003, it 
+23   would be Chinese mines.
+24        Q    Can you be more specific than "Chinese 
+25   mines"?  
+0033
+ 1        A    Well, I'm bad at the pronunciations of the 
+ 2   mines, but it would have been mines in -- source mines 
+ 3   in China.  I would have to look to see the name.  
+ 4   Again, I can't -- I'm not good at their pronunciations.
+ 5        Q    That's fine.  Okay. 
+ 6             So now I would like to switch topics and just 
+ 7   talk about new work that you might have done since your 
+ 8   last deposition. 
+ 9             So about one month ago, on September 27th, 
+10   you were deposed in a case involving the State of 
+11   Mississippi.  Do you recall that deposition?  
+12        A    Yes.  
+13        Q    All right.  Between the date of that 
+14   deposition and today, have you done any new testing of 
+15   Johnson & Johnson Baby Powder?
+16        A    No.  
+17        Q    Okay.  Between the date of that deposition 
+18   and today, have you reviewed any new 
+19   Johnson & Johnson-specific documents?
+20        A    I may have.  I don't recall what they are as 
+21   I sit here, but I may have.
+22        Q    Okay.  When would you have reviewed those 
+23   documents?
+24        A    Well, as you asked, between now and then, 
+25   I've seen some other documents; but, again, I can't -- 
+0034
+ 1   there's been so many, I can't remember exactly which 
+ 2   ones they were.  So I may have.  
+ 3        Q    Okay.  And you say "between now and then."  
+ 4   Are you able to be more specific about when you might 
+ 5   have reviewed these documents?
+ 6        A    In the last few weeks.
+ 7        Q    Okay.  You mentioned there was a lot of them.  
+ 8   Can you give me an estimate of how many documents -- 
+ 9   new Johnson & Johnson documents you reviewed between 
+10   that last deposition and today?
+11        A    It would have probably been more than 10 or 
+12   15.
+13        Q    Okay.  And can you tell me anything about the 
+14   substance of those 10 to 15 documents?
+15        A    No.  Because, as I say, everything is sort of 
+16   run together in my mind at this particular point, and 
+17   I'm not -- I can't recall or just pick any particular 
+18   one off the top of my head.
+19        Q    All right.  And did anything that you 
+20   reviewed in those 10 to 15 new documents impact your 
+21   opinions in Dr. Seskin's case?
+22        A    I don't think so.
+23        Q    Where did you get those 10 to 15 new 
+24   documents?
+25        A    They have been received from other 
+0035
+ 1   plaintiffs' counsel.
+ 2        Q    I assume by that, you mean not Mr. Oliver's 
+ 3   firm?
+ 4        A    Correct.  
+ 5        Q    Do you still have access to those 10 to 15 
+ 6   documents?
+ 7        A    Let me think.  I would say yes, that I do; 
+ 8   but, again, I couldn't pick out any particular one 
+ 9   document at this particular point.
+10        Q    So those 10 to 15 documents, were they 
+11   transmitted to you, sent to you, after the Mississippi 
+12   Attorney General deposition?
+13        A    I want to say yes to that.  
+14        Q    And were they sent to you by email?
+15        A    I can't recall if they were by email or some 
+16   other method, whether a link or that kind of thing.
+17        Q    And if it was sent to you by a link, the link 
+18   would have been included in an email, correct?
+19        A    Yes.  
+20        Q    Okay.  And, Dr. Rigler, would you have the 
+21   capability to review your email and find the 10 to 15 
+22   documents that we're talking about today?
+23        A    Well, I think the answer to that is I would 
+24   have to get permission from the other firms to do that.
+25        Q    Okay.  Let me take a moment to look at your 
+0036
+ 1   deposition notice.  
+ 2             Well, I guess let me backtrack and ask you:  
+ 3   When you received those documents, what were you asked 
+ 4   to do with respect to those 10 to 15 documents?  
+ 5             MR. OLIVER:  Object to the form. 
+ 6             Dr. Rigler, let me caution you that in 
+ 7        this case, you're required to testify about 
+ 8        things that are on your reliance list and 
+ 9        that affect your opinion in Dr. Seskin's 
+10        case.  
+11             THE WITNESS:  Right.  
+12             MR. OLIVER:  I don't have control over, 
+13        nor do I have the authority, nor do you have 
+14        the authority to disclose matters about 
+15        communications with attorneys in other cases, 
+16        and different rules apply.  So if you feel 
+17        that you should not answer a question about 
+18        communications with other attorneys in other 
+19        cases at this point without consulting them, 
+20        then you have the freedom to do that. 
+21             At this point, all I can advise you is 
+22        the rules of this case and the State of 
+23        Florida. 
+24             Sorry, go ahead, Greg.  
+25             MR. BOULOS:  Thank you, Lance.  
+0037
+ 1        Q    (By Mr. Boulos)  So, Dr. Rigler -- and, you 
+ 2   know, the point of my question -- I asked what were you 
+ 3   asked to do with the documents -- I'm trying to get a 
+ 4   sense of, you know, did you receive them in the role as 
+ 5   a consulting expert, in which case I think my questions 
+ 6   would be done on those 10 to 15 documents.  
+ 7             So I guess that's the question.  Did you 
+ 8   receive them as a consulting expert or as a testifying 
+ 9   expert?  
+10        A    Well, I received them as an expert, and I am 
+11   a consulting expert and a testifying expert, so that's 
+12   the only way I know how to answer the question.  
+13        Q    Understood. 
+14             And you did say that the documents didn't 
+15   affect your opinions in Dr. Seskin's case.  Do they -- 
+16   and do those 10 to 15 documents impact at all your 
+17   opinions, your general opinions, about Johnson & 
+18   Johnson's Baby Powder?  
+19        A    No.  
+20        Q    Okay.  Give me one moment. 
+21             So, Dr. Rigler, I'm just going to ask that 
+22   you preserve any email or written communication related 
+23   to those 10 or 15 documents, that if you locate them, 
+24   you just hold on to them.  I'll speak with Mr. Oliver 
+25   since I don't -- since I don't really understand what 
+0038
+ 1   those documents are, I am not going to say right now 
+ 2   that we're going to ask you to produce them.  But, of 
+ 3   course, I'll speak with Mr. Oliver, and we'll figure 
+ 4   that out.  But for now, I'd just ask that you preserve 
+ 5   them, not delete them, or anything like that.  
+ 6             MR. OLIVER:  Really quickly, just to 
+ 7        clarify for the record, Dr. Rigler, are they 
+ 8        on the reliance list we produced in this 
+ 9        case?  
+10             THE WITNESS:  I would say that most of 
+11        them are, yes.  
+12             MR. BOULOS:  Okay.  Okay.  
+13             MR. OLIVER:  Sorry.  That question never 
+14        got asked, Greg, and I think that's pretty 
+15        important [indiscernible] conversation.  
+16             THE WITNESS:  Yeah, a number of them 
+17        that I've seen -- that I'll receive at times, 
+18        they're -- I already have them on my reliance 
+19        list.  
+20             MR. BOULOS:  Okay.  
+21             THE WITNESS:  Yeah.  
+22        Q    (By Mr. Boulos)  And by that, it sounds like 
+23   there might be some that are not on your reliance list?
+24        A    There could be.  There may be some.  Again, I 
+25   don't remember them or recall them as I sit here.
+0039
+ 1        Q    Okay.  Thank you, Dr. Rigler. 
+ 2             I actually want to turn back to your reliance 
+ 3   list on a separate matter.  So we marked your reliance 
+ 4   list -- let me see the exhibit number.  So we marked it 
+ 5   as Exhibit 4.  If you could open that back up, please.  
+ 6        A    Okay.  All right, there we go.  
+ 7        Q    Okay.  Can we agree there's 379 items listed 
+ 8   on your reliance list for Dr. Seskin?
+ 9        A    Yes.  
+10        Q    Okay.  I'm now going to introduce a new 
+11   exhibit.  This is your reliance list in the Matthey 
+12   case, and we're marking that as Exhibit No. 8.  
+13        A    Okay.  
+14             (Exhibit 8 marked for identification.)
+15        Q    (By Mr. Boulos)  Let me know when you have a 
+16   moment -- I'm sorry.  Let me know when you have access 
+17   to that, and take a moment to take a look at it.  
+18        A    I've got it, and I'm looking at it now.
+19        Q    Okay.  
+20        A    Got it.
+21        Q    All right.  Do you recognize Exhibit 8?
+22        A    Yes.  
+23        Q    What is it?
+24        A    That is a previous reliance list of mine 
+25   probably created -- oh, I don't know -- maybe in 2021.
+0040
+ 1        Q    I think it actually -- Exhibit 8 has a date 
+ 2   on it.  I think it's dated September 11, 2020.  Is that 
+ 3   right?
+ 4        A    Yeah.  Uh-huh.
+ 5        Q    Okay.  
+ 6             MR. OLIVER:  Hey, Greg, I can't -- I'm 
+ 7        looking for the link in the Chat, and I'm not 
+ 8        seeing it.  
+ 9             MR. BOULOS:  Let me add it again, Lance.  
+10        It's possible that since you were on the 
+11        phone earlier -- 
+12             MR. OLIVER:  Katy just -- yeah, Katy 
+13        sent it to me, I think. 
+14             Okay.  Sorry.  Which exhibit was that?  
+15        I now have it.  
+16             MR. BOULOS:  It's Exhibit 8.  
+17             MR. OLIVER:  Got it.  Okay.  Got it.  
+18        Sorry.  Go ahead.  
+19             MR. BOULOS:  No problem.  
+20        Q    (By Mr. Boulos)  All right, Dr. Rigler, so 
+21   Exhibit 8 has 116 items listed on it; is that correct?
+22        A    Yes.  
+23        Q    And so we just discussed that your reliance 
+24   list in this case has 379 items on it, right?
+25        A    Yes.  
+0041
+ 1        Q    And so that's about 250 additional items; can 
+ 2   we agree on that?
+ 3        A    Yes.  I haven't done the math, but something 
+ 4   like that.
+ 5        Q    Okay.  And some of the items that are on your 
+ 6   reliance list in Dr. Seskin's case but weren't on your 
+ 7   reliance dated September 11, 2022 [sic], some of those 
+ 8   new documents were available before September 11, 2020, 
+ 9   but you didn't have them on your reliance list on 
+10   September 11, 2020; is that correct?
+11        A    Yes.  
+12        Q    Okay.  And just as a general matter, 
+13   why did you add documents that were available before 
+14   September 11, 2020, but you didn't include on your 
+15   reliance list on that date, why did you now include 
+16   them in your reliance list for Dr. Seskin's case?  
+17        A    They were -- originally, what I had and have 
+18   is a much larger list.  It's about twice the size of 
+19   the current list for Dr. Seskin, but it includes 
+20   documents not related to Johnson & Johnson now.  There 
+21   are some that are on this list too. 
+22             But what I did was I culled down that other 
+23   list to this one, and these documents were accumulated 
+24   over a period of a couple of years.  So this is one of 
+25   the reasons why the list has grown in size.  
+0042
+ 1        Q    Got it.  And so for documents that were -- 
+ 2   that are on your reliance list for Dr. Seskin's case 
+ 3   that weren't on your September 11, 2020 reliance list, 
+ 4   but were available on that date, is there any reason in 
+ 5   particular why you weren't relying on them on 
+ 6   September 11 2020, but are relying on them today?  
+ 7             MR. OLIVER:  Object to the form.  
+ 8             THE WITNESS:  Well, again, I -- there 
+ 9        are a lot of documents on here and -- and on 
+10        the previous list too.  Now, I don't know 
+11        specifically -- you're saying they were 
+12        available.  They may or may not have been 
+13        available for me at the time.  So that may be 
+14        why they weren't on there. 
+15             But after that time period and as time 
+16        went on, they were added -- or I was able to 
+17        add them -- or I had time -- enough time to 
+18        review them to be able to put them onto my 
+19        list.  So that's -- that's a lot of the 
+20        reasoning as to why.  
+21             MR. BOULOS:  Got it.  
+22        Q    (By Mr. Boulos)  So for some documents, it 
+23   might be that you reviewed them and now found them 
+24   relevant even though they may -- you may not have had 
+25   that opinion before September 11, 2020; that's one 
+0043
+ 1   potential reason, right?
+ 2        A    Yeah, or I just -- I really hadn't had time 
+ 3   to review them because I accumulated a lot of documents 
+ 4   over that time period, a lot, and -- 
+ 5        Q    Okay.  
+ 6        A    Yeah, I had to assimilate them and try and 
+ 7   understand how they applied.  So that took quite a bit 
+ 8   of time, and I had to review them and then decide 
+ 9   whether to assimilate them or not.  So that's what 
+10   happened.
+11        Q    Okay.  And another potential reason I think 
+12   you mentioned is maybe the document existed before 
+13   September 11, 2020, but you didn't receive it until 
+14   after; and now that you've received it, you put it on 
+15   your reliance list.  Is that right?
+16        A    Yes, that's one reason.
+17        Q    Okay.  All right. 
+18             So I'm going to switch topics now.  I just 
+19   want to talk about your invoices.  I haven't seen any 
+20   invoices for you in this -- for Dr. Seskin's case.  
+21   Have you prepared any invoices for Dr. Seskin's case?  
+22        A    I think the only invoice that was prepared 
+23   was the original retainer document because, you know, 
+24   things got started a number of years ago, and then they 
+25   stopped.  So I hadn't done any invoicing until 
+0044
+ 1   recently.  So that's the reason at this point.
+ 2        Q    Correct me if I'm wrong.  I think you have a 
+ 3   $5,000 retainer that you receive at the outset of every 
+ 4   case.  Is that correct?
+ 5        A    Yes.  
+ 6        Q    Okay.  Got it. 
+ 7             And you did mention you started working on 
+ 8   this -- Dr. Seskin's case a few years ago. 
+ 9             Do you remember when you were first retained 
+10   to work on this case?  
+11        A    I want to say it was in 2020 --
+12        Q    Okay.  
+13        A    -- but I -- again, it's been quite a while.
+14        Q    Got it. 
+15             Are you able to approximate how many hours 
+16   you've spent in your work on Dr. Seskin's case since 
+17   being retained?  
+18        A    No.  I haven't added up the hours.  
+19        Q    How many hours did you spend preparing for 
+20   today's deposition?
+21        A    Again, I haven't added them up, but it's 
+22   probably more than 15 or 20.
+23        Q    Okay.  And we already confirmed your rates in 
+24   the disclosure.  
+25        A    Yes.  
+0045
+ 1        Q    Dr. Rigler, that is all the questions that I 
+ 2   have for you.  I appreciate your time and your answers 
+ 3   to my questions.  
+ 4        A    Sure.
+ 5        Q    Another defendant is here and may have 
+ 6   questions for you, and so her questions or Lance -- 
+ 7   Mr. Oliver's questions may cause me to have follow-up; 
+ 8   but, otherwise, thank you.  
+ 9        A    You're welcome.
+10             MS. BROWNEWELL SMITH:  Thank you, Greg. 
+11             Dr. Rigler, are you okay to keep going, 
+12        or do you want to take a break?  
+13             THE WITNESS:  No, I'm fine.  
+14             MS. BROWNEWELL SMITH:  Great. 
+15                         EXAMINATION
+16   BY MS. BROWNEWELL SMITH:  
+17        Q    Dr. Rigler, my name is Monica Brownewell 
+18   Smith, and I represent Publix Super Markets.  And we 
+19   talked probably about three years ago in the Matthey 
+20   case, so I hopefully just have a few questions for you. 
+21             You're familiar with Publix Super Markets, 
+22   correct?  
+23        A    Yes.  
+24        Q    And you've been there as a shopper in the 
+25   past; is that right?
+0046
+ 1        A    I have, yes.
+ 2        Q    In connection with your opinions in this 
+ 3   case, in Dr. Seskin and Mr. Sugarman's case, have you 
+ 4   reviewed any Publix documents?
+ 5        A    I have not.  
+ 6        Q    Do any of your opinions in this case depend 
+ 7   on where the talcum powder products were purchased?
+ 8        A    No.  
+ 9        Q    Have you traced any of the powder products 
+10   that you have testified about to Publix?
+11             MR. OLIVER:  Object to the form.  
+12             THE WITNESS:  I would have to think 
+13        about that. 
+14             Originally, MAS, when we began the study 
+15        work, we went and purchased a number of 
+16        talcum powder products locally; and I can't 
+17        recall if Publix was on that list or not.  
+18        Q    (By Ms. Brownewell Smith)  Are you relying on 
+19   that work for your opinions in this case?
+20        A    When you say "that work," what work are you 
+21   referring to?  
+22        Q    You said the original product -- the original 
+23   work that you did at MAS with regard to this project is 
+24   what you testified. 
+25             Are you relying on that work for your 
+0047
+ 1   opinions in this case regarding Dr. Seskin?  
+ 2        A    Yes.  
+ 3        Q    You are not offering any opinions in this 
+ 4   case about labeling standards for talcum powder 
+ 5   products, are you?
+ 6        A    No.  
+ 7        Q    Do you plan to offer any opinions about 
+ 8   Publix in this case?
+ 9        A    In terms of what?  
+10        Q    Any opinions at all about Publix Super 
+11   Markets.  
+12        A    I haven't been asked to make any opinions 
+13   about Publix.
+14             MS. BROWNEWELL SMITH:  I think that's 
+15        all the questions I have for you, sir.  Thank 
+16        you so much.  
+17             THE WITNESS:  You're welcome.  
+18             MR. OLIVER:  Good morning, Dr. Rigler.  
+19             THE WITNESS:  Good morning.  
+20             MR. OLIVER:  Are you okay to go forward 
+21        right now?  
+22             THE WITNESS:  Yes.
+23                         EXAMINATION
+24   BY MR. OLIVER:  
+25        Q    Do you recall a few moments ago, Mr. Boulos, 
+0048
+ 1   counsel for Johnson & Johnson, asked you about your 
+ 2   reliance on Bob Sugarman's testimony in your exposure 
+ 3   analysis?
+ 4        A    Yes.  
+ 5        Q    Did you find any -- well, first of all, did 
+ 6   you review all of Mr. Sugarman's testimony?
+ 7        A    Yes.  
+ 8        Q    Did you find anything in that testimony 
+ 9   suggesting that you shouldn't use or rely on that in 
+10   your exposure analysis?
+11        A    No.  
+12        Q    So based on your read of the testimony, you 
+13   found it credible and reliable for use in your exposure 
+14   analysis?
+15        A    Yes.  He was her husband and had stated at 
+16   the outset that he was essentially speaking for her, as 
+17   she had passed.
+18        Q    Did you see -- you understand, Dr. Rigler, 
+19   that -- actually, strike that.  
+20             At your previous deposition, you were asked a 
+21   question about -- and when I say "your previous 
+22   deposition," I need to be clear.  I cannot remember 
+23   whether it was your previous Matthey deposition or your 
+24   previous Seskin deposition, because I think all the 
+25   parties in this litigation have been somewhat lax in 
+0049
+ 1   making those distinctions.  But do you recall being 
+ 2   asked about one of your previous depositions in one of 
+ 3   these cases whether you had an opinion that Dr. Seskin 
+ 4   was exposed to asbestos above ambient exposure?  
+ 5             MR. BOULOS:  Object to form.  
+ 6             THE WITNESS:  I can't recall.  I can't 
+ 7        recall that.  
+ 8             MR. OLIVER:  Okay.  
+ 9        Q    (By Mr. Oliver)  Do you, sitting here today, 
+10   have an opinion about whether Dr. Seskin would have 
+11   been exposed to asbestos through Johnson's Baby Powder 
+12   above ambient exposure?
+13        A    Yes.  
+14        Q    Okay.  And what is that opinion?
+15        A    That she would have been exposed above 
+16   ambient levels to asbestos based on the testing, the 
+17   exposure testing, and what I have read in the 
+18   literature and understand about other exposure tests 
+19   and analyses of baby powders.  
+20        Q    Does her own fact sheet and the testimony of 
+21   her husband also contribute to your conclusion?
+22        A    Yes.  
+23        Q    And does your testing at MAS contribute to 
+24   your conclusion?
+25        A    Yes.  
+0050
+ 1        Q    Dr. Rigler, you tested some bottles, some 
+ 2   historic bottles, of Johnson & Johnson's Baby Powder at 
+ 3   MAS, correct?
+ 4        A    Yes.  
+ 5        Q    And that historic testing forms partial basis 
+ 6   for your testimony in this case, true?
+ 7        A    That's correct, yes.
+ 8        Q    When you were doing the testing at MAS, were 
+ 9   you able to tell the difference, when counting asbestos 
+10   fibers, between asbestiform fibers, cleavage fragments, 
+11   and bundles of asbestiform fibers?
+12        A    Yes.  
+13        Q    How were you able to tell the difference in 
+14   those things?
+15        A    They have specific morphology, that is, form 
+16   and shape.  The asbestiform types, which is all that I 
+17   ever counted there, that we ever counted, were 
+18   parallel-sided, they were striated, indicating 
+19   bundling, and some had splayed ends, which also 
+20   indicated bundling, and their size criteria matched 
+21   what was required for the analysis.  In our case, it 
+22   was 5:1 aspect ratio.
+23        Q    The 5:1 aspect ratio, is that a regulatory 
+24   definition?
+25        A    Yes.  
+0051
+ 1        Q    From what agency or group?
+ 2        A    That is an EPA definition.
+ 3        Q    Did you -- I think you said this already -- 
+ 4        A    Yeah, and -- excuse me -- there are other 
+ 5   standards that also require that too.
+ 6        Q    Okay.  I think you said this, Dr. Rigler, but 
+ 7   when you were doing your work at MAS, you did not count 
+ 8   cleavage fragments?
+ 9        A    No.  
+10        Q    Can a cleavage fragment be in a bundle?
+11        A    No, uh -- no.  I mean, it's a cleavage 
+12   fragment.
+13        Q    Is there scientific literature explaining 
+14   that cleavage fragments can be dangerous?
+15        A    There are recent, if you will, consensus that 
+16   they are.  There are also other experts that have said 
+17   that they are. 
+18             Most recently, the FDA IGWACP [sic], which is 
+19   Interagency Working Group, has stated that you will 
+20   count and should count all of these kinds of structures 
+21   that appear to fit the regulatory definition regardless 
+22   of their origin, if you will.  So if -- whether you can 
+23   or can't determine whether it's an asbestiform, you're 
+24   supposed to count that.  There is a concerted effort to 
+25   be sure that they're included.  
+0052
+ 1        Q    Did the IW -- is it IGWACP?
+ 2        A    Interagency Working Group.  I think it's 
+ 3   IWGACP.  
+ 4        Q    IWAG -- well, I'm going to call it the 
+ 5   International [sic] Working Group, okay, because I 
+ 6   never get the letters right. 
+ 7             Did the International [sic] Working Group 
+ 8   explain in the materials you read why they reached the 
+ 9   conclusion you just told us about?  
+10        A    They were concerned that the -- these 
+11   structures would be missed, and there's still a concern 
+12   about the toxicity of structures that meet the 
+13   definition but are what we call the -- they meet the 
+14   regulatory definition, but they may not be considered 
+15   asbestiform, if you will.  But they meet the 
+16   definition.  They have parallel sides, they may have 
+17   splayed ends, the kinds of things that you would see 
+18   for an asbestiform structure. 
+19             So they've waved aside the whole argument and 
+20   said, "Look, we're going to say that these need to be 
+21   counted regardless of their origin."
+22             MR. OLIVER:  I don't have any further 
+23        questions at this time.  
+24             MR. BOULOS:  I have some follow-up.
+25             THE COURT REPORTER:  Do you mind if we 
+0053
+ 1        take a quick bathroom break?  
+ 2             MR. BOULOS:  Of course.
+ 3             (Discussion off the record.)
+ 4             (Recess taken.)
+ 5                     FURTHER EXAMINATION
+ 6   BY MR. BOULOS:  
+ 7        Q    Dr. Rigler, we're back from a short break.  
+ 8   Are you able to continue?
+ 9        A    Yes.  
+10        Q    All right.  So I just have a few follow-up 
+11   questions.  
+12        A    Okay.  
+13        Q    Mr. Oliver asked you if you have an opinion 
+14   that Dr. Seskin was exposed to asbestos above ambient.  
+15   Do you remember that question?
+16        A    Yes.  
+17        Q    And you answered in the affirmative, right?
+18        A    Yes.  
+19        Q    Okay.  And you -- when asked about the basis 
+20   of that opinion, you mentioned exposure testing, 
+21   literature, tests and analyses of baby powder.  Do I 
+22   have that right?
+23        A    Yes.  
+24        Q    Okay.  Are the materials -- those materials 
+25   that we just discussed on your reliance list?
+0054
+ 1        A    Yes.  
+ 2        Q    Can you point -- and we can pull up the 
+ 3   exhibit again, but can you point to the specific 
+ 4   documents on your reliance list that you're using to 
+ 5   form that opinion?  And I'll tell you that your 
+ 6   reliance list is marked as Exhibit 4.  
+ 7        A    Yes, I've got a copy of it here, so let me 
+ 8   just -- it would be the -- our below-the-waist study at 
+ 9   MAS.  That was done -- let's see. 
+10        Q    To help you out, I see -- I did a word 
+11   search.  No. 223 has the word "waist" in it.  Maybe you 
+12   might want to look at that one.  
+13        A    Which one is it?  224?  
+14        Q    223.  
+15        A    223.  Yes, that would be one of them.
+16        Q    Okay.  Is there -- can you point me to the 
+17   other documents you're relying on for that opinion on 
+18   ambient exposure?
+19        A    Yeah.  I believe there are a couple of Pooley 
+20   documents, if you would -- if you could scan for those.  
+21   Maybe I could that -- hold on.  Let's see if I can do 
+22   it from here.
+23        Q    Yeah, you should be able to on the exhibit 
+24   platform.  
+25        A    Let's see.  Okay.  Hold on. 
+0055
+ 1             157.  Hold on.  175.  Okay, then there's the 
+ 2   Gordon studies.  Hold on.  That would be 133.  Let's 
+ 3   see.  Hold on.  Let's see the other ones we have here.  
+ 4   I'm trying to get the other -- 160.  No. 86.  Hold on.  
+ 5   No. 15 is the ATSDR. 
+ 6             Let me see if I have any others.  There may 
+ 7   be others that I can't -- let me see.  No. 33.  Hold 
+ 8   on.  No. 69.  I said 86 already.  I'm looking for 
+ 9   studies, actual studies, here. 
+10             The MAS baby powder study -- baby powdering 
+11   studies, and there were two of those.  Hold on.  
+12   MAS Hygiene Study, 214, and then there was a second 
+13   one, 220. 
+14             So those would be a number of them.  There 
+15   are others.  There may be others here; but, again, I 
+16   would have to search the list some more and think about 
+17   that, but those are -- those are a number of them.  
+18        Q    Okay.  
+19        A    Yeah.  
+20        Q    And -- oh, sorry, I'm just looking at an 
+21   exhibit that seems to have a problem.  Give me one 
+22   second.  
+23        A    Yep.  
+24        Q    And, Dr. Rigler, you could agree that all of 
+25   the materials you just identified on your reliance list 
+0056
+ 1   that you are using to support your opinion about 
+ 2   ambient, those all predate 2022, right?
+ 3        A    Yes.  
+ 4        Q    Okay.  So what I'm trying to mark as an 
+ 5   exhibit is your deposition testimony in the Matthey 
+ 6   case.  And I know there's been some confusion, and I 
+ 7   want to state for the record at least my understanding. 
+ 8             My understanding is you were deposed in the 
+ 9   Matthey case on September 11, 2020.  I do not believe 
+10   you were deposed for Dr. Seskin's case.  If Mr. Oliver 
+11   disagrees, you know, he can make his statement, but 
+12   that's my understanding. 
+13             And so what I intend to show you here and 
+14   mark as Exhibit 9 is your deposition testimony from the 
+15   Matthey case.  So let me know when you're able to open 
+16   that.  
+17             (Exhibit 9 marked for identification.)
+18             MR. OLIVER:  Greg, I agree with what 
+19        you've said because I now remember the 
+20        parties agreed that because Dr. Rigler is 
+21        giving generic testimony in Dr. Seskin's case 
+22        at the time, that the Matthey deposition will 
+23        be fine.  So I agree with your recitation of 
+24        what happened.  
+25             MR. BOULOS:  Okay.  And, you know, 
+0057
+ 1        obviously I don't have any knowledge of the 
+ 2        agreements, but I'm sure you guys papered 
+ 3        that.  And, you know, so that's -- I haven't 
+ 4        been around long enough to know about that 
+ 5        agreement, but okay.  
+ 6        Q    (By Mr. Boulos)  Dr. Rigler, let me know if 
+ 7   you've had the ability to open up that deposition 
+ 8   testimony.  
+ 9        A    Is that -- which exhibit is that?  
+10        Q    That is -- I'm sorry, I just marked it, and I 
+11   don't remember the number.  It should be the 
+12   highest-numbered exhibit.  Let me see.  
+13        A    Nine?  
+14        Q    That's 9, correct.  
+15        A    Okay.  It's thinking.  It's not rendering a 
+16   page yet.
+17        Q    Yeah, you know, I'm having the same issue, so 
+18   what I'm going to do here is share my screen instead, 
+19   if that's all right with you, and -- 
+20        A    Okay.  
+21        Q    Okay.  So I'm going to share my screen -- 
+22             MR. OLIVER:  [Indiscernible] by the way.  
+23        Or, excuse me, I'm wrong about that.  It's 
+24        77.
+25             MR. BOULOS:  Can you say that again, 
+0058
+ 1        Lance?  I didn't hear you.  
+ 2             MR. OLIVER:  It's page 77, I believe, is 
+ 3        the page you're looking for.  
+ 4             MR. BOULOS:  Yeah, that's right.  That's 
+ 5        right.  So I'm going to share my screen here, 
+ 6        Dr. Rigler.  
+ 7             THE WITNESS:  Okay.  
+ 8             MR. BOULOS:  Okay.
+ 9        Q    (By Mr. Boulos)  So let's start at the top of 
+10   Exhibit 9 here.  Can you see my screen?
+11        A    Yes.  
+12        Q    All right.  And do you agree at the very top 
+13   it says "Mark Rigler, PhD, September 11, 2020"?
+14        A    Yes.
+15        Q    Okay.  And then Exhibit 9 here says 
+16   "Phillippe Matthey vs. Johnson & Johnson."  Do you 
+17   agree with that? 
+18        A    Yes. 
+19        Q    All right.  And so I am going to go down to 
+20   page 77 of Exhibit 9. 
+21        A    Okay.
+22        Q    And so on page 77 of Exhibit 9, line 15, you 
+23   were asked about Ms. Matthey.  "Okay.  And you had also 
+24   agreed it would be speculative to opine that 
+25   Ms. Matthey was exposed to asbestos in excess of 
+0059
+ 1   ambient; true?" 
+ 2             Do you agree that's the question on page 77 
+ 3   of Exhibit 9?  
+ 4        A    Where are we here?  
+ 5        Q    Right here (indicating), if you can see me 
+ 6   moving my mouse.  
+ 7        A    Yeah, I see that.  
+ 8        Q    Okay.  So do you agree I read that question 
+ 9   accurately?
+10        A    Yes.  
+11        Q    Okay.  And then your answer here is, "Yeah, I 
+12   don't -- I can't make a comment on that." 
+13             Did I read your answer correctly?  
+14        A    Yes.  
+15        Q    All right.  And my question, Dr. Rigler, is:  
+16   Today, you've offered an opinion that Dr. Seskin was 
+17   exposed to asbestos in excess of ambient, but you 
+18   weren't able to do that in 2020 in Ms. Matthey's case.  
+19   Can you explain why you are now able to make that 
+20   opinion in Dr. Seskin's case?
+21             MR. OLIVER:  Object to the form only 
+22        because you didn't read the rest of his 
+23        answers and question after that, but go 
+24        ahead.  
+25             THE WITNESS:  Well, I don't know if 
+0060
+ 1        there's any additional context here.  Let me 
+ 2        see.  "You said that quickly, could you just 
+ 3        ask," that -- 
+ 4             MR. BOULOS:  Let me know if -- because 
+ 5        I'm controlling the document, if you need me 
+ 6        to --
+ 7             THE WITNESS:  Yeah.  No, I'm just 
+ 8        looking at 78.  "I can't say what her..." 
+ 9             So this was September 11th of 2020.  
+10        I've had time to think about it -- I've had 
+11        time to think about that since that time. 
+12        And, again, based on what I've talked about 
+13        earlier and questions I've answered earlier 
+14        today, it would be my opinion that, you know, 
+15        more likely than not she would have been 
+16        exposed to the level above ambient, and that 
+17        would be -- as I say, I would say that.  
+18             MR. BOULOS:  Thank you, Dr. Rigler.  
+19        Q    (By Mr. Boulos)  And you just identified 
+20   documents on your reliance list that you are relying on 
+21   to form your opinion that Dr. Seskin was exposed to 
+22   asbestos in excess of ambient. 
+23             Do you agree that those documents were 
+24   available prior to September 11, 2020?   
+25        A    I don't know the dates on all of them; but if 
+0061
+ 1   they were, I hadn't had time to form an opinion, as I 
+ 2   stated here, in my testimony at that time.  
+ 3        Q    Thank you, Dr. Rigler.  
+ 4        A    Sure.
+ 5        Q    Just give me one moment. 
+ 6             Okay.  I'm going to stop sharing my screen, 
+ 7   and I want to now turn your attention back to your 
+ 8   exposure estimate.  I'll give you that exhibit number 
+ 9   in a second. 
+10             I've marked your exposure estimate as 
+11   Exhibit 6, and I just have a couple of questions on 
+12   that.  
+13        A    Okay.  
+14        Q    Dr. Rigler, you agree that Exhibit 6 does not 
+15   use the word "asbestos"?  
+16        A    It does not.
+17        Q    Do you agree that nothing in this estimate 
+18   says anything about the amount of asbestos Dr. Seskin 
+19   might or might not have been exposed to?
+20             MR. OLIVER:  Object to the form.  
+21             THE WITNESS:  Well, I was asked to do an 
+22        exposure estimate to the talc itself.  I 
+23        wasn't asked to do an exposure estimate based 
+24        on asbestos.  So that's why this is the way 
+25        the table is set.  
+0062
+ 1        Q    (By Mr. Boulos)  And that's why your exposure 
+ 2   estimate does not tell the jury anything about the 
+ 3   amount of asbestos Dr. Seskin might have been exposed 
+ 4   to; is that correct?
+ 5             MR. OLIVER:  Object to the form.  It 
+ 6        states facts not in evidence.  
+ 7             THE WITNESS:  It's -- again, it is 
+ 8        showing here the exposure to the talc itself.  
+ 9        Q    (By Mr. Boulos)  So the answer to my question 
+10   is yes?
+11             MR. OLIVER:  Object to the form.  
+12        Misstates his testimony.  
+13             THE WITNESS:  Can you restate the 
+14        question, please?  
+15             MR. BOULOS:  Sure.  
+16        Q    (By Mr. Boulos)  I'll try to put it a little 
+17   simpler. 
+18             Does Exhibit 6 tell the jury anything about 
+19   the amount of asbestos Dr. Seskin might have been 
+20   exposed to?  
+21        A    No.  
+22        Q    Okay. 
+23             All right, I want to talk about another 
+24   question Mr. Oliver had for you. 
+25             Actually, staying on the ambient issue, you 
+0063
+ 1   made the comment that you tested historic bottles at 
+ 2   MAS, and that forms, at least in part, the basis for 
+ 3   your testimony in this case. 
+ 4             That testing, documents related to those 
+ 5   testings, that's on your reliance list?  
+ 6        A    Yes.  
+ 7        Q    Okay.  And I think you just mentioned them, 
+ 8   like the baby powdering studies, you refer to them as?
+ 9        A    Yes.  
+10        Q    Okay.  Great.  
+11             All right.  Moving on, Mr. Oliver asked if 
+12   you were able to tell the difference between bundles, 
+13   cleavage fragments, and asbestiform fibers.  Do you 
+14   remember that question?  
+15        A    Yes.  
+16        Q    And you said yes to that question?
+17        A    Yes.  
+18        Q    And to base -- to form that opinion, you said 
+19   you relied on some regulatory definitions and other 
+20   materials. 
+21             Can you point me specifically to the items on 
+22   your reliance list that you used to form your -- to be 
+23   able to tell the difference between bundles, cleavage 
+24   fragments, and asbestiform fibers?  
+25        A    Sure.  Do we want to go back to the list?  
+0064
+ 1        Q    Yeah.  So that would be Exhibit 4.  
+ 2        A    Okay.  
+ 3        Q    You have access to that.
+ 4             MR. OLIVER:  And I'm happy for him to do 
+ 5        this, Greg.  My only objection is to the 
+ 6        extent that this is a deposition, we would 
+ 7        reserve the right for Dr. Rigler to review 
+ 8        his reliance list, you know, carefully and 
+ 9        slowly to make sure he's comprehensive. 
+10             In other words, I'm happy for him to 
+11        identify stuff that he can now, but we're not 
+12        committing that that's everything because 
+13        this is 200-something, you know, entries.  
+14             MR. BOULOS:  I understand.  This is also 
+15        our opportunity to understand Dr. Rigler's 
+16        opinions and the bases for those opinions. 
+17             I'm happy to give Dr. Rigler as much 
+18        time as he needs to review his reliance list, 
+19        but we need to know the bases for that 
+20        statement that he gave to you.  And I don't 
+21        think that there can be room for changing 
+22        that when it comes time for trial, especially 
+23        under Florida law on that issue. 
+24             So you made your statement on the 
+25        record.  I made mine. 
+0065
+ 1        Q    (By Mr. Boulos)  You can go ahead and review 
+ 2   your reliance list, and we can obviously deal with that 
+ 3   if it becomes an issue.  
+ 4        A    Well, again, I'll do my best, as I sit here, 
+ 5   to pull these, but there may be others on here that I 
+ 6   have not -- I have not been able to say that they were 
+ 7   used.  But I want to be able to reserve the right to 
+ 8   say -- yeah, I mean, they're on the list, so if we're 
+ 9   at trial I can say, hey, it was this one here at the 
+10   time, et cetera.  So I just -- I want to be able to 
+11   reserve that.  
+12        Q    I understand, Dr. Rigler, and, you know, all 
+13   of our statements are on the record on that issue at 
+14   this point.  
+15        A    Okay.
+16        Q    And, you know, out of respect for you and 
+17   Mr. Oliver, I don't think we need to, you know, argue 
+18   the points and -- or any of that.  So we've all stated 
+19   our positions.  If you can just tell me what on your 
+20   reliance list you used --
+21        A    Okay.
+22        Q    -- and then we'll move on.  And if it becomes 
+23   an issue later, we'll deal with it.  
+24        A    All right.  No. 1, the AHERA EPA, Part 763.
+25        Q    And if I can pause for a moment --
+0066
+ 1        A    Yeah.
+ 2        Q    -- because you did this with the other 
+ 3   question.  When you're saying No. 1, No. 23, so that 
+ 4   the record is clear, Exhibit 4, all the documents are 
+ 5   numbered.  When you're giving me a number, that's 
+ 6   corresponding to the numbered documents on Exhibit 4; 
+ 7   is that correct?  
+ 8        A    Yes.
+ 9        Q    Okay.  Thank you.  Go ahead.  So you 
+10   mentioned No. 1
+11        A    No. 1, the AHERA EPA.  No. 7, the "Asbestos 
+12   Analysis TEM Methods Comparison Table," that 
+13   encompasses the methods, if you will, that I have used 
+14   in the past to be able to make those decisions. 
+15             Let's see what else we have.  No. 11, the 
+16   ASTM D5755.  No. 12, the ASTM D5756. 
+17             Let's see.  I'm going to say ASTM -- No. 14, 
+18   ASTM 7712-11.  There should be another ASTM on this 
+19   list, which I had -- I thought I included it, but it's 
+20   ASTM D6281-23.  I don't see it here, but that -- I also 
+21   want to include that one too. 
+22             Let's see.  The next one is 42, Campbell.  
+23   No. 42, that is. 
+24             Let's see the other one here.  No. 70, the 
+25   Current Intelligence Bulletin. 
+0067
+ 1             Let's see, what's the next one.  There are 
+ 2   others that are on here.  I'm not going to say them 
+ 3   right off the bat.  Hold on.
+ 4             No. 120, which is one of the FDA IWGACP 
+ 5   papers.  There's the White Paper itself.  This is the 
+ 6   appendix to the White Paper.  And then No. 121, this is 
+ 7   the White Paper itself, the FDA IWGACP White Paper. 
+ 8             Let's see what else we have here.  We're 
+ 9   using -- the whole list got violated now. 
+10             All right.  ISO -- hold on.  ISO -- it's 
+11   No. 151, ISO 10312, that standard.  Then there's 
+12   ISO 13794, which is No. 152.  There's ISO 22 -- 153 is 
+13   ISO 22262-1.  And then there's 154, ISO 22262-2. 
+14             Let's see the other ones we have.  Hold on.  
+15   I think I missed one here. 
+16             There are other documents by other groups, if 
+17   you will.  There should be the NIOSH ones too.  Let 
+18   me -- hold on.  Should be NIOSH 7402.  I'm trying to 
+19   find that here on the list.  Let me count.  Okay.  Let 
+20   me see which one we've got here.  Yeah, 248.  It's 
+21   NIOSH 7402. 
+22             So those are -- those are the main ones.  
+23   There may be some others, as I say, that are here, but 
+24   I would have to look, spend quite a bit more time 
+25   looking, but those are some of the main ones.  
+0068
+ 1        Q    I want to make it clear I'm not imposing any 
+ 2   time limits on you, Dr. Rigler.  If you feel that you 
+ 3   need time to review the list, I don't have any issues 
+ 4   with you doing that, but you tell me if you would like 
+ 5   me to move on or if you would like to continue 
+ 6   reviewing your list.  
+ 7        A    At this point, I think we can move on.  
+ 8        Q    Okay. 
+ 9             All right.  So one thing you also mentioned 
+10   when Mr. Oliver was asking you questions was that there 
+11   are articles indicating that cleavage fragments can be 
+12   dangerous.  Do you remember saying that?  
+13        A    Yes.  
+14        Q    Are those articles on your reliance list?
+15        A    They are.  Again, I would have to do a search 
+16   for those.
+17        Q    For the record, I'll ask the question.  Can 
+18   you please identify the articles that say cleavage 
+19   fragments can be dangerous on your reliance list for 
+20   the record?
+21        A    Yeah.  Let me think.  Go back to the two FDA 
+22   documents as described in the IWGACP.  They're 
+23   questioning those.  There's also one by Spooner.
+24        Q    And those FDA -- I'm sorry to interrupt you, 
+25   but those FDA documents are on your reliance list?
+0069
+ 1        A    Yes.  
+ 2        Q    Can you point to them, please?
+ 3        A    Oh.  Hold on.  Let's do Spooner first.  
+ 4   That's 282.  And then we'll go back to IWGACP. 
+ 5             The -- No. 103, which is the FDA's February 
+ 6   2020 Meeting Transcript, there's a discussion about it 
+ 7   in there. 
+ 8             Let me find the other one here.  So 120, 
+ 9   which we've already talked about, the FDA IWGACP, 
+10   that's the appendices to the White Paper; and then 121 
+11   is the actual White Paper itself. 
+12             There's another one I'm trying to think of.  
+13   Let's see.  Hold on.
+14             Now that you've brought this to my mind, 
+15   there's another paper, it's an EPA paper, which is not 
+16   on my list, but we will bring it up here.  And it was a 
+17   reply by EPA regarding RJ Lee and the stone and gravel 
+18   association, and they talk about cleavage fragments in 
+19   that paper also, so -- I'm trying to think if there's 
+20   another one we have here.  
+21        Q    Dr. Rigler, just to ask you a question about 
+22   that EPA paper that's not on your reliance list --
+23        A    Yeah. 
+24        Q    -- did you rely on that paper in forming your 
+25   opinion that cleavage fragments can be dangerous?
+0070
+ 1        A    Yes.  
+ 2        Q    Okay.  Thank you.  
+ 3        A    I'm seeing if there's others here.
+ 4        Q    Okay.  
+ 5        A    Yeah.  Again, at this point, I would have to 
+ 6   do some more research on the list itself because 
+ 7   there -- you know, there's more in the papers than what 
+ 8   I can remember, as I don't have a photographic memory 
+ 9   in terms of everything that's in these papers.  So I 
+10   would reserve the right to be able to bring others up 
+11   as I can in the future that are applicable in this 
+12   case.
+13        Q    Thank you, Dr. Rigler.  For the record, my 
+14   same statement previously, I'll just reiterate here, 
+15   and I'll just refer back to that statement. 
+16             Okay.  And this is the last one I'm going to 
+17   do this to you on.  I appreciate you going through your 
+18   list here. 
+19             So you did talk to Mr. Oliver about the 
+20   International [sic] Working Group.  I too could not 
+21   follow the letters, so I'll go with International [sic] 
+22   Working Group.  
+23        A    Yeah.  
+24        Q    And you mentioned they expressed a concern 
+25   that certain structures would be missed, and the 
+0071
+ 1   toxicity of, you know, certain structures that meet the 
+ 2   regulatory definition, they should be counted.  Do you 
+ 3   remember that comment?
+ 4        A    Yes.  
+ 5        Q    Okay.  What are you basing the statement on, 
+ 6   the statement that the International [sic] Working 
+ 7   Group had that concern?
+ 8        A    It's within the body of the document.
+ 9        Q    Okay.  Is that document on your reliance 
+10   list?
+11        A    Yes.  
+12        Q    Can you point me to it?
+13        A    I believe it's 120 and 121.
+14        Q    Okay.  
+15        A    Let me see if that's the -- 150 -- I have to 
+16   look. 
+17             Yeah, those two documents.  
+18        Q    Okay.  All right, Dr. Rigler, that's all the 
+19   follow-up I had.  Publix's counsel may have follow-up, 
+20   but -- I said thanks last time.  I'll say thanks again.  
+21   I can't promise I won't say thanks a third time.  
+22        A    All right.  I'll be here.
+23        Q    Okay.
+24             MS. BROWNEWELL SMITH:  I don't have any 
+25        follow-up questions for you, Dr. Rigler.  
+0072
+ 1        Thank you.  
+ 2             THE WITNESS:  You're welcome.  
+ 3                     FURTHER EXAMINATION
+ 4   BY MR. OLIVER:  
+ 5        Q    Okay, Dr. Rigler, I don't believe I'm going 
+ 6   to ask you any questions about your reliance list or 
+ 7   cleavage fragments, so that's probably a great relief, 
+ 8   so no memory tests but I've got a question about your 
+ 9   opinion on ambient exposure. 
+10             The concept of ambient exposure is based on 
+11   the idea that everybody walking around has some 
+12   exposure to asbestos; is that correct?  
+13        A    Yes.  
+14             MR. BOULOS:  Object to form.  
+15             THE WITNESS:  I mean, I don't agree with 
+16        that, but there is -- somehow everyone 
+17        believes that asbestos is floating around all 
+18        the time, which it is not.  
+19             MR. OLIVER:  Okay.
+20        Q    (By Mr. Oliver)  So your opinion is that you 
+21   disagree with the ambient exposure theory, correct?
+22        A    Yes.  
+23        Q    Okay.  But if we assume that there is such a 
+24   thing, you have opined that Dr. Seskin was exposed 
+25   above ambient level because you know of her baby powder 
+0073
+ 1   usage; is that fair?
+ 2        A    I think that's fair, yes.
+ 3        Q    And within her baby powder usage, your 
+ 4   testing at MAS leads you to the conclusion that there 
+ 5   was, during her time period of usage, contamination in 
+ 6   baby powder with asbestos?
+ 7        A    Yes.  And it's not only MAS's result, it's 
+ 8   results from other studies that were presented earlier 
+ 9   on, you know, in the '70s, and also Gordon's work and 
+10   others who have also tested and done exposure studies.  
+11   So it's not just MAS.
+12             MR. OLIVER:  I don't have anything 
+13        further.  
+14             MR. BOULOS:  Hopefully just one or two, 
+15        Dr. Rigler.  
+16                     FURTHER EXAMINATION
+17   BY MR. BOULOS:  
+18        Q    Did you calculate how much asbestos 
+19   Dr. Seskin was exposed to?
+20        A    I wasn't asked to do that.
+21        Q    Okay.  That's all my questions.  
+22                     FURTHER EXAMINATION
+23   BY MR. OLIVER:  
+24        Q    So, Dr. Rigler, given the information that we 
+25   know about Dr. Seskin, am I correct that there is no 
+0074
+ 1   scientifically viable way to determine precisely how 
+ 2   many asbestos fibers she was exposed to?
+ 3        A    We can get an estimate, which I think would 
+ 4   be a reasonable estimate. 
+ 5             As far as a scientifically viable way, you 
+ 6   know, we would base it on our calculations and our 
+ 7   studies -- and studies.  So I can't say that there's no 
+ 8   scientifically viable way.  
+ 9        Q    But -- and I guess my point is -- what you're 
+10   saying is you could estimate based on historical 
+11   models, but you don't -- you're not going to be able to 
+12   say the precise number of fibers that Dr. Seskin was 
+13   exposed to ever?
+14        A    No.  
+15        Q    Because no scientist could do that with 
+16   today's technology, true?
+17        A    True.
+18        Q    All right.  That's all I have. 
+19                     FURTHER EXAMINATION
+20   BY MR. BOULOS:  
+21        Q    And, Dr. Rigler, just to follow up on that, 
+22   so you said that it is possible to estimate the amount 
+23   of asbestos Dr. Seskin was exposed to, right?
+24        A    There would be an estimate, but as far as an 
+25   exact number or say this such many, that would be -- 
+0075
+ 1   that would be only an estimate.
+ 2        Q    And you've already testified you did not 
+ 3   prepare that kind of estimate for Dr. Seskin, right?
+ 4        A    Correct.  
+ 5        Q    Without preparing that kind of estimate, how 
+ 6   can you know that Dr. Seskin was exposed to asbestos 
+ 7   above ambient?
+ 8        A    Again, based on the studies they did at MAS, 
+ 9   the exposure studies there, and other exposure studies 
+10   done by other scientists, the indication that it is 
+11   above ambient.  So it's more likely than not that it 
+12   was.  
+13        Q    Is it your testimony that without estimating 
+14   how much asbestos Dr. Seskin was exposed to, you can 
+15   still opine on -- based on -- to a reasonable degree of 
+16   scientific certainty, that she was exposed to asbestos 
+17   above ambient?
+18             MR. OLIVER:  Object to the form.  It's 
+19        asked and answered.  
+20             THE WITNESS:  Yeah, I mean, as I say, 
+21        based on the information, my experience of 
+22        testing, and what -- the studies that have 
+23        been done, yes.  
+24             MR. BOULOS:  Okay.  That's all I have.  
+25             MR. OLIVER:  Congratulations, 
+0076
+ 1        Dr. Rigler.  
+ 2             MR. BOULOS:  I would like -- well, I'll 
+ 3        wait until we're off the record to joke.  
+ 4             MR. OLIVER:  I don't have any further 
+ 5        questions.  
+ 6             MR. BOULOS:  Dr. Rigler, would you like 
+ 7        to read or waive?  
+ 8             THE WITNESS:  I would like to read, 
+ 9        please.  
+10             MR. BOULOS:  Okay.  All right, Michelle, 
+11        let us know if we're good to go.  
+12             THE COURT REPORTER:  Good to go.  Off 
+13        the record.  
+14             (Deposition concluded at 11:22 a.m.)
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0077
+ 1                   C E R T I F I C A T E 
+ 2   
+ 3   STATE OF GEORGIA
+ 4   COUNTY OF COBB
+ 5   
+ 6             I, MICHELLE M. BOUDREAUX-PHILLIPS, do hereby 
+ 7   certify that MARK W. RIGLER, PhD, the witness whose 
+ 8   deposition is hereinbefore set forth, was duly sworn by 
+ 9   me and that such deposition is a true record of the 
+10   testimony given by such witness. 
+11   
+12             I further certify that I am not related to 
+13   any of the parties to this action by blood or marriage 
+14   and that I am in no way interested in the outcome of 
+15   this matter. 
+16   
+17             IN WITNESS WHEREOF, I have hereunto set my 
+18   hand this 9th day of November 2023.  
+19   
+20                  ___________________________________
+                    MICHELLE M. BOUDREAUX-PHILLIPS, CCR
+21   
+22   
+23   
+24   
+25   
+0078
+ 1             ERRATA SHEET FOR THE TRANSCRIPT OF:
+ 2   Case Name: Robert Sugarman v. Johnson & Johnson, et al.
+ 3   Deposition Date:  October 25, 2023
+ 4   Deponent:  Mark W. Rigler, PhD
+ 5   
+ 6   Pg.  Ln.  Now Reads      Should Read    Reason
+ 7   ___  ___  ____________   ____________   ____________
+ 8   ___  ___  ____________   ____________   ____________
+ 9   ___  ___  ____________   ____________   ____________
+10   ___  ___  ____________   ____________   ____________
+11   ___  ___  ____________   ____________   ____________
+12   ___  ___  ____________   ____________   ____________
+13   ___  ___  ____________   ____________   ____________
+14   ___  ___  ____________   ____________   ____________
+15   ___  ___  ____________   ____________   ____________
+16   ___  ___  ____________   ____________   ____________
+17   ___  ___  ____________   ____________   ____________
+18   ___  ___  ____________   ____________   ____________
+19   
+20                            ___________________________
+                              Signature of Deponent
+21   
+22   
+     SUBSCRIBED AND SWORN BEFORE ME
+23   THIS _____ DAY OF ____________ 20___.
+24   __________________________________
+     (SIGNATURE OF NOTARY PUBLIC)
+25   MY COMMISSION EXPIRES:_____________

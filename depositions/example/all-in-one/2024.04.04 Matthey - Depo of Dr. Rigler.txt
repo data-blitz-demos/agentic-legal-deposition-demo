@@ -1,0 +1,1893 @@
+0001
+ 1   IN THE CIRCUIT COURT OF THE TWELFTH JUDICIAL CIRCUIT IN AND FOR
+ 2                       SARASOTA COUNTY, FLORIDA
+ 3   
+     _______________________________________________________
+ 4   
+     PHILIPPE MATTHEY, as Personal
+ 5   representative for the Estate
+     of PATRICIA A. MATTHEY,
+ 6   
+                 Plaintiff,
+ 7   
+     vs.                                    CIVIL ACTION NO.
+ 8   
+     JOHNSON & JOHNSON,                      2018-CA-4809-NC
+ 9   JOHNSON & JOHNSON CONSUMER INC.,
+     F/k/a JOHNSON & JOHNSON
+10   CONSUMER COMPANIES, INC., and
+     PUBLIX SUPER MARKETS, INC.,
+11   
+                 Defendants.
+12   
+                             * * * * * * * *
+13   
+14   
+15   
+16                 The remote deposition of MARK RIGLER, Ph.D.,
+17                 taken via Zoom videoconference on April 4,
+18                 2024, commencing at approximately 11:05 a.m. EST,
+19                 before Lois Anne Robinson, Certified Realtime
+20                 Reporter.
+21   
+22   
+23   
+24   
+0002
+ 1                        A P P E A R A N C E S
+ 2   COUNSEL FOR PLAINTIFF:
+ 3               BEASLEY ALLEN CROW METHVIN PORTIS & MILES, P.C.
+                 Attorneys at Law
+ 4               218 Commerce Street
+                 Post Office Box 4160
+ 5               Montgomery, Alabama  36104
+                 BY:  Leigh O'Dell, Esquire
+ 6                    Leigh.odell@beasleyallen.com
+ 7   FOR THE DEFENDANT:
+ 8               KING & SPALDING
+                 1185 6th Avenue
+ 9               New York, New York  10036
+                 BY:  Matthew Bush, Esquire
+10                    Mbush@kslaw.com
+11   
+12   
+13   
+14   
+                 LOIS ANNE ROBINSON, RPR, RDR, CRR
+15               COURT REPORTER
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+0003
+ 1                              I N D E X
+ 2   EXAMINATION                                     PAGE
+ 3   By Mr. Bush                                       4
+ 4   By Ms. O'Dell                                    64
+ 5   By Mr. Bush                                      69
+ 6   
+ 7                             * * * * * *
+ 8   EXHIBITS                                        PAGE
+ 9   Deposition Exhibit Number 1                       7
+10     Rigler deposition of September 11, 2020
+11   Deposition Exhibit Number 2                      33
+12     "Patricia Matthey Estimate of 50 Year exposure to Johnson and
+13     Johnson Baby Powder"
+14   Deposition Exhibit Number 3                      34
+15     MAS MDL report 3
+16   Deposition Exhibit Number 4                      48
+17     Rigler Matthey Exposure Estimate
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+0004
+ 1   THE COURT REPORTER:
+ 2             We are now on the record.
+ 3             All parties to this deposition are
+ 4   appearing remotely and have agreed to the witness
+ 5   being sworn in remotely.  Due to the nature of
+ 6   remote reporting, please pause briefly before
+ 7   speaking to ensure all parties are heard
+ 8   completely.
+ 9             Counsel will be noted on the
+10   stenographic record.
+11                  MARK RIGLER, Ph.D.,
+12            the witness, after having first been
+13   duly sworn to tell the truth, the whole truth,
+14   and nothing but the truth, was examined and
+15   testified as follows:
+16                      EXAMINATION
+17   BY MR. BUSH:
+18   Q         Good morning, Dr. Rigler.  I really
+19   didn't introduce myself when we were talking off
+20   the record.  My name is Matthew Bush, from King &
+21   Spalding, and I represent the defendants in the
+22   this case.
+23             How are you today?
+24   A         Good.  Good.  Good morning.
+0005
+ 1   Q         All right.  So we're gonna -- we're
+ 2   gonna get --
+ 3   MS. O'DELL:
+ 4             Just a moment.  I want to put something
+ 5   on the record just to make sure we understand the
+ 6   ground rules.
+ 7             We understand that this deposition is
+ 8   limited solely to Dr. Rigler's opinions in regard
+ 9   to ambient levels, and, second, that the
+10   limitation is one hour.  I just want to make sure
+11   we have the ground rules on the record and we
+12   have an agreement before we get started.
+13   MR. BUSH:
+14             Yeah.  I just want to make sure we're
+15   on the same page for that, because I think we're
+16   gonna be in agreement on that.  I think it's also
+17   sort of what levels of exposure.  You know, I
+18   don't think it's necessarily limited --
+19             I agree we're gonna be talking about
+20   the levels of exposure -- his opinions regarding
+21   the levels of exposure to asbestos that
+22   Miss Matthey was exposed to.  So I think that's
+23   part and parcel, if it's above ambient or not,
+24   how much of above, what is sort of those levels
+0006
+ 1   that he's claiming.  And I --
+ 2   MS. O'DELL:
+ 3             I'm not sure the way you described it
+ 4   is completely my understanding, but we do agree
+ 5   the topic is ambient levels.  And, so, let's
+ 6   proceed.
+ 7   MR. BUSH:
+ 8             Okay.
+ 9   MS. O'DELL:
+10             And where we have disagreement, we'll
+11   work them out at that time.
+12   MR. BUSH:
+13             And also, the one hour, I know we
+14   talked about that a lot, and I'm ready to do it.
+15   I think there -- you know, if Dr. Rigler's
+16   answering questions and it's all going smoothly,
+17   then that won't be any problem.  So I think
+18   that's something we can take up later.  But I
+19   expect that won't be an issue by the time we're
+20   done.
+21   MS. O'DELL:
+22             Okay.
+23   MR. BUSH:
+24   Q         All right.  So it's 11:05 Eastern time,
+0007
+ 1   and why don't we get started.
+ 2             I'm going to mark as Exhibit 1
+ 3   Dr. Rigler's deposition transcript from this
+ 4   case, which was September 11th, 2020.
+ 5            (DEPOSITION EXHIBIT NUMBER 1
+ 6             WAS MARKED FOR IDENTIFICATION.)
+ 7   MR. BUSH:
+ 8   Q         All right.  I'll put that on my screen.
+ 9   MS. O'DELL:
+10             Dr. Rigler, it's in the chat, too, if
+11   you need to --
+12   THE WITNESS:
+13             All right.
+14   MR. BUSH:
+15   Q         Can you see this, Dr. Rigler?
+16   A         Yes.
+17   Q         All right.  So we're on page 77.  I
+18   just want to go through what your testimony was
+19   that we're gonna be talking --
+20             And the first deposition that we're
+21   gonna be talking about today, so page 77, line
+22   15, you were asked:
+23             "Okay.  And you also agree that it
+24   would be speculative to opine that Miss Matthey
+0008
+ 1   was exposed to asbestos in excess of ambient.
+ 2   True?"
+ 3             And your answer:  "Yeah.  I don't -- I
+ 4   can't make a comment on that."
+ 5             That was your testimony in the first
+ 6   deposition in this case; correct?
+ 7   A         That's what I said.
+ 8   Q         And then if we look at page 77 starting
+ 9   at line 25, there was a question:
+10             "Sure.  Yeah.  I just want to make
+11   sure, sir, you will not be testifying at trial
+12   that Miss Matthey had an exposure to asbestos in
+13   excess of ambient."
+14             Answer:  "Well, I can't say where
+15   exposure to asbestos" --
+16             Strike that.  I'll start that again,
+17   because I didn't read it right.
+18             All right.  So then you were asked a
+19   question:
+20             "Sure, yeah.  I just want to make sure,
+21   sir, that you will not be testifying at trial
+22   that Miss Matthey had an exposure to asbestos in
+23   excess of ambient."
+24             And your answer was:  "Well, I can't
+0009
+ 1   say what her exposure was to asbestos at this
+ 2   time, but we do have an idea what her exposure
+ 3   was to talc."
+ 4             And that was your testimony at that
+ 5   time; correct?
+ 6   A         That's what I said at the time.
+ 7   MS. O'DELL:
+ 8             Let me just ask Matt, as he's reading
+ 9   on the screen -- and I know he's making it larger
+10   so he can see it clearly, but it's a little bit
+11   narrow.  And so if you'll just -- in terms of
+12   what can be seen.  So if you'd back it up a
+13   little bit so it's not --
+14   THE WITNESS:
+15             Yeah.  Because it's like we're on top
+16   of it here.
+17   MR. BUSH:
+18             Okay.
+19   THE WITNESS:
+20             That's good.
+21   MS. O'DELL:
+22             So he can see a little context.  And if
+23   you'll just --
+24             You know, it's hard to do this way, as
+0010
+ 1   you know.  So if you'll -- if you'll accommodate
+ 2   Dr. Rigler in that way, I'd appreciate it.
+ 3   MR. BUSH:
+ 4             No.  That's fine.  It looked different
+ 5   on my screen.
+ 6   Q         But is this a good level of zoom?  We
+ 7   can see it now?
+ 8   A         That's pretty good.
+ 9   Q         Okay.  And then we're on page 78,
+10   starting on line 10.  And let's just read all of
+11   this.
+12             Question:  "And I just want to make
+13   sure when you come into trial and you get on the
+14   stand, you are not going to tell the jury that
+15   Miss Matthey had an exposure to asbestos in
+16   excess of ambient.  You are not going to tell
+17   them that, are you?"
+18             Answer:  "I would have to think about
+19   that."
+20             Question:  "Okay."
+21             Answer:  "I can't make an answer to
+22   that right as I sit here."
+23             Question:  "All right.  Sitting here
+24   today, you have not formed the opinion that
+0011
+ 1   Miss Matthey was exposed to asbestos in excess of
+ 2   ambient.  Fair?"
+ 3             Your answer:  "That is fair."
+ 4             That was your testimony at that time;
+ 5   right?
+ 6   A         That was the -- the testimony I made
+ 7   in -- in 2020.
+ 8   Q         Okay.  I understand that you wish to
+ 9   change that testimony now?  Is that correct?
+10   MS. O'DELL:
+11             Object to the form.
+12             Did you hear my objection?
+13   THE COURT REPORTER:
+14             I heard your objection, but I did not
+15   hear an answer.
+16   MS. O'DELL:
+17             Thank you.  And, Lois, would you mind
+18   repeating the question?
+19   THE COURT REPORTER:
+20             "I understand that you wish to change
+21   that testimony now?  Is that correct?"
+22   A         In terms of -- of my understanding
+23   since that time and my gaining more knowledge at
+24   that time, yes.
+0012
+ 1   MR. BUSH:
+ 2   Q         And, so, what is your opinion now
+ 3   regarding whether Miss Matthey was exposed to
+ 4   asbestos in excess of ambient?
+ 5   A         That she would have been exposed to a
+ 6   significant degree above ambient, in my opinion.
+ 7   Q         And -- and you agree that there's
+ 8   asbestos that's just found in the ambient air;
+ 9   right?
+10   A         I have spoken about that before, and
+11   the -- any asbestos that may be in the air has to
+12   obey the laws of gravity.  It's not all around us
+13   everywhere, as has been portrayed.  So that is my
+14   opinion about that.  That is, if anything, the
+15   background is zero in many, many, many areas and
+16   places, and it's been measured at that.
+17   Q         But when we talk about ambient air,
+18   that's at least the air that's all around us;
+19   right?
+20   A         Yes.
+21   Q         But I know in prior cases you've
+22   testified to various levels in terms of fibers cc
+23   of asbestos in the background.  Isn't that right?
+24   A         I have been asked about that, yes.
+0013
+ 1   Q         And I think you've given testimony that
+ 2   the amount of asbestos in the background ranges
+ 3   from 10 to the minus 4 fibers cc to 10 to the
+ 4   minus 5 fibers per cc.  Is that right?
+ 5   A         There are values in the literature
+ 6   which range from zero to 10 to the minus 7, and
+ 7   this is based on data from government agencies
+ 8   and studies that they've done, which include
+ 9   studies done by the ATSDR, also OSHA and EPA.
+10   Q         And I know you were just asked about
+11   this in -- before, but in your Kent cigarette
+12   report, you also reported a level of asbestos in
+13   the background; correct?
+14   MS. O'DELL:
+15             Object to the form.
+16   A         Are you talking about --
+17             I apologize.  Could you rephrase or ask
+18   me the question again?
+19   MR. BUSH:
+20   Q         Yeah.
+21             I just -- I -- you were just asked
+22   about this, I think, yesterday or two days ago
+23   that previously you've used .0002 fibers per cc
+24   as the level of asbestos in the ambient air.
+0014
+ 1   Isn't that right?
+ 2   A         That was for a study of crocidolite
+ 3   asbestos in cigarettes, and the data came from a
+ 4   EPA report that measured the amount of asbestos
+ 5   in the air after an abatement action, and the
+ 6   actual value in there is based on a 1976
+ 7   reference.  So that's what was done with that.
+ 8   Q         Yeah.  But you would agree that there's
+ 9   literature regarding the levels of --
+10             Strike that.
+11             You would agree there's literature
+12   discussing that there's asbestos present in the
+13   ambient air; correct?
+14   A         There is.
+15   Q         And, so, what is the basis for your
+16   opinion that Miss Matthey's exposure to asbestos
+17   was above ambient?
+18   A         The values for the levels have been
+19   declining for decades, for one thing.  The
+20   amounts that are in the air that have been
+21   measure, as I was saying, have been valued at
+22   from zero to, for instance, 10 to the minus 6, I
+23   believe it is.
+24             And, so, looking at it over time and
+0015
+ 1   the amounts that -- that have been measured --
+ 2             And in a number of cases they've been
+ 3   measured in what's called industrial settings,
+ 4   too.  So -- and, again, here, that paper was
+ 5   talking about after a -- after an abatement
+ 6   action.
+ 7             So what I would look at is, for
+ 8   instance, numbers that have shown levels where,
+ 9   in that case, the values that were in that paper
+10   were about 2,000, but now the values in at
+11   least -- what's been in the literature, as I say,
+12   since, for instance, 2001 in the ATSDR values,
+13   are ten times lower than that.  They're on the
+14   order of 200.  And if you look at Cal OSHA
+15   standard right now, the level is 100.  So they've
+16   come down over time.  The --
+17             If there is any in the atmosphere at
+18   all because of the removal of asbestos from
+19   products in our environment, that would be
+20   more -- that would be more of the kind of value
+21   that should be compared.
+22             So I know that was a long answer, but
+23   we have to look at -- we'd have to look at
+24   numbers like that now.
+0016
+ 1   Q         And is there any -- anything that
+ 2   you're relying on in that answer you just gave
+ 3   that wasn't available in 2020 when you gave your
+ 4   deposition in this case for the first time?
+ 5   A         Are you asking me is there newer data?
+ 6   Is that what you're asking?
+ 7   Q         I'm asking is there data that you're
+ 8   relying on for your opinion about ambient
+ 9   exposure now that was not available to you in
+10   September 2020 when you gave your deposition the
+11   first time?
+12   MS. O'DELL:
+13             Object to the form.
+14   A         The -- looking -- I know when I was
+15   doing that study, I was looking at EPA values,
+16   which essentially are old values.  But, looking
+17   at that study, instead of looking at, for
+18   instance, the CDC study, the ATSDR studies, where
+19   you have -- it's -- it's more of an
+20   environmental --
+21             Withdraw that.
+22             It's more of a measurement of
+23   environmental.  Theirs was more of a measurement
+24   of industrial to some degree.  So I would --
+0017
+ 1             And, again, that was available, as I
+ 2   recall, at the time, but we were looking at
+ 3   the -- an EPA value.  Because, essentially --
+ 4   essentially, they're -- they're more involved
+ 5   with workplace situations.  And here, we don't
+ 6   have a workplace situation.
+ 7   MR. BUSH:
+ 8   Q         Dr. Rigler, I think I was asking a
+ 9   slightly different situation.
+10   A         Okay.
+11   Q         I think you were talking about your
+12   Kent cigarette report.
+13             So you were deposed in this case in
+14   September 2020; right?
+15   A         Yes.
+16   Q         And I was just asking is any of that
+17   data that you're relying on for your opinion now,
+18   is that data that was not available in September
+19   of 2020, when you gave your deposition in this
+20   case?
+21   A         I don't recall.
+22   Q         Well, the ATSDR data is from 2001;
+23   right?
+24   A         Correct.
+0018
+ 1   Q         Right?  And so that's well before your
+ 2   deposition in September 2020 in this case; right?
+ 3   A         Yes.
+ 4   Q         So there's no data that you're aware of
+ 5   that you're relying on that was not available to
+ 6   you when you first gave your deposition in this
+ 7   case in September 2020; right?
+ 8   MS. O'DELL:
+ 9             Object to the form.
+10   A         The --
+11             Again, what I was just saying a few
+12   minutes ago was I wasn't aware of that report at
+13   the time, even though that is the date of 2021.
+14   I was relying on the -- the EPA study, the 1985
+15   and 1976 reference there.  So we should be
+16   comparing it to what I believe is a more
+17   appropriate standard.
+18             There are newer standards and -- and I
+19   have had time to think about it, and that's --
+20   that would be what I would use and compare now.
+21   MR. BUSH:
+22   Q         And are you saying that you weren't
+23   aware of the ATSDR data in 2020 when you first
+24   gave your deposition in this case?
+0019
+ 1   A         No.  In 2012.
+ 2   Q         Right.  Okay.
+ 3   A         Yeah.
+ 4   Q         I understand.  I'm not talking -- I
+ 5   know I mentioned the Kent cigarette report.  I'm
+ 6   not talking about that right now.
+ 7   A         Okay.  All right.
+ 8   Q         I'm just talking about this case.  And
+ 9   my question is:  Is the data that you're relying
+10   on for your opinion in this case about ambient
+11   levels, is that data that was not available to
+12   you at the time you gave your deposition in this
+13   case in September 2020?
+14   A         I believe that it was.
+15   Q         Right.  So you're not aware of any data
+16   that you're relying on now for your ambient
+17   exposure opinion that was not available to you in
+18   September 2020, when you first gave your
+19   deposition in this case.  Is that right?
+20   A         I can't think of any.
+21   Q         Okay.  And what led you to change your
+22   opinion about Miss Matthey's -- whether
+23   Miss Matthey was exposed to asbestos above
+24   ambient?
+0020
+ 1   MS. O'DELL:
+ 2             Object to the form.
+ 3   A         I -- I've had time to think about it,
+ 4   and I believe in my deposition I wanted to -- I
+ 5   said I needed to think about it and I couldn't
+ 6   make an opinion on it at the time.  I believe
+ 7   that that was the case, and, so, after reviewing
+ 8   the data, I've had a -- the ability to -- to make
+ 9   that distinction now.
+10   MR. BUSH:
+11   Q         And there's no new testing that you've
+12   conducted that caused you to change your opinion;
+13   right?
+14   A         No.
+15   Q         And did --
+16             Okay.  So we talked -- when you
+17   answered, you talked about, well, what the levels
+18   of ambient exposure are.  I want to talk about
+19   the other component, which is what is the basis
+20   for your opinion that Miss Matthey's exposure to
+21   asbestos was above those ambient levels.
+22   A         Based on her applications and use, she
+23   was a -- a 50-year user of this product on a
+24   daily basis, and, so, the data that -- that I
+0021
+ 1   have --
+ 2             And this is in conjunction with what's
+ 3   also in the literature that shows that the
+ 4   product contained asbestos.  We show that over
+ 5   and over again.  That also is shown in the
+ 6   literature in numerous other studies since 1970s.
+ 7   So that has been able to help my opinion with
+ 8   this.
+ 9   Q         And is the -- what is the route of that
+10   exposure that you're referring to?
+11   MS. O'DELL:
+12             You mean route?  I'm sorry.
+13   MR. BUSH:
+14             Sure.  Maybe it's just -- in the
+15   Northeast we say "root."  I'll say "route."
+16   MS. O'DELL:
+17             I'm sorry.
+18   A         Because root here means what's the core
+19   of it, and route --
+20   MR. BUSH:
+21   Q         No offense.  That's a regional
+22   pronunciation or I just don't know what I'm
+23   saying, but I'll ask it again.
+24   A         Yeah.
+0022
+ 1   MS. O'DELL:
+ 2             I'm the last one that should kid anyone
+ 3   about pronunciation.  So I didn't mean it that
+ 4   way.  I just want to make sure we understand it's
+ 5   R-O-O-T or R-O-U-T-E.
+ 6   MR. BUSH:
+ 7             Yeah.  Yeah.  No.  I'll ask it again.
+ 8   Q         So for your opinion that Miss Matthey's
+ 9   exposure to asbestos was above ambient, what's
+10   the route of that exposure?
+11   A         The route of that exposure would be her
+12   perineal applications.  That would be the major
+13   route, yes.
+14   Q         And, so, are you -- and when you say
+15   that, are you excluding inhalation as a route of
+16   exposure?
+17   A         Well, the major -- the major route
+18   would be the -- the perineal application.  That
+19   would be the major route.
+20   Q         Got it.
+21             And let me just ask you.  At no time
+22   you've tested any bottles of Johnson's Baby
+23   Powder that were owned by Miss Matthey; right?
+24   MS. O'DELL:
+0023
+ 1             So, Matt, he can certainly answer this
+ 2   question.  I think he's answered it before.  But
+ 3   you know this has been asked and --
+ 4   MR. BUSH:
+ 5             Yeah.  It was a little -- I mean, I
+ 6   thought this was noncontroversial.
+ 7   A         We have not -- I have not tested her
+ 8   bottles.
+ 9   MR. BUSH:
+10   Q         Right.  And neither has MAS; right?
+11   A         Not to my knowledge.
+12   Q         Right.
+13             And have you done any sort of dose
+14   reconstruction for Miss Matthey?
+15   A         In terms of her exposure, I made a --
+16   Q         Strike that.  It was a bad question.
+17   A         -- table of all of that.
+18   Q         I know.  I asked it badly.  I'll ask it
+19   again.
+20             So the question is have you ever --
+21   have you done any sort of dose reconstruction for
+22   Miss Matthey for her exposure to asbestos?
+23   A         I have done it -- well, I have done it
+24   for the Johnson's Baby Powder which has contained
+0024
+ 1   asbestos and been proven to contain that.
+ 2   Q         But have you attempted to quantify her
+ 3   exposure to asbestos in any way?
+ 4   MS. O'DELL:
+ 5             Object to the form.  Asked and
+ 6   answered.
+ 7   A         Again, in terms of the exposure, based
+ 8   on her use of the talc, I think that we can see
+ 9   that, application after application, she would
+10   have been exposed.
+11   MR. BUSH:
+12   Q         Right.  But have you made -- you
+13   haven't made any attempt to quantify the level of
+14   exposure to asbestos for Miss Matthey; right?
+15   MS. O'DELL:
+16             Objection.  Asked and answered.
+17   A         Again, just based on the applications
+18   of the talcum powder, the heavy use of that over
+19   a 50-year period.
+20   MR. BUSH:
+21   Q         Right.  But that's not --
+22             I understand that you -- I understand,
+23   Dr. Rigler, that you quantified how much talc you
+24   think she's used, and you have a whole table
+0025
+ 1   about that.  And I want to know if you could --
+ 2   if I wanted to ask you for a number, what's a
+ 3   number for how much asbestos she was exposed to
+ 4   in any sort of metric, is there a number like
+ 5   that that you can give me?
+ 6   A         I don't have a number as I sit here,
+ 7   but, again, the -- the amount would be based on
+ 8   her usage and applications of the product that
+ 9   has been shown to contain asbestos.
+10   Q         And do you have any opinions about how
+11   much asbestos would reach somebody's ovarian
+12   tissue from the genital use of talc?
+13   A         I understand the process of it in the
+14   body, the application and the movement of it
+15   through the vaginal tract to the ovaries and into
+16   the surrounding tissue, such as the lymphatics in
+17   those areas.  But as far as what you just asked,
+18   I would -- I would -- I would say I do understand
+19   that process.
+20   Q         But --
+21             Okay.  That's sort of the route that it
+22   would take.  But do you have any opinions about
+23   the levels of asbestos that would reach
+24   somebody's ovarian tissue from -- through that
+0026
+ 1   vaginal route?
+ 2   MS. O'DELL:
+ 3             So I want to stop right here.  Matt, I
+ 4   think that that goes beyond what the purpose of
+ 5   the deposition is.  We've certainly had other
+ 6   experts that have testified to migration.
+ 7             I mean, what Dr. Rigler is here to
+ 8   testify about today is is it above ambient level,
+ 9   the exposure itself, not the physiology of how it
+10   might enter the ovaries.
+11   MR. BUSH:
+12             If he doesn't have an opinion about it
+13   or that's for another expert, that's fine.  But
+14   he tested her tissue and found no asbestos in
+15   there, and I want to understand if he has any
+16   opinions about quantifying how much asbestos
+17   would actually reach that ovarian tissue, given
+18   his opinion that the exposure was above
+19   background through that route.
+20             I think we have a right to question,
+21   well, what's the background levels that would
+22   reach the ovarian tissue and what's the asbestos
+23   levels that would reach the ovarian tissue?  And
+24   that's what I'm asking about.
+0027
+ 1   MS. O'DELL:
+ 2             Honestly, I think -- and I don't want
+ 3   to interrupt you, but you've asked questions or
+ 4   JJ's asked questions about his testing and what
+ 5   he found during his digestive testing.  So it's
+ 6   my understanding that that's not a part of
+ 7   today's deposition.
+ 8   MR. BUSH:
+ 9             Right.  But the fact that he found no
+10   asbestos in the ovarian tissue was the basis for
+11   his opinion that he couldn't say if exposure was
+12   above ambient, and so how that --
+13   MS. O'DELL:
+14             You can ask that question.  You can ask
+15   that question if you want to.  You can ask that
+16   specific question.  But to go through again his
+17   opinions about digestive testing, I believe
+18   that's off -- off the table.
+19   MR. BUSH:
+20             I'm --
+21   MS. O'DELL:
+22             You can cross him on it at trial.  You
+23   have a chance tomorrow but not today.
+24   MR. BUSH:
+0028
+ 1             I'm planning to ask him that question.
+ 2   But how he thinks --
+ 3             If he's gonna say her exposure was
+ 4   above background, then that's directly related to
+ 5   the quantities of asbestos that she's getting
+ 6   exposed to and the route that he's saying is the
+ 7   primary route.  It's just -- it's -- that is what
+ 8   exposure is.
+ 9             And, so, if he's saying it's exposure
+10   by ambient, I want to know how he's calculating
+11   that and if there's any calculation related to
+12   the route that he's saying is the primary route
+13   for exposure.
+14   MS. O'DELL:
+15             Okay.  Ask him -- ask him that
+16   question.
+17   MR. BUSH:
+18   Q         All right.  I want to know if you have
+19   any opinions regarding the quantities of asbestos
+20   that would reach somebody's ovarian tissue from
+21   the genital use of talc.
+22   A         I think the literature has shown that
+23   you have -- you have -- the asbestos in the talc,
+24   again, has been shown that it does reach these
+0029
+ 1   organs for the perineal applications, and in
+ 2   terms of the amounts, that's going to vary based
+ 3   on the concentration of asbestos in the talc
+ 4   itself that's been applied.
+ 5   Q         Right.  So -- so the amount of asbestos
+ 6   in the talc that's being applied is going to
+ 7   affect the levels of exposure somebody has to
+ 8   asbestos from the genital use of talc; right?
+ 9   A         Yes.
+10   Q         Okay.  And do you have any way to
+11   quantify the levels of asbestos that actually
+12   enter the body through the genital use of talc?
+13   A         It would enter the body in ratios
+14   proportional to the amount that was in the talc
+15   that was applied.
+16   Q         And are you aware of any studies
+17   regarding background rates of asbestos in
+18   individuals' ovarian tissues?
+19   MS. O'DELL:
+20             Object to the form.
+21   A         Yes.
+22   MR. BUSH:
+23   Q         And what studies are those?
+24   A         In terms of --
+0030
+ 1             One of the studies was the McDonald
+ 2   study that was done, and they looked at -- in
+ 3   their controls, I believe they had something like
+ 4   six controls, I believe it was.  And in those
+ 5   controls --
+ 6             No -- no talc, no known talc exposure.
+ 7             And in those six controls, I believe
+ 8   out of those six, four of them had none at all in
+ 9   the tissue detected, and the other two had some
+10   small numbers.  I don't know.  Something like
+11   two.
+12   Q         And when you're talking about what was
+13   detected, is that asbestos or is that talc?
+14   A         That -- well, that would have been talc
+15   in those tissues.  But the -- the talc -- I can't
+16   recall.  I'd have to look at it again as far as
+17   the results for asbestos in those tissues, but
+18   that -- that was measuring talc in those tissues.
+19   Q         Got it.
+20             I'm just asking --
+21   A         But, yeah, you were --
+22             I'm sorry.  You were asking me the
+23   question about, you know, how -- what -- what --
+24             Well, my understanding was the question
+0031
+ 1   was about something like a control where they
+ 2   didn't have an exposure, except where you have
+ 3   someone who has no known -- no known exposure,
+ 4   what's the tissue levels?  That's what I
+ 5   understood that question to be.
+ 6   Q         Right.
+ 7             Well, I mean, I just -- and I'm not
+ 8   gonna get into this issue.  I'm just trying to
+ 9   give you some context.
+10             In other cases, when the cancer's in
+11   the lungs, something that I know you're asked
+12   about is sort of, well, what are background rates
+13   of asbestos in lung tissue that you see in
+14   unexposed individuals.  I mean, you know, like,
+15   generally the --
+16   A         Yes.
+17   Q         -- the sort of literature I'm talking
+18   about.  And I was just curious --
+19   A         Yes.
+20   Q         -- if you knew of any studies involving
+21   background levels of asbestos in ovarian tissue.
+22   A         My -- excuse me.  My knowledge about
+23   that is the levels are very low, if not -- not
+24   measurable.  That's my understanding of the
+0032
+ 1   studies that I've seen.
+ 2   Q         Okay.  And what is your explanation for
+ 3   why Miss -- you didn't find any asbestos in
+ 4   Miss Matthey's tissue that you tested?
+ 5   MS. O'DELL:
+ 6             I -- for this deposition, I'm almost
+ 7   positive that that's been asked of Dr. Rigler.
+ 8   MR. BUSH:
+ 9             Okay.  I thought that was the question
+10   you told me to --
+11   MS. O'DELL:
+12             No, no, no.
+13   MR. BUSH:
+14             -- to go on and ask.
+15   MS. O'DELL:
+16             Just like a good lawyer, you picked out
+17   the question you want to ask.
+18   MR. BUSH:
+19             No.  Look.  I planned to ask it, but I
+20   actually -- I honestly thought that's what you
+21   said I could ask.
+22   MS. O'DELL:
+23             No, no.  That's not what I was talking
+24   about.  Good try.  Really nice.
+0033
+ 1   MR. BUSH:
+ 2             I'm gonna think about that, because I
+ 3   still think this is all connected.
+ 4   Q         Well, let me ask you this.  I'm gonna
+ 5   pull up -- I'm gonna mark as Exhibit 2 your --
+ 6   the talc exposure estimate you did.
+ 7   A         Okay.  Is this the table you're talking
+ 8   about?
+ 9   Q         Yeah.  I'm gonna share it in the chat,
+10   but I'm gonna share it so we can all see it.
+11   A         Okay.
+12            (DEPOSITION EXHIBIT NUMBER 2
+13             WAS MARKED FOR IDENTIFICATION.)
+14   MR. BUSH:
+15   Q         And you can see this document okay?
+16   A         Yes.  Uh-huh.  Looks good.
+17   Q         And it looks like she used, based on
+18   your analysis of her deposition, she used
+19   Johnson's Baby Powder starting in 1965 and ending
+20   in 2016.  Is that right?
+21   A         Yes.
+22   Q         So that would be almost entirely
+23   Vermont and China-sourced talc that Miss Matthey
+24   used.  Is that right?
+0034
+ 1   A         On -- around that time -- my
+ 2   understanding from your expert, your corporate
+ 3   expert, Mr. Hopkins, Dr. Hopkins, that there was
+ 4   a transition, a slow transition from Italian to
+ 5   Vermont in the '60s, the middle '60s.  So -- and
+ 6   that trailed into the early '70s.  So there could
+ 7   be Italian in there, too, in my opinion.
+ 8             Plus, in 1980 there was the miners'
+ 9   strike for a while, and there was the use of
+10   Italian talc in the Johnson's Baby Powder.  So
+11   there was also an Italian -- exposure to Italian
+12   talc, too.
+13   Q         Got it.  Let me --
+14             All right.  I want to show you -- you
+15   were asked about this a little in Garcia, but I
+16   wanted to clear something up.  Let me --
+17             I'm gonna mark this as an exhibit
+18   first.
+19            (DEPOSITION EXHIBIT NUMBER 3
+20             WAS MARKED FOR IDENTIFICATION.)
+21   MR. BUSH:
+22   Q         All right.  I'm gonna mark as
+23   exhibit --
+24             Ooh.  Let me find the chat.
+0035
+ 1             I'm gonna mark as Exhibit 3 the MAS
+ 2   report dated February 1st, 2019.  Can you see
+ 3   this on your screen, Dr. Rigler?
+ 4   A         Yes.
+ 5   Q         And so we talked about -- you mentioned
+ 6   in your testimony just now that the levels of
+ 7   asbestos someone would be exposed to through this
+ 8   general genital route would be proportional to
+ 9   how much asbestos is in the talc.  I just want to
+10   make sure we're sort of on the same page about
+11   the levels that you found.  So --
+12             And tell me if we need to go through
+13   this again, because I know you did this a little
+14   bit -- little bit recently.
+15             So my question is:  For this report
+16   dated February 1st, 2019 --
+17             This was the museum testing; right?
+18   A         Yes.
+19   Q         And sometimes you refer to this as the
+20   round 2 testing?
+21   A         Yes.
+22   MS. O'DELL:
+23             Objection.  Sorry.
+24             Objection.  Go ahead.
+0036
+ 1   MR. BUSH:
+ 2   Q         And the highest -- in terms of weight
+ 3   percent, the highest level of asbestos that you
+ 4   claim to find in a bottle for your museum testing
+ 5   is .0092 percent; right?
+ 6   MS. O'DELL:
+ 7             Object to the form.
+ 8   A         I was looking at those tables and
+ 9   recently testified about that.  That appears to
+10   be the highest.
+11   MR. BUSH:
+12   Q         And I want to go to, now, the lowest.
+13   And, so, there was some -- there was some
+14   discussion of this .00000022 weight percent
+15   sample that's M6971036 in the Garcia testimony.
+16             Do you see what I'm talking about?
+17   A         Yes.
+18   Q         And this one is marked IMERYS; right?
+19   A         Yes.
+20   Q         And does that mean that this is a
+21   railcar sample?
+22   A         Yes.  So we --
+23   MS. O'DELL:
+24             It is -- Matt, I know you know it's a
+0037
+ 1   railcar sample.  I know he's testified to it many
+ 2   times.  So I don't want to interrupt you, but I
+ 3   just --
+ 4   MR. BUSH:
+ 5             There was just -- this is just --
+ 6   MS. O'DELL:
+ 7             It's sort of beyond the scope.
+ 8   MR. BUSH:
+ 9             Well, he said the levels of asbestos in
+10   the bottles is what is -- is gonna be
+11   proportional to what someone's exposed to.  And,
+12   so, it's relevant.
+13   MS. O'DELL:
+14             That's fair.  And that's why I'm
+15   letting you ask the questions about the levels.
+16   But if you want to go into --
+17   MR. BUSH:
+18             I'm actually -- this is gonna -- there
+19   was just some confusion yesterday or two days ago
+20   about what the lowest one was, and I was just --
+21             I'll tell you all what I'm gonna do.
+22   I'm gonna ask him if the lowest one is the one
+23   that's 3.3 millionths and that's the lowest
+24   bottle testing.  And I know the answer's yes, and
+0038
+ 1   I think we all know the answer is yes, but there
+ 2   was some confusion yesterday or maybe two days
+ 3   ago in the testimony about, well, what's the
+ 4   highest and what's the lowest.
+ 5             And, in fact, this one is lower than
+ 6   the one I'm gonna say is the lowest.  So it's
+ 7   ultimately, like, leading towards the truth.
+ 8   MS. O'DELL:
+ 9             If you had testimony about this
+10   yesterday in trial, then you don't need it today.
+11   MR. BUSH:
+12             Well, the reason --
+13   MS. O'DELL:
+14             This is not the point today.
+15   MR. BUSH:
+16             The reason is because there was
+17   confusion yesterday about what the lowest bottle
+18   actually was, and so I'm just gonna go through it
+19   because this is --
+20   MS. O'DELL:
+21             You can't -- you can't -- you can't
+22   clean up something that happened in a trial in
+23   this deposition.
+24   A         We can definitely stick with what's in
+0039
+ 1   the bottles.  So they were pointing to these
+ 2   tables and the highs and the lows in the tables,
+ 3   and that's all I was pointing out.  But we can
+ 4   stick to the bottles, and that's fine.
+ 5   MR. BUSH:
+ 6   Q         Right.  I wasn't trying to say -- I
+ 7   just think the testimony wasn't clear.  I'm not
+ 8   faulting anybody, or not you, certainly,
+ 9   Dr. Rigler.  I just -- I was looking at it, and I
+10   thought there was a little bit of confusion about
+11   what the highest level was and what the lowest
+12   level was, and that's readily ascertainable, so I
+13   thought we could clean it up.
+14   A         Sure.  That's fine.
+15   Q         Now, if we look at -- now I'm on page
+16   33 of your report.  In terms of weight percent
+17   for your museum bottle testing, the lowest
+18   concentration of asbestos that you claim to find
+19   is .000033 percent.  Correct?
+20   A         Yes.  It's 18,000 structures per gram.
+21   Q         Well, I actually think it's --
+22             Sorry.  Let me restate that.  Because I
+23   messed up the number of zeros.
+24             So for your museum bottle testing, the
+0040
+ 1   lowest concentration of asbestos you claim to
+ 2   find is .0000033 percent.  Correct?
+ 3   A         Yeah.  At 18,000 structures per gram.
+ 4   Q         But in terms --
+ 5   A         You guys -- you guys like the
+ 6   percentages.  I don't like the percentages.  We
+ 7   put them there simply because they have been used
+ 8   in the literature.  We -- I like the numerical
+ 9   values, and these are the kinds of things that
+10   the consensus group, the FDA consensus group, is
+11   asking for.  So we're always putting the values
+12   in structures per gram.
+13             As I say, I don't -- I don't like the
+14   percentages because they're variable based on the
+15   size of a fiber that you have to pick and use, so
+16   they can vary.  I know that those structures
+17   count, and that's what they would be is 18,000.
+18   But to answer your question, that is the lowest.
+19   Q         Right.
+20             So just in terms -- so in terms of
+21   weight percent, for your museum bottle testing,
+22   the lowest concentration of asbestos you claim to
+23   find is .0000033 percent.  True?
+24   MS. O'DELL:
+0041
+ 1             All right.  He's answered that question
+ 2   just a moment ago.  It's asked and answered.  And
+ 3   this is not what we're here for, Matt.
+ 4             I don't know what's happening at the
+ 5   other trial.  I don't know why you think you need
+ 6   to clean it up here for the other trial.  But,
+ 7   you know, respectfully, he's answered the
+ 8   question.  Let's move on.
+ 9   MR. BUSH:
+10             I just -- this is not controversial.  I
+11   don't know why I can't just get a --
+12   MS. O'DELL:
+13             It's not the subject.  It may or may
+14   not be controversial.  I wasn't in the other
+15   trial, so I can't evaluate whether it is or it's
+16   not.
+17             But, just to be clear, you asked a
+18   question, which we allowed.  Dr. Rigler is
+19   willing to answer it.  He answered it, so let's
+20   go.
+21   MR. BUSH:
+22             You can object to asked and answered.
+23   It's not a basis to instruct him not to answer.
+24   I think it's a clean yes.  He gave a very long
+0042
+ 1   answer, and I understand his opinion about this,
+ 2   but I just want to know a very simple answer,
+ 3   which is "is it the lowest?"
+ 4             I'm gonna ask it again because it's
+ 5   directly relevant to his opinion in this case.
+ 6   It has nothing to do with the last trial other
+ 7   than I want to know what the true answer to this
+ 8   question is in a clean way.  So I'm gonna ask it
+ 9   again.
+10   Q         For your museum bottle testing in terms
+11   of weight percent, the lowest concentration of
+12   asbestos that you claim to find is .0000033
+13   percent; correct?
+14   MS. O'DELL:
+15             Dr. Rigler, you may answer the
+16   question.  You may answer it any way you would
+17   like.  It does not have to be a yes or no.  If
+18   you want it to be, it can be, but you don't have
+19   to answer it that way.
+20   A         I've already answered it two times, so
+21   I will stick with the answer that I already have.
+22   MR. BUSH:
+23   Q         And the answer is that .0000033 percent
+24   is the lowest concentration of asbestos you claim
+0043
+ 1   to find in your museum bottle testing in terms of
+ 2   weight percent; correct?
+ 3   A         I've already answered it, so I'm gonna
+ 4   just stick with that answer.  I've answered it
+ 5   twice.  And it can be read back in the record.
+ 6   But I've already answered it, and you got your
+ 7   answer.
+ 8   Q         And .0000033 percent is 3.3 millionths
+ 9   of 1 percent; right?
+10   A         In terms of the percentage itself?
+11   Q         Yes.
+12   A         Yes.
+13   Q         Right.
+14             And the -- when we were looking at
+15   point --
+16             And .0092 percent is 9.2 thousandths of
+17   1 percent; right?
+18   MS. O'DELL:
+19             All right.  Matt, I'm gonna instruct
+20   him not to answer.  These reports have been
+21   around since 2019, and he has been deposed on
+22   these reports multiple times.  You going through
+23   these and asking him questions about this table
+24   is so beyond the scope of what was agreed to this
+0044
+ 1   deposition.  And, I mean, he's testified at trial
+ 2   to these charts.  And, so, I don't know why you
+ 3   think this is within the scope of the discussion
+ 4   of ambient levels.
+ 5   MR. BUSH:
+ 6             We already talked about it.  He said
+ 7   that his opinion was directly based -- that
+ 8   someone's exposure from the perineal use of talc
+ 9   is going to be -- asbestos exposure is going to
+10   be directly proportional to the levels of
+11   asbestos that are in the bottle.  And the
+12   question of, just as a matter of numbers and
+13   math, is .0092 percent the same as 9.2
+14   thousandths of a percent, I mean, that is a
+15   mathematical truth.  He has not testified to that
+16   before.  I've looked.  It's very simple.  And
+17   it's directly relevant to this case and what he's
+18   testifying to in the scope of her exposure
+19   levels.
+20   MS. O'DELL:
+21             He's testified that he and Dr. Longo
+22   prepared these charts, that they relied on them,
+23   that they have affirmed their accuracy, and you
+24   can read the numbers and cross him however you
+0045
+ 1   want to on it.  But he -- but to get in --
+ 2             And he -- and it's perfectly
+ 3   appropriate for him to have said that it's going
+ 4   to be proportional to the amount of asbestos in
+ 5   the bottles.  That makes perfect sense.
+ 6             But to go through and ask him questions
+ 7   about these numbers as if this material has not
+ 8   been covered in the past or somehow new, you know
+ 9   that's not right.
+10   MR. BUSH:
+11             So, first of all, he hasn't given this
+12   particular -- he hasn't been asked this question
+13   and this answer before or I wouldn't have given
+14   it.  It's directly relevant to the case.  The
+15   fact that he's testified --
+16             I'm not asking him is this inaccurate.
+17   I'm not talking about the accuracy of the
+18   numbers.  And even if he were questioned about it
+19   before, that's not a basis to instruct him not to
+20   answer here.  The question --
+21             You're instructing him not to answer is
+22   .0092 percent the same as 9.2 thousandths of a
+23   percent?
+24   MS. O'DELL:
+0046
+ 1             Well, you can read it, Matt, and you
+ 2   can ask -- you could ask him on cross if you want
+ 3   to cross him on this --
+ 4             Real quick.
+ 5             If you want to cross him on this chart,
+ 6   y'all have at it.  But that's not -- that is not
+ 7   an appropriate examination for this purpose.  If
+ 8   you want to ask him how these numbers apply to
+ 9   the ambient level -- of being above the ambient
+10   level, ask that.  But don't --
+11             You know, getting him into the weeds on
+12   this chart, is it right, what it says, he's
+13   already been asked about this.
+14   MR. BUSH:
+15             I didn't say "is it right?"  I'm asking
+16   him is .0092 percent 9.2 thousandths of 1
+17   percent.  I don't know why he's -- why that is
+18   controversial in any way.  It's directly relevant
+19   to his testimony relating to exposure above
+20   ambient, and it's just -- it's just what the
+21   percentage means in terms of saying it in a
+22   different way.
+23             So I'm gonna ask it again, and I'll see
+24   if you're really gonna instruct him not to
+0047
+ 1   answer.  But I'll try again.
+ 2   Q         Dr. Rigler, is .0092 percent the same
+ 3   as 9.2 thousandths of a percent?
+ 4   A         It is.  If we're comparing it to the
+ 5   value we talked about before, it's about 3,000
+ 6   times higher than that amount of asbestos and it
+ 7   is nine-thousandths of a percent, but it's about
+ 8   3,000 times higher than what we had just talked
+ 9   about, the other -- the lower value.  So it's
+10   about 3,000 times that.
+11   Q         And your -- it's your view that trace
+12   means 0.1 percent or less; right?
+13   A         Trace?
+14   Q         Yeah.
+15   A         That -- that -- we have to have context
+16   on that.
+17   Q         Okay.
+18   A         As far as --
+19             Trace can mean a lot of different
+20   things.
+21   Q         Got it.  Let me -- I'll just show
+22   you --
+23   A         Okay.
+24   Q         I'm gonna mark as Exhibit -- I think
+0048
+ 1   we're up to 4.
+ 2            (DEPOSITION EXHIBIT NUMBER 4
+ 3             WAS MARKED FOR IDENTIFICATION.)
+ 4   MR. BUSH:
+ 5   Q         This is your report from August 2nd,
+ 6   2017.  And I'll just pull it up on the screen so
+ 7   you can see it.
+ 8   A         Okay.
+ 9   Q         Page 5 of the PDF.  It says here since
+10   the possible amphibole content --
+11             Let me just strike that.  Let me start
+12   again.
+13             Dr. Rigler, I just want to show you
+14   what we're looking at so you know what we're
+15   looking at.  This is your -- this is the August
+16   2nd, 2017, report, and it has your name on it;
+17   right?
+18   A         Yes.
+19   Q         And this is sometimes referred to as
+20   the Round 1 testing; right?
+21   A         Yes.
+22   Q         All right.  So just so we have the
+23   context, it says here "since the amount of
+24   possible amphibole content of J&J BP/Valiant SS
+0049
+ 1   talc product samples was expected to be at trace
+ 2   levels (0.1 percent or less) it was recognized
+ 3   that this analysis would require the use of an
+ 4   analytical transmission electron microscope
+ 5   (ATEM).
+ 6             Do you see that?
+ 7   A         Yes.
+ 8   Q         And, so, just in your view, for the
+ 9   context of testing talc for the presence of
+10   asbestos, is ---does trace levels mean 0.1
+11   percent or less?
+12   MS. O'DELL:
+13             So -- so, Matt, he's testified about --
+14   he's been asked recently -- I was, you know,
+15   in -- about trace levels.  And, so, I mean,
+16   honestly, if you want to --
+17             This is a general question that doesn't
+18   relate to the purpose of this deposition.
+19   MR. BUSH:
+20             It's the same -- it's the same issue.
+21   It's putting into context --
+22   MS. O'DELL:
+23             It's not.
+24   MR. BUSH:
+0050
+ 1             -- the levels of asbestos in the talc
+ 2   that he says is directly proportional to her
+ 3   level of exposure and why it's above ambient.
+ 4   MS. O'DELL:
+ 5             It's -- I mean, he has testified that
+ 6   he has -- they identified asbestos in the
+ 7   product, they have documented the amount that
+ 8   they identified, and that Miss Matthey's exposure
+ 9   for 50 years would be over the ambient level.
+10   That's what he said, if you want to ask him about
+11   the degree of that.  But asking him about his
+12   2017 report and the definition of trace is --
+13   it's -- is absolutely beyond what we're here for.
+14   And I'm just telling you --
+15   MR. BUSH:
+16             Your objection can be --
+17   MS. O'DELL:
+18             The objection is --
+19             And I'm really just trying to abide by
+20   what I thought the agreement was.  And if you
+21   want to ask him about ambient levels and the
+22   degree to which Miss Matthey was exposed to
+23   amounts above that, that's what we're here for,
+24   and he's ready to answer your questions, but not
+0051
+ 1   go back to all these prior reports and ask him
+ 2   about the tables, ask him how to define trace.
+ 3   You've got plenty of testimony on that.
+ 4   MR. BUSH:
+ 5             It's directly relevant to his opinion.
+ 6   That's within the scope of his testimony.  He
+ 7   testified to it himself.  So I'm gonna ask it
+ 8   again, and you're free to object.
+ 9   MS. O'DELL:
+10             I am.
+11   MR. BUSH:
+12             But it's absolutely relevant to what he
+13   said.
+14   Q         So, Dr. Rigler, in the context of
+15   testing talc for the presence of asbestos, in
+16   your view, does trace mean 0.1 percent or less?
+17   A         Again, it depends on context.  And, in
+18   this case, the view is that an amount of that
+19   level could be considered, could be considered
+20   trace.  You know, as far as a scientist, I want
+21   to know what the context is here.  And in terms
+22   of what, you know, would be expected to be trace
+23   levels, that's what is -- that's what's stated
+24   here.
+0052
+ 1   Q         Sorry.  I'm just looking at your answer
+ 2   on the realtime.
+ 3   A         Yeah.
+ 4   Q         Well, I guess you said that the amount
+ 5   at that level, meaning 0.1 percent, could be
+ 6   considered trace.  Is there a situation where it
+ 7   would not be considered trace?
+ 8   A         Well, I mean, when we're -- when we're
+ 9   look- --
+10             For something like, let's say, X-ray
+11   diffraction, you're right on the limit of what
+12   can be detected, if it could be detected at all
+13   at that level, based upon the mixture of
+14   minerals, that kind of thing.  So that's why
+15   we're saying the context is important in terms of
+16   saying, you know, what would be trace.
+17             In analytical chemistry, that may not
+18   even be considered trace.  But here in this
+19   context, that's what I was trying to talk about
+20   maybe in terms of X-ray diffraction and the
+21   amount of it that would actually be in the
+22   product.
+23   Q         So in the context that's relevant for
+24   this case, the term "trace levels," it's fair to
+0053
+ 1   say, would mean 0.1 percent or less.
+ 2   MS. O'DELL:
+ 3             Object to the form.
+ 4   A         Well, it could.
+ 5   MR. BUSH:
+ 6   Q         Okay.  And when you say --
+ 7             And the contexts in which it couldn't
+ 8   are what contexts?
+ 9   A         In terms of it -- of it not being
+10   trace?  Is that what you're asking?
+11   Q         Yeah.  Yeah.  In what context -- I
+12   still am not clear on.  So you're saying it
+13   could.  Well, when could it not mean trace?
+14   A         I mean, again, it would depend on
+15   the -- I think it would depend on the situation.
+16   Because I'm always thinking in terms of the
+17   instrumentation's ability to detect what is --
+18   you know, what is trace and maybe what is not
+19   trace.
+20             For instance, by PLM, we -- we would
+21   label something 0.1 percent as a low, maybe a
+22   trace level.  And you would -- you would -- you
+23   would say it's there, you detected some of the
+24   particles, but it appears to be at a trace level.
+0054
+ 1             Now, when you look at it with another
+ 2   instrument, there -- for instance, like TEM or
+ 3   you do concentration, well, all of a sudden what
+ 4   appeared to be trace is -- there's a lot of
+ 5   material there when you actually look at it.
+ 6             For instance, if you go to the next
+ 7   paragraph, Blount talks about 1,000 amphibole
+ 8   particles present for every 1 million talc
+ 9   particles.  And here, in terms of that valuation,
+10   that 1,000 could almost be considered trace.  So
+11   it depends on the context.
+12             There's a lot of particles there, in my
+13   opinion.  Some people would say "trace."  That's
+14   why we like to use particle counts.  We like to
+15   use structures instead of percentages because the
+16   percentages can be very misleading.
+17             For instance, at .1 percent level, we
+18   could have hundreds of thousands, millions, or
+19   billions of structures of asbestos based on the
+20   size of the particle that you select.
+21             That's why we don't -- I don't like
+22   percentages, because I think they're inaccurate.
+23   They're based on one structure size, one density.
+24   You have to look at about -- am I talking about
+0055
+ 1   chrysotile or am I talking about the amphiboles?
+ 2   Whereas, if you just count what you see there,
+ 3   you get a much better representation.
+ 4             But this is the way things are
+ 5   represented, and, so, you want to -- we want to
+ 6   keep it the most accurate and available to
+ 7   understand, if you will.
+ 8   Q         Okay.  And we talked about that you
+ 9   said the major route of exposure for Miss Matthey
+10   would be the perineal -- the perineal
+11   application; right?
+12   A         Yes.
+13   Q         And, so, to what extent --
+14             Let me just strike that.
+15             MAS has done exposure studies -- and by
+16   that I mean there's below the waist and there's
+17   the two diapering studies; right?
+18   A         Yes.
+19   Q         And, so, how much did those exposure
+20   studies factor into your opinion that
+21   Miss Matthey's exposure to asbestos was above
+22   ambient?
+23   A         Looking at the below-the-waist study
+24   would be a good representation, in my opinion, of
+0056
+ 1   a -- more like a perineal application where -- as
+ 2   that is in that concentrated area.
+ 3             So, now, the other with the baby
+ 4   diapering would also -- would give you more of
+ 5   the area and exposure to the person who's
+ 6   applying the baby powder to the baby.  Of course,
+ 7   to the baby because it's being applied directly
+ 8   to the genital areas also, too.
+ 9             So, you know, you could use both of
+10   them, and, in fact, we do.  But below the waist
+11   is one for an adult which would be more likely,
+12   the perineal application.
+13   Q         And below the waist ultimately was
+14   measuring the levels of asbestos in the air in
+15   terms of fibers per cc; right?
+16   A         That's also the amount that was
+17   applied.  You can look directly to the amount of
+18   grams that were applied to that area.  True,
+19   there were measurements of the -- of the air, the
+20   amounts in the air.  But we know how much powder
+21   was applied per gram to that area.
+22   Q         Okay.  I guess -- so I guess my
+23   question is:  Given that you say the major route
+24   would be -- of asbestos exposure would be the
+0057
+ 1   perineal application, to what extent does the
+ 2   airborne exposure concentrations in the
+ 3   below-the-waist study inform your opinion that
+ 4   Miss Matthey's exposure to asbestos would be
+ 5   above ambient?
+ 6   A         Well, in that case, you can look
+ 7   directly at the exposure numbers and see, you
+ 8   know, way above what any background amount or
+ 9   level would be there, too.
+10             But in terms of the application of
+11   powder to the genital area, the genitals area,
+12   the gram loading, I believe, was about 4 grams,
+13   something like that, in that application.
+14             And, then, looking at Miss Matthey's
+15   exposure over a 50-year period and the amounts
+16   that would be used, the grams that would be used,
+17   you can look at those and see -- and I think I've
+18   estimated that in the chart, and also the number
+19   of applications, something like 55,000 over that
+20   amount of time.  We can really get a good idea of
+21   how much was, for instance, applied in the
+22   genital areas and then know a good bit about how
+23   much above the ambient that would be or how
+24   much --
+0058
+ 1             I mean, tissue itself -- and I've
+ 2   testified to this before -- has no talc in it.
+ 3   As it grows, there's no talc.  Unless there's
+ 4   some kind of exposure event, there's no talc in
+ 5   the tissue detected.  For instance, the McDonald
+ 6   study shows that in the controls.  If not, maybe
+ 7   a tiny little bit, but that's only because of
+ 8   the -- that's only because of an environmental
+ 9   exposure.
+10   Q         But the -- for Miss Matthey's exposure,
+11   the major route that the talc and any asbestos
+12   that you claim is in it is entering her body is
+13   vaginally.  Is that what you're saying?
+14   A         Yes.  That's the main route.
+15   Q         Okay.  Why don't we --
+16             Can we go off the record for about two
+17   minutes, let me just see if I have any other
+18   questions, and then we'll come back and that
+19   should be -- you know, we'll be right at an hour?
+20   MS. O'DELL:
+21             Okay.
+22   MR. BUSH:
+23             Okay.  Thanks.
+24                   (OFF THE RECORD.)
+0059
+ 1   MR. BUSH:
+ 2   Q         Dr. Rigler, if somebody has above
+ 3   ambient exposures to asbestos from the genital
+ 4   use of talc, would you expect them to have
+ 5   detectable levels of asbestos in their ovarian
+ 6   tissue?
+ 7   MS. O'DELL:
+ 8             Object to the form.  Vague.
+ 9   A         Are you talking about -- are you
+10   talking about in the tissue?
+11   MR. BUSH:
+12   Q         Yes.
+13   A         In terms of the --
+14             What was that?  I thought I heard
+15   something.  Oh.  Maybe it was the court reporter.
+16   The --
+17             I'm sorry.  Could you ask the question
+18   again?
+19   Q         Yeah.
+20             If somebody has above ambient exposures
+21   to asbestos from the genital use of talc, would
+22   you expect them to have detectable levels of
+23   asbestos in their ovarian tissue?
+24   MS. O'DELL:
+0060
+ 1             Object to the form.  Vague.
+ 2   A         The -- the -- the testing level or
+ 3   the -- the detectability of it was based on the
+ 4   amount of tissue that you would use, so that --
+ 5   that would vary simply because of the ratios of
+ 6   talc to asbestos.  So that would -- I mean, that
+ 7   would -- that would weigh in on whether you could
+ 8   detect that or not.
+ 9   MR. BUSH:
+10   Q         And, sorry.  Why is the -- can you
+11   explain why the ratios of talc to asbestos would
+12   affect the ability to detect asbestos?
+13   A         The -- as I already stated about the
+14   proportional amounts, simply because if you have
+15   a million talc structures to every one asbestos
+16   structure or maybe 10 million to every one, that
+17   kind of thing, the -- the distribution of the
+18   asbestos in the tissue, you could miss it based
+19   on how much tissue you analyze.  So it could be
+20   there, but you missed it simply because of the
+21   ratios, the large ratios.  So that's why it's
+22   important to be able to do as much tissue as you
+23   can, if possible.
+24             And, unlike lung, we have smaller
+0061
+ 1   amounts of tissue in those areas, and some of
+ 2   that, my understanding is, can be moved out of
+ 3   those areas into other areas of the body -- for
+ 4   instance, into the mesentery areas -- and cause
+ 5   cancers in those areas, too.
+ 6             So it doesn't just sit there
+ 7   statically.  So it's moving through the tissue.
+ 8   And, also, because of this ratio, you may not --
+ 9   you may not detect it.
+10   Q         And you may not have a different answer
+11   to this, but --
+12   A         Yeah.
+13   Q         -- if -- if Ms. -- if Ms. Matthey was
+14   exposed to asbestos above ambient, based on your
+15   opinion, would you expect her to have detectable
+16   levels of asbestos in her ovarian tissue?
+17   A         Again, same kind of answer as before.
+18   I believe that the exposure occurred, that
+19   ability to detect that is, again, dependent on
+20   the tissue amount and the selection there.  So
+21   we're sort of -- we're sort of tied up into that.
+22   I believe the exposure has occurred, and also
+23   because of distribution in that area.
+24             So I would expect it, yes.  The ability
+0062
+ 1   to detect it depends on those other factors.  So
+ 2   we can't preclude that it wasn't there, you know.
+ 3             So, again, my opinion is that it has
+ 4   been there, if not it is there, and whether that
+ 5   tissue was selected that had it in there, the
+ 6   probability then gives you, you know, whether
+ 7   you're gonna see it or not.
+ 8   Q         And what is --
+ 9             You were talking about sort of the
+10   amount of tissue you had.  Based on your
+11   experience doing tissue testing, do you have any
+12   way of describing how much tissue you had to
+13   test?  Was it a lot of tissue?  Was it a little
+14   tissue?
+15   MS. O'DELL:
+16             Objection.  Vague.
+17   A         There was quite a bit of tissue that
+18   was presented in this case.  A lot of it was not
+19   ovarian tissue or ovarian-related tissue.  So the
+20   ovarian-related tissue was reduced and
+21   subdivided, and then it was -- then it was
+22   reembedded at another laboratory, came back
+23   probably -- the amounts that came back were
+24   smaller in terms of what -- what could be -- what
+0063
+ 1   could be analyzed.  So we were very much --
+ 2             I mean, I say both sides were -- their
+ 3   hands were tied to some degree with the amount of
+ 4   tissue that was tested.  So it -- I mean, it's as
+ 5   representative as it can be at this particular
+ 6   point.
+ 7             But I do believe that there, as I said
+ 8   before in the answer, that there was amounts
+ 9   there, and the ability to detect it, you know, is
+10   based on what I've talked about, proportionality,
+11   amounts of tissue, that kind of thing.
+12             So that doesn't -- that doesn't detract
+13   from the body taking it in and -- and it moving
+14   around and being able to be detected.
+15   Q         And when you say proportionality is a
+16   reason that you might not be able to detect
+17   asbestos in Ms. Matthey's ovarian tissue, you
+18   mean the proportion of asbestos to talc in the
+19   bottles that she used; is that right?
+20   A         Yes.
+21   Q         Okay.  Dr. Rigler, that's -- that's all
+22   the questions we -- I have for today.  I don't
+23   know if Miss O'Dell has any questions, although I
+24   suspect not, but thank you for your time.
+0064
+ 1   A         Sure.
+ 2   MS. O'DELL:
+ 3             I have a couple of follow-up questions
+ 4   just briefly.
+ 5                      EXAMINATION
+ 6   BY MS. O'DELL:
+ 7   Q         Dr. Rigler, you were asked some
+ 8   questions early in your deposition about whether
+ 9   your opinions have changed.  Do you recall those?
+10   A         Yes.
+11   Q         And your opinions in this case in terms
+12   of what you plan to present to the jury have not
+13   changed, but you've just formulated an opinion
+14   about ambient exposure that you also plan to
+15   offer, and that was the purpose of the deposition
+16   today.  Is that correct?
+17   MR. BUSH:
+18             Objection.
+19   A         Yes.
+20   MS. O'DELL:
+21   Q         And in terms of Miss Matthey's
+22   exposure, you've testified that the genital
+23   application of the talcum powder was her primary
+24   route of exposure for asbestos.  Do you include
+0065
+ 1   in that talc fibers and plain talc?
+ 2   A         Oh, yes.  Yes.
+ 3   Q         And by saying that, were you excluding
+ 4   the contribution of inhalation to her exposure to
+ 5   the product?
+ 6   MR. BUSH:
+ 7             Objection.
+ 8   A         No.  No.
+ 9   MS. O'DELL:
+10   Q         And -- and in terms of --
+11             You were asked a question about studies
+12   that have identified asbestos in ovarian tissue,
+13   and you mentioned the McDonald study.
+14   A         Yes.
+15   Q         But have there been a series of -- you
+16   were asked a series of precise questions about
+17   that.  Have there been studies that have looked
+18   at ovarian tissue for the presence of asbestos?
+19   A         Yes.
+20   Q         I don't know if the question was --
+21             Have there been studies that have
+22   looked at ovarian tissue for the specific tissue
+23   of identifying asbestos?
+24   A         Yes.
+0066
+ 1   Q         And you mentioned that one of the bases
+ 2   of your opinions is -- in terms of the amount of
+ 3   the exposure would be the below-the-waist study.
+ 4   A         Yes.
+ 5   Q         And, in that study, the applications
+ 6   was approximately 4 grams per application.  Is
+ 7   that right?
+ 8   A         I believe that was true, yes.
+ 9   Q         And you also testified that it's your
+10   opinion that the presence of asbestos would be
+11   proportional to the results that you have --
+12             Let me ask that question again.  I'll
+13   just start again.
+14             So you've tested a number of bottles of
+15   Johnson's Baby Powder, and, as I recall your
+16   testimony, you said that her exposure to asbestos
+17   would be proportional to results of your prior
+18   testing.  Is that your opinion?
+19   A         Yes.
+20   Q         And you also have prepared a table in
+21   the course of this litigation that would -- that
+22   identifies the number of fibers that would be
+23   present in -- per gram in a sample of Johnson's
+24   Baby Powder.
+0067
+ 1   A         Yes.  Yes.
+ 2   Q         And is it fair to say that when you
+ 3   look at your testing, particularly for the
+ 4   testing of February 2019 samples, historical
+ 5   samples and railroad car samples, that there are
+ 6   numerous samples that tested as having thousands
+ 7   of structures of asbestos per gram?
+ 8   A         Yes.
+ 9   Q         And based on your analysis of those
+10   samples, based on what you understand about the
+11   amount of grams per application and
+12   Miss Matthey's exposure over 50 years, is it your
+13   opinion that her level of exposure would be far
+14   greater than the ambient levels of asbestos?
+15   A         Yes.
+16   Q         And would those levels be above the
+17   levels allowable under the ATSDR standards?
+18   A         Yes.
+19   MR. BUSH:
+20             Objection.
+21   MS. O'DELL:
+22   Q         Would those levels be greater than the
+23   amounts allowable under the standard by the EPA?
+24   MR. BUSH:
+0068
+ 1             Objection.
+ 2   A         Yes.
+ 3   MS. O'DELL:
+ 4   Q         Is that true also of the standard of
+ 5   allowable exposure levels of asbestos dictated by
+ 6   OSHA?
+ 7   MR. BUSH:
+ 8             Objection.
+ 9   A         Cal OSHA, yes.
+10   MS. O'DELL:
+11   Q         Cal OSHA.  Excuse me.  I've misspoken.
+12   A         Yes.
+13   Q         And you were asked some questions about
+14   the tissue you tested of Miss Matthey.  And
+15   specifically, in this case, was it possible to
+16   test all of Miss Matthey's ovarian tissue?
+17   A         No.
+18   Q         Okay.  That's all I have.  Thank you.
+19   MR. BUSH:
+20             Okay.  I think I'll be very fast.  I
+21   just have a couple of questions, follow-up
+22   questions to that.
+23   MS. O'DELL:
+24             One minute.
+0069
+ 1   MR. BUSH:
+ 2             Well, we'll see, but I don't think it's
+ 3   gonna be much longer than that.
+ 4                      EXAMINATION
+ 5   BY MR. BUSH:
+ 6   Q         Miss O'Dell asked you if there were
+ 7   studies -- you said there were studies that look
+ 8   specifically at asbestos in ovarian tissue.
+ 9   What -- what studies are those?
+10   A         They would have been the Heller
+11   studies, and I believe that Godleski has also
+12   done those kinds of studies.  And there may be
+13   others, too.  I'd have to refresh my memory on
+14   that.
+15   Q         And you discussed tables that were
+16   prepared.  Let me just ask you, is --
+17             I'll share my screen.
+18   A         Yeah.
+19   Q         Are these -- are these the tables that
+20   you're referring to that discuss the sort of
+21   fibers per gram at -- for -- in your museum
+22   testing?
+23   A         No.  They're on my reliance list, and
+24   they are actually a summary of asbestos by the
+0070
+ 1   years but also of fibrous talc.  And they are --
+ 2   they're specific tables, and they also show
+ 3   amounts that would be -- I believe it is in,
+ 4   like, a 10-ounce bottle.
+ 5   Q         And you're referring to your September
+ 6   22nd, 2023, reliance list?
+ 7   A         Yeah.  If you -- if you roll down
+ 8   through that just a bit --
+ 9   Q         Yeah.  Tell me if I need to go slower
+10   or --
+11   A         Yeah, a little bit slower.
+12   Q         Let me start at the top again because I
+13   went through --
+14   A         Okay.  Okay.  Okay.  Stop.  Number 8.
+15   Q         Number 8.  Got it.
+16   A         Yeah.  Uh-huh.
+17   Q         Oh.  And you were asked that it wasn't
+18   possible to test all of Miss Matthey's ovarian
+19   tissue.  Can you just explain what you meant by
+20   that?
+21   A         Sure.  The -- the samples that were
+22   received, a portion of them, they were asked to
+23   be split roughly 50/50.  Well, they said 50/50,
+24   which you try to do as best you can.  So the
+0071
+ 1   tissue was split 50/50, and then a portion of
+ 2   that 50/50 split was for the defendants' analyses
+ 3   and then also for the plaintiff's analysis.  But,
+ 4   ultimately, that 50/50 split went over to
+ 5   defendants' laboratory -- all right-- and then
+ 6   that was reembedded, and that -- half of that
+ 7   50/50 split was sent back.
+ 8             So there was approximately 50 percent
+ 9   left that wasn't tested, and then there was 50
+10   percent, a quarter of that was tested.  So only a
+11   quarter of that tissue was tested simply because
+12   my understanding was the defendants didn't do any
+13   testing.  They took it, but they didn't do
+14   anything with it.  So only a quarter of it was
+15   tested when, in fact, 50 percent of it could have
+16   been tested.
+17             We could have tested more to find if
+18   there was more.  But that didn't happen.  So
+19   that's why I was referring to that.
+20   Q         And, so, in terms of your 50 percent,
+21   did you test all of it?
+22   MS. O'DELL:
+23             Object to the form.  I don't think
+24   that's what he said.
+0072
+ 1   MR. BUSH:
+ 2             I'm just -- let me --
+ 3   A         Yeah.
+ 4   MR. BUSH:
+ 5   Q         I'll repeat the question.  I don't
+ 6   understand when you said -- when you're talking
+ 7   about a quarter.  Where does the quarter come
+ 8   from?  I just didn't understand.
+ 9   A         Well, the way that the tissue was
+10   split, my understanding was the blocks -- out of
+11   the blocks were selected an amount of tissue, and
+12   then there was tissue left in the blocks.  So
+13   that's what I would say was the other 50 percent
+14   that wasn't tested at all.  But of the amount
+15   that was taken out of those blocks, that amount
+16   was cut in half to be provided for each side.  So
+17   now you have a quarter, actually a quarter of the
+18   amount that was available to be tested.  That
+19   quarter was tested by the MAS laboratory.
+20             The other quarter, you know, was over
+21   Dr. Geyer's lab, and y'all didn't do anything
+22   with it, to my understanding.  It wasn't tested
+23   at all.  So only a quarter of that amount was
+24   tested, so that's all that was tested.  It could
+0073
+ 1   have been tested, but it wasn't.
+ 2   Q         This is my last question.
+ 3             I'm sure people know this, but half of
+ 4   the sample -- half of her ovarian samples were
+ 5   taken for the parties to test, and then, of that
+ 6   half, it was split 50/50, half to the plaintiffs,
+ 7   half to defendants.
+ 8   A         Yes.  But remember -- remember, only a
+ 9   portion of that was taken out of those blocks.
+10   So because of the retention -- there was
+11   additional testing that would have needed to be
+12   done in the future, those tissues were maintained
+13   at the MAS laboratory, to my understanding.
+14   Q         Okay.
+15   A         So -- and that was the rule.  That was
+16   the way that it was supposed to be done.  But,
+17   overall, only a quarter of it was tested.
+18   MS. O'DELL:
+19             All right.  So, Matt --
+20   MR. BUSH:
+21             And that's my last --
+22   MS. O'DELL:
+23             Okay.  All right.  Thank you so much,
+24   Matt.
+0074
+ 1        (Deposition concluded at 12:25 p.m. EST)
+ 2   
+ 3   
+ 4   
+ 5   
+ 6   
+ 7   
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+0075
+ 1                  C E R T I F I C A T E
+ 2   
+ 3             I do hereby certify that the above and
+ 4   foregoing transcript of proceedings in the matter
+ 5   aforementioned was taken down by me in machine
+ 6   shorthand, and the questions and answers thereto
+ 7   were reduced to writing under my personal
+ 8   supervision, and that the foregoing represents a
+ 9   true and correct transcript of the proceedings
+10   given by said witness upon said hearing.
+11             I further certify that I am neither of
+12   counsel nor of kin to the parties to the action,
+13   nor am I in anywise interested in the result of
+14   said cause.
+15   
+16   
+17   
+18                      /s:// Lois Anne Robinson
+                        LOIS ANNE ROBINSON, RPR, RMR
+19                      REGISTERED DIPLOMATE REPORTER
+                        CERTIFIED REALTIME REPORTER
+20   
+21   
+22   
+23   
+24   

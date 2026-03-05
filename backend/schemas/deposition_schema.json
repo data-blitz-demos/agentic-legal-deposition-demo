@@ -1,77 +1,95 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "DepositionSchema",
-  "type": "object",
-  "additionalProperties": false,
-  "required": [
-    "case_id",
-    "file_name",
-    "witness_name",
-    "witness_role",
-    "summary",
-    "claims"
-  ],
-  "properties": {
-    "case_id": {
-      "type": "string",
-      "description": "Case identifier for this deposition."
-    },
-    "file_name": {
-      "type": "string",
-      "description": "Original deposition file name."
-    },
-    "witness_name": {
-      "type": "string",
-      "description": "Witness full name."
-    },
-    "witness_role": {
-      "type": "string",
-      "description": "Witness role/title."
-    },
-    "deposition_date": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "description": "Date from deposition text when available."
-    },
-    "summary": {
-      "type": "string",
-      "description": "Concise factual summary of testimony."
-    },
-    "claims": {
-      "type": "array",
-      "description": "Structured factual claims extracted from testimony.",
-      "items": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/deposition.schema.json",
+    "title": "Deposition",
+    "type": "object",
+    "properties": {
+      "deposition_id": { "type": "string" },
+      "case_number": { "type": "string" },
+      "date": { "type": "string", "format": "date" },
+      "location": { "type": "string" },
+      "court": {
         "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "topic",
-          "statement",
-          "confidence",
-          "source_quote"
-        ],
         "properties": {
-          "topic": {
-            "type": "string",
-            "description": "Short topic label for a factual claim."
+          "name": { "type": "string" },
+          "judge": { "type": "string" }
+        }
+      },
+      "deponent": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "role": { "type": "string" },
+          "organization": { "type": "string" }
+        }
+      },
+      "participants": {
+        "type": "object",
+        "properties": {
+          "questioners": {
+            "type": "array",
+            "items": { "type": "string" }
           },
-          "statement": {
-            "type": "string",
-            "description": "Detailed claim statement."
-          },
-          "confidence": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 1,
-            "description": "Model confidence in decimal range 0..1."
-          },
-          "source_quote": {
-            "type": "string",
-            "description": "Direct quote supporting the claim."
+          "answerer": { "type": "string" },
+          "observers": {
+            "type": "array",
+            "items": { "type": "string" }
           }
         }
-      }
+      },
+      "transcript": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["question"]
+            },
+            "timestamp": {
+              "type": "string",
+              "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+            },
+            "speaker": { "type": "string" },
+            "text": { "type": "string" },
+            "followed_by": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["answer", "objection"]
+                  },
+                  "timestamp": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+                  },
+                  "speaker": { "type": "string" },
+                  "text": { "type": "string" },
+                  "basis": { "type": "string" },
+                  "ruling": {
+                    "type": "object",
+                    "properties": {
+                      "timestamp": {
+                        "type": "string",
+                        "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+                      },
+                      "speaker": { "type": "string" },
+                      "decision": {
+                        "type": "string",
+                        "enum": ["Sustained", "Overruled", "Reserved", "Stricken"]
+                      },
+                      "notes": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "notes": { "type": "string" }
     }
   }
-}
+  

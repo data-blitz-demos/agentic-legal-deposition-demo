@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 """Neo4j graph loader for OWL/RDF legal ontology files.
@@ -120,6 +124,31 @@ RETURN
     lang: coalesce(l.lang, '')
   })[..$literal_limit] AS literals
 ORDER BY label
+""".strip()
+
+_GRAPH_RAG_VECTOR_RETRIEVAL = """
+CALL db.index.vector.queryNodes($index_name, $node_limit, $embedding)
+YIELD node, score
+WITH node AS n, score
+OPTIONAL MATCH (n)-[rr:RELATES_TO]->(o:Resource)
+WITH n, score, collect(DISTINCT {
+  predicate: coalesce(rr.predicate_local_name, rr.predicate_iri),
+  object_label: coalesce(o.local_name, o.iri),
+  object_iri: o.iri
+})[..$neighbor_limit] AS relations
+OPTIONAL MATCH (n)-[hl:HAS_LITERAL]->(l:Literal)
+RETURN
+  n.iri AS iri,
+  coalesce(n.local_name, n.iri) AS label,
+  score,
+  relations,
+  collect(DISTINCT {
+    predicate: coalesce(hl.predicate_local_name, hl.predicate_iri),
+    value: l.value,
+    datatype: coalesce(l.datatype, ''),
+    lang: coalesce(l.lang, '')
+  })[..$literal_limit] AS literals
+ORDER BY score DESC, label
 """.strip()
 
 
@@ -444,7 +473,14 @@ class Neo4jOntologyGraph:
             return [fallback[:80]]
         return []
 
-    def retrieve_context(self, question: str, *, node_limit: int = 8) -> dict[str, Any]:
+    def retrieve_context(
+        self,
+        question: str,
+        *,
+        node_limit: int = 8,
+        embedding_config: dict[str, Any] | None = None,
+        query_embedding: list[float] | None = None,
+    ) -> dict[str, Any]:
         """Retrieve ontology context rows relevant to one natural-language question."""
 
         text = str(question or "").strip()
@@ -456,16 +492,7 @@ class Neo4jOntologyGraph:
         if not terms:
             raise ValueError("Question did not produce retrieval terms.")
 
-        driver = self._get_driver()
-        with driver.session(database=self.database) as session:
-            records = session.run(
-                _GRAPH_RAG_RETRIEVAL,
-                terms=terms,
-                node_limit=bounded_limit,
-                neighbor_limit=3,
-                literal_limit=4,
-            )
-
+        def normalize_records(records) -> list[dict[str, Any]]:
             resources: list[dict[str, Any]] = []
             for record in records:
                 iri = str(record.get("iri") or "").strip()
@@ -482,18 +509,62 @@ class Neo4jOntologyGraph:
                     for item in (record.get("literals") or [])
                     if isinstance(item, dict) and str(item.get("value") or "").strip()
                 ]
-                resources.append(
-                    {
-                        "iri": iri,
-                        "label": label,
-                        "relations": relations,
-                        "literals": literals,
-                    }
+                resource: dict[str, Any] = {
+                    "iri": iri,
+                    "label": label,
+                    "relations": relations,
+                    "literals": literals,
+                }
+                score = record.get("score")
+                if score is not None:
+                    try:
+                        resource["score"] = float(score)
+                    except (TypeError, ValueError):
+                        pass
+                resources.append(resource)
+            return resources
+
+        retrieval_mode = "keyword"
+        vector_error: str | None = None
+        resources: list[dict[str, Any]] = []
+        config = dict(embedding_config or {})
+        vector_enabled = bool(config.get("enabled")) and bool(query_embedding)
+        vector_index_name = str(config.get("index_name") or "").strip()
+
+        driver = self._get_driver()
+        with driver.session(database=self.database) as session:
+            if vector_enabled and vector_index_name:
+                try:
+                    vector_records = session.run(
+                        _GRAPH_RAG_VECTOR_RETRIEVAL,
+                        index_name=vector_index_name,
+                        embedding=[float(item) for item in query_embedding or []],
+                        node_limit=bounded_limit,
+                        neighbor_limit=3,
+                        literal_limit=4,
+                    )
+                    resources = normalize_records(vector_records)
+                    retrieval_mode = "vector" if resources else "keyword_fallback"
+                except Exception as exc:
+                    vector_error = str(exc)
+                    retrieval_mode = "keyword_fallback"
+
+            if not resources:
+                records = session.run(
+                    _GRAPH_RAG_RETRIEVAL,
+                    terms=terms,
+                    node_limit=bounded_limit,
+                    neighbor_limit=3,
+                    literal_limit=4,
                 )
+                resources = normalize_records(records)
 
         lines: list[str] = []
         for item in resources:
-            lines.append(f"Resource: {item['label']} ({item['iri']})")
+            score_text = ""
+            if "score" in item:
+                score_text = f" [score={item['score']:.4f}]"
+            lines.append(f"Resource: {item['label']} ({item['iri']}){score_text}")
             for rel in item["relations"][:3]:
                 predicate = str(rel.get("predicate") or "related_to")
                 target_label = str(rel.get("object_label") or rel.get("object_iri") or "")
@@ -508,5 +579,9 @@ class Neo4jOntologyGraph:
             "terms": terms,
             "resource_count": len(resources),
             "resources": resources,
+            "retrieval_mode": retrieval_mode,
+            "query_embedding_used": vector_enabled,
+            "vector_index_name": vector_index_name,
+            "vector_error": vector_error,
             "context_text": "\n".join(lines) if lines else "No matching ontology context found.",
         }

@@ -4,5 +4,9 @@ __pycache__/
 .env
 .DS_Store
 AGENT.md
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
 
 reports/scripts/run_tests.sh

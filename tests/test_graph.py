@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -102,6 +106,9 @@ def test_run_invokes_compiled_graph():
             "file_path": "/tmp/file.txt",
             "llm_provider": "",
             "llm_model": "",
+            "schema_name": "deposition_schema",
+            "selected_schema": None,
+            "selected_schema_mode": "",
         }
     )
 
@@ -123,6 +130,32 @@ def test_run_invokes_compiled_graph_with_selected_llm():
             "file_path": "/tmp/file.txt",
             "llm_provider": "ollama",
             "llm_model": "llama3.3",
+            "schema_name": "deposition_schema",
+            "selected_schema": None,
+            "selected_schema_mode": "",
+        }
+    )
+
+
+def test_run_invokes_compiled_graph_with_selected_schema():
+    workflow = make_workflow()
+    workflow.graph.invoke.return_value = {"ok": True}
+
+    workflow.run(
+        case_id="case-1",
+        file_path="/tmp/file.txt",
+        schema_name="deposition_schema_g1",
+    )
+
+    workflow.graph.invoke.assert_called_once_with(
+        {
+            "case_id": "case-1",
+            "file_path": "/tmp/file.txt",
+            "llm_provider": "",
+            "llm_model": "",
+            "schema_name": "deposition_schema_g1",
+            "selected_schema": None,
+            "selected_schema_mode": "",
         }
     )
 
@@ -370,6 +403,50 @@ def test_map_deposition_validates_dict_payload_from_json_schema(monkeypatch):
     )
 
     assert isinstance(result["deposition"], DepositionSchema)
+
+
+def test_map_deposition_non_native_schema_captures_raw_payload_and_falls_back(monkeypatch):
+    workflow = make_workflow()
+    parser = Mock()
+    parser.invoke.return_value = {
+        "document_id": "x",
+        "witness": {"name": "Jane"},
+        "facts": ["Camera was offline."],
+    }
+    workflow.llm.with_structured_output.return_value = parser
+    fallback = DepositionSchema(
+        case_id="case-1",
+        file_name="witness.txt",
+        witness_name="Fallback Witness",
+        witness_role="Fallback Role",
+        summary="Fallback Summary",
+        claims=[Claim(topic="Fallback", statement="Recovered", confidence=0.55, source_quote="Recovered")],
+    )
+    workflow._fallback_map_deposition = Mock(return_value=fallback)
+    monkeypatch.setattr(
+        graph_module,
+        "load_schema",
+        lambda _name: {"title": "AlternateSchema", "type": "object"},
+    )
+    monkeypatch.setattr(graph_module, "schema_mode", lambda _name: "raw_capture")
+
+    result = workflow._map_deposition(
+        {
+            "case_id": "case-1",
+            "file_path": "/tmp/witness.txt",
+            "raw_text": "raw",
+            "schema_name": "deposition_schema_g1",
+        }
+    )
+
+    assert result["deposition"] is fallback
+    assert result["ingest_schema_mode"] == "raw_capture"
+    assert result["ingest_schema_payload"] == {
+        "document_id": "x",
+        "witness": {"name": "Jane"},
+        "facts": ["Camera was offline."],
+    }
+    workflow._fallback_map_deposition.assert_called_once()
 
 
 def test_fallback_map_deposition_extracts_metadata_and_claims():

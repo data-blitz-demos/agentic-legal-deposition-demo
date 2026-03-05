@@ -1,0 +1,2459 @@
+0326
+ 1          SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2   FOR THE COUNTY OF LOS ANGELES - SPRING STREET COURTHOUSE
+ 3   
+ 4   
+ 5   SHAWN JOHNSON, an individual; )
+     HOLLY JOHNSON, an individual, )
+ 6                                 )
+               Plaintiffs,         )
+ 7                                 ) Case No.
+     vs.                           ) JCCP 4674 / 20STCV17335
+ 8                                 )
+     JOHNSON & JOHNSON; JOHNSON &  )
+ 9   JOHNSON CONSUMER INC., a      )
+     subsidiary of JOHNSON &       )
+10   JOHNSON; ALBERTSONS COMPANIES,)
+     INC., individually and as     )
+11   successor in interest to      )
+     SAV-ON DRUG STORES, INC.;     )
+12   COSTCO WHOLESALE CORPORATION; )
+     RALPHS GROCERY COMPANY;       )
+13   THRIFTY PAYLESS, INC., dba    )
+     RITE AID PHARMACY; WALMART,   )
+14   INC. and DOES 1 through 400,  )
+     inclusive,                    )
+15                                 ) Volume III
+               Defendants.         )
+16   ______________________________) Pages 326 to 419
+17   
+18   
+19          REMOTE DEPOSITION OF WILLIAM LONGO, PH.D.
+20                        March 24, 2021
+21                    10:11 a.m. - 1:06 p.m.
+22        Taken before Carrie LaMontagne, CSR No. 13393
+23   
+24   
+25   
+0327
+ 1             Volume III of the telephonic deposition of
+ 2   WILLIAM LONGO, PH.D., on behalf of the Defendants,
+ 3   before Carrie LaMontagne, CSR, a Certified Shorthand
+ 4   Reporter for the State of California, commencing on
+ 5   Wednesday, March 24, 2021, at 10:11 a.m., via Zoom Video
+ 6   Communications.
+ 7   
+ 8   APPEARANCES OF COUNSEL (all appearances via telephone):
+ 9   For the Plaintiff:
+10       WEITZ & LUXENBERG, P.C.
+11       BY: MARK BRATT, ESQ.
+12       1800 Century Park East, Suite 700
+13       Los Angeles, California 90067
+14       (310)247-0921
+15   For the Defendant Albertsons Companies, Inc.
+16   individually and as successor-in-interest to Sav-On Drug
+17   Stores, Inc.; Ralphs Grocery Company; Thrifty Payless,
+18   Inc. dba Rite Aid Pharmacy; and Walmart Inc.:
+19       BARNES & THORNBURG, LLP
+20       BY: MITCHELL R. CHARCHALIS, ESQ.
+21       2029 Century Park East, Suite 300
+22       Los Angeles, California 90067
+23       (310) 284-3880
+24   
+25   
+0328
+ 1   APPEARANCES CONTINUED:
+ 2   For the Defendant Johnson & Johnson and Johnson &
+ 3   Johnson Consumer Inc.:
+ 4       KING & SPALDING LLP
+ 5       BY: KEVIN HYNES, ESQ.
+ 6       1185 Avenue of the Americas, 34th Floor
+ 7       New York, New York 10036
+ 8       (212) 790-5349
+ 9   and
+10       CHEHARDY SHERMAN WILLIAMS
+11       BY: MATTHEW PERTUIT, ESQ.
+12       1 Galleria Boulevard, Suite 1100
+13       Metairie, Louisiana 70001
+14       (504) 833-5600
+15   For the Defendant Walmart Inc.:
+16       PETTIT KOHN
+17       BY: CHRISTINE E. BOISCLAIR, ESQ.
+18       11622 El Camino Real, Suite 300
+19       San Diego, California 92130
+20       (858) 755-8500
+21   
+22   Also appearing: Shaz Hassan, deposition moderator
+23                   Erin Boyle, Esq.
+24   
+25   
+0329
+ 1                        I N D E X
+ 2   EXAMINATIONS                                     PAGE
+ 3   By Mr. Hynes                                     336
+ 4   
+ 5                DEFENDANTS' INDEX OF EXHIBITS
+ 6   EXHIBIT NO.                                      PAGE
+ 7   Exhibit 13A    MAS Invoice, dated March 26,      337
+ 8                  2021
+ 9   Exhibit 25     Letter from Weitz & Luxenberg     342
+10                  to all counsel, dated March 5,
+11                  2021
+12   Exhibit 26     Pamphlet produced by the EPA      342
+13   Exhibit 27     Appendix A - Johnson & Johnson    342
+14                  Reliance and Reviewed
+15                  Documents
+16   Exhibit 28     Images from sample M71202         342
+17   Exhibit 29     Letter from Levy, Phillips &      343
+18                  Konigsberg, LLP to Mike Mount,
+19                  dated January 29, 2009
+20   Exhibit 30     Word search list                  344
+21   
+22                PLAINTIFFS' INDEX OF EXHIBITS
+23   EXHIBIT NO.                                      PAGE
+24   Exhibit 31     Minute Order                      371
+25   
+0330
+ 1            PREVIOUSLY MARKED EXHIBITS REFERENCED
+ 2   NUMBER                                           PAGE
+ 3   Exhibit 11     Dr. Mount's report, dated         395
+ 4                  June 5, 2013
+ 5   
+ 6   
+ 7   
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0331
+ 1             MR. HYNES:  This is Kevin Hynes on behalf of
+ 2   Johnson & Johnson, just making a quick record on behalf
+ 3   of J&J related to Dr. Longo's volume three continuation
+ 4   in the Johnson case.  Dr. Longo's last deposition was on
+ 5   February 11, 2021.  After that deposition, counsel filed
+ 6   an informal discovery conference statement on
+ 7   February 23.
+ 8        We had an informal discovery conference on the
+ 9   25th, at which point the judge agreed that plaintiffs
+10   and MAS should provide some information regarding MAS's
+11   electronic search capabilities in advance of the third
+12   day of Dr. Longo's deposition in this case and ask that
+13   Dr. Longo sit for a day three on or before March 8th.
+14        Johnson & Johnson and plaintiffs then met and
+15   conferred over the next few days.  Johnson & Johnson
+16   provided some questions to plaintiffs' counsel to relay
+17   to MAS regarding certain search functionality that MAS
+18   had with respect to its electronic databases.  That was
+19   on March 1st.  And I think we agreed to relax the
+20   deposition dates.  I think March 10th is the date that
+21   we agreed upon then.
+22        Later that week, I believe March 5th, plaintiffs'
+23   counsel indicated that MAS had not yet been able to
+24   respond to some of the questioning.  And those questions
+25   were directed at MAS's electronic search capabilities
+0332
+ 1   such as like information would be entered, maintained,
+ 2   and searchable, as well as what the platforms actually
+ 3   were, whether it's Excel, QuickBase, Access, or some
+ 4   other program where they keep electronically searchable
+ 5   information.
+ 6        Despite the fact that Johnson & Johnson didn't have
+ 7   any responses yet on, you know, what could be searched,
+ 8   what fields are searchable, and what the databases, you
+ 9   know, where materials are maintained, and MAS's
+10   databases be provided, a set of search terms that, you
+11   know, could be useful, but outlines that, you know, to
+12   the extent there are other fields that are searchable,
+13   we could help narrow exactly what was being searched and
+14   produced back when the searches are run.
+15        The next day, I think on March 9th, plaintiffs'
+16   counsel reached out to reschedule the March 10th
+17   continuation to provide MAS some additional time to run
+18   the search terms that we had provided.  We agreed and
+19   scheduled the earliest available date, which was I guess
+20   today, March 24th.
+21        Johnson & Johnson and plaintiffs' counsel have met
+22   and conferred over the last few weeks trying to get a
+23   handle on, you know, the status of Dr. Longo's
+24   searching.  And it appears as though, you know, a few
+25   minutes before today's deposition, plaintiffs' counsel
+0333
+ 1   represented that Dr. Longo had completed some of the
+ 2   searches but not all.
+ 3        And I received at least one result of prior
+ 4   cosmetic talc analyses dated -- report dated February 9,
+ 5   2009, authored by Mike Mount for Mr. John Guinan,
+ 6   G-U-I-N-A-N, from Levy Phillips & Konigsberg.  They
+ 7   received that several minutes before today's deposition.
+ 8   It remains to be seen if more materials are on the way.
+ 9        But our intent today for Johnson & Johnson is to
+10   question regarding some of the select term search
+11   capabilities at MAS's laboratory, as well as the
+12   databases where this information is stored, in an effort
+13   to comply with the guidance that the court provided on
+14   February 25th at the informal discovery conference.
+15        And, you know, we will reserve our right to
+16   continue today's deposition to the extent, you know, the
+17   information gleaned today provides, you know, more
+18   targeted, reasonable search avenues, reveals additional
+19   databases that could be searched that haven't been
+20   searched, and to follow up on searches that may be
+21   continuing and ongoing at this stage.
+22             MR. BRATT:  Just in response.
+23        Having appeared at the IDC and participated in the
+24   argument, which was not transcribed, and seeing the
+25   subsequent order that was issued by the court, which
+0334
+ 1   indicated that despite the fact there's been no subpoena
+ 2   issued on MAS or Dr. Longo in this particular case, and
+ 3   also making rulings about some of the other areas sought
+ 4   by J&J that the court felt were overbroad and
+ 5   burdensome, I have been in communication with both J&J
+ 6   and Dr. Longo to try to navigate this process and to
+ 7   facilitate getting information related to an additional
+ 8   search of the MAS database.
+ 9        I, again, do not represent MAS in any capacity and
+10   instead am trying to work through what the court has
+11   indicated might be a reasonable request, and that issued
+12   a minute order related to, versus what J&J's view is on
+13   what is reasonable and discoverable, which I think are
+14   not necessarily aligned entirely.
+15        So by no means am I here to say that everything
+16   that J&J has outlined to me specifically is overbroad,
+17   but I certainly do not agree that everything that was
+18   contained in the original e-mails sent to me by
+19   Julia Romano related to kind of an outline or topics
+20   that they might inquire to about the MAS database is
+21   within the scope of what the court was contemplating was
+22   permissible to go into.
+23        I can confirm that once I finally received a list
+24   of search terms from Ms. Romano, which was I think a day
+25   or so before the originally scheduled date in early
+0335
+ 1   March, it was apparent that Dr. Longo, who wanted to
+ 2   actually participate directly in the searching process
+ 3   so he could actually state under oath that he did do --
+ 4   did, in fact, participate and actually has foundation
+ 5   for what he was stating actually did occur.  We had to
+ 6   continue it at that point because those additional
+ 7   search terms were provided to us so late in time.
+ 8        So it leads us to today, because Dr. Longo's been
+ 9   busy with many other depositions, many of which involve
+10   Johnson & Johnson in other cases.  But putting that
+11   aside, I did receive information this morning from
+12   Dr. Longo that the search that was done at MAS did find
+13   at least one additional test.  It was provided by e-mail
+14   to counsel as soon as I received it this morning.
+15        I just looked at my e-mail now and have now been
+16   provided a document that I'll be forwarding immediately
+17   related to the additional search terms that were done.
+18   Dr. Longo can obviously describe how this document was
+19   created and what it's all meant to mean.  So I'll send
+20   that now.
+21        But we have been moving forward in good faith
+22   trying to get Johnson & Johnson and its attorneys things
+23   that have been asked for, but also walking the line of
+24   interpreting what the court had ordered and especially
+25   in light of the fact that Dr. Longo is here as an
+0336
+ 1   individual, as an expert witness, and in no way is he
+ 2   appearing on behalf of MAS in this case, and has not
+ 3   been subpoenaed in this case, either directly or -- the
+ 4   company MAS hasn't been subpoenaed.
+ 5        With that, I'll go ahead and send the additional
+ 6   e-mail.  And hopefully Dr. Longo will get on soon and we
+ 7   can proceed.
+ 8        We can go off the record in the interim.
+ 9                     (A break was taken.)
+10                    WILLIAM LONGO, PH.D.,
+11   having been previously sworn to tell the truth, the
+12   whole truth, and nothing but the truth, testified as
+13   follows:
+14   
+15                         EXAMINATION
+16   BY MR. HYNES:
+17         Q.   Good afternoon, Dr. Longo.
+18        How are you?
+19         A.   Good afternoon.
+20         Q.   We are continuing with the day three of your
+21   deposition in the Shawn Johnson matter pending in
+22   California, right?
+23         A.   That is correct.
+24         Q.   Have you generated any additional invoices in
+25   this case since your last deposition on February 11th?
+0337
+ 1         A.   Probably.  For prep time and deposition time,
+ 2   I'm assuming.
+ 3         Q.   Okay.  Have you provided those invoices to
+ 4   counsel?
+ 5         A.   Probably were sent to counsel.
+ 6         Q.   With your prior invoices in this case were
+ 7   marked as Exhibit 13, to the extent there are any new
+ 8   invoices, can we mark those as Exhibit 13A for today's
+ 9   deposition?
+10             MR. BRATT:  No problem.  If we've received
+11   some or they've been issued, I'll be happy to provide
+12   those.
+13             MR. HYNES:  Okay.
+14         (Defendant's Exhibit Number 13A marked for
+15    identification purposes and made part of the record.)
+16   BY MR. HYNES:
+17         Q.   Dr. Longo, I understand you've had additional
+18   communications with counsel for plaintiffs since your
+19   February 11th deposition, correct?
+20         A.   Correct.
+21         Q.   And understand that part of those discussions
+22   involve court guidance following the February 25th
+23   informal discovery conference and electronic searching,
+24   correct?
+25         A.   Yes.
+0338
+ 1         Q.   And I want to focus today on both, you know,
+ 2   what materials are searchable at MAS and then the
+ 3   searches that have been conducted so far.
+ 4        That's the focus of what we'll go through today.
+ 5   Okay?
+ 6         A.   That's fine.
+ 7         Q.   Before I get there, just a little bit of
+ 8   housekeeping.
+ 9        Have you had any other communications with any
+10   other experts in this case since your last deposition on
+11   February 11th?
+12         A.   No.
+13         Q.   Have you reviewed any additional case-specific
+14   materials since your last deposition on February 11th?
+15         A.   No.
+16         Q.   And have you talked to Dr. Rigler at any point
+17   over the last two weeks?
+18         A.   Yes.
+19         Q.   Okay.  When was that?
+20         A.   About two days after my last deposition with
+21   Johnson & Johnson, and that was taken by John Ewald.
+22         Q.   What did you and Dr. Rigler discuss during
+23   that conversation?
+24         A.   What was discussed is his answers on pages 40
+25   to 60 and a deposition that Mr. Ewald had me review on
+0339
+ 1   his testimony where he stated that we initially were
+ 2   analyzing the cosmetic talcs in 2016 or early 2017
+ 3   without heavy liquid density separation.  And then we
+ 4   went to heavy density liquid separation.  And as I
+ 5   testified in that case to Mr. Ewald, I said that
+ 6   Dr. Rigler was dead wrong.  That never happens.
+ 7        So I called Dr. Rigler and he looked at the
+ 8   deposition, and he was referencing what I will call the
+ 9   five draft samples that were sent to Mark Lanier's firm
+10   early on where we did the first five samples.  Somehow
+11   he thought that those were done without heavy liquid
+12   density separation.  I told Mark to go look at the count
+13   sheets, the TEMs, and it refreshed his memory.  He also
+14   stated he believes he's testified before that all we do
+15   is heavy liquid density separation.  So he was in
+16   agreement that he was wrong.
+17         Q.   Okay.  And those are pages 40 to 60 of his
+18   deposition in the Oklahoma case, Eggers, E-G-G-E-R-S?
+19         A.   I knew you would know it.
+20         Q.   Is that it?
+21         A.   Yes, sir.
+22         Q.   Okay.  And you mentioned the first five Lanier
+23   samples.
+24        Were those part of the group of 17 Lanier samples
+25   that were written up in that April 2017 preliminary
+0340
+ 1   analysis report?
+ 2         A.   Yes.
+ 3         Q.   Okay.  And it's your testimony that none of
+ 4   those five samples did MAS perform any sort of non-heavy
+ 5   liquid density analysis, correct?
+ 6         A.   Correct.  You can look at the TEM sheets and
+ 7   see they're not separately analyzed compared to
+ 8   [indiscernible] doing it.  They were between 11 and 20
+ 9   milligrams per samples.  And that's consistent with all
+10   heavy liquid density.
+11             THE REPORTER:  Dr. Longo, your audio is
+12   cutting in and out.  When you lean back it creates an
+13   audio problem for me.
+14                 (Discussion off the record.)
+15   BY MR. HYNES:
+16         Q.   And so it's your testimony that based on that
+17   conversation you had with Dr. Rigler about two days
+18   after your deposition in the Chenet, C-H-E-N-E-T, in
+19   Louisiana, Dr. Rigler is now retracting the testimony
+20   that he provided in that Eggers case from pages 40 to
+21   60?
+22         A.   Well, he retracted it from me and just said,
+23   You're wrong.
+24        You'll have to ask Dr. Rigler any follow-up on
+25   that.  I guess the next time he has a deposition, he
+0341
+ 1   will retract it or he'll say he was wrong.
+ 2         Q.   Okay.  Do you have an explanation as for why
+ 3   his recollection was that they did not perform heavy
+ 4   liquid density separation at the outset and then later
+ 5   move to heavy liquid density separation?
+ 6             MR. BRATT:  Calls for speculation as to what
+ 7   Dr. Rigler was thinking.
+ 8        But go ahead.
+ 9             THE WITNESS:  He just apologized and just
+10   said, I forgot.  So you have to explore it with him
+11   more.
+12   BY MR. HYNES:
+13         Q.   How long was your conversation with
+14   Dr. Rigler?
+15         A.   I don't know.  Five, ten minutes.
+16         Q.   Did you discuss anything other than this
+17   subject?
+18         A.   Well, we discussed other stuff, but didn't
+19   have anything to do with Johnson & Johnson or --
+20         Q.   Sorry.  Or any kind of talc litigation.
+21        Is that what you were about to say?
+22         A.   No, it didn't involve talc litigation.
+23         Q.   Okay.
+24         A.   That --
+25         Q.   Go ahead.
+0342
+ 1         A.   That I recall.
+ 2         Q.   Okay.  All right.  So I'm going to mark a few
+ 3    things here now.  I may get to some of them later.
+ 4         So I'll mark first the March 5, 2021, letter from
+ 5    plaintiffs enclosing some additional materials as
+ 6    Exhibit 25.
+ 7         As Exhibit 26, I'm going to mark a September 1974
+ 8    EPA document titled Identification and Assessment of
+ 9    Asbestos Emissions from Incidental Sources of Asbestos.
+10         As Exhibit 27, I'm going to attach an updated
+11    Appendix A that is dated March 5, 2021.
+12         And I'll pause there.
+13    (Defendants' Exhibit Numbers 25, 26, and 27 marked for
+14     identification purposes and made part of the record.)
+15    BY MR. HYNES:
+16         Q.   Dr. Longo, this updated reference list, as far
+17    as I can tell, there's only one new entry, entry 146
+18    that includes what I just marked as Exhibit 26, that
+19    September 24th EPA document, right?
+20         A.   Correct.
+21         Q.   And then I'll attach as Exhibit 28, some
+22    images from sample M71202.
+23         Pause there as well.
+24   (Defendant's Exhibit Number 28 marked for identification
+25             purposes and made part of the record.)
+0343
+ 1    BY MR. HYNES:
+ 2         Q.   Dr. Longo, you previously testified that this
+ 3    is an ongoing project and you will not reveal the source
+ 4    of the talc being analyzed in these images.
+ 5         Is that accurate?
+ 6         A.   That is accurate.
+ 7         Q.   Okay.  And today you're not going to testify
+ 8    about the source of the talc that was analyzed as part
+ 9    of this Exhibit 28?
+10         A.   That's correct.  I don't believe I've issued a
+11    report on that.
+12         Q.   Okay.  I'll attach as Exhibit 29, a
+13    compilation of different documents that I received a few
+14    minutes before we started today's deposition.  The first
+15    page is a January 29, 2009, letter from
+16    Megan E. Sullivan, a paralegal at Levy Phillips, to
+17    Mike Mount of MAS, subject line Cashmere Bouquet.
+18   (Defendant's Exhibit Number 29 marked for identification
+19             purposes and made part of the record.)
+20    BY MR. HYNES:
+21         Q.   Also, part of this compilation is a report of
+22    analysis by polarized light microscopy, transmission
+23    electron microscopy, and scanning electron microscopy on
+24    a certain Cashmere Bouquet talcum powder container
+25    conducted -- or authored by Mike Mount, issued to
+0344
+ 1    Mr. John, J-O-H-N, Guinan, G-U-I-N-A-N, of Levy
+ 2    Phillips, and that report is dated February 9, 2009.
+ 3    And then there's some data that goes along with the
+ 4    report, as well as the shipping label.
+ 5         Then as Exhibit 30, I'm going to attach what
+ 6    counsel for plaintiffs just provided about ten minutes
+ 7    ago now.  It's a word search list that Dr. Longo
+ 8    provided to plaintiffs' counsel outlining some of the
+ 9    searches that have been run across electronically stored
+10    information at MAS.
+11   (Defendant's Exhibit Number 30 marked for identification
+12             purposes and made part of the record.)
+13    BY MR. HYNES:
+14         Q.   Is that an accurate description of Exhibit 30,
+15    Dr. Longo?
+16         A.   It is.
+17         Q.   All right.  I guess let's start with -- let's
+18    start with what search?  So I guess at the front end, I
+19    want to talk a little bit about MAS's electronic
+20    databases, what's stored in them, and what was searched
+21    for.
+22         So first off, how many electronic databases does
+23    MAS maintain that would store information related to
+24    bulk analyses for airborne simulation studies that MAS
+25    conducted from the 1990s to 2017?
+0345
+ 1         A.   I don't know the exact number.  I know that
+ 2    the current one only goes back so far.  That was
+ 3    integrated into it.  So then there's some of the
+ 4    older -- I think one of the older databases is still
+ 5    maintained.  So you have to go to at least two different
+ 6    databases to get this information.
+ 7         Q.   Okay.
+ 8         A.   The primary database now is what we did all
+ 9    the word searches on.  Then it gives us -- then we get
+10    an M number, and an M number goes to another older
+11    database that had been merged, I think two databases
+12    into one.  And then, of course, we have the log-in
+13    books, which it's probably the fastest way to check
+14    something once we get an M number.
+15         Q.   Okay.
+16         A.   And that's what I did today -- or yesterday
+17    and today, is to see what something was.  There was
+18    another Cashmere Bouquet project that I did not put in.
+19    Initially, though, it said there were 82
+20    Cashmere Bouquet samples in 2014, which was kind of
+21    shocking.
+22         As it turns out for Cashmere Bouquet, when they
+23    were litigating the Cashmere Bouquet with Peter Angelos'
+24    office, Cashmere Bouquet wanted Rich Lee to look at all
+25    the TEM grids that Jim Millette and others had prepped
+0346
+ 1    for the paper, and our lab was chosen by both groups.
+ 2    So Rich Lee came here and used our SEM, and what we had
+ 3    received is all the grids.  It had nothing to do with
+ 4    us.
+ 5         So we searched all the words and we found the
+ 6    additional Cashmere Bouquet.  We found the information
+ 7    concerning this sterile talc.  I have not heard back
+ 8    from my client.  We do have only a TLM analysis.  And,
+ 9    of course, we found Gold Bond again.
+10         Q.   Okay.  Let's go this way.
+11         So I see on your Exhibit 30 you outline a sterile
+12    talc report, dated 9/15/2000, project number M24446; is
+13    that right?
+14         A.   Yes, sir.
+15         Q.   And so you do have a TLM analysis, dated
+16    9/15/2000, for that sterile talc; is that right?
+17         A.   No, that's when it got logged in.
+18         Q.   Okay.
+19         A.   But we do have a TLM analysis.
+20         Q.   Okay.  Is there is a written report?
+21         A.   Not that we could find.
+22         Q.   Okay.  Is there any -- hold on one second.
+23              DEPOSITION TECHNICIAN:  Sorry to interrupt.
+24    Someone with the phone number (544) 909-9130 in the
+25    waiting room?  Are you expecting anyone to be joining?
+0347
+ 1              MR. HYNES:  I don't know with the 504 area
+ 2    code.
+ 3              THE REPORTER:  Do you want to go off the
+ 4    record?
+ 5              MR. HYNES:  Yes.
+ 6                  (Discussion off the record.)
+ 7    BY MR. HYNES:
+ 8         Q.   All right.  Let's figure out the sterile talc.
+ 9         So you have a TLM analysis there.  You don't have a
+10    report just yet.
+11         Do you have chain of custody documentation for that
+12    container?
+13         A.   I do.
+14         Q.   And right now that material has not been
+15    produced in this case, correct?
+16         A.   That is correct.
+17         Q.   Okay.
+18         A.   If my client gives permission, I will.  It's
+19    the same as I called Moshe Maimon at Levy Phillips to
+20    get permission to produce the Cashmere Bouquet.
+21         Q.   And who is your client for this sterile talc
+22    report?
+23         A.   Until I talk to him, I'm not going to reveal
+24    that.
+25         Q.   Okay.  Is it a firm that you have worked with
+0348
+ 1    in litigation involving Johnson & Johnson talcum powder
+ 2    in the past?
+ 3         A.   No, never.
+ 4         Q.   Okay.
+ 5         A.   Or Cashmere Bouquet or any cosmetic talc.
+ 6         Q.   Okay.  All right.  Then you've got a Gold Bond
+ 7    serial here where you have the date of log in of
+ 8    June 26, 2000.
+ 9         It's MAS number M23945; is that right?
+10         A.   Yes.
+11         Q.   And you've talked about this particular
+12    container before, right?
+13         A.   Couple times.
+14         Q.   And so what materials do you have for this?
+15    Do you have the physical container?  Do you have any of
+16    the underlying analyses?  Do you have chain of custody?
+17         A.   I have the physical container.  I have the
+18    chain of custody.  I have, you know, who bought the
+19    sample, Richard Hatfield at CVS showed up there too, and
+20    that's all I have at the moment.
+21         Q.   Okay.
+22         A.   I don't have anything more than what we have
+23    tested in the past.
+24         Q.   Now, I guess going back to the sterile talc,
+25    do you still have that container?
+0349
+ 1         A.   I have no idea.  The Cashmere Bouquet
+ 2    container was sent back to Levy Phillips, so I don't
+ 3    have that.
+ 4         Q.   Okay.  Let's go to that one next.  So the next
+ 5    one that's logged in here that you may not have been
+ 6    able to see, the Cashmere Bouquet container that was
+ 7    logged on January 30, 2009, project M48558, correct?
+ 8         A.   Yes.
+ 9         Q.   And that's what we marked as Exhibit 29 to
+10    today's deposition, correct?
+11         A.   Correct.
+12         Q.   And so my understanding here is that this was
+13    a project that was requested by John Guinan,
+14    G-U-I-N-A-N, of Levy Phillips, correct?
+15         A.   Correct.
+16         Q.   And he retained Mike Mount to perform certain
+17    testing on Cashmere Bouquet talcum powder containers,
+18    right?
+19         A.   Mike Mount was the person that was doing that,
+20    at least twice now.
+21         Q.   Right.  And it looks like some other folks
+22    were involved in this analysis.
+23         It looks like Anthony Keeton performed the TEM
+24    portion of that analysis, right?
+25         A.   Yes.
+0350
+ 1         Q.   And there was no concentration that was used
+ 2    as far as that analysis, right?
+ 3         A.   No.  It was ten grid openings, no
+ 4    concentration method, and it was negative.
+ 5         Q.   I see 20 grid openings.
+ 6         A.   Oh, is it 20?  I'm sorry, I don't have it in
+ 7    front of me because I gave it to my assistant to scan,
+ 8    so she must have kept it.
+ 9         Q.   Right.  There's a seal that says GO counted
+10    and then it says 20.
+11         So that would be 20 grid opening analysis, right?
+12         A.   That's correct.
+13         Q.   Do you know the methodology that was used?
+14    Was that ASTM method or AHERA, do you know what was
+15    used?
+16         A.   Well, it could be ASTM.  Could be AHERA.  It's
+17    whatever the standard counting method, but this would be
+18    a dilution-type analysis, so most likely the ASTM 5755.
+19         Q.   And then Bill Egeland performed the TLM
+20    portion of this analysis, right?
+21         A.   Yes.
+22         Q.   No density separation technique used before
+23    the TLM portion of this analysis, right?
+24         A.   No, it was not.
+25         Q.   I only have a TLM analysis sheet.  I don't see
+0351
+ 1    any sort of photomicrographs or images from that portion
+ 2    of TLM analysis.
+ 3         Do you have any images of that portion of the
+ 4    analysis on --
+ 5         A.   No.  If the TLM sample is negative, there
+ 6    typically is no -- you know, unless there's a reason
+ 7    we're looking for something.  But back then, we would
+ 8    have just been using the R93 method and it would have
+ 9    just been a standard, every day TLM analysis.
+10         Q.   So this would have been, you just mentioned,
+11    R93 for the TLM portion?
+12         A.   Yes.
+13         Q.   Okay.  And then it looks like -- who did the
+14    SEM portion of this analysis?  I have the name Mike.
+15         Was it Mike Mount that did the SEM portion of this
+16    analysis?
+17         A.   I'll have to think about that.  It's been a
+18    while.  It's quite possible.  He did run the SEM.  I
+19    would say more likely than not it was Mike Mount.
+20         Q.   Okay.  And do you know what methodology he
+21    would have used for the SEM portion of this analysis?
+22         A.   There's no methodology that spells everything
+23    out.  I would call it standard material science
+24    [indiscernible] methodology where you just say go in and
+25    see what kind of fibrous minerals you have in there.  So
+0352
+ 1    it's -- there's no methodology that I'm aware of that
+ 2    anybody has written up for looking at cosmetic talcs
+ 3    with SEM except for the 22262, dash, 1 and 2 method that
+ 4    says you can use SEM.
+ 5         So as a material scientist you get trained on SEM.
+ 6    There's not really a standard protocol because every
+ 7    sample is different.
+ 8         Q.   Okay.  And in none of the analyses that we
+ 9    just walked through, PLM, TEM, or SEM, did any of those
+10    three analysts, Bill Egeland and Anthony Keeton or
+11    Mike Mount, identify asbestos in those containers of
+12    Cashmere Bouquet talcum powder, right?
+13         A.   That is correct.
+14         Q.   Do you know who did the QAQC on this report
+15    before it was issued to Levy, the client?
+16         A.   If we could take a break, I could get what I
+17    gave Kathy to scan, my assistant.  And I can take a look
+18    at the QC and see if I recognize the writing.
+19         Q.   Okay.  We can do that at the next break that
+20    we take, and request that you take a look at that too.
+21         All right.  So those are the -- I guess the last
+22    hit that you got running the search terms that are part
+23    of Exhibit 30 was what we talked about before, the 2013
+24    Cashmere Bouquet analysis authored by Mike Mount,
+25    correct?
+0353
+ 1         A.   Correct.  That showed up under a couple
+ 2    different searches.
+ 3         Now, there's -- what has not been done is any
+ 4    search that had powder in it.  Well, it's been done, but
+ 5    the amount of hits was overwhelming because we -- for a
+ 6    while we had an XRD, and when you -- and a lot of
+ 7    material science work just comes in as powders.  So
+ 8    there was 207 hits, and it will take me, I'm estimating,
+ 9    five to seven hours of time to go through each one of
+10    those hits and determine what exactly it is.
+11         There's project information on the hits, but a lot
+12    of them just say powder.  So it will -- once I have the
+13    M number, I can search it down to see if there's
+14    anything else.
+15         I don't believe so because if it's under talcum
+16    powder and there was a project called talcum powder, it
+17    would have showed up under the talcum.
+18         Q.   You also mentioned some grids that Rich Lee
+19    brought to your laboratory that was part of some
+20    litigation involving the Angelos' firm; is that right?
+21         A.   He didn't bring them to the laboratory.  He
+22    was trying to get a hold of them.  They were all MVA
+23    grids.  They were swapping grids and they were having a
+24    dispute where it was going to be done.  So we were asked
+25    to be the referee lab since we weren't involved in
+0354
+ 1    cosmetic talc litigation.  This was in 2014 and it
+ 2    correlated to 81 or 82 samples.  And when I was looking
+ 3    at the chain of custody, the first thing that struck me,
+ 4    it's all the samples -- a lot of the samples are ones we
+ 5    had gotten from Peter Angelos' office, and then I saw
+ 6    grids.  And I was here when that happened, so it
+ 7    refreshed my memory that Rich Lee spent a week in our
+ 8    laboratory with -- it may have been Matt Sanchez, but I
+ 9    didn't really know him at that point.  He was on the
+10    TEM.  They were reviewing the Peter Angelos'
+11    Cashmere Bouquet case on the grids and all that work
+12    that was done by Millette and Compton and Borden and
+13    Fitzgerald, and I forgot who the other person was.
+14         Q.   Okay.  Did any of your laboratory analysts
+15    participate in the preparation of those materials or
+16    analysis of those materials or were they simply using
+17    your lab as sort of an intermediary?
+18         A.   They were using our lab.  They were just
+19    grids, TEM grids.  So they were already all prepped
+20    and -- I'm assuming that they were going to go in and
+21    call all the regulated asbestos fibers, cleavage
+22    fragments.  That's just my opinion.
+23              MR. HYNES:  Move to strike the nonresponsive
+24    portion.
+25    ///
+0355
+ 1    BY MR. HYNES:
+ 2         Q.   All right.  So let's talk more about your
+ 3    database.  You said there's at least two.
+ 4         So there's one sort of current database, and that's
+ 5    the one that you searched using the terms that are
+ 6    presented in Exhibit 30; is that right?
+ 7         A.   That is right.  And the second database, where
+ 8    I think the two have been merged, we were searching for
+ 9    the M numbers.  Everything we got all the way back to --
+10    and we searched back to 1988.  We had all the M numbers.
+11    So once we had an M number, then I could go into the
+12    older database that's maintained and see what's present.
+13         For the Cashmere Bouquet we had a full set.  We had
+14    the chain of custodies.  We had everything.  With the
+15    sterile talc, all I have is the PLM and no report.  I
+16    don't know whether one exists or not.
+17         And then, of course, we have the log-in books where
+18    if they can't find -- the M number doesn't show up
+19    anywhere, I can go back to the 70-some thousand pages
+20    and then look that up.
+21         While I was waiting for the system to search, I was
+22    able to get the log-in book for the grids figured out.
+23    We just got grids.  Then they all came back to me with
+24    Dr. Lee and Dr. Sanchez and at least two attorneys from
+25    Cashmere Bouquet and at least two attorneys for
+0356
+ 1    Peter Angelos' office.  It wasn't a continuous week, but
+ 2    it may have been six or seven days.  And I won't do that
+ 3    again.  That just paralyzes your lab.
+ 4         Q.   Right now I'm focused -- I guess, let's just
+ 5    limit some of this to that first database, the most
+ 6    current, the one that you've maintained, and let's just
+ 7    talk about that database right now.
+ 8         So I guess the first question is would that include
+ 9    both bulk testing and airborne simulation studies that
+10    your lab conducted?
+11         A.   It may or may not have the data, depending on
+12    when it was done.  It will give the M number.  None of
+13    the -- none of the baby studies -- or the Hawking study
+14    showed up.  But we didn't put in a hygiene study or 7402
+15    talc or anything like that.
+16                   (Reporter clarification.)
+17    BY MR. HYNES:
+18         Q.   And for this database, does it cover the full
+19    years that are at issue for this piece of the puzzle?
+20    Is it, like, 1988 all the way up to 2017?  Are there
+21    gaps?
+22         Tell me about the years that could be searched.
+23         A.   It's hard to say if there's gaps.  I mean, how
+24    do you check that, a big long printout?  I'm not sure
+25    it's capable of doing that.  But we found projects all
+0357
+ 1    the way back to 2000.  It wasn't any project on cosmetic
+ 2    talc, but I think the lowest number we got was in the
+ 3    thousand range, so that put it in 1989.
+ 4         Q.   Okay.  Does this go back to '89 or does this
+ 5    go back 2000 or --
+ 6         A.   This is -- this is a new request.  I didn't do
+ 7    a look through the entire database to see how complete
+ 8    it was or not.  I took all the search words and went all
+ 9    the way back, and we got materials all the way back to
+10    2000 or 2002.
+11         Q.   Right.  But one of the things is, if the
+12    database doesn't cover the full set of years and there
+13    may be another database or a discontinued database that
+14    covers those years, we sort of need to know that in
+15    order to determine what could or should be searched,
+16    right?
+17         A.   You know, what could have, should have, might,
+18    I don't deal with those types of questions.  If you've
+19    got a request to make about something else about our
+20    database, please sent it to Mark Bratt.
+21         Q.   Sure.  And so this is the question that I
+22    have.
+23         So this first database that we're dealing with, do
+24    you know the range of years that it covers?  Does this
+25    cover the 1990 to 2017 time frame or not?
+0358
+ 1         A.   The information I have says that it does.
+ 2         Q.   Okay.
+ 3         A.   You know, we opened the doors here in 1988,
+ 4    and it was, like, February or March.  I doubt very
+ 5    seriously we were doing any type of work other than just
+ 6    air samples.  And it wasn't until '89 or so, '88 or '89
+ 7    that we added the PLM.
+ 8                   (Reporter clarification.)
+ 9    BY MR. HYNES:
+10         Q.   I guess we'll stay on this first database.
+11         What is the platform that you're using.  Is it --
+12    the program that's used, is it Microsoft Excel, is it
+13    QuickBase, Microsoft Access, Google Cloud, something
+14    else?
+15         A.   Anything about any of our programs or
+16    databases, I'm not going to discuss.  You know, I worry
+17    enough about hackers and malware.  You know, I start
+18    giving out information, public information about our
+19    databases -- I don't know if J&J wants to indemnify MAS
+20    if any of this information ever were to get out and we
+21    got hacked.
+22         So as I've discussed before, I'm not talking about
+23    what database we have or is the -- you know, the
+24    programming or what the platform is or what's been done.
+25         Q.   Okay.  That's fine.
+0359
+ 1         So for your database, the first one that we're
+ 2    talking about that you searched, what fields are
+ 3    recorded as part of that database?  I'll ask one by one
+ 4    and you tell me whether or not that field is recorded in
+ 5    the database and then we can go through it that way.
+ 6    Okay?
+ 7         A.   Every time, if we don't clear out what we've
+ 8    been searching for, it just adds to it.  So if you -- so
+ 9    when we say for your first word, powder, there's 82,000
+10    projects in there.  It searches every one of them.  Then
+11    it says 200 or so things with powder and you can go
+12    through and look at the project, and a lot of them you
+13    can eliminate, but it keeps it in there.
+14         If you don't clear it out, the next time you
+15    search, it will give you powder and whatever you're
+16    searching after that and then you start slowing and
+17    slowing, and then you have -- you just -- you know, it's
+18    like a virus.  Every time you do it, you're adding to
+19    that.  So in order to do it as speedy as possible and
+20    not have to go through each one of them again, is it's
+21    cleared out so we're not recording anything.
+22         Q.   So my question's different.
+23         The fields of information that are recorded for
+24    each separate project that is contained within the
+25    databases, right, just going to walk through types of
+0360
+ 1    information that may be included for each project that's
+ 2    in your database.  Okay?
+ 3         So first --
+ 4         A.   It's very hard for me to answer this question
+ 5    because information that is put into the database has
+ 6    changed over time.  Where this gets more and more
+ 7    complicated in that more and more information is put in
+ 8    so it can be searched.  And especially when we started
+ 9    getting involved in the litigation into the cosmetic
+10    talc.
+11         But it will have an M number.  It will have
+12    typically who the client is.  And there's some --
+13    sometimes there's brief information about what the
+14    project is.
+15         Q.   Right.  So I guess usually you'll have -- the
+16    database will record separate fields of information, one
+17    of those fields may be the M number for the project,
+18    right?
+19         A.   Yes.
+20         Q.   Another field may be a project title or a
+21    description of the project?
+22         A.   Those would be the second field.
+23         Q.   Would it include the dates that the project is
+24    opened?
+25         A.   I'm sorry, you froze.
+0361
+ 1         Q.   Would there be a field for the date on which
+ 2    the project was opened?
+ 3         A.   Opened -- there will be a date when the
+ 4    project was logged in.  If there was a report issued and
+ 5    that was put into the database, it would have that.  If
+ 6    the data itself, the PCM, the TEM, whatever was done was
+ 7    put in, there's a field for that, but you have to click
+ 8    on it.  What else, the samples may be there, how many.
+ 9    I can't think of anything else.
+10         Q.   Would it have the identity of the person,
+11    company, or firm opening the project?
+12         A.   No.
+13         Q.   Would it have been the identity of the person,
+14    company, or firm that is submitting the samples?
+15         A.   Maybe.
+16         Q.   Would it have the date upon which samples were
+17    received by MAS?
+18         A.   Yes.
+19         Q.   Okay.  Would it have --
+20         A.   I would have the log-in date.
+21         Q.   Okay.  Would it have the quantity of samples
+22    received?
+23         A.   If you clicked on that field, if it was put
+24    in, yes.
+25         Q.   Would it have --
+0362
+ 1         A.   Typically it will generate a chain of custody
+ 2    and that would be in that database.  It's what we use to
+ 3    log everything in.
+ 4         Q.   Would there be a field for the types of
+ 5    services requested?
+ 6         A.   Sometimes.  We used to have check boxes.  I
+ 7    don't know if we still do that because there's not too
+ 8    many -- we don't get too many standard samples where,
+ 9    you know, is it going to be a regular PLM using the R93
+10    for survey samples which we -- I think we have one
+11    client that does that -- or is it going to be a
+12    [indiscernible], or is it going to be an ISO.
+13         I don't like them to do that because, you know, we
+14    have sets of analysis, but we may not do one particular
+15    analysis versus another, depending on turn-around times
+16    and what mines it's coming out of.
+17         Q.   Okay.  And what sort of information would be
+18    included in services requesting?  You said there could
+19    be check boxes.
+20         Would that be things like TEM, PLM, SEM?
+21         A.   Yeah, I don't think we do that anymore because
+22    we're sort of a custom lab.  Usually it will go to
+23    whoever's in charge of the project and then that's put
+24    in on the chain of custody at a later time.  And then
+25    that's in the project files.
+0363
+ 1         Q.   But it's possible there is a field for the
+ 2    services that were requested as part of the first
+ 3    database we're talking about?
+ 4         A.   I believe so.  I wasn't focused -- I wasn't --
+ 5    I wasn't focused in on what services or what's on the
+ 6    database.  I was focused on here are the search words,
+ 7    do we have any projects that have these search words,
+ 8    and is there any cosmetic talc that I'm not aware of
+ 9    still that we have analyzed, not so much what analysis
+10    is being asked for.  If we were to put bulk analysis in
+11    there, we may have thousands upon thousand upon
+12    thousands of projects to go through.
+13         Q.   What if you put talc analysis in that field?
+14         A.   I didn't put talc analysis in that field.  I
+15    received 29, 39, 49, 50, I have 50 key words.  Nobody
+16    put talc analysis in there.
+17         Q.   Right, because we're now learning about what
+18    fields are searchable.  I'm going to continue learning
+19    about what fields might be searchable in this database.
+20         So another thing that may be recorded in this first
+21    database we're talking about would be the services that
+22    were actually performed.
+23         Is that something that may be recorded?
+24         A.   I don't believe that's in that database
+25    unless -- that would be in the projects base, but that's
+0364
+ 1    driven by M numbers.  And that would be in accounting,
+ 2    because the invoice would go to it.
+ 3         Q.   Would this first database we're talking about
+ 4    record -- have a field to record information about
+ 5    whether invoices had been issued?
+ 6         A.   No.
+ 7         Q.   Okay.  Would this first database we're talking
+ 8    about have anything -- any information about the
+ 9    identity of person, company, or firm receiving invoices
+10    for the project?
+11         A.   Only if it's -- only if it was in a cover
+12    letter.  But -- or if it was written down on one of the
+13    chain of custodies that's now in the projects file.
+14         Q.   Does this first database we're talking about
+15    have a catchall field for any comments on the project?
+16         A.   Yes.
+17         Q.   Okay.
+18         A.   I'll verify that, but --
+19         Q.   Generally who filled out these entries on this
+20    database at MAS?
+21              MR. BRATT:  Vague.  Overbroad.
+22              THE WITNESS:  It --
+23              MR. BRATT:  It's vague.  Overbroad as to time
+24    and project.
+25         But go ahead.  Sorry.
+0365
+ 1              THE WITNESS:  It would be the person
+ 2    designated whose job is to log in samples, make sure
+ 3    it's in the right department.
+ 4    BY MR. HYNES:
+ 5         Q.   In those -- that would -- would that include
+ 6    yourself, would you ever log in samples into this first
+ 7    database that we're talking about?
+ 8         A.   No.
+ 9         Q.   Would that include Mr. Egeland?
+10         A.   No.
+11         Q.   Mr. Keeton?
+12         A.   No.
+13         Q.   Mr. Mount, when he was employed with MAS?
+14         A.   No.  The two projects we have with Mount,
+15    Nancy Sears was logging in.  Her name's on the chain of
+16    custody.
+17         Q.   You you've mentioned a few times running
+18    search terms across, I guess, this first database.
+19         I want to know, are each of those individual fields
+20    that we just talked about, can you search, can you
+21    tailor a search only to a specific field, say, I want to
+22    just search project titles, description, and you can
+23    narrow your search terms to just that field?
+24         A.   No, I asked if we could narrow -- unless we go
+25    in and do some coding, I wanted to narrow it from what
+0366
+ 1    we agreed to search, 2015 down to 1988, and every time
+ 2    we searched, we went all the way through today.  And so
+ 3    we were -- I want that incorporated into it so that you
+ 4    can narrow it down.  But that was not available.
+ 5         Q.   Okay.  So --
+ 6            (Simultaneous unreportable cross-talk.)
+ 7              THE WITNESS:  I had to get the IT guys to work
+ 8    on it.  Show us how to do it.
+ 9              MR. BRATT:  I just want to state for the
+10    record, and this is just more to state that we, along
+11    with Dr. Longo, went above and beyond what the court has
+12    even indicated in its minute order.  The minute order
+13    clearly states that -- that Dr. Longo will be inquired
+14    about the MAS computer database, how the data is
+15    formatted, search terms for talc and asbestos testing,
+16    and clients related to such testing, and that this topic
+17    can be inquired into -- about computer databases for
+18    asbestos contamination in talc covering years 1999
+19    through 2010.
+20         Dr. Longo's clearly gone beyond that, but I know
+21    there were questions about a prior database that went
+22    before those years.
+23         We're trying to be compliant and also trying to be
+24    encompassing, not just what the court ordered, but in
+25    good faith doing what we can to go beyond that.
+0367
+ 1         So I just -- I'm stating that for the record
+ 2    because it seems like some questions are focusing on
+ 3    years outside of what the court ordered.  And I'm going
+ 4    to give a little latitude, but I just want to remind
+ 5    everyone of that.
+ 6         Go ahead.
+ 7              THE WITNESS:  I appreciate that, because I'm
+ 8    going to net this down.  So 1999 to 2000 and --
+ 9              MR. BRATT:  Ten.
+10              THE WITNESS:  Ten.
+11              MR. HYNES:  My understanding is that our
+12    request goes from pre-2017 talc analysis, that was the
+13    scope of our request here, given that the 2013
+14    Cashmere Bouquet was one that hit.
+15              MR. BRATT:  Well, I know what your request was
+16    and I know you requested a lot of things, and the court
+17    heard argument.  And I know, Kevin, you weren't a part
+18    of the IDC, but I'm reading straight from the IDC
+19    statement and it says, The further deposition of
+20    Dr. Longo will be taken before 3/8/2021 on the topic of
+21    computer databases for asbestos contamination and talc
+22    covering the years 1999 through 2010.
+23         And clearly he's gone beyond that.  But if we're
+24    going to be focusing on questions that are prior to 1999
+25    and after 2010, we may get to a point where we shut this
+0368
+ 1    down.  We want to get this deposition done.  We're
+ 2    working with you, but you the court heard the arguments
+ 3    and placed limitations on things, and I'm reading
+ 4    directly from the court order so --
+ 5              MR. HYNES:  My questions --
+ 6              MR. BRATT:  -- I'll just state that for the
+ 7    record.
+ 8              MR. HYNES:  Okay.  My questions so far have
+ 9    simply been related to just what is searchable, what can
+10    be searched.  And in an effort to try to narrow things,
+11    because Dr. Longo has mentioned that some terms that
+12    were provided that searched the entire database may have
+13    resulted in a number of hits.  So the effort here is to
+14    identify individual fields that are recorded that could
+15    be searched individually to narrow in narrowly tailored
+16    terms to specific fields.
+17         An example would be, you know, process requested,
+18    service requested, and talc in that particular field.
+19    That would narrow them.  Same thing with project
+20    description.  He just searched talc there, maybe you'll
+21    find some hits.
+22         But the effort here is to identify what's
+23    searchable, what's not, what can be narrowed in an
+24    effort to really try to tailor the search terms here
+25    rather than, you know, create a number of terms that may
+0369
+ 1    be, you know, broad.
+ 2         If you're searching powder, one of the things that
+ 3    may hit there would be and you do a search requested or
+ 4    search perfor- -- or analysis requested or analysis
+ 5    performed, you get X-ray powder diffraction hits there.
+ 6         There's a way to narrow scope, search specific
+ 7    fields.  That's what we're trying to get to here to try
+ 8    to narrow this and make this as efficient as possible.
+ 9              MR. BRATT:  Let me just state this.  I'm all
+10    about efficiency.  You have asked questions.  I've not
+11    interrupted because I know, at least initially, you're
+12    trying to understand the fields.  I just heard
+13    questioning that delved, in my mind, a little bit
+14    outside of the time frame the court envisioned in its
+15    order, and I'm just stating that while I'll give some
+16    latitude, you know, there's limits to what we're going
+17    to inquire about.
+18         But go ahead, Dr. Longo, you wanted to make a
+19    statement.
+20              THE WITNESS:  I have a question.  Did the
+21    judge discuss about paying for my time to do this?
+22              MR. BRATT:  The judge did not in ruling that
+23    the request to have you go and search the off-site
+24    storage and continue a search on the handwritten
+25    logbook, he deemed that overly burdensome and --
+0370
+ 1              THE WITNESS:  I'm just wondering.
+ 2              MR. BRATT:  Right.  So he did not weigh in on
+ 3    the time necessary to do the search unfortunately.
+ 4              MR. HYNES:  Is this a good time for a break?
+ 5    Dr. Longo, quick just request, we talked about the QAQC
+ 6    on that 2009 --
+ 7              THE WITNESS:  Let me get the report and see
+ 8    what was done on that, if any.
+ 9              MR. HYNES:  Off the record.
+10                      (A break was taken.)
+11              MR. BRATT:  We're back from a break.
+12         During the break, Mr. Hynes, you requested I send
+13    you the IDC minute order related to Judge Cunningham's I
+14    guess ruling on the scope of what can be inquired into.
+15    I sent that to you via e-mail, I believe you confirmed
+16    you received it.
+17         Was that something that you want to attach as an
+18    exhibit at this point?  I think we're on 31.
+19              MR. HYNES:  I don't intend to attach it.  I
+20    believe it's mistakenly limited to 2010.  I'm limiting
+21    my questioning on this for now, but I intend to seek
+22    guidance from the court because my understanding was
+23    based on argument and the papers at the IDC, the
+24    requested time frame encompassed up to pre-2017.
+25              MR. BRATT:  Well, you know, whether or not
+0371
+ 1    there was a mistake, I certainly was there.  This is the
+ 2    order.  I know you weren't present, so you're obviously
+ 3    basing it off of conversations you've had with lawyers
+ 4    that were present.
+ 5         I'd like to attach it as Exhibit 31 unless there's
+ 6    an objection by you.
+ 7              MR. HYNES:  Go ahead.
+ 8              MR. BRATT:  All right.  So attached as 31 is
+ 9    the minute order from the IDC that occurred -- the IDC
+10    occurred on February 24, 2021.  That's when the minute
+11    order was issued.  It's a one-page document.  It will be
+12    Exhibit 31.
+13   (Plaintiffs' Exhibit Number 31 marked for identification
+14             purposes and made part of the record.)
+15    BY MR. HYNES:
+16         Q.   All right.  Dr. Longo, we're back from the
+17    break.
+18         One of the things that we talked about before we
+19    went on break was whether or not you knew the QCQA for
+20    the 2009 Cashmere Bouquet analysis that you just
+21    located.
+22         Have you been able to determine that?
+23         A.   No.
+24         Q.   Is there any document that you could go to to
+25    determine who performed the QAQC on that 2009 report?
+0372
+ 1         A.   Well, back in that day the QAQC was primarily
+ 2    one sample out of every ten.  So unless it fits on that
+ 3    sample, we pretty much now do QAQC on every talcum
+ 4    project.  So I don't know -- as I sit here today, I
+ 5    don't know if we would be able to find out that
+ 6    information or not.
+ 7         Q.   All right.  So we talked about two different
+ 8    databases that MAS maintains and we've been focused
+ 9    primarily on the first database, the one in which you
+10    ran some search terms.  I just wanted to look at that
+11    Exhibit 30 and the terms that you ran on this database.
+12         Are you with me?
+13         A.   Yes.
+14         Q.   And so you ran the terms, the second entry
+15    there is talc, right?
+16         A.   Correct.
+17         Q.   So you ran that search term and you came up
+18    with three different entries there, one of which was the
+19    sterile talc report, which I think it's your testimony
+20    that the first time you saw that was either yesterday or
+21    today when you ran those -- the search term, right?
+22         A.   Well, we -- as I testified earlier, there was
+23    a -- alls we had was sterile talc, and I didn't have any
+24    more information on it.  But going through this database
+25    and -- and it showed up as -- as the -- they gave us the
+0373
+ 1    M number.  I was able to go look up the M number.  I was
+ 2    able to -- once I had the M number this time, I was able
+ 3    to go and find out what documents we had in it.
+ 4         Q.   Before the last 48 hours, have you or anyone
+ 5    at your lab ever run the search term talc on this first
+ 6    database that we've been talking about?
+ 7         A.   We did an initial search some months ago and
+ 8    only the Gold Bond showed up and there was -- and
+ 9    sterile talc showed up, I believe, but we didn't have an
+10    M number on this one.  It may have been on the older
+11    database.  I don't remember now.
+12         But I remember testifying on many occasions that we
+13    may have analyzed a sterile talc.  I don't know what
+14    that's about.  I think I testified that I'm not sure
+15    what that's about.  Now we have an M number, and with an
+16    M number we can usually find out if we have documents
+17    about it.  So we have the chain of custody now.  We have
+18    the PLM sheet.  And I don't remember what else.
+19         Q.   My question is different.
+20         Have you run the search term talc across the
+21    database at some point in the last 48 hours?
+22         A.   Yes.  I think the first time all this came up,
+23    what, a year ago, six months ago, ten months ago, six
+24    months ago or seven months, whatever it was.  Sometime
+25    in 2020.
+0374
+ 1         Q.   And at that time the 2013 Cashmere Bouquet
+ 2    report did not appear?
+ 3         A.   That did not appear.  I wish it had.
+ 4         Q.   And before the last 48 hours, did you run the
+ 5    search term talcum across your database?
+ 6         A.   I don't think we ran talcum.  I think we just
+ 7    ran talcum powder.  Obviously, I wasn't doing -- we
+ 8    weren't doing something right because it didn't show up.
+ 9         Q.   And before the last 48 hours have you searched
+10    the term Cashmere in your database?
+11         A.   I don't believe so.  We were looking for
+12    Johnson & Johnson.  There's many of these that we did
+13    not run.  We ran Johnson & Johnson, we ran Johnson, we
+14    ran Johnson's Baby Powder.  JBP, I don't think we even
+15    put that on there.  And Gold Bond and that sterile talc
+16    was the only thing that showed up.
+17         Q.   This first database that we've been talking
+18    about, we've walked through some of the fields that may
+19    be recorded.
+20         It sounded like during the break you went back and
+21    looked to see what fields are searchable in this first
+22    database; is that correct?
+23         A.   Correct.
+24         Q.   Okay.  And you have a list of the fields that
+25    are searchable.  Why don't you walk through those, list
+0375
+ 1    them off, and we can talk about them.
+ 2         A.   Project number, not necessarily the M number.
+ 3    And there's different project numbers.  Those project
+ 4    numbers were started when we -- for billing.
+ 5         Logged by, person that logged it in, the client
+ 6    name, the contact person, if it's given, and the client
+ 7    project.
+ 8         Q.   What sort of information would be included in
+ 9    the client project?
+10         A.   Client project could say SRD aluminum
+11    particles, stuff like that.  A lot of that -- when we
+12    had hits, I was able to look at the project, client
+13    project and a lot of them either say yes -- well,
+14    Cashmere Bouquet, yes, that's one, or it says something
+15    else that doesn't have anything to do with, you know,
+16    say, Tom Ratcliffe, talc analysis, and that had to do
+17    with Richard Hatfield going, by court order going to the
+18    Vanderbilt mines and taking samples.  Or, you know,
+19    [indiscernible] analysis, which is just another
+20    Vanderbilt type project, or a project we did for a
+21    client that was industrial talc and they were a
+22    defendant.  And that showed up.  So it had nothing to do
+23    with cosmetic talc.
+24         So that helped a lot.  And some of these I had to
+25    go and actually look up the --
+0376
+ 1                   (Reporter clarification.)
+ 2              THE WITNESS:  And then if there's not enough
+ 3    information in the project name, or their client
+ 4    project, then I can go to the M number and try to get
+ 5    chain of custodies or go to the log-in books and see
+ 6    what's on there.
+ 7         And once I had these M numbers, then we ran to see
+ 8    how much data we have or what we have, chain of
+ 9    custodies and whatever.
+10    BY MR. HYNES:
+11         Q.   So some of the information that may not -- I
+12    guess isn't searchable here would be services requested
+13    or services performed.
+14         Is that your testimony?
+15         A.   That's correct, that is not searchable.
+16         Q.   Okay.  Did you take a look at what the range
+17    of dates were that were covered by this first database?
+18         A.   The only thing -- the only -- no, the only
+19    testimony I have at the moment is the earliest we found
+20    was 1989.
+21         Q.   And the second database, could you please just
+22    describe that to me.  It sounds like it's one in which
+23    you type in an M number and you may be able to find
+24    documents associated with the project that's associated
+25    with the M number.
+0377
+ 1         A.   Correct.
+ 2         Q.   I guess you won't tell me what platform is
+ 3    used for that, whether it's Excel or Google Cloud or
+ 4    whatever; is that right?
+ 5         A.   No.  I will tell you we don't use Google
+ 6    Cloud.
+ 7         Q.   As an example.
+ 8         And we walked through what field might be
+ 9    searchable for the first database.
+10         Do you know what fields are searchable for the
+11    second database here?
+12         A.   Other than the M number, I do not.
+13         Q.   Okay.  Are other fields searchable beyond just
+14    the M number in the second database?
+15              MR. BRATT:  Calls for speculation.
+16              THE WITNESS:  I don't want to put something
+17    inaccurate on the record, so if you have the request to
+18    determine other fields, just get with Mark Bratt.
+19    BY MR. HYNES:
+20         Q.   Okay.  Do you know what fields are recorded in
+21    this second database?
+22         A.   I mean, I only used it for the M number.  And
+23    I don't want to say something inaccurate.  I'd just be
+24    speculating.
+25         Q.   Okay.  So I guess at the moment you don't know
+0378
+ 1    whether or not any fields other than the M number are
+ 2    either recorded or searchable as part of this second
+ 3    database; is that right?
+ 4         A.   That's correct, it wasn't something I was
+ 5    anticipating being asked about.
+ 6         Q.   And do you know the years that are covered by
+ 7    this -- for projects by this second database?
+ 8         A.   My assumption is, without checking, that it
+ 9    goes all the way back to 1988.
+10         Q.   And it's maintained up to the current day?
+11         A.   No, it's not maintained up to the current day
+12    because it's our old system that we theoretically
+13    incorporated into the new database.  As I've testified
+14    to in the past, not everything got transferred over very
+15    smoothly.  So it's maintained to keep it up and going.
+16    In case we have a -- I guess a situation like this.
+17              MR. BRATT:  And I apologize, I was on mute and
+18    I made a couple of objections to this line of questions
+19    related to the second database.  I think it goes beyond
+20    the scope of what the court ordered, A; and B, were
+21    questions that called for speculation based on answers
+22    that were given related to specifics of what was
+23    possible to be searched.
+24         So given the remote nature of things, I would just
+25    ask that those be objections were rendered for this line
+0379
+ 1    of questions.  Thank you.
+ 2              MR. HYNES:  I'll just state for the record
+ 3    that, again, Dr. Longo testified that certain records
+ 4    may not have made it into the recent first database that
+ 5    we've been discussing, and so we're discussing a second
+ 6    database where additional records and materials may be
+ 7    located that aren't in the first database so I
+ 8    understand what's there.
+ 9    BY MR. HYNES:
+10         Q.   So, Dr. Longo, this second database that we've
+11    been talking about, do you know when the transition
+12    occurred, around what year MAS started to move the
+13    materials from database two to the first database that
+14    we talked about today?
+15         A.   No.
+16         Q.   Okay.  Do you have any sort of -- any idea
+17    whether that happened in the 2000s, in the 2010s, in the
+18    2020s.
+19         Do you have any recollection of when that occurred?
+20         A.   No.
+21         Q.   Okay.  And then I think there was a third
+22    database, or I'm not sure if this is the second database
+23    that you were discussing.
+24         Previously, when you located that original 2013
+25    Cashmere Bouquet report, you only identified the TEM
+0380
+ 1    report and analysis, and you had them searching for the
+ 2    PLM portion of that analysis; is that right?
+ 3         A.   Yes.
+ 4         Q.   And Mr. Egeland, I guess, located the PLM
+ 5    portion of that analysis by searching a different
+ 6    database, not the first database that we've been talking
+ 7    about today; is that correct?
+ 8         A.   That's correct.
+ 9         Q.   Which database did Mr. Egeland search to
+10    locate that PLM portion of the 2013 analysis?
+11         A.   I believe it would be either first or second
+12    one that he has access to.  He just searched it using
+13    its name, I think, and found it.
+14         Q.   Okay.  Which database did he search, this
+15    second database that we've been talking about?
+16         A.   Yeah, when I say the second database -- and,
+17    again, it's been a while since I had the discussion with
+18    anybody here, it's my understanding that two -- the
+19    first and second original databases were merged because
+20    people were using two different databases for two
+21    different things.  Then those were merged and then it
+22    was merged into the one that we're using now, so it's
+23    very hard to find things.
+24         Q.   Okay.  What were the two different databases
+25    that were used earlier on that were then merged into the
+0381
+ 1    older database that's been subsumed into the first
+ 2    database that we talked about today?
+ 3         A.   Are you asking again what platform they are?
+ 4         Q.   No, no.  You said they were used for two
+ 5    different purposes.
+ 6         What were the two different purposes?
+ 7         A.   One was being used for asbestos analysis and
+ 8    then another one was being used for everything else.
+ 9         Q.   Okay.  I guess, by my count, that's three, I
+10    guess, databases that I'm currently aware of, right, so
+11    we have an early database where it's just asbestos
+12    analyses.  Then that early database was merged with all
+13    the other analyses into the second database that you
+14    mentioned today.  And then at some point down the road
+15    that got phased out and incorporated into the first
+16    database that we discussed today.
+17         Is that sort of the state of --
+18         A.   No.  My understanding is say you have database
+19    A and B and those were merged, it's essentially -- I
+20    forget which -- you know, it was made database A or B,
+21    so the data was merged together.  I don't think it was,
+22    like, another whole new system.
+23         Q.   Okay.
+24         A.   That became -- and then that was merged into
+25    the current one we have.  But I have to check on that.
+0382
+ 1         Q.   And you mentioned that merging process, there
+ 2    may have been some materials that didn't make their way
+ 3    into the current first database that we talked about
+ 4    today; is that right?
+ 5         A.   That's what I believe, yes.
+ 6         Q.   Do you know why that is?
+ 7         A.   Glitches or there actually wasn't an analysis
+ 8    done.  It's hard to say.
+ 9         Q.   And have you gone back or has there been an
+10    effort at MAS to go back through and try to incorporate
+11    everything that was in the earlier database into the
+12    current database?
+13              MR. BRATT:  That assumes it hasn't already
+14    been done.
+15         Go ahead.
+16              THE WITNESS:  It was done sometime ago.
+17    BY MR. HYNES:
+18         Q.   But there may still remain holes; is that
+19    right?
+20         A.   Well, if they have holes, there's no way to
+21    fill them.  I mean, you know, we purged all of the old
+22    reports.  You know, they were scanned and put into the
+23    system.  We hired people to do that.  So, you know, the
+24    paper was -- it's like a doctor's office, we had to scan
+25    everything.  Not a doctor's office, because they're not
+0383
+ 1    supposed to lose any data or any -- so that we just
+ 2    didn't have a million folders everywhere.  And MAS -- we
+ 3    weren't using any electronic storage.  It was all file
+ 4    cabinets with folders.
+ 5         Q.   I guess on the searches that you ran, do you
+ 6    know what fields those are searched across?  So if we go
+ 7    to Exhibit 30, you know, you have your word searches,
+ 8    did a word search for powder.
+ 9         Is that only searching words that were entered into
+10    the database or does that also search, say -- you've
+11    mentioned scanned reports or scanned documents, would
+12    that also search the underlying documents that are
+13    attached or part of a folder for that particular project
+14    number?
+15         A.   It searches every document in the system that
+16    has powder on it.
+17         Q.   Okay.  So an example would be, you know, you
+18    would run a search on for the word talc and you would
+19    get, I guess, you know, hits, say, if your report in
+20    this case, you know, you're testing Johnson & Johnson
+21    talcum powder products, you would get a hit for this
+22    case because your report uses the word talc and the
+23    database search is capable of searching your report,
+24    which is part of a file in this database; is that right?
+25         A.   Yes.  If we were to have done 2016, 2017,
+0384
+ 1    2018, 2019, 2020, and 2021, we would have had hundreds,
+ 2    not hundreds of projects, but any project that had talc
+ 3    in it would have shown up.
+ 4         Q.   And this search that you performed on the
+ 5    terms in Exhibit 30, this was limited -- this was for
+ 6    the time period of '88 to 2015; is that right?
+ 7         A.   Correct.
+ 8         Q.   That search didn't include 2016?
+ 9         A.   2016, in the middle of the year, we were
+10    already -- you know, we were starting to get talc
+11    samples.  But, no, we didn't do 2016.  Obviously, I
+12    didn't know it was 1999 to 2010.  I would have had the
+13    IT guys figure out how to only search those years.
+14         Q.   Right.
+15              MR. HYNES:  And I'll just note again for the
+16    record that my understanding based on attorneys who were
+17    present for the IDC is that the search would be for up
+18    to anything pre-2017.  And so we'll seek further
+19    guidance on that and reserve our -- any questioning, you
+20    know, of searches for that year 2016 as well.
+21              THE WITNESS:  Well, I can tell you that I will
+22    not be providing any information on searches of talc,
+23    talc analysis, talcum powder, and all these products,
+24    because then every one of these -- every one of these
+25    terms we would have, but they will involve clients.
+0385
+ 1         That to me is a backdoor way in trying to figure
+ 2    out what work we're working on that has not been
+ 3    produced or what work we're working on where I may be a
+ 4    consulting expert, and that's -- to me, that's out of
+ 5    bounds because that involves a lot of different clients
+ 6    who are not Mark Bratt or Weitz & Luxenberg or, you
+ 7    know, any of the other ones.
+ 8         So -- and when we go back to finish this off, I'm
+ 9    only going to look from 1999 to 2010 right now,
+10    especially for the powders because there was too many
+11    hits.
+12         We had an XRD and I know the types of samples we
+13    were running on it.  I mean, I'm not ruling out there
+14    might have been some kind of talc.  We did work for
+15    Georgia Talc for a while, but they were a commercial
+16    producer for industrial type talc out of Georgia.
+17              MR. BRATT:  I'm going to state for the record,
+18    having actually attended this IDC and taking my own
+19    notes and making the argument on the limitations.  At
+20    the conclusion of the IDC, the judge summarized what his
+21    ruling would -- was going to be, and it was entirely
+22    consistent with the order that was actually issued that
+23    we've attached as Exhibit 31, which limited the scope to
+24    1999 to 2010.
+25         So, you know, Mr. Hynes, whatever you may have
+0386
+ 1    heard from your -- your counsel may be inaccurate.
+ 2    We've obviously attached the order and we're going to
+ 3    comply with the court order and apparently have gone
+ 4    beyond that in good faith.
+ 5         So go ahead.
+ 6              MR. HYNES:  We think it should be up to
+ 7    pre-2017.  But we can talk about that at a different
+ 8    point.
+ 9    BY MR. HYNES:
+10         Q.   All right.  So I guess in terms of what's
+11    searchable, I guess all the reports that your laboratory
+12    has generated get OCR'd and then filed with, you know,
+13    the associated M number.  And then if you search your
+14    current database with any term, it searches not only the
+15    fields that you entered in the database, but also any
+16    words that appear in the reports; is that right?
+17         A.   If you're searching for those words -- in the
+18    report itself, that I don't know.
+19         Q.   Are you through with your answer or are you
+20    thinking what's searchable?
+21         A.   No, no, I'm done with my answer.
+22         Q.   So you don't know whether or not -- here's an
+23    entry in your database, it's M5 -- 50000, and say it's
+24    an analysis of Johnson & Johnson talcum powder.  We have
+25    the field that you mentioned that are searchable and --
+0387
+ 1    from what's entered in the database, and say you issued
+ 2    a report on that, and then there's, I guess, a link to
+ 3    that report when you pull up this entry.
+ 4         Do you know whether the text of the report or data
+ 5    is also searchable across this database, or is it
+ 6    limited to just those fields that you discussed that are
+ 7    part of the database entry?
+ 8         A.   So when I issue reports, they typically don't
+ 9    go in this database.  You would have to scan it and put
+10    it in there.  This is not a database like one of those
+11    movies where the artificial intelligence to keep world
+12    peace takes over in order to keep its humans from
+13    killing themselves.  You would have to put it in this
+14    particular database to get that report, or Mike Mount,
+15    it was because they scanned it and put it into the file.
+16         Q.   Okay.
+17         A.   My reports are scanned into the system my
+18    assistant has, and then I keep the final copy in my
+19    system.  So the only -- if I'm scanning full reports
+20    for, say I want to know how many projects we have issued
+21    reports on Cashmere Bouquet, I can search that.  It's
+22    not in this database.
+23         But if somebody had, like Mike Mount did in these
+24    two projects, put everything in together and then go and
+25    scan it, that's why it showed up with everything.  I
+0388
+ 1    don't know if other reports, but any of my reports would
+ 2    not show up in this database unless I had them put it in
+ 3    there.
+ 4         Q.   So it's not regular practice for any project
+ 5    that's been in this database or any reports that are
+ 6    associated with that project to be scanned and entered
+ 7    into the database alongside.  That just may happen from
+ 8    time to time, but it isn't something that always
+ 9    happened; is that right?
+10         A.   No, you really broadened what I was saying.
+11    It's my reports, the legal reports.  The run-of-the-mill
+12    everyday analysis would be in there, but any legal
+13    project I worked on, it is in a separate database.
+14         Q.   Okay.  So what's the distinction, litigation
+15    reports or is it --
+16         A.   My --
+17         Q.   -- data that --
+18         A.   It's my reports.  And typically my reports,
+19    even other projects where it's not litigation, where I'm
+20    working on, and my reports are separate.
+21         Q.   Where are your reports located?
+22         A.   They're located in the files that I keep on my
+23    computer for reports.  I can go search for -- or if I
+24    get some documents I want to scan and send out or save
+25    or whatever, they go, you know, they go in my Outlook.
+0389
+ 1         Q.   Okay.  So your reports, the reports that you
+ 2    author, never make their way into this database, the
+ 3    first database that we've been talking about today?
+ 4         A.   That's correct.  However, the project number,
+ 5    the samples, the clients, et cetera, that's all in
+ 6    there, just not my reports.
+ 7         Q.   Okay.
+ 8         A.   And reports that go out that are just routine
+ 9    and now other types of analysis we do, those would be in
+10    there because, you know, it's -- what's the name of the
+11    laboratory tracking system where if you're doing a lot
+12    of routine gas chromatograph work, you know, it's all in
+13    the system and it's in this system.  It's all one
+14    system.
+15         But I personally write the reports.  After it's
+16    done in PDF, you know, I save it, and I save one of the
+17    Word copies, the last Word copy before it's PDF so I can
+18    fix my typos that I typically make.  And it would not be
+19    in this system.  But the project would.
+20         I mean, if we had been doing Johnson & Johnson all
+21    the way up to the point where I testified we hadn't been
+22    analyzing Johnson & Johnson, those all would be there in
+23    some form.  Especially, I think for the last, you
+24    know -- again, I'm not quite sure when this was
+25    implemented, but, you know, we've been able to find now
+0390
+ 1    two Cashmere Bouquet reports all the way back to 2010
+ 2    and 2013, I think it is.
+ 3         Q.   What about the other analysts, say Mike Mount,
+ 4    would the reports that he generated make their way into
+ 5    this first database that we've been talking about, or
+ 6    would he also, like you, have separate files for his
+ 7    reports?
+ 8         A.   I think -- I believe anything he did because
+ 9    there was just, you know, a sort of routine analysis.
+10    Unless he's working on, say, one of our exposure
+11    studies, the study itself would be in there, but he
+12    wouldn't be writing a report.  I would.  But all the
+13    data would be available or the M number.  There would be
+14    a trail to anything I write a report on.
+15         Q.   What about Hatfield, would his reports all
+16    have made their way into this first database that we're
+17    discussing?
+18         A.   I don't know about Hatfield.
+19         Q.   Okay.  What about Bill Egeland?
+20         A.   I'm sorry?
+21         Q.   What about Bill Egeland, would all of his
+22    reports have made it -- their way into the first
+23    database that we've been discussing.
+24         A.   All his PLM reports, et cetera, would.  He
+25    didn't write that many reports.  He just basically did
+0391
+ 1    the analysis.  He was an analyst.  So if it is
+ 2    particular to any of these search words and it's still
+ 3    available, yes, it would make it in there.
+ 4         Q.   Okay.  All right.  And -- sorry, so say these
+ 5    reports, the -- the reports that he -- make their way
+ 6    into this first database that we've been discussing, are
+ 7    they OCR'd in such a way that any words that appear in
+ 8    them would be searchable in this database?
+ 9         A.   I'm sorry.  Could you repeat that.
+10         Q.   Yeah.  So if you have the reports that we were
+11    talking about that make their way into the first
+12    database, the routine reports and the like, are they
+13    scanned in such a way that the text there is searchable?
+14    So when you run a search, are you only searching those
+15    terms that we've discussed that are searchable or would
+16    these scanned files also be searchable?
+17         A.   They must be searchable because we're finding
+18    old files in there.  So whatever is on the sheets of
+19    paper that have been scanned is searchable.
+20         Q.   Okay.  All right.  And then -- do you have
+21    another -- does MAS maintain another database for
+22    billing records and invoices?
+23         A.   Yeah.  We have an accounting system.
+24         Q.   And --
+25         A.   And in order to search for invoices, it has to
+0392
+ 1    go through that system.
+ 2         Q.   All right.  And do you know what its search
+ 3    capabilities are?  Say there's an invoice from 2009 that
+ 4    says the word talc or talcum on it, do you know whether
+ 5    there's a way to search the billing database to
+ 6    identify, you know, invoices or billing records that
+ 7    would describe, you know, say talc or talcum powder
+ 8    analysis?
+ 9              MR. BRATT:  Assumes facts as phrased.  I guess
+10    incomplete hypothetical to some extent.  And outside the
+11    scope of the judge's order.  It's overbroad.
+12         But go ahead.
+13              THE WITNESS:  On representation from my
+14    client, that's not what the judge asked for us to
+15    search.  So I'm not going to discuss how our accounting
+16    system can or may -- may -- what we can search on.
+17    BY MR. HYNES:
+18         Q.   Well, to the extent an invoice describes talc
+19    analysis, an invoice from 2008, 2007 describes talc
+20    analysis for a project that hasn't been identified in
+21    either of the two databases that we've described, it
+22    would potentially help you identify a project number
+23    that couldn't be located in the first two electronic
+24    databases we discussed today, right?
+25         A.   That system hasn't been maintained for
+0393
+ 1    alternate materials.  They are -- we keep invoices,
+ 2    et cetera, whatever the federal regulation says.  If
+ 3    there's an invoice in the -- in this system or I think
+ 4    we had an invoice from Mike Mount, I can't remember.  So
+ 5    any information going into that would have to come from
+ 6    this system or they would have to be handwritten
+ 7    invoices -- I think now whatever the regulations are to
+ 8    keep old invoices, and I don't know how far they go
+ 9    back, because in 2006, 2007, they essentially --
+10                   (Reporter clarification.)
+11              THE WITNESS:  I'm having problems where I'm
+12    sitting.  And the other conference room is full.  I
+13    suggest we take a little bit of a break and I'll go back
+14    to my office, where I think the computer is -- the
+15    system there is hard wired in on the Internet and
+16    hopefully it will help.
+17              MR. HYNES:  Sure.  Let's take a ten-minute
+18    break.
+19                     (A break was taken.).
+20    BY MR. HYNES:
+21         Q.   Dr. Longo, did you speak with anybody during
+22    the break?
+23         A.   No.
+24         Q.   All right.  So I want to talk about the search
+25    that you ran here described in Exhibit 30.
+0394
+ 1         So you were able to restrict your search of the
+ 2    first database to a 1988 to 2015 time frame for the
+ 3    search terms that are listed on Exhibit 30, right?
+ 4         A.   That's correct.
+ 5         Q.   Okay.  And I guess -- so you testified that
+ 6    this wasn't the first time that you searched the word
+ 7    talc in your database; is that correct?
+ 8         A.   Correct.
+ 9         Q.   On the prior occasions that you searched talc
+10    in this database, did you -- did the March 2013
+11    Cashmere Bouquet project show up?
+12         A.   Sadly no.
+13         Q.   And why is that?
+14         A.   Why --
+15              MR. BRATT:  Calls for speculation.
+16         Well, I'm going to just say calls for speculation
+17    to some extent and assumes facts.
+18         But go ahead.
+19              THE WITNESS:  I don't know.  I wish it had.
+20    It would have eliminated six months of misleading
+21    cross-examination.
+22    BY MR. HYNES:
+23         Q.   But suffice it to say you searched talc
+24    previously, that Cashmere Bouquet analysis did not show
+25    up, and now, you know, within the last 48 hours you
+0395
+ 1    searched the term talc again, and now this analysis of
+ 2    Cashmere Bouquet for 2013 did show up; is that right?
+ 3              MR. BRATT:  Well, I think that's -- that's
+ 4    argumentative.  It's misleading.  There were 50 search
+ 5    terms.
+ 6         But nonetheless, go ahead, Dr. Longo.
+ 7              THE WITNESS:  That's correct, it did.
+ 8    BY MR. HYNES:
+ 9         Q.   And in your testimony here today, you just
+10    don't know why it would have shown up within the last 48
+11    hours in response to that search term but not when you
+12    ran that search term at some point previously, right?
+13         A.   As I've already stated, that's correct.
+14         Q.   I'm looking at the 2009 report.
+15         This is the second report that you've produced
+16    since October of 2020 that involves Mike Mount analyzing
+17    cosmetic talc samples, right?
+18         A.   Yes.
+19         Q.   But this report is from 2009 and he performed
+20    the analysis on behalf of Levy, the report that's been
+21    marked as Exhibit 29, right?
+22         A.   Correct.
+23         Q.   And then, what we had previously marked as
+24    Exhibit 11 is the 2013 report authored by Mr. Mount and
+25    issued to Chris Romanelli of Weitz & Luxenberg, right?
+0396
+ 1         A.   Correct.
+ 2         Q.   Both of those projects involved Mr. Mount's --
+ 3              MR. HYNES:  Sorry, Mark, I think I'm getting
+ 4    some feedback from your speaker.  Do you want to mute,
+ 5    and then if you need to object --
+ 6              MR. BRATT:  Is that better?
+ 7              MR. HYNES:  Yeah, no feedback.
+ 8    BY MR. HYNES:
+ 9         Q.   So I'll start that again.
+10         So in both of these reports, the one that's been
+11    marked as Exhibit 29 and the one that's been marked as
+12    Exhibit 11, if both of those reports, the project
+13    members were Mr. Mount, Mr. Egeland, and Mr. Keeton; is
+14    that right?
+15         A.   That's right.
+16         Q.   All right.  And since you located this 2009
+17    Mike Mount report, have you spoken with Mr. Egeland
+18    regarding this report?
+19         A.   No.
+20         Q.   Have you spoken with Mr. Keeton regarding this
+21    2009 report?
+22         A.   No.
+23         Q.   Okay.  Have you spoken with Mr. Mount
+24    regarding the 2009 report?
+25         A.   I'm sorry, with who?
+0397
+ 1         Q.   Mr. Mount.
+ 2         A.   No.
+ 3         Q.   All right.  And previously, the last couple of
+ 4    times we walked through whether or not you're willing to
+ 5    testify about issues concerning Mr. Mount.
+ 6         Are you still, on the advice of MAS's outside
+ 7    counsel, not testifying along the same lines that you
+ 8    talked about in volume two of this deposition?
+ 9         A.   Yes.  Until the Gwinnett County Court rules on
+10    the validity of the Johnson & Johnson subpoena.  But as
+11    of today, that's going to be pushed because it came to
+12    light that the judge that's going to hear that case, his
+13    brother worked his entire career at Johnson & Johnson in
+14    the research laboratory.  So it's probably somewhat of a
+15    conflict of interest.  So they'll have to assign a new
+16    judge.
+17         Q.   All right.  Bear with me here.
+18         So I guess I want to just walk through the standard
+19    operating procedure that you had for logging information
+20    in this first database that we discussed today.  I guess
+21    step one is if -- I guess step one is when a set of
+22    samples or a sample arrives at MAS, is a -- are those
+23    samples then logged into the database by a log-in
+24    administrator.
+25         Is that the first step in the process?
+0398
+ 1         A.   Yes.
+ 2         Q.   Does that log-in process create a chain of
+ 3    custody document that is then part of that file in the
+ 4    database?
+ 5         A.   Yes, all the chain of custody documents that
+ 6    you have, Johnson & Johnson has reviewed or looked at on
+ 7    all our reports are generated from that database.
+ 8         Q.   Okay.  All right.  And then when are entries
+ 9    entered into the handwritten logbooks.
+10         Is that the same person that enters the information
+11    into the database, did they simultaneously include a
+12    handwritten notation in the handwritten logbooks, or
+13    what's the protocol for that piece of process?
+14         A.   What I understand is typically the information
+15    is put into the database and then some basic information
+16    is put into the handwritten logbook.  What M number was
+17    assigned, typically who the client was, maybe what type
+18    of sample it is, maybe how many samples.
+19         Q.   And --
+20         A.   It's not -- it's designed to be able to have a
+21    backup to determine, if you have to, what the M number
+22    is, if you find the M number, you know, who the client
+23    was, and it's only used in instances like this, when we
+24    found the M number for the 2013 Cashmere Bouquet or
+25    somebody says, You know, I think we sent some samples
+0399
+ 1    during this time frame.  Let me look through the
+ 2    logbook, the handwritten logbook and see if I can locate
+ 3    them.
+ 4         Q.   Is it usually the same person that enters the
+ 5    information into the electronic database that enters the
+ 6    information into the handwritten logbook?
+ 7         A.   Yes.
+ 8         Q.   Okay.  And then, I guess, once the samples are
+ 9    logged, once the analyst picks the samples up to go do
+10    an analysis, do they update the electronic chain of
+11    custody information at that point?
+12         A.   Now, they'll generate another chain of custody
+13    depending on the type of analysis.  If you look at our
+14    Johnson & Johnson reports on the cosmetic talc, you may
+15    see multiple copies of the chain of custody, you know,
+16    one for the PLM, one for the TEM, or one for the SEM
+17    once the SEM is done.
+18         And then those chain of custodies are signed off,
+19    meaning, you know, the analysts when they analyzed them,
+20    and it's all handwritten, and then those are scanned and
+21    put back into the overall chain of custody.
+22         Q.   In that first database we've been talking
+23    about, right, it gets signed, scanned, and added into
+24    that first database for the project?
+25         A.   Yes.
+0400
+ 1         Q.   Does that analyst, at the same time they're
+ 2    doing that piece of the chain of custody, do they
+ 3    also -- do they also sign the handwritten logbook as
+ 4    well?  Do they fill out any information there?
+ 5         A.   No, they don't do that.
+ 6         Q.   Bear with me just a moment.
+ 7         A.   Take your time.
+ 8         Q.   Now, I guess going back to 2013, you had
+ 9    mentioned that Mr. Egeland may be issuing a declaration
+10    regarding his uncovering of the samples and then the
+11    subsequent identification of the report.
+12         Has he issued that declaration yet?
+13         A.   No, I haven't got -- he hasn't gotten around
+14    to it, he's been busy.  And since I was just
+15    volunteering, I didn't think there was a time limit on
+16    it.
+17         Q.   Now, when he wants to go retrieve the brake
+18    samples from storage, did he have to fill out any sort
+19    of chain of custody form as part of that retrieval
+20    process?
+21         A.   No.  We don't do that anymore because we have
+22    them in a separate locked facility that is very rarely
+23    used by anybody other than when we're doing big studies.
+24    When they were here and before we moved them, the answer
+25    would be yes.
+0401
+ 1         Q.   So the off-site storage facility, MAS has no
+ 2    protocol in place requiring chain of custody information
+ 3    to be updated if materials are taken from that off-site
+ 4    storage location?
+ 5         A.   No, it does not.  I think the last time we
+ 6    were doing that is when they were still at MAS where you
+ 7    have multiple people here every day.  There's only a few
+ 8    people that have keys to get into the facility that's
+ 9    housing the big ECL.
+10         Q.   All right.  I guess why don't we turn to -- I
+11    marked as Exhibit 26 a 1974 EPA document that we were
+12    provided with on March 5.
+13         Do you happen to have that document available to
+14    you?
+15         A.   I don't have it.  But if you show it, I can
+16    talk about it.  But I can go get that.
+17         Q.   I can show it to you.
+18         A.   Okay.  Great.
+19         Q.   Now, the highlighting in the copy of this
+20    excerpts of the document that I received, is that your
+21    highlighting, Dr. Longo?
+22         A.   It is.
+23         Q.   Okay.  I'm sure -- all right.
+24         All right.  I'm sharing this document, what's been
+25    marked as Exhibit 26.
+0402
+ 1         Can you see that, Dr. Longo?
+ 2         A.   It says you started screen sharing, so it's
+ 3    probably going to take a second.
+ 4         Q.   Okay.  Let me know when you can see it.
+ 5         A.   I can see it.
+ 6         Q.   Okay.  So this is what we've marked as
+ 7    Exhibit 26, the EPA document from September of '74,
+ 8    Identification and Assessment of Asbestos Emissions from
+ 9    Incidental Sources of Asbestos, right?
+10         A.   Correct.
+11         Q.   And can you just tell me briefly for what
+12    purpose you're relying on this document for your
+13    opinions in this case.
+14         A.   Well, this particular document is referenced
+15    in the Campbell document where it shows that map of the
+16    United States, and it has all these areas that are lines
+17    that show where asbestos is.
+18         So I got a hold of this document, and it provides
+19    information about the Vermont, specifically Ludlow
+20    County, you know, Windsor mineral.  And it talks about
+21    chrysotile being in Vermont, that area of Vermont,
+22    which, of course, is the area that the talcum powder is
+23    used for -- is it your B66 and B96 -- and it verifies my
+24    opinions that I've had that there's chrysotile in the
+25    Vermont talc based on all the -- all the analysis that
+0403
+ 1    has been done over time based on the Colorado School of
+ 2    Mines work, based on the Colorado School of Mines
+ 3    floatation work where they were trying to use different
+ 4    chemicals during the floatation process to removes
+ 5    chrysotile and amphiboles.
+ 6         This is just verification of what the Environmental
+ 7    Protection Agency says and this is the reference back to
+ 8    the Campbell document.
+ 9         Q.   One of the things you referenced was they
+10    described chrysotile in certain areas in Vermont; is
+11    that right?
+12         A.   Yes.
+13         Q.   And I saw that you had highlighted table AE1,
+14    a couple entries under Windsor County and Windham
+15    County; is that right?
+16         A.   That's correct.
+17         Q.   And so if I read under Windsor County, they
+18    reference a Ludlow area, slip- and cross-fiber
+19    chrysotile in serpentinite and relatively
+20    unserpentinite, dunite, D-U-N-I-T-E, and peridotite,
+21    P-E-R-I-O-D-I-T-E.
+22         Did I read that correctly?
+23         A.   You did.
+24         Q.   Okay.  Right there it does not say chrysotile
+25    in talc.  Is says chrysotile in serpentinite and
+0404
+ 1    unserpentinite, dunite, and peridotite, right?
+ 2         A.   It does.
+ 3         Q.   And under Windham County, the Dover area,
+ 4    slip- and cross-fiber chrysotile and serpentinite and
+ 5    relatively unserpentinite, dunite, and peridotite.
+ 6         Did I read that correctly?
+ 7         A.   You did.
+ 8         Q.   And referencing chrysotile, not in talc but in
+ 9    serpentinite and unserpentinite, dunite, and peridotite,
+10    right?
+11         A.   That's what it states.
+12         Q.   And did you look at the coordinates that are
+13    provided for the chrysotile references for Windsor
+14    County and Windham County?
+15         A.   I did not Google Map them, no.
+16         Q.   Okay.  So for Windsor County you have 43
+17    degrees, 23 minutes by 72 degrees, 39 minutes, right?
+18         A.   That's correct.
+19         Q.   And that matches what's listed as 15 in the
+20    table for talc, a Proctorsville deposit; is that right?
+21         A.   That's correct.
+22         Q.   Johnson & Johnson did not mine cosmetic talc
+23    for use in Johnson's Baby Powder or Shower to Shower
+24    from Proctorsville, right?
+25         A.   That's correct.
+0405
+ 1         Q.   And then Windham County, the coordinates are
+ 2    42 degrees, 58 minutes by 72 degrees, 46 minutes, right?
+ 3         A.   Correct.
+ 4         Q.   There's no exact match, but there's two that
+ 5    are relatively close.  They're entries 23 -- actually, I
+ 6    guess there's three that are relatively close, 22, 23,
+ 7    and 24, those are the Dover Newfane, Marlboro, and
+ 8    Waterville quarry locations, right?
+ 9         A.   Correct.
+10         Q.   And none of those were locations where
+11    Johnson & Johnson sourced cosmetic talc for use in baby
+12    powder or Shower to Shower products, right?
+13         A.   Correct.  That's my understanding, that these
+14    are the types of deposits running through there.
+15         If you go to the top it says, "All deposits are
+16    associated and cheaply derived from serpentinite.  These
+17    deposits consist primarily of talc carbonate rock,
+18    bordered by thin shells of talc rock."
+19         So I don't think they were trying to pin it to any
+20    one mine.  And you've got Hammondsville quarry under
+21    there.  And don't think we can debate that.
+22         And if I recall correctly, but I could be wrong --
+23    and I'm looking at Google because I thought I looked
+24    this up before serpen- -- serpentinite is a metamorphic
+25    rock that is mostly composed of serpentinite group
+0406
+ 1    minerals.  Serpentinite group minerals, antigorite,
+ 2    lizardite, and chrysotile have produced, blah, blah,
+ 3    blah, blah.
+ 4         And you have Hammondsville under there.  That's one
+ 5    of J&J's mines.  So this is what runs through there.
+ 6    You know, I guess if a geologist testifies, he can be
+ 7    more -- he can talk more about it, but my understanding
+ 8    that this runs through all that total area.
+ 9              MR. HYNES:  I'll object and move to strike the
+10    nonresponsive portions of the answer.
+11    BY MR. HYNES:
+12         Q.   And, Dr. Longo, the reference on the left part
+13    of table A1 is to asbestos and they provide specific
+14    coordinates for the chrysotile that they reference in
+15    Windsor and Windham County, right?
+16         A.   That's two of them they do, yes.
+17         Q.   And then the next column is talc, and you
+18    mentioned that Hammondsville was mentioned, but the
+19    coordinates for Hammondsville are not associated with
+20    the coordinates for the asbestos described in Windsor
+21    County, different coordinates, right?
+22              MR. BRATT:  I think it's vague.  Assumes facts
+23    as phrased.  They don't all match up.
+24         But go ahead.
+25              THE WITNESS:  Well, if I look at --
+0407
+ 1    BY MR. HYNES:
+ 2         Q.   We saw that --
+ 3         A.   I see 43 and I'm very close to the
+ 4    Hammondsville quarry.  Somebody who knows what the
+ 5    distance is on that could probably talk more about that.
+ 6         But that's all under the same conditions that are
+ 7    over here for the asbestos and I haven't researched the
+ 8    52 and 51 papers that they actually went into other
+ 9    areas like this.  So, you know, we can debate it at a
+10    later time.  But I'm not going to agree with you.  This
+11    has nothing to do -- and the Windham quarry is 4312 and
+12    7243, a number 19, that's fairly, fairly close to these
+13    others.
+14              MR. HYNES:  I'll object and move to strike as
+15    nonresponsive.
+16              MR. CHARCHALIS:  Join.
+17              MR. HYNES:  All right.  Bear with me.  I'm
+18    going to look at my notes.  I'm going to reserve my
+19    right to continue questioning on the search.
+20         At the front, I made a statement on the record.
+21    There's some questions that Dr. Longo was not prepared
+22    to answer regarding, you know, what could be searched,
+23    what can't be searched.  And so we'll have the
+24    [indiscernible] after this, and we'll reserve our right
+25    to continue this deposition.
+0408
+ 1         I guess for the sake of efficiency before we
+ 2    continue for a limited purpose, Dr. Longo, I'll ask you
+ 3    a couple of quick questions.
+ 4    BY MR. HYNES:
+ 5         Q.   Dr. Longo, did the reports that you produced
+ 6    in this case, along with the exhibits to this deposition
+ 7    and your list of reference materials produced during the
+ 8    course of this deposition, cover all of the opinions
+ 9    that you intend to offer at trial in this case?
+10              MR. BRATT:  I think -- first off, I think it
+11    assumes facts.  There's no report requirement in
+12    California.  He's given now three volumes of testimony
+13    that cover anticipated areas that he's going to go in.
+14    So I think it improperly limits his opinions.  They may
+15    encompass some of them, but I object.  It's
+16    argumentative as phrased.
+17         Go ahead.
+18              THE WITNESS:  I would have to look back at
+19    everything I've produced so far.  We finished up another
+20    report that involved the mesothelioma victims and off
+21    the container -- off-the-shelf containers from that
+22    initial wave of samples that was done in our March 17,
+23    2018, report.  I don't know if I sent a copy to
+24    Mark Bratt or not.  I'll produce that if Mark doesn't
+25    have it.  Since it has gone out.  And it just depends on
+0409
+ 1    what additional work I get done between now and the next
+ 2    deposition, other than going through and finishing the
+ 3    search.
+ 4              MR. HYNES:  Okay.  So I'll object to a new
+ 5    report being issued in this case, the report that I
+ 6    haven't received to date.  I know Mr. Bratt has not
+ 7    received it either.  I'll object to late production of
+ 8    that report and reserve my right to move to exclude that
+ 9    report or to continue questioning on a brand-new report
+10    first disclosed at the end of volume two of your
+11    deposition not yet produced to me in this case.
+12              MR. CHARCHALIS:  I'll join in that.
+13              MR. BRATT:  Kevin, I'm happy to -- once
+14    received, we'll, of course, produce it, and I'm happy to
+15    meet and confer with you on further dates or at least a
+16    date to inquire with Dr. Longo about it, including the
+17    completion of, I guess, the ongoing search for powder,
+18    which I'm -- it's my understanding it's not yet
+19    complete.  So I'll meet and confer with you, with the
+20    remaining defendants, as well as Julia Romano on, I
+21    guess, volume four, and I'm happy to talk to you
+22    off-line about that.
+23    BY MR. HYNES:
+24         Q.   Dr. Longo, I guess with the caveat that you
+25    have the report that I haven't received yet, that
+0410
+ 1    plaintiffs' counsel has yet to receive, that you may
+ 2    want to rely upon for your opinions in this case the
+ 3    other reports that you've produced in this case combined
+ 4    with the exhibits to this deposition, reference
+ 5    materials produced during the course of this deposition,
+ 6    and your testimony at this deposition, overall the
+ 7    opinions that you intend to offer at trial in the
+ 8    Johnson & Johnson case.
+ 9              MR. BRATT:  Vague.  Overbroad.  Assumes facts
+10    related to what may be asked of him at trial.  I'm sure
+11    what you've summarized includes many of his opinions,
+12    but I think it's overbroad as phrased.
+13         Go ahead, Dr. Longo.
+14              THE WITNESS:  Yes, I think it was you in
+15    volume one when we were talking about the CSM sample
+16    preparation method, about where did those samples come
+17    from, and I delved into it.  It's all in there.  The
+18    samples that are in the February -- excuse me, the
+19    March -- February and April or March and April reports
+20    came from Frostbite mine, and then the December, which I
+21    came across, the December 2013 CSM method, and it's just
+22    an overall protocol for the entire thing.  And it's
+23    signed off by the director of the Colorado School of
+24    Mines.  It's signed off by their chief scientist and one
+25    other person.
+0411
+ 1         And also, I ran across a JM, Johns Manville, memo
+ 2    to -- I forget the man's name, but it's all referenced
+ 3    in that report where Johns Manville was asking Colorado
+ 4    School of Mines if they could get the protocol for using
+ 5    that, and then he stated in there that they had a
+ 6    telephone conversation and they said that -- and he said
+ 7    that -- the telephone conversation, that I understand
+ 8    that you worked on it.  This is on proprietary work as
+ 9    you've done on behalf of your client and I understand
+10    you may want to patent this process.
+11         And that goes to my point that from time to time I
+12    do get crossed that this method was not reproducible and
+13    problematic, et cetera, et cetera.  And I don't think
+14    that quite correlates with somebody who wants to patent
+15    a method and keep it a secret.  And it's all laid out in
+16    that report and that certainly it verifies the opinions
+17    I've been stating before.
+18         The February, March, and then the April report are
+19    head samples that I can't state it's from Frostbite
+20    because they just call them head samples.  But head
+21    samples is the condition of the talc just before it goes
+22    through the mill in floatation.
+23         And it's curious to me that they were finding
+24    chrysotile and amphiboles in the report -- in their --
+25    in Frostbite and I would be only speculating why
+0412
+ 1    Johnson & Johnson never used the Frostbite mine as a
+ 2    source of their cosmetic talc.  And that's all written
+ 3    up in there.
+ 4    BY MR. HYNES:
+ 5         Q.   You're referring to those 1973 CSM --
+ 6         A.   Yes.
+ 7         Q.   Those are Frostbite, and Frostbite, as you
+ 8    just mentioned, wasn't used in Johnson & Johnson baby
+ 9    Powder or Shower to Shower, right?
+10         A.   That's correct, but the method -- even though
+11    they never used it, the method went to the point where
+12    it's like the top three people at Colorado School of
+13    Mines have signed off on it.
+14         Q.   Okay.  You have my question in mind
+15    previously?
+16         So beyond what you just said and with the caveat
+17    that you have another report that I haven't received and
+18    that plaintiffs' counsel has not yet received, the
+19    reports that you've produced in this case, along with
+20    the exhibits to your deposition, the reference materials
+21    that have been produced over the course of the
+22    deposition, as well as your testimony during these three
+23    volumes, do those encompass the opinions that you intend
+24    to offer at trial in this case?
+25         A.   It's very hard --
+0413
+ 1              MR. BRATT:  Same objections.
+ 2              THE WITNESS:  Go ahead.  I'm sorry, I cut you
+ 3    off on your --
+ 4              MR. BRATT:  That's okay.  Same objections that
+ 5    I previously rendered.
+ 6         And also just reminding for the record there's no
+ 7    report requirement in California.
+ 8         But go ahead.
+ 9              THE WITNESS:  It's very hard for me to say
+10    that this is everything.  I've produced other things in
+11    the past for Johnson & Johnson.  For example, you know,
+12    I produced a -- 21 documents in my -- in the Hayes
+13    deposition that I'm referencing in the report.  And it's
+14    Exhibit 3 and it was on 9/27/2018, I think it was.  But
+15    that's in there.  That's something that I have relied on
+16    in the past and I've testified in court.
+17         I guess is it the position that even though I've
+18    given it to J&J in the past and that if I don't produce
+19    it here, it's -- I can't rely on it?
+20    BY MR. HYNES:
+21         Q.   Are you through?
+22         A.   Yes.
+23         Q.   So anything coming to mind that's not
+24    contained in your report here, reference to bills that
+25    you cited, produced as part of your deposition, or
+0414
+ 1    testified to as part of the deposition, do you intend to
+ 2    rely upon -- or do you intend to testify about on the
+ 3    Johnson matter?
+ 4              MR. BRATT:  Asked and answered.
+ 5         But go ahead.
+ 6              THE WITNESS:  Could you repeat that.
+ 7    BY MR. HYNES:
+ 8         Q.   I said are there any other opinions not
+ 9    contained in your reports, your exhibits, your reference
+10    materials, your testimony during this deposition that
+11    you intend to offer at trial in the Johnson matter?
+12              MR. BRATT:  Same objections.
+13              THE WITNESS:  The only other thing would be,
+14    because even though I've been testifying about them for
+15    a while, I never put the heavy liquid density separation
+16    stuff in my reliance docs, but I've produced them a
+17    number times.  I've had depositions on it.  I've
+18    testified about it in trial.  But it's all encompassed
+19    in that latest report, and I would make effort to get it
+20    to my client so that you can have it 72 hours before the
+21    next deposition.
+22              MR. HYNES:  Okay.  So I think with that I'm
+23    going to reserve my right for another day, mainly on the
+24    electronic search, meet and confer effort.  And, again,
+25    I object to late production of an additional report in
+0415
+ 1    this case well after his first deposition, which was in
+ 2    January.  You know, continuation on these subject
+ 3    matters is not an invitation for Dr. Longo to continue
+ 4    to issue brand-new reports in this matter.
+ 5         With that, I'll pass the witness.
+ 6         Thanks, Dr. Longo.
+ 7              THE WITNESS:  Thank you, sir.
+ 8              MR. BRATT:  Does anyone else have questions
+ 9    today?
+10              MR. CHARCHALIS:  I'll just join in Mr. Hynes'
+11    position with regard to the production of materials on
+12    any continuous new reports and opinions in this matter,
+13    and I'll reserve the right to ask him additional
+14    questions at the next session in light of the late
+15    production of the documents received today.
+16              MR. BRATT:  Okay.  Noted.  We can meet and
+17    confer.
+18         Any other statements or questions today before we
+19    go off the record?
+20         I think, Ms. Boisclair, you're here on behalf of
+21    Walmart, I'm not sure if that last statement by Mitch
+22    encompassed Walmart's position because I know there's
+23    dual representation there.
+24              MR. CHARCHALIS:  Yeah, that statement would be
+25    for all parties represented.  If Ms. Boisclair wants to
+0416
+ 1    add something, she's obviously free to do that.  My
+ 2    intention is for my statement and all objections that I
+ 3    rendered today would be on behalf of all parties I
+ 4    represent.
+ 5              MR. BRATT:  All [indiscernible], including
+ 6    Walmart, right?
+ 7            (Simultaneous unreportable cross-talk.)
+ 8              MS. BOISCLAIR:  Yes, Mitch's statement is
+ 9    correct.  Thank you.
+10              MR. BRATT:  Okay.  So it sounds like there's
+11    no further questions today.  We've got things to meet
+12    and confer on, which we'll do.  But unless I'm hearing
+13    otherwise, that would conclude today.
+14         And we'll send a bill of the time to you,
+15    Mr. Hynes, as we have in the past.
+16              (Proceedings adjourned at 1:06 p.m.)
+17                           * * * * *
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0417
+ 1              ERRATA SHEET FOR THE TRANSCRIPT OF:
+ 2    Case Name: Johnson vs. Johnson & Johnson, et al.
+ 3    Deposition Date: March 24, 2021
+ 4    Deponent: WILLIAM LONGO, PH.D.
+ 5    Reason Codes:
+ 6    1. To clarify the record.
+ 7    2. To conform to the facts.
+ 8    3. To correct transcription errors.
+ 9    Pg. Ln.  Now Reads        Should Read         Reason
+10    ___ ___  ________________ __________________  ______
+11    ___ ___  ________________ __________________  ______
+12    ___ ___  ________________ __________________  ______
+13    ___ ___  ________________ __________________  ______
+14    ___ ___  ________________ __________________  ______
+15    ___ ___  ________________ __________________  ______
+16    ___ ___  ________________ __________________  ______
+17    ___ ___  ________________ __________________  ______
+18    ___ ___  ________________ __________________  ______
+19    ___ ___  ________________ __________________  ______
+20    ___ ___  ________________ __________________  ______
+21                        ___________________________
+                          WILLIAM LONGO, PH.D.
+22   
+23    SUBSCRIBED AND SWORN BEFORE ME
+24    THIS _______ DAY OF __________, 20_____.
+25   
+0418
+ 1                          DECLARATION
+ 2   
+ 3              I, WILLIAM LONGO, PH.D., do hereby certify
+ 4    that the foregoing deposition was presented to me as a
+ 5    true and correct transcript of the proceedings in the
+ 6    above-styled and numbered cause, and I now sign the same
+ 7    as true and correct, except for the corrections, if any,
+ 8    noted.
+ 9   
+10                        _____________________________
+                          WILLIAM LONGO, PH.D.
+11   
+12   
+13              SUBSCRIBED AND SWORN to before me, this _____
+14    day of _________ 2021.
+15   
+16                        _____________________________
+                          Notary Public
+17   
+18   
+19    My Commission Expires: ______________________
+20   
+21   
+22   
+23   
+24   
+25   
+0419
+ 1                     REPORTER'S CERTIFICATE
+ 2   
+ 3              I, Carrie LaMontagne, Certified Shorthand
+ 4    Reporter within and for the State of California, License
+ 5    No. 13393, do hereby certify that the deponent was by me
+ 6    first duly sworn and the foregoing testimony of WILLIAM
+ 7    LONGO, PH.D. was stenographically reported by me on
+ 8    March 24, 2021, and was thereafter transcribed with
+ 9    computer-aided transcription; that the foregoing is a
+10    full, complete, and true record of said proceedings.
+11              I further certify that I am not of counsel or
+12    attorney for either or any of the parties in the
+13    foregoing proceedings and caption named or in any way
+14    interested in the outcome of the cause in said caption.
+15              IN WITNESS WHEREOF, I have hereunto set my
+16    hand and official seal this 26th day of March, 2021.
+17   
+18    ____________________________
+      CARRIE LaMONTAGNE, CSR 13393
+19   
+20   
+21   
+22   
+23   
+24   
+25   

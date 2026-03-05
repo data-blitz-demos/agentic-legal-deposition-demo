@@ -1,0 +1,3877 @@
+                                                               1
+ 1           SUPERIOR COURT OF CALIFORNIA
+    COUNTY OF LOS ANGELES - SPRING STREET COURTHOUSE
+ 2                         
+    Coordinated Proceedings       JCCP CASE NO. 4674
+ 3  Special Title (Rule 3.550)
+    
+ 4  
+    LAOSD ASBESTOS CASES
+ 5  
+    ----------------------------
+ 6  
+    LOUIS D. WAGNER, Individually 
+ 7  and as Successor-in-Interest 
+    to NANETTE C. WAGNER, deceased,
+ 8            Plaintiff,
+    
+ 9        vs.                     CASE NO. BC645588
+    
+10  AMERICAN ART CLAY CO., INC.,
+    et al.,
+11            Defendants.  
+    
+12                      - - -  
+                           
+13             Telephonic Deposition of 
+               WILLIAM E. LONGO, Ph.D.,
+14  
+             Taken by Matthew K. Ashby, 
+15  
+                Before Shannon E. Jordan,
+16            Certified Court Reporter, 
+    
+17   At the Offices of Veritext Legal Solutions, 
+                Johns Creek, Georgia, 
+18  
+             On Thursday, March 12, 2020, 
+19  Beginning at 11:50 a.m. & ending at 4:09 p.m.  
+    
+20                       - - -
+                           
+21                         
+                           
+22
+23
+24
+25
+                                                               2
+ 1  APPEARANCES OF COUNSEL
+    
+ 2  For the Plaintiff:
+    
+ 3             WILLIAM RUIZ (via telephone)
+               Maune Raichle Hartley French & Mudd   
+ 4               LLC 
+               Suite 400
+ 5             2000 Powell Street
+               Emeryville, CA 94608
+ 6             510.409.3215
+               wruiz@mrhfmlaw.com
+ 7  
+    For the Defendants Johnson & Johnson and Johnson 
+ 8  Consumer Inc.:
+    
+ 9             MATTHEW K. ASHBY (via telephone)
+               King & Spaulding 
+10             Suite 1600
+               633 West Fifth Street
+11             Los Angeles, CA 90071
+               213.443.4314
+12             mashby@kslaw.com
+    
+13  For the Defendants American Art Clay Co., Inc. 
+    and Stewart's of California, Inc.:
+14  
+               HOLLY CHANG BEAL (via telephone)
+15             Selman Breitman LLP
+               Suite 1100
+16             6 Hutton Centre Drive
+               Santa Ana, CA 92707
+17             714.647.9700
+               hbeal@selmanlaw.com
+18             
+    For the Defendants Kemper Industries and Ceramics 
+19  & Crafts Warehouse, Inc.:
+    
+20             JACQUELINE K. DUBOIS (via telephone)
+               Gordon Rees Scully Mansukhani LLP
+21             Suite 2000
+               101 West Broadway
+22             San Diego, CA 92101
+               619.230.7493
+23             jdubois@grsm.com
+               
+24  
+25  
+                                                               3
+ 1  For the Defendant Cyprus Mines Corporation:
+ 2             ERIN CARPENTER (via telephone) 
+               Dentons US LLP
+ 3             Suite 1250
+               4675 MacArthur Court
+ 4             Newport Beach, CA 92660
+               949.732.3700
+ 5             erin.carpenter@dentons.com
+    
+ 6
+    
+ 7  
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+                                                               4
+ 1               INDEX TO PROCEEDINGS
+                           
+ 2                 EXAMINATION INDEX
+ 3  WILLIAM E. LONGO, Ph.D.
+    
+ 4  Examination by Mr. Ashby                       6
+    Examination by Ms. Dubois                     87
+ 5  Examination by Mr. Carpenter                 112
+    Examination by Ms. Beal                      126
+ 6  Re-Examination by Mr. Ashby                  138
+                           
+ 7  Certificate Page                           144
+ 8  _______________________________________________
+ 9                   EXHIBIT INDEX
+10  Exhibits
+     
+11  Exhibit 1  Letter to Counsel from E. Trezza,    9
+               3.11.20
+12  
+    Exhibit 2  Letter to Counsel from E. Trezza,    9
+13             2.18.20
+    
+14  Exhibit 3  Letter sent to W. Longo, addressed   10
+               to Dr. Compton from E. Trezza,
+15             2-18-20
+    
+16  Exhibit 4  Plaintiff's Responses to             11
+               Defendants' Standard
+17             Interrogatories
+    
+18  Exhibit 5  Vitae, William Edward Longo, Ph.D.   12
+    
+19  Exhibit 6  Appendix A, Johnson & Johnson        12
+               Reliance and Reviewed Documents,
+20             1-10-20
+    
+21  Exhibit 7  MVA12469, Examination of C&C White   14
+               Ceramic Slip for Asbestos, S.
+22             Compton, 4-10-18
+    
+23  Exhibit 8  Nanette Wagner JBP Talcum Powder     15
+               Application Calculations
+24  
+    
+25  (Continued on next page)
+    
+                                                               5
+ 1  Exhibit 9  Pouring of Nytal talc study          58
+    
+ 2  Exhibit 10 Front page of Deposition of Rick     111
+               MacPherson with handwritten notes
+ 3  
+    (End of Index)
+ 4
+           (Original Exhibits 1 through 8 and 10 have 
+ 5         been attached to the original transcript.  
+           Exhibit 9 was not provided to the court 
+ 6         reporter at the time of production.)
+    
+ 7
+          
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+                                                               6
+ 1              March 12, 2020
+    
+ 2              11:50 a.m.
+    
+ 3       (Whereupon the reporter provided a written 
+ 4       disclosure to all counsel pursuant to 
+ 5       Article 8.B. of the Rules and Regulations of 
+ 6       the Board of Court Reporting.)
+ 7  WILLIAM E. LONGO, Ph.D., 
+ 8       being first duly sworn, was examined and
+ 9       testified as follows:
+10  EXAMINATION
+11  BY MR. ASHBY:  
+12       Q       All right.  Dr. Longo, this is Matt 
+13  Ashby.  Nice to talk to you again.  How are you?
+14       A       I'm doing fine.  How are you?  Don't 
+15  have a fever or cough, right?  
+16       Q       No, I feel fine, which is good news 
+17  for both of us.
+18       A       Good.
+19              MR. ASHBY:  You know, I forgot to do 
+20  this, but Will Ruiz, do we have a stipulation 
+21  that the court reporter can swear the witness in 
+22  over the phone?
+23              MR. RUIZ:  Yes, of course.
+24  BY MR. ASHBY:  
+25       Q       Okay.  All right.  So, Dr. Longo, you 
+                                                               7
+ 1  and I have talked quite a few times.  Are you 
+ 2  okay with me dispensing with the admonitions for 
+ 3  your deposition in this case?  
+ 4       A       Yes, sir.
+ 5       Q       What case is it your understanding 
+ 6  you're here to testify in today?
+ 7       A       My understanding is this is the -- 
+ 8  I'm assuming that I'm pronouncing her first name 
+ 9  correctly, Nanette or is Nanette, either way, 
+10  Wagner.  Nanette Wagner case.  That's what I'm 
+11  here to testify on 
+12              MS. BEAL:  Matt, I'm so sorry.  This 
+13  is Holly Beal.  I didn't hear that the witness 
+14  was sworn in.  If he was, I apologize.  
+15              THE WITNESS:  I was.  I'll say that 
+16  under oath.
+17              MS. BEAL:  Oh.  Sorry about that.
+18  BY MR. ASHBY:
+19       Q       All right.  Dr. Longo, what materials 
+20  did you bring with you today for your deposition 
+21  in the Wagner case?
+22       A       I brought Nanette's husband Louis 
+23  Wagner's Volumes 1, 2, 3, and 4 starting on 
+24  August 28.  Volume 2, September 6.  Volume 3, 
+25  September 7, and Volume 4, September 10.  As well 
+                                                               8
+ 1  as the exhibits it looks like that were attached 
+ 2  to his Volume 1 deposition I think.  
+ 3               I also brought Lynda Tackett-Dyer, 
+ 4  D-Y-E-R, three volumes of depositions taken on -- 
+ 5  Volume 1 and 2 were taken actually on October 
+ 6  16th and Volume 3 was taken on October 17.  And I 
+ 7  also bought -- bought -- brought, one, two, 
+ 8  there's three of the one deposition taken of 
+ 9  William Beck, which is Nanette's brother, taken 
+10  on February 6, 2020.  
+11               And then I have a deposition from 
+12  Ernst Isen, I-S-E-N, who worked at Stewart's, I 
+13  think, from '81 to 2014.  The PMK of Aardvark 
+14  Clay & Supplies Rick MacPherson.  The deposition 
+15  of Thomas Wayne Perry, which looks like he was in 
+16  charge of Stewart's.  And that covers the 
+17  depositions I bought -- why am I saying that?  
+18               I brought a report of results 
+19  MVA12469, Examination of C&C White Ceramic Slip 
+20  for Asbestos that has PLM, XRD, and I think some 
+21  micrographs.  I don't know if they did TEM, yes, 
+22  and TEM analysis of the clay slip.  
+23               I have a cover letter from MRHFM to 
+24  me on February 18, 2020.  It says Dear 
+25  Mr. Compton, he's much taller and older than me, 
+                                                               9
+ 1  but basically this is what they sent me.  You 
+ 2  know, seven items, the Louis Wagner depositions, 
+ 3  the Deiter Isen deposition, Thomas Perry.  I 
+ 4  don't think I got a Rick MacPherson.  I did not 
+ 5  receive that deposition.  
+ 6               Plaintiff's Response to Defendant's 
+ 7  Standard Interrogatories, which I do have.  Lynda 
+ 8  Tackett-Dyer's depositions and Bill Beck's 
+ 9  deposition.  I also received the complaint for 
+10  wrongful death, I did not review.  My c.v., and I 
+11  think that's it.
+12       Q       Did you bring an appendix listing 
+13  your reliance materials for the Wagner case?
+14       A       Yes.  It has 122 on there.  We can 
+15  mark that.
+16       (Whereupon documents was identified as 
+17       Exhibits 1 and Exhibit 2.)
+18  BY MR. ASHBY:  
+19       Q       Okay.  All right.  Let's do this.  I 
+20  have one thing I want to mark.  Well, let's just 
+21  make it two things to make it simple.  I'll mark 
+22  as Exhibit 1 a March 11, 2020, letter from 
+23  Elizabeth Trezza at the MRHFM firm to all counsel 
+24  in the case, that will be Exhibit 1.  
+25               And this exhibit lists your -- I 
+                                                               10
+ 1  don't think this is anything you received, Dr.  
+ 2  Longo.  This exhibit lists the materials that 
+ 3  were provided to you.  
+ 4               There's also what I'll mark as 
+ 5  Exhibit 2 a February 18, 2020, letter from 
+ 6  Elizabeth Trezza to all counsel in the case.  
+ 7  Again, this is another letter listing the 
+ 8  materials that have been provided to you, but you 
+ 9  don't look to be a copy on this, Dr. Longo.  
+10  Okay?
+11       A       That's fine.  I didn't receive 
+12  anything but the one letter addressed to me but 
+13  says Dear Dr. Compton.
+14       (Whereupon a document was identified as 
+15       Exhibit 3.)
+16  BY MR. ASHBY:  
+17       Q       Right.  Okay.  So let's -- and then 
+18  what we'll do is mark that letter as Exhibit 3.  
+19  Okay.  And I believe that's the letter you 
+20  described as the February 18, 2020, cover slip?
+21       A       Yes.
+22       Q       All right.  And I thought I heard you 
+23  say there were items on that list that you did 
+24  not receive.  Is that accurate?
+25       A       I did not receive the deposition of 
+                                                               11
+ 1  Rick MacPherson, the transcript, that I can see.
+ 2       Q       All right.  So certainly you have not 
+ 3  reviewed a deposition transcript of Rick 
+ 4  MacPherson; right?  
+ 5       A       That would be correct.
+ 6       Q       Why don't we -- the responses to 
+ 7  standard interrogatories you received, did you 
+ 8  make any notes or markings in those responses?
+ 9       A       I highlighted a couple of the 
+10  residences on page two just to remind me where 
+11  they were living when Nanette was getting 
+12  involved in the ceramics such as the Haster 
+13  Street apartment where she I guess formed the 
+14  company Nan Ceramics.  
+15               And I marked the Trident Street when 
+16  they moved all the materials and molds and the 
+17  pour table from her father's house in 
+18  Victorville, I think it is, where they where -- 
+19  she kept it all initially and moved that over to 
+20  their house in Anaheim, and that was just for me 
+21  to kind of remember where things were happening 
+22  involving her exposures to the use of the slip 
+23  clays.
+24       (Whereupon a document was identified as 
+25       Exhibit 4.)
+                                                               12
+ 1  BY MR. ASHBY:  
+ 2       Q       Okay.  Let's mark those responses as 
+ 3  Exhibit 4.  You brought a c.v., it sounded like, 
+ 4  so let's mark that as Exhibit 5.  We'll mark as 
+ 5  Exhibit 6 -- 
+ 6       A       Hold on.  Okay.  Go ahead.
+ 7       (Whereupon documents were identified as 
+ 8       Exhibit 5 and Exhibit 6.)
+ 9  BY MR. ASHBY:  
+10       Q       Yes.  Exhibit 5 will be the c.v., 
+11  Exhibit 6 will be the Appendix A that you 
+12  brought.  What's the title of Appendix A?  
+13       A       Johnson & Johnson Reliance and 
+14  Reviewed Documents.
+15       Q       Okay.  And how current is that 
+16  reliance and reviewed document list, if you know?
+17       A       Well, it has a date on it 1-10-2020, 
+18  but I don't think that's correct.  But all's I 
+19  can say is that's what it says right now, so it's 
+20  pretty current.
+21       Q       Can you look at that document for me 
+22  and tell me whether there are any other documents 
+23  you believe need to be included on it in the 
+24  Wagner case with respect to Johnson & Johnson?
+25       A       No.
+                                                               13
+ 1        (Whereupon off-the-record discussions
+ 2        ensued.)
+ 3  BY MR. ASHBY:
+ 4       Q       Dr. Longo, we just had a short 
+ 5  involuntarily break, and now that we're back, I 
+ 6  wanted to ask you this, is there anything you 
+ 7  need to add on to Appendix A for your opinions 
+ 8  that you're forming in the Wagner case?
+ 9       A       No, sir.
+10       Q       Okay.  The depositions that you were 
+11  provided, did you read each of those in full?
+12       A       No.  For Louis Wagner, I pretty much 
+13  read everything in Volumes 1, 2, and 3.  Volume 4 
+14  was mostly, that I could see, had to do with 
+15  Nanette's health issues, so I don't think I saw 
+16  anything, skimming through there real quick, 
+17  anything in there that had to do with any of my 
+18  opinions in the case.  Everybody else's I read 
+19  fully.
+20       Q       Did you make any notes in the 
+21  transcripts or markings in those transcripts?
+22       A       No and yes.  No notes, but I did 
+23  highlight areas.
+24       Q       And just generally, do you have a 
+25  methodology when you're highlighting in those 
+                                                               14
+ 1  transcripts?
+ 2       A       The theory is that I highlight issues 
+ 3  that I think are important for the testimony for 
+ 4  the facts.  But sometimes I'll highlight things 
+ 5  and go, why did I highlight that.  But I usually 
+ 6  try to keep it so that if I review them at a 
+ 7  later date, I can go through and literally look 
+ 8  at the highlights.  
+ 9               You know, especially for when I do 
+10  these calculations where different folks are 
+11  talking about different uses of when Nanette was 
+12  either applying Johnson's baby powder to herself 
+13  or the testimony from her sister for certain 
+14  periods of time that one day to seven years where 
+15  she was being diapered for 18 months and then 
+16  being bathed.  
+17               And so I just try to highlight those 
+18  areas, so I can go back when I do the 
+19  calculations and pull out the pertinent dates and 
+20  how it's being used and things like that.  
+21       (Whereupon a document was identified as 
+22       Exhibit 7.)
+23  BY MR. ASHBY:  
+24       Q       Okay.  You have an MVA test there 
+25  that you discussed.  Let's just mark that as 
+                                                               15
+ 1  Exhibit 7.  Did you speak with anyone at MVA 
+ 2  regarding the Wagner case?
+ 3       A       No.
+ 4       Q       Who's the author on that test that 
+ 5  you have there from MVA?
+ 6       A       Dr. Compton.  Or submitted by.
+ 7       (Whereupon a document was identified as 
+ 8       Exhibit 8.)
+ 9  BY MR. ASHBY:
+10       Q       All right.  And then just before we 
+11  started your deposition today, I was provided a 
+12  document entitled Nanette Wagner JBP Talcum 
+13  Powder Application Calculations, we'll mark that 
+14  as Exhibit 8.  So what's Exhibit 8?  
+15       A       It's from the information that was 
+16  provided in the depositions.  It is a calculation 
+17  of the number of applications that Nanette Wagner 
+18  would have had from Johnson's baby powder from 
+19  the time that she was being diapered, and I 
+20  wanted to say family members because it looked 
+21  like mother, her sister, and sometimes 
+22  grandmother, and then the times that she was 
+23  bathed, helped bathed up until maybe the age 
+24  seven.  
+25               Then after that, it wasn't clear to 
+                                                               16
+ 1  me exactly when she was bathing herself, so that 
+ 2  starts -- I did a conservative age ten through 
+ 3  2016, I believe, is when she stopped, 2015 maybe.  
+ 4  So I broke the applications down to when the 
+ 5  Johnson's baby powder was a Vermont talc source, 
+ 6  which would have been up to 2003.  And then 
+ 7  Chinese talc source from 2004 to I think it was 
+ 8  2015.  
+ 9               But I also broke that out from 2004 
+10  to 2006 because reading through the depositions 
+11  there seemed to be a cutoff at 2006.  So there's 
+12  a calculation for the number of Johnson's baby 
+13  powder bottles or container, 9 ounce, for Chinese 
+14  from 2004 to 2006 as well as 2004 to 2015.
+15       Q       When you say from reading through a 
+16  deposition there was a cutoff of 2006, what is 
+17  your understanding as to why there's confusion or 
+18  maybe a discrepancy in when she discontinued use 
+19  of Johnson's baby powder?
+20       A       Well, I would not call it a 
+21  discontinuation or confusion, there was some 
+22  discussion back and forth between plaintiff's 
+23  attorneys and defense attorneys somewhere in all 
+24  those pages of depositions when they were talking 
+25  about latency period for mesothelioma 2006, maybe 
+                                                               17
+ 1  they were agreeing to a cutoff.  
+ 2               So there was never a discrepancy 
+ 3  where somebody thought it was up to, you know, 
+ 4  2006 and somebody else said 2015, I just broke it 
+ 5  out for the two to make it easier if that's -- if 
+ 6  there was an agreement that they were only going 
+ 7  to litigate up to 2006.  That's all.
+ 8       Q       I see.  I see.  So to the extent 
+ 9  there's some agreement as to latency of the 
+10  disease, you just simply made a calculation from 
+11  2004 to 2006 for Chinese if the lawyers agree 
+12  later that the relevant exposure stopped in 2006.  
+13       A       Correct.
+14       Q       Is that right?
+15       A       That's correct.  Just to make it 
+16  easy.
+17       Q       I got it.  So if there is some 
+18  agreement between the lawyers about latency and 
+19  which exposures contribute to the disease and 
+20  that ends in 2006, it would be your opinion that 
+21  she would have used 35 Johnson's baby powder 
+22  9-ounce containers from 2004 to 2006; is that 
+23  right?
+24       A       That is correct.
+25       Q       Why did you use 9-ounce containers?
+                                                               18
+ 1       A       There was a description from Lynda 
+ 2  the sister that the containers might have been 
+ 3  about four to five inches tall, which would put 
+ 4  you just a little bit over a 4-ounce container, 
+ 5  and then her husband said to six to seven inches, 
+ 6  I think it was, which makes it a little taller 
+ 7  than a 9-ounce container.  But I believe a 
+ 8  15-ounce container is too large, so I tried to 
+ 9  pick a medium there of 9 ounces.  
+10               But if it is all 15-ounce containers, 
+11  obviously the number of containers will go down.  
+12  If they were all 4 ounces, they'll go up.  So 
+13  that's why I picked 9 ounce.
+14       Q       What's your understanding of when 
+15  Johnson & Johnson began using 9-ounce containers 
+16  for Johnson's baby powder?
+17       A       That, I don't know.  The only reason 
+18  I've -- obviously, current containers are sold in 
+19  1.5 ounce, 4 ounce, 9 ounce, 15 ounce and 22 
+20  ounce.  I don't think you get something different 
+21  than that until you get back to the metal 
+22  containers.  
+23               And I'm just going from memory what I 
+24  see for the different containers in the 
+25  historical Johnson & Johnson, historical 
+                                                               19
+ 1  containers from the chain of custody sheets for 
+ 2  their samples that tell you what size container 
+ 3  it was, and I don't believe I've seen anything 
+ 4  other than what 1.5, 4, 9, 15, and 22 for the 
+ 5  plastic containers.  
+ 6               And starting in 1970 is when her 
+ 7  exposures when she was born would have all been 
+ 8  plastic containers.  Now, I may be wrong about 
+ 9  that, but that's my recollection.
+10       Q       Okay.  And it looks to me like you 
+11  used 9-ounce containers for both Vermont and 
+12  Chinese-sourced talc when making these 
+13  calculations on Exhibit 8; is that correct?
+14       A       That's correct.
+15       Q       Was that because the descriptions of 
+16  the bottle size were the same for the periods of 
+17  exposure from 1980 to 2016?
+18       A       The only two descriptions are from 
+19  Lynda, which would have been up to about 1977, 
+20  and she was -- and she stated the four to five, 
+21  and then the husband from '89 on stated that they 
+22  were, I think, six to seven inches.  That's the 
+23  only two descriptions I have, and this is -- and 
+24  9 ounces is sort of in the middle here.
+25       Q       All right.  Other than what you told 
+                                                               20
+ 1  me about in terms of the bottles that you have or 
+ 2  MAS has analyzed or reviewed as part of this 
+ 3  ongoing study that MAS is doing, do you have any 
+ 4  other information?  So in other words, deposition 
+ 5  transcripts, interrogatory responses, documents 
+ 6  telling you or informing you as to when Johnson & 
+ 7  Johnson used different sized containers over 
+ 8  different years?
+ 9       A       No.
+10       Q       Let me just scan this real quick, 
+11  Dr. Longo.
+12              THE WITNESS:  Sure.  If you want, we 
+13  can take a five-minute break.  It's hard to 
+14  believe it's almost been an hour.
+15              MR. ASHBY:  I don't think it's been 
+16  an hour.  We started late and then we were off 
+17  for the phone for a bit, but if you want to go 
+18  outside and take a break, go for it.  
+19              THE WITNESS:  I was just going to 
+20  give you a few minutes to read it.
+21              MR. ASHBY:  Yeah, that's fine.  If 
+22  you want to go do what you want to go do what 
+23  you've got to do.
+24              THE WITNESS:  I'm going to go get a 
+25  cup of coffee.
+                                                               21
+ 1       (Proceedings in recess, 12:17 p.m. to 
+ 2       12:24 p.m.)
+ 3  BY MR. ASHBY:
+ 4       Q       Dr. Longo, when was MAS first 
+ 5  retained in the Wagner case?
+ 6       A       I would assume some time before 
+ 7  February 18, 2020.
+ 8       Q       Do you know how MAS was retained in 
+ 9  the Wagner case?
+10       A       Probably a phone call to my 
+11  assistant.
+12       Q       Do you have any email between MAS and 
+13  the counsel for the plaintiffs in the case -- 
+14       A       That, I don't know.
+15       Q       -- that's related to the Wagner case?
+16       A       I don't believe I do.
+17       Q       Would someone at MAS have emails 
+18  between counsel for the plaintiffs and MAS with 
+19  respect to the Wagner case?
+20       A       Again, I don't know.
+21       Q       Have you had any telephone 
+22  discussions with counsel for the plaintiffs in 
+23  the Wagner case that are related to the Wagner 
+24  case?
+25       A       Yes.
+                                                               22
+ 1       Q       And who did you speak with?  
+ 2       A       I spoke to William Ruiz yesterday.
+ 3       Q       And how long did you speak to him?
+ 4       A       Five minutes maybe.
+ 5       Q       What did you discuss?
+ 6       A       I called him and said I read in the 
+ 7  deposition that the slip clay was analyzed that 
+ 8  was taken out of the garage or was -- not 
+ 9  analyzed, that the plaintiff's attorneys had 
+10  taken it and was it analyzed, because we hadn't 
+11  analyzed it.  
+12               And the response was, yes, and I 
+13  said, can I get a copy of the report and that's 
+14  what I received.
+15       Q       Go ahead.  
+16       A       And that was it.
+17       Q       All right.  Other than Mr. Ruiz, have 
+18  you talked to any other lawyers representing 
+19  Ms. Wagner regarding the Wagner case?
+20       A       No, sir.
+21       Q       Have you talked to any other experts 
+22  in the Wagner case?
+23       A       No.
+24       Q       Recently Dr. Madigan came to the MAS 
+25  laboratory in late February; is that right?
+                                                               23
+ 1       A       Yes.
+ 2       Q       He came there with Joe Satterley; is 
+ 3  that right?
+ 4       A       That is correct.
+ 5       Q       And you and Mr. Madigan discussed 
+ 6  certain of your findings regarding Johnson & 
+ 7  Johnson baby powder; is that right?
+ 8       A       Yes.
+ 9       Q       What topics regarding your testing of 
+10  Johnson & Johnson products did you discuss with 
+11  Mr. Madigan?
+12       A       Just a update on where we were with 
+13  containers of Johnson's baby powder that we have 
+14  analyzed and produced reports so that he could 
+15  get an up-to-date amount of samples.
+16              MR. RUIZ:  You know, let me interpose 
+17  an objection here, Mr. Ashby.  I know who 
+18  Mr. Satterley is.  I know who Dr. Madigan is.  
+19  Neither one is involved in this case.  
+20              My concern, of course, is that if 
+21  they're discussing things with Dr. Longo about a 
+22  different case, that may be subject to work 
+23  product protection in the other case, depending 
+24  on where that case is venued, when that case is 
+25  set, et cetera.  
+                                                               24
+ 1              All of -- any information about those 
+ 2  discussions may be nondiscoverable under 
+ 3  applicable law, but I mean, I can assume it's a 
+ 4  California case because I do know Mr. Satterley, 
+ 5  in which case it would be nondiscoverable, and 
+ 6  I'm not an expert on every state's laws on the 
+ 7  matter, but I think most states protect those 
+ 8  kind of communications until there's an expert 
+ 9  disclosure.
+10              MR. ASHBY:  All right.  So are you 
+11  advising him not to answer any more of these 
+12  questions, which I just want to know what the 
+13  ground rules are.  I don't want to get into an 
+14  argument.  I'm happy to move on if you want to 
+15  advise him not to answer.
+16              MR. RUIZ:  I think that makes sense.  
+17  I mean, again, I just don't know anything about 
+18  this, so if there's a potential that it is 
+19  invading on work product, which may be waived 
+20  because Mr. Satterley may disclose Dr. Longo and 
+21  Dr. Longo may testify in whatever case they were 
+22  discussing, I don't know.  
+23              And so in the absence of information, 
+24  it would be best to err on the side of caution 
+25  and I think it makes sense to move on.  
+                                                               25
+ 1              MR. ASHBY:  I mean, you said Madigan, 
+ 2  Dr. Madigan is not in the Wagner case; is that 
+ 3  right?  
+ 4              MR. RUIZ:  I believe that's correct.  
+ 5  I'm sorry, I don't know.  I will double check, 
+ 6  you know, right now, but as far as I know, that's 
+ 7  correct.
+ 8              THE WITNESS:  If I could volunteer, 
+ 9  we did not talk anything about the Wagner case.
+10  BY MR. ASHBY:
+11       Q       Right.  You guys just talked 
+12  generally about your reports; right?  
+13       A       No, it had to do with another case.
+14       Q       Oh, it did?
+15       A       Yes, sir.
+16       Q       Okay.
+17              MR. RUIZ:  So that would highlight my 
+18  concern.
+19              MR. ASHBY:  Okay.  So do you want to 
+20  just advise him not to answer, then you can 
+21  agree, and then we can move on to something else?  
+22              MR. RUIZ:  Yes, I'd appreciate that.
+23              MR. ASHBY:  So all right.  I just 
+24  need you to advise him on the record, and then he 
+25  can say he doesn't answer and then I can move on.  
+                                                               26
+ 1              MR. RUIZ:  Sure.  For the reasons 
+ 2  I've expressed and lack of information to make an 
+ 3  informed decision, I would advise Dr. Longo to 
+ 4  maintain the discussions he's had with 
+ 5  Mr. Satterley about Mr. Satterley's other cases 
+ 6  in confidence until such time as has been 
+ 7  disclosed under the law in whatever case that 
+ 8  was.  
+ 9  BY MR. ASHBY:
+10       Q       Okay.  So, Dr. Longo, are you going 
+11  to take the advice from the counsel for the 
+12  Wagners with respect to not currently discussing 
+13  whatever issues were discussed with Dr. Madigan 
+14  when he and Mr. Satterley came to your office in 
+15  late February?  
+16       A       Yes, I am.
+17              MR. ASHBY:  Okay.  Give me one 
+18  second.  Somebody just knocked on my door.  
+19        (Whereupon off-the-record discussions
+20        ensued.)
+21              MR. ASHBY:  I'm back.  
+22              MR. RUIZ:  And gratefully, I have had 
+23  an opportunity to confirm my suspicion.  We did 
+24  not retain Dr. Madigan in the Wagner case.  
+25              MR. ASHBY:  Understood.
+                                                               27
+ 1  BY MR. ASHBY:  
+ 2       Q       Dr. Longo, did you receive any other 
+ 3  litigation reports from other litigation 
+ 4  consultants or experts in the Wagner case other 
+ 5  than the one that you discussed and we've marked 
+ 6  from MVA?
+ 7       A       No, I haven't.
+ 8       Q       Did you receive any expert reports in 
+ 9  the Wagner case from experts for the defendants?
+10       A       No, sir.
+11       Q       Did you receive a report from someone 
+12  named Christy Barlow?
+13       A       Not that I recall.
+14       Q       All right.  So you certainly haven't 
+15  reviewed any report from Christy Barlow; right?
+16       A       I have not.
+17       Q       Okay.  Other than the application 
+18  analysis related to Johnson's baby powder that we 
+19  marked as Exhibit 8, have you prepared any other 
+20  reports or writings that are specific to only the 
+21  Wagner case?
+22       A       No, sir.
+23       Q       Has MAS analyzed any tissue materials 
+24  in the Wagner case?
+25       A       No, sir.
+                                                               28
+ 1       Q       Has MAS analyzed any bottles that 
+ 2  were in the custody of the plaintiffs in the 
+ 3  Wagner case?
+ 4       A       No, sir.
+ 5       Q       Has MAS previously testified as an 
+ 6  expert on the behalf of the Maune Raichle firm in 
+ 7  talc litigation?
+ 8       A       I don't believe so.  I may be wrong 
+ 9  on that, but I don't believe I have.
+10       Q       What about -- okay, so does that mean 
+11  at least as far as you are concerned, Dr. Longo 
+12  himself has not testified on behalf of the Maune 
+13  Raichle firm in talc litigation until today?
+14       A       I don't think so.  If I did, I don't 
+15  recall the deposition.
+16       Q       MAS has testified for the Maune 
+17  Raichle firm as experts in asbestos litigation 
+18  generally in the past; correct?
+19       A       I believe so.
+20       Q       And how far back does that 
+21  relationship for MAS and Maune Raichle go with 
+22  respect to acting as experts in asbestos 
+23  litigation?
+24       A       I don't know.
+25       Q       Is it more than ten years?
+                                                               29
+ 1       A       I don't know.
+ 2       Q       Do you have any estimate as to how 
+ 3  far back the relationship with Maune Raichle and 
+ 4  MAS goes in acting as experts in litigation or 
+ 5  asbestos expert litigation, I should say?
+ 6       A       I would only be speculating.  I 
+ 7  really just don't know.
+ 8       Q       Do you know how much MAS has billed 
+ 9  to Maune Raichle over the years acting as experts 
+10  in asbestos litigation?
+11       A       No, sir.
+12       Q       Do you have an estimate as to how 
+13  much MAS has billed to Maune Raichle over the 
+14  years when acting as experts in asbestos 
+15  litigation?
+16       A       I don't.
+17       Q       Has MAS billed Maune Raichle so far 
+18  in the Wagner case?
+19       A       I have not.
+20       Q       The last time you and I talked, the 
+21  number of clients that MAS had in which you acted 
+22  as an expert in talc litigation was approximately 
+23  10.  Do you have in mind what the number now is 
+24  currently with respect to your clients in talc 
+25  litigation?
+                                                               30
+ 1       A       I don't think there's any more than 
+ 2  that estimate of 10 that I'm testifying for.  I 
+ 3  would say I think it's the same.
+ 4       Q       And is Maune Raichle now part of the 
+ 5  10 clients that you testify for in talc 
+ 6  litigation?
+ 7       A       That's a good point.  If it is, if, 
+ 8  in fact, it is 10 different clients, then this 
+ 9  would be 11.
+10       Q       Okay.  So is Maune Raichle the latest 
+11  law firm that has been added to your roster of 
+12  law firms that you will testify for in 
+13  asbestos -- in talc litigation?
+14       A       I'm not sure I would describe it as a 
+15  roster.  I work for clients that need, you know, 
+16  want to hire me for my expertise, and it just 
+17  depends on if I have time or not to add 
+18  additional clients.
+19       Q       All right.  That's fine.  Why don't I 
+20  take out the word roster and use a better term.  
+21  Is Maune Raichle the latest law firm that you 
+22  testify for now in talc litigation?
+23       A       Certainly probably this is the first 
+24  one, is the latest law firm, which I'm giving a 
+25  deposition in talc litigation or cosmetic talc.
+                                                               31
+ 1       Q       And who decides whether or not you 
+ 2  will accept a retention from a law firm in talc 
+ 3  litigation that you have not previously worked 
+ 4  for in the past?
+ 5       A       Well, previously I've worked for this 
+ 6  firm in the past, and I think I've worked for 
+ 7  certain attorneys in this law firm that may have 
+ 8  been, you know, co-counsel such like you 
+ 9  Christian Hartley, Christian Hartley was 
+10  co-counsel with Jerry Block in that case in New 
+11  York.  
+12               I don't look at it as really a new 
+13  client since he was second chair in that 
+14  litigation, was it the Brook case, I think, or 
+15  the Brock case.  So, in fact, I wouldn't even 
+16  categorize this as a new client.
+17       Q       Understood.  So to the extent you 
+18  take on a new client to testify for in talc 
+19  litigation, who decides whether or not you will 
+20  take on that client?
+21       A       That would be my decision.
+22       Q       Do any of the law firms that you 
+23  currently work for in the talc litigation have 
+24  the ability to veto any assignment or new 
+25  assignment that you are considering taking in 
+                                                               32
+ 1  talc litigation?
+ 2       A       I'm sorry?  
+ 3              MR. RUIZ:  Vague.
+ 4              THE WITNESS:  I'm sorry.  Could you 
+ 5  repeat that?  
+ 6  BY MR. ASHBY:  
+ 7       Q       Sure.  To the extent you're 
+ 8  considering taking on a new law firm as a client 
+ 9  in which you'd act as an expert in talc 
+10  litigation, do any of the law firms that you 
+11  currently act as an expert for in talc litigation 
+12  have the ability to tell you not to accept that 
+13  new retention?
+14       A       No law firm I currently work for have 
+15  any jurisdiction over me as who I can work for or 
+16  who I cannot work for.  I don't have that kind of 
+17  relationship with these law firms.
+18       Q       We marked, I think, I -- yeah, I 
+19  marked your c.v. as Exhibit 5 that you brought.  
+20  Is there a date on that c.v.?  
+21       A       3-12-2020.
+22       Q       All right.  So that sounds pretty 
+23  current to me.  
+24       A       It is.
+25       Q       Is there something that you added 
+                                                               33
+ 1  today to it to make it today's date?
+ 2       A       I added something a few days ago and 
+ 3  finally asked my assistant to print it out on our 
+ 4  letterhead and make copies so that I could just 
+ 5  grab, so she just used today's date.  But a few 
+ 6  days ago I added, or maybe a week ago, I added 
+ 7  the FDA presentation on February 4, but I wanted 
+ 8  it -- copies of it put on letterhead so that I 
+ 9  could just grab it out of the file instead of 
+10  asking my assistant to print it out for me each 
+11  time.
+12       Q       When you say you added the FDA 
+13  presentation, let me just ask you this because I 
+14  can't see it.  Did you add the FDA presentation 
+15  as a speaking engagement or did you add it as 
+16  conference materials or some other materials that 
+17  you brought or both?
+18       A       Yeah, I just put it under 
+19  publications and presentations, and it was a 
+20  presentation, so I memorialized it.
+21       Q       Okay.  So essentially you're 
+22  referencing, I guess, then the fact that you 
+23  spoke at that FDA meeting as well as prepared a 
+24  PowerPoint that you discussed; is that fair?
+25       A       That's fair.
+                                                               34
+ 1       Q       Okay.  I can't, you know, I didn't 
+ 2  ask you this on Monday, so since you brought up 
+ 3  FDA, let me ask you now.  
+ 4               Did you add anything to the record in 
+ 5  the last few weeks after presenting at the FDA 
+ 6  meeting?
+ 7       A       No.
+ 8       Q       I feel like you told me you were 
+ 9  thinking about doing that.  Is there some reason 
+10  why you chose not to add any more information to 
+11  the record?
+12       A       Yes.
+13       Q       And why is that?
+14       A       Well, the area I talked about in the 
+15  presentation was, you know, using heavy liquid 
+16  density separations for amphiboles in chrysotile, 
+17  and I didn't really have much more, anything to 
+18  add to that.  
+19               I gave the references to the Colorado 
+20  School of Mines in that presentation, so I let 
+21  others who want to put comments in on things they 
+22  thought were important.  Well, of course, I let 
+23  others, they're going to do it any way.
+24       Q       So is it fair to say then that the 
+25  record that you submitted at the time of the 
+                                                               35
+ 1  meeting orally and through -- and by way of the 
+ 2  PowerPoint presentation you felt was complete and 
+ 3  needed no supplementation?
+ 4       A       I felt it was appropriate for 
+ 5  comments.  Was it complete, you know, maybe at 
+ 6  some point FDA may want to, you know, sit down 
+ 7  and go over the protocol if they decide to put 
+ 8  that in as a requirement for their 
+ 9  recommendations or white paper or whatever, 
+10  however they transmit their final thoughts on it.  
+11  But I didn't think it was the appropriate time to 
+12  stick the whole protocol in.
+13       Q       All right.  How much time have you 
+14  spent on the Wagner case to date?
+15       A       Oh, I would estimate somewhere 
+16  between 15 and 20 hours.
+17       Q       And what did you do during that 15 to 
+18  20 hours for the Wagner case?
+19       A       Reviewed all this information twice, 
+20  spent the time to go through and type up the 
+21  calculations, put the material together, so 
+22  that's it.
+23       Q       All right.  So based on your review 
+24  of those materials, what do you understand 
+25  Ms. Wagner's use of Johnson's baby powder to be?
+                                                               36
+ 1       A       From the time she was born until the 
+ 2  age of seven, she had various family members 
+ 3  either diapering, changing her diaper and bathing 
+ 4  her, assisting her in being bathed until about 
+ 5  the age of seven for bathing, and until, her 
+ 6  sister Lynda testified to, that she was pretty 
+ 7  much out of diapers at 18 months.  
+ 8               As for baths, I gave it seven years, 
+ 9  one a day, and then the sister testified at about 
+10  the age of seven or so she started helping her to 
+11  bathe herself.  I didn't really see testimony 
+12  where I could say exactly was it eight years old 
+13  or nine years old, so I used ten years as when 
+14  she was bathing herself and there was testimony 
+15  she was using baby powder at that point.  
+16               Then we have the testimony from her 
+17  husband Louis that in 1989 -- so starting in 1980 
+18  to '88 you have some testimony from the brother 
+19  that they're using Johnson's baby powder -- so I 
+20  felt it was a reasonable assumption that she 
+21  continued to use Johnson's baby powder through 
+22  the time that she got married.  
+23               And her husband Louis testified that 
+24  she was very regiment in doing the same thing 
+25  over and over.  At that time when her husband 
+                                                               37
+ 1  testified that she was using full body 
+ 2  applications and, in fact, he stated that a 
+ 3  number of occasions she would ask him to do her 
+ 4  back.  And that was her exposures up until the 
+ 5  time she stopped using Johnson's baby powder, I 
+ 6  think it was 2015.  Since it was -- go ahead.
+ 7       Q       Go ahead.  Are there three categories 
+ 8  of applications with respect to Ms. Wagner's use 
+ 9  of Johnson's baby powder, those being diapers 
+10  being changed by family members, one; two, 
+11  Nanette being bathed; and three, Nanette's own 
+12  personal use of Johnson's baby powder?
+13       A       Correct.  I kind of break it down 
+14  into two categories where the baby powder was 
+15  being applied to her.  And the subcategory there 
+16  would be diapers and being bathed and then 
+17  applying it to herself after probably around the 
+18  age of ten, I'm assuming showers.  And that's the 
+19  only use she had it for was to put it on after 
+20  she took a shower.
+21       Q       All right.  So that first category 
+22  applied to her, that would be, if I'm reading 
+23  Exhibit 8 correctly, 1970 to 1977?
+24       A       Correct.
+25       Q       And for that second category of 
+                                                               38
+ 1  applying it to herself, that would be 1980 to 
+ 2  2016; is that correct?
+ 3       A       Correct.  And that might have been -- 
+ 4  I don't recall when she passed away.  That could 
+ 5  have been 2015.  I just, I don't know if I've got 
+ 6  that correct.
+ 7       Q       So the applying to herself category 
+ 8  is either 1980 to 2015 or 1980 to 2016; right?
+ 9       A       Yes, sir.
+10       Q       Before I forget, you won't be giving 
+11  any medical causation opinions; correct?
+12       A       That is correct.
+13       Q       And if I heard you correctly, your 
+14  understanding of the types of applications 
+15  regarding Ms. Wagner's use were when being 
+16  applied to her were diapers being changed and 
+17  then when Nanette was being bathed; is that 
+18  right?
+19       A       That is correct.
+20       Q       And then her own personal use had to 
+21  do with after shower applications; correct?
+22       A       Correct.
+23       Q       Any other types of applications with 
+24  respect to the use of Johnson's baby powder that 
+25  you noted when reviewing the deposition 
+                                                               39
+ 1  transcripts?
+ 2       A       I didn't see any other types of 
+ 3  applications either from her or from her family 
+ 4  members.
+ 5       Q       With respect to the source of the 
+ 6  containers of Johnson's baby powder used by 
+ 7  Ms. Wagner or on Ms. Wagner, do you have in mind 
+ 8  a source mine for those containers?  
+ 9       A       Yes.
+10       Q       And which source mines in your 
+11  opinion were the mines that sourced the baby 
+12  powder used by or on Ms. Wagner?
+13       A       From 1970 to approximately 2003 the 
+14  source mine would have been Vermont.  Starting in 
+15  2004 until the stopping point, either 2015, 2016, 
+16  the source mine would have been Chinese.
+17       Q       Based on your review of the 
+18  materials, would you agree that Ms. Wagner was 
+19  not exposed to cosmetic talc sourced from Italy 
+20  at least with respect to a Johnson's baby powder 
+21  product?
+22       A       I would agree.
+23       Q       You understand that the Vermont talc 
+24  source for Johnson's baby powder was more than 
+25  one Vermont mine over the years; correct?
+                                                               40
+ 1       A       Correct.
+ 2       Q       The Vermont talc source number that I 
+ 3  see in Exhibit 8 appears to be 208 Johnson's baby 
+ 4  powder 9-ounce containers.  No, no, I'm sorry. 
+ 5  408 Johnson's baby powder 9-ounce containers.  
+ 6  Have I stated that accurately?
+ 7       A       You did.
+ 8       Q       Okay.  Of those 408 Johnson's baby 
+ 9  powder 9-ounce containers, are you able to 
+10  ascribe to me which ones are from the different 
+11  Vermont mines that were used to source Johnson's 
+12  baby powder during that period?
+13       A       No, sir, I didn't break it out for 
+14  that.  So I'm not able as I sit here versus my 
+15  office, I guess, couldn't tell you, you know, in 
+16  Hammondsville sort of went by, you know, when 
+17  they went over to Argonaut and then the others, 
+18  so, you know, I have that information, but I 
+19  didn't break it out.
+20       Q       Do you know how many different mines 
+21  Johnson & Johnson used in Vermont to source 
+22  Johnson's baby powder talc over the period of 
+23  1980 to 2003?
+24       A       Hammondsville, Argonaut, maybe 
+25  Rainbow, and there's one more.  I think there's 
+                                                               41
+ 1  four.
+ 2       Q       Hamm?
+ 3       A       Hamm.  Thank you.  I almost had it, 
+ 4  but you beat me to it.
+ 5       Q       Well, the Hammondsville, Hamm one is 
+ 6  always confusing; right?
+ 7       A       It is.
+ 8       Q       Have you calculated a lifetime dose 
+ 9  of exposure to asbestos for Ms. Wagner?
+10       A       No, sir.
+11       Q       Have you calculated a lifetime dose 
+12  of exposure to asbestos for Ms. Wagner from 
+13  exposure to Johnson & Johnson talcum powder 
+14  products?
+15       A       I have not.
+16       Q       Were you asked to investigate whether 
+17  she had exposures to asbestos from sources or 
+18  products other than cosmetic talc?
+19       A       I was not asked, but reading the 
+20  depositions and looking at all the information 
+21  and examinations by the defendants, I can see 
+22  that besides Johnson's baby powder she had 
+23  exposure in my opinion to the ceramics clay slips 
+24  that looks like from the testimony contained 
+25  about anywhere from 40 to 50 percent talc.  
+                                                               42
+ 1               Talc coming from the California 
+ 2  desert area, that would have tremolite in it, 
+ 3  that talc is strictly tremolitic, but it has 
+ 4  winchite and richterite, so Death Valley.  The 
+ 5  Nytal, of course, has tremolite and 
+ 6  anthophyllite.  The analysis by MVA in my opinion 
+ 7  shows that is definitely Nytal talc.  
+ 8               And pouring those, mixing up those 40 
+ 9  or 50-pound bags of the clay slip containing that 
+10  type of talc in my opinion would have caused 
+11  Nanette to have significant exposures to 
+12  tremolite, tremolitic amphiboles as well as 
+13  anthophyllite amphiboles.  
+14               And what's unusual about the 
+15  Gouverneur mines is that the anthophyllite in 
+16  there has no iron, and you really only have two 
+17  mines in my opinion in the United States, that 
+18  one being more industrial, the Gouverneur mines 
+19  and the Vermont mines, which also has 
+20  anthophyllite, but that anthophyllite we never 
+21  see anything that does not have low iron in it.  
+22               So there's a significant exposure 
+23  there during those years she was pouring and 
+24  making her own wet slip.  
+25               I looked at very carefully the 
+                                                               43
+ 1  remodel that they did on their 1950-ish house 
+ 2  where they redid the bathroom where Louis talked 
+ 3  about using a hammer and chisel to chip out the 
+ 4  lath and plaster that's in there on the walls.  
+ 5  Those materials in my opinion do not contain 
+ 6  asbestos.  
+ 7               He ripped up linoleum that was on the 
+ 8  floor, but he was shoving everything out through 
+ 9  the window.  Linoleum is sort of a catchall 
+10  phrase for any solid sheets of flooring.  I can't 
+11  say that it had asbestos or not.  But he did say 
+12  that he took the screen outs of the window in the 
+13  bathroom and threw it out on the yard, and that 
+14  his wife would take a towel and put it along the 
+15  bottom of the door to keep the dust in.  So I 
+16  don't have an opinion, I don't see that there was 
+17  any exposure.  
+18               He talked about doing brakes on a few 
+19  cars that were all disc brakes where he removed 
+20  the pads.  He didn't do any sanding.  He didn't 
+21  do any compressed air blow out.  He wiped the 
+22  rotors out.  I didn't see how there could be any 
+23  exposure there.  
+24               The son talked about how the dad 
+25  would try to do brake jobs, and they thought it 
+                                                               44
+ 1  was amusing watching him because he didn't know 
+ 2  how to do it, it may take him a few hours.  But I 
+ 3  didn't get a sense that there was compressed air 
+ 4  work or anything that would equate to secondary 
+ 5  exposure, so I really don't have an opinion.  
+ 6               So other than the talc used in for 
+ 7  the ceramics and the Johnson's baby powder, I 
+ 8  didn't see any indication that there were any 
+ 9  other exposures.  I wasn't asked to do that, but 
+10  I wasn't told not to.  
+11               When I read through the depositions, 
+12  I try to take note of any other potential 
+13  exposure.
+14       Q       Did you investigate any household 
+15  member exposures to asbestos that Ms. Wagner may 
+16  have had prior to her marriage?  Well, just prior 
+17  to her marriage?
+18       A       There was in-depth depositions about 
+19  who worked where, and I didn't see any jobs where 
+20  I would expect them to have been exposed.  You 
+21  know, Nanette worked at this aluminum extrusion 
+22  company where they were making the claws that go 
+23  down in those little, those machines that when my 
+24  kids were little would make me insane asking for 
+25  quarters and 50 cents.  You know, I'd like to 
+                                                               45
+ 1  have asked them how they rigged those claws not 
+ 2  to really grab those stuffed bears in there.  
+ 3               But she worked as a secretary in an 
+ 4  office space that was not associated with the -- 
+ 5  where the manufacturing was going on because 
+ 6  since they were extruding aluminum, they'd have 
+ 7  to heat it up.  And I didn't see any jobs that 
+ 8  any of the siblings or the father did or the 
+ 9  mother, I think she was just -- maybe she was 
+10  just a housewife, that led me to believe that 
+11  there was any substantial exposure to asbestos 
+12  that would equate to secondary exposure.
+13       Q       Do you know what was her father's 
+14  occupation?
+15       A       It looked like he was an electrical 
+16  engineer, and what he basically did was draw -- 
+17  was develop the schematics to put in machines to 
+18  make them run such as equipment for making parts 
+19  and stuff.  So he was sort of a white collar 
+20  worker there.  
+21               He wasn't an electrician, he was an 
+22  electrical engineer.  So his job was to develop 
+23  schematics so various parts of equipment could 
+24  run, but I know he worked for Gillette for a 
+25  while.  I'm assuming it had to do with how the 
+                                                               46
+ 1  pins and shavers and whatnot were manufactured.
+ 2       Q       And what did you call it -- what did 
+ 3  you call the facility she worked at in the 
+ 4  office?  Did you call it a plant?  I don't want 
+ 5  to put plant in your mouth if that's not the 
+ 6  word.  
+ 7       A       It was a manufacturing unit that 
+ 8  extruded aluminum.  They would get aluminum bars 
+ 9  in and they would have to heat it in some manner 
+10  to get it where they could make it soft, so they 
+11  could extrude it into the pieces.  Louis knew the 
+12  name of the facility, but I don't remember it.
+13       Q       When you reviewed the material and 
+14  were reading that testimony, I understand that 
+15  you didn't see any opportunity for exposure there 
+16  with respect to her job description.  But just 
+17  generally, would you expect a manufacturing unit 
+18  like that in that era to have asbestos-containing 
+19  products on the premises?
+20       A       Maybe.
+21              MR. RUIZ:  Incomplete hypothetical.  
+22              THE WITNESS:  She worked there, the 
+23  husband thought she worked there five years, but 
+24  her social security records showed I think she 
+25  was only there a year and that was '92 to '93.  
+                                                               47
+ 1  It depends on how long it was there and how high 
+ 2  a temperature you had to use to extrude the 
+ 3  aluminum and what power source you had.  So all's 
+ 4  I can tell you is it's possible.
+ 5  BY MR. ASHBY:  
+ 6       Q       Did you do any investigation to 
+ 7  determine those various factors that you just 
+ 8  outlined in terms of the temperature, the types 
+ 9  of heating units at the facility to know whether 
+10  or not they contained asbestos?
+11       A       No, sir, I didn't think it was 
+12  necessary since that's not where she worked.  She 
+13  had to go across a parking lot to get into the, 
+14  he called it a warehouse space, but the 
+15  manufacturing end of that, so I didn't think it 
+16  was warranted.
+17       Q       On Exhibit 8 which are your 
+18  calculations for the applications of Johnson's 
+19  baby powder for Ms. Wagner, I realize that much 
+20  of this comes from the testimony that you've 
+21  reviewed in the case.  So I wanted to focus on 
+22  any assumptions you were making in arriving at 
+23  these calculations.  
+24               What assumptions, if any, were 
+25  necessary for you to ultimately determine the 
+                                                               48
+ 1  amount of containers of Johnson's baby powder 
+ 2  that Ms. Wagner would have used from 1970 to 
+ 3  2006?
+ 4       A       The main assumption is from the age 
+ 5  of ten, it's not really assumption because I 
+ 6  believe her brother testified that she continued 
+ 7  to use these products when -- from that age of 
+ 8  ten, and he couldn't say that he was there every 
+ 9  day from the age of ten to the age of 19 when she 
+10  got married.  
+11               The other issue I looked at was how 
+12  much during the time when she bathed herself.  
+13  And I relied on a document that Johnson & Johnson 
+14  has where they did human testing for the amounts 
+15  of Johnson's baby powder used after showers, and 
+16  they had what they called a full-body 
+17  application, which was for a five foot, four -- 
+18  let me find it.  
+19               Five foot, five female, 125 pounds, 
+20  and she did full body, and she used 15.3 grams.  
+21  So the assumption I made was that starting at the 
+22  age of ten, having a smaller body, smaller 
+23  weight, she wouldn't be using that much.  But by 
+24  the time she got to the age of 18 and 19, and 
+25  you're essentially an adult, at that point I 
+                                                               49
+ 1  would expect her to be using close to that.  
+ 2               Her husband testified that she would 
+ 3  take two to three minutes for application with 
+ 4  multiple shakes.  For the study, for the J&J 
+ 5  study, the application time was one minute and 40 
+ 6  seconds, I believe.  
+ 7               So I tried to do a gradual that it 
+ 8  would be at the age of ten, four or five grams.  
+ 9  As she got older, the amount of grams would 
+10  increase.  So I tried to use a conservative ten 
+11  grams for the entire time, even though the 
+12  majority of applications are in bathing would 
+13  have been when she was an adult from 1989 all the 
+14  way up through the 2000s and 2015 or 2016.  So I 
+15  thought it was a conservative estimate.  
+16  Everything else was pretty straightforward.
+17       Q       All right.  So it sounds to me like 
+18  the two categories of asbestos exposure that you 
+19  have identified in your review of the material 
+20  relate to the cosmetic talc and industrial talc; 
+21  is that fair?
+22       A       That's fair.
+23       Q       And specifically to cosmetic talc is 
+24  her uses of or being used upon her of Johnson's 
+25  baby powder, that's one category; right?
+                                                               50
+ 1       A       Yes, sir.
+ 2       Q       And then the other category relates 
+ 3  to industrial talc that was used for ceramics; is 
+ 4  that right?  
+ 5       A       That is correct.
+ 6       Q       With respect to her exposures to 
+ 7  asbestos related to cosmetic talc, do you have 
+ 8  opinions regarding the range of exposures stated 
+ 9  in fibers per cc as they related to Ms. Wagner's 
+10  uses?
+11       A       I would say an average range with the 
+12  understanding that there would be -- strike that.  
+13               My opinion is that the average range 
+14  would be approximately 0.01 fibers per cc to 1 
+15  fiber per cc with the understanding that there 
+16  would be lower exposures all the way to 
+17  nondetects and higher exposures.  
+18               I also have the opinion that more 
+19  likely than not when she was using 
+20  Vermont-sourced talc from 1970 to 2003, more 
+21  likely than not when she's using those 
+22  containers, she would have been exposed to 
+23  airborne asbestos.  
+24               And I base that on the fact that I 
+25  think currently all the containers, especially 
+                                                               51
+ 1  during this time frame 1970 to 2003 for just 
+ 2  containers, you know, I don't want to get in the 
+ 3  argument of the railroad car, railcar samples, 
+ 4  the positive results for Vermont samples is a 
+ 5  little bit over 80 percent.  
+ 6               Now, for the Chinese talc, it would 
+ 7  be my, she may have had a probable exposure to 
+ 8  amphibole asbestos, and I currently don't have 
+ 9  enough data or enough different samples tested on 
+10  Chinese-sourced Johnson's baby powder other than 
+11  if a report is already issued.  I think we're 36 
+12  percent positive out of 20 samples, and I think 
+13  right now on reports I've issued, I have two 
+14  Chinese that were positive for chrysotile.  
+15               But I've not calculated that into the 
+16  overall because I want to get more samples and 
+17  just see what the positive rate for chrysotile is 
+18  in the Chinese samples.
+19       Q       Okay.  So it sounds -- you gave me 
+20  sort of two different opinions there.  We can 
+21  address both.  The first it sounded to me like 
+22  the actual exposure range that you'd expect for 
+23  Ms. Wagner's types of uses would be approximately 
+24  on average 0.01 fibers per cc to 1 fiber per cc.  
+25  Is that what you stated?
+                                                               52
+ 1       A       That's what I stated.
+ 2       Q       Then the second thing I think you 
+ 3  stated had more to do with whether or not she 
+ 4  would have been exposed on more likely than not 
+ 5  basis to asbestos at approximately those average 
+ 6  ranges; is that right?
+ 7       A       Yes.
+ 8       Q       And with respect to the 
+ 9  Vermont-sourced talc, you do hold the opinion 
+10  that more likely than not she would have been 
+11  exposed to asbestos during the period of 1970 to 
+12  2003; is that right?
+13       A       That is correct.
+14       Q       Then with respect to the 
+15  Chinese-sourced talc from 2004 to -- well, you 
+16  didn't give me a year.  So for the -- so I'll 
+17  strike all that.  
+18               For that period of time that she used 
+19  Chinese-sourced talc, does it make any sense to 
+20  bracket it in either as 2004 to 2006 or 2004 to 
+21  2016?
+22       A       It doesn't matter.
+23       Q       Okay.  
+24       A       That, I can't say more likely than 
+25  not because with the samples that we've analyzed 
+                                                               53
+ 1  and produced, we have a 36 percent positive for 
+ 2  small amounts of amphiboles as compared to 
+ 3  Vermont, Italy.  So I would say my opinion would 
+ 4  be she had, you know, she had -- she can only had 
+ 5  a probable opportunity to be exposed to asbestos, 
+ 6  amphibole asbestos using Chinese-sourced talc.
+ 7       Q       Right.  So then for the 
+ 8  Chinese-sourced talc from 2004 to 2016, you do 
+ 9  not hold an opinion on a more likely than not 
+10  basis that she was exposed to asbestos from talc 
+11  sourced from China; is that fair?
+12       A       That's fair for right now, yes.
+13       Q       Okay.  So we'll get back to the 
+14  Vermont real quick.  I just want to talk to you 
+15  about the fiber per cc stuff, but I wanted to 
+16  cover one other thing.  
+17              MR. ASHBY:  Actually, this actually a 
+18  question for not you, Dr. Longo, but, Will, are 
+19  there defendants for ceramics companies on the 
+20  phone or in the case, do you know?
+21              DEFENSE COUNSEL:  Yes, we are here.  
+22              MR. RUIZ:  I don't even need to 
+23  answer.
+24              MR. ASHBY:  Okay.  So I won't just 
+25  destroy you guys right now.  Okay.  Fine.
+                                                               54
+ 1  BY MR. ASHBY:  
+ 2       Q       All right.  So can you just give me, 
+ 3  Dr. Longo, to the extent you have opinions on an 
+ 4  exposure range for Ms. Wagner from her use of 
+ 5  ceramics as they relate to asbestos and talc?  
+ 6  Can you just give me an approximate range, if you 
+ 7  have any such opinions?  
+ 8       A       I don't have an opinion on the 
+ 9  approximate range because I'm not aware of any 
+10  industrial hygiene studies where a slip, dry slip 
+11  clay containing industrial talc such as from 
+12  Death Valley or the Gouverneur mine, so that we 
+13  can determine an air range.  
+14               But, however, it would be my opinion 
+15  that there would be a very significant exposure 
+16  to airborne amphibole asbestos, tremolite, and/or 
+17  anthophyllite based on my work in the past 
+18  dealing with Nytal 100 where the Nytal 100, I 
+19  think it was three or four pounds, was poured 
+20  that didn't have any clay in it, and the two 
+21  pounds, something like that, and the exposure 
+22  levels were anywhere from 10 to 20 fibers per cc, 
+23  if I remember correctly.  
+24               But I don't have one where it's mixed 
+25  in with the clay itself, the kaolin clay, but I 
+                                                               55
+ 1  would expect very significant exposures any time 
+ 2  she did that, any time she swept up either her 
+ 3  garage or her father's garage over in 
+ 4  Victorville, I think it is.  
+ 5               And some exposure, you know, taking 
+ 6  the greenware out and if she had to sand it or 
+ 7  that, but not nearly -- from the pouring would be 
+ 8  the highest, and then, of course, re-entrainment 
+ 9  from sweeping up the material around the pour 
+10  table.  And her clothes, taking in and washing 
+11  them, that would be a third source there.  That's 
+12  it.
+13       Q       All right.  So -- 
+14              MS. BEAL:  I'm sorry.  Can I have 
+15  just that number of the fibers per cc read back, 
+16  the range?  
+17              MR. ASHBY:  Oh, okay.  I think he 
+18  said 10 to 20, but I'm not sure.
+19              MS. BEAL:  10 to 20?
+20              THE WITNESS:  I didn't give a range.  
+21  Oh, 10 to 20 -- let me clarify.  It's 10 to 20 
+22  fibers per cc just pouring a small amount of 
+23  Nytal 100 into a container.  That does not, of 
+24  course, mimic what happens, we don't know if that 
+25  mimics or not what happens if you have a 40 or 
+                                                               56
+ 1  50-pound bag that has 40 to 50 percent tremolitic 
+ 2  or tremolitic and anthophyllite-containing talc 
+ 3  and pouring two or three or four bags into a pour 
+ 4  table.  I don't know what that range would be.  
+ 5              I'm not aware of any industrial -- 
+ 6  any industrial hygiene air samples taken during 
+ 7  that activity.
+ 8  BY MR. ASHBY:
+ 9       Q       Okay.  So just generally the three 
+10  categories of exposure that Ms. Wagner might have 
+11  had from her use of ceramics would be pouring, 
+12  sweeping, and laundering is that what I heard?
+13       A       Yes, laundering her clothes based on 
+14  what her husband said that her clothes looked 
+15  like and what she wore.
+16       Q       Okay.  You know, I'm just going to 
+17  let other people talk to you about that.  
+18               What I did want to ask you, though, 
+19  is you mentioned a Nytal study in which you 
+20  poured the Nytal 100 and performed air monitoring 
+21  analysis.  I'm not sure I've seen that.  What 
+22  year was that?
+23       A       It's in the last three or four years.  
+24  I think two years, something like that.
+25       Q       Was that a project done in 
+                                                               57
+ 1  litigation?
+ 2       A       Yes.
+ 3       Q       Do you remember the law firm that 
+ 4  commissioned the project?
+ 5       A       I don't remember the law firm.  I 
+ 6  just don't remember.
+ 7       Q       How many exposure studies has MAS 
+ 8  performed with industrial talc?
+ 9              DEFENSE COUNSEL:  Overbroad.
+10              THE WITNESS:  Only one I can think of 
+11  as I sit here right now.
+12  BY MR. ASHBY:  
+13       Q       And it's the one you just referenced?
+14       A       Yes.
+15       Q       All right.
+16       A       Well, let me say, it's only one that 
+17  I have produced a report and been deposed on.
+18       Q       Okay.  And so that's the one you've 
+19  been talking about, though, so we're clear on the 
+20  record?
+21       A       Yes.  I had a deposition on it with 
+22  my good friend Tom Radcliffe maybe.  I can't 
+23  remember who it was.
+24              MR. ASHBY:  Right.  Okay.  All right.  
+25  What Exhibit number am I on, Shannon?
+                                                               58
+ 1              THE COURT REPORTER:  Number 9.
+ 2              MR. ASHBY:  9?  
+ 3              THE COURT REPORTER:  Yes, sir.
+ 4  BY MR. ASHBY:  
+ 5       Q       Dr. Longo, that's something that 
+ 6  you've disclosed in the past already so you don't 
+ 7  have a problem attaching that to the record, I 
+ 8  take it?
+ 9       A       Of course I do.  I would have -- 
+10       Q       Of course you do what?
+11       A       Have a problem with it.  I wasn't 
+12  going to rely on it for my direct opinions, and I 
+13  would have to, one, see if the -- figure out who 
+14  the client was and see if it's okay.  There may 
+15  not be a problem, but I can't guarantee I can 
+16  attach it.
+17       (Whereupon a document was identified as 
+18       Exhibit 9.)
+19  BY MR. ASHBY:  
+20       Q       All right.  Well, let's do this.  I 
+21  will request that it be attached as Exhibit 9 and 
+22  you can decide and you and Mr. Ruiz can decide 
+23  later whether or not that's appropriate.  Okay?
+24       A       Well, it's not really up to me.  And, 
+25  you know, I can't attach things that -- your 
+                                                               59
+ 1  request just needs to go through my client, then 
+ 2  I can discuss it with him.
+ 3       Q       All right.  But I am correct that 
+ 4  this is a report that has been disclosed in 
+ 5  litigation and you've had depositions on it in 
+ 6  the past; right?
+ 7       A       I've had one, yes.
+ 8       Q       All right.  So like I said, I'll 
+ 9  attach that as Exhibit 9, you and Mr. Ruiz can 
+10  work out whether or not that happens or not, but 
+11  after you talk to your client.  Okay?
+12       A       Sure.
+13       Q       Was the analysis done in that study 
+14  under NIOSH 7400 or 7402?  
+15       A       Yes.
+16       Q       Was an all TEM fiber analysis done in 
+17  that study?
+18       A       An all what?
+19       Q       All fibers by TEM.
+20       A       I don't know if we did a modified 
+21  level two that we do, and I say modified level 
+22  two, it would be only asbestos structures greater 
+23  than or equal to a 5:1 aspect ratio.  But 
+24  certainly the 7402.  
+25               And I need to correct testimony I 
+                                                               60
+ 1  gave you the other day, which I said I didn't 
+ 2  believe that we were counting to 3:1 or greater 
+ 3  and I was wrong on that.  It's just the fact that 
+ 4  we hardly ever see less than 5:1 or greater, so I 
+ 5  wanted to correct the record.
+ 6       Q       So, I mean, do you want to do that 
+ 7  today, or do you want to wait until Zimmerman?
+ 8       A       Let's wait.
+ 9       Q       We can do it now, if you'd like.  It 
+10  doesn't matter.  No one is going to understand 
+11  what we're talking about.  
+12       A       No, let's wait until Zimmerman.
+13       Q       Okay.
+14              MR. RUIZ:  Hey, I'm with you.
+15  BY MR. ASHBY:  
+16       Q       But in any event, we had a deposition 
+17  on Monday of this week, right, Dr. Longo?
+18       A       Yes, sir.
+19       Q       In another case called Citizen; 
+20  correct?
+21       A       Yes, sir.
+22       Q       And in the course of that deposition, 
+23  you and I discussed a more recent study, exposure 
+24  study that MAS has done which I've been referring 
+25  to as the Baby Diapering 2 study; right?
+                                                               61
+ 1       A       Yes, sir.
+ 2       Q       And during the course of that, we got 
+ 3  into a discussion of whether or not MAS counted 
+ 4  fibers that were -- had an aspect ratio greater 
+ 5  than 3:1 and longer than 5 microns in length, I 
+ 6  guess, by TEM.  Is that what we were discussing?
+ 7       A       Yes, it was the 7402.
+ 8       Q       Right.  And during the course of that 
+ 9  deposition, I think you told me that the analyst 
+10  that does the TEM work for 7402 only looks at the 
+11  fibers with an aspect ratio greater than 5:1; 
+12  right?
+13       A       Hopefully I phrased it as, I believe 
+14  that's what they do.
+15       Q       Right.  Okay.  I think that's exactly 
+16  what you said.  But it sounds like you went back 
+17  and talked to somebody since Monday, and now 
+18  you've determined that the analyst actually looks 
+19  at the fibers that are greater -- that have an 
+20  aspect ratio greater than 3:1?
+21       A       Greater than or equal to 3:1, so they 
+22  do follow the protocol.
+23       Q       Okay.  Fair enough.  All right.  I 
+24  don't remember -- okay.  So we were talking about 
+25  this study, was it a study of RT Vanderbilt talc 
+                                                               62
+ 1  in which you did the simulation?
+ 2       A       It was Nytal 100, so, yes.
+ 3       Q       All right.  Do you remember whether 
+ 4  or not you in that exposure study of Nytal 100 
+ 5  ashed half filters?
+ 6       A       No, there was no need for that.  The 
+ 7  concentration of asbestos in those Nytal products 
+ 8  are fairly high, so you don't have issues with 
+ 9  detection limits.
+10       Q       Does that mean your exposure 
+11  simulation that was done for the Nytal 100 is 
+12  less sensitive because ashing of the half filters 
+13  was not done?
+14       A       No.  It's not a less or higher 
+15  sensitivity.  It's, you know, consider it, look 
+16  at it like the Below the Waist study or the Baby 
+17  1 study.  The concentration of tremolite in those 
+18  samples were at a level that you don't have 
+19  detection limit issues, so the Nytal -- the Nytal 
+20  100 had asbestos concentrations that were, you 
+21  know, between 3 and 4, 2 to 4 percent, something 
+22  like that.  
+23               Where in the Baby Study 2, we're 
+24  dealing with levels that are maybe a thousandth 
+25  of a percent.  So there is a lot more fibers and 
+                                                               63
+ 1  bundles that get released, so you don't have to 
+ 2  increase the detection limit.  We use the same 
+ 3  when we're using -- when we're working and doing 
+ 4  a study on exposure from asbestos-added products, 
+ 5  we do the same thing.  You don't have an issue 
+ 6  with detection limits.
+ 7       Q       With respect to the exposures that 
+ 8  Ms. Wagner may have had from her use of ceramics, 
+ 9  you said that the exposure would be very 
+10  significant.  With respect to the word very, is 
+11  there a way for you in your mind to quantitate 
+12  that word?  
+13               In other words, in your mind does 
+14  very, to use the word very, does the exposure 
+15  have to be over a certain amount of fibers per 
+16  cc?
+17       A       No, and that's a poor choice of words 
+18  since we don't have any air data to understand, 
+19  you know, what the interaction between two 
+20  different types of particulates, the clay, kaolin 
+21  clay plates and the fibers, that was probably a 
+22  poor choice of words.  It's going to be 
+23  significant.  I don't have a range or what it 
+24  should be.
+25              MR. ASHBY:  Okay.  All right.  Do you 
+                                                               64
+ 1  guys want to take a break?  
+ 2              THE WITNESS:  Sure.
+ 3       (Proceedings in recess, 1:33 p.m. to 
+ 4       1:55 p.m.)
+ 5  BY MR. ASHBY:
+ 6       Q       So, Dr. Longo, we talked about the 
+ 7  cosmetic talc exposures being on average 
+ 8  approximately 0.01 fiber per cc to 1 fiber per 
+ 9  cc.  Do you have that in mind?
+10       A       Yes, sir.
+11       Q       All right.  On the low end at 0.01 
+12  fiber per cc, what activity using cosmetic talc 
+13  would that low end be associated with?
+14       A       Well, it would be associated with the 
+15  same activity, it just would be the concentration 
+16  found in the container.  But I haven't factored 
+17  in, you know, how much of the talc that's being 
+18  used for any application, so it would be a lower 
+19  concentration.  
+20               It's all about the concentrations in 
+21  the container.  You can be doing the same 
+22  activity, but if you have, say, a detection limit 
+23  which should get you somewhere between .001, I 
+24  guess, or if it's lower it could be .0001, but 
+25  then you are using 10 or 12 or 15 grams of powder 
+                                                               65
+ 1  with that concentration.  It may, in fact, be 
+ 2  higher.  It's very hard to say.
+ 3       Q       All right.  Maybe do it this way.  
+ 4  With respect to the activities that Ms. Wagner 
+ 5  had for applications when she was an infant and 
+ 6  was being diapered, is there a different exposure 
+ 7  range just for that activity other than the 0.01 
+ 8  fiber per cc to 1 fiber per cc?
+ 9       A       Well, our three baby studies, I 
+10  think, show so far that the exposures are higher 
+11  for the baby than they are for the person doing 
+12  the activity.  And we've never really looked 
+13  at -- now that maybe we have three, three baby 
+14  studies, we can calculate what the range would be 
+15  for the baby.  
+16               You know, for example, in the Baby 1 
+17  study, I believe that range is somewhere, the two 
+18  samples were either 1 fiber, I think it was maybe 
+19  1 fiber per cc or so to 3.5 versus .7 or .8 for 
+20  the person doing the work, I mean, actually 
+21  applying it.  
+22               And I think the Baby 2 study is 
+23  higher than from the exposures that the actual 
+24  person was getting, but then you're dealing with 
+25  typically about 2 grams per study.
+                                                               66
+ 1       Q       Okay.  Do you have an opinion 
+ 2  regarding the range of exposure approximately in 
+ 3  fiber per cc that Ms. Wagner experienced after 
+ 4  bathing as a child?
+ 5       A       Well, looking at from at least 
+ 6  Lynda's, I think it's Lynda's, testimony that it 
+ 7  would go in the genital areas, on the bottom, and 
+ 8  under the arm and chest area.  So that in my 
+ 9  opinion would be -- and three or four shakes of 
+10  the container.  Three or four shakes in Below the 
+11  Waist was 4 grams, and 4 grams is not even two 
+12  teaspoons of material since a teaspoon will hold 
+13  about 2.2 grams or 2.3 grams in each teaspoon.  
+14               So I would expect higher 
+15  concentrations than I would for the actual -- for 
+16  changing the diapers since, you know, it's going 
+17  directly onto the child, especially under the 
+18  arms area because you're closer to the breathing 
+19  zone, so I would expect those concentrations to 
+20  be higher.  But we haven't really done a study to 
+21  what a two-year-old, three-year-old, 
+22  four-year-old, five-year-old year old size of the 
+23  body, what those exposures are.  
+24               And then, of course, when she's 
+25  bathing herself and then when she's certainly 
+                                                               67
+ 1  getting to the point where she's doing whole 
+ 2  body, I would expect those exposures to be higher 
+ 3  than if at ten.  I gave the average at ten versus 
+ 4  2 to 4 fibers -- 2 to 4 grams for the child.  
+ 5               So I'm just trying to use a range of 
+ 6  averages, and as I've stated, you know, sometimes 
+ 7  you will have lower concentrations than the 0.01 
+ 8  and sometimes higher concentrations than the 1 
+ 9  fiber per cc, all the way down to nondetects 
+10  because the concentrations in the -- 
+11  concentrations can be low enough inside the 
+12  container below our detection limit that you just 
+13  don't have enough air that you're sampling to 
+14  detect the amount of fibers that get up in the 
+15  air versus what stays on the body or what falls 
+16  on the ground.  I don't know what that percentage 
+17  is.
+18       Q       With respect to exposure studies that 
+19  MAS has conducted using Johnson's baby powder, 
+20  MAS has performed exposure studies during 
+21  simulated diaper changes; is that correct?
+22       A       I'm sorry.  Could you say that again?  
+23       Q       Right.  Okay.  So with respect to 
+24  exposure studies performed at MAS using Johnson's 
+25  baby powder, MAS has performed exposure studies 
+                                                               68
+ 1  during a simulated activity of diaper changing; 
+ 2  right?
+ 3       A       Correct.
+ 4       Q       And you've done that on two 
+ 5  occasions; right?
+ 6       A       Baby 1 and Baby 2.
+ 7       Q       That you -- 
+ 8       A       That's correct.
+ 9       Q       Okay.  At least that you've reported 
+10  to date; right?
+11       A       That is correct.
+12       Q       And has MAS performed an exposure 
+13  study using Johnson's baby powder similar to the 
+14  way in which Ms. Wagner used Johnson's baby 
+15  powder on herself as an adult?
+16       A       No, we have not.
+17       Q       Okay.  Has MAS performed an exposure 
+18  study using Johnson's baby powder similar to the 
+19  fashion in which Johnson's baby powder was 
+20  applied to Ms. Wagner as a child after bathing?
+21       A       We have not.
+22       Q       So of the three types of activities 
+23  in which you believe Ms. Wagner was exposed to 
+24  asbestos in Johnson's baby powder, which of those 
+25  three activities would have the lowest exposures 
+                                                               69
+ 1  as stated in fibers per cc?
+ 2       A       My opinion would be the lowest 
+ 3  exposures would be for Mrs. Wagner is during the 
+ 4  diapering based on the testimony I read.
+ 5       Q       I understand.  And then after the 
+ 6  diapers what would be the next highest exposure 
+ 7  stated in fibers per cc between the after bathing 
+ 8  as a child or the personal applications as an 
+ 9  adult?
+10       A       After bathing as a child in my 
+11  opinion.
+12       Q       Okay.  Were any of the exposure 
+13  studies that MAS performed with Johnson's baby 
+14  powder of the same vintage or -- actually, I'll 
+15  strike that.  
+16               Let me ask it this way.  So are any 
+17  of the containers that were used for the MAS 
+18  exposure studies using Johnson's baby powder from 
+19  the Vermont or Chinese mines?
+20       A       No.
+21       Q       So would you agree that none of the 
+22  MAS exposure studies that you rely on for your 
+23  exposure opinions were manufactured or sourced 
+24  from a mine that the Johnson's baby powder that 
+25  Ms. Wagner used would have been sourced from?
+                                                               70
+ 1       A       I believe that's correct.
+ 2       Q       You mentioned that you had an opinion 
+ 3  that it was more likely than not that when she 
+ 4  was using Vermont-sourced talc that she would 
+ 5  have been exposed to airborne asbestos; is that 
+ 6  right?
+ 7       A       Yes.
+ 8       Q       Now, you're not a statistician; 
+ 9  correct?
+10       A       I'm not a statistician, that's 
+11  correct.
+12       Q       In fact, in other cases in which 
+13  you've testified, plaintiffs will hire an expert 
+14  statistician to talk about the probabilities that 
+15  the plaintiff would have been exposed to asbestos 
+16  from the use of Johnson's baby powder products; 
+17  is that true?
+18       A       That has happened in the past, that's 
+19  true.
+20       Q       One of those experts is a guy by the 
+21  name of Dr. Madigan; right?
+22       A       Yes, sir.
+23       Q       And in the past when Dr. Madigan is 
+24  in a case, you call him the statistician expert; 
+25  right?
+                                                               71
+ 1       A       Well, he teaches statistics.  He's at 
+ 2  Columbia University.  He has over 300 
+ 3  publications.  I believe he has more knowledge 
+ 4  than -- I don't usually like to try to make 
+ 5  expert, that you're an expert and not an expert, 
+ 6  but I guess in the courts that he knows more than 
+ 7  the average person, so he's an expert at it.  He 
+ 8  does those probability calculations.  
+ 9               My calculation is based on very 
+10  simple statistics since I equate more likely than 
+11  not with 51 percent or greater in that the 
+12  Vermont talc containers that we've tested are 
+13  approximately 81 percent positive.  So that's 
+14  where I base my statistics on and doing an 
+15  average is just basic, just statistics.  
+16               I do not do the probability 
+17  calculations for how many containers a particular 
+18  plaintiff may have used coupled with what the 
+19  percentage of positive for asbestos are.  That's 
+20  what Dr. Madigan does, that's not an area that I 
+21  do.
+22       Q       All right.  So the basis for your 
+23  opinion that Ms. Wagner on more likely than not 
+24  basis was exposed to asbestos from the use of 
+25  Johnson's baby powder sourced from Vermont is the 
+                                                               72
+ 1  fact that your testing of Vermont samples has 
+ 2  shown a greater than 51 percent positive rate; is 
+ 3  that correct?
+ 4       A       Well, it's not only greater than 51 
+ 5  percent, it's almost 80 -- it's over -- it's 
+ 6  about 80 percent.  But, yes, since it's greater 
+ 7  than 50 percent, that's why I use more likely 
+ 8  than not.
+ 9       Q       Right.  If your positive rate, and 
+10  there was a time when this was true, was down in 
+11  the low 60 percent for Vermont, it would have 
+12  been your opinion then that that plaintiff or 
+13  that person using Vermont-sourced talc more 
+14  likely than not was exposed to asbestos; right?
+15       A       Yes.
+16       Q       Okay.  So the 80 percent doesn't make 
+17  a difference so long as whatever the number of 
+18  positives are for the Vermont-sourced talc are 
+19  over 50 percent; right?
+20       A       Well, to get to more likely than not, 
+21  it has to be over 50 percent.  It doesn't then 
+22  matter.  It's when you start getting higher and 
+23  higher, it just reaffirms my opinion that it's 
+24  more likely than not.
+25       Q       Okay.  And you're aware that when 
+                                                               73
+ 1  Dr. Madigan does a similar type of analysis, he 
+ 2  uses statistical formulas, sometimes we've heard 
+ 3  it called binomial calculations; right?
+ 4       A       Yes.
+ 5       Q       Okay.  You haven't done anything like 
+ 6  that?  You haven't calculated any binomial 
+ 7  calculations for Ms. Wagner; right?
+ 8       A       I have not.  I can do binomial 
+ 9  calculations.  It's, I would say, pretty 
+10  straightforward, but that's not something I'd 
+11  testify about.
+12       Q       Right.  Okay.  But that's nothing 
+13  you've done for Ms. Wagner either, even though 
+14  you're capable of doing it; correct?
+15       A       I'm capable of going through the 
+16  equation, but it's not something that I testify 
+17  about, so I don't do it.
+18       Q       And you know from talking to 
+19  Dr. Madigan that the binomial equations that he 
+20  uses to determine the probabilities of whether or 
+21  not a person was exposed to asbestos in a 
+22  Johnson's baby powder product are formulas that 
+23  can be readily found on the Internet; right?
+24       A       That's true.
+25       Q       So that's something you have access 
+                                                               74
+ 1  to obviously; right?
+ 2       A       I do.  But if I were to do that, I 
+ 3  would want to be -- I would want to go through 
+ 4  and do the formula by hand just to verify, and 
+ 5  that's not something that I routinely do.  That's 
+ 6  why for those kind of probability calculations, I 
+ 7  believe in my opinion that's something that 
+ 8  Dr. Madigan testifies to.
+ 9       Q       Other than saying that more likely 
+10  than not Ms. Wagner would have been exposed to 
+11  the Vermont-sourced talc from Johnson's baby 
+12  powder products, do you have or will you opine as 
+13  to the actual number of containers that she would 
+14  have used that contained asbestos?
+15       A       I would say that the number of 
+16  containers that she used for Vermont that 
+17  contained asbestos would be greater than 51 
+18  percent.
+19       Q       And what's the basis for that?
+20       A       Because our analysis that shows that 
+21  the Vermont containers that we have tested is 
+22  greater than 51 percent.
+23       Q       Okay.  Do you have an actual number 
+24  in mind that would have contained asbestos -- 
+25       A       No.
+                                                               75
+ 1       Q       -- from the Vermont source?
+ 2       A       No.
+ 3       Q       Okay.
+ 4       A       You'd have to run the binomial 
+ 5  equation and then plug in the number of 
+ 6  containers that she used, what the percentage of 
+ 7  positives were.  And the other thing that he does 
+ 8  is also opine about the probability of getting a 
+ 9  representative sampling of all the containers 
+10  that Johnson & Johnson ever sold during that time 
+11  frame and that's another thing that I don't 
+12  routinely do.
+13       Q       That's another thing you what?  You 
+14  would not do or would do?
+15       A       No, I don't do.  It's not part of 
+16  what my area is.
+17       Q       I understand.  Another thing -- well, 
+18  let's just take Madigan out of it.  Do you have 
+19  an opinion as to the likelihood or the 
+20  probability, I should say -- let me strike that.  
+21  Sorry.  
+22               Do you have an opinion as to the 
+23  percentage probability that Ms. Wagner was not 
+24  exposed to asbestos from any of her uses of 
+25  Johnson's baby powder sourced from Vermont talc?
+                                                               76
+ 1              MR. RUIZ:  Vague.
+ 2              THE WITNESS:  No, because whatever I 
+ 3  say, since I haven't run the polynomials, would 
+ 4  not be very accurate.  I feel comfortable saying 
+ 5  that would be greater than 51 percent, where 
+ 6  Dr. Madigan would come in and say the probability 
+ 7  of not being exposed or it's a 99, you know, 8 
+ 8  percent probability or something like that, so 
+ 9  that's not something I'm willing to opine about.
+10  BY MR. ASHBY:  
+11       Q       Okay.  Regarding the MAS reports that 
+12  were prepared in February of 2019 and June 2019 
+13  of MAS's testing of Chinese-sourced talc, was it 
+14  Dr. Rigler that plotted that data on the 
+15  logarithmic scale?
+16       A       Yes.
+17       Q       And was it Dr. Rigler who was the one 
+18  that chose to use a power trendline in the 
+19  February 2019 and June 2019 reports regarding 
+20  Chinese talc?
+21       A       I don't remember who actually chose 
+22  it because we worked on it together, so, you 
+23  know, either both of us chose it or I just can't 
+24  recall.
+25       Q       Oh, was it Dr. Rigler who was mostly 
+                                                               77
+ 1  responsible for preparing the trendlines that 
+ 2  were used in the February 2019 and June 2019 MAS 
+ 3  reports regarding Chinese-sourced talc?
+ 4       A       Well, he plotted it, but how we were 
+ 5  going to do that, plot that chart, I believe both 
+ 6  of us were involved in that.
+ 7       Q       Would you say that you were more 
+ 8  responsible for the conclusions of the two 
+ 9  reports in June and February of 2019 regarding 
+10  Chinese-sourced talc?
+11       A       I can't say one of us was more 
+12  involved than the other.
+13       Q       Would you say that Dr. Rigler and 
+14  yourself were equally involved in preparing the 
+15  February 2019 report and the June 2019 reports 
+16  regarding Chinese-sourced talc?
+17              MR. RUIZ:  Vague.  Overbroad.
+18              THE WITNESS:  I can't tell you if 
+19  it's bigger than a bread box or not.  I don't 
+20  know.
+21  BY MR. ASHBY:  
+22       Q       Did Dr. Rigler do more than simply 
+23  read the February 2019 and June 2019 reports 
+24  regarding Chinese-sourced talc?
+25       A       Well, of course.
+                                                               78
+ 1       Q       Do you believe Dr. Rigler to have 
+ 2  equal information, less information, or more 
+ 3  information about the generation of the February 
+ 4  2019 and June 2019 MAS reports regarding 
+ 5  Chinese-sourced talc than what you have?
+ 6              MR. RUIZ:  Vague.  Overbroad.
+ 7              THE WITNESS:  Dr. Rigler and I have 
+ 8  not sat down and had a discussion on who worked 
+ 9  on it more.  I can't split it up on who did more 
+10  of what.  It's been too long.  I believe we 
+11  worked on it --
+12  BY MR. ASHBY:
+13       Q       Well --
+14       A       We both worked on it.  Was it one 50 
+15  percent and the other was 50 percent, or one was 
+16  45 percent and one was 55 percent, I can't tell 
+17  you.  We both worked on it, we both put our names 
+18  on it, that's all I can tell you.
+19       Q       All right.  Well, other than plotting 
+20  the data and choosing the trendline, to your 
+21  knowledge what were Dr. Rigler's contributions to 
+22  the February 2019 and June 2019 reports on 
+23  Chinese-sourced talc?
+24       A       It was a dual -- 
+25              MR. RUIZ:  Vague.
+                                                               79
+ 1       A       -- effort on how to display the data 
+ 2  so that you could make a determination on what 
+ 3  concentrations could be expressed in fibers per 
+ 4  cc.  It was a concept that both of us came up 
+ 5  with, talked about it.  I don't know who had the 
+ 6  idea, so that's it.  I mean, I can't tell you 
+ 7  anymore.
+ 8       Q       With respect to the Below the Waist 
+ 9  and the Diaper 1 study, was Dr. Rigler's 
+10  involvement in those studies limited to watching 
+11  the videos?
+12       A       His name's on the report.  He worked 
+13  on those reports as well.  We had the protocol 
+14  and back and forth on how it was going to be 
+15  done.  No, he did more than watch the videos.
+16       Q       Well, with respect to the Below the 
+17  Waist study and the Diaper 1 study, what were 
+18  Dr. Rigler's contributions if it was more than 
+19  just watching or helping with the videos?
+20       A       On how it was going to be done, he 
+21  was involved in that, and looking over the data, 
+22  as well as me, verifying what our results were, 
+23  putting it together, I believe the results and 
+24  what we were seeing.  Other than that, I don't 
+25  know.
+                                                               80
+ 1       Q       Would you at least say that you had 
+ 2  more of a role in preparing the report for the 
+ 3  Below the Waist study and the Diaper 1 study than 
+ 4  Dr. Rigler?
+ 5       A       I may have had a little more, but I 
+ 6  just can't recall.  We both worked on it.
+ 7       Q       If someone said that Dr. Rigler 
+ 8  reviewed every sheet micrograph and diffraction 
+ 9  pattern to the same substantive extent that you 
+10  did for the Below the Waist and the Diaper 1 
+11  study, would that be wrong?
+12              MR. RUIZ:  Overbroad.  Compound.  
+13              THE WITNESS:  I can't put a gauge on 
+14  who looked at it more in substantive.  He is very 
+15  familiar with the counting rules, the structures, 
+16  what they need to look -- the morphology, the EDS 
+17  patterns, the diffraction patterns, how the count 
+18  sheets ought to be looked at and make sure the 
+19  data is consistent, that there hasn't been error 
+20  somewhere, a typo.  I think he's as qualified as 
+21  I am to do that.
+22  BY MR. ASHBY:  
+23       Q       Does Dr. Rigler have a different 
+24  style in the way that he reviews the MAS exposure 
+25  analyses than you do?
+                                                               81
+ 1              MR. RUIZ:  Unintelligible.  
+ 2  Speculation as phrased.
+ 3              THE WITNESS:  Yes, he reviews the 
+ 4  data in the morning and I usually review it in 
+ 5  the afternoons.  No, just kidding.  I can't 
+ 6  answer that.  I don't know what it means to have 
+ 7  a different style.  We're looking at, you know, 
+ 8  we're looking at data.  
+ 9              Does the -- what has been identified, 
+10  what amphibole has been identified, does it have 
+11  the appropriate chemistry, does it have the 
+12  appropriate crystalline structure, diffraction 
+13  patterns, does the morphology rules, is it 
+14  parallel sides, is it greater than or equal to 
+15  5:1 aspect ratio, check, and then on to the next 
+16  one.
+17  BY MR. ASHBY:
+18       Q       Well, do you believe that when you 
+19  and Dr. Rigler reviewed these exposure analyses 
+20  being Below the Waist and the Diaper Study 1, 
+21  that you reviewed the data in more detail than 
+22  Dr. Rigler did?
+23       A       I think -- 
+24              MR. RUIZ:  Same objection.
+25              THE WITNESS:  I think we reviewed it 
+                                                               82
+ 1  in the same detail because we're fundamentally 
+ 2  looking very closely that the data, the backup 
+ 3  data to demonstrate that, that any particular 
+ 4  structure, amphibole structure or fiber meets 
+ 5  steps one, two, three to be verified and 
+ 6  countable as an asbestos structure.
+ 7  BY MR. ASHBY:
+ 8       Q       Is it incorrect to say that 
+ 9  Dr. Rigler's equally knowledge and qualified to 
+10  testify about the MAS reports, the exposure 
+11  reports as you are?
+12              MR. RUIZ:  Vague.  Overbroad.  
+13  Unintelligible.
+14              THE WITNESS:  If your question is 
+15  saying -- wait a minute.  Could you repeat that?  
+16  BY MR. ASHBY:
+17       Q       Yes.  Okay.  Would it be incorrect to 
+18  say that Dr. Rigler is equally as knowledgeable 
+19  and qualified to testify about the MAS exposure 
+20  reports, meaning the Below the Waist study and 
+21  the Diaper Study 1 as you are?
+22              MR. RUIZ:  Vague.
+23              THE WITNESS:  I would say he's 
+24  equally as qualified.
+25  BY MR. ASHBY:
+                                                               83
+ 1       Q       If the plaintiffs' lawyers were 
+ 2  looking to hire one scientist who is most 
+ 3  knowledgeable to testify about the MAS exposure 
+ 4  reports, meaning the Below the Waist and Diaper 
+ 5  Study 1, would that be you or Dr. Rigler?
+ 6              MR. RUIZ:  Calls for speculation 
+ 7  about how plaintiffs' lawyers think.
+ 8              THE WITNESS:  I was just going to 
+ 9  say, that's kind of a broad question.  I don't -- 
+10  they typically don't tell me how they think.  If 
+11  they were to ask me, I would say he's equally as 
+12  qualified.  They can make up their own decisions 
+13  who they like better, I guess.
+14  BY MR. ASHBY:
+15       Q       Dr. Rigler did -- actually, I'll 
+16  strike that.  
+17               Did Dr. Rigler have any involvement 
+18  in the Diaper Study 2 that was done?
+19       A       Yes, initially because that was being 
+20  used as part of the -- stuck in the rebuttal 
+21  report, so he was involved.
+22       Q       Okay.  But by the time that that 
+23  report was finalized and disclosed, he was no 
+24  longer an employee of MAS; is that correct?
+25       A       That is correct.
+                                                               84
+ 1       Q       All right.  So there's some 
+ 2  information that's contained in the Diaper Study 
+ 3  2 report that Dr. Rigler was not involved with, 
+ 4  whether it was being analyzed and generated; is 
+ 5  that true?
+ 6       A       That's true.  And certainly whatever 
+ 7  the final -- well, actually, I don't know the 
+ 8  answer to that, so strike that.  
+ 9               Was Dr. Rigler at all involved in the 
+10  summary that was prepared for the Diaper Study 2?  
+11       A       He was not involved.
+12       Q       Okay.  Was that something that was 
+13  also generated after he departed from MAS?
+14       A       Yes.
+15       Q       I see.  Let me see.  That may be it.  
+16  So Dr. Longo, you know, I represent Johnson & 
+17  Johnson.  Are there any opinions that you have 
+18  that are specific to the Wagner case that I 
+19  haven't already asked you about during the course 
+20  of this deposition today?
+21              MR. RUIZ:  Overbroad.
+22              THE WITNESS:  Well, I could start off 
+23  like Dr. Egilman and say asbestos is a rock and a 
+24  mineral.  No.  I think, you know, I hate to say 
+25  you've covered every one because I can't think of 
+                                                               85
+ 1  every one.  
+ 2              But I think, I believe that you've 
+ 3  all seen me or read, I've testified enough about 
+ 4  my general opinions, you know, concerning 
+ 5  asbestiform versus nonasbestiform, the problems 
+ 6  with doing weight percent and the made up fiber 
+ 7  numbers, fiber size that causes the weight 
+ 8  percent detection limit that has completely -- 
+ 9  has no relationship to what the actual sample has 
+10  it in when you -- what would be in there when 
+11  you're determining a weight percent detection 
+12  limit because no account is taken to find 1 
+13  fiber, what the detection is to the number of 
+14  fibers and bundles and grams you have to have in 
+15  order to find 1 fiber.  
+16              Oh, but, you know, I think you've 
+17  covered everything that I can think of as I sit 
+18  here right now.
+19       Q       Right.  And a bunch of those things 
+20  you said are documents and even reports, included 
+21  in reports that are, I assume, I just don't have 
+22  that reliance list that's there, but are on that 
+23  reliance list, I would imagine, either as a 
+24  presentation you did, for example, the FDA one, 
+25  what you just talked about, the weight percent, 
+                                                               86
+ 1  and then you have reports and other 
+ 2  demonstrations on that reliance list?
+ 3       A       Yes, that's all true.
+ 4       Q       Are covered in that reliance list; 
+ 5  right?
+ 6       A       Yes, sir, that's all true.
+ 7       Q       So I guess what I'm asking, is there 
+ 8  something outside of that reliance list that's 
+ 9  specific to the Wagner case?  Because I tried to 
+10  cover your exposure calculation thing that we 
+11  attached.  
+12               Is there anything outside of that 
+13  reliance list that I didn't ask you about or I 
+14  need to ask you about in terms of your opinions 
+15  for Ms. Wagner?
+16       A       Not that I can think of.
+17              MR. RUIZ:  Overbroad.
+18              MR. ASHBY:  Okay.  Then I think I'm 
+19  done.
+20              THE WITNESS:  All right.  Thank you.
+21              MS. DUBOIS:  This is Jackie Dubois.  
+22  I can go next if that's okay with everyone.
+23              THE WITNESS:  It's okay with me.  
+24              MS. DUBOIS:  Dr. Longo, are you okay 
+25  to go a little while longer?
+                                                               87
+ 1              THE WITNESS:  Yes, ma'am.
+ 2  EXAMINATION
+ 3  BY MS. DUBOIS:  
+ 4       Q       Okay.  I'm Jackie Dubois.  I believe 
+ 5  we met in the Crudge case.  In this matter I 
+ 6  represent Kemper Industries and Ceramics & Crafts 
+ 7  Warehouse.  I have a few follow-up questions to 
+ 8  begin with.  Exhibit 6, which is the list of 
+ 9  reliance materials, did I hear correctly that 
+10  that list only contains materials regarding 
+11  cosmetic talc?
+12       A       That is correct.
+13       Q       Okay.  So there's nothing on that 
+14  list at all that relates to industrial talc 
+15  and/or slip; correct?  
+16       A       That is correct.
+17       Q       You referenced a Nytal 100 study 
+18  which may possibly be attached as Exhibit 9.  Did 
+19  you rely on that Nytal 100 study to form any of 
+20  your opinions regarding ceramic slip in the 
+21  Wagner case?
+22       A       Let me think about that for a second.  
+23  It's just verify -- I guess I would just say it 
+24  verifies my opinions on the problems associated 
+25  with any of the Nytal products out of the either 
+                                                               88
+ 1  International or RT Vanderbilt for the Gouverneur 
+ 2  mines, but I'm not relying on it as this is what 
+ 3  the exposure levels are.
+ 4       Q       Okay.  What specifically are you 
+ 5  relying on it for?  What portion of your opinion 
+ 6  with respect to ceramic slip are you relying on 
+ 7  the Nytal 100 study for?
+ 8       A       Well, again, as I stated -- 
+ 9              MR. RUIZ:  Vague.
+10              THE WITNESS:  -- it just verifies my 
+11  opinion that I've had for many years even before 
+12  I've done a study like this that the use of Nytal 
+13  100 or 200 or 300 in products where it remains a 
+14  dusty product, you're going to get significant 
+15  exposures.  
+16              So it's not that I'm relying on it to 
+17  say you're going to get an exposure, it just 
+18  verifies my opinions about the use of those 
+19  products.
+20  BY MS. DUBOIS:  
+21       Q       Okay.  And the use of Nytal 
+22  specifically; correct?
+23       A       Well, Nytal, the desert California 
+24  talc, it's going to behave the same way.  We've 
+25  analyzed that in the past.  Not in a study, but 
+                                                               89
+ 1  just analyzing talc samples out of the, out of 
+ 2  those desert samples, and it's a different 
+ 3  profile of amphibole asbestos, but you have the 
+ 4  same kind of concentrations and you're going to 
+ 5  get the same kind of exposures in my opinion.
+ 6       Q       You reviewed the MVA report obtained 
+ 7  from Dr. Compton; correct?
+ 8       A       I did.
+ 9       Q       Do you know the source of the talc 
+10  that was found in that slip?
+11       A       Yes.
+12       Q       Okay.  What is the source?
+13       A       Nytal.
+14       Q       Where do you find the Nytal is the 
+15  source of the slip that was tested by 
+16  Dr. Compton?
+17       A       Well, it doesn't say it anywhere, but 
+18  I have analyzed a number of the Nytals, and I can 
+19  just look at the profile of anthophyllite and 
+20  tremolite and then look at the EDS patterns for 
+21  the anthophyllite and it doesn't have any iron, 
+22  and the only mine in this country that has both 
+23  tremolite with a large -- with anthophyllite 
+24  that's industrial or cosmetic that has 
+25  anthophyllite that has iron associated with it.
+                                                               90
+ 1       Q       And I understand that you're trying 
+ 2  to draw that conclusion, but my question to you 
+ 3  is, where in the report that was provided to you 
+ 4  by Dr. Compton does it specifically say that the 
+ 5  source of the talc found in that slip was Nytal 
+ 6  100?
+ 7       A       Well, I'm not saying 100.
+ 8              MR. RUIZ:  Objection.  
+ 9              THE WITNESS:  I'm just saying Nytal.  
+10  It doesn't say -- 
+11  BY MS. DUBOIS:  
+12       Q       Okay.  
+13       A       -- it anywhere in the report, but 
+14  when I look at the results, it says it to me when 
+15  I read it.
+16       Q       Okay.  But the truth is, it does not 
+17  say anywhere in Dr. Compton's report that the 
+18  talc found in the slip that was tested was Nytal, 
+19  whether it's 100, 200, 300, 400, it doesn't say 
+20  that; correct?  
+21       A       Correct.  They don't make a 400, but 
+22  it doesn't say that.  This is based on my 
+23  experience.
+24       Q       Okay.  
+25       A       Over the years of analyzing Nytal 
+                                                               91
+ 1  type or the Gouverneur mine talcs, knowing the 
+ 2  chemistry of the anthophyllite, knowing the -- 
+ 3  that you're going to have both.  So that's my 
+ 4  professional opinion for doing this for so long 
+ 5  that you won't find this profile for these 
+ 6  amphiboles in any other talc that I know of 
+ 7  that's mined in this country.
+ 8       Q       Okay.  So the profile that you're 
+ 9  talking about would not be a profile for Pioneer 
+10  talc?
+11       A       I'm not sure where Pioneer talc comes 
+12  from.  If it's from Texas and the only working 
+13  mine in Texas I'm aware is the Allamore region 
+14  and that particular mine has very low -- has a 
+15  very low probability of forming amphibole 
+16  asbestos.  So -- 
+17       Q       Okay.
+18       A       -- if I have some more information 
+19  exactly where Pioneer talc comes from other than 
+20  Texas, this would not be a match for the only 
+21  talc mine I'm aware of in Texas.
+22       Q       Okay.  Other than Dr. Compton's 
+23  report, are there any other reports that you 
+24  relied upon to form an opinion regarding ceramic 
+25  talc in this particular matter?
+                                                               92
+ 1       A       Well, I have numerous references that 
+ 2  I've reviewed over the years.  I have a 
+ 3  Vanderbilt reliance list that I've accumulated 
+ 4  over time, I have other MVA analysis of talc 
+ 5  samples from the Gouverneur mine that were 
+ 6  collected by a former employee of mine and 
+ 7  brought back and analyzed.  
+ 8               It's not that I pulled any out and 
+ 9  reviewed them.  It's just almost 30 years of 
+10  knowledge and working in different cases 
+11  involving Gouverneur talc also involving Death 
+12  Valley or desert California talc, and plus a 
+13  number of other cosmetic mines now around the 
+14  country.
+15       Q       Do you have a reliance list with any 
+16  of the reliance materials that you just discussed 
+17  on it?
+18       A       Yes.
+19       Q       Okay.  And did you produce that 
+20  reliance list for this particular case, the 
+21  Wagner case?
+22       A       No.
+23              MR. RUIZ:  Objection.  Assumes there 
+24  was a request.  
+25  BY MS. DUBOIS:
+                                                               93
+ 1       Q       It was requested -- I'm sorry.  
+ 2  Dr. Longo, I didn't hear your response.  
+ 3       A       I said, no, I didn't produce it 
+ 4  because I didn't pull anything out and review it.  
+ 5  I'd have to go through and look at how much 
+ 6  material I've accumulated over 20-some years.  I 
+ 7  wasn't asked to produce it.  Other than the 
+ 8  opinions I've given you, just what I've 
+ 9  accumulated over time.
+10       Q       Okay.  You indicated that you read 
+11  Volumes 1, 2, and 3 of Louis Wagner's deposition 
+12  and then skimmed through Volume 4.  Is that a 
+13  correct statement?
+14       A       It is.
+15       Q       Okay.  And when reviewing Volumes 1, 
+16  2, and 3, you read where Mr. Wagner indicated 
+17  that they had slip in their garage; is that 
+18  correct?
+19       A       Yes.
+20       Q       Okay.  And is it that testimony that 
+21  prompted you to ask whether any testing had been 
+22  done on slip?
+23       A       Not that he had it in his garage, 
+24  that he said he had given the sample to his 
+25  attorney, that prompted me -- 
+                                                               94
+ 1       Q       Okay.  
+ 2       A       -- to ask about it.
+ 3       Q       And when you called Maune to ask 
+ 4  about the same, who did you discuss this with?
+ 5       A       William.
+ 6       Q       Okay.  And did Mr. Ruiz tell you that 
+ 7  the slip that was tested by Dr. Compton is the 
+ 8  slip that was in the plaintiff's garage?
+ 9       A       He didn't tell me that.  That's what 
+10  I assumed from reading the deposition.
+11       Q       Okay.  So it's your assumption that 
+12  the slip that Dr. Compton tested came from the 
+13  plaintiff's garage; correct?
+14       A       According to the testimony.
+15       Q       Okay.  Can you turn to page five of 
+16  eight of Dr. Compton's MVA report, please?
+17       A       I have it.
+18       Q       Okay.  And there are three pictures 
+19  of the slip that was tested on page five; 
+20  correct?
+21       A       Yes.
+22       Q       Okay.  Are you familiar with the 
+23  American Society for Testing Materials?
+24       A       I am.
+25       Q       And are you a member of what we'll 
+                                                               95
+ 1  refer to it as the ASTM?
+ 2       A       I am.
+ 3       Q       And is MAS a member of the ASTM?
+ 4       A       MAS is not a corporate member.  I 
+ 5  don't know if they do that or not, but I've been 
+ 6  a member since in the late 1980s.
+ 7       Q       And can you take a look at the 
+ 8  photographs on page five of eight.  There are 
+ 9  warnings on the bottle of slip that was tested; 
+10  correct?
+11       A       Obviously there must be better 
+12  photographs than I have because they're not the 
+13  color pictures.  So -- 
+14       Q       Okay.  
+15       A       -- if there is, if there are, then 
+16  they're there, so I can't verify it for you 
+17  looking at these pictures.
+18       Q       So the photographs you're looking at 
+19  don't read, "Warning, may cause damage to lungs 
+20  by inhalation of dust or mist"?
+21              MR. RUIZ:  Objection.  It misstates 
+22  the documents.
+23              THE WITNESS:  They may, but after it 
+24  goes through a copier and then printed out on 
+25  another copier in black and white, if it's there, 
+                                                               96
+ 1  I don't -- you can't read anything on the 
+ 2  containers in my copy.
+ 3  BY MS. DUBOIS:  
+ 4       Q       Okay.  So you can't say then for 
+ 5  certain whether the warnings complied with ASTM 
+ 6  04236, can you, Dr. Longo?
+ 7       A       I'm not a warnings guy.  Can you 
+ 8  repeat what the warning says?  
+ 9       Q       May cause damage to lungs by 
+10  inhalation of dust or mist.  
+11              MR. RUIZ:  Misstates what it says.  
+12  It contains crystalline silicate, Counsel.
+13              MS. DUBOIS:  It also says what I just 
+14  said, Counsel.
+15              MR. RUIZ:  Right.  You left off three 
+16  words.
+17              WITNESS:  I can't read that.
+18  BY MS. DUBOIS:
+19       Q       Again, can you read that on your 
+20  copy, Dr. Longo?  
+21       A       I can't read anything on my copy.  I 
+22  can see that there's three containers and just 
+23  knowing how this works, I'm sure it was twisted 
+24  so you can see all the way around it.  I don't 
+25  testify for the adequacy of warnings, so that, 
+                                                               97
+ 1  you know, is it okay just to put that on or 
+ 2  should it have been put on that it may contain a 
+ 3  carcinogen that can cause mesothelioma and kill 
+ 4  you in a very short period of time, I don't know 
+ 5  if that's appropriate, either, warning.
+ 6       Q       Okay.  
+ 7       A       I just don't testify about warnings.
+ 8       Q       Okay.  And so in this particular 
+ 9  case, would it be correct to say you aren't going 
+10  to be providing any testimony regarding warnings?
+11       A       That's correct.
+12       Q       Okay.  Can you look at page four of, 
+13  I believe it's four of eight, of Dr. Compton's 
+14  report?
+15       A       Sure.
+16       Q       Okay.  When you get there, let me 
+17  know.  
+18       A       I'm here.
+19       Q       Okay.  And he's got Table 1 and Table 
+20  2.  If you'll look at Table 2, there's a 
+21  percentage of weights that he provides.  
+22       A       Yes.
+23       Q       And should the percentage of weights 
+24  when totaled equal 100 percent, Dr. Longo?  
+25       A       From Table 1 or Table 2?  
+                                                               98
+ 1       Q       For Table 2.  
+ 2       A       This is XRD, typically not, because 
+ 3  you'll have -- depends on the standard you're 
+ 4  using and what can be detected and not detected, 
+ 5  so it's not something that I would have a problem 
+ 6  with if I was doing XRD.  And I didn't add them 
+ 7  up, which obviously you did.  
+ 8               Let me just see what the percentage 
+ 9  is.  So he's got 93 percent and he has less than 
+10  5 percent unaccounted, so that would give 98 
+11  percent out of 100 on XRD, and you would expect 
+12  an error range of anywhere from plus two or three 
+13  to minus two or three on analysis like this, so I 
+14  have no issue with that.
+15       Q       Okay.  And how is it that you would 
+16  expect this error ratio?  How do you know that?
+17       A       Because I have a Ph.D. in materials 
+18  science and engineering and I've studied XRD.  We 
+19  use to have an XRD.  We used to run samples.  
+20  It's something we had to do and know, and XRD on 
+21  minerals that have multiple -- on a product that 
+22  has multiple different types of minerals, you're 
+23  always going to have error rates when you press 
+24  these pellets because of the morphology 
+25  differences between plates and fibers.  
+                                                               99
+ 1               So some will refract x-rays at a 
+ 2  higher concentration and some lower.  And you're 
+ 3  using a standard to try to balance that.  So 
+ 4  based on the complexity of what they're doing XRD 
+ 5  on, and XRD in this type of thing, mostly people 
+ 6  are primarily looking at the relative percentages 
+ 7  if you're looking for asbestiform -- excuse me, 
+ 8  just looking for the minerals themselves.  
+ 9               You may have nonfibrous 
+10  tremolite/anthophyllite in there which will give 
+11  you different intensities on the diffraction.  So 
+12  all in all, I think that it's pretty close to 
+13  what I would expect if you did a really good job.
+14       Q       Okay.  Has MAS ever tested any type 
+15  of ceramic slip?
+16       A       Not a fully bashed one, no.
+17       Q       Okay.  When you say not a fully 
+18  bashed one, what does that mean?
+19       A       Well, we have tested the talc in the 
+20  past.  We, you know, a typical slip is made out 
+21  of kaolin clay, different types of kaolin clay, 
+22  we've tested that in the past.  Sometimes there's 
+23  some bentonite in it, and, you know, may add a 
+24  few other things like soda ash and some silica.  
+25               So we've tested those ingredients, 
+                                                               100
+ 1  but nobody has provided us with a bag of slip 
+ 2  that contains talc that is known to have 
+ 3  amphibole asbestos accessory minerals.
+ 4       Q       Okay.  So you've never tested a bag 
+ 5  of dry slip.  Has MAS ever tested wet slip which 
+ 6  would come in a container like that depicted on 
+ 7  page five of eight of Dr. Compton's report?
+ 8       A       Not that I can think of.
+ 9       Q       Okay.  Let's see.  Can you take a 
+10  look at -- well, actually, this does not have a 
+11  page number on it, but there's something from DCM 
+12  Science, which I think is toward the end of the 
+13  report that we got from Dr. Compton.  
+14       A       Oh, it's the x-ray analysis.
+15       Q       Okay.  Are you familiar with the DCM 
+16  Science Laboratory?
+17       A       Yes.
+18       Q       Okay.  Have you ever used DCM Science 
+19  Laboratory?  
+20       A       We may have.  If we were going to 
+21  send XRD samples out, we would use them.
+22       Q       Okay.  Do you know if this is an 
+23  accredited lab?
+24       A       I don't know.
+25       Q       Okay.  And have you done any quality 
+                                                               101
+ 1  control relating to DCM Science Laboratory?
+ 2       A       That, I don't know.  It's possible.
+ 3       Q       Have you ever -- okay.  Have you ever 
+ 4  visited DCM Science Laboratory?
+ 5       A       I have not.
+ 6       Q       Before sending anything out to them 
+ 7  as you indicated you had done before, did you 
+ 8  review any protocols or methods prior to engaging 
+ 9  them?
+10       A       That, I don't remember.
+11       Q       Okay.  So I want to ask you to take a 
+12  look at, again, this is part of the report that 
+13  we've got from Dr. Compton, but there's 
+14  nothing -- there's not a page number listed.  It 
+15  reads Maune Raichle Hartley, and it looks like 
+16  it's the chain of custody document that was sent?
+17       A       Yes.
+18       Q       Okay.  And can you look at the 
+19  bottom, it reads, relinquished by, day/time 
+20  received by, and then it reads, conditions.  Do 
+21  you see where I am?  
+22       A       I do.
+23       Q       Okay.  And do you see that it says it 
+24  appears to be leaking?
+25       A       Yes.
+                                                               102
+ 1       Q       Do you at all find it problematic 
+ 2  that a container that appeared to be leaking was 
+ 3  tested in this case?
+ 4       A       Not at all.
+ 5       Q       Why not?
+ 6       A       Because you're looking at a sample of 
+ 7  slip, and if it appears to be leaking, I'm 
+ 8  assuming that is not something that is leaking 
+ 9  into the container.  So the only thing you have 
+10  to worry about is cross contamination going into 
+11  the container.  
+12               And without looking at the container 
+13  or without looking at what the leak is, I'm 
+14  assuming that it's not where you have material 
+15  leaking into the container that contains slip and 
+16  contains Vanderbilt talc.  
+17               But it's really not fair for me to 
+18  say that there's a problem with this without 
+19  looking at the container itself, but I don't 
+20  think that would have been a problem at least in 
+21  my laboratory.  But it would depend on the 
+22  magnitude of "appears to be leaking."  It doesn't 
+23  say leaking, it just says appears to be leaking, 
+24  and that would be something for Dr. Compton to 
+25  discuss.
+                                                               103
+ 1       Q       Okay.  But if a container appears to 
+ 2  be leaking, so something is coming out of the 
+ 3  container, something could very well be going 
+ 4  into the container; correct?
+ 5              MR. RUIZ:  Incomplete hypothetical.
+ 6              THE WITNESS:  It's unclear how it 
+ 7  would be going into the container.  The 
+ 8  physics -- the physics don't quite work for me on 
+ 9  that.
+10  BY MS. DUBOIS:  
+11       Q       Okay.  
+12       A       And, again, it's unfair for me to try 
+13  to make an opinion about the container when it 
+14  wasn't received at our lab that I would be 
+15  inspecting so that would be something for 
+16  Dr. Compton to address.
+17       Q       Okay.  Perhaps a better question is, 
+18  if MAS received a container that was leaking, 
+19  would you still test that container or the 
+20  contents of that container rather?
+21       A       Again -- 
+22              MR. RUIZ:  Incomplete hypothetical.
+23              THE WITNESS:  -- I'd have to be 
+24  seeing what the container looked like, but 
+25  appears to be leaking doesn't give me an 
+                                                               104
+ 1  immediate reaction like we shouldn't test this.  
+ 2  Then I would discuss it with our scientists and 
+ 3  does there look like there's any probability that 
+ 4  somehow this has been contaminated, which is such 
+ 5  a high concentration of amphibole asbestos, but 
+ 6  that's a case-by-case basis, so I would have to 
+ 7  look at it.
+ 8  BY MS. DUBOIS:  
+ 9       Q       Prior to today, have you ever 
+10  provided any deposition testimony in a case 
+11  specifically relating to ceramic slip?
+12       A       Yes.
+13       Q       And on how many occasions have you 
+14  provided testimony regarding ceramic slip prior 
+15  to today?
+16       A       There may have been others, but I had 
+17  a recent one where it was a student at a 
+18  university who took a ceramic class where they 
+19  had to make their own slip and the facts of the 
+20  case are very similar to this, and the slip was 
+21  made by a company that was using Nytal to 
+22  manufacture the slip, powdered, and then it was 
+23  made in the classroom.  
+24               And we had the -- oh, the 
+25  verification that the person was in the 
+                                                               105
+ 1  classroom.  And a classmate had actually saved 
+ 2  the apron that she wore, and I was -- in my 
+ 3  opinion I was able to identify that the slip 
+ 4  contained Vanderbilt talc in my opinion.
+ 5       Q       Okay.  Can you tell me the name of 
+ 6  that case, Dr. Longo?
+ 7       A       I wish I could.  It's not that I 
+ 8  won't.
+ 9       Q       Okay.  
+10       A       I just can't remember it.
+11       Q       Do you recall the name of the law 
+12  firm that retained you to provide opinions in 
+13  that case?
+14       A       I think it might have been Simmons 
+15  Hanly, I think, something like that.
+16       Q       Okay.  Other than that particular 
+17  deposition and the one you're giving today, have 
+18  you provided any other deposition testimony 
+19  regarding ceramic slip products?
+20       A       That's very possible, but I just 
+21  don't recall.
+22       Q       Okay.  Have you provided any trial 
+23  testimony or rather -- that was a bad question.  
+24               Have you provided any testimony at 
+25  trial regarding ceramic slip?
+                                                               106
+ 1       A       Not yet, and I don't know if this 
+ 2  last one will settle or not, so maybe.
+ 3       Q       And when you say this last one, 
+ 4  you're referring to the case you just told us 
+ 5  about that you believe Simmons Hanly retained you 
+ 6  for?
+ 7       A       Yes.
+ 8       Q       Okay.  Were you asked to provide any 
+ 9  specific opinions regarding Kemper Industries?
+10       A       No, I don't have any opinions 
+11  about -- Kemper, you said?  
+12       Q       Yes.  
+13       A       I don't have any opinions about 
+14  Kemper Industries in that I'm not here to say who 
+15  knew what, when, or what level of care the 
+16  industry should.  My opinions strictly are around 
+17  the type of products, so I don't -- I don't 
+18  testify about corporate conduct one way or the 
+19  other.
+20       Q       Okay.  So then it's a correct 
+21  statement that you are also not going to be 
+22  providing any specific opinions regarding 
+23  Ceramics & Crafts Warehouse; correct?
+24       A       With the stipulation that the same 
+25  answer I gave before applying to that.
+                                                               107
+ 1              MS. DUBOIS:  And, I'm sorry, Madam 
+ 2  Court Reporter, can you read that back to me?  We 
+ 3  were cut off.
+ 4              THE WITNESS:  I can state it again.
+ 5  BY MS. DUBOIS:  
+ 6       Q       Okay.  Go ahead.  I'm sorry.  We got 
+ 7  cut off.  It may have been my phone.
+ 8       A       What's the name of the company?
+ 9       Q       Ceramics & Crafts Warehouse.  
+10       A       I don't have any specific opinions 
+11  about Ceramics & Crafts Warehouse involving 
+12  corporate conduct, knowledge, or the hazards of 
+13  asbestos.  My testimony is strictly on the types 
+14  of products, where it came from, or who 
+15  distributed it or who made it, does not affect my 
+16  opinions one way or the other.
+17       Q       Okay.  In the Simmons case that we 
+18  just discussed, do you recall the name of the 
+19  court reporting agency that was present when your 
+20  deposition was taken?
+21       A       No.
+22       Q       Okay.  Have we now discussed all of 
+23  the opinions that you intend to give with respect 
+24  to ceramic slip?
+25       A       I believe we have gone through all 
+                                                               108
+ 1  the opinions that I plan to give involving 
+ 2  ceramic slip that contains the types of talc that 
+ 3  we've talked about and its potential for causing 
+ 4  significant exposure to airborne amphibole 
+ 5  asbestos.
+ 6       Q       And is it your understanding from 
+ 7  your review of Louis Wagner's deposition that 
+ 8  Nanette Wagner used also dry talc and bags and 
+ 9  then the type of -- I didn't mean talc.  I 
+10  apologize everyone.  I meant slip, dry slip in 
+11  bags and the premixed form of slip that appear in 
+12  photographs on page five of eight of 
+13  Dr. Compton's report?
+14              MR. RUIZ:  It sounds like a careless 
+15  slip.  
+16              THE WITNESS:  As I recall from the 
+17  testimony that she initially -- I think before 
+18  she had the pour table, that she would buy the 
+19  premix.  And then when she would make up batches 
+20  of the slip, extra would be poured back into the 
+21  empty containers, is what I recall for that 
+22  period of time after she got the pour table.
+23  BY MS. DUBOIS:  
+24       Q       So were you able to determine by a 
+25  review of the deposition the percentage of time 
+                                                               109
+ 1  she used the premix slip versus that which was in 
+ 2  the bags?
+ 3       A       Now, does that include the premix 
+ 4  after she mixed it and saved it?  
+ 5       Q       No, I just mean the dry bags that she 
+ 6  purchased versus the gallon plastic jars that 
+ 7  were premixed.  
+ 8       A       I didn't read the depositions to that 
+ 9  degree to -- well, I read them, but not 
+10  specifically in mind that I would try to come up 
+11  with a percentage between when she bought, 
+12  initially bought the containers with the premix 
+13  slip before she got the pour tables.  
+14               But my impression was that it was 
+15  mostly -- after she got mostly from the dry 
+16  versus initially or just buying the premix, but I 
+17  couldn't point you to anything that -- in those 
+18  700 pages.
+19       Q       Do you know if the formulation or the 
+20  formula of the dry slip is different than the 
+21  formula used in the wet slip?
+22       A       I didn't see any indication that it 
+23  would be other than there's water added to it.  
+24  Because, you know, these particular formulas, at 
+25  least what I got from the depositions, is they 
+                                                               110
+ 1  try to replicate them exactly over and over.  And 
+ 2  the only difference is one's dry and one had 
+ 3  water poured in it.
+ 4       Q       Okay.  In which deposition that you 
+ 5  reviewed did it say that they tried to replicate 
+ 6  the formulas over and over?
+ 7       A       Not him.  All's I can tell you -- oh, 
+ 8  there it is.  I did get it.  I misspoke earlier.  
+ 9  I do have Rick MacPherson's deposition, Person 
+10  Most Qualified of Aardvark Clay & Supplies.  I 
+11  misspoke earlier when I said I didn't get that 
+12  deposition.  
+13               I don't know if it was in his 
+14  deposition or Thomas Wayne Perry's deposition.  
+15  One of the two.
+16       Q       Okay.  So you believe it was either 
+17  in MacPherson's depo transcript or in Perry's 
+18  depo transcript?
+19       A       Yes, I don't believe it was Ernst 
+20  Isen, I don't think he was the one.  Anyway, I 
+21  can't tell you which one it is.
+22       Q       So you indicated earlier that you 
+23  didn't think that you received MacPherson's 
+24  deposition transcript, but you now recall having 
+25  read it?
+                                                               111
+ 1       A       Well, it helped my memory that I'm 
+ 2  actually looking at it.
+ 3       Q       Okay.  So then it's a correct 
+ 4  statement that you recall reading MacPherson's 
+ 5  deposition testimony?
+ 6       A       Yes, it has all my highlights in it.
+ 7       Q       Okay.  Are there any notes other than 
+ 8  your highlights?
+ 9       A       There's no notes inside the 
+10  deposition.
+11       Q       Okay.  Do you have any notes that you 
+12  may have jotted down regarding ceramic slip?
+13       A       Actually, this cover does have some 
+14  notes on it.  It has 40 to 50 percent talc, clay, 
+15  CT30 is desert talc California.  And I guess it 
+16  goes to the invoices, I went to our invoices for 
+17  Nytal 300, 200, 100, in the late 1990s, early 
+18  2000s.
+19       Q       And were those notes produced to the 
+20  Maune firm; sir?
+21       A       No.
+22       (Whereupon a document was identified as 
+23       Exhibit 10.)
+24  BY MS. DUBOIS:  
+25       Q       Okay.  Can we or can you rather 
+                                                               112
+ 1  photocopy those notes and scan them so that we 
+ 2  can attach them to this deposition?  I guess it 
+ 3  would be, since we have a possible 9, as Exhibit 
+ 4  10.
+ 5       A       Yes, we can.
+ 6              MS. DUBOIS:  Okay.  And I believe 
+ 7  that that is all that I have for now, and I have 
+ 8  not been paying attention to time, quite frankly, 
+ 9  but we can just put us down for an hour.  
+10  EXAMINATION
+11  BY MR. CARPENTER:
+12       Q       Good afternoon, Dr. Longo.  This is 
+13  Erin Carpenter.  Can you hear me okay?
+14       A       Yes, sir, I can.
+15       Q       All right, sir.  I want to move back 
+16  to, my finger wasn't fast enough earlier, I 
+17  wanted to try to get the baby powder stuff dealt 
+18  with all in one, but I'm here on behalf of Cyprus 
+19  Mines Corporation.  Do you have a file specific 
+20  to my client?
+21       A       I do not.
+22       Q       And I take it based on what you just 
+23  said a minute ago, you're not going to give any 
+24  opinions regarding the corporate conduct of 
+25  Cyprus Mines Corporation; true?
+                                                               113
+ 1       A       That is true.
+ 2       Q       All right.  I don't know if this was 
+ 3  discussed.  What was the last report that MAS 
+ 4  issued that pertains to purported asbestos 
+ 5  contamination in Johnson's baby powder with 
+ 6  Vermont talc?
+ 7       A       The last report?  
+ 8       Q       Yeah, the last one.  
+ 9       A       That would have to be the Zimmerman 
+10  case, which -- 
+11       Q       When did that come out?
+12       A       Well, the deposition is not done, but 
+13  it was produced, what, three weeks ago, two weeks 
+14  ago, I think it was about -- 
+15       Q       Here's a better -- 
+16       A       -- two weeks ago.
+17       Q       -- question.  Did that report in the 
+18  Zimmerman case, did that include any new testing 
+19  of Vermont -- of Johnson's baby powder that had 
+20  Vermont talc in it?
+21       A       Yes.
+22       Q       Okay.  And do you know the date of 
+23  that report?
+24       A       Maybe February, late February, early 
+25  March.  Maybe it hasn't been that long.  Within 
+                                                               114
+ 1  the last month.
+ 2       Q       Okay.  And I haven't taken your 
+ 3  deposition in probably -- it's probably been 
+ 4  close to a year.  How many different reports has 
+ 5  MAS issued that pertain to purported asbestos 
+ 6  contamination in Johnson's baby powder with 
+ 7  Vermont talc?  I'm talking about testing reports, 
+ 8  not exposure assessments.  
+ 9       A       Well, you've got the March 11, 2018, 
+10  report.  You've got the February 1st, 2019, 
+11  report.  I don't think there's been any 
+12  additional Vermont samples between then and the 
+13  one we issued in a month ago, which was a 1994 
+14  container that was from a plaintiff.
+15       Q       Okay.  So the Zimmerman case involved 
+16  the testing of one new container; is that 
+17  correct?
+18       A       For Vermont, yes.
+19       Q       Okay.  And that was from 1994?
+20       A       According to the date on the 
+21  container.
+22       Q       Okay.  Understood.  All right.  So it 
+23  sounds like, would it be a correct statement 
+24  then, in the last year or so since I've taken 
+25  your deposition, the only new report you've 
+                                                               115
+ 1  issued regarding Vermont talc is the Zimmerman 
+ 2  report and that pertains to a single container of 
+ 3  Johnson's baby powder from 1994?  
+ 4       A       Yes, sir, I believe so.
+ 5       Q       Okay.  Excellent.  That makes it 
+ 6  easier.  Well, can you tell me this.  How many 
+ 7  containers -- well, you know what, strike that.  
+ 8  I'll add it up myself.  
+ 9               Dr. Longo, Exhibit 8, your notes that 
+10  were attached to this transcript today, when did 
+11  you create those?
+12       A       Late last night and finished them up 
+13  this morning.
+14       Q       Okay.  Thank you.  All right.  I want 
+15  to talk first about the -- just a single year, 
+16  1980.  You assumed in your report here that 
+17  Ms. Wagner started using Johnson's baby powder in 
+18  1980, personal use; correct?  Did I get that 
+19  right?
+20       A       Well, I would have said that 
+21  according to her -- Lynda's testimony that she 
+22  was bathing herself in 1978 and Lynda said she 
+23  was teaching her how to put the baby powder on 
+24  herself, so I tried to be conservative and say 
+25  1980 would have been the start.
+                                                               116
+ 1       Q       Okay.  Were you told by anyone to 
+ 2  assume that date?
+ 3       A       No.
+ 4       Q       1980.  Okay.  And I'm assuming, 
+ 5  correct me if I'm wrong, that when you do 1980, 
+ 6  you're talking January 1st, 1980; is that 
+ 7  correct?
+ 8       A       Yes.  I guess, yes.
+ 9       Q       You would agree that that's an 
+10  assumption you've made; true?
+11       A       That's true.
+12       Q       Okay.  No witness in this case 
+13  actually identified Nanette Wagner identified 
+14  using Johnson's baby powder during the year 1980; 
+15  is that true?
+16       A       I think that's true.  I'd have to go 
+17  back and look at William Beck's, but I don't 
+18  believe anybody said 1980.
+19       Q       Okay.  You cannot state here to a 
+20  reasonable degree of scientific certainty that 
+21  Nanette Wagner used any Johnson's baby powder 
+22  during the first three months of 1980; true?
+23       A       It is my opinion she did.  Can I 
+24  state it within a reasonable degree of scientific 
+25  certainty, I'm not sure how you do that.  It's an 
+                                                               117
+ 1  opinion based on these facts.  I don't have any 
+ 2  reason to believe that it didn't happen because 
+ 3  of all the testimony, but I don't know how you do 
+ 4  a reasonable degree of scientific certainty on 
+ 5  that.  It's just based on the facts.
+ 6       Q       Okay.  And let me make sure I 
+ 7  understand.  The sole basis for your opinion that 
+ 8  she started using Johnson's baby powder 
+ 9  personally on January 1st, 1980, is the testimony 
+10  of William Beck and Lynda Tackett-Dyer; is that 
+11  correct?
+12       A       Well, the first part of that question 
+13  January 1st, I just, I picked 1980 just to give a 
+14  conservative two years starting.  I never even 
+15  thought about January 1st.  I guess you get 
+16  around this argument, I should have used when she 
+17  actually was doing it herself in 1978.  But I 
+18  am basing it that this is a conservative start 
+19  based on the testimony of Lynda and William.
+20       Q       Do you recall any testimony from 
+21  William Beck where he said he saw his sister use 
+22  Johnson's baby powder during the year 1980?
+23       A       No.
+24       Q       Do you recall any testimony from 
+25  Lynda Tackett-Dyer where she says she saw her 
+                                                               118
+ 1  half sister use Johnson's baby powder during the 
+ 2  year 1980?
+ 3       A       No.  Off the record for a second.
+ 4       (Whereupon off-the-record discussions
+ 5        ensued.)
+ 6  MR. CARPENTER:
+ 7       Q       Does that change -- what you just 
+ 8  noted, does that change your opinions?
+ 9       A       No.
+10       Q       Okay.  I want to move forward then to 
+11  the period of time between 1989 and June of 1992.  
+12  Okay?  
+13       A       Sure.
+14       Q       For any container of Johnson's baby 
+15  powder that Ms. Wagner used between 1989 and June 
+16  of 1992, do you know what part of the mines in 
+17  Vermont that talc came from?
+18       A       As I was asked those exact same 
+19  questions from Matt Ashby, I did not try to break 
+20  that out.  I have that information according to 
+21  Johnson & Johnson in the history of the Vermont 
+22  mines, but I did not try to break that out for 
+23  this study -- I mean, excuse me, for these 
+24  calculations.
+25       Q       All right.  And you're not a 
+                                                               119
+ 1  geologist or mineralogist; true?
+ 2       A       I don't have a degree in geology, and 
+ 3  I don't have a degree in mineralogy.
+ 4       Q       And you cannot give the opinion that 
+ 5  the talc ore that was used during these 
+ 6  particular years, 1989 and 1992, was sporadically 
+ 7  contaminated or not contaminated at all or 
+ 8  homogeneously contaminated; true?
+ 9       A       Nobody can say it's not contaminated 
+10  at all, and you're going to have levels of 
+11  contamination that are -- I don't know what you 
+12  mean by, you know, homogenous.  There's different 
+13  areas in different mines, the other people have 
+14  opined about how good the, you know, taking the 
+15  core samples or you're doing blasting on an open 
+16  pit.  All's I can tell you is that we have 
+17  positive samples from Vermont during that time 
+18  frame.
+19       Q       You don't know what level of 
+20  contamination any particular container of 
+21  Johnson's baby powder the decedent used in 
+22  between 1989 and 1992 was; correct?
+23       A       The exact -- 
+24              MR. RUIZ:  Vague.  
+25              THE WITNESS:  The exact amount in 
+                                                               120
+ 1  each container that she used?  
+ 2  BY MR. CARPENTER:  
+ 3       Q       Yeah, well, yes, but without the word 
+ 4  exact, just do you know what level of 
+ 5  contamination any particular container of 
+ 6  Johnson's baby powder the decedent used between 
+ 7  1989 and 1992 contained?  
+ 8       A       Again, and I -- any particular 
+ 9  container along the lines of, say, on July 1st of 
+10  1989 the container she was using had a 
+11  thousandths of or hundredths of thousands or 
+12  millions of asbestos fibers in it, or it's kind 
+13  of a question I'm not sure anybody could answer.  
+14               My overall opinion is -- 
+15       Q       Okay.
+16       A       -- more likely than not, when she's 
+17  using those containers any particular time, 
+18  there -- she's going to be exposed to asbestos.  
+19              MR. CARPENTER:  All right.  Move to 
+20  strike nonresponsive portions.
+21  BY MR. CARPENTER:  
+22       Q       It's true that you cannot state to a 
+23  reasonable degree of scientific certainty what 
+24  level of contamination any particular container 
+25  of Johnson's baby powder decedent used during 
+                                                               121
+ 1  those particular years had; true?
+ 2       A       Again -- 
+ 3              MR. RUIZ:  Asked and answered.
+ 4       A       Again, you're asking a hypothetical 
+ 5  that nobody can answer.
+ 6  BY MR. CARPENTER:  
+ 7       Q       Okay.
+ 8       A       Unless you tested that particular 
+ 9  container to see what the concentration is, and 
+10  you can only -- and you can only detect it to, 
+11  you can only say down to your detection limit.
+12       Q       Understood.
+13       A       Nobody can ever say -- no scientist 
+14  that is honest can ever say that there is no 
+15  asbestos in these talcs because you can only go 
+16  down to your detection limit.
+17              MR. CARPENTER:  Move to strike 
+18  nonresponsive portions.  
+19  BY MR. CARPENTER: 
+20       Q       Doctor, how many containers did 
+21  Ms. Wagner use?  How many containers of Johnson's 
+22  baby powder did Ms. Wagner use per year between 
+23  1989 and 1992?
+24       A       You're going to have to give me a 
+25  second on that.
+                                                               122
+ 1       Q       No problem.
+ 2       A       How many years?  1980, '81, '82, 
+ 3  three years.
+ 4       Q       No, no, no.  Between -- I'm 
+ 5  talking -- it's really just on a per year basis, 
+ 6  but I am limiting this to the '89 to '92 time 
+ 7  frame, but I want to know on a per year basis.  
+ 8       A       So over a 23-year period, she had 408 
+ 9  containers, divide that by 23, that would be 18 
+10  containers per year.
+11       Q       Where did you get the information 
+12  that led you to the 18 -- well, that led you to 
+13  the 408 containers in 23 years?
+14              MR. RUIZ:  Asked and answered.
+15              THE WITNESS:  I went through and 
+16  calculated from 1980, well, to 2003, because I 
+17  like to break these applications out per mine -- 
+18  excuse me, from 1980, yeah, to 2003, that's 23 
+19  years, and it's 23 years times one application a 
+20  day.
+21  BY MR. CARPENTER:
+22       Q       Okay.  
+23       A       That will give you 8,395 
+24  applications, assuming that Johnson & Johnson's 
+25  data is correct from their human subjects that 
+                                                               123
+ 1  they experimented on to see how much talcum 
+ 2  powder they would use, and they had ones that 
+ 3  they would call heavy users, which were all body 
+ 4  and -- 
+ 5       Q       Okay.  
+ 6       A       -- a five foot, five female weighing 
+ 7  125 pounds did a whole body application in this 
+ 8  study and used 15.3 grams.  I used a conservative 
+ 9  10 grams, multiplied it by the applications, then 
+10  over the 23 years, and then divided it, put it 
+11  into ounces and then assumed a 9-ounce bottle.  
+12  That's how I got that number.
+13       Q       Understood.  So that did not come 
+14  from any testimony from Ms. Wagner's family 
+15  members or her husband; correct?
+16       A       No.  They either weren't asked or 
+17  they didn't know, I don't guess.  I don't 
+18  remember anybody asking how many containers 
+19  typically they go through.
+20       Q       Okay.  Got it.  Now, I want to just 
+21  go through those real quickly through those four 
+22  years, '89 through '92, and, you know, if it's 
+23  going to be the same for each, just let me know 
+24  so we can save a little time here.  
+25               Of those 18 containers, 
+                                                               124
+ 1  approximately, that's used in the year 1989, is 
+ 2  it your opinion -- or strike that.  
+ 3               Of those 18 containers that she used 
+ 4  in 1989, what percentage of them would have been 
+ 5  contaminated with any amount of asbestos in your 
+ 6  opinion?
+ 7       A       Over 50 percent.
+ 8       Q       Can you be anymore specific?
+ 9       A       Well, I guess I could go through what 
+10  we found from '89 to 1993 on how many positive 
+11  samples we have.
+12       Q       Have you done that?
+13       A       No, sir.  I haven't.
+14       Q       Is that something you're able to 
+15  provide that opinion here today?
+16       A       No, I don't have any of my reports 
+17  with me.
+18       Q       Okay.  How about from 1990, would 
+19  your testimony be the same?
+20       A       Yes, sir.
+21       Q       '91, would it be the same?
+22       A       It would.
+23       Q       '92 is the last one, would it be the 
+24  same?
+25       A       Yes.
+                                                               125
+ 1       Q       All right.  Now, for any of those 
+ 2  containers that's used in 1989, any of the 
+ 3  approximate 18 containers she would have used in 
+ 4  1989, can you tell me what percentage of 
+ 5  contamination was contained in any of those 
+ 6  containers?
+ 7       A       No.
+ 8              MR. RUIZ:  Vague.
+ 9  BY MR. CARPENTER:  
+10       Q       All right.  Would it be the same with 
+11  regard to if I asked you regarding 1990?
+12       A       It would.
+13       Q       Same for '91?
+14       A       I would.
+15       Q       Same for '92?
+16       A       I would.
+17       Q       All right.  Do you have any opinions 
+18  here today that are specific to Cyprus Mines 
+19  Corporation?
+20       A       I do not.
+21              MR. CARPENTER:  Dr. Longo, thank you 
+22  very much.  That's all I have.  
+23              THE WITNESS:  Thank you.  Can we take 
+24  a break?  
+25              MS. BEAL:  Sure.
+                                                               126
+ 1       (Proceedings in recess, 3:26 p.m. to 
+ 2       3:44 p.m.)
+ 3  EXAMINATION
+ 4  BY MS. BEAL:
+ 5       Q       Dr. Longo, based upon the deposition 
+ 6  testimony that you reviewed that include Wagner, 
+ 7  Mr. Wagner, Deiter Isen, Thomas Perry, Rick 
+ 8  MacPherson, those in particular, were you able to 
+ 9  determine the source or the sources of the talc 
+10  used in the ceramic slip products at issue?
+11       A       What I saw is that there was 
+12  testimony about the desert California, which is 
+13  the, you know, Death Valley area.  There was 
+14  testimony about Nytal, and then there was a 
+15  product that was called Pioneer that it's unclear 
+16  to me where exactly that comes from.  
+17               If it's Texas, then it's one mine in 
+18  Texas.  There's two mines in Texas.  One has -- 
+19  is tremolitic and one, it has very low amphibole 
+20  asbestos.  It's below the detection limit, at 
+21  least at our facility.
+22       Q       And as you sit here today, are you 
+23  able to determine what year or years any of the 
+24  particular ceramic slip product contained that 
+25  Pioneer talc?
+                                                               127
+ 1       A       Well, there was testimony that after 
+ 2  they no longer had a source at California, and I 
+ 3  don't know how accurate that is or not, from the 
+ 4  desert source, that it was used some time maybe 
+ 5  mid-1980s.  But then we have the Nytal, and we 
+ 6  found Nytal in this container, so I don't -- I 
+ 7  know there was invoices to Aardvark from late 
+ 8  '90s, early 2000s for it seems like tens of 
+ 9  thousand of pounds of Nytal that the person most 
+10  knowledgeable about Aardvark seemed to suggest he 
+11  wasn't aware or he had forgotten that they were 
+12  buying from Nytal.  
+13               So I'm not the one for product ID, 
+14  but that's the information I got.  There seemed 
+15  to be some confusion about the Pioneer and Nytal.
+16       Q       And do you know anything about the 
+17  Pfizer talc at all?
+18       A       Well, the Pfizer facility was, as I 
+19  understand it, from the Death Valley area, the 
+20  desert, the desert talc.
+21       Q       And do you -- have you ever heard of 
+22  anything called the California Desert 
+23  Conservation Act?
+24       A       Not until I read about it in the 
+25  depositions.
+                                                               128
+ 1       Q       Do you know when the Desert 
+ 2  Conservation Act in California was passed?
+ 3       A       From the deposition it looks like 
+ 4  some time in the 1980s.
+ 5       Q       And, again, you're just basing that 
+ 6  upon what you read in the depositions; right?
+ 7       A       Yes, ma'am.
+ 8       Q       Would you happen to know the type or 
+ 9  the source of the talc that was used specifically 
+10  during the 1995 and 1997 time period that 
+11  Stewart's was using?
+12       A       I think there is a claim that it was 
+13  Pioneer, that they tried, at least the testimony 
+14  was they tried the Nytal and it didn't work, 
+15  which I found unusual because the Nytal was the 
+16  premium type of talc that ceramic folks liked, 
+17  and so I don't have any firsthand information on 
+18  what was being used during that time period.
+19       Q       Okay.  And the same would be true for 
+20  the time period between 1997 and 2001, is that 
+21  correct, you wouldn't know exactly where the 
+22  source of any of that talc came from?
+23       A       Other than what is shown in the 
+24  depositions, there's a lot of Nytal being 
+25  purchased by Aardvark during that period.
+                                                               129
+ 1       Q       Were you provided with any records or 
+ 2  discovery responses from a former codefendant in 
+ 3  the case, Vanderbilt Materials?
+ 4       A       No.
+ 5       Q       How about Whittaker Clark & Daniels?
+ 6       A       No.
+ 7       Q       Have you ever analyzed a Stewart's of 
+ 8  California ceramic slip product or any Stewart's 
+ 9  of California product for asbestos content?
+10       A       Not that I'm aware of.
+11       Q       Have you ever analyzed an American 
+12  Art Clay Company ceramic slip clay product for 
+13  asbestos content?
+14       A       Not that I'm aware of.
+15       Q       Have you ever analyzed an AMACO 
+16  ceramic slip product for asbestos content?  
+17       A       Not that I'm aware of.
+18       Q       That Nytal study that you have 
+19  referenced that was a study, do you have a name 
+20  that you call that study?
+21       A       Probably along the lines of pouring 
+22  Nytal talc.
+23       Q       And as for the Nytal talc that was 
+24  used in that study, do you know the year of 
+25  manufacture of that talc?
+                                                               130
+ 1       A       It was purchased at a ceramic shop in 
+ 2  2003 or 2004 in New York.  When it was processed, 
+ 3  dug out of the ground, stuck in the five-pound 
+ 4  box and sent to that ceramic shop, I don't know.
+ 5       Q       And when you saw -- did that talc, 
+ 6  that 2003 or 2004 talc that you used for your 
+ 7  study, did that come in a bag?
+ 8       A       A box, five-pound box.
+ 9       Q       A box.  I'm sorry.  How many pound 
+10  box?
+11       A       Five pounds.
+12       Q       And did that box have any writings 
+13  regarding the recommendation for the use of 
+14  respiratory protection on that?
+15       A       I don't recall seeing that in 2000 -- 
+16  whenever that box was manufactured.
+17       Q       Do you recall that box -- 
+18       A       I'm not saying it's not there -- 
+19       Q       -- had any asbestos --
+20       A       -- I just don't recall seeing it.
+21       Q       Got you.  How about asbestos 
+22  warnings?  Do you recall seeing any asbestos 
+23  warnings on that box?
+24       A       Again, not that I recall.  But I'd 
+25  have to review the pictures to know for sure.
+                                                               131
+ 1       Q       Now, you've seen material safety 
+ 2  datasheets for Nytal, the Nytal 100 or 200; is 
+ 3  that right?  
+ 4       A       That's possible, yes.
+ 5       Q       And do you recall the material safety 
+ 6  datasheets for Nytal saying that the product 
+ 7  actually did not contain asbestos?
+ 8              MR. RUIZ:  Vague as to time.  
+ 9  Compound.
+10              THE WITNESS:  I know at certain times 
+11  the data safety sheets said that or said -- or 
+12  didn't say it had it or it didn't have it.  I 
+13  don't remember.  I don't usually testify about 
+14  data safety sheets.
+15  BY MS. BEAL:  
+16       Q       Got that.  But do you know what year 
+17  material safety datasheets that you reviewed for 
+18  the Nytal product?
+19       A       No.
+20       Q       And am I correct that the MSDS sheets 
+21  that you did review, it did say that the product 
+22  did not contain asbestos; is that correct?
+23       A       I'm not saying that that's what it 
+24  said or not.  I don't know if it just didn't say 
+25  anything or not.  I just don't recall what it is.  
+                                                               132
+ 1  I haven't looked at it, the one I have, in a 
+ 2  while.
+ 3       Q       Got that.  Have you performed a 
+ 4  similar study that says pouring of talc to desert 
+ 5  talc or fiber talc?
+ 6       A       No.
+ 7       Q       Have you performed a similar study to 
+ 8  Pioneer talc or any Texas-mined talc?
+ 9       A       I have not.  But if there's a 
+10  five-pound box of any of these talcs around, I'd 
+11  be happy to do it.
+12       Q       I'm sure you will.  And if we can, 
+13  can we take a look at the MVA study or the MVA 
+14  testing results?  
+15       A       Sure.
+16       Q       And, you know, I'm looking at on page 
+17  six and seven, I'm looking at Figure 3 and Figure 
+18  5, and I see one is tremolite asbestos and the 
+19  other is a talc fiber, and maybe Compton can 
+20  explain this better, but how -- what makes Figure 
+21  3 a tremolite asbestos and Figure 5 a talc fiber?
+22       A       Well, it would be hard to see on 
+23  these photographs because these are polarized 
+24  light microscopy photographs.  And I'm assuming 
+25  the color photos would show the refractive 
+                                                               133
+ 1  indices colors to show what refractive indices.  
+ 2               And the refractive indices between 
+ 3  tremolite and fibrous talc are completely 
+ 4  different, especially in the extinction angle as 
+ 5  well as elongation.  And the refractive indices 
+ 6  for talc are around 1.5 -- well, you would look 
+ 7  at 1.55 and usually refractive indices are for 
+ 8  talc have a higher, say, 1.57 or so, and 
+ 9  tremolite would have refractive indices of 
+10  approximately 1.63 to maybe 1.64, so the 
+11  refractive indices are completely different in 
+12  polarized light.  
+13               And Dr. Compton, I'm assuming, will 
+14  have the -- would have the color photos and he 
+15  could go through.  It's a little bit difficult to 
+16  do that from a very bad black and white copy.
+17       Q       Okay.  I understand.  And then so for 
+18  Figure 6 on page eight, this is a TEM, and I 
+19  guess this is anthophyllite, and what data 
+20  supports that this is anthophyllite?
+21       A       Well, I don't think all the data is 
+22  in this report, at least that I have, but if you 
+23  look at the chemistry, the magnesium and silicon 
+24  peaks on the left-hand side, the NG and SI, are 
+25  at their proper ratios.  There's no iron in this, 
+                                                               134
+ 1  which would be consistent with anthophyllite.  
+ 2               But I'm assuming Dr. Compton also has 
+ 3  some selected area electron diffraction patterns 
+ 4  that would show that this is not talc, which 
+ 5  typically will give you what's commonly known as 
+ 6  pseudo hexagonal dot pattern where the 
+ 7  anthophyllite does not have these hexagonal 
+ 8  patterns, but I don't see that data.  
+ 9               But I am familiar with these types of 
+10  reports that they'll issue without all the data, 
+11  so when you have a deposition with Dr. Compton, 
+12  I'm assuming he will provide that backup data.
+13       Q       And that leads me to another 
+14  question.  He actually has already been deposed, 
+15  and obviously, you haven't read his deposition; 
+16  is that right?
+17       A       That's correct.  Did he provide SAED 
+18  patterns?  
+19       Q       He didn't, but he did refer to the 
+20  fact that he would have to refer to those to make 
+21  that distinction.  
+22               And then I wanted to ask you about 
+23  the table on page four, and I guess was it 
+24  your understanding that this particular product 
+25  that was tested is a ceramic slip product?
+                                                               135
+ 1       A       Yes.
+ 2       Q       And do you have Thomas Perry's 
+ 3  deposition in front of you?
+ 4       A       Thomas Perry?  I do.
+ 5       Q       Can you turn to page 33, line 23.  
+ 6  And I'll just read -- I want to read you line -- 
+ 7  on page 33, line 23 to 34, line 4.  
+ 8               The question was asked, "Do you know 
+ 9  the ingredients of the wet slip that Stewart's 
+10  made in-house prior to the Kemper purchase?"
+11               And the answer was, "I do not have 
+12  the formula, but it was basically talc, OM 4 ball 
+13  clay, and Tennessee No. 1 clay, and sodium 
+14  silicate that was used as a deflocculant."
+15               Do you see that testimony?  
+16       A       I do.
+17       Q       So in a ceramic slip product, you 
+18  would have clay and sodium silicate; is that 
+19  right?
+20       A       That is correct.
+21       Q       Or at least -- on Table 2 where is 
+22  the clay, or why is there no clay recorded?
+23       A       Why isn't it counted on the x-ray 
+24  diffraction?  
+25       Q       Yes.
+                                                               136
+ 1       A       It may not be looking for that.  
+ 2  Let's see what their pattern says in the back 
+ 3  here, and I'm trying to reach back in my memory 
+ 4  here.  Well, I can see where they're finding some 
+ 5  of the minerals for clay.  I mean, some of the 
+ 6  elements for clay, but, again, these are very 
+ 7  complex samples.  
+ 8               If I was going to do something like 
+ 9  this to try to identify what clay, I would have 
+10  done not x-ray diffraction, but a full TEM 
+11  analysis.  So it would be, since these are not my 
+12  analyses, I would have to defer to Dr. Compton on 
+13  how this was prepared and what they were exactly 
+14  telling them to look for.  So I haven't read his 
+15  deposition, so I'm sure he had an explanation.
+16       Q       Thank you.  And then -- I think 
+17  that's it.
+18       A       Okay.
+19       Q       Well, let me just ask you this.  For 
+20  a ceramic product manufactured in the 1995 to 
+21  1997 time period for which you've never tested, 
+22  is it your opinion that the talc that was used in 
+23  that product was contaminated with asbestos?  
+24       A       Without testing an unknown and not 
+25  having the source of the talc, no, I wouldn't 
+                                                               137
+ 1  state that until I actually tested it.  And it 
+ 2  depends on the source.  You can't ever say it's 
+ 3  not contaminated.  All's you can ever say is that 
+ 4  if it's present, it's below our detection limit.  
+ 5               If I knew the talc came from 
+ 6  Vanderbilt or some other talc mine that I know 
+ 7  about, then I could say, yes, if that's the talc 
+ 8  they used such as Vanderbilt talc or some other 
+ 9  source that I have information about the talc 
+10  source, I could, but typically I wouldn't do that 
+11  without testing it to make sure.
+12       Q       And it's your understanding that the 
+13  product that was within plaintiff's possession 
+14  that was owned by Nanette Wagner, that's been 
+15  tested; is that right?  
+16       A       According to this report and the 
+17  testimony in the deposition, yes.
+18       Q       Thank you.  I don't think I have any 
+19  further questions.  
+20       A       Thank you.
+21       Q       Oh, are you planning on performing 
+22  any additional work, Dr. Longo, with respect to 
+23  the ceramic slip product?
+24       A       I don't intend to do any additional 
+25  work unless I'm asked by my client.  And as I sit 
+                                                               138
+ 1  here today, I've not been asked by my client to 
+ 2  do any additional work.
+ 3       Q       Great.  And what is your hourly rate?
+ 4       A       $625.
+ 5       Q       And is that for deposition and trial 
+ 6  testimony?
+ 7       A       Yes, ma'am.  
+ 8              MS. BEAL:  Thank you.  I think I'm 
+ 9  done.
+10              THE WITNESS:  Thank you.  Anybody 
+11  else?  
+12              MR. ASHBY:  Sure.  This is Matt 
+13  again.
+14              THE WITNESS:  Oh, I knew it.
+15  RE-EXAMINATION
+16  BY MR. ASHBY:  
+17       Q       Just a follow-up on what I heard a 
+18  second ago.  You mentioned some refractive 
+19  indices when you were looking at the report by 
+20  MVA.  
+21               Did you see any reference in that 
+22  report as to the refractive indices of the 
+23  particles that MVA looked at by PLM?  
+24       A       No, of course not.  I was just asked 
+25  how would you differentiate it.  I don't know.  
+                                                               139
+ 1  I'm assuming there's a PLM report that identified 
+ 2  it with refractive indices somewhere.
+ 3       Q       Got it.  Okay.  Did you, you know, on 
+ 4  Monday we had talked about you were going to go 
+ 5  look to see what the reference materials was for 
+ 6  the refractive indices that were being used by 
+ 7  Paul Hess.  Did you get a chance to do that yet?
+ 8       A       Oh, all the reference materials, I 
+ 9  have them somewhere.  No.  I mean, I have them, 
+10  but I haven't put them together so I could 
+11  produce.
+12       Q       Okay.  Did you bring that document 
+13  today that was the McCrone document that you got 
+14  from Mr. Labor?
+15       A       No.
+16       Q       The actual -- the original?
+17       A       I'll bring it when I see you again.
+18       Q       Yeah, who knows when that's going to 
+19  be.  Okay.
+20       A       But I can clarify some things, 
+21  though, because I talked to him about it.  He 
+22  took the course.  Dr. Walter McCrone actually 
+23  taught the course, and it was a handout, but that 
+24  handwriting is his, those notes, as you went 
+25  through the class for the week.
+                                                               140
+ 1       Q       Oh, all right.  So on that document 
+ 2  there were some handwritten notes in one of the 
+ 3  columns on the far right.  Those were Mr. Labor's 
+ 4  handwritten notes; right?
+ 5       A       Yes.
+ 6       Q       All right.  We'll just deal with that 
+ 7  another time.  I don't think -- I think we have 
+ 8  to attach it to the record for it to make sense 
+ 9  what we're talking about.  
+10               In any event, we're referencing a 
+11  document that was attached as an exhibit to your 
+12  deposition in the Citizen case on Monday; right?
+13       A       Yes, sir.
+14       Q       Okay.  And I don't recall the exhibit 
+15  number.  Okay.  I didn't hear anybody else had 
+16  any questions.  
+17               Dr. Longo, have we now at this 
+18  deposition discussed all of your opinions in the 
+19  Wagner case?
+20       A       I would surely hope so.
+21              MR. RUIZ:  Vague.  Overbroad.
+22              THE WITNESS:  But again -- 
+23              MR. ASHBY:  I have no more questions.
+24              THE WITNESS:  I don't know what I'm 
+25  going to be asked on direct, and certainly, even 
+                                                               141
+ 1  after all these years, I've never predicted 
+ 2  cross-examination.
+ 3              MR. ASHBY:  Understood.  I have no 
+ 4  more questions.  Does anyone on this phone have 
+ 5  questions, either plaintiff's counsel or defense 
+ 6  counsel?  
+ 7              MR. RUIZ:  Plaintiff -- 
+ 8              MR. ASHBY:  All right.  Hearing 
+ 9  none -- what?  
+10              MR. RUIZ:  I was going to say, 
+11  plaintiffs will, of course, reserve for trial.  I 
+12  just wanted to be sure we got five hours and 
+13  someone is going to be taking up the bill.  We 
+14  can go off the record.
+15              THE COURT REPORTER:  Do you want to 
+16  read and sign?  
+17              THE WITNESS:  No.
+18       (Proceedings adjourned, 4:09 p.m.)
+19       (Original transcript sent to Matt Ashby.)
+20              
+21
+22
+23
+24
+25
+                                                               142
+ 1            The following reporter and firm 
+    disclosures were presented by me at this 
+ 2  proceeding for review by counsel:
+    
+ 3                REPORTER DISCLOSURES
+    
+ 4            The following representations and 
+    disclosures are made in compliance with Georgia 
+ 5  Law, more specifically:
+              Article 10 (B) of the Rules and 
+ 6  Regulations of the Board of Court Reporting 
+    (disclosure forms)
+ 7            OCGA Section 9-11-28 (c) 
+    (disqualification of reporter for financial 
+ 8  interest)
+              OCGA Section 15-14-37 (a) and (b) 
+ 9  (prohibitions against contracts except on a 
+    case-by-case basis).
+10  
+    - I am a certified court reporter in the State of 
+11  Georgia.  
+    - I am a subcontractor for Veritext.  
+12  - I have been assigned to make a complete and 
+    accurate record of these proceedings.
+13  - I have no relationship of interest in the 
+    matter on which I am about to report which would 
+14  disqualify me from making a verbatim record or 
+    maintaining my obligation of impartiality in 
+15  compliance with the Code of Professional Ethics.  
+    - I have no direct contract with any party in 
+16  this action, and my compensation is determined 
+    solely by the terms of my subcontractor 
+17  agreement.
+    
+18
+                    FIRM DISCLOSURES
+19  
+    - Veritext was contacted to provide reporting 
+20  services by the noticing or taking attorney in 
+    this matter.
+21  - There is no agreement in place that is 
+    prohibited by OCGA 15-14-37 (a) and (b).  Any 
+22  case-specific discounts are automatically applied 
+    to all parties at such time as any party receives 
+23  a discount.
+    - Transcripts:  The transcript of this proceeding 
+24  as produced will be a true, correct, and complete 
+    record of the colloquies, and answers as 
+25  submitted by the certified court reporter.
+    
+                                                               143
+ 1  - Exhibits:  No changes will be made to the 
+    exhibits as submitted by the reporter, attorneys, 
+ 2  or witnesses.
+    - Password-Protected Access:  Transcripts and 
+ 3  exhibits relating to this proceeding will be 
+    uploaded to a password-protected repository, to 
+ 4  which all ordering parties will have access.
+    
+ 5
+    
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+                                                               144
+ 1                    CERTIFICATE 
+    
+ 2  STATE OF GEORGIA:  
+    COUNTY OF COBB:  
+ 3  
+ 4            I hereby certify that the foregoing 
+    deposition was taken down, as stated in the 
+ 5  caption, and the colloquies, questions and 
+    answers were reduced to typewriting under my 
+ 6  direction; that the transcript is a true and 
+    correct record of the evidence given upon said 
+ 7  proceeding.
+              That the witness's right to read and 
+ 8  sign the deposition was waived; 
+              I further certify that I am not a 
+ 9  relative or employee or attorney of any party, 
+    nor am I financially interested in the outcome of 
+10  this action.  
+              I have no relationship of interest in 
+11  this matter which would disqualify me from 
+    maintaining my obligation of impartiality in 
+12  compliance with the Code of Professional Ethics. 
+              I have no direct contract with any party 
+13  in this action and my compensation is based 
+    solely on the terms of my subcontractor 
+14  agreement. 
+              Nothing in the arrangements made for 
+15  this proceeding impacts my absolute commitment to 
+    serve all parties as an impartial officer of the 
+16  court.  
+              This 16th day of March, 2020.
+17
+    
+18
+                 
+19               
+    
+20            <%24274,Signature%>    
+21		 SHANNON E. JORDAN, RPR, CCR-B-2126
+22
+23
+24
+25
+
+
+
+
+
+

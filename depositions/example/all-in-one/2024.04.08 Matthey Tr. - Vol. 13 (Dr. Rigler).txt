@@ -1,0 +1,3571 @@
+2143
+ 1   IN THE CIRCUIT COURT OF THE 12TH JUDICIAL CIRCUIT
+            IN AND FOR SARASOTA COUNTY, FLORIDA
+ 2   
+     PHILIPPE MATTHEY, as Personal
+ 3   Representative for the Estate
+     of PATRICIA A. MATTHEY,
+ 4   
+                 Plaintiff,
+ 5                                      Civil Action No.
+     vs.                                2018-CA-004809-NC
+ 6   
+     JOHNSON & JOHNSON, JOHNSON &
+ 7   JOHNSON CONSUMER, INC., f/k/a      DIVISION C CIRCUIT
+     JOHNSON & JOHNSON CONSUMER
+ 8   COMPANIES, INC., and PUBLIX
+     SUPER MARKETS, INC., IMERYS
+ 9   TALC AMERICA, INC.,
+10               Defendants.
+     ____________________________________/
+11   
+12                TRIAL PROCEEDINGS BEFORE
+               THE HONORABLE LEE E. HAWORTH,
+13                      and a jury
+14   
+     DATE:             April 8, 2024
+15   
+16   TIME:             1:30 p.m. to 5:00 p.m.
+17   
+     PLACE:            Judge Silvertooth Judicial Center
+18                     2002 Ringling Boulevard
+                       Courtroom 6C
+19                     Sarasota, Florida
+20   
+     REPORTED BY:      Aaron T. Perkins, FPR-C, RDR,
+21                     CRR, CRC, CCR
+                       Notary Public, State of
+22                     Florida at Large
+23   
+                       Volume 13
+24                     Pages 2143 to 2277
+25   
+2144
+ 1   APPEARANCES:
+ 2   
+     ON BEHALF OF PLAINTIFF
+ 3   
+      LANCE V. OLIVER, ESQUIRE
+ 4    RIDGE MAZINGO, ESQUIRE
+      Motley Rice, LLC
+ 5    28 Bridgeside Boulevard
+      Mount Pleasant, South Carolina  29464
+ 6    -  and  -
+      P. LEIGH O'DELL, ESQUIRE
+ 7    Beasley Allen
+      218 Commerce Street
+ 8    Montgomery, Alabama  36104
+ 9   
+10   
+11   ON BEHALF OF DEFENDANTS
+12    MORTON D. DUBIN, II, ESQUIRE
+      King & Spalding, LLP
+13    1185 Avenue of the Americas
+      34th Floor
+14    New York, New York 10036
+      -  and  -
+15    KATHRYN S. LEHMAN, ESQUIRE
+      SPENCER MILES DIAMOND, ESQUIRE
+16    King & Spalding, LLP
+      1180 Peachtree Street Northeast
+17    Suite 1600
+      Atlanta, Georgia  30309
+18    - and -
+      VALENTIN "VAL" LEPPERT, ESQUIRE
+19    King & Spalding, LLP
+      200 South Biscayne Boulevard
+20    Suite 4700
+      Miami, Florida  33131
+21   
+22   
+23   ALSO PRESENT:
+        Philippe Matthey
+24      Bernard Matthey
+        Maritza Harness, Clerk of Court
+25      Gina Veldman (Trial Tech)
+2145
+ 1                       I N D E X
+ 2    PROCEEDINGS                              Page
+                                               2147
+ 3   
+ 4   
+ 5   
+ 6    WITNESS:  MARK W. RIGLER, Ph.D.
+      CONTINUED CROSS-EXAMINATION              Page
+ 7    BY MR. DUBIN                             2147
+ 8    REDIRECT EXAMINATION                     Page
+      BY MR. OLIVER                            2209
+ 9   
+      RECROSS-EXAMINATION                      Page
+10    BY MR. DUBIN:                            2256
+11   
+12   
+13   
+14    REPORTER'S CERTIFICATE                   Page
+                                               2277
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+2146
+ 1   
+                      E X H I B I T S
+ 2   
+                   Exhibit D-8705           Page 2151
+ 3                 received
+ 4                 Exhibit D-7113           Page 2157
+                   received
+ 5   
+                   Exhibit D-7044           Page 2179
+ 6                 received
+ 7                 Exhibit D-7038           Page 2181
+                   received
+ 8   
+                   Exhibit D-7046           Page 2182
+ 9                 received
+10                 Exhibit D-21000          Page 2238
+                   received
+11   
+                   Exhibit P-2095           Page 2242
+12                 received
+13                 Exhibit D-7188           Page 2243
+                   received
+14   
+                   Exhibit D-1667           Page 2245
+15                 received
+16                 Exhibits P-2661,         Page 2250
+                   P-2662, and P-2663
+17                 received
+18                 Exhibit D-8348           Page 2259
+                   received
+19   
+                   Exhibit D-8728           Page 2260
+20                 received
+21                 Exhibit D-7547           Page 2261
+                   received
+22   
+23   
+24   
+25   
+2147
+ 1                     *  *  *  *  *
+ 2                 P R O C E E D I N G S
+ 3                     *  *  *  *  *
+ 4            (Whereupon, court was called to order at
+ 5       1:30 p.m. as follows:)
+ 6            THE COURT:  Okay.  Take your seats.
+ 7            Ready to proceed, Mr. Dubin?
+ 8            MR. DUBIN:  Anytime.
+ 9            (The witness resumed the stand.)
+10            (The jury returned to the courtroom at
+11       1:35 p.m.)
+12            THE COURT:  Okay.  Folks, be seated.
+13            The jury is back.  The parties are here
+14       with their clients and continuing with the
+15       cross-examination by Mr. Dubin.
+16              CONTINUED CROSS-EXAMINATION
+17   BY MR. DUBIN:
+18       Q.   I hope you had a nice lunch.
+19       A.   Yes.
+20       Q.   I'm not going to go on forever about
+21   these documents, but there are some more of the
+22   documents that you shared that I want to address.
+23            Let's start -- since I think we were
+24   back talking a little bit about what happened with
+25   the FDA back in the 1970s, I want to talk about
+2148
+ 1   Dr. Seymour Lewin, okay, because you showed a
+ 2   document from Dr. Seymour Lewin in your direct
+ 3   examination, and I want to try to place that in
+ 4   some context.  Okay?
+ 5       A.   Okay.
+ 6       Q.   All right.  So we'll start out with the
+ 7   document that you showed in your direct
+ 8   examination, and that was identified for the
+ 9   record and introduced as Plaintiff's 3185.
+10            So let's just first call up the document
+11   so we know what we're talking about, and then
+12   we'll get to look at a couple other documents on
+13   there.
+14            I put it up here.  I don't know if you
+15   still have a copy.
+16            But you recall showing this to the jury
+17   in your direct examination, right?
+18       A.   Yes.
+19       Q.   And this was a letter from Dr. Seymour
+20   Lewin, a professor of chemistry, to Alfred
+21   Weissler of the FDA dated August 3rd, 1972, right?
+22       A.   Yes.
+23       Q.   And in this letter, Dr. Lewin, at least
+24   at this point in time, was claiming to find what
+25   he said was chrysotile and a bunch of different
+2149
+ 1   talc products, right?
+ 2       A.   Yes.
+ 3       Q.   And I think one of the things we pointed
+ 4   out is if you go to the second page of this, one
+ 5   of the techniques that he was using -- if we look
+ 6   at just the top, the -- there's a reference here
+ 7   to X-ray diffraction analysis, right?
+ 8       A.   Yes.
+ 9       Q.   And as I think we covered before, but
+10   it's going to become relevant both here and to
+11   another document you showed, X-ray diffraction
+12   analysis, while it can tell you some important
+13   information about chemical composition, can't tell
+14   you whether what you're looking at is asbestos
+15   because it doesn't tell you anything about what we
+16   call the morphology, in other words, size, shape,
+17   and appearance of the -- of the mineral you're
+18   looking at, right?
+19       A.   It can give you an indication of the
+20   possibility of it being there.
+21       Q.   Right.
+22            And so, for example, serpentine minerals
+23   that are non-asbestos serpentine minerals will
+24   show up as serpentine on an X-ray diffraction, and
+25   chrysotile will show up as a serpentine on an
+2150
+ 1   X-ray diffraction, right?
+ 2       A.   Yes.
+ 3       Q.   And so one of the things that you
+ 4   mentioned, because I want to cover it, is, that
+ 5   Dr. Lewin, in addition to doing this X-ray
+ 6   diffraction work -- it's not discussed here -- but
+ 7   he did a little bit of what's called polarized
+ 8   light micropsy that he also used to try to say,
+ 9   "Oh, this is asbestos I'm finding," right?
+10       A.   Yes.  He tried to verify his findings
+11   with optical microscopy after this.
+12       Q.   Polarized light micropsy is a form of
+13   the optical microscopy, right?
+14       A.   Yes.
+15       Q.   And if you think about the world of
+16   optical microscopists, right, you know, people who
+17   have made gigantic contributions to the field and
+18   really helped develop the techniques that are used
+19   for an optical microscopy, one of the biggest
+20   names in that field is -- was Walter McCrone,
+21   right?
+22       A.   He was one who did a lot of work and
+23   developed a lot of technology and techniques, yes.
+24       Q.   Published something called The Particle
+25   Atlas I'm sure you're familiar with?
+2151
+ 1       A.   Yes.
+ 2       Q.   Okay.  And so the next document that I
+ 3   would like to introduce is D-8705.
+ 4            MR. OLIVER:  Thank you.
+ 5            MR. DUBIN:  Thank you.
+ 6            (A document was handed to the witness.)
+ 7            THE WITNESS:  Thank you.
+ 8            MR. DUBIN:  And we would offer D-8705.
+ 9            MR. OLIVER:  No objection.
+10            THE COURT:  Admitted.
+11            (Exhibit D-8705 received.)
+12   BY MR. DUBIN:
+13       Q.   So we already talked a little bit about
+14   some of the work that McCrone Associates did for
+15   Johnson & Johnson.  Let's look at D-8705 and talk
+16   about Walter McCrone's involvement in this issue
+17   with Dr. Lewin.
+18            And so this is a memo from Walter
+19   McCrone himself to Ian Stewart, who we saw earlier
+20   was another employee of McCrone Associates, right?
+21       A.   Yes.
+22       Q.   And so it says, "I met with Dr. Lewin in
+23   his laboratory to discuss the interpretation of
+24   the microscopical observations both of us has made
+25   on various commercial materials containing talc.
+2152
+ 1            "Hopefully, we will be able to agree on
+ 2   a standard procedure for the detection of
+ 3   chrysotile and tremolite in such samples.
+ 4   Dr. Weissler" -- W-e-i-s-s-l-e-r -- "FDA, and
+ 5   Dr. Berdick, Chesebrough-Ponds, were also present
+ 6   as observers."
+ 7            Do you see that?
+ 8       A.   Yes.
+ 9       Q.   And if we scroll a little bit down --
+10   you know, we don't have to go through all the
+11   technical detail of this -- but he's talking first
+12   about how Lewin is claiming that he's able to tell
+13   it's chrysotile, and Dr. McCrone's first comment
+14   is, "He is on shaky ground when he identifies
+15   either of these images as chrysotile."
+16            Do you see that at the top of the
+17   paragraph?
+18       A.   Yes.
+19       Q.   And then if we turn to the back, you can
+20   see there's some supplementary information and
+21   what they've looked into.  And Walter McCrone is
+22   talking about these particles and saying, "We
+23   have" -- "unfortunately, we have not yet
+24   identified the substance, but it cannot be
+25   chrysotile."
+2153
+ 1            Right?
+ 2       A.   He has alluded to that.
+ 3       Q.   Right.
+ 4            So, again, what happened was after Lewin
+ 5   said, "Okay, I've got these X-ray diffraction
+ 6   results," he did some optical microscopy.
+ 7   Johnson & Johnson asked the premier leader in
+ 8   optical microscopy at that time to look at it, and
+ 9   he didn't agree with Dr. Lewin, right?
+10       A.   He did not agree.  That's right.
+11       Q.   And there's a longer history of what
+12   happens after this, so we'll just talk -- we'll
+13   cover just a little bit of it.  D-7073.
+14            (A document was handed to the witness.)
+15            MR. DUBIN:  We would offer D-7073.
+16            MR. OLIVER:  Can you clarify this is a
+17       J&J document?
+18            MR. DUBIN:  It's in J&J's files, so they
+19       have this for notice purposes, and I believe
+20       it's a document prepared originally by the
+21       FDA from -- by Dr. Eiermann.
+22            MR. OLIVER:  Okay.
+23   BY MR. DUBIN:
+24       Q.   And so the FDA, after Dr. Lewin put out
+25   its results, it actually started -- the FDA
+2154
+ 1   started to do its own investigation into
+ 2   Dr. Lewin's alleged findings, right?
+ 3       A.   Yes.
+ 4       Q.   And one of the things you can see at the
+ 5   top is that the FDA consulted with a number of
+ 6   different people directly.  It said it talked to
+ 7   Dr. Lewin.  They also talked to this person,
+ 8   Arnold Schutze of the Microanalytical Branch,
+ 9   Division of Microbiology, FDA.  So it looks like
+10   that's somebody who was at FDA, right?
+11       A.   Yes.
+12       Q.   And it says, "Mr. Schutze investigated
+13   32 of the 195 samples by means of polarized light
+14   micropsy," right?
+15       A.   Yes.
+16       Q.   They also consulted with the -- somebody
+17   from the minerals, pigments, and metals division
+18   of Pfizer, Inc., from Eastern Pennsylvania who did
+19   some X-ray work, right?
+20       A.   Yes.
+21       Q.   And then they also consulted with
+22   Columbia Scientific Industries from Austin, Texas,
+23   and that -- they did something that we haven't
+24   talked about and not sure whether -- something
+25   called differential thermal analysis.
+2155
+ 1       A.   Yes.
+ 2       Q.   And DTA, right?
+ 3       A.   Yes.
+ 4       Q.   And at some point, a number of people
+ 5   were considering whether DTA might be a method of
+ 6   analysis to adopt for looking for chrysotile, but
+ 7   it mostly fell by the wayside eventually, right?
+ 8       A.   True.
+ 9       Q.   So if we scroll down to the bottom of
+10   the thing, it says -- oh, sorry.  Actually, I
+11   missed something.  You have to go back up right
+12   under the four.
+13            Okay.  The first thing it says, "There
+14   is poor correlation between Dr. Lewin's results
+15   and the findings of other investigators," right?
+16       A.   Yes.
+17       Q.   So what they're saying is, well,
+18   Dr. Lewin said this, but the other people we're
+19   consulting with, it doesn't really match up,
+20   right?
+21       A.   Some match up; some doesn't match up.
+22       Q.   And so in the bottom, what it says is --
+23   bottom paragraph, it says, "In light of these
+24   discrepancies and because the inhalation of the
+25   certain asbestiform minerals is a potential health
+2156
+ 1   hazard, the FDA is engaged in an intensive
+ 2   research project to develop one or more methods of
+ 3   sufficient sensitivity and reliability that will
+ 4   permit the determination of asbestos in
+ 5   talc-containing products, with a necessary degree
+ 6   of accuracy and at concentrations at which this
+ 7   contaminant presents a health hazard."
+ 8            And then it's signed by Heinz Eiermann,
+ 9   who was at the FDA at the time, right?
+10       A.   Yeah.  They were really concerned about
+11   it, yes.
+12       Q.   Right.
+13            So what happens after this is not only
+14   does the FDA and -- and the FDA is involved with
+15   the development of this industry standards CTFA
+16   J4-1, right?
+17       A.   They were -- they had reviewed it.  I
+18   believe they had reviewed it, yes.
+19       Q.   And, again, one of the other things that
+20   they do is they continue to look at these Lewin
+21   samples and get some other portions of the FDA
+22   involved, right?
+23       A.   You mean -- which other portions are you
+24   referring to?
+25       Q.   The -- they get something called the
+2157
+ 1   DCST involved, division of cosmetics technologies?
+ 2       A.   Yes.
+ 3            MR. DUBIN:  And so I will mark that next
+ 4       in order, D-7113.  And we would offer it.
+ 5            Any objection?
+ 6            MR. OLIVER:  No objection.
+ 7            THE COURT:  Admitted.
+ 8            (Exhibit D-7113 received.)
+ 9   BY MR. DUBIN:
+10       Q.   So this is a couple years later.  This
+11   is January 7th, 1976.  And you can see there's
+12   something called the director of divisions of --
+13   division of cosmetic technology?
+14       A.   Yes.
+15       Q.   And we can -- if we scroll through, we
+16   can see that there's some charts.  And what it
+17   will have is it will have Dr. Lewin's results,
+18   X-ray diffractions, tremolite, chrysotile, and
+19   then it will have DCST results, so that's -- you
+20   got to move the -- that way.
+21            You'll have DCST's results, so, in other
+22   words, the FDA -- is one of the divisions of FDA
+23   is doing its own microscopy?
+24       A.   Yes.
+25       Q.   And so there are a number of results for
+2158
+ 1   Johnson & Johnson, but if we can just -- for an
+ 2   example, like, page 5, samples 131 through 138.
+ 3   You can see there is a bunch of Johnson's Baby
+ 4   Powder, medicated powder, shower to shower, baby
+ 5   powder, and DCST.  So the FDA's lab, those are all
+ 6   non-detect for asbestos, right?
+ 7       A.   That's what they're showing.
+ 8       Q.   Okay.
+ 9       A.   They've got one there that is trace.
+10       Q.   No.  So that's --
+11       A.   That's Dr. Lewin's -- I'm sorry.
+12       Q.   That's Dr. Lewin's claim for --
+13       A.   Uh-huh (indicates affirmatively), true.
+14       Q.   Okay.  And you were asked a little bit
+15   about whether Dr. Lewin ever retracted or said
+16   anything like, "Maybe I was wrong."  So I want to
+17   look at D-107 -- 10071.
+18            MR. OLIVER:  107?
+19            MR. DUBIN:  10071.  Sorry.  And this is
+20       from J&J's files.  We would offer it.
+21            MR. OLIVER:  It's hearsay, Your Honor.
+22       A letter to the editor.  It's a newspaper
+23       article.
+24            MR. DUBIN:  Can we approach if we need
+25       argument?
+2159
+ 1            THE COURT:  Yeah, come up.
+ 2            (At the bench.)
+ 3            MR. DUBIN:  Here's a copy.
+ 4            So two things, Your Honor.
+ 5            First, it's from J&J's files.  It's
+ 6       certainly at a minimum for notice.
+ 7            Second of all, Your Honor, they asked
+ 8       the witness directly on his direct exam, did
+ 9       he ever take back his findings, or anything
+10       like that, and this is an article by
+11       Dr. Lewin where he's now trying to say, "Oh,
+12       actually, I didn't find it in all these
+13       samples and there's just one incomplete
+14       sample."
+15            And so it is him taking his results
+16       back, which was the topic of inquiry as to
+17       this witness on direct examination.
+18            MR. OLIVER:  Your Honor, I don't have
+19       any problem with him being questioned about
+20       it, but what I didn't hear was a hearsay
+21       exception, letters to the editor, newspaper
+22       articles.  That's plainly hearsay for
+23       admission.  That's the problem I have.
+24            MR. DUBIN:  Additionally, I will offer
+25       for admission purposes, this notice, and for
+2160
+ 1       this purpose, for substance for
+ 2       cross-examination.
+ 3            THE COURT:  Notice?
+ 4            MR. DUBIN:  Right.
+ 5            THE COURT:  Notice to who?
+ 6            MR. DUBIN:  Remember, they were
+ 7       arguing -- and made argument at the
+ 8       beginning -- that Johnson & Johnson should
+ 9       have known there was asbestos in there
+10       because of Dr. Lewin, and you're going to
+11       hear about Langer and saying these are notice
+12       documents they're using.  When their document
+13       from the FDA was admitted, I objected on
+14       hearsay.
+15            We came up --
+16            THE COURT:  Which one?
+17            MR. DUBIN:  Remember, the document --
+18       the one he showed on direct was an FDA
+19       document.  It wasn't a Johnson & Johnson
+20       document.  And I said, well, if they're
+21       offering it for notice, that's okay.  He can
+22       have it in, but I'm going to put in similar
+23       documents.  He said yes.  I'm offering -- I'm
+24       offering it for that purpose.
+25            MR. OLIVER:  This isn't a
+2161
+ 1       similar document -- I mean, I don't mind
+ 2       questioning about that.
+ 3            MR. DUBIN:  J&J was aware of this
+ 4       article.
+ 5            MR. OLIVER:  I'm not objecting to it on
+ 6       that ground.  I'm objecting to the entry of
+ 7       it into evidence.  He can absolutely question
+ 8       him about it.
+ 9            MR. DUBIN:  Your Honor, the issue is
+10       whether I can use it on cross or whether it
+11       goes in.  I will use it on the cross.  We can
+12       take up whether it goes in later.  That's
+13       fine with me.
+14            THE COURT:  I'm not going to allow the
+15       admission of the document.  You can question
+16       him.
+17            MR. DUBIN:  Okay.  Thank you.
+18            (In open court.)
+19            MR. DUBIN:  I will use it on
+20       cross-examination purposes only.
+21   BY MR. DUBIN:
+22       Q.   And so you were asked questions about
+23   Dr. Lewin and whether he ever retracted his
+24   results at all.  And so even Dr. Lewin, you can
+25   see, if we can call up D-10071 --
+2162
+ 1            MR. OLIVER:  I think -- I object to the
+ 2       publication of the document.
+ 3            MR. DUBIN:  Okay.  You want me to read
+ 4       it, then.  All right.  So we won't show it.
+ 5   BY MR. DUBIN:
+ 6       Q.   Dr. Lewin wrote a letter to the editor.
+ 7   We're looking at it.  And he is talking about some
+ 8   article.  And he says, "The article referred to I
+ 9   was erroneously quoted as having reported that
+10   Johnson & Johnson's talcum powder contained 2 to
+11   3 percent asbestos.  In actual fact, I reported
+12   that of the 11 samples of the product of this
+13   company, I found no evidence of asbestos in nine
+14   of the samples and the other two samples fell into
+15   the inconclusive category described above.  These
+16   results are not seriously at variance, but those
+17   are reported by the investigators retained by the
+18   company."
+19            Do you see that?
+20       A.   Yes.
+21       Q.   Okay.  So, again, whether this is a full
+22   retraction, he did -- even Dr. Lewin himself
+23   backed off from his results, right?
+24       A.   He talked about how there were some that
+25   were inconclusive, but they weren't at odds with
+2163
+ 1   what other investigators retained by the company
+ 2   had found.
+ 3       Q.   Okay.  Let's talk about Blount for a
+ 4   moment, although we will primarily talk about this
+ 5   with another witness.
+ 6            So Alice Blount, the article that you
+ 7   showed, so she -- I guess we will just look at the
+ 8   article itself.  Let's make sure I've got the
+ 9   right copy.
+10            The copy that was put into evidence is a
+11   copy.  I think it was this letter attached to it,
+12   P-3234.  Let's call it back up.
+13            This was a copy -- a copy of an article
+14   and a letter from Alice Blount.  And in a moment I
+15   will put in another letter from Alice Blount.  But
+16   I just want to talk about it.
+17            So the paper, if we can go one more page
+18   over, so this paper is called Amphibole Content of
+19   Cosmetic and Pharmaceutical Talcs, right, by A.M.
+20   Blount, correct?
+21       A.   Yes.
+22       Q.   And she doesn't identify in this article
+23   what she was actually testing, right?
+24       A.   She names her samples in the sources of
+25   the samples.
+2164
+ 1       Q.   So let me make sure I'm clear, because
+ 2   you're right.
+ 3       A.   Sure.
+ 4       Q.   She doesn't identify which sample is
+ 5   which thing, right?
+ 6       A.   Correct.
+ 7       Q.   All right.  So one question -- and I
+ 8   know you talked a little bit about it; she was
+ 9   asked about this later -- but is what was
+10   Sample I, what was actually Sample I or not,
+11   right?
+12       A.   Yes.  She published this as
+13   Johnson & Johnson Baby Powder from Vermont.
+14       Q.   Okay.  Well, we'll talk about that in
+15   one second.
+16            But the question is, for example, was I
+17   really baby powder, right?  And you know, because
+18   you referred to her testimony, that she
+19   acknowledged some confusion about that, right?
+20       A.   Not in the earlier documents that she
+21   has given to the companies.
+22       Q.   Okay.  One of the things that we know --
+23   first, we'll talk about the two different papers.
+24   So if you look at -- if you look at the -- what
+25   she says she is testing.
+2165
+ 1            So if we go to page 4, we blow up under
+ 2   the results, it says, "High-grade talc products
+ 3   from five deposits in Montana, three in Vermont,
+ 4   and one each in North Carolina and Alabama were
+ 5   examined using the centrifuge optimal method.  In
+ 6   addition, four talcs from outside the U.S. but
+ 7   available in the U.S. market were included in the
+ 8   study."
+ 9            That's what you meant by describing what
+10   was here, right?
+11       A.   Yes.
+12       Q.   Okay.  So if the key -- the key that
+13   we're talking about matches, then there should be
+14   four samples from outside of the U.S. -- the U.S.,
+15   right?
+16       A.   Yes.
+17       Q.   And if we go to the key that's on the
+18   back, the key that was put into evidence, it's the
+19   last -- the last page of the document.
+20            So we have Italy.  That is definitely
+21   not the United States, right?
+22       A.   True.
+23       Q.   Then we have Montana, Montana,
+24   North Carolina, Alabama, Montana, Montana.  That's
+25   all in the United States, correct?
+2166
+ 1       A.   Yes.
+ 2       Q.   And we have Italy, that's outside of the
+ 3   United States, right?
+ 4       A.   Yes.
+ 5       Q.   We have Windsor.  That's what you're
+ 6   claiming is JBP, right?
+ 7       A.   That's what they're claiming is JBP.
+ 8       Q.   Do you know that there's more than one
+ 9   Vermont mine in Windsor?
+10       A.   Yes.
+11       Q.   Then it says other Vermont deposits,
+12   right?
+13       A.   Yes.
+14       Q.   That's also Vermont, U.S.?
+15       A.   Yes.
+16       Q.   Ontario, that's outside of the United
+17   States?  That's Canada, right?
+18       A.   Yes.
+19       Q.   And then Willow Creek, Montana, that's
+20   inside the United States?
+21       A.   Yes.
+22       Q.   So the key doesn't match what she said
+23   she was testing in the article?
+24       A.   Well, she says Sample I's of
+25   Johnson & Johnson Baby Powder.  The others, she
+2167
+ 1   tested them also, so I don't know what you're
+ 2   referring to.
+ 3       Q.   Well, there's something also that's
+ 4   interesting about that.  You can -- if you go back
+ 5   to the front of the letter that she sent, on the
+ 6   front page, and she says here, okay, so she claims
+ 7   that I is Johnson & Johnson.
+ 8            And, first, you know one of the things
+ 9   she's doing is blinding samples for herself.  The
+10   reason she's assigning letters is because she
+11   doesn't want to know what each sample is and have
+12   a preconception about what she should be finding?
+13       A.   True.  But she knew what they were
+14   afterwards.
+15       Q.   Okay.  And we'll see.
+16            But, again -- so I, it says, has also
+17   been known by traditional methods as well,
+18   Sample 2, page 567 in a 1990 paper, right?
+19       A.   Yes.
+20       Q.   And just so we understand here, if we go
+21   back to the paper one more page again, so in
+22   this -- in this -- in this paper, for her to
+23   determine when she's trying to determine what she
+24   thinks looks like an asbestos or not, she's using
+25   a technique -- and I know you said MAS uses
+2168
+ 1   concentration, but MAS does not use the second
+ 2   part of this, which is particle size distribution
+ 3   analysis that would try to determine whether
+ 4   something is asbestos or not, right?  That's not
+ 5   part of any of the reports that -- or the methods
+ 6   that MAS uses, right?
+ 7       A.   We did particle analysis in 2017, yes.
+ 8       Q.   Particle size distribution --
+ 9       A.   Yes.
+10       Q.   -- analysis is not in these reports.
+11   That's a different type of thing, where what
+12   you're trying to say is, I'm going to lay out all
+13   the different particle sizes and I'm going to
+14   evaluate the distribution, right?
+15       A.   Correct.
+16       Q.   And that particle size distribution
+17   analysis approach, that's not in any regulatory
+18   standard that exists today, right?  I guess PLM,
+19   R93 to some extent, right?
+20       A.   To some extent, a little bit.
+21       Q.   But suffice it to say that in here she's
+22   claiming the only sample that had a particle size
+23   distribution that she claimed was -- made her
+24   think it was asbestos was the Sample I, right?
+25       A.   Yeah.  I think you might be referring to
+2169
+ 1   the aspect ratio distribution.
+ 2       Q.   Okay.
+ 3       A.   I think that's what she's talking about.
+ 4       Q.   That's how she's reporting?
+ 5       A.   Which is different from the particle
+ 6   size.
+ 7       Q.   Well -- okay.  No point in debating
+ 8   that.  But one of the things we know is she also
+ 9   referred to her 1990 paper and said, "I also
+10   looked at Sample I there," right?
+11       A.   Yes.
+12       Q.   Okay.  So I want to look at that 1990
+13   paper.  This will just be, for identification for
+14   examination purposes, L9995.
+15            MR. DUBIN:  I'm not trying to seek to
+16       introduce it.  It's just an article.
+17            Any objection to me explaining -- asking
+18       the witness about it?
+19            MR. OLIVER:  No.
+20   BY MR. DUBIN:
+21       Q.   So the interesting thing here -- and
+22   you'll see in the letter she's referring to
+23   Table 2, right?  Table 2 in the -- let me go back
+24   and show you.  Can we go back to the previous
+25   exhibit, the letter?  It was P -- well, we can
+2170
+ 1   just look at the table.
+ 2            So let's -- if you blow that up.  Being
+ 3   referred to Table 2, page 567.
+ 4       A.   Uh-huh (indicates affirmatively), yes.
+ 5       Q.   So the interesting thing is in this one,
+ 6   if you look at Sample I, if you look at Table 2,
+ 7   if we go back to the paper, so Sample I is the
+ 8   only one in which she doesn't report any fibers in
+ 9   it, right?  A, 216 per milligram, 309.  I has
+10   zero, right?
+11       A.   Yeah.  She didn't use the concentration
+12   method there.
+13       Q.   Okay.  But one of the things -- again, I
+14   know you're familiar with this -- is the question
+15   of whether she may have used Johnson & Johnson as
+16   I in this paper but then changed the designations
+17   around so that she wouldn't know the second time
+18   what sample she was looking at, right?
+19            Because if she did this analysis, if she
+20   knew Johnson & Johnson was I and then she used I
+21   again in the next paper, then it would no longer
+22   be blinded.  She wouldn't have known what the
+23   sample is.
+24       A.   I can explain it if you let me.
+25       Q.   Okay.  Go ahead.
+2171
+ 1       A.   So Sample I is -- the breakdown of
+ 2   Sample I is in Table B under there.  Where it says
+ 3   centrifuge method, P1, P2, P3, all of those, those
+ 4   are all Sample I.  They're all the centrifuge
+ 5   portions of that.  If we look at that and look at
+ 6   the 1991 table paper, we have the same exact table
+ 7   in there, so that is the same, same sample.
+ 8       Q.   Okay.  So somehow in this one, the one
+ 9   that she is saying, okay, that's the one that's
+10   asbestos, the Sample I, it's the one that she
+11   doesn't find fibers in as opposed to all the other
+12   ones?
+13       A.   Well, again, the lower portion is when
+14   she used the centrifuge method, this concentration
+15   method.  That gives you the breakdown of those
+16   samples from Sample I.  And they're also referred
+17   to in the 1991 paper.  It's the same table.
+18       Q.   Okay.  And there's another letter,
+19   though, essentially, a P number, so P-3535.
+20            (A document was handed to the witness.)
+21            MR. DUBIN:  Any objection?
+22            MR. OLIVER:  Object to the entry, but
+23       not the use of it during cross-examination.
+24            MR. DUBIN:  Well, we can take it up
+25       later, but it's the same exact --
+2172
+ 1            THE COURT:  All right.  Go ahead.
+ 2   BY MR. DUBIN:
+ 3       Q.   And so it -- you know, it's odd.  This
+ 4   is earlier somebody writing one of the lawyers
+ 5   that was involved in this.  And here she's
+ 6   writing -- at least according to the lawyers
+ 7   relaying the conversation, she had originally --
+ 8   it says she considered Vermont talc as some of the
+ 9   purest talc available, right?
+10       A.   Yes.
+11       Q.   Okay.  And but if -- but Sample I, that
+12   would be the only one she claimed had a
+13   distribution that was compatible with asbestos,
+14   not the purest talc available.  It wouldn't make
+15   sense.
+16       A.   I'm sorry, I was reading.  What was the
+17   question again?
+18       Q.   Well, it's fine.
+19            Again, so the -- she claimed in one
+20   paper that Sample I is the only one that seems to
+21   match asbestos.  In the other paper, she's saying
+22   she found no fibers in that sample as opposed to
+23   fibers in others.  And then she's saying to the
+24   lawyer before the other letter, that Vermont talc
+25   is the purest talc available, not the one that
+2173
+ 1   the -- the only one that she supposedly found
+ 2   asbestos in.
+ 3       A.   Sample I is the same in both papers.
+ 4   Let's be clear on that.
+ 5       Q.   Okay.
+ 6       A.   It's the same sample.  If you read it
+ 7   closely, you'll see that Sample I is the same
+ 8   sample.  Here in this letter, she states that
+ 9   whatever amount of asbestos that might be present
+10   in baby powder, she didn't think that that was
+11   harmful.  That's what she said in this letter.
+12       Q.   Okay.
+13       A.   Whatever amount might be present.
+14       Q.   Let me ask you also, because one of the
+15   things you mentioned was this idea that -- okay --
+16   she was using concentration studies.  And I think
+17   we mentioned before that -- we can go back to the
+18   paper.  Let's go back to the other one.
+19            You mentioned, okay, well, she was using
+20   concentration and I think when we talked about
+21   NIOSH, because when we looked at the Boundy study
+22   earlier, Alice Blount is looking at Vermont
+23   talc -- we can take this one down too.  This is
+24   the original.
+25            Alice Blount was looking at Vermont talc
+2174
+ 1   and so was NIOSH and Harvard, right?
+ 2       A.   Yes.  A number of people were.
+ 3       Q.   A number of people were.
+ 4            And the NIOSH and Harvard results, they
+ 5   used different techniques, right?
+ 6       A.   We talked about that, yes.
+ 7       Q.   Right.
+ 8            And they found no asbestos looking at
+ 9   Vermont talc, correct, that they reported no
+10   asbestos?
+11       A.   They did TEM.  They didn't show us any
+12   of their data.  They didn't use the concentration
+13   method.  They used SEM, which can't tell the
+14   difference between talc and asbestos.
+15            So that's the weakness I find in all of
+16   it.
+17       Q.   Okay.  First of all, the fact that you
+18   also used SEM doesn't mean your TEM results are
+19   wrong.  They also did TEM, right?
+20       A.   They can augment it, yes.
+21       Q.   And if you look at Dr. Blount's article
+22   and we try to compare the sensitivity of the two
+23   analyses, they don't stand on the same footing,
+24   because Dr. Blount didn't even use TEM at all?
+25       A.   No.  She used PLM.
+2175
+ 1       Q.   Right.  And what she was actually trying
+ 2   to do was to develop a rapid method to get -- to
+ 3   make things easier about the asbestos analysis and
+ 4   to try to detect down to about .1 percent, right?
+ 5       A.   Yes.  She wanted to help, you know, move
+ 6   that talc out so you could see the asbestos.
+ 7       Q.   Right.
+ 8       A.   So that's what she was working on, the
+ 9   concentration method, the heavy liquid separation
+10   method.
+11       Q.   But --
+12       A.   And she was -- excuse me.
+13       Q.   I'm sorry.
+14       A.   She was a great PLM analyst.
+15       Q.   But TEM, which the Boundy and NIOSH
+16   study, that can detect way below .1 percent?
+17       A.   If you -- if you use the concentration
+18   method, yes.
+19       Q.   Well, either way, it can detect way
+20   below .1, right?
+21       A.   Again, it can detect a lower limit, yes.
+22       Q.   Right.  Because we're going to start
+23   talking a little bit about these FDA findings.
+24   The FDA, when it says it found chrysotile in a
+25   bottle, that wasn't used in a concentration
+2176
+ 1   technique, right?
+ 2       A.   That's right.
+ 3       Q.   And they were able to detect down to
+ 4   .00000 whatever, as we're going to look, right?
+ 5       A.   Yes.
+ 6       Q.   Before we get there -- and we'll get
+ 7   there soon -- I want to talk a little bit about
+ 8   one other scientist you mentioned.  And that is
+ 9   Dr. Pooley.  And Dr. Pooley -- you know who he is,
+10   right?
+11       A.   Yes.
+12       Q.   He was a mineralogist and geologist and
+13   did a lot of work back in the 1970s, right?
+14       A.   Yes.  In Cardiff in Wales, yes.  He was
+15   one of your consultants.
+16       Q.   Yes.
+17            And you showed a document from Pooley;
+18   that was P-2035.  So I want to call that up.  I
+19   just want to focus on the analytical results here,
+20   this portion.
+21            And the page that you showed was -- I
+22   think it has a notation, 2035_5.
+23            All right.  And if we go to the
+24   preconcentration, blow it up.
+25            One of the things down here that was
+2177
+ 1   highlighted for you is this idea of 0.05 percent
+ 2   of tremolite type, right?  Do you recall that?
+ 3       A.   Yes.
+ 4       Q.   And, again, the method that it's talking
+ 5   about is X-ray diffraction analysis, right?
+ 6       A.   For the method, yes, but he's talking
+ 7   about the concentration, the preconcentration
+ 8   method, yes.
+ 9       Q.   Well, preconcentration and then using
+10   X-ray diffraction?
+11       A.   Yes.
+12       Q.   Okay.  And what we know is that when
+13   you're using X-ray diffraction, you can't tell
+14   what that 0.05 percent of tremolite type is,
+15   right?  You can just tell that it's the mineral
+16   tremolite; you can't tell whether it's asbestos or
+17   not?
+18       A.   Yes.  But he's mainly referring to just
+19   the preconcentration, enabling you to get there.
+20   That's mainly what he's talking about.
+21       Q.   That's fine.  But I'm just saying, if
+22   you look at that number and hold it up and say,
+23   "Oh, look, they're finding asbestos," the type of
+24   analysis you're doing, X-ray diffraction there,
+25   can only tell you mineral type?
+2178
+ 1       A.   True.
+ 2       Q.   Okay.  And, in fact, they also --
+ 3            Thank you.
+ 4            They also have what -- Johnson & Johnson
+ 5   also asked Dr. Pooley to do far more extensive
+ 6   examinations of the talc, both in Vermont and
+ 7   Italy, using additional techniques, including
+ 8   transmission electron microscopy and X-ray
+ 9   diffraction and PLM, right?
+10       A.   Yes.
+11       Q.   Okay.  So I want to look at some of
+12   those.
+13            So most of what we're dealing with in
+14   this case is Vermont, but since the idea of Italy
+15   was brought up, I want to briefly cover that.
+16            So this is D-7044.  And we'll move to
+17   admit.
+18            (A document was handed to the witness.)
+19            THE WITNESS:  Thank you.
+20            MR. OLIVER:  It's hearsay.
+21            MR. DUBIN:  It's a business record and
+22       an ancient document.
+23            (A document was handed to the judge.)
+24            MR. OLIVER:  Your Honor, it's fine.
+25       It's fine, Your Honor.  You don't have to
+2179
+ 1       rule.  It's fine.
+ 2            MR. DUBIN:  Okay.
+ 3            THE COURT:  7044 is admitted.
+ 4            (Exhibit D-7044 received.)
+ 5   BY MR. DUBIN:
+ 6       Q.   7044.  So this is back in -- again,
+ 7   we're talking many, many years ago, but -- even I
+ 8   was a babe.
+ 9            And F.D. Pooley is writing to
+10   Dr. Shelley, and Dr. Shelley was at J&J, right?
+11       A.   Yes.
+12       Q.   Talking about what he did.
+13            And he says, "The mineralogical X-ray
+14   and morphological examinations of the Italian mine
+15   samples has been in progress for over a year.  The
+16   samples were all collected under my supervision at
+17   the Fontana mine, which is the same mine from
+18   which the Shower to Shower sample was obtained.
+19            "The results of the examination contains
+20   a brief" -- sorry.  I apologize.
+21            "The report of the examination contains
+22   a brief outline of the results obtained.  No
+23   chrysotile was found at the mine or in samples
+24   taken.  Some tremolite was located, but it was not
+25   asbestiform in character and has not been detected
+2180
+ 1   in 00000 talc imported into Great Britain for the
+ 2   past year nor shipments dating back to 1949.  I
+ 3   hope that is of some interest to you.
+ 4   Dr. Pooley."
+ 5            So this is another part of what
+ 6   Dr. Pooley communicated to Johnson & Johnson,
+ 7   right?
+ 8       A.   I see that.
+ 9       Q.   And so because you had mentioned before
+10   that it's good to have backup data, we'll just
+11   introduce as D-7038 the full report that went with
+12   the letter --
+13       A.   Thank you.
+14       Q.   -- if there's no objection.
+15            MR. OLIVER:  Is this what the witness
+16       has seen?
+17            MR. DUBIN:  I have no idea.
+18   BY MR. DUBIN:
+19       Q.   Have you seen this before?
+20            MR. OLIVER:  Lack of foundation and
+21       hearsay.  And I think you need to ask the
+22       witness questions.
+23            MR. DUBIN:  I don't disagree with you,
+24       but I will ask him a question anyway.
+25   BY MR. DUBIN:
+2181
+ 1       Q.   Have you seen this before?
+ 2       A.   No.
+ 3       Q.   So you're coming in to show a document
+ 4   from Dr. Pooley that says "tremolite type" on it,
+ 5   but you didn't bother to look or read the
+ 6   extensive report on the Italian mine that he
+ 7   prepared for Johnson & Johnson.  Is that what
+ 8   you're saying?
+ 9       A.   No, I'm not saying that at all.
+10       Q.   So you're saying you did read it?
+11       A.   I have seen many, many, many of your
+12   documents, and I may have seen this one too.  The
+13   letter that's presented is simply -- I mean, it's
+14   a letter that describes what the findings were.
+15   And, again, I mentioned it would be good to have
+16   the data, so again, I may have seen this at one
+17   time but I missed all the documents.
+18            MR. DUBIN:  Your Honor, we still move
+19       its admission.  It is a business record and
+20       ancient document of Johnson & Johnson.  It
+21       goes to Johnson & Johnson's notice --
+22            THE COURT:  It's admitted.
+23            MR. DUBIN:  Thank you.
+24            (Exhibit D-7038 received.)
+25   BY MR. DUBIN:
+2182
+ 1       Q.   All right.  We don't need -- we've
+ 2   already seen the summary of this one.  We're going
+ 3   to look -- because there is no summary letter for
+ 4   the Vermont one, we'll look at the actual report
+ 5   when we get to that.
+ 6            So in addition, Dr. Pooley wrote a
+ 7   multipage report of his examination, evaluation of
+ 8   the Vermont talc source.
+ 9            Did you know that?
+10       A.   Yes.
+11       Q.   Okay.  Good.
+12            (A document was handed to the witness.)
+13            MR. DUBIN:  So D-7046, we'll move for
+14       the admission of that.
+15            MR. OLIVER:  Same objection.
+16            THE COURT:  It's admitted.
+17            (Exhibit D-7046 received.)
+18            MR. DUBIN:  And we can call that up,
+19       D-7046.  And we can go to the Conclusions, I
+20       suppose is the easiest thing.  It's page 49
+21       of 49, or PDF page 48.
+22   BY MR. DUBIN:
+23       Q.   So what he's reporting, right, that
+24   there -- you can find various minerals there,
+25   chlorite, magnesite, biotite, muscovite, quartz,
+2183
+ 1   actinolite, tremolite, other stuff.
+ 2            But then when you go down to the next
+ 3   paragraph, what he's saying, "The amphibole
+ 4   minerals are found in discrete locations and not
+ 5   disseminated throughout talc ore and were not
+ 6   asbestiform in character.  Serpentine mineral was
+ 7   found in the specimens located in the center of
+ 8   the ore, but no fibrous components were observed."
+ 9            And that's what you reported to
+10   Johnson & Johnson when they asked them to
+11   investigate the geology and mineralogy of the
+12   Vermont mine, right?
+13       A.   That's what is stated here.
+14       Q.   Okay.  Let's talk a little bit about the
+15   FDA testing, and then I want to talk about the
+16   R.J. Lee testing will be my next two topics, and
+17   then I think we're probably getting close to the
+18   end, but I have to check my outline because there
+19   might be a few final things after that.  Okay?
+20            So I want to talk about the FDA testing.
+21            First, the idea of blanks and control
+22   blanks.  I think you talked about this a little
+23   bit before, but when you prepare a blank for your
+24   analysis, I think one of the things you said, at
+25   least when you do it -- and this was probably
+2184
+ 1   right the way, right -- to do it at the same time
+ 2   as you're preparing the sample that you're going
+ 3   to be analyzing, right?
+ 4       A.   That's the proper way, yes.
+ 5       Q.   And, in fact, it's pretty critical
+ 6   because what you really want to know is like what
+ 7   are the conditions of the lab at that day, right?
+ 8       A.   Yes.
+ 9       Q.   Okay.
+10       A.   During the sample prep.
+11       Q.   Right.
+12            And AMA, the lab that did this work for
+13   the FDA -- first of all, it's not the FDA; it's a
+14   contract lab, right?
+15       A.   Correct.  Yes.
+16       Q.   And as a contract lab, they also do a
+17   bunch of asbestos analysis of just commercial
+18   products that contain asbestos, right?
+19       A.   Are you talking about the actual sample
+20   analysis?
+21       Q.   Well, I'm not talking about part of the
+22   work they did for the FDA.  I'm saying, in
+23   general, they have asbestos products around in the
+24   laboratory because they test them.  That's one of
+25   the things they do.
+2185
+ 1       A.   Oh, yeah.  They're all -- they're all
+ 2   kept sealed and stored away.  They're not just
+ 3   open on the counter and that kind of thing.
+ 4       Q.   Of course.  They're being handled at
+ 5   times --
+ 6       A.   Yes.
+ 7       Q.   -- correct?
+ 8       A.   You have to have the standards, yes.
+ 9       Q.   And so one of the things we saw in the
+10   first letter, the first information that went out
+11   about the findings at this lab, AMA, it said that
+12   blanks and a control reference sample of
+13   chrysotile, meaning they were using pure
+14   chrysotile, were compared alongside the client's
+15   samples, the reference samples, right?
+16       A.   No.
+17       Q.   You don't recall it saying that, or you
+18   don't think that's right?
+19       A.   Both.
+20       Q.   Okay.
+21            MR. DUBIN:  Can we find the actual
+22       report and pull it up.
+23   BY MR. DUBIN:
+24       Q.   We'll pull it up and we'll look at that
+25   if you don't remember it.
+2186
+ 1       A.   Sure.
+ 2       Q.   But, first, let's get busy showing
+ 3   something else, and that is, the AMA violated the
+ 4   basic principle of when you're supposed to prepare
+ 5   blanks; isn't that true?
+ 6       A.   No.
+ 7       Q.   Have you looked at the data?
+ 8       A.   Yes.
+ 9       Q.   Okay.  Great.  Let's do it together,
+10   then.
+11            So I'm going to put a slide up with some
+12   dates on it, and then we're going to walk through
+13   and confirm whether they're correct.  Okay?  If
+14   I'm wrong, I'm wrong.  I have been wrong before.
+15            (A document was handed to the witness.)
+16   BY MR. DUBIN:
+17       Q.   But let's just see.
+18            MR. DUBIN:  Demonstrative purposes only.
+19            MR. OLIVER:  Is this the AMA report?
+20       This is based off the AMA report?  I just
+21       want him to be able to have it.
+22            MR. DUBIN:  Yeah.  I will give it to him
+23       right now.
+24            MR. OLIVER:  Okay.  That's fine.
+25            MR. DUBIN:  Sure.  Of course.  No
+2187
+ 1       problem.  Like I said, we'll try to do this
+ 2       together.  It gets a little complicated.
+ 3   BY MR. DUBIN:
+ 4       Q.   So let's first put up the slide and then
+ 5   we're going to walk through it.
+ 6            So I will hand you D-21000, which is
+ 7   some of the backup data for -- that was eventually
+ 8   provided as far as what AMA did.  Okay?
+ 9            (A document was handed to the witness.)
+10            MR. DUBIN:  Did I give somebody my
+11       tabbed copy?  No.  Here it is.  Thank the
+12       Lord.
+13            And right now I will just display it.
+14       We may introduce it later, but let's try to
+15       do this together.  Not super quick.
+16            Okay.  So let's show the slide first
+17       just so we can walk through it.  I will find
+18       it.
+19            Do you have the number, Brittany?  I
+20       will have it in one second.
+21            MS. LITZINGER:  We have it.
+22            MR. DUBIN:  Okay.  You have it up.
+23   BY MR. DUBIN:
+24       Q.   Okay.  So the first thing we've got to
+25   figure out is what samples that we're talking
+2188
+ 1   about and what the code number is.  So we're going
+ 2   to have to -- I guess we're going to have to go
+ 3   back and forth between the two documents.  I will
+ 4   just -- these are the general dates, and then when
+ 5   we come back, I will put it back up again and we
+ 6   can see if we agree that it's right or not.  Okay?
+ 7       A.   (Nods affirmatively.)
+ 8            MR. DUBIN:  So if we go to D-21000,
+ 9       let's put that up on the screen.
+10   BY MR. DUBIN:
+11       Q.   So the first thing we need to know is
+12   the sample ID numbers for the testing that they
+13   did.  And we can see there's some different
+14   numbers that they're assigning.  Client sample
+15   ID -- and those are all D-58 because it's all
+16   having to do with one bottle, right?
+17       A.   Yeah.  This is the Johnson's Baby
+18   Powder.
+19       Q.   And then there are sample IDs 308006-6,
+20   308006-6A, 308006-6B, and those are different
+21   analyses of different aliquots from the bottle, an
+22   aliquot being a sample.
+23       A.   Yeah.  There's three splits, uh-huh
+24   (indicates affirmatively), of the same sample.
+25       Q.   So we're going to need to remember that
+2189
+ 1   number to -- I don't know.  Can I --
+ 2       A.   Three.
+ 3       Q.   Can you remember it, or do you --
+ 4       A.   I can remember it.
+ 5       Q.   -- want me to write it down?
+ 6       A.   No, I can remember it.
+ 7       Q.   That's beyond me.
+ 8            Okay.  So now we have some of the sample
+ 9   numbers, and we're going to try to see what else
+10   we can learn about them.
+11            So -- and we can see this again and we
+12   can see which ones -- I guess we can see it right
+13   here.
+14            So the first sample, the first time they
+15   test it, which is the basic first aliquot,
+16   308006-6, that's negative, right?
+17       A.   Yes.
+18       Q.   And then it will be A and B where they
+19   found the chrysotile deposits, right?
+20       A.   Yeah.  The first one is a non-detect.
+21       Q.   Okay.  Yeah, non-detect.
+22       A.   Yeah.
+23       Q.   And so now we have to figure out when
+24   the blanks were made.  And so first we need to
+25   look how the blanks for this analysis, for the
+2190
+ 1   analysis of 308006, are identified in the report.
+ 2   And so we can go to page 30.
+ 3            And they will now give us -- no, sorry.
+ 4   You'll have to scroll down a little bit.
+ 5            They will now give us the numbers for
+ 6   the blanks.  Okay?  And so the numbers are
+ 7   MB-19646, MB-19645, MB-19647, right?
+ 8       A.   Yes.
+ 9       Q.   And it has the dates on here where these
+10   blanks were analyzed, but we're going to look for
+11   the dates when they were prepared.  Okay?
+12       A.   All right.
+13       Q.   All right.  Now, we have to look -- I
+14   mean, we can get the testing dates first of when
+15   the -- let's deal with when the blanks were
+16   prepared first.
+17            So the blanks, if you go -- it will say
+18   page 39 on the bottom.
+19            Do you see 39?
+20       A.   Yes.
+21       Q.   And you have to be able to see what the
+22   numbers on the -- the letters on the side.
+23            So MB-19645, MB-19646, MB-19647, they're
+24   being listed as being prepared on 9/5/2019.
+25            Do you see the dates on the side of the
+2191
+ 1   page?
+ 2       A.   That's what's written on -- the actual
+ 3   preparation dates are 8/13/19 and 9/30/19, it
+ 4   looks like.
+ 5       Q.   What?
+ 6       A.   Yeah.  Up there at the top.
+ 7       Q.   Right.  In other words, what they're
+ 8   saying is the dates on the side are the dates
+ 9   listed about when these things were being
+10   prepared?
+11       A.   Yeah.
+12       Q.   Including the reference blank.  And then
+13   they move down to the 10/1, and that's what they
+14   did on 10/1.
+15       A.   Yeah.  I mean, it looks to me like
+16   they've been prepared from August 13th to
+17   September 30th.
+18       Q.   Okay.  But even though the date written
+19   about the prep date on the side is 9/15/2019?
+20       A.   Yeah, I don't know what that is
+21   referring to there.  I mean, it doesn't say that.
+22   It says at the top, TEM Preparations, August 13,
+23   September 13 -- to September 30th.
+24       Q.   Well, that --
+25       A.   I don't know what this on the side here
+2192
+ 1   is.
+ 2       Q.   You don't know what --
+ 3       A.   That's maybe when they ended something;
+ 4   I don't know.  It doesn't -- but at the top the
+ 5   preparation says --
+ 6       Q.   Well --
+ 7       A.   -- August 13th to September 30th.
+ 8       Q.   Well, August 13th to September 30th,
+ 9   you're saying.  So, first of all, either way that
+10   you read that -- so you're saying it might be
+11   August 13th to -- or September 30th, these dates?
+12       A.   I mean, it says both, 13 and
+13   September 30th.
+14       Q.   Do you know when the aliquots of the
+15   Johnson & Johnson were prepared?
+16       A.   Well, it will tell us here.  It says --
+17   it looks like the same day.
+18       Q.   Yeah.  Those aren't the
+19   Johnson & Johnson -- go to page 37.
+20       A.   Hold on.  It's 308006, and the TEM
+21   analysis is on page 38.  It says the same day --
+22       Q.   Right.
+23       A.   -- August 13th and September 30th.
+24       Q.   No.  In terms of the prep dates, if you
+25   go back to page 37 --
+2193
+ 1       A.   Uh-huh (indicates affirmatively).
+ 2       Q.   -- do you see that this is talking about
+ 3   these prep dates, 38006-6; dash, 6A; dash, 6B,
+ 4   that's listing 8/30/2019?
+ 5       A.   Well, then that means the blanks were
+ 6   prepared before that.
+ 7       Q.   Right.  It means that the blanks were
+ 8   not prepared alongside the reference samples of
+ 9   the Johnson & Johnson?
+10       A.   If that -- now, again, that on the side
+11   there may be an end date, but the actual prep date
+12   up here says August 13th, and September 30th,
+13   2019, which would indicate the same day.
+14            Now, again, that may be when they
+15   finished their actual TEM analysis for both of
+16   them.  And I suspect that's what it is.
+17            But the prep dates are at the top, and
+18   they're the same.
+19       Q.   Okay.  The reason why they have those
+20   dates in the side -- okay.  So you don't -- you
+21   didn't work at AMA?  Do you know how to read these
+22   things?
+23       A.   I mean, I'm reading it -- what it says,
+24   the actual prep date -- the prep dates were.
+25       Q.   So when was the 10 percent chrysotile
+2194
+ 1   sample prepared, according to you?  Because if you
+ 2   go back to 39 -- so you're reading that they were
+ 3   using chrysotile on both these days, 8/13 and
+ 4   9/30?  That's your read of the document?
+ 5       A.   It's 6 -- well, wait.  Is 699 the
+ 6   chrysotile sample, you're saying?
+ 7       Q.   The RB.  That's the reference blank.
+ 8   That's why it says "10 percent chrysotile."
+ 9       A.   Oh, I see that.
+10       Q.   So when was that being prepared?
+11       A.   It looks like it would be the same, the
+12   same day as those, as that group.
+13       Q.   All right.  Is this the first time
+14   you're looking at this data?
+15       A.   No.  I have seen it before.  I'm just
+16   looking at it here.
+17       Q.   All right.  We'll talk about that with
+18   the witness that's going to come up.
+19            Let me ask you a little bit about the
+20   R.J. Lee testing.
+21       A.   You don't want to ask about this
+22   anymore?
+23       Q.   Well, I do, but it doesn't seem -- it
+24   seems that we're disagreeing about what various
+25   numbers mean.  So I'm not sure how we can --
+2195
+ 1       A.   I mean, I don't think your witness
+ 2   worked at this lab either, but you're going to ask
+ 3   the questions.
+ 4       Q.   Okay.  We'll go through that later.
+ 5            The next thing I want to ask you about
+ 6   is the R.J. Lee stuff.
+ 7            MS. O'DELL:  Can I get a copy of that?
+ 8            MR. DUBIN:  I gave you a copy of that,
+ 9       didn't I?
+10            MR. OLIVER:  No.
+11   BY MR. DUBIN:
+12       Q.   All right.  So I want to talk a little
+13   bit about R.J. Lee, because I know you mentioned
+14   that too.  And I wanted to see whether you had
+15   read all of the different reports that go with
+16   this.
+17            All right.  So on your reliance list,
+18   you presented a reliance list about some things
+19   that you relied on in this case, and you listed
+20   three reports, analytical reports, about the
+21   R.J. Lee lab and its positive finding, right?
+22       A.   Yes.  Their reports.
+23       Q.   Okay.  And all of the reports that you
+24   listed were from October 28, 2019, right?
+25       A.   Yes.  They labeled the three reports on
+2196
+ 1   the same day.
+ 2       Q.   Did you know there were four reports?
+ 3       A.   I don't know.  There may have been.
+ 4       Q.   Well, I will hand you that.
+ 5            It's D-3152.
+ 6            (A document was handed to the witness.)
+ 7            MR. OLIVER:  Thank you.
+ 8   BY MR. DUBIN:
+ 9       Q.   I'm not offering this.  This is just for
+10   cross-examination purposes.
+11            This is a November 5th, 2019, report,
+12   right?
+13       A.   Yes, that's what it's dated.
+14       Q.   And it's -- why was it omitted from the
+15   reports that you considered regarding this issue?
+16       A.   This is the first time I have seen it,
+17   so --
+18       Q.   How is that?  Where did you get the
+19   other reports?
+20       A.   Well, I got those other reports from
+21   counsel over time, so let me look at this one.
+22   Oh, this looks like it's a rehash of the other
+23   report.
+24       Q.   Well, actually -- so let's make sure we
+25   understand what happened at R.J. Lee.
+2197
+ 1            There were two different rooms that were
+ 2   used to prepare samples, right?
+ 3       A.   Correct.
+ 4       Q.   One room was the standard prep room
+ 5   where they had done talc preps in the past, right?
+ 6       A.   That's what they stated.
+ 7       Q.   And then because they were asked to
+ 8   hurry, because they were trying to figure out
+ 9   what's going on, they used another room, 107I,
+10   that they don't usually use, right?
+11       A.   Was it 107 or 1701I?
+12       Q.   I think it was 107I, but we can --
+13       A.   Okay.
+14       Q.   -- check.
+15       A.   All right.
+16       Q.   Whatever it is, we can call it the
+17   nonstandard room.  And that's the room in which
+18   they had brought a portable air conditioner in,
+19   that they found asbestos in the filter of the air
+20   conditioner, right?
+21       A.   That's what they claimed, yes.
+22       Q.   Okay.  Well, one thing we know is that
+23   far more tests were done in the room -- in the --
+24   with the samples from the standard prep room that
+25   were done from the other room, right?
+2198
+ 1       A.   Are you talking about the standard prep
+ 2   room?
+ 3       Q.   Right.  More tests were done just
+ 4   prepping in that room than were done from the
+ 5   other room, right?
+ 6       A.   Again, that's what they say, yes.
+ 7       Q.   Eventually, there were dozens and dozens
+ 8   of tests done from the standard prep room, and
+ 9   then just about 7 tests done from things that were
+10   prepared in the nonstandard prep room, right?
+11       A.   I believe it was something like that,
+12   yeah.
+13       Q.   And every single positive finding was
+14   from samples that had been prepared in the
+15   nonstandard room, right?
+16       A.   Yeah.  The thing about that was that
+17   none of the blanks that were done -- I believe
+18   they did something like 15 blanks.  Nothing was
+19   found in the blanks at all.
+20       Q.   Okay.
+21       A.   Zero, zip, and they tested the surfaces
+22   in the hood where those samples were prepared and
+23   they wiped -- actually wiped the surfaces and
+24   didn't find anything in there.  No asbestos in
+25   there, and also in some of the prep areas outside
+2199
+ 1   that.
+ 2            So if there had been so much
+ 3   contamination, then all -- there were five that
+ 4   were tested in there, four mill samples and one
+ 5   that was the actual Johnson's Baby Powder sample.
+ 6   If there was all this contamination, all five of
+ 7   them would have been contaminated.  But only three
+ 8   were.  Okay?
+ 9            So I'm just trying to understand how --
+10   there wasn't anything in the blanks yet -- the
+11   results say contamination.
+12       Q.   Okay.  Well, we'll talk to a witness who
+13   may have a different view of that.
+14            But I'm just asking you to confirm right
+15   now that the only place that they had any positive
+16   results was in the nonstandard -- what were
+17   samples prepared in the nonstandard room, right?
+18       A.   In the other room, that's where they had
+19   those kinds of results.
+20       Q.   Right.  There were about 40 or 50
+21   samples prepared out of the standard room and
+22   every single one of those was negative, right?
+23       A.   I don't think they detected anything in
+24   those.
+25       Q.   Okay.  And, in fact, one of the things
+2200
+ 1   that the -- the report that you didn't look at,
+ 2   the November 5th, 2019, report says, is that after
+ 3   they got the positive results in the nonstandard
+ 4   room, they took the exact same samples, reprepped
+ 5   multiple samples of that in the standard room, and
+ 6   then tested those.
+ 7            Did you know that?
+ 8       A.   Yes.  They're -- this to my knowledge is
+ 9   a rehash of what they had already done.  They left
+10   these results out of one of -- October 28, that
+11   was not in there.  These are the results that are
+12   not in that one report.  They had two groups of
+13   samples in there, but this is that group, to my
+14   knowledge.
+15       Q.   Okay.  I think you may be getting it
+16   mixed up a little bit.
+17            MR. DUBIN:  So I would request to
+18       display it, D-3152.
+19            MR. OLIVER:  Why don't you just hand
+20       him -- does the witness have a copy?
+21            MR. DUBIN:  He has it.
+22   BY MR. DUBIN:
+23       Q.   Well, if you could look at the first
+24   paragraph.  You're talking -- it talks about
+25   reanalyzing talc-based samples.
+2201
+ 1       A.   Uh-huh (indicates affirmatively), yes.
+ 2       Q.   And so what they did is, after they got
+ 3   the positive results in that one nonstandard prep
+ 4   room, they reprepped and reanalyzed a bunch of
+ 5   samples from the exact same thing they had gotten
+ 6   positive hits for in the nonstandard room, right?
+ 7       A.   Yeah.  And they did that in the other
+ 8   reports too.
+ 9       Q.   And all of those were also negative,
+10   right?
+11       A.   They were.  That first group they
+12   analyzed were not and then they did two more
+13   groups after that and then they didn't show
+14   anything.  They were non-detects.
+15       Q.   Okay.
+16       A.   And my understanding is that this is the
+17   same group.  It's from the same group again.
+18       Q.   And MAS, where you work, they've also
+19   experienced laboratory contamination, right?
+20       A.   Not to my knowledge.
+21       Q.   Okay.
+22       A.   We talked about that the other day.
+23       Q.   We did?
+24       A.   Yes.
+25       Q.   You're aware that in 2008, MAS was
+2202
+ 1   audited by something called NVLAP?
+ 2       A.   Yes.  We talked about that the other
+ 3   day.  We've already talked about that, but we can
+ 4   talk about it again.
+ 5       Q.   We talked about the NVLAP?  You had
+ 6   positive finding in a blank filter of asbestos?
+ 7       A.   There was a finding, but there was a
+ 8   pass; in other words, the lab passed.  And we
+ 9   talked about that Friday.  We already talked about
+10   that, but we can talk about it again.
+11       Q.   So you talked about having contamination
+12   in your own lab on Friday?
+13       A.   No.  We -- it wasn't contamination.  But
+14   we talked about it, but we can talk about it
+15   again.
+16       Q.   Okay.  I don't mind doing that.  So the
+17   report, I can -- if I can grab that, it's D-3668.
+18   I have the report if you need to refer to it.
+19            Again, you know, you don't provide
+20   access to lawyers with every positive blank that
+21   you have, right, in your -- at MAS?  This is from
+22   that NVLAP itself?
+23       A.   Now I'm confused.
+24       Q.   Well, this is from the -- the NVLAP
+25   results that I was talking about.
+2203
+ 1       A.   Yeah, they are, yes.  So what was --
+ 2       Q.   So what they found here is they reported
+ 3   that MAS had had five chrysotile structures on a
+ 4   blank filter.
+ 5       A.   Those filters were from a company called
+ 6   RTI, and they are prepared -- those were prepared
+ 7   for the labs, for all the labs that are tested,
+ 8   and they send those filters to the lab and they
+ 9   say, "Analyze this and tell us what's on them."
+10       Q.   Okay.  And MAS was assigned error points
+11   by NVLAP because of the detection of chrysotile on
+12   blank filters, right?
+13       A.   Yes.  And, to my knowledge, we contacted
+14   them about that and told them what the situation
+15   was, and they said, "Well, we're going to look
+16   into it," and we didn't hear anything about it.
+17   They just made their assignment.  But the -- the
+18   report is a pass, so we passed it regardless of
+19   that, but we had contacted them and talked to them
+20   about it.  Because of that -- of that finding, we
+21   know we can get filters, and when we found them on
+22   there and we saw that, we wanted to what that was
+23   about.
+24       Q.   And if we think about historically, if
+25   we look and we're evaluating some of these
+2204
+ 1   documents, whether it may have been situations
+ 2   where a lab is saying, oh, we may have experienced
+ 3   some contamination here, Dr. Yamate, who we looked
+ 4   at in that picture before, standing next to
+ 5   Dr. Longo and the flag, right?
+ 6       A.   Yes.
+ 7       Q.   He published a study where he was saying
+ 8   that maybe we're going to require a finding up to
+ 9   18 fibers of asbestos before we call it a positive
+10   as a detection limit?  You're familiar with the
+11   Dr. Yamate method?
+12       A.   I am.  But that was never -- never
+13   adopted as the study for -- you're talking about
+14   the statistical analysis based on what they
+15   believe were ambient background levels and trying
+16   to compensate for that.  So let me just explain.
+17            If you found anything on a blank in a
+18   laboratory, what you can do is you can subtract
+19   that away out of your sample analysis.  So you can
+20   take that out -- if you find something, you can
+21   subtract that.  So that's done in science all the
+22   time.
+23            In our case, if we found anything in the
+24   blank, we stop, and we try to figure out what's
+25   going on in the laboratory.  So you go look at
+2205
+ 1   where the possible problem could be.  But you do
+ 2   that before you actually submit your results to
+ 3   anybody.
+ 4            So you go look for whatever the problem
+ 5   was and you try to figure out what it was.  So --
+ 6   but in the past statistically, they said, "Oh,
+ 7   well, you know, if you find three, if you find
+ 8   five, then that's not real.  That's in the
+ 9   background."
+10            But if you did find something like that,
+11   you would actually subtract it out of your results
+12   so they wouldn't impact your results.
+13            So I just want to explain that so we
+14   could understand it.
+15       Q.   But particularly, as historical labs
+16   operated, you know, back to the 1970s, 1980s, and
+17   when Dr. Yamate was talking about this method, it
+18   was a recognized fact that the contamination can
+19   happen in the lab and that doesn't necessarily
+20   mean that it's a bad lab, right?
+21       A.   Correct.
+22       Q.   And we've been talking a lot about
+23   asbestos and asbestos whether in the bottle.  But,
+24   again, at the end of the day, you did not find any
+25   asbestos in Ms. Matthey's ovarian tissue; is that
+2206
+ 1   correct?
+ 2       A.   We didn't detect any at the levels they
+ 3   were -- at the weighed amounts that we had.
+ 4            MR. DUBIN:  All right.  Thank you very
+ 5       much.
+ 6            MR. OLIVER:  My witness, Counsel?
+ 7            MR. DUBIN:  It is.
+ 8            MR. OLIVER:  Thank you.
+ 9            THE COURT:  Mr. Oliver, let's take a
+10       break for the -- this now.  We'll come back
+11       at ten past 3:00.
+12            MR. OLIVER:  Okay.  That's fine with me,
+13       Your Honor.
+14            THE COURT:  All right.  Let them go out
+15       and get some fresh air and see what they want
+16       to do and have them back at ten past.
+17            (The jury retired from the courtroom at
+18       2:42 p.m.)
+19            THE COURT:  Okay.  Is this going to mess
+20       our schedule up time-wise, or are we still
+21       going to be on schedule?
+22            MR. OLIVER:  When is the jury coming
+23       back?
+24            THE COURT:  Ten past 3:00.
+25            MR. OLIVER:  I mean, this took a little
+2207
+ 1       longer -- and I'm not being critical.
+ 2            MR. DUBIN:  Yeah, no.
+ 3            MR. OLIVER:  This took a little longer
+ 4       than I thought, so I still think we're about
+ 5       right on schedule.
+ 6            THE COURT:  Well, I was --
+ 7            MR. OLIVER:  We still intend to rest,
+ 8       and I told Mr. Dubin this, by Wednesday at
+ 9       noon, which is pretty much what I have said
+10       all along.
+11            THE COURT:  Okay.
+12            MR. DUBIN:  We'll get it to the jury in
+13       plenty of time.
+14            THE COURT:  Okay.  Good to hear that.
+15       All right.  Thank you.
+16            MR. DUBIN:  We're at no risk.
+17            MR. OLIVER:  Thank you, Judge.
+18            (A recess was taken at 2:43 p.m.)
+19            (Whereupon, court was called to order at
+20       3:11 p.m. as follows:)
+21            THE COURT:  All right.  Please be
+22       seated.
+23            (The witness resumed the stand.)
+24            THE COURT:  Do you-all need these
+25       transcripts back?
+2208
+ 1            Transcripts, are you going to use them
+ 2       again?
+ 3            MR. OLIVER:  Which?  Is that for
+ 4       Dr. Rigler?
+ 5            THE COURT:  Yeah.  These were --
+ 6            MR. DUBIN:  We're not going to use them
+ 7       again.
+ 8            THE COURT:  October 22nd.
+ 9            MR. OLIVER:  I don't plan on using them.
+10            THE COURT:  Okay.  What's the word,
+11       Chris?
+12            THE BAILIFF:  Still waiting, Your Honor.
+13       We're still waiting on one of them.
+14            THE COURT:  Okay.
+15            (A pause was had in the proceedings.)
+16            THE COURT:  Let's take a break until the
+17       juror is located.
+18            (A recess was taken at 3:17 p.m.)
+19            (Whereupon, court was called to order at
+20       3:22 p.m. as follows:)
+21            THE COURT:  All right.  Be seated.
+22            All right.  Bring back the panel.
+23            THE BAILIFF:  Yes, sir.
+24            (The jury returned to the courtroom at
+25       3:24 p.m.)
+2209
+ 1            THE COURT:  Okay.  Folks, take your
+ 2       seats.
+ 3            MR. OLIVER:  May I proceed, Your Honor?
+ 4            THE COURT:  Certainly.
+ 5            MR. OLIVER:  Good afternoon, ladies and
+ 6       gentlemen of the jury.
+ 7            Good afternoon, Dr. Rigler.
+ 8            THE WITNESS:  Good afternoon.
+ 9                  REDIRECT EXAMINATION
+10   BY MR. OLIVER:
+11       Q.   I am going to try to make this as quick
+12   and painless as I possibly can.
+13            I have organized my examination by a
+14   couple of topics that Mr. Dubin asked you about
+15   and want to start out by asking you this question:
+16            Have you ever heard of the term "a red
+17   herring"?
+18       A.   Yes.
+19       Q.   And what does that mean?
+20       A.   That's chasing after some --
+21            MR. DUBIN:  Your Honor, I will object.
+22       This is argumentative.
+23            THE COURT:  Sustained.
+24   BY MR. OLIVER:
+25       Q.   Okay.  So let's talk about cleavage
+2210
+ 1   fragments.
+ 2       A.   All right.
+ 3       Q.   We talked about that in some of your
+ 4   direct examination, and Mr. Dubin asked you a lot
+ 5   of questions about it, correct?
+ 6       A.   Yes.
+ 7       Q.   And the work that is done at MAS
+ 8   examining baby powder and railcar samples, did you
+ 9   or your analysts count cleavage fragments?
+10       A.   No.
+11       Q.   Did you count bundles?
+12       A.   Yes.
+13       Q.   Can a bundle -- well, first of all,
+14   remind the ladies and gentlemen of the jury what a
+15   bundle is.
+16       A.   That's a group of asbestos fibers that
+17   are close like the straight spaghetti out of a
+18   box.
+19       Q.   By definition, can a bundle ever be a
+20   cleavage fragment?
+21       A.   No.
+22       Q.   Despite -- so how many of the
+23   asbestiform fibers that you counted in your
+24   Johnson's Baby Powder analysis were bundles?  What
+25   percentage?
+2211
+ 1       A.   It was a large percentage.  60, 70,
+ 2   80 percent, something like that.
+ 3       Q.   Okay.  And is that written down
+ 4   somewhere in your report?
+ 5       A.   Yes.
+ 6       Q.   Okay.  I don't need you to look.  But
+ 7   you're just giving us your best memory, correct?
+ 8       A.   Yes.
+ 9       Q.   Okay.  And the information is actually
+10   in that report, and you could identify it for us
+11   if you needed to?
+12       A.   Yes.
+13       Q.   Okay.  Now, despite the fact that you
+14   didn't count cleavage fragments, and we had spent
+15   a lot of time talking about cleavage fragments, do
+16   regulatory -- or in the scientific community, is
+17   it recognized that cleavage fragments from
+18   asbestos-type minerals like tremolite and
+19   anthophyllite, actinolite, is it recognized that
+20   those can also be dangerous and have pathologic
+21   activities?
+22            MR. DUBIN:  Objection, Your Honor.
+23       Beyond the scope of this witness.  He's not a
+24       medical doctor.
+25            THE COURT:  Overruled.
+2212
+ 1            THE WITNESS:  Yes.  They can have health
+ 2       effects, yes.
+ 3   BY MR. OLIVER:
+ 4       Q.   Okay.  Now, during the direct
+ 5   examination we talked about this organization that
+ 6   was formed in 2018 by the FDA -- "organization" is
+ 7   not the right word.  This group called the IWGCAP.
+ 8            Did I get that right?
+ 9       A.   Yes, sir.
+10       Q.   Now, remind the ladies and gentlemen of
+11   the jury what the IWGACP is.  I think I got it
+12   wrong.  It's GACP.
+13       A.   Yes.
+14       Q.   Tell them what it is.
+15       A.   It was a group that was called together
+16   by the FDA called the Interagency Working Group,
+17   to sort of shorten it up a bit, but it was a group
+18   of federal agencies that got together, as we had
+19   talked about.  There were eight of them.  And
+20   there were 38 experts on that panel.
+21       Q.   Okay.  So, Dr. Rigler, I have displayed
+22   on the screen the preliminary recommendations on
+23   testing methods for asbestos in talc and consumer
+24   products --
+25            MR. DUBIN:  I'm going to object --
+2213
+ 1   BY MR. OLIVER:
+ 2       Q.   -- containing talc.
+ 3            MR. DUBIN:  I object to the request
+ 4       before showing anything on the screen.
+ 5       Second of all, hearsay.
+ 6            THE COURT:  Okay.
+ 7            MR. OLIVER:  May we approach on this,
+ 8       Your Honor?
+ 9            THE COURT:  Yes.
+10            (At the bench.)
+11            THE COURT:  I think he wanted to see it.
+12            MR. DUBIN:  I know what it is, but I'm
+13       just saying -- you have to request permission
+14       before throwing something on the screen.
+15            MR. OLIVER:  Sorry about that, Your
+16       Honor.
+17            MR. DUBIN:  Second of all, objection;
+18       hearsay.  It's not a government document or
+19       position.  It's -- in fact, the FDA
+20       specifically says that it is not a position
+21       of any organization.
+22            MR. OLIVER:  And we made that very clear
+23       on direct.  I'm not going to suggest that
+24       it's a position of the organization, but it
+25       is a consensus science document, and I'm
+2214
+ 1       simply introducing it for that purpose.  And
+ 2       it would go to notice that this is dangerous
+ 3       and it would also go to --
+ 4            MR. DUBIN:  It's irrelevant as to notice
+ 5       because of the time.  It's after the alleged
+ 6       exposure.
+ 7            THE COURT:  Objection is overruled.
+ 8            MR. DUBIN:  Okay.
+ 9            (In open court.)
+10   BY MR. OLIVER:
+11       Q.   Okay.  Dr. Rigler --
+12            MR. DUBIN:  I just want to make sure I'm
+13       looking at the right thing.
+14            MR. OLIVER:  Ready?
+15            MR. DUBIN:  No, no.  I just want to make
+16       sure it's the correct date on it.
+17            Just one moment.  This doesn't look
+18       right.  I'm sorry, I'm going to have to
+19       clarify.
+20            (Note:  Discussion between Mr. Oliver and
+21   Mr. Dubin off the record. )
+22            MR. DUBIN:  There's another objection,
+23       Your Honor.  Sorry.  No, this is a different
+24       issue, Your Honor, because they -- we'll have
+25       to approach again.
+2215
+ 1            (At the bench.)
+ 2            MR. DUBIN:  Your Honor, they've switched
+ 3       up the documents that they're using on me.
+ 4       That's going to take a moment to argue this.
+ 5       I think we're going to have to excuse the
+ 6       jury.
+ 7            THE COURT:  Okay.
+ 8            (In open court.)
+ 9            THE COURT:  Chris, this is going to take
+10       a few minutes, so excuse the panel.
+11            THE BAILIFF:  Yes, sir.
+12            THE COURT:  Okay.
+13            (The jury retired from the courtroom at
+14       3:30 p.m.)
+15            MR. DUBIN:  I will ask the witness to be
+16       excused while we argue this.
+17            THE COURT:  All right.  Doctor, please
+18       step outside.
+19            (The witness retired from the
+20       courtroom.)
+21            THE COURT:  Please be seated.
+22            MR. DUBIN:  So I have a problem with the
+23       way this was done too.  So let me explain
+24       what's happened here.
+25            So there was an argument about the
+2216
+ 1       admissibility at pretrial of a document
+ 2       called the White Paper:  IWGACP Scientific
+ 3       Opinions on Testing Methods for Asbestos in
+ 4       Cosmetic Products Containing Talc.  And
+ 5       during the direct examination of this
+ 6       witness, he referred to this document.  I can
+ 7       hand you a copy.  It's P-2318 from December
+ 8       of 2021.
+ 9            And even when they put this up, we had a
+10       sidebar argument and there was a discussion
+11       about the fact, okay, if you're just using
+12       this document, that was within the scope of
+13       what was allowed and you could rely on.
+14            THE COURT:  So that I understand, the
+15       document that he put up is January 6th --
+16            MR. DUBIN:  Right.  It's a different
+17       document.
+18            THE COURT:  Okay.
+19            MR. DUBIN:  Right.  So let me hand you
+20       up the December 2021 document, Your Honor.
+21            (A document was handed to the judge.)
+22            THE COURT:  Okay.
+23            MR. DUBIN:  There was some discussion
+24       about this document on direct examination.
+25       And then -- he knows, because we have talked
+2217
+ 1       about this, that we have a particular problem
+ 2       with the document that came earlier in this
+ 3       process.  And we've had this discussion and I
+ 4       thought he had represented that he was not
+ 5       going to use the earlier document.
+ 6            And that's what he just threw up on the
+ 7       screen, which is Plaintiff's 28 -- 2338,
+ 8       which is called, The preliminary
+ 9       recommendations on testing methods for
+10       asbestos and talc in consumer products
+11       containing talc from January 6th, 2020.
+12            And so that's this document.
+13            (A document was handed to the judge.)
+14            MR. DUBIN:  So in direct examination I
+15       think the plaintiff's counsel was trying to
+16       be clear and to refer only to the 2021
+17       document, because this had been issued
+18       pretrial.
+19            And so what happened after the initial
+20       recommendation, the January 2020 -- and I
+21       have these materials; I will just have to dig
+22       them up because I didn't think this was an
+23       issue -- is the FDA explicitly said -- they
+24       put up a notice and said, hey, that -- the
+25       things in that report and that came out
+2218
+ 1       before, that is definitely not a position of
+ 2       the FDA and explicitly said in the rule --
+ 3       and I will find this -- this should not be
+ 4       used for any purpose beyond the discussion
+ 5       that was in the room.  Like explicitly said,
+ 6       "Don't use it in court; don't use it anywhere
+ 7       else."
+ 8            And I will find that in the regs.  And
+ 9       we can dig that up.
+10            Thank you very much.
+11            THE COURT:  So let me see.  It's a
+12       dispute that he's introducing preliminary
+13       opinions that may be different than the
+14       final?
+15            MR. DUBIN:  No.  The dispute is that
+16       that document, as I thought we had discussed
+17       and agreed, should not be referred to in
+18       court, because -- I will hand up D-3662,
+19       which is where the FDA said, "Do not use that
+20       original document anywhere," including in
+21       proceedings such as this.
+22            And that's why on direct examination I
+23       then made an objection and said, okay, you're
+24       just referring to the 2021 document.  He said
+25       yes, because he knew we had this discussion.
+2219
+ 1            We had said -- we thought we came to
+ 2       agreement.  The earlier one was not going to
+ 3       be used because it is not an authoritative
+ 4       that is appropriate to be used in this court.
+ 5            According to the FDA, right, there's
+ 6       explicit -- I will find the specific -- it
+ 7       says -- for example, it says, recently --
+ 8       sorry.  It says, "These updates are" -- it
+ 9       says, "Recently we have been made aware of
+10       some concerns by external parties who may
+11       consider the executive summary to be FDA
+12       recommendations."
+13            Now we're talking about the earlier one
+14       that he now slapped up on the screen.
+15            It says, "These updates are intended to
+16       clarify that the" -- so they put a rule
+17       meaning.
+18            And they said, "These updates are
+19       intended to clarify the executive summary,
+20       and related presentations at the public
+21       meeting were meant slowly to solicit
+22       scientific feedback on the issues raised and
+23       should not be used for any other purpose."
+24            Right?
+25            And they've taken the position that this
+2220
+ 1       is not something that you should be parading
+ 2       around trying to be used in court.
+ 3            Now, one, this is all the way beyond the
+ 4       scope, because what he's trying to read from
+ 5       here is some people saying, "Hey, we think
+ 6       maybe non-asbestos, asbestos, maybe they have
+ 7       the same health effects."  That's what he's
+ 8       going to try to show to the jury from this.
+ 9            And not only has the FDA said don't use
+10       that, but this -- it's far beyond the scope
+11       of this witness.  He's not a health effects
+12       expert.  If he wants to talk about counting
+13       protocols, which he talked about from the
+14       2021 document, we understood and we agreed
+15       that the 2021 document, which was the next
+16       iteration of the process, could be used in
+17       the court.
+18            But to -- after we had had this
+19       discussion, after he knew that there was an
+20       objection to the draft document, to throw it
+21       up on the screen -- because this is something
+22       we discussed before, to throw this up on the
+23       screen without presenting it to me, without
+24       clarifying he's now try to bring something
+25       else in, I think that's improper.  That
+2221
+ 1       was --
+ 2            THE COURT:  Was it addressed in an in
+ 3       limine motion?
+ 4            MR. DUBIN:  The resolution of the in
+ 5       limine motion, as I understand it -- they
+ 6       would know better -- is they could use the
+ 7       2021.
+ 8            MR. OLIVER:  Your Honor?
+ 9            THE COURT:  Okay.  Go ahead.
+10            MR. OLIVER:  I have sat quietly and I'm
+11       sort of getting mad.  First of all, I have
+12       done nothing inappropriate and I never made
+13       any such agreement.
+14            The agreement that we made, I believe in
+15       front of Your Honor, was during direct
+16       examination.  And I made a determination with
+17       my team that it's fine if we just use this
+18       final paper for the purpose we were using it
+19       for.
+20            However, during his cross-examination,
+21       which was vast and broad and took hours,
+22       Mr. Dubin spent many of those hours trying to
+23       convince the ladies and gentlemen of the jury
+24       that there are two types of asbestos fibers;
+25       that one is a cleavage fragment, which is
+2222
+ 1       true.  That's a true fact.  And that cleavage
+ 2       fragments are somehow not dangerous or not
+ 3       meaningful in the asbestos world.
+ 4            He also argued a lot about the
+ 5       definitions of asbestos.  Well, this
+ 6       scientific document, which represents the
+ 7       consensus of the comments to the FDA -- I'm
+ 8       not -- I think you'll remember, Your Honor --
+ 9       because Mr. Dubin has suggested I am trying
+10       to do something improper.  I think you'll
+11       remember that when I asked Dr. Rigler about
+12       the document the first time, I was very
+13       clear.  I said, "This isn't the -- this isn't
+14       FDA's final word."  I don't want to mislead
+15       the jury like that.  I'm happy to say that
+16       about this document.
+17            But I want to be clear what it says.  It
+18       says, because both types of elongated
+19       minerals are suspected of having biological
+20       activity with similar pathological outcomes,
+21       the distinction is irrelevant.  Lack of
+22       consensus concerning what should be called
+23       asbestos has persisted since the first
+24       reports indicating that asbestos might be
+25       present in talc, used in cosmetics and has
+2223
+ 1       inhibited thorough toxicological and
+ 2       epidemiological investigations of the disease
+ 3       attributable to talc that contains asbestos.
+ 4            And Dr. Rigler himself was one of the
+ 5       people that the IWGCAP, if I got it right, he
+ 6       gave comments.  And they adopted the
+ 7       protocols that he advocated for.
+ 8            So all I'm trying to do is respond
+ 9       directly to what Mr. Dubin spectered, that he
+10       has raised during his cross-examination.  I
+11       haven't violated any agreement.  Had he done
+12       a different cross-examination, this wouldn't
+13       be an issue.
+14            THE COURT:  Is the material or the
+15       conclusions that you're referencing in the
+16       2019 paper addressed in the white paper, the
+17       later one?
+18            MR. OLIVER:  No, it's not.  That is not
+19       a conclusion of the white paper, I don't
+20       think.  It's just not addressed that way.  I
+21       mean, if he wants to point out the difference
+22       in the two -- they're certainly not in
+23       conflict.  There's no conflict between the
+24       two.  There's no suggestion in the white
+25       paper that elongated minerals that are
+2224
+ 1       tremolite but not asbestiform are safe.
+ 2            That is not something they determined.
+ 3            MR. DUBIN:  Your Honor, the 2021, what
+ 4       it says is you should count everything.  It
+ 5       definitely doesn't say you should count
+ 6       everything and call it asbestos even if it's
+ 7       not.  That's what he was talking about on
+ 8       direct examination, the 2021 paper.
+ 9            I think when you have -- when you think
+10       about -- think about the extraordinary thing
+11       that has actually happened here.  The FDA was
+12       so concerned that this was going to be
+13       misused in all sorts -- the FDA knows there's
+14       litigation; the FDA knows there's lots of
+15       things.  The FDA was so concerned that it was
+16       going to be misused that it put out a
+17       specific thing in the Federal Register
+18       saying, "Do not use this for other purposes.
+19       Do not run into court and say this supports
+20       your position or doesn't support your
+21       position or use it in exactly the way that
+22       they are trying now."
+23            So we're only supposed to be doing --
+24       allowing things in this court, either
+25       referenced here on direct or cross, on things
+2225
+ 1       that are appropriate for experts to rely on
+ 2       in this context.
+ 3            You have the FDA saying, "Don't do what
+ 4       the plaintiff's counsel is about to try to
+ 5       do."
+ 6            Now, if he wants to try to find support
+ 7       for his position in the ultimate way that it
+ 8       was actually out there, right, as it appears,
+ 9       that is fine.
+10            But -- and we can deal with that.
+11            But to try to slap these original
+12       comments up and to use them particularly for
+13       a purpose that he is claiming to be using
+14       them for, which is to have this witness say
+15       that these things are equally hazardous or
+16       doesn't matter whether it's asbestos or not,
+17       that is not appropriate and should not be
+18       permitted.
+19            It is both non-appropriate reliance
+20       material for an expert and more prejudicial
+21       than probative under the circumstances, as
+22       the FDA itself has indicated.
+23            MR. OLIVER:  Your Honor, the concept
+24       that a expert could not rely on this is a
+25       false statement.
+2226
+ 1            Every expert in this litigation has
+ 2       looked at this, used it, relied on it, they
+ 3       understand it, they don't have any debate
+ 4       about it.
+ 5            What the FDA said was, "Don't make this
+ 6       about the FDA."  And I'm not going to.  I
+ 7       never had any intention of doing that.  I'm
+ 8       simply trying to rebut the false impression
+ 9       that he left, that cleavage fragments are
+10       somehow not countable and not dangerous --
+11            MR. DUBIN:  First of all --
+12            MR. OLIVER:  -- and they are.
+13            MR. DUBIN:  -- they've had every one of
+14       their medical experts come in here and
+15       testify that they believe it's just the
+16       needlelike property of it that matters.  So
+17       they've addressed this with their medical
+18       experts.
+19            This is not something -- this is not
+20       something that is coming in that is unique to
+21       Dr. Rigler or that Dr. Rigler needs to be
+22       talking about, when he doesn't have the
+23       medical degree.  And if we've been talking
+24       about -- this is a medical expert.  There are
+25       a lot of things that we could be having a
+2227
+ 1       conversation about.
+ 2            So it's not only, I think, outside the
+ 3       scope of this witness, outside this witness's
+ 4       expertise; it is specifically something the
+ 5       FDA had said not to do.  And in my
+ 6       experience, this does not come in.  This does
+ 7       not come in, these draft recommendations,
+ 8       given what the FDA says.
+ 9            So if we're going to talk about
+10       everybody having, quote, reviewed it, they're
+11       not being allowed to testify about it, for
+12       the simple reason that the FDA made its own
+13       position very clear about whether this should
+14       be used in the way the plaintiff's counsel is
+15       intending to use it.
+16            MR. OLIVER:  Your Honor, our medical
+17       expert, Dr. Ness, I don't -- I don't remember
+18       her testimony, so I'm not going to represent
+19       on the record.  I do not believe she
+20       testified to that.  And Dr. Rigler is
+21       actually the appropriate witness for that
+22       testimony; it's not necessarily Dr. Ness.
+23       And I don't know that we'll be having another
+24       witness, but she didn't say that.  Some
+25       witnesses in these other trials may have said
+2228
+ 1       that.  I don't think she said that.  We can
+ 2       check it.  Maybe she did.
+ 3            MR. DUBIN:  And Dr. Plunkett also said
+ 4       this.  Maybe he's forgetting twice.
+ 5            MR. OLIVER:  If they did, they did.
+ 6            THE COURT:  I want to look through the
+ 7       executive summary --
+ 8            MR. OLIVER:  Okay.
+ 9            THE COURT:  -- and read that.  I will
+10       take a few minutes.
+11            (A recess was taken at 3:43 p.m.)
+12            (Whereupon, court was called to order at
+13       3:52 p.m. as follows:)
+14            THE COURT:  All right.  Be seated.
+15            I'm going to overrule the objection.  I
+16       see the FDA doesn't say it should be used for
+17       any purpose, but I don't see that injunction
+18       prohibiting the Court from making a
+19       determination.
+20            The issue was raised -- an issue was
+21       raised in cross-examination that needs
+22       clarification by you, so the executive
+23       summary of 2020, I think it's okay.  I
+24       understand defense's objections, but I think
+25       on balance, it's necessary for the plaintiff
+2229
+ 1       to try to clarify that -- those inferences
+ 2       that were raised in the cross-examination,
+ 3       and I don't feel bound by the FDA's
+ 4       restriction.
+ 5            So I will hand those back.
+ 6            Let's bring in the panel.
+ 7            (The witness resumed the stand.)
+ 8            THE COURT:  All right.  Be seated.
+ 9            Mr. Oliver, you will have to restrict
+10       your questions on the redirect examination on
+11       the issues you addressed in argument.
+12            MR. OLIVER:  You mean with this
+13       particular document, Your Honor?
+14            THE COURT:  Yes.
+15            THE BAILIFF:  Jurors entering.
+16            (The jury returned to the courtroom at
+17       3:55 p.m.)
+18            THE COURT:  Okay.  Folks, take your
+19       seats.
+20            Continuing on with redirect.
+21   BY MR. OLIVER:
+22       Q.   Dr. Rigler, when we left for the break,
+23   I put a document up on ELMO.  This is the
+24   executive summary from the Interagency Working
+25   Group on Asbestos in Consumer Products that we
+2230
+ 1   were talking about, correct?
+ 2       A.   Yes.
+ 3       Q.   Okay.  And you've seen this document
+ 4   before?
+ 5       A.   Yes.
+ 6       Q.   We were talking about the concept of
+ 7   cleavage fragments, so I'm going to go to page 3,
+ 8   and I'm going to -- let's see.  I'm going to read
+ 9   something and ask you to explain it to us.
+10            It says, "Using TEM, differentiation of
+11   chrysotile from non-asbestiform serpentine analogs
+12   is relatively straightforward.  However, each of
+13   the non-asbestiform amphiboles can disaggregate
+14   into particles resembling asbestiform fibers."
+15            I'm going to stop right there.
+16            When it says "particles resembling
+17   asbestiform fibers," is that a reference to
+18   cleavage fragments?
+19       A.   Yes.
+20       Q.   And it says, "giving rise to disputes
+21   between laboratories over whether elongated
+22   amphibole particles are truly asbestos or are
+23   particles resulting from attrition of larger
+24   particles of a non-asbestiform analog."
+25            Did I read that correctly?
+2231
+ 1       A.   Yes.
+ 2       Q.   And what's that second part of the
+ 3   sentence talking about?
+ 4       A.   If they are coming from something like
+ 5   the bulk, the larger chunk of tremolite, something
+ 6   like that.
+ 7       Q.   Okay.  And is it referencing the debate
+ 8   that you and Mr. Dubin have just been having about
+ 9   what is an asbestos fiber?
+10       A.   Yes.
+11       Q.   Okay.  All right.  The next sentence
+12   begins with "because."  Can you read that for the
+13   jury.
+14       A.   "Because both types of elongate minerals
+15   are suspected of having biological activity, the
+16   similar pathological outcomes, the distinction is
+17   irrelevant."
+18       Q.   Okay.  And what does that have to do
+19   with your opinion in this case?
+20       A.   If these kinds of structures are
+21   counted, they are still determined to be
+22   problematic.
+23       Q.   And the next sentence says, "Lack of
+24   consensus concerning what should be called
+25   asbestos has persisted since the first reports
+2232
+ 1   indicating that asbestos might be present in talc
+ 2   used in cosmetics and has inhibited thorough
+ 3   toxicological and epidemiological investigations
+ 4   and disease attributable to talc that contains
+ 5   asbestos."
+ 6            The first question is, did I read that
+ 7   correctly?
+ 8       A.   Yes.
+ 9       Q.   The second question is, what does that
+10   mean to you as somebody who has been in the field
+11   of identifying asbestos for most of his career?
+12       A.   It says that there have been a lack of
+13   consensus.  It says some dispute about whether
+14   these particles called asbestos have been around
+15   since the beginning of the analysis and have been
+16   used in cosmetics.
+17            And so the difficulty is are these
+18   dangerous, and what they're trying to say is, "We
+19   are going to count them.  We believe that they
+20   are."
+21       Q.   And Mr. Dubin gave you a series of
+22   documents, you'll recall, from -- I think you put
+23   them up on the screen.  He used EPA and he used
+24   OSHA and he used several of them.
+25       A.   Yes.
+2233
+ 1       Q.   And my first question is -- I could put
+ 2   those up on the screen, but let me just ask you:
+ 3   Did the counting rules that you used follow all of
+ 4   those regulatory rules?
+ 5       A.   Yes.
+ 6       Q.   Okay.
+ 7       A.   Yes.
+ 8       Q.   And what do those regulatory rules tell
+ 9   you to do when in doubt about the size or length
+10   of the fiber?
+11       A.   They say that you should count them,
+12   essentially, count them.
+13       Q.   And, in fact, if I recall correctly, you
+14   used a 5 to 1 ratio; is that true?
+15       A.   Correct, yes.
+16       Q.   Okay.  Remind the ladies and gentlemen
+17   what aspect ratio is.
+18       A.   That's length to width.
+19       Q.   And there are actually organizations
+20   that suggest using a less conservative approach,
+21   true?
+22       A.   Correct.  OSHA.
+23       Q.   Okay.  And what does OSHA say now?
+24       A.   They say use 3 to 1 and the particle
+25   size can be 5 microns.  Instead of half a micron,
+2234
+ 1   they are big, so count those.
+ 2       Q.   Okay.  I told you it was going to be
+ 3   quick and painless.  I'm doing my best.
+ 4            Let's talk about Professor Lewin.
+ 5       A.   Okay.
+ 6       Q.   There was a lot of discussion about
+ 7   Lewin, a lot of documents entered into evidence.
+ 8   As an expert who studied this issue, and you
+ 9   looked at the documents with the jury, what do you
+10   make of the controversy over Professor Lewin's
+11   findings?
+12       A.   When Dr. Lewin was doing his analysis by
+13   X-ray diffraction, he followed that up with the
+14   optimal microscopy to prove his point, that what
+15   he found was what he believed was chrysotile or
+16   that it was tremolite.
+17            So he was using those tools and he found
+18   a significant amount of it in the product.  Not in
+19   just Johnson & Johnson but in others too.
+20       Q.   Okay.  And did Johnson & Johnson react
+21   to that?
+22       A.   Yes, very much.
+23       Q.   Did they attack him?
+24       A.   Yes.
+25       Q.   Okay.  You talked about -- towards the
+2235
+ 1   end of his examination, Mr. Dubin referenced the
+ 2   AMA results from 2019.
+ 3       A.   Yes.
+ 4       Q.   Now, you have studied the documents and
+ 5   reviewed the issues regarding AMA's testing,
+ 6   correct?
+ 7       A.   Yes.
+ 8       Q.   Okay.  So in 2019 -- first of all, is
+ 9   AMA a laboratory that Johnson & Johnson had used
+10   in litigation like this as their expert?
+11       A.   Yes, I believe they were recommended by
+12   R.J. Lee.
+13       Q.   Okay.  So what does AMA find in a bottle
+14   of Johnson's Baby Powder?
+15       A.   They found chrysotile asbestos,
+16   chrysotile.
+17       Q.   When that is reported to
+18   Johnson & Johnson, what does Johnson & Johnson do
+19   with regard to testing that lot of baby powder?
+20       A.   They went ahead and got samples, which
+21   were four mill samples, and also that Johnson's
+22   Baby Powder sample that was D-58, sent to AMA and
+23   tested there.
+24       Q.   And now, Johnson & Johnson also tested a
+25   control sample from the lot that was in Royston,
+2236
+ 1   Georgia, right?
+ 2       A.   Yes.
+ 3       Q.   And that was not the same material that
+ 4   AMA tested, true?
+ 5       A.   I don't believe so.
+ 6       Q.   Okay.  And when -- who was R.J. Lee?
+ 7       A.   They are the -- they are a testing lab
+ 8   very much like MAS in terms -- and AMA.
+ 9       Q.   And I think that Mr. Dubin said that
+10   maybe the jury will hear somebody from R.J. Lee,
+11   right?
+12       A.   Yes.
+13       Q.   What did R.J. Lee's first results of
+14   their test of that separate lot show?
+15       A.   They found chrysotile in that lot.
+16       Q.   Was there any chrysotile in their
+17   blanks?
+18       A.   No.
+19       Q.   Okay.  Were they using a hood?
+20       A.   Yes.
+21       Q.   Okay.  Then R.J. Lee did another test,
+22   right?
+23       A.   Yes.
+24       Q.   Okay.  From a scientific perspective,
+25   from somebody who has done these tests over and
+2237
+ 1   over again, what's wrong with that protocol when
+ 2   they find that their blanks don't have any
+ 3   chrysotile in it and they go looking for
+ 4   something?  Is that the right protocol?
+ 5       A.   That's backward to the way laboratories
+ 6   normally do it.
+ 7       Q.   Okay.  Can you explain to the jury why
+ 8   that's backwards.
+ 9       A.   Sure.
+10            What you do is you make blank samples
+11   that are -- run along with your test samples and
+12   then go look at those blanks to see if there's
+13   anything in them.
+14            If there's nothing in them, you can
+15   continue to proceed your analysis.  If there's
+16   something in them, you stop, because you've got to
+17   find out what happened.
+18       Q.   So once R.J. Lee -- based on your own
+19   experience, once R.J. Lee found chrysotile
+20   asbestos, found that its blanks were empty, what
+21   should it have done?
+22       A.   It should have accepted its own results,
+23   but it just ignored the blanks and said we've got
+24   a problem.  We have a problem here.  We've got to
+25   find -- excuse me.
+2238
+ 1       Q.   Okay.  Dr. Rigler, this is
+ 2   Defendants' 21000.
+ 3            Do you remember looking at this?
+ 4       A.   Yes, sir.
+ 5       Q.   Okay.  And Mr. Dubin was asking you
+ 6   about dates written in the margins?
+ 7       A.   Yes.
+ 8       Q.   Well, first of all, this is the
+ 9   certificate of analysis from AMA about its FDA
+10   test results, correct?
+11       A.   Yes.
+12       Q.   Okay.  Now, I want to turn --
+13            MR. OLIVER:  Your Honor, we would move
+14       this into evidence if it's not already in,
+15       Defendants' 21000.
+16            MR. DUBIN:  That's fine with me.
+17            MR. OLIVER:  Okay.
+18            (Exhibit D-21000 received.)
+19   BY MR. OLIVER:
+20       Q.   Okay.  I want to turn to page 5 of 16.
+21   Dr. Rigler, can you tell us what's on the screen
+22   here in AMA's analysis?
+23       A.   They're showing the chrysotile asbestos,
+24   one of the samples of some of the chrysotile
+25   structures there.  They're pointing them out.
+2239
+ 1       Q.   So that's just a -- like a
+ 2   microphotograph of the chrysotile that they found
+ 3   in Johnson's Baby Powder, right?
+ 4       A.   Yes, sir.
+ 5       Q.   Defendants' 21000.
+ 6            Okay.  What's that?
+ 7       A.   That is more chrysotile asbestos found
+ 8   in the sample.  They're showing three asbestos
+ 9   chrysotile structures there.
+10       Q.   Okay.  Now, despite Johnson & Johnson's
+11   criticisms, has FDA ever withdrawn these results?
+12       A.   Never, no.
+13       Q.   Okay.  Has Dr. -- I don't know if he's a
+14   doctor.  Has Mr. Saldivar ever backed off of his
+15   finding of chrysotile asbestos?
+16       A.   The head of AMA?
+17       Q.   Yes.
+18       A.   No, he has not done that.
+19       Q.   Okay.  Thank you, Dr. Rigler.
+20            So you talked with Mr. Dubin a little
+21   bit -- well, a lot -- about Walter McCrone.
+22            Do you remember that?
+23       A.   Yes.
+24       Q.   There was a lot of results from McCrone
+25   that he showed you.
+2240
+ 1            Do you remember that?
+ 2       A.   Yes.
+ 3       Q.   So let's look at a couple more.  Now,
+ 4   first of all, I want to jump back to the FDA real
+ 5   quick.
+ 6            Johnson & Johnson claimed that the
+ 7   chrysotile finding from AMA must have been based
+ 8   on contamination or misidentification; is that
+ 9   accurate?
+10       A.   Yes.
+11       Q.   Okay.  What did they claim about the
+12   R.J. Lee finding of chrysotile?
+13       A.   They claimed the same thing.
+14       Q.   Okay.  So let's look at two documents
+15   from McCrone.  I'm going to start with -- Bonnie,
+16   could you hand the defendants a copy of this?
+17            Let's start with 2095.  This is P-2095
+18   and I will have a copy.  If you only have one, I
+19   will put it up on the ELMO.
+20            MS. VELDMAN (Trial Tech):  I don't have
+21       that one.
+22   BY MR. OLIVER:
+23       Q.   All right.  So, Dr. Rigler, you talked a
+24   lot about McCrone with Mr. Dubin, correct?
+25       A.   Yes.
+2241
+ 1       Q.   And you remember he asked you several
+ 2   questions about letters that McCrone had written
+ 3   back and forth saying that Johnson's Baby Powder
+ 4   did not have asbestos, or its mines didn't have
+ 5   asbestos.
+ 6       A.   Yes.
+ 7       Q.   Do you remember that?
+ 8       A.   Yes, sir.
+ 9       Q.   Okay.  This is Plaintiff's 2095, and
+10   does that also appear to be a letter from Walter
+11   McCrone to Johnson & Johnson?
+12       A.   Yes.  It's from a McCrone lab to them,
+13   to Johnson & Johnson, yes.
+14       Q.   Okay.  What is the date on the document?
+15       A.   24 February 1984.
+16       Q.   Okay.  And down at the bottom, what
+17   does -- what do the handwritten notes say about
+18   chrysotile?
+19       A.   It says -- first it says three articles
+20   of chrysotile observed, and the second says one
+21   particle of chrysotile observed.
+22       Q.   Okay.  And then in the body of the
+23   letter does it also say chrysotile was observed?
+24       A.   Yes.  Chrysotile asbestos was detected
+25   by transmission electron microscopy.
+2242
+ 1            MR. OLIVER:  Your Honor, we would move
+ 2       Plaintiff's 2095 into evidence.
+ 3            MR. DUBIN:  No objection, subject to
+ 4       later admissibility of the document.
+ 5            THE COURT:  I'm sorry, what was the
+ 6       number again?
+ 7            MR. OLIVER:  It's Plaintiff's 2095.
+ 8            THE COURT:  Okay.  Admitted.
+ 9            (Exhibit P-2095 received.)
+10   BY MR. OLIVER:
+11       Q.   Okay.  So, Dr. Rigler, this is
+12   Defendants' 7188.  Okay?  Does this also appear to
+13   be a document from Walter McCrone & Associates?
+14       A.   Yes.
+15       Q.   This is March 28th, 1984, right?
+16       A.   Yes, sir.
+17       Q.   Okay.  Now, just so --
+18            MR. OLIVER:  Now, I'm going to approach
+19       the witness, if it's okay.  I'm going to hand
+20       him this document.
+21            MR. DUBIN:  That's fine.
+22            MR. OLIVER:  Your Honor, may I approach?
+23            THE COURT:  Yes.
+24   BY MR. OLIVER:
+25       Q.   This is the document we just looked at,
+2243
+ 1   right, where they found chrysotile.  Okay?
+ 2       A.   Yes, sir.
+ 3            (A document was handed to the witness.)
+ 4   BY MR. OLIVER:
+ 5       Q.   All right.  And this is McCrone.  And so
+ 6   this is -- this letter that I have on the board is
+ 7   Sample 5-HV66.  Okay?  The one I have up on the
+ 8   screen.  And then the one you have in your hand is
+ 9   the same sample, right?
+10       A.   Yes.
+11       Q.   Okay.  So March 28th, 1984, after
+12   McCrone sends Johnson & Johnson the chrysotile
+13   findings, what does -- all of a sudden what does
+14   McCrone tell Johnson & Johnson?
+15       A.   However, now it appears that the sample
+16   preparation TEM grid may have been contaminated.
+17       Q.   Okay.
+18            MR. OLIVER:  So we would move
+19       Defendants' 7188 into evidence, Your Honor.
+20            MR. DUBIN:  Sure.
+21            THE COURT:  Admitted.
+22            (Exhibit D-7188 received.)
+23   BY MR. OLIVER:
+24       Q.   All right.  So we talked about how they
+25   told the FDA it was contaminated.  They talked
+2244
+ 1   about R.J. Lee saying it was contaminated.  Now
+ 2   we've shown the example of McCrone finding
+ 3   asbestos in 1984, 30 years earlier.
+ 4            What did they say?
+ 5       A.   Contaminated.
+ 6       Q.   Okay.  All right.  We've got one more
+ 7   McCrone document to enter into evidence.  This is
+ 8   Defendants' 1667.
+ 9            MR. DUBIN:  I'm just going to object on
+10       relevance, Your Honor.
+11            THE COURT:  Overruled.
+12            MR. DUBIN:  Okay.
+13   BY MR. OLIVER:
+14       Q.   Okay.  Dr. Rigler, is this also a Walter
+15   McCrone document?
+16       A.   Yes, sir.
+17       Q.   Okay.  And what is the date of this?
+18       A.   May 2nd, 1986.
+19       Q.   Okay.  And remind us who Windsor
+20   Minerals is?
+21       A.   That is the group that produced the --
+22   they're owned by Johnson & Johnson.
+23       Q.   Okay.  Were they the mining company for
+24   Johnson & Johnson?
+25       A.   Yes, yes, the mining company.
+2245
+ 1       Q.   Okay.  And this says, "Under your
+ 2   purchase order, we received three talc samples for
+ 3   asbestos analysis."  And it identifies the
+ 4   samples.
+ 5            And then what did they detect?
+ 6       A.   Electronic microscopy resulted in the
+ 7   detection of trace amounts of chrysotile asbestos
+ 8   in the samples.
+ 9            MR. OLIVER:  Your Honor, we would move
+10       D-1667 into evidence.
+11            MR. DUBIN:  Again, we will explain
+12       relevance later, but that's fine.  No
+13       objection to that.
+14            THE COURT:  Admitted.
+15            (Exhibit D-1667 received.)
+16   BY MR. OLIVER:
+17       Q.   So now we have -- we have McCrone
+18   finding asbestos, and that was 86.  And I want to
+19   go back to some of the exhibits that Mr. Dubin --
+20   he already entered this exhibit into evidence.
+21            Do you remember this document from
+22   McCrone?
+23       A.   Yes.
+24       Q.   Okay.  And what does Mr. Stewart blame
+25   the chrysotile findings on?
+2246
+ 1       A.   Contamination.
+ 2       Q.   So you also saw this document from 1976.
+ 3   And it says, "Thus, although we did not" -- "we
+ 4   did find one fiber confirmed by SAED as
+ 5   chrysotile, I believe this to be background
+ 6   contamination."
+ 7            So what did they -- what did they claim
+ 8   the reason for chrysotile was there?
+ 9       A.   Contamination again.
+10       Q.   Okay.  And you had a debate with
+11   Mr. Dubin about whether SAED could identify
+12   chrysotile.
+13            MR. DUBIN:  Objection.  We didn't
+14       actually talk about that.
+15            THE COURT:  Overruled.
+16   BY MR. OLIVER:
+17       Q.   Do you remember the debate that you and
+18   Mr. Dubin had --
+19       A.   Yes.
+20       Q.   -- about how to identify chrysotile?
+21       A.   Yes.  We were talking about diffraction,
+22   yes.
+23       Q.   Okay.  So you were talking about X-ray
+24   diffraction, not SAED?
+25       A.   No.  It's SAED, yes.
+2247
+ 1            MR. DUBIN:  You're talking about --
+ 2            THE WITNESS:  Yes, SAED.
+ 3   BY MR. OLIVER:
+ 4       Q.   Okay.  So how did McCrone confirm
+ 5   chrysotile, according to this letter?
+ 6       A.   SAED.
+ 7       Q.   Okay.  So last one -- this one is
+ 8   already in evidence, Defendant 7100.  This is
+ 9   1975.  And what does Mr. Miller -- you-all talked
+10   a lot about this document.  What does he blame
+11   asbestos in the powder on?
+12       A.   Contamination.
+13       Q.   Okay.  Do you see a pattern there?
+14       A.   Yes.
+15       Q.   What's the pattern?
+16       A.   That if you find chrysotile in the
+17   sample, it's due to contamination.
+18            And this is not the only one either.
+19   Lately, they found the same kind of thing in
+20   another case.
+21       Q.   Are you aware of how the defendants have
+22   criticized your tissue analysis in your finding of
+23   the talcum powder particles in Pat's tissue?
+24       A.   Yes.
+25       Q.   What do they claim about that?
+2248
+ 1       A.   Contamination.
+ 2       Q.   So the last thing -- I believe it's the
+ 3   last thing -- well, no, there's one more thing
+ 4   that I need to ask about this.  I need to make it
+ 5   clear.
+ 6            So do you remember when Mr. Dubin put
+ 7   your slide -- he put this slide up on the board
+ 8   during cross-examination.
+ 9            Do you remember that?
+10       A.   Yes.
+11       Q.   Okay.  Now, I just want to make
+12   something clear.  These two images here, they're
+13   not of the same -- this is not the same number,
+14   right?  It's not the same fiber; is that right?
+15       A.   Correct.
+16       Q.   Okay.  Was it counted by the same
+17   person?
+18       A.   Probably not.
+19       Q.   Okay.  So I want to end by talking
+20   about -- I believe I'm going to end by talking
+21   about the Boundy study.  Do you remember those
+22   questions?
+23       A.   Yes.
+24       Q.   Now, if I remember correctly, yesterday
+25   Mr. Dubin suggested -- actually, he stated twice
+2249
+ 1   that the Boundy study was conducted independently.
+ 2            Do you remember that?
+ 3       A.   Yes.
+ 4       Q.   Okay.  All right.  I am going to get
+ 5   some copies.
+ 6            (Off-the-record discussion.)
+ 7            MR. OLIVER:  May I approach, Your Honor?
+ 8            THE COURT:  Yes.
+ 9            (A document was handed to the witness.)
+10   BY MR. OLIVER:
+11       Q.   Dr. Rigler, I have just handed you a set
+12   of documents that are marked Plaintiff's 2663,
+13   Plaintiff's 2661, and Plaintiff's 2662.
+14            Do you have those documents?
+15       A.   Yes.
+16       Q.   Let's start --
+17            MR. DUBIN:  I'm sorry, what numbers and
+18       then requests?  And I will look at them and
+19       then we can proceed.
+20            What numbers?  2663?
+21            MR. OLIVER:  2661.
+22            MR. DUBIN:  2661.
+23            MR. OLIVER:  2662.
+24            MR. DUBIN:  Sure.  Subject to being able
+25       to add some documents, go ahead.
+2250
+ 1   BY MR. OLIVER:
+ 2       Q.   Okay.  So --
+ 3            MR. OLIVER:  Your Honor, we would move
+ 4       these into evidence.
+ 5            MR. DUBIN:  Yeah.  That's what I said.
+ 6            MR. OLIVER:  Okay.
+ 7            THE COURT:  Received.
+ 8            (Exhibits P-2661, P-2662, and P-2663
+ 9       received.)
+10   BY MR. OLIVER:
+11       Q.   Dr. Rigler, now that the document is in
+12   evidence, let's just start with the first one.
+13            First of all, Plaintiff's 2663, so the
+14   jury can see, all right, what is the subject of
+15   this Johnson & Johnson memo?
+16       A.   Harvard/NIOSH/Vermont Environmental
+17   Study Review meeting, April 22nd, 1977.
+18       Q.   Do you understand that subject to be
+19   referring to the study that we talked about, the
+20   Boundy study that was ultimately published in that
+21   book Dust and Disease?
+22       A.   Yes, sir.
+23       Q.   The top says -- well, I want to go to
+24   the back first because it references the writer.
+25            Now, who is George Lee?  You've seen his
+2251
+ 1   name before, right?
+ 2       A.   I have.
+ 3       Q.   Okay.  And he worked with
+ 4   Johnson & Johnson?
+ 5       A.   Yes.
+ 6       Q.   What about Gavin Hildick-Smith?
+ 7       A.   Yes.
+ 8       Q.   What about Mr. Roll?
+ 9       A.   Yes.
+10       Q.   And Mr. Peterson?
+11       A.   Yes.
+12       Q.   Okay.  And they actually talk on the
+13   back about the paper that will be presented by
+14   Ms. Boundy in the American Industrial Hygiene
+15   Association Conference in New Orleans in 1977,
+16   right?
+17       A.   Yes.
+18       Q.   Okay.  So does that confirm that we're
+19   talking about the same study?
+20       A.   Yes.
+21       Q.   It says, "Vern Zeitz and the writer" --
+22   that would be George Lee -- "met with Professor
+23   Burgess and Ms. M. Boundy at the Harvard School of
+24   Public Health on April 22nd to provide our
+25   comments on the preliminary draft of the proposed
+2252
+ 1   paper."
+ 2            First question, did I read that
+ 3   correctly?
+ 4       A.   Yes.
+ 5       Q.   Did you know that Johnson & Johnson was,
+ 6   in fact, involved in the Harvard/NIOSH study?
+ 7       A.   No.
+ 8       Q.   Okay.  Under that, it says, "Major
+ 9   amendments for highlighting are."  And what does
+10   No. 1 say?
+11       A.   "Tremolite is generally non-asbestiform
+12   and should not be referred to in a biased manner
+13   as an amphibole form of asbestos."
+14       Q.   Okay.  So that was a major amendment
+15   that Johnson & Johnson made?
+16       A.   Yes.
+17       Q.   Okay.  And No. 4, what does that say?
+18       A.   "The term 'elongate fibers' is to be
+19   used versus 'true fibers.'"
+20       Q.   Okay.  All right.  Now let's look at
+21   2661.
+22            All right.  Do you have 2661 in front of
+23   you?
+24       A.   Yes.
+25       Q.   Okay.  Remind us, Windsor Minerals at
+2253
+ 1   this time, who are they owned by?
+ 2       A.   Johnson & Johnson.
+ 3       Q.   Okay.  And what does the introduction
+ 4   say about the NIOSH-sponsored talc study?
+ 5       A.   "Corporate representation relating to
+ 6   the NIOSH-sponsored talc study now underway in
+ 7   Vermont has included representatives from baby
+ 8   products, analytical research, and Windsor
+ 9   Minerals.  Functional activities included
+10   monitoring and directing in-house activities and
+11   acting in an educational and advisory capacity to
+12   provide NIOSH and Harvard School of Public Health
+13   with a realistic study plan."
+14       Q.   Okay.  And below that, there's some
+15   stuff that I have underlined.  It says, "We can
+16   further responsibly predict the outcome of the
+17   study and even influence the conclusions by way of
+18   directional suggestions involving the subjective
+19   interpretations of the study groups."
+20            Did I read that correctly?
+21       A.   Yes.
+22       Q.   Okay.  Does that sound like independent
+23   science to you?
+24       A.   No.
+25       Q.   Does it sound like Johnson & Johnson was
+2254
+ 1   involved?
+ 2       A.   Yes.
+ 3       Q.   Okay.  Now, let's look -- right there
+ 4   with "This writer believes," can you read that for
+ 5   us?
+ 6       A.   "This writer believes that our prior
+ 7   corporate involvement in the way of doing battle
+ 8   with federal, academic, and consumer health groups
+ 9   have had little effect in the world of the
+10   physician and consumer to counteract the above.
+11   As both an optimist and a pragmatist, it is my
+12   belief the NIOSH-sponsored talc study represents
+13   our first and possibly the last opportunity to
+14   halt the increasingly negativism that is being
+15   directed at our corporate involvement with, quote,
+16   talc and at, quote, talc per se."
+17       Q.   Okay.  How does this -- well, I just
+18   want to go to one last part.
+19            Okay.  This last part I'm going to read.
+20   It says, "Numerous preliminary meetings were held
+21   involving both Harvard and NIOSH on the pretense
+22   of protocol reviews, while in reality were
+23   structured as a crash course in ultramafic and
+24   serpentine mineralogy, including lectures on
+25   geochemistry directed at the metamorphic pathways
+2255
+ 1   through which talc and its accessory minerals are
+ 2   formed."
+ 3            Given what we've just read, Dr. Rigler,
+ 4   what is your opinion now of the Boundy study?
+ 5       A.   It was directed to some degree and
+ 6   influenced by Johnson & Johnson.
+ 7       Q.   Mr. Dubin didn't tell you any of that
+ 8   when he called it an independent study, did he?
+ 9       A.   No.
+10            MR. OLIVER:  I don't think I have
+11       anything further for this witness right now,
+12       Your Honor.
+13            MR. DUBIN:  I do, Your Honor.  I will
+14       just ask to be -- they brought a lot of
+15       documents they didn't disclose for this
+16       witness.  I just want a second to print out
+17       some of the documents that relate to them.
+18            THE COURT:  Let's take a break, then.
+19            MR. DUBIN:  Yeah.  If we can have five,
+20       ten minutes, we will print them to show what
+21       they actually are.
+22            THE COURT:  Folks, just to be safe,
+23       check about the -- in case we go past 5:00,
+24       we had the eclipse thing and all, let me know
+25       if there's a problem.  We might be a few
+2256
+ 1       minutes past 5:00, in case we have to do
+ 2       that.
+ 3            Okay.  All right.  Take charge of the
+ 4       panel.
+ 5            MR. DUBIN:  I won't be long.  Thank you.
+ 6            (The jury retired from the courtroom at
+ 7       4:23 p.m.)
+ 8            (A recess was taken at 4:24 p.m.)
+ 9            (Whereupon, court was called to order at
+10       4:37 p.m. as follows:)
+11            THE COURT:  All right.  Be seated.
+12            Mr. Dubin, are you ready?
+13            MR. DUBIN:  Yeah, I'm ready.
+14            (The jury returned to the courtroom at
+15       4:39 p.m.)
+16            THE COURT:  All right.  Take your seats.
+17            Mr. Dubin.
+18                  RECROSS-EXAMINATION
+19   BY MR. DUBIN:
+20       Q.   Welcome back.  We're almost done for the
+21   day.
+22            I want to talk about a few of the things
+23   that you raised in your redirect examination.  I'm
+24   going to try to use the ELMO.  And I'm going to
+25   tell you it's very unlikely to go very well,
+2257
+ 1   because I'm bad at it, but -- so I apologize if I
+ 2   make anybody sea sick while I try to adjust it.
+ 3            So I want to start off by talking about
+ 4   some of the McCrone documents that you put up.
+ 5   And the first one, I think, was you talked a
+ 6   little bit about a positive finding for chrysotile
+ 7   and something called Sample 5-HV66 from March of
+ 8   1984.
+ 9            Do you recall that?
+10       A.   Yes.
+11       Q.   And just so we're clear -- I think you
+12   actually already introduced this document, but
+13   let's just make sure.  I mean, Debra Pallenick
+14   writes to Johnson & Johnson after that and says
+15   that they have reason to believe that the -- that
+16   finding was as a result of contamination, right?
+17       A.   Yes.
+18       Q.   And you don't know Ms. Pallenick.  I
+19   don't know if she was a Dr. Pallenick, but she was
+20   an electron microscopist, right?
+21       A.   Yes.
+22       Q.   Are you accusing her of lying?
+23       A.   No.  I mean, that's what is here on
+24   the -- on the document.
+25       Q.   Okay.  And another -- another document
+2258
+ 1   that you mentioned in the same vein, this McCrone
+ 2   document that you showed the jury, talks about the
+ 3   detection of some chrysotile asbestos in a Sample
+ 4   WMI-8553, and stuff like that.
+ 5       A.   Yes.
+ 6       Q.   Now, did you suggest that somebody said
+ 7   this was contamination too or was this -- this was
+ 8   just them reporting a finding?
+ 9       A.   It was a reporting of a finding here.
+10       Q.   Right.
+11            So when they find chrysotile, they do
+12   report it, correct?
+13       A.   Yes, they have, yes.
+14       Q.   But do you know -- when you come here to
+15   testify in a case about baby powder against
+16   Johnson & Johnson, do you know what these samples
+17   are, WMI-8553, 5557?  Do you know what they are?
+18       A.   They're Windsor Minerals samples.
+19       Q.   Okay.  Do you know what part of the
+20   country that this talc that they're testing is
+21   from?  Can you look at that to see whether it's
+22   even Vermont talc or talc that would ever be used
+23   in baby powder?
+24       A.   The results are what they are on the
+25   letter --
+2259
+ 1       Q.   Right.
+ 2       A.   -- which says they found asbestos in
+ 3   those samples regardless of where they're from.
+ 4       Q.   Regardless of where it's from, even if
+ 5   it has nothing to do with this case?
+ 6       A.   Well, they're -- they've been reported
+ 7   to Johnson & Johnson as their samples, so that's
+ 8   what we have here.
+ 9       Q.   But let's look at what they were
+10   actually asking them in tests and what the samples
+11   were.  Okay?
+12       A.   Sure.
+13       Q.   So we'll introduce -- I believe there's
+14   no objection, so I'm going to show it.  D-8348
+15   and --
+16            MR. OLIVER:  Yeah, that's fine.
+17            MR. DUBIN:  No objection.  Great.
+18            THE COURT:  (Nods affirmatively.)
+19            (Exhibit D-8348 received.)
+20   BY MR. DUBIN:
+21       Q.   Here's a document which discusses what
+22   these codes mean, what these 85 kind of codes look
+23   like.  And you'll see also that a lot of these
+24   codes, these codes that look like that there, for
+25   something that's called like grade 76 and TC700,
+2260
+ 1   and stuff like that.
+ 2            Do you see those?
+ 3       A.   Yes.
+ 4       Q.   And so when we look at the TC76 samples,
+ 5   and things like that, TC76, that was talc that was
+ 6   from a mine out in California.  And we'll offer
+ 7   D-8728.
+ 8       A.   Uh-huh (indicates affirmatively).
+ 9       Q.   Okay.
+10            MR. DUBIN:  No objection?
+11            MR. OLIVER:  That's the one you showed
+12       me?
+13            MR. DUBIN:  Yeah.
+14            MR. OLIVER:  Yeah, that's fine.
+15            (Exhibit D-8728 received.)
+16   BY MR. DUBIN:
+17       Q.   For example, there's product
+18   certification codes here.  And that's talking
+19   about producing locations and what the grades are.
+20   And this is from San Andreas, California, in Red
+21   Hill talking about these grades, like 76TC, or
+22   things like that?
+23       A.   Yes.
+24       Q.   And that was an industrial talc that was
+25   from a mine out in California?
+2261
+ 1       A.   Uh-huh (indicates affirmatively).
+ 2       Q.   It was never used in baby powder?
+ 3       A.   Okay.
+ 4       Q.   Well, I'm asking you the question.
+ 5       A.   Well, you're telling me, because you
+ 6   know the documents.
+ 7       Q.   Okay.  Fair enough.
+ 8            Then I want to talk to you next a little
+ 9   bit about the Boundy study, and I want to
+10   introduce first D-7547.
+11            MR. DUBIN:  That was the letter that I
+12       showed you before.
+13            MR. OLIVER:  Oh, yeah, yeah.
+14            MR. DUBIN:  Okay.  I only -- I had to
+15       print them because I didn't know what you
+16       were talking about this today.  So D-7547.
+17            I assume there's no objection, Your
+18       Honor.
+19            MR. OLIVER:  There's no objection.
+20            MR. DUBIN:  Okay.
+21            (Exhibit D-7547 received.)
+22   BY MR. DUBIN:
+23       Q.   I just want to give you a little context
+24   on the study and talk about it a little bit about
+25   the context.
+2262
+ 1            So this is a letter that was written
+ 2   back in 1975 as the -- as the study that was --
+ 3   would eventually culminate in a paper and also a
+ 4   companion health study that was being kicked off.
+ 5   It was being written by two -- Vern Zeitz at the
+ 6   Windsor mill.  We saw his name on several things.
+ 7   And it was being written by John Dement.
+ 8            And John Dement, at that time he was an
+ 9   industrial hygienist, environmental investigations
+10   branch at NIOSH.  And he was also a professor, I
+11   believe, down in North Carolina.  Went on to have
+12   a very distinguished career, correct?
+13       A.   Yes.
+14       Q.   And what he writes here, he says, "In
+15   closing, let me state that we at NIOSH are devoted
+16   to protection of the working population of
+17   occupational hazards.  We have accomplished our
+18   goals to scientifically valid studies of worker
+19   populations and the environments to which they are
+20   exposed.
+21            "We look forward to beginning our
+22   studies of Vermont and hope it will be a full
+23   cooperation of both Windsor Minerals and
+24   Johnson & Johnson."
+25            And it's copied to some of the other
+2263
+ 1   authors that eventually appeared on the paper,
+ 2   people like Sherry Sullivan and William Burgess.
+ 3            Do you see that?
+ 4       A.   Yes.
+ 5       Q.   And so when I was talking about these
+ 6   people being independent and, you know, because
+ 7   people assume, okay, you're making a product,
+ 8   you're just trying to make a buck.  None of the
+ 9   people who were working at NIOSH or Harvard, they
+10   didn't have any financial interest in whether they
+11   found asbestos or didn't find asbestos in that
+12   talc, right?
+13       A.   They were scientists.
+14       Q.   They were scientists.
+15            And, in fact, when they say they were
+16   devoted to the protection of the working
+17   population, that means that if they found asbestos
+18   there, they would want the working population to
+19   know and they would want the public to know,
+20   right?
+21            MR. OLIVER:  Objection, Your Honor.
+22            THE COURT:  Overruled.
+23   BY MR. DUBIN:
+24       Q.   Right?
+25       A.   I would expect that.
+2264
+ 1       Q.   You would expect that.
+ 2            And I want to talk -- we'll look back a
+ 3   little bit at the actual study in a second.  I
+ 4   want to talk a little bit about some of the
+ 5   documents you were shown.  One of them was P-663.
+ 6   It was this document.
+ 7            And the first part of this document was
+ 8   highlighted for you.  The idea that, okay, the
+ 9   tremolite -- first of all, it's true that not all
+10   tremolite is asbestos, right?  That's a true
+11   statement?
+12       A.   Correct.
+13       Q.   Okay.  And it was suggested, I think,
+14   that somehow after this meeting or the like that
+15   that meant that Johnson & Johnson somehow
+16   influenced the findings in the NIOSH paper, right?
+17   That was the tenor of the questions you were being
+18   asked?
+19       A.   It seemed that way in terms of the
+20   documents too.
+21       Q.   There's a problem, though, with the
+22   timing of this story, right?
+23       A.   I don't know what you're -- what you're
+24   asking.
+25       Q.   Well, if you look down, it says, "Bill
+2265
+ 1   Burgess agreed to send us the written conclusions,
+ 2   which will be principally the following.
+ 3            "The bulk of environmental samples
+ 4   verify that the Vermont talc contains no asbestos
+ 5   and only negligible quartz."
+ 6            Do you see that?
+ 7       A.   Yes.
+ 8       Q.   So that means before the time of this
+ 9   meeting, before the time of this document, NIOSH
+10   and Harvard had already done their work and
+11   concluded there was no asbestos.
+12       A.   Well, that's not what we were talking
+13   about in terms of the communications in that
+14   letter.
+15       Q.   Okay.  But the idea that somehow
+16   Johnson & Johnson, as a result of this meeting,
+17   even assuming Johnson & Johnson could convince
+18   NIOSH and Harvard to change their conclusions,
+19   that doesn't make any sense because they had
+20   already come to their conclusions, right?
+21       A.   I don't -- I think they're -- that we're
+22   missing what was talked about in the other
+23   document too.  I think we're comparing two
+24   different things.
+25       Q.   Okay.  And even in -- if we look at one
+2266
+ 1   of these other documents we put up here, now, this
+ 2   is an internal document, right, to P-2661.  It's
+ 3   talking about the NIOSH talc study, right?
+ 4       A.   Yes.
+ 5       Q.   And one of the things they say is, in
+ 6   one of their conclusions, in other words, they're
+ 7   talking internally about what they think the study
+ 8   is going to show, what comes out, right?
+ 9       A.   Yes.
+10       Q.   And one of the things they say is,
+11   "Likewise, the analytical aspects involving TEM
+12   and X-ray diffraction studies will confirm what we
+13   have already related to NIOSH and can substantiate
+14   with the available vast quantities of data."
+15            In other words, what Johnson & Johnson
+16   is saying internally, while this study is going
+17   on, is, "We believe NIOSH is going to find the
+18   same thing that we think, which is that there's no
+19   asbestos," right?
+20       A.   That's what they were referring to.
+21       Q.   In other words, you could have a lot of
+22   different reactions, right?  When the government
+23   is coming into your workplace to inspect, it could
+24   cause panic.  It could be like, "Oh, my God.
+25   What's going to happen?  They're going to take our
+2267
+ 1   talc.  They're going to test it.  They're going to
+ 2   find the asbestos we've been hiding from
+ 3   everybody."  And that's not what Johnson & Johnson
+ 4   said internally, right?
+ 5       A.   Are you saying -- are you saying they
+ 6   were panicked?
+ 7       Q.   No.  What I'm saying is they weren't,
+ 8   because they expected the results from NIOSH to
+ 9   show exactly what they believed, which was there
+10   was no asbestos, right?
+11       A.   Is there a question in that?
+12       Q.   That is the question.  That's what the
+13   document is showing, right?
+14       A.   What's the question?
+15       Q.   Okay.  I will just leave the document
+16   and say what it says.
+17            And then when we look at the actual
+18   study, the Boundy study, P -- well, it's got a
+19   bunch of numbers.  I can't remember whether it
+20   went in under D-8079, which I think so, but it
+21   also has a P-408 -- 4008 stamp, just to be clear.
+22            And so when they published the study,
+23   they do -- first it talks about the fact that they
+24   collected their own samples, right?  They chose
+25   what sample.  They chose what talc to sample, from
+2268
+ 1   where, what products or anything, right?  NIOSH
+ 2   and Harvard chose that themselves independent,
+ 3   right?
+ 4       A.   That's what's inferred.
+ 5       Q.   And then if we look who did the actual
+ 6   testing, for example, the TEM testing, that was
+ 7   done independently by NIOSH, right?
+ 8       A.   Yes.
+ 9       Q.   And independently, NIOSH came to the
+10   conclusion that there was no asbestos present,
+11   right?
+12       A.   And we already talked about this the
+13   other day.  We don't have any other data to be
+14   able to look at it and understand it.
+15       Q.   Okay.
+16       A.   That's what they say.
+17       Q.   I just want you to understand because
+18   there seemed to be some lack of clarity about what
+19   I meant when I talked about it being an
+20   independent study.  But the samples were taken
+21   independently and the testing was done
+22   independently, right?
+23       A.   Well, as independently, I guess, as it
+24   could be.
+25       Q.   Okay.  Good enough.
+2269
+ 1            Then Dr. Lewin, because -- I'm not going
+ 2   to address this at length because we talked about
+ 3   Dr. Lewin, I thought, ad nauseam.  This is D-807.
+ 4   It's already in evidence.
+ 5            And so I think you said -- the
+ 6   plaintiff's counsel asked you what happened after,
+ 7   and what you said is J&J attacked him, right?  Did
+ 8   you use the word "attack," or did he use the word
+ 9   "attack"?  I can't remember.
+10       A.   I don't recall.
+11       Q.   Okay.  But one of you did, right?
+12       A.   It may have been.
+13       Q.   Okay.  But let's look at this meeting
+14   and see whether it really -- does it look like an
+15   attack.
+16            So you've got here -- you've got Walter
+17   McCrone there.  You've also got representatives
+18   from the FDA, and then somebody else, God only
+19   knows why, from Chesebrough-Ponds, right, where
+20   there's observers, right?
+21       A.   Yes.
+22       Q.   And they're talking about the science
+23   with him, right?  They're talking about the
+24   science and whether Walter McCrone, one of the
+25   greatest optical microscopists in history, agrees
+2270
+ 1   with them or not, right?
+ 2       A.   To some extent.
+ 3       Q.   Where in here are they attacking him?
+ 4       A.   Well, they're attacking his findings,
+ 5   and they weren't the only ones who also did the
+ 6   same thing.
+ 7       Q.   So --
+ 8       A.   They essentially just mounted a large
+ 9   assault on his results.
+10       Q.   But the word "attack" and the word
+11   "attack and assault," that's a violent -- those
+12   are violent words, right?  Those are words that
+13   sound like you're really going after somebody,
+14   right?
+15       A.   They really went after Lewin, yeah.
+16       Q.   Because they thought the science was
+17   wrong?
+18       A.   They were concerned about these
+19   findings, and they wanted to understand them.
+20       Q.   Okay.  And last topic, this preliminary
+21   recommendations that you read.
+22            Now, you were shown in your examination
+23   a set of preliminary recommendations from -- I
+24   think it was January of 2020, right?
+25       A.   Yes.
+2271
+ 1       Q.   And you know, first of all --
+ 2            MR. DUBIN:  And, Your Honor, I would
+ 3       offer the --
+ 4   BY MR. DUBIN:
+ 5       Q.   Well, you know, first of all, that the
+ 6   FDA has said, one, that those preliminary
+ 7   recommendations are not policy of the FDA or any
+ 8   other agency, right?
+ 9       A.   We talked about them, again, the other
+10   day.  Yes, we discussed them.  We can discuss them
+11   again.
+12       Q.   And the FDA felt so strongly about that
+13   that they actually put out a statement saying, "We
+14   saw these preliminary recommendations, but it's
+15   our position that this is for discussion and
+16   should not be used for any other purpose."
+17            You know that, right?
+18       A.   They talked about wanting to review
+19   those, and that's what they're in the process of
+20   doing now.
+21       Q.   Right.
+22            And despite the fact that the FDA said,
+23   "We want to review this.  We want to look at this.
+24   You shouldn't use it for any other purpose,"
+25   that's what you're presenting to this jury, right?
+2272
+ 1       A.   We're presenting to them that their
+ 2   methods and protocols that they are recommending
+ 3   are the same ones that we're using now.  In fact,
+ 4   they're a little bit -- they suggest some other
+ 5   things that by the regulations we're not doing
+ 6   now, but they're pretty much the same, yeah.
+ 7       Q.   Well, and after -- after those
+ 8   preliminary recommendations, there was another,
+ 9   like, two years of looking at this issue before
+10   they came out of what is called the White Paper:
+11   IWGACP Scientific Opinions for Testing Methods for
+12   Asbestos in Cosmetic Products Containing Talc,
+13   right?
+14       A.   There was -- yes, there was another one,
+15   yes.
+16       Q.   And another document that comes after
+17   further study, right?
+18       A.   Yes.  Yes.
+19       Q.   And then one thing we know is that in
+20   that final -- more final document, even that's not
+21   a position of any agency, right?
+22       A.   They are --
+23       Q.   Nobody has adopted that yet?
+24       A.   Right.  They're in the process of going
+25   through it.
+2273
+ 1       Q.   And, again, so let's just look quickly
+ 2   to that.
+ 3            So this is -- now we're talking December
+ 4   of 2021, right?
+ 5       A.   Yes.
+ 6       Q.   And if we look back, it's got some
+ 7   definitions in here.  And for asbestos, it says,
+ 8   "A group of fibrous silicate minerals that occur
+ 9   in the asbestiform habit of growth," right, not
+10   just size and shape, right?
+11       A.   Correct.
+12       Q.   And for asbestiform, it says, "A
+13   specific variety or mineral" -- "or type of
+14   mineral fibrosity associated with a unique fibers
+15   habit of crystal growth" -- and that's talking
+16   about the way in which it grows, right?
+17       A.   Yes.
+18       Q.   Okay.  And, for example, tremolite, it
+19   says, "A calcic amphibole mineral," right?  It
+20   says, "The asbestiform varieties," referring to
+21   tremolite asbestos, right?
+22       A.   That's all we've been talking about.
+23       Q.   And all of that is still the definition
+24   of asbestos in EPA regulations, in OSHA
+25   regulations, IARC, and all the other people that
+2274
+ 1   we talked about earlier, right?
+ 2       A.   Yes.
+ 3            MR. DUBIN:  All right.  Thank you.
+ 4            No further questions.
+ 5            MR. OLIVER:  Your Honor, can we move
+ 6       P-2318 that Mr. Dubin was referring to into
+ 7       evidence?
+ 8            MR. DUBIN:  Your Honor, we didn't
+ 9       discuss this, but we tried to move studies
+10       into evidence too, and it's been objected to,
+11       so I think we're going to have to come to a
+12       global arrangement.
+13            THE COURT:  Objection sustained.
+14            Any further questions for the witness?
+15       Jury?  Anybody?
+16            Okay.  Not seeing any hands.  Can we
+17       release the jury?
+18            MR. DUBIN:  Yes.
+19            MR. OLIVER:  Yes, sir.
+20            THE COURT:  Dr. Rigler, thank you, sir.
+21            THE WITNESS:  Thank you.
+22            (The witness stepped down from the
+23       stand.)
+24            THE COURT:  Counsel, come up.
+25            (At the bench.)
+2275
+ 1            THE COURT:  So are you planning to
+ 2       present something else today?
+ 3            MR. OLIVER:  I mean --
+ 4            THE COURT:  We don't have to.
+ 5            MR. OLIVER:  We were planning on calling
+ 6       Dr. Arthur Sitelman.  He will take the stand
+ 7       in the morning.
+ 8            THE COURT:  Tomorrow?
+ 9            MR. OLIVER:  First thing in the morning.
+10       And we should be able to finish him and
+11       Dr. Freidenfelds tomorrow.  And then
+12       hopefully --
+13            MR. DUBIN:  Not a very long witness.
+14            MR. OLIVER:  Yeah, he will be short.
+15       But we hope to still be on track to --
+16            THE COURT:  I thought it was going to be
+17       longer.
+18            MR. OLIVER:  She is a very significant
+19       witness.
+20            MR. DUBIN:  But, again, we don't have
+21       much left to do after that -- we have to play
+22       the depo of Ms. Matthey and the --
+23            THE COURT:  You've got to do that.
+24            MR. OLIVER:  I've got to put my client
+25       on, but we're fine.
+2276
+ 1            MR. DUBIN:  Even if we start our
+ 2       evidence on Thursday, we will be okay.
+ 3            THE COURT:  I like it.  Okay.  So 9:30
+ 4       tomorrow.
+ 5            MR. DUBIN:  I have a witness coming.
+ 6       I'm flying him in tomorrow morning.  I will
+ 7       take him right off the plane and put him on
+ 8       if I need to.
+ 9            THE COURT:  Okay.
+10            MR. OLIVER:  Thank you, Your Honor.
+11            (In open court.)
+12            THE COURT:  All right, folks.  You've
+13       been very patient.  Thank you for that.  And
+14       remember not to talk about this subject with
+15       anyone, the case, the witnesses, or any of
+16       the evidence.  Keep all your thoughts,
+17       opinions, and comments to yourself.  Don't do
+18       any additional research.
+19            I didn't notice much of the eclipse, but
+20       maybe you did.
+21            9:30 tomorrow, folks.
+22            (The jury retired from the courtroom at
+23       4:59 p.m.)
+24            (Trial proceedings adjourned at
+25       5:00 p.m.)
+2277
+ 1                 REPORTER'S CERTIFICATE
+ 2   
+ 3   
+     STATE OF FLORIDA
+ 4   COUNTY OF HILLSBOROUGH
+ 5   
+ 6   
+              I, Aaron T. Perkins, Registered Merit
+ 7       Reporter and Certified Realtime Reporter,
+         certify that I was authorized to and did
+ 8       stenographically report the above hearing and
+         that the transcript is a true and complete
+ 9       record of my stenographic notes.
+10   
+11   
+              I further certify that I am not a
+12       relative, employee, attorney, or counsel of
+         any of the parties, nor am I a relative or
+13       employee of any of the parties' attorney or
+         counsel connected with the action, nor am I
+14       financially interested in the action.
+15   
+16   
+              Dated this 8th day of April, 2024.
+17   
+18   
+19   
+20   
+21   
+22   
+                       <%25002,Signature%>
+23                     Aaron T. Perkins, RDR, CRR, CRC
+24   
+25   

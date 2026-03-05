@@ -1,0 +1,3040 @@
+2028
+ 1   IN THE CIRCUIT COURT OF THE 12TH JUDICIAL CIRCUIT
+            IN AND FOR SARASOTA COUNTY, FLORIDA
+ 2   
+     PHILIPPE MATTHEY, as Personal
+ 3   Representative for the Estate
+     of PATRICIA A. MATTHEY,
+ 4   
+                 Plaintiff,
+ 5                                      Civil Action No.
+     vs.                                2018-CA-004809-NC
+ 6   
+     JOHNSON & JOHNSON, JOHNSON &
+ 7   JOHNSON CONSUMER, INC., f/k/a      DIVISION C CIRCUIT
+     JOHNSON & JOHNSON CONSUMER
+ 8   COMPANIES, INC., and PUBLIX
+     SUPER MARKETS, INC., IMERYS
+ 9   TALC AMERICA, INC.,
+10               Defendants.
+     ____________________________________/
+11   
+12                TRIAL PROCEEDINGS BEFORE
+               THE HONORABLE LEE E. HAWORTH,
+13                      and a jury
+14   
+     DATE:             April 8, 2024
+15   
+16   TIME:             9:35 a.m. to 12:01 p.m.
+17   
+     PLACE:            Judge Silvertooth Judicial Center
+18                     2002 Ringling Boulevard
+                       Courtroom 6C
+19                     Sarasota, Florida
+20   
+     REPORTED BY:      Aaron T. Perkins, FPR-C, RDR,
+21                     CRR, CRC, CCR
+                       Notary Public, State of
+22                     Florida at Large
+23   
+                       Volume 12
+24                     Pages 2028 to 2142
+25   
+2029
+ 1   APPEARANCES:
+ 2   
+     ON BEHALF OF PLAINTIFF
+ 3   
+      LANCE V. OLIVER, ESQUIRE
+ 4    RIDGE MAZINGO, ESQUIRE
+      Motley Rice, LLC
+ 5    28 Bridgeside Boulevard
+      Mount Pleasant, South Carolina  29464
+ 6    -  and  -
+      P. LEIGH O'DELL, ESQUIRE
+ 7    Beasley Allen
+      218 Commerce Street
+ 8    Montgomery, Alabama  36104
+ 9   
+10   
+11   ON BEHALF OF DEFENDANTS
+12    MORTON D. DUBIN, II, ESQUIRE
+      King & Spalding, LLP
+13    1185 Avenue of the Americas
+      34th Floor
+14    New York, New York 10036
+      -  and  -
+15    KATHRYN S. LEHMAN, ESQUIRE
+      SPENCER MILES DIAMOND, ESQUIRE
+16    King & Spalding, LLP
+      1180 Peachtree Street Northeast
+17    Suite 1600
+      Atlanta, Georgia  30309
+18    - and -
+      VALENTIN "VAL" LEPPERT, ESQUIRE
+19    King & Spalding, LLP
+      200 South Biscayne Boulevard
+20    Suite 4700
+      Miami, Florida  33131
+21   
+22   
+23   ALSO PRESENT:
+        Philippe Matthey
+24      Bernard Matthey
+        Maritza Harness, Clerk of Court
+25      Gina Veldman (Trial Tech)
+2030
+ 1                       I N D E X
+ 2    PROCEEDINGS                              Page
+                                               2031
+ 3   
+ 4   
+ 5    MARK W. RIGLER, Ph.D.
+      CONTINUED-CROSS-EXAMINATION              Page
+ 6    BY MR. DUBIN                             2034
+ 7   
+ 8   
+ 9   
+10    REPORTER'S CERTIFICATE                   Page
+                                               2142
+11   
+12                    E X H I B I T S
+13                 Exhibit D-7216           Page 2118
+                   received
+14   
+                   Exhibit D-7100           Page 2120
+15                 received
+16                 Exhibit D-7143           Page 2124
+                   received
+17   
+                   Exhibit D-7122           Page 2128
+18                 received
+19                 Exhibit P-3261           Page 2135
+                   received
+20   
+21   
+22   
+23   
+24   
+25   
+2031
+ 1                     *  *  *  *  *
+ 2                 P R O C E E D I N G S
+ 3                     *  *  *  *  *
+ 4            (Whereupon, court was called to order at
+ 5       9:35 a.m. as follows:)
+ 6            THE COURT:  All right.  Take your seats.
+ 7            All right.  Anything before we bring in
+ 8       the panel?
+ 9            MR. OLIVER:  Your Honor, I think we have
+10       one issue about Pat Matthey's testimony that
+11       we need to bring to your attention.  We don't
+12       have to do it now, because we're not going to
+13       play it now.
+14            And then the other issue is Mr. Dubin
+15       raised the issue of do we want to give the
+16       jurors a break to see the eclipse at 3:00.  I
+17       honestly don't care.  I don't get it, but a
+18       lot of people seem to think it's cool.
+19            MR. DUBIN:  It doesn't matter to me.  I
+20       just thought, you know, out of politeness, if
+21       there's some juror that really is --
+22            THE COURT:  Have they asked?
+23            MR. DUBIN:  That's why I'm saying.  I
+24       don't know whether we want to ask them or
+25       even have the bailiff ask them, like, how big
+2032
+ 1       a deal it is for them.  Like, it doesn't
+ 2       matter to me.  As I said, I don't care about
+ 3       seeing it.  I was just trying to be sensitive
+ 4       to the jurors if they --
+ 5            THE COURT:  Well, 3:00 is kind of normal
+ 6       break time anyway, so I don't have a problem
+ 7       with it.  We'll question them and see.
+ 8            MR. DUBIN:  Okay.
+ 9            MR. OLIVER:  Okay.
+10            THE COURT:  It is an unusual occurrence.
+11            MR. DUBIN:  I don't know whether any of
+12       them brought eclipse glasses either.  We
+13       don't need a bunch of jurors burning their
+14       retinas out.
+15            THE COURT:  Well, hopefully they're
+16       intelligent enough to avoid that.
+17            MR. OLIVER:  I'm just going to stay in
+18       here.  I like my eyes.
+19            THE COURT:  My granddaughter told me you
+20       can do it with a colander, you know, a sieve.
+21            MR. DUBIN:  Maybe a DIY blindness
+22       prevention.
+23            THE COURT:  Any legal issues to bring
+24       up?
+25            MR. OLIVER:  Other than these issues
+2033
+ 1       about the Matthey deposition, which were
+ 2       really quick, and I just wanted to let Your
+ 3       Honor know so we can argue it whenever you
+ 4       want to do it.
+ 5            THE COURT:  Okay.  Well, how much time
+ 6       do you think?
+ 7            MR. OLIVER:  Ten minutes tops.
+ 8            THE COURT:  Is it something I have to
+ 9       review a transcript or --
+10            MR. OLIVER:  We have a copy of the
+11       relevant testimony.  It's just a couple of
+12       lines, is all.
+13            THE COURT:  Okay.  All right.  Bring in
+14       the panel.
+15            Do we have Dr. Rigler?  There he is.
+16       All right.
+17            (The witness resumed the stand.)
+18            THE WITNESS:  Good morning, Judge.
+19            THE COURT:  Good morning.
+20            (A pause was had in the proceedings.)
+21            (The jury returned to the courtroom at
+22       9:42 a.m.)
+23            THE COURT:  All right, folks.  Take your
+24       seats.
+25            The jury is present and counsel is here
+2034
+ 1       with their clients.
+ 2            I'm informed there's an astronomical
+ 3       event occurring today.  If you would have an
+ 4       interest in taking a break -- we couldn't do
+ 5       very long, but maybe around 3:00.  If that's
+ 6       an interest to you, we can accommodate that.
+ 7       So as long as you have your glasses or some
+ 8       way to protect your vision, we're okay with
+ 9       it.  Would you-all be interested in doing
+10       something like that?
+11            A JUROR:  I would be.
+12            THE COURT:  Okay.  We'll do it.
+13            All right.  Dr. Rigler, you're still
+14       under oath and you're subject to
+15       cross-examination.
+16            Go ahead, sir.
+17                 MARK W. RIGLER, Ph.D.,
+18   the witness herein, remaining duly sworn on oath,
+19   was continually questioned and testified as
+20   follows:
+21              CONTINUED-CROSS-EXAMINATION
+22   BY MR. DUBIN:
+23       Q.   Good morning, Dr. Rigler.
+24       A.   Good morning.
+25       Q.   Nothing quite like having some breakfast
+2035
+ 1   and some coffee and then being cross-examined for
+ 2   a few hours, right?
+ 3       A.   Well, along with an astronomical event.
+ 4       Q.   Okay.  So as I said, I'm going to try to
+ 5   give you a plan every time, tell you what I'm
+ 6   going to cover, and then I will tell you the next
+ 7   step that I'm going to do.
+ 8            So I'm going to start out just going
+ 9   back over something that we talked about a little
+10   bit yesterday, which is what your role in the
+11   reports that we're going to be discussing really
+12   was.  Then we're going to talk a little bit about
+13   the company, where the work was done, MAS, and the
+14   background of that company.  And then we're going
+15   to talk about what you called asbestos for
+16   purposes of these reports and how it compares to
+17   various regulatory definitions or what we may see
+18   in IARC.  Okay?
+19            That will be our first set of topics.
+20   All right?
+21       A.   Okay.
+22       Q.   Okay.  So one of the things we were
+23   talking about yesterday was that the bulk of the
+24   testing results that you put on your chart were
+25   from a report dated February 1st, 2019.
+2036
+ 1            And that was the museum bottle report,
+ 2   correct?
+ 3       A.   Yes.
+ 4       Q.   And one of the things that you said in
+ 5   your testimony on Friday was at the time of that
+ 6   work, you were the laboratory manager.
+ 7            Do you recall testifying to that?
+ 8       A.   Yes.
+ 9       Q.   Okay.  And one of the things you
+10   suggested is that we should go and look at your CV
+11   to see when you were and when you were not
+12   laboratory manager at MAS, right?
+13       A.   Sure.
+14       Q.   Great.  Let's do that.
+15            So I have marked this just for
+16   identification only as PM0206.  It's a copy of
+17   your CV.
+18            I will hand you a copy.
+19       A.   Thank you.
+20            (A document was handed to the witness.)
+21   BY MR. DUBIN:
+22       Q.   And if we can call that up, please.
+23            And so you have here your professional
+24   work history, correct?
+25       A.   Yes.
+2037
+ 1       Q.   And from -- it looks like from 2013 to
+ 2   2017, you were a laboratory manager at MAS, which
+ 3   is where the work was conducted, right?
+ 4       A.   Yes.
+ 5       Q.   Meaning that you were not, in fact, the
+ 6   laboratory manager at the time that the work we're
+ 7   going to be discussing was done; is that correct?
+ 8       A.   The timing was -- I was developing
+ 9   protocols for the work, and work began in 2017
+10   while I was still laboratory manager.
+11       Q.   Well, if we look at the dates of
+12   analysis, they will be in 2018 and 2019, right?
+13       A.   Yes.  But, again, the work was done and
+14   begun around 2016, 2017.
+15       Q.   But not the analysis, not where you
+16   would be sitting in the room analyzing -- with
+17   the -- with the analysts?  We could look at the
+18   analysis dates.  They're all in the report, right?
+19   Those were in 2018 and 2019?
+20       A.   Sure.  We could look at the chains of
+21   custody and the actual analysis dates on the
+22   sheets and we could look at the dates on those,
+23   and we have them here if you'd like to look at
+24   those.
+25       Q.   I mean, I'm happy, you know, if you want
+2038
+ 1   to look them over at the break and verify what the
+ 2   analysis dates are, because -- did you even have
+ 3   the museum samples in 2016?
+ 4       A.   I don't believe we did.  There were --
+ 5   excuse me.  There were samples that were prior to
+ 6   those in 2016, 2017.
+ 7       Q.   And, in fact, you've testified
+ 8   previously under oath that when this work was
+ 9   done, the work that we're talking about, about the
+10   museum bottle samples, you were not the one who
+11   was supervising the analysis in the lab, and
+12   that's right?
+13       A.   The department manager was supervising
+14   them.  And as I said, part of my role was to
+15   follow up and follow along with the work --
+16       Q.   Okay.
+17       A.   -- at the time.
+18       Q.   Flat out, you were not the person
+19   supervising the people in the lab when the work
+20   we're going to be discussing with the museum
+21   bottles was done, correct?
+22       A.   Again, that is somewhat correct.
+23       Q.   Okay.  I'm going to show you some -- I
+24   will read you some testimony of yours.  This is
+25   from Lewis.
+2039
+ 1            MR. OLIVER:  Which -- where --
+ 2            MR. DUBIN:  It's flagged.
+ 3            THE WITNESS:  Thank you.
+ 4            (A document was handed to the witness.)
+ 5            MR. DUBIN:  Just In case there's an
+ 6       objection, Your Honor.
+ 7            (A document was handed to the judge.)
+ 8   BY MR. DUBIN:
+ 9       Q.   And I would like to direct your
+10   attention to pages -- sorry.  Page 1309, and I
+11   will start with line 15 and read through line 25.
+12   Okay?
+13       A.   Sure.
+14       Q.   And here's your testimony.
+15            "QUESTION:  Right.  And you were not the one
+16   who was -- who was supervising the analysts in the lab,
+17   right?
+18            "ANSWER:  No.  I had done all that prior
+19       to that.
+20            "QUESTION:  Right.  But I'm talking about
+21   during the time period of these reports.
+22            "ANSWER:  That's what I was saying,
+23       prior to that.
+24            "QUESTION:  But let's focus on this time
+25   period.
+2040
+ 1            "ANSWER:  Sure.
+ 2            "QUESTION:  You were the person supervising
+ 3   the people in the lab?
+ 4            "ANSWER:  No."
+ 5            And that was your sworn testimony,
+ 6       correct?
+ 7       A.   Yes.
+ 8       Q.   All right.  So then I want to talk a
+ 9   little bit about the company that the work was
+10   done at and introduce some other characters into
+11   the cast.
+12            And so the person who actually had
+13   ultimate responsibility for issuing the reports
+14   that were the bottle testing, that was Dr. William
+15   Longo, right?
+16       A.   Yes.
+17       Q.   Okay.  And I want to talk a little bit
+18   about the history of MAS.  And I think you said
+19   you joined that company early on, right?
+20       A.   1989, yes.
+21       Q.   In fact, at one point you were director
+22   of marketing at MAS; is that true?
+23       A.   Correct.
+24       Q.   In other words, trying to get people out
+25   there to hire the lab, correct?
+2041
+ 1       A.   Yes.  I was involved in going to
+ 2   different companies and talking to them about our
+ 3   capabilities as a Ph.D. scientist in these areas
+ 4   and telling them about our laboratory.  That's
+ 5   just what it was.
+ 6       Q.   And one of the things that you did is
+ 7   you and Dr. Longo together designed some
+ 8   advertisements for MAS out of the gate to sort of
+ 9   introduce MAS to the market, right?
+10       A.   Yes.  We had a number of different kinds
+11   of advertisements that were -- that we made, sure.
+12       Q.   Okay.  I want to look at one of them.
+13            MR. DUBIN:  All right.  Let's pull up
+14       slide 41.
+15            MR. OLIVER:  Oh, hold on.  I need to see
+16       that before you do that, please.
+17            MR. DUBIN:  I'm going to show you the
+18       picture.
+19            (At the bench.)
+20            MR. OLIVER:  Your Honor, I will object
+21       on beyond the scope and relevance.  This is
+22       an advertisement for the lab from the early
+23       '80s, and I have no idea why that has any
+24       relevance to this work in this case.  It was
+25       20 or 30 years before he did that.
+2042
+ 1            THE COURT:  Okay.
+ 2            MR. DUBIN:  There are two pieces of
+ 3       relevance, Your Honor.  First, he's going to
+ 4       admit that they chose to advertise being in a
+ 5       court as opposed to presenting in a lab or
+ 6       being dressed in the lab coats.
+ 7            Second of all, the figure next to him,
+ 8       which is a man named Dr. Yamate, is relevant
+ 9       to issues of historical contamination.  He
+10       published a standard later on that talked
+11       about the fact that you could get 18 fibers
+12       of asbestos in blank filters just because of,
+13       you know, background contamination.
+14            So it's for two purposes, both to show
+15       how they chose the type of work they were
+16       soliciting and also to introduce Dr. Man
+17       take, who will be relevant later to the
+18       cross-examination.
+19            MR. OLIVER:  This has nothing to do with
+20       Dr. Rigler's work in this case.  And
+21       Dr. Yamate has not become relevant because he
+22       hasn't questioned Dr. Rigler about that
+23       issue.  He can question him, you know, and
+24       then he could impeach him if it's a problem,
+25       but that hasn't even come up.  This is like
+2043
+ 1       out of the blue.  It's out of nowhere.
+ 2            MR. DUBIN:  He's been cross-examined in
+ 3       basically every single trial he's appeared.
+ 4       Dr. Longo is also cross-examined with this
+ 5       and has never been excluded.
+ 6            THE COURT:  I'm not clear on the -- the
+ 7       relevant issue.
+ 8            MR. DUBIN:  He made this ad with
+ 9       Dr. Longo.  That's Dr. Longo in the picture.
+10            THE COURT:  Okay.
+11            MR. DUBIN:  And so he will admit, as
+12       Dr. Longo admits, that when they chose to
+13       start marketing themselves, they marketed
+14       themselves in a courtroom rather than a lab
+15       setting, and that they went on to do so much
+16       litigation work that that -- that the point
+17       is, Your Honor, that this MAS, this testing
+18       organization, has been heavily involved in
+19       litigation.  And that, just like any other
+20       witness I cross-examine about the bias of the
+21       organization that he's working for --
+22            MR. OLIVER:  Your Honor, that doesn't
+23       betray a bias.  You can say that a witness
+24       has been for the plaintiffs, which he's
+25       already done with Dr. Rigler, and testified
+2044
+ 1       to this many times, and that's fine.  This is
+ 2       like preimpeachment of a collateral issue.
+ 3       It doesn't betray bias at all, because there
+ 4       is no evidence that Dr. Rigler was hired in
+ 5       this case because of this ad or that
+ 6       Dr. Yamate had anything to do with this case
+ 7       or the Dr. Yamate's work has anything to do
+ 8       with the county that was in the case.
+ 9            This is just a smear on litigation
+10       lawyers, which is part of their strategy.  I
+11       mean, it doesn't have anything to do with
+12       this case.  And Bill Longo is not here.  The
+13       man who is in the picture is Bill Longo.
+14       That's not Mark Rigler.
+15            THE COURT:  Why do you need the picture
+16       to do the impeachment.
+17            MR. DUBIN:  Again, Your Honor, it's
+18       not -- first of all, it's not impeachment
+19       yet.  Second of all, I need the picture
+20       because it shows that they were focused on
+21       litigation work as opposed to being an
+22       independent testing lab.
+23            And I'm entitled to show that about
+24       these kind of organizations, again to show
+25       this is how you chose to market yourself and,
+2045
+ 1       in fact, that's the direction that MAS went
+ 2       in to making $30 million working for
+ 3       plaintiffs' lawyers over the subsequent
+ 4       history.  And so it's about the bias of the
+ 5       organization where this work was done.
+ 6            Remember, I have had him admit
+ 7       already -- he wasn't even really the person
+ 8       who was doing the work.  So whether he should
+ 9       even be allowed to be testifying about this
+10       work is seriously questionable.
+11            THE COURT:  Objection is overruled, but
+12       I will allow you to go over it.
+13            MR. DUBIN:  Thank you very much.
+14            (In open court.)
+15   BY MR. DUBIN:
+16       Q.   All right.  541.
+17            You helped create this ad.  It was an ad
+18   for MAS back in the time when it was just starting
+19   out, right?
+20       A.   Yes.  I don't know about just starting
+21   out, but it was created, yes.
+22       Q.   And, in fact, you were there when the
+23   picture was taken, correct?
+24       A.   Yes, uh-huh (indicates affirmatively).
+25       Q.   And we can see that even from its early
+2046
+ 1   days, the advertisement for MAS, this laboratory,
+ 2   they chose to picture these individuals, and one
+ 3   of them is Dr. Longo, right?  He's on the right?
+ 4       A.   Yes.
+ 5       Q.   And the other one is Dr. Yamate, right?
+ 6       A.   Yes.
+ 7       Q.   And we'll talk a little bit more about
+ 8   him.
+ 9            But they chose to picture themselves in
+10   a courtroom, right?
+11       A.   Yes.
+12       Q.   Not in a lab, not with lab coats,
+13   wearing suits in a court, correct?
+14       A.   Suits are appropriate for court, yes.
+15       Q.   Okay.  And MAS was, essentially, selling
+16   its services to whoever wanted to bring them into
+17   court, right?
+18       A.   That was not the point.  The point was
+19   to make the information in the ad available to
+20   engineers and scientists and environmental
+21   engineers that were actually out in the field
+22   taking samples.  So that's what it was designed
+23   for.
+24       Q.   Okay.  I'm going to -- let's go to
+25   tab 23.
+2047
+ 1            MR. OLIVER:  Same one or different?
+ 2            MR. DUBIN:  Different.
+ 3            (A document was handed to counsel.)
+ 4            MR. OLIVER:  Where are you?
+ 5            MR. DUBIN:  I'm at page 661.
+ 6            (A document was handed to the witness.)
+ 7            MR. DUBIN:  I can take these back later.
+ 8       I don't mean to stack you up.
+ 9            THE COURT:  Okay.
+10            (A document was handed to the judge.)
+11   BY MR. DUBIN:
+12       Q.   So we'll go to page 661.
+13            MR. OLIVER:  What are the lines, please?
+14            MR. DUBIN:  Sure.  Line -- it should be
+15       line 10.  No.  Hold on.  The page on this is
+16       wrong.  Hold on.  I will find it.
+17            We'll come back to it.
+18            THE WITNESS:  All right.
+19   BY MR. DUBIN:
+20       Q.   All right.  While we do this, one of the
+21   things that we know -- and we'll read your
+22   testimony about that in a second -- is that after
+23   this time back in the '80s, the company MAS has
+24   had a long history of working in litigation,
+25   right?
+2048
+ 1       A.   There is a history of that, yeah, uh-huh
+ 2   (indicates affirmatively).
+ 3       Q.   You're aware that MAS has made over
+ 4   $30 million doing work for plaintiffs' lawyers in
+ 5   asbestos litigation?
+ 6       A.   I have heard that number before.
+ 7       Q.   Okay.  And, in fact, that's a number
+ 8   that Dr. Longo has been giving for quite some
+ 9   time, so it's likely higher than that, right?
+10       A.   I don't know what the amount is.  I
+11   don't know.
+12       Q.   And are you aware that Dr. Longo has
+13   intimated that working for plaintiffs' lawyers in
+14   asbestos litigation has essentially been what has
+15   allowed MAS to keep the lights on, in other words,
+16   to survive?
+17       A.   I don't know about that comment.
+18       Q.   Okay.  So you haven't seen any testimony
+19   like that from Dr. Longo?
+20       A.   I don't recall any like that.
+21       Q.   Okay.  And you know that when Dr. Longo,
+22   who often appears in court, when he appears in
+23   court about it, about 95 percent of the time he is
+24   appearing at the request of plaintiffs' counsel in
+25   litigation?
+2049
+ 1            MR. OLIVER:  Objection.  Your Honor, may
+ 2       we approach?
+ 3            THE COURT:  Sustained.
+ 4            THE WITNESS:  Again, I don't know --
+ 5            THE COURT:  Hold on.  You don't have to
+ 6       answer.
+ 7            MR. DUBIN:  Well, I just want to lay
+ 8       some foundation.
+ 9   BY MR. DUBIN:
+10       Q.   Now, Dr. Longo, the person we're talking
+11   about, he was the one who was actually responsible
+12   for these reports, right?  He was the lead person
+13   on these reports?
+14       A.   He was the lead person on the reports.
+15       Q.   So, again, going to the bias of the
+16   individual who wrote the reports, about 90 to
+17   95 percent of the time when he appears in court,
+18   it's at the request of the plaintiffs' lawyers,
+19   right?
+20       A.   Well, I think using the word "bias" is
+21   unfair, for starters.  We're scientists, and we
+22   are -- we're not party to the litigation that way.
+23       Q.   Okay.  MAS got involved in litigation
+24   against Johnson & Johnson in about 2016, correct?
+25       A.   I don't think MAS was against
+2050
+ 1   Johnson & Johnson, no.
+ 2       Q.   MAS started doing work for plaintiffs'
+ 3   lawyers suing Johnson & Johnson back in around
+ 4   2016, correct?
+ 5       A.   Well, it made -- what you said made it
+ 6   sound like MAS was in litigation with
+ 7   Johnson & Johnson, which is not correct.
+ 8       Q.   I see.  So let me make sure it's
+ 9   clear --
+10       A.   Okay.
+11       Q.   -- my question is clear.
+12       A.   All right.
+13       Q.   MAS started doing work for plaintiffs'
+14   lawyers suing Johnson & Johnson back in around
+15   2016, correct?
+16       A.   That may be the case.
+17       Q.   Okay.  It is the case, correct?
+18       A.   I said that may be the case.  Dr. Longo
+19   has more of that knowledge than I do.
+20       Q.   Okay.  Well, we can -- are you disputing
+21   that 2016 -- because we can look at your
+22   testimony.  Are you saying you remember doing work
+23   in cases against Johnson & Johnson before 2016?
+24       A.   Before 2016?
+25       Q.   Before 2016.
+2051
+ 1       A.   No.
+ 2       Q.   Okay.  I want to talk a little bit about
+ 3   MAS's history of testing talc before being
+ 4   retained in cases against Johnson & Johnson.
+ 5   Okay?
+ 6       A.   All right.
+ 7       Q.   And in terms of the source of
+ 8   information, the source of information about what
+ 9   MAS did or didn't test prior to that time, you
+10   would expect Dr. Longo to be a reliable source of
+11   that information, in fact, the most knowledgeable
+12   person about it, right?
+13       A.   He would have most of the knowledge
+14   about that.
+15       Q.   In fact, I think you said there's nobody
+16   more knowledgeable than Dr. Longo about what
+17   testing MAS has done in the past, for example,
+18   before they were retained in cases against
+19   Johnson & Johnson?
+20       A.   I have a lot of knowledge about the
+21   testing that was going on, but he would have a lot
+22   of the knowledge too, yes.
+23       Q.   Okay.  And so you're aware that after
+24   being retained in cases against Johnson & Johnson,
+25   Dr. Longo was initially asked multiple times --
+2052
+ 1            MR. OLIVER:  Your Honor, objection.
+ 2       This is lack of personal knowledge.  He's
+ 3       asking about a different witness.
+ 4            MR. DUBIN:  I'm asking about what he is
+ 5       aware of, and he is aware of this.
+ 6            THE COURT:  Overruled.
+ 7   BY MR. DUBIN:
+ 8       Q.   You're aware that after becoming
+ 9   involved in litigation against Johnson & Johnson,
+10   Dr. Longo was asked multiple times and initially
+11   claimed that MAS had never tested cosmetic talc
+12   for asbestos prior to 2016 when they became
+13   involved in that work?
+14       A.   I am not aware of Dr. Longo's testimony.
+15   I don't read his depositions, so I don't know what
+16   you're asking about.
+17       Q.   Okay.  Well, you've been presented and
+18   read and been asked questions about his testimony
+19   before in other -- in depositions, right?
+20       A.   I may have -- I may have been read that
+21   testimony because that's typically what they will
+22   do when they ask me questions, so they may have
+23   read that testimony to me.
+24       Q.   Okay.  But you do know -- you do know
+25   the fact is that MAS had tested talc for the
+2053
+ 1   presence of asbestos before working in cases
+ 2   against Johnson & Johnson.  You know that, right?
+ 3       A.   I understood that, yes.
+ 4       Q.   And before being hired to testify in
+ 5   cases against Johnson & Johnson, MAS had
+ 6   consistently reported finding no asbestos in
+ 7   cosmetic talc?
+ 8       A.   I only know of one case about that in
+ 9   the early 2000s.
+10       Q.   Well, for example, you're aware that
+11   before being hired in cases against
+12   Johnson & Johnson, Dr. Longo had tested what he
+13   called talc used on babies and found no asbestos,
+14   correct?
+15       A.   I don't know what you're referring to.
+16       Q.   Okay.
+17            MR. DUBIN:  It's probably the same
+18       transcript as the one that you have up there,
+19       I think.  14A?
+20            MR. OLIVER:  Which one is it?
+21            MR. DUBIN:  I think it's the Lewis
+22       transcript.
+23            MR. OLIVER:  Is that the first one or
+24       the second one?
+25            MR. DUBIN:  It's another transcript.
+2054
+ 1            MR. OLIVER:  All right.
+ 2            (A document was handed to counsel.)
+ 3            MR. OLIVER:  Where are you?
+ 4            MR. DUBIN:  I'm not yet asking you
+ 5       impeachment.  I just want to ask you first if
+ 6       this refreshes your recollection.
+ 7            (A document was handed to the witness.)
+ 8            THE WITNESS:  Okay.
+ 9            MR. DUBIN:  Thank you.
+10            (A document was handed to the judge.)
+11            MR. OLIVER:  Counsel, can you direct me
+12       to the pages?
+13            MR. DUBIN:  Yeah, as soon as I get back
+14       to my desk.
+15   BY MR. DUBIN:
+16       Q.   And if you turn to page 111.  Okay.
+17   Here it is.
+18            So it's 111, line 12 through 17.  I just
+19   want you to first just read it to yourself.
+20            Do you see that testimony?
+21       A.   Yes.
+22       Q.   Okay.  So you are, in fact, aware and
+23   you were aware that Dr. Longo had said --
+24            MR. OLIVER:  Objection, Your Honor.  May
+25       we approach?
+2055
+ 1            THE COURT:  Yeah.
+ 2            (At the bench.)
+ 3            MR. OLIVER:  Your Honor, this is
+ 4       improper impeachment.  If you leave --
+ 5            THE COURT:  He's not impeaching him yet.
+ 6       He's just --
+ 7            MR. DUBIN:  I'm asking him --
+ 8            MR. OLIVER:  He's about to say -- he
+ 9       said you were, in fact, aware, and then he's
+10       read this, and he's not been complete about
+11       it.  And Dr. Longo -- excuse me, Dr. Rigler
+12       actually says, "I don't know," in here.  And
+13       he's trying to lead him into sort of pushing
+14       him into saying he knows something and he
+15       says, "I don't know that that's actually the
+16       case."
+17            And then counsel in this case is
+18       testifying again, and he says, "I mean, if
+19       that's what I said, yes."
+20            MR. DUBIN:  Your Honor, I have multiple
+21       purposes for this testimony.  We're in a
+22       weird position here, because this is not the
+23       guy who has done the work.  I established the
+24       foundation that the person who would be most
+25       knowledgeable that he would rely on for what
+2056
+ 1       testing was actually done at MAS in the past
+ 2       is Dr. Longo.
+ 3            So just like I'm asking about any other
+ 4       authoritative source, I'm asking about
+ 5       Dr. Longo and what he did.
+ 6            And the fact -- they cannot escape, they
+ 7       cannot simply try to un-write what actually
+ 8       happened at MAS that this witness is aware
+ 9       of.  They're choosing to put some guy on the
+10       stand who didn't really do the work.  He's
+11       aware of this.  I'm asking about it.
+12            Also, he just testified under oath that
+13       he wasn't aware of this, so it is
+14       impeachment.
+15            THE COURT:  Overruled.  You can ask it.
+16            MR. DUBIN:  Thank you.
+17            (In open court.)
+18   BY MR. DUBIN:
+19       Q.   Again, Dr. Rigler, you're aware that
+20   Dr. Longo has said that before 2016, when they got
+21   hired in cases against Johnson & Johnson, they had
+22   tested what he called talc used on babies and
+23   found no asbestos, right?
+24       A.   Yes.
+25       Q.   And, in fact, Dr. Longo had gone so far
+2057
+ 1   before being hired in cases against
+ 2   Johnson & Johnson to call the idea of talc being a
+ 3   cosmetic -- sorry, being -- of asbestos being
+ 4   cosmetic -- let me rephrase that so it's clean.
+ 5            In fact, before being hired in cases
+ 6   against Johnson & Johnson, you were aware that
+ 7   Dr. Longo went so far as to call the idea of
+ 8   asbestos being in cosmetic talc an urban legend,
+ 9   right?
+10       A.   Yes.  That's what everybody thought,
+11   that it was an urban legend, but it was proven to
+12   be true that there was asbestos in
+13   Johnson & Johnson Baby Powder.
+14       Q.   And that's a conclusion you came to
+15   after being hired by plaintiffs' lawyers?
+16       A.   Well, after we started testing those
+17   samples, we didn't find the asbestos in the
+18   samples.
+19       Q.   Okay.  And, again, also, before being
+20   hired in cases against Johnson & Johnson,
+21   Dr. Longo had said that MAS had already done
+22   studies of the type or types of fibers people who
+23   used cosmetic talc products might be exposed to
+24   and found no asbestos, correct?
+25       A.   I believe you're talking about that one
+2058
+ 1   particular case where no preconcentration was used
+ 2   in that method, and so in that kind of situation,
+ 3   I would expect that.
+ 4       Q.   Okay.  Now, I want to talk about the
+ 5   results of your testing and how that we can
+ 6   interpret them in the case.
+ 7            So, first, to be clear -- okay.  So I'm
+ 8   not sure we remember this anymore, but did I
+ 9   already hand you the Moure-Cabrera transcript,
+10   February 8th?  I think I did.
+11       A.   Yes.
+12       Q.   And so just to close that out, I'm going
+13   to ask you to look at pages 661 and 662.  And I
+14   had asked you about selling services to whoever
+15   wants them to bring to court, and I'm going to
+16   read your testimony from 661, line 25, to 662,
+17   line 13.  And you were asked:
+18            "QUESTION:  Not the scientific lab, not
+19   saying we're scientists, it is we'll stand up in court.
+20   That was the ad, wasn't it?
+21            "ANSWER:  The Court permitted it.
+22            "QUESTION:  No.  I'm saying will stand up --
+23            "ANSWER:  Oh.
+24            "QUESTION:  Was what they were selling to
+25   whoever wants them to bring them to court?
+2059
+ 1            "ANSWER:  Sure."
+ 2            Do you see that?
+ 3       A.   I'm sorry, I don't know which line
+ 4   you're on.
+ 5       Q.   Oh, I'm sorry.  661 -- can I show you?
+ 6   I will just give you mine.
+ 7       A.   Okay.  I think I've got it here.
+ 8       Q.   Make sure I read that correctly.
+ 9       A.   Okay.  Yes.
+10       Q.   Thank you.  I will just take it back.
+11       A.   Oh, yeah.
+12       Q.   Thank you.
+13            Bottle testing.  First -- and, of
+14   course, we're not expecting that this is going to
+15   tell you we kept around old bottles just to have
+16   them tested in the future, but it's true that you
+17   did not test any bottles for this case that
+18   Ms. Matthey actually used, right?
+19       A.   I was not asked to do that.
+20       Q.   Okay.  And, again, you don't even know
+21   whether there were such bottles to be tested,
+22   right?
+23       A.   That's true, yes.
+24       Q.   So I want to talk a little bit -- I want
+25   to talk a little bit about what asbestos is and
+2060
+ 1   what you will call asbestos for your purposes in
+ 2   your reports to see whether there's a match
+ 3   between what your client stresses and what we
+ 4   might see, for example, in things like IARC.
+ 5            And so very basically, and we'll go over
+ 6   this a little bit more, but if we can bring up
+ 7   slide 9, we're going to talk about what all these
+ 8   terms mean, but there's a term here, "tremolite,"
+ 9   and that's a mineral type, right?
+10       A.   Yes, uh-huh (indicates affirmatively).
+11       Q.   Okay.  And we'll talk in a second about
+12   there could be non-asbestos tremolite and there
+13   can be asbestos tremolite, right?
+14       A.   Yes.
+15       Q.   Okay.  And so for you to call something
+16   asbestos in your report, all that you would
+17   require -- let's assume that it is the mineral
+18   tremolite so we're not talking about whether the
+19   mineral characterization is correct.  So once you
+20   have the mineral right, all you require is for it
+21   to be something that's over .5 microns long, have
+22   a 5 to 1 aspect ratio, and that's length to width,
+23   right?
+24       A.   Yes.
+25       Q.   And parallel sides?
+2061
+ 1       A.   Yes.
+ 2       Q.   And if you see that, you are going to
+ 3   call it asbestos, right?
+ 4       A.   If the -- if the chemistry is correct
+ 5   and the diffraction pattern matches, yes.
+ 6       Q.   In fact, under the definition of
+ 7   asbestiform that you use, all that you require for
+ 8   something to be asbestiform is for it to be over
+ 9   .5 microns long, meet this aspect ratio, and have
+10   parallel sides, right?
+11       A.   Again, it's not my definition.  It's the
+12   regulatory definition.  It's what's required by
+13   regulations.
+14       Q.   And that actually presages the thing
+15   we're going to talk about next, but I just want to
+16   back up first and talk about minerals for a
+17   second, and then we're going to talk about what
+18   those regulatory documents actually say.
+19            So, first, just to introduce the concept
+20   so we know what we're talking about, we can go to
+21   slide 25.
+22            So I put up here "What is asbestos?"
+23   Right?  Although I think we're going to have a
+24   little debate about what asbestiform means, this
+25   is accurate, right?
+2062
+ 1            There are -- when you talk about
+ 2   asbestos, there are two general families.  One
+ 3   family is called the serpentine family, right?
+ 4       A.   Yes.
+ 5       Q.   And within this serpentine family of
+ 6   minerals, there are a lot of minerals that are not
+ 7   asbestos, right?
+ 8       A.   True.  That's true.
+ 9       Q.   I gave one example here of antigorite.
+10   That's an example of a non-asbestos serpentine
+11   mineral, right?
+12       A.   Yes.  And also is lizardite too.
+13       Q.   A bunch of them.
+14       A.   Yeah.  It's just a couple of those,
+15   though.
+16       Q.   Yeah.
+17            And then chrysotile would be referring
+18   to the asbestiform of a serpentine mineral, right?
+19       A.   Yes.
+20       Q.   And then for amphibole, amphibole is a
+21   whole different mineral class, right?
+22       A.   Yes.
+23       Q.   And amphibole, there are a couple up
+24   here that I don't think we're going to be talking
+25   about as much in this case.  One is something
+2063
+ 1   called crocidolite?
+ 2       A.   Yes.
+ 3       Q.   And something called amosite, correct?
+ 4       A.   Correct.
+ 5       Q.   And the non-asbestiforms of those two
+ 6   minerals, for crocidolite, it's called riebeckite,
+ 7   r-i-e-b-e-c-k-i-t-e, right?
+ 8       A.   Yes.
+ 9       Q.   And for amosite, although there's more
+10   ambiguity there because amosite tends to lean
+11   towards the grunerite edge of that series, the
+12   general name is cummingtonite-grunerite, right?
+13       A.   Yes.  They're what we call solid
+14   solution series, correct.
+15       Q.   And one of the reasons that these two
+16   types have different names -- in other words,
+17   names that don't mirror their asbestiforms -- is
+18   because they were the amphibole types that were
+19   more commonly used in the industry, right?
+20       A.   Which ones are we talking about?
+21       Q.   Crocidolite and amosite.
+22       A.   Yes.  But fairly rarely.
+23       Q.   Well, amosite, for example, was in pipe
+24   insulation or Navy ships and things like that?
+25       A.   Yes.
+2064
+ 1       Q.   And amosite actually just stands for the
+ 2   asbestos mines of South Africa, which is one of
+ 3   the sources of where that came from, right?
+ 4       A.   Correct, yes.
+ 5       Q.   Okay.  And then where it gets a little
+ 6   bit more confusing is when we get down to these
+ 7   that are yellow, which is a lot of what we're
+ 8   going to talk about, they don't have very distinct
+ 9   names, right?
+10       A.   They can be named as you have them here,
+11   yes.
+12       Q.   Right.
+13            And so this is actually the way it's --
+14   it's listed -- and we'll look at it in the OSHA
+15   regulations, but -- so you can have tremolite and
+16   when it's on the right, the non-asbestiform,
+17   that's just tremolite?  It's not asbestos, right?
+18       A.   Yes.  In the decades that we're talking
+19   about back in the '70s and '60s, it was all called
+20   the same thing.
+21       Q.   Okay.  And we'll look at that.  But
+22   there's no question that there's tremolite and
+23   then there's tremolite asbestos.  So just seeing
+24   the word "tremolite" doesn't mean you're talking
+25   about asbestos, right?
+2065
+ 1       A.   Yes.  You want -- you are talking about
+ 2   the fibrous forms of it.  That's what you're
+ 3   mainly talking about.
+ 4       Q.   And when we say the fibrous forms -- if
+ 5   we can go to slide 7 -- let's try to give a sense
+ 6   of what these look like.
+ 7            So common tremolite, non-asbestos
+ 8   tremolite, it's, you know, more of a classic rock,
+ 9   right?
+10       A.   Yes.
+11       Q.   But we can see even here there's some
+12   sort of striated lines in the rocks?
+13       A.   Yes.
+14       Q.   And that's because minerals -- and we'll
+15   talk about this in a little bit -- they have what
+16   are known as cleavage planes, right?
+17       A.   Yes.
+18       Q.   We'll explain what that is in a bit.
+19            Then we see the other side, tremolite
+20   asbestos.  It sort of forms naturally like a
+21   fiber, right?
+22       A.   Yes.  And they can be combined together
+23   into grounds and a mixture.  So we want to
+24   remember that.
+25       Q.   Well, first of all, you're not a
+2066
+ 1   mineralogist or a geologist, right?
+ 2       A.   I'm just telling you what they
+ 3   understand and know.
+ 4       Q.   Okay.  And the -- so another word,
+ 5   another term that I think is important for us to
+ 6   understand is the term "habit."  And we mentioned
+ 7   this before.  And "habit" is a form of mineral
+ 8   growth.  That's what habit means in that context.
+ 9   It's not like a bad habit, eating too much potato
+10   chips; it's a -- habit means a mineral growth
+11   habit.
+12       A.   It's a form, yes.
+13       Q.   Okay.  And so -- well, sometimes what
+14   we'll refer to with this as having grown in the
+15   asbestiform habit, right?
+16       A.   Yes.  Yes.
+17       Q.   Okay.  Great.
+18            So then, first of all, we're going to --
+19   we're going to look at this, but I want to ask you
+20   about some testimony you gave on Friday before we
+21   look at the actual regulations.
+22            And you agree -- and we're going to talk
+23   about what cleavage fragments are more in depth,
+24   but if you crush or grind this common tremolite,
+25   you can end up with some structures that will be
+2067
+ 1   needlelike or acicular.  Acicular means
+ 2   needlelike, correct?
+ 3       A.   Yes.
+ 4       Q.   Okay.  That does not mean if you're
+ 5   seeing something that you call needlelike or
+ 6   you're seeing something they call acicular, that
+ 7   doesn't mean that it formed like this, like
+ 8   asbestos, right?
+ 9       A.   It may have formed in the bulk itself
+10   and will be released when it's crushed, but
+11   correct.
+12       Q.   But I can crush this up.  No asbestos in
+13   it whatsoever, nothing to form the asbestos --
+14       A.   That's where -- that's where we have a
+15   dispute.
+16       Q.   We're going to talk about that, then.
+17       A.   Okay.
+18       Q.   But you're not telling me that I can't
+19   just crush up -- let's assume -- I know there's --
+20   if I take a little piece of that and I crush it
+21   up, are you telling me I can't end up with
+22   something that's needlelike?
+23       A.   Sure, you can end up with something
+24   needlelike, yes.
+25       Q.   Okay.  And so -- but you, if you find,
+2068
+ 1   let's say, a crushed-up piece of that and it meets
+ 2   your counting criteria, you're going to call it
+ 3   asbestiform now no matter how it was created,
+ 4   right?
+ 5       A.   I'm going to call that asbestiform
+ 6   because it has the shape and the dimensions that
+ 7   would be required by regulations.
+ 8       Q.   That leads us to our next topic, what do
+ 9   the regulations actually say, then.
+10            So agencies like EPA, OSHA, they define
+11   asbestos, right?
+12       A.   Yes.
+13       Q.   In fact, there's a wide range, and I
+14   think you put up a lot of these agency things.
+15   There's Consumer Product Safety Commission that
+16   has a definition of asbestos.  There is Bureau of
+17   Mines that has a definition of asbestos.  There's
+18   IARC that has a definition of asbestos.  There are
+19   ASTM standards that we're going to talk about that
+20   have a definition of asbestos.  All right?
+21       A.   Yes.
+22       Q.   And they all say, to be asbestos, you
+23   have to grow like this?
+24       A.   In the asbestiform habit, in the fibrous
+25   habit.
+2069
+ 1       Q.   Every single one?
+ 2       A.   They all call it that.
+ 3       Q.   Just so we're clear, let's walk through
+ 4   them.
+ 5            Okay.
+ 6            (A document was handed to the witness.)
+ 7   BY MR. DUBIN:
+ 8       Q.   This will be D9605.  Since I'm already
+ 9   walking around, I will also do D9550, so I will
+10   hand these out.
+11            MR. DUBIN:  And, Your Honor, we would
+12       offer both D-9605 and D-9550, the regulations
+13       by the EPA, definitions of asbestos.
+14            THE COURT:  Any objection?
+15            MR. OLIVER:  Objection, Your Honor.  I'm
+16       not sure what the hearsay exception is.  I
+17       don't mind you displaying it for purposes of
+18       cross-examination.
+19            MR. DUBIN:  Okay.  As long as I can
+20       display these various regulations for now, we
+21       can address the admissibility at a later
+22       time.
+23            THE COURT:  Go ahead.
+24   BY MR. DUBIN:
+25       Q.   Okay.  Well, we can look and do it two
+2070
+ 1   ways.  You -- I can put the definitions up on the
+ 2   slides so they're easier to read, or we can try to
+ 3   blow them up from the -- you know what these
+ 4   definitions are, right?
+ 5       A.   Sure, uh-huh (indicates affirmatively),
+ 6   yeah.
+ 7       Q.   So I'm just going to use slides to show
+ 8   them, and then if you have a question about
+ 9   whether that's right or something like that, we
+10   have the documents.  All right?
+11       A.   I think we're already rehashing what we
+12   already talked about.
+13       Q.   Okay.  So slide -- let's go to slide 2
+14   first.
+15            The EPA defines asbestos as the
+16   asbestiform varieties of the various minerals that
+17   we have listed up there, for example, tremolite,
+18   actinolite, anthophyllite, and the like, right?
+19       A.   Yes.
+20       Q.   And I guess I don't have a slide of
+21   this, so we're going to look at the actual
+22   document, but I want to then look at how it
+23   defines asbestiform.
+24            And we can call up D9550 at page 21.
+25   Oh, my God.  I can't read it.  So you can blow up
+2071
+ 1   the bottom.  That's where it says asbestiform.
+ 2            Here it is defining asbestiform as a
+ 3   specific type of mineral fibrosity in which the
+ 4   fibers and fibrils possess high tensile strength
+ 5   and flexibility.
+ 6            And that flexibility, that's what's
+ 7   coming from the asbestos growth habit, right?
+ 8       A.   Yes.  This is more of a geological
+ 9   macro, "I can hold it in my hand" definition.
+10   This is important for manufacturers to know about
+11   the flexibility of these, because they would spin
+12   fibers out of it.
+13       Q.   Okay.  So let's talk about OSHA and what
+14   it says asbestos is.
+15            For the record, this is D9573.
+16            (A document was handed to the witness.)
+17            THE WITNESS:  Okay.  Thank you.
+18   BY MR. DUBIN:
+19       Q.   And so if we call up slide 4 --
+20            THE REPORTER:  I will need a brief
+21       pause.
+22            (The reporter took a brief technical
+23       pause.)
+24            THE REPORTER:  Can we take a short
+25       break?
+2072
+ 1            MR. DUBIN:  Do you want to take a break
+ 2       now?
+ 3            THE COURT:  Yes.
+ 4            MR. DUBIN:  Okay.  Of course.
+ 5            (The jury retired from the courtroom at
+ 6       10:27 a.m.)
+ 7            (A recess was had in the proceedings at
+ 8       10:31 a.m.)
+ 9            (Whereupon, Court was called to order at
+10       10:33 a.m. as follows:)
+11            THE COURT:  All right.  Be seated.
+12            I think we're set.  Let's bring in the
+13       panel.
+14            THE BAILIFF:  Yes, sir.
+15            (The jury returned to the courtroom at
+16       10:36 a.m.)
+17            THE COURT:  All right.  Folks, be
+18       seated.
+19            Go ahead, Mr. Dubin.
+20            MR. DUBIN:  Thanks.  Could we put that
+21       slide back up, please.
+22   BY MR. DUBIN:
+23       Q.   And so because there was a question of
+24   where in the regulation this comes from, the
+25   slide, to be clear, this is one part of the
+2073
+ 1   regulation and everything above for the purposes,
+ 2   and then there's a later statement that I have
+ 3   also included on the same slide.  And the top
+ 4   comes from the definition of asbestos, and the
+ 5   bottom comes from page 65 of the regulation I
+ 6   handed you, which is PDF page 47 if you need to
+ 7   see it.  Okay?
+ 8       A.   Sure.
+ 9       Q.   But there's no question that OSHA
+10   requires for something to be asbestos, it requires
+11   it to have grown like asbestos; in other words, it
+12   must be in the asbestos growth pattern, right?
+13       A.   Yes.
+14       Q.   Okay.  And, in fact, OSHA -- OSHA is a
+15   little different than some of the other agencies
+16   that we're going to talk about.  It's focused on
+17   the industry, workplace safety, right?
+18       A.   Correct.
+19       Q.   And when OSHA came out in 1972, because
+20   of its focus on industry, it didn't -- if you read
+21   the regulation, it just would have said
+22   chrysotile, amosite, crocidolite, tremolite,
+23   anthophyllite, and actinolite, without these words
+24   "asbestos" being there, right?
+25       A.   Yes.
+2074
+ 1       Q.   And in the early 1990s, there was --
+ 2   there was a set of hearings at OSHA, and it was
+ 3   decided that they -- to be clear, they needed to
+ 4   add the words "asbestos" after tremolite, after
+ 5   anthophyllite, and after actinolite, and that
+ 6   became a change in the regulation, right?
+ 7       A.   Yes.
+ 8       Q.   But absolutely today OSHA does not
+ 9   regulate tremolite or any of these other minerals
+10   as asbestos unless they're in the asbestos growth
+11   habit, right?
+12       A.   They've made the point that if those
+13   structures, when you analyze them, look like it,
+14   what we had talked about, they would want people
+15   to be aware of their potential health hazards of
+16   those structures that size and shape.
+17       Q.   Okay.  But they don't consider them
+18   asbestos?
+19       A.   Correct.
+20       Q.   Okay.  And let me keep going.
+21            I want to look at a regulation from the
+22   Bureau of Mines, because I think one of the things
+23   you mentioned was that at some point back in the
+24   '70s Johnson & Johnson, through a subsidiary,
+25   Windsor Minerals, owned some talc mines, right?
+2075
+ 1       A.   Yes.
+ 2            MR. DUBIN:  And this will be marked L --
+ 3       for whatever reason -- 11685.  Somebody was
+ 4       being creative.
+ 5            (A document was handed to the witness.)
+ 6   BY MR. DUBIN:
+ 7       Q.   And so if we can call that up, please.
+ 8            So you can see this is a regulation back
+ 9   from 1974 from the Department of Interior, Bureau
+10   of Mines.  And if we go to page 2 of the PDF, they
+11   indicate, "The term 'asbestos' is used in this
+12   paragraph as defined to only include chrysotile,
+13   amosite, crocidolite, anthophyllite asbestos,
+14   tremolite asbestos, and actinolite asbestos."
+15            So first thing we can see is that this
+16   regulation, even before OSHA made the switch, was
+17   specifying after the word "tremolite" that there
+18   had to be "asbestos" for tremolite, right?
+19       A.   Yes.
+20       Q.   And it says, "The latter three
+21   minerals used the word 'asbestos' because the same
+22   mineral name is used for both asbestiform and
+23   non-asbestiform varieties of these minerals."
+24            And that's what we talked about before,
+25   that all those minerals can have non-asbestiform
+2076
+ 1   varieties, right?
+ 2       A.   Yes.
+ 3       Q.   And it says, "Tremolite of a
+ 4   non-asbestiform, which occurs in talc deposits, is
+ 5   not mentioned in the definition of asbestos and
+ 6   therefore is not covered," right?
+ 7       A.   Correct, uh-huh (indicating
+ 8   affirmatively).
+ 9       Q.   And we can also look at -- now,
+10   Johnson's Baby Powder was a consumer product,
+11   right?
+12       A.   Yes.
+13       Q.   And there's something called a Consumer
+14   Safety Product Commission, right?
+15       A.   Yes.
+16       Q.   So we will look at that.
+17            (A document was handed to the witness.)
+18            MR. DUBIN:  Okay.  This is marked for
+19       identification as L11686.  If we can call
+20       that up.  Oh, we already did.
+21   BY MR. DUBIN:
+22       Q.   All right.  So this is a 1977 reg,
+23   Consumer Product Safety Commission.  And that's
+24   another federal agency, right?
+25       A.   Yes.  These are proposed rules.
+2077
+ 1       Q.   Okay.  And it says it relates to
+ 2   asbestos.  And if we go to page 3 of 4, both the
+ 3   Consumer Product Safety Commission said -- won't
+ 4   bother reading the whole first part, but it's true
+ 5   that the name "asbestos" is derived from the
+ 6   ancient Greek term for incombustible, right?
+ 7       A.   Where are we?
+ 8       Q.   The name is derived from the ancient
+ 9   Greek term for incombustible, which I thought was
+10   interesting enough to read.
+11            Do you see that?
+12       A.   Yes, yes.
+13       Q.   It says there are six basic varieties of
+14   asbestos minerals which are found in fiber form.
+15   Chrysotile is the most common variety, and then
+16   ordinarily found in asbestos-containing products,
+17   amosite, chrysotile, actinolite asbestos,
+18   tremolite asbestos, anthophyllite asbestos, right?
+19            So, again the Consumer Product Safety
+20   Commission, like OSHA did eventually, is defining
+21   it that it has to be the asbestos variety of those
+22   minerals to be asbestos, right?
+23       A.   Yeah.  I don't know if these rules were
+24   ever promulgated.  I think it was OSHA after that,
+25   but -- because these are proposed by the same kind
+2078
+ 1   of things.
+ 2       Q.   Okay.  And if we could show the next
+ 3   part of that same regulation.
+ 4            One of the things it goes on to explain
+ 5   is, "Asbestos minerals all have nonfibrous
+ 6   counterparts of the same chemical composition and
+ 7   crystal structure which are more abundant and
+ 8   widespread than the asbestiform variety."
+ 9            I will stop there.
+10            That's true, right?  When you encounter
+11   these minerals in nature, things like the
+12   tremolite, they are usually or more commonly in
+13   the non-asbestos type, right?
+14       A.   They can be.
+15       Q.   They're more commonly in the
+16   non-asbestos type, correct?
+17       A.   Again, they can be.
+18       Q.   Okay.  But they're more commonly in
+19   the -- in the -- they can -- the fact is it's not
+20   can be; in the world, tremolite is more common in
+21   its non-asbestiform than its asbestiform, correct?
+22       A.   I don't disagree with you.
+23       Q.   Okay.  Thank you.
+24       A.   Uh-huh (indicates affirmatively).
+25       Q.   And it says -- and they talk about the
+2079
+ 1   idea that it can -- crystallization of these
+ 2   normally nonfibrous minerals into fibrous forms is
+ 3   a rare occurrence in nature.  That's what it says,
+ 4   right?
+ 5       A.   Yes.
+ 6       Q.   And when we talk about the
+ 7   crystallization, it's talking about the growth
+ 8   habit, right, the way the crystal in a mineral
+ 9   forms, right?
+10       A.   Yes.
+11       Q.   Okay.  You also mentioned in your direct
+12   and said that you follow -- you mentioned in your
+13   direct exam that you follow the definition of
+14   asbestos in the ASTM standards, right?
+15       A.   Yes.
+16       Q.   Okay.  And what are the ASTM standards?
+17       A.   The American Society for Testing
+18   Materials.
+19       Q.   Okay.  And we can look at that.  I have
+20   the old one back at the time, at the relevant
+21   time.  I will need a new one instead.  We can look
+22   at the old one while we're waiting.  Forgive me.
+23   I will hand it out.
+24            (A document was handed to the witness.)
+25            THE WITNESS:  Thank you.
+2080
+ 1            (A document was handed to the judge.)
+ 2   BY MR. DUBIN:
+ 3       Q.   And so this has been marked as D9655.
+ 4   We can call it up.
+ 5            You see on the right there's a
+ 6   terminology section?
+ 7       A.   Yes.
+ 8       Q.   And it defines asbestos and it defines
+ 9   asbestiform.  And what -- the way it defines
+10   asbestiform, it says, "A special type of fibrous
+11   habit in which the fibers are separable into
+12   thinner fibers and ultimately into fibrils.  This
+13   habit accounts for greater flexibility and higher
+14   tensile strength than other habits of the same
+15   mineral."
+16            So, again, when -- the standard that you
+17   say you're following defines asbestiform, it
+18   doesn't say that it's just size and shape.  It
+19   defines asbestiform by the habit of the mineral,
+20   meaning the mineral growth habit, right?
+21       A.   Yes.
+22       Q.   Okay.  And I can show you the current,
+23   but the current is the same, right?
+24       A.   Yes.
+25       Q.   Okay.  So I want to go back to IARC.
+2081
+ 1   And we already talked about this yesterday for a
+ 2   different point.  But, again, we're talking about
+ 3   the match between what you're talking about and
+ 4   what the medical experts are talking about.  And
+ 5   if we can call back up -- it was marked -- I
+ 6   believe introduced yesterday -- L9566.
+ 7            I don't -- you may have it in an old
+ 8   stack.  I probably have another copy for you just
+ 9   in case.  I do.
+10            Here's the portion I'm going to be
+11   referring to, and it looks like you already have a
+12   portion of the full document up there, the one I
+13   gave you the last time.
+14            (A document was handed to the witness.)
+15   BY MR. DUBIN:
+16       Q.   So if we can turn to page 287 of the
+17   PDF.  So this is IARC's monograph that is
+18   discussing the idea of talc not containing
+19   asbestiform fibers, and we looked at this
+20   yesterday for purposes of definitional differences
+21   between asbestiform talc and fibrous talc.  And
+22   now I want to look at the definition of asbestos.
+23            And so if we can blow up the bottom
+24   part.
+25            And it says, "Asbestos is a commercial
+2082
+ 1   term that describes six minerals that occur in the
+ 2   asbestiform habit."  And then lists the mineral
+ 3   types that we've been talking about, right?
+ 4       A.   Yes.
+ 5       Q.   And so even in the first sentence, what
+ 6   IARC is saying is they define asbestos and whether
+ 7   it is asbestos not by just size and shape, but
+ 8   whether it occurred in the asbestiform habit,
+ 9   meaning whether it grew like asbestos, correct?
+10       A.   Yes.  And we talked about that, yes.
+11       Q.   Okay.  And it says, "Similarly, the talc
+12   V6 minerals occur more commonly in a
+13   non-asbestiform habit."
+14            We saw that concept earlier that
+15   generally when you see those minerals, they are
+16   not asbestiform, right?
+17       A.   The bulk -- the bulk form.
+18       Q.   Okay.  And then it says this.  It says,
+19   "And may be elongated without being asbestiform,"
+20   right?
+21       A.   Yes.
+22       Q.   Okay.  So what it is specifically and
+23   directly saying is, just because you find a piece
+24   of tremolite that is elongated, meaning it may be
+25   in this kind of shape, that doesn't mean that it's
+2083
+ 1   asbestiform.  That's what it says?
+ 2       A.   Yes.
+ 3       Q.   But you, for all of your analysis, will
+ 4   call it asbestiform if it meets those size and
+ 5   shape requirements?
+ 6       A.   But we did not count any like that.
+ 7       Q.   Okay.  You didn't.  So you don't think
+ 8   if we looked through your pictures, there are
+ 9   going to be a bunch of pieces of tremolite that
+10   looked like this in a fiber shape that you counted
+11   as asbestos?
+12       A.   I -- no, I don't believe so.
+13       Q.   Okay.  And it says there, "Actinolite
+14   and anthrophyllite and tremolite may occur in some
+15   talc deposits.  When asbestiform, they constitute
+16   asbestos, and when not asbestiform, they are
+17   referred to as mineral fragments or cleavage
+18   fragments," right?
+19       A.   Yes.
+20       Q.   Okay.  So let's talk a little bit about
+21   what cleavage fragments are and what that really
+22   means.
+23            We can go back to slide 11.  Sorry,
+24   slide 1.
+25            So, again, you can start out with one or
+2084
+ 1   the other of these rocks.
+ 2            Then if we go to slide 8.  You can take
+ 3   the non-asbestos rock and break it up.  And
+ 4   because -- so cleavage planes in minerals are
+ 5   areas of weakness, right?
+ 6       A.   Yes.
+ 7       Q.   And different minerals have different
+ 8   types of cleavage planes, correct?
+ 9       A.   I think they are -- the cleavage planes
+10   are what they are.  As far as the energy that it
+11   takes to break those planes would be the
+12   difference.
+13       Q.   Do you know what -- what's the chemical
+14   name for salt?
+15       A.   Sodium chloride.
+16       Q.   Okay.  And do you know what halite is?
+17       A.   Yes.
+18       Q.   What is it?
+19       A.   It's the same thing.
+20       Q.   Okay.  Same thing.
+21            And do you know what salt's cleavage
+22   planes are?
+23       A.   Well, I mean, they would be the same
+24   kinds of planes as any crystalline structure.
+25       Q.   Well, isn't it true that if you break
+2085
+ 1   halite, let's say you crush up halite, salt --
+ 2       A.   Yes.
+ 3       Q.   -- it will fracture because of its
+ 4   cleavage planes into little squares?
+ 5       A.   It can.  Most of the stuff that we see
+ 6   is evaporated and reformed, so that's part of the
+ 7   purification process, so you get those nice little
+ 8   crystals.
+ 9       Q.   Well, I mean, the interesting thing
+10   about halite is you can take it and you break it.
+11   It's a square.  You can break it again, and you
+12   will get it in smaller squares?
+13       A.   It can, and you can get fractured
+14   crystals too.  So it can be like a mixture.
+15       Q.   Well, amphibole has cleavage planes such
+16   that when you break it, you can get something that
+17   may look like a fiber sometimes, right?
+18       A.   Yes, uh-huh (indicates affirmatively).
+19       Q.   And to be clear, again, if you find --
+20   if you were to find a cleavage fragment that
+21   happened to break into that size and shape, you
+22   would count it as asbestos?
+23       A.   Not without the -- inspecting it and
+24   verifying that it was asbestiform.
+25       Q.   Okay.  So there are a lot of bottles in
+2086
+ 1   your report where the whole analysis of the bottle
+ 2   is based on finding one structure of something,
+ 3   right?
+ 4       A.   That's -- that's for everybody.  It's
+ 5   not just for our lab.  That's for everybody.
+ 6       Q.   Okay.  So my question is, that's true,
+ 7   it's correct, right?  There are a lot of -- where
+ 8   you may be projecting, "I think there will be 4
+ 9   million fibers in this bottle," but the entire
+10   analysis is by -- based on finding one piece of
+11   tremolite?
+12       A.   Yes, of course.
+13       Q.   Okay.  And then you'll look at that
+14   tremolite, and let's assume you're calling it
+15   fiber.  We'll talk about this bundle idea in a
+16   second, but let's assume you characterize it as a
+17   fiber, and there are situations like that where in
+18   the bottle that you're projecting has all this
+19   asbestos, the only thing you found was one thing
+20   that's in a fiber shape and it's a piece of
+21   tremolite, right?
+22       A.   Yes.
+23       Q.   And so you don't have any other
+24   information about, you know, how that formed in
+25   nature, other than just finding that piece in your
+2087
+ 1   analysis, right?
+ 2       A.   No.  I had the diffraction data which
+ 3   tells me it's crystalline and in the asbestiform
+ 4   type.  So I know it's a crystal of that type.
+ 5       Q.   You are making that up.  You're making
+ 6   that up.
+ 7       A.   I'm trying to --
+ 8       Q.   Crystalline form --
+ 9            MR. OLIVER:  Objection.  Argumentative.
+10            THE COURT:  Sustained.
+11   BY MR. DUBIN:
+12       Q.   Okay.  A crystalline form, there is
+13   absolutely nothing that you are looking -- you
+14   tell me and you sit here on the stand, because I
+15   will have a witness asked about it.  You see a
+16   piece of tremolite, a piece of tremolite like
+17   this, you tell me that crystalline form data that
+18   you are deriving, what that scientific data is
+19   from that piece that is going to tell you how it
+20   formed?
+21       A.   Sure.
+22       Q.   So go ahead.
+23       A.   I just said it.
+24       Q.   Go ahead.
+25       A.   The crystalline structure of it by
+2088
+ 1   diffraction, when I see my diffraction spots --
+ 2   don't get excited.
+ 3       Q.   Okay.
+ 4       A.   I'm just trying to tell you the science
+ 5   of it.  When I see my diffraction spots, I know
+ 6   that it's crystalline in form.  If I see rings, if
+ 7   I see a diffuse diffraction, then I know I've got
+ 8   a noncrystalline form.  So that's one way to look
+ 9   at it.
+10       Q.   What diffraction work tells you, what
+11   the SAED work tells you, it just tells you what
+12   mineral it is.  It doesn't tell you how it forms.
+13       A.   It can tell you what the crystalline
+14   structure is.  That's what you're looking at.
+15       Q.   It can tell you it's tremolite.  It
+16   can't tell you how it formed in nature, period.
+17       A.   Well, I'm -- again, I'm just trying to
+18   tell you what the physics of the diffraction is.
+19       Q.   You're swearing under oath that by doing
+20   SAED work, crystalline structure work, you can
+21   tell whether a piece of tremolite that you find
+22   how it formed in nature, whether it formed in the
+23   asbestiform habit?  Is that your testimony?
+24            MR. OLIVER:  Object, Your Honor.  It's
+25       asked and answered.
+2089
+ 1            THE COURT:  Overruled.
+ 2   BY MR. DUBIN:
+ 3       Q.   Is that your testimony?
+ 4       A.   I am telling you that I can tell you
+ 5   that it's a crystalline form.
+ 6       Q.   But both of them are crystals.  They
+ 7   both have a crystalline form.  The non-asbestos
+ 8   and the asbestiform both are crystals.
+ 9       A.   Yes, of course they do.
+10       Q.   So then there's no difference in the
+11   diffraction pattern.
+12       A.   The -- again, if things form in
+13   amorphous habits, all right, so your bulk
+14   tremolite is in an amorphous habit, it's not in a
+15   crystalline habit like that, it's in an amorphous
+16   habit.
+17       Q.   How are you telling me it's in an
+18   amorphous habit from SAED data?  Tell me.  Explain
+19   it to me.
+20       A.   I just did, twice.
+21       Q.   You explained --
+22       A.   Two times.
+23       Q.   You explained to me what?  What in the
+24   diffraction pattern of this piece of tremolite is
+25   going to show me how it formed in nature?  You
+2090
+ 1   tell me.  I want it very clear so that we have a
+ 2   record.
+ 3       A.   I'm just telling you what the pattern is
+ 4   to tell me that it's crystalline.  And I know
+ 5   that's a -- that seems to be difficult for you.
+ 6   I'm not quite sure why.
+ 7       Q.   It's difficult for me because they're
+ 8   both crystals and there's no difference in the
+ 9   crystals in the diffraction pattern between
+10   tremolite that grew in the asbestiform habit and
+11   tremolite that did not grow in the asbestiform
+12   habit.
+13            Do you have any literature source that
+14   you can show because me in the world that says by
+15   doing SAED on an individual piece of tremolite,
+16   you can tell how it formed in nature?
+17       A.   I'm just telling you what the data tells
+18   me as far as the diffraction patterns that it's
+19   crystalline.
+20       Q.   Okay.  So what about the difference?  Is
+21   there a different crystalline pattern between an
+22   individual piece of tremolite and something that
+23   formed in the asbestiform habit?
+24       A.   We may see it, if you cleave it like
+25   that and you're looking at a fiber of it, it's
+2091
+ 1   going to give that kind of diffraction pattern,
+ 2   which tells you it's crystalline.
+ 3       Q.   Okay.  So you just admitted that if I
+ 4   look at a piece of tremolite that came from a
+ 5   non-asbestos rock and it looks like this, it's
+ 6   going to give me a crystalline pattern that tells
+ 7   me it's tremolite, right?
+ 8       A.   Yes.
+ 9       Q.   And that's the same thing for the ones
+10   that form in the asbestiform habit?
+11       A.   If it's in that rod-shaped form, that's
+12   how it will look, yeah.  It will look the same as
+13   that.
+14            (Court reporter requested a technical
+15       pause.)
+16            THE COURT:  Are you ready?
+17            MR. DUBIN:  Yes.
+18            THE COURT:  Mr. Dubin.
+19   BY MR. DUBIN:
+20       Q.   Okay.  The fact is -- let me find it.
+21            The fact is, again, if you find a
+22   cleavage fragment of a certain size and shape,
+23   you're going to call it asbestos, right?
+24       A.   We called it that based on what we knew
+25   as it being an asbestiform according to the
+2092
+ 1   regulations.
+ 2       Q.   And yet the asbestiform definition you
+ 3   say is according to the regulations is not the
+ 4   actual definition of asbestiform in any of the
+ 5   regulations?
+ 6       A.   I'm now confused.
+ 7       Q.   Well, I think we covered it.
+ 8            All right.  So I want to talk a little
+ 9   bit then about how MAS responded to these types of
+10   criticisms that I have been discussing, about
+11   calling individual fibers of tremolite asbestos.
+12            Now, I want to talk a little bit about
+13   the concept of a bundle and what a bundle is and
+14   what it looks like.
+15            And when we talk about a real asbestos
+16   bundle, right, bundle is a grouping of -- grouping
+17   of fibers?
+18       A.   Yes.
+19       Q.   It's almost like if I was holding a
+20   handful of spaghetti, right?  There's all sorts of
+21   individual fibers, but they form a larger
+22   structure, right?
+23       A.   Yeah.  That's a great example.
+24       Q.   And bundles are a feature associated
+25   with asbestiform minerals because it reflects the
+2093
+ 1   way they grow, right?
+ 2       A.   Correct, yes.
+ 3       Q.   And so -- and we'll see whether we can
+ 4   do this cleanly.  If we can't, we'll present it
+ 5   later, but I'm going to hand you some things.
+ 6            And one of the things that MAS started
+ 7   to do in response to these criticisms is instead
+ 8   of calling things individual fibers, they would
+ 9   start trying to call them bundles, right --
+10       A.   I --
+11       Q.   -- even though they looked the same,
+12   pretty much?
+13       A.   I mean, they called -- we called them
+14   what we saw them, whether they were fibers or
+15   bundles.
+16       Q.   Okay.  Well, I want to do a couple of
+17   examples of this.  We will see how we can move
+18   through it.  If it becomes laborious, I will do it
+19   later.
+20            I don't need this.  So just for -- these
+21   are -- okay.  I'm just going to hand these for --
+22   to you so you have it as a reference, the slide
+23   and backup.
+24            MR. OLIVER:  Thank you.
+25   BY MR. DUBIN:
+2094
+ 1       Q.   If comes from reports that are
+ 2   already -- these have been referred to.  I'm going
+ 3   to do three of them.  I probably should have just
+ 4   collated them and then handed it out that way,
+ 5   instead of walking around the courtroom to get my
+ 6   steps.
+ 7       A.   Okay.
+ 8            (A document was handed to the witness.)
+ 9   BY MR. DUBIN:
+10       Q.   While I'm doing that, maybe you can look
+11   at them and verify that the slide is correct.
+12            Here's another one.
+13       A.   Okay.
+14       Q.   Take your time and look at them and make
+15   sure we're talking about the same structures and
+16   things like that.
+17            (A document was handed to the witness.)
+18            THE WITNESS:  Thanks.
+19            MR. DUBIN:  Sorry.  One more.
+20            (A document was handed to the witness.)
+21   BY MR. DUBIN:
+22       Q.   I tried to hand you -- so the slide
+23   that's in the back that refers to your reports for
+24   that -- for the slide.
+25            So have you taken a moment to verify
+2095
+ 1   whether those are -- it's the appropriate backup
+ 2   for the slides?
+ 3            MR. OLIVER:  Morty, are you planning to
+ 4       show this slide?
+ 5            MR. DUBIN:  Yeah.  I'm planning to do it
+ 6       now.
+ 7            MR. OLIVER:  Are you planning to do it
+ 8       now?
+ 9            MR. DUBIN:  Yeah.
+10            (At the bench.)
+11            MR. OLIVER:  Your Honor, I haven't seen
+12       these -- I haven't seen these slides until
+13       now.  And I'm not faulting him for that.  But
+14       this is argumentative.
+15            So what he's done is he's made a hearsay
+16       slide.  He's calling it alleged asbestiform
+17       fibers.  And, obviously, that part of it is
+18       argumentative.  I don't mind him showing him
+19       pictures, but this whole thing is hearsay and
+20       argumentative.  He is showing the pictures.
+21       I mean, if he wants to ask him questions that
+22       way and --
+23            MR. DUBIN:  I will take the titles off
+24       the slides.  I don't care.  I mean, I can
+25       take the titles off the slide, but I'm just
+2096
+ 1       going to ask him that in two seconds.  If he
+ 2       really wants to pause to make me take the
+ 3       slide title off, I'll do it, but --
+ 4            MR. OLIVER:  These pictures are from his
+ 5       reports, and I'm not objecting to --
+ 6            MR. DUBIN:  They're in evidence.
+ 7            THE COURT:  Hold on.  One at a time.
+ 8            MR. OLIVER:  I'm not objecting to the
+ 9       use of the pictures.  I'm objecting to the
+10       use of these slides, which are argumentative
+11       hearsay.  The pictures, I have no objection
+12       to.
+13            MR. DUBIN:  I don't think you quite
+14       understand hearsay, because I'm going to say
+15       that in court, making a statement in court.
+16       But I'm happy to take the titles off if he
+17       really cares.  It's just going to take me a
+18       second.
+19            THE COURT:  I'm okay with it.
+20       Overruled.
+21            (In open court.)
+22   BY MR. DUBIN:
+23       Q.   All right.  So let's look at some of
+24   these slides.
+25            What we tried to do is go through and
+2097
+ 1   sort of look at some pictures of what MAS was
+ 2   originally calling was a single fiber, something
+ 3   like this.  And then what they may have called in
+ 4   later reports, a bundle.  In other words, they're
+ 5   saying it looks like that handful of spaghetti.
+ 6   So I want to look at some of these to compare
+ 7   them.  We can start with slide 12.
+ 8            So on the left we have something, a
+ 9   picture of a piece of anthophyllite, and in that
+10   report back in 2017, the conclusion was the way
+11   the analyst listed it, they call it a single
+12   fiber, right?
+13       A.   Yes.
+14       Q.   And then we have some incredibly
+15   similar-looking thing on the right, and now MAS,
+16   to say it's asbestiform, they're calling it a
+17   fiber bundle, right?
+18       A.   Yes.  They are two completely different
+19   structures in two different analyses.
+20       Q.   Correct.
+21            I'm saying that -- their
+22   characterization of the structures.
+23            And another example, if we could go to
+24   slide 13.  So this picture, they took -- had this
+25   picture of a structure of tremolite.  Okay?  That
+2098
+ 1   was originally -- this was characterized as a
+ 2   single fiber.  In a later report, now, very
+ 3   similar-looking structure, MAS starts to call that
+ 4   a fiber bundle, right?
+ 5       A.   That's what we called it, yes.
+ 6       Q.   All right.  And just one more.  This is
+ 7   slide 14.
+ 8            So MAS called something that looked like
+ 9   this in one report, or an earlier report, called
+10   that a single fiber or a single piece of
+11   tremolite, it looks like, right?
+12       A.   Yes.
+13       Q.   And then when it comes to this structure
+14   in later reports, anthophyllite, starts calling
+15   that a bundle, right?
+16       A.   They're two different -- completely
+17   different structures, yes.
+18       Q.   Okay.  I want to talk about how
+19   something like that impacts the analysis.  And I
+20   want to show you some example of one sample and
+21   this point of -- how you characterize one little
+22   thing and how much impact it can have.
+23            So if we -- I'm just going to look at
+24   your -- one of your reports.  We'll start with
+25   P2079, which is your February 1st, 2019, MDL
+2099
+ 1   report.
+ 2            Okay.  We can call that up.  We will go
+ 3   to page 38.  There should be a sample for
+ 4   M68503-057.
+ 5            And -- so the numbers that we're looking
+ 6   at, M68503-057, this is identifying what MAS said
+ 7   it found in the sample from that bottle, right?
+ 8       A.   That's what was found, yes.
+ 9       Q.   And so the only thing that MAS found in
+10   that bottle in its analysis was one structure, the
+11   length of 8 microns and a width of 1.5, and it was
+12   characterized as a mineral tremolite.  And then
+13   MAS characterized that as a bundle, right?
+14       A.   Yes.
+15       Q.   And so we can then first just look at
+16   the image of that structure that was called a
+17   bundle.  I think that's marked as C00004, page 37.
+18   Let's go to the structure.  I have it as page 377
+19   of the PDF.
+20            And we can match this up, because it has
+21   the same number, so the number we looked at
+22   before, M68503-57 and the 0001 -- or the 001, that
+23   means the one structure that was identified in
+24   that bottle, right?
+25       A.   Yes.
+2100
+ 1       Q.   Okay.  And you've called -- they call
+ 2   that a bundle, right?
+ 3       A.   We call it a bundle, yes.  That's a
+ 4   bundle, yes.
+ 5       Q.   Okay.  And then -- the way that drives
+ 6   the analysis, again, the same -- we're going to
+ 7   look at the same thing.  We go back to P2079.  And
+ 8   we go -- we can go to a report on page 36.  These
+ 9   are all already marked.  Let's scroll down a
+10   little bit to the highlighting.
+11            We've got the same sample number,
+12   M68503-057JDP, right?
+13       A.   Yes.
+14       Q.   And so based on finding that one thing
+15   that you're characterizing as a bundle, you
+16   estimate that the -- there would be 8,360 asbestos
+17   fibers per gram in that bottle, right?
+18       A.   Per gram, yes.
+19       Q.   Right.  And then so how many -- let's
+20   say we have -- do you know how big a typical
+21   Johnson & Johnson bottle would be?  Do you know
+22   how many grams it would have?
+23       A.   Anywhere from 9 to 15 ounces, if it was
+24   sort of the larger ones, and then there are
+25   smaller ones, travel size bottles.
+2101
+ 1       Q.   Okay.  And so let's take a larger
+ 2   bottle.  Let's just say you used 500 grams of talc
+ 3   in that bottle, for example.  You're talking
+ 4   about -- you would then project, based on that
+ 5   that -- based on that one finding, that there
+ 6   would be like 4 million asbestos fibers?
+ 7       A.   Yes.
+ 8       Q.   Okay.  And when we talk about that, I
+ 9   just want to make sure that we're clear.  You
+10   walked through this.
+11            In the museum sample testing, the ranges
+12   of weight percentages -- well, a different thing
+13   we're talking about.  If we go to slide 24, you're
+14   generally reporting based on this type of
+15   analysis -- if we can open slide 24, please --
+16   that what you're claiming -- you're claiming it's
+17   asbestos, right?  The range of percentages,
+18   obviously, there are some bottles where you say no
+19   structures detected, right?
+20       A.   Correct.
+21       Q.   But the general range is something
+22   between 3.3 million of 1 percent or 9.2
+23   thousandths of 1 percent, right?
+24       A.   Yes.
+25       Q.   All right.  Okay.  I want to talk about
+2102
+ 1   testing methods.
+ 2            MR. DUBIN:  Your Honor, I don't know
+ 3       what time you would like to take -- I can't
+ 4       tell what time it is.
+ 5            THE COURT:  Well, it's a quarter past
+ 6       11:00.
+ 7            MR. DUBIN:  Oh, sorry.
+ 8   BY MR. DUBIN:
+ 9       Q.   So I want to talk a little bit about
+10   testing and testing methods.  I know you mentioned
+11   the concentration method.  We might as well just
+12   start talking about what are the different
+13   methods, what do people use, what are the
+14   different microscopes or other things.
+15            When we talk about testing methods, a
+16   lot of these methods were being developed back in
+17   the 1970s, right?  At least as applied to talc.
+18       A.   Yes.
+19       Q.   Okay.  And we keep hearing this 1976
+20   date, you know.  There's some people who say,
+21   "Okay, well, talc quality may have been different
+22   before 1976 or after," and the significance of
+23   1976 is that that was around the time when
+24   industry adopted a testing standard called CTFA
+25   J4-1, right?
+2103
+ 1       A.   Yes.
+ 2       Q.   And J4-1 was a standard that was adopted
+ 3   by industry and it used two different types of
+ 4   analysis to work, right?
+ 5       A.   Yes.
+ 6       Q.   Okay.  And those two different types of
+ 7   analysis were XRD and PLM, right?
+ 8       A.   Yes, yes.
+ 9       Q.   And PLM stands for polarized light
+10   microscope, right?
+11       A.   Yes.
+12       Q.   Or microscopy?
+13       A.   Yes.
+14       Q.   And the industry as a whole did not
+15   adopt testing using what's called TEM, or
+16   transmission electron microscopy?
+17       A.   At that time, Johnson & Johnson actually
+18   had a protocol in 1977 for TEM.
+19       Q.   Correct.
+20       A.   But overall, you're correct.
+21       Q.   You anticipated my next question.
+22       A.   Okay.
+23       Q.   So there's an industry standard that's
+24   adopted and they -- and TEM is not included in
+25   that standard, right?
+2104
+ 1       A.   It was not.
+ 2       Q.   And that's significant in some ways
+ 3   because TEM, each of these tools have different
+ 4   strengths and weaknesses, right?
+ 5       A.   Yes.
+ 6       Q.   One of the strengths of TEM is that it
+ 7   can be much more sensitive, see much smaller
+ 8   amounts of alleged asbestos or minerals in a
+ 9   sample, right?
+10       A.   It can.
+11       Q.   Okay.  And what you -- you are aware is
+12   that Johnson & Johnson voluntarily decided to add
+13   TEM testing to its testing protocol even though
+14   other members of the industry decided not to use
+15   it, right?
+16       A.   Yes.
+17       Q.   Okay.  And they adopted a testing
+18   protocol based on a published method, correct?
+19       A.   They were looking at the protocol.  I
+20   don't know if the method was actually published or
+21   not.
+22       Q.   I think you may have seen this, so let's
+23   look at it.
+24       A.   Okay.
+25       Q.   D6666.  We will do that next.
+2105
+ 1            (A document was handed to the witness.)
+ 2            THE WITNESS:  Thanks.
+ 3   BY MR. DUBIN:
+ 4       Q.   And you're familiar with this testing
+ 5   standard, correct?  You've seen this before?
+ 6       A.   I know the Microscope Journal.  I get
+ 7   that.  I receive that and read it.  But as far as
+ 8   a testing standard -- and this one is dated 1990.
+ 9       Q.   Right.
+10       A.   Yes.
+11       Q.   You're familiar with this?
+12       A.   Yes.
+13       Q.   And let me cover this with another
+14   witness, but you know -- do you want to look at it
+15   together?  Is that okay?
+16       A.   Sure.
+17            MR. OLIVER:  Have you given copies?
+18            MR. DUBIN:  I did.
+19            MR. OLIVER:  Okay.
+20            MR. DUBIN:  We can put it up.  Thanks.
+21            THE WITNESS:  But you want -- it's a
+22       1990 paper.
+23   BY MR. DUBIN:
+24       Q.   I know that.
+25       A.   Okay.
+2106
+ 1       Q.   Again, we'll talk about the history --
+ 2       A.   Okay.
+ 3       Q.   -- I guess -- if you're not familiar, we
+ 4   will talk about the history with somebody else.
+ 5   But do you know that this was the basis --
+ 6   McCrone's basis -- that they were actually using
+ 7   this before it was published and then eventually
+ 8   it becomes published?  Do you know that?
+ 9       A.   I know that they were using it in 1987,
+10   but as far as 1977, you-all have yours, there
+11   wasn't such a thing.
+12       Q.   Okay.  We'll do that.  But I just want
+13   to talk -- but you know that at least at some
+14   point, this was the basis for the TEM protocol
+15   that Johnson & Johnson was using.
+16            Do you know that?
+17       A.   No.
+18       Q.   Well, do you know that -- you see
+19   there's a reference here to McCrone Associates.
+20       A.   Yes.
+21       Q.   Do you know that that was who was doing
+22   Johnson & Johnson TEM testing, regular TEM
+23   testing?
+24       A.   Not in 1977.
+25       Q.   Weren't you -- weren't you talking about
+2107
+ 1   McCrone just on Friday?
+ 2       A.   Yeah.  But we were not talking about
+ 3   1977.
+ 4       Q.   Okay.  We'll look at that in a moment --
+ 5       A.   Okay.  All right.
+ 6       Q.   -- because I think you'll see.
+ 7            But you know McCrone and you also know,
+ 8   you know, Dr. James Mullet, right?
+ 9       A.   Yes.
+10       Q.   And he's a good and respected scientist,
+11   in your opinion, correct?
+12       A.   He is a good one, yes.
+13       Q.   And we'll talk about what these
+14   companies are and how they relate to
+15   Johnson & Johnson's testing, but I think that
+16   you've said that if you were advising a company in
+17   the 1970s or the 1980s, you would advise them that
+18   McCrone is a good lab to hire to do TEM testing,
+19   right?
+20       A.   1977, I'd have to think about that.  I
+21   don't know what their history was with that.
+22       Q.   Okay.
+23            MR. DUBIN:  The Lewis transcript, it's
+24       tab -- tab 16.
+25   BY MR. DUBIN:
+2108
+ 1       Q.   Okay.  So you should already have a
+ 2   Lewis -- a transcript from Lewis from
+ 3   October 22nd, 2019.
+ 4            Do you see that transcript?
+ 5       A.   Yes.
+ 6       Q.   Okay.  Can you take that out and can you
+ 7   turn to page 138?  I'm sorry, 1383, line 14, to
+ 8   1383, line 18.
+ 9       A.   1383?
+10       Q.   I guess we'll -- do you have that page?
+11       A.   Yes.
+12       Q.   Might as well just cover two things
+13   while we're here.
+14            First of all, before I get to the --
+15   well, I will do this one first.
+16            You were asked the following question
+17   under oath and you said:
+18            "QUESTION:  And you've told us -- I'm just
+19   curious if you were advising a company in the 1970s and
+20   '80s, would you advise them that McCrone is a good lab
+21   to hire to do TEM testing?"
+22            And your answer under oath was:  "Yes."
+23            Correct?
+24       A.   If they were around at that time for
+25   that testing, yes.
+2109
+ 1       Q.   Okay.  We'll look at that.
+ 2            And, in fact, above that, you were asked
+ 3   about an issue that I was asking you about before,
+ 4   that the J&J TEM standard, which was 7024,
+ 5   mirrored a published method by McCrone
+ 6   laboratories, and at least at that time, you were
+ 7   aware of it and said "yes," right?
+ 8       A.   You're refreshing my memory now.
+ 9       Q.   Okay.  And the methods -- you were asked
+10   a little bit about the methods that J&J was using
+11   at the time following this published protocol.
+12            And you're aware that the method reports
+13   that it can detect asbestos down to a theoretical
+14   limit of 0.00001 percent?  Does that sound
+15   familiar to you?
+16       A.   Do you have the --
+17       Q.   Page 4.  We can go to page 4.
+18       A.   Four of 15?
+19       Q.   Should be 4, page 4 of the -- let me
+20   see.  That's the TEM method reference.  Sorry.
+21   It's page 10 in this.
+22       A.   Page 10.
+23       Q.   I was looking at the actual method.
+24       A.   Okay.  Hold on.
+25       Q.   So it says the sensitivity -- it says,
+2110
+ 1   "The theoretical detection limit of 10 to the
+ 2   negative 5th."
+ 3       A.   Yes.
+ 4       Q.   And I have to come back here to check my
+ 5   math.
+ 6       A.   Yeah.
+ 7       Q.   But that is point -- whatever I said
+ 8   before.  I guess it's four zeroes and a 1.
+ 9       A.   Four zeroes and a 1.  Point four zeroes
+10   and a 1.  Yeah, one -- one single fiber.
+11       Q.   And it's true that not until MAS was
+12   involved in litigation did anybody at MAS stand up
+13   and say, "No, these techniques aren't currently
+14   the best.  McCrone, even though you're the best
+15   lab in the world, you don't really know what
+16   you're doing," right?  Nobody at MAS said that
+17   until being involved in litigation, right?
+18       A.   I don't know that anyone has ever said
+19   that.
+20       Q.   Okay.  And you said, in fact, that you
+21   would recommend to a company at that time, back
+22   then, that these are the techniques to use, right?
+23       A.   Sure.
+24       Q.   Okay.  And that's because they're very
+25   similar to what MAS itself would have been doing
+2111
+ 1   if it was testing talc back before it became
+ 2   involved in litigation with J&J?
+ 3       A.   Can you rephrase the question.
+ 4       Q.   Sure.
+ 5            I mean, these are sort of the same
+ 6   general types of methods, you know, not using
+ 7   concentrations that MAS was using in its own lab
+ 8   to test talc for asbestos before becoming involved
+ 9   in litigation against J&J, right?
+10       A.   Yeah.  I mean, as far as the point goes,
+11   before concentration, we all knew about
+12   concentration in the early '70s, so that was
+13   really the best way to do it, or if you decided
+14   not to.  But, yeah, I would have recommended to
+15   use their lab.
+16       Q.   Right.
+17            And that's -- another thing you
+18   mentioned is that concentration -- that this idea
+19   of using concentration techniques has been around
+20   for a very long time?
+21       A.   Yes.
+22       Q.   All right.
+23       A.   Yes.
+24       Q.   And even with respect to talc, there was
+25   a published paper, because you talked about the
+2112
+ 1   Blount paper in 1991 where she at least proposed
+ 2   the testing for using that with PLM analysis,
+ 3   right?
+ 4       A.   Yes.
+ 5       Q.   Okay.  And, despite that, until becoming
+ 6   involved with litigation against Johnson & Johnson
+ 7   decades later, MAS did not feel the need and did
+ 8   not use concentration methods to analyze talc for
+ 9   asbestos?
+10       A.   The -- I believe the first time that it
+11   was done, they used a standard technique in the
+12   lab which didn't involve concentration.  Now,
+13   looking -- regardless of Johnson & Johnson, no
+14   matter who had brought it to us, however it was
+15   done, we would pick the best method, number one.
+16            The difficulty is all of this talc,
+17   we've got to move it aside and concentrate the
+18   asbestos somehow, some way.  Doesn't matter
+19   whether J&J brings it to us or whoever.  If the
+20   client said, "Is there asbestos in this at such a
+21   certain level?" we would have looked the best
+22   method up and developed that.
+23            And that's exactly what we did.
+24   Regardless of them over there, it wouldn't have
+25   mattered who brought it to us.
+2113
+ 1       Q.   Okay.  But still, fair to say that
+ 2   MAS -- there are publicly available concentration
+ 3   methods, and for decades, MAS did not feel the
+ 4   need to use them when analyzing talc for asbestos?
+ 5       A.   Again, the question was this low
+ 6   concentration, so we looked at Dr. Blount's work,
+ 7   saw that there was a method for that, for talc,
+ 8   and said, okay, let's use that method, because we
+ 9   know that it can detect this low amount.
+10       Q.   Okay.  And so we've been talking a
+11   little bit about it -- and I now want to get into
+12   whether McCrone was involved, when McCrone was
+13   involved, also talked a little bit about this lab,
+14   and I thought you showed some McCrone documents on
+15   Friday, so let's go through this.
+16            First, I just -- so that the jury knows
+17   the TEM protocol method -- so we're not talking
+18   about this -- this is not the right one.  This is
+19   7143.
+20            So we will talk in a second.  We will
+21   introduce a document talking about what the
+22   protocols were at that time.  But you know -- and
+23   I think you talked about one McCrone document on
+24   Friday, right?  You talked about the document
+25   where it said HC and they were testing ore body
+2114
+ 1   samples.  And you put it up and you said, "Oh,
+ 2   look at all this asbestos," right?  Do you
+ 3   remember that?
+ 4       A.   Yes, yes.
+ 5       Q.   And I will talk to you about that
+ 6   document specifically in a second, but in terms of
+ 7   what McCrone was doing generally and what they
+ 8   thought that their testing showed -- now, you
+ 9   understand, when we talk about -- we're going to
+10   talk about this in a second, but it's not the same
+11   thing to be testing around various areas of a mine
+12   as it is to be testing actual baby powder, right?
+13       A.   It can be different, correct.
+14       Q.   Correct.  And we saw this in one of the
+15   documents that you mentioned.  Actually, why don't
+16   we just go ahead and do that document now.
+17            You put up a document, P-2253.  It was
+18   an Imerys document.  I want to look at another
+19   part of it so it will help us understand the
+20   context here.  If we can call that up.  Go to the
+21   next page, please.  Thank you.
+22            And so one of the -- you put this up
+23   because you were discussing Alice Blount, correct?
+24   And then you also mentioned -- there is some
+25   reference to -- oh, here -- East Argonaut and
+2115
+ 1   Black Bear.  So let's blow that up.
+ 2            It says, "There's certainly visible
+ 3   tremolite, actinolite in specific zones of the
+ 4   Vermont deposits.  Fibrous tremolite was
+ 5   identified by the writer in exposures and cores at
+ 6   East Argonaut and Black Bear mines."
+ 7            Do you see that?
+ 8       A.   Yes.
+ 9       Q.   And it also says, "Cypress staff report
+10   tremolite in the Hammondsville and Clifton
+11   deposits," right?
+12       A.   Yes.
+13       Q.   All right.
+14       A.   Yes.
+15       Q.   And so, first of all, some of these
+16   mines -- Black Bear wasn't -- when we talk about
+17   Vermont mines, there are multiple different mines
+18   there, right?
+19       A.   Yes.
+20       Q.   They're not all the same?
+21       A.   Correct.
+22       Q.   And you understand that when Windsor was
+23   in business -- at this point Cypress has bought
+24   the business.
+25            When Windsor was in business, it was a
+2116
+ 1   talc -- an operating talc mine that sold talc from
+ 2   different mines, right?
+ 3       A.   Yes.
+ 4       Q.   It sold industrial talc as well as
+ 5   cosmetic talc, right?
+ 6       A.   Yes.
+ 7       Q.   And only certain mines and even in
+ 8   certain areas of mines were approved for use in
+ 9   baby powder, right?
+10       A.   To my knowledge, yes.
+11       Q.   And, again, we will talk about this
+12   later.  For example, like Black Bear and Clifton
+13   were never approved?
+14       A.   Not that I know of.
+15       Q.   And portions of Hammondsville were
+16   approved and portions of Argonaut were approved,
+17   right?
+18       A.   I'd have to see the documents on that.
+19       Q.   But let's scroll down a little bit to
+20   see what we're talking about.  So this last part,
+21   "Cypress maintains."
+22            So you're not -- you have never been
+23   involved in talc mining, right?
+24       A.   I understand the process of it.
+25       Q.   Understand the process.
+2117
+ 1            And part of the process is what you're
+ 2   going to do is, if you have a large talc mine,
+ 3   you're going to -- you're going to test around the
+ 4   mine area, right, around the large mine area, and
+ 5   you're going to try to identify areas that are
+ 6   appropriate to mine and not appropriate to mine,
+ 7   right?
+ 8       A.   Yes.
+ 9       Q.   And so it -- when we see tests of these
+10   mines or ore, sometimes that's what they're doing,
+11   they're going around and testifying about where
+12   they can or should mine, right?
+13       A.   Yes.
+14       Q.   And we see that here, right?  It says,
+15   "Cypress maintains a selective mining program in
+16   Vermont that is directed towards the exclusion of
+17   all these potentially fiber-bearing zones from the
+18   ore sent to the mill, and those suspect tonnages,
+19   including associated talcs, are left in the pit
+20   walls or sent to waste pits," right?
+21       A.   Waste pods, I guess.
+22       Q.   Waste pods.
+23       A.   (Nods affirmatively.)
+24       Q.   Okay.  So we'll talk about that a little
+25   bit when we get into the other document.
+2118
+ 1            So I want to talk about the McCrone
+ 2   document that you did not show on Friday.  It's
+ 3   D-7216.
+ 4            MR. DUBIN:  And we would offer this into
+ 5       evidence.
+ 6            MR. OLIVER:  No objection, Your Honor.
+ 7            THE COURT:  Received.
+ 8            (Exhibit D-7216 received.)
+ 9   BY MR. DUBIN:
+10       Q.   So I want to talk a little bit about
+11   what the lab -- and you said you would recommend
+12   at that time -- said about the talc in Vermont,
+13   and then we'll talk about the documents that you
+14   showed.
+15            So this is a document from McCrone
+16   Associates dated 21 May of 1987, and talking about
+17   some of their conclusions about what they have
+18   seen.  And it goes really -- at the bottom.
+19   They're talking about the -- I guess it says
+20   that -- they're talking about the EPA -- they're
+21   responding to something from the Illinois EPA
+22   earlier.  And Ian Stewart, who we can see is from
+23   McCrone -- scroll down just so you can see who Ian
+24   Stewart is.  He's the vice president there.
+25            And they're going back and forth with
+2119
+ 1   Illinois EPA.  The Illinois EPA wrote to Windsor
+ 2   Minerals to the fact that they were satisfied that
+ 3   Windsor's product is free of asbestos.
+ 4            And, again, so when we're talking about
+ 5   Windsor Minerals and Windsor's product, that's --
+ 6   that product is what was being used in
+ 7   Johnson & Johnson Baby Powder, right?
+ 8       A.   If you say so.
+ 9       Q.   You know what Windsor Minerals is,
+10   right?
+11       A.   Yes.
+12       Q.   Windsor Minerals was the name of the
+13   mine -- or the mining company, sorry.
+14       A.   Correct.  Correct.
+15       Q.   It says -- McCrone says, "That has
+16   always been our opinion and continues to be our
+17   opinion based on over 15 years of closely
+18   examining the product," right?
+19       A.   Yes.
+20       Q.   So if we can scroll up also to the date,
+21   this is '87, so 15 years before that would be '72,
+22   right?
+23       A.   Yes.
+24       Q.   So when you said you weren't sure when
+25   McCrone got involved and what they were doing for
+2120
+ 1   J&J, they had been working for J&J as an outside
+ 2   testing lab at least since 1972, right?
+ 3       A.   Again, that's -- that's what you say.
+ 4       Q.   Is this -- have you seen this document
+ 5   before?
+ 6       A.   Yes.
+ 7       Q.   Okay.  Is there a reason you didn't
+ 8   choose to mention it to the jury on Friday?
+ 9       A.   No, no.  As I say, there are many, many
+10   documents that you guys didn't release until 2017,
+11   so we're all sort of catching up with all of this
+12   at this point.
+13       Q.   Okay.  Another one, just so we have it
+14   in the record, D-7100, we'll move its admission.
+15   I'm sorry, I'm on my way.  We'll move its
+16   admission.
+17            Any objection?
+18            MR. OLIVER:  No objection.
+19            THE COURT:  All right.  Be received.
+20            (Exhibit D-7100 received.)
+21   BY MR. DUBIN:
+22       Q.   D-7100, let's put it up.
+23            Are you familiar with this document?
+24       A.   I'm not quite sure about this one.  Like
+25   I said, you guys -- most of this has been driven
+2121
+ 1   by your release of the 2017 documents that were --
+ 2   nobody knew about until that time, so that's why a
+ 3   lot of this is moving the way it's moving.  I'm
+ 4   reading through this.
+ 5       Q.   Yeah.  And, presumably, we see the
+ 6   reason of which it's McCrone.  If we scroll a
+ 7   little down in there, it says, "Petrographic
+ 8   analysis was performed by Windsor Minerals
+ 9   Research Department.  TEM and electron diffraction
+10   studies were performed by Walter C. McCrone
+11   Research & Associates on a total of 49 samples, 98
+12   analyses," right?
+13       A.   Yes.
+14       Q.   And this is just one -- what it's
+15   talking about, if we go to the title, it's --
+16   separate and apart from their standard testing
+17   protocols, which we'll look at in a second, they
+18   also did something called a six-month ore study on
+19   the asbestiform content, right?
+20       A.   Yes.
+21       Q.   And so interesting thing about this
+22   document, if we look at who it's being written
+23   from and to.  So go to page 2.
+24            So it's being written from -- by Vernon
+25   Zeitz, manager of research and development, right?
+2122
+ 1       A.   Yeah.  At Windsor.
+ 2       Q.   And that's at Windsor?
+ 3       A.   Yes.
+ 4       Q.   It's being written to Roger Miller, on
+ 5   the front page.  And Roger Miller was also at
+ 6   Windsor Minerals?
+ 7       A.   Yes.
+ 8       Q.   So this is an -- and, in fact, there's
+ 9   actually a stamp on it that says "Confidential,"
+10   right?
+11       A.   Yes.  There -- we didn't know about this
+12   until after 2017.
+13       Q.   All right.  Fair enough.
+14            What I'm pointing out here is that this
+15   is an internal confidential conversation where
+16   they're just talking about what they believed
+17   between one employee and another, right?
+18       A.   Yes.
+19       Q.   Okay.  And when you -- what Vernon Zeitz
+20   says to Roger Miller is that, in his view, "In
+21   conclusion, it can be stated with a greater than
+22   99.9 percent certainty, the ores and minerals
+23   produced from the ores at all Windsor locations
+24   are free from asbestos or asbestiform minerals,"
+25   right?
+2123
+ 1       A.   Yeah.  Except in one case here, the
+ 2   fifth paragraph on the first page, "In one
+ 3   instance, asbestos was identified, this being
+ 4   associated with the sample DGI produced at the
+ 5   Gassetts mill."
+ 6            And then they go on to say that he did
+ 7   an analysis about that.  So they did find
+ 8   something.
+ 9       Q.   And two things about that, of course.
+10   First, if you go back to the -- to what you're
+11   talking about -- let's go to that.  Let's go to
+12   one instance.
+13            Okay.  First of all, they're talking
+14   about some other analysis they did to confirm
+15   whether they thought that was real, right?
+16       A.   Yes.
+17       Q.   And you know also that Gassetts mill, it
+18   was an industrial mill.  It was not the mill that
+19   processes talc for baby powder.
+20            Did you know that?
+21       A.   I believe that they did process it, but
+22   there was indications with some of the X-ray
+23   diffraction data that some of the talc was --
+24   actually there was some -- it was at the
+25   industrial grade and not at the cosmetic grade.
+2124
+ 1       Q.   What it says here is, "Talc samples
+ 2   represented both the industrial materials produced
+ 3   at Gassetts GI," right?
+ 4       A.   Yes.
+ 5       Q.   And so when it's talking about DGI, a
+ 6   sample was from an industrial mill?
+ 7       A.   Yes.
+ 8       Q.   And --
+ 9            MR. DUBIN:  Do we have that testing and
+10       protocol?
+11   BY MR. DUBIN:
+12       Q.   I just wanted to give one example so
+13   we knew -- obviously, there are different ones
+14   over time, but -- this is D14 -- 7143.
+15            (A document was handed to the witness.)
+16            MR. DUBIN:  We would move to admit
+17       D-7143.
+18            THE COURT:  Any objection?
+19            MR. OLIVER:  No objection, Your Honor.
+20            THE COURT:  Admitted.
+21            (Exhibit D-7143 received.)
+22   BY MR. DUBIN:
+23       Q.   All right.  We thought it would be
+24   helpful to look for a second.  This is from '77.
+25   The -- there are other documents as well, but
+2125
+ 1   so -- what they talk about is what their testing
+ 2   requirements is.
+ 3            This is Windsor, right?
+ 4       A.   Yes.
+ 5       Q.   We can scroll down.
+ 6            And so they are doing -- using different
+ 7   methods.  They're using CTFA J4-1 because they are
+ 8   also doing the industry method, right?
+ 9       A.   Yes.
+10       Q.   And then they've got TEM 71019, which, I
+11   think, maybe like DTA, which is something we're
+12   not even really focusing on, but -- and then the
+13   TEM 7024, that was the transmission electron
+14   microscopy?
+15       A.   Yes.
+16       Q.   Okay.  And if we go to the next page, we
+17   can just see the frequency.
+18            So what they're doing TEM 7024, which is
+19   the TEM method, they're testing biweekly composite
+20   samples, right?
+21       A.   Yes.
+22       Q.   And then they also do -- after it's in
+23   the finished talc instead of just coming out of
+24   the mill, they do quarterly audit of random
+25   samples also by transmission electron microscopy,
+2126
+ 1   right?
+ 2       A.   Yes.
+ 3            And, again, this is without any
+ 4   concentration methods, so that was their testing
+ 5   at the time.
+ 6       Q.   And when McCrone is referring to having
+ 7   closely examined the product over the course of
+ 8   15 years, it's because they were the ones
+ 9   responsible at that time for the TEM work?
+10       A.   If that's what you say.
+11       Q.   Okay.  And so, again, the document that
+12   you showed, I just want to quickly address it for
+13   McCrone, D-8375, that's how we'll call it.  It's
+14   introduced as a P number, but I don't have a P
+15   number.
+16            Just call it up.
+17            Again, this is the document that you
+18   showed yesterday, McCrone.  I just want to point
+19   out what it really is or isn't.
+20            And so this is the document you said
+21   showed some asbestos.  First of all, as I pointed
+22   out before, these are samples taken from the ore
+23   body, right, not -- these aren't product samples.
+24   If you can see the word "ore body" in the first
+25   paragraph?
+2127
+ 1       A.   Yes.
+ 2       Q.   Okay.  And there's also something --
+ 3   maybe we can skip this or not, but do you know
+ 4   when they're using these codes, do you see -- if
+ 5   we go to the pages later, you know, these codes,
+ 6   you see things like YGI, YHC, things like that?
+ 7       A.   Yes.
+ 8       Q.   And so some of these things are clearly,
+ 9   you know, like Gassetts and things, which are G,
+10   and then there are some that say "HC"?
+11       A.   Yes.
+12       Q.   Okay.  And you know that although it's
+13   referring generally to the Hammondsville cosmetic
+14   mine, that that HC designation could also be used
+15   for industrial talcs?
+16       A.   Not to my knowledge.
+17       Q.   Okay.  All right.  So let's look at
+18   D-7152.
+19            Maybe that's it.
+20            Instead of making someone run around to
+21   do this right now, we'll cover that right after
+22   lunch.
+23       A.   All right.
+24       Q.   I'm going to move to the next thing.
+25   We'll go back and talk about HC and what it means.
+2128
+ 1   And you're also --
+ 2            Oh, okay.  Let's just pull the other
+ 3   ones.  Never mind.  We're all right.
+ 4            MR. DUBIN:  D-7122, we would move for
+ 5   its admission.
+ 6            (A document was handed to the witness.)
+ 7            THE WITNESS:  Thank you.
+ 8            THE COURT:  Any objection?
+ 9            MR. OLIVER:  No objection.
+10            THE COURT:  It's admitted.
+11            (Exhibit D-7122 received.)
+12   BY MR. DUBIN:
+13       Q.   So, for example, here, 26 April 1976,
+14   McCrone, Vernon Zeitz, it's talking about, "We
+15   have analyzed 21 samples of industrial-grade talc
+16   with the general identification HC and LI."
+17       A.   Yes.
+18       Q.   All right.  So that term "HC" can also
+19   be used to discuss industrial talcs, correct?
+20       A.   That's what you say.  That's not what I
+21   know, but that's what you say.
+22       Q.   And were you aware that industrial talcs
+23   could be used -- could be made in this mine by ore
+24   that was rejected from the processing of baby
+25   powder talc?
+2129
+ 1       A.   Yes.
+ 2       Q.   Okay.  And it sometimes was blended with
+ 3   talc from mines that were not approved at all for
+ 4   use in cosmetic like the Clifton mines.
+ 5            Did you know that?
+ 6       A.   That's what you say.
+ 7       Q.   And, actually, there's a specific kind
+ 8   of code designation for when you're talking about
+ 9   production talc with HC.  I'm just going to ask if
+10   you know that or not.  We don't have to go through
+11   it if you don't.
+12       A.   I don't.
+13       Q.   Okay.  And one of the things that I also
+14   say again, because there's been some discussion
+15   about what did Johnson & Johnson tell the
+16   government, not tell the government.  We're going
+17   to look at something else about McCrone from this,
+18   but I want to ask you about P --
+19            Well, let's get a P number.  Great.
+20   3302.
+21            This actually covers the same thing I
+22   was just talking about.
+23            (A document was handed to the witness.)
+24   BY MR. DUBIN:
+25       Q.   I will -- we'll offer Plaintiff's
+2130
+ 1   Exhibit, I assume, 3302.
+ 2            THE COURT:  Go ahead.
+ 3            MR. DUBIN:  Thanks.
+ 4   BY MR. DUBIN:
+ 5       Q.   So if we can call up the 3302.  This is
+ 6   a letter from Roger Miller, president of Windsor
+ 7   Millers -- Mr. Millers -- Windsor -- that would be
+ 8   funny.  But Windsor Minerals, not Windsor Millers.
+ 9   Let me start over again.
+10            This is a letter from R. M. Miller, the
+11   president of Windsor Minerals, to Walter McCrone
+12   Associates and Ian Stewart, right?
+13       A.   Yet.
+14       Q.   And so, first, on this designation
+15   issue, it says, if you're looking at production
+16   talcs, it should have "HC" as a prefix and then a
+17   date identifier after?
+18       A.   Yes.
+19       Q.   We can talk about that some other time,
+20   but it also looks like it says, "Never ask a
+21   lawyer for a quick answer.  I just now received an
+22   answer to your request of March 26th, 1976.
+23            "You are hereby granted permission to
+24   disclose data resulting from your tests on our
+25   sample."
+2131
+ 1            Right?
+ 2       A.   1976.
+ 3       Q.   Right.
+ 4            And so there are -- and do you know the
+ 5   context of this at all?
+ 6       A.   No.
+ 7       Q.   Whether it related to the --
+ 8       A.   No.
+ 9       Q.   But, anyway, we can see here that
+10   Johnson & Johnson was not saying, "Hey, McCrone,
+11   keep our results secret," right?
+12       A.   I believe they were just talking about
+13   giving it to the FDA.
+14       Q.   Right.  They are talking about giving it
+15   to the FDA.
+16       A.   Yes.  Yes.
+17       Q.   Before we go to lunch, I want to pick a
+18   document that relates to this.
+19            I think we only have about time for one
+20   more document before a break, so I want to do this
+21   one as it relates to -- it's the same general
+22   topic.
+23            All right.  So you showed a document
+24   yesterday, and since it also relates to McCrone
+25   and it relates to the FDA, I'm going to do that
+2132
+ 1   quickly.
+ 2            The document that was introduced
+ 3   yesterday was P-2091.  So let's call that up
+ 4   first.
+ 5            First, I want to look at this document.
+ 6   So we're back -- we're going to talk more about
+ 7   Lewin and the old FDA stuff, but during this early
+ 8   1970s time, there's a lot going on with, you know,
+ 9   people looking at whether there's asbestos in
+10   talc, looking at whether people are looking at
+11   that question, right, using the right procedures,
+12   finding false results, finding real results, a lot
+13   of debate and discussion going on at that time,
+14   right?
+15       A.   There was a lot going on.
+16       Q.   A lot going on.
+17            So one of the things that went on -- and
+18   you showed this yesterday -- is this document.  It
+19   was about somebody at Sperry Rand claiming that,
+20   oh, wait, there are asbestos fibers, and you
+21   highlighted this part about chrysotile, right?
+22       A.   Yes.
+23       Q.   We're going to look at another document.
+24   First of all, have you seen any other documents
+25   that relate to this, this specific thing, Sperry
+2133
+ 1   Rand?
+ 2       A.   I may have.
+ 3       Q.   Do you remember?
+ 4       A.   I can't remember as I sit here today.
+ 5       Q.   Okay.  So, first, I want to talk about
+ 6   tremolite, because that's really what we've been
+ 7   talking about mostly here.
+ 8            So the response -- and I want to make
+ 9   sure we're talking about this.  So this is
+10   somebody at J&J, if you go to the second page just
+11   to show who it is, W. Nahsed, and writing to
+12   Dr. R. A. Fuller of the FDA, right?
+13       A.   Yes.
+14       Q.   So now let's go back to the first part.
+15            Can you blow up the bottom of that first
+16   paragraph?  Well, just blow up the whole
+17   paragraph.
+18            Okay.  We'll talk about the chrysotile
+19   one.  One of the things that the --
+20   Johnson & Johnson asked the guy from FDA, he says,
+21   "Are you sure he's claiming -- are you sure he's
+22   claiming there's chrysotile there?"  And he says
+23   to the FDA guys, "I asked him if he had assured
+24   themselves that the fibers were not tremolite,
+25   which could be present in trace amounts," right?
+2134
+ 1            Do you see that?
+ 2       A.   Yes, yes.
+ 3       Q.   And so when we're talking about the
+ 4   definition of a fiber, definition of fiber just
+ 5   means, you know, size and shape, right?  That's
+ 6   how fiber is defined?
+ 7       A.   It can be with the chemistry and the
+ 8   diffraction, yes.
+ 9       Q.   So way back in 1972, Johnson & Johnson
+10   is telling the FDA directly that the kind of
+11   things that you're finding and claiming are
+12   asbestos could be present in trace amounts in
+13   talc, correct?
+14       A.   They could be.
+15       Q.   Okay.  So when we talk about what the
+16   FDA knew or didn't know and how it acted and how
+17   it acted, we know it knew that there could be what
+18   you call fiber of tremolite, a piece of tremolite
+19   in talc?
+20            MR. OLIVER:  Objection.  Lack of
+21       personal knowledge.
+22            THE COURT:  Overruled.
+23            THE WITNESS:  What's the question again?
+24   BY MR. DUBIN:
+25       Q.   Well, never mind.  We've looked at the
+2135
+ 1   document.  It speaks for itself.  That's fine.
+ 2            All right.  Then let's talk about the
+ 3   second document that goes with this, P-3261.  It's
+ 4   got a plaintiff's number on it.
+ 5            (A document was handed to the witness.)
+ 6   BY MR. DUBIN:
+ 7       Q.   Here you are.
+ 8       A.   Thank you.
+ 9            MR. DUBIN:  And we move to admit it.
+10       Any objection?
+11            MR. OLIVER:  No objection.
+12            THE COURT:  All right.  Received.
+13            (Exhibit P-3261 received.)
+14   BY MR. DUBIN:
+15       Q.   So this is another letter that follows
+16   up on that, and you can see it's written by Sperry
+17   Rand Microanalysis Laboratory, John M. Wehning,
+18   laboratory director, right?
+19       A.   Yes.
+20       Q.   Cc'ing somebody from the FDA and writing
+21   to Johnson & Johnson, right?
+22       A.   Yes.
+23       Q.   And this has got a plaintiff's number,
+24   so -- but you said you weren't familiar, right?
+25       A.   It's been a while since I have seen
+2136
+ 1   this.
+ 2       Q.   And so, you know, one of the things that
+ 3   happened, just to close the loop, is Sperry Rand
+ 4   went and did some more analysis.  We don't have to
+ 5   run through it all, but we can just go to their
+ 6   conclusion.
+ 7            First of all, they weren't -- they were
+ 8   using scanning electron microscopy and energy
+ 9   dispersive X-ray analyzer, right?
+10       A.   Yes.
+11       Q.   And as I said before, scanning electron
+12   microscopy has changed over time in terms of its
+13   ability to perform mineral identification, right?
+14       A.   Yes.
+15       Q.   And so one of the things you're saying
+16   here is, okay, these methods that we used when we
+17   said there was chrysotile scanning electron
+18   microscope and energy dispersive X-ray analyzer
+19   are not able to positively identify chrysotile or
+20   any form of asbestos.
+21            So you're saying, actually, wait, when
+22   we said there was chrysotile, the methods we're
+23   using couldn't actually tell you whether that's
+24   the case?
+25       A.   Yes.  They're talking about the CTFA
+2137
+ 1   method, the X-ray diffraction method, which is
+ 2   limited, but they wanted to use that and that's
+ 3   what they used.
+ 4       Q.   But that's not right, right?  Because
+ 5   they -- they're not talking about the CTFA method
+ 6   alone, because we know that, because scanning
+ 7   electron microscopy wasn't part of the CTFA J4-1
+ 8   method?
+ 9       A.   Correct, yes.
+10       Q.   All right.
+11            MR. DUBIN:  So how are we on lunch?
+12            I'm going to change topics again, Your
+13       Honor.
+14            THE COURT:  Okay.  That's a good time.
+15            MR. DUBIN:  Okay.
+16            THE COURT:  1:30 work for everybody?
+17            Hearing no objection.
+18            All right, folks.  We're giving you a
+19       break.  1:30.  We'll have you back here, if
+20       you would.  Leave your pads on the bench and
+21       remind you not to do any research, talk about
+22       the case, as hard as that is, keep your lips
+23       sealed on that, and have a good lunch.
+24            (The jury retired from the courtroom at
+25       11:58 a.m.)
+2138
+ 1            THE COURT:  Did you want to take up the
+ 2       issue, Mr. Oliver, on --
+ 3            MR. OLIVER:  Sure.  Let me just -- I
+ 4       will just give you the -- sort of the high
+ 5       point of it, Your Honor.
+ 6            When Your Honor was ruling on the cuts
+ 7       for Patricia Matthey, Patricia Matthey had
+ 8       responded to one of the defendants' questions
+ 9       and said, "My doctor told me -- I got genetic
+10       testing, and my doctor told me that I did not
+11       have -- I didn't have the gene," right?  "I
+12       tested negative."  "Don't worry about it,
+13       Patricia."
+14            Prior to Your Honor ruling, we had
+15       negotiated with the defendants and we had,
+16       basically, allowed them to ask a series of
+17       questions, and these are questions like you
+18       never had a conversation with your doctor
+19       about this, you never asked your doctor about
+20       this talc thing.
+21            Basically, questions about conversations
+22       that did not exist and answers that did not
+23       exist.  And so what we want to do is simply
+24       challenge those page and lines.  It's very
+25       short, because, first of all, there's case
+2139
+ 1       law that says you cannot use silence as an
+ 2       admission in this type of situation.  And a
+ 3       hypothetical conversation that didn't happen
+ 4       and a hypothetical nonanswer are probative of
+ 5       nothing, so on the one hand they're going to
+ 6       ask those, right?
+ 7            But if they're going to be allowed to
+ 8       ask those questions, we think we are entitled
+ 9       to have Patricia Matthey, her answer about
+10       genetics put in there, under the medical
+11       diagnosis exception to hearsay, which allows
+12       such matters in.
+13            Either way, our position is simply none
+14       of those come in or all of them come in.
+15            And that is how we would -- does that
+16       make sense, Your Honor?  I actually have it
+17       on a sheet of paper that Mr. Mazingo has got
+18       for you.  Can you hand them a copy?
+19            MR. MAZINGO:  Absolutely.
+20            THE COURT:  So basically you want to
+21       expand the answer on what we had yesterday?
+22            MR. OLIVER:  Well, I don't want -- yeah.
+23       I'm, basically, saying I either -- I object
+24       to their testimony of these hypothetical "did
+25       you have a conversation with" type questions,
+2140
+ 1       because the answer is, "No, I didn't have
+ 2       those conversations."
+ 3            THE COURT:  Right.
+ 4            MR. OLIVER:  And we think that if
+ 5       it's -- if they're going to put in front of
+ 6       the jury this idea that Pat didn't ask and no
+ 7       doctor told her about talc causing her
+ 8       cancer, then we must be able to put in her
+ 9       own testimony that a doctor did reject their
+10       theory.  A doctor said, "I got her this
+11       test," and Pat says, "Well, I talked to
+12       Dr...," and she names the doctor, something
+13       with an F -- "I talked to Dr. Furlowe, or
+14       whatever, and he said, 'Pat, you don't have
+15       it.  You got the test and you don't have
+16       it.'"
+17            MR. DUBIN:  Your Honor, we will make it
+18       easy.  It's fine.  We'll -- we'll argue
+19       whatever we're going to argue off the medical
+20       records themselves.  We won't play that
+21       testimony.  That's fine.  We'll just withdraw
+22       it.
+23            MR. OLIVER:  That's fine with us, Your
+24       Honor.
+25            THE COURT:  Thank you, Mr. Dubin.
+2141
+ 1            MR. DUBIN:  No problem.
+ 2            THE COURT:  All right.  See you back at
+ 3       1:30.
+ 4            (A lunch recess was taken at 12:01 p.m.)
+ 5   
+ 6   
+ 7   
+ 8   
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+2142
+ 1                 REPORTER'S CERTIFICATE
+ 2   
+ 3   
+     STATE OF FLORIDA
+ 4   COUNTY OF HILLSBOROUGH
+ 5   
+ 6   
+              I, Aaron T. Perkins, Registered Merit
+ 7       Reporter and Certified Realtime Reporter,
+         certify that I was authorized to and did
+ 8       stenographically report the above proceedings
+         and that the transcript is a true and
+ 9       complete record of my stenographic notes.
+10   
+11   
+              I further certify that I am not a
+12       relative, employee, attorney, or counsel of
+         any of the parties, nor am I a relative or
+13       employee of any of the parties' attorney or
+         counsel connected with the action, nor am I
+14       financially interested in the action.
+15   
+16   
+              Dated this 8th day of April, 2024.
+17   
+18   
+19   
+20   
+21   
+22   
+                       <%25002,Signature%>
+23                     Aaron T. Perkins, RDR, CRR, CRC
+24   
+25   

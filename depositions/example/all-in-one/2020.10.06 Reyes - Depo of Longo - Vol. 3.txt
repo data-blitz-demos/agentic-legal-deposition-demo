@@ -1,0 +1,5285 @@
+
+                                                          249
+
+ 1         IN THE SUPERIOR COURT OF THE STATE OF CALIFORNIA
+
+ 2                 IN AND FOR THE COUNTY OF ALAMEDA
+
+ 3                             --o0o--
+
+ 4  ROSALINO REYES and GEMMA REYES,
+
+ 5       Plaintiffs,
+
+ 6  vs.                               No. RG20052391
+
+ 7  JOHNSON & JOHNSON, et al.,
+
+ 8       Defendants.
+                                  /
+ 9
+
+10
+
+11
+
+12
+
+13         TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D
+
+14                  (Volume III, pages 249 to 345)
+
+15
+
+16
+
+17                  Taken before JANICE L. BELCHER
+
+18                          CSR No. 12342
+
+19                         October 6, 2020
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+                                                          250
+
+ 1                            I N D E X
+
+ 2                                                      PAGE
+
+ 3  EXAMINATION BY MR. HYNES                             254
+
+ 4  EXAMINATION BY MS. WHITE                             315
+
+ 5
+
+ 6                         E X H I B I T S              PAGE
+
+ 7
+
+ 8  EXHIBIT 5C   J&J Defs Letter Accepting Continued     254
+                 Longo Depo
+ 9
+    EXHIBIT 5D   Plaintiffs' Letter to ACOR re Link      255
+10               to Korean Talc Documents
+
+11  EXHIBIT 5E   Plaintiffs' Letter to ACOR Offering     256
+                 William Longo for Day 3
+12
+    EXHIBIT 5F   Plaintiffs' Letter to ACOR              256
+13               Withdrawing Longo for 10-2-20
+
+14  EXHIBIT 5G   Plaintiffs' Letter to ACOR re Link      257
+                 to Longo Materials
+15
+    EXHIBIT 5H   J&J Defs Letter Accepting Dr. Longo     264
+16               for Day 3
+
+17  EXHIBIT 5I   Plaintiffs' Letter to ACOR re Longo     264
+                 Deposition on 10-6-20
+18
+    EXHIBIT 5J   Plaintiffs' Letter to ACOR re           266
+19               Additional Longo Materials
+
+20  EXHIBIT 10A  8-27-19 Report with PLM Bench Sheets    306
+                 and Images
+21               (Not provided to the reporter.)
+
+22  EXHIBIT 16A  TEM all data from sample P1B, P1D,      314
+                 P1E, and A1A
+23               (Not provided to the reporter.)
+
+24  EXHIBIT 32   Korean Talc Files                       255
+
+25  EXHIBIT 33   J3 XRD Dec 2018                         257
+
+
+
+
+
+                                                          251
+
+ 1                         E X H I B I T S (Cont.)      PAGE
+
+ 2
+
+ 3  EXHIBIT 33A  Sheet of Cross-Referenced Sample        260
+                 Numbers
+ 4               (Not provided to the reporter.)
+
+ 5  EXHIBIT 34   2020.09.29 M71166 Supplemental          260
+                 Report of Off-The-Shelf 2020 JBP
+ 6               Talcum Powder Analysis
+
+ 7  EXHIBIT 35   McCrone Course Book                     266
+
+ 8  EXHIBIT 36   Area Percentage Charts                  268
+
+ 9  EXHIBIT 37   1866 Chrysotile Std Multi RIs           271
+
+10  EXHIBIT 38   NIST 1866 Chrysotile Std I Stained      274
+                 and Unstained
+11
+    EXHIBIT 39   Calidria Chrysotile Dispersion          276
+12               Staining Showin Refractive Indices
+
+13  EXHIBIT 40   Calidria Chrysotile Standard PLM RI     277
+                 Photographs
+14
+    EXHIBIT 41   Calidria Picture 3                      279
+15
+    EXHIBIT 42   Chrysotile in Talc Plate                279
+16
+    EXHIBIT 43   Titley JBP PLM Photographs              286
+17               M71095-001CSM-005
+
+18  EXHIBIT 44   Chinese Talc Fiber 1 PLM                290
+
+19  EXHIBIT 45   Chinese Talc Fiber 2 PLM                290
+
+20  EXHIBIT 46   Chinese Talc Fiber 3 PLM                290
+
+21  EXHIBIT 47   Zimmerman M70484-002 Talc Fiber         291
+                 RI Fluid 1.550
+22
+    EXHIBIT 47A  Zimmerman JBP M70484-002PLM photos      294
+23
+    EXHIBIT 48   Cellulose PLM                           295
+24
+
+25
+
+
+
+
+
+                                                          252
+
+ 1         TELEPHONIC DEPOSITION OF WILLIAM E. LONGO, Ph.D
+
+ 2
+
+ 3       BE IT REMEMBERED, that pursuant to Notice, and on
+
+ 4  the 6th day of October, 2020, commencing at the hour of
+
+ 5  6:03 a.m. Pacific Standard Time, telephonically before
+
+ 6  me, JANICE L. BELCHER, a Certified Shorthand Reporter,
+
+ 7  appeared WILLIAM E. LONGO, Ph.D, produced as a witness
+
+ 8  in said action, and being by me previously sworn, was
+
+ 9  thereupon examined as a witness in said cause.
+
+10
+
+11                             --o0o--
+
+12
+
+13  TELEPHONIC APPEARANCES:
+
+14  For the Plaintiffs:
+
+15            HENRY A. STEINBERG
+              Kazan, McClain, Satterley & Greenwood
+16            55 Harrison Street, Suite 400
+              Oakland, California  94607
+17            (877)995-6372
+              hsteinberg@kazanlaw.com
+18
+
+19  For the Defendants Johnson & Johnson; Johnson & Johnson
+    Consumer, Inc.; and Johnson & Johnson Philippines, Inc.:
+20
+
+21            KEVIN HYNES
+              King & Spalding, LLP
+22            1185 Avenue of the Americas
+              34th Floor
+23            New York, New York  10036
+              (212)556-2100
+24            khynes@kslaw.com
+
+25
+
+
+
+
+
+                                                          253
+
+ 1  For the Defendant O'Reilly Auto Enterprises, LLC:
+
+ 2            ALEX TAHERI and EDWARD HUGO
+              Hugo Parker, LLP
+ 3            240 Stockton Street, 8th Floor
+              San Francisco, California  94108
+ 4            (415)940-4072
+              ataheri@hugoparker.com, ehugo@hugoparker.com
+ 5
+    For the Defendants Longs Drug Stores California LLC, on
+ 6  behalf of Longs Drug Stores California, Inc.; Safeway,
+    Inc.; and Lucky Stores, Inc.:
+ 7
+              MEREDITH WHITE
+ 8            Barnes & Thornburg, LLP
+              2029 Century Park East, Suite 300
+ 9            Los Angeles, California  90067
+              (310)284-3884
+10            meredith.white@btlaw.com
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+
+
+
+                                                          254
+
+ 1                     WILLIAM E. LONGO, Ph.D,
+
+ 2                  previously sworn as a witness,
+
+ 3                      testified as follows:
+
+ 4
+
+ 5                           EXAMINATION
+
+ 6  BY MR. HYNES:
+
+ 7       Q.  All right, Dr. Longo, this is Kevin Hynes
+
+ 8  again.  How are you this morning?
+
+ 9       A.  I'm doing okay.  How are you doing, Mr. Hynes?
+
+10       Q.  Good.  Good.  Just a reminder Dr. Longo, you
+
+11  are still under oath, is that okay?
+
+12       A.  That's fine.
+
+13           MR. HYNES:  Okay.  We have marked a number of
+
+14  exhibits for this morning, which I have provided to the
+
+15  court reporter.  Just walk through them.
+
+16           Exhibit 5 to this depo, under that I've added
+
+17  sort of individual piece of correspondence, so we'll
+
+18  just walk through some of the recent correspondence
+
+19  since your last deposition, Dr. Longo, which occurred on
+
+20  I believe, September 25th.
+
+21           So what I have marked as Exhibit 5-C, is a
+
+22  letter of mine, or from Jennifer Stewart dated September
+
+23  28, requesting certain documents following your
+
+24  deposition on the 25th.
+
+25           (Exhibit 5-C marked for identification.)
+
+
+
+
+
+                                                          255
+
+ 1           MR. HYNES:  Exhibit 5-D, as in dog, is a letter
+
+ 2  from Ms. Wilborn from the Kazan firm dated September 29
+
+ 3  enclosing what's referred to as the Korean talc
+
+ 4  documents.
+
+ 5           (Exhibit 5-D marked for identification.)
+
+ 6           MR. HYNES:  And I have marked the files in this
+
+ 7  link as Exhibit 32 to the deposition.
+
+ 8           (Exhibit 32 marked for identification.)
+
+ 9  BY MR. HYNES:
+
+10       Q.  And so pause there, and Dr. Longo, I received a
+
+11  file of 337-page PDF, entitled Korean Talc.  Are these
+
+12  the materials that were provided to you on
+
+13  September 24th by Mr. Satterley?
+
+14       A.  Yes, sir.
+
+15       Q.  Okay.  Has Mr. Satterley provided you with any
+
+16  additional documents from Johnson & Johnson related to
+
+17  Korean talc since September 24th?
+
+18       A.  No, sir.
+
+19       Q.  Have you had any conversations with
+
+20  Mr. Satterley regarding these documents since the
+
+21  conversation on September 24th?
+
+22       A.  No.
+
+23       Q.  Okay.  And I guess broadly speaking, how did
+
+24  these documents inform your opinions that you intend to
+
+25  offer in Mr. Reyes's case?
+
+
+
+
+
+                                                          256
+
+ 1       A.  They only confirm my opinions that the Korean
+
+ 2  talc mine has amphibole asbestos associated with it.
+
+ 3       Q.  Okay.  In your understanding related to
+
+ 4  Mr. Reyes's use is that his last use of Johnson baby
+
+ 5  powder that contained Korean source talc would have
+
+ 6  occurred in 1982; is that right?
+
+ 7       A.  I'm just checking my report.  Correct.
+
+ 8           MR. HYNES:  Okay.  Okay.  Continuing along, I
+
+ 9  have marked 5-E and 5-F, which was related to -- or two
+
+10  letters from the Kazan firm on October 1st, related to
+
+11  readjusting the date for today's continued deposition in
+
+12  light of a medical emergency.
+
+13           (Exhibits 5-E and 5-F marked for
+
+14            identification.)
+
+15  BY MR. HYNES:
+
+16       Q.  So, Dr. Longo, I understand that you're
+
+17  available until, is it noon Eastern today; is that
+
+18  right?
+
+19       A.  Yes, sir.
+
+20       Q.  And if you're feeling any lingering effects
+
+21  from medical emergency, just please let us know and we
+
+22  can take breaks as needed.
+
+23       A.  Okay.
+
+24           MR. HYNES:  5-G is an October 2nd, 2020, letter
+
+25  from the Kazan firm that enclosed two different sets of
+
+
+
+
+
+                                                          257
+
+ 1  materials.
+
+ 2           (Exhibit 5-G marked for identification.)
+
+ 3           MR. HYNES:  The first is a 58-page document
+
+ 4  that includes a chain of custody from MAS, and beneath
+
+ 5  that is a December 12th, 2018, report from Lee Poye of
+
+ 6  J3 to you, Dr. Longo, related to J3's analysis of 21
+
+ 7  talcum powder samples for XRD analysis.  I have marked
+
+ 8  this as Exhibit No. 33 to today's deposition, this
+
+ 9  58-page compilation.
+
+10           (Exhibit 33 marked for identification.)
+
+11  BY MR. HYNES:
+
+12       Q.  Dr. Longo, do you have the document available
+
+13  to you?
+
+14       A.  I do.
+
+15       Q.  Okay.  Do you have any written correspondence
+
+16  with Mr. Poye, by email or otherwise, that is not
+
+17  included in this compilation related to this series of
+
+18  XRD analyses?
+
+19       A.  Not that I'm aware of.
+
+20       Q.  Okay.  The sample ID numbers here are marked
+
+21  under Project M69722.  And they range from M69722-001
+
+22  all the way up to dash 021; is that correct?
+
+23       A.  That's correct.
+
+24       Q.  Now, you have obviously cross-referenced these
+
+25  samples against the seven Korean talc samples that were
+
+
+
+
+
+                                                          258
+
+ 1  included in the MDLs, or the February 1st, 2019 report.
+
+ 2  Those samples were numbered M694248-001, through dash
+
+ 3  007, right?
+
+ 4       A.  Yes.
+
+ 5       Q.  Is there a sample key that identifies the
+
+ 6  samples M69722 series so that we could match those
+
+ 7  against the M69428 series to confirm which analysis that
+
+ 8  J3 performed, corresponds to the analyses that you
+
+ 9  summarized in Table 7 in your February 1st, 2019,
+
+10  report?
+
+11       A.  Yes.  I can give you which ones correspond if
+
+12  you want to write them down.
+
+13       Q.  Sure.  Why don't you read off which M69428
+
+14  series samples corresponds to the specific M69722 series
+
+15  samples.
+
+16       A.  Did you say 69043?
+
+17       Q.  No.  It should have been, it's the M694248-001
+
+18  dash 002, 003, 004, 005, 006, 007.
+
+19       A.  Okay.  M -- M69042, oh, is it M69248?
+
+20           MR. HYNES:  So I think there are -- so give me
+
+21  one second here.  Go off the record for just one second.
+
+22           (Recess.)
+
+23           THE WITNESS:  Just look at my Korean samples,
+
+24  the M number, so I don't get them messed up.
+
+25           M69248, so --
+
+
+
+
+
+                                                          259
+
+ 1           MR. HYNES:  Right.  And we're back on the
+
+ 2  record.
+
+ 3  BY MR. HYNES:
+
+ 4       Q.  Go ahead with the M69428 numbers and we'll
+
+ 5  match those up against the M69722 numbers so that we're
+
+ 6  clear which sample corresponds to -- in the Poye report
+
+ 7  corresponds to the samples that you included in your
+
+ 8  February 1st, 2019 report.
+
+ 9       A.  M69248-001 corresponds to M69722-006.
+
+10  M69248-002 corresponds to sample number -- is it okay if
+
+11  I just say the last digit, 021?
+
+12       Q.  Yep.  Keep going.
+
+13       A.  M69248-003 corresponds to 004.  M69248-007
+
+14  corresponds to 005.  008 is the -- it's a .5 percent
+
+15  anthophyllite standard.  014 is a 0.5 percent tremolite
+
+16  standard.  016 is a 0.1 percent tremolite standard.  And
+
+17  I think I was up to Number -- on 69248, I think I was up
+
+18  to No. 7, maybe.
+
+19       Q.  I think you read off 1, 2, 3 and 7.
+
+20       A.  Okay.
+
+21       Q.  So we're missing 4, 5 and 6, I believe.
+
+22       A.  M69042, excuse me, wrong one.  M69248-006 is
+
+23  No. 013.  M6924-005 is 017.  M69248-004 is 018.  And
+
+24  M69248-002 is 021.
+
+25       Q.  Okay.  And, Dr. Longo, were you reading off of
+
+
+
+
+
+                                                          260
+
+ 1  the sheet that had sort of the sample numbers
+
+ 2  cross-referenced against one another?
+
+ 3       A.  Yes, sir.
+
+ 4           MR. HYNES:  Okay.  I just requested production
+
+ 5  of that sheet, and we can mark it as Exhibit 33-A to
+
+ 6  today's deposition.
+
+ 7           (Exhibit 33-A marked for identification.)
+
+ 8           THE WITNESS:  That's fine.
+
+ 9  BY MR. HYNES:
+
+10       Q.  Okay.  Is it your understanding that -- do you
+
+11  know whether or not Mr. Poye performed any PLM analyses
+
+12  on any of those Korean talc samples that you provided to
+
+13  him as part of this December 12, 2018, report?
+
+14       A.  Not that I'm aware of.  I didn't request any.
+
+15       Q.  Okay.  It's not something that you discussed
+
+16  with him?
+
+17       A.  No.  It was only, this set of samples was only
+
+18  XRD.
+
+19           MR. HYNES:  Okay.  All right.  So the next
+
+20  document that was enclosed with the letter that was
+
+21  marked as Exhibit 5-G, was a September 29th, 2020,
+
+22  Supplemental Report No. 1, on MAS project No. M71166,
+
+23  off the shelf 2020 JBP talcum powder analyses, marked as
+
+24  Exhibit 34 here.
+
+25           (Exhibit 34 marked for identification.)
+
+
+
+
+
+                                                          261
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  Dr. Longo, do you have that supplemental report
+
+ 3  available to you?
+
+ 4       A.  Looking for it.  Yeah, I just had it.  I know
+
+ 5  the changes I made though, so --
+
+ 6       Q.  Okay.  Do you want me to just walk through, it
+
+ 7  looks like there's on page -- where is that, page 8 of
+
+ 8  the TBS, there's a Revision 1 noted at the top there,
+
+ 9  that walked through certain changes.  Could you just
+
+10  walk me through what those changes were?
+
+11       A.  Yes.  I was looking at the report, and I
+
+12  noticed that under the -- I think it was the CSM method,
+
+13  that the amount of Johnson baby powder that we typically
+
+14  start with in that method is 200 milligrams, and I
+
+15  noticed that the original report said 200 grams, so that
+
+16  was obviously a typo.  And so while I was reviewing it,
+
+17  I looked and saw that the birefringence calculations
+
+18  came out to 0.50, and that's -- and 0.50 is just on the
+
+19  border of between moderate and high.  Moderate is .01 to
+
+20  .05 calculated birefringence.  And high is greater than
+
+21  0.50.  And since 0.50 is not greater than 0.50, I fixed
+
+22  that to say the high end of moderate instead of high,
+
+23  and that's the only two changes that I made.
+
+24       Q.  Okay.  And if you recall the last time around,
+
+25  we talked a little bit about this 2003 paper by Dr. Su;
+
+
+
+
+
+                                                          262
+
+ 1  do you recall that?
+
+ 2       A.  I do.
+
+ 3       Q.  And is that the paper that you were reading
+
+ 4  from and referring to, the document entitled "Rapidly
+
+ 5  and Accurately Determining Refractive Indices of
+
+ 6  Asbestos Fibers by using Dispersion Staining Method," is
+
+ 7  that a published paper, or is that something else?
+
+ 8       A.  Well, what we received from Dr. Su was not a
+
+ 9  published paper.  He gave them to all the PLM labs.  I
+
+10  understand later he published it.  But this is a common
+
+11  document that all the PLM labs, my PLM analyst said that
+
+12  20 years ago he actually audited our lab and that's when
+
+13  we got it, so it's a --
+
+14       Q.  Go ahead.  Go ahead.
+
+15       A.  It's a working document for PLM labs.
+
+16       Q.  Okay.  And you said that one of your PLM
+
+17  analysts came across it or acquired it performing an
+
+18  audit on PLM.  Explain to me how you acquired it.
+
+19       A.  It -- we acquired it about 20 years ago, or
+
+20  some, you know, I think we've been NVLAP now for 27, 28
+
+21  years, so one of those times he gave us this document
+
+22  and it's been in our lab ever since.  We routinely use
+
+23  it.
+
+24           One of the analysts was Mr. William Egeland,
+
+25  E-G-E-L-A-N-D.
+
+
+
+
+
+                                                          263
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  And I think the last time around we were going
+
+ 3  to attach that document as Exhibit 30. Dr. Longo, would
+
+ 4  you be able to pass along a copy of that specific two
+
+ 5  documents, and we can attach that as Exhibit 30 to the
+
+ 6  deposition?
+
+ 7       A.  Yeah.  I think that's no problem.  I'm just
+
+ 8  looking at downloads here.  I can email that at a break.
+
+ 9       Q.  Okay.  That will be fine.
+
+10       A.  We have multiple copies.
+
+11       Q.  Great.  And then just as background for this
+
+12  report, was this report something that was requested by
+
+13  Plaintiffs' Counsel, or was this a report that you
+
+14  decided to perform on your own, if you recall?
+
+15       A.  Which report is that?
+
+16       Q.  The one that we're looking at, the M71166
+
+17  off-the-shelf report?
+
+18       A.  No, I did that on my own.  I think you were
+
+19  asking me questions about it and I saw the 200 grams and
+
+20  that's courses -- that's about a thousand times over
+
+21  what we use.
+
+22       Q.  Okay.  And was there any methodology or reason
+
+23  why you chose to go to the specific retail stores, that
+
+24  you chose to go to to acquire the baby powder containers
+
+25  that were part of this report?
+
+
+
+
+
+                                                          264
+
+ 1       A.  Yes.
+
+ 2       Q.  What was the reason --
+
+ 3       A.  They were --
+
+ 4       Q.  -- with the methodology?
+
+ 5       A.  They were all within a mile of my office.
+
+ 6       Q.  Okay.  Anything beyond that?
+
+ 7       A.  No.
+
+ 8           MR. HYNES:  Okay.  All right.  We'll maybe come
+
+ 9  back to that one.
+
+10           So marking some additional correspondence here.
+
+11  Exhibit 5-H.  5-H is an October 2nd, 2020, letter from
+
+12  Jennifer Stewart from King and Spalding accepting your
+
+13  deposition for this morning.
+
+14           (Exhibit 5-H marked for identification.)
+
+15           MR. HYNES:  And then, Exhibit 5-I, is a letter
+
+16  that I received last night from Ms. Wilborn from the
+
+17  Kazan firm, enclosing a link to your June 28, 2019,
+
+18  Revision No. 1 Talcum Powder Application to Baby and
+
+19  Diaper Change 2, a Hygiene Study Report, which we had
+
+20  previously marked as Exhibit No. 17 to your deposition.
+
+21           (Exhibit 5-I marked for identification.)
+
+22  BY MR. HYNES:
+
+23       Q.  Dr. Longo, I have received a 251-page Baby
+
+24  Diaper 2 report in this link dated June 28, 2019,
+
+25  Revision No. 1.  To my eye it did not look any different
+
+
+
+
+
+                                                          265
+
+ 1  than what we had previously marked as Exhibit No. 17 to
+
+ 2  this deposition, which was a June 28, 2019 Revision
+
+ 3  No. 1 report.  So, I guess, did I receive something
+
+ 4  different, or is this the same exact report that we
+
+ 5  already talked about on the first and second day?
+
+ 6       A.  I didn't look at it.  I just saw that it was
+
+ 7  another revision.  I didn't go through.  I just assumed
+
+ 8  there was some new information there.  I will have to
+
+ 9  look at it at a break.
+
+10       Q.  Okay.  I'll represent that Exhibit 17 has the
+
+11  same date, same revision number, same number of pages.
+
+12       A.  It's the same revision number?
+
+13       Q.  Same revision number, same date on the cover,
+
+14  same number of pages.  I received a link to it
+
+15  yesterday, and I do not know whether it was provided
+
+16  because any changes were made or anything of that
+
+17  nature, but comparing the two, I did not identify any
+
+18  changes.
+
+19           I'm wondering if you recently made changes and
+
+20  provided them to Kazan or what's going on?
+
+21       A.  No, I don't know what's going on.  That was
+
+22  Revision No. 1?
+
+23       Q.  No. 1, yes.
+
+24       A.  Okay.  We could -- I can check on that at a
+
+25  break.
+
+
+
+
+
+                                                          266
+
+ 1           MR. HYNES:  Okay.  Then also last night I
+
+ 2  received a letter from Kazan, which we have marked as
+
+ 3  Exhibit 5-J, October 5th, 2020, letter from Ms. Wilborn
+
+ 4  enclosing a number of different files, which I have
+
+ 5  marked as exhibits, and we can just walk through them
+
+ 6  sort of one by one.
+
+ 7           (Exhibit 5-J marked for identification.)
+
+ 8           MR. HYNES:  Exhibit 35 is a 6-page PDF with a
+
+ 9  handwritten note at the top.  It says from McCrone
+
+10  course book; the PDF is entitled "McCrone Course Book
+
+11  dot PDF."
+
+12           (Exhibit 35 marked for identification.)
+
+13  BY MR. HYNES:
+
+14       Q.  So, Dr. Longo, can you tell me how this
+
+15  particular document informs your opinions in this case?
+
+16       A.  This document discusses how you determine the
+
+17  birefringence on samples by looking at the refractive
+
+18  indices from parallel and perpendicular and subtracting
+
+19  them.  So it's -- he just goes into it.  It's a, you
+
+20  know, estimate magnitude of birefringence low, medium
+
+21  and high, and then he go goes through what low, medium
+
+22  and high is, a birefringence of 0.01, low birefringence
+
+23  area.  Second line value of point separates the moderate
+
+24  birefringence group from the high.  So this is Walter
+
+25  McCrone.
+
+
+
+
+
+                                                          267
+
+ 1           And then if you go to page 102, he gives some
+
+ 2  birefringence for different materials.  And the one that
+
+ 3  I have on there, talc on edge, or he has talc on edge of
+
+ 4  greater than 0.5, and I did the handwritten "fibrous"
+
+ 5  talc.  Fibrous talc has birefringence of greater than
+
+ 6  0.5.  Chrysotile typically has a birefringence in the
+
+ 7  upper low range.  I have seen this.  We have had as low
+
+ 8  as .007 and as high as .015 or 16.
+
+ 9           Now, in the dispersion staining, using dark
+
+10  field, this is how you separate out, if you have
+
+11  chrysotile and fibrous talc, by calculating the
+
+12  birefringence, calculating the refractive indices,
+
+13  subtracting the parallel from the perpendicular for the
+
+14  two double diffraction minerals.
+
+15           So it's not so much it informs my opinion.  It
+
+16  shows how those opinions on just basic polarized light
+
+17  microscopy work using dispersion staining -- better to
+
+18  say dispersion staining with a center stop dispersion
+
+19  objective.
+
+20       Q.  Anything else you're relying on this particular
+
+21  McCrone document for, for your opinions there?
+
+22       A.  No.
+
+23           MR. HYNES:  Okay.  I have marked as Exhibit
+
+24  No. 36, a three-page PDF titled "Area Percentage Chart,"
+
+25  which is provided in that letter that was marked as
+
+
+
+
+
+                                                          268
+
+ 1  Exhibit 5-J.
+
+ 2           (Exhibit 36 marked for identification.)
+
+ 3  BY MR. HYNES:
+
+ 4       Q.  Dr. Longo, do you have that three-page PDF
+
+ 5  available to you?
+
+ 6       A.  Yeah, I was trying to pull it up on my -- hold
+
+ 7  on, let me try it a different way here.  I actually have
+
+ 8  my laptop today.  Oh good.
+
+ 9           Yes, I do have it available.  Let me just open
+
+10  it up.
+
+11           Yes, I have it.
+
+12       Q.  Okay.  Could you walk me through what this
+
+13  document is, and how it informs your opinions in this
+
+14  case?
+
+15       A.  Well, it's not so much how it informs my
+
+16  opinion.  You were asking me last week how the -- where
+
+17  we say that we used -- we can rely -- we substitute in
+
+18  sometimes area percentage charts to determine the amount
+
+19  of asbestos in a field of view on PLM.  And this first
+
+20  one here is from Dr. Su, and it shows what two different
+
+21  sizes of asbestos fibers in a field of view of the PLM.
+
+22  So on the left-hand side, we have what Dr. Su says is
+
+23  0.8 percent, of three larger asbestos structures, that
+
+24  would equal 0.8 percent for all those small ones and so
+
+25  on.  So he goes down into different size estimated --
+
+
+
+
+
+                                                          269
+
+ 1  different size structures for estimated volume percents,
+
+ 2  as compared to different size fibers.
+
+ 3           The next page is an older document, and it
+
+ 4  gives area percentages again for amosite and chrysotile,
+
+ 5  starting at what they say is 3 percent, which you really
+
+ 6  don't see much in there, all the way up to 60 percent,
+
+ 7  so these are designed more for asbestos added --
+
+ 8  estimations for asbestos added products.
+
+ 9           And -- oops, and then the next one here is one
+
+10  under it, from that.  I don't have the references sadly
+
+11  from those old -- just made copies of this, is another
+
+12  bulk analysis with polarized light showing from 5, in
+
+13  both bright field and dark field.  Dark field more
+
+14  likely on dispersion staining with a center stop, up to
+
+15  30 percent for bright field and dark field percentages,
+
+16  and that's what those are.
+
+17           Again, those are for -- that would be for
+
+18  asbestos added products for the amount you're seeing as
+
+19  compared to trace amounts.  One set of trace amount area
+
+20  percentage charts for Dr. Su and it's .8 percent.
+
+21       Q.  And do your PLM analysts, when they are
+
+22  performing PLM analyses on cosmetic talcum powder
+
+23  products, use these specific area of percentage charts
+
+24  to asses with visual calibration of the percentage, if
+
+25  any, present in the samples?
+
+
+
+
+
+                                                          270
+
+ 1       A.  They will look at them occasionally.  But
+
+ 2  they've been doing this for so long that I don't know
+
+ 3  how often they pull them out.  They just have them as a
+
+ 4  reference.  I don't think very often, since between the
+
+ 5  two of them they have over 60 years of experience doing
+
+ 6  polarized light microscopy.
+
+ 7       Q.  Do you have any other area percentage charts
+
+ 8  that are used in your laboratory that are more specific
+
+ 9  to rather than asbestos in added products, potential
+
+10  contamination in products that do not have asbestos
+
+11  added as an ingredient intentionally?
+
+12       A.  I don't think anybody has put charts like that
+
+13  together for any PLM lab.  These are references of this
+
+14  is what .8 percent is in this one field of view.  Then
+
+15  we're seeing so much less than a number of fields of
+
+16  view.  So well, it's just a reference, I'm not aware of
+
+17  anybody -- I'm not aware of any group that has put out
+
+18  something like this for talcum powder type products.
+
+19       Q.  And are the percentages by weight or by volume
+
+20  in these area percentage charts?
+
+21       A.  They are all by volume.  These are volume
+
+22  weight estimates.
+
+23       Q.  And with respect to your chrysotile by PLM
+
+24  findings, are those percentages expressed in a volume
+
+25  percentage basis or a weight percentage bases?
+
+
+
+
+
+                                                          271
+
+ 1       A.  Well, it's a volume weight estimate, that's how
+
+ 2  we determine it, but that's in all the reports.  It's a
+
+ 3  volume weight estimate.
+
+ 4       Q.  Okay.  Explain to me what a volume weight
+
+ 5  estimate is.
+
+ 6       A.  So you look at the field of view and you
+
+ 7  determine what percentage the asbestos fiber is taking
+
+ 8  up of the field of view.  So it's completely covered as
+
+ 9  a hundred percent volume weight estimate.
+
+10           If it's 1 fiber, then you estimate the
+
+11  surrounding volume of what's not there.  What's not
+
+12  there.  So it's -- it's not a true weight percent
+
+13  because you're not weighing it.  And so you can say
+
+14  volume estimate, but the terminology that the PLM folks
+
+15  use is volume weight estimate.
+
+16           MR. HYNES:  Okay.  Let's continue with these
+
+17  references that are provided as part as Exhibit 5-J.
+
+18           The next one I have marked as Exhibit 37 is a
+
+19  PDF entitled "1866 Chrysotile STD multi RIS"?
+
+20           (Exhibit 37 marked for identification.)
+
+21           THE WITNESS:  Yeah, I'm trying to --
+
+22  BY MR. HYNES:
+
+23       Q.  Do you have that one?
+
+24       A.  Hold on.  I don't know why I'm having trouble
+
+25  with this today.  Give me a second.
+
+
+
+
+
+                                                          272
+
+ 1           (Pause.)
+
+ 2           MS. WHITE:  Can you say the file name again,
+
+ 3  Kevin?
+
+ 4           MR. HYNES:  The file name was "1866 Chrysotile
+
+ 5  STD Multi RIS."
+
+ 6           MS. WHITE:  Okay.  Thanks.
+
+ 7           THE WITNESS:  Okay.  I got it.
+
+ 8  BY MR. HYNES:
+
+ 9       Q.  Dr. Longo, walking through how this document is
+
+10  used as part of your analyses in this case.
+
+11       A.  Well, this is an example of how, and this all
+
+12  goes back to Dr. Sanchez criticizing our analysis,
+
+13  saying that we have the wrong refractive indices ranges
+
+14  for chrysotile.  And I really couldn't figure out at
+
+15  that time what he was discussing.  I understand what
+
+16  wrong refractive indices are, and this is a
+
+17  demonstration for the jury to understand how there's two
+
+18  things, three things that affect refractive indices.
+
+19           One, of course, is the crystalline structure of
+
+20  the mineral that you're looking at.  You know, because
+
+21  if it has double refraction or single refraction,
+
+22  et cetera.
+
+23           The second thing is that the thickness of the
+
+24  bundle you're looking at will affect the refractive
+
+25  indices.  Thicker bundles will have different refractive
+
+
+
+
+
+                                                          273
+
+ 1  indices of much smaller bundles of the exact same
+
+ 2  asbestos.  And Dr. Sanchez likes to use, out of the
+
+ 3  22262-1 ISO method, the pictures of the 1866 standard
+
+ 4  and says here's what it ought to look like and here's
+
+ 5  the refractive indices.  Well, he didn't take into
+
+ 6  account the refractive indices change with the size of
+
+ 7  the bundles, and if you have a much smaller bundle
+
+ 8  you're going to have different refractive indices.  And
+
+ 9  here shows a 1866, I believe it is --
+
+10           (Telephone interruption.)
+
+11           THE WITNESS:  Oh, sorry, guys.
+
+12           And if you go to the different areas of
+
+13  refractive indices, you can see that there is different
+
+14  wavelength colors, different light wavelengths, where
+
+15  this is all in the perpendicular, excuse me, parallel
+
+16  direction.  As we go to the more yellowish whites we
+
+17  have refractive indices of 1.570 to 1.580.  As we go to
+
+18  the more reds, you have refractive indices of 1.560,
+
+19  1.540, so as you go to the lighter -- if you go to the
+
+20  golds and yellows, your wavelengths are getting
+
+21  shorter -- excuse me, longer.  And if you go to the reds
+
+22  and blues, the wavelengths are -- in the blues, the
+
+23  refractive indices go down.
+
+24           You can see one right where that blue goes
+
+25  across that bundle, that does that because that bundle
+
+
+
+
+
+                                                          274
+
+ 1  is creased right there, and it's giving you more of a
+
+ 2  closer to the parallel refractive indices and you have
+
+ 3  1.540.  And so it was the demonstrative to explain to
+
+ 4  juries, and maybe to attorneys too, how thickness will
+
+ 5  change the refractive indices.
+
+ 6           MR. HYNES:  The next one that I have marked
+
+ 7  here as Exhibit 38, is PDF titled "NIST 1866 Chrysotile
+
+ 8  STD, Stained and Unstained," PDF.
+
+ 9           (Exhibit 38 marked for identification.)
+
+10  BY MR. HYNES:
+
+11       Q.  Dr. Longo, do you have that one available to
+
+12  you?
+
+13       A.  Was that on that same -- yeah, I have to just
+
+14  look for it.  Hold on.
+
+15       Q.  That's a 24-page PDF just so we're on the same
+
+16  page, right?
+
+17       A.  Yeah.  Yeah, I think so.  Let me scroll down on
+
+18  it.  Yes, sir.
+
+19       Q.  Okay.  And I guess, why don't you walk me
+
+20  through how this document informs your opinions in the
+
+21  Reyes case.
+
+22       A.  Well, this was more of a rebuttal.  And we're
+
+23  not using the iodine staining portion anymore of the CSM
+
+24  method.  It was one of Dr. Sanchez's reports, where he
+
+25  was criticizing the use of the iodine.  And in his
+
+
+
+
+
+                                                          275
+
+ 1  report, it seemed to suggest that we were actually using
+
+ 2  the iodine to identify the chrysotile asbestos.  And we
+
+ 3  were not.  We were just using it to facilitate the
+
+ 4  analysis.  But he also said that the iodine would stop
+
+ 5  the chrysotile, you wouldn't be able to get refractive
+
+ 6  indices on it.
+
+ 7           And this was just showing what the 1866 looked
+
+ 8  like being stained, the brownish, this is in no polars
+
+ 9  and you can see that some of the larger bundles have
+
+10  more of a brown hue, yellowish-brown hue to it than the
+
+11  smaller bundles, and that's because the larger bundles
+
+12  we found would absorb the iodine, but the smaller ones
+
+13  did not to any degree that helped facilitate the
+
+14  analysis.
+
+15           And then we just had some standard PLMs of
+
+16  stained and unstained showing you could still get
+
+17  refractive indices, and the refractive indices only
+
+18  changed a very small amount.  Still in the range of
+
+19  chrysotile, so this was initially done to rebut one of
+
+20  Sanchez's reports.
+
+21           And that's it.
+
+22           MR. HYNES:  Next one I have marked as
+
+23  Exhibit 39 is a file titled "Calidria Chrysotile
+
+24  Dispersion Staining Showin Refractive Indices."  It's a
+
+25  17-page PDF.
+
+
+
+
+
+                                                          276
+
+ 1           (Exhibit 39 marked for identification.)
+
+ 2  BY MR. HYNES:
+
+ 3       Q.  Dr. Longo, do you have that one available to
+
+ 4  you?
+
+ 5       A.  I'm sure I will in a minute.  Let me find it.
+
+ 6  I wish I had labeled them.  Okay, hold on.
+
+ 7           MR. STEINBERG:  Counsel, could you please
+
+ 8  reread the name of that PDF.
+
+ 9           MR. HYNES:  Yeah.  So it's mark as Exhibit 39.
+
+10  It's titled "Calidria Chrysotile Dispersion Staining
+
+11  Showin Refractive Indices."
+
+12           THE WITNESS:  I have it.
+
+13  BY MR. HYNES:
+
+14       Q.  Great.  Dr. Longo, why don't you walk me
+
+15  through what's being displayed in this document and how
+
+16  it informs your opinion in the Reyes case, please.
+
+17       A.  This is actually from calidria standards.  And
+
+18  this is what the calidria bundles, chrysotile primarily
+
+19  looks like, the size and the refractive indices of them,
+
+20  and it's shown as the comparison to the 1866 chrysotile
+
+21  bundles, that -- and again, this was -- this is work we
+
+22  did here when we realized that we were not using the
+
+23  right standard, that the calidria standard was what we
+
+24  needed to have, and this gives you an idea of these
+
+25  refractive indices pretty well match the chrysotile in
+
+
+
+
+
+                                                          277
+
+ 1  the -- in the talcum powder.  So it gives you -- so we
+
+ 2  have a range of different refractive indices here.  And
+
+ 3  you can see on some of these as it gets bigger, you can
+
+ 4  change -- some of the colors are different in parallel
+
+ 5  and perpendicular as compared to chrysotile from 1866.
+
+ 6           And again, the smaller the bundles, typically
+
+ 7  the -- the higher the refractive indices as compared to
+
+ 8  exact same type of chrysotile, and -- that are much
+
+ 9  smaller.
+
+10           So this is just a demonstration of what the
+
+11  refractive indices look like for calidria and how they
+
+12  match up pretty well with what we're finding in the --
+
+13  in the Chinese talcum powder.
+
+14       Q.  Were these images taken with calidria sites
+
+15  into another medium, or is this just analyzing --
+
+16       A.  I believe this one is just calidria by itself,
+
+17  but let me look here.  This was just calidria by itself.
+
+18  I believe we have others that are calidria examples
+
+19  actually in the talc, but this is calidria by itself.
+
+20           MR. HYNES:  All right.  Let's take a look at
+
+21  Exhibit No. 40 which is a PDF titled "Calidria
+
+22  Chrysotile Standard PLM RI Photographs."
+
+23           (Exhibit 40 marked for identification.)
+
+24  BY MR. HYNES:
+
+25       Q.  Do you have that one available to you,
+
+
+
+
+
+                                                          278
+
+ 1  Dr. Longo?  It's a 10-page PDF.
+
+ 2       A.  I do, I just have to get to it.
+
+ 3       Q.  Okay.
+
+ 4       A.  Yeah, I have that.
+
+ 5       Q.  Okay.  Look like there's some overlap in the
+
+ 6  previous file.  I guess, why don't you walk me through
+
+ 7  what's in this file and how it informs your opinions in
+
+ 8  this case?
+
+ 9       A.  Yeah, there is some overlap.  It shows some of
+
+10  the smaller bundles as well as the other ones, and this
+
+11  is still out of the calidria standard.  So it's more of
+
+12  a duplicate of the last one.  There's only one
+
+13  additional calidria structure in there.
+
+14       Q.  Which is on which page of the PDF?
+
+15       A.  Let's see.  I have to count.
+
+16           (Pause.)
+
+17           THE WITNESS:  I need a better system here.
+
+18           3, 8 -- it would be pages 7 and 8.
+
+19  BY MR. HYNES:
+
+20       Q.  Okay.  And as with the last document, these are
+
+21  just calidria on its own, not dispersed in any medium
+
+22  such as talc?
+
+23       A.  I believe so.
+
+24           MR. HYNES:  Okay.  Next document I have is
+
+25  marked as Exhibit 41, titled "Calidria Picture 3," dot
+
+
+
+
+
+                                                          279
+
+ 1  PDF.
+
+ 2           (Exhibit 41 marked for identification.)
+
+ 3  BY MR. HYNES:
+
+ 4       Q.  Dr. Longo, do you have that one available?
+
+ 5       A.  Hold on.  I'm sorry, my laptop logged me out
+
+ 6  for some reason.
+
+ 7           (Pause.)
+
+ 8           THE WITNESS:  Was this one "Calidria Picture
+
+ 9  3"?
+
+10  BY MR. HYNES:
+
+11       Q.  Yeah, it's a one-page PDF, and it looks like
+
+12  it's simply a copy of the image that appears on page 6
+
+13  of Exhibit 40 and on page 14 of Exhibit 39.
+
+14       A.  I have it.
+
+15       Q.  Okay.  It looks like this is just a duplicate
+
+16  of a few images that we've already looked at.  This
+
+17  particular image, does this provide any additional
+
+18  information to you for your opinions in this case,
+
+19  beyond those that you already talked about with respect
+
+20  to Exhibits 39 and 40?
+
+21       A.  No.
+
+22           MR. HYNES:  Okay.  Exhibit 42, the file titled
+
+23  "Chrysotile and Talc Plate PDF."  This is a 12-page
+
+24  document.
+
+25           (Exhibit 42 marked for identification.)
+
+
+
+
+
+                                                          280
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  Do you have that one available, Dr. Longo?
+
+ 3       A.  I will in a second.
+
+ 4           Almost there.  Hold on.  Let me go to my
+
+ 5  computer in my office.  My laptop is not handling these
+
+ 6  things very well.  Speed this along.
+
+ 7           (Pause.)
+
+ 8           THE WITNESS:  I'm sorry, what was it, the name
+
+ 9  of it again?
+
+10  BY MR. HYNES:
+
+11       Q.  Titled "Chrysotile and Talc Plate."  It's a
+
+12  12-page PDF.
+
+13       A.  Yeah, I have it.
+
+14       Q.  Sorry 13-page PDF, my apologies.
+
+15           I guess, Dr. Longo, why don't you walk me
+
+16  through what's being depicted in these 13 images and how
+
+17  that informs your opinions in the Reyes case.
+
+18       A.  It's an example of the PLM analysis, where
+
+19  you're looking at talc plates as well as, you know,
+
+20  fibrous talc, and on exhibit -- in PDF 1 is dispersion
+
+21  colors occluded by talc flake.  So the arrow is pointing
+
+22  to a chrysotile bundle that's either in the talc plate
+
+23  or under the talc plate, and that would be in the
+
+24  perpendicular position, and under the parallel position,
+
+25  you can still see that there is some fibrous structures
+
+
+
+
+
+                                                          281
+
+ 1  in the talc plates itself.
+
+ 2           So this is under polarizers out.  You can see
+
+ 3  the fibrous nature of the chrysotile that most likely we
+
+ 4  believe it's actually in the talc plate.
+
+ 5           Then if you go to cross polars, you can
+
+ 6  remove -- since it's a talc plate, you can remove the
+
+ 7  image of the talc plate, and that's showing you all the
+
+ 8  fibrous chrysotile in the talc plate.  My analyst calls
+
+ 9  it a flake.
+
+10           And then under elongation, same thing, you can
+
+11  remove the plate portion of the talc and you are left
+
+12  with just the chrysotile fibers.  And these are just
+
+13  some more chrysotile fibers that has some talc around
+
+14  it.  These are polarizers out, you can actually see
+
+15  those two bundles.  This is under cross polars, again
+
+16  removing the talc plates that were around it.
+
+17           So it shows some of the different forms we see
+
+18  the chrysotile in, in the Chinese talc.  That's it.
+
+19       Q.  So these were Chinese talc samples?
+
+20       A.  Yeah, this is M71033.  I'm pretty sure that
+
+21  this is all Chinese talc.  I just don't remember which
+
+22  project that was.
+
+23       Q.  I see several project numbers here, M70847 is
+
+24  on pages 1, 2, 3, 4, and 5 of those PDFs.  I see M71032,
+
+25  which is on page 6 and 7 of the PDF.  I see project
+
+
+
+
+
+                                                          282
+
+ 1  M71033 on page 8, 9, 10, 11, and 12 of the PDF.  And
+
+ 2  then I see Project M69753 on page 13 of the PDF; is that
+
+ 3  right?
+
+ 4       A.  That's right.  I apologize.  This is a file I
+
+ 5  keep whenever I get something interesting like
+
+ 6  chrysotile in a talc plate, and not that it's inner
+
+ 7  growth with a fibrous talc, which you can have with
+
+ 8  chrysotile.  This one is separate and apart from the
+
+ 9  structure, so to speak.  But it's inside the talc plate
+
+10  between one of the layers.
+
+11       Q.  Those four project numbers that I read out, are
+
+12  those associated with Johnson's Baby Powder products or
+
+13  talcum powder ore?
+
+14       A.  I would have to -- I would have to check.  I
+
+15  know they are all from Chinese ore, but I would have to
+
+16  check the numbers to see which ones are associated with
+
+17  Johnson & Johnson.
+
+18       Q.  Do you know whether you have done additional
+
+19  analyses beyond polarized light microscopy analyses on
+
+20  these four samples that are part of Exhibit 42?
+
+21       A.  If it's Chinese, we would have done ISO PLM, no
+
+22  heavy liquid density, Blount PLM with heavy liquid
+
+23  density, and TEM.  Probably not TEM, so it would have
+
+24  been those three PLM methods.
+
+25       Q.  Okay.
+
+
+
+
+
+                                                          283
+
+ 1       A.  No, TEM for heavy liquid density for
+
+ 2  amphiboles, so yes, those would all be included in the
+
+ 3  report.
+
+ 4       Q.  Okay.  Have you ever found chrysotile in
+
+ 5  Chinese source cosmetic talcum powder materials using
+
+ 6  TEM without concentration?
+
+ 7       A.  Haven't done any TEM without concentration.
+
+ 8       Q.  Have you found chrysotile in Chinese source
+
+ 9  cosmetic talc using TEM with the chrysotile density
+
+10  separation segment?
+
+11       A.  Only in the standards.  We haven't run TEM.
+
+12  Because of the level of detection limit, we are not
+
+13  getting a good detection limit in the standards with
+
+14  TEM.  I think only down to .01 with the heavy liquid
+
+15  density separation, and we're -- I believe we're looking
+
+16  at different aspects of it.  We may not be centrifuging
+
+17  it long enough.  So we're still working on getting the
+
+18  sensitivity to where we need it.
+
+19       Q.  So let me just confirm that.  So at present,
+
+20  you have performed TEM following preparation using a
+
+21  chrysotile separation technique, using spiked, samples
+
+22  spiked with chrysotile at a .1 percent, and you have
+
+23  been able to find chrysotile by TEM at that
+
+24  concentration.  Is that correct so far?
+
+25       A.  Well, we have -- the spiked samples I believe
+
+
+
+
+
+                                                          284
+
+ 1  start at .1, .05, .01, .05, .001.  And I think it's down
+
+ 2  to .0001.  And I believe we can detect it down to .001.
+
+ 3  And point -- or .005 may be the limit.  That's --
+
+ 4  without looking at the data.  That's what I believe what
+
+ 5  our analytical sensitivity is at this moment.
+
+ 6       Q.  And that's for TEM following the chrysotile
+
+ 7  liquid separation technique using a sample spiked with
+
+ 8  varying levels of chrysotile, correct?
+
+ 9       A.  Correct.
+
+10       Q.  And what type of chrysotile are you using in
+
+11  the spiked; is that standard calidria or something else?
+
+12       A.  Calidria.
+
+13       Q.  And you have not done any sort of -- strike
+
+14  that.
+
+15           Have you tried TEM without any concentration
+
+16  technique using those calidria spiked references to
+
+17  determine whether or not you can see them using TEM
+
+18  without concentration?
+
+19       A.  I don't think so.
+
+20       Q.  And it sounds like thus far, your laboratory
+
+21  has not identified chrysotile using TEM with following a
+
+22  chrysotile separation technique on unspiked Chinese
+
+23  source talc; is that correct?
+
+24       A.  That's correct, we have not verified the
+
+25  chrysotile in the Chinese talc by TEM yet.
+
+
+
+
+
+                                                          285
+
+ 1           MR. HYNES:  Okay.  And so for these four
+
+ 2  project numbers that are part of Exhibit 42, we request
+
+ 3  production of any additional analyses, whether it's TEM
+
+ 4  or count sheets reports and chains of custody to
+
+ 5  adequately identify what these samples are.
+
+ 6           Further, we would also request production of
+
+ 7  the TEM data on those spiked references, which would
+
+ 8  include chains of custody, stem sheets, any sort of TEM
+
+ 9  data with photomicrographs and any sort of written
+
+10  protocols for that validation process.
+
+11           And Henry, we can meet and confer on that.
+
+12           MR. STEINBERG:  Yeah.  Counsel, we will need to
+
+13  meet and confer on that.  J&J is basically creating and
+
+14  constructing its own rabbit holes asking for additional
+
+15  materials, and asking for additional materials related
+
+16  to those additional materials, and related to those
+
+17  additional materials.
+
+18           You know, if Plaintiffs were to do this with
+
+19  Dr. Sanchez, you know, depositions would go on forever
+
+20  and ever and ever.  I think J&J is getting well out of
+
+21  bound, but we will of course meet and confer off the
+
+22  record.
+
+23           MR. HYNES:  Thanks, Henry.  I'll just note that
+
+24  Dr. Longo has many reports, many thousands of pages of
+
+25  reports, and many different methods that are in play,
+
+
+
+
+
+                                                          286
+
+ 1  and in order to adequately understand the methodologies
+
+ 2  and analyses, it's often necessary to obtain certain
+
+ 3  data.  So we can meed and confer.  Let's move along.
+
+ 4  BY MR. HYNES:
+
+ 5       Q.  Okay.  Dr. Longo, I have marked as Exhibit
+
+ 6  No. 43, another file that Counsel for Plaintiffs passed
+
+ 7  along yesterday outside of the statutory time frame for
+
+ 8  passing along additional materials, but this is a PDF
+
+ 9  entitled "Titley," T-I-T-L-E-Y, "JBT PLM photographs,
+
+10  M71095-001CSM-005."
+
+11           (Exhibit 43 marked for identification.)
+
+12  BY MR. HYNES:
+
+13       Q.  Dr. Longo, do you have that document available?
+
+14       A.  I'm sure I do.  I'm just looking for it.
+
+15           MR. STEINBERG:  And, Counsel, while Dr. Longo
+
+16  is looking for that, I will respond to your colloquy
+
+17  that I asked that you refrain from because I'm going to
+
+18  have to respond to it.
+
+19           We produced these documents because J&J
+
+20  requested them as a result of its questioning at prior
+
+21  depositions.  Again, Plaintiffs and all parties have an
+
+22  obligation to produce discoverable reports and writings
+
+23  under the Code, and that does not include every document
+
+24  under the sun that could ever be tangentially related to
+
+25  a witness's testimony.  And that is exactly what J&J is
+
+
+
+
+
+                                                          287
+
+ 1  doing here.
+
+ 2           So you can continue your deposition, but please
+
+ 3  stop the colloquy and inferences because it's J&J who's
+
+ 4  out of bounds here, not Plaintiffs.  Thank you.
+
+ 5           THE WITNESS:  Okay.  Did you say five PDFs?
+
+ 6  BY MR. HYNES:
+
+ 7       Q.  So I said Exhibit 43, which is, "Titley JBP PLM
+
+ 8  Photograph M71095-001CSM-005."  It's a 10-page PDF.
+
+ 9       A.  I'm having trouble finding that one.  I'm
+
+10  sorry.  Could you tell me the name of the PDF again.
+
+11       Q.  Yeah, it's "Titley," T-I-T-L-E-Y, "JBP PLM
+
+12  Photographs, M71095-001CSM-005."
+
+13       A.  All right.  I know what we're talking about
+
+14  now.
+
+15           I'm sorry.  Okay.
+
+16       Q.  All right, Dr. Longo, why don't you walk me
+
+17  through what's in this PDF and how it informs your
+
+18  opinions in the Reyes case.
+
+19       A.  Well, it's not so much it informs my opinions,
+
+20  it's a rebuttal to -- that I had done -- this is a
+
+21  photograph, a PLM photograph that Sanchez had in his
+
+22  Titley rebuttal report.  And if you go to -- if you go
+
+23  to page 1, Sanchez drew, and this is in -- this is
+
+24  parallel, but it would be easier to see if you go to 2,
+
+25  we can walk through these, so this is the chrysotile
+
+
+
+
+
+                                                          288
+
+ 1  bundle we identified.
+
+ 2           Where that circle is, Sanchez drew that circle
+
+ 3  in his rebuttal report, and we had a little a square,
+
+ 4  and said that that area had some features to it that
+
+ 5  suggested that was cellulose, and this was not
+
+ 6  chrysotile.  And he only showed the area there, but I
+
+ 7  guess what Dr. Sanchez didn't realize, in the
+
+ 8  photograph, microphotograph itself, when you look at the
+
+ 9  whole picture, the large bundlous material up at the --
+
+10  if you're looking at this -- let me --
+
+11           So if you're looking at it straight on, if you
+
+12  look to the right, there is a very large bundle sitting
+
+13  there that is actually a piece of cellulose.  So I don't
+
+14  think Dr. Sanchez realized, because we didn't identify
+
+15  it as anything because cellulose is one of the easiest
+
+16  things that a junior PLM analyst learns on how to
+
+17  differentiate because it's so easy to do.
+
+18           So if you go to the second PDF, and the reason
+
+19  it looks so bright is because we had to turn it up
+
+20  because these refractive indices are pretty close to the
+
+21  1.550.
+
+22           So Sanchez was looking at this little area in
+
+23  the red circle, and he said ha, that's cellulose.  And
+
+24  if you go to the next PDF, you can see up in the upper
+
+25  right-hand corner what a piece of cellulose looks like,
+
+
+
+
+
+                                                          289
+
+ 1  and so he was dead wrong.
+
+ 2           So if we go to elongation, you can see the
+
+ 3  chrysotile bundles.  If we go to -- if we go to cross
+
+ 4  polars, we have chrysotile there.  And if we go to no
+
+ 5  polars out, and you can see quite the difference between
+
+ 6  chrysotile and that big cellulose.  It's not even a
+
+ 7  bundle.  Cellulose is a ribbon, and very hard to see
+
+ 8  individual structures in it.  And the other thing is,
+
+ 9  refractive indices of cellulose is greater than .05.
+
+10  There's no way any -- at least any of our analysts would
+
+11  misidentify it.
+
+12           So this is a rebuttal to Sanchez, and we have
+
+13  another, we have another cellulose standard that can
+
+14  show.  We have the light on the microscope turned up
+
+15  pretty high, so we can see the structures better in the
+
+16  refractive indices, because if in fact that was a
+
+17  cellulose bundle, and if we go back to Image No. 2, if
+
+18  you look at that circle, you can see the individual
+
+19  chrysotile fibers going around that little area where
+
+20  it's bent.
+
+21           So once again, Dr. Sanchez was wrong trying to
+
+22  interpret our PLM with center stop dispersion staining.
+
+23           MR. HYNES:  Okay.  Next PDF that I have marked
+
+24  as Exhibit 44, I guess we can just do this all at once.
+
+25  Three PDFs I have marked as Exhibit 44, 45 and 46.
+
+
+
+
+
+                                                          290
+
+ 1           (Exhibits 44, 45, 46 marked for
+
+ 2            identification.)
+
+ 3           MR. HYNES:  They are titled "Chinese Talc Fiber
+
+ 4  1 PLM," "Chinese Talc Fiber 2 PLM," and "Chinese Talc
+
+ 5  Fiber 3 PLM."
+
+ 6           The first one was three pages, second one is
+
+ 7  five pages, the third one is also five pages.
+
+ 8  BY MR. HYNES:
+
+ 9       Q.  Dr. Longo, do you now have those documents
+
+10  available to you?
+
+11       A.  I do.  This is from Zimmerman.  I recognize the
+
+12  7484.  And these, and we may have some duplicates here.
+
+13  These are chrysotile, these samples were -- Chinese was
+
+14  analyzed.  And in different -- in 1.550, just showing
+
+15  the refractive indices, and why we did the next thing.
+
+16  As you can see, the refractive indices says here that it
+
+17  is less than 1.540.  And the reason it says "less" is
+
+18  that we have it in 1.550.  So the -- so this is not
+
+19  chrysotile, this is talc.  I'm sorry.
+
+20           So the reason we say less than 1.540 because
+
+21  the refractive indices under center stop in 1.550 is
+
+22  starting to approach white light.  So it's getting to a
+
+23  point where you can't determine the refractive indices
+
+24  other than it's going to be less than or greater than.
+
+25  And so -- and also showing that the parallel in No. 2,
+
+
+
+
+
+                                                          291
+
+ 1  is greater than 1.595 for the talc.  And you can just
+
+ 2  see how white that is.  And so we know that the
+
+ 3  refractive indices are going to be higher, so you have
+
+ 4  to use -- to get the calibrated on this fibrous talc in
+
+ 5  Chinese, we have another PDF where we have analyzed the
+
+ 6  fibrous talc in various RI fluids, starting I think from
+
+ 7  1.535 up to 1.650.
+
+ 8           And that's what that shows is that the range of
+
+ 9  refractive indices for this particular -- for these
+
+10  particular fibers are -- goes beyond what you normally
+
+11  measure in your 1.550 refractive indices fluid.
+
+12           That's it.
+
+13           MR. HYNES:  And then Exhibit No. 47, I believe
+
+14  it's just a combination of all of what we just looked
+
+15  at.  It's a 13-page PDF titled "Zimmerman M70484-002
+
+16  Talc Fiber RI Fluid 1.550."
+
+17           (Exhibit 47 marked for identification.)
+
+18  BY MR. HYNES:
+
+19       Q.  I guess, Dr. Longo, is this just the 13 pages
+
+20  that we just looked at as part of the other three
+
+21  exhibits?
+
+22       A.  No, that was all in 1.550, which would be your
+
+23  1.550, but this runs from 1.535, 1.540, 1.550, 1.595,
+
+24  and 1.605.  It's showing the refractive indices in
+
+25  parallel and perpendicular for these different fluids to
+
+
+
+
+
+                                                          292
+
+ 1  bracket in better where the fibrous talc.  And how it
+
+ 2  informs my opinion is that this was all done in
+
+ 3  dispersion staining with center stop.  And each of these
+
+ 4  calculated birefringence from all these, even though
+
+ 5  you're in different refractive indices fluids, all I
+
+ 6  believe were at least 0.05 up to, greater than 0.05.
+
+ 7           Establishing that the birefringence for the
+
+ 8  fibrous talc for the Chinese has a calculated
+
+ 9  birefringence that is routinely above 0.05 versus the
+
+10  Chinese chrysotile, is routinely at the low end of
+
+11  moderate of .011, .010 .012, .009, in that range, so
+
+12  it's a very easy process to distinguish fibrous talc
+
+13  from chrysotile.
+
+14           And again, this is in response to Dr. Sanchez
+
+15  testifying that we're misidentifying the fibrous talc
+
+16  for chrysotile.  And he's not correct in that.
+
+17       Q.  Okay.  Dr. Longo, I think we're looking maybe
+
+18  at different documents.  Let me make sure of that.
+
+19           So what I'm looking at is PDF that was passed
+
+20  along to me yesterday titled "Zimmerman M70484-002 Talc
+
+21  Fiber RI fluid 1.550" dot PDF, and the first page of
+
+22  that has, it's sample M70484-002 IS2-001
+
+23  talc, perpendicular dispersion .550 RI indices.
+
+24           Is that what you're looking at?  That would be
+
+25  Exhibit 47, 13 pages?
+
+
+
+
+
+                                                          293
+
+ 1       A.  I'm sorry, I thought you were making -- I'm
+
+ 2  sorry, I just went and explained the entire one.  I
+
+ 3  thought you were making all five of those Exhibit 47,
+
+ 4  because they are all Zimmerman -- do you have the 1.605,
+
+ 5  the 1.535?
+
+ 6       Q.  No.  Is that what you were looking at?
+
+ 7       A.  Yeah.  I see the one you're looking at.
+
+ 8           MR. HYNES:  Okay.  I guess we can attach what
+
+ 9  you were looking at as Exhibit 47-A.
+
+10           It's not something that was provided to me, no.
+
+11           THE WITNESS:  Oh, well, I apologize, I provided
+
+12  it to Plaintiffs' Counsel, and it I thought this was
+
+13  what you were talking about.
+
+14           This is M70484, Zimmerman, and it's talc fibers
+
+15  that have been analyzed in the 1.550 that we talked
+
+16  about, but additionally we have 1.605, 1.535, 1.540 and
+
+17  1.595, all from Zimmerman.
+
+18           MR. HYNES:  Okay.  I guess if you provided that
+
+19  to Counsel, we can just attach that as Exhibit 47-A.
+
+20           MR. STEINBERG:  Counsel, can I -- we have
+
+21  produced so many documents at J&J's request, I think
+
+22  that maybe J&J is having some confusion at this point.
+
+23           I'm looking at Zimmerman M 70484-001, talc
+
+24  fiber RI fluid 1.550 in a 13-page PDF, and it seems to
+
+25  be describing what Dr. Longo is looking at, which is
+
+
+
+
+
+                                                          294
+
+ 1  what J&J has.
+
+ 2           MR. HYNES:  Sounds like Dr. Longo is looking at
+
+ 3  a different file, which includes different refractive
+
+ 4  index oils.
+
+ 5           MR. STEINBERG:  Well, that's not true, I don't
+
+ 6  think.  I'm not the one testifying, but look at page 2.
+
+ 7           MR. HYNES:  I'll ask Dr. Longo.
+
+ 8  BY MR. HYNES:
+
+ 9       Q.  Dr. Longo, the document you were just
+
+10  discussing is looking at the Zimmerman container and
+
+11  refractive index oils different from 1.550; is that
+
+12  right?
+
+13       A.  That's right.  I'm sending this -- I have the
+
+14  file with all of them.  I did send it last night to
+
+15  Joe Satterley, Plaintiffs' Counsel.  He must not have
+
+16  passed it on.  I'm going to email this right now, so
+
+17  that -- I don't think we can, we'd have to spend a lot
+
+18  time on it, but I just want you to have it.
+
+19           MR. HYNES:  Thanks.  And it sounds like it's
+
+20  something that you're going to refer to, and I would
+
+21  like to have it and attach it as Exhibit 47-A.
+
+22           THE WITNESS:  Well, it was rebuttal to Sanchez,
+
+23  that Sanchez is not attacking our -- is not to attack
+
+24  our analysis, then no.
+
+25           (Exhibit 47-A marked for identification.)
+
+
+
+
+
+                                                          295
+
+ 1           MR. HYNES:  All right.  Let's move along
+
+ 2  quickly, and then we can take a quick break after this
+
+ 3  document, I guess.
+
+ 4           So the next one here, I have Exhibit 48, which
+
+ 5  is another that was passed along yesterday.  It's titled
+
+ 6  "Cellulose TLM."
+
+ 7           (Exhibit 48 marked for identification.)
+
+ 8  BY MR. HYNES:
+
+ 9       Q.  I think you referred to this one earlier, it's
+
+10  an eight-page PDF.  I guess just quickly let me know
+
+11  what -- what this document is and how it informs your
+
+12  opinions in the Reyes case, please.
+
+13       A.  Well, yeah, this is a cellulose standard.  And
+
+14  if you go to No. 1, and this is versus the other
+
+15  photograph, there's a better photograph of that
+
+16  cellulose actually in the book, we just turned it up so
+
+17  we could -- when we were showing what Sanchez was
+
+18  claiming that was cellulose.
+
+19           Here you have elongation for -- under
+
+20  elongation conditions and you can see, because cellulose
+
+21  kind of rolls up and crinkles, you get all, you know,
+
+22  have all different thicknesses.  And you get all these
+
+23  different refractive indices, and both elongation and
+
+24  cross polars.  There is now way that any competent PLM
+
+25  lab, and these are all examples of what it looks like,
+
+
+
+
+
+                                                          296
+
+ 1  and you can see it has no bearing to what chrysotile
+
+ 2  looks like.
+
+ 3           If you look at what Sanchez said was
+
+ 4  chrysotile -- was cellulose, under cross polars is what
+
+ 5  he used as an example, there's just no comparison.  And,
+
+ 6  of course, I would use it as a teaching tool if
+
+ 7  Dr. Sanchez were to keep -- still insist that we were
+
+ 8  misidentifying chrysotile for cellulose and these
+
+ 9  photographs side by side in the trial, what he's saying
+
+10  is cellulose and what really cellulose is, I think it
+
+11  would be a good teaching tool for the jury.
+
+12           MR. HYNES:  Why don't we take a 5-minute break.
+
+13  10:27 right now Eastern time.  Come back at 10:32
+
+14  Eastern, if that works?
+
+15           THE WITNESS:  That works.
+
+16           MR. HYNES:  Okay.
+
+17           MR. STEINBERG:  Off the record.
+
+18           (Recess.)
+
+19           MR. HYNES:  Hi, Dr. Longo.  Are you back with
+
+20  us?
+
+21           THE WITNESS:  I am.
+
+22  BY MR. HYNES:
+
+23       Q.  Great.  And so we just walked through some of
+
+24  your -- some reference images from MAS on chrysotile and
+
+25  talc and cellulose.  Why don't we turn back to
+
+
+
+
+
+                                                          297
+
+ 1  Exhibit 34, your September 29, 2020, first update to the
+
+ 2  M71166 report on the off-the-shelf containers.  Are you
+
+ 3  with me?
+
+ 4       A.  I've got -- let me just grab it.
+
+ 5       Q.  Sure.
+
+ 6       A.  I just have to find it.  Give me a minute.
+
+ 7           (Pause.)
+
+ 8           THE WITNESS:  Okay.  I have it.
+
+ 9  BY MR. HYNES:
+
+10       Q.  Okay.  Why don't we turn to -- do you have it
+
+11  in hard copy or PDF?
+
+12       A.  I have it in hard copy.
+
+13       Q.  Hard copy.  Okay.  I was going to flip to pages
+
+14  60 and 61.  Pages aren't numbered, but down here you've
+
+15  got a couple of images.  The first is parallel, second
+
+16  is perpendicular for a particle --
+
+17       A.  What number?
+
+18       Q.  I'll read it out to you.  So it's
+
+19  M71166-001CSM-003 chrysotile.  It's a particle that
+
+20  looks like the analyst measured 26.7 microns.
+
+21       A.  All right.  Just give me a second.
+
+22       Q.  Sure.
+
+23           MR. STEINBERG:  Counsel, what PDF page, please?
+
+24           MR. HYNES:  It's page 60.  The perpendicular is
+
+25  on page 61.  Then it looks like elongation may be on 62
+
+
+                                                          298
+
+ 1  and cross polar is on 63.
+
+ 2           THE WITNESS:  Which number was it on CSM, 00
+
+ 3  what, which sample number?
+
+ 4  BY MR. HYNES:
+
+ 5       Q.  So it's sample 001, and I think it's particle
+
+ 6  No. 3.  If you look at the measurement from the parallel
+
+ 7  dispersion image, it measured it at 26.7 microns.  The
+
+ 8  sample readout M71166-001 CSM-003 chrysotile.
+
+ 9       A.  I've got 1.  I've got 2.  I don't have the 3.
+
+10  How is that not in there?
+
+11       Q.  You found 2 for that sample?
+
+12       A.  I don't have 3.
+
+13       Q.  We can flip to 2.  That's the one with two
+
+14  different structures, one measured at like 8.9 microns,
+
+15  the other is 17.8 microns.  Are you with me there?
+
+16       A.  I see that.
+
+17           MR. HYNES:  Okay.  So, Henry, that's page 55 of
+
+18  the PDF, perpendicular to page 56, look likes elongation
+
+19  page 57, cross polars page 58, and polarizer O on
+
+20  page 59.
+
+21  BY MR. HYNES:
+
+22       Q.  Dr. Longo, are you with me?
+
+23       A.  Yes.
+
+24       Q.  Okay.  Why don't you walk me through how your
+
+25  analyst confirmed that this was chrysotile based on the
+
+
+                                                          299
+
+ 1  data that presents it on these pages, pages 55 through
+
+ 2  59.  I guess walk me through each step from parallel
+
+ 3  through polarizer O?
+
+ 4       A.  Okay.  For the first page, which is parallel,
+
+ 5  we have a refractive index of 1.556.  You can see the
+
+ 6  structures.  You can see these lines that go down them
+
+ 7  on the parallel direction.  Say the 8.9, there's 1, 2,
+
+ 8  3, 4, approximately 4 to 5 on there.  And so those 4 to
+
+ 9  5 are the actual chrysotile fibers.  So if you round it
+
+10  off at 9, if say there's 4, so if you -- so each of
+
+11  those, each of those you just multiply the 4 lines, 1,
+
+12  2, 3, 4, because this is actually chrysotile, so those
+
+13  would be the individual fibers there.  And if you divide
+
+14  that by 4, each of those are approximately 1 to 2/10s of
+
+15  a millimeter.  So you're getting aspect ratios of .2 or
+
+16  so, about .1 to .2.  .2, that would be around 40 to 1,
+
+17  so it shows it's fibrous.
+
+18           If you go to the perpendicular, you have
+
+19  refractive indices of 1.550.  The birefringence
+
+20  calculation is take the parallel and substract the
+
+21  perpendicular, and that gives you a value of 0.006,
+
+22  which is in the low range of birefringence.
+
+23           Also the range of refractive indices, 1.550 to
+
+24  1.556, is what is expected for chrysotile.  It cannot be
+
+25  fibrous talc because we have fibrous talc in here from
+
+
+                                                          300
+
+ 1  that sample.  So if you go back to the back of the PDF,
+
+ 2  and go to -- it's going to be toward the last page,
+
+ 3  we're looking at 7116001, which the same sample is, same
+
+ 4  sample would be on the very back is M71166-001 ISO talc.
+
+ 5       Q.  And I'll just pause you quickly.  Looks like
+
+ 6  that's page 162 and 163 of the PDF?
+
+ 7       A.  And if you look at the parallel refractive
+
+ 8  indices, it's 1.590.  And if you go to the perpendicular
+
+ 9  refractive indices, that's 1.540, you subtract the
+
+10  perpendicular from the parallel, that gives you 0.05,
+
+11  which is just under what is high birefringence.  And if
+
+12  you look at the difference between the two, the
+
+13  birefringence calculation for the chrysotile for that
+
+14  particular fiber was 0.006 and the birefringence
+
+15  calculation for talc is 0.05.  And that is how you tell
+
+16  the difference between fibrous talc and chrysotile, so
+
+17  that calculation.
+
+18           And if you go now to the next thing, if we go
+
+19  back to that 7116001 ISO No. 1, we flip past the
+
+20  perpendicular, we get to the elongation, which is cross
+
+21  polars under the 530 nanometer plate, and you will
+
+22  notice --
+
+23       Q.  And I'll pause you quickly.  I'm sorry.  I
+
+24  think that's page 164 of the PDF; you're still way at
+
+25  the back, right?
+
+
+                                                          301
+
+ 1       A.  Yes.
+
+ 2       Q.  Page 164?
+
+ 3       A.  No, I went back to the chrysotile, but let's
+
+ 4  stay at 164.  And -- and if we go to the next page, you
+
+ 5  can see that it is, you get that kind of magenta color,
+
+ 6  we're in elongation mode, under cross polars -- excuse
+
+ 7  me -- single polar, the elongation was the 530 nanometer
+
+ 8  plate, and you notice that the talc fiber is in the
+
+ 9  northeast to southwest direction.  You can see that you
+
+10  have some bluish with a little yellow there.  And the
+
+11  top one is also bluish.  That shows you that the
+
+12  elongation is positive.
+
+13           If you are to turn that to the northwest
+
+14  southeast, you would have yellow, more yellow.  And
+
+15  typically most analysts will use the elongation in the
+
+16  cross polars, elongation and cross polars for both to
+
+17  look at the intensity of the brightness, which is a --
+
+18  you know, very subjective.
+
+19           Chrysotile also has positive elongation, and if
+
+20  we go back to the chrysotile sample on ISO.
+
+21       Q.  This is page 57 of the PDF?
+
+22       A.  I'm almost there.  If you go to the elongation
+
+23  under cross polars, you can see that it has the blue
+
+24  and, and that's why I call it subjective.  So it tells
+
+25  you that it is positive in elongation, just like the
+
+
+                                                          302
+
+ 1  talc fiber is, but if you compare the colors, the talc
+
+ 2  fibers are brighter, somewhat brighter, and that's how
+
+ 3  most analysts would determine what elongation is.  I
+
+ 4  mean, excuse me, what the birefringence is.  It's much
+
+ 5  more accurate to actually calculate it.
+
+ 6           If you go to the next page, in the -- and
+
+ 7  that's all the data that's there on the talc, we only
+
+ 8  usually provide those three things.
+
+ 9           If you go to the next page, that's cross
+
+10  polars.  Cross polars gives you some of the brightness,
+
+11  and you can occasionally, if you have -- you can see
+
+12  some of the fibers.  You can't on that because it's so
+
+13  small.
+
+14           Then the very next page is cross polars, which
+
+15  is -- not cross polars, but polarizers out, and this
+
+16  will give you at times, if they're not too small, you
+
+17  can see some of the fibers at the ends of that.  It's --
+
+18  so they're all these different, and cross polars will
+
+19  give you the -- not cross polars, polarizers out, will
+
+20  give you the pleochroism, meaning that if you turn it
+
+21  one way or another, how much color change happens in it
+
+22  so that this would have negative pleochroism, because
+
+23  you're not getting really substantial color change
+
+24  without the polarizers in.  And there's only one
+
+25  asbestos that actually gives you any pleochroism, and
+
+
+                                                          303
+
+ 1  not surprising, it's crocidolite where it will go from a
+
+ 2  grayish darker color to much lighter color because of
+
+ 3  the blue in it.  And that's how we identify chrysotile.
+
+ 4       Q.  Okay.  Turning back to page 55 and 56 of the
+
+ 5  PDF, parallel dispersion and perpendicular, you know, it
+
+ 6  looks like there are two structures identified here, as
+
+ 7  I mentioned one was measured at 8.9 microns, the other
+
+ 8  was 17.8 microns.  Were those the only two chrysotile
+
+ 9  structures identified by your analysts on these two
+
+10  particular fields of view on pages 55 and 56 of those
+
+11  PDFs?
+
+12       A.  I'm just getting back there.
+
+13           Yes.
+
+14       Q.  Okay.  Okay.  Set that aside for now.
+
+15           If you recall last time you were speaking about
+
+16  your August 27, 2019, report on those two Philippine
+
+17  market containers, it was project No. M69925.
+
+18           Do you recall that, Dr. Longo?
+
+19       A.  I do.
+
+20       Q.  And you mentioned that there's some -- there
+
+21  were -- we walked through it.  There is some
+
+22  discrepancies between the narrative portion of the
+
+23  report and then the tables reporting results in the
+
+24  report.  You said you were going to have to search up to
+
+25  the bottom of it.
+
+
+                                                          304
+
+ 1           My question is, have you gone back through to
+
+ 2  sort of clarify what the specific results were for each
+
+ 3  of those two containers, and that report that was
+
+ 4  previously marked as Exhibit 10 to your deposition?
+
+ 5       A.  I don't remember what the discrepancy was, I
+
+ 6  apologize.  Oh, I see.  No, I don't see.  What was the
+
+ 7  discrepancy?
+
+ 8       Q.  So I'll read it at the bottom of page 2 and the
+
+ 9  top of page 3.  I'll read the narrative which doesn't
+
+10  totally match up with this table.
+
+11           So, for example, 001, the non-HLS PLM analysis
+
+12  shows and presence of actinolite/tremolite cleavage
+
+13  fragments, and the ATM analysis showed the amount of
+
+14  tremolite in 1 gram sample M69925-001 was 17,300 fibrous
+
+15  slash bundles, Table 1.
+
+16           The Blount PLM with HLS was below the detection
+
+17  limit, less than 0.1 percent for both amphibole asbestos
+
+18  and cleavage fragments.  Fibrous talc was detected in
+
+19  the PLM analysis.
+
+20           Then if we go to Table 1, which is on page 8,
+
+21  that narrative for sample 001 suggested that the Blount
+
+22  PLM was a non-detect, whereas the table doesn't
+
+23  specifically say it's a non-detect.  It says less than
+
+24  0.1 percent tremolite, slash, actinolite.
+
+25           So the discrepancy was, is that a non-detect or
+
+
+                                                          305
+
+ 1  is there less than 0.1 percent of tremolite/actinolite?
+
+ 2       A.  So if you go to the actual PLM analysis on
+
+ 3  Appendix B, and those are where the PLMs are, and if you
+
+ 4  go to the PLM sheet M69925-001 Blount, and I don't think
+
+ 5  there was a discrepancy because during -- well, we've
+
+ 6  always when it's -- even though we can see it, we have
+
+ 7  made positive samples or less than 0.1.  And if you go
+
+ 8  to the count sheet in the comments in the bottom, it
+
+ 9  says:  Actinolite/tremolite asbestos observed, period.
+
+10  Actinolite/tremolite cleavage fragment particles
+
+11  observed.  Moderate amount of fibrous talc observed.
+
+12           And then if you go to the very next page, we
+
+13  have a tremolite -- actinolite/tremolite bundle in
+
+14  parallel dispersion.  We have a -- in the perpendicular,
+
+15  the elongation, cross polars, so we have a
+
+16  representative structure there, and we may have only
+
+17  found one structure.  So we have all the data backup, so
+
+18  the table is right.  It is positive for
+
+19  tremolite/actinolite.
+
+20           It's just that less than sign, and I can
+
+21  understand the confusion because the less than sign is
+
+22  typically used for the less than the detection limit,
+
+23  but that -- we primarily use that for TEM, so the sample
+
+24  is positive.
+
+25       Q.  Okay.  It sounds like you may have a different
+
+
+                                                          306
+
+ 1  version of the report than I received, so I have -- my
+
+ 2  version is dated August 27th of 2019.  And it's -- the
+
+ 3  PDF is 48 pages in length.  I do have Appendix B and C
+
+ 4  and D, but the only thing underneath B and C is TEM
+
+ 5  analysis.  I don't have any PLM bench sheets or
+
+ 6  photomicrographs for these two analyses.
+
+ 7           Sounds like the version of the report that
+
+ 8  you're looking at has PLM bench sheets and images; is
+
+ 9  that right?
+
+10       A.  Yeah, it does.
+
+11           THE WITNESS:  Okay.  I'll have -- and I'm not
+
+12  sure why, because this is how we put them together, I'm
+
+13  not sure why you're missing that.  I'll have my
+
+14  assistant send this report.
+
+15           MR. HYNES:  Sure.  And I guess we can just mark
+
+16  that version as Exhibit 10-A, the version that you're
+
+17  looking at that has this PLM data included.
+
+18           (Exhibit 10-A marked for identification.)
+
+19  BY MR. HYNES:
+
+20       Q.  And I wanted to clarify a few more things,
+
+21  Dr. Longo.  You know, we've talked about visual
+
+22  calibration references that your analysts used as part
+
+23  of the chrysotile PLM analysis, initially using 1866
+
+24  spiked references or recently using calidria spiked
+
+25  references.
+
+
+                                                          307
+
+ 1           Do you recall that?
+
+ 2       A.  I do.
+
+ 3       Q.  And purpose of those references or use for them
+
+ 4  is to have sort of a known standard with a known
+
+ 5  percentage of whether it's 1866 chrysotile or calidria
+
+ 6  in a similar matrix that the analyst can then use to
+
+ 7  estimate the percent that they are looking at in a, you
+
+ 8  know, like an unknown talc sample, Chinese source talc
+
+ 9  sample that they are analyzing, correct?
+
+10       A.  That's correct.
+
+11       Q.  And, you know, we've walked through some of the
+
+12  materials that were provided in advance of today's
+
+13  deposition.  I don't believe that the MAS 1866 or
+
+14  calidria visual calibration references were included in
+
+15  the materials that we looked at, right?
+
+16       A.  That's true.
+
+17       Q.  Did you -- have you produced those to Counsel
+
+18  for Plaintiffs?
+
+19       A.  I have not.
+
+20       Q.  Would you be willing to produce those visual
+
+21  calibration references?
+
+22       A.  Again, that's up to my client to determine.  I
+
+23  have to spend the time of pulling it all together, and
+
+24  since it's being produced, to put it into a report type,
+
+25  and I haven't had the time.  So, you know, I'm not --
+
+
+                                                          308
+
+ 1  I'm not trying to be rude, but, you know, I don't work
+
+ 2  for you guys, and I work for the Satterley firm, and I
+
+ 3  have been fairly busy trying to catch up on things, so
+
+ 4  it's something I plan to do, to put it all together, but
+
+ 5  I just haven't yet.  It will take some hours of my time
+
+ 6  to do that.
+
+ 7           MR. HYNES:  Sure.  We request production of
+
+ 8  those visual calibration references.
+
+ 9           MR. STEINBERG:  Counsel, just for the record,
+
+10  there's no authority under case law or the Code of Civil
+
+11  procedure for a deposing party to demand that an expert
+
+12  do additional work, which is what J&J is doing here.
+
+13           We will meet and confer, Counsel, but you're
+
+14  asking for something that has not been put together and
+
+15  does not exist in the form which you are requesting it
+
+16  right now, and that -- requests like that cannot be used
+
+17  to delay a deposition or keep a deposition open or, you
+
+18  know, for J&J's ultimate goal of trying somehow strike
+
+19  opinions.
+
+20           It's absolutely an improper and harassing means
+
+21  to conduct a deposition in this case.
+
+22           MR. HYNES:  Henry, it sounds like these visual
+
+23  calibration references are already in existence, and I'm
+
+24  not requesting that Dr. Longo do anything, any new work.
+
+25  Sounds like these are references that his analysts are
+
+
+                                                          309
+
+ 1  currently using as part of their estimation of the
+
+ 2  percent of chrysotile present in the analyses that he's
+
+ 3  performed and is relying upon for his opinions in this
+
+ 4  case.  And we don't have these visual calibration
+
+ 5  references that they are using to make those
+
+ 6  determinations.
+
+ 7           MR. STEINBERG:  Counsel, this would be a lot
+
+ 8  like Plaintiffs deposing Dr. Moolgavkar and demanding
+
+ 9  that Dr. Moolgavkar produce every single textbook and
+
+10  reference on his bookshelf in his office because he may
+
+11  sometimes refer to those, or that his assistants may
+
+12  sometimes refer to those and demand all of his
+
+13  assistants produce all the textbooks within all of their
+
+14  offices.
+
+15           Dr. Longo has explained that a compilation of
+
+16  all that does not presently exist and that it would take
+
+17  additional work for him to create that and to send it to
+
+18  J&J.
+
+19           We'll meet and confer further off the record,
+
+20  but I just wanted to make sure that the record is clear
+
+21  right now that J&J remains out of bounds, and it's a
+
+22  harassing and overbroad request.
+
+23           MR. HYNES:  Thanks, Henry.  I disagree, but we
+
+24  can meet and confer.
+
+25  //
+
+
+                                                          310
+
+ 1  BY MR. HYNES:
+
+ 2       Q.  Dr. Longo, we also talked last time about PLM
+
+ 3  analyses that your laboratory has performed on Round 1
+
+ 4  samples that you are relying upon for your opinions in
+
+ 5  this case.  Those are samples M65329-013 and M65329-043.
+
+ 6  And you testified that there was PLM analysis performed
+
+ 7  in those, and my understanding is that we do not have
+
+ 8  any of the data for your laboratory's PLM analyses on
+
+ 9  those two samples, so I guess my -- go ahead.
+
+10       A.  M dash what?
+
+11       Q.  M65329-013 and dash 043.
+
+12       A.  The M65329-013, that was the off-the-shelf.  I
+
+13  have turned that over a number of times.  I've been
+
+14  quizzed on it.  I've been cross-examined in trial a
+
+15  number of times because at that time we didn't find
+
+16  anything in it.
+
+17           Anyway, I'll figure out why you don't have
+
+18  those two.  They have been produced in the past, I can
+
+19  assure you.  But I can pull those two PLM analyses.  I
+
+20  will agree to pull those even though you have had them
+
+21  before.
+
+22       Q.  Right.  My understanding is that we don't have
+
+23  the PLM data for those two analyses.  I know that the
+
+24  TEM data for --
+
+25       A.  No, no.
+
+
+                                                          311
+
+ 1       Q.  -- included in the 3-11-2017 to your August 7,
+
+ 2  2017, report, but the PLM portion to our knowledge has
+
+ 3  not been produced previously.  It sounds like you're
+
+ 4  agreeing to produce the PLM --
+
+ 5       A.  No, I have to check if any PLM analysis was
+
+ 6  even done on them.  A number --
+
+ 7       Q.  Right.
+
+ 8       A.  -- went to Lee Poye for XRD and PLM, as I
+
+ 9  recall.
+
+10       Q.  Right.  We can take a look, but the last time
+
+11  we looked --
+
+12       A.  Okay.
+
+13       Q.  -- we looked at those earlier in your
+
+14  deposition, and we looked at chain of custody sheet that
+
+15  demonstrated that they had gone out for PLM analysis,
+
+16  and I'm just checking whether you had gone back to
+
+17  gather those.  Sounds like not yet, but you're willing
+
+18  to gather those --
+
+19       A.  With PLM analysis done it, I guess that would
+
+20  have been Lee Poye's stuff way back when.  I have to
+
+21  check on it, now.  I know the TEMs were done.  That's
+
+22  what I was talking about.
+
+23       Q.  Right.  Well, we talked about this on the first
+
+24  day of deposition.  There's no need to go back, but we
+
+25  looked at a chain of custody form showing that MAS has
+
+
+                                                          312
+
+ 1  performed PLM analysis on M65329-013, dash 041, which we
+
+ 2  have, and then dash 043, and we're just asking for the
+
+ 3  other two PLM analyses.
+
+ 4           Sounds like you're willing to pass them along
+
+ 5  to the extent they exist.  And it looks like based on
+
+ 6  the chain of custody, they do exist.
+
+ 7       A.  I will check on that.
+
+ 8           MR. STEINBERG:  Based on J&J's interpretation
+
+ 9  of the chain of custody, something may exist.  It's not
+
+10  clear that they do, and this is the report that J&J has
+
+11  deposed and cross-examined at trial Dr. Longo on, on
+
+12  numerous occasions.
+
+13           MR. HYNES:  Henry, it's a different issue.  It
+
+14  was a PLM analysis.  We know and have Dr. Longo's PLM
+
+15  analysis on those two samples.  We can look at the first
+
+16  day of the deposition testimony regarding the PLM
+
+17  portion of the analysis on those two, but --
+
+18           THE WITNESS:  Which two are they?
+
+19  BY MR. HYNES:
+
+20       Q.  M65329-013 and dash 043.
+
+21       A.  Okay.
+
+22       Q.  And Dr. Longo, we talked a little bit about the
+
+23  first version of the Baby Diapering 2 study, as we
+
+24  mentioned earlier today.  Exhibit 17 to the deposition
+
+25  is Supplement No. 1, dated June 28, 2019.
+
+
+                                                          313
+
+ 1           Based on the fact that it's Supplement No. 1,
+
+ 2  reason to believe that there is a version before that.
+
+ 3  And we're just wondering if you've gotten back to check
+
+ 4  for the initial version of the Baby Diapering 2 study,
+
+ 5  and if you would be able to produce that if it exists?
+
+ 6       A.  I'll have look at that, see if we have.
+
+ 7           MR. HYNES:  To the extent an earlier version of
+
+ 8  that report exists, I guess we can attach that as 17-A
+
+ 9  to the deposition.
+
+10  BY MR. HYNES:
+
+11       Q.  Exhibit 16 to the deposition, we also had
+
+12  requested the TEM all data from sample P1B, P1D, P1E,
+
+13  and A1A.
+
+14           Dr. Longo, have you produced that data for
+
+15  Counsel for Plaintiffs just yet?
+
+16       A.  No.  I think that data already is out there.
+
+17  And I believe this was where we were talking about that,
+
+18  the analysis, there was two problems.  The all TEM data
+
+19  was just analyzed with the same filters that had not had
+
+20  been -- same grids that had not been re-prepped, so you
+
+21  were looking at 7402 prep for all fibers by TEM.  That
+
+22  doesn't work because if you're doing all fibers, you
+
+23  have to collapse and etch the filters; otherwise, you
+
+24  lose fibers inside the fibers.
+
+25           But I thought we had produced that before.  But
+
+
+                                                          314
+
+ 1  I'll -- I'll -- I will -- if my client requests it, I
+
+ 2  will certainly take it under advisement.
+
+ 3           MR. HYNES:  Okay.  To the extent that data
+
+ 4  exists, we can include it as Exhibit 16-A to the
+
+ 5  deposition.
+
+ 6           (Exhibit 16-A marked for identification.)
+
+ 7  BY MR. HYNES:
+
+ 8       Q.  Dr. Longo, have you generated any invoices in
+
+ 9  the Reyes case or for report M71166, the off-the-shelf
+
+10  report or report M70119 to 71111, the ore sample report
+
+11  to date?
+
+12       A.  I don't know if they have been generated or
+
+13  not.  The Reyes report, I'd have to find out or you have
+
+14  to ask my client to let me know if I need to produce
+
+15  those invoices or not.
+
+16           MR. HYNES:  Okay.  To the extent that,
+
+17  Dr. Longo, you have generated invoices for the Reyes or
+
+18  for the two new reports that you've produced as part of
+
+19  the Reyes case, M71166 or M71109 dash 71111, we will
+
+20  attach those as Exhibit 49 to the deposition.
+
+21           I'll take a look at my notes.  For now I'll
+
+22  pass the witness here, reserving my right to come back
+
+23  and ask additional questions.  But in the interest of
+
+24  time for the other defendants who have questions, before
+
+25  we break for court this afternoon, I will pass
+
+
+                                                          315
+
+ 1  Dr. Longo.
+
+ 2           Thanks again for your time, Dr. Longo.
+
+ 3           And thanks again, Henry.
+
+ 4           THE WITNESS:  Thank you, sir.  Can we take a
+
+ 5  couple-minute break before we change here?
+
+ 6           MR. HYNES:  Yes, take 5.
+
+ 7           (Recess.)
+
+ 8                           EXAMINATION
+
+ 9  BY MS. WHITE:
+
+10       Q.  Hi, Dr. Longo.  This is Meredith
+
+11  Thornburg-White from Barnes & Thornburg.  I will try to
+
+12  be efficient with my time here.  I represent three talc
+
+13  retailer defendants:  Lucky Stores, Inc.; Longs Drugs
+
+14  California, LLC; and Safeway.
+
+15           Are you familiar with them as parties in this
+
+16  lawsuit?
+
+17       A.  I have -- I didn't look at the complaint, so I
+
+18  don't usually really look at the retailers too much.  I
+
+19  don't have any opinions about the retailers other than
+
+20  if they, in fact, sold the product.  I have opinions
+
+21  about Johnson's Baby Powder, but for any corporate
+
+22  conduct or knowledge or anything like that, I have no
+
+23  opinions for all three of those.
+
+24       Q.  Okay.  I'll try to be judicious with questions
+
+25  on the latter topics that you mentioned there.
+
+
+                                                          316
+
+ 1           So it's true you're not providing any opinions
+
+ 2  about a retailer's conduct in selling Johnson's Baby
+
+ 3  Powder in this case?
+
+ 4       A.  That is correct, I am not.
+
+ 5       Q.  Your opinions in this case do not depend at all
+
+ 6  on which specific retailer stores that Mr. Reyes'
+
+ 7  product came from?
+
+ 8       A.  That is correct, it does not.  To me it's all
+
+ 9  the same product.
+
+10       Q.  Is it true that you never tested a Johnson's
+
+11  Baby Powder product purchased from a Longs drugstore?
+
+12       A.  That is true.
+
+13       Q.  Is it true you've never tested a Johnson Baby
+
+14  Powder product purchased from a Lucky Store?
+
+15       A.  With knowledge and receipt that it actually
+
+16  came from the store versus somebody sending me
+
+17  containers from California that may have been purchased
+
+18  from the store or not, say, you know, client's own
+
+19  models, that I don't have the chain of custody all the
+
+20  way back.  So I have no information that any of the
+
+21  containers that I have ever worked on that were say
+
+22  client containers from California, on where they came
+
+23  from.
+
+24       Q.  And so that would be the same answer if I asked
+
+25  to you confirm that you've never knowingly tested a
+
+
+                                                          317
+
+ 1  Johnson's Baby Powder product purchased from a Safeway
+
+ 2  store?
+
+ 3       A.  That's a much better question, and that would
+
+ 4  be correct.  Thank you.
+
+ 5       Q.  Thank you.
+
+ 6       A.  You worded it much better than I did.
+
+ 7       Q.  Okay.  I'm not going to go into as much detail
+
+ 8  as Mr. Hynes has done, but I'm going to ask you some
+
+ 9  basic questions to make sure I understand your opinions
+
+10  in this case that could impact my client.
+
+11           Do you agree that of all the Johnson's Baby
+
+12  Powder bottles you have tested, some under your own
+
+13  testing, have tested negative or non-detect for the
+
+14  presence of asbestos?
+
+15       A.  I would agree.
+
+16       Q.  And would you agree that any asbestos
+
+17  contamination present within a talc mine would not be
+
+18  evenly distributed throughout the mine?
+
+19       A.  It's not really contamination because
+
+20  contamination suggests that it was -- something foreign
+
+21  was put into the talc mine.  It's accessory minerals
+
+22  rales, and I would agree that you can have different
+
+23  concentrations of these accessory minerals in different
+
+24  areas of the mine.
+
+25       Q.  And so then would you agree that the fact that
+
+
+                                                          318
+
+ 1  you have negative test results proves that the asbestos
+
+ 2  you are finding in the bottles is not evenly distributed
+
+ 3  in the bottles?
+
+ 4       A.  Not in the bottles itself, because the -- the
+
+ 5  material -- the milled material being put into the
+
+ 6  bottles is homogenous, so I would say there are
+
+ 7  differences from bottles to bottles, not particularly in
+
+ 8  any single bottle.  It's not my opinion that it's
+
+ 9  unevenly distributed in the bottle.
+
+10       Q.  Okay.  Maybe I didn't ask a well-worded
+
+11  question there.
+
+12           Within a single bottle, is it your opinion that
+
+13  it's evenly or homogeneously distributed?
+
+14       A.  Yes.
+
+15       Q.  When comparing different bottles from -- well,
+
+16  let me just say, when comparing different bottles of
+
+17  Johnson's Baby Powder, regardless of the source, the
+
+18  time period that they came from, you agree that among
+
+19  different bottles, the level of purported asbestos would
+
+20  be different?
+
+21       A.  It would be in the range of -- yes, they can
+
+22  have different concentrations.  Some of them have the
+
+23  same concentrations or within the level of error, you
+
+24  know, plus or minus 10 or 15 percent, but some can go
+
+25  from non-detect, meaning if there's asbestos present,
+
+
+                                                          319
+
+ 1  it's below the detection limit of the method, some has
+
+ 2  been as high as in the millions, and you will have a
+
+ 3  number of them that are in close range of between 30 and
+
+ 4  60,000 or 80,000 fibers per gram, so there is some
+
+ 5  difference between them, but some of them have
+
+ 6  relatively the same amount.  Some have larger
+
+ 7  differences.  And you look at how many are positive and
+
+ 8  how many are negative.
+
+ 9           You know, Vermont, I think the samples are
+
+10  positive to a level of about 80, 80 percent.  Italian is
+
+11  in the 50 to 60 percent positive range.  Chinese, I
+
+12  think now are up to around 43 or 44 percent positive.
+
+13  No, excuse me, I think it's 51 to 53 percent positive
+
+14  for the Chinese sourced mine.
+
+15       Q.  Okay.  Thank you.  And those positivity rates
+
+16  you just gave, are each of those total average
+
+17  positivity across a number of years?
+
+18       A.  Yes.  Vermont would be approximately '68 to '69
+
+19  to 2003.  The Chinese mine sources from approximately
+
+20  2004 until present, at least for this country in
+
+21  north -- in Canada, the Johnson Baby Powder is not being
+
+22  distributed anymore by Johnson & Johnson.  You could
+
+23  still find them in the shelves occasionally now.
+
+24           And for Italian up to about '67 or '68, except
+
+25  all the way back except for World War II where they were
+
+
+                                                          320
+
+ 1  using a California source, so it just depends on when
+
+ 2  various folks were buying them and when your stores were
+
+ 3  actually opening the doors.
+
+ 4       Q.  Well, that's exactly the question I was going
+
+ 5  to ask you.  So in order to get a specific potential
+
+ 6  positivity rate applicable to Mr. Reyes' use from the
+
+ 7  various stores of my clients, would you need to look at
+
+ 8  the specific dates in order to give them more specific
+
+ 9  calculations?
+
+10       A.  It's not something that I -- I typically -- you
+
+11  know, whenever your store opened, it was available to
+
+12  sell.  I mean, Mr. Reyes didn't come to the
+
+13  United States until 19 -- it's at the tip of my tongue,
+
+14  1982.  So before 1982, he wasn't in the United States.
+
+15  So, you know, when whatever retailers you're
+
+16  representing -- it doesn't matter.  After 1982, then
+
+17  yes.  But it's not important for me to understand what
+
+18  the percentages are for any individual retailer because
+
+19  I'm not providing any testimony like that.
+
+20       Q.  Okay.  Would you agree though, that for
+
+21  instance, the 80 percent number you gave for Vermont
+
+22  testing overall, I heard you to say that that included
+
+23  testing from around '68 to 2003.  In order to be -- I'm
+
+24  sorry, go ahead.
+
+25       A.  Yeah, '69 to 2003, and for Mr. Reyes, it would
+
+
+                                                          321
+
+ 1  be approximately 1983, '82, '83 to 2003.
+
+ 2       Q.  And so in order to get a specific positivity
+
+ 3  rate more applicable to Mr. Reyes, would we need to
+
+ 4  limit the input results to the '82 to 2003 period?
+
+ 5       A.  From the samples analyzed from '82 to 2003?
+
+ 6       Q.  Yes, sir.
+
+ 7       A.  I don't know if that matters that much.  You
+
+ 8  would have to look at the different Vermont mines on the
+
+ 9  positives and negatives.  And because it's all coming,
+
+10  you know, it just depends on which mine they moved to in
+
+11  Vermont, from Ham to Hammondville to Argonaut to
+
+12  Rainbow, and I haven't broken it down like that, so I
+
+13  can't give you that kind of information.
+
+14       Q.  You haven't done a calculation limited to the
+
+15  U.S. exposure years for Mr. Reyes?
+
+16       A.  I have done a calculation for his exposures for
+
+17  the mines.  But I was treating the Vermont mines as a
+
+18  whole, and I've done a calculation, for example,
+
+19  Vermont, he -- you know, he had -- from '82 to 2003, he
+
+20  had 14,600 applications and 116,800 grams.  And that all
+
+21  came out to about 278 15-ounce Johnson Baby Powder
+
+22  containers, since we talked about using a larger size
+
+23  than 9-ounce.
+
+24           And I have opinions about his exposures over
+
+25  that range, but I haven't sat down and said okay, here's
+
+
+                                                          322
+
+ 1  all the positives from '83 to 2003, on what the
+
+ 2  positives are.
+
+ 3       Q.  Okay.  Well, why don't we -- I'm sorry, go
+
+ 4  ahead.
+
+ 5       A.  I just looked at Vermont as a whole, so I'm
+
+ 6  sorry, I cut you off.  You were getting ready to say why
+
+ 7  don't we?
+
+ 8       Q.  Well, move to those calculations, but let me
+
+ 9  ask you a couple more questions before we move to those
+
+10  calculations in your report, okay?
+
+11       A.  Sure.
+
+12       Q.  Okay.  Have you ever been provided information
+
+13  about the total quantity of Johnson Baby Powder, either
+
+14  in bottles or grams or ounces sold in the United States
+
+15  in any given period?
+
+16       A.  I think from time to time under
+
+17  cross-examination in court, I'm showed those numbers.
+
+18  And I think it's just in containers, how many bottles
+
+19  are sold.
+
+20       Q.  And if it's only been in court, is that
+
+21  information that you have been not used or relied upon
+
+22  in doing any of your work or providing your opinions in
+
+23  this litigation?
+
+24       A.  Providing any opinions, you're going to have to
+
+25  clarify.
+
+
+                                                          323
+
+ 1       Q.  Sure.
+
+ 2       A.  If I've only analyzed, and let's pick a number,
+
+ 3  200 bottles of Johnson Baby Powder from various decades,
+
+ 4  and these are the percentage that I have, and these are
+
+ 5  random bottles that we've analyzed, and I think you're
+
+ 6  suggesting that if they sold, you know, a hundred
+
+ 7  million bottles, how can you say that you have the
+
+ 8  probability that you will have this same percentage of
+
+ 9  positives?
+
+10       Q.  Great question.  Can you answer it?
+
+11       A.  That's out of my area.  I think Dr. Madigan
+
+12  gave a deposition along this line, since he is a
+
+13  statistician, professor of statistics, 300 references,
+
+14  and I think he gets the probability of what is the
+
+15  probability that I've only tested the positive bottles,
+
+16  compared to what is the probability of -- that this
+
+17  randomness is consistent with, would be consistent
+
+18  with -- this random population that I've tested would be
+
+19  consistent with the overall population of what you would
+
+20  expect to find.  And his numbers of the probability of
+
+21  me only finding, or ever getting the positive samples
+
+22  is -- the statistics of it are astronomically low.
+
+23           But, I'm not a statistician.  I don't pretend
+
+24  to be, so I leave that to him to make that argument.
+
+25       Q.  Okay.  I just want to ask about your testing
+
+
+                                                          324
+
+ 1  then, what you talked about generally a few minutes ago.
+
+ 2       A.  Sure.
+
+ 3       Q.  Would you agree that since 1982, there are
+
+ 4  years for which you have not tested any Johnson talcum
+
+ 5  powder products?
+
+ 6       A.  From 1982?
+
+ 7       Q.  Uh-huh.
+
+ 8       A.  I have to find my report.  I think there is a
+
+ 9  year or two in there that's not in the '80s.  I thought
+
+10  I had that out here.
+
+11           If you want to give me a second, I will grab
+
+12  the ovarian cancer samples.
+
+13           (Pause.)
+
+14           THE WITNESS:  So we have tested '82, '83, '84,
+
+15  '85, two from '86 and an '89 railroad car sample.  And
+
+16  then for the '90s, we have '90, '91, '94, '95, '96, '99,
+
+17  and 2001, 2000 -- 2001 to 2002.  And 2003.
+
+18           So we're missing '87 and '80.  So yes, there's
+
+19  two years we're missing in the 1980s.
+
+20  BY MS. WHITE:
+
+21       Q.  And then in the '90s, would it be fair to say
+
+22  you're missing '92, '93, '97 and '98?
+
+23       A.  That would be fair.
+
+24       Q.  And looking at those same testing charts that I
+
+25  think we're looking at the same thing, is it -- it's my
+
+
+                                                          325
+
+ 1  review of this that for any given year, you've never
+
+ 2  tested more than three bottles or three samples of
+
+ 3  talcum powder for any specific year?
+
+ 4       A.  That is correct.
+
+ 5       Q.  Okay.  Okay.  I would like to look at
+
+ 6  Exhibit 6, which --
+
+ 7       A.  Which is what?
+
+ 8       Q.  I'm trying to use the exhibits from Kevin so we
+
+ 9  can all stay on the same page.  I believe this is your
+
+10  case specific report.
+
+11       A.  Okay.
+
+12       Q.  And it's dated September 16th, 2020.  Does that
+
+13  sound right?
+
+14       A.  Yes, ma'am.
+
+15       Q.  Okay.  Now, I've looked at the report,
+
+16  Dr. Longo, and would you agree with me that the words
+
+17  Lucky, Longs or Safeway are not in your report?
+
+18       A.  I would agree with you.
+
+19       Q.  Okay.  And I see a list of nine items you
+
+20  reviewed to prepare this report; is that the correct
+
+21  list of nine items?
+
+22       A.  It is.
+
+23       Q.  And so for your preparing this report, you did
+
+24  not review any discovery responses, briefing, documents,
+
+25  other materials that relate to Lucky, Longs or Safeway?
+
+
+                                                          326
+
+ 1       A.  That's correct.
+
+ 2       Q.  Were you provided at any time any information
+
+ 3  regarding the chain of distribution from Johnson &
+
+ 4  Johnson to end users or retailers for any time period?
+
+ 5       A.  No.
+
+ 6       Q.  Do you have any information regarding the
+
+ 7  amount of product distributed from Johnson & Johnson to
+
+ 8  Lucky, Longs and Safeway at any time?
+
+ 9       A.  No.
+
+10       Q.  Do you have any information regarding the
+
+11  amount of Johnson's Baby Powder sold at Longs, Lucky or
+
+12  Safeway at any time?
+
+13       A.  No.
+
+14       Q.  For these nine items, do you review the
+
+15  deposition testimony in full?
+
+16       A.  I do.
+
+17       Q.  And so from that, were you aware that the
+
+18  plaintiff testified to shopping at at least six
+
+19  different stores?
+
+20       A.  Since it's not an area that I testify about, I
+
+21  see what they say, but I don't recall what they said
+
+22  because it's not part of my report where they purchased
+
+23  the product from.
+
+24       Q.  If I asked you to assume that all the Johnson
+
+25  Baby Powder in this case was purchased at Target, would
+
+
+                                                          327
+
+ 1  any of your opinions change?
+
+ 2       A.  No.
+
+ 3       Q.  Okay.  So I want to talk about those
+
+ 4  calculations you brought up a little earlier, and this
+
+ 5  is on page 4 of your case specific report where I was
+
+ 6  looking.  And is it true that you have calculated 14,600
+
+ 7  applications during the Vermont time period for 1983
+
+ 8  through 2003?
+
+ 9       A.  Yes, that is true.
+
+10       Q.  And what would be the basis for the numbers
+
+11  that were input to do the calculation?
+
+12       A.  Mr. Reyes testified that his habits of using
+
+13  Johnson Baby Powder right under personal use, he said he
+
+14  would apply the Johnson's Baby Powder around his neck,
+
+15  under his armpits, front, back of his torso -- so I put
+
+16  armpits twice.  His shirt he's wearing, and he would
+
+17  shake the shirt, and then he would do it again.  He did
+
+18  that in the morning and after a shower and before he
+
+19  went to bed at night, and so he said he did that every
+
+20  day.  So that's two times a day, times 365 times 20
+
+21  years, and that would cover the Vermont period of 1983
+
+22  to 2003.
+
+23       Q.  And so I'm understanding your answer to be that
+
+24  the only information to give you what you needed to run
+
+25  this calculation came from Mr. Reyes' testimony?
+
+
+                                                          328
+
+ 1       A.  That is correct.
+
+ 2       Q.  And if Mr. Reyes' testimony were different or
+
+ 3  changed, your calculations would be changed?
+
+ 4       A.  No.  And, you know, his wife testified, too,
+
+ 5  about what he did.  Yes, if there's different data
+
+ 6  input, there will be different results.
+
+ 7       Q.  So then looking at the same type of
+
+ 8  calculation, you did a separate calculation for the --
+
+ 9  what you're calling I think the Chinese use period, from
+
+10  2004 to 2018; is that right?
+
+11       A.  That's correct.
+
+12       Q.  And you got 10,950 applications?
+
+13       A.  Yes, ma'am.
+
+14       Q.  Okay.  And then if we go to page 6 of your
+
+15  report -- I'm sorry, page 7.  I'll skip to page 7 of
+
+16  your report.
+
+17           You used these two calculations based on the
+
+18  testimony of Mr. and Mrs. Reyes about their product use
+
+19  in order to calculate the number of 15-ounce bottles
+
+20  that they would have used over those time periods; is
+
+21  that correct?
+
+22       A.  Yes, ma'am.
+
+23       Q.  And so based on their testimony of twice daily
+
+24  product use, you calculated 278 15-ounce Johnson Baby
+
+25  Powder containers would have been used over the period
+
+
+                                                          329
+
+ 1  of 1983 to 2003?
+
+ 2       A.  That is correct.
+
+ 3       Q.  And I am not a mathematician or a scientist,
+
+ 4  but I think that I could fairly calculate that that's
+
+ 5  about 14 bottles per year.  Does that sound fair to you?
+
+ 6       A.  278 divided by, was it 15 years?
+
+ 7       Q.  I think it's 20 years, from '83 to 2003?
+
+ 8       A.  That's correct, you divide that by 20 and
+
+ 9  divide that by 12, that should give you the number.
+
+10       Q.  So just to clarify, I divided it by 20 and got
+
+11  to about 14 per year.  I did not divide it by 12 for
+
+12  the --
+
+13       A.  That's approximately one bottle a month.
+
+14       Q.  Okay.  And I did the same for the Chinese talc
+
+15  calculations 2004 to 2018, where you calculated 208
+
+16  bottles over a 14-year period, and I got pretty close to
+
+17  the same, which was 14.8 bottles per year.
+
+18           Does that work out to be correct?
+
+19       A.  Correct.
+
+20       Q.  Okay.  Of those 14 bottles per year that we
+
+21  have looked at for both time periods, again, the
+
+22  calculations that went into producing that are based
+
+23  solely on the testimony of the plaintiffs, right?
+
+24       A.  That's correct, Mr. Reyes and Mrs. Reyes.
+
+25       Q.  Now, after you reviewed the nine depositions
+
+
+                                                          330
+
+ 1  listed in your list on Exhibit 6, do you -- would you
+
+ 2  have had enough information to calculate how many
+
+ 3  bottles Mr. Reyes used from Safeway?
+
+ 4       A.  I don't know if I had enough information or not
+
+ 5  because that's not part of what I testify about.
+
+ 6       Q.  Didn't do that calculation?
+
+ 7       A.  No, ma'am.  Again, I don't provide
+
+ 8  information -- it's immaterial to me where the
+
+ 9  Plaintiffs bought the Johnson Baby Powder containers
+
+10  because I'm just dealing with what's in the baby powder
+
+11  container.  I know it's not immaterial to Safeway, and I
+
+12  don't mean any disrespect about that, but it's not an
+
+13  area that I testify to.  When I'm called to court to
+
+14  testify, my testimony won't involve any -- I won't be
+
+15  saying "Safeway."
+
+16       Q.  Okay.  That's a segue to my next question here.
+
+17  I wanted to ask you about the declaration you provided
+
+18  in opposition to Defendants' summary judgment in this
+
+19  case.
+
+20           Do you have that?
+
+21       A.  I don't think I have a copy of it handy.
+
+22           MS. WHITE:  Okay.  I sent one to your counsel
+
+23  as well as Kevin and Alex, I copied you guys.
+
+24           THE WITNESS:  Yeah.  I had it up at one point,
+
+25  but I've got so much stuff laying around here.
+
+
+                                                          331
+
+ 1  BY MS. WHITE:
+
+ 2       Q.  So were you aware that that declaration was
+
+ 3  submitted in opposition to Safeway's motion for summary
+
+ 4  judgment?
+
+ 5       A.  I would have to see it.  If you want, you can
+
+ 6  send it to -- send it to Henry, and he can send it to
+
+ 7  me, so at least I can look at it.
+
+ 8       Q.  Sure, and I --
+
+ 9           MR. STEINBERG:  Meredith, I haven't received it
+
+10  so --
+
+11           THE WITNESS:  I have to take a break for a
+
+12  second.
+
+13           MS. WHITE:  We'll go off the record, obviously.
+
+14           (Recess.)
+
+15           MS. WHITE:  Back on the record.
+
+16  BY MS. WHITE:
+
+17       Q.  Dr. Longo, do you have a copy of the
+
+18  declaration that you submitted in this case in support
+
+19  of Plaintiffs' opposition to Defendant's motion for
+
+20  summary judgment?
+
+21       A.  I do.
+
+22       Q.  And what does the first page of the document
+
+23  you are looking at say on it?
+
+24       A.  The very first page?
+
+25       Q.  Very first page.
+
+
+                                                          332
+
+ 1       A.  There's a lot of writing on here.  Declaration
+
+ 2  of William E. Longo, Ph.D. in Opposition of Defendants'
+
+ 3  Motion for Summary Judgment and/or Adjudication.
+
+ 4       Q.  Okay.  And --
+
+ 5       A.  I'm sorry.
+
+ 6       Q.  No, what I wanted to ask you is, in opposition
+
+ 7  to my client's summary judgment motions we were provided
+
+ 8  a copy of that declaration title you just read, but on
+
+ 9  top of it was a cover sheet that said declaration of
+
+10  William E. Longo Ph.D. in opposition to Defendant Lucky
+
+11  Stores, Inc.'s motion for summary judgment in opposition
+
+12  to Defendant Safeway's motion for summary judgment and
+
+13  in opposition to Defendant Longs Drug Store's motion for
+
+14  summary judgment, and I'm wondering if you had seen a
+
+15  copy of your declaration with any of those cover pages
+
+16  directed at my client?
+
+17       A.  I have not.
+
+18           MR. STEINBERG:  Objection.  Argumentative.
+
+19  Assumes facts.  And for the record, the version that I
+
+20  just received from Defense Counsel does not state what
+
+21  counsel just said it says.
+
+22           MS. WHITE:  What does the version you got say?
+
+23           MR. STEINBERG:  Counsel, please use your time
+
+24  questioning Dr. Longo.  My objection is assumes facts
+
+25  and argumentative.
+
+
+                                                          333
+
+ 1           MS. WHITE:  Okay.  Well, I tried to send one
+
+ 2  version of the document to get this testimony.  There
+
+ 3  were three documents submitted, that's undisputed, it's
+
+ 4  a matter a public record.  I file shared those with you,
+
+ 5  Henry.  If you are able to share those with Dr. Longo,
+
+ 6  that would allow us to close out this questioning.
+
+ 7           MR. STEINBERG:  I have not received anything
+
+ 8  from you, Counsel.  I have one document that you passed
+
+ 9  on to J&J, which J&J passed on to me.  You knew for
+
+10  weeks that you wanted to use this with Dr. Longo, and
+
+11  you waited until 2 1/2 or 2 hours and 45 minute into a
+
+12  3-hour time window this morning.  That's on you,
+
+13  Counsel, with all due respect.
+
+14           MS. WHITE:  Okay.  I'm trying to make it clear
+
+15  when my exhibits are being used, so I was waiting
+
+16  honestly to avoid any confusion.  I'm sorry if this
+
+17  created a problem.
+
+18  BY MS. WHITE:
+
+19       Q.  What I'm trying to understand, Dr. Longo, is
+
+20  just this, that -- my understanding of your answer to
+
+21  several of my questions this morning has been that you
+
+22  do not intend to offer any opinions regarding any of my
+
+23  three clients, yet I'm trying to reconcile that with the
+
+24  fact that your declaration was submitted individually in
+
+25  opposition to each of their motions for summary
+
+
+                                                          334
+
+ 1  judgment, and I just wanted to know if you knew that
+
+ 2  that is how it was going to be used?
+
+ 3       A.  Well, you're misunderstanding what I'm saying.
+
+ 4  I'm not -- as I stated when we started this, that I am
+
+ 5  not going to be testifying about any of the conduct of
+
+ 6  any of your retail clients.  I'm not going to be
+
+ 7  testifying what they should have known or that.
+
+ 8           What I am going to be testifying about is if,
+
+ 9  in fact, you sold these Johnson Baby Powder containers,
+
+10  this is what we found in Johnson Baby Powder container,
+
+11  and my whole -- so not if I'm not providing -- if
+
+12  somebody, if I'm asked in court, well, if -- you know,
+
+13  the plaintiff had to get them from somewhere.
+
+14           My testimony and my work and my research
+
+15  involves what's in the container.  It's immaterial where
+
+16  it comes from, but obviously it came from someplace.  So
+
+17  if your client sold Johnson's Baby Powder during that
+
+18  time frame, I have an opinion about how much asbestos is
+
+19  going to be in it and about Mr. Reyes' exposure, but I'm
+
+20  not going to be giving any corporate conduct testimony
+
+21  or what Safeway should have known or should Safeway have
+
+22  had tested it or anything like that.  But I will testify
+
+23  about what's in the container.  If it came from Safeway,
+
+24  if it came from Target, if it came from a grocery store,
+
+25  doesn't matter.  They're selling a product, and my
+
+
+                                                          335
+
+ 1  opinion, it has a certain concentration -- potential for
+
+ 2  certain concentrations of asbestos.
+
+ 3       Q.  And, okay.  So if I represent three retailers,
+
+ 4  if one of them only sold Mr. Reyes one bottle, and the
+
+ 5  other one sold him the other 200 plus that you've
+
+ 6  calculated in any given time period, would you have an
+
+ 7  opinion about where it was most likely that he received
+
+ 8  bottles that contained asbestos?
+
+ 9       A.  Well, of course.  If you only sold one bottle
+
+10  ever to the plaintiff from one store, and another store
+
+11  sold him all these other bottles, my opinion, if asked,
+
+12  you know, in trial, my opinion would be that the one
+
+13  bottle would represent this potential for exposure, but
+
+14  the 200 and something increases that, and that would be
+
+15  more significant.  If asked, but I have never been asked
+
+16  that.
+
+17       Q.  I'm looking at my notes.
+
+18       A.  You have five more minutes.  Take your time.
+
+19       Q.  Earlier when we were talking, Dr. Longo, I
+
+20  wrote down that when you were talking about your testing
+
+21  of Chinese talc in the time period 2004 to the present,
+
+22  that you originally gave a number around 43 to
+
+23  44 percent tested positive, and then you revised that
+
+24  here today in our discussion to 51 to 53 percent, and I
+
+25  was wondering if you could explain to me which one is
+
+
+                                                          336
+
+ 1  accurate as of today?
+
+ 2       A.  As of today, the -- it's 53 percent, I believe,
+
+ 3  and that has to do with the addition of the 2020
+
+ 4  off-the-shelf 1.5-ounce container report in which all
+
+ 5  three samples were positive for chrysotile asbestos.
+
+ 6       Q.  Okay.  And without the 2020 off-the-shelf, if
+
+ 7  we were to, say, limit the bottles of Chinese talc to
+
+ 8  the time period ending in 2018, would the positivity
+
+ 9  rate be closer to the 43 percent you mentioned?
+
+10       A.  Yes, it would.
+
+11       Q.  Okay.  I'm going to try, in my last two or
+
+12  three minutes here, to ask you a couple questions about
+
+13  the off-of-shelf testing that you just mentioned, okay,
+
+14  Dr. Longo?
+
+15       A.  Sure.
+
+16       Q.  I'm looking at Exhibit 34, I think, which is
+
+17  the 2020 off-the-shelf testing, and it's, I think
+
+18  Exhibit 34 is labeled Supplemental Report 1.  And we
+
+19  went over the changes or corrections that you made to
+
+20  create the supplemental report already today, right?
+
+21       A.  Yes, we did.
+
+22       Q.  So I just wanted to ask you a few more basic
+
+23  questions about this report.  I'm looking at chain of
+
+24  custody documents near the front of the report behind
+
+25  the same tab that says Section 2.
+
+
+                                                          337
+
+ 1       A.  Yes.
+
+ 2       Q.  And it's two pages, and it lists what looks to
+
+ 3  be 13 products or samples; is that right?
+
+ 4       A.  It does.
+
+ 5       Q.  And I understood your testimony earlier to be
+
+ 6  that no one had asked you to do this analysis?
+
+ 7       A.  No one asked me to go out and, and -- hey, go
+
+ 8  get some containers off the shelf.  I went out and did
+
+ 9  that.
+
+10       Q.  And why?
+
+11       A.  Because I wanted to see if this product was
+
+12  still on shelves after the fact that Johnson & Johnson
+
+13  said they were no longer selling it, on May 27th.  I
+
+14  wanted to see if any of the retailers were taking them
+
+15  off the shelf.
+
+16       Q.  Okay.  And so I see here some bottles from CVS;
+
+17  is that correct?
+
+18       A.  Yeah, we analyzed one of those.
+
+19       Q.  And then some other bottles from Walgreens,
+
+20  correct?
+
+21       A.  Correct, we analyzed the two CVS and the one
+
+22  Walgreens.  We haven't analyzed the second Walgreens or
+
+23  the Publix or the additional CVSs at a different
+
+24  store are -- oh, there's one, Marietta and Smyrna, I
+
+25  didn't go get those.  I asked some of my staff where
+
+
+                                                          338
+
+ 1  they lived, if they would go look and see if these
+
+ 2  bottles are around.
+
+ 3           MS. WHITE:  Okay.  So I guess, let's go off the
+
+ 4  record for a second.
+
+ 5           THE WITNESS:  Sure.
+
+ 6           (Discussion off the record.)
+
+ 7           MR. STEINBERG:  Back on the record.
+
+ 8           Meredith, we're back on the record.  Dr. Longo
+
+ 9  departed because he only had three hours this morning.
+
+10  He's now been deposed for 12 hours in this case.
+
+11  Johnson & Johnson used about 11 and a half of them.
+
+12  Meredith, you just mentioned that you have about 15 more
+
+13  minutes for the retailer defendants.  Thank you for that
+
+14  estimate.  And I wanted to ask the other parties how
+
+15  much time they need.
+
+16           Johnson & Johnson, your -- end of your
+
+17  deposition wasn't clear.  Is Johnson & Johnson finished,
+
+18  or does Johnson & Johnson believe they need additional
+
+19  time with Dr. Longo?
+
+20           MR. HYNES:  It depends upon our meeting and
+
+21  conferring about some of the materials that we've been
+
+22  discussing that haven't been produced to date.  So we
+
+23  likely need some additional time.  I wouldn't imagine it
+
+24  would be more than 30, 45 minutes.
+
+25           MR. STEINBERG:  Okay.  So 30 or 45 minutes from
+
+
+                                                          339
+
+ 1  Johnson & Johnson.  And counsel for O'Reilly?
+
+ 2           MR. HUGO:  Edward Hugo.  I expect to be a lot
+
+ 3  less than three hours, probably less than two.
+
+ 4           MR. STEINBERG:  Thank you, Mr. Hugo.
+
+ 5           Any other -- any tighter estimate other than
+
+ 6  under two hours?
+
+ 7           MS. WHITE:  Well, I don't think he said --
+
+ 8           MR. STEINBERG:  I apologize, so I'm glad I'm
+
+ 9  clarifying.  What is your time estimate?
+
+10           MR. HUGO:  Less than three hours, probably less
+
+11  than two.
+
+12           MR. STEINBERG:  Okay.
+
+13           MR. HUGO:  Important part at this point in
+
+14  time, it needs to be scheduled, first of all, not at
+
+15  6:00 a.m.  And second, not when we're in virtual court
+
+16  where I have to be, as well.
+
+17           MS. WHITE:  Yeah, I don't know if you know that
+
+18  schedule because we don't know it yet for sure.  All I
+
+19  know is that we have court in 25 minutes for the rest of
+
+20  today.  We have to do some mini openings tomorrow, which
+
+21  I don't think we know the times yet, but Kevin or
+
+22  Mr. Hugo can correct me if I'm wrong.  And then I
+
+23  suspect we're going to have court at some point on
+
+24  Thursday and/or Friday, with the ongoing motions that we
+
+25  need to be heard.  So I'm not sure if we know our
+
+
+                                                          340
+
+ 1  schedule for sure, if that makes sense.
+
+ 2           MR. HYNES:  We know that Monday is dark.
+
+ 3           MS. WHITE:  I'm sorry?
+
+ 4           MR. HYNES:  We know that Monday is dark.
+
+ 5           MR. STEINBERG:  In terms of the actual time,
+
+ 6  we'll handle that off the record.  I don't know, so
+
+ 7  Dr. Longo can't go for hundreds of hours by Johnson &
+
+ 8  Johnson and Johnson & Johnson defendants.  He's been
+
+ 9  deposed for 12 hours in this case.  His time is not
+
+10  unlimited.
+
+11           It's unclear, you know, at this point we're
+
+12  looking at as much as an additional four hours.  That
+
+13  would be a 16-hour deposition.  I don't know that
+
+14  Plaintiffs can accommodate that.  I think that's
+
+15  unreasonable, I will state, so we will continue to meet
+
+16  and confer off the record.
+
+17           I have for the retail defendants,
+
+18  Ms. Thornburg-White, 15 minutes.  Johnson & Johnson says
+
+19  30 to 45 more minutes.  And friction defendant, Ed Hugo,
+
+20  says less than three hours, probably less than two
+
+21  hours.  Is that all correct?
+
+22           MS. WHITE:  That's an estimate, yes.
+
+23           MR. HUGO:  So we have some analogy here, you
+
+24  guys deposed my expert Dr. Attanoos, two sessions for
+
+25  about six and a half hours, and I haven't asked one
+
+
+                                                          341
+
+ 1  question.  So my time estimate is not unreasonable.
+
+ 2           MR. HYNES:  Henry, I'll just note then with
+
+ 3  respect to Johnson & Johnson in this case alone,
+
+ 4  Dr. Longo has produced a number of different reports
+
+ 5  totaling well over a thousand pages and backup, taking
+
+ 6  into account his new report he's also relying on, you
+
+ 7  know, well over a dozen prior reports which total in the
+
+ 8  thousands of pages, and I have been as efficient as we
+
+ 9  can possibly be wading through all the materials that
+
+10  he's intending to rely on for his opinions in this case,
+
+11  and, you know, the 30- to 45-minute estimate may be
+
+12  shorter, you know, based on our meet and confer, and
+
+13  we're happy to do that.
+
+14           MS. WHITE:  And I suppose the retailers should
+
+15  just add, that, you know, we're trying to be efficient.
+
+16  We do represent three distinct entities that the
+
+17  plaintiffs have chosen to keep in this case with three
+
+18  distinct shopping periods.  Despite that, I tried to be
+
+19  judicious with my time.  I feel like for me to take an
+
+20  additional 15, at the most 30 minutes, to question this
+
+21  important expert who many of the other experts rely on
+
+22  and who have continued to produce new material that I
+
+23  have tried keep up with, is not unreasonable.  And I
+
+24  know you we should meet and confer further, but the
+
+25  extent that timing or preparedness for trial comes up on
+
+
+                                                          342
+
+ 1  any of our conferences, speaking for my clients, we're
+
+ 2  going to have to be honest with the court about where we
+
+ 3  are.
+
+ 4           MR. STEINBERG:  And all of that issue is a
+
+ 5  result of Johnson & Johnson having gone over 11 and a
+
+ 6  half hours, stating that they now need over 12 hours,
+
+ 7  and having made -- yes, there was two new reports
+
+ 8  produced in this case, it's normal for there to be one
+
+ 9  or two reports, experts to produce a report or two in
+
+10  each case.  Johnson & Johnson has chosen to spend hours
+
+11  and hours reviewing old reports that have been the topic
+
+12  of cross-examination at trial and numerous depositions.
+
+13           Obviously, we all can agree to disagree at this
+
+14  point.  We will discuss further scheduling off the
+
+15  record.  I appreciate everyone giving me their estimates
+
+16  of how much time they believe they require.
+
+17           With that, I think we can probably go off the
+
+18  record for the day.
+
+19           MR. HYNES:  I'll just say one last thing.  I
+
+20  disagree with Plaintiffs' Counsel's characterization of
+
+21  the manner of which we have handled this going through
+
+22  his reports and opinions and the bases for doing, and
+
+23  there are a lot of reports and a lot of opinions and a
+
+24  lot of bases for.
+
+25           MR. STEINBERG:  Off the record.
+
+
+                                                          343
+
+ 1           (Discussion of the record.)
+
+ 2           THE REPORTER:  Would anyone like to order a
+
+ 3  copy of the transcript before you hang up?
+
+ 4           MS. WHITE:  I would, it's Meredith.
+
+ 5           MR. STEINBERG:  I'm sure Plaintiffs have a
+
+ 6  standing rush if possible order, so whatever that stands
+
+ 7  there, and if we don't, then we should.
+
+ 8           (Off the record at 9:09 a.m.)
+
+ 9                             --o0o--
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+
+                                                          344
+
+ 1                      SIGNATURE OF DEPONENT
+
+ 2
+
+ 3       I, the undersigned, WILLIAM E. LONGO, Ph.D., do
+
+ 4  hereby certify that I have read the foregoing deposition
+
+ 5  and find it to be a true and accurate transcription of
+
+ 6  my testimony, with the following corrections, if any:
+
+ 7  PAGE     LINE                    CHANGE
+
+ 8  ____     ____     ______________________________________
+
+ 9  ____     ____     ______________________________________
+
+10  ____     ____     ______________________________________
+
+11  ____     ____     ______________________________________
+
+12  ____     ____     ______________________________________
+
+13  ____     ____     ______________________________________
+
+14  ____     ____     ______________________________________
+
+15  ____     ____     ______________________________________
+
+16  ____     ____     ______________________________________
+
+17  ____     ____     ______________________________________
+
+18  ____     ____     ______________________________________
+
+19  ____     ____     ______________________________________
+
+20  ____     ____     ______________________________________
+
+21  ____     ____     ______________________________________
+
+22  ____     ____     ______________________________________
+
+23  ____     ____     ______________________________________
+
+24
+                           _________________________________
+25                         WILLIAM E. LONGO, Ph.D., Date
+
+
+                                                          345
+
+ 1                      REPORTER'S CERTIFICATE
+
+ 2
+
+ 3       I, JANICE L. BELCHER, do hereby certify:
+
+ 4       That WILLIAM E. LONGO, Ph.D., in the foregoing
+
+ 5  deposition named, was present and by me sworn as a
+
+ 6  witness in the above-entitled action at the time therein
+
+ 7  specified;
+
+ 8       That said deposition was taken before me at said
+
+ 9  time, and was taken down in shorthand by me, a
+
+10  Certified Shorthand Reporter of the State of California,
+
+11  and was thereafter transcribed into typewriting, and
+
+12  that the foregoing transcript constitutes a full, true
+
+13  and correct report of said deposition and of the
+
+14  proceedings that took place;
+
+15       IN WITNESS WHEREOF, I have hereunder subscribed my
+
+16  hand this 10th day of October, 2020.
+
+17
+
+18
+
+19
+
+20                 <%12163,Signature%>
+
+21                 JANICE L. BELCHER, CSR No. 12342
+                   State of California
+22
+
+23
+
+24
+
+25
+
+
+
+

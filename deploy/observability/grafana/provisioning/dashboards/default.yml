@@ -1,0 +1,16 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
+apiVersion: 1
+
+providers:
+  - name: AttorneyOS
+    orgId: 1
+    folder: AttorneyOS
+    type: file
+    disableDeletion: false
+    editable: true
+    updateIntervalSeconds: 10
+    options:
+      path: /etc/grafana/provisioning/dashboards/json

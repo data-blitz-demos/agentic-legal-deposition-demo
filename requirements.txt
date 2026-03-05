@@ -10,3 +10,4 @@ python-dotenv>=1.0.1
 mcp>=1.2.0
 neo4j>=5.28.0
 rdflib>=7.1.0
+prometheus-client>=0.20.0

@@ -1,0 +1,4076 @@
+0395
+ 1        SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                FOR THE COUNTY OF ALAMEDA
+ 3   
+ 4   CHRISTINA G. PRUDENCIO,       )
+                                   )
+ 5             Plaintiff,          )
+                                   )
+ 6   vs.                           ) Case No. RG20061303
+                                   )
+ 7   JOHNSON & JOHNSON; JOHNSON &  )
+     JOHNSON CONSUMER INC. (Sued   )
+ 8   individually and as           )
+     successor-in-interest to      )
+ 9   JOHNSON & JOHNSON CONSUMER    )
+     COMPANIES, INC.), et al.,     )
+10                                 ) Volume 3
+               Defendants.         )
+11   ______________________________) (Pages 395 to 549)
+12   
+13   
+14   
+15                REMOTE VIDEO-RECORDED DEPOSITION OF
+16                         WILLIAM LONGO, PHD
+17                             May 21, 2021
+18                             8:14 a.m.
+19   Taken before Grace Chung, CSR No. 6246, RMR, CRR
+20   
+21   
+22   
+23   
+24   
+25   
+0396
+ 1           SUPERIOR COURT OF THE STATE OF CALIFORNIA
+ 2                     FOR THE COUNTY OF ALAMEDA
+ 3   
+ 4   CHRISTINA G. PRUDENCIO,       )
+                                   )
+ 5             Plaintiff,          )
+                                   )
+ 6   vs.                           ) Case No. RG20061303
+                                   )
+ 7   JOHNSON & JOHNSON; JOHNSON &  )
+     JOHNSON CONSUMER INC. (Sued   )
+ 8   individually and as           )
+     successor-in-interest to      )
+ 9   JOHNSON & JOHNSON CONSUMER    )
+     COMPANIES, INC.), et al.,     )
+10                                 )
+               Defendants.         )
+11   ______________________________)
+12   
+13   
+14             Volume 3 of the remote video-recorded deposition of
+15   WILLIAM LONGO, PHD, on behalf of the Defendants, before Grace
+16   Chung, a Certified Shorthand Reporter for the State of
+17   California, RMR, CRR, commencing on Friday, May 21, 2021, at
+18   8:14 a.m., via Zoom Videoconferencing.
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0397
+ 1   APPEARANCES OF COUNSEL (all appearances via Zoom):
+ 2   For the Plaintiff:
+ 3       IAN A. RIVAMONTE, ESQ.
+         KAZAN, MCCLAIN, SATTERLEY & GREENWOOD
+ 4       55 Harrison Street, Suite 400
+         Oakland, California 94607
+ 5       (877) 995-6372
+        irivamonte@kazanlaw.com
+ 6   
+ 7   For the Defendants Johnson & Johnson and Johnson & Johnson
+     Consumer Inc.:
+ 8   
+         MORTON DUBIN, ESQ.
+ 9       KING & SPALDING LLP
+         1185 Avenue of the Americas, 34th Floor
+10       New York, New York 10036
+         (212) 790-5349
+11       mdubin@kslaw.com
+12   
+     For the Defendant Vi-Jon:
+13   
+         SHANA E. RUSSO, ESQ.
+14       REED SMITH LLP
+         506 Carnegie Center, Suite 300
+15       Princeton, New Jersey 08540
+         (609) 987-0050
+16       srusso@reedsmith.com
+17   
+     For the Defendants Longs Drug Stores California, L.L.C. on
+18   behalf of Longs Drug Stores California, Inc.; Albertsons
+     Companies, Inc.; Safeway Inc.; Lucky Stores, Inc.:
+19   
+         MITCHELL R. CHARCHALIS, ESQ.
+20       BARNES & THORNBURG
+         2029 Century Park East, Suite 300
+21       Los Angeles, California 90067
+22       (310) 284-3768
+         mcharchalis@btlaw.com
+23   
+24   Also appearing:  PHIL LOVE, videographer
+25   
+0398
+ 1                       I N D E X
+ 2   WITNESS    EXAMINATION                                 PAGE
+ 3   WILLIAM LONGO
+ 4                BY MR. DUBIN                               400
+ 5                BY MR. CHARCHALIS                          459
+ 6                BY MS. RUSSO                               529
+ 7                BY MR. DUBIN                               539
+ 8                BY MR. CHARCHALIS                          545
+ 9   
+10                             EXHIBITS
+11   NO.           DESCRIPTION                              PAGE
+12   Exhibit 18    MAS Chart of J&J Testing, dated January  466
+                   31, 2021 (45 pages)
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0399
+ 1                      Friday, May 21, 2021
+ 2                           8:14 a.m.
+ 3             THE VIDEOGRAPHER:  Good morning.  We are
+ 4   now on the record.  This begins Videotape Number 1
+ 5   in the deposition of Dr. William Longo in the
+ 6   matter of Christina G. Prudencio versus Johnson &
+ 7   Johnson, et al., Volume 3, filed in the Superior
+ 8   Court of the State of California for the County of
+ 9   Alameda.
+10             Today is May 21st, 2021, and the time is
+11   8:16 a.m.  This deposition is being held as a
+12   virtual Zoom call.  The videographer is Phil Love,
+13   and the court reporter is Grace Chung, both here
+14   representing iDepo Reporters.  Will counsel please
+15   voice-identify yourselves for the record.
+16             MR. RIVAMONTE:  Ian Rivamonte for the
+17   plaintiff.
+18             MR. DUBIN:  Morton Dubin for Johnson & Johnson.
+19             MS. RUSSO:  Shana Russo for Vi-Jon.
+20             MR. CHARCHALIS:  Mitch Charchalis from
+21   Barnes & Thornburg on behalf of the retailers.
+22             THE VIDEOGRAPHER:  Will the court reporter
+23   please swear in the witness.
+24                    WILLIAM LONGO,
+25        having been first duly sworn, was examined
+0400
+ 1               and testified as follows:
+ 2   
+ 3                        EXAMINATION
+ 4   BY MR. DUBIN:
+ 5        Q.   Hi, how are you today, Dr. Longo?
+ 6        A.   Pretty good, Mr. Dubin.  How are you this
+ 7   morning?
+ 8        Q.   About as usual.  So I'm going to start --
+ 9   I'm going try to move relatively quickly today
+10   since the deposition is -- I would like to conclude
+11   today if possible.
+12             So let me first start by asking you about
+13   the status of your compliance with Judge Lee's order
+14   regarding financial information.  Can you tell me
+15   what you've done, where you are with that?
+16        A.   We are going through them now, so I hope
+17   to be done within a week, on the outside, maybe
+18   two.
+19        Q.   Okay.  And how much have you completed so
+20   far?
+21        A.   I don't know the totality of what we have
+22   completed.  But I've got to start my review to
+23   see -- make sure that they are compliant to the
+24   order, so, again, it will be about a week, maybe
+25   two at the outside.
+0401
+ 1        Q.   Is it fair to say, then, that you're not
+ 2   prepared today to give me that kind of information
+ 3   about the financial records?
+ 4        A.   That is correct.
+ 5        Q.   Okay.  So we'll deal with that another
+ 6   time.
+ 7             So the next thing I want to talk to you
+ 8   about, hopefully relatively briefly, I received a
+ 9   report titled "RJ Lee Group TEM Grids, MAS Project
+10   Number M71307."  That's the thing that you produced
+11   recently?
+12        A.   Yes.
+13        Q.   And so let's see if I can try to move
+14   fairly quickly through what you found or didn't
+15   find in that report.  Do you have a copy of it with
+16   you if you need to refer to it?
+17        A.   I do have it.
+18        Q.   So from what I can see, how many samples
+19   did you look at?  Give me an approximate list
+20   there.
+21        A.   Let's see.  It looks like from -- without
+22   counting them up, it looks like we have 14 of the
+23   34 grids.
+24        Q.   And it looks like you identified
+25   chrysotile in one sample?
+0402
+ 1        A.   That's correct.
+ 2        Q.   And do you know what that is a sample of?
+ 3        A.   Let's see.  94-31, 107.  That would be
+ 4   3149107 [sic] Grid 1, Mickey Gunter's Argonaut
+ 5   Mines Serpentine, and the Grid 2, the same thing.
+ 6        Q.   And do you have an understanding if that
+ 7   is a piece of serpentine rock that Mickey Gunter
+ 8   collected when he was in Vermont?
+ 9        A.   I know that's what Dr. Sanchez testified
+10   to, I think on page 103 or 104, but that's not
+11   what's in the sample.
+12        Q.   What's in the sample here, are you saying?
+13        A.   Chrysotile, platy talc, and fibrous talc.
+14        Q.   So you didn't find anything else in that
+15   sample?
+16        A.   No.
+17        Q.   So you are trying to say that it is a talc
+18   sample instead of a serpentine rock sample?
+19        A.   That's what the evidence shows.
+20        Q.   Even though the person who collected it
+21   described what it was?
+22        A.   He may have described what he thought it
+23   was, but that's not what the analysis shows.
+24        Q.   Other than that sample, you didn't find
+25   chrysotile in any grids made from actual Johnson &
+0403
+ 1   Johnson talc product; correct?
+ 2        A.   Correct.
+ 3        Q.   And the -- one sample in which you found
+ 4   chrysotile, that was also identified by Dr. Sanchez
+ 5   and by Mr. Poye; right?
+ 6        A.   Well, Dr. Sanchez initially just called it
+ 7   "serpentine," which is not just chrysotile, but
+ 8   Mr. Poye -- but the TEM sheet showed it, Mr. Poye
+ 9   showed it, and we saw it, so it definitely has
+10   chrysotile in it.
+11        Q.   So any criticism of Dr. Sanchez's analysis
+12   of that sample?
+13        A.   No, not that I can think of.
+14        Q.   And so the image on the front cover of a
+15   chrysotile fiber, the front cover of the report,
+16   that was not actually found in any Johnson &
+17   Johnson talc product; correct?
+18             MR. RIVAMONTE:  Overbroad.
+19        A.   Well, no.  That came from the -- literally
+20   the talc sample.
+21   BY MR. DUBIN:
+22        Q.   The sample identified as serpentine rock;
+23   correct?
+24        A.   It may be identified as serpentine rock,
+25   but we are only seeing chrysotile, platy talc, and
+0404
+ 1   fibrous talc.
+ 2        Q.   And, as I said, that image did not come
+ 3   from any Johnson & Johnson talcum powder products;
+ 4   correct?
+ 5        A.   As I stated, it came from the ore.
+ 6        Q.   Okay.  It did not from them any Johnson &
+ 7   Johnson talcum powder product; correct?
+ 8        A.   I think I've answered that twice.
+ 9        Q.   And the answer is yes, it did not come
+10   from any Johnson & Johnson talcum powder product;
+11   correct?
+12             MR. RIVAMONTE:  Asked and answered.
+13        A.   But that's a -- "yes" doesn't fully
+14   explain the sample.
+15   BY MR. DUBIN:
+16        Q.   Okay.  So which talcum powder product does
+17   it come from?  Which product of Johnson & Johnson
+18   did it come from?
+19        A.   Well, now, you already know the answer to
+20   that because I've already answered it twice, but it
+21   doesn't -- just to answer it "yes" or "no" would
+22   not tell the whole story.
+23             No, it didn't come from a Johnson &
+24   Johnson product, but the analysis shows that it
+25   came from the ore that's used to put in Johnson &
+0405
+ 1   Johnson products.  But you're right; we did not
+ 2   find -- this did not come out of a Johnson &
+ 3   Johnson bottle.
+ 4        Q.   So what -- what part of the analysis tells
+ 5   you that this was actually taken from the ore body
+ 6   that would have been mined for the product?
+ 7        A.   If it was serpentine rock, we would expect
+ 8   to find things like antigorite or lizardite or
+ 9   potentially sepiolite, everything but talc.  There
+10   should be no talc in here.
+11        Q.   You have --
+12        A.   It's all talc and chrysotile asbestos.
+13        Q.   You literally have no idea where that rock
+14   was taken from?
+15        A.   I don't have any personal knowledge.  All
+16   I have is the data.
+17        Q.   Anything about -- well, let me first ask
+18   you:  You also did SEM work on the -- on that
+19   sample?
+20        A.   Yes.
+21        Q.   Why?
+22        A.   To look for anything else.  And if we see
+23   any fibrous -- see any talc, to take pictures of
+24   it, fibrous talc, and is it a chrysotile.
+25        Q.   So is SEM now part of your methodology for
+0406
+ 1   examining talc samples?
+ 2        A.   No.
+ 3        Q.   So why do you do it here?
+ 4        A.   Because we wanted to look at it and see
+ 5   about what the fibrous talc looked like, besides
+ 6   finding it in TEM.
+ 7        Q.   Okay.  And so what conclusions, if any,
+ 8   did you draw from your SEM analysis?
+ 9        A.   That there is fibrous talc and platy talc,
+10   as shown in the -- and platy talc, as shown in the
+11   SEM.
+12        Q.   All right.  So you used SEM to help you
+13   characterize those structures?
+14        A.   Just to -- and, also, we wanted to see the
+15   chrysotile.  Use SEM to get the morphology of the
+16   fibrous talc.
+17        Q.   What do you mean by "morphology" of it?
+18   What features were you using SEM to look for?
+19        A.   Just that if it was a chunk or had any
+20   layers in it.
+21        Q.   Okay.  And why is SEM good for doing that?
+22        A.   Because you have a picture of it.
+23        Q.   Why is it better than TEM for doing that?
+24        A.   TEM only gives you a two-dimensional
+25   picture, and sometimes the bundles are too thick.
+0407
+ 1   You might want to call them a fiber.  And only if
+ 2   we are -- and only if we are -- I didn't notice
+ 3   that.  We have one bundle that's over 5 microns,
+ 4   huh.  I've got another fiber over 5 microns.
+ 5             All right.  So to be able to also look for
+ 6   primarily chrysotile, because I forgot about that,
+ 7   look for any chrysotile that may be greater than 5
+ 8   microns, and it's much faster to do it in the SEM,
+ 9   and to give this -- see what the fibrous talc looks
+10   like because there seems to be a dispute about that.
+11             As Dr. Sanchez has testified a number of
+12   times, there is no such thing as fibrous talc in any
+13   cosmetic talc.  It's all plates on edge.  And the
+14   only way you can tell a plate on edge really, if it's
+15   truly on edge, I've never seen one in a TEM -- that
+16   would be impossible -- so we take pictures of it.
+17        Q.   So what's your interpretation of what the
+18   SEM shows about the talc?
+19        A.   So the SEM shows -- the SEM shows that the
+20   talc is asbestiform because it's fibrous like
+21   asbestos, and it's not a talc plate on edge.
+22        Q.   Okay.  What do you mean by "asbestiform"
+23   with respect to talc?
+24        A.   Fibrous-like asbestos.
+25        Q.   What?
+0408
+ 1        A.   Fibrous-like asbestos.
+ 2        Q.   What do you mean by "like asbestos"?  When
+ 3   you use the term "fiber" as asbestos, I understand
+ 4   that you use that term to mean it's of a certain
+ 5   size and shape.  Is that what you are saying here?
+ 6        A.   Well, it is a certain size and shape, and
+ 7   it is fibrous.  I'm just -- I'm just using the
+ 8   plain geological definition of asbestiform.
+ 9        Q.   When you say --
+10        A.   I'm not done with my question yet -- I
+11   mean my answer.
+12        Q.   I couldn't hear you.
+13        A.   I don't get to ask questions,
+14   unfortunately.
+15             What I'm saying is if you look at the
+16   basic definition of "asbestiform" in a geological
+17   definition reference book, it just says
+18   "asbestiform, fibrous-like asbestos."  Asbestos has
+19   fibers.
+20        Q.   Okay.  Well, when you say -- when you use
+21   the term "asbestiform" as it relates to asbestos,
+22   how do you define that term?
+23        A.   It's fibrous.
+24        Q.   Fibrous in the sense that it grew in an
+25   asbestiform habit, or fibrous in the sense that it
+0409
+ 1   is in the shape of any fiber?
+ 2        A.   Well, habits can be short -- yeah, you
+ 3   know, depending on the type of asbestos, it grew in
+ 4   an asbestos habit.  An asbestos habit, though, can
+ 5   be the size of your hand.  You can have one rock
+ 6   and have five different habits in it.  And if you
+ 7   find, quote, cleavage fragments in any sample,
+ 8   asbestos-type cleavage fragments, in my opinion,
+ 9   it's going to also have asbestiform in it also.
+10        Q.   Does asbestos have to grow in an
+11   asbestiform habit?
+12             MR. RIVAMONTE:  Vague.  Overbroad.
+13        A.   Well, it depends on how you identify
+14   asbestos.  If it means just because it's fibrous or
+15   has fiber-like qualities, then yes.  If you are
+16   defining "asbestiform habit" with, like, Wiley's
+17   definitions, you know, that has no meaning.
+18   BY MR. DUBIN:
+19        Q.   Well, is there anything in this TEM or SEM
+20   data that would identify the chrysotile as being
+21   somehow different than NIST standard chrysotile?
+22        A.   Chrysotile, by definition, is asbestiform.
+23   It's all chrysotile, and what we have in the TEM is
+24   photographs of chrysotile fibers in bundles that
+25   are both less than 5 microns and greater than 5
+0410
+ 1   microns.  All have the aspect ratios of greater
+ 2   than or equal to 5 micrometer -- excuse me, five
+ 3   times greater than .5.  And for the NIST standard,
+ 4   are you talking about the 7400 or 7402 counting
+ 5   rules?
+ 6        Q.   What I'm asking you is:  Is there
+ 7   something about these TEM or SEM data that would
+ 8   establish whatever chrysotile you are looking at is
+ 9   different in some way than NIST standard
+10   chrysotile?
+11             MR. CHARCHALIS:  Vague and overbroad.
+12        A.   We did not do any PLM on this.  By TEM,
+13   you would never know the difference from chrysotile
+14   from the Ontario, Canadian mines that the NIST
+15   standard used the 1866b versus the chrysotile that
+16   you would find in the Coalinga mine versus the
+17   chrysotile that Johnson & Johnson has found in
+18   their -- in the Vermont mines.  We haven't done a
+19   lot of work yet on the chrysotile.
+20             You would have do a PLM on these if you
+21   could resolve them.  They are all pretty thin.
+22   There's probably one bundle in here that may be the
+23   size of what you would find -- it's still too
+24   small.  There is no chrysotile in here that you
+25   would ever see by PLM.
+0411
+ 1   BY MR. DUBIN:
+ 2        Q.   So are you telling me that Calidria
+ 3   chrysotile and other chrysotile looks the same
+ 4   under TEM and SEM?
+ 5        A.   It looks the same out of a product.  If
+ 6   you just take it straight out of the bag and you
+ 7   know enough about it, you can see the small size of
+ 8   bundles.
+ 9             But once it's in a product, we have never
+10   been able to determine if it's Calidria versus
+11   chrysotile when we have looked at samples such as,
+12   you know, Georgia-Pacific's '72, '73 materials or
+13   '71, where they were mixing both Calidria and
+14   chrysotile from -- it's either Canada or Vermont.
+15   I can't remember which.
+16        Q.   So if it's not out of a product, what
+17   distinguishing features does Calidria chrysotile
+18   have when you look at it under SEM or TEM?
+19        A.   You're going to see they are -- typically
+20   have a small-bundle size range, like the NIST
+21   standard, the 1866b, which if -- the example that
+22   defendants always like to show me is the one out of
+23   the ISO 22262-1 color photograph that shows a
+24   bundle taken at 100X, which takes up about
+25   one-third of the entire photograph, plus it runs
+0412
+ 1   all the way across at 100X, and it's not what you
+ 2   see with Calidria, or with the asbestos -- the
+ 3   chrysotile found in the mines.
+ 4             TEM, it would be hard to tell the
+ 5   difference unless you were doing a size population.
+ 6   Just visually looking at it in a bag, you can tell
+ 7   the difference.  It looks more like talcum powder
+ 8   than it does chrysotile, such as in Canada.
+ 9        Q.   Okay.  Is there anything that you're
+10   seeing on SEM or TEM about this chrysotile that
+11   would identify it as some unique form of chrysotile
+12   like Calidria?
+13        A.   No.
+14        Q.   Have you seen images of the actual hand
+15   sample that the -- of the serpentine rock, what's
+16   being described as serpentine rock in this report?
+17        A.   I have not.
+18        Q.   Okay.  Well, what would -- to your
+19   knowledge, what would a hand sample of talc ore
+20   look like?
+21        A.   Like a rock, unless you ground it.
+22        Q.   What color?
+23        A.   I don't know.  It depends on what else is
+24   in with the rock.  You'll have a whitish color;
+25   you'll have darker colors, where it is.
+0413
+ 1        Q.   I thought you were saying there isn't
+ 2   really anything else in this rock besides talc and
+ 3   chrysotile.  What color would that be?
+ 4        A.   I didn't say anything about the rock.  I'm
+ 5   just looking at the data and the grids that were
+ 6   given to me.  The grids show that it's -- it has
+ 7   chrysotile, and the only other thing found was
+ 8   platy talc and fibrous talc.  I can only go with
+ 9   the data.  The data does not match what -- if it
+10   was just a serpentine rock and no talc.  It doesn't
+11   match it from the data.  I mean, I don't know what
+12   else you want me to say.
+13        Q.   You don't think the data includes the
+14   description of the person who actually picked up
+15   the sample about where they got it from?
+16        A.   That's written-down data that this is
+17   where I got it.  Just looking at -- I can't verify
+18   it for you in any shape or form that this came from
+19   serpentine rock.  These are questions for Mickey
+20   Gunter, not me.  I'm just telling you what's in
+21   here.
+22        Q.   So have you looked at what Mickey Gunter
+23   said about where the rock came from?
+24        A.   I only looked at what Sanchez said.
+25   Sanchez said that Mickey Gunter says that the rock
+0414
+ 1   was not any talc; it was serpentine or serpentine
+ 2   rock or a rock -- something like that.
+ 3        Q.   Okay.  Well, maybe we'll look at those
+ 4   images in a few weeks.  Then, other than that in --
+ 5   in all of the grids, that I think you identified --
+ 6   what? -- one tremolite structure?
+ 7        A.   Yes.
+ 8        Q.   And you called that a bundle; correct?
+ 9        A.   Correct.
+10        Q.   And you looked at it also with SEM?
+11        A.   Let me get to it.  Yes.
+12        Q.   Why?
+13        A.   Why did I look at it by SEM?
+14        Q.   Yes.
+15        A.   Because I really couldn't see any
+16   striations or -- because the bundle is so thick, by
+17   TEM.
+18        Q.   Okay.  So you used SEM to try to help you
+19   determine whether or not it was a bundle?
+20        A.   Let me look at it again.  You can see
+21   points at the end.  So you'll have some small
+22   fibers on the end.  I don't know what I would have
+23   called it.  Let's see what the SEM guys called --
+24   TEM guys called it.  They called it a bundle, so it
+25   wasn't needed to identify it.
+0415
+ 1        Q.   I'm sorry.  So then why did you do the
+ 2   SEM?
+ 3        A.   Because I just wanted to see if you could
+ 4   see any striations on it.
+ 5        Q.   Okay.  And that would be part of
+ 6   determining whether it's a bundle?
+ 7        A.   It was already a bundle.
+ 8        Q.   So then why would you need to look and see
+ 9   whether you can see striations on it?
+10        A.   Because this one was pretty thick, and I
+11   was just curious.
+12        Q.   Can you identify for me any published
+13   image of an asbestos bundle that looks like that
+14   under SEM?
+15             MR. RIVAMONTE:  Vague and overbroad.
+16        A.   I've not sat down to try to go through all
+17   the literature.  That's my opinion of what it is.
+18   I guess we'll let the jury decide who's right.
+19   BY MR. DUBIN:
+20        Q.   I couldn't hear what you said.
+21        A.   I said I haven't spent the time going
+22   through all the literature to see what different
+23   size or -- or who's published it.  It's regulated
+24   asbestos tremolite.  The SEM is not required to
+25   look at any types of samples to determine if it is,
+0416
+ 1   quote, asbestiform or not once it meets the
+ 2   regulation.  I was curious on this one because of
+ 3   the thickness.
+ 4        Q.   Okay.  Your report doesn't seem to address
+ 5   any of the RJ Lee's grids related to Chinese talc;
+ 6   correct?
+ 7        A.   Well, we're not finished.  This is only
+ 8   partial.  If we are going to do all the -- all
+ 9   the -- but I wouldn't expect to find any unless
+10   it's -- unless we have some of the grids that came
+11   from that J & J bottle where the FDA's lab found
+12   chrysotile.
+13        Q.   Why wouldn't you expect to find any?
+14        A.   The detection limits on here are quite
+15   high.
+16        Q.   I guess what I don't understand is:
+17   You're saying you found chrysotile in a sample of
+18   what you're saying is Vermont talc ore; right?
+19        A.   Correct.
+20        Q.   So why wouldn't you be able to, then, find
+21   it in first Johnson & Johnson products made from
+22   talc from Vermont?
+23        A.   Well, we'll find it by PLM.
+24        Q.   Why wouldn't you be able to find it by
+25   TEM?
+0417
+ 1        A.   This is not me.  I'm talking about the
+ 2   detection limits of RJ Lee.  They are using the
+ 3   same type of method in which they dilute it, and
+ 4   the detection limits are in the millions per gram
+ 5   for fibers and bundles.
+ 6        Q.   You're telling me, though, that however RJ
+ 7   Lee did their analysis, you were able to find
+ 8   chrysotile in the sample that's labeled "serpentine
+ 9   rock," what you are saying is talc ore; right?
+10        A.   Well, maybe not so much talc ore.  The
+11   only thing I'm finding in it is talc.
+12        Q.   Okay.  So I'm saying -- you were saying --
+13             MR. RIVAMONTE:  Hold on, guys.
+14             MR. DUBIN:  The volume is low, so I'm
+15   having a hard time hearing --
+16             THE WITNESS:  I can turn it up.
+17        A.   I'm just confirming what Lee found in --
+18   confirming what RJ Lee found.  You don't -- but I
+19   don't expect the concentrations to be this high in
+20   the samples.
+21   BY MR. DUBIN:
+22        Q.   I don't understand.  So why would you --
+23   are you still speaking?
+24        A.   Why would the detection limit be so --
+25   well, so low is a better word.  Because they are in
+0418
+ 1   the millions to tens of millions of detection
+ 2   limit.  It's very hard to find anything at those
+ 3   detection limits.
+ 4        Q.   I'm just -- you're saying you do see it in
+ 5   that one sample.  So why wouldn't you able to,
+ 6   then, also see it in samples of the Johnson &
+ 7   Johnson product or in Chinese talc ore samples?
+ 8        A.   Because it's like finding that one needle
+ 9   in the haystack.  Why did AMA find chrysotile in a
+10   2018 off-the-shelf Chinese bottle?  And they have
+11   stuck with their results.  I understand, you know,
+12   RJ Lee's position is that they have a contaminated
+13   lab and they are contaminating everything with
+14   chrysotile.  At least that's how I feel about it.
+15   And nobody else has found it in -- by TEM using the
+16   long method, which is about 10 million.
+17             So, you know, you have one bottle.  You
+18   found that one needle in the haystack.  We have
+19   done lots of TEMs on Chinese, but using the heavy
+20   liquid density for all the amphiboles, but you have
+21   to get the detection limits down, in my opinion,
+22   below a million.
+23        Q.   Well, I don't understand.  So how many
+24   chrysotile structures do you find in the serpentine
+25   rock sample?
+0419
+ 1        A.   Well, the alleged serpentine rock sample?
+ 2   We counted -- it looks like 10 fibers.  Wait.  One,
+ 3   two, three, four, five, six, seven, eight, nine,
+ 4   ten, eleven fibers.
+ 5        Q.   So you were able to find 11 needles in
+ 6   that haystack, but then nothing in all the rest of
+ 7   the grids?
+ 8             MR. RIVAMONTE:  Misstates testimony.
+ 9   Vague and overbroad.
+10        A.   We weren't trying to -- it's already been
+11   verified that there's chrysotile in here by both
+12   Lee Poye and RJ Lee's count sheets.  I just wanted
+13   to see what else is in here.  And it's one sample.
+14   It's one needle in a haystack, as I call it.  Three
+15   different people have looked at the same grids.
+16   There is no dispute that there's chrysotile.
+17   BY MR. DUBIN:
+18        Q.   But why would I be able to find 11 needles
+19   in that sample, but then if there -- not be able to
+20   find chrysotile in anything else if it was there?
+21             MR. RIVAMONTE:  Vague and overbroad.
+22        A.   Well, first, this would be the same reason
+23   it was found here, as it was found -- the three or
+24   four chrysotile structures found by AMA in the
+25   Chinese Johnson baby powder container that the FDA
+0420
+ 1   purchased off the shelf versus all the other times
+ 2   the samples that AMA has looked at and didn't find
+ 3   any chrysotile in off the shelf in the ten
+ 4   analyses.
+ 5             The RJ Lee detection limits are in the
+ 6   millions to tens of millions.  The amount of
+ 7   chrysotile in there, except for these rare
+ 8   occasions -- I mean, if you calculate the fibers up
+ 9   in the container of the FDA, they are in the 400
+10   million, 300, something like that.  I've got to go
+11   back and look at that.  Maybe 30 to 40 million per
+12   gram.
+13             So why just that container?  Because
+14   that's one -- that container was a needle in the
+15   haystack.  I don't believe you're going to
+16   routinely find it until the heavy liquid density
+17   method is worked out for chrysotile like it has for
+18   PLM.  We find it in every sample now when we
+19   analyze for PLM.
+20   BY MR. DUBIN:
+21        Q.   So you find chrysotile in every sample you
+22   look at in PLM now, but other than this one that's
+23   labeled "serpentine rock," you didn't see any
+24   chrysotile in any of the TEM grids; right?
+25        A.   So far; that's correct.
+0421
+ 1        Q.   You didn't identify any asbestiform
+ 2   cummingtonite on any of these -- the grids that you
+ 3   looked at?
+ 4        A.   No.
+ 5        Q.   What would you call the asbestiform of
+ 6   cummingtonite?
+ 7        A.   Typically, we haven't been differentiating
+ 8   between cummingtonite and anthophyllite.  We would
+ 9   have called it anthophyllite.
+10        Q.   Is anthophyllite the asbestiform of
+11   cummingtonite?
+12        A.   Cummingtonite has its own asbestiform, and
+13   anthophyllite has its own asbestiform.  The
+14   difference, of course, is one is monoclinic and has
+15   higher iron, and one is orthorhombic and has lower
+16   iron.  But they are both regulated.  Cummingtonite
+17   grunerite, so it makes little difference to us what
+18   you call it.  It's all in that regulated family.
+19        Q.   What is the name of the asbestiform of
+20   cummingtonite?
+21        A.   Cummingtonite grunerite.
+22        Q.   That's the asbestiform name?
+23        A.   Yes.
+24             MR. RIVAMONTE:  Asked and answered.
+25   BY MR. DUBIN:
+0422
+ 1        Q.   Okay.  Anthophyllite is not the
+ 2   asbestiform name of cummingtonite; correct?
+ 3        A.   Anthophyllite would be a slightly
+ 4   different mineral, but they are found in the same
+ 5   habits.
+ 6        Q.   Are you saying that what you have
+ 7   identified as anthophyllite in your reports on
+ 8   Vermont talc was really cummingtonite?
+ 9        A.   No.  I'm saying that many -- a lot of
+10   anthophyllite, some of it is cummingtonite.
+11        Q.   Okay.  Do you have any idea how many of
+12   the bottles in which you identified anthophyllite,
+13   it was actually cummingtonite?
+14        A.   No.  We didn't do that extra step of
+15   determining it just because there is no need to.
+16        Q.   You didn't identify grunerite on any of
+17   the grids that you reviewed for purposes of that
+18   report, the Project N71307?
+19        A.   We didn't see any grunerite.  The only
+20   regulated asbestos we found was the one -- so far,
+21   is the one tremolite fiber.
+22        Q.   Okay.  So I also got --
+23             (Reporter interruption for clarification
+24             of the record.)
+25   BY MR. DUBIN:
+0423
+ 1        Q.   It's a J PLM palette analysis --
+ 2        A.   Yes.
+ 3        Q.   -- as part of your disclosure?
+ 4        A.   Yes.
+ 5        Q.   Do you want to grab that so we can talk
+ 6   about it?
+ 7        A.   I got them.
+ 8        Q.   So I just want to make sure.  I looked
+ 9   back at some transcripts, and some of the time, I'm
+10   concerned that it may not have been clear whether
+11   we were talking about parallel or perpendicular.
+12   So I just want to make sure we are on the same page
+13   with respect to this type of analysis.
+14             So you are looking here at talcum powder
+15   using refractive index of oil of 1.550 under
+16   polarized central stop aspersions per stand; right?
+17        A.   Right.
+18        Q.   So we just -- just so we understand, you
+19   looked at it in both parallel and perpendicular
+20   orientation; right?
+21        A.   That is correct.
+22        Q.   Parallel is sometimes referred to as
+23   "gamma"?
+24        A.   Yes.
+25        Q.   And perpendicular is sometimes referred to
+0424
+ 1   as "alpha"; right?
+ 2        A.   Correct again.
+ 3        Q.   Okay.  So NIST standard chrysotile
+ 4   typically is blue and perpendicular; right?
+ 5        A.   If it's big enough.
+ 6             MR. RIVAMONTE:  Vague and -- withdraw the
+ 7   objection.  Go ahead.
+ 8   BY MR. DUBIN:
+ 9        Q.   Go ahead.
+10        A.   Yes, the size of it, typically the big
+11   bundles, you'll see mostly sort of a bluish and
+12   perpendicular.
+13        Q.   What other colors can -- do you think
+14   chrysotile can be in perpendicular?
+15        A.   It can be all the way from blue to
+16   yellowish gold.
+17        Q.   And talc, if it's in an elongated or
+18   fibrous form, can also be blue and perpendicular
+19   orientation; correct?
+20        A.   Well, yes and no.  Well, no and yes.  It
+21   depends on what blue.  There is a lot of shades of
+22   blue.
+23        Q.   Okay.  So what shades of blue --
+24             (Speakers talking simultaneously.)
+25        A.   -- gold.  You certainly can have some
+0425
+ 1   overlapping refractive indices, but you'll never
+ 2   have the refractive indices overlapping to a degree
+ 3   that you can't tell the difference in
+ 4   birefringence.  Also in PLM, when you are looking
+ 5   at, say, a side-by-side, a chrysotile fiber or
+ 6   chrysotile bundle that has a talc attached to it,
+ 7   in both the parallel and perpendicular direction,
+ 8   they are completely different.
+ 9             So to just say it's blue or it's yellow,
+10   it's really misleading.  You have to -- because if
+11   you look at the color charts, there is a lot of
+12   shades or hues of yellow to gold to red to light
+13   yellow.  It makes a big difference when you are
+14   looking at these minerals instead of just calling
+15   it blue or yellow.
+16   BY MR. DUBIN:
+17        Q.   Well, I'm asking a fairly simple question.
+18   Talc in a perpendicular orientation can be blue;
+19   correct?
+20        A.   What shade of blue?
+21        Q.   Any shade of blue.  Can it be blue?
+22        A.   See, that's a totally simple, misleading
+23   question.  It's like you are trying to get a sound
+24   bite.  So you can't just say it's just blue.
+25        Q.   Well, you've used the ISO 22262-1
+0426
+ 1   standards and procedures; right?
+ 2        A.   Well, I don't use the ISO 22262-1, the
+ 3   photographs of the standards they have, because
+ 4   that has no relationship to the chrysotile being
+ 5   found in the talc mines, as well as the Calidria.
+ 6   If you want --
+ 7        Q.   I'm asking about for purposes of a
+ 8   description of how talc itself can stain.  Is there
+ 9   anything about it that would be inapplicable to the
+10   situation?
+11        A.   I don't believe the ISO 22262-1 goes into
+12   talc unless I missed it, but you can find that in
+13   the EPA R-93-600 on Table 2.3.  It shows what the
+14   birefringence is for talc calculation.
+15        Q.   I can -- I can either screen share this,
+16   or I can just read it.  But ISO 22262-1 says, "Talc
+17   fibers are thin ribbons that may sometimes be
+18   recognized by characteristic morphological twists."
+19   It goes on a little later in the paragraph to say,
+20   "The other two refractive indices of talc are in
+21   the ranges 1539 to 1550 and 1589 to 1600.  And with
+22   a dispersion-staining objective, blue and pale
+23   yellow colors perpendicular to the fiber are
+24   observed in 1550 RI liquid at different
+25   orientations as the fiber is rolled."
+0427
+ 1             Do you agree or disagree with that?
+ 2        A.   I certainly agree with the refractive
+ 3   indices that you read.  I didn't write them down
+ 4   because I will give you your birefringence
+ 5   calculation in the 0.05.  You can't just go by blue
+ 6   and yellow.
+ 7        Q.   Okay.  So will you agree with me or not
+ 8   that talc in the perpendicular orientation can be a
+ 9   shade of blue?
+10        A.   It can be.
+11        Q.   And what is the difference, in your view,
+12   of the shade of blue with chrysotile versus talc?
+13        A.   It's typically if you have them side by
+14   side perpendicular and parallel, the chrysotile
+15   portion may be a different color.  In the shades of
+16   blue are, for the exact same, is more intense and
+17   is different and will have different refractive
+18   indices than for the chrysotile, if they are side
+19   by side.
+20             But, again, it's not so much the shades
+21   that's important.  The only true way to differentiate
+22   chrysotile from talc is on its birefringence.
+23        Q.   But the birefringence you are calculating
+24   through identifying the colors?
+25        A.   Correct.
+0428
+ 1        Q.   So how about -- now, is what you are
+ 2   calling -- what you are identifying as chrysotile
+ 3   in Johnson & Johnson talc, is that behaving, from a
+ 4   color perspective, in the perpendicular orientation
+ 5   as you would expect from standard chrysotile?
+ 6             MR. RIVAMONTE:  Vague and overbroad.
+ 7        A.   Both perpendicular and parallel.  The
+ 8   refractive indices are all in the range that's
+ 9   expected for chrysotile.
+10   BY MR. DUBIN:
+11        Q.   I'm asking in terms of the color that you
+12   are observing in a perpendicular orientation, is
+13   that -- for what you are calling chrysotile in
+14   Johnson & Johnson talc, is that what you would
+15   characterize as a standard color for chrysotile?
+16        A.   There is no standard color for chrysotile.
+17   Unless you want to start looking at the 30
+18   different mines or 20 different mines around the
+19   world, there is no standard color.  Then, also, you
+20   have to take into account the thickness of the
+21   bundle, which changes the wavelength and changes
+22   the color.
+23             That's why -- that's how it was first used
+24   by McCrone, is look at thicknesses on the layers on
+25   metals.  And you can calculate, if you have
+0429
+ 1   standards, on what the refractive indices is for
+ 2   different -- for different layers.
+ 3             So there is no standard -- if you want to
+ 4   look at what the standard is for chrysotile for
+ 5   perpendicular and parallel, you look at the Sue
+ 6   tables.  The Sue tables will give you the standards,
+ 7   what Dr. Sue calls chrysotile refractive indices and
+ 8   wavelengths.
+ 9        Q.   Right.  What I'm saying, you seem to have
+10   in your mind a specific blue that you associate
+11   with chrysotile as opposed to talc, or is that not
+12   correct?
+13        A.   Not really a specific blue.  You've got to
+14   look at both refractive indices.
+15        Q.   I'm asking you about the first input.
+16             MR. RIVAMONTE:  Hold on, hold on, hold on,
+17   Mr. Dubin.  Dr. Longo is not done yet.
+18        A.   If you look at all the fibrous talcs and
+19   all the chrysotiles, you can have an overlap of one
+20   refractive indice [sic], but you will not have an
+21   overlap on the second refractive indice.
+22   Otherwise, there would be no way to calculate the
+23   birefringence and be a difference.  It's all about
+24   the birefringence.  It's really misleading to say
+25   this yellow -- you can find this yellow in
+0430
+ 1   chrysotile.  It's not about one refractive indice
+ 2   [sic].  It's about two refractive indices.
+ 3   BY MR. DUBIN:
+ 4        Q.   Well, it's part of the equation.  The
+ 5   first part of the equation is parallel -- is
+ 6   perpendicular, and then the second part is
+ 7   parallel; right?
+ 8        A.   Well, the first part of the equation, you
+ 9   can't solve by looking just at the parallel.  And
+10   if you're just going to look at the second part of
+11   the equation and not at the first, you can't solve
+12   it.  If you want to solve the equation, you've got
+13   to look -- you've got to have X and Y.  Just X
+14   won't solve the equation.
+15        Q.   Okay.  So --
+16        A.   That's part of the equation, it's -- as
+17   I've already said, you can have either parallel or
+18   perpendicular where you'll have some -- you have
+19   some same refractive indices, but you can't -- but
+20   not both, because the spread or the difference
+21   between the refractive indices giving you, you
+22   know, low, medium, moderate, or high birefringence
+23   is how you change the difference.
+24        Q.   So --
+25        A.   To determine the difference between
+0431
+ 1   fibrous talc and chrysotile.
+ 2        Q.   So then what I hear from you is:  If you
+ 3   are looking at a perpendicular orientation and
+ 4   you're seeing blue, but trying to decide what kind
+ 5   of blue it is not enough for you to distinguish
+ 6   talc and chrysotile.  With that information
+ 7   alone --
+ 8             MR. RIVAMONTE:  Objection --
+ 9   BY MR. DUBIN:
+10        Q.   -- correct?
+11        A.   One refrac --
+12             MR. RIVAMONTE:  Objection to the extent
+13   that it misstates testimony.
+14        A.   One refractive indice, which is one
+15   wavelength, is not enough to identify anything
+16   unless it's -- unless it only has one refractive
+17   indice.  But this is a double-refraction mineral,
+18   talc and -- so no, I would not try to identify it
+19   with just one refractive indice to the degree
+20   necessary to go into court and testify.  I would
+21   have to have two refractive indices so I could
+22   calculate the birefringence, and it's a stark
+23   difference between fibrous talc and chrysotile.
+24   BY MR. DUBIN:
+25        Q.   Okay.  I understand that you want to add
+0432
+ 1   other things, but I'm just asking you a simple
+ 2   question, which is:  You're not going to come in
+ 3   and look at, say, an image of a fiber that is blue
+ 4   in perpendicular orientation, say, "Therefore, I
+ 5   know that's chrysotile and not talc based on some
+ 6   shade of blue that it is"; right?
+ 7        A.   No.
+ 8             MR. RIVAMONTE:  Vague and overbroad.
+ 9        A.   No.  I would not base any mineral
+10   analysis, not amosite, not anthophyllite, not
+11   tremolite, not crocidolite, not talc, not
+12   chrysotile, on one refractive indice [sic].  I may
+13   have a good idea what it is, but I would never have
+14   a report saying, "Yeah, we just saw this blue and
+15   it's chrysotile" or "We just saw this blue and it's
+16   talc."  We didn't bother doing anything else, no.
+17   BY MR. DUBIN:
+18        Q.   All right.  Let's talk about parallel
+19   orientation, then.  So we are in gamma.  So what --
+20   what colors does chrysotile show in gamma?
+21        A.   It can show all the way from a wavelength
+22   of 400, which is a light yellow, all the way to the
+23   wavelength of 800, which is more of a light, light
+24   blue.
+25        Q.   Dr. Sue indicates that chrysotile shows
+0433
+ 1   magenta in parallel?
+ 2        A.   He may have used an example, but if you go
+ 3   to Dr. Sue's tables, 4A on page 7, and you have
+ 4   chrysotile in parallel and perpendicular, he shows
+ 5   a range of 400 to 800 lambda or wavelength.  If you
+ 6   go to the color charts, that goes all the way from
+ 7   light yellow, all the way from light, light blue.
+ 8        Q.   Have you read the June -- June 2020 update
+ 9   to Dr. Sue's paper that you provided an earlier
+10   version of?
+11        A.   I haven't looked at that yet, no.
+12        Q.   Do you know -- so you haven't read,
+13   then -- he discusses how the magenta color of
+14   chrysotile is formed in a parallel orientation?
+15        A.   Well, it can.  But that's not what he has
+16   in the tables, even in the 2020.  It was shown to
+17   me in the last deposition I had with Cashmere
+18   Bouquet.  It shows a range of what Dr. Sue says is
+19   for chrysotile all the way from light yellow to
+20   light blue on the color chart.  And if you go to
+21   the color chart that's in that document, because I
+22   think he provided it there, and go to Tables 4A and
+23   4B, you can see for yourself.
+24        Q.   So talc -- a talc fiber or talc and fiber,
+25   what color is it in a parallel orientation?
+0434
+ 1             MR. RIVAMONTE:  Vague and overbroad.
+ 2        A.   You can have multiple colors, and the --
+ 3   hold on.  I think we have examples of fibrous talc
+ 4   in -- which I provided in numerous depositions, I
+ 5   think.  Numerous -- let me find one.  So in that
+ 6   paper -- in that report on the labs, on the
+ 7   table -- let me find it.
+ 8             On Table 4, I gave a range of talc in the
+ 9   parallel and perpendicular.  So in that particular
+10   paper, we had a range of 1.590 -- you asked about
+11   perpendicular or parallel?
+12   BY MR. DUBIN:
+13        Q.   No, parallel.
+14        A.   1.590 to 1.580.  And if you go to the
+15   color chart, and just -- these are examples.  So
+16   that's going to be up in the yellowish to gold
+17   range in 1.550.
+18        Q.   For what year, typically, identifying as
+19   chrysotile in Johnson & Johnson's talc, what color
+20   is it typically in parallel orientation?
+21        A.   There is really no typical, but since you
+22   pulled out these two Weitz & Luxenberg, J & Js, we
+23   had a range of parallel of 1.59, 1.561 down to
+24   1.48.  1.61 is in the oranges to red -- I guess
+25   some people might call that magenta.  Magenta is
+0435
+ 1   more blue, I think.  And the 1.548 is more in the
+ 2   light yellow.  So if we go -- yeah.  Lightest
+ 3   yellow to -- so that had a range there of 1.59 to
+ 4   1.548.  So we are seeing an orange, reddish gold to
+ 5   really light, light yellow.
+ 6        Q.   Looking at your images for this palette
+ 7   analysis, it looks like all the structures that you
+ 8   are identifying as chrysotile are a shade of yellow
+ 9   in parallel orientation.
+10        A.   Light yellow to sort of a goldish yellow.
+11        Q.   And talc in parallel orientation can also
+12   be light yellow to a goldish yellow?
+13        A.   Not the same brightness, no, but it can
+14   have -- it can have those similar refractive
+15   indices.  But it, again, it's misleading just say
+16   it can have that color, because that's -- you're
+17   only -- you're not solving the equation, as you
+18   pointed out.  You have to do both to get the
+19   birefringence and get the -- essentially the -- the
+20   birefringence calculations.
+21        Q.   Well --
+22        A.   The brightness at low, moderate, or high.
+23        Q.   Well, if the two inputs in birefringence
+24   is the color in parallel and the color in
+25   perpendicular, talc can have blue and yellow, and
+0436
+ 1   you're saying -- and -- right? -- as those two
+ 2   inputs?
+ 3        A.   It can have different shades of blue and
+ 4   yellow.  Mostly it's yellow, what we see.  Every
+ 5   now and then, we will find some that will have some
+ 6   blue in it.  But in this particular example that we
+ 7   are looking at here, both parallel and
+ 8   perpendicular for chrysotile -- but the width -- or
+ 9   the distance between the refractive indices for
+10   fibrous talc is always going to be in the high
+11   range for birefringence.
+12        Q.   Okay.
+13        A.   Whereas talc is always going to be into
+14   the low -- to the low end of moderate
+15   birefringence.
+16        Q.   So can you identify in any of these
+17   particles -- and we can look at the palette one for
+18   now, do you see magenta in parallel for what you
+19   are identifying as chrysotile?
+20        A.   As expected, you would not.
+21        Q.   So why is that expected?
+22        A.   Because these bundles are way too small,
+23   and they don't have those refractive indices in
+24   magenta.  Magenta -- and you have to understand, my
+25   opinion.  These protocols are typically generated
+0437
+ 1   for asbestos at its products, and PLM analysts are
+ 2   taught to be looking out for one thing.
+ 3             However, Dr. Sue provides the ranges of
+ 4   what's expected, and Dr. McCrone, who I think
+ 5   you've pointed out to me a few times in court where
+ 6   I've stated that he was one of the best PLM
+ 7   analysts in the country or the world, probably the
+ 8   country, for his time, gives you the same range.
+ 9             And you also have a table in there that
+10   shows the different wavelengths or colors for 30
+11   different chrysotile samples, some from around the
+12   world and one from the Coalinga mine.
+13        Q.   Okay --
+14        A.   They are different than what's coming out
+15   of Canada.
+16        Q.   So why would I -- for chrysotile and talc,
+17   why would I be able to see the blue color in
+18   perpendicular but not the magenta color in
+19   parallel?
+20        A.   One, it depends on the source of the
+21   chrysotile because the chemistry makes a
+22   difference.  Two, it depends on the thickness of
+23   the bundle.  What we are looking at here is all
+24   milled material.  Three, it's not the same
+25   chrysotile.  It's more in line with what you find
+0438
+ 1   for Coalinga chrysotile or the bundles for the
+ 2   standards we have produced showing what Calidria
+ 3   looks like as compared to big, old, fat chrysotile
+ 4   bundles.
+ 5             And even if you look at some of these big
+ 6   chrysotile bundles, which I have produced in the
+ 7   past, you can go down the line and find different
+ 8   refractive indices because of the different
+ 9   thicknesses in one of these big bundles.  I have
+10   produced those, and I will be happy to produce
+11   those again.
+12             So thickness, geology, location, and size.
+13   They are not all the same.  Magenta, you know,
+14   it's -- you know, that's sort of like what I would
+15   call a newly minted PLM analyst who's taken a
+16   course and they tell him, "Yeah, it's always
+17   magenta."
+18        Q.   Well, do any of those factors that you
+19   listed have more of a fact on what you would see in
+20   perpendicular orientation as opposed to parallel
+21   orientation?
+22        A.   It affects both.
+23        Q.   But are you seeing the expected blue color
+24   for chrysotile in perpendicular?
+25        A.   There is no expected color.  We have
+0439
+ 1   samples where we do find blue color, but not the
+ 2   magenta.  But there is no -- when you are doing
+ 3   this type of analysis, there is no expected color.
+ 4   As I said, you can have a color range, according to
+ 5   Dr. Sue, from almost a whitish yellow all the way
+ 6   down to a really lightish blue.  They are all valid
+ 7   for chrysotile.
+ 8        Q.   I guess what I'm asking you is:  Why would
+ 9   you then -- what about the any of those factors
+10   means that you're not going to see magenta in
+11   parallel?
+12        A.   The bundle may be too small.  The
+13   chemistry may not be right.  It's different.
+14        Q.   So --
+15        A.   It's not consistent with the scientific
+16   literature that says, "Here is all the ranges of
+17   colors that you may see with chrysotile."  And it's
+18   not -- with Sue, and it's not consistent with here
+19   is all the colors you may see with chrysotile by
+20   the eminent Dr. Walter McCrone in his published
+21   paper in 1974 on dispersion staining.
+22        Q.   So in the palette analysis, there is a box
+23   that says "Comments."  It says "chrysotile asbestos
+24   observed," and then it has some refractive indices
+25   listed.  Do you see where I am?
+0440
+ 1        A.   I do.
+ 2        Q.   It says refractive indices parallel were
+ 3   1.559, and it says 513 nm to 1.5468 and it says 450
+ 4   nm.  You see that?
+ 5        A.   I do.
+ 6        Q.   First, explain to me what that means to
+ 7   you.
+ 8        A.   Well, we have a -- two new polarized light
+ 9   microscopes, light blue lights -- lights, and if
+10   you look up in the "Morphology" box, up at the top
+11   on the left hand under "optical data for asbestos
+12   identification."
+13        Q.   Uh-huh.
+14        A.   It has -- you see the alpha and gamma
+15   nanometers.  That's the wavelengths.  This
+16   instrument has four times the resolution than our
+17   old PLM scope.  It has LED lights.  It has a
+18   state-of-the-art camera on it.  And Dr. Lee, who
+19   just did an NVLAP inspection of our laboratory,
+20   provided us with a program that we uploaded in the
+21   computer, and now you can have a slide bar on a
+22   really nice accurate color chart for chrysotile,
+23   and you can put in for amosite or anything, and you
+24   look at your fiber or bundle color, and you slide
+25   the bar down to -- it matches the same color, and
+0441
+ 1   it instantly gives you the wavelengths.
+ 2             And also, once it gives you the
+ 3   wavelengths, once you have the proper wavelengths
+ 4   for both perpendicular and parallel, once you put
+ 5   it there, it will give you the refractive indice
+ 6   [sic].  It takes all the subjectiveness out.
+ 7             Dr. Lee and -- and I think, if I'm not
+ 8   mistaken, wrote it with Dr. Chatfield, now the
+ 9   famous plaintiff's expert -- oh, I'm sorry, famous
+10   defense expert.  So this gives such good
+11   reproducibility now, and it takes the
+12   subjectiveness out of looking it up.  So those are
+13   the wavelengths for those refractive indices.  We
+14   were really excited about getting these two new
+15   state-of-the-art polarized light microscopes.
+16        Q.   So how does this very specific number 5 --
+17   513 nanometers, how is that calculated?
+18        A.   Well, the program calculates the -- it
+19   takes the colors -- the specific colors and
+20   translates that into the actual wavelength that
+21   makes that color.  So it's all standard.  You can
+22   do the calculations and input it into the program
+23   so that you have, literally, a slide bar.
+24             And you look at what you are determining
+25   to be chrysotile, and you look at the two different
+0442
+ 1   colors.  And here -- that's why we have a range in
+ 2   them.  And it tells you not only the wavelength, it
+ 3   also translates the wavelength into what refractive
+ 4   indice [sic] does, just like the Sue tables do.
+ 5   You don't have to look at the Sue tables anymore.
+ 6        Q.   Okay.  But I could -- you could, for
+ 7   example, look -- you could look and see what color
+ 8   should you see from chrysotile at these
+ 9   wavelengths; right?
+10        A.   At these particular wavelengths, it will
+11   give you the color.
+12        Q.   And in fact, there are tables for that --
+13             MR. RIVAMONTE:  Hold on, Mr. Dubin.  He's
+14   not -- hold on, guys.
+15        A.   Once you dial into color, and you are
+16   dialing in because you're looking at the -- at the
+17   chrysotile bundle and you are matching it up to the
+18   color -- to the color that you are seeing, that
+19   gives you the wavelength, which automatically gives
+20   you the refractive indice.
+21   BY MR. DUBIN:
+22        Q.   So for these parallel indices, you should
+23   see magenta for chrysotile; correct?
+24             MR. RIVAMONTE:  Vague and overbroad.
+25   Asked and answered.  Misstates testimony.
+0443
+ 1        A.   There is nothing -- you keep saying "you
+ 2   expect to see, you expect to see."  Don't expect to
+ 3   see, because chrysotile has such a large range of
+ 4   refractive indices.
+ 5   BY MR. DUBIN:
+ 6        Q.   Well, if I look -- if you look at the ISO
+ 7   standards, you know what you'll see at 513
+ 8   nanometers for chrysotile?
+ 9        A.   Hold on.  513 is going to be
+10   approximately -- what the typical color chart says
+11   for a central stop.  It's going to be close in the
+12   orangish red.
+13        Q.   Orangish red.  In parallel -- what are you
+14   looking at as a reference for that?
+15        A.   I'm looking at this (indicating.)
+16        Q.   Okay.
+17        A.   Or if you look at Sue table, at 513, 25
+18   degrees -- oh, that's crocidolite.  That won't
+19   work.  513, very close to 520 at 25 degrees, you're
+20   going to see something in the -- 21 degrees, you
+21   know, 1.560, and 1.560 here on the chart, according
+22   to this chart, it says it's kind of an orangish red
+23   or goldish red.
+24        Q.   Well, where is the orangish red in the
+25   images of the fibers?
+0444
+ 1        A.   Well, you can look around -- it's kind of
+ 2   hard to see in the first one, but you can look
+ 3   around the edge of the fiber, and you can see it's
+ 4   got an orangish reddish around the ends, and if we
+ 5   can go down all the way to -- on the low side,
+ 6   1.50.  1.50 -- wait a minute.  You are getting to
+ 7   extinction.  That's why you can't see the first
+ 8   one.  You see the first one, how you can't -- in
+ 9   parallel you can barely see it?  It's almost at
+10   extinction.  So it's there.
+11        Q.   I'm sorry.  Which image are you saying?
+12   Can you identify it by any number on the page or --
+13        A.   The images M71211-001, both parallel and
+14   perpendicular.
+15        Q.   Any others where you are saying that you
+16   see orangish red?
+17        A.   Well, I don't see any orangish red on that
+18   one.
+19        Q.   Okay.
+20        A.   But for the first one in the parallel,
+21   it's kind of a darkish -- darkish, reddish and --
+22   but if you correct that -- but that's at 620
+23   nanometers, and you are almost at extinction.  And
+24   then if you go to the perpendicular, you can't see
+25   it at all.
+0445
+ 1        Q.   Okay.  I'm just asking you to identify for
+ 2   me the ones where you see orangish red.  That is
+ 3   what number?
+ 4        A.   Number one.  And I didn't make this
+ 5   qualifier.  I would never call these colors and say
+ 6   that this is a hundred percent correct without
+ 7   looking in the microscope because the printouts
+ 8   don't do it justice.  You can get close, but if you
+ 9   look at the very first one in parallel, on sample
+10   M71211-001, you can see the bundle between the two
+11   arrows, and that's more what I would say is a
+12   darkish red -- I don't know what happens when you
+13   mix dark red and orange or golden.  And then in
+14   perpendicular, it's extinct.
+15        Q.   What does extinction signify?
+16        A.   You can't see it because the oil is
+17   matching the -- the chrysotile so well.  So you're
+18   looking at a wavelength of 1.550, and you've got an
+19   oil that's 1.550, you're not going to see the
+20   mineral.
+21             MR. RIVAMONTE:  Morty, can I ask Dr. Long
+22   a question?
+23             Dr. Long, are you looking at CSMP-001?  Is
+24   that the image you are referring to?
+25             THE WITNESS:  Yes.  M71 -- 71211-001CSMP.
+0446
+ 1             MR. RIVAMONTE:  And dash 001 at the end?
+ 2             THE WITNESS:  Yes.
+ 3             MR. RIVAMONTE:  Okay.  Thank you.
+ 4   BY MR. DUBIN:
+ 5        Q.   So how do I tell from this what specific
+ 6   colors were identified that went into the
+ 7   birefringence calculation?
+ 8        A.   Well, you look at the 620 nanometer --
+ 9   well, you look at -- it's not so much the color
+10   now.  It's the refractive indices that tells you
+11   the birefringence, which tells you this is
+12   chrysotile.
+13        Q.   I understand that, but how do I start from
+14   color to the end result, to the end birefringence?
+15        A.   Well, the wavelengths are at 450 and 620,
+16   which gives you refractive indices of 1. -- a range
+17   of refractive indices for a parallel of 1.561 to
+18   1.568.  And for perpendicular, your range is
+19   1.50620 to 1.553580.
+20        Q.   How can I tell from this what colors the
+21   analysts believe they were seeing?
+22        A.   Well, I told you what they would believe
+23   they were seeing, close to.  You have to be sitting
+24   at the microscope to actually get it dead on.  But
+25   at a wavelength for perpendicular of 450 -- so at
+0447
+ 1   a -- at 620, it got almost a magenta blue, which is
+ 2   hard to kind of see on just the photomicrograph --
+ 3   that's the -- excuse me.
+ 4             For the gamma, it's 450.  So 450 is -- you
+ 5   see this reddish gold at 450?  Well, you can't see
+ 6   it in the chart.  So looking at that reddish, kind
+ 7   of orangish color then gives you wavelengths --
+ 8   gives you the refractive indice, which then at 450,
+ 9   but he's seeing -- but he's giving you a range
+10   here, what he's seeing, but at 450 will give you a
+11   refractive indice -- you know, the 1.561 to
+12   451.568.
+13        Q.   Again, so what color -- what color does
+14   this reflect the analysts say they are seeing?
+15        A.   Again, it's -- what I'm just going by is
+16   the wavelength, and I'm looking at the color chart,
+17   and the wavelength is going to give you a darkish,
+18   reddish, kind of orangish color.
+19        Q.   So what we should see in parallel from
+20   these wavelengths is darkish, orangish red?
+21        A.   According to the wavelength.
+22        Q.   And in perpendicular, what kind of color
+23   should we be seeing from these refractive indices?
+24        A.   At 620, it has a bluish green color
+25   between blue and bluish green.  But looking at the
+0448
+ 1   photograph, it's invisible, so it's just about
+ 2   right, on the refractive indices, right about where
+ 3   the oil is -- excuse me, the fluid.  And that's why
+ 4   he has 1.550 to 1.553.
+ 5             Now, if you were looking through the
+ 6   microscope, you would have a better image of what's
+ 7   there than in the photograph because of the size of
+ 8   the chrysotile bundle.
+ 9        Q.   So to what extent is yellow included in
+10   the refractive indices given here for parallel
+11   orientation?
+12        A.   I don't think yellow is included in here,
+13   not for this one.  But then if you go to the
+14   next -- you know -- we are not -- we have four
+15   examples of chrysotile in here.
+16        Q.   Okay.
+17        A.   Then if you go to number 2, that's
+18   M71211001CSMP-002, we've got a little bit of a
+19   larger structure.  And you can see from that -- so
+20   again, since it's bigger, you can see it more.
+21   Again, up in the 450s, because he's giving a range,
+22   but it's in this range.  You'll see some goldish
+23   yellowish with some red in parallel and more of a
+24   darker blue in perpendicular.
+25        Q.   So you should see red in the image, then,
+0449
+ 1   for this -- for that sample?
+ 2        A.   Well, again, I'll qualify it by I'd rather
+ 3   be looking in the microscope, but you can see
+ 4   around the edges of the chrysotile bundle where
+ 5   it's the thinnest, you have some red ringing it, a
+ 6   darkish red.
+ 7        Q.   But it looks like for all of these, at
+ 8   least the ones we have looked at, they are
+ 9   including reds in what they are recording as the
+10   refractive indices?
+11        A.   Well, they're looking at -- it's not red.
+12   You know, you've got some bleedover from the
+13   thicker -- the thicker part of the bundle.  Sort of
+14   a reddish golden to a goldish yellow, I guess, what
+15   I would call it without looking in the microscope.
+16        Q.   So when you have these ranges instead of a
+17   specific -- just a specific one number, how do you
+18   then get to the birefringence?  How do you address
+19   the range?
+20        A.   We use the range as the high -- we use the
+21   range as we take the high perpendicular -- the high
+22   parallel and subtract it -- subtract the high
+23   perpendicular from it.
+24        Q.   I'm sorry.  So you take the high parallel
+25   and then you subtract the high perpendicular?
+0450
+ 1        A.   Yes.  Say, for the first one, we have a
+ 2   high of 1.561, and in a perpendicular range, we
+ 3   have a high of 1.530.  If you subtract 1.553 to
+ 4   1.561, that is going to give you a birefringence of
+ 5   0.008, I believe.
+ 6        Q.   So below ends of the range aren't used if
+ 7   you take high and high, and then that's how -- the
+ 8   high ends of parallel and the high of perpendicular
+ 9   to get the number that you ultimately used?
+10        A.   No.  We also take the low end of the
+11   perpendicular and subtract it from the low end of
+12   the -- so 1.568 is the -- let me do this over.
+13   1.568 is the high end of the parallel.
+14        Q.   I'm sorry.  Which one are you looking at?
+15   To follow along --
+16        A.   Let's start over.  We are looking at
+17   M71211-001CSMP, front page of the report.
+18        Q.   Okay.
+19        A.   And if we go down to the box, we have
+20   refractive indice in parallel ore 1.561 to 1.568.
+21   So the high is 1.568.  And then we have the
+22   refractive indices on the perpendicular of 1.550 to
+23   1.553.  So we would take the high perp -- the high
+24   parallel and subtract out the high perpendicular,
+25   and then we would take the low parallel, subtract
+0451
+ 1   out the low perpendicular, and then I would take
+ 2   those two numbers and average them.
+ 3        Q.   All right.
+ 4        A.   So if we get -- if we take the first one,
+ 5   1.568, 1.553510.  So that birefringence is 0.015.
+ 6   And if we take the low of the parallel and subtract
+ 7   it from the low perpendicular, so that gives me a
+ 8   range of 0.008.  So that's 11 -- so that would give
+ 9   me a birefringence average of 0.012, which would
+10   give you the low end of moderate.  And the range of
+11   refractive indices birefringence for chrysotile, we
+12   typically see from between .006 to around, on
+13   average, down to 0.017, but usually it falls in --
+14   when you -- in a sample where we take them all and
+15   average them together, we usually get a 0.011 or a
+16   0.012.
+17             And Dr. Sanchez has testified that the
+18   birefringence calculations for chrysotile is around
+19   .007 to .0017.  So it falls in that range.  So that
+20   can only be -- with all the other -- with all the
+21   other optical data, that can only be chrysotile.
+22        Q.   Yeah, unless you are including ranges here
+23   that don't actually -- where the colors don't
+24   actually appear in the images.  I mean, in other
+25   words, if you include magenta and red and there is
+0452
+ 1   no red in the image, then your ultimate calculation
+ 2   is going to be off; right?
+ 3        A.   Well, in this particular case the -- if
+ 4   you're not -- yeah, if you get crazy colors, it's
+ 5   going to be off.  But in this particular case, we
+ 6   are using a system now that when you look at the
+ 7   colors, you can match up the colors.  It gives you
+ 8   the wavelength, and it automatically gives you the
+ 9   refractive indices.
+10        Q.   The system is not automatically deciding
+11   what color is there; right?  That's still the
+12   judgment of the analyst?
+13        A.   It is.
+14        Q.   Okay.  Other than the palette analysis and
+15   this grid analysis that I got, have you done
+16   anything else new related to the Prudencio case?
+17        A.   The only other new thing we did is that we
+18   went back and reprepped the sample, Sample 009,
+19   M713009, prepped it like we were typically prepping
+20   it with the CSM and look at the palette again to
+21   see if the same phenomenon was happening, that the
+22   very large chrysotile structure bundles that we
+23   were getting an indication that were there in the
+24   ISO PL lens without heavy liquid density, and the
+25   same thing happened.
+0453
+ 1             So we've been using a water-based heavy
+ 2   liquid density, and did not count on the capillary
+ 3   action of the chrysotile sucking the water up and
+ 4   changing the density.  So we are moving now to an
+ 5   organic heavy liquid density.  We just have to work
+ 6   out the particulars with it.
+ 7        Q.   Anything else new related to the Prudencio
+ 8   case?
+ 9        A.   That's it.  That's all I've got today.
+10        Q.   And at some point, we had sent a request
+11   to plaintiff's counsel for the data regarding your
+12   UNARCO amosite analyses that you said you compared
+13   the particle in Ms. Prudencio's tissue to.  Did
+14   you -- were you aware that we had made that
+15   request?
+16        A.   I got told about it yesterday.  I just
+17   have to check with the client.  I don't think I'll
+18   have any problem, I hope.  Mr. Steve Crick of
+19   Humphrey, Farrington & McClain paid for that data
+20   in 1997 or '98, whenever it was.  I've just got to
+21   get permission from him, and if he says okay, I'll
+22   supply it.
+23        Q.   And so I understand -- you're saying that
+24   the tissue does not -- the fiber in the tissue does
+25   not look like the commercial amosite in the UNARCO
+0454
+ 1   product; right?
+ 2        A.   Correct.
+ 3        Q.   Okay.  Do you know whether there were
+ 4   different mines in South Africa that produced
+ 5   amosite?
+ 6        A.   Produced grunerite?
+ 7        Q.   Yeah, produced grunerite or amosite.
+ 8        A.   I tried it -- everybody has a habit of
+ 9   calling it amosite, and that's not a mineral.
+10   That's just a pseudonym for asbestos mines in South
+11   Africa.  It sort of gives a suggestion that any
+12   time you see grunerite, it had to come from the
+13   asbestos mines of South Africa, and grunerite can
+14   be found in any other areas.
+15        Q.   Okay.  Let's say, do you know whether
+16   there were different mines in South Africa that
+17   produced grunerite asbestos?
+18        A.   I'm sure there was.  I mean, I just have
+19   to look it up.
+20        Q.   Do you know whether there could be any
+21   differences in their chemical expositions or
+22   signatures based on being from different mines?
+23        A.   You know, I don't know.  I would have to
+24   check that.
+25        Q.   So the fact that the fiber in
+0455
+ 1   Ms. Prudencio's tissue, if it doesn't match what's
+ 2   in this UNARCO product, that doesn't mean that it
+ 3   wouldn't match grunerite from some other mine in
+ 4   South Africa; right?
+ 5        A.   Well, right now, I haven't seen somebody
+ 6   produce other mines of South Africa.  I did see
+ 7   that one of my amosite EDSes were produced.  To
+ 8   Sanchez, not from me.  And that chemistry in that
+ 9   EDS doesn't match what Sanchez is calling amosite
+10   or grunerite from South Africa.  But again, I'll
+11   have to get permission from my client before I
+12   produce it.
+13        Q.   Fair enough.  I guess the question was
+14   simpler.  You are saying that fiber doesn't match
+15   the specific amosite used in the UNARCO product,
+16   but you haven't compared it to amosite from some
+17   other locations at this juncture?
+18        A.   I have not.
+19        Q.   Okay.  Let's see.  Have you learned
+20   anything more about when the 2013 Cashmere Bouquet
+21   report was initially located?
+22        A.   Nothing more than I've already stated.
+23        Q.   Do you know, as you are sitting here
+24   today, what month it was located in?
+25        A.   Time has gone by.  I would have to look
+0456
+ 1   back at what I stated or redo all that and look at
+ 2   it again.
+ 3        Q.   And I know you've mentioned that you're
+ 4   aware that, at least initially, there was some
+ 5   testing of Johnson & Johnson by Quantum; right?
+ 6             MR. RIVAMONTE:  Vague.
+ 7        A.   I don't -- I mean, it's possible.  I just
+ 8   don't recall.
+ 9   BY MR. DUBIN:
+10        Q.   You don't recall that there was such a
+11   testing or --
+12        A.   Well, I know Quantum has tested products
+13   for Simon Greenstone, but what I recall is Chanel's
+14   and stuff -- I mean -- it's all possible that he
+15   did.  I just don't recall it.
+16        Q.   I thought you told me that when you --
+17   when you were considering what methods to use to
+18   test Johnson & Johnson, you were aware that Quantum
+19   had been testing that product and the results of
+20   it?
+21        A.   I don't recall saying that.
+22        Q.   Okay.  I mean, I think I asked you --
+23   let's break that down.  "How did you learn that
+24   Quantum had done testing of Johnson & Johnson?"
+25             You said, "I can't recall right now, but
+0457
+ 1   that was my understanding."
+ 2             At the time, you don't recall this
+ 3   discussion we had?
+ 4        A.   No, I don't.
+ 5        Q.   Okay.  Well, I guess we'll talk about that
+ 6   testimony later.
+ 7             But you didn't know that plaintiff had
+ 8   already been screening the Johnson & Johnson talc
+ 9   with other experts before they asked you to look at
+10   it?
+11        A.   When you say "screening," you mean like
+12   analyze them before they gave them to me?
+13        Q.   Well, meaning that they had other experts
+14   looking at it on a consulting basis.
+15             MR. RIVAMONTE:  Objection.  Assumes facts.
+16   Calls for speculation.
+17        A.   I mean, what I'm aware of is Quantum had
+18   analyzed things like Chanel.  You know, I would get
+19   samples in their chain of custody.  So I'm not
+20   surprised.  Chanel -- they are using the long
+21   method.  But -- and if that screening -- you know,
+22   most of those samples were negative.
+23   BY MR. DUBIN:
+24        Q.   Okay.  So you're telling me you did not
+25   know that Quantum had been analyzing Johnson &
+0458
+ 1   Johnson?
+ 2        A.   I don't -- I don't recall that now.  I'd
+ 3   have to see the testimony, you know, what I was
+ 4   thinking about.
+ 5        Q.   I thought you -- I thought you told me,
+ 6   "Well, I must have told you guys about that back in
+ 7   my *Herford deposition."  It doesn't ring a bell?
+ 8        A.   It doesn't ring a bell.  I apologize.
+ 9        Q.   Okay.  If you -- if you want to look at it
+10   at some point, it was in your Forest testifying.
+11        A.   Forest?
+12        Q.   Forest deposition.  We can talk about that
+13   later.  All right.
+14             Well, I know there are other people on the
+15   phone who have questions, so I'm going to go ahead
+16   and pass so I can get you done today.
+17             MR. RIVAMONTE:  Let's take a break.
+18             THE WITNESS:  Yeah, I need a break.
+19             MR. RIVAMONTE:  Can we take a break?
+20             MR. CHARCHALIS:  Sure.  How long?
+21             THE VIDEOGRAPHER:  We are going off the
+22   record.  9:53 a.m.
+23             (Recess taken from 9:53 a.m. to
+24             10:24 a.m.)
+25             THE VIDEOGRAPHER:  We are now on the
+0459
+ 1   record.  10:24 a.m.
+ 2   
+ 3                        EXAMINATION
+ 4   BY MR. CHARCHALIS:
+ 5        Q.   Good afternoon, Dr. Longo.
+ 6        A.   Good afternoon.
+ 7        Q.   How are you?  All right.  So I'm going to
+ 8   ask you some questions here.  As you know, I
+ 9   represent Albertsons, Safeway, Lucky, and Longs in
+10   this matter, so I just want to remind you of that;
+11   okay?
+12        A.   Sure.
+13        Q.   All right.  So in this matter, you've not
+14   done any calculations specific to Albertsons,
+15   Safeway, or Lucky; correct?
+16        A.   I have not.
+17        Q.   And with regard to Johnson & Johnson's
+18   baby powder, you have not done any calculations
+19   specific to Longs; correct?
+20             MR. RIVAMONTE:  Vague and overbroad.  What
+21   do you mean by that?
+22   BY MR. CHARCHALIS:
+23        Q.   So you haven't done calculations for
+24   Albertsons, Safeway, or Lucky.  You agree with
+25   that.  I know in your exposure calculations, there
+0460
+ 1   are calculations pertaining to the Longs store
+ 2   brand.  So I'm asking you, you have not done any
+ 3   calculations pertaining to Longs specifically about
+ 4   Johnson's baby powder?
+ 5             MR. RIVAMONTE:  Still vague and overbroad.
+ 6        A.   I mean, I've determined the percentage of
+ 7   probable amounts of the percentages of Longs versus
+ 8   Johnson & Johnson.
+ 9   BY MR. CHARCHALIS:
+10        Q.   Right.  But you haven't done a calculation
+11   of how many containers of Johnson's baby powders
+12   were purchased from Longs that Ms. Prudencio was
+13   exposed to; correct?
+14        A.   Oh, that is correct.  I haven't done any
+15   calculations for the number of containers, either
+16   Longs or Johnson & Johnson produced, purchased at
+17   Albertsons, Safeway, and Lucky.
+18        Q.   And in this matter, will you not be
+19   providing any opinions specific to the conduct of
+20   any of the retailers I've described during the time
+21   period that Ms. Prudencio was allegedly exposed to
+22   Johnson's baby powder and Longs baby powder;
+23   correct?
+24        A.   Correct, it's --
+25             MR. RIVAMONTE:  Vague and overbroad.
+0461
+ 1        A.   I typically do not provide testimony about
+ 2   who knew what and when about the dangers, the
+ 3   hazards of asbestos.
+ 4             MR. CHARCHALIS:  And just so there is no
+ 5   issues trying to get the objection in, if Dr. Longo
+ 6   starts answering, feel free to put a belated
+ 7   objection after he finishes his -- if you would
+ 8   like.
+ 9             MR. RIVAMONTE:  Sure.
+10   BY MR. CHARCHALIS:
+11        Q.   So, Dr. Longo, turning your attention to
+12   the MAS project, M71216, it's Exhibit 3F in this
+13   deposition, that is your report about the -- that
+14   contains two vials of Johnson's baby powder
+15   purchased from Lucky, as well as a container of
+16   Gold Bond; correct?
+17        A.   That's correct.
+18        Q.   And the bottles of Lucky -- Johnson's baby
+19   powder purchased from Lucky were manufactured in
+20   2019; correct?
+21        A.   Correct.
+22        Q.   And so the talcs purchased for those
+23   containers would have been China; correct?
+24        A.   Correct.
+25        Q.   And your exposure calculations in this
+0462
+ 1   case were for a period of 1986 to 2002; correct?
+ 2        A.   That's correct.
+ 3        Q.   So the talc at issue for those
+ 4   calculations is from Vermont; correct?
+ 5        A.   Yes, for Vermont up to 2002.  But
+ 6   Ms. Prudencio, though, testified about it being in
+ 7   the house up to, I think it was 2013 or so and
+ 8   testified that she was around her sister when she
+ 9   was using Johnson's baby powder, as well as -- I
+10   think as well as Longs, and that she would be in
+11   the room with her, that she would put it on her
+12   back.  Her brother did the same until he reached
+13   puberty, so that got him into the Chinese.
+14             So even though I didn't do any
+15   calculations, because I didn't have, really, enough
+16   information about how much was being used, et
+17   cetera, Prudencio certainly had exposure to Chinese
+18   talc.
+19        Q.   And I understand what the testimony is.
+20   What I'm asking is whether your calculations -- all
+21   I asked was whether your calculations were for the
+22   period from 1986 to 2002.  Correct?
+23        A.   That is correct.
+24        Q.   Okay.  And for on your calculations -- I'm
+25   not asking about the other testimony that has been
+0463
+ 1   provided and what other allegations are.  My
+ 2   question is only about your calculations.  So for
+ 3   the period from '86 to 2002, where you performed
+ 4   the exposure calculations, the talc at issue was
+ 5   sourced from Vermont with regard to Johnson's baby
+ 6   powder; correct?
+ 7        A.   That is correct.
+ 8             MR. RIVAMONTE:  Belated objection.  Vague
+ 9   and overbroad.
+10   BY MR. CHARCHALIS:
+11        Q.   Now, with regard to your calculations for
+12   talc source from China with regard to Johnson's
+13   baby powder, at this time, approximately how many
+14   containers have you tested from China?
+15        A.   Are we just dealing only with Johnson &
+16   Johnson or other manufacturers?
+17        Q.   Correct.
+18        A.   I think 40.
+19        Q.   Okay.  And you determined approximately --
+20   what was the percentage that you've identified
+21   asbestos in?
+22        A.   83 percent.
+23        Q.   Okay.  And to provide that calculation,
+24   whether one of the bottles that was included in
+25   that sample was from Lucky, purchased from the
+0464
+ 1   Lucky stores is not relevant to the percentage that
+ 2   you provided; correct?
+ 3             MR. RIVAMONTE:  Vague and overbroad.
+ 4        A.   It's part of that percentage.
+ 5   BY MR. CHARCHALIS:
+ 6        Q.   I understand the container is part of it,
+ 7   but the fact that it was purchased from Lucky is
+ 8   not necessary for you to be able to provide the
+ 9   opinion that approximately 80 percent of the
+10   containers from China contained asbestos as per
+11   your testing; correct?
+12        A.   Yes, I guess --
+13             MR. RIVAMONTE:  Vague and overbroad.
+14             THE WITNESS:  I'm sorry.
+15   BY MR. CHARCHALIS:
+16        Q.   Go ahead.  He said vague and overbroad.
+17             MR. RIVAMONTE:  Vague and overbroad.
+18        A.   Well, it's part of the population of
+19   containers of Chinese specifically for J&J.
+20   BY MR. CHARCHALIS:
+21        Q.   Okay.  I understand that it's part of the
+22   population.  I'm not -- I'm not disputing that that
+23   container is part of a population that you tested.
+24   All I'm asking is whether the fact that it was --
+25   that one container -- two containers, sorry, the
+0465
+ 1   fact that those two containers were purchased from
+ 2   Lucky, whether that information affects, in any
+ 3   way, your ultimate calculation that approximately
+ 4   80 percent of the containers contained asbestos.
+ 5             MR. RIVAMONTE:  Vague and overbroad.
+ 6        A.   Well, if you remove the two containers, it
+ 7   does reduce --
+ 8   BY MR. CHARCHALIS:
+ 9        Q.   I'm sorry.  I'm not trying to cut you off.
+10   I don't think we are understanding.  I'm not saying
+11   removing the containers.  I'm not saying don't
+12   include those containers in your count.  I'm just
+13   saying the fact they came from Lucky -- so
+14   whether -- if you did not know that information.
+15        A.   Oh.
+16        Q.   For example, if those two containers, you
+17   did not know that they came from Lucky, it would
+18   not affect your ultimate opinion about the level of
+19   contamination for that sample size; correct?
+20        A.   Now I understand.  Sorry.  That is
+21   correct.
+22        Q.   Okay.  Thank you.
+23        A.   I apologize.  I just wasn't getting it.
+24        Q.   I probably didn't ask a good question.  So
+25   that's fine.
+0466
+ 1             Now, with regard to -- I don't believe
+ 2   it's an exhibit in this deposition yet.  Are you
+ 3   familiar with your MAS, the chart, the summary
+ 4   chart from January 31st of 2021; correct?
+ 5        A.   Yes.
+ 6             MR. CHARCHALIS:  Okay.  And I just -- what
+ 7   exhibit are we up to?  I'm sorry.
+ 8             THE WITNESS:  I don't know.
+ 9             MR. CHARCHALIS:  Madam Court Reporter, do
+10   you know what exhibit we are up to?
+11             (Reporter comments.)
+12             MR. RIVAMONTE:  I think we are at 17.
+13   Well, I don't know.  Let's go by what the court
+14   reporter said.  I don't know.  Go ahead.  Sorry.
+15   Sorry, Mitchell.  Go ahead.
+16             MR. CHARCHALIS:  I think it will be safer
+17   if we don't have duplicates.  So I'll just mark it
+18   as Exhibit 18 for now, if you believe we're up to
+19   17.  And then at a break, we can double-check.
+20             (Deposition Exhibit 18 was marked for
+21             identification by the reporter and is
+22             attached hereto.)
+23   BY MR. CHARCHALIS:
+24        Q.   In that chart, there is a -- do you have
+25   that chart available to you, Dr. Longo, or do I
+0467
+ 1   need to show it to you?
+ 2        A.   You need to show it to me.  I don't have
+ 3   it.
+ 4        Q.   That's fine.  I'm happy to show it to you.
+ 5   It will be brief.  There is a container -- and I'll
+ 6   show it to you.  It's identified as M70484-002.
+ 7   It's in Table 2 of 018 on page 11.  Do you see my
+ 8   screen, Doctor?
+ 9        A.   There it is.  Okay.
+10        Q.   Okay.  Now, as you'll see in the source
+11   there, it says "retailer, CVS, Rite Aid, or
+12   Albertsons"; correct?
+13        A.   Correct.
+14        Q.   And you recall I asked you about some of
+15   the information that was in this chart in the
+16   Johnson deposition about who put that information
+17   in there; correct?
+18        A.   Correct.
+19        Q.   And you recall that you told me Ms. Kagan
+20   put that specific information into his chart;
+21   correct?
+22        A.   Correct.
+23        Q.   And at that time, you had not done
+24   anything to confirm what retailer allegedly sold
+25   this sample; correct?
+0468
+ 1             MR. RIVAMONTE:  Vague.  Overbroad.  And
+ 2   assumes facts.
+ 3        A.   As I recall, that was her testimony, not
+ 4   specific for that container, but this is where she
+ 5   bought her products.  So I can't say that that
+ 6   particular one came from -- from which one of the
+ 7   three that she purchased that particular container.
+ 8   BY MR. CHARCHALIS:
+ 9        Q.   So we'll unpack that -- let me ask it this
+10   way.  Ms. Kagan put that information into that
+11   chart; correct?
+12        A.   Correct.
+13        Q.   And notwithstanding your own recollection
+14   of what the testimony was, did Ms. Kagan tell you
+15   where she got that information from?
+16        A.   I'm trying to remember, but I believe she
+17   stated it came out of Ms. Zimmerman -- Linda
+18   Zimmerman's testimony.
+19        Q.   Okay.  So -- so you were not told that
+20   there was some additional interviews conducted
+21   where that information came from to prepare this
+22   chart; correct?
+23        A.   I don't recall --
+24             MR. RIVAMONTE:  Objection.  Assumes facts.
+25        A.   I don't recall that.
+0469
+ 1   BY MR. DUBIN:
+ 2        Q.   And you don't -- there was no
+ 3   documentation that was provided that indicated who
+ 4   purchased that container -- or where it was
+ 5   purchased from?  I'm sorry.
+ 6        A.   Again, what I recall is that she -- she
+ 7   was purchasing -- she testified that she purchased
+ 8   from these three retailers.
+ 9        Q.   And --
+10        A.   I don't have any information specifically
+11   for that container other than one of the three.
+12        Q.   So besides the deposition testimony,
+13   you're not aware of any other evidence that would
+14   establish where that container came from; correct?
+15        A.   You know, unless the analysis, there's
+16   chains of custody saying that, and, you know, I
+17   haven't looked at that.
+18        Q.   So -- I'm not going to ask you to go look
+19   for it right now, but I just want to know what the
+20   possible -- what the realm is of possible documents
+21   that, you know, that could have provided this
+22   information.  So if you have a chain of custody
+23   document that says it, that could be one source,
+24   and the deposition could be a second source;
+25   correct?
+0470
+ 1        A.   Correct.  I mean, what I recall, it's just
+ 2   from the deposition, but I would have to --
+ 3        Q.   Okay.
+ 4        A.   -- look at the original --
+ 5        Q.   Right.
+ 6        A.   Now it's just look at the chain of
+ 7   custody, is what I came in to see if it actually
+ 8   came from --
+ 9        Q.   Okay.
+10        A.   -- a particular retailer, but since
+11   there's three on there, I don't think there is any
+12   additional information.
+13        Q.   Okay.  Now, you do not know which of those
+14   three retailers that sample came from; correct?
+15        A.   That is correct.
+16        Q.   So you cannot say, based on a reasonable
+17   degree of certainty, that that container came from
+18   Albertsons; correct?
+19        A.   Correct.
+20        Q.   And if we were to assume that there was an
+21   equal probability that it came from CVS, Rite Aid,
+22   or Albertsons, so that would be a 33.3 percent
+23   chance that it came from each one of those
+24   stores -- are you following me so far?
+25        A.   Yes.  That's how the math works.
+0471
+ 1        Q.   Okay.  And so if we made that assumption,
+ 2   it would actually be more likely than not that the
+ 3   sample did not come from Albertsons; correct?
+ 4             MR. RIVAMONTE:  Vague.  Overbroad.
+ 5   Improper hypothetical.
+ 6        A.   If you assume they were all purchased
+ 7   equally and if your hypothetical is correct, then
+ 8   your statement would be correct.
+ 9   BY MR. CHARCHALIS:
+10        Q.   Okay.  Do you have any information that
+11   you are aware of that would establish what the
+12   likelihood is that that came from CVS, Rite Aid, or
+13   Albertsons?
+14        A.   As I sit here today, I don't.
+15        Q.   And I pulled that document, but if I
+16   represent to you that in that document, that is the
+17   only place where Albertsons is mentioned.  Do you
+18   know of any other samples that you tested that --
+19   that were potentially from Albertsons?  Actually,
+20   let me strike that.  That was a poorly worded
+21   question.
+22             That -- nowhere else in that chart does it
+23   state that Albertsons was a potential source of a
+24   sample that you tested.  Do you agree with that?
+25        A.   I would agree.
+0472
+ 1             MR. RIVAMONTE:  Vague.
+ 2   BY MR. CHARCHALIS:
+ 3        Q.   And this chart was created January 31st of
+ 4   2021.  Since then, have you tested any containers
+ 5   that you know were purchased from an Albertsons?
+ 6        A.   Not that I recall.
+ 7        Q.   Now, switching gears, speaking about
+ 8   Johnson's baby powder -- I believe you've been
+ 9   asked about whether the containers or the Johnson's
+10   baby powder is homogeneous, and I think it's
+11   understood that Johnson's baby powder is talc-based
+12   -- correct? -- and at issue in this litigation is
+13   the accessory minerals; correct?
+14        A.   Correct.
+15        Q.   Okay.
+16             MR. RIVAMONTE:  Vague.
+17   BY MR. CHARCHALIS:
+18        Q.   And you would agree that with regards only
+19   to the accessory minerals, that talc used in
+20   Johnson's baby powder is not homogeneous; correct?
+21             MR. RIVAMONTE:  Vague.  Overbroad.
+22        A.   Yes and no.
+23   BY MR. CHARCHALIS:
+24        Q.   Your testing has, at times, identified
+25   tremolite only in containers of Johnson's baby
+0473
+ 1   powder; correct?
+ 2        A.   Correct.
+ 3             MR. RIVAMONTE:  Vague and overbroad.
+ 4   BY MR. CHARCHALIS:
+ 5        Q.   Dr. Longo, I'm sorry.  I didn't hear you.
+ 6        A.   That is correct.  When using heavy liquid
+ 7   TEM, we have found only -- mostly only tremolite
+ 8   from certain mines, and other mines we find
+ 9   primarily chrysotile.  And other mines we find, by
+10   TEM, primarily anthophyllite.  So it depends on the
+11   mine.
+12        Q.   It depends on the mine.  Is that what you
+13   said?
+14        A.   Yes.
+15        Q.   Okay.  And so because Johnson's baby
+16   powder has been sourced from multiple mines, with
+17   regards to the accessory minerals, it is not
+18   homogeneous; correct?
+19             MR. RIVAMONTE:  Vague and overbroad.
+20        A.   Yeah, you have different concentrations in
+21   different areas of the mine.  But once it gets into
+22   the container, at that point, it is homogeneous.
+23   BY MR. CHARCHALIS:
+24        Q.   Correct.  I'm not asking you now about
+25   once Johnson's baby powder is put into a container.
+0474
+ 1   My questions are with regard to, for example, a
+ 2   container that is purchased in 1976 compared to
+ 3   containers purchased in 2001, that type of
+ 4   scenario.  So what I'm asking is not on -- within
+ 5   the specific container, but in the broader sense,
+ 6   are the accessory minerals in Johnson's baby powder
+ 7   homogeneous?
+ 8             MR. RIVAMONTE:  Vague and overbroad.
+ 9        A.   In the baby powder, it's homogeneous, but
+10   when you say something like 1976, where you're
+11   primarily in the Hammondsville Mine, and in 2001,
+12   we were getting more into the Argonaut Mine, we
+13   don't have enough samples to analyze yet.  We
+14   haven't done enough samples on that just to see,
+15   from container to container, what are the
+16   differences.  But you're comparing two different
+17   mines when you go to 1976 and 2001.
+18             (Speakers talking simultaneously.)
+19        A.   It's a different area.
+20   BY MR. CHARCHALIS:
+21        Q.   Okay.  So while -- so you have not, at
+22   this time, tested enough samples from each
+23   individual mine in the Vermont region to say that
+24   each mine is -- the talc was homogeneous to the
+25   other mines that the talc was sourced from; is that
+0475
+ 1   correct?
+ 2        A.   Well, the talc --
+ 3             MR. RIVAMONTE:  Vague and overbroad.
+ 4        A.   It's the --
+ 5             MR. CHARCHALIS:  Yeah, let me withdraw
+ 6   that.  That was a bad -- I didn't use the right
+ 7   terminology.
+ 8        Q.   You have not done testing sufficient to
+ 9   determine whether the accessory minerals in each
+10   mine is identical to all the other mines in the
+11   region that were -- that the talc was sourced from.
+12   So --
+13        A.   Well --
+14        Q.   -- that would include the Rainbow Mine,
+15   the Hamm Mine, the Argonaut Mine, and I believe I'm
+16   missing one.  You probably know it better than I
+17   do.  But is that correct?
+18        A.   Argonaut, Rainbow.  I think that's --
+19   there might be one more there.  Well, the accessory
+20   minerals are pretty much the same.  It's just the
+21   concentrations.  You know, accessory minerals of
+22   calcium carbonate, magnesium carbonate, mica,
+23   aluminum silicate, chloride.  You can find pretty
+24   much the same thing in every mine.
+25             When I say "not homogeneous," I'm looking
+0476
+ 1   at just the concentrations of the various accessory
+ 2   minerals.  We haven't started down the road, yet,
+ 3   of testing all the Vermont mine samples we have for
+ 4   chrysotile.
+ 5             But if you look at the -- from '68, '69,
+ 6   all the way up to 2002, 2003, our Vermont
+ 7   samples -- and these are all historical from J&J,
+ 8   you have an overall concentration of asb --
+ 9   amphibole asbestos of about 81 or 82 percent.  So
+10   it's fairly homogeneous.  I'm finding asbestos in
+11   them all.
+12             I'm just looking at -- you know, you'll
+13   have negatives and positives, and some of the
+14   positives are very high.  We'll have nondetect
+15   below our detection limits, so it's really the
+16   concentration of amounts.
+17             If it was all homogeneous for the same
+18   amount of asbestos in it, we should see relatively
+19   the same amounts in each of the samples that are
+20   positive, or you shouldn't have all negative -- you
+21   shouldn't have negatives, or you should have all
+22   negatives and not some positives.  But I think the
+23   difference here is that the amount of asbestos will
+24   not be the same in the different parts of the mine.
+25        Q.   You said that all of the accessory
+0477
+ 1   minerals are in each sample, but the concentrations
+ 2   can change.  Is that your testimony?
+ 3        A.   Yes.
+ 4        Q.   So regardless of what mine during what
+ 5   period, you will find all of the same accessory
+ 6   minerals, and that's beyond -- that's not just
+ 7   limited to asbestos.  Is that your testimony?
+ 8        A.   Yes.  You know, it's not our data.  It's
+ 9   data from J&J where you look at their XRB, and
+10   sometimes you will find mica, and other samples,
+11   they won't.
+12        Q.   But I'm not -- when we are talking
+13   homogeneous, it's not about sometimes.  It's
+14   whether it's always going to be the same.  So you
+15   said sometimes you'll find mica; sometimes we will
+16   not, and you are relying on their data.
+17             So in every sample, will you always find
+18   the exact same list of accessory minerals
+19   regardless of your mine, or will it -- sometimes,
+20   will there be some form of variation with regard to
+21   accessory minerals?
+22        A.   You find the same types of accessory
+23   minerals, and this is Johnson & Johnson's data --
+24             (Reporter interruption for clarification
+25             of the record.)
+0478
+ 1        A.   If you don't mind the accessory mineral in
+ 2   the sample, it's --
+ 3             (Reporter interruption for clarification
+ 4             of the record.)
+ 5        A.   I mean, the point that you are missing, I
+ 6   think, is that when you don't find one particular
+ 7   accessory mineral in one sample, it doesn't mean
+ 8   that the accessory mineral is not there.  It's just
+ 9   at a concentration that could be below your
+10   detection limit.
+11             You can never say something is not there,
+12   especially if you have a history of it in another
+13   sample.  It's all about the concentration.  Because
+14   the way -- you know, what the geologists tell me,
+15   the way these mines form, you're going to get a set
+16   number -- types of accessory minerals.
+17   BY MR. CHARCHALIS:
+18        Q.   So is it your opinion that it's
+19   homogeneous, or is that information that you are
+20   basing on what geologists have told you?
+21        A.   It's my opinion that the types of
+22   accessory minerals are homogeneous through the
+23   mines.  And to be able to detect it or not has to
+24   do with the amount that's in any particular sample,
+25   and that's the homogenicity that I've been talking
+0479
+ 1   about, is the concentration of the accessory
+ 2   minerals.
+ 3             As you get to different types of rock in
+ 4   there, you know, you're going to have different --
+ 5   you know, different amounts of accessory minerals.
+ 6   If there's no -- if you get a rock that's truly a
+ 7   serpentine rock and it's not talc, well, that's
+ 8   going to have a lot more of different
+ 9   accessory-type mineral, not really an accessory
+10   mineral.  It's part of the geological formations
+11   there.
+12             It's all about the homogenicity of the
+13   concentrations of the various accessory minerals
+14   and the homogenicity of what's in the container
+15   itself.
+16        Q.   When you say that the accessory minerals,
+17   you can't know that they are not there because of
+18   detection limits, how are you assuming that they
+19   are always in there since they are, at times, not
+20   detected?
+21        A.   Because you can find it in other samples
+22   that are there, that shows certain accessory
+23   minerals in this sample, but another sample in the
+24   mine line, it may be missing one of them.
+25        Q.   Well, the different parts of --
+0480
+ 1   different --
+ 2             MR. RIVAMONTE:  Hold on.  Hold on,
+ 3   Mr. Charchalis.
+ 4             Dr. Longo, are you done with your answer?
+ 5             THE WITNESS:  Yes.
+ 6             MR. RIVAMONTE:  Okay.  Go ahead.
+ 7   BY MR. CHARCHALIS:
+ 8        Q.   Different parts of a mine can have
+ 9   different mineral compositions; correct?
+10        A.   Sure, if you're --
+11             MR. RIVAMONTE:  Vague and overbroad.
+12   BY MR. CHARCHALIS:
+13        Q.   Sure.  If you're not digging the talc ore
+14   out, but you're digging out the side walls or you
+15   are digging out just the serpentine side,
+16   absolutely.  But I'm talking about what's typically
+17   found in these products and what -- and overall ore
+18   where they are digging out talc.
+19        Q.   So it's your testimony that if you're
+20   digging out talc with -- ore talc, the accessory
+21   minerals that are present are always going to be
+22   identical regardless of the portion of the mine
+23   that you are in for the period, but the amount can
+24   change?
+25             MR. RIVAMONTE:  Objection to the extent it
+0481
+ 1   misstates testimony.  Vague, overbroad.
+ 2        A.   They're going -- they're going to be the
+ 3   same types of minerals.  You're going to have the
+ 4   same types of accessory minerals.  And if you're
+ 5   dealing with just asbestos, it's at a high-enough
+ 6   concentration to find it or the concentration is
+ 7   too low for the analytical method.  That's my
+ 8   opinion.
+ 9   BY MR. CHARCHALIS:
+10        Q.   I understand you're saying they'll all
+11   have same types, but there are different -- if you
+12   have -- you could have the same type of something,
+13   but it doesn't mean it's identical because you can
+14   have multi -- as you said, you know, grunerite
+15   isn't the same -- is the same type of mineral as
+16   cummingtonite; correct?
+17             And so -- so are you saying -- when you say
+18   'types," you have the same types.  Are you saying --
+19   that's not saying that every single specific mineral
+20   is the same in every single container of baby powder?
+21             MR. RIVAMONTE:  Vague.  Overbroad.
+22   Misstates -- objection --
+23             (Speakers talking simultaneously.)
+24             MR. RIVAMONTE:  -- to the extent that it
+25   misstates testimony and compound.
+0482
+ 1             THE WITNESS:  I'm sorry at the end.
+ 2        A.   When I'm talking about --
+ 3             MR. RIVAMONTE:  That's okay.
+ 4        A.   -- "types," I'm going asbestos.  I'm not
+ 5   saying it's actinolite or tremolite, or it could be
+ 6   anthophyllite or iron-rich anthophyllite, it could
+ 7   be cummingtonite.  It's all asbestos or chrysotile.
+ 8             You know, right now I think if we -- you
+ 9   now, the serpentine issue in these mines -- and we
+10   don't have a good handle yet on Vermont -- you know,
+11   it's -- the method we are using is sensitive enough.
+12   We are starting to see chrysotile in every sample.
+13   So chrysotile may be something that is in all mines.
+14   The detection limits have just not been good enough
+15   in the past for sample prep.
+16             So when I say "micas," you know, there's
+17   six different micas, or seven or something like that,
+18   or aluminum silicates, or you may find some
+19   antigorite or hornblende.  But they are all kind of
+20   in the same family of minerals.
+21   BY MR. CHARCHALIS:
+22        Q.   This time, I'll move on, and if we have
+23   more time, I'll come back to this.
+24        A.   Okay.
+25        Q.   I want to ask you about the bottles of
+0483
+ 1   Longs baby powder that you received in this matter.
+ 2   Okay?
+ 3        A.   Sure.
+ 4        Q.   So you first received four bottles on
+ 5   March -- I believe March 9th of 2021; correct?
+ 6        A.   Yeah.  Let me just get my chain of custody
+ 7   so I can follow it along.
+ 8        Q.   Let me know when you are ready.
+ 9        A.   Yeah.  March 9th.
+10        Q.   Were you informed that you would be
+11   receiving those four bottles?
+12        A.   Sometime before we got them.
+13        Q.   And do you know approximately how long?
+14        A.   No.
+15        Q.   Do you know if it was a week -- can you
+16   give me an estimation?  A week?  A month?  Two
+17   months?
+18             MR. RIVAMONTE:  Asked and answered.
+19             MR. CHARCHALIS:  It's not asked and
+20   answered, Ian.  I asked him for an estimation.
+21        A.   I mean, the affidavits that I have are all
+22   dated March 8th, and we got them right after that.
+23   I know that Mr. Satterley was collecting them, but
+24   I don't recall the conversations, but I knew we
+25   were getting them.
+0484
+ 1   BY MR. CHARCHALIS:
+ 2        Q.   Now, when did you first become aware that
+ 3   Mr. Satterley's office was attempting to obtain
+ 4   containers of Longs baby powder?
+ 5        A.   I don't have the date when I first became
+ 6   aware.
+ 7        Q.   Do you know what year it was?
+ 8        A.   I believe it was 2021.
+ 9        Q.   Do you know if it was in January?
+10        A.   Again, anything that I say would just be
+11   speculation.
+12        Q.   So the closest we can get is sometime in
+13   2021.  That was your most comfortable --
+14        A.   I believe so.
+15        Q.   Okay.  And when you first -- I know you
+16   don't recall when the conversation occurred, but do
+17   you recall how you found out?  Was it through an
+18   email?  Was it through a phone call?  What was the
+19   method that you became aware of it?
+20        A.   More likely than not, it was a phone call.
+21        Q.   And do you recall who told you about it?
+22        A.   The only person I've talked to about this
+23   Longs -- from the case and firm is Joe Satterley.
+24        Q.   Okay.  And did you know how he was -- you
+25   knew that he was going to place an advertisement;
+0485
+ 1   correct?
+ 2        A.   I either knew that he was going to place
+ 3   it, or I knew that he did place it, one of the two.
+ 4        Q.   Okay.  You don't know if it was found out
+ 5   before or after the advertisement was placed; is
+ 6   that fair?
+ 7        A.   It's fair.  I just can't recall.
+ 8        Q.   That's -- that's what I mean.  You just
+ 9   don't know today, sitting here, whether you found
+10   out before or after?
+11        A.   Well, I think in one of my first
+12   depositions, I think I was asked that same
+13   question, and that would probably be more -- unless
+14   I say the same thing, it would more accurate.
+15        Q.   Now, you then received 11 more containers
+16   on March 15th of 2021; correct?
+17        A.   That's correct.
+18        Q.   Did you -- when did you find out, if you
+19   recall, that you were going to be receiving those
+20   additional containers?
+21        A.   I think I got a -- I'm pretty sure Joe
+22   Satterley called me that he was sending 11 more.
+23        Q.   And do you know when that call occurred?
+24        A.   After we got the first ones.  So I don't
+25   know for sure.  It says here that we logged them
+0486
+ 1   in, that we received them -- we logged them in on
+ 2   3-15, and I believe I knew beforehand that 11 were
+ 3   coming.
+ 4        Q.   And you don't know if you spoke -- what
+ 5   day between 3-9 and 3 -- did you say 14 or 15 that
+ 6   you logged them?
+ 7        A.   15.
+ 8        Q.   All right.  So between --
+ 9             (Speakers talking simultaneously.)
+10        A.   -- before that, I just can't remember.
+11   BY MR. CHARCHALIS:
+12        Q.   I'm sorry.  It cut out.
+13        A.   Oh, I'm sorry.  I said it may have been a
+14   day or two before that, but I can't remember the
+15   exact date.
+16        Q.   And so you spoke to him at some point
+17   between March 9th and March 15th; isn't that
+18   correct?
+19        A.   That's my best estimate of when that
+20   happened.
+21        Q.   And when you had that conversation with
+22   him, did you know whether there were more
+23   containers of Longs baby powder in his possession
+24   at that time?
+25        A.   No.
+0487
+ 1        Q.   When you received the containers on
+ 2   March 15th of 2021, did you speak with anyone after
+ 3   receiving those containers?
+ 4             MR. RIVAMONTE:  Vague and overbroad.
+ 5   BY MR. CHARCHALIS:
+ 6        Q.   When I say "speak with" someone, I meant
+ 7   from the Kazan law firm.
+ 8        A.   I'm sure, but I don't have any
+ 9   recollection of what he was talking about.
+10   Probably -- any conversations I had probably had to
+11   do with the turnaround time.  I think we were under
+12   a pretty tight deadline of when these things had to
+13   be analyzed.
+14        Q.   So you spoke with -- was it Mr. Satterley
+15   about the turnaround time?
+16        A.   Yes.  All my discussions about these
+17   containers of Longs have only been with
+18   Mr. Satterley.
+19        Q.   When did you learn that there were
+20   additional containers of Longs baby powder in
+21   Mr. Satterley's possession?
+22        A.   Whenever the --
+23             MR. RIVAMONTE:  Vague and overbroad.
+24        A.   Whenever the request came in, he said he
+25   was going to be sending me more samples that was in
+0488
+ 1   his possession that he did not send us that were to
+ 2   be split for --
+ 3   BY MR. CHARCHALIS:
+ 4        Q.   What do you mean, "when the request came
+ 5   in"?  I'm sorry.  What do you mean by that?
+ 6        A.   I understand that it came to light at some
+ 7   point that Mr. Satterley had 14 or 15 more
+ 8   containers of Longs.  And he said he was going to
+ 9   send them to us because I guess you guys wanted a
+10   split of the sample.
+11        Q.   So you became aware that there were
+12   additional containers after it became known by --
+13   after a request for splits were -- was made?  Is
+14   that your understanding?
+15        A.   Yes.  Mr. Satterley called me and said
+16   that he had more containers and that could we set
+17   up that if for -- whoever was going to come over on
+18   behalf of Longs and do a split like we've done for
+19   J&J and others for some time.
+20        Q.   And do you recall when that conversation
+21   took place?
+22        A.   No.
+23        Q.   Was it this month?
+24        A.   Well, I would have to look and see when
+25   we retained the containers because -- I mean not
+0489
+ 1   "retained," but when we got the additional
+ 2   containers, because --
+ 3        Q.   Do you recall -- I'm sorry.
+ 4        A.   It happened a day or two before that.
+ 5        Q.   So the conversation -- you first found out
+ 6   that the additional containers existed only a
+ 7   couple of days before you received them?
+ 8        A.   Correct.
+ 9        Q.   Okay.  So I believe they were sent to
+10   you -- I'm not -- I don't know the day you received
+11   them, but I believe they were sent to you on
+12   May 15th, approximately?  So if that date is
+13   accurate, then you would have found out sometime in
+14   that week of May 10th; is that fair?
+15        A.   That's fair.
+16        Q.   And during that conversation, did you ask
+17   Mr. Satterley why he did not send those to you
+18   earlier?
+19        A.   No.  I told him I was glad he didn't send
+20   those to me earlier.
+21        Q.   And why were you glad he didn't send those
+22   to you earlier?
+23        A.   We wouldn't have been able to get those
+24   analyses done in time.  We -- you know, I'm trying
+25   to remember what the discovery cutoff or what
+0490
+ 1   Mr. Satterley said we had to have them done by.  There
+ 2   would have been no way for us to analyze 14 or 15
+ 3   samples.
+ 4        Q.   And so now you have approximately 14 or 15
+ 5   more samples; correct?
+ 6        A.   Correct.
+ 7        Q.   And as of today, have you or -- and when I
+ 8   say "you," I'm referring to you or MAS; fair?
+ 9        A.   The royal we.
+10        Q.   Yes.  Have you, as of today, started
+11   testing any of those new containers?
+12        A.   No.  I was expressly told not to.
+13        Q.   Okay.  You've been told by Mr. Satterley
+14   not to test any of those?
+15        A.   Yes.
+16        Q.   Okay.  And so you have no intention of, at
+17   this time, of testing those containers; correct?
+18        A.   That is correct.
+19        Q.   And you will not be, obviously, relying on
+20   any results of -- from testing those containers to
+21   offer your opinions in this case because you will
+22   not be testing them; correct?
+23        A.   That is correct.  And I don't want to
+24   receive the wrath of the judge for going ahead and
+25   testing them and springing it on everybody.  It's
+0491
+ 1   not how I work.
+ 2        Q.    Okay.  Now, turning to -- well, actually
+ 3   withdrawn.
+ 4             Have you had any other conversations with
+ 5   Mr. Satterley about those additional containers
+ 6   besides the conversation we've already discussed?
+ 7        A.   I had one a few days ago because nobody
+ 8   had shown up to take splits after we rearranged our
+ 9   schedule and got them all logged in and took
+10   photographs of six sides of every container.  And
+11   he told me that he has a protocol that you all sent
+12   for the splits, that he hasn't had time to go
+13   through, and I've not seen it yet.  So that's it on
+14   the containers.
+15        Q.   That was -- that was the totality of your
+16   conversation with him?
+17        A.   Correct.
+18        Q.   Okay.  So -- and you haven't talked, as
+19   you stated, to anyone else from Mr. Satterley's
+20   office about these containers; correct?
+21        A.   Correct.  Again, I'm serious when I say
+22   the only -- my only conversations have been with
+23   Mr. Satterley concerning the Longs project.
+24        Q.   Did you -- did you receive affidavits for
+25   these containers when you received them?
+0492
+ 1        A.   You know, I have not because we weren't
+ 2   analyzing them or doing anything with them.  I have
+ 3   not reviewed the paperwork.  So I couldn't tell you
+ 4   yes or no.
+ 5        Q.   So if you had, you haven't looked at it;
+ 6   correct?
+ 7        A.   Correct.
+ 8        Q.   So your opinions in this matter would not
+ 9   rely on any information that is potentially in any
+10   affidavits associated with those containers, as
+11   well; correct?
+12        A.   That is correct, unless something
+13   drastically changes and I'm given instructions to
+14   do so, but I'm not -- don't think that is going to
+15   happen.  I am not going to rely on anything about
+16   those containers.
+17        Q.   Okay.  So any of the paperwork you
+18   received with those containers, you would not be
+19   relying on for your opinions in this case; correct?
+20        A.   Well, I haven't reviewed --
+21             MR. RIVAMONTE:  Asked and answered.
+22        A.   I haven't reviewed the paperwork.  Unless
+23   my -- there's something in there that I think is
+24   important for my opinions, but I haven't reviewed
+25   it, but certainly I think that -- I doubt that
+0493
+ 1   there's going to be anything different, if there's
+ 2   affidavits or photographs.  So I can't imagine why
+ 3   I would be relying on it.
+ 4   BY MR. CHARCHALIS:
+ 5        Q.   Have you been asked to review that
+ 6   paperwork at this time?
+ 7        A.   No.
+ 8        Q.   Okay.  Do you intend to review that
+ 9   paperwork for trial in this matter?
+10        A.   I have not been asked to review it, and so
+11   I don't -- now it's got my curiosity, but I will
+12   wait to see -- I'll ask my client if he wants me to
+13   review them or not, but as I sit here right now,
+14   no.
+15        Q.   Okay.  So just -- so that it's clear, you
+16   will not be reviewing any of the paperwork
+17   associated with those containers unless you are
+18   asked to do so by your client; correct?
+19        A.   Correct.
+20        Q.   Now, turning to the testing that was
+21   conducted on the Longs baby powder that is
+22   Exhibit 3, asterisk N -- Project M17303 [sic] and
+23   M71309.  Okay?
+24        A.   Okay.
+25        Q.   Do you have that in front of you, or will
+0494
+ 1   you need me to share it?
+ 2        A.   I have the whole -- I have everything
+ 3   here, so just tell me what you want to review or --
+ 4        Q.   Okay.  Thank you that's helpful.  So if we
+ 5   turn to page -- I'm sorry.  Actually, withdrawn.
+ 6   Let me do it this way.
+ 7             For this testing you performed the ISO
+ 8   22262-1 PLM method without heavy liquid separation;
+ 9   correct?
+10        A.   Correct.
+11        Q.   And the methods you used to conduct that
+12   were done in the same exact way when you tested
+13   Johnson's -- previously tested Johnson's baby
+14   powder; correct?
+15        A.   That is correct.
+16        Q.   And so you were deposed on those methods
+17   in multiple cases, including the Johnson matter and
+18   the Reyes matter; correct?
+19        A.   That is correct.
+20        Q.   And so your testimony on how you performed
+21   that method would apply to the -- how you performed
+22   as to Longs baby powder; correct?
+23        A.   It should be the same.
+24        Q.   Okay.  And you also performed the Colorado
+25   School of Mine's PLM sample preparation method for
+0495
+ 1   chrysotile with heavy liquid separation at 2.72
+ 2   grams per cc and then analyzed by the ISO 2262-1
+ 3   PLM method; correct?
+ 4        A.   That is correct.
+ 5        Q.   Okay.  And you performed that same exact
+ 6   method with regard to Johnson's baby powder as
+ 7   well; correct?
+ 8        A.   Correct.
+ 9        Q.   And you -- and so the testimony you
+10   provided in the Johnson matter and in this matter
+11   as to that method would apply to the Longs baby
+12   powder; correct?
+13        A.   Correct.
+14        Q.   Okay.  And then the same with regard to
+15   the Blount PLM with the ISO 22262-1 and -2 testing
+16   that you performed?
+17        A.   Well, that method would be the ISO 22262-1
+18   PLM portion of that, and the TEM is the 22262-1 and
+19   -2 because there's information in both concerning
+20   the TEM analysis.
+21        Q.   Okay.  And you performed that method of
+22   testing on Johnson's baby powder in the past as
+23   well; correct?
+24        A.   Since 2017.
+25        Q.   And so the testimony you've given with
+0496
+ 1   regard to how that method -- what was performed
+ 2   would apply to the Longs baby powder; correct?
+ 3        A.   Yes, sir.
+ 4        Q.   And the ATEM method for amphibole
+ 5   asbestos, you performed that testing on Johnson's
+ 6   baby powder in the past; correct?
+ 7        A.   We have.
+ 8        Q.   And so the testimony with regard to that
+ 9   method would apply from -- Johnson's baby powder
+10   would apply to Longs baby powder here; correct?
+11        A.   Correct.
+12        Q.   Okay.  Thank you.
+13             Now, with regard to when Longs baby
+14   powder -- do you know when it was first manufactured?
+15        A.   I do not.  If I did --
+16        Q.   You don't know the first --
+17        A.   But it's been a while.  I think I knew
+18   that information, but it's immaterial to what I'm
+19   doing.
+20        Q.   Do you know -- starting in 1986, do you
+21   know who manufactured Longs baby powder?
+22        A.   I had that information down about the
+23   different groups, but I don't have those notes with
+24   me.
+25        Q.   So as you sit here today, you don't know,
+0497
+ 1   but you believe you have notes on it?
+ 2        A.   Well, yeah.  There was, I think, a PMK
+ 3   depo that went through the genealogy of it, so --
+ 4   and I don't recall.  I had been -- the first
+ 5   deposition, I could have given you all that, but I
+ 6   haven't memorized it.
+ 7        Q.   Is that information -- is the information
+ 8   you're aware of as to the -- who manufactured Longs
+ 9   baby powder and for what years, is that in the
+10   declaration that you submitted and signed in this
+11   case?
+12        A.   Let's see.
+13        Q.   And let me -- I might be able to help
+14   expedite this, because I'm trying to do a memory
+15   test here.  I'm just trying to know if there is
+16   additional information that you're aware of beyond
+17   that.  One moment.
+18        A.   What page is it?
+19        Q.   I'm just pulling it up myself, and I'll
+20   direct you to it.  Give me one second.
+21        A.   Okay.
+22        Q.   Do you have your declaration, or do you
+23   need me to show it to you?
+24        A.   Are we talking about the -- the --
+25   (inaudible).
+0498
+ 1        Q.   Your declaration regarding Longs brand
+ 2   baby powder in opposition to Defendant Longs Drug
+ 3   Stores, California, LLC, on behalf of Longs Drug
+ 4   Stores' motion for summary judgment.  It was signed
+ 5   by you on March 5th, 2021.
+ 6        A.   I have on May 13th.  I don't have it by --
+ 7   so if you can just show me the section you want
+ 8   to --
+ 9        Q.   Okay.  It would be on page 6, I believe,
+10   is where you have the heading, "Review of Materials
+11   Identifying the Source of the Talc Used in Longs
+12   Baby Powder."
+13        A.   Yeah, that's not in my May 13th, so you'll
+14   have to show it to me.
+15        Q.   Okay.  Let me go ahead and share it with
+16   you.  Do you see -- do you have 6 in front of you?
+17        A.   I do.
+18        Q.   Okay.  And so it says, "Review of
+19   Materials Identifying the Source of the Talc Used
+20   in Longs Baby Powder"?
+21        A.   Yes.
+22        Q.   You have that page.  You have page 7.
+23             Do you want to read it to yourself to
+24   refresh yourself?
+25        A.   Okay.   That does refresh my memory.
+0499
+ 1        Q.   And there is one last paragraph here, just
+ 2   so we are complete, paragraph 25.  I don't want to
+ 3   keep anything from you.
+ 4        A.   Yeah.  It's the same thing, same line.
+ 5        Q.   Okay.
+ 6        A.   I don't have any additional information
+ 7   other than what's there.
+ 8        Q.   Okay.  So this is all the information you
+ 9   have as to who manufactured the Longs store-brand
+10   baby powder and for what years; correct?
+11        A.   Correct.
+12        Q.   Now, if you can go to page 27 of the
+13   Project M17303 [sic] and M71309, which is this
+14   Exhibit 3.  it's the table for the samples to the
+15   Longs baby powder sample container description.  Do
+16   you have that?
+17        A.   I do.
+18        Q.   So for the first sample, M71303-001, it
+19   says "NA" for the year of manufacture.  Does that
+20   indicate that you do not know the year that was
+21   manufactured?
+22        A.   It does indicate that.
+23        Q.   Okay.  Do you have an opinion as to what
+24   year that container was manufactured?
+25        A.   No.
+0500
+ 1        Q.   Do you have an opinion as to who
+ 2   manufactured that container?
+ 3        A.   I don't have the years of manufacture.  So
+ 4   I would not be in the best position to tell you
+ 5   what years of manufacture.  You know, maybe I'm
+ 6   just wrong, but I would assume the different --
+ 7        Q.   Who --
+ 8        A.   -- manufactured or the containers, because
+ 9   there's container codes as well as differences in
+10   the -- in the actual construction of the container,
+11   the graphics, et cetera.
+12        Q.   So I understand that you're not in the
+13   best position to opine as to -- based on the codes
+14   or the container what year or region the material
+15   came from that was in it.
+16             What I'm -- what I'm focused on is whether,
+17   based on your analysis of the contents of the sample,
+18   are you going to be providing an opinion based on
+19   your testing as to what year it came from or what
+20   region?  Do you understand my question?
+21        A.   Absolutely.
+22        Q.   So will you be providing that information?
+23        A.   The analysis of the samples points to
+24   Montana, but I can't say that within a reasonable
+25   degree of scientific certainty.  It's based on the
+0501
+ 1   fact that it's very low in amphibole
+ 2   concentrations.  I would not expect that for
+ 3   Vermont.
+ 4             And Montana is known for chrysotile.  And
+ 5   going all the way back to Johns Manville's work when
+ 6   they were testing the proposed FDA MDAT protocol.
+ 7   But I couldn't say that within a reasonable degree of
+ 8   scientific certainty.  And so that's -- that's my
+ 9   more likely than not, but not within a reasonable
+10   degree of scientific certainty.
+11        Q.   So you will not be providing an opinion,
+12   within a reasonable degree of scientific certainty,
+13   based on your testing where that sample came from;
+14   is that correct?
+15        A.   If asked, I would only say more likely
+16   than not.  And I'm not talking about just that
+17   sample.  I'm talking about all these samples.
+18        Q.   And that was going to be my next question,
+19   whether I needed to go through them sample by
+20   sample or whether that was an opinion as to all of
+21   the containers.
+22        A.   You know, some of them that had the
+23   amphiboles.  It's possible that it could be from
+24   Vermont, but, typically, by TEM in Vermont samples,
+25   we would see, one, more anthophyllite than
+0502
+ 1   tremolite; and two, the Blounts would be a much
+ 2   higher concentration rate above B.  I don't think
+ 3   Blount saw any anthophyllite.  I'd have to check.
+ 4   I don't think there was -- let me just go through
+ 5   and look at the -- yeah, all the Blounts are
+ 6   negative.
+ 7        Q.   I don't want to cut you off --
+ 8             (Speakers talking simultaneously.)
+ 9   BY MR. CHARCHALIS:
+10        Q.   Just let me know when you are done looking
+11   at what you are looking at.
+12        A.   Okay.   It looks to me like -- again, more
+13   likely than not, it's -- there's some probability
+14   that it's from Montana.
+15        Q.   In attempting to determine which region a
+16   sample is from, based on your testing, what are the
+17   different things that you'll look to?  You told
+18   me -- you mentioned the Blount method and that it
+19   was negative.  But more specifically, what was
+20   negative, and then what are the other things that
+21   you would look to, so I could know exactly what you
+22   would do.
+23        A.   Well, we have three regions, I understand:
+24   Montana, Vermont, and Chinese.
+25             Vermont is going to be mostly chrysotile,
+0503
+ 1   very few amphiboles.  And when you do -- if they do
+ 2   find amphiboles, it's going to be, you know, a small
+ 3   amount of tremolite, and we have that.  But that's
+ 4   also kind of characteristic of China, but we have too
+ 5   many of these older -- obviously older-looking
+ 6   containers that we're also finding sort of the same
+ 7   thing in.
+ 8             Vermont, you're going to have -- and I
+ 9   think it's at Argonaut.  You're going to have -- when
+10   you find amphiboles, it's going to be primarily
+11   tremolite.  It's going to be anthophyllite with some
+12   tremolite.  And you would find a number of the
+13   samples positive by Blount, the Blount PLM method,
+14   for amphibole and a number of -- and there maybe some
+15   more -- a little bit more concentrations of the
+16   tremolite, but I would expect to see anthophyllite in
+17   there.
+18             And China, of course, you are going to find
+19   chrysotile.  And when you find amphibole, I think the
+20   most we've ever found was two in a sample.  But the
+21   amount of amphiboles is very low as compared to all
+22   chrysotile.  And you have containers here that are
+23   obviously older than some of the newer ones that may
+24   have been -- may have gone to Chinese, and we really
+25   don't know.
+0504
+ 1             So that's why I'm only saying it within a
+ 2   reasonable -- I'm not saying within a reasonable
+ 3   degree of scientific certainty.
+ 4        Q.   Okay.  Now, you say -- you told me what
+ 5   you typically find in a given region.  Is that --
+ 6   is that based on your testing of what you've come
+ 7   to see, or is that based on literature or analysis
+ 8   of other individuals' testing?  What is that based
+ 9   upon?
+10        A.   Yes, all the above.
+11        Q.   Okay.  And is all -- with regards to the
+12   materials that that is from, have those all been
+13   provided in this litigation already or identified
+14   in your reference list?
+15             MR. RIVAMONTE:  Vague and overbroad.
+16        A.   Well, it's all our testing.  It's an --
+17   papers by USG geologist Van Gosen.  G-O-S-E-N, I
+18   think it is, Gosen, Van, V-A-N, where he looked at
+19   the amphibole formation and asbestos in various top
+20   mines in this country, which includes Vermont,
+21   J&J's own testing, Lee Poye's testing, primarily
+22   just Vermont, and our testing of other samples,
+23   say, for example, our testing of a number of
+24   Italian, which you're not using Italian, at least
+25   according to the deposition.
+0505
+ 1             And that's going to be primarily, for
+ 2   amphiboles, all tremolite.  We are not using that
+ 3   source.  So it's -- I think everything that we are
+ 4   talking about is on my reference list.
+ 5   BY MR. CHARCHALIS:
+ 6        Q.   Okay.  Now, is there anything you intend
+ 7   to -- well, withdrawn.
+ 8             Have you been asked by your client to
+ 9   conduct testing to try to determine the year of
+10   manufacture or the source for these containers?
+11        A.   No.  Determining the year of manufacture,
+12   the only way I could do that is Longs would have to
+13   provide me the formulas for the organics they are
+14   using in insecticides, fungicides that they are
+15   using in there so that we could determine -- and
+16   the years they are using that.  That's the only way
+17   I can do that.
+18        Q.   Now, you say Longs would have to provide
+19   you.  You don't know if those document even exist
+20   today; correct?  You're just saying that's what you
+21   would need?
+22        A.   That's what I would need to date them, is
+23   formulations.  And if the formulations didn't
+24   change much, say, like, the organics that are being
+25   used are identical from the first day you put the
+0506
+ 1   container out to the last day, it would be -- you
+ 2   wouldn't be able to tell the difference.
+ 3             So if the documents don't exist and the
+ 4   folks that manufacture this don't know the dates, I'm
+ 5   not sure how I'm going to know the dates.
+ 6        Q.   Okay.  So as of now, you're unable to
+ 7   determine the year of manufacture of any of these
+ 8   samples; correct?
+ 9        A.   That is correct.
+10        Q.   Is there anything additional that you can
+11   do to try to determine the region that these
+12   samples came from?
+13        A.   You know, as I sit here today now, I don't
+14   know of any additional work I could do other than
+15   getting samples from the Montana mine and maybe
+16   look for some fingerprint that I'm not aware.  So I
+17   can't think of anything as I sit here now.
+18        Q.   Okay.  So you don't intend to do anything
+19   additional, as you sit here now, to determine the
+20   region that these samples came from; correct?
+21        A.   That's correct.
+22        Q.   Okay.  Now, moving on to your exposure
+23   calculations that's Exhibit 4A.  This would be just
+24   very brief.  You conducted calculations, and the
+25   numbers you used for Longs versus Johnson's baby
+0507
+ 1   powder was 87.5 percent to 12.5 percent.  Is
+ 2   that -- is that accurate?
+ 3        A.   That is accurate.
+ 4        Q.   Okay.  And that was based on statements
+ 5   that Ms. Prudencio's mother provided to you where
+ 6   she stated that they would purchase Johnson's baby
+ 7   powder 85 to 90 percent of the time; correct?
+ 8        A.   Correct.
+ 9        Q.   And you don't have any additional
+10   information besides what her mother said to come to
+11   that determination; correct?
+12        A.   That is correct.
+13        Q.   So to perform that calculation, you solely
+14   relied on the mother's testimony about where they
+15   would purchase or how often they would purchase
+16   Johnson's baby powder versus Longs baby powder;
+17   correct?
+18        A.   Correct.
+19        Q.   Now, additionally, you had said
+20   something -- it mentions that she played sports.
+21   That was part of her usage after she would play
+22   sports; correct?
+23        A.   Correct.
+24        Q.   And do you know what sports she played
+25   during that period?
+0508
+ 1        A.   Soccer, basketball.  And what else?  Did I
+ 2   write anything else down in my discussion with her?
+ 3             It was soccer.  She's very good at
+ 4   basketball and played in various leagues.  That's
+ 5   what I remember.
+ 6        Q.   Well, I'm looking at a three-page document
+ 7   of your notes, and I do not -- I do not see that,
+ 8   that she played --
+ 9        A.   I didn't put it down, but I can remember
+10   talking to her about it.
+11        Q.   Okay.  So you did not --
+12        A.   I did --
+13        Q.   I'm sorry to speak over you, Doctor.  Do
+14   you want to add something?
+15        A.   No, because she -- because I had a
+16   discussion with her that she was on a -- some
+17   particular basketball leagues, that people don't
+18   really understand that, just how good you have to
+19   be to be on those leagues.  So I didn't write it
+20   down because I didn't -- but, you know, at trial,
+21   obviously, you can ask her.
+22        Q.   Okay.  I'm just trying to understand what
+23   your calculations consist of, you know, in
+24   totality.  So it included basketball, soccer.  And
+25   was there another sport?
+0509
+ 1        A.   Well, no.  She said she played sports
+ 2   activities five days a week.  That's everything
+ 3   important.
+ 4        Q.   Okay.  So that calculation is based on her
+ 5   saying that for that period, she played sports five
+ 6   days a week?
+ 7        A.   And she said that she put it on her
+ 8   abdomen, under her breasts, and under her armpits.
+ 9        Q.   Okay.
+10        A.   That's what the calculation was based on.
+11   It's immaterial if it's soccer or basketball or --
+12        Q.   That's fine.
+13        A.   -- lacrosse.  It doesn't matter.
+14        Q.   Now, moving back to the -- and this is the
+15   last bit for me.  Back to the -- Exhibit 3, which
+16   is the report for the Longs baby powder, M-17303
+17   [sic].  If -- do you have a digital version, or are
+18   you going through the paper version?
+19        A.   I'm going through the --
+20        Q.   I only ask --
+21        A.   Because --
+22        Q.   Okay.  So I'm --
+23        A.   -- digital version.
+24        Q.   I'm going to be bouncing around several
+25   hundred pages, so I'm just going to it share, then,
+0510
+ 1   with you to save time.  Okay?
+ 2             (Speakers talking simultaneously.)
+ 3        Q.   I feel like that would be faster.
+ 4        A.   I'll have the M number on it, so it would
+ 5   be easy for me to jump to it if I need to.
+ 6        Q.   Okay.  So here, do you see my screen?
+ 7        A.   I do.
+ 8        Q.   Okay.  And so this is Count Sheet
+ 9   M71309-002; correct?
+10        A.   Correct.
+11        Q.   And what does SPR number mean?
+12        A.   Structure is the structure number, so --
+13        Q.   Okay.
+14        A.   And it always correlates with the grid
+15   opening we are looking at.  So we start off with
+16   the Grid Number E4, and we look at Grid Opening A1,
+17   and no structures were detected; no asbestos
+18   structures were detected.
+19        Q.   Okay.  And then down here in Grid Opening
+20   E8, you identified a tremolite bundle; correct?
+21        A.   That is correct.
+22        Q.   Okay.  And then if I go to page 602, this
+23   is Count Sheet M71309-005; correct?
+24        A.   Correct.
+25        Q.   And Structure 1 in Grid Opening C5-E1, and
+0511
+ 1   that's a tremolite bundle; correct?
+ 2        A.   Correct.
+ 3        Q.   Okay.  And then on page 664, Count Sheet
+ 4   M71309-006, we have a tremolite bundle in Grid
+ 5   Opening E3 that is identified as Structure 1;
+ 6   correct?
+ 7        A.   That is correct.
+ 8        Q.   And, now, if I go to page 1137, that is
+ 9   the corresponding SEM image for that bundle;
+10   correct?
+11        A.   Correct.
+12        Q.   Okay.  And so can you, like, tell me here
+13   in this image how many fibers you see?
+14        A.   It looks like about three or four.
+15        Q.   Okay.  And can you try to help me, direct
+16   me to where those three or four fibers are?  So am
+17   I -- are there any identified by the top?
+18        A.   Up there.
+19        Q.   Okay.  So here at the top -- I guess the
+20   top right is where there is one fiber.  Is that
+21   correct?
+22        A.   It looks like one or two.  I can't quite
+23   tell.
+24        Q.   Okay.  And does that help at all, zooming
+25   in?
+0512
+ 1        A.   I think it's one.  And then we have
+ 2   another plate -- not a plate, but we have another
+ 3   one on top of that that runs down along the length.
+ 4   It's got a lot of particulate on it.  It's kind of
+ 5   hard to see the striation.  I think we're looking
+ 6   top down on it instead of the side.  And then we
+ 7   have some on the right-hand side.
+ 8        Q.   So -- just slow down.  I'm not as quick
+ 9   with this as Kevin Hynes, who's normally asking you
+10   about these.  All right?  So bear with me here.  So
+11   right now my mouse -- do you see where I have my
+12   cursor?
+13        A.   I do.
+14        Q.   That's one of them; correct?
+15        A.   That looks -- yes, I would say that's one.
+16        Q.   Okay.  And that's -- in the top right,
+17   there's -- that's where I have my mouse.  And then
+18   there is a second one in this upper region that you
+19   were describing; is that correct?
+20        A.   Yes.  Just move my mouse over a millimeter
+21   to the left.
+22        Q.   To the left.  Right here?
+23             So in the middle of this bundle, towards
+24   the top, there's like a -- that's where you said
+25   there's a striation that indicates that there's a
+0513
+ 1   second fiber?
+ 2        A.   Just to the right of your cursor is
+ 3   another fiber coming down the structure.
+ 4        Q.   Okay.  So right down the middle of the
+ 5   structure where it's darker?
+ 6        A.   And then to the right, you can see that
+ 7   there may be one, two, possibly -- if you go the
+ 8   right a little bit, you can see another striation
+ 9   there that kind of separates it from the one we
+10   just talked about.
+11        Q.   Right where -- is my mouse in the correct
+12   location?
+13        A.   Yes.
+14        Q.   Okay.  So this would be in the middle of
+15   the bundle to the right of the -- what appears to
+16   be like the darker part of the middle.  Is that
+17   fair?
+18        A.   That's fair.
+19        Q.   Okay.  And is there any other --
+20        A.   You can see where --
+21        Q.   -- fiber --
+22        A.   -- it's sheared at the bottom, and I think
+23   on the left-hand side, we can see another one right
+24   there.
+25        Q.   Right here?
+0514
+ 1        A.   Yes.
+ 2        Q.   So where there --
+ 3        A.   There's three in that structure.
+ 4        Q.   Okay.  So let me just make the record --
+ 5   make it clear so as we look back at this, we know
+ 6   what we are talking about because they can't see my
+ 7   mouse, I don't believe.  Maybe it's being recorded,
+ 8   and they will, but in the event that they don't,
+ 9   there's this little lip sticking out on the bottom
+10   left -- it's like an edge; right? -- and then it
+11   comes in towards the structure.  You're saying
+12   that's a fiber?
+13        A.   That's a fiber.
+14        Q.   Okay.  And then there's another one down
+15   here?
+16        A.   Then we have one, I think, underneath the
+17   one on top.
+18        Q.   So --
+19        A.   Maybe two --
+20        Q.   -- this --
+21        A.   Yeah.  That one, top one, and there may be
+22   two underneath it.  So, again, three to four.
+23        Q.   So the -- what's sticking -- what's on
+24   that far right here at the bottom and on the left
+25   here at the bottom, those are separate fibers?
+0515
+ 1        A.   Because of the width, it may be a
+ 2   separate -- you know, it's hard to say.  So if it's
+ 3   separate, that would mean that there was four
+ 4   versus three.  I think the width on this was .7 and
+ 5   point --
+ 6        Q.   Would it help if I went back to the count
+ 7   sheet?
+ 8        A.   That's okay.  I don't need that.
+ 9        Q.   Okay.
+10        A.   So I believe -- you know, my opinion is
+11   there's three -- there's at least three individual
+12   entities or fibers.
+13        Q.   Okay.  And so you're just not sure
+14   whether -- at the bottom here this is 2 or 1?
+15        A.   No.  I would have to flip it over and take
+16   a look at it.
+17        Q.   Okay.
+18        A.   I just wanted to point --
+19        Q.   Thank you.
+20        A.   This SEM is running at 1 kV at 12,000.
+21   And using both secondary and backscatter together,
+22   that's a beautiful picture.  I'm just bragged on
+23   our instrument.
+24        Q.   You should go --
+25             (Speakers talking simultaneously.)
+0516
+ 1        A.   -- understands about 1 kV in imaging at
+ 2   12,000 times.  It's an impressive feat, what the
+ 3   new state of the art can do.
+ 4        Q.   So now how --
+ 5        A.   Forgive me.   Just --
+ 6        Q.   No.  You can be proud of your machines.
+ 7        A.   We've been going over an hour.  Can we --
+ 8   can we take a pause?
+ 9        Q.   Yeah, I mean, if you want.  I was just
+10   going to go through a few more images and ask you
+11   just about these SEM images.  And so if you want to
+12   take a break and then do that, that's fine by me.
+13        A.   Let's -- let's take a break.
+14        Q.   All right.  We'll go off the record.
+15        A.   Okay.
+16             THE VIDEOGRAPHER:  We are going off the
+17   record at 11:43 a.m.
+18             (Recess taken from 11:43 a.m. to
+19             11:52 a.m.)
+20             THE VIDEOGRAPHER:  We are now on the
+21   record.  11:52 a.m.
+22   BY MR. CHARCHALIS:
+23        Q.   Okay.  Dr. Longo, now I go to page 665 of
+24   Exhibit 3E.  That is Count Sheet M71309-006.  And
+25   down here, Structure 2, I7, bundle, tremolite.
+0517
+ 1   Correct?
+ 2        A.   Correct.
+ 3        Q.   And so if I go to page 1139, that is --
+ 4   let me zoom out you so can see it -- the
+ 5   corresponding SEM image; correct?
+ 6        A.   Correct.
+ 7        Q.   Okay.  Now, looking at this image, can you
+ 8   tell me how many fibers there are?
+ 9        A.   Let me see the bottom of the Image 2, if
+10   you don't mind.
+11        Q.   Do you want me to zoom out or scroll down?
+12        A.   Just scroll down then scroll back up.  It
+13   looks like either two or three.
+14        Q.   Okay.  So can you direct me to where the
+15   first fiber is?
+16        A.   If you take your cursor and go up, right
+17   there at the tip you just had it on.
+18        Q.   So this -- upper -- the top right, there
+19   is a tip sticking out, and that's a fiber?
+20        A.   And then you have right next to it --
+21        Q.   If you go down the left of the tip --
+22             (Speakers talking simultaneously.)
+23        Q.   -- then there is this white right here.
+24   There is  white here, and then next to it there is
+25   gray.  Is that what you are referencing?
+0518
+ 1        A.   Yes.  And then you've got potentially one
+ 2   or two next to it.
+ 3        Q.   So if I continue going down the white
+ 4   that's on the edge of the top of this bundle,
+ 5   there's another two you're saying?
+ 6        A.   Yeah, one right --
+ 7        Q.   As it is --
+ 8        A.   -- and then one right next to it.  There's
+ 9   a little bit of --
+10        Q.   So kind of where these humps are, you're
+11   saying that --
+12        A.   Yeah.
+13        Q.   -- those little humps are additional
+14   fibers?
+15        A.   Correct, because I can see -- it's so very
+16   hard to resolve.  If you go down just a little bit
+17   more.  We're starting to get -- if you take it down
+18   to the left just -- not down.
+19        Q.   The mouse or the picture?
+20        A.   Yeah, go down the edge, a little bit
+21   further.  Right there, it looks like an interface
+22   between two, a little bit up.
+23        Q.   Right here?
+24        A.   Just a little bit more to the right.
+25             Right there.  It looks like there's
+0519
+ 1   separation there between the two.  So --
+ 2        Q.   Okay.  So if we are looking along --
+ 3        A.   There's three --
+ 4        Q.   I'm sorry.  I don't want to speak over
+ 5   you.
+ 6        A.   -- three or four.
+ 7        Q.   Okay.  And so where my cursor is, if we
+ 8   are looking along the top of the bundle, I would be
+ 9   about -- would you say -- it's fair to say about a
+10   third of the way in from the left?
+11        A.   Yeah, that's about right.
+12        Q.   Okay.
+13        A.   It's close enough.
+14        Q.   All right.  Now, is there anything at the
+15   bottom of this structure that you would tell me
+16   about with regard to seeing any fibers?
+17        A.   You can see that there is clearly one that
+18   is at the side here, on the left-hand side, and you
+19   have on the right-hand side -- it's hard to see the
+20   striations here.  We've got a lot of little
+21   particulate on it.  But I just want to see if this
+22   a 1 or 2 kV if I can just see the -- you are at 1
+23   kV.  Okay.  So 2, 4 -- I think the analyst said
+24   it's about 7 microns across.
+25        Q.   Is this one going to be -- are you proud
+0520
+ 1   of this one as well?
+ 2        A.   That's a good image, also, because we are
+ 3   taking it at 1 kV, but it's hard to get a lot of
+ 4   the surface features even at 1 kV.  It would be
+ 5   interesting to look at this at 500 volts.
+ 6        Q.   Now -- so just to be clear, there is a
+ 7   fiber along the left of the bottom and fiber along
+ 8   the right of the bottom; is that correct?
+ 9        A.   I think there's two sort of in the middle
+10   there, but I can't -- it's hard to make out the
+11   striations between the two.
+12        Q.   Okay.  Now, I'm going to go to page 783 --
+13   782, I'm sorry.  This is Count Sheet M71309-008.
+14   And we have Structure 1, Grid Opening G1.  It's
+15   above the tremolite; correct?
+16        A.   Correct.
+17        Q.   And so if I go to page 1147, is that the
+18   corresponding SEM image?
+19        A.   I believe so.
+20        Q.   Okay.  And do you see any fibers here?
+21        A.   Well, you have one on the right side,
+22   and --
+23        Q.   Is it --
+24        A.   Right there.
+25        Q.   Along the -- so where my cursor is now?
+0521
+ 1        A.   Correct.
+ 2        Q.   So on the top third -- so there is this --
+ 3   in the middle, there's this large structure over
+ 4   the bundle; correct?
+ 5        A.   Yeah.  That's a -- that's talc plates.
+ 6        Q.   Okay.  And then above that, there is a
+ 7   second structure.  Is that another talc plate?
+ 8        A.   Yes.  You've got little talc plates all
+ 9   long it, so it's kind of hard to see the
+10   differentiation between -- because there might be
+11   two there, but I would just be conservative and say
+12   that it's -- you know, it's at least two fibers.
+13        Q.   And so above this second talc plate that's
+14   on top of this bundle, there's -- that's where the
+15   second fibers are, where those two fibers are, or
+16   you can see one?
+17        A.   Yeah.  If you go like -- if you move your
+18   cursor up, get in the middle there, and you see
+19   that plate -- you stop.  I'm -- that's
+20   definitely -- I mean, you can clearly see that one.
+21   But you've got plate talc along the -- almost the
+22   entire surface of this.  But if you move cursor now
+23   over to the left -- keep going, little by little --
+24   you can see some differentiation there.  But it's
+25   very hard to see with the talc plates all along the
+0522
+ 1   bundle.
+ 2        Q.   Okay.  So if we look to the left, just so
+ 3   we can have a point of reference, we are in the
+ 4   top -- you know, the top third of this bundle,
+ 5   there's this -- there's -- along the left -- to the
+ 6   left of it, there's three, basically, circles.
+ 7   One's white and mostly white, and the second black
+ 8   circle, that's a little higher than it.  And a
+ 9   third black circle -- that's one with the white
+10   one -- right in that line, if you go over to the --
+11   to the bundle, that's where you're saying you can
+12   see, in the middle of this bundle, a fiber?  Is
+13   that an accurate description?
+14        A.   Yes.
+15        Q.   Okay.  Are there any others that you see?
+16        A.   No.
+17        Q.   Okay.  Now, going back to page 782,
+18   Structure 2, Grid I3 is bundle of tremolite;
+19   correct?
+20        A.   Correct.
+21        Q.   All right.  Now, if we go to 1149, is that
+22   the corresponding bundle, and that's the SEM image?
+23        A.   Correct.
+24        Q.   Okay.  And can you identify where in this
+25   image there are fibers?
+0523
+ 1        A.   Well, you know, we say fibers, but it's
+ 2   formed as amphiboles form with this kind of plank
+ 3   look.  You can see on the bottom that there's at
+ 4   least two, but there's so many talc plates along
+ 5   the edges, it's very hard to see the additional
+ 6   ones.
+ 7        Q.   So this -- this isn't a horizontal -- this
+ 8   one -- I mean, this one is not vertical.  One is
+ 9   diagonal.  So when you say "bottom," do you mean
+10   down here in the bottom left or along the bottom
+11   edge?
+12        A.   On the right-hand side, that's the edges,
+13   the edge of the bundle, and --
+14        Q.   Right where my mouse is going?
+15        A.   Yes.  And there's talc plates all along
+16   there, so it's very difficult to see the
+17   striations.  You can see a little bit at the bottom
+18   of that on the right-hand side.  You see that right
+19   underneath where you have --
+20        Q.   Right here?
+21        A.   A little bit up on that side.
+22        Q.   Is this in this area?
+23        A.   There's talc plates covered all along, so
+24   there's at least two there.
+25        Q.   Okay.  So in this -- in the bottom left,
+0524
+ 1   along the edge, you're saying there's -- you could
+ 2   see two fibers?
+ 3        A.   Yes, two of the structures that define it
+ 4   as a bundle.
+ 5        Q.   Is there anything else?
+ 6        A.   No.
+ 7        Q.   Now, going to -- back to page 783 -- not
+ 8   back to, sorry; I haven't been to this page yet.
+ 9   But this is still the count sheet for M71309-008,
+10   Structure 3, Grid G8, bundle, tremolite black.
+11        A.   Correct.
+12        Q.   And so if I go to page 1151, this is the
+13   corresponding SEM image; correct?
+14        A.   Correct.  You can see at least two fibers.
+15   And, also, you can see a number of striations going
+16   down the side of the structure.
+17        Q.   Okay.  So when you say -- so let's
+18   say this is the -- when you say "side," do you mean
+19   this bottom edge here, or do you mean the side on
+20   the far left or the far right of the image?
+21        A.   Well, if you go to the far left, you'll
+22   see two protruding structures.
+23        Q.   Okay.  So these two structures protruded,
+24   this one right here and then this one?
+25        A.   Yes.  And then if you go to the bottom --
+0525
+ 1        Q.   Okay.
+ 2        A.   -- which I would say is the side of this,
+ 3   you can see multiple striations going through it.
+ 4        Q.   The bottom of the image, but the side of
+ 5   the structure; correct?
+ 6        A.   Side of the structure.  If you take your
+ 7   cursor up, you can see one, two, three, four --
+ 8   four different striations until you get to the top.
+ 9        Q.   Okay.
+10        A.   So it would have more than three or four.
+11   You know, I would have to have it under the
+12   microscope and high magnification if the object was
+13   to count all the different striations, signifying
+14   it as a bundle.
+15        Q.   Okay.  Now, I went through the count
+16   sheets, and these were the -- all the bundles that
+17   I observed in them.  As you may have noticed, the
+18   first two bundles I referenced that were in the
+19   count sheet for M71309-002 and M71309-005, I did
+20   not show you a corresponding SEM image.  There is
+21   not one in this sort of -- that's identified as
+22   Section 21, there is not an SEM image for those
+23   two; correct?
+24             And if you want to look at that, I'll be
+25   happy to --
+0526
+ 1        A.   It's okay.
+ 2        Q.   Okay.  Do you know why there is not SEM
+ 3   images for those two bundles?
+ 4        A.   No.
+ 5        Q.   And is there -- when is a determination
+ 6   made to capture an SEM image?
+ 7        A.   In this case, as the -- the grids were
+ 8   scanned first just to see if we could locate them,
+ 9   and then the grids were given to the TEM folks with
+10   the information on where they are so they could
+11   validate it, but the TEM people are also looking
+12   at, so they would have -- they found some
+13   additional bundles that the SEM did not find.
+14        Q.   Okay.  So the way your process works, it's
+15   not that the person doing the TEM now says, "Find
+16   the bundle" and then says, "There's a bundle in
+17   this grid, go take an SEM; go look at it through
+18   SEM," they do their analysis separately and -- is
+19   that accurate?
+20        A.   Well, the -- because of the tight
+21   turnaround times, I had the SEM analysts go ahead
+22   and scan the grids to see if an X-ray map,
+23   certain -- and see if there is any tremolite that
+24   matched the morphology rules for either single
+25   fibers or bundles, and then tell the TEM guys where
+0527
+ 1   it was while they went ahead and did their hundred
+ 2   grid openings.  So..
+ 3        Q.   So the individual doing the SEM looking
+ 4   through SEM did not identify a tremolite bundle for
+ 5   Grid Opening E8?
+ 6        A.   Didn't see it.
+ 7        Q.   Okay.  And the same for the tremolite
+ 8   bundle identified in grid opening C5-B1 through
+ 9   TEM -- through SEM, they did not identify that;
+10   correct?
+11        A.   That is correct.
+12        Q.   And they had identified --
+13        A.   And the SEM --
+14        Q.   I'm sorry.
+15        A.   And the SEM, of course, it says this is a
+16   potential amphibole, and it's analyzed -- then the
+17   grids are given to the analysts.  But the analyst
+18   is looking at more grids than the SEM person.  You
+19   know, just missed it.
+20        Q.   If the SEM person had identified a
+21   tremolite bundle in M71309-005 and Grid Opening
+22   C5-B1, there would be a corresponding image;
+23   correct?
+24        A.   There should be.  I can't say that with a
+25   reasonable degree of scientific certainty until I
+0528
+ 1   talk to them.
+ 2        Q.   Well, do you have a protocol that they
+ 3   would have followed here when they were doing --
+ 4   reviewing this to SEM, if they identified a
+ 5   tremolite bundle, they were to capture and preserve
+ 6   an image?  Is that part of your protocol?
+ 7        A.   It's not a written protocol, no.  It's
+ 8   just part of --
+ 9        Q.   Is that part of -- was that part of the
+10   instruction they received for this testing?
+11        A.   Yes.
+12        Q.   Okay.  So if they were to follow your
+13   instructions for this testing, there would be a
+14   corresponding image; correct?
+15        A.   Correct.
+16        Q.   And you have no reason to believe that the
+17   individual that did this SEM testing did not follow
+18   your instructions; correct?
+19        A.   As I sit here today, I have no reason to
+20   believe that the analyst would have done anything
+21   but follow my instructions.
+22        Q.   Had the analyst ever in the past not
+23   followed your instructions?
+24             MR. RIVAMONTE:  Objection.
+25   BY MR. CHARCHALIS:
+0529
+ 1        Q.   To your knowledge?
+ 2        A.   Not that I can think of.
+ 3             MR. CHARCHALIS:  Okay.  For the interest
+ 4   of time, I'm going to pass the witness.  And if
+ 5   everyone else finishes what they are doing, I might
+ 6   ask him some additional questions.  I'll thank you
+ 7   for now, Dr. Long, for your time, and I'll pass the
+ 8   witness.
+ 9             MR. RIVAMONTE:  Thank you.
+10   
+11                        EXAMINATION
+12   BY MS. RUSSO:
+13        Q.   Good afternoon, Dr. Longo.  My name is
+14   Shana Russo.  We met at day 1 of your deposition,
+15   and I asked you some questions.  I don't like to
+16   make promises before I start, but I think I might
+17   actually have less questions than I did the last
+18   time.
+19        A.   That's fine.
+20        Q.   So I do -- I do want to clarify what you
+21   said about -- with regards to the potential or
+22   possible sourcing of the 15 Longs products that you
+23   analyzed for purposes of this case.
+24             Is it your opinion -- and I understand not
+25   to a reasonable degree of scientific certainty, but
+0530
+ 1   more likely than not -- that all 15 bottles were
+ 2   sourced from Montana?
+ 3        A.   That's what I think.
+ 4        Q.   And then counsel for the retailers went
+ 5   through all of the tests that you performed on the
+ 6   15 Longs baby powder.  When did you first start
+ 7   employing the ISO 22262-1 without the high-density
+ 8   liquid separation for chrysotile?  When did you
+ 9   first doing -- start employing that test?
+10        A.   We've always done that test, but when we
+11   started looking at it for chrysotile without heavy
+12   liquid density -- I don't know -- six months or so
+13   ago, eight months maybe.
+14        Q.   And the modified Colorado School of Mines
+15   test that you employed on these bottles, when did
+16   you first doing that, to look for chrysotile?
+17        A.   We started trying to develop it in about
+18   June of 2019, the sample prep method, and then
+19   spent about a year refining it, and now we'll be
+20   changing it again.
+21        Q.   How will you be changing it?
+22        A.   We are going to be using an organic heavy
+23   liquid density, not a water-based one.  Because of
+24   the propensity of the chrysotile we are finding,
+25   because it has a hollow anterior nanotubes, so you
+0531
+ 1   don't have the capillary action associated with
+ 2   water.  And --
+ 3        Q.   And that was the additional testing and
+ 4   photos that you produced of Judith Toomajian's
+ 5   sample, which I think is identified as your number
+ 6   M71309-009?
+ 7        A.   Correct.  I think the first one -- that's
+ 8   correct.
+ 9        Q.   And I think you testified earlier that
+10   you've been doing the Blount PLM methods since
+11   2017?
+12        A.   Pretty sure, yes.
+13        Q.   And what about the ISO 222 --
+14             MR. RIVAMONTE:  Guys, guys, guys.  Sorry,
+15   guys.  My computer just went blue.  Can we take a
+16   two-minute break to get me -- to get this fixed for
+17   me?  I don't have any video.  I only have audio.
+18   Okay?  Hold on.
+19             (Miscellaneous comments.)
+20             MR. RIVAMONTE:  Can we go off the record,
+21   please.
+22             THE VIDEOGRAPHER:  We are now off the
+23   record at 12:13 p.m.
+24             (Recess taken from 12:13 p.m. to
+25             12:18 p.m.)
+0532
+ 1             THE VIDEOGRAPHER:  We are now on the
+ 2   record 12:18 p.m.
+ 3   BY MS. RUSSO:
+ 4        Q.   I think I started the question, but I'll
+ 5   reask it.  The ISO 22262-1 and -2 TEM analysis with
+ 6   the heavy liquid separation for amphibole, when did
+ 7   you first start employing that?
+ 8        A.   Maybe in 2018 or so.  It really was very
+ 9   similar to the Blount method for amphibole asbestos
+10   separation.  It's Blount -- it's the Blount method
+11   is a sample prep method.  The only difference
+12   between the Blount method and the ISO 22262-2
+13   method for talc and cosmetic talc is the heavy
+14   liquid density for Blount was 2.81, and for TEM --
+15   for the ISO is 2.85, where that switch came in for
+16   TEM.
+17        Q.   When did you --
+18             (Speakers talking simultaneously.)
+19        Q.   Oh.  2018.  Sorry about that.
+20        A.   The Blount method for sample preparation
+21   for TEM.
+22        Q.   And when did you first start testing talc
+23   for purposes of litigation for the presence of
+24   asbestos?
+25        A.   We first -- when I first got involved in
+0533
+ 1   testing cosmetic talc was late 2016, and I think we
+ 2   started the initial testing in early 2017.
+ 3        Q.   And what method were you using when you
+ 4   said you proposed early methods in 2017?
+ 5        A.   We started off with using the Blount
+ 6   sample preparation method and only TEM analysis
+ 7   initially.
+ 8        Q.   And back in 1999, in your opinion, which
+ 9   labs had the capability or the expertise to test
+10   for -- to test cosmetic talc for the presence of
+11   asbestos?
+12             MR. RIVAMONTE:  Vague and overbroad.
+13   Calls for speculation.
+14        A.   Well, it depends on what expertise they
+15   were using.  We had the expertise in 1999, same as
+16   the other labs, I guess.  But it was not a really
+17   good method because of the detection limits that
+18   were out there.  What labs had the expertise to use
+19   the heavy liquid density separation, the only two
+20   other ones besides me that I know who are doing
+21   routinely now is Lee Poye's group and MBA.
+22        Q.   Is it your opinion that a lab had to
+23   employ the heavy liquid density separation in order
+24   to properly test for the presence of asbestos?
+25        A.   Yes.
+0534
+ 1        Q.   Was Lee Poye's lab actually employing the
+ 2   heavy liquid density separation in 1999 to test
+ 3   cosmetic talc for the presence of asbestos?
+ 4        A.   No.  I'm not aware of any labs who were
+ 5   using it.  We weren't testing cosmetic talc as
+ 6   something routine.  My work primarily was in
+ 7   Vanderbilt talc where you don't need heavy liquid
+ 8   density separation for it because it's -- so it has
+ 9   -- accessory minerals for tremolite and
+10   anthophyllite are so high that it's easily found.
+11        Q.   In 1999, would the McCrone group be an
+12   appropriate lab to send cosmetic talc to for
+13   testing?
+14        A.   You know, it's -- it's hard to say if it's
+15   appropriate or not.  If you -- if you are going to
+16   use labs that were using terrible detection limits,
+17   you know, you're going to get the results that you
+18   got to McCrone.
+19             In 1999, if I had -- I believe if I had
+20   started working on cosmetic talcs in 1999, the same
+21   thing would have happened that happened in 2017.  I
+22   was not going to -- I realized how bad the detection
+23   limits were.  And that's why we started right off the
+24   bat with heavy liquid separation.  In 1999, would I
+25   have thought of that?  I believe so.
+0535
+ 1        Q.   I'm sorry.  I'm jumping around a bit, but
+ 2   that's the beauty of just having some cleanup
+ 3   questions to do and not a thorough examination.
+ 4             Did you use a control or standard asbestos
+ 5   sample when you performed the tests on the 15 Longs
+ 6   baby powder bottles?
+ 7        A.   Well, you can't really have a control
+ 8   because it all has asbestos in it.  You don't know
+ 9   how many.  We had Blount controls in the past where
+10   the controls that we do run is the ones that look
+11   for laboratory contamination or
+12   cross-contamination.  But there's really no
+13   standard for asbestos in cosmetic talc unless you
+14   spike the samples.
+15             And we did do that back in -- initially, we
+16   spiked it with the 1866 standard, then realized that
+17   was not appropriate.  And then towards the end of
+18   2019, early 2020, we -- we started using Coalinga
+19   chrysotile, the Coalinga Mine, which also is known as
+20   the trade name collidria chrysotile.  We spiked
+21   samples with that.  But you can't have a control
+22   cosmetic talc sample because it's already starting,
+23   potentially, with asbestos in it.  So there is no way
+24   to know how much is in there until you analyze it.
+25   You can't have a control.  But we do process blanks.
+0536
+ 1   Laboratory processed blanks where for every TEM
+ 2   sample that we run, we also prepare a process blank
+ 3   that goes along with it for each set of samples that
+ 4   are prepared so we can determine if there's any
+ 5   cross-contamination in the lab.
+ 6        Q.   The Coalinga sample, was that from
+ 7   Guangxi, China?
+ 8        A.   No.  The Coalinga is a town in California
+ 9   where the chrysotile mine is.  Most everybody calls
+10   it the Calidria Mine.  It was one owned by Union
+11   Carbide for a while.  And that type of chrysotile
+12   is formed differently than just about every other
+13   chrysotile out there in that it's primarily small
+14   bundles.
+15        Q.   In the past, were you using Guangxi talc
+16   samples as a standard to compare your results to?
+17        A.   We initially did use a Chinese -- it's our
+18   infamous number 13 sample as a control, but later
+19   found out that you can't use it as a control
+20   because it has asbestos in it.  We still use it for
+21   spike samples, and we are going to be running
+22   another whole set of spike samples as soon as we
+23   fine-tune the use of the organic heavy liquid
+24   density to see if it gives us the same results as
+25   the -- as the Sample 9, 71309-009, to see if we are
+0537
+ 1   getting the appropriate separation.
+ 2        Q.   Have you done an exposure analysis for the
+ 3   potential -- or for the continuous use by the
+ 4   plaintiff?
+ 5        A.   I don't think we have --
+ 6             MR. RIVAMONTE:  Vague and overbroad.
+ 7        A.   I'm not sure we have any containers from
+ 8   the plaintiffs.  But if you're asking if we've done
+ 9   any Longs exposure analysis study, hygiene study,
+10   the answer is no.
+11   BY MS. RUSSO:
+12        Q.   And to confirm, you never tested any Longs
+13   baby powder allegedly used by the plaintiff?
+14        A.   I'm not -- I don't believe that plaintiff
+15   produced any containers.
+16        Q.   And you don't believe the plaintiff
+17   produced any containers that were purchased by her
+18   family?
+19        A.   For the -- in the Presidio case?
+20        Q.   For the Prudencio case, yes.
+21        A.   Prudencio.  Excuse me.  Always happens
+22   after this many hours of -- no, I'm not aware of
+23   any containers that have been purchased by the
+24   family and sent to us or given to -- that I know
+25   about.
+0538
+ 1        Q.   Are you extrapolating your results that
+ 2   you found for 2A, 22-ounce bottle of Longs baby
+ 3   powder?
+ 4        A.   It's just the math.  This is what's found
+ 5   in there, and if you have multiple grams, this is
+ 6   what would be potentially if you analyzed that
+ 7   whole bottle.
+ 8        Q.   So do you intend to offer an opinion as to
+ 9   the number of tremolite fibers that you would find
+10   in a 22-ounce bottle of Longs baby powder?
+11        A.   I think I did -- is that -- I believe
+12   that's in the report, isn't it?  I know I did it
+13   for the chrysotile.  Yes, I took an average of
+14   tremolite and used one-half of the detection limit
+15   or the 10 nondetects and said this would be the
+16   average, 6,700.  And in a 22-ounce bottle, that's 4
+17   million tremolite structures.
+18        Q.   On what page of your report are you
+19   looking?
+20        A.   Oh, sorry.  It is on page 24 and under the
+21   heading "Christina Prudencio Asbestos Bundle Fiber
+22   Exposure to Longs Baby Powder."
+23        Q.   Have you previously prepared additional
+24   samples for the five bottles that you found
+25   positive for tremolite?  So did you, like, retest
+0539
+ 1   those?
+ 2        A.   Unless it was Sample Number 9, no.  And it
+ 3   was not Sample 9, the 1 -- 71309, we didn't detect.
+ 4   The tremolite would have been below our detection
+ 5   limit.
+ 6             MS. RUSSO:  Okay.  Those are all the
+ 7   questions I think I have.
+ 8             THE WITNESS:  Thank you.
+ 9             MR. DUBIN:  I just had one or two quick
+10   follow-up questions, and I think we are done.
+11   
+12                    FURTHER EXAMINATION
+13   BY MR. DUBIN:
+14        Q.   Just -- I know that I forgot to ask you.
+15   On the -- when we looked at tablet -- I'm sorry,
+16   the palette analysis -- I'm trying to find it --
+17   where you were listing these ranges for refractive
+18   indices --
+19        A.   Yes.
+20        Q.   Is that for one individual particle, or is
+21   that all of the things that we are seeing in all of
+22   the particles that are examined?  I can't tell if
+23   that's particle by particle or whether that's
+24   whatever.
+25        A.   Each of these analyses has four
+0540
+ 1   representative chrysotile bundles, and that would
+ 2   be the high and the low range for all -- for those
+ 3   four bundles.
+ 4        Q.   So combined.
+ 5        A.   Combined.
+ 6        Q.   And then in terms of this technique of
+ 7   using the average that we had spoke to before,
+ 8   where is that from?
+ 9        A.   I don't know if that's anywhere other than
+10   when you have it from the same sample, that I think
+11   is the only proper scientific way to do it.
+12        Q.   In terms of -- I was just asking because I
+13   was reading over the 2003 Sue that you had
+14   provided.  What it seemed to suggest is that you
+15   take the lowest -- it's usually a range of DS
+16   colors is displayed, make sure the DS color that
+17   gives the lowest RI is observed.  And I think,
+18   therefore -- you know, it says, "For example, the
+19   DS color ranges from blue to light blue.  Choose
+20   the light blue."  And then it has the same thing
+21   for the Y.  It says, "For example, the DS color
+22   ranged from purple to red purple.  Choose red
+23   purple."
+24             Does that sound familiar you?
+25             MR. RIVAMONTE:  What is it?  Is there a
+0541
+ 1   case that you are looking at in the Sue article?
+ 2             MR. DUBIN:  It's 2003 Sue.  I was looking
+ 3   at page 5.  Actually it says "page 3" on the back.
+ 4   That's page 5 of the PDF.
+ 5        A.   Let me see exactly what it says.
+ 6             Well, that's what we are doing.  We give
+ 7   the lowest and the highest, but I don't think that
+ 8   has anything to do with if you have multiple samples.
+ 9   BY MR. DUBIN:
+10        Q.   There's two different issues, I agree, but
+11   I'm just trying figure out where it's coming from
+12   to take an average of the lowest and the highest
+13   and use that.
+14        A.   Well, we are not taking the average.  We
+15   are taking the average from the ranges found for
+16   multiple chrysotile fibers.
+17        Q.   I guess that's two different things.
+18   First, do you have a reference for the idea that
+19   you can do this on a multi-particle basis?  In
+20   other words, combine multiple different particle
+21   observations into one set of ranges as opposed to
+22   doing it on a particle-by-particle basis?
+23        A.   It's the way we've been doing it forever.
+24   I'm not -- I don't see that there is any issue with
+25   that.
+0542
+ 1        Q.   Okay.  And then in this chart -- when you
+ 2   say where you've been doing it forever, how long
+ 3   have you been following that procedure?
+ 4        A.   Anytime that we are having multiple
+ 5   analyses of the same sample instead of
+ 6   individually -- you've got an individual sample,
+ 7   then you have just a simple range.  I mean, all the
+ 8   talcs are -- because it's one sample, if you look
+ 9   in our report, because we are taking one talc,
+10   sometimes there is a range in the talcs, but --
+11   well, we have to stand to be corrected.  We only
+12   have one where there was not a range.
+13             We believe it's a more accurate
+14   representation than just trying to get one if you
+15   have multiple refractive indices in one structure.
+16        Q.   Have you done -- were you doing this
+17   before you were using or looking for asbestos in
+18   talc?
+19        A.   Well, we're not doing -- we were never
+20   doing it for just commercial asbestos, because you
+21   do one analysis and they typically will pick an
+22   average of what all the colors are -- what the
+23   color is.
+24             Looking at these small structures, they
+25   became more complicated.  Have we done it before
+0543
+ 1   that?  I think so, but I'm not sure I could -- you
+ 2   know, it's the first time I've been asked that
+ 3   question, so I have to go and look.
+ 4        Q.   How about this?  Again, the idea of
+ 5   instead of taking the lowest RI observed using the
+ 6   average, when did you -- how did that come about?
+ 7        A.   You're not looking at it -- I don't know
+ 8   when it came about.  It's just more accurate.  Why
+ 9   not have an average instead of picking a low one?
+10   You know, scientifically, why not pick the high
+11   one?
+12             What we choose is we try -- we pick both
+13   instead of just picking one over the other.  If it's
+14   dark blue on one side but light blue on the other,
+15   we'll put both refractive indices down so that we
+16   have a range that gives the average of what the
+17   birefringence is.
+18        Q.   All right.  So I guess I'll try to think
+19   of it mathematically, how it would impact it if you
+20   were using an average rather than low and low.
+21   Right?
+22        A.   It wouldn't change anything.
+23   Mathematically, if you are going to use low and low
+24   or the average, average, you're still going to get
+25   the same birefringence.
+0544
+ 1        Q.   Well --
+ 2        A.   No matter what.  The difference in the
+ 3   refractive indices between parallel and
+ 4   perpendicular, as long as you keep everything
+ 5   constant, if you are always going to pick the low
+ 6   side or you always pick the high side or you always
+ 7   pick both so it can be average, the birefringence
+ 8   never changes.
+ 9        Q.   I'm trying to -- let's see.  If we take
+10   one -- for example, if we took, let's say, in one
+11   of them, you have parallel 1561 to 1568, and then
+12   you have perpendicular 1550 to 1553.  The
+13   difference between the two lows is 11.
+14        A.   What was it again?  I'm sorry.
+15        Q.   The one with the refractive index parallel
+16   of 1.461 to 1.568.  Then you have perpendicular
+17   1550 to 1553.  So the difference between the two
+18   lows is 11.
+19        A.   And the difference --
+20        Q.   I'm not sure how it works out if you do
+21   the average instead.
+22        A.   The difference between the two highs is
+23   0.015.  If you take the average of that, you're at
+24   0.01 -- we'll call it 13.  That's in the range you
+25   would expect for chrysotile.
+0545
+ 1        Q.   I'm just trying to ask -- to figure out.
+ 2   So if you use the lows, the difference is what?
+ 3        A.   If you use the two lows, it's 0.011.
+ 4        Q.   And if you use the two highs?
+ 5        A.   It's 0.015.
+ 6        Q.   And if you use the average?
+ 7        A.   It's 0.013.
+ 8        Q.   Okay.  All right.  Thanks.  I think that
+ 9   clears it up for me.  Thank you.
+10        A.   Thank you.
+11             MR. RIVAMONTE:  Anyone else?  Are we done?
+12             THE WITNESS:  Are we done?
+13             MR. DUBIN:  Yeah, we're done.
+14   
+15                    FURTHER EXAMINATION
+16   BY MR. CHARCHALIS:
+17        Q.   Just the one question.  You provided, in
+18   these three depositions, all the opinions you
+19   intend to provide at trial; correct?  I understand
+20   that you may be asked questions and you don't know
+21   what they are, but all the information you intend
+22   to provide; correct?
+23             MR. RIVAMONTE:  Vague and overbroad.
+24        A.   I may be asked questions that I'm not
+25   aware of.  And even though I have done this a
+0546
+ 1   number of times, I've never been able to predict
+ 2   the cross-examination.  But I believe, after three
+ 3   depositions, you guys have explored my various
+ 4   opinions pretty thoroughly.
+ 5             MR. CHARCHALIS:  Thank you.
+ 6             THE VIDEOGRAPHER:  This concludes today's
+ 7   deposition.  We are off the record.  12:41 p.m.
+ 8             (Proceedings adjourned at 12:41 p.m.)
+ 9   
+10   
+11   
+12   
+13   
+14   
+15   
+16   
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0547
+ 1             DECLARATION UNDER PENALTY OF PERJURY
+ 2             I, WILLIAM LONGO, PHD, do hereby certify
+ 3   under penalty of perjury that I have read the
+ 4   foregoing transcript of my deposition taken on
+ 5   May 21, 2021; that I have made such corrections as
+ 6   appear noted on the Deposition Errata Page,
+ 7   attached hereto, signed by me; that my testimony as
+ 8   contained herein, as corrected, is true and
+ 9   correct.
+10   
+11        Dated this _____ day of______________________,
+12   2021, at ____________________________, California.
+13   
+14   
+15                    _________________________________
+16                    WILLIAM LONGO, PHD
+17   
+18   
+19   
+20   
+21   
+22   
+23   
+24   
+25   
+0548
+ 1                  DEPOSITION ERRATA SHEET
+ 2   
+     Page No._____ Line No._____
+ 3   
+     Change:____________________________________________
+ 4   
+     Reason for
+ 5   change:____________________________________________
+ 6   Page No._____ Line No._____
+ 7   Change:____________________________________________
+ 8   Reason for
+     change:____________________________________________
+ 9   
+     Page No._____ Line No._____
+10   
+     Change:____________________________________________
+11   
+     Reason for
+12   change:____________________________________________
+13   Page No._____ Line No._____
+14   Change:____________________________________________
+15   Reason for
+     change:____________________________________________
+16   
+     Page No._____ Line No._____
+17   
+     Change:____________________________________________
+18   
+     Reason for
+19   change:____________________________________________
+20   Page No._____ Line No._____
+21   Change:____________________________________________
+22   Reason for
+     change:____________________________________________
+23   
+     ______________________________    _________________
+24   WILLIAM LONGO, PHD                Dated
+25   
+0549
+ 1     STATE OF CALIFORNIA      )
+                                ) ss.
+ 2     COUNTY OF LOS ANGELES    )
+ 3   
+ 4             I, GRACE CHUNG, RMR, CRR, CSR No. 6246, a
+ 5     Certified Shorthand Reporter in and for the County
+ 6     of Los Angeles, the State of California, do hereby
+ 7     certify:
+ 8             That, prior to being examined, the witness
+ 9     named in the foregoing deposition was by me duly
+10     sworn to testify the truth, the whole truth, and
+11     nothing but the truth;
+12             That said deposition was taken down by me
+13     in shorthand at the time and place therein named,
+14     and thereafter reduced to typewriting by
+15     computer-aided transcription under my direction;
+16             That the dismantling, unsealing, or
+17     unbinding of the original transcript will render
+18     the reporter's certificate null and void.
+19             I further certify that I am not interested
+20     in the event of the action.
+21     In witness whereof, I have hereunto subscribed my
+22     name.
+23     Dated May 26, 2021
+24                        _______________________________
+                          GRACE CHUNG, CSR NO. 6246
+25                        RMR, CRR, CLR

@@ -1,3 +1,7 @@
+# Copyright (c) 2026 Data-Blitz Inc. All rights reserved.
+# License: Proprietary. See NOTICE.md.
+# Author: Paul Harvener.
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -75,3 +79,14 @@ def test_prompt_dir_points_to_backend_prompts_folder():
 
     assert prompt_dir.name == "prompts"
     assert prompt_dir == Path(__file__).resolve().parents[1] / "backend/prompts"
+
+
+def test_list_prompt_templates_returns_all_known_prompts():
+    prompts_module.load_prompt.cache_clear()
+
+    templates = prompts_module.list_prompt_templates()
+
+    assert len(templates) == len(prompts_module.PROMPT_FILES)
+    assert templates[0]["key"] == "map_deposition_system"
+    assert templates[0]["file_name"] == prompts_module.PROMPT_FILES["map_deposition_system"]
+    assert templates[0]["content"]
