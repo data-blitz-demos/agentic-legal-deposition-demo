@@ -1,0 +1,586 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/court_case_schema.json",
+  "title": "CourtCaseSchema",
+  "description": "Structured court-case and proceeding metadata extracted from a deposition transcript.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_type",
+    "schema_version",
+    "source_file",
+    "case",
+    "proceeding",
+    "deponent",
+    "appearances",
+    "exhibit_index",
+    "quality"
+  ],
+  "properties": {
+    "document_type": {
+      "type": "string",
+      "const": "court_case_capture"
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_number",
+        "caption",
+        "court",
+        "parties",
+        "judges"
+      ],
+      "properties": {
+        "case_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "caption": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "full_caption",
+            "short_caption"
+          ],
+          "properties": {
+            "full_caption": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "short_caption": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "court": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "court_name",
+            "judicial_circuit",
+            "county",
+            "state"
+          ],
+          "properties": {
+            "court_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "judicial_circuit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "county": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "state": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "parties": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "plaintiffs",
+            "defendants",
+            "other_parties"
+          ],
+          "properties": {
+            "plaintiffs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/party"
+              }
+            },
+            "defendants": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/party"
+              }
+            },
+            "other_parties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/party"
+              }
+            }
+          }
+        },
+        "judges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/judge"
+          }
+        }
+      }
+    },
+    "proceeding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "proceeding_type",
+        "title",
+        "timing",
+        "location",
+        "reporting",
+        "attendance_notes"
+      ],
+      "properties": {
+        "proceeding_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timing": {
+          "$ref": "#/$defs/timing"
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "reporting": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "court_reporter_name",
+            "credential",
+            "reporting_agency",
+            "agency_job_number",
+            "certification_jurisdiction"
+          ],
+          "properties": {
+            "court_reporter_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "credential": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reporting_agency": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "agency_job_number": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "certification_jurisdiction": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "attendance_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "deponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "professional_designation",
+        "role_in_case",
+        "retained_by",
+        "sworn"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "professional_designation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "role_in_case": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retained_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sworn": {
+          "type": "boolean"
+        }
+      }
+    },
+    "appearances": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "for_plaintiff",
+        "for_defendants"
+      ],
+      "properties": {
+        "for_plaintiff": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/appearance"
+          }
+        },
+        "for_defendants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/appearance"
+          }
+        }
+      }
+    },
+    "exhibit_index": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/exhibit"
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "warnings",
+        "confidence_notes"
+      ],
+      "properties": {
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confidence_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "party": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "entity_type",
+        "role_in_case"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "entity_type": {
+          "type": "string",
+          "enum": [
+            "individual",
+            "organization",
+            "government",
+            "unknown"
+          ]
+        },
+        "role_in_case": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "judge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "title",
+        "role"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "start_time",
+        "end_time",
+        "certification_date",
+        "review_deadline_days"
+      ],
+      "properties": {
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "start_time": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "end_time": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "certification_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "review_deadline_days": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "venue_name",
+        "address_line_1",
+        "address_line_2",
+        "city",
+        "county",
+        "state",
+        "postal_code",
+        "country"
+      ],
+      "properties": {
+        "venue_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "address_line_1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "address_line_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "county": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "postal_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "appearance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "bar_title",
+        "party_representation",
+        "law_firm",
+        "attendance_mode",
+        "office_location",
+        "phone",
+        "email"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bar_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "party_representation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "law_firm": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attendance_mode": {
+          "type": "string",
+          "enum": [
+            "in_person",
+            "telephone",
+            "video",
+            "unknown"
+          ]
+        },
+        "office_location": {
+          "$ref": "#/$defs/location"
+        },
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "exhibit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exhibit_number",
+        "offered_by",
+        "description",
+        "page_referenced"
+      ],
+      "properties": {
+        "exhibit_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "offered_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "page_referenced": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

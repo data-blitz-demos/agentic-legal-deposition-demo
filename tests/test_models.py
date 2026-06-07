@@ -504,10 +504,12 @@ def test_agent_runtime_metrics_models():
         rag_paired_comparisons=2,
         metrics=[metric],
         correctness_metrics=[metric],
+        toolathlon_metrics=[metric],
     )
     assert payload.lookback_hours == 24
     assert payload.metrics[0].status == "good"
     assert payload.correctness_metrics[0].key == "task_success_rate_pct"
+    assert payload.toolathlon_metrics[0].label == "Task Success Rate"
     assert payload.rag_sampled_queries == 6
     assert payload.rag_paired_comparisons == 2
 
@@ -577,7 +579,7 @@ def test_graph_rag_models():
     )
     options_payload = GraphOntologyOptionsResponse(
         base_directory="/data/ontology",
-        suggested="/data/ontology/*.owl",
+        suggested="/data/ontology/**/*.owl",
         options=[option],
     )
     assert options_payload.options[0].path == "/data/ontology/legal.owl"
@@ -591,7 +593,7 @@ def test_graph_rag_models():
         base_directory="/data/ontology",
         current_directory="/data/ontology",
         parent_directory=None,
-        wildcard_path="/data/ontology/*.owl",
+        wildcard_path="/data/ontology/**/*.owl",
         directories=[browser_entry],
         files=[],
     )

@@ -18,6 +18,7 @@ from langgraph.graph import END, StateGraph
 
 from .config import Settings
 from .couchdb import CouchDBClient
+from .langfuse_integration import build_langchain_config
 from .llm import build_chat_model, llm_failure_message
 from .models import Claim, ContradictionAssessment, ContradictionFinding, DepositionSchema
 from .prompts import render_prompt
@@ -34,6 +35,7 @@ class GraphState(TypedDict, total=False):
     schema_name: str
     selected_schema: dict | None
     selected_schema_mode: str
+    trace_session_id: str
     raw_text: str
     deposition: DepositionSchema
     deposition_doc: dict
@@ -89,6 +91,7 @@ class DepositionWorkflow:
         schema_name: str | None = None,
         selected_schema: dict | None = None,
         selected_schema_mode: str | None = None,
+        trace_session_id: str | None = None,
     ) -> dict:
         """Run the workflow for a single deposition file."""
 
@@ -101,6 +104,7 @@ class DepositionWorkflow:
                 "schema_name": schema_name or "deposition_schema",
                 "selected_schema": selected_schema,
                 "selected_schema_mode": selected_schema_mode or "",
+                "trace_session_id": trace_session_id or case_id,
             }
         )
 
@@ -109,6 +113,7 @@ class DepositionWorkflow:
         case_id: str,
         llm_provider: str | None = None,
         llm_model: str | None = None,
+        trace_session_id: str | None = None,
     ) -> list[dict]:
         """Recompute contradiction assessments for every deposition in a case."""
 
@@ -121,6 +126,7 @@ class DepositionWorkflow:
                 peers,
                 llm_provider=llm_provider,
                 llm_model=llm_model,
+                trace_session_id=trace_session_id or case_id,
             )
             doc["contradiction_score"] = assessment.contradiction_score
             doc["flagged"] = assessment.flagged
@@ -175,10 +181,28 @@ class DepositionWorkflow:
 
         try:
             llm = self._get_llm(state.get("llm_provider"), state.get("llm_model"), temperature=0)
-            parser_llm = llm.with_structured_output(selected_schema)
-            parsed = parser_llm.invoke(
-                [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
+            parser_llm = self._with_structured_output(
+                llm,
+                selected_schema,
+                llm_provider=state.get("llm_provider"),
             )
+            messages = [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
+            invoke_config = self._langchain_config(
+                operation="map_deposition",
+                session_id=state.get("trace_session_id") or state.get("case_id"),
+                llm_provider=state.get("llm_provider"),
+                llm_model=state.get("llm_model"),
+                metadata={
+                    "case_id": str(state.get("case_id") or ""),
+                    "file_name": file_name,
+                    "schema_name": selected_schema_name,
+                },
+                tags=("attorneyos", "ingest", "map-deposition"),
+            )
+            if invoke_config:
+                parsed = parser_llm.invoke(messages, config=invoke_config)
+            else:
+                parsed = parser_llm.invoke(messages)
             ingest_schema_payload = self._coerce_schema_payload(parsed)
             deposition = self._normalize_ingest_deposition(
                 selected_schema_name,
@@ -206,6 +230,11 @@ class DepositionWorkflow:
         if parse_recovery_used:
             deposition.case_id = state["case_id"]
             deposition.file_name = file_name
+            ingest_schema_payload = self._finalize_ingest_schema_payload(
+                selected_schema_mode=selected_schema_mode,
+                deposition=deposition,
+                ingest_schema_payload=ingest_schema_payload,
+            )
             legal_clerk_trace = [
                 {
                     "persona": "Persona:Legal Clerk",
@@ -243,6 +272,11 @@ class DepositionWorkflow:
 
         deposition.case_id = state["case_id"]
         deposition.file_name = file_name
+        ingest_schema_payload = self._finalize_ingest_schema_payload(
+            selected_schema_mode=selected_schema_mode,
+            deposition=deposition,
+            ingest_schema_payload=ingest_schema_payload,
+        )
         legal_clerk_trace = [
             {
                 "persona": "Persona:Legal Clerk",
@@ -285,6 +319,19 @@ class DepositionWorkflow:
             if isinstance(payload, dict):
                 return payload
         return None
+
+    def _finalize_ingest_schema_payload(
+        self,
+        *,
+        selected_schema_mode: str,
+        deposition: DepositionSchema,
+        ingest_schema_payload: dict | None,
+    ) -> dict | None:
+        """Persist a stable payload shape for the selected schema mode."""
+
+        if selected_schema_mode == "native":
+            return deposition.model_dump()
+        return ingest_schema_payload
 
     def _normalize_ingest_deposition(
         self,
@@ -432,6 +479,7 @@ class DepositionWorkflow:
             llm_provider=state.get("llm_provider"),
             llm_model=state.get("llm_model"),
             trace_events=attorney_trace,
+            trace_session_id=state.get("trace_session_id"),
         )
         return {"assessment": assessment, "attorney_trace": attorney_trace}
 
@@ -442,6 +490,7 @@ class DepositionWorkflow:
         llm_provider: str | None = None,
         llm_model: str | None = None,
         trace_events: list[dict] | None = None,
+        trace_session_id: str | None = None,
     ) -> ContradictionAssessment:
         """Run contradiction assessment using structured-output LLM calls."""
 
@@ -505,10 +554,29 @@ class DepositionWorkflow:
         result_source = "llm"
         try:
             llm = self._get_llm(llm_provider, llm_model, temperature=0)
-            assessor_llm = llm.with_structured_output(ContradictionAssessment)
-            assessment = assessor_llm.invoke(
-                [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
+            assessor_llm = self._with_structured_output(
+                llm,
+                ContradictionAssessment,
+                llm_provider=llm_provider,
             )
+            messages = [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
+            invoke_config = self._langchain_config(
+                operation="assess_contradictions",
+                session_id=trace_session_id or str(target_doc.get("case_id") or ""),
+                llm_provider=llm_provider,
+                llm_model=llm_model,
+                metadata={
+                    "case_id": str(target_doc.get("case_id") or ""),
+                    "deposition_id": str(target_doc.get("_id") or ""),
+                    "file_name": str(target_doc.get("file_name") or ""),
+                    "peer_count": len(other_depositions),
+                },
+                tags=("attorneyos", "ingest", "assess-contradictions"),
+            )
+            if invoke_config:
+                assessment = assessor_llm.invoke(messages, config=invoke_config)
+            else:
+                assessment = assessor_llm.invoke(messages)
             if assessment.contradiction_score > 0 and assessment.contradictions:
                 self._append_assessment_trace(
                     trace_events,
@@ -656,6 +724,14 @@ class DepositionWorkflow:
             return text
         return f"{text[:limit]}...(truncated)"
 
+    def _with_structured_output(self, llm, schema: object, llm_provider: str | None):
+        """Wrap structured-output setup with Ollama-specific compatibility mode."""
+
+        if self._normalize_provider(llm_provider) == "ollama":
+            # Avoid Ollama json_schema grammar crashes on certain schema shapes.
+            return llm.with_structured_output(schema, method="json_mode")
+        return llm.with_structured_output(schema)
+
     def _get_llm(self, llm_provider: str | None, llm_model: str | None, *, temperature: float):
         """Return default workflow model or provider/model override."""
 
@@ -666,6 +742,32 @@ class DepositionWorkflow:
             llm_provider,
             llm_model,
             temperature=temperature,
+        )
+
+    def _langchain_config(
+        self,
+        *,
+        operation: str,
+        session_id: str | None,
+        llm_provider: str | None,
+        llm_model: str | None,
+        metadata: dict | None = None,
+        tags: tuple[str, ...] | list[str] = (),
+    ) -> dict:
+        """Build one LangChain config payload enriched for Langfuse tracing."""
+
+        payload = {
+            "llm_provider": self._normalize_provider(llm_provider),
+            "llm_model": self._trace_model_name(llm_model),
+        }
+        if isinstance(metadata, dict):
+            payload.update(metadata)
+        return build_langchain_config(
+            self.settings,
+            operation=operation,
+            session_id=session_id,
+            tags=list(tags),
+            metadata=payload,
         )
 
     def _fallback_assess_deposition(

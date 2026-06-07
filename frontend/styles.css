@@ -366,6 +366,35 @@ body {
   text-align: left;
 }
 
+.langfuse-layout {
+  display: grid;
+  gap: 16px;
+}
+
+.langfuse-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.langfuse-meta-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.langfuse-coverage {
+  display: grid;
+  gap: 10px;
+}
+
+.langfuse-coverage-row {
+  padding: 12px 14px;
+  border: 1px solid rgba(125, 211, 252, 0.15);
+  border-radius: 14px;
+  background: rgba(12, 24, 40, 0.72);
+  color: #d6e5f4;
+}
+
 .fine-tuning-layout {
   display: grid;
   gap: 16px;
@@ -1026,6 +1055,16 @@ body {
   gap: 10px;
 }
 
+.admin-persona-observable-detail {
+  margin-top: 10px;
+  border: 1px solid rgba(136, 168, 196, 0.2);
+  border-radius: 10px;
+  background: rgba(8, 19, 33, 0.56);
+  padding: 10px 12px;
+  white-space: pre-wrap;
+  line-height: 1.45;
+}
+
 .admin-persona-observable-row {
   display: grid;
   gap: 6px;
@@ -1409,6 +1448,10 @@ button:disabled {
   justify-content: center;
   padding: 18px;
   z-index: 30;
+}
+
+#adminPersonaPromptMetricExplainModal {
+  z-index: 38;
 }
 
 .overlay-surface {
@@ -2188,6 +2231,132 @@ button:disabled {
   white-space: pre-wrap;
 }
 
+.toolathlon-replay-panel {
+  margin-top: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  border-radius: 12px;
+  padding: 12px;
+  background:
+    radial-gradient(circle at 85% -15%, rgba(56, 189, 248, 0.12), transparent 36%),
+    rgba(7, 16, 28, 0.84);
+}
+
+.toolathlon-replay-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.toolathlon-replay-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.toolathlon-replay-progress-bar {
+  flex: 1;
+  min-width: 180px;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(10, 22, 36, 0.95);
+  border: 1px solid rgba(136, 168, 196, 0.18);
+}
+
+.toolathlon-replay-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8 0%, #f97316 100%);
+  transition: width 180ms ease;
+}
+
+.toolathlon-replay-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.9fr);
+  gap: 12px;
+}
+
+.toolathlon-replay-transcript,
+.toolathlon-replay-detail {
+  min-height: 260px;
+  max-height: 420px;
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(151, 174, 198, 0.22);
+  background: rgba(4, 10, 18, 0.92);
+  padding: 12px;
+}
+
+.toolathlon-replay-detail {
+  white-space: pre-wrap;
+  line-height: 1.45;
+  font-size: 0.84rem;
+  font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
+
+.toolathlon-step {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(136, 168, 196, 0.16);
+  background: rgba(8, 18, 30, 0.8);
+  color: #d9e8f6;
+  cursor: pointer;
+}
+
+.toolathlon-step:hover,
+.toolathlon-step:focus-visible {
+  border-color: rgba(56, 189, 248, 0.42);
+  background: rgba(10, 22, 36, 0.92);
+  outline: none;
+}
+
+.toolathlon-step.selected {
+  border-color: rgba(250, 204, 21, 0.72);
+  box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.24);
+}
+
+.toolathlon-step-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.14);
+  color: #fef3c7;
+  font-weight: 800;
+}
+
+.toolathlon-step-body {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.toolathlon-step-body strong {
+  color: #f8fafc;
+}
+
+.toolathlon-step-body span,
+.toolathlon-step-body small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.toolathlon-step-body small {
+  color: #9bb2c8;
+  line-height: 1.35;
+}
+
 @keyframes observableProjectIn {
   from {
     opacity: 0;
@@ -2211,6 +2380,14 @@ button:disabled {
 
   .panel {
     padding: 16px;
+  }
+
+  .toolathlon-replay-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .toolathlon-replay-controls {
+    justify-content: flex-start;
   }
 
   .app-brand-header {

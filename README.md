@@ -176,7 +176,7 @@ python scripts/generate_uml_diagrams.py
 - Admin user management with create, edit, select, and permanent delete.
 - Admin persona management with saved name, LLM, and prompts.
 - Built-in Admin test runner with `pytest` HTML report access.
-- Native `/metrics` export plus Prometheus and Grafana for runtime telemetry.
+- Native `/metrics` export plus Prometheus, Grafana, and Langfuse for runtime telemetry and LLM traces.
 
 ## Tech Stack
 
@@ -186,6 +186,7 @@ python scripts/generate_uml_diagrams.py
 - Neo4j graph store (Graph RAG ontology layer)
 - Prometheus metrics
 - Grafana dashboards
+- Langfuse self-hosted tracing
 - Vanilla JS/CSS frontend
 - Docker Compose for full local stack
 
@@ -214,11 +215,25 @@ docker compose up --build -d
 - Neo4j Browser: `http://localhost:7474/browser/` (or your configured `NEO4J_HTTP_PORT`)
 - Prometheus: `http://localhost:9090`
 - Grafana: `http://localhost:3000`
+- Langfuse: `http://localhost:3001`
 
 Default local Grafana credentials:
 
 - Username: `admin`
 - Password: `password`
+
+Default local Langfuse credentials:
+
+- Email: `admin@attorneyos.local`
+- Password: `password123456`
+
+Langfuse traces are surfaced in the app's `Langfuse` tab and are wired for:
+
+- API request spans
+- Deposition ingest mapping and contradiction assessment
+- Attorney chat
+- Focused contradiction reasoning and summary
+- Graph RAG answer generation
 
 ## AWS EKS (Kubernetes + GPU Ollama)
 
@@ -267,6 +282,8 @@ Helper scripts:
      - Thought Stream
      - runtime metrics
      - correctness and drift observables
+     - Toolathlon-compatible metrics derived from thought-stream sessions
+     - Toolathlon-style trajectory replay for the latest loaded thought stream
    - Includes `Open Grafana` for the local Grafana instance.
 5. `Admin`
    - `Users`: create, edit, select, list, and permanently remove users.
@@ -288,6 +305,9 @@ Helper scripts:
 - The UI exposes Grafana launch buttons from:
   - `Observables`
   - `Admin -> MLOps`
+- Toolathlon integration note:
+  - The Observables page uses Toolathlon benchmark concepts and replay patterns, but it does not run the full HKUST Toolathlon benchmark harness inside this demo.
+  - Toolathlon cards are compatibility proxies computed from this app's own thought-stream sessions.
 
 ## Additional API Endpoints
 
@@ -745,9 +765,9 @@ docker compose exec api pip install -r requirements-dev.txt
 docker compose exec api ./scripts/run_tests.sh
 ```
 
-## MCP CouchDB Access
+## MCP Access
 
-This repo includes local MCP servers for both deposition records and thought streams.
+This repo includes local MCP servers for deposition records, thought streams, and Neo4j ontology access.
 
 1. Start the stack:
 
@@ -767,11 +787,18 @@ docker compose exec api python scripts/use_couchdb_mcp.py
 docker compose exec api python scripts/use_thought_stream_mcp.py
 ```
 
-4. Optional: run servers directly on host (stdio transport):
+4. Use the Neo4j ontology MCP server through its demo client:
+
+```bash
+docker compose exec api python scripts/use_neo4j_ontology_mcp.py
+```
+
+5. Optional: run servers directly on host (stdio transport):
 
 ```bash
 python mcp_servers/couchdb_server.py
 python mcp_servers/thought_stream_server.py
+python mcp_servers/neo4j_ontology_server.py
 ```
 
 Available deposition MCP tools:
@@ -788,3 +815,10 @@ Available thought-stream MCP tools:
 - `get_thought_stream`
 - `list_thought_streams`
 - `delete_thought_stream`
+
+Available Neo4j ontology MCP tools:
+
+- `ontology_health`
+- `search_ontology_context`
+- `list_ontology_resources`
+- `get_ontology_resource`

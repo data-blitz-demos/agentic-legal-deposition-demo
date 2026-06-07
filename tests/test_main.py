@@ -111,21 +111,27 @@ def test_collect_txt_files_from_directory_file_and_glob(tmp_path):
 def test_collect_owl_files_from_directory_file_and_glob(tmp_path):
     ontology_dir = tmp_path / "ontology"
     ontology_dir.mkdir()
+    nested_dir = ontology_dir / "sasl"
+    nested_dir.mkdir()
     a = ontology_dir / "legal.owl"
     b = ontology_dir / "other.OWL"
+    nested = nested_dir / "contracts.owl"
     c = ontology_dir / "notes.txt"
     a.write_text("a", encoding="utf-8")
     b.write_text("b", encoding="utf-8")
+    nested.write_text("n", encoding="utf-8")
     c.write_text("c", encoding="utf-8")
 
     directory_files = main._collect_owl_files(ontology_dir)
     single_file = main._collect_owl_files(a)
     glob_files = main._collect_owl_files(ontology_dir / "*.owl")
+    recursive_glob_files = main._collect_owl_files(ontology_dir / "**" / "*.owl")
     non_owl_file = main._collect_owl_files(c)
 
-    assert directory_files == [a, b]
+    assert directory_files == [a, b, nested]
     assert single_file == [a]
     assert glob_files == [a]
+    assert recursive_glob_files == [a, nested]
     assert non_owl_file == []
 
 
@@ -1081,6 +1087,7 @@ def test_current_persona_tool_options_returns_runtime_tool_inventory():
     assert tools
     assert tools[0].key == "mcp_couchdb_deposition_access"
     assert tools[0].available is True
+    assert any(item.key == "mcp_neo4j_ontology_access" and item.available for item in tools)
 
 
 def test_run_admin_tests_timeout_and_failure(monkeypatch):
@@ -1264,15 +1271,17 @@ def test_lifespan_ensures_and_closes_couchdb(monkeypatch):
     rag_couchdb.close.assert_called_once_with()
 
 
-def test_lifespan_stops_when_startup_llm_check_fails(monkeypatch):
+def test_lifespan_continues_when_startup_llm_check_fails(monkeypatch):
     couchdb = Mock()
     memory_couchdb = Mock()
     trace_couchdb = Mock()
     rag_couchdb = Mock()
+    warning = Mock()
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
     monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
     monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+    monkeypatch.setattr(main.logger, "warning", warning)
     monkeypatch.setattr(
         main,
         "_ensure_startup_llm_connectivity",
@@ -1283,17 +1292,20 @@ def test_lifespan_stops_when_startup_llm_check_fails(monkeypatch):
         async with main.lifespan(main.app):
             pass
 
-    with pytest.raises(RuntimeError, match="startup failed"):
-        asyncio.run(run_lifespan())
+    asyncio.run(run_lifespan())
 
-    couchdb.ensure_db.assert_not_called()
-    couchdb.close.assert_not_called()
-    memory_couchdb.ensure_db.assert_not_called()
-    memory_couchdb.close.assert_not_called()
-    trace_couchdb.ensure_db.assert_not_called()
-    trace_couchdb.close.assert_not_called()
-    rag_couchdb.ensure_db.assert_not_called()
-    rag_couchdb.close.assert_not_called()
+    warning.assert_called_once()
+    assert warning.call_args.args[0] == "startup continuing without operational default LLM: %s"
+    assert isinstance(warning.call_args.args[1], RuntimeError)
+    assert str(warning.call_args.args[1]) == "startup failed"
+    couchdb.ensure_db.assert_called_once_with()
+    couchdb.close.assert_called_once_with()
+    memory_couchdb.ensure_db.assert_called_once_with()
+    memory_couchdb.close.assert_called_once_with()
+    trace_couchdb.ensure_db.assert_called_once_with()
+    trace_couchdb.close.assert_called_once_with()
+    rag_couchdb.ensure_db.assert_called_once_with()
+    rag_couchdb.close.assert_called_once_with()
 
 
 def test_resolve_ingest_txt_files_deduplicates(monkeypatch, tmp_path):
@@ -1389,9 +1401,9 @@ def test_list_ontology_owl_options_includes_wildcard_and_nested_files(monkeypatc
     base, options, suggested = main._list_ontology_owl_options()
 
     assert base == ontology_root
-    assert suggested == str(ontology_root / "*.owl")
+    assert suggested == str(ontology_root / "**" / "*.owl")
     option_paths = [item.path for item in options]
-    assert option_paths[0] == str(ontology_root / "*.owl")
+    assert option_paths[0] == str(ontology_root / "**" / "*.owl")
     assert str(primary) in option_paths
     assert str(nested_file) in option_paths
 
@@ -1448,7 +1460,7 @@ def test_resolve_ontology_browser_directory_handles_wildcard_and_missing_owl_fil
     monkeypatch.setattr(main, "settings", SimpleNamespace(ontology_dir=str(ontology_root)))
     monkeypatch.setattr(main, "app_root", tmp_path)
 
-    _, wildcard_current = main._resolve_ontology_browser_directory(str(nested / "*.owl"))
+    _, wildcard_current = main._resolve_ontology_browser_directory(str(nested / "**" / "*.owl"))
     assert wildcard_current == nested.resolve()
 
     _, missing_file_current = main._resolve_ontology_browser_directory(str(nested / "future.owl"))
@@ -1751,8 +1763,38 @@ def test_grafana_access_info_uses_runtime_settings(monkeypatch):
         payload.dashboard_url
         == "http://grafana.internal:3000/d/attorneyos-observability/attorneyos-observability?orgId=1"
     )
-    assert payload.username == "admin"
-    assert payload.password == "password"
+
+
+def test_langfuse_access_info_uses_runtime_settings(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "settings",
+        SimpleNamespace(
+            langfuse_enabled=True,
+            langfuse_public_url="http://langfuse.internal:3001/",
+            langfuse_base_url="http://langfuse-web:3000/",
+            langfuse_project_name="AttorneyOS Demo",
+            langfuse_public_key="pk-lf-demo",
+            langfuse_init_user_email="admin@attorneyos.local",
+            langfuse_init_user_password="password123456",
+        ),
+    )
+    monkeypatch.setattr(main, "langfuse_sdk_installed", lambda: True)
+    monkeypatch.setattr(main, "langfuse_enabled", lambda _settings: True)
+
+    payload = main.langfuse_access_info()
+
+    assert payload.enabled is True
+    assert payload.sdk_installed is True
+    assert payload.configured is True
+    assert payload.url == "http://langfuse.internal:3001"
+    assert payload.login_url == "http://langfuse.internal:3001/auth/sign-in"
+    assert payload.base_url == "http://langfuse-web:3000"
+    assert payload.project_name == "AttorneyOS Demo"
+    assert payload.public_key == "pk-lf-demo"
+    assert payload.username == "admin@attorneyos.local"
+    assert payload.password == "password123456"
+    assert "Attorney chat generations" in payload.monitored_operations
 
 
 def test_txt_count_returns_zero_for_missing_path(tmp_path):
@@ -2727,7 +2769,7 @@ def test_build_graph_rag_query_embedding_uses_openai(monkeypatch):
 def test_graph_rag_owl_options_returns_dropdown_payload(monkeypatch):
     base = Path("/data/ontology")
     options = [
-        main.GraphOntologyOption(path="/data/ontology/*.owl", label="All OWL files"),
+        main.GraphOntologyOption(path="/data/ontology/**/*.owl", label="All OWL files"),
         main.GraphOntologyOption(path="/data/ontology/legal.owl", label="legal.owl"),
     ]
     monkeypatch.setattr(main, "_list_ontology_owl_options", lambda: (base, options, options[0].path))
@@ -2735,8 +2777,8 @@ def test_graph_rag_owl_options_returns_dropdown_payload(monkeypatch):
     payload = main.graph_rag_owl_options()
 
     assert payload.base_directory == "/data/ontology"
-    assert payload.suggested == "/data/ontology/*.owl"
-    assert [item.path for item in payload.options] == ["/data/ontology/*.owl", "/data/ontology/legal.owl"]
+    assert payload.suggested == "/data/ontology/**/*.owl"
+    assert [item.path for item in payload.options] == ["/data/ontology/**/*.owl", "/data/ontology/legal.owl"]
 
 
 def test_graph_rag_owl_browser_returns_file_browser_payload(monkeypatch):
@@ -2764,7 +2806,7 @@ def test_graph_rag_owl_browser_returns_file_browser_payload(monkeypatch):
     assert payload.base_directory == "/data/ontology"
     assert payload.current_directory == "/data/ontology/contracts"
     assert payload.parent_directory == "/data/ontology"
-    assert payload.wildcard_path == "/data/ontology/contracts/*.owl"
+    assert payload.wildcard_path == "/data/ontology/contracts/**/*.owl"
     assert [item.path for item in payload.directories] == ["/data/ontology/contracts/sub"]
     assert [item.path for item in payload.files] == ["/data/ontology/contracts/legal.owl"]
 
@@ -2871,7 +2913,7 @@ def test_query_graph_rag_success(monkeypatch):
         main,
         "build_chat_model",
         lambda *_args, **_kwargs: SimpleNamespace(
-            invoke=lambda _messages: SimpleNamespace(content="Short answer: Ontology response")
+            invoke=lambda _messages, config=None: SimpleNamespace(content="Short answer: Ontology response")
         ),
     )
 
@@ -2938,7 +2980,7 @@ def test_query_graph_rag_with_rag_disabled(monkeypatch):
         main,
         "build_chat_model",
         lambda *_args, **_kwargs: SimpleNamespace(
-            invoke=lambda _messages: SimpleNamespace(content="Short answer: No retrieval.")
+            invoke=lambda _messages, config=None: SimpleNamespace(content="Short answer: No retrieval.")
         ),
     )
 
@@ -2989,7 +3031,7 @@ def test_query_graph_rag_with_stream_logging_disabled(monkeypatch):
         main,
         "build_chat_model",
         lambda *_args, **_kwargs: SimpleNamespace(
-            invoke=lambda _messages: SimpleNamespace(content="Short answer: No stream logging.")
+            invoke=lambda _messages, config=None: SimpleNamespace(content="Short answer: No stream logging.")
         ),
     )
 
@@ -3035,7 +3077,7 @@ def test_query_graph_rag_toggle_influences_answer(monkeypatch):
     monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
 
     class _ContextAwareModel:
-        def invoke(self, messages):
+        def invoke(self, messages, config=None):
             prompt = str(messages[-1].content)
             if "RAG processing was disabled for this request." in prompt:
                 return SimpleNamespace(content="Short answer: Graph context was disabled; answer confidence is low.")
@@ -3128,7 +3170,7 @@ def test_query_graph_rag_validation_and_error_paths(monkeypatch):
         main,
         "build_chat_model",
         lambda *_args, **_kwargs: SimpleNamespace(
-            invoke=lambda _messages: (_ for _ in ()).throw(RuntimeError("llm down"))
+            invoke=lambda _messages, config=None: (_ for _ in ()).throw(RuntimeError("llm down"))
         ),
     )
     monkeypatch.setattr(main, "llm_failure_message", lambda *_args, **_kwargs: "LLM failed")
@@ -3157,7 +3199,9 @@ def test_query_graph_rag_fallback_when_llm_content_is_empty(monkeypatch):
     monkeypatch.setattr(
         main,
         "build_chat_model",
-        lambda *_args, **_kwargs: SimpleNamespace(invoke=lambda _messages: SimpleNamespace(content="  ")),
+        lambda *_args, **_kwargs: SimpleNamespace(
+            invoke=lambda _messages, config=None: SimpleNamespace(content="  ")
+        ),
     )
 
     payload = main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
@@ -3349,6 +3393,7 @@ def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
 
     by_key = {item.key: item for item in payload.metrics}
     correctness_by_key = {item.key: item for item in payload.correctness_metrics}
+    toolathlon_by_key = {item.key: item for item in payload.toolathlon_metrics}
     assert by_key["task_success_rate_pct"].display == "50.0%"
     assert by_key["task_success_rate_pct"].status == "bad"
     assert by_key["run_failure_rate_pct"].display == "50.0%"
@@ -3356,9 +3401,16 @@ def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
     assert by_key["loop_risk_rate_pct"].status == "bad"
     assert by_key["in_flight_runs"].display == "1"
     assert by_key["rag_toggle_comparison_pairs"].display == "0"
-    assert correctness_by_key["golden_set_accuracy"].display == "50.0%"
+    assert correctness_by_key["golden_set_accuracy"].display == "N/A"
+    assert correctness_by_key["golden_set_accuracy"].value is None
     assert correctness_by_key["schema_adherence_rate"].display == "50.0%"
-    assert correctness_by_key["repeat_prompt_inconsistency"].display == "0.0%"
+    assert correctness_by_key["repeat_prompt_inconsistency"].display == "N/A"
+    assert correctness_by_key["repeat_prompt_inconsistency"].value is None
+    assert toolathlon_by_key["toolathlon_success_rate_pct"].display == "50.0%"
+    assert toolathlon_by_key["toolathlon_avg_turns_per_finished_run"].display == "11.5"
+    assert toolathlon_by_key["toolathlon_long_horizon_completion_rate_pct"].display == "0.0%"
+    assert toolathlon_by_key["toolathlon_multi_persona_completion_rate_pct"].display == "0.0%"
+    assert toolathlon_by_key["toolathlon_error_recovery_rate_pct"].display == "N/A"
     assert payload.rag_sampled_queries == 0
     assert payload.rag_paired_comparisons == 0
     assert payload.rag_storage_connected is True
@@ -3400,6 +3452,7 @@ def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
     assert payload.running_runs == 1
     by_key = {item.key: item for item in payload.metrics}
     correctness_by_key = {item.key: item for item in payload.correctness_metrics}
+    toolathlon_by_key = {item.key: item for item in payload.toolathlon_metrics}
     assert by_key["task_success_rate_pct"].status == "info"
     assert by_key["run_failure_rate_pct"].status == "info"
     assert by_key["p95_end_to_end_latency_sec"].status == "info"
@@ -3408,9 +3461,12 @@ def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
     assert by_key["loop_risk_rate_pct"].status == "info"
     assert by_key["p95_end_to_end_latency_sec"].display == "0.0s"
     assert by_key["p95_time_to_first_event_sec"].display == "0.0s"
-    assert correctness_by_key["golden_set_accuracy"].display == "0.0%"
+    assert correctness_by_key["golden_set_accuracy"].display == "N/A"
     assert correctness_by_key["schema_adherence_rate"].display == "0.0%"
-    assert correctness_by_key["unsupported_claim_rate"].display == "0.0%"
+    assert correctness_by_key["unsupported_claim_rate"].display == "N/A"
+    assert toolathlon_by_key["toolathlon_success_rate_pct"].status == "info"
+    assert toolathlon_by_key["toolathlon_long_horizon_completion_rate_pct"].display == "N/A"
+    assert toolathlon_by_key["toolathlon_error_recovery_rate_pct"].display == "N/A"
 
 
 def test_compute_llm_io_metrics_returns_prompt_and_output_sizes():
@@ -3683,13 +3739,13 @@ def test_compute_correctness_drift_metrics_returns_live_values():
     metrics = main._compute_correctness_drift_metrics(sessions, rag_events)
     by_key = {item.key: item for item in metrics}
 
-    assert by_key["golden_set_accuracy"].display == "50.0%"
+    assert by_key["golden_set_accuracy"].display == "N/A"
     assert by_key["schema_adherence_rate"].display == "50.0%"
     assert by_key["unsupported_claim_rate"].display == "50.0%"
     assert by_key["repeat_prompt_inconsistency"].display == "100.0%"
     assert by_key["model_mix_drift_jsd"].display != "N/A"
     assert by_key["judge_human_disagreement"].display == "100.0%"
-    assert "proxy" in by_key["golden_set_accuracy"].description.lower()
+    assert "versioned benchmark set" in by_key["golden_set_accuracy"].description.lower()
     assert "grouping repeated normalized questions" in by_key["repeat_prompt_inconsistency"].tracking.lower()
 
 
@@ -3780,12 +3836,14 @@ def test_get_agent_metrics_persists_full_observable_snapshot(monkeypatch):
 
     assert payload.metrics
     assert payload.correctness_metrics
+    assert payload.toolathlon_metrics
     assert len(saved_docs) == 1
     snapshot = saved_docs[0]
     assert snapshot["type"] == "observable_snapshot"
     assert snapshot["generated_at"] == payload.generated_at
     assert len(snapshot["metrics"]) == len(payload.metrics)
     assert len(snapshot["correctness_metrics"]) == len(payload.correctness_metrics)
+    assert len(snapshot["toolathlon_metrics"]) == len(payload.toolathlon_metrics)
 
 
 def test_compute_agent_metric_history_builds_runtime_and_rag_series():
@@ -3899,11 +3957,13 @@ def test_compute_agent_metric_history_builds_runtime_and_rag_series():
         rag_storage_connected=True,
     )
     assert correctness_history["label"] == "Golden Set Accuracy"
-    assert correctness_history["points"][0]["display"] == "100.0%"
-    assert correctness_history["points"][1]["display"] == "0.0%"
+    assert correctness_history["points"][0]["display"] == "N/A"
+    assert correctness_history["points"][1]["display"] == "N/A"
+    assert correctness_history["points"][0]["value"] is None
+    assert correctness_history["points"][1]["value"] is None
 
 
-def test_compute_agent_metric_history_preserves_numeric_values_when_display_is_na():
+def test_compute_agent_metric_history_marks_unavailable_correctness_values_explicitly():
     history = main._compute_agent_metric_history(
         [],
         lookback_hours=4,
@@ -3916,8 +3976,8 @@ def test_compute_agent_metric_history_preserves_numeric_values_when_display_is_n
 
     assert history["label"] == "Unsupported Claim Rate"
     assert len(history["points"]) == 2
-    assert all(point["display"] == "0.0%" for point in history["points"])
-    assert all(point["value"] == 0.0 for point in history["points"])
+    assert all(point["display"] == "N/A" for point in history["points"])
+    assert all(point["value"] is None for point in history["points"])
 
 
 def test_coerce_metric_history_value_handles_numeric_boolean_and_non_numeric():
@@ -3982,11 +4042,16 @@ def test_find_metric_in_snapshot_skips_malformed_rows():
     snapshot = {
         "metrics": "not-a-list",
         "correctness_metrics": ["bad-row", {"key": "judge_human_disagreement", "value": 0.0}],
+        "toolathlon_metrics": [{"key": "toolathlon_success_rate_pct", "value": 88.0}],
     }
 
     assert main._find_metric_in_snapshot(snapshot, "judge_human_disagreement") == {
         "key": "judge_human_disagreement",
         "value": 0.0,
+    }
+    assert main._find_metric_in_snapshot(snapshot, "toolathlon_success_rate_pct") == {
+        "key": "toolathlon_success_rate_pct",
+        "value": 88.0,
     }
     assert main._find_metric_in_snapshot(snapshot, "missing") is None
 
@@ -4054,8 +4119,8 @@ def test_get_agent_metric_history_endpoint_validates_and_handles_missing_metric(
         bucket_hours=2,
     )
     assert unavailable_payload["key"] == "unsupported_claim_rate"
-    assert all(point["display"] == "0.0%" for point in unavailable_payload["points"])
-    assert all(point["value"] == 0.0 for point in unavailable_payload["points"])
+    assert all(point["display"] == "N/A" for point in unavailable_payload["points"])
+    assert all(point["value"] is None for point in unavailable_payload["points"])
 
     with pytest.raises(HTTPException) as blank_exc:
         main.get_agent_metric_history(metric_key=" ", lookback_hours=24, bucket_hours=2)
@@ -5010,11 +5075,13 @@ def test_ingest_case_success(monkeypatch):
         schema_name="deposition_schema",
         selected_schema={"title": "Deposition"},
         selected_schema_mode="native",
+        trace_session_id="case-1",
     )
     workflow.reassess_case.assert_called_once_with(
         "case-1",
         llm_provider="ollama",
         llm_model="llama3.3",
+        trace_session_id="case-1",
     )
 
 
@@ -5071,6 +5138,7 @@ def test_ingest_case_passes_selected_schema_to_workflow(monkeypatch):
         schema_name="deposition_schema_g1",
         selected_schema={"title": "Alt"},
         selected_schema_mode="raw_capture",
+        trace_session_id="case-1",
     )
 
 

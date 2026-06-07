@@ -14,6 +14,7 @@ from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 
 from .config import Settings
+from .langfuse_integration import build_langchain_config
 from .llm import build_chat_model, llm_failure_message
 from .prompts import render_prompt
 
@@ -60,6 +61,7 @@ class AttorneyChatService:
         history: list[dict],
         llm_provider: str | None = None,
         llm_model: str | None = None,
+        trace_session_id: str | None = None,
     ) -> tuple[str, list[dict]]:
         """Generate attorney chat response plus visible process trace."""
 
@@ -90,9 +92,26 @@ class AttorneyChatService:
 
         llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
         start = perf_counter()
+        invoke_config = self._langchain_config(
+            operation="chat_response",
+            session_id=trace_session_id or str(deposition.get("case_id") or ""),
+            llm_provider=llm_provider,
+            llm_model=llm_model,
+            metadata={
+                "case_id": str(deposition.get("case_id") or ""),
+                "deposition_id": str(deposition.get("_id") or ""),
+                "peer_count": len(peers),
+                "history_items": len(history),
+                "message_chars": len(user_message),
+            },
+            tags=("attorneyos", "chat", self._normalize_provider(llm_provider)),
+        )
 
         try:
-            result = llm.invoke(messages)
+            if invoke_config:
+                result = llm.invoke(messages, config=invoke_config)
+            else:
+                result = llm.invoke(messages)
             response_text = str(result.content or "")
             normalized_response = self._normalize_chat_output(response_text, deposition, user_message)
             trace = [
@@ -133,6 +152,7 @@ class AttorneyChatService:
         contradiction: dict,
         llm_provider: str | None = None,
         llm_model: str | None = None,
+        trace_session_id: str | None = None,
     ) -> str:
         """Generate focused reasoning for one contradiction finding."""
 
@@ -145,11 +165,26 @@ class AttorneyChatService:
         )
 
         llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+        invoke_config = self._langchain_config(
+            operation="reason_contradiction",
+            session_id=trace_session_id or str(deposition.get("case_id") or ""),
+            llm_provider=llm_provider,
+            llm_model=llm_model,
+            metadata={
+                "case_id": str(deposition.get("case_id") or ""),
+                "deposition_id": str(deposition.get("_id") or ""),
+                "peer_count": len(peers),
+                "contradiction_summary": str(contradiction.get("summary") or "")[:200],
+            },
+            tags=("attorneyos", "reason-contradiction", self._normalize_provider(llm_provider)),
+        )
 
         try:
-            result = llm.invoke(
-                [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
-            )
+            messages = [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
+            if invoke_config:
+                result = llm.invoke(messages, config=invoke_config)
+            else:
+                result = llm.invoke(messages)
             return self._normalize_reasoning_output(
                 str(result.content or ""),
                 contradiction,
@@ -165,6 +200,9 @@ class AttorneyChatService:
         reasoning_text: str,
         llm_provider: str | None = None,
         llm_model: str | None = None,
+        trace_session_id: str | None = None,
+        case_id: str | None = None,
+        deposition_id: str | None = None,
     ) -> str:
         """Condense focused contradiction analysis into a shorter attorney-facing summary."""
 
@@ -189,11 +227,25 @@ class AttorneyChatService:
         )
 
         llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+        invoke_config = self._langchain_config(
+            operation="summarize_focused_reasoning",
+            session_id=trace_session_id or case_id,
+            llm_provider=llm_provider,
+            llm_model=llm_model,
+            metadata={
+                "case_id": str(case_id or ""),
+                "deposition_id": str(deposition_id or ""),
+                "reasoning_chars": len(normalized_source),
+            },
+            tags=("attorneyos", "focused-summary", self._normalize_provider(llm_provider)),
+        )
 
         try:
-            result = llm.invoke(
-                [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
-            )
+            messages = [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
+            if invoke_config:
+                result = llm.invoke(messages, config=invoke_config)
+            else:
+                result = llm.invoke(messages)
             return self._normalize_focused_summary_output(
                 str(result.content or ""),
                 normalized_source,
@@ -213,6 +265,32 @@ class AttorneyChatService:
             llm_provider,
             llm_model,
             temperature=temperature,
+        )
+
+    def _langchain_config(
+        self,
+        *,
+        operation: str,
+        session_id: str | None,
+        llm_provider: str | None,
+        llm_model: str | None,
+        metadata: dict | None = None,
+        tags: tuple[str, ...] | list[str] = (),
+    ) -> dict:
+        """Build one LangChain config payload enriched for Langfuse tracing."""
+
+        payload = {
+            "llm_provider": self._normalize_provider(llm_provider),
+            "llm_model": self._trace_model_name(llm_model),
+        }
+        if isinstance(metadata, dict):
+            payload.update(metadata)
+        return build_langchain_config(
+            self.settings,
+            operation=operation,
+            session_id=session_id,
+            tags=list(tags),
+            metadata=payload,
         )
 
     def _trace_model_name(self, requested_model: str | None) -> str:

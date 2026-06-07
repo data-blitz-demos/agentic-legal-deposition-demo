@@ -312,6 +312,39 @@ def test_map_deposition_recovers_from_parse_failure_with_fallback(monkeypatch):
     workflow._fallback_map_deposition.assert_called_once()
 
 
+def test_map_deposition_native_schema_persists_normalized_payload_on_parse_recovery(monkeypatch):
+    workflow = make_workflow()
+    parser = Mock()
+    parser.invoke.return_value = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "DepositionSchema",
+        "type": "object",
+        "properties": {"witness_name": {"type": "string"}},
+    }
+    workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
+    fallback = DepositionSchema(
+        case_id="unused",
+        file_name="unused.txt",
+        witness_name="Lisa Birnbach",
+        witness_role="Witness",
+        summary="Fallback summary",
+        claims=[Claim(topic="Timeline", statement="Recovered", confidence=0.55, source_quote="Recovered")],
+    )
+    workflow._fallback_map_deposition = Mock(return_value=fallback)
+
+    result = workflow._map_deposition(
+        {"case_id": "case-trump-carol", "file_path": "/tmp/witness_lisa_birnbach.txt", "raw_text": "raw"}
+    )
+
+    payload = result["ingest_schema_payload"]
+    assert payload["case_id"] == "case-trump-carol"
+    assert payload["file_name"] == "witness_lisa_birnbach.txt"
+    assert payload["witness_name"] == "Lisa Birnbach"
+    assert "$schema" not in payload
+    workflow._fallback_map_deposition.assert_called_once()
+
+
 def test_map_deposition_uses_selected_llm_override(monkeypatch):
     workflow = make_workflow()
     selected_llm = Mock()

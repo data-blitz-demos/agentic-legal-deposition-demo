@@ -50,7 +50,7 @@
               "type": "string",
               "enum": ["question"]
             },
-            "timestamp": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+            "timestamp": { "type": "string", "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$" },
             "speaker": { "type": "string" },
             "text": { "type": "string" },
             "followed_by": {
@@ -63,7 +63,7 @@
                     "type": "string",
                     "enum": ["answer", "objection"]
                   },
-                  "timestamp": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+                  "timestamp": { "type": "string", "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$" },
                   "speaker": { "type": "string" },
                   "text": { "type": "string" },
                   "basis": { "type": "string" },  // only for objections
@@ -71,7 +71,7 @@
                     "type": "object",
                     "required": ["timestamp", "speaker", "decision"],
                     "properties": {
-                      "timestamp": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+                      "timestamp": { "type": "string", "pattern": "^[0-9]{2}:[0-9]{2}:[0-9]{2}$" },
                       "speaker": { "type": "string" },
                       "decision": {
                         "type": "string",

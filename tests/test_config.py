@@ -34,6 +34,15 @@ def test_get_settings_reads_environment(monkeypatch):
     monkeypatch.setenv("GRAFANA_URL", "http://localhost:3000")
     monkeypatch.setenv("GRAFANA_ADMIN_USER", "grafana-admin")
     monkeypatch.setenv("GRAFANA_ADMIN_PASSWORD", "grafana-pass")
+    monkeypatch.setenv("LANGFUSE_ENABLED", "true")
+    monkeypatch.setenv("LANGFUSE_BASE_URL", "http://localhost:3001")
+    monkeypatch.setenv("LANGFUSE_PUBLIC_URL", "http://localhost:3001")
+    monkeypatch.setenv("LANGFUSE_PUBLIC_KEY", "pk-test")
+    monkeypatch.setenv("LANGFUSE_SECRET_KEY", "sk-test")
+    monkeypatch.setenv("LANGFUSE_PROJECT_NAME", "Langfuse Test")
+    monkeypatch.setenv("LANGFUSE_INIT_USER_EMAIL", "langfuse@example.test")
+    monkeypatch.setenv("LANGFUSE_INIT_USER_NAME", "Langfuse Admin")
+    monkeypatch.setenv("LANGFUSE_INIT_USER_PASSWORD", "langfuse-pass")
     monkeypatch.setenv("ONTOLOGY_DIR", "/tmp/ontology")
     monkeypatch.setenv("MAX_CONTEXT_DEPOSITIONS", "9")
     monkeypatch.setenv("DEPOSITION_DIR", "/tmp/deps")
@@ -66,6 +75,15 @@ def test_get_settings_reads_environment(monkeypatch):
     assert settings.grafana_url == "http://localhost:3000"
     assert settings.grafana_admin_user == "grafana-admin"
     assert settings.grafana_admin_password == "grafana-pass"
+    assert settings.langfuse_enabled is True
+    assert settings.langfuse_base_url == "http://localhost:3001"
+    assert settings.langfuse_public_url == "http://localhost:3001"
+    assert settings.langfuse_public_key == "pk-test"
+    assert settings.langfuse_secret_key == "sk-test"
+    assert settings.langfuse_project_name == "Langfuse Test"
+    assert settings.langfuse_init_user_email == "langfuse@example.test"
+    assert settings.langfuse_init_user_name == "Langfuse Admin"
+    assert settings.langfuse_init_user_password == "langfuse-pass"
     assert settings.ontology_dir == "/tmp/ontology"
     assert settings.max_context_depositions == 9
     assert settings.deposition_dir == "/tmp/deps"

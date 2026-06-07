@@ -1,0 +1,183 @@
+{
+  "document_type": "court_case_capture",
+  "schema_version": "1.0.0",
+  "source_file": "depositions/exampleOnlyaFew/2020.01.23 Moure-Cabrera - Depo of Mark Rigler.txt",
+  "case": {
+    "case_number": "19-000727",
+    "caption": {
+      "full_caption": "Blanca Moure-Cabrera v. Johnson & Johnson, Johnson & Johnson Consumer, Inc.",
+      "short_caption": "Moure-Cabrera v. Johnson & Johnson et al."
+    },
+    "court": {
+      "court_name": "Circuit Court of the 11th Judicial Circuit in and for Miami-Dade County",
+      "judicial_circuit": "11th Judicial Circuit",
+      "county": "Miami-Dade County",
+      "state": "Florida"
+    },
+    "parties": {
+      "plaintiffs": [
+        {
+          "name": "Blanca Moure-Cabrera",
+          "entity_type": "individual",
+          "role_in_case": "Plaintiff"
+        }
+      ],
+      "defendants": [
+        {
+          "name": "Johnson & Johnson",
+          "entity_type": "organization",
+          "role_in_case": "Defendant"
+        },
+        {
+          "name": "Johnson & Johnson Consumer, Inc.",
+          "entity_type": "organization",
+          "role_in_case": "Defendant"
+        }
+      ],
+      "other_parties": []
+    },
+    "judges": []
+  },
+  "proceeding": {
+    "proceeding_type": "Deposition",
+    "title": "Deposition of Mark W. Rigler, Ph.D.",
+    "timing": {
+      "date": "2020-01-23",
+      "start_time": "10:40:00",
+      "end_time": null,
+      "certification_date": "2020-01-24",
+      "review_deadline_days": 30
+    },
+    "location": {
+      "venue_name": "Regus Business Center",
+      "address_line_1": "1350 Scenic Highway",
+      "address_line_2": "Suite 266",
+      "city": "Snellville",
+      "county": "Gwinnett County",
+      "state": "Georgia",
+      "postal_code": null,
+      "country": "USA"
+    },
+    "reporting": {
+      "court_reporter_name": "Laura R. Single",
+      "credential": "CCR-B-1343",
+      "reporting_agency": "Veritext Legal Solutions",
+      "agency_job_number": "CS3836840",
+      "certification_jurisdiction": "State of Georgia; County of Gwinnett"
+    },
+    "attendance_notes": [
+      "Defense counsel appeared via telephone."
+    ]
+  },
+  "deponent": {
+    "name": "Mark W. Rigler",
+    "professional_designation": "Ph.D.",
+    "role_in_case": "Expert witness",
+    "retained_by": "Plaintiff",
+    "sworn": true
+  },
+  "appearances": {
+    "for_plaintiff": [
+      {
+        "name": "Marc P. Kunen",
+        "bar_title": "Esq.",
+        "party_representation": "Plaintiff",
+        "law_firm": "The Ferraro Law Firm",
+        "attendance_mode": "in_person",
+        "office_location": {
+          "venue_name": null,
+          "address_line_1": "600 Brickell Avenue",
+          "address_line_2": "Suite 3800",
+          "city": "Miami",
+          "county": null,
+          "state": "Florida",
+          "postal_code": "33131",
+          "country": "USA"
+        },
+        "phone": "(305) 375-0111",
+        "email": "mpk@ferrarolaw.com"
+      }
+    ],
+    "for_defendants": [
+      {
+        "name": "Cori C. Steinmann",
+        "bar_title": "Esq.",
+        "party_representation": "Defendants",
+        "law_firm": "King & Spalding",
+        "attendance_mode": "telephone",
+        "office_location": {
+          "venue_name": null,
+          "address_line_1": "500 West 2nd Street",
+          "address_line_2": "Suite 1800",
+          "city": "Austin",
+          "county": null,
+          "state": "Texas",
+          "postal_code": "78701",
+          "country": "USA"
+        },
+        "phone": "(512) 457-2036",
+        "email": "csteinmann@kslaw.com"
+      }
+    ]
+  },
+  "exhibit_index": [
+    {
+      "exhibit_number": 1,
+      "offered_by": "Defendants",
+      "description": "Depo review - Blanca Moure-Cabrera",
+      "page_referenced": 9
+    },
+    {
+      "exhibit_number": 2,
+      "offered_by": "Defendants",
+      "description": "Retainer Invoice (late filed exhibit)",
+      "page_referenced": 26
+    },
+    {
+      "exhibit_number": 3,
+      "offered_by": "Defendants",
+      "description": "Defendant Johnson & Johnson Consumer, Inc.'s Amended Notice of Taking Deposition Duces Tecum of Mark W. Rigler, Ph.D.",
+      "page_referenced": 27
+    },
+    {
+      "exhibit_number": 4,
+      "offered_by": "Defendants",
+      "description": "CV - Mark W. Rigler, Ph.D.",
+      "page_referenced": 28
+    },
+    {
+      "exhibit_number": 5,
+      "offered_by": "Defendants",
+      "description": "Reference List",
+      "page_referenced": 28
+    },
+    {
+      "exhibit_number": 6,
+      "offered_by": "Defendants",
+      "description": "Executive Summary",
+      "page_referenced": 28
+    },
+    {
+      "exhibit_number": 7,
+      "offered_by": "Defendants",
+      "description": "Written Testimony of Jacqueline Moline and laboratory certificates and accreditations",
+      "page_referenced": 46
+    },
+    {
+      "exhibit_number": 8,
+      "offered_by": "Defendants",
+      "description": "Plaintiff's Objections and Responses to Schedule \"A\" Attached to Defendants' Notice of Taking Deposition Duces Tecum of Dr. Mark Rigler",
+      "page_referenced": 124
+    }
+  ],
+  "quality": {
+    "warnings": [
+      "No judge name appears in the transcript header or certification pages reviewed.",
+      "No deposition end time appears in the transcript header or certification pages reviewed."
+    ],
+    "confidence_notes": [
+      "Court, party, appearance, date, time, venue, and reporter metadata were captured from the title page, appearances page, exhibit index, and certification pages.",
+      "The deponent's role and retaining side are inferred from testimony stating he was retained to review the plaintiff's testimony and offer opinions in the case."
+    ]
+  }
+}

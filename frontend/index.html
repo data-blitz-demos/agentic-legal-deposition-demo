@@ -62,6 +62,17 @@
           Observables
         </button>
         <button
+          id="tabLangfuseBtn"
+          class="tab-btn"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tabPageLangfuse"
+          data-tab-target="langfuse"
+        >
+          Langfuse
+        </button>
+        <button
           id="tabAdminBtn"
           class="tab-btn"
           type="button"
@@ -297,7 +308,7 @@
                       id="ontologyPath"
                       type="text"
                       list="ontologyOptions"
-                      value="/data/ontology/*.owl"
+                      value="/data/ontology/**/*.owl"
                       placeholder="Type or select an OWL file path"
                       aria-label="Ontology file path selection"
                     />
@@ -472,6 +483,42 @@
                 <span class="muted">Concrete formulas and thresholds</span>
               </div>
               <div id="correctnessGrid" class="metrics-grid"></div>
+              <div class="metrics-subhead">
+                <h3>Toolathlon Compatibility</h3>
+                <span class="muted">Open-source Toolathlon benchmark dimensions mapped onto this app's thought streams</span>
+              </div>
+              <div id="toolathlonGrid" class="metrics-grid"></div>
+              <section class="toolathlon-replay-panel" aria-labelledby="toolathlonReplayTitle">
+                <div class="overlay-head">
+                  <div>
+                    <h3 id="toolathlonReplayTitle">Toolathlon-Style Trajectory Replay</h3>
+                    <span id="toolathlonReplayStatus" class="muted">
+                      Replay the latest loaded thought stream step-by-step using Toolathlon-style trajectory controls.
+                    </span>
+                  </div>
+                  <div class="toolathlon-replay-controls">
+                    <button id="toolathlonReplayPlayBtn" class="secondary" type="button">Play</button>
+                    <button id="toolathlonReplayPauseBtn" class="secondary" type="button" disabled>Pause</button>
+                    <button id="toolathlonReplayPrevBtn" class="secondary" type="button" disabled>Prev</button>
+                    <button id="toolathlonReplayNextBtn" class="secondary" type="button" disabled>Next</button>
+                    <button id="toolathlonReplayResetBtn" class="secondary" type="button" disabled>Reset</button>
+                  </div>
+                </div>
+                <div class="toolathlon-replay-progress">
+                  <div class="toolathlon-replay-progress-bar">
+                    <div id="toolathlonReplayProgressFill" class="toolathlon-replay-progress-fill"></div>
+                  </div>
+                  <span id="toolathlonReplayProgressText" class="muted">0 / 0</span>
+                </div>
+                <div class="toolathlon-replay-shell">
+                  <div id="toolathlonReplayTranscript" class="toolathlon-replay-transcript muted">
+                    No thought stream is available for replay yet. Run ingest or chat with Thought Stream enabled.
+                  </div>
+                  <aside id="toolathlonReplayDetail" class="toolathlon-replay-detail muted">
+                    Select or play a step to inspect persona, phase, prompts, and outputs.
+                  </aside>
+                </div>
+              </section>
               <section id="metricTrendPanel" class="metric-trend-inline hidden" aria-labelledby="metricTrendTitle">
                 <div class="metric-trend-surface">
                   <div class="overlay-head">
@@ -501,6 +548,54 @@
                   </div>
                 </div>
               </section>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="tabPageLangfuse" class="tab-page hidden">
+        <div class="langfuse-layout">
+          <section class="panel langfuse-panel">
+            <div class="overlay-head">
+              <div>
+                <h2>Langfuse Monitoring</h2>
+                <span id="langfuseRuntimeStatus" class="muted">
+                  Langfuse status has not been loaded yet.
+                </span>
+              </div>
+              <div class="actions-row">
+                <button id="refreshLangfuseBtn" class="secondary" type="button">Refresh Status</button>
+                <button id="openLangfuseBtn" class="secondary" type="button">Open Langfuse</button>
+              </div>
+            </div>
+            <div class="langfuse-meta-grid">
+              <article class="metric-card">
+                <h3>Project</h3>
+                <p id="langfuseProjectName" class="metric-value">AttorneyOS Demo</p>
+                <span class="muted">Local self-hosted tracing workspace</span>
+              </article>
+              <article class="metric-card">
+                <h3>SDK Endpoint</h3>
+                <p id="langfuseBaseUrl" class="metric-value">Not configured</p>
+                <span class="muted">Backend writes traces here</span>
+              </article>
+              <article class="metric-card">
+                <h3>Public Key</h3>
+                <p id="langfusePublicKey" class="metric-value">Not configured</p>
+                <span class="muted">Project ingestion key in use</span>
+              </article>
+              <article class="metric-card">
+                <h3>Credentials</h3>
+                <p id="langfuseCredentials" class="metric-value">Not configured</p>
+                <span class="muted">Local demo sign-in for the Langfuse UI</span>
+              </article>
+            </div>
+            <div class="metrics-subhead">
+              <h3>Monitoring Coverage</h3>
+              <span class="muted">What this demo sends into Langfuse right now</span>
+            </div>
+            <div id="langfuseCoverageList" class="langfuse-coverage muted">
+              Langfuse coverage details will appear here after the backend reports its runtime configuration.
             </div>
           </section>
         </div>
@@ -1234,7 +1329,7 @@
           <span id="ontologyBrowserPath" class="muted">Current folder:</span>
           <div class="actions-row overlay-actions">
             <button id="ontologyBrowserUpBtn" class="secondary" type="button">Up</button>
-            <button id="ontologyBrowserUseFolderBtn" class="secondary" type="button">Use Folder (*.owl)</button>
+            <button id="ontologyBrowserUseFolderBtn" class="secondary" type="button">Use Folder (recursive)</button>
             <button id="ontologyBrowserRefreshBtn" class="secondary" type="button">Refresh</button>
           </div>
         </div>
@@ -1352,6 +1447,41 @@
           <div id="adminPersonaPromptObservableModalBody" class="admin-persona-observable-list muted">
             Click a prompt-level Observable button to inspect section-specific observables.
           </div>
+          <div id="adminPersonaPromptObservableModalDetail" class="admin-persona-observable-detail muted">
+            Select a metric to view what it means.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="adminPersonaPromptMetricExplainModal"
+      class="overlay-modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="adminPersonaPromptMetricExplainTitle"
+    >
+      <div class="overlay-surface admin-user-detail-surface">
+        <div class="overlay-head">
+          <h3 id="adminPersonaPromptMetricExplainTitle">Prompt Metric Explanation</h3>
+          <button
+            id="adminPersonaPromptMetricExplainCloseBtn"
+            class="secondary"
+            type="button"
+            aria-label="Close prompt metric explanation"
+          >
+            Close
+          </button>
+        </div>
+        <div class="overlay-meta">
+          <span id="adminPersonaPromptMetricExplainMeta" class="muted">No metric selected.</span>
+        </div>
+        <div class="admin-user-detail-copy">
+          <textarea
+            id="adminPersonaPromptMetricExplainBody"
+            class="admin-user-detail-textbox"
+            readonly
+            aria-label="Prompt metric explanation"
+          ></textarea>
         </div>
       </div>
     </section>

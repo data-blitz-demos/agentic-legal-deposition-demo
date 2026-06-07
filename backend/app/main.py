@@ -44,6 +44,14 @@ from .chat import AttorneyChatService
 from .config import get_settings
 from .couchdb import CouchDBClient
 from .graph import DepositionWorkflow
+from .langfuse_integration import (
+    build_langchain_config,
+    initialize_langfuse,
+    langfuse_enabled,
+    langfuse_sdk_installed,
+    observe_operation,
+    shutdown_langfuse,
+)
 from .llm import (
     LLMOperationalError,
     build_chat_model,
@@ -117,6 +125,7 @@ from .models import (
     FocusedReasoningSummaryRequest,
     FocusedReasoningSummaryResponse,
     GrafanaAccessResponse,
+    LangfuseAccessResponse,
     IngestCaseRequest,
     IngestCaseResponse,
     IngestSchemaDeleteResponse,
@@ -202,6 +211,15 @@ def _current_persona_tool_options() -> list[AdminPersonaToolOption]:
             description=(
                 "Expose the thought-stream MCP server tools to the persona pipeline "
                 "for trace read/write operations."
+            ),
+            available=True,
+        ),
+        AdminPersonaToolOption(
+            key="mcp_neo4j_ontology_access",
+            label="MCP: Neo4j Ontology Access",
+            description=(
+                "Expose Neo4j ontology MCP server tools for legal concept lookup, "
+                "resource inspection, and graph-context retrieval."
             ),
             available=True,
         ),
@@ -467,14 +485,24 @@ async def lifespan(_: FastAPI):
     """Application lifecycle hook.
 
     Startup:
-    - validates default LLM connectivity (fail-fast)
+    - validates default LLM connectivity and logs a warning if unavailable
     - ensures CouchDB database exists
     Shutdown:
     - closes CouchDB HTTP client
     """
 
     logger.info("startup begin app_root=%s deposition_dir=%s", app_root, settings.deposition_dir)
-    _ensure_startup_llm_connectivity()
+    if initialize_langfuse(settings):
+        logger.info("langfuse tracing enabled base_url=%s", settings.langfuse_base_url)
+    elif settings.langfuse_enabled:
+        logger.warning("langfuse tracing requested but not fully configured or installed")
+    try:
+        _ensure_startup_llm_connectivity()
+    except RuntimeError as exc:
+        logger.warning(
+            "startup continuing without operational default LLM: %s",
+            exc,
+        )
     couchdb.ensure_db()
     couchdb.ensure_deposition_views()
     memory_couchdb.ensure_db()
@@ -488,6 +516,7 @@ async def lifespan(_: FastAPI):
     trace_couchdb.close()
     rag_couchdb.close()
     neo4j_graph.close()
+    shutdown_langfuse(settings)
     logger.info("shutdown complete")
 
 
@@ -509,6 +538,31 @@ def _request_metrics_path(request: Request) -> str:
     if route_path:
         return route_path
     return str(request.url.path or "/")
+
+
+@app.middleware("http")
+async def trace_http_requests_with_langfuse(request: Request, call_next):
+    """Wrap non-static HTTP requests in one Langfuse span when enabled."""
+
+    path_label = _request_metrics_path(request)
+    if request.url.path.startswith("/static/") or path_label == "/metrics":
+        return await call_next(request)
+
+    metadata = {
+        "http_method": request.method,
+        "path": str(request.url.path or "/"),
+        "route_path": path_label,
+        "query": str(request.url.query or "")[:500],
+    }
+    tags = ("attorneyos", "http", request.method.lower())
+    with observe_operation(
+        settings,
+        "http_request",
+        as_type="span",
+        tags=tags,
+        metadata=metadata,
+    ):
+        return await call_next(request)
 
 
 @app.middleware("http")
@@ -1257,7 +1311,7 @@ def _collect_owl_files(candidate: Path) -> list[Path]:
             return sorted(
                 [
                     path
-                    for path in candidate.iterdir()
+                    for path in candidate.rglob("*")
                     if path.is_file() and path.suffix.lower() == ".owl"
                 ]
             )
@@ -1266,7 +1320,7 @@ def _collect_owl_files(candidate: Path) -> list[Path]:
         return []
 
     if _path_has_glob(candidate):
-        matched = [Path(item) for item in glob(str(candidate), recursive=False)]
+        matched = [Path(item) for item in glob(str(candidate), recursive=True)]
         return sorted([path for path in matched if path.is_file() and path.suffix.lower() == ".owl"])
 
     return []
@@ -1427,9 +1481,9 @@ def _list_ontology_owl_options() -> tuple[Path, list[GraphOntologyOption], str]:
     """Discover OWL path options for the ontology dropdown."""
 
     base = _configured_ontology_root()
-    wildcard = str(base / "*.owl")
+    wildcard = str(base / "**" / "*.owl")
     options: list[GraphOntologyOption] = [
-        GraphOntologyOption(path=wildcard, label=f"All OWL files in {base}")
+        GraphOntologyOption(path=wildcard, label=f"All OWL files under {base}")
     ]
 
     if base.exists() and base.is_dir():
@@ -2533,6 +2587,29 @@ def _compute_correctness_drift_metrics(
 ) -> list[AgentRuntimeMetric]:
     """Compute data-driven correctness and drift observables from available telemetry."""
 
+    def _unavailable_metric(
+        *,
+        key: str,
+        label: str,
+        target: str,
+        description: str,
+        formula: str,
+        detail: str,
+        tracking: str,
+    ) -> AgentRuntimeMetric:
+        return AgentRuntimeMetric(
+            key=key,
+            label=label,
+            value=None,
+            display="N/A",
+            status="info",
+            target=target,
+            description=description,
+            formula=formula,
+            detail=detail,
+            tracking=tracking,
+        )
+
     finished_sessions = [
         item
         for item in sampled_sessions
@@ -2570,21 +2647,26 @@ def _compute_correctness_drift_metrics(
     rag_change_metric = _find_runtime_metric(rag_influence_metrics, "rag_answer_change_rate_pct")
     judge_human_proxy = float(rag_change_metric.value) if rag_pairs and rag_change_metric is not None else 0.0
 
+    model_observation_count = 0
+    for session in sampled_sessions:
+        if not isinstance(session, dict):
+            continue
+        stamp, _model_key = _session_model_observation(session)
+        if stamp is not None:
+            model_observation_count += 1
+    for item in rag_completed:
+        if isinstance(item, dict) and isinstance(item.get("created_at"), datetime):
+            model_observation_count += 1
+
     return [
-        AgentRuntimeMetric(
+        _unavailable_metric(
             key="golden_set_accuracy",
             label="Golden Set Accuracy",
-            value=round(golden_set_accuracy, 3),
-            display=f"{golden_set_accuracy:.1f}%",
-            unit="%",
-            status=_status_low_is_bad(golden_set_accuracy, warn_below=95.0, bad_below=90.0)
-            if finished_count
-            else "info",
             target=">= 95%",
-            description="Proxy benchmark pass rate derived from completed finished runs until a dedicated golden-set harness is attached.",
-            formula="proxy: completed_finished_runs / finished_runs",
-            detail="This is a live proxy for correctness so the observable is actionable now. Replace it with a versioned golden-set evaluation harness when that dataset is available.",
-            tracking="Computed from thought-stream session statuses in the current lookback window by dividing completed finished runs by all finished runs.",
+            description="Requires a versioned benchmark set; this demo does not yet have one wired into runtime evaluation storage.",
+            formula="correct / total over fixed eval set",
+            detail="This card was previously using workflow completion as a stand-in for benchmark accuracy, which is not a defensible correctness measure. It now stays unavailable until a dedicated golden-set harness is attached.",
+            tracking="Populate this from a benchmark evaluation pipeline that stores scored runs by model, prompt bundle, and release.",
         ),
         AgentRuntimeMetric(
             key="schema_adherence_rate",
@@ -2604,8 +2686,8 @@ def _compute_correctness_drift_metrics(
         AgentRuntimeMetric(
             key="unsupported_claim_rate",
             label="Unsupported Claim Rate",
-            value=round(unsupported_claim_rate, 3),
-            display=f"{unsupported_claim_rate:.1f}%",
+            value=round(unsupported_claim_rate, 3) if rag_on_completed else None,
+            display=f"{unsupported_claim_rate:.1f}%" if rag_on_completed else "N/A",
             unit="%",
             status=_status_high_is_bad(unsupported_claim_rate, warn_at=15.0, bad_at=35.0)
             if rag_on_completed
@@ -2619,12 +2701,12 @@ def _compute_correctness_drift_metrics(
         AgentRuntimeMetric(
             key="repeat_prompt_inconsistency",
             label="Repeat Prompt Inconsistency",
-            value=round(repeat_inconsistency, 3),
-            display=f"{repeat_inconsistency:.1f}%" if repeated_groups else "0.0%",
+            value=round(repeat_inconsistency, 3) if repeated_groups else None,
+            display=f"{repeat_inconsistency:.1f}%" if repeated_groups else "N/A",
             unit="%",
             status=_status_high_is_bad(repeat_inconsistency, warn_at=10.0, bad_at=20.0)
             if repeated_groups
-            else "good",
+            else "info",
             target="<= 10%",
             description="Live repeatability check over normalized repeated questions in the rag-stream log.",
             formula="inconsistent_repeated_question_groups / repeated_question_groups",
@@ -2634,9 +2716,11 @@ def _compute_correctness_drift_metrics(
         AgentRuntimeMetric(
             key="model_mix_drift_jsd",
             label="Model Mix Drift (JSD)",
-            value=round(model_mix_drift, 4),
-            display=f"{model_mix_drift:.3f}",
-            status=_status_high_is_bad(model_mix_drift, warn_at=0.12, bad_at=0.2),
+            value=round(model_mix_drift, 4) if model_observation_count >= 2 else None,
+            display=f"{model_mix_drift:.3f}" if model_observation_count >= 2 else "N/A",
+            status=_status_high_is_bad(model_mix_drift, warn_at=0.12, bad_at=0.2)
+            if model_observation_count >= 2
+            else "info",
             target="<= 0.12",
             description="Live routing-drift estimate comparing older versus newer provider/model mix within the current lookback.",
             formula="Jensen-Shannon divergence(older_half_model_mix, newer_half_model_mix)",
@@ -2646,17 +2730,197 @@ def _compute_correctness_drift_metrics(
         AgentRuntimeMetric(
             key="judge_human_disagreement",
             label="Judge-Human Disagreement",
-            value=round(judge_human_proxy, 3),
-            display=f"{judge_human_proxy:.1f}%" if rag_pairs else "0.0%",
+            value=round(judge_human_proxy, 3) if rag_pairs else None,
+            display=f"{judge_human_proxy:.1f}%" if rag_pairs else "N/A",
             unit="%",
             status=_status_high_is_bad(judge_human_proxy, warn_at=5.0, bad_at=12.0)
             if rag_pairs
-            else "good",
+            else "info",
             target="<= 5%",
             description="Proxy disagreement rate derived from paired RAG ON/OFF answers until human adjudication telemetry is available.",
             formula="proxy: changed_rag_on_off_answer_pairs / paired_rag_on_off_questions",
             detail="This is a live stand-in for judge-vs-human disagreement. It tracks how often the same question produces materially different answers under paired grounding conditions.",
             tracking="Computed from completed rag-stream answer pairs by comparing normalized answer text for the same normalized question with RAG enabled versus disabled.",
+        ),
+    ]
+
+
+def _is_toolathlon_tool_like_event(event: dict) -> bool:
+    """Return whether one thought-stream event looks like a Toolathlon-style operation.
+
+    This demo does not emit native Toolathlon ``tool_calls`` records. Instead we
+    approximate externally visible agent operations from LLM call telemetry and
+    retrieval/ontology phases so the observables page can expose a Toolathlon-
+    compatible proxy view over the existing thought-stream data.
+    """
+
+    if not isinstance(event, dict):
+        return False
+    phase = str(event.get("phase") or "").strip().lower()
+    if event.get("llm_provider") or event.get("llm_model"):
+        return True
+    if any(event.get(key) for key in ("system_prompt", "user_prompt", "input_preview", "output_preview")):
+        return True
+    return phase.startswith("graph_rag_") or phase in {
+        "map_deposition",
+        "assess_contradictions",
+        "chat_response",
+    }
+
+
+def _compute_toolathlon_metrics(sampled_sessions: list[dict]) -> list[AgentRuntimeMetric]:
+    """Compute Toolathlon-compatible proxy metrics from thought-stream sessions.
+
+    These are intentionally labeled as compatibility proxies rather than official
+    Toolathlon benchmark scores. They reuse the open-source project's observable
+    dimensions: success rate, turn depth, tool-use density, long-horizon
+    completion, error recovery, and multi-agent handoff coverage.
+    """
+
+    finished_sessions = [
+        item
+        for item in sampled_sessions
+        if isinstance(item, dict)
+        and _normalize_trace_status(str(item.get("status") or "running")) in {"completed", "failed"}
+    ]
+    completed_sessions = [
+        item
+        for item in finished_sessions
+        if _normalize_trace_status(str(item.get("status") or "running")) == "completed"
+    ]
+
+    finished_count = len(finished_sessions)
+    completed_count = len(completed_sessions)
+    success_rate = (completed_count / finished_count * 100.0) if finished_count else 0.0
+
+    turn_counts: list[float] = []
+    tool_like_counts: list[float] = []
+    long_horizon_finished = 0
+    long_horizon_completed = 0
+    error_finished = 0
+    error_completed = 0
+    dual_persona_completed = 0
+
+    for session in finished_sessions:
+        status = _normalize_trace_status(str(session.get("status") or "running"))
+        events = _flatten_trace_events(session.get("trace"))
+        event_count = float(len(events))
+        turn_counts.append(event_count)
+        tool_like_counts.append(float(sum(1 for item in events if _is_toolathlon_tool_like_event(item))))
+
+        personas_seen = {str(item.get("persona") or "").strip() for item in events if isinstance(item, dict)}
+        has_dual_persona = {
+            "Persona:Legal Clerk",
+            "Persona:Attorney",
+        }.issubset(personas_seen)
+        if status == "completed" and has_dual_persona:
+            dual_persona_completed += 1
+
+        if len(events) >= 12:
+            long_horizon_finished += 1
+            if status == "completed":
+                long_horizon_completed += 1
+
+        has_error = any("error" in str(item.get("phase") or "").lower() for item in events if isinstance(item, dict))
+        if has_error:
+            error_finished += 1
+            if status == "completed":
+                error_completed += 1
+
+    avg_turns = sum(turn_counts) / len(turn_counts) if turn_counts else 0.0
+    avg_tool_like_ops = sum(tool_like_counts) / len(tool_like_counts) if tool_like_counts else 0.0
+    long_horizon_completion = (
+        long_horizon_completed / long_horizon_finished * 100.0 if long_horizon_finished else 0.0
+    )
+    error_recovery_rate = (error_completed / error_finished * 100.0) if error_finished else 0.0
+    dual_persona_completion = (
+        dual_persona_completed / completed_count * 100.0 if completed_count else 0.0
+    )
+
+    return [
+        AgentRuntimeMetric(
+            key="toolathlon_success_rate_pct",
+            label="Toolathlon Proxy Success Rate",
+            value=round(success_rate, 3),
+            display=f"{success_rate:.1f}%",
+            unit="%",
+            status=_status_low_is_bad(success_rate, warn_below=95.0, bad_below=90.0)
+            if finished_count
+            else "info",
+            target=">= 95%",
+            description="Compatibility proxy for Toolathlon pass rate using completed finished runs in this app's thought-stream window.",
+            formula="completed_finished_runs / finished_runs",
+            detail="Toolathlon publishes benchmark pass rate across benchmark tasks. This demo maps that concept onto finished app runs so model swaps and prompt changes can be watched with the same success-rate lens.",
+            tracking="Computed from thought-stream sessions in the current lookback window by dividing completed runs by all finished runs.",
+        ),
+        AgentRuntimeMetric(
+            key="toolathlon_avg_turns_per_finished_run",
+            label="Toolathlon Proxy Avg Turns",
+            value=round(avg_turns, 3),
+            display=f"{avg_turns:.1f}",
+            status="info",
+            target="Track trend",
+            description="Average thought-stream event depth per finished run, used as this app's turn-count analogue to Toolathlon trajectory depth.",
+            formula="avg(trace_event_count_per_finished_run)",
+            detail="Toolathlon tracks long-horizon interaction depth. Here a turn proxy is the number of recorded thought-stream events in one finished ingest or chat workflow.",
+            tracking="Computed from flattened thought-stream events on completed and failed runs, averaged over the active lookback window.",
+        ),
+        AgentRuntimeMetric(
+            key="toolathlon_avg_tool_like_ops_per_finished_run",
+            label="Toolathlon Proxy Tool Ops",
+            value=round(avg_tool_like_ops, 3),
+            display=f"{avg_tool_like_ops:.1f}",
+            status="info",
+            target="Track trend",
+            description="Average count of tool-like external operations per finished run using LLM-call and retrieval phase proxies.",
+            formula="avg(tool_like_events_per_finished_run)",
+            detail="This app does not emit native Toolathlon tool_call records. Instead it counts externally visible agent operations such as LLM call telemetry and graph-retrieval phases as a Toolathlon-compatible proxy.",
+            tracking="Computed from finished thought-stream runs by counting events with captured prompt/output telemetry or graph-rag operation phases.",
+        ),
+        AgentRuntimeMetric(
+            key="toolathlon_long_horizon_completion_rate_pct",
+            label="Toolathlon Long-Horizon Completion",
+            value=round(long_horizon_completion, 3),
+            display=f"{long_horizon_completion:.1f}%" if long_horizon_finished else "N/A",
+            unit="%",
+            status=_status_low_is_bad(long_horizon_completion, warn_below=80.0, bad_below=60.0)
+            if long_horizon_finished
+            else "info",
+            target=">= 80%",
+            description="Completion rate for longer-running sessions, where long-horizon is defined as 12 or more thought-stream events.",
+            formula="completed_long_horizon_runs / long_horizon_finished_runs",
+            detail="Toolathlon emphasizes long-horizon task execution. This proxy isolates the more involved runs in this demo and tracks whether they still finish successfully.",
+            tracking="Computed from finished thought-stream sessions whose flattened event count is at least 12.",
+        ),
+        AgentRuntimeMetric(
+            key="toolathlon_error_recovery_rate_pct",
+            label="Toolathlon Error Recovery Rate",
+            value=round(error_recovery_rate, 3),
+            display=f"{error_recovery_rate:.1f}%" if error_finished else "N/A",
+            unit="%",
+            status=_status_low_is_bad(error_recovery_rate, warn_below=70.0, bad_below=50.0)
+            if error_finished
+            else "info",
+            target=">= 70%",
+            description="Share of finished runs that still complete after surfacing at least one explicit error-phase event.",
+            formula="completed_error_runs / finished_error_runs",
+            detail="Toolathlon explicitly stresses recovery from noisy tools and failures. This metric checks whether our legal workflows recover after observed error events instead of terminating in failure.",
+            tracking="Computed from finished thought-stream sessions that contain at least one phase whose name includes 'error'.",
+        ),
+        AgentRuntimeMetric(
+            key="toolathlon_multi_persona_completion_rate_pct",
+            label="Toolathlon Multi-Agent Handoff",
+            value=round(dual_persona_completion, 3),
+            display=f"{dual_persona_completion:.1f}%",
+            unit="%",
+            status=_status_low_is_bad(dual_persona_completion, warn_below=95.0, bad_below=85.0)
+            if completed_count
+            else "info",
+            target=">= 95%",
+            description="Share of completed runs where both Persona:Legal Clerk and Persona:Attorney contributed at least one observable step.",
+            formula="completed_runs_with_both_personas / completed_runs",
+            detail="Toolathlon evaluates agent orchestration across complex workflows. This proxy tracks whether both personas actually participate in completed runs instead of one side silently dropping out.",
+            tracking="Computed from completed thought-stream sessions by checking whether both persona labels appear in the flattened event stream.",
         ),
     ]
 
@@ -2847,6 +3111,7 @@ def _build_agent_runtime_metrics_response(
     rag_metrics, rag_paired_comparisons = _compute_rag_influence_metrics(rag_events)
     metrics.extend(rag_metrics)
     correctness_metrics = _compute_correctness_drift_metrics(sampled, rag_events)
+    toolathlon_metrics = _compute_toolathlon_metrics(sampled)
 
     return AgentRuntimeMetricsResponse(
         generated_at=generated_at.isoformat(),
@@ -2860,6 +3125,7 @@ def _build_agent_runtime_metrics_response(
         rag_paired_comparisons=rag_paired_comparisons,
         metrics=metrics,
         correctness_metrics=correctness_metrics,
+        toolathlon_metrics=toolathlon_metrics,
     )
 
 
@@ -2912,6 +3178,9 @@ def _find_any_metric(payload: AgentRuntimeMetricsResponse, metric_key: str) -> A
 
     return _find_runtime_metric(payload.metrics, metric_key) or _find_runtime_metric(
         payload.correctness_metrics,
+        metric_key,
+    ) or _find_runtime_metric(
+        payload.toolathlon_metrics,
         metric_key,
     )
 
@@ -2971,7 +3240,7 @@ def _collect_recent_observable_snapshots(lookback_hours: int) -> list[dict]:
 def _find_metric_in_snapshot(snapshot: dict, metric_key: str) -> dict | None:
     """Return one stored metric dict from a persisted observable snapshot."""
 
-    for key in ("metrics", "correctness_metrics"):
+    for key in ("metrics", "correctness_metrics", "toolathlon_metrics"):
         raw_items = snapshot.get(key)
         if not isinstance(raw_items, list):
             continue
@@ -4616,6 +4885,41 @@ def grafana_access_info() -> GrafanaAccessResponse:
     )
 
 
+def _langfuse_monitored_operations() -> list[str]:
+    """Return the application workflows currently instrumented for Langfuse."""
+
+    return [
+        "HTTP request spans for API routes",
+        "Ingest mapping and contradiction assessment generations",
+        "Attorney chat generations",
+        "Focused contradiction reasoning generations",
+        "Focused reasoning summary generations",
+        "Graph RAG answer generations",
+    ]
+
+
+@app.get("/api/observability/langfuse", response_model=LangfuseAccessResponse)
+def langfuse_access_info() -> LangfuseAccessResponse:
+    """Return local Langfuse URL and runtime integration status."""
+
+    public_url = str(settings.langfuse_public_url or settings.langfuse_base_url or "http://localhost:3001").strip()
+    public_url = public_url.rstrip("/") or "http://localhost:3001"
+    base_url = str(settings.langfuse_base_url or public_url).strip().rstrip("/") or public_url
+    return LangfuseAccessResponse(
+        enabled=bool(settings.langfuse_enabled),
+        sdk_installed=langfuse_sdk_installed(),
+        configured=langfuse_enabled(settings),
+        url=public_url,
+        login_url=f"{public_url}/auth/sign-in",
+        base_url=base_url,
+        project_name=str(settings.langfuse_project_name or "AttorneyOS Demo"),
+        public_key=str(settings.langfuse_public_key or ""),
+        username=str(settings.langfuse_init_user_email or ""),
+        password=str(settings.langfuse_init_user_password or ""),
+        monitored_operations=_langfuse_monitored_operations(),
+    )
+
+
 @app.get("/api/graph-rag/health", response_model=GraphHealthResponse)
 def graph_rag_health() -> GraphHealthResponse:
     """Return Neo4j configuration/connectivity status for Graph RAG readiness checks."""
@@ -4684,7 +4988,7 @@ def graph_rag_owl_browser(path: str | None = None) -> GraphOntologyBrowserRespon
         base_directory=str(base),
         current_directory=str(directory),
         parent_directory=parent_directory,
-        wildcard_path=str(directory / "*.owl"),
+        wildcard_path=str(directory / "**" / "*.owl"),
         directories=directories,
         files=files,
     )
@@ -4893,12 +5197,28 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
 
     llm = build_chat_model(settings, llm_provider, llm_model, temperature=0.1)
     try:
-        result = llm.invoke(
-            [
-                SystemMessage(content=system_prompt),
-                HumanMessage(content=user_prompt),
-            ]
+        messages = [
+            SystemMessage(content=system_prompt),
+            HumanMessage(content=user_prompt),
+        ]
+        invoke_config = build_langchain_config(
+            settings,
+            operation="graph_rag_query",
+            session_id=trace_id or question[:120],
+            tags=["attorneyos", "graph-rag", llm_provider],
+            metadata={
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "question_chars": len(question),
+                "top_k": request.top_k,
+                "use_rag": use_rag,
+                "context_rows": int(retrieval.get("resource_count") or 0),
+            },
         )
+        if invoke_config:
+            result = llm.invoke(messages, config=invoke_config)
+        else:
+            result = llm.invoke(messages)
     except Exception as exc:
         _append_trace_events(
             trace_id,
@@ -5508,6 +5828,7 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
                 schema_name=selected_schema_name,
                 selected_schema=selected_schema_payload,
                 selected_schema_mode=selected_schema_mode,
+                trace_session_id=trace_id or request.case_id,
             )
         except Exception as exc:
             _append_trace_events(
@@ -5561,6 +5882,7 @@ def ingest_case(request: IngestCaseRequest) -> IngestCaseResponse:
             request.case_id,
             llm_provider=llm_provider,
             llm_model=llm_model,
+            trace_session_id=trace_id or request.case_id,
         )
         by_id = {doc["_id"]: doc for doc in reassessed}
     for deposition_id in ingested_ids:
@@ -5759,6 +6081,7 @@ def chat(request: ChatRequest) -> ChatResponse:
                 request.history,
                 llm_provider=llm_provider,
                 llm_model=llm_model,
+                trace_session_id=trace_id or request.case_id,
             )
         else:
             response = chat_service.respond(
@@ -5856,6 +6179,7 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
             contradiction=request.contradiction.model_dump(),
             llm_provider=llm_provider,
             llm_model=llm_model,
+            trace_session_id=request.case_id,
         )
     except Exception as exc:
         record_llm_operation("reason_contradiction", False, llm_provider)
@@ -5918,6 +6242,9 @@ def summarize_focused_reasoning(
             reasoning_text=request.reasoning_text,
             llm_provider=llm_provider,
             llm_model=llm_model,
+            trace_session_id=request.case_id,
+            case_id=request.case_id,
+            deposition_id=request.deposition_id,
         )
     except Exception as exc:
         record_llm_operation("summarize_focused_reasoning", False, llm_provider)

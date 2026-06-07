@@ -124,6 +124,107 @@ def api_client(monkeypatch):
         yield client
 
 
+def test_root_serves_frontend_shell_when_startup_llm_check_fails(monkeypatch):
+    warning = Mock()
+    monkeypatch.setattr(
+        main,
+        "_ensure_startup_llm_connectivity",
+        Mock(side_effect=RuntimeError("startup failed")),
+    )
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main.logger, "warning", warning)
+
+    couchdb = Mock()
+    couchdb.ensure_db = Mock()
+    couchdb.ensure_deposition_views = Mock()
+    couchdb.close = Mock()
+    couchdb.find.return_value = []
+    couchdb.list_depositions.return_value = []
+    couchdb.list_deposition_counts.return_value = {}
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    memory_couchdb = Mock()
+    memory_couchdb.ensure_db = Mock()
+    memory_couchdb.close = Mock()
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    trace_couchdb = Mock()
+    trace_couchdb.ensure_db = Mock()
+    trace_couchdb.close = Mock()
+    trace_couchdb.find.return_value = []
+    monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
+
+    rag_couchdb = Mock()
+    rag_couchdb.ensure_db = Mock()
+    rag_couchdb.close = Mock()
+    rag_couchdb.find.return_value = []
+    monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+
+    neo4j_graph = Mock()
+    neo4j_graph.close = Mock()
+    monkeypatch.setattr(main, "neo4j_graph", neo4j_graph)
+
+    with TestClient(main.app) as client:
+        response = client.get("/")
+
+    assert response.status_code == 200
+    assert "text/html" in response.headers["content-type"]
+    assert "Data-Blitz Demo logo" in response.text
+    warning.assert_called_once()
+    assert warning.call_args.args[0] == "startup continuing without operational default LLM: %s"
+    assert isinstance(warning.call_args.args[1], RuntimeError)
+    assert str(warning.call_args.args[1]) == "startup failed"
+    couchdb.ensure_db.assert_called_once_with()
+    couchdb.ensure_deposition_views.assert_called_once_with()
+
+
+def test_static_app_js_serves_when_startup_llm_check_fails(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "_ensure_startup_llm_connectivity",
+        Mock(side_effect=RuntimeError("startup failed")),
+    )
+    monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main.logger, "warning", Mock())
+
+    couchdb = Mock()
+    couchdb.ensure_db = Mock()
+    couchdb.ensure_deposition_views = Mock()
+    couchdb.close = Mock()
+    couchdb.find.return_value = []
+    couchdb.list_depositions.return_value = []
+    couchdb.list_deposition_counts.return_value = {}
+    monkeypatch.setattr(main, "couchdb", couchdb)
+
+    memory_couchdb = Mock()
+    memory_couchdb.ensure_db = Mock()
+    memory_couchdb.close = Mock()
+    monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
+
+    trace_couchdb = Mock()
+    trace_couchdb.ensure_db = Mock()
+    trace_couchdb.close = Mock()
+    trace_couchdb.find.return_value = []
+    monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
+
+    rag_couchdb = Mock()
+    rag_couchdb.ensure_db = Mock()
+    rag_couchdb.close = Mock()
+    rag_couchdb.find.return_value = []
+    monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+
+    neo4j_graph = Mock()
+    neo4j_graph.close = Mock()
+    monkeypatch.setattr(main, "neo4j_graph", neo4j_graph)
+
+    with TestClient(main.app) as client:
+        response = client.get("/static/app.js")
+
+    assert response.status_code == 200
+    assert "javascript" in response.headers["content-type"]
+    assert "timelineScale" in response.text
+
+
 def test_root_serves_frontend_shell(api_client):
     response = api_client.get("/")
 
@@ -172,8 +273,15 @@ def test_root_serves_frontend_shell(api_client):
     assert 'id="adminPersonaPromptObservableModalTitle"' in response.text
     assert 'id="adminPersonaPromptObservableModalMeta"' in response.text
     assert 'id="adminPersonaPromptObservableModalBody"' in response.text
+    assert 'id="adminPersonaPromptObservableModalDetail"' in response.text
     assert 'id="adminPersonaPromptObservableModalCloseBtn"' in response.text
     assert re.search(r'id="adminPersonaPromptObservableModal"[^>]*\bhidden\b', response.text)
+    assert 'id="adminPersonaPromptMetricExplainModal"' in response.text
+    assert 'id="adminPersonaPromptMetricExplainTitle"' in response.text
+    assert 'id="adminPersonaPromptMetricExplainMeta"' in response.text
+    assert 'id="adminPersonaPromptMetricExplainBody"' in response.text
+    assert 'id="adminPersonaPromptMetricExplainCloseBtn"' in response.text
+    assert re.search(r'id="adminPersonaPromptMetricExplainModal"[^>]*\bhidden\b', response.text)
     assert 'id="adminPersonaPromptSentimentBtn"' in response.text
     assert 'id="adminPersonaPromptResaveBtn"' in response.text
     assert 'id="adminPersonaToggleToolsBtn"' in response.text
@@ -234,6 +342,91 @@ def test_root_serves_frontend_shell(api_client):
     assert re.search(r'id="adminPersonaRefreshPromptObservablesBtn"[^>]*\bdisabled\b', prompt_observables_panel_html)
     assert 'id="graphRagEmbeddingEnabled"' in response.text
     assert 'id="saveGraphRagEmbeddingBtn"' in response.text
+
+
+def test_persona_prompt_sections_have_scoped_observable_controls(api_client):
+    response = api_client.get("/")
+    assert response.status_code == 200
+    html = response.text
+
+    scoped_sections = (
+        ("System", "system"),
+        ("Assistant", "assistant"),
+        ("Context", "context"),
+    )
+    for label, key in scoped_sections:
+        title_match = re.search(
+            rf'<summary class="admin-persona-prompt-summary">{label} Prompt</summary>[\s\S]*?'
+            rf'id="adminPersona{label}ChoosePromptBtn"[\s\S]*?'
+            rf'id="adminPersona{label}ObservableBtn"[\s\S]*?'
+            rf'id="adminPersona{label}SavePromptBtn"[\s\S]*?</details>',
+            html,
+            flags=re.IGNORECASE,
+        )
+        assert title_match is not None
+        section_html = title_match.group(0)
+        assert f'id="adminPersona{label}ObservableBtn"' in section_html
+        assert re.search(rf'id="adminPersona{label}ObservableBtn"[^>]*\bdisabled\b', section_html)
+        assert re.search(r'>\s*Observable\s*<', section_html)
+
+    js_response = api_client.get("/static/app.js")
+    assert js_response.status_code == 200
+    js = js_response.text
+    for label, key in scoped_sections:
+        assert re.search(
+            rf'adminPersona{label}ObservableBtn.*showAdminPersonaPromptObservableModal\([\'"]{key}[\'"]\)',
+            js,
+            flags=re.IGNORECASE | re.DOTALL,
+        )
+
+
+def test_prompt_observable_explain_handlers_are_active(api_client):
+    """Verify Explain handlers exist for both All Prompts and section-scoped prompt observables."""
+
+    js_response = api_client.get("/static/app.js")
+    assert js_response.status_code == 200
+    js = js_response.text
+
+    # All Prompts observables: explain buttons should always be clickable and render detail.
+    assert "function renderAdminPersonaPromptObservables()" in js
+    assert "explain.textContent = 'Explain';" in js
+    assert "selectedAdminPersonaPromptObservableKey = metric.key;" in js
+    assert "renderAdminPersonaPromptObservables();" in js
+    assert "setAdminPersonaPromptObservableDetail(metricByKey.get(selectedAdminPersonaPromptObservableKey) || null);" in js
+
+    # Section-specific popup observables: explain buttons should always be clickable and render detail.
+    assert "function renderAdminPersonaPromptObservableModal()" in js
+    assert "adminPersonaPromptObservableModalSelectedKey = metric.key;" in js
+    assert "renderAdminPersonaPromptObservableModal();" in js
+    assert "setAdminPersonaPromptObservableModalDetail(" in js
+    assert "metricByKey.get(adminPersonaPromptObservableModalSelectedKey) || null" in js
+
+
+def test_prompt_observable_explain_popout_textbox_wiring(api_client):
+    """Ensure Explain opens a textbox popout with detailed metric description."""
+
+    root = api_client.get("/")
+    assert root.status_code == 200
+    html = root.text
+    assert 'id="adminPersonaPromptMetricExplainModal"' in html
+    assert 'id="adminPersonaPromptMetricExplainBody"' in html
+    assert re.search(r'id="adminPersonaPromptMetricExplainBody"[^>]*\breadonly\b', html)
+
+    js_response = api_client.get("/static/app.js")
+    assert js_response.status_code == 200
+    js = js_response.text
+    assert "function showAdminPersonaPromptMetricExplainModal(scopeLabel, metric)" in js
+    assert "function hideAdminPersonaPromptMetricExplainModal()" in js
+    assert "showAdminPersonaPromptMetricExplainModal(scopeLabel, metric);" in js
+    assert "els.adminPersonaPromptMetricExplainModal.classList.remove('hidden');" in js
+    assert "els.adminPersonaPromptMetricExplainBody.value =" in js
+    assert "els.adminPersonaPromptMetricExplainCloseBtn.addEventListener('click'" in js
+
+    css_response = api_client.get("/static/styles.css")
+    assert css_response.status_code == 200
+    css = css_response.text
+    assert "#adminPersonaPromptMetricExplainModal" in css
+    assert "z-index: 38;" in css
 
 
 def test_prometheus_metrics_endpoint_exposes_application_metrics(api_client):
@@ -702,6 +895,15 @@ def test_admin_persona_tool_options_endpoint(api_client):
                 ),
                 "available": True,
             },
+            {
+                "key": "mcp_neo4j_ontology_access",
+                "label": "MCP: Neo4j Ontology Access",
+                "description": (
+                    "Expose Neo4j ontology MCP server tools for legal concept lookup, "
+                    "resource inspection, and graph-context retrieval."
+                ),
+                "available": True,
+            },
         ]
     }
 
@@ -1017,6 +1219,48 @@ def test_grafana_access_endpoint_returns_serialized_payload(api_client, monkeypa
     }
 
 
+def test_langfuse_access_endpoint_returns_serialized_payload(api_client, monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "settings",
+        SimpleNamespace(
+            langfuse_enabled=True,
+            langfuse_public_url="http://localhost:3001/",
+            langfuse_base_url="http://langfuse-web:3000/",
+            langfuse_project_name="AttorneyOS Demo",
+            langfuse_public_key="pk-lf-demo",
+            langfuse_init_user_email="admin@attorneyos.local",
+            langfuse_init_user_password="password123456",
+        ),
+    )
+    monkeypatch.setattr(main, "langfuse_sdk_installed", lambda: True)
+    monkeypatch.setattr(main, "langfuse_enabled", lambda _settings: True)
+
+    response = api_client.get("/api/observability/langfuse")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "enabled": True,
+        "sdk_installed": True,
+        "configured": True,
+        "url": "http://localhost:3001",
+        "login_url": "http://localhost:3001/auth/sign-in",
+        "base_url": "http://langfuse-web:3000",
+        "project_name": "AttorneyOS Demo",
+        "public_key": "pk-lf-demo",
+        "username": "admin@attorneyos.local",
+        "password": "password123456",
+        "monitored_operations": [
+            "HTTP request spans for API routes",
+            "Ingest mapping and contradiction assessment generations",
+            "Attorney chat generations",
+            "Focused contradiction reasoning generations",
+            "Focused reasoning summary generations",
+            "Graph RAG answer generations",
+        ],
+    }
+
+
 def test_deposition_upload_endpoint_rejects_non_txt(api_client, monkeypatch, tmp_path):
     target = tmp_path / "deps"
     target.mkdir()
@@ -1065,13 +1309,15 @@ def test_all_current_observables_have_history(api_client):
     payload = metrics_response.json()
     all_keys = [item["key"] for item in payload["metrics"]] + [
         item["key"] for item in payload["correctness_metrics"]
-    ]
+    ] + [item["key"] for item in payload.get("toolathlon_metrics", [])]
     assert all_keys
     assert {
         "llm_calls_sampled",
         "avg_prompt_context_bytes_per_llm_call",
         "avg_estimated_prompt_tokens_per_llm_call",
         "avg_estimated_output_tokens_per_llm_call",
+        "toolathlon_success_rate_pct",
+        "toolathlon_avg_turns_per_finished_run",
     }.issubset(set(all_keys))
 
     for metric_key in all_keys:
@@ -1098,6 +1344,7 @@ def test_agent_metrics_endpoint_persists_observable_snapshot(api_client, monkeyp
     assert snapshot["generated_at"] == response.json()["generated_at"]
     assert len(snapshot["metrics"]) == len(response.json()["metrics"])
     assert len(snapshot["correctness_metrics"]) == len(response.json()["correctness_metrics"])
+    assert len(snapshot["toolathlon_metrics"]) == len(response.json()["toolathlon_metrics"])
 
 
 def test_summarize_focused_reasoning_endpoint_round_trip(api_client, monkeypatch):
@@ -1598,6 +1845,7 @@ def test_ingest_case_round_trip_populates_case_and_depositions(api_client, monke
         schema_name,
         selected_schema,
         selected_schema_mode,
+        trace_session_id,
     ):
         assert case_id == "INGEST-CASE"
         assert file_path == str(txt_file)
@@ -1605,6 +1853,7 @@ def test_ingest_case_round_trip_populates_case_and_depositions(api_client, monke
         assert llm_model == "gpt-4o-mini"
         assert schema_name == "deposition_schema_g1"
         assert selected_schema_mode == "raw_capture"
+        assert trace_session_id == "INGEST-CASE"
         assert isinstance(selected_schema, dict)
         stored = couchdb.save_doc(
             {
@@ -1744,7 +1993,7 @@ def test_graph_rag_query_round_trip_streams_trace_and_rag_records(api_client, mo
     )
 
     class _FakeLlm:
-        def invoke(self, _messages):
+        def invoke(self, _messages, config=None):
             return type("_Result", (), {"content": "Short answer: Graph-backed answer."})()
 
     monkeypatch.setattr(main, "build_chat_model", lambda *_args, **_kwargs: _FakeLlm())
@@ -1808,7 +2057,7 @@ def test_graph_rag_query_with_stream_disabled_skips_rag_stream_persistence(api_c
     )
 
     class _FakeLlm:
-        def invoke(self, _messages):
+        def invoke(self, _messages, config=None):
             return type("_Result", (), {"content": "Short answer: Stream-disabled graph answer."})()
 
     monkeypatch.setattr(main, "build_chat_model", lambda *_args, **_kwargs: _FakeLlm())
@@ -1854,7 +2103,7 @@ def test_graph_rag_query_without_rag_returns_answer_and_marks_disabled_phase(api
     )
 
     class _FakeLlm:
-        def invoke(self, _messages):
+        def invoke(self, _messages, config=None):
             return type("_Result", (), {"content": "Short answer: Non-RAG response."})()
 
     monkeypatch.setattr(main, "build_chat_model", lambda *_args, **_kwargs: _FakeLlm())

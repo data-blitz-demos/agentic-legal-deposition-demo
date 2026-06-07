@@ -151,6 +151,44 @@ RETURN
 ORDER BY score DESC, label
 """.strip()
 
+_LIST_ONTOLOGY_RESOURCES = """
+MATCH (n:Resource)
+WHERE
+  $search = ''
+  OR toLower(coalesce(n.local_name, '')) CONTAINS $search
+  OR toLower(n.iri) CONTAINS $search
+RETURN
+  n.iri AS iri,
+  coalesce(n.local_name, n.iri) AS label,
+  coalesce(n.namespace, '') AS namespace,
+  coalesce(n.kind, '') AS kind
+ORDER BY label
+LIMIT $limit
+""".strip()
+
+_GET_ONTOLOGY_RESOURCE = """
+MATCH (n:Resource {iri: $iri})
+OPTIONAL MATCH (n)-[rr:RELATES_TO]->(o:Resource)
+WITH n, collect(DISTINCT {
+  predicate: coalesce(rr.predicate_local_name, rr.predicate_iri),
+  object_label: coalesce(o.local_name, o.iri),
+  object_iri: o.iri
+})[..$neighbor_limit] AS relations
+OPTIONAL MATCH (n)-[hl:HAS_LITERAL]->(l:Literal)
+RETURN
+  n.iri AS iri,
+  coalesce(n.local_name, n.iri) AS label,
+  coalesce(n.namespace, '') AS namespace,
+  coalesce(n.kind, '') AS kind,
+  relations,
+  collect(DISTINCT {
+    predicate: coalesce(hl.predicate_local_name, hl.predicate_iri),
+    value: l.value,
+    datatype: coalesce(l.datatype, ''),
+    lang: coalesce(l.lang, '')
+  })[..$literal_limit] AS literals
+""".strip()
+
 
 def split_iri(value: str) -> tuple[str, str]:
     """Split an IRI into namespace and local-name fragments."""
@@ -585,3 +623,79 @@ class Neo4jOntologyGraph:
             "vector_error": vector_error,
             "context_text": "\n".join(lines) if lines else "No matching ontology context found.",
         }
+
+    def list_resources(self, *, search: str = "", limit: int = 50) -> list[dict[str, str]]:
+        """List ontology ``:Resource`` nodes with optional substring search."""
+
+        bounded_limit = max(1, min(int(limit or 50), 500))
+        normalized_search = str(search or "").strip().lower()
+
+        driver = self._get_driver()
+        with driver.session(database=self.database) as session:
+            records = session.run(
+                _LIST_ONTOLOGY_RESOURCES,
+                search=normalized_search,
+                limit=bounded_limit,
+            )
+
+            items: list[dict[str, str]] = []
+            for record in records:
+                iri = str(record.get("iri") or "").strip()
+                if not iri:
+                    continue
+                items.append(
+                    {
+                        "iri": iri,
+                        "label": str(record.get("label") or iri).strip(),
+                        "namespace": str(record.get("namespace") or "").strip(),
+                        "kind": str(record.get("kind") or "").strip(),
+                    }
+                )
+            return items
+
+    def get_resource(
+        self,
+        iri: str,
+        *,
+        neighbor_limit: int = 20,
+        literal_limit: int = 20,
+    ) -> dict[str, Any] | None:
+        """Return one ontology resource with relationships and literals."""
+
+        normalized_iri = str(iri or "").strip()
+        if not normalized_iri:
+            raise ValueError("Resource IRI is required.")
+
+        bounded_neighbor_limit = max(0, min(int(neighbor_limit or 20), 100))
+        bounded_literal_limit = max(0, min(int(literal_limit or 20), 100))
+
+        driver = self._get_driver()
+        with driver.session(database=self.database) as session:
+            record = session.run(
+                _GET_ONTOLOGY_RESOURCE,
+                iri=normalized_iri,
+                neighbor_limit=bounded_neighbor_limit,
+                literal_limit=bounded_literal_limit,
+            ).single()
+
+            if record is None:
+                return None
+
+            relations = [
+                item
+                for item in (record.get("relations") or [])
+                if isinstance(item, dict) and str(item.get("object_iri") or "").strip()
+            ]
+            literals = [
+                item
+                for item in (record.get("literals") or [])
+                if isinstance(item, dict) and str(item.get("value") or "").strip()
+            ]
+            return {
+                "iri": str(record.get("iri") or normalized_iri).strip(),
+                "label": str(record.get("label") or normalized_iri).strip(),
+                "namespace": str(record.get("namespace") or "").strip(),
+                "kind": str(record.get("kind") or "").strip(),
+                "relations": relations,
+                "literals": literals,
+            }

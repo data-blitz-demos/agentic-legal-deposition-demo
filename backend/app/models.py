@@ -429,6 +429,22 @@ class GrafanaAccessResponse(BaseModel):
     password: str
 
 
+class LangfuseAccessResponse(BaseModel):
+    """Response payload exposing Langfuse access and integration details."""
+
+    enabled: bool
+    sdk_installed: bool
+    configured: bool
+    url: str
+    login_url: str
+    base_url: str
+    project_name: str
+    public_key: str
+    username: str
+    password: str
+    monitored_operations: list[str] = Field(default_factory=list)
+
+
 class GraphHealthResponse(BaseModel):
     """Response payload reporting Neo4j graph availability."""
 
@@ -575,7 +591,7 @@ class AgentRuntimeMetric(BaseModel):
 
     key: str
     label: str
-    value: float
+    value: float | None = None
     display: str
     unit: str | None = None
     status: Literal["good", "warn", "bad", "info"] = "info"
@@ -600,6 +616,7 @@ class AgentRuntimeMetricsResponse(BaseModel):
     rag_paired_comparisons: int = Field(ge=0, default=0)
     metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
     correctness_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
+    toolathlon_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
 
 
 class CaseSummary(BaseModel):

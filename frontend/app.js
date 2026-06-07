@@ -18,6 +18,7 @@ const els = {
   tabIntelligenceBtn: document.getElementById('tabIntelligenceBtn'),
   tabProvisioningBtn: document.getElementById('tabProvisioningBtn'),
   tabObservablesBtn: document.getElementById('tabObservablesBtn'),
+  tabLangfuseBtn: document.getElementById('tabLangfuseBtn'),
   tabAdminBtn: document.getElementById('tabAdminBtn'),
   tabPageLanding: document.getElementById('tabPageLanding'),
   tabPageIntelligence: document.getElementById('tabPageIntelligence'),
@@ -25,6 +26,7 @@ const els = {
   intelligenceWorkspace: document.getElementById('intelligenceWorkspace'),
   tabPageProvisioning: document.getElementById('tabPageProvisioning'),
   tabPageObservables: document.getElementById('tabPageObservables'),
+  tabPageLangfuse: document.getElementById('tabPageLangfuse'),
   tabPageAdmin: document.getElementById('tabPageAdmin'),
   caseId: document.getElementById('caseId'),
   directory: document.getElementById('directory'),
@@ -92,10 +94,29 @@ const els = {
   metricsBody: document.getElementById('metricsBody'),
   refreshMetricsBtn: document.getElementById('refreshMetricsBtn'),
   openGrafanaObservablesBtn: document.getElementById('openGrafanaObservablesBtn'),
+  refreshLangfuseBtn: document.getElementById('refreshLangfuseBtn'),
+  openLangfuseBtn: document.getElementById('openLangfuseBtn'),
   metricsSampleMeta: document.getElementById('metricsSampleMeta'),
   metricsStorageMeta: document.getElementById('metricsStorageMeta'),
+  langfuseRuntimeStatus: document.getElementById('langfuseRuntimeStatus'),
+  langfuseProjectName: document.getElementById('langfuseProjectName'),
+  langfuseBaseUrl: document.getElementById('langfuseBaseUrl'),
+  langfusePublicKey: document.getElementById('langfusePublicKey'),
+  langfuseCredentials: document.getElementById('langfuseCredentials'),
+  langfuseCoverageList: document.getElementById('langfuseCoverageList'),
   metricsGrid: document.getElementById('metricsGrid'),
   correctnessGrid: document.getElementById('correctnessGrid'),
+  toolathlonGrid: document.getElementById('toolathlonGrid'),
+  toolathlonReplayStatus: document.getElementById('toolathlonReplayStatus'),
+  toolathlonReplayPlayBtn: document.getElementById('toolathlonReplayPlayBtn'),
+  toolathlonReplayPauseBtn: document.getElementById('toolathlonReplayPauseBtn'),
+  toolathlonReplayPrevBtn: document.getElementById('toolathlonReplayPrevBtn'),
+  toolathlonReplayNextBtn: document.getElementById('toolathlonReplayNextBtn'),
+  toolathlonReplayResetBtn: document.getElementById('toolathlonReplayResetBtn'),
+  toolathlonReplayProgressFill: document.getElementById('toolathlonReplayProgressFill'),
+  toolathlonReplayProgressText: document.getElementById('toolathlonReplayProgressText'),
+  toolathlonReplayTranscript: document.getElementById('toolathlonReplayTranscript'),
+  toolathlonReplayDetail: document.getElementById('toolathlonReplayDetail'),
   metricDetailPanel: document.getElementById('metricDetailPanel'),
   metricDetailTitle: document.getElementById('metricDetailTitle'),
   metricDetailBody: document.getElementById('metricDetailBody'),
@@ -276,7 +297,13 @@ const els = {
   adminPersonaPromptObservableModalTitle: document.getElementById('adminPersonaPromptObservableModalTitle'),
   adminPersonaPromptObservableModalMeta: document.getElementById('adminPersonaPromptObservableModalMeta'),
   adminPersonaPromptObservableModalBody: document.getElementById('adminPersonaPromptObservableModalBody'),
+  adminPersonaPromptObservableModalDetail: document.getElementById('adminPersonaPromptObservableModalDetail'),
   adminPersonaPromptObservableModalCloseBtn: document.getElementById('adminPersonaPromptObservableModalCloseBtn'),
+  adminPersonaPromptMetricExplainModal: document.getElementById('adminPersonaPromptMetricExplainModal'),
+  adminPersonaPromptMetricExplainTitle: document.getElementById('adminPersonaPromptMetricExplainTitle'),
+  adminPersonaPromptMetricExplainMeta: document.getElementById('adminPersonaPromptMetricExplainMeta'),
+  adminPersonaPromptMetricExplainBody: document.getElementById('adminPersonaPromptMetricExplainBody'),
+  adminPersonaPromptMetricExplainCloseBtn: document.getElementById('adminPersonaPromptMetricExplainCloseBtn'),
 };
 
 const GITHUB_ACTIONS_URLS = Object.freeze({
@@ -306,10 +333,15 @@ let thoughtStreamStorageReady = false;
 let traceWindowStart = 0;
 const TRACE_WINDOW_SIZE = 6;
 let traceWindowPinnedToLatest = true;
+let toolathlonReplayEvents = [];
+let toolathlonReplayIndex = 0;
+let toolathlonReplaySelectedIndex = -1;
+let toolathlonReplayTimer = null;
 let metricsPollHandle = null;
 const METRICS_POLL_MS = 15000;
 let metricsPanelOpen = false;
 let metricsLoaded = false;
+let langfuseAccessPayload = null;
 let depositionBrowserCurrentDirectory = '';
 let depositionBrowserParentDirectory = '';
 let depositionBrowserWildcardPath = '';
@@ -341,6 +373,7 @@ let adminPersonaToolsPanelActive = false;
 let selectedAdminPersonaPromptObservableKey = '';
 let adminPersonaPromptObservablesScope = 'all';
 let adminPersonaPromptObservableModalScope = '';
+let adminPersonaPromptObservableModalSelectedKey = '';
 let currentAdminPersonaPromptSentiment = null;
 let adminPersonaPromptSentimentDetailOpen = false;
 let adminTestRunClockHandle = null;
@@ -1016,18 +1049,12 @@ function renderMetricCards(container, metrics, source) {
       return;
     }
     const trendButton = card.querySelector('.metric-trend-btn');
-    let clickHandle = null;
-    const CLICK_DELAY_MS = 340;
     const select = () => {
       clearMetricSelection();
       card.classList.add('selected');
       showMetricDetail(metric, source);
     };
     const showTrend = () => {
-      if (clickHandle !== null) {
-        window.clearTimeout(clickHandle);
-        clickHandle = null;
-      }
       clearMetricSelection();
       card.classList.add('selected');
       showMetricTrend(metric, source).catch((err) => {
@@ -1041,20 +1068,16 @@ function renderMetricCards(container, metrics, source) {
         return;
       }
       if (event.detail >= 2) {
-        if (clickHandle !== null) {
-          window.clearTimeout(clickHandle);
-          clickHandle = null;
-        }
-        showTrend();
         return;
       }
-      if (clickHandle !== null) {
-        window.clearTimeout(clickHandle);
+      select();
+    });
+    card.addEventListener('dblclick', (event) => {
+      if (metricInteractionsLocked()) {
+        return;
       }
-      clickHandle = window.setTimeout(() => {
-        clickHandle = null;
-        select();
-      }, CLICK_DELAY_MS);
+      event.preventDefault();
+      showTrend();
     });
     card.addEventListener('keydown', (event) => {
       if (event.target !== card) {
@@ -1103,6 +1126,12 @@ function renderCorrectnessDriftObservables(payload = null) {
   renderMetricCards(els.correctnessGrid, metrics, 'correctness');
 }
 
+function renderToolathlonMetrics(payload = null) {
+  /** Render Toolathlon-compatible observables returned from the backend. */
+  const metrics = Array.isArray(payload?.toolathlon_metrics) ? payload.toolathlon_metrics : [];
+  renderMetricCards(els.toolathlonGrid, metrics, 'toolathlon');
+}
+
 function renderAgentMetrics(payload, { cached = false } = {}) {
   /** Render runtime KPI cards and metadata into the Agent Runtime Metrics panel. */
   const metrics = Array.isArray(payload?.metrics) ? payload.metrics : [];
@@ -1127,6 +1156,7 @@ function renderAgentMetrics(payload, { cached = false } = {}) {
 
   renderMetricCards(els.metricsGrid, metrics, 'runtime');
   renderCorrectnessDriftObservables(payload);
+  renderToolathlonMetrics(payload);
 }
 
 async function loadAgentMetrics({ silent = false } = {}) {
@@ -2980,6 +3010,47 @@ function setAdminPersonaPromptObservableDetail(metric) {
     `${metric.label}: ${metric.value}\n\n${metric.explanation}`;
 }
 
+function hideAdminPersonaPromptMetricExplainModal() {
+  /** Close prompt-metric explanation popout and clear transient content. */
+  if (
+    !els.adminPersonaPromptMetricExplainModal ||
+    !els.adminPersonaPromptMetricExplainTitle ||
+    !els.adminPersonaPromptMetricExplainMeta ||
+    !els.adminPersonaPromptMetricExplainBody
+  ) {
+    return;
+  }
+  els.adminPersonaPromptMetricExplainModal.classList.add('hidden');
+  els.adminPersonaPromptMetricExplainTitle.textContent = 'Prompt Metric Explanation';
+  els.adminPersonaPromptMetricExplainMeta.textContent = 'No metric selected.';
+  els.adminPersonaPromptMetricExplainBody.value = '';
+}
+
+function showAdminPersonaPromptMetricExplainModal(scopeLabel, metric) {
+  /** Open prompt-metric explanation popout as a textbox with detailed metric meaning. */
+  if (
+    !els.adminPersonaPromptMetricExplainModal ||
+    !els.adminPersonaPromptMetricExplainTitle ||
+    !els.adminPersonaPromptMetricExplainMeta ||
+    !els.adminPersonaPromptMetricExplainBody
+  ) {
+    return;
+  }
+  const resolvedScope = String(scopeLabel || 'Prompt').trim() || 'Prompt';
+  const label = String(metric?.label || 'Prompt Observable').trim() || 'Prompt Observable';
+  const value = String(metric?.value || 'N/A').trim() || 'N/A';
+  const key = String(metric?.key || '').trim();
+  const explanation = String(metric?.explanation || 'No explanation available.').trim() || 'No explanation available.';
+
+  els.adminPersonaPromptMetricExplainTitle.textContent = `${label} Explanation`;
+  els.adminPersonaPromptMetricExplainMeta.textContent = key
+    ? `${resolvedScope} | Value: ${value} | key: ${key}`
+    : `${resolvedScope} | Value: ${value}`;
+  els.adminPersonaPromptMetricExplainBody.value = `${label}\nScope: ${resolvedScope}\nValue: ${value}\n\n${explanation}`;
+  els.adminPersonaPromptMetricExplainModal.classList.remove('hidden');
+  els.adminPersonaPromptMetricExplainCloseBtn?.focus();
+}
+
 function renderAdminPersonaPromptObservables() {
   /** Render prompt observables list and detail for the Persona prompt content. */
   if (!els.adminPersonaPromptObservablesList) {
@@ -3007,7 +3078,7 @@ function renderAdminPersonaPromptObservables() {
 
   const metricByKey = new Map(metrics.map((item) => [item.key, item]));
   if (!metricByKey.has(selectedAdminPersonaPromptObservableKey)) {
-    selectedAdminPersonaPromptObservableKey = metrics[0].key;
+    selectedAdminPersonaPromptObservableKey = '';
   }
 
   els.adminPersonaPromptObservablesList.classList.remove('muted');
@@ -3028,18 +3099,19 @@ function renderAdminPersonaPromptObservables() {
     const explain = document.createElement('button');
     explain.type = 'button';
     explain.className = 'secondary prompt-mini-btn';
-    explain.textContent = selectedAdminPersonaPromptObservableKey === metric.key ? 'Selected' : 'Explain';
-    explain.disabled = selectedAdminPersonaPromptObservableKey === metric.key;
+    explain.textContent = 'Explain';
     explain.addEventListener('click', () => {
       selectedAdminPersonaPromptObservableKey = metric.key;
       renderAdminPersonaPromptObservables();
+      showAdminPersonaPromptMetricExplainModal(scopeLabel, metric);
+      setStatus(`Explained ${metric.label} in ${scopeLabel}.`);
     });
     actions.appendChild(explain);
     row.appendChild(actions);
     return row;
   });
   els.adminPersonaPromptObservablesList.replaceChildren(scopeMeta, ...rows);
-  setAdminPersonaPromptObservableDetail(metricByKey.get(selectedAdminPersonaPromptObservableKey));
+  setAdminPersonaPromptObservableDetail(metricByKey.get(selectedAdminPersonaPromptObservableKey) || null);
 }
 
 function setAdminPersonaPromptPanelActive(active) {
@@ -3190,7 +3262,8 @@ function hideAdminPersonaPromptObservableModal() {
     !els.adminPersonaPromptObservableModal ||
     !els.adminPersonaPromptObservableModalTitle ||
     !els.adminPersonaPromptObservableModalMeta ||
-    !els.adminPersonaPromptObservableModalBody
+    !els.adminPersonaPromptObservableModalBody ||
+    !els.adminPersonaPromptObservableModalDetail
   ) {
     return;
   }
@@ -3200,11 +3273,29 @@ function hideAdminPersonaPromptObservableModal() {
   els.adminPersonaPromptObservableModalBody.classList.add('muted');
   els.adminPersonaPromptObservableModalBody.textContent =
     'Click a prompt-level Observable button to inspect section-specific observables.';
+  els.adminPersonaPromptObservableModalDetail.classList.add('muted');
+  els.adminPersonaPromptObservableModalDetail.textContent = 'Select a metric to view what it means.';
   adminPersonaPromptObservableModalScope = '';
+  adminPersonaPromptObservableModalSelectedKey = '';
 }
 
-function showAdminPersonaPromptObservableModal(scope = 'system') {
-  /** Open popup with all observables computed for one specific prompt section. */
+function setAdminPersonaPromptObservableModalDetail(metric, scopeLabel = 'Prompt') {
+  /** Render one prompt-observable explanation in the prompt-observables popup detail area. */
+  if (!els.adminPersonaPromptObservableModalDetail) {
+    return;
+  }
+  if (!metric || typeof metric !== 'object') {
+    els.adminPersonaPromptObservableModalDetail.classList.add('muted');
+    els.adminPersonaPromptObservableModalDetail.textContent = 'Select a metric to view what it means.';
+    return;
+  }
+  els.adminPersonaPromptObservableModalDetail.classList.remove('muted');
+  els.adminPersonaPromptObservableModalDetail.textContent =
+    `${scopeLabel} | ${metric.label}: ${metric.value}\n\n${metric.explanation}`;
+}
+
+function renderAdminPersonaPromptObservableModal() {
+  /** Render section-scoped prompt observables popup content with Explain actions per metric. */
   if (
     !els.adminPersonaPromptObservableModal ||
     !els.adminPersonaPromptObservableModalTitle ||
@@ -3213,20 +3304,25 @@ function showAdminPersonaPromptObservableModal(scope = 'system') {
   ) {
     return;
   }
-  const normalizedScope = normalizeAdminPersonaPromptObservablesScope(scope);
+  const normalizedScope = normalizeAdminPersonaPromptObservablesScope(adminPersonaPromptObservableModalScope || 'system');
   const sectionScope = normalizedScope === 'all' ? 'system' : normalizedScope;
   const scopeLabel = adminPersonaPromptObservablesScopeLabel(sectionScope);
-  adminPersonaPromptObservableModalScope = sectionScope;
 
   els.adminPersonaPromptObservableModalTitle.textContent = `${scopeLabel} Observables`;
-  els.adminPersonaPromptObservableModalMeta.textContent = `Scoped metrics for ${scopeLabel}.`;
+  els.adminPersonaPromptObservableModalMeta.textContent = `Scoped metrics for ${scopeLabel}. Use Explain for details.`;
 
   const metrics = computeAdminPersonaPromptObservableMetrics(sectionScope);
   if (!metrics.length) {
+    adminPersonaPromptObservableModalSelectedKey = '';
     els.adminPersonaPromptObservableModalBody.classList.add('muted');
     els.adminPersonaPromptObservableModalBody.textContent =
       `No prompt content found in ${scopeLabel}. Add text and click Observable again.`;
+    setAdminPersonaPromptObservableModalDetail(null, scopeLabel);
   } else {
+    const metricByKey = new Map(metrics.map((item) => [item.key, item]));
+    if (!metricByKey.has(adminPersonaPromptObservableModalSelectedKey)) {
+      adminPersonaPromptObservableModalSelectedKey = '';
+    }
     const rows = metrics.map((metric) => {
       const row = document.createElement('article');
       row.className = 'admin-persona-observable-row';
@@ -3239,19 +3335,60 @@ function showAdminPersonaPromptObservableModal(scope = 'system') {
       value.className = 'admin-persona-observable-row-value';
       value.textContent = String(metric.value || 'N/A');
       title.append(label, value);
-
-      const body = document.createElement('p');
-      body.textContent = String(metric.explanation || 'No explanation available.');
-
-      row.append(title, body);
+      const actions = document.createElement('div');
+      actions.className = 'admin-persona-rag-actions';
+      const explain = document.createElement('button');
+      explain.type = 'button';
+      explain.className = 'secondary prompt-mini-btn';
+      explain.textContent = 'Explain';
+      explain.addEventListener('click', () => {
+        adminPersonaPromptObservableModalSelectedKey = metric.key;
+        renderAdminPersonaPromptObservableModal();
+        showAdminPersonaPromptMetricExplainModal(scopeLabel, metric);
+        setStatus(`Explained ${metric.label} for ${scopeLabel}.`);
+      });
+      actions.appendChild(explain);
+      row.append(title, actions);
       return row;
     });
     els.adminPersonaPromptObservableModalBody.classList.remove('muted');
     els.adminPersonaPromptObservableModalBody.replaceChildren(...rows);
+    setAdminPersonaPromptObservableModalDetail(
+      metricByKey.get(adminPersonaPromptObservableModalSelectedKey) || null,
+      scopeLabel
+    );
   }
+}
+
+function showAdminPersonaPromptObservableModal(scope = 'system') {
+  /** Open popup with all observables computed for one specific prompt section. */
+  adminPersonaPromptObservableModalScope = normalizeAdminPersonaPromptObservablesScope(scope);
+  if (adminPersonaPromptObservableModalScope === 'all') {
+    adminPersonaPromptObservableModalScope = 'system';
+  }
+  adminPersonaPromptObservableModalSelectedKey = '';
+  renderAdminPersonaPromptObservableModal();
 
   els.adminPersonaPromptObservableModal.classList.remove('hidden');
   els.adminPersonaPromptObservableModalCloseBtn?.focus();
+}
+
+function syncAdminPersonaPromptObservableModalFromForm(scope = 'all') {
+  /** Re-render popup observables when source prompt text changes while popup is open. */
+  if (
+    !els.adminPersonaPromptObservableModal ||
+    els.adminPersonaPromptObservableModal.classList.contains('hidden')
+  ) {
+    return;
+  }
+  const normalizedScope = normalizeAdminPersonaPromptObservablesScope(scope);
+  if (
+    normalizedScope !== 'all' &&
+    normalizeAdminPersonaPromptObservablesScope(adminPersonaPromptObservableModalScope) !== normalizedScope
+  ) {
+    return;
+  }
+  renderAdminPersonaPromptObservableModal();
 }
 
 function toggleAdminPersonaToolsPanel() {
@@ -4292,7 +4429,7 @@ function setActiveAdminSubtab(subtabName) {
 function setActiveTab(tabName) {
   /** Toggle application top-level pages and maintain tab button active state. */
   const normalized = String(tabName || '').trim().toLowerCase();
-  const nextTab = ['landing', 'intelligence', 'provisioning', 'observables', 'admin'].includes(normalized)
+  const nextTab = ['landing', 'intelligence', 'provisioning', 'observables', 'langfuse', 'admin'].includes(normalized)
     ? normalized
     : 'landing';
   const previousTab = activeTab;
@@ -4302,24 +4439,28 @@ function setActiveTab(tabName) {
   const isIntelligence = nextTab === 'intelligence';
   const isProvisioning = nextTab === 'provisioning';
   const isObservables = nextTab === 'observables';
+  const isLangfuse = nextTab === 'langfuse';
   const isAdmin = nextTab === 'admin';
 
   els.tabPageLanding.classList.toggle('hidden', !isLanding);
   els.tabPageIntelligence.classList.toggle('hidden', !isIntelligence);
   els.tabPageProvisioning.classList.toggle('hidden', !isProvisioning);
   els.tabPageObservables.classList.toggle('hidden', !isObservables);
+  els.tabPageLangfuse.classList.toggle('hidden', !isLangfuse);
   els.tabPageAdmin.classList.toggle('hidden', !isAdmin);
 
   els.tabLandingBtn.classList.toggle('active', isLanding);
   els.tabIntelligenceBtn.classList.toggle('active', isIntelligence);
   els.tabProvisioningBtn.classList.toggle('active', isProvisioning);
   els.tabObservablesBtn.classList.toggle('active', isObservables);
+  els.tabLangfuseBtn.classList.toggle('active', isLangfuse);
   els.tabAdminBtn.classList.toggle('active', isAdmin);
 
   els.tabLandingBtn.setAttribute('aria-selected', isLanding ? 'true' : 'false');
   els.tabIntelligenceBtn.setAttribute('aria-selected', isIntelligence ? 'true' : 'false');
   els.tabProvisioningBtn.setAttribute('aria-selected', isProvisioning ? 'true' : 'false');
   els.tabObservablesBtn.setAttribute('aria-selected', isObservables ? 'true' : 'false');
+  els.tabLangfuseBtn.setAttribute('aria-selected', isLangfuse ? 'true' : 'false');
   els.tabAdminBtn.setAttribute('aria-selected', isAdmin ? 'true' : 'false');
 
   if (previousTab === 'observables' && nextTab !== 'observables') {
@@ -4329,12 +4470,18 @@ function setActiveTab(tabName) {
   if (isObservables && previousTab !== 'observables') {
     setMetricsPanelOpen(true);
     renderCorrectnessDriftObservables();
+    renderToolathlonMetrics();
+    renderToolathlonReplay();
     const hadMetricsLoaded = metricsLoaded;
     loadAgentMetrics({ silent: true })
       .then(() => {
         setStatus(hadMetricsLoaded ? 'Observables refreshed.' : 'Observables loaded.');
       })
       .catch((err) => setStatus(err.message));
+  }
+
+  if (isLangfuse && previousTab !== 'langfuse') {
+    loadLangfuseAccess({ silent: true }).catch((err) => setStatus(err.message));
   }
 
   if (isIntelligence) {
@@ -4367,11 +4514,15 @@ async function toggleMetricsPanel() {
   setMetricsPanelOpen(next);
   if (next && !metricsLoaded) {
     renderCorrectnessDriftObservables();
+    renderToolathlonMetrics();
+    renderToolathlonReplay();
     await loadAgentMetrics({ silent: true });
     setStatus('Observables loaded.');
   }
   if (next && metricsLoaded) {
     renderCorrectnessDriftObservables();
+    renderToolathlonMetrics();
+    renderToolathlonReplay();
   }
 }
 
@@ -4476,6 +4627,208 @@ function formatTraceEvents(events = []) {
     .join('\n\n------------------------------\n\n');
 }
 
+function stopToolathlonReplay() {
+  /** Stop Toolathlon-style trajectory playback timer. */
+  if (toolathlonReplayTimer !== null) {
+    window.clearTimeout(toolathlonReplayTimer);
+    toolathlonReplayTimer = null;
+  }
+}
+
+function formatToolathlonReplayDetail(event, index, total) {
+  /** Convert one thought-stream event into a detailed replay sidebar narrative. */
+  if (!event) {
+    return 'Select or play a step to inspect persona, phase, prompts, and outputs.';
+  }
+  const lines = [
+    `Step ${index + 1} of ${total}`,
+    `Persona: ${event.persona || 'Agent'}`,
+    `Phase: ${event.phase || 'step'}`,
+    `Provider/Model: ${event.llm_provider || '-'} / ${event.llm_model || '-'}`,
+  ];
+  if (event.at) {
+    lines.push(`Timestamp: ${event.at}`);
+  }
+  if (event.file_name) {
+    lines.push(`File: ${event.file_name}`);
+  }
+  if (event.notes) {
+    lines.push(`Notes: ${event.notes}`);
+  }
+  if (event.input_preview) {
+    lines.push(`Input Preview:\n${event.input_preview}`);
+  }
+  if (event.system_prompt) {
+    lines.push(`System Prompt:\n${event.system_prompt}`);
+  }
+  if (event.user_prompt) {
+    lines.push(`User Prompt:\n${event.user_prompt}`);
+  }
+  if (event.output_preview) {
+    lines.push(`Output Preview:\n${event.output_preview}`);
+  }
+  return lines.join('\n\n');
+}
+
+function syncToolathlonReplayControls() {
+  /** Keep Toolathlon replay buttons and progress text aligned with current state. */
+  const total = toolathlonReplayEvents.length;
+  const hasEvents = total > 0;
+  const atEnd = !hasEvents || toolathlonReplayIndex >= total - 1;
+  const atStart = !hasEvents || toolathlonReplayIndex <= 0;
+  if (els.toolathlonReplayPlayBtn) {
+    els.toolathlonReplayPlayBtn.disabled = !hasEvents || !atEnd && toolathlonReplayTimer !== null;
+  }
+  if (els.toolathlonReplayPauseBtn) {
+    els.toolathlonReplayPauseBtn.disabled = toolathlonReplayTimer === null;
+  }
+  if (els.toolathlonReplayPrevBtn) {
+    els.toolathlonReplayPrevBtn.disabled = !hasEvents || atStart;
+  }
+  if (els.toolathlonReplayNextBtn) {
+    els.toolathlonReplayNextBtn.disabled = !hasEvents || atEnd;
+  }
+  if (els.toolathlonReplayResetBtn) {
+    els.toolathlonReplayResetBtn.disabled = !hasEvents;
+  }
+  if (els.toolathlonReplayProgressText) {
+    els.toolathlonReplayProgressText.textContent = hasEvents ? `${toolathlonReplayIndex + 1} / ${total}` : '0 / 0';
+  }
+  if (els.toolathlonReplayProgressFill) {
+    const pct = hasEvents ? ((toolathlonReplayIndex + 1) / total) * 100 : 0;
+    els.toolathlonReplayProgressFill.style.width = `${Math.max(0, Math.min(100, pct))}%`;
+  }
+}
+
+function renderToolathlonReplay() {
+  /** Render Toolathlon-style step playback using the latest thought-stream snapshot. */
+  const total = toolathlonReplayEvents.length;
+  if (!els.toolathlonReplayTranscript || !els.toolathlonReplayDetail || !els.toolathlonReplayStatus) {
+    return;
+  }
+  if (!total) {
+    els.toolathlonReplayTranscript.textContent =
+      'No thought stream is available for replay yet. Run ingest or chat with Thought Stream enabled.';
+    els.toolathlonReplayTranscript.classList.add('muted');
+    els.toolathlonReplayDetail.textContent =
+      'Select or play a step to inspect persona, phase, prompts, and outputs.';
+    els.toolathlonReplayDetail.classList.add('muted');
+    els.toolathlonReplayStatus.textContent =
+      'Replay the latest loaded thought stream step-by-step using Toolathlon-style trajectory controls.';
+    syncToolathlonReplayControls();
+    return;
+  }
+
+  const visibleCount = Math.max(1, Math.min(total, toolathlonReplayIndex + 1));
+  const visibleEvents = toolathlonReplayEvents.slice(0, visibleCount);
+  const selectedIndex = Math.max(0, toolathlonReplaySelectedIndex >= 0 ? toolathlonReplaySelectedIndex : toolathlonReplayIndex);
+  els.toolathlonReplayTranscript.classList.remove('muted');
+  els.toolathlonReplayDetail.classList.remove('muted');
+  els.toolathlonReplayStatus.textContent =
+    'Toolathlon-compatible replay over the current thought stream. This is trajectory playback for this app, not an official Toolathlon benchmark run.';
+  els.toolathlonReplayTranscript.innerHTML = visibleEvents
+    .map((event, index) => {
+      const selectedClass = index === selectedIndex ? ' selected' : '';
+      const preview =
+        String(event.output_preview || event.notes || event.input_preview || '').trim().slice(0, 180) ||
+        'No preview text captured for this step.';
+      return `
+        <button class="toolathlon-step${selectedClass}" type="button" data-toolathlon-step-index="${index}">
+          <span class="toolathlon-step-index">${index + 1}</span>
+          <span class="toolathlon-step-body">
+            <strong>${escapeHtml(event.persona || 'Agent')}</strong>
+            <span>${escapeHtml(event.phase || 'step')}</span>
+            <small>${escapeHtml(preview)}</small>
+          </span>
+        </button>
+      `;
+    })
+    .join('');
+  els.toolathlonReplayDetail.textContent = formatToolathlonReplayDetail(
+    toolathlonReplayEvents[selectedIndex],
+    selectedIndex,
+    total
+  );
+
+  Array.from(els.toolathlonReplayTranscript.querySelectorAll('[data-toolathlon-step-index]')).forEach((node) => {
+    node.addEventListener('click', () => {
+      const nextIndex = Number(node.getAttribute('data-toolathlon-step-index'));
+      if (!Number.isFinite(nextIndex)) {
+        return;
+      }
+      toolathlonReplaySelectedIndex = nextIndex;
+      renderToolathlonReplay();
+    });
+  });
+
+  const selectedNode = els.toolathlonReplayTranscript.querySelector('.toolathlon-step.selected');
+  if (selectedNode) {
+    selectedNode.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  }
+  syncToolathlonReplayControls();
+}
+
+function setToolathlonReplayEvents(events = [], { preservePosition = false } = {}) {
+  /** Reset Toolathlon replay source data from the latest thought-stream snapshot. */
+  const nextEvents = Array.isArray(events) ? events.slice() : [];
+  const priorIndex = toolathlonReplayIndex;
+  const priorSelectedIndex = toolathlonReplaySelectedIndex;
+  if (!preservePosition) {
+    stopToolathlonReplay();
+  }
+  toolathlonReplayEvents = nextEvents;
+  if (!toolathlonReplayEvents.length) {
+    toolathlonReplayIndex = 0;
+    toolathlonReplaySelectedIndex = -1;
+  } else if (preservePosition) {
+    toolathlonReplayIndex = Math.max(0, Math.min(toolathlonReplayEvents.length - 1, priorIndex));
+    const fallbackIndex = toolathlonReplayIndex;
+    toolathlonReplaySelectedIndex =
+      priorSelectedIndex >= 0
+        ? Math.max(0, Math.min(toolathlonReplayEvents.length - 1, priorSelectedIndex))
+        : fallbackIndex;
+  } else {
+    toolathlonReplayIndex = 0;
+    toolathlonReplaySelectedIndex = 0;
+  }
+  renderToolathlonReplay();
+}
+
+function stepToolathlonReplay(delta) {
+  /** Move Toolathlon replay backward or forward by one visible step. */
+  if (!toolathlonReplayEvents.length) {
+    return;
+  }
+  stopToolathlonReplay();
+  const total = toolathlonReplayEvents.length;
+  toolathlonReplayIndex = Math.max(0, Math.min(total - 1, toolathlonReplayIndex + delta));
+  toolathlonReplaySelectedIndex = toolathlonReplayIndex;
+  renderToolathlonReplay();
+}
+
+function playToolathlonReplay() {
+  /** Auto-advance Toolathlon replay until the last available step is visible. */
+  if (!toolathlonReplayEvents.length) {
+    return;
+  }
+  stopToolathlonReplay();
+  const tick = () => {
+    if (toolathlonReplayIndex >= toolathlonReplayEvents.length - 1) {
+      stopToolathlonReplay();
+      syncToolathlonReplayControls();
+      return;
+    }
+    toolathlonReplayIndex += 1;
+    toolathlonReplaySelectedIndex = toolathlonReplayIndex;
+    renderToolathlonReplay();
+    toolathlonReplayTimer = window.setTimeout(tick, 850);
+    syncToolathlonReplayControls();
+  };
+  toolathlonReplaySelectedIndex = toolathlonReplayIndex;
+  toolathlonReplayTimer = window.setTimeout(tick, 850);
+  syncToolathlonReplayControls();
+}
+
 function flattenTraceEvents(snapshot) {
   /** Combine legal-clerk and attorney traces into one ordered stream. */
   const trace = snapshot?.thought_stream || snapshot?.trace || {};
@@ -4543,6 +4896,7 @@ function renderTraceSnapshot(snapshot) {
   }
   lastTraceSnapshot = snapshot || null;
   const events = flattenTraceEvents(snapshot);
+  setToolathlonReplayEvents(events, { preservePosition: true });
   applyTraceWindow(events, snapshot?.status || 'running');
   const channelLabel = activeTraceChannel === 'chat' ? 'Attorney chat' : 'Ingest';
   els.traceMeta.textContent = `${channelLabel} thought stream ${snapshot?.status || 'running'} (${snapshot?.thought_stream_id || activeTraceId})`;
@@ -4590,6 +4944,7 @@ function beginTraceSession(channel) {
   activeTraceId = createTraceId();
   activeTraceChannel = channel === 'chat' ? 'chat' : 'ingest';
   lastTraceSnapshot = null;
+  setToolathlonReplayEvents([]);
   traceWindowStart = 0;
   traceWindowPinnedToLatest = true;
   els.traceLive.value = `Starting ${activeTraceChannel} thought stream...\nWaiting for events...`;
@@ -5393,6 +5748,91 @@ async function openGrafanaWithCredentials() {
   const credentialText = username || password ? ` Username: ${username} Password: ${password}` : '';
   window.open(grafanaUrl, '_blank', 'noopener,noreferrer');
   setStatus(`Opened Grafana.${credentialText}`.trim());
+}
+
+function maskLangfusePublicKey(value) {
+  /** Keep Langfuse key display recognizable without showing the full token. */
+  const text = String(value || '').trim();
+  if (!text) {
+    return 'Not configured';
+  }
+  if (text.length <= 16) {
+    return text;
+  }
+  return `${text.slice(0, 8)}...${text.slice(-6)}`;
+}
+
+function renderLangfuseAccess(payload = null) {
+  /** Paint Langfuse runtime status, credentials, and monitoring coverage. */
+  langfuseAccessPayload = payload;
+  const enabled = !!payload?.enabled;
+  const sdkInstalled = !!payload?.sdk_installed;
+  const configured = !!payload?.configured;
+  const projectName = String(payload?.project_name || 'AttorneyOS Demo').trim();
+  const baseUrl = String(payload?.base_url || payload?.url || 'Not configured').trim();
+  const username = String(payload?.username || '').trim();
+  const password = String(payload?.password || '').trim();
+  const monitoredOperations = Array.isArray(payload?.monitored_operations) ? payload.monitored_operations : [];
+
+  if (els.langfuseProjectName) {
+    els.langfuseProjectName.textContent = projectName || 'AttorneyOS Demo';
+  }
+  if (els.langfuseBaseUrl) {
+    els.langfuseBaseUrl.textContent = baseUrl || 'Not configured';
+  }
+  if (els.langfusePublicKey) {
+    els.langfusePublicKey.textContent = maskLangfusePublicKey(payload?.public_key);
+  }
+  if (els.langfuseCredentials) {
+    els.langfuseCredentials.textContent =
+      username || password ? `${username || '(email missing)'} / ${password || '(password missing)'}` : 'Not configured';
+  }
+  if (els.langfuseRuntimeStatus) {
+    els.langfuseRuntimeStatus.textContent =
+      configured
+        ? 'Langfuse is configured and the backend is sending traces.'
+        : enabled
+          ? (sdkInstalled
+            ? 'Langfuse is enabled but not fully configured yet.'
+            : 'Langfuse is enabled but the SDK is not installed in this runtime.')
+          : 'Langfuse tracing is currently disabled.';
+  }
+  if (els.langfuseCoverageList) {
+    if (!monitoredOperations.length) {
+      els.langfuseCoverageList.classList.add('muted');
+      els.langfuseCoverageList.textContent = 'No monitored Langfuse operations were reported by the backend.';
+    } else {
+      els.langfuseCoverageList.classList.remove('muted');
+      els.langfuseCoverageList.innerHTML = monitoredOperations
+        .map((item) => `<div class="langfuse-coverage-row">${escapeHtml(String(item || ''))}</div>`)
+        .join('');
+    }
+  }
+  if (els.openLangfuseBtn) {
+    els.openLangfuseBtn.disabled = !String(payload?.url || '').trim();
+  }
+}
+
+async function loadLangfuseAccess({ silent = false } = {}) {
+  /** Fetch Langfuse runtime details for the dedicated monitoring tab. */
+  const payload = await api('/api/observability/langfuse');
+  renderLangfuseAccess(payload);
+  if (!silent) {
+    const url = String(payload?.url || '').trim();
+    setStatus(url ? `Langfuse status refreshed. UI: ${url}` : 'Langfuse status refreshed.');
+  }
+  return payload;
+}
+
+async function openLangfuse() {
+  /** Open the configured Langfuse UI and surface the local demo credentials. */
+  const payload = langfuseAccessPayload || (await loadLangfuseAccess({ silent: true }));
+  const targetUrl = String(payload?.login_url || payload?.url || 'http://localhost:3001').trim();
+  const username = String(payload?.username || '').trim();
+  const password = String(payload?.password || '').trim();
+  const credentialText = username || password ? ` Username: ${username} Password: ${password}` : '';
+  window.open(targetUrl, '_blank', 'noopener,noreferrer');
+  setStatus(`Opened Langfuse.${credentialText}`.trim());
 }
 
 function resolveDepositionBrowserStartPath() {
@@ -7269,6 +7709,7 @@ els.tabLandingBtn.addEventListener('click', () => setActiveTab('landing'));
 els.tabIntelligenceBtn.addEventListener('click', () => setActiveTab('intelligence'));
 els.tabProvisioningBtn.addEventListener('click', () => setActiveTab('provisioning'));
 els.tabObservablesBtn.addEventListener('click', () => setActiveTab('observables'));
+els.tabLangfuseBtn.addEventListener('click', () => setActiveTab('langfuse'));
 els.tabAdminBtn.addEventListener('click', () => setActiveTab('admin'));
 els.adminTabTestBtn.addEventListener('click', () => setActiveAdminSubtab('test'));
 els.adminTabUsersBtn.addEventListener('click', () => setActiveAdminSubtab('users'));
@@ -7425,6 +7866,7 @@ if (els.adminPersonaSystemPromptTemplateSelect) {
       if (adminPersonaPromptObservablesPanelActive) {
         renderAdminPersonaPromptObservables();
       }
+      syncAdminPersonaPromptObservableModalFromForm('system');
     }
   });
 }
@@ -7438,6 +7880,7 @@ if (els.adminPersonaAssistantPromptTemplateSelect) {
       if (adminPersonaPromptObservablesPanelActive) {
         renderAdminPersonaPromptObservables();
       }
+      syncAdminPersonaPromptObservableModalFromForm('assistant');
     }
   });
 }
@@ -7451,6 +7894,7 @@ if (els.adminPersonaContextPromptTemplateSelect) {
       if (adminPersonaPromptObservablesPanelActive) {
         renderAdminPersonaPromptObservables();
       }
+      syncAdminPersonaPromptObservableModalFromForm('context');
     }
   });
 }
@@ -7459,6 +7903,7 @@ if (els.adminPersonaSystemPrompt) {
     if (adminPersonaPromptObservablesPanelActive) {
       renderAdminPersonaPromptObservables();
     }
+    syncAdminPersonaPromptObservableModalFromForm('system');
   });
 }
 if (els.adminPersonaAssistantPrompt) {
@@ -7466,6 +7911,7 @@ if (els.adminPersonaAssistantPrompt) {
     if (adminPersonaPromptObservablesPanelActive) {
       renderAdminPersonaPromptObservables();
     }
+    syncAdminPersonaPromptObservableModalFromForm('assistant');
   });
 }
 if (els.adminPersonaContextPrompt) {
@@ -7473,6 +7919,7 @@ if (els.adminPersonaContextPrompt) {
     if (adminPersonaPromptObservablesPanelActive) {
       renderAdminPersonaPromptObservables();
     }
+    syncAdminPersonaPromptObservableModalFromForm('context');
   });
 }
 if (els.adminCancelPersonaBtn) {
@@ -7805,9 +8252,36 @@ els.traceOlderBtn.addEventListener('click', () => shiftTraceWindow(-1));
 els.traceNewerBtn.addEventListener('click', () => shiftTraceWindow(1));
 els.metricsTextToggle.addEventListener('click', () => toggleMetricsPanel().catch((err) => setStatus(err.message)));
 els.refreshMetricsBtn.addEventListener('click', () => loadAgentMetrics().catch((err) => setStatus(err.message)));
+els.toolathlonReplayPlayBtn.addEventListener('click', () => playToolathlonReplay());
+els.toolathlonReplayPauseBtn.addEventListener('click', () => {
+  stopToolathlonReplay();
+  syncToolathlonReplayControls();
+});
+els.toolathlonReplayPrevBtn.addEventListener('click', () => stepToolathlonReplay(-1));
+els.toolathlonReplayNextBtn.addEventListener('click', () => stepToolathlonReplay(1));
+els.toolathlonReplayResetBtn.addEventListener('click', () => {
+  stopToolathlonReplay();
+  if (!toolathlonReplayEvents.length) {
+    renderToolathlonReplay();
+    return;
+  }
+  toolathlonReplayIndex = 0;
+  toolathlonReplaySelectedIndex = 0;
+  renderToolathlonReplay();
+});
 els.openGrafanaObservablesBtn.addEventListener('click', () =>
   openGrafanaWithCredentials().catch((err) => setStatus(err.message))
 );
+if (els.refreshLangfuseBtn) {
+  els.refreshLangfuseBtn.addEventListener('click', () =>
+    loadLangfuseAccess().catch((err) => setStatus(err.message))
+  );
+}
+if (els.openLangfuseBtn) {
+  els.openLangfuseBtn.addEventListener('click', () =>
+    openLangfuse().catch((err) => setStatus(err.message))
+  );
+}
 els.computeSentimentBtn.addEventListener('click', () =>
   computeDepositionSentiment().catch((err) => setStatus(err.message))
 );
@@ -7936,6 +8410,16 @@ if (els.adminPersonaPromptObservableModal) {
     }
   });
 }
+if (els.adminPersonaPromptMetricExplainCloseBtn) {
+  els.adminPersonaPromptMetricExplainCloseBtn.addEventListener('click', () => hideAdminPersonaPromptMetricExplainModal());
+}
+if (els.adminPersonaPromptMetricExplainModal) {
+  els.adminPersonaPromptMetricExplainModal.addEventListener('click', (event) => {
+    if (event.target === els.adminPersonaPromptMetricExplainModal) {
+      hideAdminPersonaPromptMetricExplainModal();
+    }
+  });
+}
 if (els.adminPersonaPromptApplyBtn) {
   els.adminPersonaPromptApplyBtn.addEventListener('click', () => applyAdminPersonaPromptFromModal());
 }
@@ -8001,6 +8485,10 @@ window.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') {
     return;
   }
+  if (els.adminPersonaPromptMetricExplainModal && !els.adminPersonaPromptMetricExplainModal.classList.contains('hidden')) {
+    hideAdminPersonaPromptMetricExplainModal();
+    return;
+  }
   if (els.adminPersonaPromptObservableModal && !els.adminPersonaPromptObservableModal.classList.contains('hidden')) {
     hideAdminPersonaPromptObservableModal();
     return;
@@ -8030,6 +8518,7 @@ renderDetail(null);
 renderTimeline();
 renderDepositions();
 hydrateCachedMetrics();
+renderToolathlonReplay();
 syncFocusedReasoningActionState();
 loadedCaseId = els.caseId.value.trim();
 syncCaseActionState();

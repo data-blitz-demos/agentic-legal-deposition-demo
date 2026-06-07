@@ -96,3 +96,29 @@ def test_list_schema_options_skips_invalid_json(monkeypatch, tmp_path):
             "mode": "raw_capture",
         }
     ]
+
+
+def test_deposition_schema_contract_matches_runtime_model_shape():
+    schemas_module.load_schema.cache_clear()
+
+    schema = schemas_module.load_schema("deposition_schema")
+    properties = schema.get("properties", {})
+    required = set(schema.get("required", []))
+
+    assert {"case_id", "file_name", "witness_name", "witness_role", "summary", "claims"} <= required
+    assert {
+        "case_id",
+        "file_name",
+        "witness_name",
+        "witness_role",
+        "deposition_date",
+        "summary",
+        "claims",
+    } <= set(properties.keys())
+
+    claims = properties["claims"]
+    assert claims.get("type") == "array"
+    claim_properties = claims.get("items", {}).get("properties", {})
+    claim_required = set(claims.get("items", {}).get("required", []))
+    assert {"topic", "statement", "confidence", "source_quote"} <= claim_required
+    assert {"topic", "statement", "confidence", "source_quote"} <= set(claim_properties.keys())

@@ -603,3 +603,182 @@ def test_retrieve_context_falls_back_to_keyword_when_vector_query_fails(monkeypa
     assert payload["query_embedding_used"] is True
     assert payload["resource_count"] == 1
     assert payload["vector_error"] == "missing vector index"
+
+
+def test_list_resources_returns_filtered_resource_rows(monkeypatch):
+    graph = neo_module.Neo4jOntologyGraph(
+        uri="bolt://localhost:7687",
+        user="neo4j",
+        password="password",
+        database="neo4j",
+        browser_url="http://localhost:7474/browser/",
+    )
+
+    class _ListSession:
+        def __init__(self):
+            self.params = {}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def run(self, query, **params):
+            assert query == neo_module._LIST_ONTOLOGY_RESOURCES
+            self.params = params
+            return [
+                {
+                    "iri": "http://example.org/legal#Contract",
+                    "label": "Contract",
+                    "namespace": "http://example.org/legal#",
+                    "kind": "uri",
+                },
+                {
+                    "iri": "",
+                    "label": "invalid",
+                    "namespace": "",
+                    "kind": "uri",
+                },
+            ]
+
+    class _ListDriver:
+        def __init__(self):
+            self.session_obj = _ListSession()
+
+        def session(self, database=None):
+            assert database == "neo4j"
+            return self.session_obj
+
+    driver = _ListDriver()
+    monkeypatch.setattr(graph, "_get_driver", lambda: driver)
+
+    resources = graph.list_resources(search="contract", limit=25)
+
+    assert resources == [
+        {
+            "iri": "http://example.org/legal#Contract",
+            "label": "Contract",
+            "namespace": "http://example.org/legal#",
+            "kind": "uri",
+        }
+    ]
+    assert driver.session_obj.params["search"] == "contract"
+    assert driver.session_obj.params["limit"] == 25
+
+
+def test_get_resource_returns_relations_and_literals(monkeypatch):
+    graph = neo_module.Neo4jOntologyGraph(
+        uri="bolt://localhost:7687",
+        user="neo4j",
+        password="password",
+        database="neo4j",
+        browser_url="http://localhost:7474/browser/",
+    )
+
+    class _ResourceResult:
+        @staticmethod
+        def single():
+            return {
+                "iri": "http://example.org/legal#Contract",
+                "label": "Contract",
+                "namespace": "http://example.org/legal#",
+                "kind": "uri",
+                "relations": [
+                    {
+                        "predicate": "relatedTo",
+                        "object_label": "Offer",
+                        "object_iri": "http://example.org/legal#Offer",
+                    },
+                    {"predicate": "invalid", "object_iri": ""},
+                ],
+                "literals": [
+                    {"predicate": "label", "value": "Contract", "datatype": "", "lang": "en"},
+                    {"predicate": "empty", "value": ""},
+                ],
+            }
+
+    class _ResourceSession:
+        def __init__(self):
+            self.params = {}
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def run(self, query, **params):
+            assert query == neo_module._GET_ONTOLOGY_RESOURCE
+            self.params = params
+            return _ResourceResult()
+
+    class _ResourceDriver:
+        def __init__(self):
+            self.session_obj = _ResourceSession()
+
+        def session(self, database=None):
+            assert database == "neo4j"
+            return self.session_obj
+
+    driver = _ResourceDriver()
+    monkeypatch.setattr(graph, "_get_driver", lambda: driver)
+
+    resource = graph.get_resource("http://example.org/legal#Contract", neighbor_limit=10, literal_limit=11)
+
+    assert resource == {
+        "iri": "http://example.org/legal#Contract",
+        "label": "Contract",
+        "namespace": "http://example.org/legal#",
+        "kind": "uri",
+        "relations": [
+            {
+                "predicate": "relatedTo",
+                "object_label": "Offer",
+                "object_iri": "http://example.org/legal#Offer",
+            }
+        ],
+        "literals": [{"predicate": "label", "value": "Contract", "datatype": "", "lang": "en"}],
+    }
+    assert driver.session_obj.params["iri"] == "http://example.org/legal#Contract"
+    assert driver.session_obj.params["neighbor_limit"] == 10
+    assert driver.session_obj.params["literal_limit"] == 11
+
+
+def test_get_resource_validates_iri_and_handles_missing(monkeypatch):
+    graph = neo_module.Neo4jOntologyGraph(
+        uri="bolt://localhost:7687",
+        user="neo4j",
+        password="password",
+        database="neo4j",
+        browser_url="http://localhost:7474/browser/",
+    )
+
+    with pytest.raises(ValueError, match="Resource IRI is required"):
+        graph.get_resource("  ")
+
+    class _MissingResult:
+        @staticmethod
+        def single():
+            return None
+
+    class _MissingSession:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def run(self, query, **params):
+            assert query == neo_module._GET_ONTOLOGY_RESOURCE
+            return _MissingResult()
+
+    class _MissingDriver:
+        @staticmethod
+        def session(database=None):
+            assert database == "neo4j"
+            return _MissingSession()
+
+    monkeypatch.setattr(graph, "_get_driver", lambda: _MissingDriver())
+
+    assert graph.get_resource("http://example.org/legal#Missing") is None

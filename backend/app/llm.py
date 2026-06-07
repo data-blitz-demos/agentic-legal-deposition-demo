@@ -244,7 +244,11 @@ def _probe_structured_output(settings: Settings, provider: str, model: str) -> N
 
     def _invoke():
         llm = build_chat_model(settings, provider, model, temperature=0)
-        parser = llm.with_structured_output(_StructuredProbe)
+        if provider == "ollama":
+            # Avoid Ollama json_schema grammar crashes on some schemas.
+            parser = llm.with_structured_output(_StructuredProbe, method="json_mode")
+        else:
+            parser = llm.with_structured_output(_StructuredProbe)
         return parser.invoke(
             [
                 SystemMessage(content="Return strict JSON with key 'ready' and value 'ok'."),
