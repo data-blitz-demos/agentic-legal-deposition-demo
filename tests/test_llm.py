@@ -361,6 +361,23 @@ def test_probe_structured_output_empty_ready_raises(monkeypatch):
         llm_module._probe_structured_output(make_settings(), "openai", "gpt-5.2")
 
 
+def test_probe_structured_output_ollama_uses_json_mode(monkeypatch):
+    captured = {}
+
+    class StubParser:
+        def invoke(self, _messages):
+            return SimpleNamespace(ready="ok")
+
+    class StubLLM:
+        def with_structured_output(self, _schema, method=None):
+            captured["method"] = method
+            return StubParser()
+
+    monkeypatch.setattr(llm_module, "build_chat_model", lambda *_args, **_kwargs: StubLLM())
+
+    llm_module._probe_structured_output(make_settings(), "ollama", "llama3.3")
+
+    assert captured["method"] == "json_mode"
 def test_probe_structured_output_timeout(monkeypatch):
     class StubFuture:
         def result(self, timeout):  # noqa: ARG002 - stub signature mirrors Future

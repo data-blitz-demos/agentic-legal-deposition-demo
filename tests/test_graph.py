@@ -29,6 +29,8 @@ def make_workflow(max_context_depositions: int = 2) -> DepositionWorkflow:
     )
     workflow.couchdb = Mock()
     workflow.llm = Mock()
+    workflow.default_llm_provider = "openai"
+    workflow.default_llm_model = "gpt-5.2"
     workflow.graph = Mock()
     return workflow
 
@@ -54,14 +56,23 @@ def test_init_sets_llm_and_graph(monkeypatch):
     llm_obj = object()
     graph_obj = object()
 
-    monkeypatch.setattr(graph_module, "ChatOpenAI", lambda **kwargs: llm_obj)
+    monkeypatch.setattr(graph_module, "build_chat_model", lambda *_args, **_kwargs: llm_obj)
     monkeypatch.setattr(DepositionWorkflow, "_build_graph", lambda self: graph_obj)
 
-    settings = SimpleNamespace(model_name="gpt-test", openai_api_key="key")
+    settings = SimpleNamespace(
+        default_llm_provider="openai",
+        model_name="gpt-test",
+        openai_models="gpt-test",
+        openai_api_key="key",
+        ollama_default_model="llama3.3",
+        ollama_models="llama3.3",
+    )
     couchdb = Mock()
     workflow = DepositionWorkflow(settings, couchdb)
 
     assert workflow.llm is llm_obj
+    assert workflow.default_llm_provider == "openai"
+    assert workflow.default_llm_model == "gpt-test"
     assert workflow.graph is graph_obj
     assert workflow.couchdb is couchdb
 
@@ -109,6 +120,7 @@ def test_run_invokes_compiled_graph():
             "schema_name": "deposition_schema",
             "selected_schema": None,
             "selected_schema_mode": "",
+            "trace_session_id": "case-1",
         }
     )
 
@@ -133,6 +145,7 @@ def test_run_invokes_compiled_graph_with_selected_llm():
             "schema_name": "deposition_schema",
             "selected_schema": None,
             "selected_schema_mode": "",
+            "trace_session_id": "case-1",
         }
     )
 
@@ -156,6 +169,7 @@ def test_run_invokes_compiled_graph_with_selected_schema():
             "schema_name": "deposition_schema_g1",
             "selected_schema": None,
             "selected_schema_mode": "",
+            "trace_session_id": "case-1",
         }
     )
 
@@ -228,6 +242,72 @@ def test_map_deposition_success_sets_case_and_file(monkeypatch):
     assert result["legal_clerk_trace"][0]["persona"] == "Persona:Legal Clerk"
 
 
+def test_map_deposition_uses_default_ollama_trace_metadata(monkeypatch):
+    workflow = make_workflow()
+    workflow.settings.default_llm_provider = "ollama"
+    workflow.settings.ollama_default_model = "llama3.3"
+    workflow.default_llm_provider = "ollama"
+    workflow.default_llm_model = "llama3.3"
+    parser = Mock()
+    parser.invoke.return_value = DepositionSchema(
+        case_id="x",
+        file_name="x",
+        witness_name="Jane",
+        witness_role="Manager",
+        deposition_date="2025-01-01",
+        summary="Summary",
+        claims=[Claim(topic="Timeline", statement="Statement", confidence=0.9, source_quote="Statement")],
+    )
+    workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
+
+    result = workflow._map_deposition(
+        {"case_id": "case-1", "file_path": "/tmp/witness.txt", "raw_text": "raw"}
+    )
+
+    assert result["legal_clerk_trace"][0]["llm_provider"] == "ollama"
+    assert result["legal_clerk_trace"][0]["llm_model"] == "llama3.3"
+
+
+def test_map_deposition_passes_invoke_config_and_model_dump_payload(monkeypatch):
+    workflow = make_workflow()
+    parser = Mock()
+
+    class ParsedPayload:
+        def model_dump(self):
+            return {
+                "case_id": "x",
+                "file_name": "x",
+                "witness_name": "Jane",
+                "witness_role": "Manager",
+                "deposition_date": "2025-01-01",
+                "summary": "Summary",
+                "claims": [],
+            }
+
+    parser.invoke.return_value = ParsedPayload()
+    workflow.llm.with_structured_output.return_value = parser
+    monkeypatch.setattr(graph_module, "load_schema", lambda _name: {"title": "DepositionSchema", "type": "object"})
+    monkeypatch.setattr(workflow, "_langchain_config", lambda **_kwargs: {"callbacks": ["cb"]})
+
+    result = workflow._map_deposition(
+        {"case_id": "case-1", "file_path": "/tmp/witness.txt", "raw_text": "raw"}
+    )
+
+    assert result["deposition"].witness_name == "Jane"
+    assert parser.invoke.call_args.kwargs["config"] == {"callbacks": ["cb"]}
+
+
+def test_coerce_schema_payload_returns_none_for_non_dict_model_dump():
+    workflow = make_workflow()
+
+    class ParsedPayload:
+        def model_dump(self):
+            return "not-a-dict"
+
+    assert workflow._coerce_schema_payload(ParsedPayload()) is None
+
+
 def test_map_deposition_uses_prompt_templates(monkeypatch):
     workflow = make_workflow()
     parser = Mock()
@@ -258,6 +338,24 @@ def test_map_deposition_uses_prompt_templates(monkeypatch):
     messages = parser.invoke.call_args.args[0]
     assert str(messages[0].content) == "PROMPT::map_deposition_system"
     assert str(messages[1].content) == "PROMPT::map_deposition_user"
+
+
+def test_assess_deposition_passes_invoke_config(monkeypatch):
+    workflow = make_workflow()
+    llm = Mock()
+    assessor = Mock()
+    assessor.invoke.return_value = sample_assessment(60)
+    llm.with_structured_output.return_value = assessor
+    monkeypatch.setattr(workflow, "_get_llm", lambda *_args, **_kwargs: (llm, "openai", "gpt-5.2"))
+    monkeypatch.setattr(workflow, "_langchain_config", lambda **_kwargs: {"callbacks": ["cb"]})
+
+    result = workflow._assess_deposition_against_peers(
+        {"_id": "dep:1", "case_id": "c", "file_name": "f.txt", "witness_name": "Jane", "witness_role": "Manager", "summary": "S", "claims": []},
+        [{"_id": "dep:2", "witness_name": "Peer", "witness_role": "Witness", "summary": "P", "claims": []}],
+    )
+
+    assert result.contradiction_score == 60
+    assert assessor.invoke.call_args.kwargs["config"] == {"callbacks": ["cb"]}
 
 
 def test_map_deposition_raises_with_fix_on_exception(monkeypatch):

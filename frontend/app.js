@@ -105,7 +105,9 @@ const els = {
   langfuseCredentials: document.getElementById('langfuseCredentials'),
   langfuseCoverageList: document.getElementById('langfuseCoverageList'),
   metricsGrid: document.getElementById('metricsGrid'),
+  inputContextGrid: document.getElementById('inputContextGrid'),
   correctnessGrid: document.getElementById('correctnessGrid'),
+  mcpToolGrid: document.getElementById('mcpToolGrid'),
   toolathlonGrid: document.getElementById('toolathlonGrid'),
   toolathlonReplayStatus: document.getElementById('toolathlonReplayStatus'),
   toolathlonReplayPlayBtn: document.getElementById('toolathlonReplayPlayBtn'),
@@ -1126,6 +1128,18 @@ function renderCorrectnessDriftObservables(payload = null) {
   renderMetricCards(els.correctnessGrid, metrics, 'correctness');
 }
 
+function renderInputContextMetrics(payload = null) {
+  /** Render input-context and prompt-budget observables from backend payload. */
+  const metrics = Array.isArray(payload?.input_context_metrics) ? payload.input_context_metrics : [];
+  renderMetricCards(els.inputContextGrid, metrics, 'input-context');
+}
+
+function renderMcpToolMetrics(payload = null) {
+  /** Render MCP-tool proxy observables returned from the backend. */
+  const metrics = Array.isArray(payload?.mcp_tool_metrics) ? payload.mcp_tool_metrics : [];
+  renderMetricCards(els.mcpToolGrid, metrics, 'mcp-tool');
+}
+
 function renderToolathlonMetrics(payload = null) {
   /** Render Toolathlon-compatible observables returned from the backend. */
   const metrics = Array.isArray(payload?.toolathlon_metrics) ? payload.toolathlon_metrics : [];
@@ -1155,7 +1169,9 @@ function renderAgentMetrics(payload, { cached = false } = {}) {
   els.metricsStorageMeta.textContent = `${thoughtStorageText} | ${ragStorageText}`;
 
   renderMetricCards(els.metricsGrid, metrics, 'runtime');
+  renderInputContextMetrics(payload);
   renderCorrectnessDriftObservables(payload);
+  renderMcpToolMetrics(payload);
   renderToolathlonMetrics(payload);
 }
 

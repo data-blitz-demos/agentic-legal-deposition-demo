@@ -13,13 +13,12 @@ from time import perf_counter
 from typing import TypedDict
 
 from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
 from langgraph.graph import END, StateGraph
 
 from .config import Settings
 from .couchdb import CouchDBClient
 from .langfuse_integration import build_langchain_config
-from .llm import build_chat_model, llm_failure_message
+from .llm import build_chat_model, llm_failure_message, resolve_llm_selection
 from .models import Claim, ContradictionAssessment, ContradictionFinding, DepositionSchema
 from .prompts import render_prompt
 from .schemas import load_schema, schema_mode
@@ -55,9 +54,15 @@ class DepositionWorkflow:
 
         self.settings = settings
         self.couchdb = couchdb
-        self.llm = ChatOpenAI(
-            model=settings.model_name,
-            api_key=settings.openai_api_key,
+        self.default_llm_provider, self.default_llm_model = resolve_llm_selection(
+            settings,
+            None,
+            None,
+        )
+        self.llm = build_chat_model(
+            settings,
+            self.default_llm_provider,
+            self.default_llm_model,
             temperature=0,
         )
         self.graph = self._build_graph()
@@ -180,24 +185,28 @@ class DepositionWorkflow:
         ingest_schema_payload: dict | None = None
 
         try:
-            llm = self._get_llm(state.get("llm_provider"), state.get("llm_model"), temperature=0)
+            llm, effective_provider, effective_model = self._get_llm(
+                state.get("llm_provider"),
+                state.get("llm_model"),
+                temperature=0,
+            )
             parser_llm = self._with_structured_output(
                 llm,
                 selected_schema,
-                llm_provider=state.get("llm_provider"),
+                llm_provider=effective_provider,
             )
             messages = [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
             invoke_config = self._langchain_config(
                 operation="map_deposition",
                 session_id=state.get("trace_session_id") or state.get("case_id"),
-                llm_provider=state.get("llm_provider"),
-                llm_model=state.get("llm_model"),
+                llm_provider=effective_provider,
+                llm_model=effective_model,
                 metadata={
                     "case_id": str(state.get("case_id") or ""),
                     "file_name": file_name,
                     "schema_name": selected_schema_name,
                 },
-                tags=("attorneyos", "ingest", "map-deposition"),
+                tags=("attorneyos", "ingest", "map-deposition", effective_provider),
             )
             if invoke_config:
                 parsed = parser_llm.invoke(messages, config=invoke_config)
@@ -240,8 +249,8 @@ class DepositionWorkflow:
                     "persona": "Persona:Legal Clerk",
                     "phase": "map_deposition",
                     "file_name": file_name,
-                    "llm_provider": self._normalize_provider(state.get("llm_provider")),
-                    "llm_model": self._trace_model_name(state.get("llm_model")),
+                    "llm_provider": effective_provider,
+                    "llm_model": effective_model,
                     "schema_name": selected_schema_name,
                     "input_preview": self._preview_text(state["raw_text"], 1200),
                     "system_prompt": self._preview_text(system_prompt, 2500),
@@ -282,8 +291,8 @@ class DepositionWorkflow:
                 "persona": "Persona:Legal Clerk",
                 "phase": "map_deposition",
                 "file_name": file_name,
-                "llm_provider": self._normalize_provider(state.get("llm_provider")),
-                "llm_model": self._trace_model_name(state.get("llm_model")),
+                "llm_provider": effective_provider,
+                "llm_model": effective_model,
                 "schema_name": selected_schema_name,
                 "input_preview": self._preview_text(state["raw_text"], 1200),
                 "system_prompt": self._preview_text(system_prompt, 2500),
@@ -553,25 +562,29 @@ class DepositionWorkflow:
 
         result_source = "llm"
         try:
-            llm = self._get_llm(llm_provider, llm_model, temperature=0)
+            llm, effective_provider, effective_model = self._get_llm(
+                llm_provider,
+                llm_model,
+                temperature=0,
+            )
             assessor_llm = self._with_structured_output(
                 llm,
                 ContradictionAssessment,
-                llm_provider=llm_provider,
+                llm_provider=effective_provider,
             )
             messages = [SystemMessage(content=system_prompt), HumanMessage(content=human_prompt)]
             invoke_config = self._langchain_config(
                 operation="assess_contradictions",
                 session_id=trace_session_id or str(target_doc.get("case_id") or ""),
-                llm_provider=llm_provider,
-                llm_model=llm_model,
+                llm_provider=effective_provider,
+                llm_model=effective_model,
                 metadata={
                     "case_id": str(target_doc.get("case_id") or ""),
                     "deposition_id": str(target_doc.get("_id") or ""),
                     "file_name": str(target_doc.get("file_name") or ""),
                     "peer_count": len(other_depositions),
                 },
-                tags=("attorneyos", "ingest", "assess-contradictions"),
+                tags=("attorneyos", "ingest", "assess-contradictions", effective_provider),
             )
             if invoke_config:
                 assessment = assessor_llm.invoke(messages, config=invoke_config)
@@ -581,8 +594,8 @@ class DepositionWorkflow:
                 self._append_assessment_trace(
                     trace_events,
                     target_doc=target_doc,
-                    llm_provider=llm_provider,
-                    llm_model=llm_model,
+                    llm_provider=effective_provider,
+                    llm_model=effective_model,
                     system_prompt=system_prompt,
                     user_prompt=human_prompt,
                     assessment=assessment,
@@ -598,8 +611,8 @@ class DepositionWorkflow:
                 self._append_assessment_trace(
                     trace_events,
                     target_doc=target_doc,
-                    llm_provider=llm_provider,
-                    llm_model=llm_model,
+                    llm_provider=effective_provider,
+                    llm_model=effective_model,
                     system_prompt=system_prompt,
                     user_prompt=human_prompt,
                     assessment=fallback,
@@ -610,8 +623,8 @@ class DepositionWorkflow:
             self._append_assessment_trace(
                 trace_events,
                 target_doc=target_doc,
-                llm_provider=llm_provider,
-                llm_model=llm_model,
+                llm_provider=effective_provider,
+                llm_model=effective_model,
                 system_prompt=system_prompt,
                 user_prompt=human_prompt,
                 assessment=assessment,
@@ -625,8 +638,8 @@ class DepositionWorkflow:
                 self._append_assessment_trace(
                     trace_events,
                     target_doc=target_doc,
-                    llm_provider=llm_provider,
-                    llm_model=llm_model,
+                    llm_provider=effective_provider,
+                    llm_model=effective_model,
                     system_prompt=system_prompt,
                     user_prompt=human_prompt,
                     assessment=fallback,
@@ -708,13 +721,12 @@ class DepositionWorkflow:
     def _trace_model_name(self, requested_model: str | None) -> str:
         """Resolve effective model name for trace metadata."""
 
-        return (requested_model or self.settings.model_name or "").strip()
+        return resolve_llm_selection(self.settings, None, requested_model)[1]
 
     def _normalize_provider(self, provider: str | None):
         """Normalize provider string for trace payload typing."""
 
-        normalized = (provider or self.settings.default_llm_provider or "openai").strip().lower()
-        return normalized if normalized in {"openai", "ollama"} else "openai"
+        return resolve_llm_selection(self.settings, provider, None)[0]
 
     def _preview_text(self, value: str, limit: int) -> str:
         """Trim large text blocks for UI trace display."""
@@ -733,15 +745,20 @@ class DepositionWorkflow:
         return llm.with_structured_output(schema)
 
     def _get_llm(self, llm_provider: str | None, llm_model: str | None, *, temperature: float):
-        """Return default workflow model or provider/model override."""
+        """Return the effective workflow model together with its resolved provider/model."""
 
-        if not llm_provider and not llm_model:
-            return self.llm
-        return build_chat_model(
-            self.settings,
-            llm_provider,
-            llm_model,
-            temperature=temperature,
+        provider, model = resolve_llm_selection(self.settings, llm_provider, llm_model)
+        if provider == self.default_llm_provider and model == self.default_llm_model:
+            return self.llm, provider, model
+        return (
+            build_chat_model(
+                self.settings,
+                provider,
+                model,
+                temperature=temperature,
+            ),
+            provider,
+            model,
         )
 
     def _langchain_config(
@@ -756,9 +773,10 @@ class DepositionWorkflow:
     ) -> dict:
         """Build one LangChain config payload enriched for Langfuse tracing."""
 
+        provider, model = resolve_llm_selection(self.settings, llm_provider, llm_model)
         payload = {
-            "llm_provider": self._normalize_provider(llm_provider),
-            "llm_model": self._trace_model_name(llm_model),
+            "llm_provider": provider,
+            "llm_model": model,
         }
         if isinstance(metadata, dict):
             payload.update(metadata)

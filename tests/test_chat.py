@@ -26,23 +26,29 @@ def build_service_with_mock_llm() -> AttorneyChatService:
         ollama_models="llama3.3",
         openai_models="gpt-5.2",
     )
+    service.default_llm_provider = "openai"
+    service.default_llm_model = "gpt-5.2"
     return service
 
 
 def test_init_configures_chat_openai(monkeypatch):
-    captured: dict = {}
-
-    class StubChatOpenAI:
-        def __init__(self, **kwargs):
-            captured.update(kwargs)
-
-    monkeypatch.setattr(chat_module, "ChatOpenAI", StubChatOpenAI)
-    settings = SimpleNamespace(model_name="gpt-test", openai_api_key="key")
+    build = Mock(return_value="llm")
+    monkeypatch.setattr(chat_module, "build_chat_model", build)
+    settings = SimpleNamespace(
+        default_llm_provider="openai",
+        model_name="gpt-test",
+        openai_models="gpt-test",
+        openai_api_key="key",
+        ollama_default_model="llama3.3",
+        ollama_models="llama3.3",
+    )
 
     service = AttorneyChatService(settings)
 
-    assert isinstance(service.llm, StubChatOpenAI)
-    assert captured == {"model": "gpt-test", "api_key": "key", "temperature": 0.2}
+    assert service.llm == "llm"
+    assert service.default_llm_provider == "openai"
+    assert service.default_llm_model == "gpt-test"
+    build.assert_called_once_with(settings, "openai", "gpt-test", temperature=0.2)
 
 
 def test_build_context_payload_includes_target_and_peers():
@@ -91,6 +97,21 @@ def test_respond_with_trace_returns_attorney_event():
     assert trace[0]["persona"] == "Persona:Attorney"
     assert trace[0]["phase"] == "chat_response"
     assert "System Prompt" not in trace[0]["notes"]
+
+
+def test_respond_with_trace_passes_invoke_config_when_langfuse_enabled(monkeypatch):
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(content="Short answer: ok\nDetails:\n- a\n- b")
+    monkeypatch.setattr(service, "_langchain_config", lambda **_kwargs: {"callbacks": ["cb"]})
+
+    service.respond_with_trace(
+        deposition={"_id": "dep:1", "file_name": "witness.txt", "witness_name": "Jane", "contradictions": []},
+        peers=[],
+        user_message="Summarize",
+        history=[],
+    )
+
+    assert service.llm.invoke.call_args.kwargs["config"] == {"callbacks": ["cb"]}
 
 
 def test_respond_normalizes_json_chat_output_to_descriptive_text():
@@ -208,7 +229,13 @@ def test_respond_raises_with_fix_on_llm_error():
 
 def test_respond_uses_selected_llm_override(monkeypatch):
     service = build_service_with_mock_llm()
-    service.settings = SimpleNamespace()
+    service.settings = SimpleNamespace(
+        default_llm_provider="openai",
+        model_name="gpt-5.2",
+        openai_models="gpt-5.2",
+        ollama_default_model="llama3.3",
+        ollama_models="llama3.3",
+    )
     selected_llm = Mock()
     selected_llm.invoke.return_value = SimpleNamespace(content="Short answer: override\nDetails:\n- a\n- b")
     build = Mock(return_value=selected_llm)
@@ -226,6 +253,64 @@ def test_respond_uses_selected_llm_override(monkeypatch):
     assert result.startswith("Short answer:")
     build.assert_called_once()
     selected_llm.invoke.assert_called_once()
+
+
+def test_respond_with_trace_uses_default_ollama_metadata_when_no_override():
+    service = build_service_with_mock_llm()
+    service.settings.default_llm_provider = "ollama"
+    service.settings.ollama_default_model = "llama3.3"
+    service.default_llm_provider = "ollama"
+    service.default_llm_model = "llama3.3"
+    service.llm.invoke.return_value = SimpleNamespace(content="Short answer: ok\nDetails:\n- a\n- b")
+
+    response, trace = service.respond_with_trace(
+        deposition={"_id": "dep:1", "file_name": "witness.txt", "witness_name": "Jane", "contradictions": []},
+        peers=[],
+        user_message="Summarize",
+        history=[],
+    )
+
+    assert response.startswith("Short answer:")
+    assert trace[0]["llm_provider"] == "ollama"
+    assert trace[0]["llm_model"] == "llama3.3"
+
+
+def test_summarize_focused_reasoning_passes_invoke_config_when_present(monkeypatch):
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(
+        content="Short answer: Summary.\nKey points:\n- A\n- B\nRecommended action:\n- C"
+    )
+    monkeypatch.setattr(service, "_langchain_config", lambda **_kwargs: {"callbacks": ["cb"]})
+
+    result = service.summarize_focused_reasoning("Full analysis text", case_id="case-1", deposition_id="dep:1")
+
+    assert result.startswith("Short answer:")
+    assert service.llm.invoke.call_args.kwargs["config"] == {"callbacks": ["cb"]}
+
+
+def test_reason_about_contradiction_passes_invoke_config_when_present(monkeypatch):
+    service = build_service_with_mock_llm()
+    service.llm.invoke.return_value = SimpleNamespace(content="Short answer: Strong.\nDetails:\n- A\n- B")
+    monkeypatch.setattr(service, "_langchain_config", lambda **_kwargs: {"callbacks": ["cb"]})
+
+    result = service.reason_about_contradiction(
+        deposition={"_id": "dep:1", "case_id": "case-1", "witness_name": "Jane", "contradictions": []},
+        peers=[],
+        contradiction={"topic": "Timeline", "summary": "Mismatch"},
+    )
+
+    assert result.startswith("Short answer:")
+    assert service.llm.invoke.call_args.kwargs["config"] == {"callbacks": ["cb"]}
+
+
+def test_trace_model_name_and_normalize_provider_use_resolved_defaults():
+    service = build_service_with_mock_llm()
+    service.settings.default_llm_provider = "ollama"
+    service.settings.ollama_default_model = "llama3.3"
+
+    assert service._trace_model_name(None) == "llama3.3"
+    assert service._trace_model_name("qwen2.5") == "qwen2.5"
+    assert service._normalize_provider(None) == "ollama"
 
 
 def test_respond_uses_prompt_templates(monkeypatch):

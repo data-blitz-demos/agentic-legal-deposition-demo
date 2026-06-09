@@ -503,12 +503,16 @@ def test_agent_runtime_metrics_models():
         rag_sampled_queries=6,
         rag_paired_comparisons=2,
         metrics=[metric],
+        input_context_metrics=[metric],
         correctness_metrics=[metric],
+        mcp_tool_metrics=[metric],
         toolathlon_metrics=[metric],
     )
     assert payload.lookback_hours == 24
     assert payload.metrics[0].status == "good"
+    assert payload.input_context_metrics[0].key == "task_success_rate_pct"
     assert payload.correctness_metrics[0].key == "task_success_rate_pct"
+    assert payload.mcp_tool_metrics[0].label == "Task Success Rate"
     assert payload.toolathlon_metrics[0].label == "Task Success Rate"
     assert payload.rag_sampled_queries == 6
     assert payload.rag_paired_comparisons == 2

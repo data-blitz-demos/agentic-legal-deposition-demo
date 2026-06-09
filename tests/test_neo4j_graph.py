@@ -605,6 +605,52 @@ def test_retrieve_context_falls_back_to_keyword_when_vector_query_fails(monkeypa
     assert payload["vector_error"] == "missing vector index"
 
 
+def test_retrieve_context_ignores_invalid_vector_score(monkeypatch):
+    graph = neo_module.Neo4jOntologyGraph(
+        uri="bolt://localhost:7687",
+        user="neo4j",
+        password="password",
+        database="neo4j",
+        browser_url="http://localhost:7474/browser/",
+    )
+
+    class _VectorSession:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+        def run(self, query, **params):
+            assert query == neo_module._GRAPH_RAG_VECTOR_RETRIEVAL
+            return [
+                {
+                    "iri": "http://example.org/Contract",
+                    "label": "Contract",
+                    "score": "not-a-number",
+                    "relations": [],
+                    "literals": [],
+                }
+            ]
+
+    class _VectorDriver:
+        def session(self, database=None):
+            assert database == "neo4j"
+            return _VectorSession()
+
+    monkeypatch.setattr(graph, "_get_driver", lambda: _VectorDriver())
+
+    payload = graph.retrieve_context(
+        "contract breach",
+        node_limit=4,
+        embedding_config={"enabled": True, "index_name": "resource_embeddings"},
+        query_embedding=[0.1, 0.2, 0.3],
+    )
+
+    assert payload["resources"][0]["label"] == "Contract"
+    assert "score" not in payload["resources"][0]
+
+
 def test_list_resources_returns_filtered_resource_rows(monkeypatch):
     graph = neo_module.Neo4jOntologyGraph(
         uri="bolt://localhost:7687",

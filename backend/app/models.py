@@ -615,7 +615,9 @@ class AgentRuntimeMetricsResponse(BaseModel):
     rag_sampled_queries: int = Field(ge=0, default=0)
     rag_paired_comparisons: int = Field(ge=0, default=0)
     metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
+    input_context_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
     correctness_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
+    mcp_tool_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
     toolathlon_metrics: list[AgentRuntimeMetric] = Field(default_factory=list)
 
 

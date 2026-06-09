@@ -50,6 +50,8 @@ from .langfuse_integration import (
     langfuse_enabled,
     langfuse_sdk_installed,
     observe_operation,
+    score_observable_dashboard,
+    score_user_prompt_and_response,
     shutdown_langfuse,
 )
 from .llm import (
@@ -2925,6 +2927,140 @@ def _compute_toolathlon_metrics(sampled_sessions: list[dict]) -> list[AgentRunti
     ]
 
 
+def _compute_mcp_tool_metrics(
+    sampled_sessions: list[dict],
+    rag_events: list[dict],
+) -> list[AgentRuntimeMetric]:
+    """Compute MCP-oriented proxy observables from current runtime traces.
+
+    The app does not yet emit native per-tool MCP call telemetry in its thought
+    streams. These metrics are therefore explicit proxies over the same backend
+    surfaces the MCP servers expose today: thought-stream storage, deposition
+    document access, and ontology retrieval.
+    """
+
+    session_count = 0
+    thought_stream_visible_sessions = 0
+    deposition_proxy_sessions = 0
+    graph_proxy_sessions = 0
+    finished_proxy_sessions = 0
+    finished_sessions = 0
+
+    for session in sampled_sessions:
+        if not isinstance(session, dict):
+            continue
+        session_count += 1
+        status = _normalize_trace_status(str(session.get("status") or "running"))
+        if status in {"completed", "failed"}:
+            finished_sessions += 1
+
+        events = _flatten_trace_events(session.get("trace"))
+        if events:
+            thought_stream_visible_sessions += 1
+
+        phases = {
+            str(item.get("phase") or "").strip().lower()
+            for item in events
+            if isinstance(item, dict)
+        }
+        has_deposition_proxy = any(
+            phase.startswith("ingest_")
+            or phase in {"map_deposition", "assess_contradictions", "chat_response"}
+            for phase in phases
+        )
+        has_graph_proxy = any(phase.startswith("graph_rag_") for phase in phases)
+        if has_deposition_proxy:
+            deposition_proxy_sessions += 1
+        if has_graph_proxy:
+            graph_proxy_sessions += 1
+        if status in {"completed", "failed"} and (has_deposition_proxy or has_graph_proxy or bool(events)):
+            finished_proxy_sessions += 1
+
+    rag_completed = [
+        item
+        for item in rag_events
+        if isinstance(item, dict) and str(item.get("status") or "").strip().lower() == "completed"
+    ]
+    rag_on_completed = [item for item in rag_completed if bool(item.get("use_rag"))]
+    graph_query_samples = len(rag_completed)
+    graph_context_hits = sum(1 for item in rag_on_completed if int(item.get("context_rows") or 0) > 0)
+    graph_context_hit_rate = (
+        graph_context_hits / len(rag_on_completed) * 100.0 if rag_on_completed else 0.0
+    )
+    proxy_coverage_rate = (
+        finished_proxy_sessions / finished_sessions * 100.0 if finished_sessions else 0.0
+    )
+
+    return [
+        AgentRuntimeMetric(
+            key="mcp_thought_stream_visible_sessions",
+            label="MCP Thought Stream Visible Sessions",
+            value=float(thought_stream_visible_sessions),
+            display=str(thought_stream_visible_sessions),
+            status="info",
+            target="Track trend",
+            description="Sessions with observable thought-stream events that can be replayed or inspected through the thought-stream MCP surface.",
+            formula="count(sampled_sessions_with_any_trace_events)",
+            detail="This is the current live visibility base for the thought-stream MCP tool surface. If it drops, MCP-side inspection will have less usable session context.",
+            tracking="Computed from sampled runtime thought-stream sessions by counting sessions whose flattened event stream is non-empty.",
+        ),
+        AgentRuntimeMetric(
+            key="mcp_deposition_tool_proxy_sessions",
+            label="MCP Deposition Tool Proxy Sessions",
+            value=float(deposition_proxy_sessions),
+            display=str(deposition_proxy_sessions),
+            status="info",
+            target="Track trend",
+            description="Proxy count of sessions that touched deposition/document workflows served by the CouchDB deposition MCP surface.",
+            formula="count(sampled_sessions_with_ingest/chat/assessment_phases)",
+            detail="This is a workflow proxy, not a native MCP call log. It tracks sessions whose observable phases imply deposition retrieval, mapping, or contradiction analysis over the same backing data exposed by the deposition MCP server.",
+            tracking="Computed from sampled thought-stream sessions by detecting ingest, mapping, contradiction-assessment, or attorney chat response phases.",
+        ),
+        AgentRuntimeMetric(
+            key="mcp_neo4j_query_samples",
+            label="MCP Ontology Query Samples",
+            value=float(graph_query_samples),
+            display=str(graph_query_samples),
+            status="info",
+            target="Track trend",
+            description="Completed graph/ontology answer cycles observed in the Graph RAG stream, used as the live ontology-tool sample count.",
+            formula="count(completed_rag_answer_events)",
+            detail="This is the sample base for ontology-tool observables. It aligns with completed Graph RAG answer events over the lookback window.",
+            tracking="Computed from completed rag-stream answer events persisted in the ontology retrieval log.",
+        ),
+        AgentRuntimeMetric(
+            key="mcp_neo4j_context_hit_rate_pct",
+            label="MCP Ontology Context Hit Rate",
+            value=round(graph_context_hit_rate, 3) if rag_on_completed else None,
+            display=f"{graph_context_hit_rate:.1f}%" if rag_on_completed else "N/A",
+            unit="%",
+            status=_status_low_is_bad(graph_context_hit_rate, warn_below=70.0, bad_below=40.0)
+            if rag_on_completed
+            else "info",
+            target=">= 70%",
+            description="Share of ontology-backed queries that returned at least one retrieved context row while grounding was enabled.",
+            formula="rag_on_completed_with_context_rows / rag_on_completed",
+            detail="This is the ontology-tool quality proxy for whether retrieval actually returned usable grounding context before answer generation.",
+            tracking="Computed from completed rag-stream answer events where RAG is enabled and context_rows is greater than zero.",
+        ),
+        AgentRuntimeMetric(
+            key="mcp_tool_proxy_coverage_rate_pct",
+            label="MCP Tool Proxy Coverage",
+            value=round(proxy_coverage_rate, 3) if finished_sessions else None,
+            display=f"{proxy_coverage_rate:.1f}%" if finished_sessions else "N/A",
+            unit="%",
+            status=_status_low_is_bad(proxy_coverage_rate, warn_below=85.0, bad_below=65.0)
+            if finished_sessions
+            else "info",
+            target=">= 85%",
+            description="Share of finished sessions with observable activity on at least one MCP-adjacent surface: thought stream, deposition workflows, or ontology retrieval.",
+            formula="finished_sessions_with_any_mcp_proxy_signal / finished_sessions",
+            detail="Because the app does not yet persist native MCP tool call logs, this coverage metric makes that blind spot explicit while still showing how much of the runtime can be inspected through MCP-exposed surfaces.",
+            tracking="Computed from finished thought-stream sessions by checking for any visible trace activity, deposition workflow phases, or graph-rag phases.",
+        ),
+    ]
+
+
 def _sample_metric_sessions(
     sessions: list[dict],
     *,
@@ -3106,11 +3242,11 @@ def _build_agent_runtime_metrics_response(
             description="Throughput of completed + failed runs over lookback horizon.",
         ),
     ]
-    metrics.extend(_compute_llm_io_metrics(sampled))
-
+    input_context_metrics = _compute_llm_io_metrics(sampled)
     rag_metrics, rag_paired_comparisons = _compute_rag_influence_metrics(rag_events)
     metrics.extend(rag_metrics)
     correctness_metrics = _compute_correctness_drift_metrics(sampled, rag_events)
+    mcp_tool_metrics = _compute_mcp_tool_metrics(sampled, rag_events)
     toolathlon_metrics = _compute_toolathlon_metrics(sampled)
 
     return AgentRuntimeMetricsResponse(
@@ -3124,7 +3260,9 @@ def _build_agent_runtime_metrics_response(
         rag_sampled_queries=len(rag_events),
         rag_paired_comparisons=rag_paired_comparisons,
         metrics=metrics,
+        input_context_metrics=input_context_metrics,
         correctness_metrics=correctness_metrics,
+        mcp_tool_metrics=mcp_tool_metrics,
         toolathlon_metrics=toolathlon_metrics,
     )
 
@@ -3177,7 +3315,13 @@ def _find_any_metric(payload: AgentRuntimeMetricsResponse, metric_key: str) -> A
     """Return one observable from either runtime or correctness metric collections."""
 
     return _find_runtime_metric(payload.metrics, metric_key) or _find_runtime_metric(
+        payload.input_context_metrics,
+        metric_key,
+    ) or _find_runtime_metric(
         payload.correctness_metrics,
+        metric_key,
+    ) or _find_runtime_metric(
+        payload.mcp_tool_metrics,
         metric_key,
     ) or _find_runtime_metric(
         payload.toolathlon_metrics,
@@ -3240,7 +3384,7 @@ def _collect_recent_observable_snapshots(lookback_hours: int) -> list[dict]:
 def _find_metric_in_snapshot(snapshot: dict, metric_key: str) -> dict | None:
     """Return one stored metric dict from a persisted observable snapshot."""
 
-    for key in ("metrics", "correctness_metrics", "toolathlon_metrics"):
+    for key in ("metrics", "input_context_metrics", "correctness_metrics", "mcp_tool_metrics", "toolathlon_metrics"):
         raw_items = snapshot.get(key)
         if not isinstance(raw_items, list):
             continue
@@ -3250,6 +3394,73 @@ def _find_metric_in_snapshot(snapshot: dict, metric_key: str) -> dict | None:
             if str(item.get("key") or "").strip() == metric_key:
                 return item
     return None
+
+
+def _metric_history_sample_size(
+    *,
+    metric_key: str,
+    sampled_runs: int,
+    finished_runs: int,
+    running_runs: int,
+    rag_sampled_queries: int,
+    rag_paired_comparisons: int,
+    llm_calls_sampled: int,
+) -> int:
+    """Return the correct denominator/sample basis for one observable history series."""
+
+    if metric_key in {
+        "task_success_rate_pct",
+        "run_failure_rate_pct",
+        "p95_end_to_end_latency_sec",
+        "p95_time_to_first_event_sec",
+        "avg_steps_per_finished_run",
+        "loop_risk_rate_pct",
+        "finished_runs_per_hour",
+        "schema_adherence_rate",
+        "toolathlon_success_rate_pct",
+        "toolathlon_avg_turns_per_finished_run",
+        "toolathlon_avg_tool_like_ops_per_finished_run",
+        "toolathlon_long_horizon_completion_rate_pct",
+        "toolathlon_error_recovery_rate_pct",
+        "toolathlon_multi_persona_completion_rate_pct",
+    }:
+        return max(0, int(finished_runs))
+    if metric_key == "in_flight_runs":
+        return max(0, int(running_runs))
+    if metric_key in {
+        "llm_calls_sampled",
+        "avg_prompt_context_bytes_per_llm_call",
+        "avg_estimated_prompt_tokens_per_llm_call",
+        "avg_estimated_output_tokens_per_llm_call",
+    }:
+        return max(0, int(llm_calls_sampled))
+    if metric_key in {
+        "rag_toggle_comparison_pairs",
+        "rag_answer_change_rate_pct",
+        "rag_avg_answer_word_delta_on_minus_off",
+        "judge_human_disagreement",
+    }:
+        return max(0, int(rag_paired_comparisons))
+    if metric_key in {
+        "rag_context_hit_rate_pct",
+        "rag_avg_context_rows_on",
+        "rag_avg_context_bytes_on",
+        "rag_completed_queries_split",
+        "unsupported_claim_rate",
+        "repeat_prompt_inconsistency",
+        "mcp_neo4j_query_samples",
+        "mcp_neo4j_context_hit_rate_pct",
+    }:
+        return max(0, int(rag_sampled_queries))
+    if metric_key in {
+        "mcp_thought_stream_visible_sessions",
+        "mcp_deposition_tool_proxy_sessions",
+        "mcp_tool_proxy_coverage_rate_pct",
+    }:
+        return max(0, int(sampled_runs))
+    if metric_key == "model_mix_drift_jsd":
+        return max(0, int(sampled_runs) + int(rag_sampled_queries))
+    return max(0, int(sampled_runs))
 
 
 def _compute_agent_metric_history(
@@ -3294,16 +3505,27 @@ def _compute_agent_metric_history(
             latest_snapshot = bucket_snapshots[-1]
             snapshot_metric = _find_metric_in_snapshot(latest_snapshot, metric_key)
             if snapshot_metric is not None:
+                llm_calls_sampled = 0
+                llm_calls_metric = _find_metric_in_snapshot(latest_snapshot, "llm_calls_sampled")
+                if isinstance(llm_calls_metric, dict):
+                    try:
+                        llm_calls_sampled = int(llm_calls_metric.get("value") or 0)
+                    except Exception:
+                        llm_calls_sampled = 0
                 points.append(
                     {
                         "at": latest_snapshot["_generated_dt"].isoformat(),
                         "value": _coerce_metric_history_value(snapshot_metric),
                         "display": str(snapshot_metric.get("display") or "N/A"),
                         "status": str(snapshot_metric.get("status") or "info"),
-                        "sample_size": (
-                            int(latest_snapshot.get("rag_sampled_queries") or 0)
-                            if metric_key.startswith("rag_")
-                            else int(latest_snapshot.get("sampled_runs") or 0)
+                        "sample_size": _metric_history_sample_size(
+                            metric_key=metric_key,
+                            sampled_runs=int(latest_snapshot.get("sampled_runs") or 0),
+                            finished_runs=int(latest_snapshot.get("finished_runs") or 0),
+                            running_runs=int(latest_snapshot.get("running_runs") or 0),
+                            rag_sampled_queries=int(latest_snapshot.get("rag_sampled_queries") or 0),
+                            rag_paired_comparisons=int(latest_snapshot.get("rag_paired_comparisons") or 0),
+                            llm_calls_sampled=llm_calls_sampled,
                         ),
                     }
                 )
@@ -3338,10 +3560,18 @@ def _compute_agent_metric_history(
                 "value": _coerce_metric_history_value(bucket_metric),
                 "display": bucket_metric.display,
                 "status": bucket_metric.status,
-                "sample_size": (
-                    bucket_payload.rag_sampled_queries
-                    if metric_key.startswith("rag_")
-                    else bucket_payload.sampled_runs
+                "sample_size": _metric_history_sample_size(
+                    metric_key=metric_key,
+                    sampled_runs=bucket_payload.sampled_runs,
+                    finished_runs=bucket_payload.finished_runs,
+                    running_runs=bucket_payload.running_runs,
+                    rag_sampled_queries=bucket_payload.rag_sampled_queries,
+                    rag_paired_comparisons=bucket_payload.rag_paired_comparisons,
+                    llm_calls_sampled=int(
+                        _find_runtime_metric(bucket_payload.metrics, "llm_calls_sampled").value or 0
+                    )
+                    if _find_runtime_metric(bucket_payload.metrics, "llm_calls_sampled") is not None
+                    else 0,
                 ),
             }
         )
@@ -4890,11 +5120,16 @@ def _langfuse_monitored_operations() -> list[str]:
 
     return [
         "HTTP request spans for API routes",
+        "Observables dashboard aggregate scores",
         "Ingest mapping and contradiction assessment generations",
         "Attorney chat generations",
+        "Attorney chat prompt/response rubric scores",
         "Focused contradiction reasoning generations",
+        "Focused contradiction reasoning prompt/response rubric scores",
         "Focused reasoning summary generations",
+        "Focused reasoning summary prompt/response rubric scores",
         "Graph RAG answer generations",
+        "Graph RAG prompt/response rubric scores",
     ]
 
 
@@ -5260,6 +5495,12 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
     answer = str(getattr(result, "content", "") or "").strip()
     if not answer:
         answer = "Short answer: No answer could be generated from current ontology context."
+    score_user_prompt_and_response(
+        settings,
+        operation="graph_rag_query",
+        prompt_text=question,
+        response_text=answer,
+    )
 
     sources = [
         GraphRagSource(iri=str(item.get("iri") or ""), label=str(item.get("label") or ""))
@@ -5411,6 +5652,27 @@ def get_agent_metrics(lookback_hours: int = 24) -> AgentRuntimeMetricsResponse:
         storage_connected=storage_connected,
         rag_events=rag_events,
         rag_storage_connected=rag_storage_connected,
+    )
+    score_observable_dashboard(
+        settings,
+        operation="agent_metrics",
+        metric_groups={
+            "runtime": payload.metrics,
+            "input_context": payload.input_context_metrics,
+            "correctness": payload.correctness_metrics,
+            "mcp_tool": payload.mcp_tool_metrics,
+            "toolathlon": payload.toolathlon_metrics,
+        },
+        summary={
+            "lookback_hours": payload.lookback_hours,
+            "sampled_runs": payload.sampled_runs,
+            "running_runs": payload.running_runs,
+            "finished_runs": payload.finished_runs,
+            "storage_connected": payload.storage_connected,
+            "rag_storage_connected": payload.rag_storage_connected,
+            "rag_sampled_queries": payload.rag_sampled_queries,
+            "rag_paired_comparisons": payload.rag_paired_comparisons,
+        },
     )
     _persist_observable_snapshot(payload)
     return payload
@@ -6138,6 +6400,12 @@ def chat(request: ChatRequest) -> ChatResponse:
         trace_id,
         len(response),
     )
+    score_user_prompt_and_response(
+        settings,
+        operation="chat",
+        prompt_text=request.message,
+        response_text=response,
+    )
     record_llm_operation("chat", True, llm_provider)
     return ChatResponse(
         response=response,
@@ -6209,6 +6477,12 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
         request.deposition_id,
         len(response),
     )
+    score_user_prompt_and_response(
+        settings,
+        operation="reason_contradiction",
+        prompt_text=json.dumps(request.contradiction.model_dump(), indent=2),
+        response_text=response,
+    )
     record_llm_operation("reason_contradiction", True, llm_provider)
     return ContradictionReasonResponse(response=response)
 
@@ -6274,6 +6548,12 @@ def summarize_focused_reasoning(
         request.case_id,
         request.deposition_id,
         len(summary),
+    )
+    score_user_prompt_and_response(
+        settings,
+        operation="summarize_focused_reasoning",
+        prompt_text=request.reasoning_text,
+        response_text=summary,
     )
     record_llm_operation("summarize_focused_reasoning", True, llm_provider)
     return FocusedReasoningSummaryResponse(summary=summary)

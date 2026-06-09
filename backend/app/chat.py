@@ -11,11 +11,10 @@ import re
 from time import perf_counter
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-from langchain_openai import ChatOpenAI
 
 from .config import Settings
 from .langfuse_integration import build_langchain_config
-from .llm import build_chat_model, llm_failure_message
+from .llm import build_chat_model, llm_failure_message, resolve_llm_selection
 from .prompts import render_prompt
 
 
@@ -23,12 +22,18 @@ class AttorneyChatService:
     """Builds and executes attorney prompts over deposition context."""
 
     def __init__(self, settings: Settings) -> None:
-        """Initialize default OpenAI chat model and retain settings."""
+        """Initialize the configured default chat model and retain settings."""
 
         self.settings = settings
-        self.llm = ChatOpenAI(
-            model=settings.model_name,
-            api_key=settings.openai_api_key,
+        self.default_llm_provider, self.default_llm_model = resolve_llm_selection(
+            settings,
+            None,
+            None,
+        )
+        self.llm = build_chat_model(
+            settings,
+            self.default_llm_provider,
+            self.default_llm_model,
             temperature=0.2,
         )
 
@@ -90,13 +95,17 @@ class AttorneyChatService:
 
         messages.append(HumanMessage(content=user_message))
 
-        llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+        llm, effective_provider, effective_model = self._get_llm(
+            llm_provider,
+            llm_model,
+            temperature=0.2,
+        )
         start = perf_counter()
         invoke_config = self._langchain_config(
             operation="chat_response",
             session_id=trace_session_id or str(deposition.get("case_id") or ""),
-            llm_provider=llm_provider,
-            llm_model=llm_model,
+            llm_provider=effective_provider,
+            llm_model=effective_model,
             metadata={
                 "case_id": str(deposition.get("case_id") or ""),
                 "deposition_id": str(deposition.get("_id") or ""),
@@ -104,7 +113,7 @@ class AttorneyChatService:
                 "history_items": len(history),
                 "message_chars": len(user_message),
             },
-            tags=("attorneyos", "chat", self._normalize_provider(llm_provider)),
+            tags=("attorneyos", "chat", effective_provider),
         )
 
         try:
@@ -119,8 +128,8 @@ class AttorneyChatService:
                     "persona": "Persona:Attorney",
                     "phase": "chat_response",
                     "file_name": str(deposition.get("file_name") or ""),
-                    "llm_provider": self._normalize_provider(llm_provider),
-                    "llm_model": self._trace_model_name(llm_model),
+                    "llm_provider": effective_provider,
+                    "llm_model": effective_model,
                     "input_preview": self._preview_text(
                         json.dumps(
                             {
@@ -164,19 +173,23 @@ class AttorneyChatService:
             context_json=json.dumps(context_payload, indent=2),
         )
 
-        llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+        llm, effective_provider, effective_model = self._get_llm(
+            llm_provider,
+            llm_model,
+            temperature=0.2,
+        )
         invoke_config = self._langchain_config(
             operation="reason_contradiction",
             session_id=trace_session_id or str(deposition.get("case_id") or ""),
-            llm_provider=llm_provider,
-            llm_model=llm_model,
+            llm_provider=effective_provider,
+            llm_model=effective_model,
             metadata={
                 "case_id": str(deposition.get("case_id") or ""),
                 "deposition_id": str(deposition.get("_id") or ""),
                 "peer_count": len(peers),
                 "contradiction_summary": str(contradiction.get("summary") or "")[:200],
             },
-            tags=("attorneyos", "reason-contradiction", self._normalize_provider(llm_provider)),
+            tags=("attorneyos", "reason-contradiction", effective_provider),
         )
 
         try:
@@ -226,18 +239,22 @@ class AttorneyChatService:
             f"Focused analysis:\n{normalized_source}"
         )
 
-        llm = self._get_llm(llm_provider, llm_model, temperature=0.2)
+        llm, effective_provider, effective_model = self._get_llm(
+            llm_provider,
+            llm_model,
+            temperature=0.2,
+        )
         invoke_config = self._langchain_config(
             operation="summarize_focused_reasoning",
             session_id=trace_session_id or case_id,
-            llm_provider=llm_provider,
-            llm_model=llm_model,
+            llm_provider=effective_provider,
+            llm_model=effective_model,
             metadata={
                 "case_id": str(case_id or ""),
                 "deposition_id": str(deposition_id or ""),
                 "reasoning_chars": len(normalized_source),
             },
-            tags=("attorneyos", "focused-summary", self._normalize_provider(llm_provider)),
+            tags=("attorneyos", "focused-summary", effective_provider),
         )
 
         try:
@@ -255,16 +272,27 @@ class AttorneyChatService:
                 llm_failure_message(self.settings, llm_provider, llm_model, exc)
             ) from exc
 
-    def _get_llm(self, llm_provider: str | None, llm_model: str | None, *, temperature: float):
-        """Return default model or provider-specific override model."""
+    def _get_llm(
+        self,
+        llm_provider: str | None,
+        llm_model: str | None,
+        *,
+        temperature: float,
+    ):
+        """Return the effective model instance together with its resolved provider/model."""
 
-        if not llm_provider and not llm_model:
-            return self.llm
-        return build_chat_model(
-            self.settings,
-            llm_provider,
-            llm_model,
-            temperature=temperature,
+        provider, model = resolve_llm_selection(self.settings, llm_provider, llm_model)
+        if provider == self.default_llm_provider and model == self.default_llm_model:
+            return self.llm, provider, model
+        return (
+            build_chat_model(
+                self.settings,
+                provider,
+                model,
+                temperature=temperature,
+            ),
+            provider,
+            model,
         )
 
     def _langchain_config(
@@ -279,9 +307,10 @@ class AttorneyChatService:
     ) -> dict:
         """Build one LangChain config payload enriched for Langfuse tracing."""
 
+        provider, model = resolve_llm_selection(self.settings, llm_provider, llm_model)
         payload = {
-            "llm_provider": self._normalize_provider(llm_provider),
-            "llm_model": self._trace_model_name(llm_model),
+            "llm_provider": provider,
+            "llm_model": model,
         }
         if isinstance(metadata, dict):
             payload.update(metadata)
@@ -296,13 +325,12 @@ class AttorneyChatService:
     def _trace_model_name(self, requested_model: str | None) -> str:
         """Resolve effective model name for trace metadata."""
 
-        return (requested_model or self.settings.model_name or "").strip()
+        return resolve_llm_selection(self.settings, None, requested_model)[1]
 
     def _normalize_provider(self, provider: str | None):
         """Normalize provider string for trace payload typing."""
 
-        normalized = (provider or self.settings.default_llm_provider or "openai").strip().lower()
-        return normalized if normalized in {"openai", "ollama"} else "openai"
+        return resolve_llm_selection(self.settings, provider, None)[0]
 
     def _preview_text(self, value: str, limit: int) -> str:
         """Trim large text blocks for UI trace display."""

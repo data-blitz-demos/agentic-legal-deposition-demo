@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from unittest.mock import Mock
 
 import pytest
 
@@ -60,6 +61,25 @@ def test_schema_key_from_filename_normalizes_punctuation():
     assert schemas_module._schema_key_from_filename("deposition_schema-g1.json") == "deposition_schema_g1"
 
 
+def test_discover_schema_files_returns_default_when_schema_dir_missing(monkeypatch, tmp_path):
+    missing = tmp_path / "missing-schemas"
+    monkeypatch.setattr(schemas_module, "_schema_dir", lambda: missing)
+
+    assert schemas_module._discover_schema_files() == {"deposition_schema": "deposition_schema.json"}
+
+
+def test_discover_schema_files_adds_deposition_schema_fallback(monkeypatch, tmp_path):
+    schema_dir = tmp_path / "schemas"
+    schema_dir.mkdir()
+    (schema_dir / "court_case_schema.json").write_text('{"title":"Case","type":"object"}', encoding="utf-8")
+    monkeypatch.setattr(schemas_module, "_schema_dir", lambda: schema_dir)
+
+    discovered = schemas_module._discover_schema_files()
+
+    assert discovered["court_case_schema"] == "court_case_schema.json"
+    assert discovered["deposition_schema"] == "deposition_schema.json"
+
+
 def test_list_schema_options_returns_valid_known_schemas():
     schemas_module.load_schema.cache_clear()
 
@@ -94,6 +114,28 @@ def test_list_schema_options_skips_invalid_json(monkeypatch, tmp_path):
             "key": "good_schema",
             "file_name": "good_schema.json",
             "mode": "raw_capture",
+        }
+    ]
+
+
+def test_list_schema_options_returns_default_option_when_no_schema_loads(monkeypatch):
+    monkeypatch.setattr(
+        schemas_module,
+        "SCHEMA_FILES",
+        {
+            "bad_schema": "bad_schema.json",
+        },
+    )
+    schemas_module.load_schema.cache_clear()
+    monkeypatch.setattr(schemas_module, "load_schema", Mock(side_effect=FileNotFoundError("missing")))
+
+    options = schemas_module.list_schema_options()
+
+    assert options == [
+        {
+            "key": "deposition_schema",
+            "file_name": "deposition_schema.json",
+            "mode": "native",
         }
     ]
 

@@ -1294,10 +1294,11 @@ def test_lifespan_continues_when_startup_llm_check_fails(monkeypatch):
 
     asyncio.run(run_lifespan())
 
-    warning.assert_called_once()
-    assert warning.call_args.args[0] == "startup continuing without operational default LLM: %s"
-    assert isinstance(warning.call_args.args[1], RuntimeError)
-    assert str(warning.call_args.args[1]) == "startup failed"
+    assert warning.call_count >= 1
+    startup_warning = warning.call_args_list[-1]
+    assert startup_warning.args[0] == "startup continuing without operational default LLM: %s"
+    assert isinstance(startup_warning.args[1], RuntimeError)
+    assert str(startup_warning.args[1]) == "startup failed"
     couchdb.ensure_db.assert_called_once_with()
     couchdb.close.assert_called_once_with()
     memory_couchdb.ensure_db.assert_called_once_with()
@@ -1790,11 +1791,14 @@ def test_langfuse_access_info_uses_runtime_settings(monkeypatch):
     assert payload.url == "http://langfuse.internal:3001"
     assert payload.login_url == "http://langfuse.internal:3001/auth/sign-in"
     assert payload.base_url == "http://langfuse-web:3000"
+    assert "Observables dashboard aggregate scores" in payload.monitored_operations
     assert payload.project_name == "AttorneyOS Demo"
     assert payload.public_key == "pk-lf-demo"
     assert payload.username == "admin@attorneyos.local"
     assert payload.password == "password123456"
     assert "Attorney chat generations" in payload.monitored_operations
+    assert "Attorney chat prompt/response rubric scores" in payload.monitored_operations
+    assert "Graph RAG prompt/response rubric scores" in payload.monitored_operations
 
 
 def test_txt_count_returns_zero_for_missing_path(tmp_path):
@@ -2868,6 +2872,7 @@ def test_load_graph_rag_ontology_validation_and_error_paths(monkeypatch):
 def test_query_graph_rag_success(monkeypatch):
     trace_events: list[dict] = []
     rag_events: list[dict] = []
+    prompt_scores: list[dict] = []
     retrieval = Mock(
         return_value={
             "resource_count": 2,
@@ -2908,6 +2913,11 @@ def test_query_graph_rag_success(monkeypatch):
         lambda trace_id, **kwargs: trace_events.append({"trace_id": trace_id, **kwargs}),
     )
     monkeypatch.setattr(main, "_append_rag_stream_event", lambda **kwargs: rag_events.append(kwargs))
+    monkeypatch.setattr(
+        main,
+        "score_user_prompt_and_response",
+        lambda _settings, **kwargs: prompt_scores.append(kwargs),
+    )
     monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
     monkeypatch.setattr(
         main,
@@ -2960,6 +2970,13 @@ def test_query_graph_rag_success(monkeypatch):
     assert rag_events[-1]["status"] == "completed"
     assert rag_events[-1]["use_rag"] is True
     assert rag_events[-1]["context_rows"] == 2
+    assert prompt_scores == [
+        {
+            "operation": "graph_rag_query",
+            "prompt_text": "What is breach of contract?",
+            "response_text": "Short answer: Ontology response",
+        }
+    ]
 
 
 def test_query_graph_rag_with_rag_disabled(monkeypatch):
@@ -3392,7 +3409,9 @@ def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
     assert payload.running_runs == 1
 
     by_key = {item.key: item for item in payload.metrics}
+    input_by_key = {item.key: item for item in payload.input_context_metrics}
     correctness_by_key = {item.key: item for item in payload.correctness_metrics}
+    mcp_by_key = {item.key: item for item in payload.mcp_tool_metrics}
     toolathlon_by_key = {item.key: item for item in payload.toolathlon_metrics}
     assert by_key["task_success_rate_pct"].display == "50.0%"
     assert by_key["task_success_rate_pct"].status == "bad"
@@ -3401,11 +3420,14 @@ def test_compute_agent_runtime_metrics_calculates_thresholded_kpis():
     assert by_key["loop_risk_rate_pct"].status == "bad"
     assert by_key["in_flight_runs"].display == "1"
     assert by_key["rag_toggle_comparison_pairs"].display == "0"
+    assert input_by_key["llm_calls_sampled"].display == "0"
     assert correctness_by_key["golden_set_accuracy"].display == "N/A"
     assert correctness_by_key["golden_set_accuracy"].value is None
     assert correctness_by_key["schema_adherence_rate"].display == "50.0%"
     assert correctness_by_key["repeat_prompt_inconsistency"].display == "N/A"
     assert correctness_by_key["repeat_prompt_inconsistency"].value is None
+    assert mcp_by_key["mcp_thought_stream_visible_sessions"].display == "2"
+    assert mcp_by_key["mcp_tool_proxy_coverage_rate_pct"].display == "100.0%"
     assert toolathlon_by_key["toolathlon_success_rate_pct"].display == "50.0%"
     assert toolathlon_by_key["toolathlon_avg_turns_per_finished_run"].display == "11.5"
     assert toolathlon_by_key["toolathlon_long_horizon_completion_rate_pct"].display == "0.0%"
@@ -3451,7 +3473,9 @@ def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
     assert payload.finished_runs == 0
     assert payload.running_runs == 1
     by_key = {item.key: item for item in payload.metrics}
+    input_by_key = {item.key: item for item in payload.input_context_metrics}
     correctness_by_key = {item.key: item for item in payload.correctness_metrics}
+    mcp_by_key = {item.key: item for item in payload.mcp_tool_metrics}
     toolathlon_by_key = {item.key: item for item in payload.toolathlon_metrics}
     assert by_key["task_success_rate_pct"].status == "info"
     assert by_key["run_failure_rate_pct"].status == "info"
@@ -3461,9 +3485,11 @@ def test_compute_agent_runtime_metrics_handles_empty_finished_runs():
     assert by_key["loop_risk_rate_pct"].status == "info"
     assert by_key["p95_end_to_end_latency_sec"].display == "0.0s"
     assert by_key["p95_time_to_first_event_sec"].display == "0.0s"
+    assert input_by_key["llm_calls_sampled"].display == "0"
     assert correctness_by_key["golden_set_accuracy"].display == "N/A"
     assert correctness_by_key["schema_adherence_rate"].display == "0.0%"
     assert correctness_by_key["unsupported_claim_rate"].display == "N/A"
+    assert mcp_by_key["mcp_neo4j_context_hit_rate_pct"].display == "N/A"
     assert toolathlon_by_key["toolathlon_success_rate_pct"].status == "info"
     assert toolathlon_by_key["toolathlon_long_horizon_completion_rate_pct"].display == "N/A"
     assert toolathlon_by_key["toolathlon_error_recovery_rate_pct"].display == "N/A"
@@ -3749,6 +3775,40 @@ def test_compute_correctness_drift_metrics_returns_live_values():
     assert "grouping repeated normalized questions" in by_key["repeat_prompt_inconsistency"].tracking.lower()
 
 
+def test_compute_mcp_tool_metrics_returns_proxy_values():
+    sessions = [
+        "skip",
+        {
+            "status": "completed",
+            "trace": {
+                "legal_clerk": [
+                    {"persona": "Persona:Legal Clerk", "phase": "map_deposition"},
+                    {"persona": "Persona:Legal Clerk", "phase": "graph_rag_context_ready"},
+                ],
+                "attorney": [{"persona": "Persona:Attorney", "phase": "chat_response"}],
+            },
+        },
+        {
+            "status": "failed",
+            "trace": {"legal_clerk": [], "attorney": []},
+        },
+    ]
+    rag_events = [
+        {"status": "completed", "use_rag": True, "context_rows": 2},
+        {"status": "completed", "use_rag": True, "context_rows": 0},
+        {"status": "completed", "use_rag": False, "context_rows": 0},
+    ]
+
+    metrics = main._compute_mcp_tool_metrics(sessions, rag_events)
+    by_key = {item.key: item for item in metrics}
+
+    assert by_key["mcp_thought_stream_visible_sessions"].display == "1"
+    assert by_key["mcp_deposition_tool_proxy_sessions"].display == "1"
+    assert by_key["mcp_neo4j_query_samples"].display == "3"
+    assert by_key["mcp_neo4j_context_hit_rate_pct"].display == "50.0%"
+    assert by_key["mcp_tool_proxy_coverage_rate_pct"].display == "50.0%"
+
+
 def test_correctness_helper_branches_and_edge_cases():
     assert main._normalize_model_key(None, None) == "unknown"
     assert main._normalize_model_key(None, "gpt-5.2") == "gpt-5.2"
@@ -3827,22 +3887,41 @@ def test_get_agent_metrics_endpoint_validates_lookback(monkeypatch):
 
 def test_get_agent_metrics_persists_full_observable_snapshot(monkeypatch):
     saved_docs: list[dict] = []
+    scored: list[dict] = []
 
     monkeypatch.setattr(main, "_collect_runtime_trace_sessions", lambda: ([], True))
     monkeypatch.setattr(main, "_collect_recent_rag_stream_events", lambda _hours: ([], True))
     monkeypatch.setattr(main.trace_couchdb, "save_doc", lambda doc: saved_docs.append(dict(doc)) or doc)
+    monkeypatch.setattr(
+        main,
+        "score_observable_dashboard",
+        lambda _settings, **kwargs: scored.append(kwargs) or 1,
+    )
 
     payload = main.get_agent_metrics(lookback_hours=24)
 
     assert payload.metrics
+    assert payload.input_context_metrics
     assert payload.correctness_metrics
+    assert payload.mcp_tool_metrics
     assert payload.toolathlon_metrics
     assert len(saved_docs) == 1
     snapshot = saved_docs[0]
     assert snapshot["type"] == "observable_snapshot"
     assert snapshot["generated_at"] == payload.generated_at
+    assert scored and scored[0]["operation"] == "agent_metrics"
+    assert set(scored[0]["metric_groups"]) == {
+        "runtime",
+        "input_context",
+        "correctness",
+        "mcp_tool",
+        "toolathlon",
+    }
+    assert scored[0]["summary"]["sampled_runs"] == payload.sampled_runs
     assert len(snapshot["metrics"]) == len(payload.metrics)
+    assert len(snapshot["input_context_metrics"]) == len(payload.input_context_metrics)
     assert len(snapshot["correctness_metrics"]) == len(payload.correctness_metrics)
+    assert len(snapshot["mcp_tool_metrics"]) == len(payload.mcp_tool_metrics)
     assert len(snapshot["toolathlon_metrics"]) == len(payload.toolathlon_metrics)
 
 
@@ -3931,7 +4010,7 @@ def test_compute_agent_metric_history_builds_runtime_and_rag_series():
     assert len(runtime_history["points"]) == 2
     assert runtime_history["points"][0]["display"] == "100.0%"
     assert runtime_history["points"][1]["display"] == "0.0%"
-    assert runtime_history["points"][1]["sample_size"] == 2
+    assert runtime_history["points"][1]["sample_size"] == 1
 
     rag_history = main._compute_agent_metric_history(
         sessions,
@@ -4041,13 +4120,23 @@ def test_persist_observable_snapshot_ignores_storage_errors(monkeypatch):
 def test_find_metric_in_snapshot_skips_malformed_rows():
     snapshot = {
         "metrics": "not-a-list",
+        "input_context_metrics": [{"key": "llm_calls_sampled", "value": 5.0}],
         "correctness_metrics": ["bad-row", {"key": "judge_human_disagreement", "value": 0.0}],
+        "mcp_tool_metrics": [{"key": "mcp_neo4j_query_samples", "value": 3.0}],
         "toolathlon_metrics": [{"key": "toolathlon_success_rate_pct", "value": 88.0}],
     }
 
+    assert main._find_metric_in_snapshot(snapshot, "llm_calls_sampled") == {
+        "key": "llm_calls_sampled",
+        "value": 5.0,
+    }
     assert main._find_metric_in_snapshot(snapshot, "judge_human_disagreement") == {
         "key": "judge_human_disagreement",
         "value": 0.0,
+    }
+    assert main._find_metric_in_snapshot(snapshot, "mcp_neo4j_query_samples") == {
+        "key": "mcp_neo4j_query_samples",
+        "value": 3.0,
     }
     assert main._find_metric_in_snapshot(snapshot, "toolathlon_success_rate_pct") == {
         "key": "toolathlon_success_rate_pct",
@@ -4063,8 +4152,12 @@ def test_compute_agent_metric_history_prefers_persisted_observable_snapshots():
             "_generated_dt": now - timedelta(hours=3),
             "generated_at": (now - timedelta(hours=3)).isoformat(),
             "sampled_runs": 17,
+            "finished_runs": 12,
+            "running_runs": 5,
             "rag_sampled_queries": 4,
+            "rag_paired_comparisons": 2,
             "metrics": [],
+            "input_context_metrics": [],
             "correctness_metrics": [
                 {
                     "key": "unsupported_claim_rate",
@@ -4073,6 +4166,7 @@ def test_compute_agent_metric_history_prefers_persisted_observable_snapshots():
                     "value": 12.5,
                 }
             ],
+            "mcp_tool_metrics": [],
         }
     ]
 
@@ -4089,7 +4183,94 @@ def test_compute_agent_metric_history_prefers_persisted_observable_snapshots():
 
     assert history["points"][0]["display"] == "12.5%"
     assert history["points"][0]["value"] == 12.5
-    assert history["points"][0]["sample_size"] == 17
+    assert history["points"][0]["sample_size"] == 4
+
+
+def test_compute_agent_metric_history_uses_snapshot_llm_call_denominator():
+    now = datetime.now(timezone.utc)
+    observable_snapshots = [
+        {
+            "_generated_dt": now - timedelta(hours=1),
+            "generated_at": (now - timedelta(hours=1)).isoformat(),
+            "sampled_runs": 17,
+            "finished_runs": 12,
+            "running_runs": 5,
+            "rag_sampled_queries": 4,
+            "rag_paired_comparisons": 2,
+            "metrics": [
+                {"key": "llm_calls_sampled", "display": "11", "status": "info", "value": "11"},
+                {
+                    "key": "avg_estimated_prompt_tokens_per_llm_call",
+                    "display": "42.0",
+                    "status": "info",
+                    "value": 42.0,
+                },
+            ],
+            "correctness_metrics": [],
+        },
+        {
+            "_generated_dt": now - timedelta(minutes=30),
+            "generated_at": (now - timedelta(minutes=30)).isoformat(),
+            "sampled_runs": 19,
+            "finished_runs": 14,
+            "running_runs": 5,
+            "rag_sampled_queries": 6,
+            "rag_paired_comparisons": 3,
+            "metrics": [
+                {"key": "llm_calls_sampled", "display": "bad", "status": "info", "value": "not-a-number"},
+                {
+                    "key": "avg_estimated_output_tokens_per_llm_call",
+                    "display": "17.0",
+                    "status": "info",
+                    "value": 17.0,
+                },
+            ],
+            "correctness_metrics": [],
+        },
+    ]
+
+    prompt_history = main._compute_agent_metric_history(
+        [],
+        lookback_hours=2,
+        bucket_hours=1,
+        metric_key="avg_estimated_prompt_tokens_per_llm_call",
+        storage_connected=True,
+        rag_events=[],
+        rag_storage_connected=True,
+        observable_snapshots=observable_snapshots,
+    )
+    output_history = main._compute_agent_metric_history(
+        [],
+        lookback_hours=2,
+        bucket_hours=1,
+        metric_key="avg_estimated_output_tokens_per_llm_call",
+        storage_connected=True,
+        rag_events=[],
+        rag_storage_connected=True,
+        observable_snapshots=observable_snapshots,
+    )
+
+    assert prompt_history["points"][0]["sample_size"] == 11
+    assert output_history["points"][1]["sample_size"] == 0
+
+
+def test_metric_history_sample_size_uses_correct_denominator_families():
+    kwargs = {
+        "sampled_runs": 9,
+        "finished_runs": 7,
+        "running_runs": 2,
+        "rag_sampled_queries": 5,
+        "rag_paired_comparisons": 3,
+        "llm_calls_sampled": 11,
+    }
+
+    assert main._metric_history_sample_size(metric_key="task_success_rate_pct", **kwargs) == 7
+    assert main._metric_history_sample_size(metric_key="in_flight_runs", **kwargs) == 2
+    assert main._metric_history_sample_size(metric_key="avg_estimated_prompt_tokens_per_llm_call", **kwargs) == 11
+    assert main._metric_history_sample_size(metric_key="rag_answer_change_rate_pct", **kwargs) == 3
+    assert main._metric_history_sample_size(metric_key="unsupported_claim_rate", **kwargs) == 5
+    assert main._metric_history_sample_size(metric_key="model_mix_drift_jsd", **kwargs) == 14
+    assert main._metric_history_sample_size(metric_key="golden_set_accuracy", **kwargs) == 9
 
 
 def test_get_agent_metric_history_endpoint_validates_and_handles_missing_metric(monkeypatch):
@@ -5497,9 +5678,15 @@ def test_chat_success(monkeypatch):
     couchdb.list_depositions.return_value = [{"_id": "dep:1"}, {"_id": "dep:2"}]
     chat_service = Mock()
     chat_service.respond.return_value = "Short answer: ok\nDetails:\n- a\n- b"
+    prompt_scores: list[dict] = []
 
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "chat_service", chat_service)
+    monkeypatch.setattr(
+        main,
+        "score_user_prompt_and_response",
+        lambda _settings, **kwargs: prompt_scores.append(kwargs),
+    )
 
     response = main.chat(
         ChatRequest(
@@ -5517,6 +5704,13 @@ def test_chat_success(monkeypatch):
     chat_service.respond.assert_called_once()
     assert chat_service.respond.call_args.kwargs["llm_provider"] == "ollama"
     assert chat_service.respond.call_args.kwargs["llm_model"] == "llama3.3"
+    assert prompt_scores == [
+        {
+            "operation": "chat",
+            "prompt_text": "hello",
+            "response_text": "Short answer: ok\nDetails:\n- a\n- b",
+        }
+    ]
 
 
 def test_chat_success_with_trace_provider(monkeypatch):
@@ -5587,9 +5781,15 @@ def test_reason_contradiction_success(monkeypatch):
     couchdb.list_depositions.return_value = [{"_id": "dep:1"}, {"_id": "dep:2"}]
     chat_service = Mock()
     chat_service.reason_about_contradiction.return_value = "Short answer: ok\nDetails:\n- a\n- b\n- c"
+    prompt_scores: list[dict] = []
 
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "chat_service", chat_service)
+    monkeypatch.setattr(
+        main,
+        "score_user_prompt_and_response",
+        lambda _settings, **kwargs: prompt_scores.append(kwargs),
+    )
 
     request = ContradictionReasonRequest(
         case_id="case-1",
@@ -5611,6 +5811,9 @@ def test_reason_contradiction_success(monkeypatch):
     chat_service.reason_about_contradiction.assert_called_once()
     assert chat_service.reason_about_contradiction.call_args.kwargs["llm_provider"] == "ollama"
     assert chat_service.reason_about_contradiction.call_args.kwargs["llm_model"] == "llama3.3"
+    assert prompt_scores and prompt_scores[0]["operation"] == "reason_contradiction"
+    assert "\"topic\": \"Timeline\"" in prompt_scores[0]["prompt_text"]
+    assert prompt_scores[0]["response_text"] == "Short answer: ok\nDetails:\n- a\n- b\n- c"
 
 
 def test_reason_contradiction_wraps_service_errors(monkeypatch):
@@ -5677,12 +5880,18 @@ def test_summarize_focused_reasoning_success(monkeypatch):
     chat_service.summarize_focused_reasoning.return_value = "Short answer: Condensed conflict summary."
     save_memory = Mock()
     upsert_case = Mock()
+    prompt_scores: list[dict] = []
 
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "chat_service", chat_service)
     monkeypatch.setattr(main, "_save_case_memory", save_memory)
     monkeypatch.setattr(main, "_upsert_case_doc", upsert_case)
     monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [{"_id": "dep:1"}])
+    monkeypatch.setattr(
+        main,
+        "score_user_prompt_and_response",
+        lambda _settings, **kwargs: prompt_scores.append(kwargs),
+    )
 
     response = main.summarize_focused_reasoning(
         FocusedReasoningSummaryRequest(
@@ -5700,6 +5909,13 @@ def test_summarize_focused_reasoning_success(monkeypatch):
     assert chat_service.summarize_focused_reasoning.call_args.kwargs["llm_model"] == "llama3.3"
     save_memory.assert_called_once()
     upsert_case.assert_called_once()
+    assert prompt_scores == [
+        {
+            "operation": "summarize_focused_reasoning",
+            "prompt_text": "Short answer: Full focused reasoning.",
+            "response_text": "Short answer: Condensed conflict summary.",
+        }
+    ]
 
 
 def test_summarize_focused_reasoning_wraps_service_errors(monkeypatch):

@@ -170,10 +170,11 @@ def test_root_serves_frontend_shell_when_startup_llm_check_fails(monkeypatch):
     assert response.status_code == 200
     assert "text/html" in response.headers["content-type"]
     assert "Data-Blitz Demo logo" in response.text
-    warning.assert_called_once()
-    assert warning.call_args.args[0] == "startup continuing without operational default LLM: %s"
-    assert isinstance(warning.call_args.args[1], RuntimeError)
-    assert str(warning.call_args.args[1]) == "startup failed"
+    assert warning.call_count >= 1
+    startup_warning = warning.call_args_list[-1]
+    assert startup_warning.args[0] == "startup continuing without operational default LLM: %s"
+    assert isinstance(startup_warning.args[1], RuntimeError)
+    assert str(startup_warning.args[1]) == "startup failed"
     couchdb.ensure_db.assert_called_once_with()
     couchdb.ensure_deposition_views.assert_called_once_with()
 
@@ -443,6 +444,16 @@ def test_prometheus_metrics_endpoint_exposes_application_metrics(api_client):
     assert "deposition_http_request_duration_seconds" in body
     assert "deposition_app_log_events_total" in body
     assert "deposition_admin_test_runs_total" in body
+
+
+def test_prometheus_metrics_endpoint_refreshes_persisted_thought_stream_inventory(api_client, monkeypatch):
+    refresh = Mock()
+    monkeypatch.setattr(main, "_refresh_thought_stream_inventory_metrics", refresh)
+
+    response = api_client.get("/metrics")
+
+    assert response.status_code == 200
+    refresh.assert_called_once_with()
 
 
 def test_graph_rag_embedding_config_endpoints_round_trip(api_client, monkeypatch):
@@ -1252,11 +1263,16 @@ def test_langfuse_access_endpoint_returns_serialized_payload(api_client, monkeyp
         "password": "password123456",
         "monitored_operations": [
             "HTTP request spans for API routes",
+            "Observables dashboard aggregate scores",
             "Ingest mapping and contradiction assessment generations",
             "Attorney chat generations",
+            "Attorney chat prompt/response rubric scores",
             "Focused contradiction reasoning generations",
+            "Focused contradiction reasoning prompt/response rubric scores",
             "Focused reasoning summary generations",
+            "Focused reasoning summary prompt/response rubric scores",
             "Graph RAG answer generations",
+            "Graph RAG prompt/response rubric scores",
         ],
     }
 
@@ -1308,7 +1324,11 @@ def test_all_current_observables_have_history(api_client):
     assert metrics_response.status_code == 200
     payload = metrics_response.json()
     all_keys = [item["key"] for item in payload["metrics"]] + [
+        item["key"] for item in payload.get("input_context_metrics", [])
+    ] + [
         item["key"] for item in payload["correctness_metrics"]
+    ] + [
+        item["key"] for item in payload.get("mcp_tool_metrics", [])
     ] + [item["key"] for item in payload.get("toolathlon_metrics", [])]
     assert all_keys
     assert {
@@ -1316,6 +1336,8 @@ def test_all_current_observables_have_history(api_client):
         "avg_prompt_context_bytes_per_llm_call",
         "avg_estimated_prompt_tokens_per_llm_call",
         "avg_estimated_output_tokens_per_llm_call",
+        "mcp_thought_stream_visible_sessions",
+        "mcp_neo4j_query_samples",
         "toolathlon_success_rate_pct",
         "toolathlon_avg_turns_per_finished_run",
     }.issubset(set(all_keys))
@@ -1343,7 +1365,9 @@ def test_agent_metrics_endpoint_persists_observable_snapshot(api_client, monkeyp
     snapshot = snapshots[0]
     assert snapshot["generated_at"] == response.json()["generated_at"]
     assert len(snapshot["metrics"]) == len(response.json()["metrics"])
+    assert len(snapshot["input_context_metrics"]) == len(response.json()["input_context_metrics"])
     assert len(snapshot["correctness_metrics"]) == len(response.json()["correctness_metrics"])
+    assert len(snapshot["mcp_tool_metrics"]) == len(response.json()["mcp_tool_metrics"])
     assert len(snapshot["toolathlon_metrics"]) == len(response.json()["toolathlon_metrics"])
 
 

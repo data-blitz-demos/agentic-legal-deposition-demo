@@ -5,6 +5,7 @@ from __future__ import annotations
 from contextlib import contextmanager
 from contextlib import nullcontext
 import logging
+import re
 from typing import Any
 
 from .config import Settings
@@ -20,6 +21,37 @@ except Exception:  # pragma: no cover - graceful fallback when dependency is abs
 
 logger = logging.getLogger(__name__)
 _LANGFUSE_INITIALIZED = False
+_COMMON_STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "by",
+    "for",
+    "from",
+    "how",
+    "i",
+    "in",
+    "is",
+    "it",
+    "of",
+    "on",
+    "or",
+    "that",
+    "the",
+    "this",
+    "to",
+    "what",
+    "when",
+    "where",
+    "which",
+    "who",
+    "why",
+    "with",
+}
 
 
 def langfuse_sdk_installed() -> bool:
@@ -193,3 +225,561 @@ def build_langchain_config(
         "callbacks": [CallbackHandler()],
         "metadata": config_metadata,
     }
+
+
+def _word_count(value: str | None) -> int:
+    """Return a rough token-free word count for lightweight scoring heuristics."""
+
+    return len(re.findall(r"\b[\w'-]+\b", str(value or "")))
+
+
+def _contains_placeholder_text(value: str | None) -> bool:
+    """Detect template-like placeholders that indicate low-quality output."""
+
+    text = str(value or "")
+    lowered = text.lower()
+    if any(marker in lowered for marker in ("<1 sentence>", "<bullet>", "short answer: <")):
+        return True
+    return re.search(r"<[^>\n]{3,}>", text) is not None
+
+
+def _response_has_structure(value: str | None) -> bool:
+    """Return whether a response includes recognizable app-level structure markers."""
+
+    lowered = str(value or "").lower()
+    return any(
+        marker in lowered
+        for marker in (
+            "short answer:",
+            "details:",
+            "key points:",
+            "recommended action:",
+            "why this matters:",
+            "\n- ",
+        )
+    )
+
+
+def _content_terms(value: str | None) -> set[str]:
+    """Extract a small normalized set of content-bearing words."""
+
+    terms = {
+        term.lower()
+        for term in re.findall(r"\b[a-zA-Z][a-zA-Z0-9_-]{2,}\b", str(value or ""))
+        if term.lower() not in _COMMON_STOPWORDS
+    }
+    return terms
+
+
+def _clamp01(value: float) -> float:
+    """Clamp a float into the closed 0..1 interval."""
+
+    return max(0.0, min(float(value), 1.0))
+
+
+def _to_rubric_5(value: float) -> float:
+    """Map a normalized 0..1 score into a 1..5 rubric scale."""
+
+    return round(1.0 + (_clamp01(value) * 4.0), 2)
+
+
+def _overall_quality_label(value: float) -> str:
+    """Map a normalized quality score into a mainstream categorical band."""
+
+    normalized = _clamp01(value)
+    if normalized < 0.25:
+        return "poor"
+    if normalized < 0.5:
+        return "fair"
+    if normalized < 0.8:
+        return "good"
+    return "excellent"
+
+
+def _prompt_quality_heuristic(prompt_text: str | None) -> float:
+    """Return a simple 0..1 heuristic for prompt specificity and clarity."""
+
+    text = str(prompt_text or "").strip()
+    if not text:
+        return 0.0
+
+    words = _word_count(text)
+    chars = len(text)
+    lowered = text.lower()
+    intent_markers = (
+        "who",
+        "what",
+        "when",
+        "where",
+        "why",
+        "how",
+        "compare",
+        "identify",
+        "explain",
+        "summarize",
+        "analyze",
+        "reason",
+    )
+    score = 0.0
+    score += min(words / 18.0, 1.0) * 0.45
+    score += min(chars / 180.0, 1.0) * 0.2
+    score += 0.2 if "?" in text or any(marker in lowered for marker in intent_markers) else 0.0
+    score += 0.15 if any(marker in lowered for marker in ("witness", "timeline", "contract", "contradiction")) else 0.0
+    return round(min(score, 1.0), 4)
+
+
+def _prompt_clarity_heuristic(prompt_text: str | None) -> float:
+    """Approximate prompt clarity using question framing and concise structure."""
+
+    text = str(prompt_text or "").strip()
+    if not text:
+        return 0.0
+    words = _word_count(text)
+    lowered = text.lower()
+    score = 0.2
+    score += 0.2 if "?" in text else 0.0
+    score += 0.2 if any(marker in lowered for marker in ("summarize", "compare", "explain", "identify", "analyze", "reason")) else 0.0
+    score += 0.2 if 4 <= words <= 60 else 0.1 if words <= 90 else 0.0
+    score += 0.2 if len(_content_terms(text)) >= 3 else 0.0
+    return round(_clamp01(score), 4)
+
+
+def _prompt_specificity_heuristic(prompt_text: str | None) -> float:
+    """Approximate prompt specificity using lexical richness and domain signals."""
+
+    text = str(prompt_text or "").strip()
+    if not text:
+        return 0.0
+    content_terms = _content_terms(text)
+    lowered = text.lower()
+    score = 0.0
+    score += min(len(content_terms) / 10.0, 1.0) * 0.45
+    score += 0.2 if re.search(r"\b\d+\b", text) else 0.0
+    score += 0.2 if any(marker in lowered for marker in ("witness", "deposition", "timeline", "contract", "contradiction", "exhibit")) else 0.0
+    score += 0.15 if any(char in text for char in (":", "\"", "'")) else 0.0
+    return round(_clamp01(score), 4)
+
+
+def _response_quality_heuristic(response_text: str | None) -> float:
+    """Return a simple 0..1 heuristic for response completeness and formatting."""
+
+    text = str(response_text or "").strip()
+    if not text:
+        return 0.0
+
+    words = _word_count(text)
+    lowered = text.lower()
+    score = 0.35
+    score += 0.2 if not _contains_placeholder_text(text) else 0.0
+    score += 0.2 if _response_has_structure(text) else 0.0
+    score += min(words / 90.0, 1.0) * 0.15
+    score += 0.1 if any(marker in lowered for marker in ("next step", "recommended action", "why this matters")) else 0.0
+    return round(min(score, 1.0), 4)
+
+
+def _response_relevance_heuristic(prompt_text: str | None, response_text: str | None) -> float:
+    """Approximate prompt-response topical relevance via content-term overlap."""
+
+    prompt_terms = _content_terms(prompt_text)
+    response_terms = _content_terms(response_text)
+    if not prompt_terms or not response_terms:
+        return 0.0
+    overlap = len(prompt_terms & response_terms)
+    score = overlap / max(1, min(len(prompt_terms), len(response_terms)))
+    return round(_clamp01(score), 4)
+
+
+def _response_completeness_heuristic(response_text: str | None) -> float:
+    """Approximate response completeness using structure, length, and placeholders."""
+
+    text = str(response_text or "").strip()
+    if not text:
+        return 0.0
+    words = _word_count(text)
+    score = 0.15
+    score += 0.25 if _response_has_structure(text) else 0.0
+    score += 0.2 if not _contains_placeholder_text(text) else 0.0
+    score += min(words / 120.0, 1.0) * 0.25
+    score += 0.15 if any(marker in text.lower() for marker in ("details:", "key points:", "recommended action:", "why this matters:")) else 0.0
+    return round(_clamp01(score), 4)
+
+
+def _response_helpfulness_heuristic(prompt_text: str | None, response_text: str | None) -> float:
+    """Approximate helpfulness from relevance, completeness, and actionability."""
+
+    relevance = _response_relevance_heuristic(prompt_text, response_text)
+    completeness = _response_completeness_heuristic(response_text)
+    actionability = 1.0 if _response_actionable(response_text) else 0.0
+    score = (relevance * 0.35) + (completeness * 0.4) + (actionability * 0.25)
+    return round(_clamp01(score), 4)
+
+
+def _response_actionable(response_text: str | None) -> bool:
+    """Return whether the response appears to suggest a next step or action."""
+
+    lowered = str(response_text or "").lower()
+    return any(
+        marker in lowered
+        for marker in (
+            "next step",
+            "recommended action",
+            "should",
+            "compare",
+            "review",
+            "verify",
+            "use the full",
+        )
+    )
+
+
+def score_current_trace(
+    settings: Settings,
+    *,
+    name: str,
+    value: float | str,
+    data_type: str | None = None,
+    comment: str | None = None,
+) -> bool:
+    """Attach one score to the active Langfuse trace and span when available.
+
+    Langfuse stores trace-level scores correctly, but the UI often surfaces the
+    active span/observation first. Writing to both contexts keeps the score tree
+    visible in the trace overview and inside the current request observation.
+    """
+
+    if not initialize_langfuse(settings):
+        return False
+
+    client = get_client()
+    trace_scorer = getattr(client, "score_current_trace", None)
+    span_scorer = getattr(client, "score_current_span", None)
+    if not callable(trace_scorer) and not callable(span_scorer):
+        return False
+
+    payload: dict[str, Any] = {
+        "name": name,
+        "value": value,
+    }
+    if data_type:
+        payload["data_type"] = data_type
+    if comment:
+        payload["comment"] = comment
+
+    succeeded = False
+
+    if callable(trace_scorer):
+        try:
+            trace_scorer(**payload)
+            succeeded = True
+        except Exception:
+            logger.exception("langfuse score_current_trace failed name=%s", name)
+
+    if callable(span_scorer):
+        try:
+            span_scorer(**payload)
+            succeeded = True
+        except Exception:
+            logger.exception("langfuse score_current_span failed name=%s", name)
+
+    return succeeded
+
+
+def score_user_prompt_and_response(
+    settings: Settings,
+    *,
+    operation: str,
+    prompt_text: str | None,
+    response_text: str | None,
+) -> dict[str, float]:
+    """Score one user-facing prompt/response pair on the active Langfuse trace."""
+
+    prompt_words = float(_word_count(prompt_text))
+    response_words = float(_word_count(response_text))
+    prompt_quality = _prompt_quality_heuristic(prompt_text)
+    prompt_clarity = _prompt_clarity_heuristic(prompt_text)
+    prompt_specificity = _prompt_specificity_heuristic(prompt_text)
+    response_quality = _response_quality_heuristic(response_text)
+    response_relevance = _response_relevance_heuristic(prompt_text, response_text)
+    response_completeness = _response_completeness_heuristic(response_text)
+    response_helpfulness = _response_helpfulness_heuristic(prompt_text, response_text)
+    response_structured = 1.0 if _response_has_structure(response_text) else 0.0
+    response_placeholder_free = 0.0 if _contains_placeholder_text(response_text) else 1.0
+    response_actionable = 1.0 if _response_actionable(response_text) else 0.0
+    overall_response_quality = round(
+        _clamp01(
+            (response_quality * 0.3)
+            + (response_relevance * 0.25)
+            + (response_completeness * 0.25)
+            + (response_helpfulness * 0.2),
+        ),
+        4,
+    )
+    overall_response_quality_label = _overall_quality_label(overall_response_quality)
+    overall_quality = round(
+        _clamp01(
+            (prompt_quality * 0.15)
+            + (prompt_clarity * 0.1)
+            + (prompt_specificity * 0.1)
+            + (response_quality * 0.2)
+            + (response_relevance * 0.15)
+            + (response_completeness * 0.15)
+            + (response_helpfulness * 0.15),
+        ),
+        4,
+    )
+    overall_quality_label = _overall_quality_label(overall_quality)
+
+    comment_prefix = f"Heuristic score for operation={operation}."
+    score_current_trace(
+        settings,
+        name="user_prompt_word_count",
+        value=prompt_words,
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} Word count of the user-provided prompt text.",
+    )
+    score_current_trace(
+        settings,
+        name="user_prompt_quality_heuristic",
+        value=prompt_quality,
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 0..1 heuristic based on prompt length and intent markers.",
+    )
+    score_current_trace(
+        settings,
+        name="prompt_clarity_rubric",
+        value=_to_rubric_5(prompt_clarity),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 rubric approximation of prompt clarity.",
+    )
+    score_current_trace(
+        settings,
+        name="prompt_specificity_rubric",
+        value=_to_rubric_5(prompt_specificity),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 rubric approximation of prompt specificity.",
+    )
+    score_current_trace(
+        settings,
+        name="response_word_count",
+        value=response_words,
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} Word count of the final response returned to the user.",
+    )
+    score_current_trace(
+        settings,
+        name="response_quality_heuristic",
+        value=response_quality,
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 0..1 heuristic based on completeness, structure, and placeholder checks.",
+    )
+    score_current_trace(
+        settings,
+        name="response_relevance_rubric",
+        value=_to_rubric_5(response_relevance),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 rubric approximation of response relevance to the prompt.",
+    )
+    score_current_trace(
+        settings,
+        name="response_helpfulness_rubric",
+        value=_to_rubric_5(response_helpfulness),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 rubric approximation of response helpfulness.",
+    )
+    score_current_trace(
+        settings,
+        name="response_completeness_rubric",
+        value=_to_rubric_5(response_completeness),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 rubric approximation of response completeness.",
+    )
+    score_current_trace(
+        settings,
+        name="response_has_structure",
+        value=response_structured,
+        data_type="BOOLEAN",
+        comment=f"{comment_prefix} Whether the response includes expected structured sections or bullets.",
+    )
+    score_current_trace(
+        settings,
+        name="response_placeholder_free",
+        value=response_placeholder_free,
+        data_type="BOOLEAN",
+        comment=f"{comment_prefix} Whether the response avoided template placeholders.",
+    )
+    score_current_trace(
+        settings,
+        name="response_actionable",
+        value=response_actionable,
+        data_type="BOOLEAN",
+        comment=f"{comment_prefix} Whether the response appears to include a concrete next step or action.",
+    )
+    score_current_trace(
+        settings,
+        name="overall_response_quality",
+        value=_to_rubric_5(overall_response_quality),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 aggregate rubric across response quality, relevance, completeness, and helpfulness.",
+    )
+    score_current_trace(
+        settings,
+        name="overall_response_quality_label",
+        value=overall_response_quality_label,
+        data_type="CATEGORICAL",
+        comment=f"{comment_prefix} Aggregate categorical band for response quality only.",
+    )
+    score_current_trace(
+        settings,
+        name="overall_quality_rubric",
+        value=_to_rubric_5(overall_quality),
+        data_type="NUMERIC",
+        comment=f"{comment_prefix} 1..5 aggregate rubric across prompt and response quality dimensions.",
+    )
+    score_current_trace(
+        settings,
+        name="overall_quality_label",
+        value=overall_quality_label,
+        data_type="CATEGORICAL",
+        comment=f"{comment_prefix} Aggregate categorical band for the overall trace quality.",
+    )
+
+    return {
+        "user_prompt_word_count": prompt_words,
+        "user_prompt_quality_heuristic": prompt_quality,
+        "prompt_clarity_rubric": _to_rubric_5(prompt_clarity),
+        "prompt_specificity_rubric": _to_rubric_5(prompt_specificity),
+        "response_word_count": response_words,
+        "response_quality_heuristic": response_quality,
+        "response_relevance_rubric": _to_rubric_5(response_relevance),
+        "response_helpfulness_rubric": _to_rubric_5(response_helpfulness),
+        "response_completeness_rubric": _to_rubric_5(response_completeness),
+        "response_has_structure": response_structured,
+        "response_placeholder_free": response_placeholder_free,
+        "response_actionable": response_actionable,
+        "overall_response_quality": _to_rubric_5(overall_response_quality),
+        "overall_quality_rubric": _to_rubric_5(overall_quality),
+    }
+
+
+def _metric_field(metric: Any, field: str, default: Any = None) -> Any:
+    """Read one field from either dict-style or attribute-style metric rows."""
+
+    if isinstance(metric, dict):
+        return metric.get(field, default)
+    return getattr(metric, field, default)
+
+
+def _normalize_observable_group_name(group_name: str | None) -> str:
+    """Normalize observable group labels into a clean Langfuse namespace."""
+
+    normalized = re.sub(r"[^a-z0-9_]+", "_", str(group_name or "").strip().lower()) or "group"
+    aliases = {
+        "mcp_tool": "mcp",
+        "mcp_tools": "mcp",
+    }
+    return aliases.get(normalized, normalized)
+
+
+def score_observable_dashboard(
+    settings: Settings,
+    *,
+    operation: str,
+    metric_groups: dict[str, list[Any]],
+    summary: dict[str, Any],
+) -> int:
+    """Attach observables-dashboard metrics to the current Langfuse trace.
+
+    Numeric observables are emitted under ``observables.<group>.<key>`` and each
+    observable also emits a categorical status score so unavailable metrics still
+    appear in Langfuse.
+    """
+
+    emitted = 0
+    comment_prefix = f"Heuristic observables snapshot for operation={operation}."
+
+    for key, value in summary.items():
+        name = f"observables.summary.{str(key).strip()}"
+        if not name.endswith("."):
+            if isinstance(value, bool):
+                emitted += int(
+                    score_current_trace(
+                        settings,
+                        name=name,
+                        value=1.0 if value else 0.0,
+                        data_type="BOOLEAN",
+                        comment=f"{comment_prefix} Summary boolean for {key}.",
+                    )
+                )
+            elif isinstance(value, (int, float)):
+                emitted += int(
+                    score_current_trace(
+                        settings,
+                        name=name,
+                        value=float(value),
+                        data_type="NUMERIC",
+                        comment=f"{comment_prefix} Summary numeric for {key}.",
+                    )
+                )
+            elif value is not None:
+                emitted += int(
+                    score_current_trace(
+                        settings,
+                        name=name,
+                        value=str(value),
+                        data_type="CATEGORICAL",
+                        comment=f"{comment_prefix} Summary label for {key}.",
+                    )
+                )
+
+    for group_name, metrics in metric_groups.items():
+        normalized_group = _normalize_observable_group_name(group_name)
+        for metric in metrics:
+            metric_key = str(_metric_field(metric, "key", "") or "").strip()
+            if not metric_key:
+                continue
+            metric_display = str(_metric_field(metric, "display", "N/A") or "N/A")
+            metric_status = str(_metric_field(metric, "status", "info") or "info")
+            metric_value = _metric_field(metric, "value", None)
+            metric_base = f"observables.{normalized_group}.{metric_key}"
+
+            if isinstance(metric_value, bool):
+                emitted += int(
+                    score_current_trace(
+                        settings,
+                        name=metric_base,
+                        value=1.0 if metric_value else 0.0,
+                        data_type="BOOLEAN",
+                        comment=f"{comment_prefix} Boolean observable value for {metric_key}.",
+                    )
+                )
+            elif isinstance(metric_value, (int, float)):
+                emitted += int(
+                    score_current_trace(
+                        settings,
+                        name=metric_base,
+                        value=float(metric_value),
+                        data_type="NUMERIC",
+                        comment=f"{comment_prefix} Numeric observable value for {metric_key}.",
+                    )
+                )
+
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=f"{metric_base}_status",
+                    value=metric_status,
+                    data_type="CATEGORICAL",
+                    comment=f"{comment_prefix} Current status band for {metric_key}.",
+                )
+            )
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=f"{metric_base}_display",
+                    value=metric_display,
+                    data_type="CATEGORICAL",
+                    comment=f"{comment_prefix} Current rendered display value for {metric_key}.",
+                )
+            )
+
+    return emitted
