@@ -19,6 +19,7 @@ const els = {
   tabProvisioningBtn: document.getElementById('tabProvisioningBtn'),
   tabObservablesBtn: document.getElementById('tabObservablesBtn'),
   tabLangfuseBtn: document.getElementById('tabLangfuseBtn'),
+  tabDeepevalBtn: document.getElementById('tabDeepevalBtn'),
   tabAdminBtn: document.getElementById('tabAdminBtn'),
   tabPageLanding: document.getElementById('tabPageLanding'),
   tabPageIntelligence: document.getElementById('tabPageIntelligence'),
@@ -27,6 +28,7 @@ const els = {
   tabPageProvisioning: document.getElementById('tabPageProvisioning'),
   tabPageObservables: document.getElementById('tabPageObservables'),
   tabPageLangfuse: document.getElementById('tabPageLangfuse'),
+  tabPageDeepeval: document.getElementById('tabPageDeepeval'),
   tabPageAdmin: document.getElementById('tabPageAdmin'),
   caseId: document.getElementById('caseId'),
   directory: document.getElementById('directory'),
@@ -96,6 +98,9 @@ const els = {
   openGrafanaObservablesBtn: document.getElementById('openGrafanaObservablesBtn'),
   refreshLangfuseBtn: document.getElementById('refreshLangfuseBtn'),
   openLangfuseBtn: document.getElementById('openLangfuseBtn'),
+  refreshDeepevalBtn: document.getElementById('refreshDeepevalBtn'),
+  openDeepevalDocsBtn: document.getElementById('openDeepevalDocsBtn'),
+  openDeepevalCloudBtn: document.getElementById('openDeepevalCloudBtn'),
   metricsSampleMeta: document.getElementById('metricsSampleMeta'),
   metricsStorageMeta: document.getElementById('metricsStorageMeta'),
   langfuseRuntimeStatus: document.getElementById('langfuseRuntimeStatus'),
@@ -104,6 +109,12 @@ const els = {
   langfusePublicKey: document.getElementById('langfusePublicKey'),
   langfuseCredentials: document.getElementById('langfuseCredentials'),
   langfuseCoverageList: document.getElementById('langfuseCoverageList'),
+  deepevalRuntimeStatus: document.getElementById('deepevalRuntimeStatus'),
+  deepevalPackageStatus: document.getElementById('deepevalPackageStatus'),
+  deepevalVersion: document.getElementById('deepevalVersion'),
+  deepevalCloudStatus: document.getElementById('deepevalCloudStatus'),
+  deepevalCommand: document.getElementById('deepevalCommand'),
+  deepevalCoverageList: document.getElementById('deepevalCoverageList'),
   metricsGrid: document.getElementById('metricsGrid'),
   inputContextGrid: document.getElementById('inputContextGrid'),
   correctnessGrid: document.getElementById('correctnessGrid'),
@@ -344,6 +355,7 @@ const METRICS_POLL_MS = 15000;
 let metricsPanelOpen = false;
 let metricsLoaded = false;
 let langfuseAccessPayload = null;
+let deepevalAccessPayload = null;
 let depositionBrowserCurrentDirectory = '';
 let depositionBrowserParentDirectory = '';
 let depositionBrowserWildcardPath = '';
@@ -4445,7 +4457,7 @@ function setActiveAdminSubtab(subtabName) {
 function setActiveTab(tabName) {
   /** Toggle application top-level pages and maintain tab button active state. */
   const normalized = String(tabName || '').trim().toLowerCase();
-  const nextTab = ['landing', 'intelligence', 'provisioning', 'observables', 'langfuse', 'admin'].includes(normalized)
+  const nextTab = ['landing', 'intelligence', 'provisioning', 'observables', 'langfuse', 'deepeval', 'admin'].includes(normalized)
     ? normalized
     : 'landing';
   const previousTab = activeTab;
@@ -4456,6 +4468,7 @@ function setActiveTab(tabName) {
   const isProvisioning = nextTab === 'provisioning';
   const isObservables = nextTab === 'observables';
   const isLangfuse = nextTab === 'langfuse';
+  const isDeepeval = nextTab === 'deepeval';
   const isAdmin = nextTab === 'admin';
 
   els.tabPageLanding.classList.toggle('hidden', !isLanding);
@@ -4463,6 +4476,7 @@ function setActiveTab(tabName) {
   els.tabPageProvisioning.classList.toggle('hidden', !isProvisioning);
   els.tabPageObservables.classList.toggle('hidden', !isObservables);
   els.tabPageLangfuse.classList.toggle('hidden', !isLangfuse);
+  els.tabPageDeepeval.classList.toggle('hidden', !isDeepeval);
   els.tabPageAdmin.classList.toggle('hidden', !isAdmin);
 
   els.tabLandingBtn.classList.toggle('active', isLanding);
@@ -4470,6 +4484,7 @@ function setActiveTab(tabName) {
   els.tabProvisioningBtn.classList.toggle('active', isProvisioning);
   els.tabObservablesBtn.classList.toggle('active', isObservables);
   els.tabLangfuseBtn.classList.toggle('active', isLangfuse);
+  els.tabDeepevalBtn.classList.toggle('active', isDeepeval);
   els.tabAdminBtn.classList.toggle('active', isAdmin);
 
   els.tabLandingBtn.setAttribute('aria-selected', isLanding ? 'true' : 'false');
@@ -4477,6 +4492,7 @@ function setActiveTab(tabName) {
   els.tabProvisioningBtn.setAttribute('aria-selected', isProvisioning ? 'true' : 'false');
   els.tabObservablesBtn.setAttribute('aria-selected', isObservables ? 'true' : 'false');
   els.tabLangfuseBtn.setAttribute('aria-selected', isLangfuse ? 'true' : 'false');
+  els.tabDeepevalBtn.setAttribute('aria-selected', isDeepeval ? 'true' : 'false');
   els.tabAdminBtn.setAttribute('aria-selected', isAdmin ? 'true' : 'false');
 
   if (previousTab === 'observables' && nextTab !== 'observables') {
@@ -4498,6 +4514,10 @@ function setActiveTab(tabName) {
 
   if (isLangfuse && previousTab !== 'langfuse') {
     loadLangfuseAccess({ silent: true }).catch((err) => setStatus(err.message));
+  }
+
+  if (isDeepeval && previousTab !== 'deepeval') {
+    loadDeepevalAccess({ silent: true }).catch((err) => setStatus(err.message));
   }
 
   if (isIntelligence) {
@@ -5849,6 +5869,78 @@ async function openLangfuse() {
   const credentialText = username || password ? ` Username: ${username} Password: ${password}` : '';
   window.open(targetUrl, '_blank', 'noopener,noreferrer');
   setStatus(`Opened Langfuse.${credentialText}`.trim());
+}
+
+function renderDeepevalAccess(payload = null) {
+  /** Paint DeepEval installation, cloud-upload, and starter-suite details. */
+  deepevalAccessPayload = payload;
+  const enabled = !!payload?.enabled;
+  const sdkInstalled = !!payload?.sdk_installed;
+  const cloudConfigured = !!payload?.cloud_configured;
+  const packageVersion = String(payload?.package_version || '').trim();
+  const quickstartCommand = String(payload?.quickstart_command || 'deepeval test run evals/test_attorneyos_deepeval.py').trim();
+  const monitoredWorkflows = Array.isArray(payload?.monitored_workflows) ? payload.monitored_workflows : [];
+
+  if (els.deepevalPackageStatus) {
+    els.deepevalPackageStatus.textContent = sdkInstalled ? 'Installed' : 'Not installed';
+  }
+  if (els.deepevalVersion) {
+    els.deepevalVersion.textContent = packageVersion || 'Unknown';
+  }
+  if (els.deepevalCloudStatus) {
+    els.deepevalCloudStatus.textContent = cloudConfigured ? 'Configured' : 'Not configured';
+  }
+  if (els.deepevalCommand) {
+    els.deepevalCommand.textContent = quickstartCommand;
+  }
+  if (els.deepevalRuntimeStatus) {
+    els.deepevalRuntimeStatus.textContent =
+      sdkInstalled
+        ? (cloudConfigured
+          ? 'DeepEval is installed and can upload eval runs to Confident AI.'
+          : 'DeepEval is installed locally. Add CONFIDENT_API_KEY to upload runs to Confident AI.')
+        : enabled
+          ? 'DeepEval is enabled for this project, but the package is not installed in this runtime yet.'
+          : 'DeepEval support is currently disabled for this project.';
+  }
+  if (els.deepevalCoverageList) {
+    if (!monitoredWorkflows.length) {
+      els.deepevalCoverageList.classList.add('muted');
+      els.deepevalCoverageList.textContent = 'No DeepEval starter workflows were reported by the backend.';
+    } else {
+      els.deepevalCoverageList.classList.remove('muted');
+      els.deepevalCoverageList.innerHTML = monitoredWorkflows
+        .map((item) => `<div class="langfuse-coverage-row">${escapeHtml(String(item || ''))}</div>`)
+        .join('');
+    }
+  }
+}
+
+async function loadDeepevalAccess({ silent = false } = {}) {
+  /** Fetch DeepEval runtime details for the dedicated monitoring tab. */
+  const payload = await api('/api/observability/deepeval');
+  renderDeepevalAccess(payload);
+  if (!silent) {
+    const versionText = String(payload?.package_version || '').trim();
+    setStatus(versionText ? `DeepEval status refreshed. Version: ${versionText}` : 'DeepEval status refreshed.');
+  }
+  return payload;
+}
+
+async function openDeepevalDocs() {
+  /** Open the official DeepEval documentation page. */
+  const payload = deepevalAccessPayload || (await loadDeepevalAccess({ silent: true }));
+  const targetUrl = String(payload?.docs_url || 'https://deepeval.com/docs/getting-started').trim();
+  window.open(targetUrl, '_blank', 'noopener,noreferrer');
+  setStatus('Opened DeepEval docs.');
+}
+
+async function openDeepevalCloud() {
+  /** Open the Confident AI cloud workspace used by DeepEval uploads. */
+  const payload = deepevalAccessPayload || (await loadDeepevalAccess({ silent: true }));
+  const targetUrl = String(payload?.cloud_url || 'https://app.confident-ai.com').trim();
+  window.open(targetUrl, '_blank', 'noopener,noreferrer');
+  setStatus('Opened Confident AI.');
 }
 
 function resolveDepositionBrowserStartPath() {
@@ -7726,6 +7818,7 @@ els.tabIntelligenceBtn.addEventListener('click', () => setActiveTab('intelligenc
 els.tabProvisioningBtn.addEventListener('click', () => setActiveTab('provisioning'));
 els.tabObservablesBtn.addEventListener('click', () => setActiveTab('observables'));
 els.tabLangfuseBtn.addEventListener('click', () => setActiveTab('langfuse'));
+els.tabDeepevalBtn.addEventListener('click', () => setActiveTab('deepeval'));
 els.tabAdminBtn.addEventListener('click', () => setActiveTab('admin'));
 els.adminTabTestBtn.addEventListener('click', () => setActiveAdminSubtab('test'));
 els.adminTabUsersBtn.addEventListener('click', () => setActiveAdminSubtab('users'));
@@ -8296,6 +8389,21 @@ if (els.refreshLangfuseBtn) {
 if (els.openLangfuseBtn) {
   els.openLangfuseBtn.addEventListener('click', () =>
     openLangfuse().catch((err) => setStatus(err.message))
+  );
+}
+if (els.refreshDeepevalBtn) {
+  els.refreshDeepevalBtn.addEventListener('click', () =>
+    loadDeepevalAccess().catch((err) => setStatus(err.message))
+  );
+}
+if (els.openDeepevalDocsBtn) {
+  els.openDeepevalDocsBtn.addEventListener('click', () =>
+    openDeepevalDocs().catch((err) => setStatus(err.message))
+  );
+}
+if (els.openDeepevalCloudBtn) {
+  els.openDeepevalCloudBtn.addEventListener('click', () =>
+    openDeepevalCloud().catch((err) => setStatus(err.message))
   );
 }
 els.computeSentimentBtn.addEventListener('click', () =>

@@ -4,9 +4,12 @@ from __future__ import annotations
 
 from contextlib import contextmanager
 from contextlib import nullcontext
+import json
 import logging
 import re
 from typing import Any
+
+import httpx
 
 from .config import Settings
 
@@ -52,6 +55,7 @@ _COMMON_STOPWORDS = {
     "why",
     "with",
 }
+_TRACE_ID_PATTERN = re.compile(r"^[A-Za-z0-9_-]{8,128}$")
 
 
 def langfuse_sdk_installed() -> bool:
@@ -106,6 +110,23 @@ def shutdown_langfuse(settings: Settings) -> None:
         logger.exception("langfuse shutdown failed")
 
 
+def flush_langfuse(settings: Settings) -> bool:
+    """Flush pending Langfuse events to storage when the SDK is active."""
+
+    if not initialize_langfuse(settings):
+        return False
+    client = get_client()
+    flush = getattr(client, "flush", None)
+    if not callable(flush):
+        return False
+    try:
+        flush()
+        return True
+    except Exception:
+        logger.exception("langfuse flush failed")
+        return False
+
+
 def _trim_string(value: str | None, limit: int = 200) -> str | None:
     """Return a stripped string truncated to Langfuse-safe length."""
 
@@ -150,6 +171,144 @@ def _normalize_metadata(metadata: dict[str, Any] | None) -> dict[str, Any] | Non
     return normalized or None
 
 
+def _normalize_propagated_metadata(metadata: dict[str, Any] | None) -> dict[str, str] | None:
+    """Return Langfuse propagation metadata with string-only values."""
+
+    normalized = _normalize_metadata(metadata)
+    if not normalized:
+        return None
+    propagated: dict[str, str] = {}
+    for key, value in normalized.items():
+        if isinstance(value, str):
+            propagated[str(key)] = value
+        else:
+            propagated[str(key)] = _trim_string(json.dumps(value, sort_keys=True), limit=200) or str(value)
+    return propagated or None
+
+
+def _normalize_trace_id(trace_id: str | None) -> str | None:
+    """Return one safe Langfuse trace id suitable for SDK and query usage."""
+
+    normalized = _trim_string(trace_id, limit=128)
+    if not normalized or not _TRACE_ID_PATTERN.fullmatch(normalized):
+        return None
+    return normalized
+
+
+def _sql_string_literal(value: str | None) -> str | None:
+    """Return one ClickHouse-safe SQL string literal for a normalized value."""
+
+    normalized = _trim_string(value, limit=512)
+    if normalized is None:
+        return None
+    escaped = normalized.replace("'", "''")
+    return "'" + escaped + "'"
+
+
+def get_current_trace_id(settings: Settings) -> str | None:
+    """Return the active Langfuse trace id when one is currently bound."""
+
+    if not initialize_langfuse(settings):
+        return None
+    client = get_client()
+    getter = getattr(client, "get_current_trace_id", None)
+    if not callable(getter):
+        return None
+    try:
+        return _normalize_trace_id(getter())
+    except Exception:
+        logger.exception("langfuse get_current_trace_id failed")
+        return None
+
+
+def resolve_trace_id_from_observation_id(settings: Settings, observation_id: str | None) -> str | None:
+    """Resolve the persisted Langfuse trace id for one stored observation id."""
+
+    normalized_observation_id = _normalize_trace_id(observation_id)
+    if not normalized_observation_id:
+        return None
+    observation_id_literal = _sql_string_literal(normalized_observation_id)
+    if not observation_id_literal:
+        return None
+    rows = _clickhouse_json_query(
+        settings,
+        (
+            "SELECT trace_id FROM default.observations "
+            f"WHERE id = {observation_id_literal} AND is_deleted = 0 "
+            "ORDER BY start_time DESC LIMIT 1 FORMAT JSON"
+        ),
+    )
+    if not rows:
+        return None
+    return _normalize_trace_id(rows[0].get("trace_id"))
+
+
+def _clickhouse_json_query(settings: Settings, query: str) -> list[dict[str, Any]]:
+    """Run one ClickHouse JSON query against Langfuse storage."""
+
+    query_text = str(query or "").strip()
+    if not query_text:
+        return []
+    base_url = str(getattr(settings, "langfuse_clickhouse_url", "") or "").strip()
+    if not base_url:
+        return []
+    user = str(getattr(settings, "langfuse_clickhouse_user", "") or "").strip()
+    password = str(getattr(settings, "langfuse_clickhouse_password", "") or "")
+    auth = (user, password) if user else None
+    response = httpx.post(
+        base_url,
+        params={"query": query_text},
+        auth=auth,
+        timeout=15.0,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    rows = payload.get("data")
+    return rows if isinstance(rows, list) else []
+
+
+def fetch_trace_graph(settings: Settings, trace_id: str) -> dict[str, Any] | None:
+    """Fetch one Langfuse trace plus its observations and scores from ClickHouse."""
+
+    normalized_trace_id = _normalize_trace_id(trace_id)
+    if not normalized_trace_id:
+        return None
+    trace_id_literal = _sql_string_literal(normalized_trace_id)
+    if not trace_id_literal:
+        return None
+    trace_rows = _clickhouse_json_query(
+        settings,
+        (
+            "SELECT * FROM default.traces "
+            f"WHERE id = {trace_id_literal} AND is_deleted = 0 "
+            "ORDER BY timestamp DESC LIMIT 1 FORMAT JSON"
+        ),
+    )
+    if not trace_rows:
+        return None
+    observations = _clickhouse_json_query(
+        settings,
+        (
+            "SELECT * FROM default.observations "
+            f"WHERE trace_id = {trace_id_literal} AND is_deleted = 0 "
+            "ORDER BY start_time ASC FORMAT JSON"
+        ),
+    )
+    scores = _clickhouse_json_query(
+        settings,
+        (
+            "SELECT * FROM default.scores "
+            f"WHERE trace_id = {trace_id_literal} AND is_deleted = 0 "
+            "ORDER BY timestamp ASC FORMAT JSON"
+        ),
+    )
+    return {
+        "trace": trace_rows[0],
+        "observations": observations,
+        "scores": scores,
+    }
+
+
 @contextmanager
 def observe_operation(
     settings: Settings,
@@ -171,7 +330,7 @@ def observe_operation(
     normalized_session_id = _trim_string(session_id)
     normalized_user_id = _trim_string(user_id)
     normalized_tags = _normalize_tags(tags)
-    normalized_metadata = _normalize_metadata(metadata)
+    normalized_metadata = _normalize_propagated_metadata(metadata)
     if normalized_session_id:
         propagate_kwargs["session_id"] = normalized_session_id
     if normalized_user_id:
@@ -192,6 +351,54 @@ def observe_operation(
     with propagation_context:
         with observation_context as observation:
             yield observation
+
+
+@contextmanager
+def propagate_trace_attributes(
+    settings: Settings,
+    *,
+    session_id: str | None = None,
+    user_id: str | None = None,
+    tags: list[str] | tuple[str, ...] | set[str] | None = None,
+    metadata: dict[str, Any] | None = None,
+    trace_name: str | None = None,
+):
+    """Propagate Langfuse trace attributes onto the current trace/span context."""
+
+    if not initialize_langfuse(settings):
+        yield
+        return
+
+    propagate_kwargs: dict[str, Any] = {}
+    normalized_session_id = _trim_string(session_id)
+    normalized_user_id = _trim_string(user_id)
+    normalized_tags = _normalize_tags(tags)
+    normalized_metadata = _normalize_propagated_metadata(metadata)
+    normalized_trace_name = _trim_string(trace_name)
+    if normalized_session_id:
+        propagate_kwargs["session_id"] = normalized_session_id
+    if normalized_user_id:
+        propagate_kwargs["user_id"] = normalized_user_id
+    if normalized_tags:
+        propagate_kwargs["tags"] = normalized_tags
+    if normalized_metadata:
+        propagate_kwargs["metadata"] = normalized_metadata
+    if normalized_trace_name:
+        propagate_kwargs["trace_name"] = normalized_trace_name
+
+    if not propagate_kwargs:
+        yield
+        return
+
+    try:
+        propagation_context = propagate_attributes(**propagate_kwargs)
+    except Exception:
+        logger.exception("langfuse propagate_trace_attributes failed")
+        yield
+        return
+
+    with propagation_context:
+        yield
 
 
 def build_langchain_config(
@@ -224,6 +431,7 @@ def build_langchain_config(
     return {
         "callbacks": [CallbackHandler()],
         "metadata": config_metadata,
+        "tags": normalized_tags or [],
     }
 
 
@@ -484,6 +692,153 @@ def score_current_trace(
     return succeeded
 
 
+def _normalize_mcp_tool_name(tool_name: str | None) -> str:
+    """Normalize one MCP tool key into a stable Langfuse namespace segment."""
+
+    normalized = re.sub(r"[^a-z0-9_]+", "_", str(tool_name or "").strip().lower()).strip("_") or "tool"
+    if normalized.startswith("mcp_"):
+        normalized = normalized[4:] or "tool"
+    return normalized
+
+
+def _normalize_metric_name(metric_name: str | None) -> str:
+    """Normalize one score key into a safe Langfuse metric suffix."""
+
+    return re.sub(r"[^a-z0-9_]+", "_", str(metric_name or "").strip().lower()).strip("_")
+
+
+def score_tagged_event(
+    settings: Settings,
+    *,
+    category: str,
+    event_name: str,
+    metrics: dict[str, Any],
+) -> int:
+    """Attach generic tagged-event metrics to the active Langfuse trace/span.
+
+    Metric names are emitted as ``<category>.<event_name>.<metric>`` so prompt,
+    memory, and skill scores can share the same normalization behavior as MCP
+    metrics while still living in separate namespaces.
+    """
+
+    category_segment = _normalize_metric_name(category) or "event"
+    event_segment = _normalize_metric_name(event_name) or "operation"
+    emitted = 0
+
+    for raw_key, raw_value in dict(metrics or {}).items():
+        metric_segment = _normalize_metric_name(raw_key)
+        if not metric_segment or raw_value is None:
+            continue
+
+        score_name = f"{category_segment}.{event_segment}.{metric_segment}"
+        comment = (
+            f"Tagged event metric for category={category_segment} "
+            f"event={event_segment} metric={metric_segment}."
+        )
+
+        if isinstance(raw_value, bool):
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=score_name,
+                    value=1.0 if raw_value else 0.0,
+                    data_type="BOOLEAN",
+                    comment=comment,
+                )
+            )
+        elif isinstance(raw_value, (int, float)):
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=score_name,
+                    value=float(raw_value),
+                    data_type="NUMERIC",
+                    comment=comment,
+                )
+            )
+        else:
+            text_value = _trim_string(str(raw_value or ""), limit=200)
+            if not text_value:
+                continue
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=score_name,
+                    value=text_value,
+                    data_type="CATEGORICAL",
+                    comment=comment,
+                )
+            )
+
+    return emitted
+
+
+def score_mcp_operation(
+    settings: Settings,
+    *,
+    tool_name: str,
+    operation: str,
+    metrics: dict[str, Any],
+) -> int:
+    """Attach MCP tool metrics to the active Langfuse trace/span.
+
+    Metric names are emitted as ``mcp.<tool>.<operation>.<metric>`` so Langfuse
+    can group the same tool surface across health checks, reads, writes, and
+    retrieval requests.
+    """
+
+    tool_segment = _normalize_mcp_tool_name(tool_name)
+    operation_segment = _normalize_metric_name(operation) or "operation"
+    emitted = 0
+
+    for raw_key, raw_value in dict(metrics or {}).items():
+        metric_segment = _normalize_metric_name(raw_key)
+        if not metric_segment or raw_value is None:
+            continue
+
+        score_name = f"mcp.{tool_segment}.{operation_segment}.{metric_segment}"
+        comment = (
+            f"MCP metric for tool={tool_segment} operation={operation_segment} "
+            f"metric={metric_segment}."
+        )
+
+        if isinstance(raw_value, bool):
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=score_name,
+                    value=1.0 if raw_value else 0.0,
+                    data_type="BOOLEAN",
+                    comment=comment,
+                )
+            )
+        elif isinstance(raw_value, (int, float)):
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=score_name,
+                    value=float(raw_value),
+                    data_type="NUMERIC",
+                    comment=comment,
+                )
+            )
+        else:
+            text_value = _trim_string(str(raw_value or ""), limit=200)
+            if not text_value:
+                continue
+            emitted += int(
+                score_current_trace(
+                    settings,
+                    name=score_name,
+                    value=text_value,
+                    data_type="CATEGORICAL",
+                    comment=comment,
+                )
+            )
+
+    return emitted
+
+
 def score_user_prompt_and_response(
     settings: Settings,
     *,
@@ -659,6 +1014,93 @@ def score_user_prompt_and_response(
         "overall_response_quality": _to_rubric_5(overall_response_quality),
         "overall_quality_rubric": _to_rubric_5(overall_quality),
     }
+
+
+def score_prompt_operation(
+    settings: Settings,
+    *,
+    operation: str,
+    prompt_text: str | None,
+    response_text: str | None,
+    system_prompt: str | None = None,
+    user_prompt: str | None = None,
+    prompt_template_keys: list[str] | tuple[str, ...] | set[str] | None = None,
+    extra_metrics: dict[str, Any] | None = None,
+) -> dict[str, float]:
+    """Attach prompt-specific Langfuse scores for one user-facing prompt event."""
+
+    metrics = score_user_prompt_and_response(
+        settings,
+        operation=operation,
+        prompt_text=prompt_text,
+        response_text=response_text,
+    )
+    tagged_metrics: dict[str, Any] = {
+        "system_prompt_chars": _word_count(system_prompt) * 0 + len(str(system_prompt or "")),
+        "user_prompt_chars": _word_count(user_prompt) * 0 + len(str(user_prompt or "")),
+        "input_prompt_chars": len(str(prompt_text or "")),
+        "response_chars": len(str(response_text or "")),
+        "template_count": len([item for item in (prompt_template_keys or []) if str(item).strip()]),
+        "template_keys": ",".join(
+            sorted({str(item).strip() for item in (prompt_template_keys or []) if str(item).strip()})
+        ),
+        "has_system_prompt": bool(str(system_prompt or "").strip()),
+        "has_user_prompt": bool(str(user_prompt or "").strip()),
+    }
+    if isinstance(extra_metrics, dict):
+        tagged_metrics.update(extra_metrics)
+    score_tagged_event(
+        settings,
+        category="prompt",
+        event_name=operation,
+        metrics=tagged_metrics,
+    )
+    return metrics
+
+
+def score_memory_operation(
+    settings: Settings,
+    *,
+    channel: str,
+    case_id: str | None,
+    payload: dict[str, Any] | None,
+    saved: bool,
+) -> int:
+    """Attach case-memory write metrics to the current Langfuse trace/span."""
+
+    normalized_payload = dict(payload or {})
+    thought_stream = normalized_payload.get("thought_stream")
+    return score_tagged_event(
+        settings,
+        category="memory",
+        event_name=channel,
+        metrics={
+            "saved": saved,
+            "case_id_present": bool(str(case_id or "").strip()),
+            "payload_field_count": len(normalized_payload),
+            "payload_bytes": len(str(normalized_payload).encode("utf-8")),
+            "has_response": bool(str(normalized_payload.get("response") or normalized_payload.get("summary") or "").strip()),
+            "has_thought_stream": isinstance(thought_stream, list) and bool(thought_stream),
+            "thought_stream_events": len(thought_stream) if isinstance(thought_stream, list) else 0,
+            "channel": channel,
+        },
+    )
+
+
+def score_skill_operation(
+    settings: Settings,
+    *,
+    skill_name: str,
+    metrics: dict[str, Any],
+) -> int:
+    """Attach skill/workflow-level metrics to the current Langfuse trace/span."""
+
+    return score_tagged_event(
+        settings,
+        category="skill",
+        event_name=skill_name,
+        metrics=metrics,
+    )
 
 
 def _metric_field(metric: Any, field: str, default: Any = None) -> Any:

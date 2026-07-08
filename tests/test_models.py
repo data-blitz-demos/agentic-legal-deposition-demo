@@ -48,6 +48,7 @@ from backend.app.models import (
     DepositionBrowserResponse,
     DepositionDocument,
     DeleteCaseResponse,
+    DeepEvalAccessResponse,
     DepositionSentimentRequest,
     DepositionSentimentResponse,
     DepositionUploadResponse,
@@ -576,6 +577,19 @@ def test_graph_rag_models():
         error="connection refused",
     )
     assert health.connected is False
+
+    deepeval = DeepEvalAccessResponse(
+        enabled=True,
+        sdk_installed=True,
+        cloud_configured=False,
+        package_version="4.0.2",
+        docs_url="https://deepeval.com/docs/getting-started",
+        cloud_url="https://app.confident-ai.com",
+        quickstart_command="deepeval test run evals/attorneyos_deepeval.py",
+        starter_suite_path="evals/attorneyos_deepeval.py",
+        monitored_workflows=["Attorney chat answer relevancy"],
+    )
+    assert deepeval.package_version == "4.0.2"
 
     option = GraphOntologyOption(
         path="/data/ontology/legal.owl",

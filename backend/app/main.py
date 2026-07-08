@@ -26,8 +26,8 @@ from pathlib import Path
 import re
 import subprocess
 import sys
-from threading import Lock
-from time import monotonic
+from threading import Lock, Thread
+from time import monotonic, sleep
 from typing import Literal
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 from uuid import uuid4
@@ -43,15 +43,29 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from .chat import AttorneyChatService
 from .config import get_settings
 from .couchdb import CouchDBClient
+from .deepeval_integration import (
+    deepeval_cloud_configured,
+    deepeval_enabled as deepeval_enabled_for_project,
+    deepeval_package_version,
+    deepeval_sdk_installed,
+)
 from .graph import DepositionWorkflow
 from .langfuse_integration import (
     build_langchain_config,
+    fetch_trace_graph,
+    flush_langfuse,
+    get_current_trace_id,
     initialize_langfuse,
     langfuse_enabled,
     langfuse_sdk_installed,
     observe_operation,
+    propagate_trace_attributes,
+    resolve_trace_id_from_observation_id,
+    score_memory_operation,
+    score_mcp_operation,
     score_observable_dashboard,
-    score_user_prompt_and_response,
+    score_prompt_operation,
+    score_skill_operation,
     shutdown_langfuse,
 )
 from .llm import (
@@ -124,6 +138,7 @@ from .models import (
     DepositionRootResponse,
     ContradictionReasonRequest,
     ContradictionReasonResponse,
+    DeepEvalAccessResponse,
     FocusedReasoningSummaryRequest,
     FocusedReasoningSummaryResponse,
     GrafanaAccessResponse,
@@ -422,12 +437,13 @@ def _build_graph_rag_query_embedding(
             return None, f"{config.provider} embedding response did not include a usable vector."
         return [float(item) for item in embedding], None
     except Exception as exc:
-        logger.warning("Graph RAG embedding generation failed: %s", exc)
+        logger.warning("langfuse graph_rag_embedding_generation_failed error=%s", exc)
         return None, str(exc)
 couchdb = CouchDBClient(settings.couchdb_url, settings.couchdb_db)
 memory_couchdb = CouchDBClient(settings.couchdb_url, settings.memory_db)
 trace_couchdb = CouchDBClient(settings.couchdb_url, settings.thought_stream_db)
 rag_couchdb = CouchDBClient(settings.couchdb_url, settings.rag_stream_db)
+langfuse_graph_couchdb = CouchDBClient(settings.couchdb_url, settings.langfuse_graph_db)
 workflow = DepositionWorkflow(settings, couchdb)
 chat_service = AttorneyChatService(settings)
 neo4j_graph = Neo4jOntologyGraph(
@@ -510,6 +526,7 @@ async def lifespan(_: FastAPI):
     memory_couchdb.ensure_db()
     trace_couchdb.ensure_db()
     rag_couchdb.ensure_db()
+    langfuse_graph_couchdb.ensure_db()
     logger.info("startup complete")
     yield
     logger.info("shutdown begin")
@@ -517,6 +534,7 @@ async def lifespan(_: FastAPI):
     memory_couchdb.close()
     trace_couchdb.close()
     rag_couchdb.close()
+    langfuse_graph_couchdb.close()
     neo4j_graph.close()
     shutdown_langfuse(settings)
     logger.info("shutdown complete")
@@ -557,14 +575,26 @@ async def trace_http_requests_with_langfuse(request: Request, call_next):
         "query": str(request.url.query or "")[:500],
     }
     tags = ("attorneyos", "http", request.method.lower())
+    response = None
+    trace_id: str | None = None
+    root_observation_id: str | None = None
     with observe_operation(
         settings,
         "http_request",
         as_type="span",
         tags=tags,
         metadata=metadata,
-    ):
-        return await call_next(request)
+    ) as observation:
+        response = await call_next(request)
+        trace_id = get_current_trace_id(settings)
+        root_observation_id = str(getattr(observation, "id", "") or "").strip() or None
+    _persist_langfuse_trace_graph(
+        trace_id,
+        root_observation_id=root_observation_id,
+        trigger="http_request",
+        request_metadata=metadata,
+    )
+    return response
 
 
 @app.middleware("http")
@@ -1630,6 +1660,161 @@ def _rag_stream_doc_id() -> str:
     return f"rag_stream:{uuid4().hex}"
 
 
+def _langfuse_graph_doc_id(trace_id: str) -> str:
+    """Build one stable CouchDB document id for a mirrored Langfuse trace."""
+
+    normalized = re.sub(r"[^a-zA-Z0-9_-]+", "-", str(trace_id or "").strip()).strip("-").lower() or "trace"
+    return f"langfuse:{normalized}"
+
+
+def _persist_langfuse_trace_graph(
+    trace_id: str | None,
+    *,
+    root_observation_id: str | None = None,
+    trigger: str,
+    request_metadata: dict[str, str] | None = None,
+    schedule_refresh: bool = True,
+) -> dict | None:
+    """Mirror one Langfuse trace graph into the dedicated CouchDB database."""
+
+    flush_langfuse(settings)
+    normalized_trace_id = str(trace_id or "").strip()
+    normalized_root_observation_id = str(root_observation_id or "").strip()
+    graph: dict | None = None
+    for attempt in range(5):
+        effective_trace_id = normalized_trace_id
+        if effective_trace_id:
+            try:
+                graph = fetch_trace_graph(settings, effective_trace_id)
+            except Exception:
+                if attempt == 4 and not normalized_root_observation_id:
+                    logger.exception("langfuse trace graph fetch failed trace_id=%s", effective_trace_id)
+                    return None
+                graph = None
+            if isinstance(graph, dict):
+                normalized_trace_id = effective_trace_id
+                break
+        if normalized_root_observation_id:
+            try:
+                resolved_trace_id = resolve_trace_id_from_observation_id(settings, normalized_root_observation_id)
+            except Exception:
+                if attempt == 4:
+                    logger.exception(
+                        "langfuse trace graph observation lookup failed observation_id=%s",
+                        normalized_root_observation_id,
+                    )
+                    return None
+                sleep(0.25)
+                continue
+            if resolved_trace_id and resolved_trace_id != effective_trace_id:
+                effective_trace_id = resolved_trace_id
+                try:
+                    graph = fetch_trace_graph(settings, effective_trace_id)
+                except Exception:
+                    if attempt == 4:
+                        logger.exception("langfuse trace graph fetch failed trace_id=%s", effective_trace_id)
+                        return None
+                    sleep(0.25)
+                    continue
+                if isinstance(graph, dict):
+                    normalized_trace_id = effective_trace_id
+                    break
+        if not effective_trace_id:
+            if attempt == 4:
+                return None
+            sleep(0.25)
+            continue
+        if attempt < 4:
+            sleep(0.25)
+    if not isinstance(graph, dict):
+        return None
+    trace = graph.get("trace") if isinstance(graph.get("trace"), dict) else {}
+    observations = graph.get("observations") if isinstance(graph.get("observations"), list) else []
+    scores = graph.get("scores") if isinstance(graph.get("scores"), list) else []
+    if observations and not scores:
+        for attempt in range(4):
+            sleep(0.25)
+            try:
+                refreshed_graph = fetch_trace_graph(settings, normalized_trace_id)
+            except Exception:
+                if attempt == 3:
+                    logger.exception("langfuse trace graph score refresh failed trace_id=%s", normalized_trace_id)
+                continue
+            if not isinstance(refreshed_graph, dict):
+                continue
+            trace = refreshed_graph.get("trace") if isinstance(refreshed_graph.get("trace"), dict) else trace
+            observations = (
+                refreshed_graph.get("observations") if isinstance(refreshed_graph.get("observations"), list) else observations
+            )
+            scores = refreshed_graph.get("scores") if isinstance(refreshed_graph.get("scores"), list) else scores
+            if scores:
+                break
+    doc = {
+        "_id": _langfuse_graph_doc_id(normalized_trace_id),
+        "type": "langfuse_trace_graph",
+        "trace_id": normalized_trace_id,
+        "mirrored_at": _utc_now_iso(),
+        "trigger": str(trigger or "").strip() or "unknown",
+        "request_metadata": jsonable_encoder(request_metadata or {}),
+        "trace": jsonable_encoder(trace),
+        "observations": jsonable_encoder(observations),
+        "scores": jsonable_encoder(scores),
+        "observation_count": len(observations),
+        "score_count": len(scores),
+        "tags": list(trace.get("tags") or []) if isinstance(trace, dict) else [],
+    }
+    try:
+        saved = langfuse_graph_couchdb.update_doc(doc)
+        logger.info(
+            "langfuse trace graph mirrored trace_id=%s trigger=%s observations=%s scores=%s",
+            normalized_trace_id,
+            doc["trigger"],
+            len(observations),
+            len(scores),
+        )
+        if schedule_refresh and observations and not scores:
+            _schedule_langfuse_trace_graph_refresh(
+                normalized_trace_id,
+                root_observation_id=normalized_root_observation_id,
+                trigger=doc["trigger"],
+                request_metadata=request_metadata,
+            )
+        return saved
+    except Exception:
+        logger.exception("langfuse trace graph mirror failed trace_id=%s", normalized_trace_id)
+        return None
+
+
+def _schedule_langfuse_trace_graph_refresh(
+    trace_id: str,
+    *,
+    root_observation_id: str | None,
+    trigger: str,
+    request_metadata: dict[str, str] | None,
+    delay_seconds: float = 2.5,
+) -> None:
+    """Schedule one delayed Langfuse graph refresh so late score rows are mirrored too."""
+
+    normalized_trace_id = str(trace_id or "").strip()
+    if not normalized_trace_id:
+        return
+
+    def _refresh() -> None:
+        sleep(max(float(delay_seconds), 0.0))
+        _persist_langfuse_trace_graph(
+            normalized_trace_id,
+            root_observation_id=root_observation_id,
+            trigger=trigger,
+            request_metadata=request_metadata,
+            schedule_refresh=False,
+        )
+
+    try:
+        Thread(target=_refresh, name=f"langfuse-graph-refresh-{normalized_trace_id[:12]}", daemon=True).start()
+    except Exception:
+        logger.exception("langfuse trace graph refresh scheduling failed trace_id=%s", normalized_trace_id)
+
+
 def _append_rag_stream_event(
     *,
     trace_id: str | None,
@@ -1652,11 +1837,12 @@ def _append_rag_stream_event(
 ) -> None:
     """Persist one Graph RAG processing event to the dedicated rag-stream DB."""
 
+    normalized_trace_id = str(trace_id or "").strip() or "unknown"
     doc = {
         "_id": _rag_stream_doc_id(),
         "type": "rag_stream",
         "created_at": _utc_now_iso(),
-        "trace_id": str(trace_id or ""),
+        "trace_id": normalized_trace_id if normalized_trace_id != "unknown" else "",
         "question": question,
         "llm_provider": llm_provider,
         "llm_model": llm_model,
@@ -1707,10 +1893,37 @@ def _append_rag_stream_event(
             if isinstance(item, dict) and str(item.get("iri") or "").strip()
         ],
     }
+    logger.info(
+        "langfuse rag_stream_event trace_id=%s phase=%s status=%s provider=%s model=%s use_rag=%s top_k=%s context_rows=%s source_count=%s resource_count=%s",
+        normalized_trace_id,
+        phase,
+        status,
+        llm_provider,
+        llm_model,
+        bool(use_rag),
+        int(top_k),
+        int(context_rows or 0),
+        len(doc["sources"]),
+        len(doc["retrieved_resources"]),
+    )
     try:
         rag_couchdb.update_doc(doc)
-    except Exception:
+    except Exception as exc:
+        logger.warning(
+            "langfuse rag_stream_persist_failed trace_id=%s phase=%s status=%s error=%s",
+            normalized_trace_id,
+            phase,
+            status,
+            exc,
+        )
         return
+    logger.info(
+        "langfuse rag_stream_persisted trace_id=%s doc_id=%s phase=%s status=%s",
+        normalized_trace_id,
+        doc["_id"],
+        phase,
+        status,
+    )
 
 
 def _normalize_deposition_root_path(path_text: str) -> Path:
@@ -1769,6 +1982,21 @@ def _public_trace_session(session: dict) -> dict:
             "legal_clerk": list((session.get("trace") or {}).get("legal_clerk", [])),
             "attorney": list((session.get("trace") or {}).get("attorney", [])),
         },
+    }
+
+
+def _thought_stream_event_counts(snapshot: dict | None) -> dict[str, int]:
+    """Summarize visible thought-stream event counts for MCP-style telemetry."""
+
+    payload = {}
+    if isinstance(snapshot, dict):
+        payload = snapshot.get("thought_stream") or snapshot.get("trace") or {}
+    legal_clerk_events = list((payload or {}).get("legal_clerk") or [])
+    attorney_events = list((payload or {}).get("attorney") or [])
+    return {
+        "legal_clerk_events": len(legal_clerk_events),
+        "attorney_events": len(attorney_events),
+        "total_events": len(legal_clerk_events) + len(attorney_events),
     }
 
 
@@ -1954,21 +2182,37 @@ def _append_trace_events(
     legal_items = [AgentTraceEvent.model_validate(item).model_dump() for item in (legal_clerk or [])]
     attorney_items = [AgentTraceEvent.model_validate(item).model_dump() for item in (attorney or [])]
 
+    has_graph_rag_phase = False
     for item in legal_items + attorney_items:
         persona = str(item.get("persona") or "unknown")
         phase = str(item.get("phase") or "unknown")
+        is_graph_rag_phase = phase.startswith("graph_rag_")
+        has_graph_rag_phase = has_graph_rag_phase or is_graph_rag_phase
         record_thought_stream_event(persona, phase)
-        logger.info(
-            "thought_stream_event trace_id=%s persona=%s phase=%s provider=%s model=%s",
-            normalized_trace_id,
-            persona,
-            phase,
-            str(item.get("llm_provider") or "unknown"),
-            str(item.get("llm_model") or "unknown"),
-        )
+        if is_graph_rag_phase:
+            logger.info(
+                "langfuse thought_stream_rag_event trace_id=%s persona=%s phase=%s provider=%s model=%s",
+                normalized_trace_id,
+                persona,
+                phase,
+                str(item.get("llm_provider") or "unknown"),
+                str(item.get("llm_model") or "unknown"),
+            )
+        else:
+            logger.info(
+                "thought_stream_event trace_id=%s persona=%s phase=%s provider=%s model=%s",
+                normalized_trace_id,
+                persona,
+                phase,
+                str(item.get("llm_provider") or "unknown"),
+                str(item.get("llm_model") or "unknown"),
+            )
     if status is not None:
         record_thought_stream_session(status)
-        logger.info("thought_stream_status trace_id=%s status=%s", normalized_trace_id, status)
+        if has_graph_rag_phase:
+            logger.info("langfuse thought_stream_rag_status trace_id=%s status=%s", normalized_trace_id, status)
+        else:
+            logger.info("thought_stream_status trace_id=%s status=%s", normalized_trace_id, status)
 
     with _trace_lock:
         now = _utc_now_iso()
@@ -3719,23 +3963,50 @@ def _load_case_doc(case_id: str) -> dict | None:
 def _save_case_memory(case_id: str, channel: str, payload: dict) -> None:
     """Persist one case memory/event record in CouchDB."""
 
-    try:
-        memory_couchdb.save_doc(
-            {
-                "type": "case_memory",
-                "case_id": case_id,
-                "channel": channel,
-                "created_at": _utc_now_iso(),
-                "payload": jsonable_encoder(payload),
-            }
+    encoded_payload = jsonable_encoder(payload)
+    with observe_operation(
+        settings,
+        "case_memory_write",
+        as_type="span",
+        session_id=case_id,
+        tags=("attorneyos", "category-memory", "memory", f"memory-{channel}"),
+        metadata={
+            "case_id": case_id,
+            "channel": channel,
+            "payload_field_count": len(dict(encoded_payload or {})) if isinstance(encoded_payload, dict) else 0,
+        },
+    ):
+        try:
+            memory_couchdb.save_doc(
+                {
+                    "type": "case_memory",
+                    "case_id": case_id,
+                    "channel": channel,
+                    "created_at": _utc_now_iso(),
+                    "payload": encoded_payload,
+                }
+            )
+        except Exception as exc:
+            score_memory_operation(
+                settings,
+                channel=channel,
+                case_id=case_id,
+                payload=encoded_payload if isinstance(encoded_payload, dict) else {},
+                saved=False,
+            )
+            raise HTTPException(
+                status_code=502,
+                detail=f"Failed to persist case memory for '{case_id}': {exc}",
+            ) from exc
+        score_memory_operation(
+            settings,
+            channel=channel,
+            case_id=case_id,
+            payload=encoded_payload if isinstance(encoded_payload, dict) else {},
+            saved=True,
         )
-    except Exception as exc:
-        raise HTTPException(
-            status_code=502,
-            detail=f"Failed to persist case memory for '{case_id}': {exc}",
-        ) from exc
-    record_case_memory_write(channel)
-    logger.info("case memory saved case_id=%s channel=%s", case_id, channel)
+        record_case_memory_write(channel)
+        logger.info("case memory saved case_id=%s channel=%s", case_id, channel)
 
 
 def _upsert_case_doc(
@@ -5118,9 +5389,13 @@ def grafana_access_info() -> GrafanaAccessResponse:
 def _langfuse_monitored_operations() -> list[str]:
     """Return the application workflows currently instrumented for Langfuse."""
 
+    graph_db_name = str(getattr(settings, "langfuse_graph_db", "langfusie") or "langfusie").strip() or "langfusie"
     return [
         "HTTP request spans for API routes",
         "Observables dashboard aggregate scores",
+        "MCP tool health, read/write, and ontology retrieval metrics",
+        "Prompt, memory, and skill tag namespaces with per-event scores",
+        f"Full Langfuse trace graphs mirrored into CouchDB database '{graph_db_name}'",
         "Ingest mapping and contradiction assessment generations",
         "Attorney chat generations",
         "Attorney chat prompt/response rubric scores",
@@ -5130,6 +5405,18 @@ def _langfuse_monitored_operations() -> list[str]:
         "Focused reasoning summary prompt/response rubric scores",
         "Graph RAG answer generations",
         "Graph RAG prompt/response rubric scores",
+    ]
+
+
+def _deepeval_monitored_workflows() -> list[str]:
+    """Return the current DeepEval starter coverage shipped with this demo."""
+
+    return [
+        "Local deepeval test runner for AttorneyOS regression checks",
+        "Starter attorney chat answer relevancy eval scaffold",
+        "Starter graph RAG answer relevancy eval scaffold",
+        "FastAPI TestClient-backed eval flow so suites can run without an external server process",
+        "Optional Confident AI cloud upload when CONFIDENT_API_KEY is configured",
     ]
 
 
@@ -5155,11 +5442,40 @@ def langfuse_access_info() -> LangfuseAccessResponse:
     )
 
 
+@app.get("/api/observability/deepeval", response_model=DeepEvalAccessResponse)
+def deepeval_access_info() -> DeepEvalAccessResponse:
+    """Return DeepEval installation, docs, and starter-suite details."""
+
+    return DeepEvalAccessResponse(
+        enabled=deepeval_enabled_for_project(settings),
+        sdk_installed=deepeval_sdk_installed(),
+        cloud_configured=deepeval_cloud_configured(settings),
+        package_version=deepeval_package_version(),
+        docs_url="https://deepeval.com/docs/getting-started",
+        cloud_url="https://app.confident-ai.com",
+        quickstart_command="deepeval test run evals/attorneyos_deepeval.py",
+        starter_suite_path="evals/attorneyos_deepeval.py",
+        monitored_workflows=_deepeval_monitored_workflows(),
+    )
+
+
 @app.get("/api/graph-rag/health", response_model=GraphHealthResponse)
 def graph_rag_health() -> GraphHealthResponse:
     """Return Neo4j configuration/connectivity status for Graph RAG readiness checks."""
 
-    return GraphHealthResponse.model_validate(neo4j_graph.health())
+    payload = GraphHealthResponse.model_validate(neo4j_graph.health())
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_neo4j_ontology_access",
+        operation="health",
+        metrics={
+            "configured": payload.configured,
+            "connected": payload.connected,
+            "database": payload.database,
+            "error_present": bool(payload.error),
+        },
+    )
+    return payload
 
 
 @app.get("/api/graph-rag/embedding-config", response_model=GraphRagEmbeddingConfigResponse)
@@ -5245,13 +5561,51 @@ def load_graph_rag_ontology(request: GraphOntologyLoadRequest) -> GraphOntologyL
             batch_size=request.batch_size,
         )
     except RuntimeError as exc:
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_neo4j_ontology_access",
+            operation="load_owl",
+            metrics={
+                "load_success": False,
+                "requested_file_count": len(files),
+                "clear_existing": request.clear_existing,
+                "error_kind": type(exc).__name__,
+            },
+        )
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     except Exception as exc:
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_neo4j_ontology_access",
+            operation="load_owl",
+            metrics={
+                "load_success": False,
+                "requested_file_count": len(files),
+                "clear_existing": request.clear_existing,
+                "error_kind": type(exc).__name__,
+            },
+        )
         raise HTTPException(
             status_code=502,
             detail=f"Failed to import ontology files into Neo4j: {exc}",
         ) from exc
 
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_neo4j_ontology_access",
+        operation="load_owl",
+        metrics={
+            "load_success": True,
+            "requested_file_count": len(files),
+            "matched_file_count": len(stats.get("matched_files") or []),
+            "loaded_files": int(stats.get("loaded_files") or 0),
+            "triples": int(stats.get("triples") or 0),
+            "resource_relationships": int(stats.get("resource_relationships") or 0),
+            "literal_relationships": int(stats.get("literal_relationships") or 0),
+            "clear_existing": bool(stats.get("cleared")),
+            "database": str(stats.get("database") or ""),
+        },
+    )
     return GraphOntologyLoadResponse(path=path, **stats)
 
 
@@ -5297,6 +5651,17 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
                 query_embedding=query_embedding,
             )
         except ValueError as exc:
+            score_mcp_operation(
+                settings,
+                tool_name="mcp_neo4j_ontology_access",
+                operation="query_context",
+                metrics={
+                    "request_success": False,
+                    "rag_enabled": use_rag,
+                    "top_k": request.top_k,
+                    "error_kind": type(exc).__name__,
+                },
+            )
             _append_trace_events(
                 trace_id,
                 status="failed",
@@ -5324,6 +5689,17 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
                 )
             raise HTTPException(status_code=400, detail=str(exc)) from exc
         except RuntimeError as exc:
+            score_mcp_operation(
+                settings,
+                tool_name="mcp_neo4j_ontology_access",
+                operation="query_context",
+                metrics={
+                    "request_success": False,
+                    "rag_enabled": use_rag,
+                    "top_k": request.top_k,
+                    "error_kind": type(exc).__name__,
+                },
+            )
             _append_trace_events(
                 trace_id,
                 status="failed",
@@ -5351,6 +5727,17 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
                 )
             raise HTTPException(status_code=503, detail=str(exc)) from exc
         except Exception as exc:
+            score_mcp_operation(
+                settings,
+                tool_name="mcp_neo4j_ontology_access",
+                operation="query_context",
+                metrics={
+                    "request_success": False,
+                    "rag_enabled": use_rag,
+                    "top_k": request.top_k,
+                    "error_kind": type(exc).__name__,
+                },
+            )
             _append_trace_events(
                 trace_id,
                 status="failed",
@@ -5440,7 +5827,15 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
             settings,
             operation="graph_rag_query",
             session_id=trace_id or question[:120],
-            tags=["attorneyos", "graph-rag", llm_provider],
+            tags=[
+                "attorneyos",
+                "category-prompt",
+                "category-skill",
+                "prompt-graph-rag",
+                "skill-graph-rag",
+                "graph-rag",
+                llm_provider,
+            ],
             metadata={
                 "llm_provider": llm_provider,
                 "llm_model": llm_model,
@@ -5450,10 +5845,32 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
                 "context_rows": int(retrieval.get("resource_count") or 0),
             },
         )
-        if invoke_config:
-            result = llm.invoke(messages, config=invoke_config)
-        else:
-            result = llm.invoke(messages)
+        with propagate_trace_attributes(
+            settings,
+            session_id=trace_id or question[:120],
+            tags=[
+                "attorneyos",
+                "category-prompt",
+                "category-skill",
+                "prompt-graph-rag",
+                "skill-graph-rag",
+                "graph-rag",
+                llm_provider,
+            ],
+            metadata={
+                "operation": "graph_rag_query",
+                "llm_provider": llm_provider,
+                "llm_model": llm_model,
+                "question_chars": len(question),
+                "top_k": request.top_k,
+                "use_rag": use_rag,
+                "context_rows": int(retrieval.get("resource_count") or 0),
+            },
+        ):
+            if invoke_config:
+                result = llm.invoke(messages, config=invoke_config)
+            else:
+                result = llm.invoke(messages)
     except Exception as exc:
         _append_trace_events(
             trace_id,
@@ -5487,6 +5904,18 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
                 error=str(exc),
                 retrieved_resources=[item for item in retrieval.get("resources", []) if isinstance(item, dict)],
             )
+        score_skill_operation(
+            settings,
+            skill_name="graph_rag",
+            metrics={
+                "success": False,
+                "rag_enabled": use_rag,
+                "rag_stream_enabled": stream_rag,
+                "top_k": request.top_k,
+                "context_rows": int(retrieval.get("resource_count") or 0),
+                "error_kind": type(exc).__name__,
+            },
+        )
         raise HTTPException(
             status_code=502,
             detail=llm_failure_message(settings, llm_provider, llm_model, exc),
@@ -5495,11 +5924,21 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
     answer = str(getattr(result, "content", "") or "").strip()
     if not answer:
         answer = "Short answer: No answer could be generated from current ontology context."
-    score_user_prompt_and_response(
+    score_prompt_operation(
         settings,
         operation="graph_rag_query",
         prompt_text=question,
         response_text=answer,
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
+        prompt_template_keys=["graph_rag_system", "graph_rag_user"],
+        extra_metrics={
+            "rag_enabled": use_rag,
+            "rag_stream_enabled": stream_rag,
+            "top_k": request.top_k,
+            "context_rows": int(retrieval.get("resource_count") or 0),
+            "resource_count": len(retrieval.get("resources", [])),
+        },
     )
 
     sources = [
@@ -5552,6 +5991,41 @@ def query_graph_rag(request: GraphRagQueryRequest) -> GraphRagQueryResponse:
         llm_system_prompt=system_prompt,
         llm_user_prompt=user_prompt,
     )
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_neo4j_ontology_access",
+        operation="query_context",
+        metrics={
+            "request_success": True,
+            "rag_enabled": use_rag,
+            "rag_stream_enabled": stream_rag,
+            "top_k": request.top_k,
+            "resource_count": len(monitor.retrieved_resources),
+            "relation_count": sum(len(item.relations) for item in monitor.retrieved_resources),
+            "literal_count": sum(len(item.literals) for item in monitor.retrieved_resources),
+            "retrieval_term_count": len(monitor.retrieval_terms),
+            "context_bytes": len(monitor.context_preview.encode("utf-8")),
+            "context_hit": bool(monitor.retrieved_resources),
+            "query_embedding_used": monitor.query_embedding_used,
+            "retrieval_mode": monitor.retrieval_mode,
+            "embedding_enabled": monitor.embedding_enabled,
+            "embedding_provider": monitor.embedding_provider or "",
+        },
+    )
+    score_skill_operation(
+        settings,
+        skill_name="graph_rag",
+        metrics={
+            "success": True,
+            "rag_enabled": use_rag,
+            "rag_stream_enabled": stream_rag,
+            "top_k": request.top_k,
+            "context_rows": int(retrieval.get("resource_count") or 0),
+            "resource_count": len(monitor.retrieved_resources),
+            "query_embedding_used": monitor.query_embedding_used,
+            "response_chars": len(answer),
+        },
+    )
     _append_trace_events(
         trace_id,
         status="completed",
@@ -5603,6 +6077,16 @@ def thought_stream_health() -> dict[str, str | bool]:
     try:
         trace_couchdb.ensure_db(retries=1, delay_seconds=0)
     except Exception as exc:
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_couchdb_thought_stream_access",
+            operation="health",
+            metrics={
+                "connected": False,
+                "database": settings.thought_stream_db,
+                "error_kind": type(exc).__name__,
+            },
+        )
         raise HTTPException(
             status_code=503,
             detail=(
@@ -5611,6 +6095,15 @@ def thought_stream_health() -> dict[str, str | bool]:
             ),
         ) from exc
 
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_couchdb_thought_stream_access",
+        operation="health",
+        metrics={
+            "connected": True,
+            "database": settings.thought_stream_db,
+        },
+    )
     return {
         "connected": True,
         "database": settings.thought_stream_db,
@@ -5723,7 +6216,26 @@ def get_trace_session(thought_stream_id: str) -> TraceSessionResponse:
 
     snapshot = _trace_session_snapshot(thought_stream_id.strip())
     if snapshot is None:
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_couchdb_thought_stream_access",
+            operation="get_thought_stream",
+            metrics={
+                "found": False,
+                "thought_stream_id_present": bool(thought_stream_id.strip()),
+            },
+        )
         raise HTTPException(status_code=404, detail=f"Thought stream '{thought_stream_id}' was not found")
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_couchdb_thought_stream_access",
+        operation="get_thought_stream",
+        metrics={
+            "found": True,
+            "status": str(snapshot.get("status") or ""),
+            **_thought_stream_event_counts(snapshot),
+        },
+    )
     return TraceSessionResponse.model_validate(snapshot)
 
 
@@ -5741,6 +6253,16 @@ def save_trace_session(thought_stream_id: str, request: SaveTraceRequest) -> Sav
     _flush_trace_session(normalized_trace_id, force=True)
     snapshot = _trace_session_snapshot(normalized_trace_id)
     if snapshot is None:
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_couchdb_thought_stream_access",
+            operation="save_thought_stream",
+            metrics={
+                "saved": False,
+                "case_id": case_id,
+                "channel": request.channel,
+            },
+        )
         raise HTTPException(status_code=404, detail=f"Thought stream '{normalized_trace_id}' was not found")
 
     _save_case_memory(
@@ -5760,6 +6282,17 @@ def save_trace_session(thought_stream_id: str, request: SaveTraceRequest) -> Sav
         memory_increment=1,
         last_action="thought_stream_save",
     )
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_couchdb_thought_stream_access",
+        operation="save_thought_stream",
+        metrics={
+            "saved": True,
+            "case_id": case_id,
+            "channel": request.channel,
+            **_thought_stream_event_counts(snapshot),
+        },
+    )
     return SaveTraceResponse(
         thought_stream_id=normalized_trace_id,
         case_id=case_id,
@@ -5774,7 +6307,25 @@ def delete_trace_session(thought_stream_id: str) -> DeleteTraceResponse:
 
     deleted = _delete_trace_session(thought_stream_id)
     if not deleted:
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_couchdb_thought_stream_access",
+            operation="delete_thought_stream",
+            metrics={
+                "deleted": False,
+                "thought_stream_id_present": bool(thought_stream_id.strip()),
+            },
+        )
         raise HTTPException(status_code=404, detail=f"Thought stream '{thought_stream_id}' was not found")
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_couchdb_thought_stream_access",
+        operation="delete_thought_stream",
+        metrics={
+            "deleted": True,
+            "thought_stream_id_present": bool(thought_stream_id.strip()),
+        },
+    )
     return DeleteTraceResponse(thought_stream_id=thought_stream_id, deleted=True)
 
 
@@ -6273,6 +6824,15 @@ def list_depositions(case_id: str) -> list[dict]:
 
     docs = couchdb.list_depositions(case_id)
     docs.sort(key=_dashboard_score, reverse=True)
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_couchdb_deposition_access",
+        operation="list_depositions",
+        metrics={
+            "result_count": len(docs),
+            "case_id": case_id,
+        },
+    )
     return docs
 
 
@@ -6281,9 +6841,30 @@ def get_deposition(deposition_id: str) -> dict:
     """Return full deposition document by id."""
 
     try:
-        return couchdb.get_doc(deposition_id)
+        doc = couchdb.get_doc(deposition_id)
     except Exception as exc:  # pragma: no cover - passthrough to API
+        score_mcp_operation(
+            settings,
+            tool_name="mcp_couchdb_deposition_access",
+            operation="get_deposition",
+            metrics={
+                "found": False,
+                "deposition_id_present": bool(deposition_id.strip()),
+            },
+        )
         raise HTTPException(status_code=404, detail="Deposition not found") from exc
+    score_mcp_operation(
+        settings,
+        tool_name="mcp_couchdb_deposition_access",
+        operation="get_deposition",
+        metrics={
+            "found": True,
+            "claim_count": len(doc.get("claims") or []),
+            "contradiction_score": float(_dashboard_score(doc)),
+            "has_raw_text": bool(str(doc.get("raw_text") or "").strip()),
+        },
+    )
+    return doc
 
 
 @app.post("/api/chat", response_model=ChatResponse)
@@ -6400,12 +6981,6 @@ def chat(request: ChatRequest) -> ChatResponse:
         trace_id,
         len(response),
     )
-    score_user_prompt_and_response(
-        settings,
-        operation="chat",
-        prompt_text=request.message,
-        response_text=response,
-    )
     record_llm_operation("chat", True, llm_provider)
     return ChatResponse(
         response=response,
@@ -6477,12 +7052,6 @@ def reason_contradiction(request: ContradictionReasonRequest) -> ContradictionRe
         request.deposition_id,
         len(response),
     )
-    score_user_prompt_and_response(
-        settings,
-        operation="reason_contradiction",
-        prompt_text=json.dumps(request.contradiction.model_dump(), indent=2),
-        response_text=response,
-    )
     record_llm_operation("reason_contradiction", True, llm_provider)
     return ContradictionReasonResponse(response=response)
 
@@ -6548,12 +7117,6 @@ def summarize_focused_reasoning(
         request.case_id,
         request.deposition_id,
         len(summary),
-    )
-    score_user_prompt_and_response(
-        settings,
-        operation="summarize_focused_reasoning",
-        prompt_text=request.reasoning_text,
-        response_text=summary,
     )
     record_llm_operation("summarize_focused_reasoning", True, llm_provider)
     return FocusedReasoningSummaryResponse(summary=summary)

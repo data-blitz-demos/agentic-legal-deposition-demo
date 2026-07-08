@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 from copy import deepcopy
+from unittest.mock import Mock
 
 import pytest
 
@@ -80,13 +81,18 @@ def test_coerce_events_validation():
 
 
 def test_thought_stream_health(fake_client):
+    logger = Mock()
+    ts.logger = logger
     payload = ts.thought_stream_health()
     assert payload["connected"] is True
     assert "database" in payload
+    assert any(call.args and call.args[0] == "langfuse mcp_request tool=thought_stream_health db=%s" for call in logger.info.call_args_list)
 
 
 def test_append_get_list_delete_flow(fake_client):
     trace_id = "trace-1"
+    logger = Mock()
+    ts.logger = logger
 
     append_payload = ts.append_thought_stream_events(
         trace_id=trace_id,
@@ -114,6 +120,11 @@ def test_append_get_list_delete_flow(fake_client):
 
     deleted_again = ts.delete_thought_stream(trace_id)
     assert deleted_again["deleted"] is False
+    messages = [call.args[0] for call in logger.info.call_args_list if call.args]
+    assert "langfuse mcp_request tool=append_thought_stream_events trace_id=%s status=%s case_id_present=%s legal_clerk_events=%s attorney_events=%s" in messages
+    assert "langfuse mcp_result tool=get_thought_stream trace_id=%s status=%s legal_clerk_events=%s attorney_events=%s" in messages
+    assert "langfuse mcp_result tool=delete_thought_stream trace_id=%s deleted=true" in messages
+    assert "langfuse mcp_result tool=delete_thought_stream trace_id=%s deleted=false" in messages
 
 
 def test_append_assigns_sequence_across_calls(fake_client):

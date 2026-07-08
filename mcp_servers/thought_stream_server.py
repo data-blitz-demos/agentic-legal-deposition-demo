@@ -21,8 +21,11 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from backend.app.couchdb import CouchDBClient
+from backend.app.logging_config import configure_application_logging, get_logger
 
 mcp = FastMCP("couchdb-thought-stream-access")
+configure_application_logging()
+logger = get_logger("mcp.thought_stream_server")
 
 
 def _settings() -> tuple[str, str]:
@@ -38,11 +41,18 @@ def _with_client(fn):
 
     couchdb_url, thought_stream_db = _settings()
     client = CouchDBClient(couchdb_url, thought_stream_db)
+    logger.info("langfuse mcp_client_open server=couchdb_thought_stream_access db=%s", thought_stream_db)
     try:
         client.ensure_db()
-        return fn(client)
+        result = fn(client)
+        logger.info("langfuse mcp_client_success server=couchdb_thought_stream_access db=%s", thought_stream_db)
+        return result
+    except Exception:
+        logger.exception("langfuse mcp_client_failure server=couchdb_thought_stream_access db=%s", thought_stream_db)
+        raise
     finally:
         client.close()
+        logger.info("langfuse mcp_client_closed server=couchdb_thought_stream_access db=%s", thought_stream_db)
 
 
 def _utc_now_iso() -> str:
@@ -139,13 +149,16 @@ def thought_stream_health() -> dict[str, Any]:
     """Check thought-stream CouchDB connectivity and report active database."""
 
     couchdb_url, thought_stream_db = _settings()
+    logger.info("langfuse mcp_request tool=thought_stream_health db=%s", thought_stream_db)
 
     def _run(_client: CouchDBClient) -> dict[str, Any]:
-        return {
+        payload = {
             "connected": True,
             "database": thought_stream_db,
             "couchdb_url": couchdb_url,
         }
+        logger.info("langfuse mcp_result tool=thought_stream_health db=%s connected=true", thought_stream_db)
+        return payload
 
     return _with_client(_run)
 
@@ -167,6 +180,14 @@ def append_thought_stream_events(
     normalized_status = _normalize_status(status)
     legal_items = _coerce_events(legal_clerk)
     attorney_items = _coerce_events(attorney)
+    logger.info(
+        "langfuse mcp_request tool=append_thought_stream_events trace_id=%s status=%s case_id_present=%s legal_clerk_events=%s attorney_events=%s",
+        normalized_trace_id,
+        normalized_status,
+        bool(case_id and case_id.strip()),
+        len(legal_items),
+        len(attorney_items),
+    )
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         doc = _load_stream_doc(client, normalized_trace_id)
@@ -192,7 +213,7 @@ def append_thought_stream_events(
         doc["updated_at"] = now
 
         saved = client.update_doc(doc)
-        return {
+        payload = {
             "trace_id": normalized_trace_id,
             "doc_id": saved.get("_id"),
             "status": normalized_status,
@@ -207,6 +228,14 @@ def append_thought_stream_events(
             },
             "updated_at": saved.get("updated_at", now),
         }
+        logger.info(
+            "langfuse mcp_result tool=append_thought_stream_events trace_id=%s status=%s total_legal_clerk=%s total_attorney=%s",
+            normalized_trace_id,
+            normalized_status,
+            payload["total_events"]["legal_clerk"],
+            payload["total_events"]["attorney"],
+        )
+        return payload
 
     return _with_client(_run)
 
@@ -218,6 +247,7 @@ def get_thought_stream(trace_id: str) -> dict[str, Any]:
     normalized_trace_id = trace_id.strip()
     if not normalized_trace_id:
         raise ValueError("trace_id is required")
+    logger.info("langfuse mcp_request tool=get_thought_stream trace_id=%s", normalized_trace_id)
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         doc = client.get_doc(_trace_doc_id(normalized_trace_id))
@@ -226,7 +256,7 @@ def get_thought_stream(trace_id: str) -> dict[str, Any]:
         trace_payload = doc.get("trace") if isinstance(doc.get("trace"), dict) else {}
         trace_payload.setdefault("legal_clerk", [])
         trace_payload.setdefault("attorney", [])
-        return {
+        payload = {
             "trace_id": str(doc.get("trace_id") or normalized_trace_id),
             "doc_id": str(doc.get("_id") or _trace_doc_id(normalized_trace_id)),
             "status": str(doc.get("status") or "running"),
@@ -235,6 +265,14 @@ def get_thought_stream(trace_id: str) -> dict[str, Any]:
             "updated_at": doc.get("updated_at"),
             "trace": trace_payload,
         }
+        logger.info(
+            "langfuse mcp_result tool=get_thought_stream trace_id=%s status=%s legal_clerk_events=%s attorney_events=%s",
+            normalized_trace_id,
+            payload["status"],
+            len(trace_payload["legal_clerk"]),
+            len(trace_payload["attorney"]),
+        )
+        return payload
 
     return _with_client(_run)
 
@@ -244,6 +282,12 @@ def list_thought_streams(case_id: str | None = None, limit: int = 100) -> dict[s
     """List thought-stream documents, optionally filtered by case id."""
 
     bounded_limit = max(1, min(limit, 500))
+    logger.info(
+        "langfuse mcp_request tool=list_thought_streams case_id_present=%s requested_limit=%s bounded_limit=%s",
+        bool(case_id and case_id.strip()),
+        limit,
+        bounded_limit,
+    )
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         selector: dict[str, Any] = {"type": "thought_stream"}
@@ -264,11 +308,17 @@ def list_thought_streams(case_id: str | None = None, limit: int = 100) -> dict[s
             }
             for item in docs
         ]
-        return {
+        payload = {
             "count": len(items),
             "case_id": case_id,
             "thought_streams": items,
         }
+        logger.info(
+            "langfuse mcp_result tool=list_thought_streams count=%s case_id_present=%s",
+            len(items),
+            bool(case_id and case_id.strip()),
+        )
+        return payload
 
     return _with_client(_run)
 
@@ -280,24 +330,29 @@ def delete_thought_stream(trace_id: str) -> dict[str, Any]:
     normalized_trace_id = trace_id.strip()
     if not normalized_trace_id:
         raise ValueError("trace_id is required")
+    logger.info("langfuse mcp_request tool=delete_thought_stream trace_id=%s", normalized_trace_id)
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         doc_id = _trace_doc_id(normalized_trace_id)
         try:
             existing = client.get_doc(doc_id)
         except Exception:
-            return {
+            payload = {
                 "trace_id": normalized_trace_id,
                 "doc_id": doc_id,
                 "deleted": False,
             }
+            logger.info("langfuse mcp_result tool=delete_thought_stream trace_id=%s deleted=false", normalized_trace_id)
+            return payload
 
         client.delete_doc(doc_id, rev=existing.get("_rev") if isinstance(existing, dict) else None)
-        return {
+        payload = {
             "trace_id": normalized_trace_id,
             "doc_id": doc_id,
             "deleted": True,
         }
+        logger.info("langfuse mcp_result tool=delete_thought_stream trace_id=%s deleted=true", normalized_trace_id)
+        return payload
 
     return _with_client(_run)
 

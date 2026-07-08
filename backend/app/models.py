@@ -445,6 +445,20 @@ class LangfuseAccessResponse(BaseModel):
     monitored_operations: list[str] = Field(default_factory=list)
 
 
+class DeepEvalAccessResponse(BaseModel):
+    """Response payload exposing DeepEval installation and workflow details."""
+
+    enabled: bool
+    sdk_installed: bool
+    cloud_configured: bool
+    package_version: str
+    docs_url: str
+    cloud_url: str
+    quickstart_command: str
+    starter_suite_path: str
+    monitored_workflows: list[str] = Field(default_factory=list)
+
+
 class GraphHealthResponse(BaseModel):
     """Response payload reporting Neo4j graph availability."""
 

@@ -9,6 +9,7 @@ import runpy
 import sys
 from copy import deepcopy
 from pathlib import Path
+from unittest.mock import Mock
 
 import pytest
 
@@ -111,9 +112,11 @@ def _import_fresh(module_name: str):
 def test_thought_stream_with_client_and_error_branches(monkeypatch):
     ts = _import_fresh("mcp_servers.thought_stream_server")
     fake_client = FakeThoughtStreamClient()
+    logger = Mock()
 
     monkeypatch.setattr(ts, "_settings", lambda: ("http://couchdb", "thought_stream"))
     monkeypatch.setattr(ts, "CouchDBClient", lambda url, db: fake_client)
+    monkeypatch.setattr(ts, "logger", logger)
 
     result = ts._with_client(lambda client: {"same_client": client is fake_client})
     assert result == {"same_client": True}
@@ -124,6 +127,7 @@ def test_thought_stream_with_client_and_error_branches(monkeypatch):
     with pytest.raises(RuntimeError, match="boom"):
         ts._with_client(lambda _client: (_ for _ in ()).throw(RuntimeError("boom")))
     assert fake_client.closed is True
+    assert any(call.args and call.args[0] == "langfuse mcp_client_failure server=couchdb_thought_stream_access db=%s" for call in logger.exception.call_args_list)
 
     assert ts._max_sequence({"legal_clerk": [{"sequence": "bad"}], "attorney": [{"sequence": 4}]}) == 4
 
@@ -192,9 +196,11 @@ def test_couchdb_server_end_to_end(monkeypatch):
         },
     ]
     fake_client = FakeDepositionClient(docs)
+    logger = Mock()
 
     monkeypatch.setattr(cs, "_settings", lambda: ("http://couchdb", "depositions"))
     monkeypatch.setattr(cs, "CouchDBClient", lambda url, db: fake_client)
+    monkeypatch.setattr(cs, "logger", logger)
 
     assert cs._settings() == ("http://couchdb", "depositions")
 
@@ -217,6 +223,11 @@ def test_couchdb_server_end_to_end(monkeypatch):
     assert cs.get_deposition("dep-1")["_id"] == "dep-1"
     assert fake_client.ensured is True
     assert fake_client.closed is True
+    messages = [call.args[0] for call in logger.info.call_args_list if call.args]
+    assert "langfuse mcp_request tool=list_case_depositions case_id=%s requested_limit=%s bounded_limit=%s" in messages
+    assert "langfuse mcp_result tool=list_case_depositions case_id=%s count=%s" in messages
+    assert "langfuse mcp_request tool=get_deposition deposition_id=%s" in messages
+    assert "langfuse mcp_result tool=search_claims case_id=%s count=%s" in messages
 
 
 def test_couchdb_server_settings_and_with_client(monkeypatch):
@@ -230,16 +241,26 @@ def test_couchdb_server_settings_and_with_client(monkeypatch):
     assert cs._settings() == ("http://user:pass@host:5984", "legal_docs")
 
     fake_client = FakeDepositionClient()
+    logger = Mock()
     monkeypatch.setattr(cs, "CouchDBClient", lambda url, db: fake_client)
+    monkeypatch.setattr(cs, "logger", logger)
 
     assert cs._with_client(lambda client: client is fake_client) is True
     assert fake_client.ensured is True
     assert fake_client.closed is True
+    assert any(call.args and call.args[0] == "langfuse mcp_client_open server=couchdb_deposition_access db=%s" for call in logger.info.call_args_list)
+
+    fake_client.closed = False
+    with pytest.raises(RuntimeError, match="boom"):
+        cs._with_client(lambda _client: (_ for _ in ()).throw(RuntimeError("boom")))
+    assert fake_client.closed is True
+    assert any(call.args and call.args[0] == "langfuse mcp_client_failure server=couchdb_deposition_access db=%s" for call in logger.exception.call_args_list)
 
 
 def test_neo4j_server_end_to_end(monkeypatch):
     ns = _import_fresh("mcp_servers.neo4j_ontology_server")
     fake_graph = FakeOntologyGraph()
+    logger = Mock()
 
     monkeypatch.setattr(
         ns,
@@ -253,6 +274,7 @@ def test_neo4j_server_end_to_end(monkeypatch):
         },
     )
     monkeypatch.setattr(ns, "Neo4jOntologyGraph", lambda **kwargs: fake_graph)
+    monkeypatch.setattr(ns, "logger", logger)
 
     assert ns.ontology_health() == {"ok": True}
 
@@ -278,6 +300,10 @@ def test_neo4j_server_end_to_end(monkeypatch):
         ns.get_ontology_resource("missing")
 
     assert fake_graph.closed is True
+    messages = [call.args[0] for call in logger.info.call_args_list if call.args]
+    assert "langfuse mcp_request tool=ontology_health" in messages
+    assert "langfuse mcp_result tool=search_ontology_context resource_count=%s retrieval_mode=%s" in messages
+    assert "langfuse mcp_request tool=get_ontology_resource iri=%s neighbor_limit=%s literal_limit=%s" in messages
 
 
 def test_neo4j_server_settings_and_with_graph(monkeypatch):
@@ -309,6 +335,9 @@ def test_neo4j_server_settings_and_with_graph(monkeypatch):
     }
 
     fake_graph = FakeOntologyGraph()
+    logger = Mock()
     monkeypatch.setattr(ns, "Neo4jOntologyGraph", lambda **kwargs: fake_graph)
+    monkeypatch.setattr(ns, "logger", logger)
     assert ns._with_graph(lambda graph: graph is fake_graph) is True
     assert fake_graph.closed is True
+    assert any(call.args and call.args[0] == "langfuse mcp_graph_open server=neo4j_legal_ontology_access database=%s" for call in logger.info.call_args_list)

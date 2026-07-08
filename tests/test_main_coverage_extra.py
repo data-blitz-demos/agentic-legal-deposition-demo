@@ -329,6 +329,7 @@ def test_lifespan_logs_langfuse_enabled_message(monkeypatch):
     monkeypatch.setattr(main, "memory_couchdb", SimpleNamespace(ensure_db=lambda: None, close=lambda: None))
     monkeypatch.setattr(main, "trace_couchdb", SimpleNamespace(ensure_db=lambda: None, close=lambda: None))
     monkeypatch.setattr(main, "rag_couchdb", SimpleNamespace(ensure_db=lambda: None, close=lambda: None))
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", SimpleNamespace(ensure_db=lambda: None, close=lambda: None))
     monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(close=lambda: None))
 
     async def run_lifespan() -> None:

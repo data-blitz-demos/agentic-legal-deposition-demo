@@ -24,6 +24,7 @@ def test_get_settings_reads_environment(monkeypatch):
     monkeypatch.setenv("MEMORY_DB", "memory-test")
     monkeypatch.setenv("THOUGHT_STREAM_DB", "thought-stream-test")
     monkeypatch.setenv("RAG_STREAM_DB", "rag-stream-test")
+    monkeypatch.setenv("LANGFUSE_GRAPH_DB", "langfusie-test")
     monkeypatch.setenv("LOG_LEVEL", "DEBUG")
     monkeypatch.setenv("LOG_FILE_PATH", "/tmp/logs/app.log")
     monkeypatch.setenv("NEO4J_URI", "bolt://localhost:7687")
@@ -34,6 +35,8 @@ def test_get_settings_reads_environment(monkeypatch):
     monkeypatch.setenv("GRAFANA_URL", "http://localhost:3000")
     monkeypatch.setenv("GRAFANA_ADMIN_USER", "grafana-admin")
     monkeypatch.setenv("GRAFANA_ADMIN_PASSWORD", "grafana-pass")
+    monkeypatch.setenv("DEEPEVAL_ENABLED", "false")
+    monkeypatch.setenv("CONFIDENT_API_KEY", "confident_us_test")
     monkeypatch.setenv("LANGFUSE_ENABLED", "true")
     monkeypatch.setenv("LANGFUSE_BASE_URL", "http://localhost:3001")
     monkeypatch.setenv("LANGFUSE_PUBLIC_URL", "http://localhost:3001")
@@ -43,6 +46,9 @@ def test_get_settings_reads_environment(monkeypatch):
     monkeypatch.setenv("LANGFUSE_INIT_USER_EMAIL", "langfuse@example.test")
     monkeypatch.setenv("LANGFUSE_INIT_USER_NAME", "Langfuse Admin")
     monkeypatch.setenv("LANGFUSE_INIT_USER_PASSWORD", "langfuse-pass")
+    monkeypatch.setenv("LANGFUSE_CLICKHOUSE_URL", "http://clickhouse:8123")
+    monkeypatch.setenv("LANGFUSE_CLICKHOUSE_USER", "clickhouse-user")
+    monkeypatch.setenv("LANGFUSE_CLICKHOUSE_PASSWORD", "clickhouse-pass")
     monkeypatch.setenv("ONTOLOGY_DIR", "/tmp/ontology")
     monkeypatch.setenv("MAX_CONTEXT_DEPOSITIONS", "9")
     monkeypatch.setenv("DEPOSITION_DIR", "/tmp/deps")
@@ -65,6 +71,7 @@ def test_get_settings_reads_environment(monkeypatch):
     assert settings.memory_db == "memory-test"
     assert settings.thought_stream_db == "thought-stream-test"
     assert settings.rag_stream_db == "rag-stream-test"
+    assert settings.langfuse_graph_db == "langfusie-test"
     assert settings.log_level == "DEBUG"
     assert settings.log_file_path == "/tmp/logs/app.log"
     assert settings.neo4j_uri == "bolt://localhost:7687"
@@ -75,6 +82,8 @@ def test_get_settings_reads_environment(monkeypatch):
     assert settings.grafana_url == "http://localhost:3000"
     assert settings.grafana_admin_user == "grafana-admin"
     assert settings.grafana_admin_password == "grafana-pass"
+    assert settings.deepeval_enabled is False
+    assert settings.confident_api_key == "confident_us_test"
     assert settings.langfuse_enabled is True
     assert settings.langfuse_base_url == "http://localhost:3001"
     assert settings.langfuse_public_url == "http://localhost:3001"
@@ -84,6 +93,9 @@ def test_get_settings_reads_environment(monkeypatch):
     assert settings.langfuse_init_user_email == "langfuse@example.test"
     assert settings.langfuse_init_user_name == "Langfuse Admin"
     assert settings.langfuse_init_user_password == "langfuse-pass"
+    assert settings.langfuse_clickhouse_url == "http://clickhouse:8123"
+    assert settings.langfuse_clickhouse_user == "clickhouse-user"
+    assert settings.langfuse_clickhouse_password == "clickhouse-pass"
     assert settings.ontology_dir == "/tmp/ontology"
     assert settings.max_context_depositions == 9
     assert settings.deposition_dir == "/tmp/deps"

@@ -13,7 +13,12 @@ from time import perf_counter
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
 from .config import Settings
-from .langfuse_integration import build_langchain_config
+from .langfuse_integration import (
+    build_langchain_config,
+    propagate_trace_attributes,
+    score_prompt_operation,
+    score_skill_operation,
+)
 from .llm import build_chat_model, llm_failure_message, resolve_llm_selection
 from .prompts import render_prompt
 
@@ -113,16 +118,69 @@ class AttorneyChatService:
                 "history_items": len(history),
                 "message_chars": len(user_message),
             },
-            tags=("attorneyos", "chat", effective_provider),
+            tags=(
+                "attorneyos",
+                "category-prompt",
+                "category-skill",
+                "category-memory",
+                "prompt-chat",
+                "skill-attorney-chat",
+                "memory-chat",
+                effective_provider,
+            ),
         )
 
         try:
-            if invoke_config:
-                result = llm.invoke(messages, config=invoke_config)
-            else:
-                result = llm.invoke(messages)
+            with propagate_trace_attributes(
+                self.settings,
+                session_id=trace_session_id or str(deposition.get("case_id") or ""),
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "category-memory",
+                    "prompt-chat",
+                    "skill-attorney-chat",
+                    "memory-chat",
+                    effective_provider,
+                ),
+                metadata={
+                    "operation": "chat_response",
+                    "case_id": str(deposition.get("case_id") or ""),
+                    "deposition_id": str(deposition.get("_id") or ""),
+                },
+            ):
+                if invoke_config:
+                    result = llm.invoke(messages, config=invoke_config)
+                else:
+                    result = llm.invoke(messages)
             response_text = str(result.content or "")
             normalized_response = self._normalize_chat_output(response_text, deposition, user_message)
+            score_prompt_operation(
+                self.settings,
+                operation="chat",
+                prompt_text=user_message,
+                response_text=normalized_response,
+                system_prompt=system_prompt,
+                user_prompt=context_prompt,
+                prompt_template_keys=["chat_system", "chat_user_context"],
+                extra_metrics={
+                    "history_items": len(history),
+                    "peer_count": len(peers),
+                    "context_bytes": len(json.dumps(context_payload).encode("utf-8")),
+                },
+            )
+            score_skill_operation(
+                self.settings,
+                skill_name="attorney_chat",
+                metrics={
+                    "success": True,
+                    "history_items": len(history),
+                    "peer_count": len(peers),
+                    "response_chars": len(normalized_response),
+                    "latency_ms": int((perf_counter() - start) * 1000),
+                },
+            )
             trace = [
                 {
                     "persona": "Persona:Attorney",
@@ -150,6 +208,16 @@ class AttorneyChatService:
             ]
             return normalized_response, trace
         except Exception as exc:
+            score_skill_operation(
+                self.settings,
+                skill_name="attorney_chat",
+                metrics={
+                    "success": False,
+                    "history_items": len(history),
+                    "peer_count": len(peers),
+                    "error_kind": type(exc).__name__,
+                },
+            )
             raise RuntimeError(
                 llm_failure_message(self.settings, llm_provider, llm_model, exc)
             ) from exc
@@ -189,21 +257,84 @@ class AttorneyChatService:
                 "peer_count": len(peers),
                 "contradiction_summary": str(contradiction.get("summary") or "")[:200],
             },
-            tags=("attorneyos", "reason-contradiction", effective_provider),
+            tags=(
+                "attorneyos",
+                "category-prompt",
+                "category-skill",
+                "category-memory",
+                "prompt-reason-contradiction",
+                "skill-contradiction-reasoning",
+                "memory-reason",
+                effective_provider,
+            ),
         )
 
         try:
             messages = [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
-            if invoke_config:
-                result = llm.invoke(messages, config=invoke_config)
-            else:
-                result = llm.invoke(messages)
-            return self._normalize_reasoning_output(
+            with propagate_trace_attributes(
+                self.settings,
+                session_id=trace_session_id or str(deposition.get("case_id") or ""),
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "category-memory",
+                    "prompt-reason-contradiction",
+                    "skill-contradiction-reasoning",
+                    "memory-reason",
+                    effective_provider,
+                ),
+                metadata={
+                    "operation": "reason_contradiction",
+                    "case_id": str(deposition.get("case_id") or ""),
+                    "deposition_id": str(deposition.get("_id") or ""),
+                },
+            ):
+                if invoke_config:
+                    result = llm.invoke(messages, config=invoke_config)
+                else:
+                    result = llm.invoke(messages)
+            normalized = self._normalize_reasoning_output(
                 str(result.content or ""),
                 contradiction,
                 context_payload,
             )
+            score_prompt_operation(
+                self.settings,
+                operation="reason_contradiction",
+                prompt_text=json.dumps(contradiction, indent=2),
+                response_text=normalized,
+                system_prompt=system_prompt,
+                user_prompt=user_prompt,
+                prompt_template_keys=["reason_contradiction_system", "reason_contradiction_user"],
+                extra_metrics={
+                    "peer_count": len(peers),
+                    "context_bytes": len(json.dumps(context_payload).encode("utf-8")),
+                    "severity": float(contradiction.get("severity") or 0),
+                },
+            )
+            score_skill_operation(
+                self.settings,
+                skill_name="contradiction_reasoning",
+                metrics={
+                    "success": True,
+                    "peer_count": len(peers),
+                    "severity": float(contradiction.get("severity") or 0),
+                    "response_chars": len(normalized),
+                },
+            )
+            return normalized
         except Exception as exc:
+            score_skill_operation(
+                self.settings,
+                skill_name="contradiction_reasoning",
+                metrics={
+                    "success": False,
+                    "peer_count": len(peers),
+                    "severity": float(contradiction.get("severity") or 0),
+                    "error_kind": type(exc).__name__,
+                },
+            )
             raise RuntimeError(
                 llm_failure_message(self.settings, llm_provider, llm_model, exc)
             ) from exc
@@ -254,20 +385,79 @@ class AttorneyChatService:
                 "deposition_id": str(deposition_id or ""),
                 "reasoning_chars": len(normalized_source),
             },
-            tags=("attorneyos", "focused-summary", effective_provider),
+            tags=(
+                "attorneyos",
+                "category-prompt",
+                "category-skill",
+                "category-memory",
+                "prompt-focused-summary",
+                "skill-focused-summary",
+                "memory-reason-summary",
+                effective_provider,
+            ),
         )
 
         try:
             messages = [SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)]
-            if invoke_config:
-                result = llm.invoke(messages, config=invoke_config)
-            else:
-                result = llm.invoke(messages)
-            return self._normalize_focused_summary_output(
+            with propagate_trace_attributes(
+                self.settings,
+                session_id=trace_session_id or case_id,
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "category-memory",
+                    "prompt-focused-summary",
+                    "skill-focused-summary",
+                    "memory-reason-summary",
+                    effective_provider,
+                ),
+                metadata={
+                    "operation": "summarize_focused_reasoning",
+                    "case_id": str(case_id or ""),
+                    "deposition_id": str(deposition_id or ""),
+                },
+            ):
+                if invoke_config:
+                    result = llm.invoke(messages, config=invoke_config)
+                else:
+                    result = llm.invoke(messages)
+            normalized = self._normalize_focused_summary_output(
                 str(result.content or ""),
                 normalized_source,
             )
+            score_prompt_operation(
+                self.settings,
+                operation="summarize_focused_reasoning",
+                prompt_text=normalized_source,
+                response_text=normalized,
+                system_prompt=system_prompt,
+                user_prompt=user_prompt,
+                prompt_template_keys=[],
+                extra_metrics={
+                    "reasoning_chars": len(normalized_source),
+                },
+            )
+            score_skill_operation(
+                self.settings,
+                skill_name="focused_summary",
+                metrics={
+                    "success": True,
+                    "reasoning_chars": len(normalized_source),
+                    "response_chars": len(normalized),
+                },
+            )
+            return normalized
         except Exception as exc:
+            score_skill_operation(
+                self.settings,
+                skill_name="focused_summary",
+                metrics={
+                    "success": False,
+                    "reasoning_chars": len(normalized_source),
+                    "error_kind": type(exc).__name__,
+                },
+            )
             raise RuntimeError(
                 llm_failure_message(self.settings, llm_provider, llm_model, exc)
             ) from exc

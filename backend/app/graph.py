@@ -17,7 +17,12 @@ from langgraph.graph import END, StateGraph
 
 from .config import Settings
 from .couchdb import CouchDBClient
-from .langfuse_integration import build_langchain_config
+from .langfuse_integration import (
+    build_langchain_config,
+    propagate_trace_attributes,
+    score_prompt_operation,
+    score_skill_operation,
+)
 from .llm import build_chat_model, llm_failure_message, resolve_llm_selection
 from .models import Claim, ContradictionAssessment, ContradictionFinding, DepositionSchema
 from .prompts import render_prompt
@@ -206,12 +211,39 @@ class DepositionWorkflow:
                     "file_name": file_name,
                     "schema_name": selected_schema_name,
                 },
-                tags=("attorneyos", "ingest", "map-deposition", effective_provider),
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "prompt-map-deposition",
+                    "skill-deposition-mapping",
+                    "ingest",
+                    effective_provider,
+                ),
             )
-            if invoke_config:
-                parsed = parser_llm.invoke(messages, config=invoke_config)
-            else:
-                parsed = parser_llm.invoke(messages)
+            with propagate_trace_attributes(
+                self.settings,
+                session_id=state.get("trace_session_id") or state.get("case_id"),
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "prompt-map-deposition",
+                    "skill-deposition-mapping",
+                    "ingest",
+                    effective_provider,
+                ),
+                metadata={
+                    "operation": "map_deposition",
+                    "case_id": str(state.get("case_id") or ""),
+                    "file_name": file_name,
+                    "schema_name": selected_schema_name,
+                },
+            ):
+                if invoke_config:
+                    parsed = parser_llm.invoke(messages, config=invoke_config)
+                else:
+                    parsed = parser_llm.invoke(messages)
             ingest_schema_payload = self._coerce_schema_payload(parsed)
             deposition = self._normalize_ingest_deposition(
                 selected_schema_name,
@@ -243,6 +275,33 @@ class DepositionWorkflow:
                 selected_schema_mode=selected_schema_mode,
                 deposition=deposition,
                 ingest_schema_payload=ingest_schema_payload,
+            )
+            score_prompt_operation(
+                self.settings,
+                operation="map_deposition",
+                prompt_text=state["raw_text"],
+                response_text=json.dumps(deposition.model_dump(), indent=2),
+                system_prompt=system_prompt,
+                user_prompt=human_prompt,
+                prompt_template_keys=["map_deposition_system", "map_deposition_user"],
+                extra_metrics={
+                    "raw_text_chars": len(state["raw_text"]),
+                    "claim_count": len(deposition.claims),
+                    "schema_mode_native": selected_schema_mode == "native",
+                    "parse_recovery_used": True,
+                    "fallback_used": True,
+                },
+            )
+            score_skill_operation(
+                self.settings,
+                skill_name="deposition_mapping",
+                metrics={
+                    "success": True,
+                    "claim_count": len(deposition.claims),
+                    "raw_text_chars": len(state["raw_text"]),
+                    "parse_recovery_used": True,
+                    "fallback_used": True,
+                },
             )
             legal_clerk_trace = [
                 {
@@ -285,6 +344,33 @@ class DepositionWorkflow:
             selected_schema_mode=selected_schema_mode,
             deposition=deposition,
             ingest_schema_payload=ingest_schema_payload,
+        )
+        score_prompt_operation(
+            self.settings,
+            operation="map_deposition",
+            prompt_text=state["raw_text"],
+            response_text=json.dumps(deposition.model_dump(), indent=2),
+            system_prompt=system_prompt,
+            user_prompt=human_prompt,
+            prompt_template_keys=["map_deposition_system", "map_deposition_user"],
+            extra_metrics={
+                "raw_text_chars": len(state["raw_text"]),
+                "claim_count": len(deposition.claims),
+                "schema_mode_native": selected_schema_mode == "native",
+                "parse_recovery_used": False,
+                "fallback_used": fallback_used,
+            },
+        )
+        score_skill_operation(
+            self.settings,
+            skill_name="deposition_mapping",
+            metrics={
+                "success": True,
+                "claim_count": len(deposition.claims),
+                "raw_text_chars": len(state["raw_text"]),
+                "parse_recovery_used": False,
+                "fallback_used": fallback_used,
+            },
         )
         legal_clerk_trace = [
             {
@@ -584,13 +670,65 @@ class DepositionWorkflow:
                     "file_name": str(target_doc.get("file_name") or ""),
                     "peer_count": len(other_depositions),
                 },
-                tags=("attorneyos", "ingest", "assess-contradictions", effective_provider),
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "prompt-assess-contradictions",
+                    "skill-contradiction-assessment",
+                    "ingest",
+                    effective_provider,
+                ),
             )
-            if invoke_config:
-                assessment = assessor_llm.invoke(messages, config=invoke_config)
-            else:
-                assessment = assessor_llm.invoke(messages)
+            with propagate_trace_attributes(
+                self.settings,
+                session_id=trace_session_id or str(target_doc.get("case_id") or ""),
+                tags=(
+                    "attorneyos",
+                    "category-prompt",
+                    "category-skill",
+                    "prompt-assess-contradictions",
+                    "skill-contradiction-assessment",
+                    "ingest",
+                    effective_provider,
+                ),
+                metadata={
+                    "operation": "assess_contradictions",
+                    "case_id": str(target_doc.get("case_id") or ""),
+                    "deposition_id": str(target_doc.get("_id") or ""),
+                    "file_name": str(target_doc.get("file_name") or ""),
+                },
+            ):
+                if invoke_config:
+                    assessment = assessor_llm.invoke(messages, config=invoke_config)
+                else:
+                    assessment = assessor_llm.invoke(messages)
             if assessment.contradiction_score > 0 and assessment.contradictions:
+                score_prompt_operation(
+                    self.settings,
+                    operation="assess_contradictions",
+                    prompt_text=json.dumps(target, indent=2),
+                    response_text=json.dumps(assessment.model_dump(), indent=2),
+                    system_prompt=system_prompt,
+                    user_prompt=human_prompt,
+                    prompt_template_keys=["assess_contradictions_system", "assess_contradictions_user"],
+                    extra_metrics={
+                        "peer_count": len(other_depositions),
+                        "contradiction_count": len(assessment.contradictions),
+                        "result_source": result_source,
+                        "parse_recovery_used": False,
+                    },
+                )
+                score_skill_operation(
+                    self.settings,
+                    skill_name="contradiction_assessment",
+                    metrics={
+                        "success": True,
+                        "peer_count": len(other_depositions),
+                        "contradiction_count": len(assessment.contradictions),
+                        "result_source": result_source,
+                    },
+                )
                 self._append_assessment_trace(
                     trace_events,
                     target_doc=target_doc,
@@ -608,6 +746,31 @@ class DepositionWorkflow:
             fallback = self._fallback_assess_deposition(target_doc, other_depositions)
             if fallback.contradiction_score > assessment.contradiction_score and fallback.contradictions:
                 result_source = "fallback"
+                score_prompt_operation(
+                    self.settings,
+                    operation="assess_contradictions",
+                    prompt_text=json.dumps(target, indent=2),
+                    response_text=json.dumps(fallback.model_dump(), indent=2),
+                    system_prompt=system_prompt,
+                    user_prompt=human_prompt,
+                    prompt_template_keys=["assess_contradictions_system", "assess_contradictions_user"],
+                    extra_metrics={
+                        "peer_count": len(other_depositions),
+                        "contradiction_count": len(fallback.contradictions),
+                        "result_source": result_source,
+                        "parse_recovery_used": False,
+                    },
+                )
+                score_skill_operation(
+                    self.settings,
+                    skill_name="contradiction_assessment",
+                    metrics={
+                        "success": True,
+                        "peer_count": len(other_depositions),
+                        "contradiction_count": len(fallback.contradictions),
+                        "result_source": result_source,
+                    },
+                )
                 self._append_assessment_trace(
                     trace_events,
                     target_doc=target_doc,
@@ -620,6 +783,31 @@ class DepositionWorkflow:
                     result_source=result_source,
                 )
                 return fallback
+            score_prompt_operation(
+                self.settings,
+                operation="assess_contradictions",
+                prompt_text=json.dumps(target, indent=2),
+                response_text=json.dumps(assessment.model_dump(), indent=2),
+                system_prompt=system_prompt,
+                user_prompt=human_prompt,
+                prompt_template_keys=["assess_contradictions_system", "assess_contradictions_user"],
+                extra_metrics={
+                    "peer_count": len(other_depositions),
+                    "contradiction_count": len(assessment.contradictions),
+                    "result_source": result_source,
+                    "parse_recovery_used": False,
+                },
+            )
+            score_skill_operation(
+                self.settings,
+                skill_name="contradiction_assessment",
+                metrics={
+                    "success": True,
+                    "peer_count": len(other_depositions),
+                    "contradiction_count": len(assessment.contradictions),
+                    "result_source": result_source,
+                },
+            )
             self._append_assessment_trace(
                 trace_events,
                 target_doc=target_doc,
@@ -635,6 +823,31 @@ class DepositionWorkflow:
         except Exception as exc:
             if self._is_structured_parse_failure(exc):
                 fallback = self._fallback_assess_deposition(target_doc, other_depositions)
+                score_prompt_operation(
+                    self.settings,
+                    operation="assess_contradictions",
+                    prompt_text=json.dumps(target, indent=2),
+                    response_text=json.dumps(fallback.model_dump(), indent=2),
+                    system_prompt=system_prompt,
+                    user_prompt=human_prompt,
+                    prompt_template_keys=["assess_contradictions_system", "assess_contradictions_user"],
+                    extra_metrics={
+                        "peer_count": len(other_depositions),
+                        "contradiction_count": len(fallback.contradictions),
+                        "result_source": "fallback_parse_recovery",
+                        "parse_recovery_used": True,
+                    },
+                )
+                score_skill_operation(
+                    self.settings,
+                    skill_name="contradiction_assessment",
+                    metrics={
+                        "success": True,
+                        "peer_count": len(other_depositions),
+                        "contradiction_count": len(fallback.contradictions),
+                        "result_source": "fallback_parse_recovery",
+                    },
+                )
                 self._append_assessment_trace(
                     trace_events,
                     target_doc=target_doc,
@@ -647,6 +860,15 @@ class DepositionWorkflow:
                     result_source="fallback_parse_recovery",
                 )
                 return fallback
+            score_skill_operation(
+                self.settings,
+                skill_name="contradiction_assessment",
+                metrics={
+                    "success": False,
+                    "peer_count": len(other_depositions),
+                    "error_kind": type(exc).__name__,
+                },
+            )
             raise RuntimeError(
                 llm_failure_message(
                     self.settings,

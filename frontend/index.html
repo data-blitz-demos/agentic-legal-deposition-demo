@@ -73,6 +73,17 @@
           Langfuse
         </button>
         <button
+          id="tabDeepevalBtn"
+          class="tab-btn"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tabPageDeepeval"
+          data-tab-target="deepeval"
+        >
+          DeepEval
+        </button>
+        <button
           id="tabAdminBtn"
           class="tab-btn"
           type="button"
@@ -606,6 +617,55 @@
             </div>
             <div id="langfuseCoverageList" class="langfuse-coverage muted">
               Langfuse coverage details will appear here after the backend reports its runtime configuration.
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="tabPageDeepeval" class="tab-page hidden">
+        <div class="langfuse-layout">
+          <section class="panel langfuse-panel">
+            <div class="overlay-head">
+              <div>
+                <h2>DeepEval Monitoring</h2>
+                <span id="deepevalRuntimeStatus" class="muted">
+                  DeepEval status has not been loaded yet.
+                </span>
+              </div>
+              <div class="actions-row">
+                <button id="refreshDeepevalBtn" class="secondary" type="button">Refresh Status</button>
+                <button id="openDeepevalDocsBtn" class="secondary" type="button">Open Docs</button>
+                <button id="openDeepevalCloudBtn" class="secondary" type="button">Open Confident AI</button>
+              </div>
+            </div>
+            <div class="langfuse-meta-grid">
+              <article class="metric-card">
+                <h3>Package</h3>
+                <p id="deepevalPackageStatus" class="metric-value">Not checked</p>
+                <span class="muted">Local Python evaluation framework status</span>
+              </article>
+              <article class="metric-card">
+                <h3>Version</h3>
+                <p id="deepevalVersion" class="metric-value">Unknown</p>
+                <span class="muted">Installed runtime version for this app</span>
+              </article>
+              <article class="metric-card">
+                <h3>Cloud Upload</h3>
+                <p id="deepevalCloudStatus" class="metric-value">Not configured</p>
+                <span class="muted">Confident AI upload readiness via <code>CONFIDENT_API_KEY</code></span>
+              </article>
+              <article class="metric-card">
+                <h3>Starter Command</h3>
+                <p id="deepevalCommand" class="metric-value">deepeval test run ...</p>
+                <span class="muted">Run the bundled AttorneyOS eval starter suite locally</span>
+              </article>
+            </div>
+            <div class="metrics-subhead">
+              <h3>Project Coverage</h3>
+              <span class="muted">DeepEval starter workflows bundled with this repo</span>
+            </div>
+            <div id="deepevalCoverageList" class="langfuse-coverage muted">
+              DeepEval workflow details will appear here after the backend reports its runtime configuration.
             </div>
           </section>
         </div>

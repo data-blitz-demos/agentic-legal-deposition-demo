@@ -116,6 +116,11 @@ def api_client(monkeypatch):
     rag_couchdb.find.return_value = []
     monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
 
+    langfuse_graph_couchdb = Mock()
+    langfuse_graph_couchdb.ensure_db = Mock()
+    langfuse_graph_couchdb.close = Mock()
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", langfuse_graph_couchdb)
+
     neo4j_graph = Mock()
     neo4j_graph.close = Mock()
     monkeypatch.setattr(main, "neo4j_graph", neo4j_graph)
@@ -159,6 +164,11 @@ def test_root_serves_frontend_shell_when_startup_llm_check_fails(monkeypatch):
     rag_couchdb.close = Mock()
     rag_couchdb.find.return_value = []
     monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+
+    langfuse_graph_couchdb = Mock()
+    langfuse_graph_couchdb.ensure_db = Mock()
+    langfuse_graph_couchdb.close = Mock()
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", langfuse_graph_couchdb)
 
     neo4j_graph = Mock()
     neo4j_graph.close = Mock()
@@ -213,6 +223,11 @@ def test_static_app_js_serves_when_startup_llm_check_fails(monkeypatch):
     rag_couchdb.close = Mock()
     rag_couchdb.find.return_value = []
     monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+
+    langfuse_graph_couchdb = Mock()
+    langfuse_graph_couchdb.ensure_db = Mock()
+    langfuse_graph_couchdb.close = Mock()
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", langfuse_graph_couchdb)
 
     neo4j_graph = Mock()
     neo4j_graph.close = Mock()
@@ -1238,6 +1253,7 @@ def test_langfuse_access_endpoint_returns_serialized_payload(api_client, monkeyp
             langfuse_enabled=True,
             langfuse_public_url="http://localhost:3001/",
             langfuse_base_url="http://langfuse-web:3000/",
+            langfuse_graph_db="langfusie",
             langfuse_project_name="AttorneyOS Demo",
             langfuse_public_key="pk-lf-demo",
             langfuse_init_user_email="admin@attorneyos.local",
@@ -1264,6 +1280,9 @@ def test_langfuse_access_endpoint_returns_serialized_payload(api_client, monkeyp
         "monitored_operations": [
             "HTTP request spans for API routes",
             "Observables dashboard aggregate scores",
+            "MCP tool health, read/write, and ontology retrieval metrics",
+            "Prompt, memory, and skill tag namespaces with per-event scores",
+            "Full Langfuse trace graphs mirrored into CouchDB database 'langfusie'",
             "Ingest mapping and contradiction assessment generations",
             "Attorney chat generations",
             "Attorney chat prompt/response rubric scores",
@@ -1273,6 +1292,42 @@ def test_langfuse_access_endpoint_returns_serialized_payload(api_client, monkeyp
             "Focused reasoning summary prompt/response rubric scores",
             "Graph RAG answer generations",
             "Graph RAG prompt/response rubric scores",
+        ],
+    }
+
+
+def test_deepeval_access_endpoint_returns_serialized_payload(api_client, monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "settings",
+        SimpleNamespace(
+            deepeval_enabled=True,
+            confident_api_key="confident_us_demo",
+        ),
+    )
+    monkeypatch.setattr(main, "deepeval_sdk_installed", lambda: True)
+    monkeypatch.setattr(main, "deepeval_package_version", lambda: "4.0.2")
+    monkeypatch.setattr(main, "deepeval_enabled_for_project", lambda _settings: True)
+    monkeypatch.setattr(main, "deepeval_cloud_configured", lambda _settings: True)
+
+    response = api_client.get("/api/observability/deepeval")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "enabled": True,
+        "sdk_installed": True,
+        "cloud_configured": True,
+        "package_version": "4.0.2",
+        "docs_url": "https://deepeval.com/docs/getting-started",
+        "cloud_url": "https://app.confident-ai.com",
+        "quickstart_command": "deepeval test run evals/attorneyos_deepeval.py",
+        "starter_suite_path": "evals/attorneyos_deepeval.py",
+        "monitored_workflows": [
+            "Local deepeval test runner for AttorneyOS regression checks",
+            "Starter attorney chat answer relevancy eval scaffold",
+            "Starter graph RAG answer relevancy eval scaffold",
+            "FastAPI TestClient-backed eval flow so suites can run without an external server process",
+            "Optional Confident AI cloud upload when CONFIDENT_API_KEY is configured",
         ],
     }
 

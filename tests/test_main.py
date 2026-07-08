@@ -1247,11 +1247,13 @@ def test_lifespan_ensures_and_closes_couchdb(monkeypatch):
     memory_couchdb = Mock()
     trace_couchdb = Mock()
     rag_couchdb = Mock()
+    langfuse_graph_couchdb = Mock()
     startup = Mock()
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
     monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
     monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", langfuse_graph_couchdb)
     monkeypatch.setattr(main, "_ensure_startup_llm_connectivity", startup)
 
     async def run_lifespan() -> None:
@@ -1269,6 +1271,8 @@ def test_lifespan_ensures_and_closes_couchdb(monkeypatch):
     trace_couchdb.close.assert_called_once_with()
     rag_couchdb.ensure_db.assert_called_once_with()
     rag_couchdb.close.assert_called_once_with()
+    langfuse_graph_couchdb.ensure_db.assert_called_once_with()
+    langfuse_graph_couchdb.close.assert_called_once_with()
 
 
 def test_lifespan_continues_when_startup_llm_check_fails(monkeypatch):
@@ -1276,11 +1280,13 @@ def test_lifespan_continues_when_startup_llm_check_fails(monkeypatch):
     memory_couchdb = Mock()
     trace_couchdb = Mock()
     rag_couchdb = Mock()
+    langfuse_graph_couchdb = Mock()
     warning = Mock()
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "memory_couchdb", memory_couchdb)
     monkeypatch.setattr(main, "trace_couchdb", trace_couchdb)
     monkeypatch.setattr(main, "rag_couchdb", rag_couchdb)
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", langfuse_graph_couchdb)
     monkeypatch.setattr(main.logger, "warning", warning)
     monkeypatch.setattr(
         main,
@@ -1307,6 +1313,8 @@ def test_lifespan_continues_when_startup_llm_check_fails(monkeypatch):
     trace_couchdb.close.assert_called_once_with()
     rag_couchdb.ensure_db.assert_called_once_with()
     rag_couchdb.close.assert_called_once_with()
+    langfuse_graph_couchdb.ensure_db.assert_called_once_with()
+    langfuse_graph_couchdb.close.assert_called_once_with()
 
 
 def test_resolve_ingest_txt_files_deduplicates(monkeypatch, tmp_path):
@@ -1774,6 +1782,7 @@ def test_langfuse_access_info_uses_runtime_settings(monkeypatch):
             langfuse_enabled=True,
             langfuse_public_url="http://langfuse.internal:3001/",
             langfuse_base_url="http://langfuse-web:3000/",
+            langfuse_graph_db="langfusie",
             langfuse_project_name="AttorneyOS Demo",
             langfuse_public_key="pk-lf-demo",
             langfuse_init_user_email="admin@attorneyos.local",
@@ -1799,6 +1808,34 @@ def test_langfuse_access_info_uses_runtime_settings(monkeypatch):
     assert "Attorney chat generations" in payload.monitored_operations
     assert "Attorney chat prompt/response rubric scores" in payload.monitored_operations
     assert "Graph RAG prompt/response rubric scores" in payload.monitored_operations
+
+
+def test_deepeval_access_info_uses_runtime_settings(monkeypatch):
+    monkeypatch.setattr(
+        main,
+        "settings",
+        SimpleNamespace(
+            deepeval_enabled=True,
+            confident_api_key="confident_us_demo",
+        ),
+    )
+    monkeypatch.setattr(main, "deepeval_sdk_installed", lambda: True)
+    monkeypatch.setattr(main, "deepeval_package_version", lambda: "4.0.2")
+    monkeypatch.setattr(main, "deepeval_enabled_for_project", lambda _settings: True)
+    monkeypatch.setattr(main, "deepeval_cloud_configured", lambda _settings: True)
+
+    payload = main.deepeval_access_info()
+
+    assert payload.enabled is True
+    assert payload.sdk_installed is True
+    assert payload.cloud_configured is True
+    assert payload.package_version == "4.0.2"
+    assert payload.docs_url == "https://deepeval.com/docs/getting-started"
+    assert payload.cloud_url == "https://app.confident-ai.com"
+    assert payload.quickstart_command == "deepeval test run evals/attorneyos_deepeval.py"
+    assert payload.starter_suite_path == "evals/attorneyos_deepeval.py"
+    assert "Starter attorney chat answer relevancy eval scaffold" in payload.monitored_workflows
+    assert "Starter graph RAG answer relevancy eval scaffold" in payload.monitored_workflows
 
 
 def test_txt_count_returns_zero_for_missing_path(tmp_path):
@@ -2192,9 +2229,11 @@ def test_cache_deposition_root_creates_and_updates_existing(monkeypatch):
 def test_trace_session_endpoints_save_and_delete(monkeypatch):
     main._trace_sessions.clear()
     trace_db = Mock()
+    mcp_scores: list[dict] = []
     trace_db.update_doc.side_effect = lambda doc: {**doc, "_rev": "1-a"}
     trace_db.get_doc.side_effect = RuntimeError("missing")
     monkeypatch.setattr(main, "trace_couchdb", trace_db)
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
     main._append_trace_events(
         "trace-1",
         status="running",
@@ -2237,6 +2276,47 @@ def test_trace_session_endpoints_save_and_delete(monkeypatch):
     with pytest.raises(HTTPException) as missing_trace:
         main.get_trace_session("trace-1")
     assert missing_trace.value.status_code == 404
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "get_thought_stream",
+            "metrics": {
+                "found": True,
+                "status": "running",
+                "legal_clerk_events": 1,
+                "attorney_events": 0,
+                "total_events": 1,
+            },
+        },
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "save_thought_stream",
+            "metrics": {
+                "saved": True,
+                "case_id": "CASE-1",
+                "channel": "ingest",
+                "legal_clerk_events": 1,
+                "attorney_events": 0,
+                "total_events": 1,
+            },
+        },
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "delete_thought_stream",
+            "metrics": {
+                "deleted": True,
+                "thought_stream_id_present": True,
+            },
+        },
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "get_thought_stream",
+            "metrics": {
+                "found": False,
+                "thought_stream_id_present": True,
+            },
+        },
+    ]
 
 
 def test_public_trace_session_and_trace_sequence_helpers():
@@ -2457,6 +2537,38 @@ def test_append_trace_events_records_metrics_and_logs(monkeypatch, caplog):
     assert any("thought_stream_event trace_id=trace-metrics persona=Persona:Legal Clerk phase=ingest_start" in item for item in messages)
     assert any("thought_stream_event trace_id=trace-metrics persona=Persona:Attorney phase=chat_response" in item for item in messages)
     assert any("thought_stream_status trace_id=trace-metrics status=completed" in item for item in messages)
+    assert not any("langfuse thought_stream_rag_event" in item for item in messages)
+
+
+def test_append_trace_events_tags_graph_rag_logs_for_langfuse(monkeypatch, caplog):
+    main._trace_sessions.clear()
+    monkeypatch.setattr(main, "_flush_trace_session", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-02-26T00:00:00+00:00")
+    monkeypatch.setattr(main, "record_thought_stream_event", lambda *_args, **_kwargs: None)
+    monkeypatch.setattr(main, "record_thought_stream_session", lambda *_args, **_kwargs: None)
+
+    with caplog.at_level("INFO"):
+        main._append_trace_events(
+            "trace-rag",
+            legal_clerk=[
+                {
+                    "persona": "Persona:Legal Clerk",
+                    "phase": "graph_rag_context_ready",
+                    "llm_provider": "openai",
+                    "llm_model": "gpt-5.2",
+                    "notes": "context ready",
+                }
+            ],
+            status="completed",
+        )
+
+    messages = [record.getMessage() for record in caplog.records]
+    assert any(
+        "langfuse thought_stream_rag_event trace_id=trace-rag persona=Persona:Legal Clerk phase=graph_rag_context_ready"
+        in item
+        for item in messages
+    )
+    assert any("langfuse thought_stream_rag_status trace_id=trace-rag status=completed" in item for item in messages)
 
 
 def test_rag_stream_doc_id_prefix_and_uniqueness():
@@ -2467,29 +2579,30 @@ def test_rag_stream_doc_id_prefix_and_uniqueness():
     assert first != second
 
 
-def test_append_rag_stream_event_persists_doc(monkeypatch):
+def test_append_rag_stream_event_persists_doc(monkeypatch, caplog):
     rag_db = Mock()
     monkeypatch.setattr(main, "rag_couchdb", rag_db)
     monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-02-26T00:00:00+00:00")
     monkeypatch.setattr(main, "_rag_stream_doc_id", lambda: "rag_stream:test")
 
-    main._append_rag_stream_event(
-        trace_id="trace-1",
-        question="What is breach?",
-        llm_provider="openai",
-        llm_model="gpt-5.2",
-        use_rag=True,
-        top_k=8,
-        status="completed",
-        phase="answer",
-        retrieval_terms=["breach"],
-        context_rows=2,
-        sources=[{"iri": "http://example.org/Contract", "label": "Contract"}],
-        context_preview="context",
-        llm_system_prompt="system",
-        llm_user_prompt="user",
-        answer_preview="Short answer",
-    )
+    with caplog.at_level("INFO"):
+        main._append_rag_stream_event(
+            trace_id="trace-1",
+            question="What is breach?",
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+            use_rag=True,
+            top_k=8,
+            status="completed",
+            phase="answer",
+            retrieval_terms=["breach"],
+            context_rows=2,
+            sources=[{"iri": "http://example.org/Contract", "label": "Contract"}],
+            context_preview="context",
+            llm_system_prompt="system",
+            llm_user_prompt="user",
+            answer_preview="Short answer",
+        )
 
     saved = rag_db.update_doc.call_args.args[0]
     assert saved["_id"] == "rag_stream:test"
@@ -2498,48 +2611,78 @@ def test_append_rag_stream_event_persists_doc(monkeypatch):
     assert saved["use_rag"] is True
     assert saved["context_rows"] == 2
     assert saved["sources"][0]["label"] == "Contract"
+    messages = [record.getMessage() for record in caplog.records]
+    assert any("langfuse rag_stream_event trace_id=trace-1 phase=answer status=completed" in item for item in messages)
+    assert any("langfuse rag_stream_persisted trace_id=trace-1 doc_id=rag_stream:test phase=answer status=completed" in item for item in messages)
 
 
-def test_append_rag_stream_event_ignores_storage_failures(monkeypatch):
+def test_append_rag_stream_event_ignores_storage_failures(monkeypatch, caplog):
     rag_db = Mock()
     rag_db.update_doc.side_effect = RuntimeError("db down")
     monkeypatch.setattr(main, "rag_couchdb", rag_db)
 
-    main._append_rag_stream_event(
-        trace_id=None,
-        question="q",
-        llm_provider="openai",
-        llm_model="gpt-5.2",
-        use_rag=False,
-        top_k=4,
-        status="failed",
-        phase="llm",
-        error="boom",
-    )
+    with caplog.at_level("INFO"):
+        main._append_rag_stream_event(
+            trace_id=None,
+            question="q",
+            llm_provider="openai",
+            llm_model="gpt-5.2",
+            use_rag=False,
+            top_k=4,
+            status="failed",
+            phase="llm",
+            error="boom",
+        )
+
+    messages = [record.getMessage() for record in caplog.records]
+    assert any("langfuse rag_stream_event trace_id=unknown phase=llm status=failed" in item for item in messages)
+    assert any("langfuse rag_stream_persist_failed trace_id=unknown phase=llm status=failed error=db down" in item for item in messages)
 
 
 def test_thought_stream_health_success(monkeypatch):
     trace_db = Mock()
+    mcp_scores: list[dict] = []
     monkeypatch.setattr(main, "trace_couchdb", trace_db)
     monkeypatch.setattr(main, "settings", SimpleNamespace(thought_stream_db="thought_stream"))
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     payload = main.thought_stream_health()
 
     assert payload == {"connected": True, "database": "thought_stream"}
     trace_db.ensure_db.assert_called_once_with(retries=1, delay_seconds=0)
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "health",
+            "metrics": {"connected": True, "database": "thought_stream"},
+        }
+    ]
 
 
 def test_thought_stream_health_failure(monkeypatch):
     trace_db = Mock()
     trace_db.ensure_db.side_effect = RuntimeError("connection refused")
+    mcp_scores: list[dict] = []
     monkeypatch.setattr(main, "trace_couchdb", trace_db)
     monkeypatch.setattr(main, "settings", SimpleNamespace(thought_stream_db="thought_stream"))
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     with pytest.raises(HTTPException) as exc:
         main.thought_stream_health()
 
     assert exc.value.status_code == 503
     assert "Thought Stream storage is unavailable" in exc.value.detail
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "health",
+            "metrics": {
+                "connected": False,
+                "database": "thought_stream",
+                "error_kind": "RuntimeError",
+            },
+        }
+    ]
 
 
 def test_rag_stream_health_success(monkeypatch):
@@ -2656,6 +2799,7 @@ def test_browser_reachable_bolt_url_single_label_and_userinfo_branches():
 
 
 def test_graph_rag_health_uses_client_payload(monkeypatch):
+    mcp_scores: list[dict] = []
     graph_client = SimpleNamespace(
         health=lambda: {
             "configured": True,
@@ -2667,11 +2811,24 @@ def test_graph_rag_health_uses_client_payload(monkeypatch):
         }
     )
     monkeypatch.setattr(main, "neo4j_graph", graph_client)
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     payload = main.graph_rag_health()
 
     assert payload.connected is True
     assert payload.database == "neo4j"
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "health",
+            "metrics": {
+                "configured": True,
+                "connected": True,
+                "database": "neo4j",
+                "error_present": False,
+            },
+        }
+    ]
 
 
 def test_graph_rag_embedding_config_defaults_when_doc_missing(monkeypatch):
@@ -2818,7 +2975,9 @@ def test_graph_rag_owl_browser_returns_file_browser_payload(monkeypatch):
 def test_load_graph_rag_ontology_success(monkeypatch, tmp_path):
     owl = tmp_path / "legal.owl"
     owl.write_text("x", encoding="utf-8")
+    mcp_scores: list[dict] = []
     monkeypatch.setattr(main, "_resolve_ontology_owl_files", lambda _path: [owl])
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     graph_client = SimpleNamespace(
         load_owl_files=lambda files, clear_existing, batch_size: {
@@ -2842,6 +3001,23 @@ def test_load_graph_rag_ontology_success(monkeypatch, tmp_path):
     assert payload.loaded_files == 1
     assert payload.triples == 12
     assert payload.cleared is True
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "load_owl",
+            "metrics": {
+                "load_success": True,
+                "requested_file_count": 1,
+                "matched_file_count": 1,
+                "loaded_files": 1,
+                "triples": 12,
+                "resource_relationships": 7,
+                "literal_relationships": 5,
+                "clear_existing": True,
+                "database": "neo4j",
+            },
+        }
+    ]
 
 
 def test_load_graph_rag_ontology_validation_and_error_paths(monkeypatch):
@@ -2850,6 +3026,8 @@ def test_load_graph_rag_ontology_validation_and_error_paths(monkeypatch):
     assert empty_exc.value.status_code == 400
 
     monkeypatch.setattr(main, "_resolve_ontology_owl_files", lambda _path: [Path("/tmp/legal.owl")])
+    mcp_scores: list[dict] = []
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     runtime_graph = SimpleNamespace(
         load_owl_files=lambda *_args, **_kwargs: (_ for _ in ()).throw(RuntimeError("Neo4j unavailable"))
@@ -2867,12 +3045,36 @@ def test_load_graph_rag_ontology_validation_and_error_paths(monkeypatch):
         main.load_graph_rag_ontology(GraphOntologyLoadRequest(path="/data/ontology/*.owl"))
     assert generic_exc.value.status_code == 502
     assert "Failed to import ontology files into Neo4j" in generic_exc.value.detail
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "load_owl",
+            "metrics": {
+                "load_success": False,
+                "requested_file_count": 1,
+                "clear_existing": False,
+                "error_kind": "RuntimeError",
+            },
+        },
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "load_owl",
+            "metrics": {
+                "load_success": False,
+                "requested_file_count": 1,
+                "clear_existing": False,
+                "error_kind": "ValueError",
+            },
+        },
+    ]
 
 
 def test_query_graph_rag_success(monkeypatch):
     trace_events: list[dict] = []
     rag_events: list[dict] = []
+    mcp_scores: list[dict] = []
     prompt_scores: list[dict] = []
+    skill_scores: list[dict] = []
     retrieval = Mock(
         return_value={
             "resource_count": 2,
@@ -2915,9 +3117,11 @@ def test_query_graph_rag_success(monkeypatch):
     monkeypatch.setattr(main, "_append_rag_stream_event", lambda **kwargs: rag_events.append(kwargs))
     monkeypatch.setattr(
         main,
-        "score_user_prompt_and_response",
+        "score_prompt_operation",
         lambda _settings, **kwargs: prompt_scores.append(kwargs),
     )
+    monkeypatch.setattr(main, "score_skill_operation", lambda _settings, **kwargs: skill_scores.append(kwargs) or 1)
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
     monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
     monkeypatch.setattr(
         main,
@@ -2975,6 +3179,53 @@ def test_query_graph_rag_success(monkeypatch):
             "operation": "graph_rag_query",
             "prompt_text": "What is breach of contract?",
             "response_text": "Short answer: Ontology response",
+            "system_prompt": "{}",
+            "user_prompt": "{'question': 'What is breach of contract?', 'context_text': 'Resource: Contract'}",
+            "prompt_template_keys": ["graph_rag_system", "graph_rag_user"],
+            "extra_metrics": {
+                "rag_enabled": True,
+                "rag_stream_enabled": True,
+                "top_k": 6,
+                "context_rows": 2,
+                "resource_count": 2,
+            },
+        }
+    ]
+    assert skill_scores == [
+        {
+            "skill_name": "graph_rag",
+            "metrics": {
+                "success": True,
+                "rag_enabled": True,
+                "rag_stream_enabled": True,
+                "top_k": 6,
+                "context_rows": 2,
+                "resource_count": 2,
+                "query_embedding_used": False,
+                "response_chars": len("Short answer: Ontology response"),
+            },
+        }
+    ]
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "query_context",
+            "metrics": {
+                "request_success": True,
+                "rag_enabled": True,
+                "rag_stream_enabled": True,
+                "top_k": 6,
+                "resource_count": 2,
+                "relation_count": 1,
+                "literal_count": 1,
+                "retrieval_term_count": 2,
+                "context_bytes": len("Resource: Contract".encode("utf-8")),
+                "context_hit": True,
+                "query_embedding_used": False,
+                "retrieval_mode": "keyword",
+                "embedding_enabled": False,
+                "embedding_provider": "",
+            },
         }
     ]
 
@@ -2982,6 +3233,7 @@ def test_query_graph_rag_success(monkeypatch):
 def test_query_graph_rag_with_rag_disabled(monkeypatch):
     trace_events: list[dict] = []
     rag_events: list[dict] = []
+    mcp_scores: list[dict] = []
     retrieval = Mock()
     monkeypatch.setattr(main, "neo4j_graph", SimpleNamespace(retrieve_context=retrieval))
     monkeypatch.setattr(main, "_resolve_request_llm", lambda _provider, _model: ("openai", "gpt-5.2"))
@@ -2992,6 +3244,7 @@ def test_query_graph_rag_with_rag_disabled(monkeypatch):
         lambda trace_id, **kwargs: trace_events.append({"trace_id": trace_id, **kwargs}),
     )
     monkeypatch.setattr(main, "_append_rag_stream_event", lambda **kwargs: rag_events.append(kwargs))
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
     monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
     monkeypatch.setattr(
         main,
@@ -3021,6 +3274,28 @@ def test_query_graph_rag_with_rag_disabled(monkeypatch):
     assert rag_events[-1]["status"] == "completed"
     assert rag_events[-1]["use_rag"] is False
     assert trace_events[1]["legal_clerk"][0]["phase"] == "graph_rag_disabled"
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "query_context",
+            "metrics": {
+                "request_success": True,
+                "rag_enabled": False,
+                "rag_stream_enabled": True,
+                "top_k": 6,
+                "resource_count": 0,
+                "relation_count": 0,
+                "literal_count": 0,
+                "retrieval_term_count": 0,
+                "context_bytes": len("RAG processing was disabled for this request.".encode("utf-8")),
+                "context_hit": False,
+                "query_embedding_used": False,
+                "retrieval_mode": "keyword",
+                "embedding_enabled": False,
+                "embedding_provider": "",
+            },
+        }
+    ]
 
 
 def test_query_graph_rag_with_stream_logging_disabled(monkeypatch):
@@ -3138,6 +3413,7 @@ def test_query_graph_rag_toggle_influences_answer(monkeypatch):
 
 
 def test_query_graph_rag_validation_and_error_paths(monkeypatch):
+    mcp_scores: list[dict] = []
     with pytest.raises(HTTPException) as empty_exc:
         main.query_graph_rag(GraphRagQueryRequest(question="  "))
     assert empty_exc.value.status_code == 400
@@ -3146,6 +3422,7 @@ def test_query_graph_rag_validation_and_error_paths(monkeypatch):
     monkeypatch.setattr(main, "_ensure_request_llm_operational", lambda _provider, _model: None)
     monkeypatch.setattr(main, "_append_rag_stream_event", lambda **_kwargs: None)
     monkeypatch.setattr(main, "render_prompt", lambda _name, **kwargs: str(kwargs))
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     bad_request_graph = SimpleNamespace(
         retrieve_context=lambda *_args, **_kwargs: (_ for _ in ()).throw(ValueError("bad query"))
@@ -3195,6 +3472,38 @@ def test_query_graph_rag_validation_and_error_paths(monkeypatch):
         main.query_graph_rag(GraphRagQueryRequest(question="contract?"))
     assert llm_exc.value.status_code == 502
     assert llm_exc.value.detail == "LLM failed"
+    assert mcp_scores[:3] == [
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "query_context",
+            "metrics": {
+                "request_success": False,
+                "rag_enabled": True,
+                "top_k": 8,
+                "error_kind": "ValueError",
+            },
+        },
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "query_context",
+            "metrics": {
+                "request_success": False,
+                "rag_enabled": True,
+                "top_k": 8,
+                "error_kind": "RuntimeError",
+            },
+        },
+        {
+            "tool_name": "mcp_neo4j_ontology_access",
+            "operation": "query_context",
+            "metrics": {
+                "request_success": False,
+                "rag_enabled": True,
+                "top_k": 8,
+                "error_kind": "KeyError",
+            },
+        },
+    ]
 
 
 def test_query_graph_rag_fallback_when_llm_content_is_empty(monkeypatch):
@@ -3228,6 +3537,8 @@ def test_query_graph_rag_fallback_when_llm_content_is_empty(monkeypatch):
 
 
 def test_save_and_delete_trace_session_endpoint_validation_and_not_found(monkeypatch):
+    mcp_scores: list[dict] = []
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
     with pytest.raises(HTTPException) as trace_exc:
         main.save_trace_session(" ", SaveTraceRequest(case_id="CASE-1", channel="ingest"))
     assert trace_exc.value.status_code == 400
@@ -3248,6 +3559,25 @@ def test_save_and_delete_trace_session_endpoint_validation_and_not_found(monkeyp
     with pytest.raises(HTTPException) as delete_exc:
         main.delete_trace_session("trace-1")
     assert delete_exc.value.status_code == 404
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "save_thought_stream",
+            "metrics": {
+                "saved": False,
+                "case_id": "CASE-1",
+                "channel": "ingest",
+            },
+        },
+        {
+            "tool_name": "mcp_couchdb_thought_stream_access",
+            "operation": "delete_thought_stream",
+            "metrics": {
+                "deleted": False,
+                "thought_stream_id_present": True,
+            },
+        },
+    ]
 
 
 def test_collect_runtime_trace_sessions_prefers_memory_and_handles_db_failure(monkeypatch):
@@ -4453,6 +4783,307 @@ def test_save_case_memory_and_upsert_case_doc_wrap_errors(monkeypatch):
     assert case_exc.value.status_code == 502
 
 
+def test_langfuse_graph_doc_id_and_persist_trace_graph(monkeypatch):
+    assert main._langfuse_graph_doc_id("Trace:ABC 123") == "langfuse:trace-abc-123"
+
+    graph_db = Mock()
+    flush_calls: list[object] = []
+    fetch_calls: list[tuple[object, str]] = []
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", graph_db)
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: flush_calls.append(_settings) or True)
+    monkeypatch.setattr(
+        main,
+        "fetch_trace_graph",
+        lambda _settings, trace_id: fetch_calls.append((_settings, trace_id))
+        or {
+            "trace": {"id": trace_id, "tags": ["attorneyos", "prompt-chat"]},
+            "observations": [{"id": "obs-1"}],
+            "scores": [{"id": "score-1"}],
+        },
+    )
+    monkeypatch.setattr(main, "_utc_now_iso", lambda: "2026-06-11T18:45:00+00:00")
+
+    saved = main._persist_langfuse_trace_graph(
+        "trace-abc12345",
+        trigger="http_request",
+        request_metadata={"path": "/api/chat"},
+    )
+
+    assert flush_calls == [main.settings]
+    assert fetch_calls == [(main.settings, "trace-abc12345")]
+    persisted = graph_db.update_doc.call_args.args[0]
+    assert persisted["_id"] == "langfuse:trace-abc12345"
+    assert persisted["type"] == "langfuse_trace_graph"
+    assert persisted["trace_id"] == "trace-abc12345"
+    assert persisted["trigger"] == "http_request"
+    assert persisted["request_metadata"] == {"path": "/api/chat"}
+    assert persisted["observation_count"] == 1
+    assert persisted["score_count"] == 1
+    assert persisted["tags"] == ["attorneyos", "prompt-chat"]
+    assert saved == graph_db.update_doc.return_value
+
+
+def test_persist_langfuse_trace_graph_skips_missing_trace_and_logs_failures(monkeypatch):
+    graph_db = Mock()
+    logger = Mock()
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", graph_db)
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: True)
+    monkeypatch.setattr(main, "fetch_trace_graph", lambda _settings, _trace_id: None)
+    monkeypatch.setattr(main, "logger", logger)
+
+    assert main._persist_langfuse_trace_graph("", trigger="http_request") is None
+    assert main._persist_langfuse_trace_graph("trace-abc12345", trigger="http_request") is None
+
+    monkeypatch.setattr(main, "fetch_trace_graph", Mock(side_effect=RuntimeError("fetch down")))
+    assert main._persist_langfuse_trace_graph("trace-abc12345", trigger="http_request") is None
+    logger.exception.assert_called_once_with("langfuse trace graph fetch failed trace_id=%s", "trace-abc12345")
+
+
+def test_persist_langfuse_trace_graph_logs_couchdb_write_failures(monkeypatch):
+    graph_db = Mock()
+    graph_db.update_doc.side_effect = RuntimeError("db down")
+    logger = Mock()
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", graph_db)
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: True)
+    monkeypatch.setattr(
+        main,
+        "fetch_trace_graph",
+        lambda _settings, trace_id: {"trace": {"id": trace_id, "tags": []}, "observations": [], "scores": []},
+    )
+    monkeypatch.setattr(main, "logger", logger)
+
+    assert main._persist_langfuse_trace_graph("trace-abc12345", trigger="http_request") is None
+    logger.exception.assert_called_once_with("langfuse trace graph mirror failed trace_id=%s", "trace-abc12345")
+
+
+def test_persist_langfuse_trace_graph_falls_back_to_observation_lookup(monkeypatch):
+    graph_db = Mock()
+    fetch_calls: list[str] = []
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", graph_db)
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: True)
+
+    def fake_fetch(_settings, trace_id):
+        fetch_calls.append(trace_id)
+        if trace_id == "trace-missing123":
+            return None
+        return {"trace": {"id": trace_id, "tags": ["attorneyos"]}, "observations": [], "scores": []}
+
+    monkeypatch.setattr(main, "fetch_trace_graph", fake_fetch)
+    monkeypatch.setattr(main, "resolve_trace_id_from_observation_id", lambda _settings, _observation_id: "trace-found123")
+
+    saved = main._persist_langfuse_trace_graph(
+        "trace-missing123",
+        root_observation_id="obs-12345678",
+        trigger="http_request",
+    )
+
+    assert fetch_calls == ["trace-missing123", "trace-found123"]
+    assert graph_db.update_doc.call_args.args[0]["trace_id"] == "trace-found123"
+    assert saved == graph_db.update_doc.return_value
+
+
+def test_persist_langfuse_trace_graph_retries_until_scores_arrive(monkeypatch):
+    graph_db = Mock()
+    fetch_calls: list[str] = []
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", graph_db)
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: True)
+    monkeypatch.setattr(main, "sleep", lambda _seconds: None)
+
+    def fake_fetch(_settings, trace_id):
+        fetch_calls.append(trace_id)
+        if len(fetch_calls) == 1:
+            return {
+                "trace": {"id": trace_id, "tags": ["attorneyos"]},
+                "observations": [{"id": "obs-1"}],
+                "scores": [],
+            }
+        return {
+            "trace": {"id": trace_id, "tags": ["attorneyos"]},
+            "observations": [{"id": "obs-1"}],
+            "scores": [{"id": "score-1"}],
+        }
+
+    monkeypatch.setattr(main, "fetch_trace_graph", fake_fetch)
+
+    saved = main._persist_langfuse_trace_graph("trace-abc12345", trigger="http_request")
+
+    assert fetch_calls == ["trace-abc12345", "trace-abc12345"]
+    assert graph_db.update_doc.call_args.args[0]["score_count"] == 1
+    assert saved == graph_db.update_doc.return_value
+
+
+def test_persist_langfuse_trace_graph_schedules_refresh_when_scores_are_still_missing(monkeypatch):
+    graph_db = Mock()
+    scheduled: list[tuple[str, str | None, str, dict | None]] = []
+    fetch_calls = {"count": 0}
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", graph_db)
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: True)
+    monkeypatch.setattr(main, "sleep", lambda _seconds: None)
+    monkeypatch.setattr(main, "resolve_trace_id_from_observation_id", lambda _settings, _observation_id: None)
+
+    def fetch_without_scores(_settings, trace_id):
+        fetch_calls["count"] += 1
+        if fetch_calls["count"] == 1:
+            return {
+                "trace": {"id": trace_id, "tags": ["attorneyos"]},
+                "observations": [{"id": "obs-1"}],
+                "scores": [],
+            }
+        return None
+
+    monkeypatch.setattr(
+        main,
+        "fetch_trace_graph",
+        fetch_without_scores,
+    )
+    monkeypatch.setattr(
+        main,
+        "_schedule_langfuse_trace_graph_refresh",
+        lambda trace_id, *, root_observation_id, trigger, request_metadata, delay_seconds=2.5: scheduled.append(
+            (trace_id, root_observation_id, trigger, request_metadata)
+        ),
+    )
+
+    saved = main._persist_langfuse_trace_graph(
+        "trace-abc12345",
+        root_observation_id="obs-12345678",
+        trigger="http_request",
+        request_metadata={"path": "/api/chat"},
+    )
+
+    assert graph_db.update_doc.call_args.args[0]["score_count"] == 0
+    assert fetch_calls["count"] == 5
+    assert scheduled == [("trace-abc12345", "obs-12345678", "http_request", {"path": "/api/chat"})]
+    assert saved == graph_db.update_doc.return_value
+
+
+def test_persist_langfuse_trace_graph_logs_observation_lookup_and_refresh_failures(monkeypatch):
+    logger = Mock()
+    monkeypatch.setattr(main, "langfuse_graph_couchdb", Mock())
+    monkeypatch.setattr(main, "flush_langfuse", lambda _settings: True)
+    monkeypatch.setattr(main, "sleep", lambda _seconds: None)
+    monkeypatch.setattr(main, "logger", logger)
+
+    lookup_failures = {"count": 0}
+
+    def failing_lookup(_settings, _observation_id):
+        lookup_failures["count"] += 1
+        raise RuntimeError("lookup failed")
+
+    monkeypatch.setattr(main, "resolve_trace_id_from_observation_id", failing_lookup)
+    assert (
+        main._persist_langfuse_trace_graph(
+            None,
+            root_observation_id="obs-12345678",
+            trigger="http_request",
+        )
+        is None
+    )
+    assert lookup_failures["count"] == 5
+    logger.exception.assert_called_with(
+        "langfuse trace graph observation lookup failed observation_id=%s",
+        "obs-12345678",
+    )
+
+    logger.reset_mock()
+    monkeypatch.setattr(main, "resolve_trace_id_from_observation_id", lambda _settings, _observation_id: "trace-found123")
+
+    fetch_calls = {"count": 0}
+
+    def fetch_then_fail(_settings, _trace_id):
+        fetch_calls["count"] += 1
+        raise RuntimeError("fetch failed")
+
+    monkeypatch.setattr(main, "fetch_trace_graph", fetch_then_fail)
+    assert (
+        main._persist_langfuse_trace_graph(
+            None,
+            root_observation_id="obs-12345678",
+            trigger="http_request",
+        )
+        is None
+    )
+    assert fetch_calls["count"] == 5
+    logger.exception.assert_called_with("langfuse trace graph fetch failed trace_id=%s", "trace-found123")
+
+    logger.reset_mock()
+    refresh_calls = {"count": 0}
+
+    def refresh_then_fail(_settings, _trace_id):
+        refresh_calls["count"] += 1
+        if refresh_calls["count"] == 1:
+            return {
+                "trace": {"id": "trace-abc12345", "tags": []},
+                "observations": [{"id": "obs-1"}],
+                "scores": [],
+            }
+        raise RuntimeError("refresh failed")
+
+    monkeypatch.setattr(main, "fetch_trace_graph", refresh_then_fail)
+    monkeypatch.setattr(main, "_schedule_langfuse_trace_graph_refresh", Mock())
+    assert main._persist_langfuse_trace_graph("trace-abc12345", trigger="http_request") is not None
+    logger.exception.assert_called_with("langfuse trace graph score refresh failed trace_id=%s", "trace-abc12345")
+
+
+def test_schedule_langfuse_trace_graph_refresh_handles_empty_trace_and_thread_failure(monkeypatch):
+    assert main._schedule_langfuse_trace_graph_refresh("", root_observation_id=None, trigger="http_request", request_metadata=None) is None
+
+    logger = Mock()
+    monkeypatch.setattr(main, "logger", logger)
+
+    class FailingThread:
+        def __init__(self, *args, **kwargs):
+            raise RuntimeError("thread failed")
+
+    monkeypatch.setattr(main, "Thread", FailingThread)
+    main._schedule_langfuse_trace_graph_refresh(
+        "trace-abc12345",
+        root_observation_id="obs-12345678",
+        trigger="http_request",
+        request_metadata={"path": "/api/chat"},
+    )
+    logger.exception.assert_called_once_with(
+        "langfuse trace graph refresh scheduling failed trace_id=%s",
+        "trace-abc12345",
+    )
+
+
+def test_schedule_langfuse_trace_graph_refresh_runs_delayed_persist(monkeypatch):
+    sleep_calls: list[float] = []
+    persist_calls: list[tuple[str, str | None, str, dict | None, bool]] = []
+
+    monkeypatch.setattr(main, "sleep", lambda seconds: sleep_calls.append(seconds))
+    monkeypatch.setattr(
+        main,
+        "_persist_langfuse_trace_graph",
+        lambda trace_id, *, root_observation_id, trigger, request_metadata, schedule_refresh=True: persist_calls.append(
+            (trace_id, root_observation_id, trigger, request_metadata, schedule_refresh)
+        ),
+    )
+
+    class ImmediateThread:
+        def __init__(self, *, target, name, daemon):
+            self._target = target
+            self.name = name
+            self.daemon = daemon
+
+        def start(self):
+            self._target()
+
+    monkeypatch.setattr(main, "Thread", ImmediateThread)
+
+    main._schedule_langfuse_trace_graph_refresh(
+        "trace-abc12345",
+        root_observation_id="obs-12345678",
+        trigger="http_request",
+        request_metadata={"path": "/api/chat"},
+        delay_seconds=1.25,
+    )
+
+    assert sleep_calls == [1.25]
+    assert persist_calls == [("trace-abc12345", "obs-12345678", "http_request", {"path": "/api/chat"}, False)]
+
+
 def test_list_case_summaries_and_case_endpoints(monkeypatch):
     couchdb = Mock()
     couchdb.find.return_value = [
@@ -5633,15 +6264,27 @@ def test_purge_noncanonical_case_depositions_skips_docs_without_id(monkeypatch):
 
 def test_list_depositions_sorts_descending(monkeypatch):
     couchdb = Mock()
+    mcp_scores: list[dict] = []
     couchdb.list_depositions.return_value = [
         {"_id": "dep:1", "contradiction_score": 10},
         {"_id": "dep:2", "contradiction_score": 80},
     ]
     monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     result = main.list_depositions("case-1")
 
     assert [doc["_id"] for doc in result] == ["dep:2", "dep:1"]
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_couchdb_deposition_access",
+            "operation": "list_depositions",
+            "metrics": {
+                "result_count": 2,
+                "case_id": "case-1",
+            },
+        }
+    ]
 
 
 def test_list_depositions_dashboard_handles_missing_and_none_scores(monkeypatch):
@@ -5661,8 +6304,10 @@ def test_list_depositions_dashboard_handles_missing_and_none_scores(monkeypatch)
 
 def test_get_deposition_success_and_not_found(monkeypatch):
     couchdb = Mock()
+    mcp_scores: list[dict] = []
     couchdb.get_doc.return_value = {"_id": "dep:1"}
     monkeypatch.setattr(main, "couchdb", couchdb)
+    monkeypatch.setattr(main, "score_mcp_operation", lambda _settings, **kwargs: mcp_scores.append(kwargs) or 1)
 
     assert main.get_deposition("dep:1") == {"_id": "dep:1"}
 
@@ -5670,6 +6315,26 @@ def test_get_deposition_success_and_not_found(monkeypatch):
     with pytest.raises(HTTPException) as exc:
         main.get_deposition("dep:2")
     assert exc.value.status_code == 404
+    assert mcp_scores == [
+        {
+            "tool_name": "mcp_couchdb_deposition_access",
+            "operation": "get_deposition",
+            "metrics": {
+                "found": True,
+                "claim_count": 0,
+                "contradiction_score": 0.0,
+                "has_raw_text": False,
+            },
+        },
+        {
+            "tool_name": "mcp_couchdb_deposition_access",
+            "operation": "get_deposition",
+            "metrics": {
+                "found": False,
+                "deposition_id_present": True,
+            },
+        },
+    ]
 
 
 def test_chat_success(monkeypatch):
@@ -5678,15 +6343,8 @@ def test_chat_success(monkeypatch):
     couchdb.list_depositions.return_value = [{"_id": "dep:1"}, {"_id": "dep:2"}]
     chat_service = Mock()
     chat_service.respond.return_value = "Short answer: ok\nDetails:\n- a\n- b"
-    prompt_scores: list[dict] = []
-
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "chat_service", chat_service)
-    monkeypatch.setattr(
-        main,
-        "score_user_prompt_and_response",
-        lambda _settings, **kwargs: prompt_scores.append(kwargs),
-    )
 
     response = main.chat(
         ChatRequest(
@@ -5704,13 +6362,6 @@ def test_chat_success(monkeypatch):
     chat_service.respond.assert_called_once()
     assert chat_service.respond.call_args.kwargs["llm_provider"] == "ollama"
     assert chat_service.respond.call_args.kwargs["llm_model"] == "llama3.3"
-    assert prompt_scores == [
-        {
-            "operation": "chat",
-            "prompt_text": "hello",
-            "response_text": "Short answer: ok\nDetails:\n- a\n- b",
-        }
-    ]
 
 
 def test_chat_success_with_trace_provider(monkeypatch):
@@ -5781,15 +6432,8 @@ def test_reason_contradiction_success(monkeypatch):
     couchdb.list_depositions.return_value = [{"_id": "dep:1"}, {"_id": "dep:2"}]
     chat_service = Mock()
     chat_service.reason_about_contradiction.return_value = "Short answer: ok\nDetails:\n- a\n- b\n- c"
-    prompt_scores: list[dict] = []
-
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "chat_service", chat_service)
-    monkeypatch.setattr(
-        main,
-        "score_user_prompt_and_response",
-        lambda _settings, **kwargs: prompt_scores.append(kwargs),
-    )
 
     request = ContradictionReasonRequest(
         case_id="case-1",
@@ -5811,9 +6455,6 @@ def test_reason_contradiction_success(monkeypatch):
     chat_service.reason_about_contradiction.assert_called_once()
     assert chat_service.reason_about_contradiction.call_args.kwargs["llm_provider"] == "ollama"
     assert chat_service.reason_about_contradiction.call_args.kwargs["llm_model"] == "llama3.3"
-    assert prompt_scores and prompt_scores[0]["operation"] == "reason_contradiction"
-    assert "\"topic\": \"Timeline\"" in prompt_scores[0]["prompt_text"]
-    assert prompt_scores[0]["response_text"] == "Short answer: ok\nDetails:\n- a\n- b\n- c"
 
 
 def test_reason_contradiction_wraps_service_errors(monkeypatch):
@@ -5880,18 +6521,11 @@ def test_summarize_focused_reasoning_success(monkeypatch):
     chat_service.summarize_focused_reasoning.return_value = "Short answer: Condensed conflict summary."
     save_memory = Mock()
     upsert_case = Mock()
-    prompt_scores: list[dict] = []
-
     monkeypatch.setattr(main, "couchdb", couchdb)
     monkeypatch.setattr(main, "chat_service", chat_service)
     monkeypatch.setattr(main, "_save_case_memory", save_memory)
     monkeypatch.setattr(main, "_upsert_case_doc", upsert_case)
     monkeypatch.setattr(main, "_safe_case_depositions", lambda _case_id: [{"_id": "dep:1"}])
-    monkeypatch.setattr(
-        main,
-        "score_user_prompt_and_response",
-        lambda _settings, **kwargs: prompt_scores.append(kwargs),
-    )
 
     response = main.summarize_focused_reasoning(
         FocusedReasoningSummaryRequest(
@@ -5909,13 +6543,6 @@ def test_summarize_focused_reasoning_success(monkeypatch):
     assert chat_service.summarize_focused_reasoning.call_args.kwargs["llm_model"] == "llama3.3"
     save_memory.assert_called_once()
     upsert_case.assert_called_once()
-    assert prompt_scores == [
-        {
-            "operation": "summarize_focused_reasoning",
-            "prompt_text": "Short answer: Full focused reasoning.",
-            "response_text": "Short answer: Condensed conflict summary.",
-        }
-    ]
 
 
 def test_summarize_focused_reasoning_wraps_service_errors(monkeypatch):

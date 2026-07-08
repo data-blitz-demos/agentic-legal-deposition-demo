@@ -22,8 +22,11 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from backend.app.couchdb import CouchDBClient
+from backend.app.logging_config import configure_application_logging, get_logger
 
 mcp = FastMCP("couchdb-deposition-access")
+configure_application_logging()
+logger = get_logger("mcp.couchdb_server")
 
 
 def _settings() -> tuple[str, str]:
@@ -39,11 +42,18 @@ def _with_client(fn):
 
     couchdb_url, couchdb_db = _settings()
     client = CouchDBClient(couchdb_url, couchdb_db)
+    logger.info("langfuse mcp_client_open server=couchdb_deposition_access db=%s", couchdb_db)
     try:
         client.ensure_db()
-        return fn(client)
+        result = fn(client)
+        logger.info("langfuse mcp_client_success server=couchdb_deposition_access db=%s", couchdb_db)
+        return result
+    except Exception:
+        logger.exception("langfuse mcp_client_failure server=couchdb_deposition_access db=%s", couchdb_db)
+        raise
     finally:
         client.close()
+        logger.info("langfuse mcp_client_closed server=couchdb_deposition_access db=%s", couchdb_db)
 
 
 def _doc_preview(doc: dict[str, Any]) -> dict[str, Any]:
@@ -66,12 +76,24 @@ def list_case_depositions(case_id: str, limit: int = 200) -> dict[str, Any]:
     """List deposition documents in a case, ranked by contradiction score."""
 
     bounded_limit = max(1, min(limit, 500))
+    logger.info(
+        "langfuse mcp_request tool=list_case_depositions case_id=%s requested_limit=%s bounded_limit=%s",
+        case_id,
+        limit,
+        bounded_limit,
+    )
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         docs = client.list_depositions(case_id)
         docs.sort(key=lambda item: item.get("contradiction_score", 0), reverse=True)
         items = [_doc_preview(doc) for doc in docs[:bounded_limit]]
-        return {"case_id": case_id, "count": len(items), "depositions": items}
+        payload = {"case_id": case_id, "count": len(items), "depositions": items}
+        logger.info(
+            "langfuse mcp_result tool=list_case_depositions case_id=%s count=%s",
+            case_id,
+            len(items),
+        )
+        return payload
 
     return _with_client(_run)
 
@@ -80,8 +102,17 @@ def list_case_depositions(case_id: str, limit: int = 200) -> dict[str, Any]:
 def get_deposition(deposition_id: str) -> dict[str, Any]:
     """Get full deposition document by id."""
 
+    logger.info("langfuse mcp_request tool=get_deposition deposition_id=%s", deposition_id)
+
     def _run(client: CouchDBClient) -> dict[str, Any]:
-        return client.get_doc(deposition_id)
+        doc = client.get_doc(deposition_id)
+        logger.info(
+            "langfuse mcp_result tool=get_deposition deposition_id=%s claim_count=%s flagged=%s",
+            deposition_id,
+            len(doc.get("claims", []) or []),
+            bool(doc.get("flagged")),
+        )
+        return doc
 
     return _with_client(_run)
 
@@ -91,6 +122,12 @@ def list_flagged_depositions(case_id: str, min_score: int = 1) -> dict[str, Any]
     """List flagged/contradictory depositions for a case."""
 
     bounded_score = max(0, min(min_score, 100))
+    logger.info(
+        "langfuse mcp_request tool=list_flagged_depositions case_id=%s requested_min_score=%s bounded_min_score=%s",
+        case_id,
+        min_score,
+        bounded_score,
+    )
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         docs = client.list_depositions(case_id)
@@ -100,12 +137,19 @@ def list_flagged_depositions(case_id: str, min_score: int = 1) -> dict[str, Any]
             if bool(doc.get("flagged")) or int(doc.get("contradiction_score", 0)) >= bounded_score
         ]
         filtered.sort(key=lambda item: item.get("contradiction_score", 0), reverse=True)
-        return {
+        payload = {
             "case_id": case_id,
             "count": len(filtered),
             "min_score": bounded_score,
             "depositions": [_doc_preview(doc) for doc in filtered],
         }
+        logger.info(
+            "langfuse mcp_result tool=list_flagged_depositions case_id=%s count=%s min_score=%s",
+            case_id,
+            len(filtered),
+            bounded_score,
+        )
+        return payload
 
     return _with_client(_run)
 
@@ -116,6 +160,14 @@ def search_claims(case_id: str, query: str, limit: int = 20) -> dict[str, Any]:
 
     normalized = query.strip().lower()
     bounded_limit = max(1, min(limit, 100))
+    logger.info(
+        "langfuse mcp_request tool=search_claims case_id=%s query_chars=%s has_query=%s requested_limit=%s bounded_limit=%s",
+        case_id,
+        len(query or ""),
+        bool(normalized),
+        limit,
+        bounded_limit,
+    )
 
     def _run(client: CouchDBClient) -> dict[str, Any]:
         docs = client.list_depositions(case_id)
@@ -144,7 +196,13 @@ def search_claims(case_id: str, query: str, limit: int = 20) -> dict[str, Any]:
             if len(matches) >= bounded_limit:
                 break
 
-        return {"case_id": case_id, "query": query, "count": len(matches), "matches": matches}
+        payload = {"case_id": case_id, "query": query, "count": len(matches), "matches": matches}
+        logger.info(
+            "langfuse mcp_result tool=search_claims case_id=%s count=%s",
+            case_id,
+            len(matches),
+        )
+        return payload
 
     return _with_client(_run)
 

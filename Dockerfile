@@ -13,6 +13,7 @@ RUN pip install --no-cache-dir -r requirements-dev.txt
 COPY backend ./backend
 COPY frontend ./frontend
 COPY mcp_servers ./mcp_servers
+COPY evals ./evals
 COPY scripts ./scripts
 COPY deploy ./deploy
 COPY terraform ./terraform

@@ -145,7 +145,7 @@ def test_observe_operation_uses_propagation_and_observation_contexts(monkeypatch
         session_id="s1",
         user_id="u1",
         tags=["a", "b"],
-        metadata={"x": "y", "n": 2},
+        metadata={"x": "y", "n": "2"},
     )
     client.start_as_current_observation.assert_called_once_with(as_type="span", name="op")
 
@@ -160,6 +160,54 @@ def test_observe_operation_logs_and_yields_none_on_context_failure(monkeypatch):
         assert observation is None
 
     logged.assert_called_once_with("langfuse observation failed name=%s", "op")
+
+
+def test_propagate_trace_attributes_uses_propagation_context(monkeypatch):
+    monkeypatch.setattr(lf, "initialize_langfuse", lambda _settings: True)
+    propagation_context = nullcontext()
+    propagate = Mock(return_value=propagation_context)
+    monkeypatch.setattr(lf, "propagate_attributes", propagate)
+
+    with lf.propagate_trace_attributes(
+        make_settings(),
+        session_id=" s1 ",
+        user_id=" u1 ",
+        tags=["a", "a", "b"],
+        metadata={"x": " y ", "n": 2, "skip": None},
+        trace_name=" trace-op ",
+    ):
+        pass
+
+    propagate.assert_called_once_with(
+        session_id="s1",
+        user_id="u1",
+        tags=["a", "b"],
+        metadata={"x": "y", "n": "2"},
+        trace_name="trace-op",
+    )
+
+
+def test_propagate_trace_attributes_logs_and_yields_on_failure(monkeypatch):
+    monkeypatch.setattr(lf, "initialize_langfuse", lambda _settings: True)
+    monkeypatch.setattr(lf, "propagate_attributes", Mock(side_effect=RuntimeError("boom")))
+    logged = Mock()
+    monkeypatch.setattr(lf.logger, "exception", logged)
+
+    with lf.propagate_trace_attributes(make_settings(), tags=["attorneyos"]):
+        pass
+
+    logged.assert_called_once_with("langfuse propagate_trace_attributes failed")
+
+
+def test_propagate_trace_attributes_yields_without_propagation_when_no_values(monkeypatch):
+    monkeypatch.setattr(lf, "initialize_langfuse", lambda _settings: True)
+    propagate = Mock()
+    monkeypatch.setattr(lf, "propagate_attributes", propagate)
+
+    with lf.propagate_trace_attributes(make_settings()):
+        pass
+
+    propagate.assert_not_called()
 
 
 def test_build_langchain_config_returns_empty_when_disabled(monkeypatch):
@@ -192,6 +240,7 @@ def test_build_langchain_config_includes_callback_and_metadata(monkeypatch):
             "langfuse_tags": ["attorneyos", "ollama"],
             "operation": "chat",
         },
+        "tags": ["attorneyos", "ollama"],
     }
 
 
@@ -202,6 +251,132 @@ def test_build_langchain_config_sets_operation_when_optional_fields_missing(monk
     config = lf.build_langchain_config(make_settings(), operation="ingest", metadata={})
 
     assert config["metadata"] == {"operation": "ingest"}
+    assert config["tags"] == []
+
+
+def test_flush_langfuse_get_current_trace_id_and_fetch_trace_graph(monkeypatch):
+    monkeypatch.setattr(lf, "initialize_langfuse", lambda _settings: True)
+    client = SimpleNamespace(flush=Mock(), get_current_trace_id=Mock(return_value="trace-abc12345"))
+    monkeypatch.setattr(lf, "get_client", Mock(return_value=client))
+
+    captured_queries: list[str] = []
+
+    def fake_post(_url, *, params, auth=None, timeout):
+        captured_queries.append(params["query"])
+        assert auth == ("clickhouse", "clickhouse")
+        if "FROM default.traces" in params["query"]:
+            return SimpleNamespace(
+                raise_for_status=lambda: None,
+                json=lambda: {"data": [{"id": "trace-abc12345", "tags": ["attorneyos"]}]},
+            )
+        if "FROM default.observations" in params["query"]:
+            if "trace_id FROM default.observations" in params["query"]:
+                return SimpleNamespace(
+                    raise_for_status=lambda: None,
+                    json=lambda: {"data": [{"trace_id": "trace-abc12345"}]},
+                )
+            return SimpleNamespace(
+                raise_for_status=lambda: None,
+                json=lambda: {"data": [{"id": "obs-1", "trace_id": "trace-abc12345"}]},
+            )
+        return SimpleNamespace(
+            raise_for_status=lambda: None,
+            json=lambda: {"data": [{"id": "score-1", "trace_id": "trace-abc12345"}]},
+        )
+
+    monkeypatch.setattr(lf.httpx, "post", fake_post)
+
+    assert lf.flush_langfuse(make_settings()) is True
+    client.flush.assert_called_once_with()
+    assert lf.get_current_trace_id(make_settings()) == "trace-abc12345"
+    assert lf.resolve_trace_id_from_observation_id(
+        make_settings(
+            langfuse_clickhouse_url="http://clickhouse:8123",
+            langfuse_clickhouse_user="clickhouse",
+            langfuse_clickhouse_password="clickhouse",
+        ),
+        "obs-abc12345",
+    ) == "trace-abc12345"
+    graph = lf.fetch_trace_graph(
+        make_settings(
+            langfuse_clickhouse_url="http://clickhouse:8123",
+            langfuse_clickhouse_user="clickhouse",
+            langfuse_clickhouse_password="clickhouse",
+        ),
+        "trace-abc12345",
+    )
+    assert graph == {
+        "trace": {"id": "trace-abc12345", "tags": ["attorneyos"]},
+        "observations": [{"id": "obs-1", "trace_id": "trace-abc12345"}],
+        "scores": [{"id": "score-1", "trace_id": "trace-abc12345"}],
+    }
+    assert len(captured_queries) == 4
+    assert "WHERE id = 'obs-abc12345'" in captured_queries[0]
+    assert "WHERE id = 'trace-abc12345'" in captured_queries[1]
+    assert "WHERE trace_id = 'trace-abc12345'" in captured_queries[2]
+    assert "WHERE trace_id = 'trace-abc12345'" in captured_queries[3]
+
+
+def test_flush_langfuse_handles_missing_flush_and_errors(monkeypatch):
+    monkeypatch.setattr(lf, "initialize_langfuse", lambda _settings: True)
+    monkeypatch.setattr(lf, "get_client", Mock(return_value=SimpleNamespace()))
+    assert lf.flush_langfuse(make_settings()) is False
+
+    logged = Mock()
+    monkeypatch.setattr(lf.logger, "exception", logged)
+    monkeypatch.setattr(lf, "get_client", Mock(return_value=SimpleNamespace(flush=Mock(side_effect=RuntimeError("boom")))))
+    assert lf.flush_langfuse(make_settings()) is False
+    logged.assert_called_once_with("langfuse flush failed")
+
+
+def test_sql_string_literal_and_clickhouse_query_guards(monkeypatch):
+    assert lf._sql_string_literal("") is None
+    assert lf._sql_string_literal("O'Brien") == "'O''Brien'"
+    assert lf._clickhouse_json_query(make_settings(), "") == []
+    assert lf._clickhouse_json_query(make_settings(langfuse_clickhouse_url=""), "SELECT 1") == []
+
+    monkeypatch.setattr(
+        lf.httpx,
+        "post",
+        lambda *_args, **_kwargs: SimpleNamespace(raise_for_status=lambda: None, json=lambda: {"data": [{"x": 1}]}),
+    )
+    assert lf._clickhouse_json_query(
+        make_settings(
+            langfuse_clickhouse_url="http://clickhouse:8123",
+            langfuse_clickhouse_user="",
+            langfuse_clickhouse_password="ignored",
+        ),
+        "SELECT 1",
+    ) == [{"x": 1}]
+
+
+def test_get_current_trace_id_handles_missing_getter_and_errors(monkeypatch):
+    monkeypatch.setattr(lf, "initialize_langfuse", lambda _settings: True)
+    monkeypatch.setattr(lf, "get_client", Mock(return_value=SimpleNamespace()))
+    assert lf.get_current_trace_id(make_settings()) is None
+
+    logged = Mock()
+    monkeypatch.setattr(lf.logger, "exception", logged)
+    monkeypatch.setattr(lf, "get_client", Mock(return_value=SimpleNamespace(get_current_trace_id=Mock(side_effect=RuntimeError("boom")))))
+    assert lf.get_current_trace_id(make_settings()) is None
+    logged.assert_called_once_with("langfuse get_current_trace_id failed")
+
+
+def test_resolve_trace_id_and_fetch_graph_handle_empty_query_results(monkeypatch):
+    original_sql_string_literal = lf._sql_string_literal
+    monkeypatch.setattr(lf, "_sql_string_literal", lambda _value: None)
+    assert lf.resolve_trace_id_from_observation_id(make_settings(), "obs-abc12345") is None
+    assert lf.fetch_trace_graph(make_settings(), "trace-abc12345") is None
+
+    monkeypatch.setattr(lf, "_sql_string_literal", original_sql_string_literal)
+    monkeypatch.setattr(lf, "_clickhouse_json_query", lambda _settings, _query: [])
+    assert lf.resolve_trace_id_from_observation_id(make_settings(), "obs-abc12345") is None
+    assert lf.fetch_trace_graph(make_settings(), "trace-abc12345") is None
+
+
+def test_fetch_trace_graph_rejects_invalid_trace_ids():
+    assert lf.fetch_trace_graph(make_settings(), "not valid !!!") is None
+    assert lf.resolve_trace_id_from_observation_id(make_settings(), "not valid !!!") is None
 
 
 def test_prompt_and_response_heuristics_cover_structure_and_placeholders():
@@ -380,3 +555,118 @@ def test_normalize_observable_group_name_maps_mcp_aliases():
     assert lf._normalize_observable_group_name("mcp_tool") == "mcp"
     assert lf._normalize_observable_group_name("mcp tools") == "mcp"
     assert lf._normalize_observable_group_name("input_context") == "input_context"
+
+
+def test_score_mcp_operation_emits_normalized_numeric_boolean_and_label_scores(monkeypatch):
+    captured: list[dict] = []
+    monkeypatch.setattr(
+        lf,
+        "score_current_trace",
+        lambda _settings, **kwargs: captured.append(kwargs) or True,
+    )
+
+    emitted = lf.score_mcp_operation(
+        make_settings(),
+        tool_name="mcp_neo4j ontology access",
+        operation="Query Context",
+        metrics={
+            "Resource Count": 3,
+            "Context Hit": True,
+            "Retrieval Mode": "vector",
+            "Skip": None,
+        },
+    )
+
+    assert emitted == len(captured) == 3
+    assert captured == [
+        {
+            "name": "mcp.neo4j_ontology_access.query_context.resource_count",
+            "value": 3.0,
+            "data_type": "NUMERIC",
+            "comment": "MCP metric for tool=neo4j_ontology_access operation=query_context metric=resource_count.",
+        },
+        {
+            "name": "mcp.neo4j_ontology_access.query_context.context_hit",
+            "value": 1.0,
+            "data_type": "BOOLEAN",
+            "comment": "MCP metric for tool=neo4j_ontology_access operation=query_context metric=context_hit.",
+        },
+        {
+            "name": "mcp.neo4j_ontology_access.query_context.retrieval_mode",
+            "value": "vector",
+            "data_type": "CATEGORICAL",
+            "comment": "MCP metric for tool=neo4j_ontology_access operation=query_context metric=retrieval_mode.",
+        },
+    ]
+
+
+def test_score_tagged_event_emits_normalized_numeric_boolean_and_label_scores(monkeypatch):
+    captured: list[dict] = []
+    monkeypatch.setattr(
+        lf,
+        "score_current_trace",
+        lambda _settings, **kwargs: captured.append(kwargs) or True,
+    )
+
+    emitted = lf.score_tagged_event(
+        make_settings(),
+        category="Prompt",
+        event_name="Graph RAG",
+        metrics={
+            "Context Rows": 2,
+            "Has Prompt": True,
+            "Template Keys": "graph_rag_system,graph_rag_user",
+            "Skip": None,
+        },
+    )
+
+    assert emitted == len(captured) == 3
+    assert captured == [
+        {
+            "name": "prompt.graph_rag.context_rows",
+            "value": 2.0,
+            "data_type": "NUMERIC",
+            "comment": "Tagged event metric for category=prompt event=graph_rag metric=context_rows.",
+        },
+        {
+            "name": "prompt.graph_rag.has_prompt",
+            "value": 1.0,
+            "data_type": "BOOLEAN",
+            "comment": "Tagged event metric for category=prompt event=graph_rag metric=has_prompt.",
+        },
+        {
+            "name": "prompt.graph_rag.template_keys",
+            "value": "graph_rag_system,graph_rag_user",
+            "data_type": "CATEGORICAL",
+            "comment": "Tagged event metric for category=prompt event=graph_rag metric=template_keys.",
+        },
+    ]
+
+
+def test_score_memory_and_skill_operations_emit_namespaced_scores(monkeypatch):
+    captured: list[dict] = []
+    monkeypatch.setattr(
+        lf,
+        "score_current_trace",
+        lambda _settings, **kwargs: captured.append(kwargs) or True,
+    )
+
+    memory_emitted = lf.score_memory_operation(
+        make_settings(),
+        channel="chat",
+        case_id="case-1",
+        payload={"response": "Short answer: ok", "thought_stream": [{"phase": "chat_response"}]},
+        saved=True,
+    )
+    skill_emitted = lf.score_skill_operation(
+        make_settings(),
+        skill_name="attorney_chat",
+        metrics={"success": True, "response_chars": 42, "provider": "ollama"},
+    )
+
+    assert memory_emitted > 0
+    assert skill_emitted == 3
+    assert any(item["name"] == "memory.chat.saved" and item["value"] == 1.0 for item in captured)
+    assert any(item["name"] == "memory.chat.thought_stream_events" and item["value"] == 1.0 for item in captured)
+    assert any(item["name"] == "skill.attorney_chat.success" and item["value"] == 1.0 for item in captured)
+    assert any(item["name"] == "skill.attorney_chat.provider" and item["value"] == "ollama" for item in captured)

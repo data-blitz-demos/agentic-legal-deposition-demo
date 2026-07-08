@@ -176,7 +176,7 @@ python scripts/generate_uml_diagrams.py
 - Admin user management with create, edit, select, and permanent delete.
 - Admin persona management with saved name, LLM, and prompts.
 - Built-in Admin test runner with `pytest` HTML report access.
-- Native `/metrics` export plus Prometheus, Grafana, and Langfuse for runtime telemetry and LLM traces.
+- Native `/metrics` export plus Prometheus, Grafana, Langfuse, and DeepEval starter workflows for runtime telemetry, LLM traces, and regression evals.
 
 ## Tech Stack
 
@@ -187,6 +187,7 @@ python scripts/generate_uml_diagrams.py
 - Prometheus metrics
 - Grafana dashboards
 - Langfuse self-hosted tracing
+- DeepEval evaluation harness
 - Vanilla JS/CSS frontend
 - Docker Compose for full local stack
 
@@ -199,6 +200,7 @@ cp .env.example .env
 # required: set OPENAI_API_KEY
 # optional: set DEPOSITION_DIR to a host folder with .txt files
 # optional: set DEPOSITION_EXTRA_DIRS (comma-separated extra roots)
+# optional: set CONFIDENT_API_KEY to upload DeepEval runs to Confident AI
 # optional: change API_PORT / COUCHDB_PORT if 8000 or 5984 are in use
 ```
 
@@ -234,6 +236,48 @@ Langfuse traces are surfaced in the app's `Langfuse` tab and are wired for:
 - Attorney chat
 - Focused contradiction reasoning and summary
 - Graph RAG answer generation
+
+DeepEval starter workflows are surfaced in the app's `DeepEval` tab and ship with:
+
+- Local package/runtime status
+- Confident AI upload readiness via `CONFIDENT_API_KEY`
+- Starter suite command: `deepeval test run evals/attorneyos_deepeval.py`
+- Seed eval scaffolds for attorney chat and Graph RAG answer relevancy
+
+### DeepEval Environment
+
+- `DEEPEVAL_ENABLED`
+  - Default: `true`
+  - Enables the DeepEval status surface for this project.
+- `CONFIDENT_API_KEY`
+  - Optional
+  - When set, the `DeepEval` tab reports cloud upload readiness for Confident AI.
+
+### Running the bundled DeepEval suite
+
+The repo includes a starter suite at `evals/attorneyos_deepeval.py`.
+
+Example local run:
+
+```bash
+export DEEPEVAL_CASE_ID=garf
+export DEEPEVAL_DEPOSITION_ID=dep:garf:witness-mark-rivera
+deepeval test run evals/attorneyos_deepeval.py
+```
+
+Optional Graph RAG eval:
+
+```bash
+export DEEPEVAL_ENABLE_GRAPH_RAG=1
+export DEEPEVAL_GRAPH_QUESTION="What contradictions matter most in this case?"
+deepeval test run evals/attorneyos_deepeval.py
+```
+
+Optional targeting:
+
+- `DEEPEVAL_TARGET_URL`
+  - Default: `http://localhost:8000`
+  - Points the starter suite at a running AttorneyOS API.
 
 ## AWS EKS (Kubernetes + GPU Ollama)
 
@@ -302,6 +346,8 @@ Helper scripts:
   - `GET /metrics`
 - Prometheus scrapes the API metrics endpoint.
 - Grafana is provisioned locally with a prebuilt dashboard.
+- Langfuse is available in the dedicated `Langfuse` tab for traces, spans, generations, scores, and mirrored CouchDB trace graphs.
+- DeepEval is available in the dedicated `DeepEval` tab for package status, Confident AI upload readiness, and starter eval entry points.
 - The UI exposes Grafana launch buttons from:
   - `Observables`
   - `Admin -> MLOps`
@@ -315,6 +361,10 @@ Helper scripts:
   - Returns a directory listing for the Case-tab deposition browser.
 - `GET /api/observability/grafana`
   - Returns the configured Grafana URL, login URL, and current runtime credentials.
+- `GET /api/observability/langfuse`
+  - Returns Langfuse runtime status, public/base URLs, credentials, and monitored operation coverage.
+- `GET /api/observability/deepeval`
+  - Returns DeepEval install status, package version, Confident AI readiness, quickstart command, and bundled workflow coverage.
 - `GET /metrics`
   - Prometheus scrape endpoint for application metrics.
 
