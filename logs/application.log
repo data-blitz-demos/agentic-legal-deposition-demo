@@ -145230,3 +145230,172 @@ httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
 2026-07-07T21:26:00+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=832feb0d35710faa819e0c926fb95b1f trigger=http_request observations=2 scores=0
 2026-07-07T21:26:00+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=POST path=/api/graph-rag/query status=200 duration_ms=6446.22
 2026-07-07T21:26:03+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=832feb0d35710faa819e0c926fb95b1f trigger=http_request observations=2 scores=90
+2026-07-08T16:08:30+0000 INFO [legal_deposition_demo.backend.app.main] startup begin app_root=/app deposition_dir=/data/depositions
+2026-07-08T16:08:30+0000 INFO [legal_deposition_demo.backend.app.main] langfuse tracing enabled base_url=http://langfuse-web:3000
+2026-07-08T16:08:31+0000 INFO [legal_deposition_demo.backend.app.main] startup complete
+2026-07-08T16:09:41+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=1156.46
+2026-07-08T16:09:43+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=ac4e459e2d69f89fb83bb334fd3e218d trigger=http_request observations=1 scores=0
+2026-07-08T16:09:43+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases status=200 duration_ms=3392.08
+2026-07-08T16:09:47+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=ac4e459e2d69f89fb83bb334fd3e218d trigger=http_request observations=1 scores=0
+2026-07-08T16:10:09+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=4a530d9bcd8dc7e0aa08060434d69f4e trigger=http_request observations=1 scores=0
+2026-07-08T16:10:09+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=1433.65
+2026-07-08T16:10:12+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=4a530d9bcd8dc7e0aa08060434d69f4e trigger=http_request observations=1 scores=0
+2026-07-08T16:10:31+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=346ac9a0fb197eb433253ba362edde00 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:31+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=1978.67
+2026-07-08T16:10:33+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=24fd9e14bf4a2340b0ffea916bcb858b trigger=http_request observations=1 scores=0
+2026-07-08T16:10:33+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/graph-rag/embedding-config status=200 duration_ms=1715.85
+2026-07-08T16:10:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=346ac9a0fb197eb433253ba362edde00 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:36+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=4658ac41b9883822778ae8cc52768bc1 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:36+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/favicon.ico status=404 duration_ms=2214.24
+2026-07-08T16:10:37+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=24fd9e14bf4a2340b0ffea916bcb858b trigger=http_request observations=1 scores=0
+2026-07-08T16:10:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=0463350c1bb3cb04be749ed20fb79a4e trigger=http_request observations=1 scores=0
+2026-07-08T16:10:39+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=4658ac41b9883822778ae8cc52768bc1 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:40+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9c6665c0b4d3b1dfedef976c1008ca7b trigger=http_request observations=1 scores=0
+2026-07-08T16:10:41+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=0463350c1bb3cb04be749ed20fb79a4e trigger=http_request observations=1 scores=0
+2026-07-08T16:10:42+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2f3f47eef6bc449d67e2ee5449611d47 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:43+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9c6665c0b4d3b1dfedef976c1008ca7b trigger=http_request observations=1 scores=0
+2026-07-08T16:10:43+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=860fe3302768c1323fa1df4dbd0218e6 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:43+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/ingest-schemas status=200 duration_ms=11773.97
+2026-07-08T16:10:43+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/deposition-directories status=200 duration_ms=11774.46
+2026-07-08T16:10:43+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/llm-options status=200 duration_ms=11774.86
+2026-07-08T16:10:43+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/graph-rag/owl-options status=200 duration_ms=11774.52
+2026-07-08T16:10:45+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2f3f47eef6bc449d67e2ee5449611d47 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:45+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9139981226e0344ce7477caac83d8229 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:45+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases status=200 duration_ms=1928.85
+2026-07-08T16:10:47+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=860fe3302768c1323fa1df4dbd0218e6 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:48+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=c6b9d503a9bd61b6f68d3c0bed40b200 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:48+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/depositions/garf status=200 duration_ms=2180.36
+2026-07-08T16:10:49+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9139981226e0344ce7477caac83d8229 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:50+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9ab9de428adc52239426e651109b5a71 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:50+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases/garf status=200 duration_ms=1970.73
+2026-07-08T16:10:51+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=c6b9d503a9bd61b6f68d3c0bed40b200 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:52+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=af273c15dcd82697410e64280ec1cdc0 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:52+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=2015.34
+2026-07-08T16:10:53+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9ab9de428adc52239426e651109b5a71 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:54+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=f46174f0bcaa9baf91271133c35ab3b9 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:54+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/deposition/dep:garf:witness-jane-doe status=200 duration_ms=2023.68
+2026-07-08T16:10:55+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=af273c15dcd82697410e64280ec1cdc0 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:56+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=e1c1d7853f20fffe7dab8d0505b73ffe trigger=http_request observations=1 scores=0
+2026-07-08T16:10:56+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/home status=404 duration_ms=1934.83
+2026-07-08T16:10:57+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=f46174f0bcaa9baf91271133c35ab3b9 trigger=http_request observations=1 scores=0
+2026-07-08T16:10:59+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=e1c1d7853f20fffe7dab8d0505b73ffe trigger=http_request observations=1 scores=0
+2026-07-08T16:11:08+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=86ff6e267c0babe44f3fa43478a5b652 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:08+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=1999.04
+2026-07-08T16:11:10+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=1868232b996353976d0abc6e34a8c296 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:10+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/apple-touch-icon-precomposed.png status=404 duration_ms=1997.77
+2026-07-08T16:11:11+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=86ff6e267c0babe44f3fa43478a5b652 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:11+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=3d1517447cd697f74290ae76e337dcb4 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:13+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=1868232b996353976d0abc6e34a8c296 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:13+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=6974530ff86767ac56de60edc3d2c1e4 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:13+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/apple-touch-icon.png status=404 duration_ms=5906.21
+2026-07-08T16:11:13+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/favicon.ico status=404 duration_ms=5904.91
+2026-07-08T16:11:15+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=3d1517447cd697f74290ae76e337dcb4 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:16+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=32794a2f85dc6e142fe19b40ec60ba11 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:17+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=6974530ff86767ac56de60edc3d2c1e4 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:18+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2af8fa5ceb0c60fa478f57bfce650017 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:19+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=32794a2f85dc6e142fe19b40ec60ba11 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:20+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=d097dbcf9dac26f14d55fe077e87969d trigger=http_request observations=1 scores=0
+2026-07-08T16:11:21+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2af8fa5ceb0c60fa478f57bfce650017 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:22+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=e3c5a8fa36acaa9bcabac1cba0da5b97 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=d097dbcf9dac26f14d55fe077e87969d trigger=http_request observations=1 scores=0
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b8f6c88e8473de8780fdf4f7ec960424 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/graph-rag/owl-options status=200 duration_ms=15911.03
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/llm-options status=200 duration_ms=15913.87
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/ingest-schemas status=200 duration_ms=15913.50
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/deposition-directories status=200 duration_ms=15913.66
+2026-07-08T16:11:23+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/graph-rag/embedding-config status=200 duration_ms=15911.51
+2026-07-08T16:11:25+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=e3c5a8fa36acaa9bcabac1cba0da5b97 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:25+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=d68c8ca49acebd2496262b0ca8bd58b0 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:25+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/observability/deepeval status=200 duration_ms=12011.21
+2026-07-08T16:11:27+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b8f6c88e8473de8780fdf4f7ec960424 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:28+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=6450c2eae0129d7022b5c60d348a81e5 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:28+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/observability/deepeval status=200 duration_ms=2198.27
+2026-07-08T16:11:29+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=d68c8ca49acebd2496262b0ca8bd58b0 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:30+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2fc61b4621f22ea90ec0b96c97f6eba5 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:30+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases status=200 duration_ms=4157.16
+2026-07-08T16:11:31+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=6450c2eae0129d7022b5c60d348a81e5 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:32+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=07bf100be6891d93df7871d9edb514f7 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/depositions/CASE-Forklift-ACCIDENT status=200 duration_ms=2001.75
+2026-07-08T16:11:33+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2fc61b4621f22ea90ec0b96c97f6eba5 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:34+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b0261421010cc7d0cbfc4b7da2b7de11 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:34+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases/CASE-Forklift-ACCIDENT status=200 duration_ms=1937.83
+2026-07-08T16:11:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=07bf100be6891d93df7871d9edb514f7 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:36+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b7f7cd6ede1f3f22d6c6a48c7a039e48 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:36+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/deposition/dep:case-forklift-accident:witness-mark-rivera status=200 duration_ms=2110.53
+2026-07-08T16:11:37+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b0261421010cc7d0cbfc4b7da2b7de11 trigger=http_request observations=1 scores=0
+2026-07-08T16:11:39+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b7f7cd6ede1f3f22d6c6a48c7a039e48 trigger=http_request observations=1 scores=8
+2026-07-08T11:12:00-0500 INFO [legal_deposition_demo.backend.app.main] startup begin app_root=/Users/paulharvener/workspace/demos/agentic-legal-deposition-demo deposition_dir=./depositions
+2026-07-08T11:12:00-0500 WARNING [legal_deposition_demo.backend.app.main] langfuse tracing requested but not fully configured or installed
+2026-07-08T11:12:00-0500 INFO [legal_deposition_demo.backend.app.main] startup complete
+2026-07-08T11:12:00-0500 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/home status=200 duration_ms=1.91
+2026-07-08T11:12:00-0500 INFO [httpx] HTTP Request: GET http://testserver/home "HTTP/1.1 200 OK"
+2026-07-08T11:12:00-0500 INFO [legal_deposition_demo.backend.app.main] shutdown begin
+2026-07-08T11:12:00-0500 INFO [legal_deposition_demo.backend.app.main] shutdown complete
+2026-07-08T16:12:10+0000 INFO [legal_deposition_demo.backend.app.main] shutdown begin
+2026-07-08T16:12:10+0000 INFO [legal_deposition_demo.backend.app.main] shutdown complete
+2026-07-08T16:12:15+0000 INFO [legal_deposition_demo.backend.app.main] startup begin app_root=/app deposition_dir=/data/depositions
+2026-07-08T16:12:15+0000 INFO [legal_deposition_demo.backend.app.main] langfuse tracing enabled base_url=http://langfuse-web:3000
+2026-07-08T16:12:17+0000 INFO [legal_deposition_demo.backend.app.main] startup complete
+2026-07-08T16:12:25+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=3.89
+2026-07-08T16:12:25+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/home status=200 duration_ms=2.60
+2026-07-08T16:12:25+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases status=200 duration_ms=10.01
+2026-07-08T16:12:25+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/ingest-schemas status=200 duration_ms=6.00
+2026-07-08T16:12:28+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=fd2457119cc02359d240d61a419f7504 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:28+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9a7e937116533b3720bb7473d3f38720 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:28+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=c2bdc5e3f073c06b63dc28dec39b7f8d trigger=http_request observations=1 scores=0
+2026-07-08T16:12:28+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=3bba2b6e7f888ec70860906eead97c2a trigger=http_request observations=1 scores=0
+2026-07-08T16:12:31+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=c2bdc5e3f073c06b63dc28dec39b7f8d trigger=http_request observations=1 scores=0
+2026-07-08T16:12:31+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=3bba2b6e7f888ec70860906eead97c2a trigger=http_request observations=1 scores=0
+2026-07-08T16:12:31+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=fd2457119cc02359d240d61a419f7504 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:31+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=9a7e937116533b3720bb7473d3f38720 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/home status=200 duration_ms=3.49
+2026-07-08T16:12:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/graph-rag/embedding-config status=200 duration_ms=6.66
+2026-07-08T16:12:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/ingest-schemas status=200 duration_ms=10.36
+2026-07-08T16:12:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/graph-rag/owl-options status=200 duration_ms=12.71
+2026-07-08T16:12:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/deposition-directories status=200 duration_ms=62.09
+2026-07-08T16:12:32+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases status=200 duration_ms=6.07
+2026-07-08T16:12:33+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/depositions/garf status=200 duration_ms=8.90
+2026-07-08T16:12:33+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/cases/garf status=200 duration_ms=8.15
+2026-07-08T16:12:33+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/deposition/dep:garf:witness-jane-doe status=200 duration_ms=4.43
+2026-07-08T16:12:33+0000 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/api/llm-options status=200 duration_ms=132.77
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=45d8c941171543267fb5ac70b96de7a9 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=087276795fcd22e999d0cb77baa84ccd trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=201c700c66f0423db5353f222248ec73 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=18de9cd7cf91f9bff22fea09f12d3642 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2c74d664a851107706790a2b6504d389 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=a469a997d43d1e7067fff056ee4092e4 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=af727d066b3b9618f450db9d241fd89d trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b4cb10b3a446dafaf04f1363333d0d82 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=676d2329de340457b309a826380722c7 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:35+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=6768bf286c4fc3d51d05d12516f5e6e4 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=45d8c941171543267fb5ac70b96de7a9 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=087276795fcd22e999d0cb77baa84ccd trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=18de9cd7cf91f9bff22fea09f12d3642 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=201c700c66f0423db5353f222248ec73 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=2c74d664a851107706790a2b6504d389 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=6768bf286c4fc3d51d05d12516f5e6e4 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=676d2329de340457b309a826380722c7 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=af727d066b3b9618f450db9d241fd89d trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=a469a997d43d1e7067fff056ee4092e4 trigger=http_request observations=1 scores=0
+2026-07-08T16:12:38+0000 INFO [legal_deposition_demo.backend.app.main] langfuse trace graph mirrored trace_id=b4cb10b3a446dafaf04f1363333d0d82 trigger=http_request observations=1 scores=0
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] startup begin app_root=/Users/paulharvener/workspace/demos/agentic-legal-deposition-demo deposition_dir=./depositions
+2026-07-08T11:13:40-0500 WARNING [legal_deposition_demo.backend.app.main] langfuse tracing requested but not fully configured or installed
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] startup complete
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=1.92
+2026-07-08T11:13:40-0500 INFO [httpx] HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] shutdown begin
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] shutdown complete
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] startup begin app_root=/Users/paulharvener/workspace/demos/agentic-legal-deposition-demo deposition_dir=./depositions
+2026-07-08T11:13:40-0500 WARNING [legal_deposition_demo.backend.app.main] langfuse tracing requested but not fully configured or installed
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] startup complete
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/home status=200 duration_ms=0.62
+2026-07-08T11:13:40-0500 INFO [httpx] HTTP Request: GET http://testserver/home "HTTP/1.1 200 OK"
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] shutdown begin
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] shutdown complete
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] startup begin app_root=/Users/paulharvener/workspace/demos/agentic-legal-deposition-demo deposition_dir=./depositions
+2026-07-08T11:13:40-0500 WARNING [legal_deposition_demo.backend.app.main] langfuse tracing requested but not fully configured or installed
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] startup complete
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] request complete method=GET path=/ status=200 duration_ms=0.57
+2026-07-08T11:13:40-0500 INFO [httpx] HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] shutdown begin
+2026-07-08T11:13:40-0500 INFO [legal_deposition_demo.backend.app.main] shutdown complete

@@ -5048,6 +5048,69 @@ def test_schedule_langfuse_trace_graph_refresh_handles_empty_trace_and_thread_fa
     )
 
 
+def test_schedule_langfuse_trace_graph_mirror_handles_empty_ids_and_thread_failure(monkeypatch):
+    assert (
+        main._schedule_langfuse_trace_graph_mirror(
+            "",
+            root_observation_id=None,
+            trigger="http_request",
+            request_metadata=None,
+        )
+        is None
+    )
+
+    logger = Mock()
+    monkeypatch.setattr(main, "logger", logger)
+
+    class FailingThread:
+        def __init__(self, *args, **kwargs):
+            raise RuntimeError("thread failed")
+
+    monkeypatch.setattr(main, "Thread", FailingThread)
+    main._schedule_langfuse_trace_graph_mirror(
+        "trace-abc12345",
+        root_observation_id="obs-12345678",
+        trigger="http_request",
+        request_metadata={"path": "/"},
+    )
+    logger.exception.assert_called_once_with(
+        "langfuse trace graph mirror scheduling failed trace_id=%s",
+        "trace-abc12345",
+    )
+
+
+def test_schedule_langfuse_trace_graph_mirror_runs_persist_in_background(monkeypatch):
+    persist_calls: list[tuple[str, str | None, str, dict | None]] = []
+
+    monkeypatch.setattr(
+        main,
+        "_persist_langfuse_trace_graph",
+        lambda trace_id, *, root_observation_id, trigger, request_metadata: persist_calls.append(
+            (trace_id, root_observation_id, trigger, request_metadata)
+        ),
+    )
+
+    class ImmediateThread:
+        def __init__(self, *, target, name, daemon):
+            self._target = target
+            self.name = name
+            self.daemon = daemon
+
+        def start(self):
+            self._target()
+
+    monkeypatch.setattr(main, "Thread", ImmediateThread)
+
+    main._schedule_langfuse_trace_graph_mirror(
+        None,
+        root_observation_id="obs-12345678",
+        trigger="http_request",
+        request_metadata={"path": "/"},
+    )
+
+    assert persist_calls == [("", "obs-12345678", "http_request", {"path": "/"})]
+
+
 def test_schedule_langfuse_trace_graph_refresh_runs_delayed_persist(monkeypatch):
     sleep_calls: list[float] = []
     persist_calls: list[tuple[str, str | None, str, dict | None, bool]] = []

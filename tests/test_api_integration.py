@@ -256,6 +256,19 @@ def test_root_serves_frontend_shell(api_client):
     assert 'id="adminPersonaContextObservableBtn"' in response.text
     assert re.search(r'id="adminPersonaSystemObservableBtn"[^>]*\bdisabled\b', response.text)
     assert re.search(r'id="adminPersonaAssistantObservableBtn"[^>]*\bdisabled\b', response.text)
+
+
+def test_home_alias_serves_frontend_shell(api_client):
+    response = api_client.get("/home")
+
+    assert response.status_code == 200
+    assert "text/html" in response.headers["content-type"]
+    assert "AttorneyOS" in response.text
+
+
+def test_root_serves_admin_persona_shell_controls(api_client):
+    response = api_client.get("/")
+
     assert re.search(r'id="adminPersonaContextObservableBtn"[^>]*\bdisabled\b', response.text)
     assert 'id="adminPersonaSystemPromptTemplateSelect"' in response.text
     assert 'id="adminPersonaAssistantPromptTemplateSelect"' in response.text

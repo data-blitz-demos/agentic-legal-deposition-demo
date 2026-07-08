@@ -588,7 +588,7 @@ async def trace_http_requests_with_langfuse(request: Request, call_next):
         response = await call_next(request)
         trace_id = get_current_trace_id(settings)
         root_observation_id = str(getattr(observation, "id", "") or "").strip() or None
-    _persist_langfuse_trace_graph(
+    _schedule_langfuse_trace_graph_mirror(
         trace_id,
         root_observation_id=root_observation_id,
         trigger="http_request",
@@ -1783,6 +1783,35 @@ def _persist_langfuse_trace_graph(
     except Exception:
         logger.exception("langfuse trace graph mirror failed trace_id=%s", normalized_trace_id)
         return None
+
+
+def _schedule_langfuse_trace_graph_mirror(
+    trace_id: str | None,
+    *,
+    root_observation_id: str | None,
+    trigger: str,
+    request_metadata: dict[str, str] | None,
+) -> None:
+    """Mirror Langfuse graphs without blocking the HTTP response path."""
+
+    normalized_trace_id = str(trace_id or "").strip()
+    normalized_root_observation_id = str(root_observation_id or "").strip()
+    if not normalized_trace_id and not normalized_root_observation_id:
+        return
+
+    def _mirror() -> None:
+        _persist_langfuse_trace_graph(
+            normalized_trace_id,
+            root_observation_id=normalized_root_observation_id,
+            trigger=trigger,
+            request_metadata=request_metadata,
+        )
+
+    label = normalized_trace_id or normalized_root_observation_id
+    try:
+        Thread(target=_mirror, name=f"langfuse-graph-mirror-{label[:12]}", daemon=True).start()
+    except Exception:
+        logger.exception("langfuse trace graph mirror scheduling failed trace_id=%s", normalized_trace_id)
 
 
 def _schedule_langfuse_trace_graph_refresh(
@@ -4357,6 +4386,7 @@ def _ensure_startup_llm_connectivity() -> None:
 
 
 @app.get("/")
+@app.get("/home")
 def root() -> FileResponse:
     """Serve the frontend entry HTML."""
 
